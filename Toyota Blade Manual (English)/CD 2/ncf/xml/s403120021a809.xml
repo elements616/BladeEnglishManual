@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY k4670035e SYSTEM "grph_ent/k4670035e.png" NDATA png>
+<!ENTITY k3840114e SYSTEM "grph_ent/k3840114e.png" NDATA png>
+
+<!ENTITY T120021A809 SYSTEM "t403120021a809.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120021A809S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120021A809" UPDATE = "ORIGINAL" LDUP = "16May2006"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>HDD Navigation TV Mode Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>TV Mode Screen</TITLE>
+<ITEM><PTXT>By pressing the "TV" panel switch, the screen changes to the TV mode screen and the TV broadcast screen is displayed.</PTXT></ITEM>
+<ITEM><PTXT>By pressing the "Audio" panel switch while the TV broadcast screen is displayed, the screen changes to the TV mode operation screen, where on-screen displays such as TV broadcast reception and received channel No. are shown, and TV channel switching, auto preset, etc. can be performed.</PTXT></ITEM>
+<ITEM><PTXT>The TV broadcast screen can be displayed only when the vehicle is stopped with the IG ON or ACC ON and the parking brake applied. In all other cases, only the TV sound can be heard.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A809I01" INDSW = "OFF">
+<TITLE>TV Mode Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670035e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<LIST1 TYPE = "UNORDERED"><TITLE>TV Mode Setting Screen</TITLE>
+<ITEM><PTXT>By touching "Settings" on the screen while the TV mode screen is displayed, the screen changes to the TV mode setting screen.</PTXT></ITEM>
+<ITEM><PTXT>On the TV mode setting screen, display of the received channel No. and station name, display of the preset channel No. and station name, wide mode switching, multiplex sound switching, sound quality adjustment, etc. can be performed.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A809I02" INDSW = "OFF">
+<TITLE>TV Mode Setting Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k3840114e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+</SECTION>

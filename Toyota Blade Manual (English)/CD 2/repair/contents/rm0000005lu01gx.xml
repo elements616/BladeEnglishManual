@@ -1,0 +1,1595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1000Y_S0012" variety="S0012">
+<name>SRS Airbag</name>
+<ttl id="1000Y_S0012_745Q2_T00B8" variety="T00B8">
+<name>SRS Airbag System</name>
+<para id="RM0000005LU01GX" category="S" type-id="3001E" name-id="554GC-00" from="200612" to="200912">
+<name>Diagnostic Trouble Code Chart</name>
+<subpara id="RM0000005LU01GX_z0" proc-id="RM0550J___000068500000">
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If a short to +B, short to ground or open circuit occurs somewhere in the airbag system ignition circuits, other malfunctions may not be output. In this case, other codes can be output by repairing or replacing the malfunctioning area for the currently output diagnostic trouble code and checking the diagnostic trouble codes again.</ptxt>
+</item>
+<item>
+<ptxt>If diagnostic trouble code B1000 is output, replace the airbag computer assembly with a new one.</ptxt>
+</item>
+<item>
+<ptxt>The marks for check mode compatible items are as follows. ○: Check mode compatible ×: Check mode not compatible</ptxt>
+</item>
+</list1>
+</atten4>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title/>
+<tgroup cols="6" colsep="1" rowsep="1">
+<colspec colnum="1" colname="1" colwidth="0.94in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="1.42in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="2.14in" colsep="0"/>
+<colspec colnum="4" colname="4" align="center" colwidth="0.86in" colsep="0"/>
+<colspec colnum="5" colname="5" align="center" colwidth="0.96in" colsep="0"/>
+<colspec colnum="6" colname="6" align="center" colwidth="0.76in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>Diagnostic Trouble Code (DTC)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="center">
+<ptxt>Diagnosis Item</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>Malfunctioning Area</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>Check Mode Compatible</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Airbag Warning Light</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>Reference Page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1000</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Airbag computer assembly malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>Airbag Computer Assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EL500KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1602</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver side front satellite sensor bus communication stop</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front airbag sensor RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+<ptxt>• Engine room main wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002T0P003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1603</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver side front satellite sensor bus initialization malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front airbag sensor RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+<ptxt>• Engine room main wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002T0P003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1607</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front passenger side front satellite sensor bus communication stop</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front airbag sensor LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+<ptxt>• Engine room main wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002T11003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1608</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front passenger side front satellite sensor bus initialization malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front airbag sensor LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+<ptxt>• Engine room main wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002T11003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1610</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front airbag sensor RH malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front airbag sensor RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EL400KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1612</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front airbag sensor RH communication stop</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front airbag sensor RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+<ptxt>• Engine room main wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002T0P003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1613</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front airbag sensor RH initialization malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front airbag sensor RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+<ptxt>• Engine room main wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002T0P003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1615</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front airbag sensor LH malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front airbag sensor LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ELD00KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1617</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front airbag sensor LH communication stop</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front airbag sensor LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+<ptxt>• Engine room main wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002T11003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1618</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front airbag sensor LH initialization malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front airbag sensor LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+<ptxt>• Engine room main wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002T11003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1620</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Side airbag sensor assembly RH malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Side airbag sensor assembly RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002T0L003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1622</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Side airbag sensor assembly RH communication stop</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Side airbag sensor assembly RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002T12003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1623</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Airbag sensor rear RH initialization malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Side airbag sensor assembly RH</ptxt>
+<ptxt>• Airbag sensor rear right</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002887006X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1625</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Side airbag sensor assembly LH malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Side airbag sensor assembly LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002T0M003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1627</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Side airbag sensor assembly LH communication stop</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Side airbag sensor assembly LH • Airbag sensor rear left</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002T13003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1628</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Airbag sensor rear LH initialization malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Side airbag sensor assembly LH</ptxt>
+<ptxt>• Airbag sensor rear left</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM00000288N006X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1630</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Airbag sensor rear RH malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Airbag sensor rear right</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002T0N003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1632</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Side airbag sensor assembly RH No.2communication stop</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Side airbag sensor assembly RH</ptxt>
+<ptxt>• Airbag sensor rear right</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002887006X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1633</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Side airbag sensor assembly RH No.2initialization malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Side airbag sensor assembly RH</ptxt>
+<ptxt>• Airbag sensor rear right</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002887006X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1635</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Airbag sensor rear LH malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Airbag sensor rear left</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002T0O003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1637</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Side airbag sensor assembly LH No.2communication stop</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Side airbag sensor assembly LH</ptxt>
+<ptxt>• Airbag sensor rear left</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM00000288N006X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1638</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Side airbag sensor assembly LH No.2initialization malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Side airbag sensor assembly LH</ptxt>
+<ptxt>• Airbag sensor rear left</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM00000288N006X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1642</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver side side satellite sensor bus communication stop</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Side airbag sensor assembly RH</ptxt>
+<ptxt>• Airbag sensor rear right</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002887006X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1643</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver side side satellite sensor bus initialization malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Side airbag sensor assembly RH</ptxt>
+<ptxt>• Airbag sensor rear right</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002887006X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1647</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front passenger side side satellite sensor bus communication stop</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Side airbag sensor assembly LH</ptxt>
+<ptxt>• Airbag sensor rear left</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM00000288N006X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1648</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front passenger side side satellite sensor bus initialization malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Side airbag sensor assembly LH</ptxt>
+<ptxt>• Airbag sensor rear left</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM00000288N006X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1800</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver airbag ignition circuit (short)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Horn button assembly</ptxt>
+<ptxt>• Spiral cable</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ELA00KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1801</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver airbag ignition circuit (open)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Horn button assembly</ptxt>
+<ptxt>• Spiral cable</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ELE00KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1802</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver airbag ignition circuit (short to ground)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Horn button assembly</ptxt>
+<ptxt>• Spiral cable</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ELF00KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1803</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver airbag ignition circuit (short to +B)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Horn button assembly</ptxt>
+<ptxt>• Spiral cable</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ELG00KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1805</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front passenger airbag ignition circuit (short)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Instrument panel passenger airbag assembly</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ELH00KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1806</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front passenger airbag ignition circuit (open)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Instrument panel passenger airbag assembly</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ELI00KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1807</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front passenger airbag ignition circuit (short to ground)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Instrument panel passenger airbag assembly</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ELJ00KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1808</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front passenger airbag ignition circuit (short to +B)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Instrument panel passenger airbag assembly</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ELK00KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1820</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front seat airbag RH ignition circuit (short)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat airbag assembly RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EM900JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1821</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front seat airbag RH ignition circuit (open)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat airbag assembly RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EMA00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1822</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front seat airbag RH ignition circuit (short to ground)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat airbag assembly RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EMB00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1823</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front seat airbag RH ignition circuit (short to +B)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat airbag assembly RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EMC00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1825</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front seat airbag LH ignition circuit (short)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat airbag assembly LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EMD00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1826</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front seat airbag LH ignition circuit (open)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat airbag assembly LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EME00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1827</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front seat airbag LH ignition circuit (short to ground)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat airbag assembly LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EMF00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1828</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front seat airbag LH ignition circuit (short to +B)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat airbag assembly LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EMG00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1830</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Curtain shield airbag RH ignition circuit (short)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Curtain shield airbag RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ELT00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1831</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Curtain shield airbag RH ignition circuit (open)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Curtain shield airbag RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ELU00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1832</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Curtain shield airbag RH ignition circuit (short to ground)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Curtain shield airbag RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ELV00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1833</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Curtain shield airbag RH ignition circuit (short to +B)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Curtain shield airbag RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EMX00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1835</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Curtain shield airbag LH ignition circuit (short)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Curtain shield airbag LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ELX00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1836</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Curtain shield airbag LH ignition circuit (open)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Curtain shield airbag LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ELY00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1837</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Curtain shield airbag LH ignition circuit (short to ground)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Curtain shield airbag LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ELZ00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1838</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Curtain shield airbag LH ignition circuit (short to +B)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Curtain shield airbag LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EM000JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1860</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver knee airbag ignition circuit (short)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Instrument panel lower airbagNo.1</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM00000301Q000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1861</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver knee airbag ignition circuit (open)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Instrument panel lower airbagNo.1</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM00000301Q000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1862</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver knee airbag ignition circuit (short to ground)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Instrument panel lower airbagNo.1</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM00000301Q000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1863</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver knee airbag ignition circuit (short to +B)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Instrument panel lower airbagNo.1</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Instrument panel wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM00000301Q000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1900</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front pretensioner RH ignition circuit (short)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat outer belt assembly RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EM100JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1901</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front pretensioner RH ignition circuit (open)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat outer belt assembly RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EM200JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1902</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front pretensioner RH ignition circuit (short to ground)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat outer belt assembly RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EM300JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1903</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front pretensioner RH ignition circuit (short to +B)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat outer belt assembly RH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wireNo.2</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EM400JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1905</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front pretensioner LH ignition circuit (short)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat outer belt assembly LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EM500JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1906</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front pretensioner LH ignition circuit (open)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat outer belt assembly LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EM600JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1907</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front pretensioner LH ignition circuit (short to ground)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat outer belt assembly LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EM700JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>B1908</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front pretensioner LH ignition circuit (short to +B)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Front seat outer belt assembly LH</ptxt>
+<ptxt>• Airbag Computer Assembly</ptxt>
+<ptxt>• Floor wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>Illuminated</ptxt>
+</entry>
+<entry colname="6" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000EM800JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

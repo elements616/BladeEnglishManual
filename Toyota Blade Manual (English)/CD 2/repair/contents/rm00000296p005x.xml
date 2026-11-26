@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_747JK_T00DW" variety="T00DW">
+<name>Crank Position Sensor (2AZ-FE)</name>
+<para id="RM00000296P005X" category="G" type-id="3001K" name-id="065B7-00" from="200612">
+<name>Component Inspection</name>
+<subpara id="RM00000296P005X_01" type-id="01" category="01">
+<s-1 id="RM00000296P005X_01_0001" proc-id="RM0550J___0000BXP00000">
+<ptxt>Inspect Crankshaft Position Sensor</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Resistance Inspection</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<figure>
+<graphic graphicname="A064984" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1150 to 1450 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

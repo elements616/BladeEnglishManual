@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001C_S000C" variety="S000C">
+<name>Audio &amp; Visual</name>
+<ttl id="1001C_S000C_742AC_T002N" variety="T002N">
+<name>Audio System</name>
+<para id="X36100000W000HD" category="D" type-id="3001B" name-id="641GR-00" from="200612">
+<name>How to Proceed with Troubleshooting</name>
+<subpara id="X36100000W000HD_z0" proc-id="RM0550J___00005EX00000">
+<content5 releasenbr="2">
+<descript-diag>
+<descript-testgroup>
+<testtitle>Vehicle brought to workshop</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Customer Problem Analysis and Symptom Check</testtitle>
+<test1>
+<ptxt>Customer Problem Analysis and Symptom Check (see <xref label="Seep01" href="X36100000W100HD"/>)</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Basic Inspection</testtitle>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Basic Inspection</ptxt>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the battery voltage.</ptxt>
+<spec>
+<title>Voltage</title>
+<specitem>
+<ptxt>11 to 14 V (IG OFF)</ptxt>
+</specitem>
+</spec>
+</test2>
+<test2>
+<ptxt>Inspect areas that can be checked visually, such as blown fuses, open or short circuits in the wire harness and poor connector connections.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No Abnormality</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Check Power Supply to Radio Receiver Assembly</testtitle>
+<test1>
+<ptxt>Radio Receiver Assembly LCD Illumination Inspection</ptxt>
+<test2>
+<ptxt>Turn the ACC ON.</ptxt>
+</test2>
+<test2>
+<ptxt>Check that when the audio POWER switch is turned ON, the backlight of the radio receiver assembly LCD display comes on and the LCD displays.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Comes on</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+<test1>
+<ptxt>Check the inspection result and proceed to the following destination.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.22in"/>
+<colspec colname="COL2" colwidth="0.91in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Does not come on</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>Go to LCD does not illuminate Symptom Chart: Power does not turn on when power switch is pressed (see <xref label="Seep02" href="RM000000AQ6013X"/>)</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Check DTC</testtitle>
+<atten4>
+<ptxt>For details of the procedure, refer to <xref label="Seep03" href="RM000000FPQ00ZX"/></ptxt>
+</atten4>
+<test1>
+<ptxt>Check DTC</ptxt>
+<test2>
+<ptxt>Record the DTCs.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Clear DTC</ptxt>
+</test1>
+<test1>
+<ptxt>Recheck DTC</ptxt>
+<test2>
+<ptxt>Based on the recorded DTCs, reproduce the problem symptom and check whether the DTCs are output again.</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.22in"/>
+<colspec colname="COL2" colwidth="0.91in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>No code, symptom can be confirmed and reproduced</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No code, symptom cannot be confirmed and reproduced</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Code output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>When a DTC is output, perform inspection and repair according to the instructions in the Diagnostic Trouble Code Chart. (see <xref label="Seep04" href="RM0000002RS03BX"/>)</ptxt>
+</atten4>
+</test2>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>Go to Symptom Simulation (see <xref label="Seep05" href="RM000000ABY03DX"/>)</action-ci-right>
+<result>C</result>
+<action-ci-right>Go to step 8</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>List by Symptom</testtitle>
+<test1>
+<ptxt>Problem Symptoms Table (see <xref label="Seep06" href="RM000000AQ6013X"/>)</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.22in"/>
+<colspec colname="COL2" colwidth="0.91in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Not listed in List by Symptom</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Corresponds to List by Symptom</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>Go to step 8</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Perform troubleshooting using the following methods based on the problem symptom</testtitle>
+<test1>
+<ptxt>Diagnosis System (see <xref label="Seep07" href="RM000000FPQ00ZX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Terminals of ECU (see <xref label="Seep08" href="RM000000AQ5014X"/>)</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Adjust, Repair or Replace</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Confirmation Test</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

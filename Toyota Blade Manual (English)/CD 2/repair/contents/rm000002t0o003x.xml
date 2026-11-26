@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1000Y_S0012" variety="S0012">
+<name>SRS Airbag</name>
+<ttl id="1000Y_S0012_745Q2_T00B8" variety="T00B8">
+<name>SRS Airbag System</name>
+<para id="RM000002T0O003X" category="C" type-id="305HT" name-id="554GW-00" from="200612">
+<dtccode>B1635</dtccode>
+<dtcname>Airbag sensor rear LH malfunction</dtcname>
+<subpara id="RM000002T0O003X_01" type-id="31" category="03" proc-id="RM0550J___00006B100000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The side collision sensor LH (for side airbag and curtain shield airbag deployment judgment) circuit consists of the airbag computer assembly, side airbag sensor assembly LH and airbag sensor rear LH. </ptxt>
+<ptxt>The airbag sensor rear LH detects impacts and sends signals to the airbag computer assembly for airbag ignition judgment. </ptxt>
+<ptxt>When a malfunction is detected in the side collision sensor LH (for side airbag and curtain shield airbag deployment judgment) circuit, DTC B1635 is stored in the airbag computer assembly. </ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1635</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Airbag sensor rear LH malfunction</ptxt>
+</item>
+<item>
+<ptxt>Airbag Computer Assembly Malfunction</ptxt>
+</item>
+</list1>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Airbag Sensor Rear Left</ptxt>
+</item>
+<item>
+<ptxt>Airbag Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000002T0O003X_02" type-id="32" category="03" proc-id="RM0550J___00006B200000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C159570J02" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000002T0O003X_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000002T0O003X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000002T0O003X_04_0001" proc-id="RM0550J___00006B300000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the battery negative terminal and wait for 90 seconds.</ptxt>
+<atten4>
+<ptxt>Make sure the ignition switch is OFF before disconnecting the cable from the negative (-) battery terminal.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="C146132J11" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Interchange the airbag sensor rear LH and airbag sensor rear RH, connect the connectors and install them securely.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When installing, do not subject the airbag sensor rear LH and airbag sensor rear RH to strong impacts such as dropping them.</ptxt>
+</item>
+<item>
+<ptxt>If a sensor has been subjected to a strong impact such as being dropped, replace it with a new one.</ptxt>
+</item>
+</list1>
+</atten3>
+</test1>
+<test1>
+<ptxt>Connect the battery negative terminal, turn IG ON and wait for 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), clear the DTCs. (see <xref label="Seep01" href="RM00000050J01GX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002T0O003X_04_0002" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002T0O003X_04_0002" proc-id="RM0550J___00006B400000">
+<scantool type="1"/>
+<testtitle>Inspect Airbag Sensor Rear LH</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs. (see <xref label="Seep01" href="RM00000050J01GX"/>)</ptxt>
+<table>
+<title>Result:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.10in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC B1630 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC B1635 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+</content6>
+<res>
+<down ref="RM000002T0O003X_04_0003" fin="true">A</down>
+<right ref="RM000002T0O003X_04_0004" fin="true">B</right>
+<right ref="RM000002T0O003X_04_0005" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000002T0O003X_04_0003">
+<testtitle>Perform Simulation Method<xref label="Seep01" href="RM000000ABY03DX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002T0O003X_04_0004">
+<testtitle>Replace Airbag Sensor Rear LH<xref label="Seep01" href="RM000000QG4007X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002T0O003X_04_0005">
+<testtitle>Replace Airbag Computer Assembly<xref label="Seep01" href="RM000002RR0002X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

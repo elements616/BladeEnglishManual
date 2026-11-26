@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectionList>
+	<connector type="gp" code="LR">
+		<pin>
+			<line id="1" color="W-B">
+				<connector type="w2w" code="LU1" sex="female">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="LU1" sex="male">
+		<pin no="2">
+			<line id="2" color="W-B">
+				<connector type="conn" code="U3">
+					<pin no="4"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="U3">
+		<pin no="1">
+			<line id="3" color="L">
+				<connector type="w2w" code="LU1" sex="male">
+					<pin no="7"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="LU1" sex="female">
+		<pin no="7">
+			<line id="4" color="L">
+				<connector type="w2w" code="FL1" sex="male">
+					<pin no="5"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="FL1" sex="female">
+		<pin no="5">
+			<line id="5" color="L">
+				<connector type="w2w" code="AF1" sex="male">
+					<pin no="3"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="AF1" sex="female">
+		<pin no="3">
+			<line id="6" color="L">
+				<connector type="rb" code="1">
+					<pin/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="U3">
+		<pin no="9">
+			<line id="7" color="LG">
+				<connector type="conn" code="U1">
+					<pin no="1"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="U1">
+		<pin no="2">
+			<line id="8" color="Y">
+				<connector type="conn" code="U3">
+					<pin no="6"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="U3">
+		<pin no="3">
+			<line id="9" color="P">
+				<connector type="conn" code="U2">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="U2">
+		<pin no="1">
+			<line id="10" color="BR" spec="~’09.12">
+				<connector type="conn" code="U3">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="U2">
+		<pin no="1">
+			<line id="10" color="GR" spec="’09.12~">
+				<connector type="conn" code="U3">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+</connectionList>

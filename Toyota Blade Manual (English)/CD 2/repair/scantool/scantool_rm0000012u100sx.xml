@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-db>
+<pub id="RM0550J">
+<servcat id="01">
+<section id="10006_S000J" variety="S000J">
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<para id="RM0000012U100SX" category="C" type-id="303BZ" name-id="065A0-00" from="200612">
+<subpara id="RM0000012U100SX_04">
+<testgrp id="RM0000012U100SX_04_0001">
+<scantool type="4">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">4</parameter>
+<parameter key="pid-id-num">1</parameter>
+<datamonitor no="1">
+<parameter key="pid-id">38</parameter>
+<parameter key="datamonitor-name">Knock Control Value</parameter>
+</datamonitor>
+</scantool>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-db>

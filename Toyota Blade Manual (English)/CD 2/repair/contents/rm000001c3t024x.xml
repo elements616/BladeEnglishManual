@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002R_S000G" variety="S000G">
+<name>G-BOOK</name>
+<ttl id="1002R_S000G_742BR_T003W" variety="T003W">
+<name>G-BOOK System</name>
+<para id="RM000001C3T024X" category="D" type-id="303F3" name-id="GB03D-20" from="200912">
+<name>Diagnosis System</name>
+<subpara id="RM000001C3T024X_z0" proc-id="RM0550J___0000I5000000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Diagnosis Screen Transitions</ptxt>
+<atten4>
+<ptxt>For diagnosis screen transitions, refer to HDD Navigation System - Diagnosis System (<xref label="Seep01" href="RM0000002RV04DX"/>).</ptxt>
+</atten4>
+</step1>
+<step1>
+<ptxt>Starting and Ending Diagnosis</ptxt>
+<atten4>
+<ptxt>For starting and exiting diagnosis, refer to HDD Navigation System - Diagnosis System (<xref label="Seep02" href="RM0000002RV04DX"/>).</ptxt>
+</atten4>
+</step1>
+<step1>
+<ptxt>Service Information</ptxt>
+<figure>
+<graphic graphicname="E122342" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Service Information Screen Display Contents</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="2.48in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>G Terminal Link Information</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G-BOOK terminal ID, flag information, etc. are displayed.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HELPNET/DCM Information</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>HELPNET-related ID, contract status, maintenance check date, etc. are displayed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HELPNET Report History</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>HELPNET call history (date/time, status) is displayed</ptxt>
+<ptxt>(For the procedure, refer to <xref label="Seep04" href="RM0000002RV04DX"/>)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Remote Security Diagnosis</ptxt>
+</entry>
+<entry>
+<ptxt>Remote security check results are displayed (not displayed on this model)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Memory Save/Load</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Saves and loads memory using a tool</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<step2>
+<ptxt>G Terminal Link Information</ptxt>
+<figure>
+<graphic graphicname="E153593" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Start diagnosis and display the diagnosis inspection menu screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Select "G Terminal Association Information" on the diagnosis check menu screen to display the G terminal association information screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Check the G terminal association information.</ptxt>
+<table>
+<title>G Terminal Association Information Screen Display</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="2.48in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>G-BOOK Terminal ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Reads and displays the G-BOOK terminal ID held by the navigation receiver assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Communication Module ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the 11-digit serial number of the telematics transceiver (not displayed on this model)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Flag Information</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the G-BOOK contract and service flags held by the navigation receiver assembly</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+<step2>
+<ptxt>HELPNET/DCM Information</ptxt>
+<figure>
+<graphic graphicname="E150537" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Start diagnosis and display the diagnosis inspection menu screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Select "HELPNET/DCM Information" on the diagnosis check menu screen to display the HELPNET/DCM information screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Check the content.</ptxt>
+<table>
+<title>HELPNET/DCM Information Screen Display</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="2.48in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Display Content</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Mayday Type</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the type of HELPNET in-vehicle unit installed ("C (one-touch type)" is displayed on this model)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HELPNET In-vehicle Unit ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the ID of the installed HELPNET in-vehicle unit</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HELPNET Contract Status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the HELPNET service contract status as follows</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>"Activated": Contracted and member registration completed</ptxt>
+</item>
+<item>
+<ptxt>"Not Activated": Contracted but member registration not performed</ptxt>
+</item>
+<item>
+<ptxt>"Not Contracted": Not contracted</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Next Maintenance Check Date and Time</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the next automatic maintenance check date</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DCM Telephone Number</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays "DCM Not Connected"</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DCM Serial Number</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays "DCM Not Connected"</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Telephone Number Inquiry Number</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays "DCM Not Connected"</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="04">
+<name>Driveline/Axle</name>
+<section id="1000K_S0015" variety="S0015">
+<name>Differential</name>
+<ttl id="1000K_S0015_744ZW_T00A7" variety="T00A7">
+<name>Active Torque Control 4WD System</name>
+<para id="X36100000HS00AD" category="D" type-id="300BB" name-id="370CN-00" from="200612">
+<name>Function Description</name>
+<subpara id="X36100000HS00AD_z0" proc-id="RM0550J___00005I900000">
+<content5 releasenbr="2">
+<step1>
+<ptxt>Diagnosis Function</ptxt>
+<step2>
+<ptxt>If a malfunction occurs in the Active Torque Control 4WD system, the 4WD warning light illuminates.</ptxt>
+</step2>
+<step2>
+<ptxt>The diagnosis results when a malfunction occurs are stored in the 4WD computer assembly, and the malfunction diagnosis results can be read.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Sensor Check Function</ptxt>
+<step2>
+<ptxt>Test mode inspection of the speed sensors and yaw rate sensor can be performed using the test mode of the ABS with EBD &amp; TRC &amp; VSC &amp; BA system.</ptxt>
+<atten4>
+<ptxt>For the test mode procedure for the ABS with EBD &amp; TRC &amp; VSC &amp; BA system, refer to <xref label="Seep02" href="RM00000060100QX"/>.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Fail-safe Function</ptxt>
+<step2>
+<ptxt>When there is a malfunction in the Active Torque Control 4WD system sensor signals or electronically controlled coupling system, current to the transmission coupling assembly (linear solenoid SLC) is prohibited and the vehicle is put into front-wheel drive.</ptxt>
+</step2>
+<step2>
+<ptxt>If fail-safe occurs during 4WD control, 4WD control is gradually stopped so that vehicle behavior does not change suddenly.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Safety Control Mode Function</ptxt>
+<step2>
+<ptxt>If excessive driving may damage the drive train, 4WD control is stopped, the vehicle is put into front-wheel drive, and the 4WD warning light blinks.</ptxt>
+<atten4>
+<ptxt>As an advance warning of 4WD control stopping, the 4WD warning light blinks slowly, and when 4WD control is stopped, the 4WD warning light blinks quickly.</ptxt>
+</atten4>
+<atten3>
+<ptxt>If the 4WD warning light blinks, reduce vehicle speed, stop the vehicle, and do not stop the engine until the 4WD warning light goes off.</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>When it is confirmed that the vehicle condition has stabilized, the 4WD control stop is automatically cancelled.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740238p SYSTEM "grph_ent/a4740238p.png" NDATA png>
+<!ENTITY c4320113p SYSTEM "grph_ent/c4320113p.png" NDATA png>
+<!ENTITY a4740239p SYSTEM "grph_ent/a4740239p.png" NDATA png>
+<!ENTITY a4740208c SYSTEM "grph_ent/a4740208c.png" NDATA png>
+<!ENTITY a4740237p SYSTEM "grph_ent/a4740237p.png" NDATA png>
+<!ENTITY a4740101p SYSTEM "grph_ent/a4740101p.png" NDATA png>
+
+<!ENTITY T030082Ab14 SYSTEM "t334030082ab14.xml">
+<!ENTITY T030082Ab14Ac55 SYSTEM "t334030082ab14ac55.xml">
+<!ENTITY T030082Ab14T108 SYSTEM "t334030082ab14t108.xml">
+<!ENTITY T030082Ab14A502 SYSTEM "t334030082ab14a502.xml">
+<!ENTITY T030082Ab14T110 SYSTEM "t334030082ab14t110.xml">
+
+<!ENTITY T070001A238 SYSTEM "t403070001a238.xml">
+<!ENTITY T030010A097 SYSTEM "t403030010a097.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T030082Ab14S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T030082Ab14" UPDATE = "ORIGINAL" LDUP = "1May2007"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Sequential Shiftmatic (w/ Paddle Shift) Outline</TITLE>
+<LIST1><ITEM><PTXT>The 6-speed sequential Shiftmatic with paddle shift is a mechanism in which selecting the S position with the shift lever changes from automatic shift mode to S mode, allowing driving in the shift range selected by shift operation of the shift lever or the paddle switches mounted on the steering wheel, and obtaining engine braking force according to every shift range.</PTXT></ITEM>
+<ITEM><PTXT>Operating the paddle shift during automatic shift mode in the D position allows a shift range to be selected temporarily.</PTXT></ITEM>
+<ITEM><PTXT>Operating the +/- of the gate type shift lever creates a manual-like shift feel.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740238p" WIDTH = "6.903in" HEIGHT = "4.444in" />
+</FIGURE>
+
+<MECA ID = "T030082Ab14Ac55" UPDATE = "ORIGINAL" LDUP = "15May2007"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Temporary S Mode</TITLE>
+<LIST1><ITEM><PTXT>Operating the paddle switch +/- during automatic shift mode in the D position allows a shift range to be selected temporarily.</PTXT></ITEM>
+<ITEM><PTXT>During control, the "D" display in the combination meter illuminates and the currently selected gear is displayed on the shift position indicator.</PTXT></ITEM>
+<ITEM><PTXT>When the paddle switch - (shift range down switch) is operated during automatic shift mode in the D position, the shift range changes to one whose upper limit is the current gear or one gear lower.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T030082Ab14Ac55I01" INDSW = "OFF">
+<TITLE>Temporary S Mode Cancel Conditions</TITLE>
+<LIST1><ITEM><PTXT>Control is cancelled under the following conditions.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the accelerator remains ON continuously for a certain period of time or longer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "2" VALIGN = "MIDDLE"><PTXT>Returns to automatic shift mode in the D position.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the paddle switch is held down continuously for a certain period of time or longer</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the vehicle stops</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When the shift lever is moved to the S position</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Changes to S mode in the S position.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T030082Ab14T108" UPDATE = "ORIGINAL" LDUP = "30Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Switching to S Mode</TITLE>
+<LIST1><ITEM><PTXT>Moving the shift lever to the S position enables shift range switching with the sequential Shiftmatic. In addition, at the same time as shifting to the S position, the 5 range or 4 range is entered according to vehicle speed. (During AI-SHIFT control, the highest range being controlled is displayed.)</PTXT></ITEM>
+<ITEM><PTXT>By operating either the shift lever +/- or the paddle switch +/-, a shift signal is sent to the transmission control computer, and the range is switched between the 6 to 1 ranges.</PTXT>
+<PTXT></PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c4320113p" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030082Ab14A502" UPDATE = "ORIGINAL" LDUP = "1May2007"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Sequential Shiftmatic Indicator Display</TITLE>
+<LIST1><ITEM><PTXT>A shift position indicator has been provided in the combination meter.</PTXT></ITEM>
+<ITEM><PTXT>The shift position indicator displays each position when the P, R, N or D position is selected.</PTXT></ITEM>
+<ITEM><PTXT>When the S position is selected, the shift position indicator illuminates the "S" indicator and displays the currently selected shift range.</PTXT></ITEM>
+<ITEM><PTXT>During temporary S mode control, the shift position indicator illuminates the "D" indicator and displays the currently selected shift range.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740239p" WIDTH = "6.917in" HEIGHT = "4.069in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030082Ab14T110" UPDATE = "ORIGINAL" LDUP = "30Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Available Gears in S Mode</TITLE>
+<LIST1><ITEM><PTXT>As shown in the table below, shifting is performed automatically according to speed and driving conditions within the selected shift range.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T030082Ab14T110I01" INDSW = "OFF">
+<TITLE>Shift Range Operation</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "5" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "19%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "17%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Shift Lever Position</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Shift Range Operation</PTXT>
+<PTXT>(+/-)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Shift Position</PTXT>
+<PTXT>Indicator Display</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Available A/T Gears</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>"S" Indicator</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>D</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Not Operated</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>D</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>6,5,4,3,2,1 (Automatic Shift)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>OFF</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "5" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>S</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "5" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Operable</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>6,5,4,3,2,1 (Automatic Shift)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" MOREROWS = "5" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>ON</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>5,4,3,2,1 (Automatic Shift)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>4,3,2,1 (Automatic Shift)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>3,2,1 (Automatic Shift)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>2,1 (Automatic Shift)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>1</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+</PARA>
+<BIND ID = "T030082Ab14B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T070001A238" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "Vehicle Outline: Design">
+<TITLE>Steering Wheel</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A leather-wrapped 3-spoke steering wheel with audio switches has been adopted on 2GR-FE engine models.</PTXT></ITEM>
+<ITEM><PTXT>A steering wheel with SRS airbag is adopted on all models out of consideration for safety.</PTXT></ITEM>
+<ITEM><PTXT>For detailed switch specifications, refer to the appendix at the end of the manual.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740208c" WIDTH = "6.903in" HEIGHT = "3.222in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T030010A097" UPDATE = "ORIGINAL" LDUP = "19Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Shift Control</TITLE>
+<LIST1><ITEM><PTXT>A shift control mechanism using a push-pull type control cable has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>A gate type shift lever has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>The shift lock release button has been located at the top of the shift lever assembly panel.</PTXT></ITEM></LIST1>
+<FIGURE>
+<TITLE>U660E Automatic Transaxle</TITLE>
+<GRAPHIC GRAPHICNAME = "a4740237p" WIDTH = "6.903in" HEIGHT = "4.736in" />
+</FIGURE>
+<INDICATE ID = "T030010A097I01" INDSW = "OFF">
+<TITLE>K112/K112F Automatic Transaxle</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740101p" WIDTH = "6.903in" HEIGHT = "4.875in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+</BIND>
+</SECTION>

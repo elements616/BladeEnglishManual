@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1002M_S001G" variety="S001G">
+<name>Pre-crash Safety</name>
+<ttl id="1002M_S001G_74WT8_T00FQ" variety="T00FQ">
+<name>Pre-crash System Cancel Switch Assembly</name>
+<para id="RM000000EK000CX" category="G" type-id="3001K" name-id="540K2-00" from="200708">
+<name>Component Inspection</name>
+<subpara id="RM000000EK000CX_01" type-id="01" category="01">
+<s-1 id="RM000000EK000CX_01_0001" proc-id="RM0550J___0000CW900000">
+<ptxt>Inspect Pre-crash System Cancel Switch Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<figure>
+<graphic graphicname="E071565" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="2.00in"/>
+<colspec colname="COL3" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF switch ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF switch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

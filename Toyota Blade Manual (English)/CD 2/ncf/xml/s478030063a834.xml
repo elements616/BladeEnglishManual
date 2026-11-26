@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740111p SYSTEM "grph_ent/a4740111p.png" NDATA png>
+<!ENTITY a4740112p SYSTEM "grph_ent/a4740112p.png" NDATA png>
+
+<!ENTITY T030063A834 SYSTEM "t478030063a834.xml">
+<!ENTITY T030063A834A266 SYSTEM "t478030063a834a266.xml">
+<!ENTITY T030063A834A311 SYSTEM "t478030063a834a311.xml">
+<!ENTITY T030063A834Aa79 SYSTEM "t478030063a834aa79.xml">
+<!ENTITY T030063A834A595 SYSTEM "t478030063a834a595.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T030063A834S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T030063A834" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Sport Sequential Shiftmatic</TITLE>
+<LIST1><ITEM><PTXT>With sport sequential Shiftmatic, selecting the M position (indicating manual shift), located beside the D position of the shift lever, changes from automatic shift mode to sport sequential Shiftmatic mode, enabling driving in the gear selected by shift lever operation and providing engine braking force according to each gear.</PTXT></ITEM>
+<ITEM><PTXT>A gate type shift lever has been adopted, and operating the shift up switch/shift down switch creates a manual-like shift feel.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740111p" WIDTH = "6.903in" HEIGHT = "3.000in" />
+</FIGURE>
+
+<MECA ID = "T030063A834A266" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Indicator &amp; Gear Display</TITLE>
+<LIST1><ITEM><PTXT>A gear position indicator is located in the shift display in the combination meter. The gear position indicator displays the selected gear when in the M position.</PTXT></ITEM>
+<ITEM><PTXT>When the M position is selected, "M" illuminates in the upper left of the shift display. In addition, when the P, R, N or D position is selected, P, R, N or D is displayed on the gear position indicator.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740112p" WIDTH = "6.903in" HEIGHT = "2.986in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A834A311" UPDATE = "ORIGINAL" LDUP = "10Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Gears Available in Sequential Shift Mode</TITLE>
+<LIST1><ITEM><PTXT>The gears available in sport sequential Shiftmatic mode are shown in the table below.</PTXT></ITEM>
+<ITEM><PTXT>If the vehicle stops while driving in sport sequential Shiftmatic mode, the transmission automatically downshifts to gear 1.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Shift Operation Mode</TITLE>
+<TGROUP COLS = "5" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "22%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "21%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Shift Position</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Sport Sequential Shiftmatic Mode (+/-)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Available Gears</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Sport Sequential Shiftmatic Indicator</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Gear Position Indicator</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" ALIGN = "CENTER"><PTXT>D</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Continuously Variable</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>D Displayed</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>M</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Possible</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>1,2,3,4,5,6,7</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE"><PTXT>Illuminated (M)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE"><PTXT>1 to 7 Displayed</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T030063A834Aa79" UPDATE = "ORIGINAL" LDUP = "6Dec2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Automatic Shifting Related to Sport Sequential Shiftmatic</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>The transmission automatically upshifts 1 gear to prevent the engine speed from becoming too high.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>The transmission automatically downshifts 1 gear to prevent the engine speed from becoming too low.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T030063A834A595" UPDATE = "ORIGINAL" LDUP = "2Jul2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Rejections (Restrictions) Related to Sport Sequential Shiftmatic</TITLE>
+<LIST1><ITEM><PTXT>If a system failure or malfunction occurs, or if it is determined that a shift operation request cannot be performed, sport sequential Shiftmatic operation is restricted. In this case, the driver is informed by a warning sound.</PTXT></ITEM>
+<ITEM><PTXT>In response to a driver's downshift request, if the vehicle speed when the downshift is performed would be above or below a certain speed, the gear change is restricted and the driver is informed by a warning sound.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Restricted Vehicle Speed During Downshifting (Reference)</TITLE>
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "33%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Downshift</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Lower Vehicle Speed Limit [km/h]<HINTREF REFID = "H478030063A834A59501"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Upper Vehicle Speed Limit [km/h]<HINTREF REFID = "H478030063A834A59501"/></PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>7→6</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>50</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>6→5</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>40</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>160</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>5→4</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>30</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>130</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>4→3</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>25</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>100</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>3→2</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>20</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>80</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>2→1</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>60</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478030063A834A59501"> The restricted vehicle speeds are reference values. The restricted vehicle speeds differ slightly between 2WD models and 4WD models.</PTXT></ITEM></LIST1></HINT></MECA>
+</PARA>
+</SECTION>

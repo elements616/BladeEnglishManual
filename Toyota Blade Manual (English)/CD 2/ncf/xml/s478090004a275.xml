@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740039c SYSTEM "grph_ent/a4740039c.png" NDATA png>
+<!ENTITY a4740054c SYSTEM "grph_ent/a4740054c.png" NDATA png>
+<!ENTITY a4740059c SYSTEM "grph_ent/a4740059c.png" NDATA png>
+<!ENTITY a4740040c SYSTEM "grph_ent/a4740040c.png" NDATA png>
+<!ENTITY a4740041c SYSTEM "grph_ent/a4740041c.png" NDATA png>
+<!ENTITY a4740058c SYSTEM "grph_ent/a4740058c.png" NDATA png>
+<!ENTITY a4740061c SYSTEM "grph_ent/a4740061c.png" NDATA png>
+<!ENTITY a4740042c SYSTEM "grph_ent/a4740042c.png" NDATA png>
+<!ENTITY a4740043c SYSTEM "grph_ent/a4740043c.png" NDATA png>
+<!ENTITY a4740049c SYSTEM "grph_ent/a4740049c.png" NDATA png>
+<!ENTITY a4740050c SYSTEM "grph_ent/a4740050c.png" NDATA png>
+<!ENTITY a4740051c SYSTEM "grph_ent/a4740051c.png" NDATA png>
+
+<!ENTITY T090004A275 SYSTEM "t478090004a275.xml">
+
+<!ENTITY T090004A347A198 SYSTEM "t478090004a347a198.xml">
+<!ENTITY T090004A347A123 SYSTEM "t478090004a347a123.xml">
+<!ENTITY T090004A347A124 SYSTEM "t478090004a347a124.xml">
+<!ENTITY T090004A347A125 SYSTEM "t478090004a347a125.xml">
+<!ENTITY T090004A347A126 SYSTEM "t478090004a347a126.xml">
+<!ENTITY T090004A276 SYSTEM "t478090004a276.xml">
+<!ENTITY T090004A277 SYSTEM "t478090004a277.xml">
+<!ENTITY T090004A278 SYSTEM "t478090004a278.xml">
+<!ENTITY T090004A279 SYSTEM "t478090004a279.xml">
+<!ENTITY T090004A280 SYSTEM "t478090004a280.xml">
+<!ENTITY T090004T198 SYSTEM "t478090004t198.xml">
+<!ENTITY T090010A316 SYSTEM "t478090010a316.xml">
+<!ENTITY T090004A347 SYSTEM "t478090004a347.xml">
+<!ENTITY T090002A348 SYSTEM "t478090002a348.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T090004A275S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T090004A275" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "Vehicle Outline: Safety">
+<TITLE>SRS Side Airbag &amp; SRS Curtain Shield Airbag Outline</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The system consists of the SRS side airbags, SRS curtain shield airbags, side airbag sensors, rear side airbag sensors, center airbag sensor (computer), etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740039c" WIDTH = "6.903in" HEIGHT = "4.708in" />
+</FIGURE>
+<INDICATE ID = "T090004A275I01" INDSW = "OFF">
+<TITLE>Main Components and Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "68%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>SRS Side Airbag</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Consists of an inflator and a bag. The inflator generates gas in response to the ignition signal from the center airbag sensor (computer), instantly inflating the bag and reducing and absorbing the impact on the occupant's chest.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>SRS Curtain Shield Airbag</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Consists of an inflator and a bag. The inflator generates gas in response to the ignition signal from the center airbag sensor (computer), instantly inflating the bag and reducing and absorbing the impact on the occupant's head.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Airbag Warning Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Located in the combination meter; illuminates to warn the driver when there is a system malfunction.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Side Airbag Sensor, Rear Side Airbag Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Detects the deceleration in a collision, performs ignition judgment and sends an ignition signal to the center airbag sensor (computer).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Center Airbag Sensor (Computer)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Performs ignition judgment based on the signals from the side airbag sensors and rear side airbag sensors, and sends ignition signals to the SRS side airbags and SRS curtain shield airbags. When there is a system malfunction, the system can be diagnosed by switching to diagnosis mode.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+</PARA>
+<BIND ID = "T090004A275B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T090004A276" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>SRS Side Airbag</TITLE>
+<LIST1><ITEM><PTXT>SRS side airbags are located in the driver and front passenger seatbacks.</PTXT></ITEM>
+<ITEM><PTXT>The SRS side airbags are a non-disassemblable type and consist of an inflator, bag, cover, etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740040c" WIDTH = "6.903in" HEIGHT = "4.500in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T090004A277" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>SRS Side Airbag Caution Label</TITLE>
+<LIST1><ITEM><PTXT>A service caution label describing handling precautions, etc. is affixed to the surface of the SRS side airbag cover.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740041c" WIDTH = "6.903in" HEIGHT = "4.750in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T090004A278" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>SRS Curtain Shield Airbag</TITLE>
+<LIST1><ITEM><PTXT>SRS curtain shield airbags are located from the driver and front passenger side front pillars to the rear C pillars.</PTXT></ITEM>
+<ITEM><PTXT>The SRS curtain shield airbags are a non-disassemblable type and consist of an inflator, a nylon bag, etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740058c" WIDTH = "5.917in" HEIGHT = "3.528in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T090004A279" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>SRS Curtain Shield Airbag Caution Label</TITLE>
+<LIST1><ITEM><PTXT>A service caution label describing handling precautions, etc. is affixed to the surface of the SRS curtain shield airbag cover.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740061c" WIDTH = "6.903in" HEIGHT = "3.556in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T090004A280" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Side Airbag Sensor</TITLE>
+<LIST1><ITEM><PTXT>The side airbag sensors are mounted at the bottom of the B pillars.</PTXT></ITEM>
+<ITEM><PTXT>The side airbag sensor at the bottom of the B pillar consists of a semiconductor type G sensor, a communication circuit, etc.; it detects an impact from the side and sends an ignition signal to the center airbag sensor (computer), which determines operation of the SRS side airbag.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740042c" WIDTH = "6.903in" HEIGHT = "4.347in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T090004T198" UPDATE = "ORIGINAL" LDUP = "2Aug2006"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Rear Side Airbag Sensor</TITLE>
+<LIST1><ITEM><PTXT>The rear side airbag sensors are mounted at the bottom of the C pillars.</PTXT></ITEM>
+<ITEM><PTXT>The rear side airbag sensor at the bottom of the C pillar consists of a semiconductor type G sensor, a communication circuit, etc.; it detects an impact from the side and sends an ignition signal to the center airbag sensor (computer), which determines operation of the SRS curtain shield airbag.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740043c" WIDTH = "6.903in" HEIGHT = "4.347in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T090010A316" UPDATE = "ORIGINAL" LDUP = "26Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>SRS Airbag Warning Light</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The SRS airbag warning light is located in the combination meter and illuminates or blinks to warn the driver when a system malfunction occurs.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740049c" WIDTH = "6.903in" HEIGHT = "3.042in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T090004A347" UPDATE = "ORIGINAL" LDUP = "4Oct2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Center Airbag Sensor (Computer)</TITLE>
+<LIST1><ITEM><PTXT>The center airbag sensor (computer) consists of a G sensor, an ignition determination circuit, a backup power source, etc.</PTXT></ITEM>
+<ITEM><PTXT>Based on the signals from the front airbag sensors and G sensor, it determines ignition of the driver and front passenger SRS airbags, driver SRS knee airbag and pretensioners, and based on the signals from the side airbag sensors and rear side airbag sensors, it determines ignition of the SRS side airbags and SRS curtain shield airbags. In addition, it has a diagnosis function and performs self-diagnosis when a system malfunction occurs.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740050c" WIDTH = "6.903in" HEIGHT = "7.292in" />
+</FIGURE>
+<INDICATE ID = "T090004A347I01" INDSW = "OFF">
+<TITLE>Components List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "30%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "69%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>G Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When deceleration is applied by an impact, it outputs a signal that is linear with respect to the deceleration.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Backup Power Source</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Consists of a backup capacitor that supplies power to the system in a collision or if the power supply system fails, and a booster circuit that raises the voltage.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Computer (Ignition Determination Circuit)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Performs specified calculations based on the signal from the front airbag sensors, and sends an ignition signal when the calculated value exceeds a preset value. In addition, the malfunction diagnosis circuit diagnoses whether there is a malfunction in the entire system and informs the driver of any system malfunction, and the diagnosis function diagnoses the location of the system malfunction.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T090004A347A198" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Deployment Determination</TITLE>
+<LIST1><ITEM><PTXT>The SRS airbags, driver SRS knee airbag and seat belts with pretensioners are ignited by the impact of a frontal collision. The determination is made based on the front airbag sensor signals and the signals from the G sensor and electronic safing sensor in the center airbag sensor (computer).</PTXT></ITEM>
+<ITEM><PTXT>The SRS side airbag is ignited when both the side airbag sensor signal from a side impact and the electronic safing sensor in the center airbag sensor (computer) turn ON.</PTXT></ITEM>
+<ITEM><PTXT>The SRS curtain shield airbag is ignited by the ignition signal of the SRS side airbag that satisfies the above conditions, or when both the rear side airbag sensor signal and the electronic safing sensor in the center airbag sensor (computer) turn ON.</PTXT></ITEM>
+<ITEM><PTXT>To keep a record of deployment, the center airbag sensor (computer) keeps the SRS airbag warning light illuminated even after the primary check. This SRS airbag warning light cannot be cleared.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740054c" WIDTH = "6.903in" HEIGHT = "5.056in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T090004A347A123" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Operation of Diagnosis Circuit</TITLE>
+<LIST1><ITEM><PTXT>The operation of the diagnosis circuit is indicated by the SRS airbag warning light in the meter. The diagnosis circuit operates in 2 periods: the primary check and the constant check.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740059c" WIDTH = "6.903in" HEIGHT = "1.875in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T090004A347A124" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Primary Check</TITLE>
+<LIST1><ITEM><PTXT>When the engine switch is turned to IG ON, the SRS airbag warning light illuminates for approximately 6 seconds and the primary check is performed. During this period, ignition is prohibited and the operation of the center airbag sensor is diagnosed. If a malfunction is detected during this primary check, the SRS airbag warning light remains illuminated and does not go off even after 6 seconds have elapsed.</PTXT></ITEM>
+<ITEM><PTXT>For a center airbag sensor that has deployed the airbags, the SRS airbag warning light remains illuminated even after the primary check, regardless of whether there is a malfunction.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T090004A347A125" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Constant Check</TITLE>
+<LIST1><ITEM><PTXT>After the primary check is completed and the SRS airbag warning light goes off, the system enters the ignition-enabled state, and the diagnosis circuit constantly checks the system for malfunctions. If a malfunction is detected during this constant check, the SRS airbag warning light illuminates. (The warning indication for low power supply voltage goes off after the power supply voltage returns to normal.)</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T090004A347A126" UPDATE = "ORIGINAL" LDUP = "16Sep2003" INDSW = "OFF" MECATYPE = "GENERAL">
+<TITLE>Diagnosis Function</TITLE>
+<LIST1><ITEM><PTXT>By switching to the diagnosis mode, the diagnosis result for the malfunction location can be displayed by the number of times the indicator light blinks. In addition, a new diagnosis function has been adopted, and the diagnostic trouble code for the malfunction location can be read by connecting a diagnostic tool to DLC3. For details on the diagnosis mode, refer to the Repair Manual.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+
+<PARA INFOID = "T090002A348" UPDATE = "ORIGINAL" LDUP = "4Oct2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Center Airbag Sensor Caution Label</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A service caution label describing handling precautions, etc. is affixed to the top of the center airbag sensor (computer).</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740051c" WIDTH = "6.903in" HEIGHT = "4.167in" />
+</FIGURE>
+</PARA>
+</BIND>
+</SECTION>

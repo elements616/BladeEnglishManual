@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T130011K255K587" UPDATE = "ORIGINAL" LDUP = "29Mar2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Window Lock Operation</TITLE>
+<LIST1><ITEM><PTXT>When the window lock switch is turned ON with the IG ON or during key-off operation, a window lock switch ON signal is sent from the master switch to the main body ECU and each seat power window motor (with built-in ECU) via LIN communication.</PTXT></ITEM>
+<ITEM><PTXT>While each seat power window motor (with built-in ECU) is receiving the "window lock" signal, power window control of its own door glass is stopped.</PTXT></ITEM></LIST1></MECA>

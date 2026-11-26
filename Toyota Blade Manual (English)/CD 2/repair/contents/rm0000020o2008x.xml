@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10024_S000T" variety="S000T">
+<name>Starting</name>
+<ttl id="10024_S000T_744HN_T007Z" variety="T007Z">
+<name>Smart Entry &amp; Start System (Start System)</name>
+<para id="RM0000020O2008X" category="C" type-id="801RB" name-id="161XE-00" from="200612">
+<dtccode>B2283</dtccode>
+<dtcname>Vehicle Speed Sensor Malfunction</dtcname>
+<subpara id="RM0000020O2008X_01" type-id="31" category="03" proc-id="RM0550J___00004C900000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>This DTC is output when there is a malfunction between the vehicle speed sensor and the combination meter assembly (meter ECU) or between the instrument panel J/B assembly (main body ECU) and the combination meter assembly (meter ECU), and the vehicle speed does not increase even though the engine speed is high while driving.</ptxt>
+</item>
+</list1>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When using the TaSCAN with the IG OFF, repeatedly turn any door courtesy light switch ON and OFF (at intervals of 1.5 seconds or less) until communication between the TaSCAN and the vehicle starts.</ptxt>
+</item>
+<item>
+<ptxt>The Smart Entry &amp; Start System (start system) has functions that use multiplex communication. First, follow "How to Proceed with Troubleshooting" and confirm that there is no malfunction in the communication system before proceeding with troubleshooting.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>When the instrument panel J/B assembly (main body ECU) is replaced with a new ECU and the battery negative terminal is connected, it enters the IG ON state. Also, when the battery is removed and reinstalled, the power source returns to the state it was in when the battery was removed.</ptxt>
+</atten4>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.01in"/>
+<colspec colnum="02" colname="C02" colwidth="2.52in"/>
+<colspec colnum="03" colname="C03" colwidth="3.55in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>B2283</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle speed signal malfunction between vehicle speed sensor and instrument panel J/B assembly (main body ECU)</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</ptxt>
+</item>
+<item>
+<ptxt>Meter &amp; Gauge System</ptxt>
+</item>
+<item>
+<ptxt>STARTER Relay</ptxt>
+</item>
+<item>
+<ptxt>Neutral Start Switch Assembly</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Instrument Panel J/B Assembly (Main Body ECU)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000020O2008X_02" type-id="32" category="03" proc-id="RM0550J___00004CA00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A161598J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000020O2008X_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM0000020O2008X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000020O2008X_04_0001" proc-id="RM0550J___00004CB00000">
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Clear the DTCs.</ptxt>
+</test1>
+<test1>
+<ptxt>After 320 seconds or more have elapsed since turning the IG ON, check the DTCs again and check whether DTCs B2282 and B2283 are output.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.07in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Only B2283 is output again</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2282 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020O2008X_04_0002" fin="false">A</down>
+<right ref="RM0000020O2008X_04_0020" fin="true">B</right>
+<right ref="RM0000020O2008X_04_0006" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020O2008X_04_0002" proc-id="RM0550J___00004CC00000">
+<scantool type="1"/>
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTC output status of the skid control computer.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No DTC is output</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If NG, refer to the ABS with EBD &amp; TRC &amp; VSC &amp; BA System.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020O2008X_04_0011" fin="false">OK</down>
+<right ref="RM0000020O2008X_04_0025" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020O2008X_04_0011" proc-id="RM0550J___00004CD00000">
+<testtitle>Inspect Combination Meter Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that the speedometer operates normally.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Operates normally</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020O2008X_04_0013" fin="false">OK</down>
+<right ref="RM0000020O2008X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020O2008X_04_0013" proc-id="RM0550J___00004CE00000">
+<testtitle>Read TaSCAN Data</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>ECU Data Monitor</ptxt>
+<test2>
+<ptxt>Using SST (TaSCAN), perform data monitor of the instrument panel J/B assembly (main body ECU).</ptxt>
+</test2>
+</test1>
+<spec>
+<title>Specified Condition</title>
+<table>
+<title>[System selection screen: Body → Main Body → ECU Data Monitor]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Neutral SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P, N position / Other than P, N position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000020O2008X_04_0014" fin="true">OK</down>
+<right ref="RM0000020O2008X_04_0017" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020O2008X_04_0017" proc-id="RM0550J___00004CF00000">
+<testtitle>Inspect STARTER Relay</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<figure>
+<graphic graphicname="A159799" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test2>
+<ptxt>Remove the STARTER relay.</ptxt>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), inspect the resistance between each pair of relay terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COLSPEC0" colwidth="1.54in"/>
+<colspec colname="COL2" colwidth="1.53in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>95 to 135Ω(20°C)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), check the resistance between the terminals when battery voltage is applied between terminals 1 and 2.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.04in"/>
+<colspec colname="COL2" colwidth="1.54in"/>
+<colspec colname="COL3" colwidth="1.55in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When battery voltage is applied</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020O2008X_04_0018" fin="false">OK</down>
+<right ref="RM0000020O2008X_04_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020O2008X_04_0018" proc-id="RM0550J___00004CG00000">
+<testtitle>Inspect Neutral Start Switch Assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<figure>
+<graphic graphicname="A125187J08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test2>
+<ptxt>Disconnect the neutral start switch assembly connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), inspect the resistance between the connector terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COLSPEC0" colwidth="1.42in"/>
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL3" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4(B) - 9(L)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P, N position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4(B) - 9(L)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Other than P, N position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020O2008X_04_0019" fin="false">OK</down>
+<right ref="RM0000020O2008X_04_0023" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020O2008X_04_0019" proc-id="RM0550J___00004CH00000">
+<testtitle>Inspect Wire Harness (Instrument Panel J/B Assembly (Main Body ECU) - Neutral Start Switch Assembly)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<figure>
+<graphic graphicname="A161608J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Disconnect connector T of the instrument panel J/B assembly (main body ECU).</ptxt>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), inspect the resistance between the terminals of the vehicle side wire harness connector.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.37in"/>
+<colspec colname="COLSPEC1" colwidth="0.76in"/>
+<colspec colname="COL2" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Main Body ECU - Switch)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T3(STR) - 4(B)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), inspect the resistance between the terminal of the vehicle side wire harness connector and body ground.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.37in"/>
+<colspec colname="COLSPEC2" colwidth="0.73in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Main Body ECU or Switch - Body Ground)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T3 (STR) or 4 (B) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020O2008X_04_0024" fin="false">OK</down>
+<right ref="RM0000020O2008X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020O2008X_04_0024" proc-id="RM0550J___00007IA00000">
+<testtitle>Inspect Wire Harness and Connector (Neutral Start Switch Assembly - STARTER Relay)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<figure>
+<graphic graphicname="A162252J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), inspect the resistance between the terminals of the vehicle side wire harness connector.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="0.72in"/>
+<colspec colname="COL3" colwidth="1.05in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Switch - Relay)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>9 (L) - 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), inspect the resistance between the terminals of the vehicle side wire harness connector.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="0.70in"/>
+<colspec colname="COL3" colwidth="1.07in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Relay - Body Ground)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>9 (L) or 1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10K Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COLSPEC0" colwidth="2.36in"/>
+<colspec colname="COLSPEC1" colwidth="0.73in"/>
+<colspec colname="COLSPEC2" colwidth="1.04in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Relay - Body Ground)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020O2008X_04_0014" fin="true">OK</down>
+<right ref="RM0000020O2008X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020O2008X_04_0014">
+<testtitle>Replace instrument panel J/B assembly (main body ECU)</testtitle>
+</testgrp>
+<testgrp id="RM0000020O2008X_04_0020">
+<testtitle>Go to the flowchart for each DTC<xref label="Seep01" href="X39400000IE00RC"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000020O2008X_04_0006">
+<testtitle>Perform Simulation Method<xref label="Seep01" href="RM0000005D701ZX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000020O2008X_04_0005">
+<testtitle>Go to Meter &amp; Gauge System<xref label="Seep01" href="RM000001L5T00JX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000020O2008X_04_0007">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000020O2008X_04_0022">
+<testtitle>Replace STARTER Relay</testtitle>
+</testgrp>
+<testgrp id="RM0000020O2008X_04_0023">
+<testtitle>Replace Neutral Start Switch Assembly</testtitle>
+</testgrp>
+<testgrp id="RM0000020O2008X_04_0025">
+<testtitle>Go to the flowchart for each DTC<xref label="Seep01" href="RM000000OUR00SX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

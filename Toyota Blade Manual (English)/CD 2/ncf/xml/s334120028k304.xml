@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740081e SYSTEM "grph_ent/a4740081e.png" NDATA png>
+<!ENTITY k3960082e SYSTEM "grph_ent/k3960082e.png" NDATA png>
+<!ENTITY k3960084e SYSTEM "grph_ent/k3960084e.png" NDATA png>
+<!ENTITY k3960085e SYSTEM "grph_ent/k3960085e.png" NDATA png>
+<!ENTITY a4480009e SYSTEM "grph_ent/a4480009e.png" NDATA png>
+<!ENTITY a4740110e SYSTEM "grph_ent/a4740110e.png" NDATA png>
+
+<!ENTITY T120028K304 SYSTEM "t334120028k304.xml">
+<!ENTITY T120028K304K157 SYSTEM "t334120028k304k157.xml">
+<!ENTITY T120028K304K071 SYSTEM "t334120028k304k071.xml">
+<!ENTITY T120028K304K368 SYSTEM "t334120028k304k368.xml">
+
+<!ENTITY T120028K305 SYSTEM "t478120028k305.xml">
+<!ENTITY T120028K067 SYSTEM "t478120028k067.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120028K304S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120028K304" UPDATE = "ORIGINAL" LDUP = "31Aug2005"     INFOTYPE = "SYSTEM" INDSW = "ON" UNPRINT = "ON">
+<TITLE>Front Wiper System</TITLE>
+<LIST1><ITEM><PTXT>Intermittent wipers with a mist function, washer-linked operation and time adjustment are standard on all models.</PTXT></ITEM>
+<ITEM><PTXT>By placing the wiper motor below the link, a space to absorb impacts from above the louver has been secured. In addition, the wiper link water protection cap has been made of resin, and the holder section has a shape that breaks easily. This reduces the impact on pedestrians in a collision, improving safety.</PTXT></ITEM>
+<ITEM><PTXT>A U-hook type has been adopted for fastening the wiper arm and wiper blade, providing good appearance and excellent workability when replacing the blades.</PTXT></ITEM>
+<ITEM><PTXT>The wiper motor and link mounting structure is a modular type integrated with the frame, which reduces wiper operating noise and minimizes variation in the wiper wiping angle. A ferrite magnet type has been adopted for the wiper motor.</PTXT></ITEM>
+<ITEM><PTXT>The wiper control relay is built into the wiper control switch to simplify the wire harness.</PTXT></ITEM>
+<ITEM><PTXT>Winter blades are available as a dealer-installed option for cold area specification models.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740081e" WIDTH = "6.903in" HEIGHT = "4.736in" />
+</FIGURE>
+
+<MECA ID = "T120028K304K157" UPDATE = "ORIGINAL" LDUP = "28Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF" UNPRINT = "ON">
+<TITLE>Time Adjustable Intermittent Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the wiper control switch is moved to the INT position and the intermittent time adjustment knob is adjusted, intermittent operation of 1 time(s) every approximately 1.6 to 10.7 seconds is performed.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k3960082e" WIDTH = "6.958in" HEIGHT = "2.375in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120028K304K071" UPDATE = "ORIGINAL" LDUP = "28Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF" UNPRINT = "ON">
+<TITLE>Washer-linked Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the washer switch is ON for approximately 0.3 seconds or more, the wipers operate at LO almost at the same time as the washer fluid sprays; when it is ON for approximately 1.5 seconds or more, LO operation continues for approximately 2.2 seconds after the washer switch is turned OFF, and then stops.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k3960084e" WIDTH = "7.125in" HEIGHT = "2.542in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120028K304K368" UPDATE = "ORIGINAL" LDUP = "28Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF" UNPRINT = "ON">
+<TITLE>Front Wiper Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Time Adjustable Intermittent Operation</TITLE>
+<ITEM><PTXT>When the wiper control switch is moved to the INT position, current flows from the fully charged capacitor C1 through wiper control switch terminal INT1 → wiper control switch terminal INT2 → Tr1, and Tr1 turns ON.</PTXT></ITEM>
+<ITEM><PTXT>When Tr1 turns ON, current flows through wiper control switch terminal +S → wiper control switch terminal +1 → wiper motor → ground, and the motor rotates.</PTXT></ITEM>
+<ITEM><PTXT>At the same time as the motor rotates, capacitor C1 discharges through wiper control switch terminal INT1 → wiper control switch terminal INT2; when discharge is complete, Tr1 turns OFF, so the relay contact turns OFF and the wiper motor stops.</PTXT></ITEM>
+<ITEM><PTXT>When the relay contact turns OFF, capacitor C1 starts charging again, and Tr1 stays OFF until charging is complete; this is the intermittent stop time.</PTXT></ITEM>
+<ITEM><PTXT>When charging of capacitor C1 is complete, Tr1 turns ON and the relay contact turns ON, so the wiper motor rotates again.</PTXT></ITEM>
+<ITEM><PTXT>The repetition of the above discharging and charging is the intermittent operation.</PTXT></ITEM>
+<ITEM><PTXT>In time adjustable intermittent operation, adjusting the knob (variable resistor) changes the amount of current flowing from +IG to capacitor C1, changing the charging time of capacitor C1 from a minimum of approximately 1.6 seconds to a maximum of approximately 10.7 seconds. This changes the relay contact OFF time (intermittent operation time) during intermittent operation.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Washer-linked operation</TITLE>
+<ITEM><PTXT>When the washer switch is turned ON, current flows through the +B power supply → washer motor → washer switch terminal W → washer switch terminal EW → ground, so the washer fluid sprays.</PTXT></ITEM>
+<ITEM><PTXT>At the same time as the washer fluid sprays, current flows to Tr2, so Tr2 turns ON. When Tr2 turns ON, Tr1 also turns ON, current flows through the relay coil and the relay contact turns ON.</PTXT></ITEM>
+<ITEM><PTXT>When the relay contact turns ON, current flows through wiper control switch terminal +S → wiper control switch terminal +1 → wiper motor → ground, and the wiper motor rotates.</PTXT></ITEM>
+<ITEM><PTXT>When the motor rotates, capacitor C2 has completed charging, so capacitor C2 discharges for approximately 2.2 seconds even after the washer switch is turned OFF.</PTXT></ITEM>
+<ITEM><PTXT>Since the capacitor discharges for approximately 2.2 seconds, Tr1 also stays ON for approximately 2.2 seconds, so the wiper motor continues to rotate; when capacitor C2 completes discharging, the wiper motor stops.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k3960085e" WIDTH = "6.903in" HEIGHT = "4.528in" />
+</FIGURE>
+</MECA>
+</PARA>
+<BIND ID = "T120028K304B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T120028K305" UPDATE = "ORIGINAL" LDUP = "11Oct2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Front Wiper Blade</TITLE>
+<LIST1><ITEM><PTXT>A fin-shaped resin cover has been provided over the entire blade, giving a sharp, solid appearance.</PTXT></ITEM>
+<ITEM><PTXT>By using a cross-sectional shape in which there is no metal-to-metal contact, the wiper blade produces less impact noise when it reverses.</PTXT></ITEM>
+<ITEM><PTXT>The blade has been made smaller by simplifying its construction, and the resin cover has a fin shape, reducing wind noise and improving aerodynamic performance.</PTXT></ITEM>
+<ITEM><PTXT>The front wiper blade length is 650mm on the driver side and 400mm on the front passenger side, providing a large wiping area to ensure excellent forward visibility.</PTXT></ITEM>
+<ITEM><PTXT>The graphite-coated rubber can be replaced separately for excellent serviceability.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4480009e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T120028K067" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Washer</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A 2.5L washer tank has been adopted and installed under the right front fender apron.</PTXT></ITEM>
+<ITEM><PTXT>A diffusion type injection method has been adopted for the front washer nozzles, widening the area on the glass where the washer fluid lands to improve cleaning performance.</PTXT></ITEM>
+<ITEM><PTXT>The diffusion type washer nozzle vibrates the flow of washer fluid as it passes through and sprays the washer fluid in a fan shape, so that it is sprayed over a wide area of the front wiper wiping range. In addition, by reducing the amount of fluid in the center of the spray range, care has been taken not to obstruct the driver's view when the washer is used while driving.</PTXT></ITEM>
+<ITEM><PTXT>Flat spray type rear washer nozzles have been adopted on all models; by spraying the washer fluid in a fan shape, the area on the glass where it lands is widened to improve wiping performance.</PTXT></ITEM></LIST1>
+<HINT>
+<PTXT>Due to its structure, the landing point of the diffusion type washer nozzle cannot be adjusted. Never attempt to adjust the landing point of the washer fluid, as this may damage the front washer nozzle. Adjust the landing point by replacing the nozzle with one having a different spray angle. (For details, refer to the Repair Manual.)</PTXT></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740110e" WIDTH = "6.903in" HEIGHT = "6.306in" />
+</FIGURE>
+</PARA>
+</BIND>
+</SECTION>

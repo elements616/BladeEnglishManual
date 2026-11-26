@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1001Y_S000S" variety="S000S">
+<name>CVT</name>
+<ttl id="1001Y_S000S_744HD_T007Y" variety="T007Y">
+<name>CVT System [Super CVT-i] (K112/K112F)</name>
+<para id="RM000002EZB00ZX" category="C" type-id="800YB" name-id="322KV-01" from="200912">
+<dtccode>P0841/C8</dtccode>
+<dtcname>Belt Clamping Pressure Sensor Circuit (Function Check)</dtcname>
+<dtccode>P2829/77</dtccode>
+<dtcname>SLS Solenoid Circuit (Function Malfunction)</dtcname>
+<subpara id="RM000002EZB00ZX_01" type-id="33" category="03" proc-id="RM0550J___000048100001">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>The engine control computer performs learning control of the belt clamping force based on the belt clamping pressure signal detected by the oil pressure sensor.</ptxt>
+<ptxt>P0841/C8 and P2829/77 are function diagnoses detected when the hydraulic pressure sensor output value is high even though the hydraulic pressure command value is low.</ptxt>
+<ptxt>If DTCs for other belt clamping pressure sensor circuits are output at the same time, it is necessary to troubleshoot starting from the DTCs other than P0841/C8 and P2829/77.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0841/C8</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>When the hydraulic pressure command value is 0.5MPa or less</ptxt>
+</item>
+<item>
+<ptxt>Oil pressure sensor output value is 3.0MPa or more</ptxt>
+</item>
+<item>
+<ptxt>Detected continuously for 3 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry morerows="2" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Continuously Variable Transaxle Assembly</ptxt>
+</item>
+<item>
+<ptxt>Oil Pressure Sensor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>P2829/77</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>When the hydraulic pressure command value is 0.5MPa or less</ptxt>
+</item>
+<item>
+<ptxt>Oil pressure sensor output value is 3.0MPa or more</ptxt>
+</item>
+<item>
+<ptxt>Detected continuously for 3 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>While driving in D position at 8km/h or less</ptxt>
+</item>
+<item>
+<ptxt>The ratio of primary pulley speed (NIN) to secondary pulley speed (NOUT) exceeds the specified value</ptxt>
+</item>
+<item>
+<ptxt>0.2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000002EZB00ZX_05" type-id="32" category="03" proc-id="RM0550J___0000HSY00001">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C167838J10" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000002EZB00ZX_06" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000002EZB00ZX_07" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000002EZB00ZX_07_0027" proc-id="RM0550J___0000HSZ00001">
+<scantool type="1"/>
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and read the DTCs following the SST (TaSCAN) screen display.</ptxt>
+</test1>
+<spec>
+<title>Detection Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.30in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0841/C8 and P2829/77 are output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Codes other than P0841/C8 and P2829/77 are also output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000002EZB00ZX_07_0028" fin="false">A</down>
+<right ref="RM000002EZB00ZX_07_0040" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0028" proc-id="RM0550J___0000HT000001">
+<testtitle>Inspect Hydraulic Pressure (Belt Clamping Pressure)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Be sure to perform this after inspecting and adjusting the engine.</ptxt>
+</item>
+<item>
+<ptxt>Perform with the CVT at normal operating temperature (50-100°C).</ptxt>
+</item>
+<item>
+<ptxt>Perform the test with the A/C OFF.</ptxt>
+</item>
+<item>
+<ptxt>Do not continuously run the test for 5 seconds or more.</ptxt>
+</item>
+<item>
+<ptxt>Perform the test in a place with a high μ (coefficient of friction), such as on asphalt, so that the tires do not spin.</ptxt>
+</item>
+</list1>
+</atten3>
+<test1>
+<ptxt>Apply the parking brake and chock the wheels.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3 and turn the power ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following SST (TaSCAN), select [Active Test] -&gt; [TC Terminal ON], and display [ECU Data Monitor] -&gt; [AT Hydraulic Pressure] and [Engine Speed].</ptxt>
+</test1>
+<test1>
+<ptxt>Perform the Active Test (TC terminal ON condition), depress the brake pedal firmly with the left foot, and inspect the hydraulic pressure at idle speed (N position) and at stall speed (D position).</ptxt>
+<spec>
+<title>Standard</title>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Powertrain → TCCS → ECU Data Monitor]</title>
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="2.20in"/>
+<colspec colname="COL3" colwidth="2.19in"/>
+<colspec colname="COLSPEC0" colwidth="1.29in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Item Description</ptxt>
+<ptxt>Display Range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>A/T Hydraulic Pressure</ptxt>
+<ptxt>[THO]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates CVT hydraulic pressure</ptxt>
+<ptxt>Display range: -64 to 63.998MPa</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>N position</ptxt>
+<ptxt>At idle</ptxt>
+<ptxt>0.2 to 0.8MPa</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Indicates CVT hydraulic pressure</ptxt>
+<ptxt>Display range: -64 to 63.998MPa</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>D Position</ptxt>
+<ptxt>At stall speed</ptxt>
+<ptxt>4.44 to 5.07MPa</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>N position at idle: 600 to 700r/min</ptxt>
+</item>
+<item>
+<ptxt>D position at stall, engine speed: 2450 +/- 150r/min</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+<spec>
+<title>Inspection Result</title>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL2" colwidth="2.07in"/>
+<colspec colname="COL3" colwidth="3.19in"/>
+<colspec colname="COL4" colwidth="1.82in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>AT hydraulic pressure value</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Inspection Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AT hydraulic pressure (belt clamping pressure) is high</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AT hydraulic pressure (belt clamping pressure) is within standard range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000002EZB00ZX_07_0029" fin="false">A</down>
+<right ref="RM000002EZB00ZX_07_0041" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0029" proc-id="RM0550J___0000HT100001">
+<testtitle>Replace Oil Pressure Sensor</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the oil pressure sensor replacement procedure, refer to <xref label="Seep01" href="RM0000020TV009X"/>.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000002EZB00ZX_07_0030" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0030" proc-id="RM0550J___0000HT200001">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and clear the DTCs following the SST (TaSCAN) screen display.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002EZB00ZX_07_0031" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0031" proc-id="RM0550J___0000HT300001">
+<scantool type="1"/>
+<testtitle>TaSCAN (A/T / CVT Learned Value Initialization, G Sensor 0-point Learning and CVT Hydraulic Pressure Learning)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Initializing the learned values clears both the G sensor 0 point learning and CVT hydraulic pressure learning values, so when replacing the parts in the table below, be sure to perform both G sensor 0 point learning and CVT hydraulic pressure learning after performing AT/CVT learned value initialization.</ptxt>
+<table>
+<tgroup cols="1">
+<colspec colname="COLSPEC0" colwidth="4.13in"/>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>Replacement Parts</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Continuously Variable Transaxle</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>Oil Pressure Sensor</ptxt>
+</item>
+<item>
+<ptxt>Yaw Rate Sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+<item>
+<ptxt>After performing AT/CVT learned value initialization, be sure to perform G sensor 0-point learning first, and then CVT hydraulic pressure learning.</ptxt>
+</item>
+<item>
+<ptxt>Be sure to place the vehicle on a level surface and perform 0 point learning.</ptxt>
+</item>
+<item>
+<ptxt>Do not subject the vehicle to vibration while 0 point learning is in progress.</ptxt>
+</item>
+</list1>
+</atten3>
+<test1>
+<ptxt>Using SST (TaSCAN), perform A/T/CVT learned value initialization, G sensor 0 point learning and CVT hydraulic pressure learning.</ptxt>
+</test1>
+<atten4>
+<ptxt>For the procedures for A/T/CVT learned value initialization, G sensor 0-point learning and CVT hydraulic pressure learning, refer to <xref label="Seep01" href="RM0000021F400AX"/>.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000002EZB00ZX_07_0032" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0032" proc-id="RM0550J___0000HT400001">
+<scantool type="1"/>
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and read the DTCs following the SST (TaSCAN) screen display.</ptxt>
+</test1>
+<spec>
+<title>Detection Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.30in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Detection Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0841/C8 and P2829/77 are output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000002EZB00ZX_07_0033" fin="false">A</down>
+<right ref="RM000002EZB00ZX_07_0039" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0033" proc-id="RM0550J___0000HT500001">
+<testtitle>Replace Engine Control Computer</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the engine control computer replacement procedure, refer to <xref label="Seep01" href="RM0000020V0005X"/>.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000002EZB00ZX_07_0034" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0034" proc-id="RM0550J___0000HT600001">
+<scantool type="1"/>
+<testtitle>TaSCAN (A/T / CVT Learned Value Initialization, G Sensor 0-point Learning and CVT Hydraulic Pressure Learning)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Initializing the learned values clears both the G sensor 0 point learning and CVT hydraulic pressure learning values, so when replacing the parts in the table below, be sure to perform both G sensor 0 point learning and CVT hydraulic pressure learning after performing AT/CVT learned value initialization.</ptxt>
+<table>
+<tgroup cols="1">
+<colspec colname="COLSPEC0" colwidth="4.13in"/>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>Replacement Parts</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Continuously Variable Transaxle</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>Oil Pressure Sensor</ptxt>
+</item>
+<item>
+<ptxt>Yaw Rate Sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+<item>
+<ptxt>After performing AT/CVT learned value initialization, be sure to perform G sensor 0-point learning first, and then CVT hydraulic pressure learning.</ptxt>
+</item>
+<item>
+<ptxt>Be sure to place the vehicle on a level surface and perform 0 point learning.</ptxt>
+</item>
+<item>
+<ptxt>Do not subject the vehicle to vibration while 0 point learning is in progress.</ptxt>
+</item>
+</list1>
+</atten3>
+<test1>
+<ptxt>Using SST (TaSCAN), perform A/T/CVT learned value initialization, G sensor 0 point learning and CVT hydraulic pressure learning.</ptxt>
+</test1>
+<atten4>
+<ptxt>For the procedures for A/T/CVT learned value initialization, G sensor 0-point learning and CVT hydraulic pressure learning, refer to <xref label="Seep01" href="RM0000021F400AX"/>.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000002EZB00ZX_07_0035" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0035" proc-id="RM0550J___0000HT700001">
+<scantool type="1"/>
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and read the DTCs following the SST (TaSCAN) screen display.</ptxt>
+</test1>
+<spec>
+<title>Detection Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.30in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Detection Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0841/C8 and P2829/77 are output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000002EZB00ZX_07_0036" fin="false">A</down>
+<right ref="RM000002EZB00ZX_07_0042" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0036" proc-id="RM0550J___0000HT800001">
+<testtitle>Replace Continuously Variable Transaxle</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the continuously variable transaxle replacement procedure, refer to <xref label="Seep01" href="RM0000020TJ00AX"/>.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000002EZB00ZX_07_0037" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0037" proc-id="RM0550J___0000HT900001">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and clear the DTCs following the SST (TaSCAN) screen display.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002EZB00ZX_07_0038" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0038" proc-id="RM0550J___0000HTA00001">
+<scantool type="1"/>
+<testtitle>TaSCAN (A/T / CVT Learned Value Initialization, G Sensor 0-point Learning and CVT Hydraulic Pressure Learning)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Initializing the learned values clears both the G sensor 0 point learning and CVT hydraulic pressure learning values, so when replacing the parts in the table below, be sure to perform both G sensor 0 point learning and CVT hydraulic pressure learning after performing AT/CVT learned value initialization.</ptxt>
+<table>
+<tgroup cols="1">
+<colspec colname="COLSPEC0" colwidth="4.13in"/>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>Replacement Parts</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Continuously Variable Transaxle</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>Oil Pressure Sensor</ptxt>
+</item>
+<item>
+<ptxt>Yaw Rate Sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+<item>
+<ptxt>After performing AT/CVT learned value initialization, be sure to perform G sensor 0-point learning first, and then CVT hydraulic pressure learning.</ptxt>
+</item>
+<item>
+<ptxt>Be sure to place the vehicle on a level surface and perform 0 point learning.</ptxt>
+</item>
+<item>
+<ptxt>Do not subject the vehicle to vibration while 0 point learning is in progress.</ptxt>
+</item>
+</list1>
+</atten3>
+<test1>
+<ptxt>Using SST (TaSCAN), perform A/T/CVT learned value initialization, G sensor 0 point learning and CVT hydraulic pressure learning.</ptxt>
+<atten4>
+<ptxt>For the procedures for A/T/CVT learned value initialization, G sensor 0-point learning and CVT hydraulic pressure learning, refer to <xref label="Seep01" href="RM0000021F400AX"/>.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check the DTCs again.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002EZB00ZX_07_0043" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0039">
+<testtitle>Complete</testtitle>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0040">
+<testtitle>Go to Related DTC Chart</testtitle>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0041">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000FSP00OX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0042">
+<testtitle>END (Engine control computer malfunction)</testtitle>
+</testgrp>
+<testgrp id="RM000002EZB00ZX_07_0043">
+<testtitle>END (Continuously variable transaxle malfunction)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

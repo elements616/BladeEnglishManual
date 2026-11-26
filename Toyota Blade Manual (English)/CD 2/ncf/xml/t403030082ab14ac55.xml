@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T030082Ab14Ac55" UPDATE = "ORIGINAL" LDUP = "15May2007"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Temporary S Mode</TITLE>
+<LIST1><ITEM><PTXT>Operating the paddle switch +/- during automatic shift mode in the D position allows a shift range to be selected temporarily.</PTXT></ITEM>
+<ITEM><PTXT>During control, the "D" display in the combination meter illuminates and the currently selected gear is displayed on the shift position indicator.</PTXT></ITEM>
+<ITEM><PTXT>When the paddle switch - (shift range down switch) is operated during automatic shift mode in the D position, the shift range changes to one whose upper limit is the current gear or one gear lower.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T030082Ab14Ac55I01" INDSW = "OFF">
+<TITLE>Temporary S Mode Cancel Conditions</TITLE>
+<LIST1><ITEM><PTXT>Control is cancelled under the following conditions.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the accelerator remains ON continuously for a certain period of time or longer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "2" VALIGN = "MIDDLE"><PTXT>Returns to automatic shift mode in the D position.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the paddle switch is held down continuously for a certain period of time or longer</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the vehicle stops</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When the shift lever is moved to the S position</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Changes to S mode in the S position.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>

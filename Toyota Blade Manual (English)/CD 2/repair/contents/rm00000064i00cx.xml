@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="1001O_S001F" variety="S001F">
+<name>Cruise Control</name>
+<ttl id="1001O_S001F_74QXD_T00FC" variety="T00FC">
+<name>Radar Cruise Control System</name>
+<para id="RM00000064I00CX" category="C" type-id="301CO" name-id="59154-00" from="200708">
+<dtccode>P1615/61</dtccode>
+<dtcname>Distance Control ECU Communication Malfunction 1</dtcname>
+<subpara id="RM00000064I00CX_01" type-id="31" category="03" proc-id="RM0550J___0000C9T00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="unordered">
+<item>
+<ptxt>The engine control computer outputs the cruise control SW signal, vehicle speed signal, etc. to the distance control computer assembly.</ptxt>
+</item>
+<item>
+<ptxt>The distance control computer assembly outputs the acceleration signal, deceleration request signal, etc. to the engine control computer. Using these signals, the engine control computer performs cruise control.</ptxt>
+</item>
+</list1>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P1615/61</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Control vehicle speed (40 - 100 km/h), cruise control main switch ON (vehicle-to-vehicle distance control mode)</ptxt>
+</item>
+<item>
+<ptxt>Communication data from the distance control computer assembly to the engine control computer is abnormal</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Distance Control Computer Assembly</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>CAN Communication System</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000064I00CX_02" type-id="32" category="03" proc-id="RM0550J___0000C9U00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E143506J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM00000064I00CX_03" type-id="51" category="05" proc-id="RM0550J___0000C9V00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When the engine control computer or distance control computer assembly is replaced with a new one, be sure to perform initialization. (see <xref label="Seep01" href="RM000002GO2003X"/>)</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM00000064I00CX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000064I00CX_04_0003" proc-id="RM0550J___0000C9X00000">
+<testtitle>Replace Distance Control Computer Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the distance control computer assembly with a new one.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000064I00CX_04_0005" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000064I00CX_04_0005" proc-id="RM0550J___0000CH600000">
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Clear the DTCs using SST (TaSCAN). (see <xref label="Seep01" href="RM00000064C00EX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000064I00CX_04_0001" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000064I00CX_04_0001" proc-id="RM0550J___0000C9W00000">
+<testtitle>Check DTCs (Radar Cruise Control System)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Put the vehicle in the conditions under which the DTC is detected.</ptxt>
+<atten4>
+<ptxt>The system cannot detect the malfunction unless the detection conditions are met.</ptxt>
+</atten4>
+<test2>
+<ptxt>Drive within the cruise control set vehicle speed range.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn the cruise control main switch ON and put the system in vehicle-to-vehicle distance control mode standby.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs. (see <xref label="Seep01" href="RM00000064C00EX"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P1615 is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P1615 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000064I00CX_04_0004" fin="true">A</down>
+<right ref="RM00000064I00CX_04_0002" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000064I00CX_04_0004">
+<testtitle>Complete</testtitle>
+</testgrp>
+<testgrp id="RM00000064I00CX_04_0002">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADB004X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectionList>
+	<connector type="gp" code="FL">
+		<pin>
+			<line id="1" color="W-B">
+				<connector type="jbc" code="2E">
+					<pin no="17"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="jbc" code="2S">
+		<pin no="1">
+			<line id="2" color="W-B">
+				<connector type="jbc" code="4E">
+					<pin no="1"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="jbc" code="4F">
+		<pin no="3">
+			<line id="3" color="W-B">
+				<connector type="conn" code="F40">
+					<pin no="1"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F40">
+		<pin no="8">
+			<line id="4" color="W">
+				<connector type="jbc" code="4F">
+					<pin no="10"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="jbc" code="4S">
+		<pin no="11">
+			<line id="5" color="W">
+				<connector type="jbc" code="2H">
+					<pin no="12"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="jbc" code="2B">
+		<pin no="30">
+			<line id="6" color="W">
+				<connector type="rb" code="1">
+					<pin/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F28">
+		<pin no="10" spec="~’09.12">
+			<line id="7" color="B">
+				<connector type="conn" code="F40">
+					<pin no="4"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F79">
+		<pin no="10" spec="’09.12~">
+			<line id="7" color="B">
+				<connector type="conn" code="F40">
+					<pin no="4"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F40">
+		<pin no="7">
+			<line id="8" color="GR">
+				<connector type="jbc" code="4F">
+					<pin no="9"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="jbc" code="4E">
+		<pin no="4">
+			<line id="9" color="GR">
+				<connector type="jbc" code="2S">
+					<pin no="4"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F28">
+		<pin no="9" spec="~’09.12">
+			<line id="10" color="Y">
+				<connector type="conn" code="F40">
+					<pin no="5"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F79">
+		<pin no="9" spec="’09.12~">
+			<line id="10" color="Y">
+				<connector type="conn" code="F40">
+					<pin no="5"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+</connectionList>

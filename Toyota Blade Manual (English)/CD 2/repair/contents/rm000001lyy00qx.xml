@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="S2">
+<name>Service Data</name>
+<section id="10004_S0014" variety="S0014">
+<name>Service Data</name>
+<ttl id="10004_S0014_747G4_T00DO" variety="T00DO">
+<name>Customize</name>
+<para id="RM000001LYY00QX" category="F" type-id="801HC" name-id="033LF-00" from="200612" to="200708">
+<name>Item List</name>
+<subpara id="RM000001LYY00QX_z0" proc-id="RM0550J___0000BMN00000">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>When the control ECU is replaced, the customer's customized settings return to the initial settings, so record the setting state of each vehicle function before repair.</ptxt>
+</atten4>
+<step1>
+<ptxt>Wireless Door Lock</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.21in"/>
+<colspec colname="COL2" colwidth="1.56in"/>
+<colspec colname="COL3" colwidth="3.19in"/>
+<colspec colname="COL4" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Tool Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Setting</ptxt>
+<ptxt>(Initial settings are listed first)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control ECU</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Keyless Answer-back</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With Function/Without Function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for selecting whether the hazard lights flash when the electrical transmitter (electronic key) is operated (lock/unlock)</ptxt>
+</entry>
+<entry morerows="3" valign="middle" align="center">
+<ptxt>Main Body ECU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Wireless Main SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With Function/Without Function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for selecting whether the door locks can be operated (lock/unlock) by operating the electrical transmitter (electronic key)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Operation Confirmation Buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With Function/Without Function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for selecting whether the buzzer sounds when the electrical transmitter (electronic key) is operated (lock/unlock)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Auto Lock Time Variable</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>30 s / 60 s / 120 s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Time setting for the function that automatically locks the doors if no door is opened after unlocking with the electrical transmitter (electronic key)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>Automatic Light Control</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.20in"/>
+<colspec colname="COL2" colwidth="1.56in"/>
+<colspec colname="COL3" colwidth="3.19in"/>
+<colspec colname="COL4" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Tool Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Setting</ptxt>
+<ptxt>(Initial settings are listed first)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control ECU</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Automatic Light Control Delay Time</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal / Longer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the time from when the automatic light control sensor detects darkness until the lights turn on</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Main Body ECU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Automatic Light Control Sensitivity Adjustment</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>+-0%/-40%/-20%/+20%/+40%</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting of the automatic light control sensor sensitivity (illuminance detection) adjustment function</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>Illumination</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.20in"/>
+<colspec colname="COL2" colwidth="1.56in"/>
+<colspec colname="COL3" colwidth="3.19in"/>
+<colspec colname="COL4" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Tool Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Setting</ptxt>
+<ptxt>(Initial settings are listed first)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control ECU</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Dome Light On at Unlock</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With Function/Without Function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the function that automatically turns on the interior lights in conjunction with unlocking by the electrical transmitter (electronic key) or the driver door mechanical key when the interior light is set to DOOR</ptxt>
+</entry>
+<entry morerows="4" valign="middle" align="center">
+<ptxt>Main Body ECU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Dome Light On Time</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>15 s / 7.5 s / 30 s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the time from when the door is closed until the interior dome light automatically turns off</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Dome Light On at ACC OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With Function/Without Function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the function that automatically turns on the interior lights when the power is changed from ACC ON to IG OFF while the interior illumination is set to DOOR</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Illumination On</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With Function/Without Function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the function that turns on the interior lights</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Lounge Illumination Dimmed Lighting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With Function/Without Function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the function that turns on the interior lights at dimmed brightness when the power position is ON and the shift position is other than P</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>Warning</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.22in"/>
+<colspec colname="COL2" colwidth="1.56in"/>
+<colspec colname="COL3" colwidth="3.22in"/>
+<colspec colname="COL4" colwidth="1.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Tool Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Setting</ptxt>
+<ptxt>(Initial settings are listed first)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control ECU</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Tail Light Reminder Buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With Function/Without Function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the function that sounds the buzzer when the ignition is turned OFF with the TAIL SW ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Meter ECU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Door Ajar Warning</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Warning/No warning</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the function that sounds the buzzer when locking with the electrical transmitter (electronic key) or outside handle lock switch while any door is open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Main Body ECU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Key Battery Low Warning</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With Function/Without Function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the function that sounds the buzzer when the ignition is turned OFF 20 minutes or more after IG ON while the battery of the electrical transmitter (electronic key) is low</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Certification ECU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Driver Seat Belt Warning Buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With Function/Without Function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the function that sounds the buzzer when the driver seat belt is not fastened</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Meter ECU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Front Passenger Seat Belt Warning Buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With Function/Without Function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the function that sounds the buzzer when the front passenger seat belt is not fastened</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>Air Conditioning</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.22in"/>
+<colspec colname="COL2" colwidth="1.56in"/>
+<colspec colname="COL3" colwidth="3.22in"/>
+<colspec colname="COL4" colwidth="1.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Tool Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Setting</ptxt>
+<ptxt>(Initial settings are listed first)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control ECU</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>FOOT/DEF Linkage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Linked / Not linked</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the function that automatically switches the air outlet to FOOT/DEF when the outlet is FOOT in AUTO mode</ptxt>
+</entry>
+<entry morerows="5" valign="middle" align="center">
+<ptxt>Air Conditioning ECU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Compressor DEF Linkage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Linked / Not linked</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the function that automatically turns A/C ON with the [FRONT DEF] switch</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Compressor Capacity Change</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With Function/Without Function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the automatic evaporator control function using the externally variable compressor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Set Temperature Shift Value</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0/-2/-1/+1/+2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the function that adjusts the display up or down relative to the set temperature display</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Blower Level Up during DEF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With Function/Without Function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the function that automatically increases the blower level when DEF is selected as the air outlet</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Plasmacluster Control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With Function/Without Function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the function that periodically switches between clean mode and ion mode</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>Smart Entry &amp; Start</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.20in"/>
+<colspec colname="COL2" colwidth="1.56in"/>
+<colspec colname="COL3" colwidth="3.19in"/>
+<colspec colname="COL4" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Tool Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Setting</ptxt>
+<ptxt>(Initial settings are listed first)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control ECU</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Smart Ignition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All seats enabled / Front seats enabled</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Function that allows the engine switch to be operated when the electrical transmitter (electronic key) is in the front seat area of the vehicle, or when it is in the front or rear seat area</ptxt>
+</entry>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>Certification ECU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Standby Time in Parked State</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 s / 2 s / 3 s / 5.5 s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the function that prevents unlocking even if the outside door handle is operated after the doors are locked by the Smart Entry &amp; Start System function (door lock confirmation time)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Smart Back Door</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Press and hold / ON 2 times / No function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting for the method of opening the back door with the Smart Entry &amp; Start System function</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

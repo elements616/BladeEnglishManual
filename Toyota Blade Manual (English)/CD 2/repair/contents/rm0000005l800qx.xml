@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="08">
+<name>Heater &amp; Air Conditioner/Ventilation</name>
+<section id="1002K_S000B" variety="S000B">
+<name>Air Conditioner</name>
+<ttl id="1002K_S000B_7421V_T0025" variety="T0025">
+<name>Heater &amp; Air Conditioner System</name>
+<para id="RM0000005L800QX" category="C" type-id="300BK" name-id="5229C-00" from="200612">
+<dtccode>B1442/42</dtccode>
+<dtcname>Air inlet damper operation malfunction</dtcname>
+<subpara id="RM0000005L800QX_05" type-id="31" category="03" proc-id="RM0550J___0000BYQ00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The recirculation damper servo (air inlet control) sends the damper position to the air conditioner amplifier assembly by pulse signals. Based on this signal, the air conditioner amplifier assembly rotates the motor (forward, reverse) and moves the air inlet damper to the desired position. This performs switching control of the intake air between recirculation, fresh air and semi-recirculation.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+<item>
+<ptxt>Malfunction Duration</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1442/42</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>When recirculation damper servo (air inlet control) is operating</ptxt>
+</item>
+<item>
+<ptxt>Damper servo drive request signal is output, but servo position information does not change or is abnormal</ptxt>
+</item>
+<item>
+<ptxt>30 seconds or more</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Recirculation damper servo (air inlet control)</ptxt>
+</item>
+<item>
+<ptxt>Air conditioner harness assembly</ptxt>
+</item>
+<item>
+<ptxt>Air Conditioner Amplifier Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000005L800QX_06" type-id="32" category="03" proc-id="RM0550J___0000BYR00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E144460J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000005L800QX_07" type-id="51" category="05" proc-id="RM0550J___0000BYS00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>This diagnostic trouble code is also output if the damper link or damper is locked. Before performing the inspection, confirm that there are no mechanical malfunctions.</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM0000005L800QX_08" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000005L800QX_08_0006" proc-id="RM0550J___0000BYT00000">
+<testtitle>Read TaSCAN Data (Air Inlet Target Pulse Count)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), follow the prompts on the screen to display the "ECU Data Monitor" screen and check the computer data.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → A/C → ECU Data Monitor]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.49in"/>
+<colspec colname="COL2" colwidth="2.52in"/>
+<colspec colname="COL3" colwidth="3.07in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Item Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Air Inlet Target Pulse Number</ptxt>
+<ptxt>[IMP]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When air inlet control switch is operated</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Displayed in range 0 to 255 pulses</ptxt>
+</item>
+<item>
+<ptxt>Fresh air position: 25 pulses</ptxt>
+</item>
+<item>
+<ptxt>Recirculation position: 7 pulses</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<title>Result</title>
+<tgroup cols="2" align="right">
+<colspec colname="COL1" colwidth="3.30in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Pulse does not change according to damper operation</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Pulse changes according to damper operation (when inspecting according to Diagnostic Trouble Code Chart)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Pulse changes according to damper operation (when inspecting according to List by Symptom)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005L800QX_08_0007" fin="false">A</down>
+<right ref="RM0000005L800QX_08_0009" fin="true">B</right>
+<right ref="RM0000005L800QX_08_0010" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005L800QX_08_0007">
+<testtitle>Replace Recirculation Damper Servo Sub-assembly (Air Inlet Switching)</testtitle>
+<res>
+<down ref="RM0000005L800QX_08_0011" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000005L800QX_08_0011" proc-id="RM0550J___0000BYV00000">
+<testtitle>Read TaSCAN Data (Air Inlet Target Pulse Count)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), follow the prompts on the screen to display the "ECU Data Monitor" screen and check the computer data.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → A/C → ECU Data Monitor]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.49in"/>
+<colspec colname="COL2" colwidth="2.52in"/>
+<colspec colname="COL3" colwidth="3.07in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Item Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Air Inlet Target Pulse Number</ptxt>
+<ptxt>[IMP]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When air inlet control switch is operated</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Displayed in range 0 to 255 pulses</ptxt>
+</item>
+<item>
+<ptxt>Fresh air position: 25 pulses</ptxt>
+</item>
+<item>
+<ptxt>Recirculation position: 7 pulses</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<title>Result</title>
+<tgroup cols="2" align="right">
+<colspec colname="COL1" colwidth="3.30in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Pulse does not change according to damper operation</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No Abnormality</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005L800QX_08_0008" fin="true">A</down>
+<right ref="RM0000005L800QX_08_0012" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005L800QX_08_0009">
+<testtitle>Replace Air Conditioner Amplifier Assembly<xref label="Seep01" href="RM000002140002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005L800QX_08_0010">
+<testtitle>Go to the next circuit inspection shown in the List by Symptom<xref label="Seep01" href="RM0000005KX01HX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005L800QX_08_0012">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM0000005L800QX_08_0008">
+<testtitle>Replace Air Conditioner Harness Assembly<xref label="Seep01" href="RM00000213F002X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

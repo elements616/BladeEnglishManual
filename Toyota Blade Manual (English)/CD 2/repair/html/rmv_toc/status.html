@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- $Id: status.html,v 1.12 2003/05/16 13:22:31 miya Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Removal/Installation Illustrated Index</title>
+
+<link href="../../css/status.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+//
+//  ローカル画面の初期表示
+//  初期化
+//
+function init() {
+	paraId = parent.findParameterValue("parag" , location.search , parent.location.search);
+	if (paraId == null) {
+		return;
+	}
+	titleName = parent.getTitleName(paraId,parent.g_tocXml);
+	setStatus(titleName);
+}
+
+//
+//  ローカル画面に表示文字を設定する
+//  titleName: 表示文字
+//
+function setStatus(titleName) {
+	document.body.innerHTML="<p class='location'>"+titleName +"</p>"; 
+}
+</script>
+</head>
+<body onLoad="init();">
+</body>
+</html>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_74WIJ_T00FO" variety="T00FO">
+<name>EFI System (2GR-FE)</name>
+<para id="RM000001EES01MX" category="C" type-id="801A5" name-id="066O4-00" from="200708">
+<dtccode>P0560/96</dtccode>
+<dtcname>Battery Malfunction</dtcname>
+<subpara id="RM000001EES01MX_01" type-id="31" category="03" proc-id="RM0550J___0000D9600000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>Even when the ignition switch is off, battery power is supplied to the BATT terminal of the engine control computer and is used for DTC memory, freeze frame data memory, etc. If a malfunction occurs in the BATT terminal circuit, the engine control computer detects a DTC.</ptxt>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.07in"/>
+<colspec colnum="02" colname="C02" colwidth="2.98in"/>
+<colspec colnum="03" colname="C03" colwidth="3.03in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+<item>
+<ptxt>Malfunction Duration</ptxt>
+</item>
+<item>
+<ptxt>Others</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0560/96</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>Always</ptxt>
+</item>
+<item>
+<ptxt>Open or short circuit in BATT terminal circuit</ptxt>
+</item>
+<item>
+<ptxt>3 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>EFI MAIN fuse</ptxt>
+</item>
+<item>
+<ptxt>Battery</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001EES01MX_04" type-id="32" category="03" proc-id="RM0550J___0000D9B00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A160629J02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001EES01MX_02" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000001EES01MX_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000001EES01MX_03_0001" proc-id="RM0550J___0000D9700000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Auxiliary Battery Voltage)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), operate according to the screen display and select [ECU Data Monitor].</ptxt>
+</test1>
+<test1>
+<ptxt>Read the [Auxiliary Battery Voltage] displayed on SST (TaSCAN).</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>11 to 14V</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001EES01MX_03_0002" fin="false">OK</down>
+<right ref="RM000001EES01MX_03_0004" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001EES01MX_03_0002" proc-id="RM0550J___0000D9800000">
+<testtitle>Inspect Fuse (EFI MAIN Fuse)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Remove the EFI MAIN fuse from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A154845J02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>EFI MAIN fuse</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001EES01MX_03_0003" fin="false">OK</down>
+<right ref="RM000001EES01MX_03_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001EES01MX_03_0003" proc-id="RM0550J___0000D9900000">
+<testtitle>Inspect Wire Harness and Connector (Engine Control Computer - Engine Room R/B)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the battery negative terminal.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect connector B of the engine control computer.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the engine control computer vehicle side connector and the EFI MAIN fuse holder. (see <xref label="Seep02" href="X39400000QV01SD"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="A154407J03" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="3.99in"/>
+<colspec colname="COL2" colwidth="1.66in"/>
+<colspec colname="COL3" colwidth="1.43in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B20(BATT) - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="3.99in"/>
+<colspec colname="COL2" colwidth="1.66in"/>
+<colspec colname="COL3" colwidth="1.43in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B20 (BATT) and 2 terminals - other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001EES01MX_03_0004" fin="false">OK</down>
+<right ref="RM000001EES01MX_03_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001EES01MX_03_0004" proc-id="RM0550J___0000D9A00000">
+<testtitle>Inspect Battery</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Inspect Fluid Level</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Fluid level is within the specified range and there is no difference in fluid level</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Inspect Specific Gravity</ptxt>
+<figure>
+<graphic graphicname="A001259J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test2>
+<ptxt>Inspect the battery specific gravity of each cell.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>1.25 to 1.29 (fluid temperature 20°C), specific gravity difference 0.04 or less</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If it is not within the standard (no specific gravity difference), charge the battery.</ptxt>
+</atten4>
+</test2>
+</test1>
+<test1>
+<ptxt>Voltage Inspection</ptxt>
+<test2>
+<ptxt>Measure the battery voltage during cranking.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>Approximately 9.6V or more</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000001EES01MX_03_0008" fin="true">OK</down>
+<right ref="RM000001EES01MX_03_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001EES01MX_03_0005">
+<testtitle>Replace EFI MAIN Fuse</testtitle>
+</testgrp>
+<testgrp id="RM000001EES01MX_03_0006">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000001EES01MX_03_0007">
+<testtitle>Battery Replacement</testtitle>
+</testgrp>
+<testgrp id="RM000001EES01MX_03_0008">
+<testtitle>Inspect Power Supply Circuit</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

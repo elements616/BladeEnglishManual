@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4270238e SYSTEM "../xml/grph_ent/a4270238e.png" NDATA png>
+<!ENTITY c4480300e SYSTEM "../xml/grph_ent/c4480300e.png" NDATA png>
+<!ENTITY c5930027e SYSTEM "../xml/grph_ent/c5930027e.png" NDATA png>
+<!ENTITY c5480046e SYSTEM "../xml/grph_ent/c5480046e.png" NDATA png>
+<!ENTITY a4740043e SYSTEM "../xml/grph_ent/a4740043e.png" NDATA png>
+<!ENTITY c5930029e SYSTEM "../xml/grph_ent/c5930029e.png" NDATA png>
+<!ENTITY c5930023e SYSTEM "../xml/grph_ent/c5930023e.png" NDATA png>
+<!ENTITY c5930031e SYSTEM "../xml/grph_ent/c5930031e.png" NDATA png>
+<!ENTITY c5930030e SYSTEM "../xml/grph_ent/c5930030e.png" NDATA png>
+<!ENTITY c5930039e SYSTEM "../xml/grph_ent/c5930039e.png" NDATA png>
+
+<!ENTITY T120012K078 SYSTEM "../xml/t478120012k078.xml">
+<!ENTITY T120012K078A850 SYSTEM "../xml/t478120012k078a850.xml">
+<!ENTITY T120012K078A851 SYSTEM "../xml/t478120012k078a851.xml">
+<!ENTITY T120012K078A840 SYSTEM "../xml/t478120012k078a840.xml">
+<!ENTITY T120021T586Ka69 SYSTEM "../xml/t478120021t586ka69.xml">
+<!ENTITY T120012K056 SYSTEM "../xml/t478120012k056.xml">
+<!ENTITY T120012K165 SYSTEM "../xml/t478120012k165.xml">
+<!ENTITY T120012K164 SYSTEM "../xml/t478120012k164.xml">
+<!ENTITY T120012T609 SYSTEM "../xml/t478120012t609.xml">
+<!ENTITY T120012C047 SYSTEM "../xml/t478120012c047.xml">
+<!ENTITY T120021T586 SYSTEM "../xml/t478120021t586.xml">
+<!ENTITY T120012K033 SYSTEM "../xml/t478120012k033.xml">
+<!ENTITY T120012A815 SYSTEM "../xml/t478120012a815.xml">
+<!ENTITY T120012C047R01 SYSTEM "../xml/t478120012c047r01.xml">
+<!ENTITY T120012K164R02 SYSTEM "../xml/t478120012k164r02.xml">
+<!ENTITY T120012K165R03 SYSTEM "../xml/t478120012k165r03.xml">
+<!ENTITY T120012K056R04 SYSTEM "../xml/t478120012k056r04.xml">
+<!ENTITY T120012T609R05 SYSTEM "../xml/t478120012t609r05.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T120012C047S"><SCTITLE/>
+
+<PARA INFOID = "T120012C047" UPDATE = "ORIGINAL" LDUP = "7Jul2006"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Non-standard Size AM/FM Electronic Tuner with Integrated CD Player</TITLE>
+<LIST1><ITEM><PTXT>An irregular-size CD player integrated AM/FM electronic tuner has been adopted and combined with the 6 speaker system.</PTXT></ITEM>
+<ITEM><PTXT>Tone control memory has been adopted. Tone control (bass and treble) values can be stored for each mode (CD, AM, FM, etc.).</PTXT></ITEM>
+<ITEM><PTXT>By adopting a CD text display function, information pre-entered on the CD being played (artist name, track name, etc.) can be displayed.</PTXT></ITEM>
+<ITEM><PTXT>CDs recorded in WMA (Windows Media Audio) and MP3 (MPEG Audio Layer 3) formats can be played<HINTREF     REFID = "H478120012C04701"/>, improving marketability.</PTXT></ITEM>
+<ITEM><PTXT>An automatic sound levelizer function has been adopted, providing excellent usability.</PTXT></ITEM>
+<ITEM><PTXT>Noise has been reduced by digital signal processing of AM/FM reception.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478120012C04701">Depending on the device used for recording, some CD-Rs and CD-RWs may not play.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740043e" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+<SPEC ID = "T120012C047X01" INDSW = "OFF">
+<TITLE>Irregular-size CD Player Integrated AM/FM Electronic Tuner Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "11%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "88%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY VALIGN = "MIDDLE">
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Radio</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>PLL synthesizer tuning. Manual preset: up to 6 stations each for AM/FM. Auto preset: up to 6 stations each for AM/FM. Automatic reception sensitivity switching (AM). Traffic information reception. Digital signal processing.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>DISC(CD)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>FAST UP/DOWN。 TRACK UP/DOWN。 TRACK RANDOM。 TRACK RPT。 CD text display function.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Music CD (MP3/WMA)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>FAST UP/DOWN。 FOLDER UP/DOWN。 FILE UP/DOWN。 RANDOM within DISC. RANDOM within FOLDER. FOLDER RPT。 FILE RPT。 Folder list display. File list display.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Others</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Tone control (bass and treble). Tone control memory. Volume balance control (front/rear and left/right). Direct source change. Built-in FIX equalizer. Automatic sound levelizer function. LIVE-ACS function. Maximum total output 160W (40W x 4).</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120012K164S"><SCTITLE/>
+
+<PARA INFOID = "T120012K164" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Steering Switch</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Due to the change in the steering wheel shape, the design of the steering switches, which allow volume adjustment and audio mode switching, has been changed. They are located on the left side of the front of the steering pad.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930027e" WIDTH = "6.903in" HEIGHT = "3.556in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120012K165S"><SCTITLE/>
+
+<PARA INFOID = "T120012K165" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Speaker</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A 6 speaker system has been provided on all models.</PTXT></ITEM></LIST1>
+<SPEC ID = "T120012K165X01" INDSW = "OFF">
+<TITLE>Speaker Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "26%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "26%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "23%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Item/ Speaker Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Front Speaker</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Front Tweeter</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Rear Speaker</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Installation Position</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Lower Part of LH and RH Front Door Trims</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Upper Part of LH and RH Front Door Trims</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Lower Part of LH and RH Rear Door Trims</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Full Range</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Tweeter</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Full Range</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Diameter [cm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>16</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>14</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Rated (Maximum) Input [W]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>20(40)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>20(50)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>20(40)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Voice Coil Impedance [Ω]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>4</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120012K056S"><SCTITLE/>
+
+<PARA INFOID = "T120012K056" UPDATE = "ORIGINAL" LDUP = "12May2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Antenna</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The diversity TV antennas in the back window glass and rear spoiler have been discontinued.</PTXT></ITEM></LIST1>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120012T609S"><SCTITLE/>
+
+<PARA INFOID = "T120012T609" UPDATE = "ORIGINAL" LDUP = "3Mar2009"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>USB Terminal and AUX Input Terminal</TITLE>
+<LIST1><ITEM><PTXT>A USB port to which a USB memory or "iPod" can be connected has been provided.</PTXT></ITEM>
+<ITEM><PTXT>An AUX input jack to which portable audio devices, etc. can be connected has been provided.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5480046e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120012K078S"><SCTITLE/>
+
+<PARA INFOID = "T120012K078" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     INFOTYPE = "SYSTEM" INDSW = "ON"     SELECT = "Vehicle Outline: Comfort and Usability">
+<TITLE>Audio System Outline</TITLE>
+<LIST1><ITEM><PTXT>As the audio system, the 6-speaker system combining 6 speakers with the HDD navigation or the AM/FM electronic tuner with odd-size CD player continues to be used, and the AM/FM electronic tuner with odd-size in-dash CD changer has been discontinued.</PTXT></ITEM>
+<ITEM><PTXT>The HDD navigation has been changed from the 05 model year specification to the 09 model year specification.</PTXT></ITEM>
+<ITEM><PTXT>USB and AUX mini jack terminals have been newly adopted as external input terminals for the HDD navigation.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120012K078I01" INDSW = "OFF">
+<TITLE>Audio System Variations</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "24%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "26%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Audio Head Unit</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Speaker System</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Antenna</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>HDD Navigation</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT">
+<PTXT>6-speaker System</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "2" VALIGN = "MIDDLE"><PTXT>Short Pole Antenna</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Non-standard Size AM/FM Electronic Tuner with Integrated CD Player</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Radio-less</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T120012K078A850" UPDATE = "ORIGINAL" LDUP = "30Mar2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Audio System Operation</TITLE>
+<INDICATE ID = "T120012K078A850I01" INDSW = "OFF">
+<TITLE>Panel Switch Operation</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Basic operations such as audio mode switching are performed by operating the panel switches around the HDD navigation system or audio unit.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T120012K078A850I02" INDSW = "OFF">
+<TITLE>Touch Switch Operation (w/ HDD Navigation System)</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>After the audio mode screen is called up by operating a panel switch, operations are performed by directly touching the switch frames (touch switches) displayed on the screen with a finger.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T120012K078A850I03" INDSW = "OFF">
+<TITLE>Steering Switch Operation</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Pressing the pad switches on the steering wheel performs operations such as switching the audio mode.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T120012K078A850I04" INDSW = "OFF">
+<TITLE>Voice Operation (w/ HDD Navigation System)</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Pressing the talk switch to display the voice recognition mark on the screen and then speaking into the voice recognition microphone performs operations such as switching the audio source.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120012K078A851" UPDATE = "ORIGINAL" LDUP = "30Mar2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Audio System Functions</TITLE>
+<INDICATE ID = "T120012K078A851I01" INDSW = "OFF">
+<TITLE>USB Audio Function (Models w/ HDD Navigation System)</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><LIST1><ITEM><PTXT>A function has been provided that allows music data stored on a USB memory or "iPod"<HINTREF     REFID = "H478120012K078A85101"/> connected to the USB terminal to be enjoyed through the vehicle audio system.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT>"iPod" is a registered trademark of Apple Inc.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+<INDICATE ID = "T120012K078A851I02" INDSW = "OFF">
+<TITLE>Bluetooth Audio Function (Models w/ HDD Navigation System)</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><LIST1><ITEM><PTXT>A function has been provided that allows music data stored on Bluetooth<HINTREF     REFID = "H478120012K078A85101"/> AV profile compatible cellular phones and portable audio devices to be enjoyed wirelessly through the vehicle audio system.<HINTREF     REFID = "H478120012K078A85102"/></PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478120012K078A85101">A low-power wireless communication system using the 2.4GHz frequency band.</PTXT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "22%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "77%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<GRAPHIC GRAPHICNAME = "a4270238e" WIDTH = "1.167in" HEIGHT = "0.278in" />
+</ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Bluetooth is a registered trademark of Bluetooth SIG, Inc.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></ITEM>
+<ITEM><PTXT ID = "H478120012K078A85102">Number of devices that can be registered: up to 2</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+<INDICATE ID = "T120012K078A851I03" INDSW = "ON">
+<TITLE>Automatic Sound Levelizer (ASL) Function</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><LIST1><ITEM><PTXT>A function has been provided that varies the volume and sound field characteristics according to the cabin noise (vehicle noise) level, so that music can be heard at the optimal volume and sound quality in the cabin even when road noise, wind noise, etc. become loud while driving.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120012K078A840" UPDATE = "ORIGINAL" LDUP = "23Mar2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Sound Library Function</TITLE>
+<INDICATE ID = "T120012K078A840I01" INDSW = "OFF">
+<TITLE>Sound Library Outline (Models w/ HDD Navigation System)</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><LIST1><ITEM><PTXT>A sound library function has been provided, which can record<HINTREF     REFID = "H478120012K078A84001"/><HINTREF REFID = "H478120012K078A84002"/> up to 2000 songs (calculated as 1 song = 5 minutes) from music CDs onto the HDD (hard disk drive) built into the HDD navigation receiver.</PTXT></ITEM>
+<ITEM><PTXT>From the songs recorded in the sound library, an original list (My Best) of favorite songs can be created. Up to 999 lists can be created, and up to 99 songs can be registered in 1 list.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478120012K078A84002">Because the system is SCMS (Serial Copy Management System) compliant, recording cannot be made from CD-Rs, etc. on which music CDs, etc. have been digitally recorded.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+<INDICATE ID = "T120012K078A840I02" INDSW = "OFF">
+<TITLE>Database Function (Models w/ HDD Navigation System)</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><LIST1><ITEM><PTXT>With the database function using the Gracenote media database<HINTREF REFID = "H478120012K078A84003"/>, the album title, artist name, genre name, etc. of recorded songs are automatically assigned<HINTREF     REFID = "H478120012K078A84004"/>, and the songs are automatically grouped based on that information. Songs can be searched for and played back by the assigned names, group names, etc.</PTXT></ITEM>
+<ITEM><PTXT>From the songs recorded in the sound library, an original list (My Best) of favorite songs can be created. Up to 999 lists can be created, and up to 99 songs can be registered in 1 list.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478120012K078A84003">A database service that provides information such as song title, artist name and playing time for song data on music CDs.</PTXT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "71%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<GRAPHIC GRAPHICNAME = "c4480300e" WIDTH = "1.056in" HEIGHT = "0.347in" />
+</ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Gracenote and CDDB are registered trademarks of Gracenote.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></ITEM>
+<ITEM><PTXT ID = "H478120012K078A84004">Automatically assigned title information may differ from the actual title information.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE></MECA>
+</PARA>
+<BIND ID = "T120012K078B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T120012K056R04" UPDATE = "ORIGINAL" LDUP = "12May2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Antenna</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The diversity TV antennas in the back window glass and rear spoiler have been discontinued.</PTXT></ITEM></LIST1>
+</PARA>
+
+<PARA INFOID = "T120012K165R03" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Speaker</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A 6 speaker system has been provided on all models.</PTXT></ITEM></LIST1>
+<SPEC ID = "T120012K165R03X01" INDSW = "OFF">
+<TITLE>Speaker Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "26%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "26%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "23%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Item/ Speaker Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Front Speaker</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Front Tweeter</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Rear Speaker</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Installation Position</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Lower Part of LH and RH Front Door Trims</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Upper Part of LH and RH Front Door Trims</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Lower Part of LH and RH Rear Door Trims</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Full Range</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Tweeter</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Full Range</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Diameter [cm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>16</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>14</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Rated (Maximum) Input [W]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>20(40)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>20(50)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>20(40)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Voice Coil Impedance [Ω]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>4</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+
+<PARA INFOID = "T120012K164R02" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Steering Switch</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Due to the change in the steering wheel shape, the design of the steering switches, which allow volume adjustment and audio mode switching, has been changed. They are located on the left side of the front of the steering pad.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930027e" WIDTH = "6.903in" HEIGHT = "3.556in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T120012T609R05" UPDATE = "ORIGINAL" LDUP = "3Mar2009"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>USB Terminal and AUX Input Terminal</TITLE>
+<LIST1><ITEM><PTXT>A USB port to which a USB memory or "iPod" can be connected has been provided.</PTXT></ITEM>
+<ITEM><PTXT>An AUX input jack to which portable audio devices, etc. can be connected has been provided.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5480046e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T120012C047R01" UPDATE = "ORIGINAL" LDUP = "7Jul2006"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Non-standard Size AM/FM Electronic Tuner with Integrated CD Player</TITLE>
+<LIST1><ITEM><PTXT>An irregular-size CD player integrated AM/FM electronic tuner has been adopted and combined with the 6 speaker system.</PTXT></ITEM>
+<ITEM><PTXT>Tone control memory has been adopted. Tone control (bass and treble) values can be stored for each mode (CD, AM, FM, etc.).</PTXT></ITEM>
+<ITEM><PTXT>By adopting a CD text display function, information pre-entered on the CD being played (artist name, track name, etc.) can be displayed.</PTXT></ITEM>
+<ITEM><PTXT>CDs recorded in WMA (Windows Media Audio) and MP3 (MPEG Audio Layer 3) formats can be played<HINTREF     REFID = "H478120012C047R0101"/>, improving marketability.</PTXT></ITEM>
+<ITEM><PTXT>An automatic sound levelizer function has been adopted, providing excellent usability.</PTXT></ITEM>
+<ITEM><PTXT>Noise has been reduced by digital signal processing of AM/FM reception.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478120012C047R0101">Depending on the device used for recording, some CD-Rs and CD-RWs may not play.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740043e" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+<SPEC ID = "T120012C047R01X01" INDSW = "OFF">
+<TITLE>Irregular-size CD Player Integrated AM/FM Electronic Tuner Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "11%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "88%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY VALIGN = "MIDDLE">
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Radio</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>PLL synthesizer tuning. Manual preset: up to 6 stations each for AM/FM. Auto preset: up to 6 stations each for AM/FM. Automatic reception sensitivity switching (AM). Traffic information reception. Digital signal processing.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>DISC(CD)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>FAST UP/DOWN。 TRACK UP/DOWN。 TRACK RANDOM。 TRACK RPT。 CD text display function.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Music CD (MP3/WMA)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>FAST UP/DOWN。 FOLDER UP/DOWN。 FILE UP/DOWN。 RANDOM within DISC. RANDOM within FOLDER. FOLDER RPT。 FILE RPT。 Folder list display. File list display.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Others</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Tone control (bass and treble). Tone control memory. Volume balance control (front/rear and left/right). Direct source change. Built-in FIX equalizer. Automatic sound levelizer function. LIVE-ACS function. Maximum total output 160W (40W x 4).</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+
+<PARA INFOID = "T120021T586" UPDATE = "ORIGINAL" LDUP = "12Feb2009"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>HDD Navigation Receiver</TITLE>
+<LIST1><ITEM><PTXT>The HDD navigation receiver consists of a retractable display panel section and the main unit.</PTXT></ITEM>
+<ITEM><PTXT>Map information, route information, voice guidance data, etc. are stored on the built-in hard disk to increase the amount of information and achieve faster response.</PTXT></ITEM>
+<ITEM><PTXT>The display panel section incorporates a color LCD panel that supports pressure-sensitive touch panel operation and displays the navigation screen, audio screen, etc. In addition, panel switches are arranged around the display.</PTXT></ITEM></LIST1>
+<LIST1><ITEM><PTXT>By adopting LEDs for the backlight that illuminates the LCD panel, a display with higher brightness than the conventional type has been achieved. In addition, startup performance (brightness recovery) at low temperatures, response and color reproduction have been improved. Furthermore, the display module is mercury-free, which is environmentally friendly.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021T586I01" INDSW = "OFF">
+<TITLE>HDD Navigation Receiver</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930029e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+
+<MECA ID = "T120021T586Ka69" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Color LCD Panel</TITLE>
+<LIST1><ITEM><PTXT>The display uses a TFT (Thin Film Transistor) type LCD panel with a 7-inch wide screen with an aspect ratio of 9:16 (height 91.44 x width 152.40mm). The liquid crystal cells are subdivided into pixels of 234 vertical x 1200 horizontal; each liquid crystal cell (pixel) corresponding to each color filter is controlled in an analog manner from fully closed to fully open by the RGB video signals, so that colors are mixed additively and all colors can be expressed.</PTXT></ITEM></LIST1>
+<SPEC ID = "T120021T586Ka69X01" INDSW = "OFF">
+<TITLE>Color LCD Panel Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Display Method</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>TN Liquid Crystal Transmissive Type</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Color Display</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>RGB color filter, additive color mixing<HINTREF     REFID = "H478120021T586Ka6901"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Drive Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>TFT, active matrix drive</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Display Screen Size [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>91.44 high × 152.40 wide</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Number of Display Pixels [dots]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>234 high × 1200 wide (RGB)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Pixel Size [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>0.3908 high × 0.1270 wide</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Color Filter Arrangement</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>RGB Stripe Arrangement</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478120021T586Ka6901">A method of expressing colors by adding the 3 primary colors of light: R (red), G (green) and B (blue).</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></SPEC></MECA>
+</PARA>
+</BIND>
+</SECTION>
+<SECTION SCID = "T120012K033S"><SCTITLE/>
+
+<PARA INFOID = "T120012K033" UPDATE = "ORIGINAL" LDUP = "15Oct2005"     INFOTYPE = "SYSTEM" INDSW = "ON"     SELECT = "Vehicle Outline: Comfort and Usability">
+<TITLE>6-speaker System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A 6-speaker system combining the 09 model year HDD navigation or AM/FM electronic tuner with odd-size CD player and 6 speakers has been adopted.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120012K033I01" INDSW = "OFF">
+<TITLE>6-speaker System Configuration</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930023e" WIDTH = "6.903in" HEIGHT = "8.278in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T120012K033I02" INDSW = "OFF">
+<TITLE>6-speaker System Components</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "11%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "40%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "48%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Main Functions</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>①</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>HDD Navigation (Models w/ HDD Navigation System)</PTXT>
+<PTXT>(Manufactured by Panasonic Corporation)</PTXT>
+<PTXT>(Navigation Receiver Assembly)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Plays CD, DVD, MP3, WMA, DVD video, Bluetooth audio and sound library, and outputs audio signals to the speakers.</PTXT></ITEM>
+<ITEM><PTXT>Receives FM and AM radio broadcasts.</PTXT></ITEM>
+<ITEM><PTXT>Controls the ASL function according to the vehicle speed signal input from the combination meter.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Audio Head Unit (Models w/ AM/FM Electronic Tuner with Odd-size CD Player)</PTXT>
+<PTXT>(Manufactured by Panasonic Corporation)</PTXT>
+<PTXT>(Radio Receiver Assembly)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Plays CD, MP3 and WMA.</PTXT></ITEM>
+<ITEM><PTXT>Receives FM and AM radio broadcasts.</PTXT></ITEM>
+<ITEM><PTXT>Controls the ASL function according to the vehicle speed signal input from the combination meter.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>②</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Steering Switch</PTXT>
+<PTXT>(Steering Pad Switch Assembly)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Outputs signals for volume adjustment, mode switching, station selection, etc. to the HDD navigation or audio head unit.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>③</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Speakers</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Output audio signals from the HDD navigation or audio head unit.</PTXT>
+<PTXT><XREF REFID = "S478120012K165"/>
+</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>④</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Radio Antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives FM and AM radio broadcasts via the foldable short pole antenna at the rear center of the roof.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>⑤</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>USB Terminal and AUX Input Terminal (Models w/ HDD Navigation System)</PTXT>
+<PTXT>(Stereo Jack Adapter Assembly NO.1)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Outputs audio signals to the HDD navigation when a portable audio device is connected.</PTXT></ITEM>
+<ITEM><PTXT>Performs USB communication with the multimedia interface computer when a USB memory or "iPod" is connected.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>⑥</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Multimedia Interface Computer (Models w/ HDD Navigation System)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>When a USB memory or "iPod" is connected, communicates with the connected device via the USB terminal and outputs audio signals to the HDD navigation.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>⑦</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Combination Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Outputs the vehicle speed signal to the HDD navigation or audio head unit.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T120012K033I03" INDSW = "OFF">
+<TITLE>6-speaker System Block Diagram (HDD Navigation)</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930031e" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T120012K033I04" INDSW = "OFF">
+<TITLE>6-speaker System Block Diagram (AM/FM Electronic Tuner with Odd-size CD Player)</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930030e" WIDTH = "6.903in" HEIGHT = "3.153in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120012A815S"><SCTITLE/>
+
+<PARA INFOID = "T120012A815" UPDATE = "ORIGINAL" LDUP = "28Apr2005"     INFOTYPE = "SYSTEM" INDSW = "ON"     SELECT = "Vehicle Outline: Comfort and Usability">
+<TITLE>HDD Navigation System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The HDD navigation system has been changed to a 09 model year HDD navigation receiver with audio functions, combined with a 6-speaker system.</PTXT></ITEM>
+<ITEM><PTXT>An HDD (hard disk drive) is installed, and a sound library (music server function) that can record up to 2000 songs to the hard disk by inserting CDs has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>A database function that can obtain song data (album title, artist name, genre name, etc.) using the Gracenote Media Database has been adopted, and linked with the sound library function and text display function to provide excellent functionality.</PTXT></ITEM>
+<ITEM><PTXT>Playback of CDs<HINTREF     REFID = "H478120012A81501"/> recorded in WMA (Windows Media Audio) and MP3 (MPEG Audio Layer3) formats is supported.</PTXT></ITEM>
+<ITEM><PTXT>The Bluetooth<HINTREF REFID = "H478120012A81502"/> audio function allows songs stored on a Bluetooth portable audio player<HINTREF     REFID = "H478120012A81503"/>, including cellular phones, to be played through the vehicle speakers via a wireless connection. In addition, songs can be played/stopped, etc. by operating the on-board unit without directly operating the portable audio player.</PTXT></ITEM>
+<ITEM><PTXT>A disc slot-in type DVD player compatible with DVDs and CDs has been adopted, providing excellent usability.</PTXT></ITEM>
+<ITEM><PTXT>A USB terminal for connecting a USB memory or "iPod" and an AUX terminal for connecting portable audio devices have been adopted, improving marketability.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478120012A81501">Depending on the device used for recording, some CD-Rs and CD-RWs may not play.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478120012A81502">Bluetooth is a low-power wireless communication system using the 2.4GHz frequency band, whose technology is being standardized by the Bluetooth SIG (Special Interest Group), an organization joined by the world's leading manufacturers in the fields of electrical signals, computers and networks.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478120012A81503">Depending on the device, the Bluetooth audio function may not be usable or its functions may be limited.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930039e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</PARA>
+</SECTION>
+</SCT>

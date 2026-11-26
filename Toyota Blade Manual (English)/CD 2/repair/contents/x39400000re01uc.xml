@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_74WIJ_T00FO" variety="T00FO">
+<name>EFI System (2GR-FE)</name>
+<para id="X39400000RE01UC" category="C" type-id="302J6" name-id="066O1-00" from="200708">
+<dtccode>P0504/51</dtccode>
+<dtcname>STP Light SW Circuit</dtcname>
+<subpara id="X39400000RE01UC_10" type-id="31" category="03" proc-id="RM0550J___0000D8M00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>The stop light switch detects the brake pedal operating condition and outputs it to the engine control computer. The stop light switch is installed on the brake pedal bracket, and is connected to the engine control computer via the wire harness.</ptxt>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.01in"/>
+<colspec colnum="02" colname="C02" colwidth="3.42in"/>
+<colspec colnum="03" colname="C03" colwidth="2.65in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTCNo.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+<item>
+<ptxt>Malfunction Duration</ptxt>
+</item>
+<item>
+<ptxt>Others</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0504/51</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Signal from stop light switch is not input</ptxt>
+</item>
+<item>
+<ptxt>0.5 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Stop Light Switch Assembly</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="X39400000RE01UC_11" type-id="32" category="03" proc-id="RM0550J___0000D8N00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A160628J10" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="X39400000RE01UC_12" type-id="51" category="05" proc-id="RM0550J___0000D8O00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Using SST (TaSCAN), read the freeze frame data. The freeze frame data records part of the engine operating condition when the malfunction occurred, and this information is useful when troubleshooting.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="X39400000RE01UC_13" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="X39400000RE01UC_13_0001" proc-id="RM0550J___0000D8P00000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Stop Light Switch)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), operate following the screen display and select [ECU Data Monitor] - [Stop Light SW].</ptxt>
+</test1>
+<test1>
+<ptxt>Read [OFF → ON] displayed on SST (TaSCAN) when the brake pedal is operated (released → depressed).</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Powertrain → Engine → ECU Data Monitor]</title>
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Item Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Stop Light SW</ptxt>
+<ptxt>[STP]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates the stop light switch status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake pedal released → depressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF→ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RE01UC_13_0006" fin="true">OK</down>
+<right ref="X39400000RE01UC_13_0002" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RE01UC_13_0002" proc-id="RM0550J___0000D8Q00000">
+<testtitle>Inspect Wire Harness or Connector (Stop Light Switch Assembly - Battery)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the stop light switch assembly connector.</ptxt>
+<figure>
+<graphic graphicname="A056986J11" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals.</ptxt>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.00in"/>
+<colspec colname="COL2" colwidth="1.08in"/>
+<colspec colname="COL3" colwidth="1.05in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2 (B) and 3 (B) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RE01UC_13_0003" fin="false">OK</down>
+<right ref="X39400000RE01UC_13_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RE01UC_13_0003" proc-id="RM0550J___0000D8R00000">
+<testtitle>Inspect Stop Light Switch Assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.29in"/>
+<colspec colname="COL2" colwidth="1.84in"/>
+<colspec colname="COL3" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Between terminal 1 - terminal 2</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Shaft not pushed in (brake pedal depressed)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Between terminal 3 - terminal 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<figure>
+<graphic graphicname="A072924J11" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals when the shaft is pushed in (brake pedal not depressed).</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.29in"/>
+<colspec colname="COL2" colwidth="1.84in"/>
+<colspec colname="COL3" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Between terminal 1 - terminal 2</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Shaft pushed in (brake pedal not depressed)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Between terminal 3 - terminal 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RE01UC_13_0004" fin="false">OK</down>
+<right ref="X39400000RE01UC_13_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RE01UC_13_0004" proc-id="RM0550J___0000D8S00000">
+<testtitle>Inspect Wire Harness or Connector (Stop Light Switch Assembly - Engine Control Computer)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep02" href="RM0000005D702RX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect the stop light switch assembly connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect connector B of the engine control computer.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+<figure>
+<graphic graphicname="A158134J03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals. (see <xref href="X39400000QV01SD" label="Seep01"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Voltage</title>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.97in"/>
+<colspec colnum="02" colname="C02" colwidth="1.78in"/>
+<colspec colnum="03" colname="C03" colwidth="1.38in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B35 (ST1-) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shaft not pushed in → shaft pushed in</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 1.5V→7.5 to 14.0V</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>B36 (STP) ←→ Body ground</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Shaft not pushed in → shaft pushed in</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>7.5 to 14.0V→0 to 1.5V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RE01UC_13_0005" fin="true">OK</down>
+<right ref="X39400000RE01UC_13_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RE01UC_13_0005">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADB004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000RE01UC_13_0006">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000CD101YX"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000RE01UC_13_0007">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="X39400000RE01UC_13_0008">
+<testtitle>Replace Stop Light Switch Assembly</testtitle>
+</testgrp>
+<testgrp id="X39400000RE01UC_13_0009">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740174c SYSTEM "../xml/grph_ent/a4740174c.png" NDATA png>
+<!ENTITY a4740185c SYSTEM "../xml/grph_ent/a4740185c.png" NDATA png>
+<!ENTITY a4740175c SYSTEM "../xml/grph_ent/a4740175c.png" NDATA png>
+
+<!ENTITY T050002A215 SYSTEM "../xml/t478050002a215.xml">
+<!ENTITY T050002A215A107 SYSTEM "../xml/t478050002a215a107.xml">
+<!ENTITY T050002A216 SYSTEM "../xml/t478050002a216.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T050002A215S"><SCTITLE/>
+
+<PARA INFOID = "T050002A215" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Front Axle</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Double-row angular ball bearings with low rolling resistance have been adopted for the axle bearings.</PTXT></ITEM>
+<ITEM><PTXT>The axle bearings are a compact type with integrated oil seals.</PTXT></ITEM>
+<ITEM><PTXT>A 12-point nut has been adopted for the axle hub nut, and the fixing method has been changed from the common cotter pin type to a staked type, ensuring excellent fastening performance.</PTXT></ITEM>
+<ITEM><PTXT>The steering knuckle arm has been made lighter while increasing rigidity.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740174c" WIDTH = "6.903in" HEIGHT = "3.750in" />
+</FIGURE>
+<CAUTION>
+<LIST1><ITEM><PTXT>Because magnets are used in the wheel speed sensor and rotor, do not bring magnetized objects near the sensor and rotor. In addition, be careful not to allow foreign matter to adhere.</PTXT></ITEM></LIST1></CAUTION>
+
+<MECA ID = "T050002A215A107" UPDATE = "ORIGINAL" LDUP = "30Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Axle Hub Nut</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A staked type fixing method is used for the axle hub nut. This ensures fastening performance, prevents abnormal noise from the axle, reduces the number of parts and improves assembly workability. In addition, using a 12-point nut equalizes the surface pressure on the nut seat and ensures excellent fastening performance.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740185c" WIDTH = "6.917in" HEIGHT = "2.181in" />
+</FIGURE>
+<HINT>
+<PTXT>The axle hub nut is a non-reusable part because it is staked and surface treated to stabilize the friction coefficient. In addition, when removing the nut, completely release the staked part before loosening the nut so as not to damage the threads of the drive shaft.</PTXT></HINT></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T050002A216S"><SCTITLE/>
+
+<PARA INFOID = "T050002A216" UPDATE = "ORIGINAL" LDUP = "1Oct2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Rear Axle</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>As with the front, double-row angular ball bearings have been adopted.</PTXT></ITEM>
+<ITEM><PTXT>A unit type axle hub is mounted on the axle carrier for easier servicing.</PTXT></ITEM>
+<ITEM><PTXT>In the unit type axle hub, one side of the bearing inner race is integrated with the axle shaft, and the bearing and shaft shape have been optimized to achieve light weight, high rigidity, high reliability and durability.</PTXT></ITEM>
+<ITEM><PTXT>The oil seal is integrated with the unit type axle hub to reduce rotational torque.</PTXT></ITEM>
+<ITEM><PTXT>2WD models use a wheel speed sensor &amp; rotor integrated with the axle hub.</PTXT></ITEM>
+<ITEM><PTXT>As with the front, the axle hub nut on 4WD models uses a 12-point nut + staked type.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740175c" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+</PARA>
+</SECTION>
+</SCT>

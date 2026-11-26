@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002Q_S000F" variety="S000F">
+<name>Navigation</name>
+<ttl id="1002Q_S000F_746OU_T00CJ" variety="T00CJ">
+<name>HDD Navigation System</name>
+<para id="RM000001M5N00YX" category="J" type-id="801HS" name-id="652MG-00" from="200612" to="200912">
+<dtccode/>
+<dtcname>Noise from all speakers in all modes</dtcname>
+<subpara id="RM000001M5N00YX_01" type-id="51" category="05" proc-id="RM0550J___0000AEG00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When replacing the navigation receiver assembly on a vehicle not subscribed to the G-BOOK service, perform the vehicle linking setting. (see <xref label="Seep01" href="RM000001C3S00RX"/>)</ptxt>
+</item>
+<item>
+<ptxt>When replacing the navigation receiver assembly on a vehicle subscribed to the G-BOOK service, perform the vehicle linking setting, then perform the G-BOOK use resumption operation and HELPNET service start operation. (see <xref label="Seep02" href="RM000001C3S00RX"/>)</ptxt>
+</item>
+<item>
+<ptxt>If the navigation receiver assembly is replaced while a purchased G-SOUND unlimited license exists, perform G-SOUND license recovery. (see <xref label="Seep03" href="RM000001C3S00RX"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001M5N00YX_02" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000001M5N00YX_02_0007" proc-id="RM0550J___0000AEI00000">
+<testtitle>Inspect Speaker Installation Condition</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect Speaker Installation Condition</ptxt>
+<test2>
+<ptxt>Inspect each speaker installation for looseness, play or other abnormalities.</ptxt>
+</test2>
+<test2>
+<ptxt>Inspect each speaker for foreign matter inside or for abnormalities such as a torn speaker cone.</ptxt>
+</test2>
+</test1>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.99in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Speakers normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Speaker improperly installed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Foreign matter in speaker</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Speaker cone torn</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>D</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000001M5N00YX_02_0001" fin="false">A</down>
+<right ref="RM000001M5N00YX_02_0003" fin="true">B</right>
+<right ref="RM000001M5N00YX_02_0004" fin="true">C</right>
+<right ref="RM000001M5N00YX_02_0005" fin="true">D</right>
+</res>
+</testgrp>
+<testgrp id="RM000001M5N00YX_02_0001" proc-id="RM0550J___0000AEH00000">
+<testtitle>Identify Cause of Noise</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Identify the cause of the noise based on the symptom chart below.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>First, check that there is no external noise. If this step is neglected, the source of the noise may be unclear and misidentified, so always perform it.</ptxt>
+</item>
+<item>
+<ptxt>When eliminating noise, eliminate the strongest noise first and proceed in order.</ptxt>
+</item>
+<item>
+<ptxt>Detuning the radio (not tuned to a broadcast) makes the noise more noticeable and the symptom easier to judge.</ptxt>
+</item>
+</list1>
+</atten4>
+<table pgwide="1">
+<title>Symptom Chart</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.50in"/>
+<colspec colname="COL2" colwidth="2.58in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause of Noise</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A whining sound rises in pitch when the accelerator is depressed, and disappears immediately when the engine is stopped</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Alternator noise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A hissing sound is heard when the A/C or heater is operating</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Blower motor noise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A creaking sound is heard when accelerating suddenly while driving on an unpaved road or with the ignition ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel pump noise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A click is heard when the horn button is pressed and released, and a buzzing sound while it is held</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Horn noise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A faint sound (popping, hissing) stops when the engine is stopped</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition noise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A clicking sound occurs in time with the turn signal flasher</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Flasher noise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Noise occurs while the windshield washer is operating</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Washer noise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A creaking sound occurs while the engine is running and continues after the engine is stopped</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Water temperature sensor noise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A scraping sound is heard along the line where the wiper contacts</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiper noise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A crackling sound is heard when the brake pedal is depressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch noise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Others</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Static electricity accumulated in the vehicle</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.99in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Cause of noise cannot be identified</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Cause of noise can be identified</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001M5N00YX_02_0002" fin="true">A</down>
+<right ref="RM000001M5N00YX_02_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001M5N00YX_02_0002">
+<testtitle>Replace Navigation Receiver Assembly<xref label="Seep01" href="RM000001XG4006X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001M5N00YX_02_0003">
+<testtitle>Install speaker correctly</testtitle>
+</testgrp>
+<testgrp id="RM000001M5N00YX_02_0004">
+<testtitle>Remove foreign matter from speaker</testtitle>
+</testgrp>
+<testgrp id="RM000001M5N00YX_02_0005">
+<testtitle>Replace applicable part</testtitle>
+</testgrp>
+<testgrp id="RM000001M5N00YX_02_0006">
+<testtitle>Noise filter at the relevant location</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

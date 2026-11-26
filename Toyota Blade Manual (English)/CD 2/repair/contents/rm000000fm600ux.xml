@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="08">
+<name>Heater &amp; Air Conditioner/Ventilation</name>
+<section id="1002K_S000B" variety="S000B">
+<name>Air Conditioner</name>
+<ttl id="1002K_S000B_7421V_T0025" variety="T0025">
+<name>Heater &amp; Air Conditioner System</name>
+<para id="RM000000FM600UX" category="J" type-id="8009D" name-id="5229H-00" from="200612">
+<dtccode/>
+<dtcname>Plasmacluster circuit</dtcname>
+<subpara id="RM000000FM600UX_06" type-id="31" category="03" proc-id="RM0550J___0000BZX00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The Plasmacluster is operated by the ion generator SW on the air conditioning control assembly. The signal from the ion generator SW is input to the air conditioner amplifier assembly via LIN communication.</ptxt>
+<ptxt>The air conditioner amplifier assembly switches the ion generator between clean mode and ion mode control according to time. Also, the air conditioning control assembly lights the indicator for each mode.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000FM600UX_07" type-id="32" category="03" proc-id="RM0550J___0000BZY00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E145617J01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000FM600UX_08" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000000FM600UX_09" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000FM600UX_09_0040" proc-id="RM0550J___0000BZZ00000">
+<testtitle>Inspect Wire Harness and Connector (Ion Generator - Body Ground)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the ion generator connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the ion generator vehicle side wire harness connector terminal and body ground.</ptxt>
+<figure>
+<graphic graphicname="E144396J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>5 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000FM600UX_09_0041" fin="false">OK</down>
+<right ref="RM000000FM600UX_09_0046" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000FM600UX_09_0041" proc-id="RM0550J___0000C0000000">
+<testtitle>Inspect Wire Harness and Connector (Power Source - Ion Generator)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between each terminal of the ion generator vehicle side wire harness connector.</ptxt>
+<figure>
+<graphic graphicname="E144396J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection ((Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2(IG) - 5(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000FM600UX_09_0042" fin="false">OK</down>
+<right ref="RM000000FM600UX_09_0047" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000FM600UX_09_0042" proc-id="RM0550J___0000C0100000">
+<testtitle>Inspect Wire Harness and Connector (Ion Generator - Air Conditioner Amplifier Assembly)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the air conditioner amplifier assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle side wire harness connector and between the terminals and body ground. (see <xref label="Seep02" href="RM0000005KW01EX"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="E144397J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3(ION-) - A40(PCD2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4(PCL) - A39(PCD1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 (ION-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4 (PCL) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000FM600UX_09_0043" fin="false">OK</down>
+<right ref="RM000000FM600UX_09_0048" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000FM600UX_09_0043" proc-id="RM0550J___0000C0200000">
+<testtitle>Inspect Ion Generator (ION- Terminal, PCL Terminal)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect the ion generator connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between each terminal of the ion generator connector.</ptxt>
+<figure>
+<graphic graphicname="E144398J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection ((Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3(ION-) - 5(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4(PCL) - 5(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000FM600UX_09_0044" fin="false">OK</down>
+<right ref="RM000000FM600UX_09_0045" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000FM600UX_09_0044" proc-id="RM0550J___0000C0300000">
+<testtitle>Inspect Air Conditioner Amplifier Assembly (PCD2 Terminal, PCD1 Terminal)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect connector A of the air conditioner amplifier assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between each terminal of the air conditioner amplifier assembly connector. (see <xref label="Seep01" href="RM0000005KW01EX"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="E144431J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.57in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A40(PCD2) - A14(GND)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>IG ON, blower switch LO, other than ion control mode → ion control mode (indicator display "ION")</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V → 1V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A39(PCD1) - A14(GND)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>IG ON, blower switch LO, other than clean mode → clean mode (indicator display "CLEAN")</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V → 1V or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000FM600UX_09_0049" fin="true">OK</down>
+<right ref="RM000000FM600UX_09_0050" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000FM600UX_09_0045">
+<testtitle>Replace Ion Generator<xref label="Seep01" href="RM00000213X001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000FM600UX_09_0046">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000000FM600UX_09_0047">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000000FM600UX_09_0048">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000000FM600UX_09_0049">
+<testtitle>Replace Ion Generator<xref label="Seep01" href="RM00000213X001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000FM600UX_09_0050">
+<testtitle>Replace Air Conditioner Amplifier Assembly<xref label="Seep01" href="RM000002140002X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

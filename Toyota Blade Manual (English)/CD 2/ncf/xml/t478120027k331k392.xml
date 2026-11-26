@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T120027K331K392" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Light Control Computer Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The light control computer achieves instant and stable illumination of the HID bulb through controls such as generating a high voltage of up to approximately 22,000V. Since this device generates high voltage, various fail-safe functions are incorporated, and consideration has also been given to ensuring reliability against heat, humidity, vibration, etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810183e" WIDTH = "6.931in" HEIGHT = "2.944in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>HID Bulb Illumination Control Flow</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>1. The battery voltage is converted into a high-voltage pulse (approximately 22,000V) by the light control computer in the lamp.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2. The high-voltage pulse is applied between both electrodes of the bulb, causing the xenon gas to emit light.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>3. Arc discharge occurs as the temperature inside the bulb rises.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>4. As the temperature rises further, the metal iodide vaporizes and separates, and the metal atoms emit light by discharge.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>5. The light control computer optimally controls the power supplied to the bulb.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T030063A431A475" UPDATE = "ORIGINAL" LDUP = "6May2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Engine Integrated Control</TITLE>
+<LIST1><ITEM><PTXT>By integrating the control of CVT speed and engine torque, fine control is performed so that the engine operates on its optimum fuel economy line.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810132p" WIDTH = "6.917in" HEIGHT = "5.528in" />
+</FIGURE>
+<INDICATE ID = "T030063A431A475I01" INDSW = "OFF">
+<TITLE>Basic Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "82%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Determination of Target Driving Force</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The target engine output is determined from the target driving force requested by the driver, based on the accelerator opening and wheel speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Determination of Target Speed</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The target primary pulley speed is determined so that the target engine output can be achieved on the engine's optimum fuel economy line, and shift control is performed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Determination of Target Torque</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The target engine torque is determined from the target engine output and the primary pulley speed, and throttle opening control is performed.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- $Id: contents.html,v 1.13 2003/07/07 06:58:21 miya Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Inspection Procedure</title>
+
+
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+
+<script language="javascript">
+<!--
+var flag = null;
+function initContents(){
+	if(parent.g_nowTtlId == null) parent.g_nowTtlId = parent.g_firstTid;
+	var paraIdArray = parent.g_hashParaIdArray.get(parent.g_nowTtlId);
+	if (paraIdArray == null) return;
+	for(i=0;i<paraIdArray.length;i++){
+		var obj = parent.g_hashXml.get(paraIdArray[i]);
+		if(i==0)	parent.iterateDisplay(obj,parent.g_contXsl,disp, null,true);
+		else      parent.iterateDisplay(obj,parent.g_contXsl,disp,null,false);
+	}
+	if(paraIdArray.length > 1 && parent.g_paraId != null && flag==null){
+		location.hash = parent.g_paraId;//目次から遷移 且つ  兄弟を持つパラの場合、選択パラの頭だし実現（スルー）
+		flag=1;
+	}
+	else location.hash="TOP";//contents画面をスクロールさせた後新たなttlを選択したとき頭だし可。
+	parent.loadMemoData (document,parent.REPAIR);
+}
+-->
+</script>
+</head>
+<body onload="initContents()">
+	<a name="TOP"></a>
+	<div id="disp"></div>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>

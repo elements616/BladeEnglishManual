@@ -1,0 +1,2121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740004p SYSTEM "../xml/grph_ent/a4740004p.png" NDATA png>
+<!ENTITY a4740005p SYSTEM "../xml/grph_ent/a4740005p.png" NDATA png>
+<!ENTITY a4740006p SYSTEM "../xml/grph_ent/a4740006p.png" NDATA png>
+<!ENTITY a4740054p SYSTEM "../xml/grph_ent/a4740054p.png" NDATA png>
+<!ENTITY a4740055p SYSTEM "../xml/grph_ent/a4740055p.png" NDATA png>
+<!ENTITY a4740072p SYSTEM "../xml/grph_ent/a4740072p.png" NDATA png>
+<!ENTITY a4740073p SYSTEM "../xml/grph_ent/a4740073p.png" NDATA png>
+<!ENTITY a4740074p SYSTEM "../xml/grph_ent/a4740074p.png" NDATA png>
+<!ENTITY a4740075p SYSTEM "../xml/grph_ent/a4740075p.png" NDATA png>
+<!ENTITY a4740081p SYSTEM "../xml/grph_ent/a4740081p.png" NDATA png>
+<!ENTITY a4740082p SYSTEM "../xml/grph_ent/a4740082p.png" NDATA png>
+<!ENTITY a4740085p SYSTEM "../xml/grph_ent/a4740085p.png" NDATA png>
+<!ENTITY a4740080p SYSTEM "../xml/grph_ent/a4740080p.png" NDATA png>
+<!ENTITY a4740079p SYSTEM "../xml/grph_ent/a4740079p.png" NDATA png>
+<!ENTITY a4740077p SYSTEM "../xml/grph_ent/a4740077p.png" NDATA png>
+<!ENTITY a4740078p SYSTEM "../xml/grph_ent/a4740078p.png" NDATA png>
+<!ENTITY a4740076p SYSTEM "../xml/grph_ent/a4740076p.png" NDATA png>
+<!ENTITY a4740021p SYSTEM "../xml/grph_ent/a4740021p.png" NDATA png>
+<!ENTITY a4740132p SYSTEM "../xml/grph_ent/a4740132p.png" NDATA png>
+<!ENTITY a4740083p SYSTEM "../xml/grph_ent/a4740083p.png" NDATA png>
+<!ENTITY a4740056p SYSTEM "../xml/grph_ent/a4740056p.png" NDATA png>
+<!ENTITY a4740057p SYSTEM "../xml/grph_ent/a4740057p.png" NDATA png>
+<!ENTITY a4740058p SYSTEM "../xml/grph_ent/a4740058p.png" NDATA png>
+<!ENTITY a4640045p SYSTEM "../xml/grph_ent/a4640045p.png" NDATA png>
+<!ENTITY a4740094p SYSTEM "../xml/grph_ent/a4740094p.png" NDATA png>
+<!ENTITY a4740059p SYSTEM "../xml/grph_ent/a4740059p.png" NDATA png>
+<!ENTITY a4740060p SYSTEM "../xml/grph_ent/a4740060p.png" NDATA png>
+<!ENTITY a4740061p SYSTEM "../xml/grph_ent/a4740061p.png" NDATA png>
+<!ENTITY a4740062p SYSTEM "../xml/grph_ent/a4740062p.png" NDATA png>
+<!ENTITY a4740063p SYSTEM "../xml/grph_ent/a4740063p.png" NDATA png>
+<!ENTITY a4740064p SYSTEM "../xml/grph_ent/a4740064p.png" NDATA png>
+<!ENTITY a4740065p SYSTEM "../xml/grph_ent/a4740065p.png" NDATA png>
+<!ENTITY a4740066p SYSTEM "../xml/grph_ent/a4740066p.png" NDATA png>
+<!ENTITY a4740034p SYSTEM "../xml/grph_ent/a4740034p.png" NDATA png>
+<!ENTITY a4740032p SYSTEM "../xml/grph_ent/a4740032p.png" NDATA png>
+<!ENTITY a4740031p SYSTEM "../xml/grph_ent/a4740031p.png" NDATA png>
+<!ENTITY a4740035p SYSTEM "../xml/grph_ent/a4740035p.png" NDATA png>
+<!ENTITY a4740067p SYSTEM "../xml/grph_ent/a4740067p.png" NDATA png>
+<!ENTITY a4740068p SYSTEM "../xml/grph_ent/a4740068p.png" NDATA png>
+<!ENTITY a4740015p SYSTEM "../xml/grph_ent/a4740015p.png" NDATA png>
+<!ENTITY a4740069p SYSTEM "../xml/grph_ent/a4740069p.png" NDATA png>
+<!ENTITY a4740070p SYSTEM "../xml/grph_ent/a4740070p.png" NDATA png>
+<!ENTITY a4740071p SYSTEM "../xml/grph_ent/a4740071p.png" NDATA png>
+<!ENTITY a4740018p SYSTEM "../xml/grph_ent/a4740018p.png" NDATA png>
+<!ENTITY a4600019p SYSTEM "../xml/grph_ent/a4600019p.png" NDATA png>
+<!ENTITY a4740007p SYSTEM "../xml/grph_ent/a4740007p.png" NDATA png>
+<!ENTITY a4740008p SYSTEM "../xml/grph_ent/a4740008p.png" NDATA png>
+<!ENTITY a4740097p SYSTEM "../xml/grph_ent/a4740097p.png" NDATA png>
+<!ENTITY a4740098p SYSTEM "../xml/grph_ent/a4740098p.png" NDATA png>
+<!ENTITY a4740096p SYSTEM "../xml/grph_ent/a4740096p.png" NDATA png>
+<!ENTITY a4740009p SYSTEM "../xml/grph_ent/a4740009p.png" NDATA png>
+<!ENTITY a4740010p SYSTEM "../xml/grph_ent/a4740010p.png" NDATA png>
+<!ENTITY a4740011p SYSTEM "../xml/grph_ent/a4740011p.png" NDATA png>
+
+<!ENTITY T010054A069 SYSTEM "../xml/t478010054a069.xml">
+<!ENTITY T010054A070 SYSTEM "../xml/t285010054a070.xml">
+<!ENTITY T010054A070A201 SYSTEM "../xml/t285010054a070a201.xml">
+<!ENTITY T010054A070A202 SYSTEM "../xml/t285010054a070a202.xml">
+<!ENTITY T010054A070A187 SYSTEM "../xml/t285010054a070a187.xml">
+<!ENTITY T010054A076A223 SYSTEM "../xml/t285010054a076a223.xml">
+<!ENTITY T010054A148K732 SYSTEM "../xml/t285010054a148k732.xml">
+<!ENTITY T010054A148K732R01 SYSTEM "../xml/t285010054a148k732r01.xml">
+<!ENTITY T010054A326K732 SYSTEM "../xml/t285010054a326k732.xml">
+<!ENTITY T010054A326K732R02 SYSTEM "../xml/t285010054a326k732r02.xml">
+<!ENTITY T010054A076 SYSTEM "../xml/t285010054a076.xml">
+<!ENTITY T010054A077 SYSTEM "../xml/t478010054a077.xml">
+<!ENTITY T010054A078 SYSTEM "../xml/t478010054a078.xml">
+<!ENTITY T010054A079 SYSTEM "../xml/t478010054a079.xml">
+<!ENTITY T010054A080 SYSTEM "../xml/t478010054a080.xml">
+<!ENTITY T010054A093 SYSTEM "../xml/t478010054a093.xml">
+<!ENTITY T010054A148 SYSTEM "../xml/t285010054a148.xml">
+<!ENTITY T010054A326 SYSTEM "../xml/t285010054a326.xml">
+<!ENTITY T010054A388 SYSTEM "../xml/t478010054a388.xml">
+<!ENTITY T010054A410 SYSTEM "../xml/t478010054a410.xml">
+<!ENTITY T010054A071 SYSTEM "../xml/t285010054a071.xml">
+<!ENTITY T010054A071A205 SYSTEM "../xml/t285010054a071a205.xml">
+<!ENTITY T010054A071A206 SYSTEM "../xml/t285010054a071a206.xml">
+<!ENTITY T010054A071A216 SYSTEM "../xml/t285010054a071a216.xml">
+<!ENTITY T010054A083A301 SYSTEM "../xml/t285010054a083a301.xml">
+<!ENTITY T010054A083A301R03 SYSTEM "../xml/t285010054a083a301r03.xml">
+<!ENTITY T010054A083 SYSTEM "../xml/t285010054a083.xml">
+<!ENTITY T010054A122 SYSTEM "../xml/t478010054a122.xml">
+<!ENTITY T010054A387 SYSTEM "../xml/t285010054a387.xml">
+<!ENTITY T010054A387A239 SYSTEM "../xml/t285010054a387a239.xml">
+<!ENTITY T010054A073 SYSTEM "../xml/t285010054a073.xml">
+<!ENTITY T010054A073A210 SYSTEM "../xml/t285010054a073a210.xml">
+<!ENTITY T010054A073A211 SYSTEM "../xml/t285010054a073a211.xml">
+<!ENTITY T010054A073A212 SYSTEM "../xml/t285010054a073a212.xml">
+<!ENTITY T010054A073A232 SYSTEM "../xml/t285010054a073a232.xml">
+<!ENTITY T010039A131A466 SYSTEM "../xml/t285010039a131a466.xml">
+<!ENTITY T010039A131A466R04 SYSTEM "../xml/t285010039a131a466r04.xml">
+<!ENTITY T010039A109 SYSTEM "../xml/t478010039a109.xml">
+<!ENTITY T010039A131 SYSTEM "../xml/t285010039a131.xml">
+<!ENTITY T010054A087 SYSTEM "../xml/t478010054a087.xml">
+<!ENTITY T010054A074 SYSTEM "../xml/t478010054a074.xml">
+<!ENTITY T010054A733 SYSTEM "../xml/t478010054a733.xml">
+<!ENTITY T010054A090 SYSTEM "../xml/t478010054a090.xml">
+<!ENTITY T010054T037 SYSTEM "../xml/t478010054t037.xml">
+<!ENTITY T010054A799 SYSTEM "../xml/t478010054a799.xml">
+<!ENTITY T010054A075 SYSTEM "../xml/t478010054a075.xml">
+<!ENTITY T010037A409 SYSTEM "../xml/t478010037a409.xml">
+<!ENTITY T010054T038 SYSTEM "../xml/t478010054t038.xml">
+<!ENTITY T010054A397 SYSTEM "../xml/t478010054a397.xml">
+<!ENTITY T010044A154A217 SYSTEM "../xml/t285010044a154a217.xml">
+<!ENTITY T010044A154A218 SYSTEM "../xml/t285010044a154a218.xml">
+<!ENTITY T010044A154 SYSTEM "../xml/t285010044a154.xml">
+<!ENTITY T010054A398 SYSTEM "../xml/t285010054a398.xml">
+<!ENTITY T010054A398A280 SYSTEM "../xml/t285010054a398a280.xml">
+<!ENTITY T010054A398A281 SYSTEM "../xml/t285010054a398a281.xml">
+<!ENTITY T010054A398A053 SYSTEM "../xml/t285010054a398a053.xml">
+<!ENTITY T010054A077 SYSTEM "../xml/t478010054a077.xml">
+<!ENTITY T010054A078 SYSTEM "../xml/t478010054a078.xml">
+<!ENTITY T010054A388 SYSTEM "../xml/t478010054a388.xml">
+<!ENTITY T010054A079 SYSTEM "../xml/t478010054a079.xml">
+<!ENTITY T010054A080 SYSTEM "../xml/t478010054a080.xml">
+<!ENTITY T010054A410 SYSTEM "../xml/t478010054a410.xml">
+<!ENTITY T010054A087 SYSTEM "../xml/t478010054a087.xml">
+<!ENTITY T010054A093 SYSTEM "../xml/t478010054a093.xml">
+<!ENTITY T010054A090 SYSTEM "../xml/t478010054a090.xml">
+<!ENTITY T010054A122 SYSTEM "../xml/t478010054a122.xml">
+<!ENTITY T010054T038 SYSTEM "../xml/t478010054t038.xml">
+<!ENTITY T010054A076R01 SYSTEM "../xml/t285010054a076r01.xml">
+<!ENTITY T010054A076A223R05 SYSTEM "../xml/t285010054a076a223r05.xml">
+<!ENTITY T010054A077R02 SYSTEM "../xml/t478010054a077r02.xml">
+<!ENTITY T010054A078R03 SYSTEM "../xml/t478010054a078r03.xml">
+<!ENTITY T010054A326R04 SYSTEM "../xml/t285010054a326r04.xml">
+<!ENTITY T010054A326K732R06 SYSTEM "../xml/t285010054a326k732r06.xml">
+<!ENTITY T010054A148R05 SYSTEM "../xml/t285010054a148r05.xml">
+<!ENTITY T010054A148K732R07 SYSTEM "../xml/t285010054a148k732r07.xml">
+<!ENTITY T010054A388R06 SYSTEM "../xml/t478010054a388r06.xml">
+<!ENTITY T010054A079R07 SYSTEM "../xml/t478010054a079r07.xml">
+<!ENTITY T010054A080R08 SYSTEM "../xml/t478010054a080r08.xml">
+<!ENTITY T010054A410R09 SYSTEM "../xml/t478010054a410r09.xml">
+<!ENTITY T010054A083R10 SYSTEM "../xml/t285010054a083r10.xml">
+<!ENTITY T010054A083A301R08 SYSTEM "../xml/t285010054a083a301r08.xml">
+<!ENTITY T010054A087R11 SYSTEM "../xml/t478010054a087r11.xml">
+<!ENTITY T010054A093R12 SYSTEM "../xml/t478010054a093r12.xml">
+<!ENTITY T010054A090R13 SYSTEM "../xml/t478010054a090r13.xml">
+<!ENTITY T010054A122R14 SYSTEM "../xml/t478010054a122r14.xml">
+<!ENTITY T010054T038R15 SYSTEM "../xml/t478010054t038r15.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T010054A069S"><SCTITLE/>
+
+<PARA INFOID = "T010054A069" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Engine Control System General</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>TCCS (TOYOTA Computer Controlled System), which comprehensively and highly accurately controls fuel injection control (EFI), ignition timing control (ESA), throttle control (ETCS-i), VVT-i control, etc., has been adopted to improve performance, output, fuel economy and emission performance.</PTXT></ITEM>
+<ITEM><PTXT>CAN communication has been adopted as the method of communication with other computers.<XREF REFID = "S478150003K792"/>
+</PTXT></ITEM>
+<ITEM><PTXT>New diagnosis and fail-safe functions have been provided for serviceability and safety.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740004p" WIDTH = "6.903in" HEIGHT = "4.972in" />
+</FIGURE>
+<INDICATE ID = "T010054A069I01" INDSW = "OFF">
+<TITLE>Engine Control System Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740005p" WIDTH = "6.917in" HEIGHT = "6.319in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T010054A069I02" INDSW = "OFF">
+<TITLE>Engine Control Block Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740006p" WIDTH = "6.903in" HEIGHT = "7.125in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T010054A069I03" INDSW = "OFF">
+<TITLE>Control List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "20%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "54%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Control Name</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Fuel Injection Volume Control (EFI)</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Appropriate fuel injection is performed by correcting the basic injection duration, calculated according to engine conditions, with signals from each sensor. </PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE"><PTXT>Ignition Timing Control (ESA)</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Appropriate ignition is performed by correcting the basic ignition timing, calculated according to engine conditions, with signals from each sensor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Knock Judgment Control (KCS)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>The presence or absence of knocking is judged based on the signal from the knock sensor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE"><PTXT>ETCS-i Control</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>The throttle is controlled to the appropriate opening angle by correcting the throttle opening angle, calculated according to engine conditions, with signals from each sensor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Maximum Speed Control</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>When the vehicle speed reaches 180km/h, the throttle valve is closed to suppress any increase in vehicle speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Idle Speed Control (ISC)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Controls the fast idle speed according to the engine coolant temperature and the idle speed after engine warm-up. Controls the idle speed by means of the fuel injection volume and throttle opening angle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>VVT-i Control</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Varies the phase of the intake camshaft according to engine conditions to improve engine output, reduce exhaust emissions and improve fuel economy. </PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Electric Cooling Fan Control</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Controls cooling fan ON/OFF and fan speed according to coolant temperature and air conditioner status.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Air Conditioner Cut-off Control</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Cuts off the air conditioner compressor during acceleration, etc. to ensure driveability.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Canister Purge Control</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Controls the canister purge flow rate according to coolant temperature and driving conditions. </PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>A/F Sensor Heater Control</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Turns the A/F sensor heater ON/OFF according to coolant temperature and driving conditions.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>O<SUB>2</SUB>Sensor Heater Control</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>According to coolant temperature and driving conditions, the O<SUB>2</SUB>sensor heater is turned ON/OFF.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Fuel Pump Control</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Turns the fuel pump ON/OFF based on the starter signal and engine speed signal. </PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Cranking Hold Control</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Based on the start signal from the engine switch, the engine control computer continues to energize the starter via the starter relay until the engine starts.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Alternator Charging Control</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Controls the alternator generated voltage according to driving conditions, reducing the generation load to lower fuel consumption.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>CAN Communication</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>A communication IC capable of exchanging large amounts of information over 1 communication lines has been adopted to communicate with other control computers.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Diagnosis</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Using the diagnostic tool TaSCAN, accurate and detailed diagnosis, such as reading SAE-standard DTCs and data and performing Active Tests, is possible.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Fail-safe</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>When a malfunction occurs in a signal from any sensor, control is continued using standard values in the engine control computer, or the engine is stopped.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T010054A069I04" INDSW = "OFF">
+<TITLE>Sensor List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "6" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "45%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "5%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "5%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "7%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Device</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>EFI</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>ESA</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>ISC</PTXT></ENTRY>
+<ENTRY COLNAME = "6"><PTXT>VVT-i</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Air Flow Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the intake air volume using a hot wire.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Camshaft Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects cylinder identification and actual camshaft angle.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Crankshaft Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects actual crank angle and engine speed.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Throttle Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the throttle valve opening angle.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Accelerator Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the accelerator pedal opening angle.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Water Temperature Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the coolant temperature.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Intake Air Temperature Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the intake air temperature.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>A/F Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the air-fuel ratio of the exhaust gas.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>O<SUB>2</SUB>Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the oxygen concentration in the exhaust gas.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Starter Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Sends the starter voltage during engine starting as a signal.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Flat Type Knock Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects knocking conditions.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Air Conditioner Pressure Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects air conditioner compressor ON/OFF.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Vehicle Speed Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the vehicle speed.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T010054A069I05" INDSW = "OFF">
+<TITLE>Actuator List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Device</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Main Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Supplies power to the system.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Circuit Opening Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Supplies power to the fuel pump system.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Fuel Injector</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Injects the optimum amount of fuel at the optimum timing.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>A/F Sensor Heater</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Heats the A/F sensor to promote feedback control.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>O<SUB>2</SUB>Sensor Heater</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>O<SUB>2</SUB>Heats the sensor to promote feedback control.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Electronic Throttle Motor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Controls the throttle valve opening angle according to driving conditions.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Ignition Coil with Igniter</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Turns the ignition coil current ON/OFF at the optimum timing.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>OCV for VVT-i</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Controls the phase of the intake camshaft to the optimum valve timing.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>VSV for EVAP Purge</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Increases or decreases the canister purge volume.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A076S"><SCTITLE/>
+
+<PARA INFOID = "T010054A076" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Hot-wire Type Air Flow Meter</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A compact, lightweight plastic hot-wire type plug-in air flow meter has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>The hot-wire type plug-in air flow meter passes part of the intake air through the detection section and directly measures the mass flow rate, improving detection accuracy and reducing intake resistance.</PTXT></ITEM>
+<ITEM><PTXT>It uses bypass flow measurement, which is less affected by intake pulsation from the air cleaner. Also, low loss is achieved by a flow passage structure with low fluid resistance, allowing air volumes from small to large to be measured reliably.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T010054A076A223" UPDATE = "ORIGINAL" LDUP = "29Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Hot-wire Type Air Flow Meter Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Part of the intake air is bypassed and the intake air volume is measured at the hot wire measuring section. The hot wire measuring section uses a platinum filament (platinum hot wire), and a bridge circuit is formed by the hot wires of the intake air temperature measuring resistor and the heating resistor (heater) to measure the engine intake air volume. Due to the characteristics of the hot-wire type air flow meter, the mass flow rate can in principle be measured directly, so density correction for changes in intake air temperature is not necessary; however, intake air temperature information is required for engine controls such as EFI. Therefore, a compact thermistor type intake air temperature sensor is built into the air flow meter to detect the intake air temperature.</PTXT></ITEM>
+<ITEM><PTXT>A bridge circuit is a circuit connected as shown in the illustration below, in which, when R1 × R4 = R2 × R3 holds, V1 = V2 and the value indicated by ammeter G is 0.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740072p" WIDTH = "6.903in" HEIGHT = "2.986in" />
+</FIGURE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the intake air volume changes, the bridge circuit of the hot wire measuring section feedback-controls the power supplied to the heating resistor so that the temperature difference between the intake air temperature measuring resistor and the heating resistor (heater) is always kept constant. This supplied power is converted into a voltage and output to the engine control computer. The engine control computer calculates the engine intake air volume from the predetermined relationship between the air flow meter output voltage and flow rate.</PTXT></ITEM>
+<ITEM><PTXT>The bridge circuit of the hot-wire type air flow meter is constructed as shown in the illustration below. For example, when the intake air volume increases, the heating resistor is cooled and the value of RH decreases, resulting in RH (R1) × R4 &lt; RK (R2) × R3,VM ≠ VK. When the control section detects this condition, it increases the current flowing from the power supply to VB (heating RH) and controls so that RH (R1) × R4 = RK (R2) × R3,VM = VK.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740073p" WIDTH = "6.903in" HEIGHT = "6.250in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A077S"><SCTITLE/>
+
+<PARA INFOID = "T010054A077" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Camshaft Position Sensor (G2 Signal)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A highly accurate electromagnetic pickup type sensor has been adopted. Performs cylinder identification and detection of actual camshaft timing.</PTXT></ITEM>
+<ITEM><PTXT>The camshaft position sensor is installed at the rear end of the cylinder head and detects the protrusions of the camshaft timing rotor (360-180-180°CA) fixed to the intake camshaft. As the camshaft rotates, the air gap between the timing rotor protrusions and the camshaft position sensor changes, so the magnetic flux passing through the coil of the camshaft position sensor increases and decreases, generating an electromotive force in the coil. This generated voltage is reversed when the timing rotor protrusion approaches and when it moves away from the camshaft position sensor, so it appears as an AC voltage.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740074p" WIDTH = "6.903in" HEIGHT = "2.847in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A078S"><SCTITLE/>
+
+<PARA INFOID = "T010054A078" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Crankshaft Position Sensor (Ne Signal)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A highly accurate electromagnetic pickup type sensor has been adopted. Detects the crank position and crank angular velocity.</PTXT></ITEM>
+<ITEM><PTXT>The crankshaft timing rotor installed on the crankshaft has 34 signal teeth with 2 teeth missing for top dead center detection. </PTXT></ITEM>
+<ITEM><PTXT>The crankshaft position sensor detects the crank rotation signal every 10° and can accurately detect top dead center from the location of the missing teeth. A sensor similar to the camshaft position sensor has been adopted, detecting the signal as AC power.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740075p" WIDTH = "6.917in" HEIGHT = "2.208in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A326S"><SCTITLE/>
+
+<PARA INFOID = "T010054A326" UPDATE = "ORIGINAL" LDUP = "2Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Accelerator Position Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A non-contact type accelerator position sensor has been adopted, using a Hall element<HINTREF     REFID = "H285010054A32602"/> that can extract the magnetic field strength as an electrical signal using the Hall effect<HINTREF     REFID = "H285010054A32601"/>, which provides an output voltage linear to the accelerator pedal depression amount. When the accelerator pedal depression amount changes, the angle of the magnetic field relative to the flow of the applied current in the Hall element changes, so the strength of the magnetic field perpendicular to the applied current changes. The resulting change in voltage, generated perpendicular to both the applied current and the magnetic field, is sent to the engine control computer as the accelerator pedal depression amount signal. In addition, reliability is ensured by adopting a 2-system (main and sub) sensor with different output characteristics.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H285010054A32601">This is a phenomenon in which, when a current flows through a rod- or plate-shaped conductor or semiconductor and a magnetic field is applied perpendicular to it, a potential difference is generated in the direction perpendicular to both the current and the magnetic field.</PTXT></ITEM>
+<ITEM><PTXT ID = "H285010054A32602">This is an electronic component that uses the electromotive force generated by the potential difference in a magnetic field.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740076p" WIDTH = "6.903in" HEIGHT = "4.611in" />
+</FIGURE>
+
+<MECA ID = "T010054A326K732" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Fail-safe Operation</TITLE>
+<LIST1><ITEM><PTXT>The accelerator position sensor detects the opening angle with 2 systems: a main circuit and a sub circuit. If a malfunction occurs in the signal, the engine control computer switches to limp mode.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T010054A326K732I01" INDSW = "OFF">
+<TITLE>When 1 System Malfunctions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>If a malfunction occurs in either circuit, the engine control computer detects the malfunction from the voltage difference between the main circuit and sub circuit. At this time, a limited accelerator opening angle is calculated from the sensor value of 2 circuit, and throttle control is continued, enabling limp mode driving.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740077p" WIDTH = "6.903in" HEIGHT = "2.958in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T010054A326K732I02" INDSW = "OFF">
+<TITLE>When 2 System Malfunctions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>The engine control computer detects the malfunction from the voltages of the main circuit and sub circuit and controls the throttle valve opening angle only within the idling range.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740078p" WIDTH = "6.903in" HEIGHT = "3.000in" />
+</FIGURE>
+</INDICATE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A148S"><SCTITLE/>
+
+<PARA INFOID = "T010054A148" UPDATE = "ORIGINAL" LDUP = "2Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Throttle Position Sensor</TITLE>
+<LIST1><ITEM><PTXT>A non-contact type throttle position sensor has been adopted, using a Hall element<HINTREF     REFID = "H285010054A14802"/> that can extract the magnetic field strength as an electrical signal using the Hall effect<HINTREF     REFID = "H285010054A14801"/>, which provides an output voltage linear to the throttle valve opening angle. When the throttle valve opening angle changes, the angle of the magnetic field relative to the flow of the applied current in the Hall element changes, so the strength of the magnetic field perpendicular to the applied current changes. As a result, the change in voltage generated perpendicular to both the applied current and the magnetic field is sent to the engine control computer as the throttle valve opening angle signal. In addition, reliability is ensured by adopting a 2-system (main and sub) sensor with different output characteristics.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H285010054A14801">This is a phenomenon in which, when a current flows through a rod- or plate-shaped conductor or semiconductor and a magnetic field is applied perpendicular to it, a potential difference is generated in the direction perpendicular to both the current and the magnetic field.</PTXT></ITEM>
+<ITEM><PTXT ID = "H285010054A14802">This is an electronic component that uses the electromotive force generated by the potential difference in a magnetic field.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740079p" WIDTH = "6.903in" HEIGHT = "4.736in" />
+</FIGURE>
+
+<MECA ID = "T010054A148K732" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Fail-safe Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The throttle position sensor detects the opening angle with 2 systems: a main circuit and a sub circuit. If a malfunction occurs in the signal, the engine control computer switches to limp mode.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T010054A148K732I01" INDSW = "OFF">
+<TITLE>When Malfunction Is Detected</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>If a malfunction occurs in either or both circuits, the engine control computer detects the malfunction from the voltage difference between the main circuit and sub circuit. At this time, power to the throttle motor is cut and the throttle valve is returned to a predetermined opening angle by the return spring. Limp mode driving is made possible by controlling engine output using fuel injection control and ignition timing control. Also, even if the engine control computer detects another malfunction such as in the throttle motor, limp mode driving is made possible by performing the above control.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740080p" WIDTH = "6.917in" HEIGHT = "3.792in" />
+</FIGURE>
+</INDICATE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A388S"><SCTITLE/>
+
+<PARA INFOID = "T010054A388" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>1-valve Electronically Controlled Throttle Body</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A 1-valve type electronically controlled throttle body, in which the throttle valve is driven by a motor, has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>A flat shaft has been adopted to increase the opening area of the valve, improving performance.</PTXT></ITEM>
+<ITEM><PTXT>The driver's operation (accelerator pedal depression amount) is transmitted to the engine control computer by the accelerator position sensor located on the accelerator pedal. The engine control computer determines the throttle opening appropriate to the driving conditions and drives the throttle motor. The throttle valve opening is fed back to the engine control computer by the throttle position sensor.</PTXT></ITEM>
+<ITEM><PTXT>The throttle valve drive motor is mounted on the throttle body, and the opening and closing of the throttle valve is controlled through reduction gears. In addition, a DC motor with good response and low power consumption has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>The inside of the throttle position sensor has a 2-system (main and sub) configuration, and the system is constantly monitored for malfunctions.</PTXT></ITEM>
+<ITEM><PTXT>If a malfunction is detected, the warning light in the meter alerts the driver and current to the motor is cut. At this time, the throttle valve is returned to a predetermined opening by the throttle valve return spring, and engine output is adjusted according to the accelerator opening through fuel injection cut and ignition retard, enabling limp-home driving.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740021p" WIDTH = "6.903in" HEIGHT = "5.931in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A079S"><SCTITLE/>
+
+<PARA INFOID = "T010054A079" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Water Temperature Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Detects the engine coolant temperature and sends a signal to the engine control computer.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740081p" WIDTH = "6.903in" HEIGHT = "1.833in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A080S"><SCTITLE/>
+
+<PARA INFOID = "T010054A080" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>O2 Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Converts the oxygen concentration in the exhaust gas into an electromotive force and detects whether the air-fuel ratio is rich or lean relative to the stoichiometric air-fuel ratio.</PTXT></ITEM>
+<ITEM><PTXT>By heating the sensor (zirconia element) with a built-in heater, the O<SUB>2</SUB>sensor temperature is kept constant, promoting feedback control.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740082p" WIDTH = "6.903in" HEIGHT = "2.542in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A410S"><SCTITLE/>
+
+<PARA INFOID = "T010054A410" UPDATE = "ORIGINAL" LDUP = "20Jul2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>A/F Sensor (Air-Fuel Ratio Sensor)</TITLE>
+<LIST1><ITEM><PTXT>An A/F sensor has been adopted to reliably feed back the air-fuel ratio condition from the exhaust gas. A laminated sensor structure has been adopted to promote early activation of the sensor, achieving air-fuel ratio feedback control from immediately after engine start.</PTXT></ITEM>
+<ITEM><PTXT>Unlike a sensor that outputs a lean or rich signal at the stoichiometric air-fuel ratio boundary, i.e. the O<SUB>2</SUB>sensor, the A/F sensor has output characteristics proportional to the air-fuel ratio, enabling the engine control computer to perform more precise air-fuel ratio control.</PTXT></ITEM>
+<ITEM><PTXT>To activate the A/F sensor, the sensor (zirconia element) must be heated. While a cup type sensor requires time to activate because it is heated indirectly through an atmospheric layer, a laminated type sensor heats the zirconia element directly, shortening the sensor activation time. In addition, the heat mass has been reduced by downsizing the zirconia element.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740132p" WIDTH = "6.903in" HEIGHT = "2.972in" />
+</FIGURE>
+<INDICATE ID = "T010054A410I01" INDSW = "OFF">
+<TITLE>A/F Sensor and O<SUB>2</SUB>Sensor Characteristics</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740083p" WIDTH = "6.903in" HEIGHT = "2.500in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A083S"><SCTITLE/>
+
+<PARA INFOID = "T010054A083" UPDATE = "ORIGINAL" LDUP = "2Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Knock Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A flat (non-resonant type) knock sensor has been adopted.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T010054A083A301" UPDATE = "ORIGINAL" LDUP = "12Dec2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Knock Sensor Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the knock sensor receives vibration from the cylinder block, the movement of the weight lags due to inertia. As a result, pressure is applied to the piezoelectric ceramic provided between the cylinder block and the weight, generating voltage. The voltage is output almost constantly across all frequency bands, and the engine control computer detects the target frequency and determines that knocking is occurring.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4640045p" WIDTH = "6.903in" HEIGHT = "3.722in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A087S"><SCTITLE/>
+
+<PARA INFOID = "T010054A087" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>OCV for VVT-i</TITLE>
+<LIST1><ITEM><PTXT>The position of the spool valve is controlled by the duty signal from the ECU to regulate the oil supply to the advance and retard chambers of the VVT-i controller.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740035p" WIDTH = "6.903in" HEIGHT = "2.653in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A093S"><SCTITLE/>
+
+<PARA INFOID = "T010054A093" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Fuel Injector</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A 12-hole ultra-fine atomization injector has been adopted. It is mounted directly to the cylinder head, shortening the distance to the combustion chamber and reducing fuel adhesion to the intake port, for excellent fuel economy and emission performance.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740085p" WIDTH = "6.903in" HEIGHT = "3.153in" />
+</FIGURE>
+<SPEC ID = "T010054A093X01" INDSW = "OFF">
+<TITLE>Fuel Injector Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Injection Hole Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>0.20</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Number of Injection Holes</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>12</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A090S"><SCTITLE/>
+
+<PARA INFOID = "T010054A090" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Fuel Pump</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A circumferential flow type in-tank fuel pump has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>By integrating the charcoal canister, fuel filter and pressure regulator into the fuel pump assembly, the number of parts and weight have been reduced and space in the engine room has been saved.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740015p" WIDTH = "6.903in" HEIGHT = "2.819in" />
+</FIGURE>
+<SPEC ID = "T010054A090X01" INDSW = "OFF">
+<TITLE>Fuel Pump Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Discharge Pressure [kPa { kgf/cm<SUP>2</SUP>}]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>324(3.30)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Discharge Rate [L/h] (at Discharge Pressure 324kPa{3.30kgf/cm2})</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>120 or more</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+<SPEC ID = "T010054A090X02" INDSW = "OFF">
+<TITLE>Fuel Filter Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Filtration Method</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Filter Paper Type</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Filtration Area [cm<SUB></SUB><SUP>2</SUP>]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>1400</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A122S"><SCTITLE/>
+
+<PARA INFOID = "T010054A122" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Ignition Coil with Igniter</TITLE>
+<LIST1><ITEM><PTXT>By placing a coil independently for each cylinder, the distributor and high-tension cords are eliminated, reducing losses in the high-voltage section, ensuring reliability and reducing radio noise.</PTXT></ITEM>
+<ITEM><PTXT>A compact, lightweight igniter is built in, and a high voltage is induced in the secondary (No. 2) coil by the signal from the engine control computer.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740094p" WIDTH = "6.917in" HEIGHT = "2.722in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054T038S"><SCTITLE/>
+
+<PARA INFOID = "T010054T038" UPDATE = "ORIGINAL" LDUP = "11Apr2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>VSV for Canister Purge</TITLE>
+<LIST1><ITEM><PTXT>The canister purge volume is controlled by the signal (duty signal) from the engine control computer. The purge volume is determined by the ratio of the ON and OFF times of the signal (duty ratio).</PTXT></ITEM>
+<ITEM><PTXT>The piping of the canister purge VSV has been optimized to reduce evaporative pulsation noise.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4600019p" WIDTH = "6.903in" HEIGHT = "2.514in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A070S"><SCTITLE/>
+
+<PARA INFOID = "T010054A070" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Fuel Injection Control (EFI)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The EFI-L method, which detects the intake air volume with the air flow meter and controls the fuel injection volume, has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>Independent injection (each cylinder injected 1 time(s) per 2 crankshaft revolutions) has been adopted as the injection method.</PTXT></ITEM>
+<ITEM><PTXT>Fuel injection consists of synchronous injection, in which the basic injection duration is corrected with signals from each sensor and fuel is always injected at the same position, and asynchronous injection, in which fuel is injected when an injection request is detected from the signals of each sensor regardless of crank angle. Also, to protect the engine and improve fuel economy, fuel cut is performed to temporarily stop fuel injection according to driving conditions.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740054p" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+<INDICATE ID = "T010054A070I01" INDSW = "OFF">
+<TITLE>Engine Control Block Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740055p" WIDTH = "6.903in" HEIGHT = "4.333in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T010054A070I02" INDSW = "OFF">
+<TITLE>Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Camshaft Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the actual camshaft angle and identifies cylinders.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Crankshaft Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the crank angle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>O<SUB>2</SUB>Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the oxygen concentration in the exhaust gas.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>A/F Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the air-fuel ratio of the exhaust gas.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Throttle Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the throttle valve opening angle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Accelerator Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Installed on the accelerator pedal; detects the accelerator pedal opening angle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Water Temperature Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the engine coolant temperature.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Neutral Start Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the CVT P, N and D positions.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Combination Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Receives the vehicle speed signal (SP1) and transmits the vehicle speed signal (SPD).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Starter Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Transmits the starter voltage during engine starting as the starter signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Air Flow Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the intake air volume.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Fuel Injector</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Injects the optimum amount of fuel at the optimum timing.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Main Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Supplies main power to the fuel system.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T010054A070A201" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Synchronous Injection</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The synchronous injection duration can be expressed by the following formula.</PTXT></ITEM>
+<ITEM><PTXT>When the engine is started, the injection duration is determined by the engine speed, battery voltage and coolant temperature. Also, to prevent excessive injection during starting, the injection volume is increased or decreased according to the cranking time.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Synchronous injection = A. Basic injection duration + B. Correction injection duration + C. Invalid injection duration</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>A. Basic Injection Duration</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The basic injection duration determined by the intake air volume and engine speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>B. Correction Injection Duration</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Coefficients for producing an air-fuel mixture with an appropriate air-fuel ratio according to the engine conditions at that time, based on signals from each sensor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>B-1 Intake Air Temperature Correction</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the intake air temperature is low, the air density is high, so the volume is increased.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>B-2 Warm-up Enrichment Correction</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the coolant temperature is low, the volume is increased to ensure driveability when cold.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>B-3 After-start Enrichment Correction</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>After the engine starts, the volume is increased according to coolant temperature and engine speed to stabilize the engine speed after starting. The enrichment ratio is greatest immediately after starting and then gradually decreases.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>B-4 Transient Air-fuel Ratio Correction</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Acceleration or deceleration is judged from changes in intake air volume, and the volume is increased or decreased according to the condition.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>B-5 Wall Adhesion Correction</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Fuel adhesion to the walls is calculated from the coolant temperature, engine speed and throttle opening angle and corrected.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>B-6 High Load Enrichment Correction</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>High-load operation is judged from signals from each sensor, and the volume is increased to prevent exhaust temperature rise.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>B-7 Air-fuel Ratio Feedback Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>O<SUP></SUP><SUB>2</SUB>Correction is performed based on signals from the sensor, and the air-fuel ratio is controlled within a narrow range near the stoichiometric air-fuel ratio, where the purification performance of the three-way catalyst is high.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>C. Invalid Injection Duration</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Corrects for the operation delay of the injectors.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T010054A070A202" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Asynchronous Injection</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>To ensure startability and response during acceleration, a fixed amount of fuel is injected into all cylinders simultaneously only immediately after signals are input from each sensor, separately from normal fuel injection (synchronous injection). Also, during synchronous injection, the injection duration is extended by the asynchronous amount.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Asynchronous Injection</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "71%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Asynchronous Injection During Starting</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Asynchronous injection is performed once immediately after the starter signal is input, improving startability.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Asynchronous Injection During Acceleration</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Asynchronous injection is performed when the increase in throttle opening angle is at or above the set value, improving response during acceleration.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Asynchronous Injection When Engine Speed Drops</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>If the engine speed drops suddenly during fuel cut or when returning from fuel cut, asynchronous injection is performed to ensure driveability.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T010054A070A187" UPDATE = "ORIGINAL" LDUP = "30Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Fuel Cut</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Fuel injection is temporarily stopped to protect the engine and improve fuel economy.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Fuel Cut</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Deceleration Fuel Cut</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>During deceleration (when the engine control computer judges the throttle to be OFF), if the engine speed is at or above the specified value, fuel injection is stopped to prevent catalyst overheating due to misfire and to improve fuel economy. When the coolant temperature is low, the fuel cut speed and recovery speed are higher.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Fuel Cut by Engine Speed</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>If the engine speed is at or above the specified value, fuel injection is stopped to prevent overspeed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Fuel Cut When Shifting from N to D Position</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>If the engine speed is at or above the specified value, fuel injection is stopped when the shift lever is operated, reducing shift shock and protecting the CVT.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<SPEC ID = "T010054A070A187X01" INDSW = "OFF">
+<TITLE>Deceleration Fuel Cut Speed</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_02">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "42%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE"><PTXT>Fuel Cut Speed [r/min]</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When Lock-up Control Is Operating</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>900</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2"><PTXT>When Lock-up Control Is Not Operating</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>1300</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+<SPEC ID = "T010054A070A187X02" INDSW = "OFF">
+<TITLE>High Engine Speed Fuel Cut Speed</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_11">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Engine Speed [r/min] </PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>6600</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC></MECA>
+</PARA>
+<PARA INFOID = "T010054A070P" UPDATE = "ORIGINAL" LDUP = "99XXX9999" INFOTYPE = "SYSTEM" INDSW = "ON" UNPRINT="OFF">
+<TITLE>Related Systems</TITLE>
+
+<MECA ID = "T010054A148K732R01" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Fail-safe Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The throttle position sensor detects the opening angle with 2 systems: a main circuit and a sub circuit. If a malfunction occurs in the signal, the engine control computer switches to limp mode.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T010054A148K732R01I01" INDSW = "OFF">
+<TITLE>When Malfunction Is Detected</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>If a malfunction occurs in either or both circuits, the engine control computer detects the malfunction from the voltage difference between the main circuit and sub circuit. At this time, power to the throttle motor is cut and the throttle valve is returned to a predetermined opening angle by the return spring. Limp mode driving is made possible by controlling engine output using fuel injection control and ignition timing control. Also, even if the engine control computer detects another malfunction such as in the throttle motor, limp mode driving is made possible by performing the above control.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740080p" WIDTH = "6.917in" HEIGHT = "3.792in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T010054A326K732R02" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Fail-safe Operation</TITLE>
+<LIST1><ITEM><PTXT>The accelerator position sensor detects the opening angle with 2 systems: a main circuit and a sub circuit. If a malfunction occurs in the signal, the engine control computer switches to limp mode.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T010054A326K732R02I01" INDSW = "OFF">
+<TITLE>When 1 System Malfunctions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>If a malfunction occurs in either circuit, the engine control computer detects the malfunction from the voltage difference between the main circuit and sub circuit. At this time, a limited accelerator opening angle is calculated from the sensor value of 2 circuit, and throttle control is continued, enabling limp mode driving.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740077p" WIDTH = "6.903in" HEIGHT = "2.958in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T010054A326K732R02I02" INDSW = "OFF">
+<TITLE>When 2 System Malfunctions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>The engine control computer detects the malfunction from the voltages of the main circuit and sub circuit and controls the throttle valve opening angle only within the idling range.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740078p" WIDTH = "6.903in" HEIGHT = "3.000in" />
+</FIGURE>
+</INDICATE></MECA>
+</PARA>
+<BIND ID = "T010054A070B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T010054A076R01" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Hot-wire Type Air Flow Meter</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A compact, lightweight plastic hot-wire type plug-in air flow meter has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>The hot-wire type plug-in air flow meter passes part of the intake air through the detection section and directly measures the mass flow rate, improving detection accuracy and reducing intake resistance.</PTXT></ITEM>
+<ITEM><PTXT>It uses bypass flow measurement, which is less affected by intake pulsation from the air cleaner. Also, low loss is achieved by a flow passage structure with low fluid resistance, allowing air volumes from small to large to be measured reliably.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T010054A076A223R05" UPDATE = "ORIGINAL" LDUP = "29Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Hot-wire Type Air Flow Meter Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Part of the intake air is bypassed and the intake air volume is measured at the hot wire measuring section. The hot wire measuring section uses a platinum filament (platinum hot wire), and a bridge circuit is formed by the hot wires of the intake air temperature measuring resistor and the heating resistor (heater) to measure the engine intake air volume. Due to the characteristics of the hot-wire type air flow meter, the mass flow rate can in principle be measured directly, so density correction for changes in intake air temperature is not necessary; however, intake air temperature information is required for engine controls such as EFI. Therefore, a compact thermistor type intake air temperature sensor is built into the air flow meter to detect the intake air temperature.</PTXT></ITEM>
+<ITEM><PTXT>A bridge circuit is a circuit connected as shown in the illustration below, in which, when R1 × R4 = R2 × R3 holds, V1 = V2 and the value indicated by ammeter G is 0.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740072p" WIDTH = "6.903in" HEIGHT = "2.986in" />
+</FIGURE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the intake air volume changes, the bridge circuit of the hot wire measuring section feedback-controls the power supplied to the heating resistor so that the temperature difference between the intake air temperature measuring resistor and the heating resistor (heater) is always kept constant. This supplied power is converted into a voltage and output to the engine control computer. The engine control computer calculates the engine intake air volume from the predetermined relationship between the air flow meter output voltage and flow rate.</PTXT></ITEM>
+<ITEM><PTXT>The bridge circuit of the hot-wire type air flow meter is constructed as shown in the illustration below. For example, when the intake air volume increases, the heating resistor is cooled and the value of RH decreases, resulting in RH (R1) × R4 &lt; RK (R2) × R3,VM ≠ VK. When the control section detects this condition, it increases the current flowing from the power supply to VB (heating RH) and controls so that RH (R1) × R4 = RK (R2) × R3,VM = VK.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740073p" WIDTH = "6.903in" HEIGHT = "6.250in" />
+</FIGURE>
+</MECA>
+</PARA>
+
+<PARA INFOID = "T010054A077R02" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Camshaft Position Sensor (G2 Signal)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A highly accurate electromagnetic pickup type sensor has been adopted. Performs cylinder identification and detection of actual camshaft timing.</PTXT></ITEM>
+<ITEM><PTXT>The camshaft position sensor is installed at the rear end of the cylinder head and detects the protrusions of the camshaft timing rotor (360-180-180°CA) fixed to the intake camshaft. As the camshaft rotates, the air gap between the timing rotor protrusions and the camshaft position sensor changes, so the magnetic flux passing through the coil of the camshaft position sensor increases and decreases, generating an electromotive force in the coil. This generated voltage is reversed when the timing rotor protrusion approaches and when it moves away from the camshaft position sensor, so it appears as an AC voltage.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740074p" WIDTH = "6.903in" HEIGHT = "2.847in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T010054A078R03" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Crankshaft Position Sensor (Ne Signal)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A highly accurate electromagnetic pickup type sensor has been adopted. Detects the crank position and crank angular velocity.</PTXT></ITEM>
+<ITEM><PTXT>The crankshaft timing rotor installed on the crankshaft has 34 signal teeth with 2 teeth missing for top dead center detection. </PTXT></ITEM>
+<ITEM><PTXT>The crankshaft position sensor detects the crank rotation signal every 10° and can accurately detect top dead center from the location of the missing teeth. A sensor similar to the camshaft position sensor has been adopted, detecting the signal as AC power.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740075p" WIDTH = "6.917in" HEIGHT = "2.208in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T010054A079R07" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Water Temperature Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Detects the engine coolant temperature and sends a signal to the engine control computer.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740081p" WIDTH = "6.903in" HEIGHT = "1.833in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T010054A080R08" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>O2 Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Converts the oxygen concentration in the exhaust gas into an electromotive force and detects whether the air-fuel ratio is rich or lean relative to the stoichiometric air-fuel ratio.</PTXT></ITEM>
+<ITEM><PTXT>By heating the sensor (zirconia element) with a built-in heater, the O<SUB>2</SUB>sensor temperature is kept constant, promoting feedback control.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740082p" WIDTH = "6.903in" HEIGHT = "2.542in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T010054A093R12" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Fuel Injector</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A 12-hole ultra-fine atomization injector has been adopted. It is mounted directly to the cylinder head, shortening the distance to the combustion chamber and reducing fuel adhesion to the intake port, for excellent fuel economy and emission performance.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740085p" WIDTH = "6.903in" HEIGHT = "3.153in" />
+</FIGURE>
+<SPEC ID = "T010054A093R12X01" INDSW = "OFF">
+<TITLE>Fuel Injector Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Injection Hole Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>0.20</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Number of Injection Holes</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>12</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+
+<PARA INFOID = "T010054A148R05" UPDATE = "ORIGINAL" LDUP = "2Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Throttle Position Sensor</TITLE>
+<LIST1><ITEM><PTXT>A non-contact type throttle position sensor has been adopted, using a Hall element<HINTREF     REFID = "H285010054A148R0502"/> that can extract the magnetic field strength as an electrical signal using the Hall effect<HINTREF     REFID = "H285010054A148R0501"/>, which provides an output voltage linear to the throttle valve opening angle. When the throttle valve opening angle changes, the angle of the magnetic field relative to the flow of the applied current in the Hall element changes, so the strength of the magnetic field perpendicular to the applied current changes. As a result, the change in voltage generated perpendicular to both the applied current and the magnetic field is sent to the engine control computer as the throttle valve opening angle signal. In addition, reliability is ensured by adopting a 2-system (main and sub) sensor with different output characteristics.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H285010054A148R0501">This is a phenomenon in which, when a current flows through a rod- or plate-shaped conductor or semiconductor and a magnetic field is applied perpendicular to it, a potential difference is generated in the direction perpendicular to both the current and the magnetic field.</PTXT></ITEM>
+<ITEM><PTXT ID = "H285010054A148R0502">This is an electronic component that uses the electromotive force generated by the potential difference in a magnetic field.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740079p" WIDTH = "6.903in" HEIGHT = "4.736in" />
+</FIGURE>
+
+<MECA ID = "T010054A148K732R07" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Fail-safe Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The throttle position sensor detects the opening angle with 2 systems: a main circuit and a sub circuit. If a malfunction occurs in the signal, the engine control computer switches to limp mode.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T010054A148K732R07I01" INDSW = "OFF">
+<TITLE>When Malfunction Is Detected</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>If a malfunction occurs in either or both circuits, the engine control computer detects the malfunction from the voltage difference between the main circuit and sub circuit. At this time, power to the throttle motor is cut and the throttle valve is returned to a predetermined opening angle by the return spring. Limp mode driving is made possible by controlling engine output using fuel injection control and ignition timing control. Also, even if the engine control computer detects another malfunction such as in the throttle motor, limp mode driving is made possible by performing the above control.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740080p" WIDTH = "6.917in" HEIGHT = "3.792in" />
+</FIGURE>
+</INDICATE></MECA>
+</PARA>
+
+<PARA INFOID = "T010054A326R04" UPDATE = "ORIGINAL" LDUP = "2Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Accelerator Position Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A non-contact type accelerator position sensor has been adopted, using a Hall element<HINTREF     REFID = "H285010054A326R0402"/> that can extract the magnetic field strength as an electrical signal using the Hall effect<HINTREF     REFID = "H285010054A326R0401"/>, which provides an output voltage linear to the accelerator pedal depression amount. When the accelerator pedal depression amount changes, the angle of the magnetic field relative to the flow of the applied current in the Hall element changes, so the strength of the magnetic field perpendicular to the applied current changes. The resulting change in voltage, generated perpendicular to both the applied current and the magnetic field, is sent to the engine control computer as the accelerator pedal depression amount signal. In addition, reliability is ensured by adopting a 2-system (main and sub) sensor with different output characteristics.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H285010054A326R0401">This is a phenomenon in which, when a current flows through a rod- or plate-shaped conductor or semiconductor and a magnetic field is applied perpendicular to it, a potential difference is generated in the direction perpendicular to both the current and the magnetic field.</PTXT></ITEM>
+<ITEM><PTXT ID = "H285010054A326R0402">This is an electronic component that uses the electromotive force generated by the potential difference in a magnetic field.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740076p" WIDTH = "6.903in" HEIGHT = "4.611in" />
+</FIGURE>
+
+<MECA ID = "T010054A326K732R06" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Fail-safe Operation</TITLE>
+<LIST1><ITEM><PTXT>The accelerator position sensor detects the opening angle with 2 systems: a main circuit and a sub circuit. If a malfunction occurs in the signal, the engine control computer switches to limp mode.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T010054A326K732R06I01" INDSW = "OFF">
+<TITLE>When 1 System Malfunctions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>If a malfunction occurs in either circuit, the engine control computer detects the malfunction from the voltage difference between the main circuit and sub circuit. At this time, a limited accelerator opening angle is calculated from the sensor value of 2 circuit, and throttle control is continued, enabling limp mode driving.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740077p" WIDTH = "6.903in" HEIGHT = "2.958in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T010054A326K732R06I02" INDSW = "OFF">
+<TITLE>When 2 System Malfunctions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>The engine control computer detects the malfunction from the voltages of the main circuit and sub circuit and controls the throttle valve opening angle only within the idling range.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740078p" WIDTH = "6.903in" HEIGHT = "3.000in" />
+</FIGURE>
+</INDICATE></MECA>
+</PARA>
+
+<PARA INFOID = "T010054A388R06" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>1-valve Electronically Controlled Throttle Body</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A 1-valve type electronically controlled throttle body, in which the throttle valve is driven by a motor, has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>A flat shaft has been adopted to increase the opening area of the valve, improving performance.</PTXT></ITEM>
+<ITEM><PTXT>The driver's operation (accelerator pedal depression amount) is transmitted to the engine control computer by the accelerator position sensor located on the accelerator pedal. The engine control computer determines the throttle opening appropriate to the driving conditions and drives the throttle motor. The throttle valve opening is fed back to the engine control computer by the throttle position sensor.</PTXT></ITEM>
+<ITEM><PTXT>The throttle valve drive motor is mounted on the throttle body, and the opening and closing of the throttle valve is controlled through reduction gears. In addition, a DC motor with good response and low power consumption has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>The inside of the throttle position sensor has a 2-system (main and sub) configuration, and the system is constantly monitored for malfunctions.</PTXT></ITEM>
+<ITEM><PTXT>If a malfunction is detected, the warning light in the meter alerts the driver and current to the motor is cut. At this time, the throttle valve is returned to a predetermined opening by the throttle valve return spring, and engine output is adjusted according to the accelerator opening through fuel injection cut and ignition retard, enabling limp-home driving.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740021p" WIDTH = "6.903in" HEIGHT = "5.931in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T010054A410R09" UPDATE = "ORIGINAL" LDUP = "20Jul2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>A/F Sensor (Air-Fuel Ratio Sensor)</TITLE>
+<LIST1><ITEM><PTXT>An A/F sensor has been adopted to reliably feed back the air-fuel ratio condition from the exhaust gas. A laminated sensor structure has been adopted to promote early activation of the sensor, achieving air-fuel ratio feedback control from immediately after engine start.</PTXT></ITEM>
+<ITEM><PTXT>Unlike a sensor that outputs a lean or rich signal at the stoichiometric air-fuel ratio boundary, i.e. the O<SUB>2</SUB>sensor, the A/F sensor has output characteristics proportional to the air-fuel ratio, enabling the engine control computer to perform more precise air-fuel ratio control.</PTXT></ITEM>
+<ITEM><PTXT>To activate the A/F sensor, the sensor (zirconia element) must be heated. While a cup type sensor requires time to activate because it is heated indirectly through an atmospheric layer, a laminated type sensor heats the zirconia element directly, shortening the sensor activation time. In addition, the heat mass has been reduced by downsizing the zirconia element.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740132p" WIDTH = "6.903in" HEIGHT = "2.972in" />
+</FIGURE>
+<INDICATE ID = "T010054A410R09I01" INDSW = "OFF">
+<TITLE>A/F Sensor and O<SUB>2</SUB>Sensor Characteristics</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740083p" WIDTH = "6.903in" HEIGHT = "2.500in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+</BIND>
+</SECTION>
+<SECTION SCID = "T010054A071S"><SCTITLE/>
+
+<PARA INFOID = "T010054A071" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Ignition Timing Control (ESA)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The optimum ignition timing is selected based on the signals from each sensor, and an ignition signal (IGt) is sent to the igniter. Ignition timing can be expressed by the following formula. The initial set ignition timing is BTDC5°.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740056p" WIDTH = "6.903in" HEIGHT = "2.778in" />
+</FIGURE>
+<INDICATE ID = "T010054A071I01" INDSW = "OFF">
+<TITLE>ESA Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "66%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Knock Control System (KCS)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Determines whether knocking is occurring based on the knock sensor signal.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T010054A071I02" INDSW = "OFF">
+<TITLE>Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "37%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "62%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Air Flow Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the intake air volume and intake air temperature.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Camshaft Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>G<SUB>2</SUB>Sends the signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Crankshaft Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Sends the Ne signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Throttle Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the throttle valve opening angle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Accelerator Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the accelerator opening.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Water Temperature Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the engine coolant temperature.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Knock Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Converts the pressure applied to the piezoelectric element into a voltage signal to detect knocking.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Starter Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Transmits the starter voltage during engine starting as the starter signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Neutral Start Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the CVT P, N and D positions.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Combination Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Receives the vehicle speed signal (SP1) and transmits the vehicle speed signal (SPD).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Ignition Coil with Igniter</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Fires at the optimum timing and sends the ignition confirmation signal.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T010054A071A205" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Knock Control System</TITLE>
+<LIST1><ITEM><PTXT>When knocking is detected, the timing is retarded by a fixed angle at a time, according to the magnitude of the knocking, until knocking no longer occurs.</PTXT></ITEM>
+<ITEM><PTXT>When knocking no longer occurs, the timing is advanced by a fixed angle at a time. If knocking recurs at this time, the timing is retarded again.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740057p" WIDTH = "6.903in" HEIGHT = "1.361in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T010054A071A206" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Maximum and Minimum Advance Characteristics</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Because abnormally advanced or retarded ignition timing adversely affects the engine, maximum and minimum advance angles are specified.</PTXT></ITEM></LIST1>
+<SPEC ID = "T010054A071A206X01" INDSW = "OFF">
+<TITLE>Maximum and Minimum Advance Angles</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Maximum Advance Angle (BTDC)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>49°</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Minimum Advance Angle (ATDC)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>10°</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC></MECA>
+
+<MECA ID = "T010054A071A216" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Calculation of Ignition Timing</TITLE>
+<LIST1><ITEM><PTXT>Ne/G<SUB>2</SUB>Based on the signal, air flow meter signal, accelerator opening signal, coolant temperature signal, etc., the engine control computer calculates the optimum ignition timing for the driving conditions and sends an ignition signal to the ignition coil with igniter.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740058p" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+<INDICATE ID = "T010054A071A216I01" INDSW = "OFF">
+<TITLE>Calculation of Ignition Timing</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><HINT>
+<PTXT>Ignition timing = A. Initial set ignition timing or B. Basic advance angle + C. Corrective advance angle</PTXT></HINT>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "29%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "70%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>A. Fixed Advance Characteristics</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the engine is started, the timing is fixed at BTDC5°. In addition, when the service terminals are shorted and the throttle is off, the timing is fixed at BTDC10°.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>B. Basic Advance Characteristics</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The optimum ignition timing is selected from a map based on the signals from each sensor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>C. Corrective Advance Characteristics</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Based on the signals from each sensor, appropriate advance and retard corrections are made according to the engine condition at that time.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>C-1 Warm-up Advance Characteristics</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the coolant temperature is low, the ignition timing is advanced according to the driving conditions to improve driveability.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>C-2 Idle Stabilization Advance Characteristics</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the idle speed decreases, the ignition timing is advanced, and when it increases, the timing is retarded, to stabilize the idle speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>C-3 Retard at Fuel Cut Recovery</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>At fuel cut recovery, the ignition timing is retarded to reduce shock.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>C-4 Retard During Acceleration</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Driveability is improved by temporarily retarding the ignition timing during acceleration.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>C-5 Knock Correction Retard</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When knocking occurs, the ignition timing is corrected based on the signal from the knock sensor.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+</PARA>
+<PARA INFOID = "T010054A071P" UPDATE = "ORIGINAL" LDUP = "99XXX9999" INFOTYPE = "SYSTEM" INDSW = "ON" UNPRINT="OFF">
+<TITLE>Related Systems</TITLE>
+
+<MECA ID = "T010054A083A301R03" UPDATE = "ORIGINAL" LDUP = "12Dec2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Knock Sensor Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the knock sensor receives vibration from the cylinder block, the movement of the weight lags due to inertia. As a result, pressure is applied to the piezoelectric ceramic provided between the cylinder block and the weight, generating voltage. The voltage is output almost constantly across all frequency bands, and the engine control computer detects the target frequency and determines that knocking is occurring.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4640045p" WIDTH = "6.903in" HEIGHT = "3.722in" />
+</FIGURE>
+</MECA>
+</PARA>
+<BIND ID = "T010054A071B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T010054A083R10" UPDATE = "ORIGINAL" LDUP = "2Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Knock Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A flat (non-resonant type) knock sensor has been adopted.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T010054A083A301R08" UPDATE = "ORIGINAL" LDUP = "12Dec2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Knock Sensor Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the knock sensor receives vibration from the cylinder block, the movement of the weight lags due to inertia. As a result, pressure is applied to the piezoelectric ceramic provided between the cylinder block and the weight, generating voltage. The voltage is output almost constantly across all frequency bands, and the engine control computer detects the target frequency and determines that knocking is occurring.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4640045p" WIDTH = "6.903in" HEIGHT = "3.722in" />
+</FIGURE>
+</MECA>
+</PARA>
+
+<PARA INFOID = "T010054A122R14" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Ignition Coil with Igniter</TITLE>
+<LIST1><ITEM><PTXT>By placing a coil independently for each cylinder, the distributor and high-tension cords are eliminated, reducing losses in the high-voltage section, ensuring reliability and reducing radio noise.</PTXT></ITEM>
+<ITEM><PTXT>A compact, lightweight igniter is built in, and a high voltage is induced in the secondary (No. 2) coil by the signal from the engine control computer.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740094p" WIDTH = "6.917in" HEIGHT = "2.722in" />
+</FIGURE>
+</PARA>
+</BIND>
+</SECTION>
+<SECTION SCID = "T010054A387S"><SCTITLE/>
+
+<PARA INFOID = "T010054A387" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>ETCS-i Control</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Through centralized control by the engine control computer, engine output relative to the accelerator opening is optimally controlled, achieving good accelerator controllability and vehicle stability over the entire driving range.</PTXT></ITEM>
+<ITEM><PTXT>The functions of normal throttle opening control (non-linear control), idle speed control (ISC) and cruise control (models with cruise control system only) have been integrated into the 1-valve type electronically controlled throttle body.</PTXT></ITEM>
+<ITEM><PTXT>Through integrated control with the powertrain system, excellent handling stability is ensured and comfort is improved.</PTXT></ITEM>
+<ITEM><PTXT>To allow driving in the unlikely event of a malfunction, the system has a 2-system redundant configuration to ensure reliability.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T010054A387I01" INDSW = "OFF">
+<TITLE>ETCS-i Control List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_02">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "20%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "65%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Maximum Speed Control</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>When the vehicle speed reaches 180km/h, the throttle valve is closed to restrict any increase in vehicle speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE"><PTXT>Idle Speed Control</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Controls the fast idle speed according to the engine coolant temperature and the idle speed after engine warm-up. In addition, the idle speed is controlled through the fuel injection volume and throttle opening.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<FIGURE>
+<TITLE>Engine Control Block Diagram</TITLE>
+<GRAPHIC GRAPHICNAME = "a4740059p" WIDTH = "6.903in" HEIGHT = "5.125in" />
+</FIGURE>
+<INDICATE ID = "T010054A387I02" INDSW = "OFF">
+<TITLE>Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "53%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE"><PTXT>Air Flow Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Detects the intake air temperature and intake air volume.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE"><PTXT>1-valve Electronically Controlled Throttle Body</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Throttle Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Detects the throttle valve opening angle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Electronic Throttle Motor</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Controls the throttle valve opening angle according to driving conditions.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE"><PTXT>Accelerator Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Detects the accelerator opening.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE"><PTXT>Camshaft Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Detects the actual camshaft angle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE"><PTXT>Crankshaft Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Detects the crank angle (engine speed).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE"><PTXT>Water Temperature Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Detects the engine coolant temperature.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE"><PTXT>Starter Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sends the starter voltage during engine starting as the starter signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE"><PTXT>Neutral Start Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Detects the CVT P, N and D positions.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE"><PTXT>Combination Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives the vehicle speed signal (SP1) and sends the vehicle speed signal (SPD).</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T010054A387A239" UPDATE = "ORIGINAL" LDUP = "12Apr2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Idle Speed Control</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Controls the fast idle speed according to the engine coolant temperature and the idle speed after engine warm-up. Controls the idle speed by means of the fuel injection volume and throttle opening angle.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T010054A387A239I01" INDSW = "OFF">
+<TITLE>Idle Speed Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "20%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "80%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Starting Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the engine is started, the throttle valve is opened to increase the air volume and improve engine startability.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "4" VALIGN = "MIDDLE"><PTXT>Predictive Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the signals below are detected, the throttle valve opening is controlled to suppress speed fluctuations.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>• When a change in idle speed is predicted.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>• When the electrical load changes.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>• When the A/C switch is operated.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>• When the shift position is changed. (N→D,D→N)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Deceleration Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>During deceleration, the throttle valve is opened to increase the air flow, lowering the vacuum in the intake manifold, which reduces the consumption of oil drawn into the combustion chamber, prevents engine stall due to a sudden drop in engine speed and improves driveability.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Feedback Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The engine speed is measured for a certain period, and if there is a difference from the target speed, the throttle valve opening is controlled to bring the idle speed to the target value.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<SPEC ID = "T010054A387A239X02" INDSW = "OFF">
+<TITLE>Target Speed</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "32%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "22%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "44%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>2AZ-FE</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>No-load Speed [r/min]</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>650</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>With Electrical Load [r/min]</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>740</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE"><PTXT>A/C ON [r/min] </PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Low Load</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>740</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2"><PTXT>High Load</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>800</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A073S"><SCTITLE/>
+
+<PARA INFOID = "T010054A073" UPDATE = "ORIGINAL" LDUP = "22Sep2003"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>VVT-i Control</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>VVT-i, which continuously varies the camshaft phase, has been adopted, and by adjusting the intake valve timing according to the driving conditions, both low fuel consumption and high output as well as low emissions are achieved.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740060p" WIDTH = "6.903in" HEIGHT = "4.333in" />
+</FIGURE>
+
+<MECA ID = "T010054A073A210" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>When Advancing</TITLE>
+<LIST1><ITEM><PTXT>The spool valve of the OCV moves to the left, hydraulic pressure is applied to the advance chamber of the VVT-i controller, and the intake camshaft rotates in the advance direction.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740061p" WIDTH = "6.903in" HEIGHT = "2.792in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T010054A073A211" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>When Retarding</TITLE>
+<LIST1><ITEM><PTXT>The spool valve of the OCV moves to the right, hydraulic pressure is applied to the retard chamber of the VVT-i controller, and the intake camshaft rotates in the retard direction.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740062p" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T010054A073A212" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>When Holding</TITLE>
+<LIST1><ITEM><PTXT>The hydraulic pressure in the advance and retard chambers of the VVT-i controller is held as it is, and the phase of the intake camshaft is also held.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T010054A073A232" UPDATE = "ORIGINAL" LDUP = "30Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Effects of VVT-i</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By continuously varying the camshaft phase and adjusting the valve timing according to the driving conditions, both low fuel consumption and high output as well as low emissions are achieved.</PTXT></ITEM></LIST1>
+<FIGURE>
+<TITLE>Low Temperature / Engine Starting / Idling / Light Load</TITLE>
+<GRAPHIC GRAPHICNAME = "a4740063p" WIDTH = "6.903in" HEIGHT = "1.778in" />
+</FIGURE>
+<FIGURE>
+<TITLE>Medium Load Range</TITLE>
+<GRAPHIC GRAPHICNAME = "a4740064p" WIDTH = "6.903in" HEIGHT = "1.583in" />
+</FIGURE>
+<FIGURE>
+<TITLE>High Load Range, Low to Medium Speed</TITLE>
+<GRAPHIC GRAPHICNAME = "a4740065p" WIDTH = "6.917in" HEIGHT = "1.778in" />
+</FIGURE>
+<FIGURE>
+<TITLE>High Load Range, High Speed</TITLE>
+<GRAPHIC GRAPHICNAME = "a4740066p" WIDTH = "6.903in" HEIGHT = "1.625in" />
+</FIGURE>
+</MECA>
+</PARA>
+<PARA INFOID = "T010054A073P" UPDATE = "ORIGINAL" LDUP = "99XXX9999" INFOTYPE = "SYSTEM" INDSW = "ON" UNPRINT="OFF">
+<TITLE>Related Systems</TITLE>
+
+<MECA ID = "T010039A131A466R04" UPDATE = "ORIGINAL" LDUP = "31Mar2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Valve, Valve Lifter and Valve Spring</TITLE>
+<LIST1><ITEM><PTXT>The intake valves and exhaust valves have been nitrided over their entire surface to ensure wear resistance. Also, weight has been reduced by making the stems smaller in diameter.</PTXT></ITEM>
+<ITEM><PTXT>The exhaust valves have been heat treated (solution aging treatment) to cope with the rise in exhaust temperature due to higher performance.</PTXT></ITEM>
+<ITEM><PTXT>Shimless type valve lifters with a large effective area have been adopted to accommodate high lift. Also, the top surface has been treated with Fericoat (molybdenum-containing iron phosphate coating) to ensure reliability and reduce friction.</PTXT></ITEM>
+<ITEM><PTXT>The valve springs use high-strength material and are nitrided for higher strength, and have a thin wire diameter and uneven pitch to improve valve follow-up, achieve high lift and reduce weight.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740032p" WIDTH = "6.903in" HEIGHT = "2.514in" />
+</FIGURE>
+<SPEC ID = "T010039A131A466R04X01" INDSW = "OFF">
+<TITLE>Bulb Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "33%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Intake</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Exhaust</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Overall Length [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>101.71</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>101.15</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Head Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>34.0</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>29.5</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Stem Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>5.5</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+<SPEC ID = "T010039A131A466R04X02" INDSW = "OFF">
+<TITLE>Valve Spring Specifications (Common to Intake and Exhaust)</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Coil Inner Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>16.0</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Wire Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>2.8</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Free Length [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>47.43</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+<SPEC ID = "T010039A131A466R04X03" INDSW = "OFF">
+<TITLE>Valve Lifter Specifications (Common to Intake and Exhaust)</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Overall Height [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>25.3</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Outer Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>31.0</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC></MECA>
+</PARA>
+<BIND ID = "T010054A073B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T010039A109" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>VVT-i Controller</TITLE>
+<LIST1><ITEM><PTXT>A vane-type VVT-i controller has been provided on the intake camshaft.</PTXT></ITEM>
+<ITEM><PTXT>It consists of a housing fixed to the timing gear and a vane fixed to the camshaft.</PTXT></ITEM>
+<ITEM><PTXT>By applying oil pressure from the OCV (oil control valve) to the advance chamber and retard chamber of the VVT-i controller, the vane is rotated, continuously varying the phase of the intake camshaft.</PTXT></ITEM>
+<ITEM><PTXT>When the engine is stopped, it is locked at the most retarded position by the lock pin. When the engine starts, the lock pin is released by oil pressure.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740034p" WIDTH = "6.903in" HEIGHT = "3.417in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T010039A131" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Valve Related Items</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>VVT-i (Variable Valve Timing-intelligent) has been adopted, which varies the intake valve timing according to driving conditions to achieve both low fuel consumption and high output as well as low emissions.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740031p" WIDTH = "6.903in" HEIGHT = "3.403in" />
+</FIGURE>
+
+<MECA ID = "T010039A131A466" UPDATE = "ORIGINAL" LDUP = "31Mar2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Valve, Valve Lifter and Valve Spring</TITLE>
+<LIST1><ITEM><PTXT>The intake valves and exhaust valves have been nitrided over their entire surface to ensure wear resistance. Also, weight has been reduced by making the stems smaller in diameter.</PTXT></ITEM>
+<ITEM><PTXT>The exhaust valves have been heat treated (solution aging treatment) to cope with the rise in exhaust temperature due to higher performance.</PTXT></ITEM>
+<ITEM><PTXT>Shimless type valve lifters with a large effective area have been adopted to accommodate high lift. Also, the top surface has been treated with Fericoat (molybdenum-containing iron phosphate coating) to ensure reliability and reduce friction.</PTXT></ITEM>
+<ITEM><PTXT>The valve springs use high-strength material and are nitrided for higher strength, and have a thin wire diameter and uneven pitch to improve valve follow-up, achieve high lift and reduce weight.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740032p" WIDTH = "6.903in" HEIGHT = "2.514in" />
+</FIGURE>
+<SPEC ID = "T010039A131A466X01" INDSW = "OFF">
+<TITLE>Bulb Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "33%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Intake</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Exhaust</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Overall Length [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>101.71</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>101.15</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Head Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>34.0</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>29.5</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Stem Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>5.5</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+<SPEC ID = "T010039A131A466X02" INDSW = "OFF">
+<TITLE>Valve Spring Specifications (Common to Intake and Exhaust)</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Coil Inner Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>16.0</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Wire Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>2.8</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Free Length [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>47.43</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+<SPEC ID = "T010039A131A466X03" INDSW = "OFF">
+<TITLE>Valve Lifter Specifications (Common to Intake and Exhaust)</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Overall Height [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>25.3</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Outer Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>31.0</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC></MECA>
+</PARA>
+
+<PARA INFOID = "T010054A087R11" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>OCV for VVT-i</TITLE>
+<LIST1><ITEM><PTXT>The position of the spool valve is controlled by the duty signal from the ECU to regulate the oil supply to the advance and retard chambers of the VVT-i controller.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740035p" WIDTH = "6.903in" HEIGHT = "2.653in" />
+</FIGURE>
+</PARA>
+</BIND>
+</SECTION>
+<SECTION SCID = "T010054A074S"><SCTITLE/>
+
+<PARA INFOID = "T010054A074" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Cooling Fan System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The speed of the 2 cooling fan motors is switched in 2 stages according to the coolant temperature and air conditioner operating status.</PTXT></ITEM>
+<ITEM><PTXT>The 2 motors are connected in series (6V) at Lo and in parallel (12V) at Hi.</PTXT></ITEM>
+<ITEM><PTXT>A system in which the engine control computer directly controls relay ON/OFF has been adopted.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740067p" WIDTH = "6.903in" HEIGHT = "3.903in" />
+</FIGURE>
+<SPEC ID = "T010054A074X01" INDSW = "OFF">
+<TITLE>Cooling Fan Motor Operation List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "25%"/>
+<THEAD VALIGN = "MIDDLE">
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1"><PTXT>Water Temperature</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Air Conditioner Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1"><PTXT>Fan Status</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Refrigerant Pressure</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY VALIGN = "MIDDLE">
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" ALIGN = "CENTER"><PTXT>Low</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1" ALIGN = "CENTER"><PTXT>ON</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>High</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>Hi</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" MOREROWS = "1" ALIGN = "CENTER"><PTXT>Low</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>Lo</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>OFF</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" ALIGN = "CENTER"><PTXT>High</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1" ALIGN = "CENTER"><PTXT>ON</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>High</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>Hi</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" MOREROWS = "1" ALIGN = "CENTER"><PTXT>Low</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>Hi</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>OFF</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>Hi</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A733S"><SCTITLE/>
+
+<PARA INFOID = "T010054A733" UPDATE = "ORIGINAL" LDUP = "15Feb2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Fuel Pump Control</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Turns the fuel pump ON and OFF based on the starter signal and engine speed signal.</PTXT></ITEM>
+<ITEM><PTXT>In addition to when the engine is stopped, when the airbag deployment signal from the airbag ECU is input to the engine control computer upon airbag deployment, the fuel pump is stopped to minimize fuel leakage.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740068p" WIDTH = "6.903in" HEIGHT = "3.444in" />
+</FIGURE>
+</PARA>
+<BIND ID = "T010054A733B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T010054A090R13" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Fuel Pump</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A circumferential flow type in-tank fuel pump has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>By integrating the charcoal canister, fuel filter and pressure regulator into the fuel pump assembly, the number of parts and weight have been reduced and space in the engine room has been saved.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740015p" WIDTH = "6.903in" HEIGHT = "2.819in" />
+</FIGURE>
+<SPEC ID = "T010054A090R13X01" INDSW = "OFF">
+<TITLE>Fuel Pump Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Discharge Pressure [kPa { kgf/cm<SUP>2</SUP>}]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>324(3.30)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Discharge Rate [L/h] (at Discharge Pressure 324kPa{3.30kgf/cm2})</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>120 or more</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+<SPEC ID = "T010054A090R13X02" INDSW = "OFF">
+<TITLE>Fuel Filter Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Filtration Method</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Filter Paper Type</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Filtration Area [cm<SUB></SUB><SUP>2</SUP>]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>1400</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</BIND>
+</SECTION>
+<SECTION SCID = "T010054T037S"><SCTITLE/>
+
+<PARA INFOID = "T010054T037" UPDATE = "ORIGINAL" LDUP = "11Apr2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>O2 Sensor Heater Control</TITLE>
+<LIST1><ITEM><PTXT>By passing current through the heater to warm the zirconia element, stable oxygen concentration feedback is performed even when the exhaust gas temperature is low, such as immediately after engine start, reducing emissions.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740069p" WIDTH = "6.903in" HEIGHT = "3.014in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A799S"><SCTITLE/>
+
+<PARA INFOID = "T010054A799" UPDATE = "ORIGINAL" LDUP = "12Apr2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>A/F Sensor Heater Control</TITLE>
+<LIST1><ITEM><PTXT>By passing current through the heater to warm the zirconia element, stable oxygen concentration feedback is performed even when the exhaust gas temperature is low, such as immediately after engine start, reducing emissions.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740070p" WIDTH = "6.903in" HEIGHT = "2.472in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010054A075S"><SCTITLE/>
+
+<PARA INFOID = "T010054A075" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Canister Purge Control</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Canister purge control, which draws fuel vapor generated in the fuel tank into the intake port for combustion, has been adopted. The canister purge volume is flow-controlled by the engine control computer, which controls the opening and closing of the canister purge VSV according to the driving conditions.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740071p" WIDTH = "6.903in" HEIGHT = "2.958in" />
+</FIGURE>
+</PARA>
+<BIND ID = "T010054A075B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T010037A409" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Charcoal Canister</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Canister purge control, which draws fuel evaporative gas generated from the fuel tank into the intake port and burns it, has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>Integrated with the fuel pump and located inside the fuel tank. This reduces the number of parts, making the fuel system lighter and more compact.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740018p" WIDTH = "6.903in" HEIGHT = "2.792in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T010054T038R15" UPDATE = "ORIGINAL" LDUP = "11Apr2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>VSV for Canister Purge</TITLE>
+<LIST1><ITEM><PTXT>The canister purge volume is controlled by the signal (duty signal) from the engine control computer. The purge volume is determined by the ratio of the ON and OFF times of the signal (duty ratio).</PTXT></ITEM>
+<ITEM><PTXT>The piping of the canister purge VSV has been optimized to reduce evaporative pulsation noise.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4600019p" WIDTH = "6.903in" HEIGHT = "2.514in" />
+</FIGURE>
+</PARA>
+</BIND>
+</SECTION>
+<SECTION SCID = "T010054A397S"><SCTITLE/>
+
+<PARA INFOID = "T010054A397" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Cranking Hold Control</TITLE>
+<LIST1><ITEM><PTXT>Cranking hold control has been adopted on all models.</PTXT></ITEM>
+<ITEM><PTXT>When the start signal (STSW) from the start switch is input, the engine control computer sends a signal (STAR) to the starter relay through the neutral start switch (determining P or N position) to operate the starter. At this time, the engine control computer turns ON the ACC cut (ACCR) to prevent flickering of the meter, clock, audio, etc.</PTXT></ITEM>
+<ITEM><PTXT>After the starter starts operating, the engine control computer continues to output a signal to the starter until it detects that the engine has started running. When it determines that the engine has started running, the engine control computer stops outputting the signal to the starter relay.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740007p" WIDTH = "6.903in" HEIGHT = "3.556in" />
+</FIGURE>
+<INDICATE ID = "T010054A397I01" INDSW = "OFF">
+<TITLE>Cranking Hold Control System Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740008p" WIDTH = "6.903in" HEIGHT = "4.083in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+<BIND ID = "T010054A397B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T010044A154" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Starter</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A compact, lightweight, high-output, high-efficiency PS (Planetary reduction-Segment conductor motor) starter has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>A rectangular conductor armature coil has been adopted to reduce size and weight.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740096p" WIDTH = "6.917in" HEIGHT = "2.875in" />
+</FIGURE>
+<SPEC ID = "T010044A154X01" INDSW = "OFF">
+<TITLE>Starter Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>PS Starter</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Rated Voltage [V]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Rated Output [kW]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>1.6</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+
+<MECA ID = "T010044A154A217" UPDATE = "ORIGINAL" LDUP = "29Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Armature Coil</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By using bare rectangular wire for the armature coil, the space factor has been improved, increasing starter torque.</PTXT></ITEM>
+<ITEM><PTXT>The cylindrical commutator has been eliminated, shortening the armature shaft length.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740097p" WIDTH = "6.917in" HEIGHT = "2.681in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T010044A154A218" UPDATE = "ORIGINAL" LDUP = "29Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Field Coil</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Interpolar magnets have been adopted between the field coils. This improves the magnetic circuit and increases the magnetic flux, allowing size reduction and shortening the yoke axial length.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740098p" WIDTH = "6.917in" HEIGHT = "2.917in" />
+</FIGURE>
+</MECA>
+</PARA>
+</BIND>
+</SECTION>
+<SECTION SCID = "T010054A398S"><SCTITLE/>
+
+<PARA INFOID = "T010054A398" UPDATE = "ORIGINAL" LDUP = "24Mar2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Charging Control System</TITLE>
+<LIST1><ITEM><PTXT>By lowering the generated voltage during vehicle acceleration and raising it during deceleration, the engine load caused by alternator power generation is reduced, improving fuel economy. In addition, during idling and constant-speed driving, the generated voltage is adjusted so that the integrated current value<HINTREF     REFID = "H285010054A39801"/> approaches the target value.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H285010054A39801">The integrated current value is the integrated value of the battery input/output current detected by the current sensor.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740009p" WIDTH = "6.917in" HEIGHT = "3.125in" />
+</FIGURE>
+
+<MECA ID = "T010054A398A280" UPDATE = "ORIGINAL" LDUP = "24Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Battery Current Sensor</TITLE>
+<LIST1><ITEM><PTXT>Installed on the negative terminal of the battery, it detects the battery charge/discharge current and sends a signal to the engine control computer. Based on this signal, the engine control computer calculates the battery capacity. A Hall IC is used to detect the charge/discharge current; it converts the change in magnetic flux density generated in the core by the battery charge/discharge current into a voltage and outputs it.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740010p" WIDTH = "6.917in" HEIGHT = "3.306in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T010054A398A281" UPDATE = "ORIGINAL" LDUP = "24Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Battery Temperature Sensor</TITLE>
+<LIST1><ITEM><PTXT>If the battery fluid temperature is too low or too high, it can accelerate battery deterioration or cause the battery to discharge. Also, since the current acceptance characteristics change with battery fluid temperature, the battery is protected by detecting the battery fluid temperature and sending a signal to the engine control computer.</PTXT></ITEM>
+<ITEM><PTXT>The battery temperature sensor is built into the battery current sensor and is located near the negative terminal, where it is less affected by engine heat.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740011p" WIDTH = "6.917in" HEIGHT = "2.431in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T010054A398A053" UPDATE = "ORIGINAL" LDUP = "24Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Fail-safe Function</TITLE>
+<LIST1><ITEM><PTXT>When a sensor malfunctions, or when the engine control computer judges it necessary based on battery condition, electrical load operating status, etc., alternator charging control is stopped and the system switches to constant voltage generation mode.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Conditions for Switching to Constant Voltage Generation Mode</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "51%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "48%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Concept</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When Battery Capacity Is Low</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>The state of charge is judged from the battery capacity and fluid temperature, and charging control is stopped during overcharge or overdischarge to protect the battery and prevent capacity reduction.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When Battery Fluid Temperature Is Low or High</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When Wipers Are Operating or Blower Motor Is Operating Under High Load</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the power supply voltage changes due to the operation of electrical equipment, the alternator generated voltage changes due to charging control. To prevent an unnatural feeling while driving due to the resulting change in engine load, charging control is temporarily stopped.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When a malfunction is detected in any of the following sensors and switches: current sensor, temperature sensor, vehicle speed sensor, throttle position sensor, crank angle sensor, stop light switch, neutral start switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>When a sensor system malfunctions, charging control is stopped to prevent a decrease in battery capacity.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When Engine Is Started</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Prevents a decrease in battery capacity due to the vehicle being left unused, protecting the battery.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When 2 Hours Have Elapsed During Charging Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The charge capacity is checked periodically and errors in the integrated current value caused by long periods of charging and discharging are corrected, preventing a decrease in battery capacity.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When Cumulative Operating Time Reaches 20 Hours</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Sufficient charging is performed periodically to prevent a reduction in battery life caused by repeated charging and discharging.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+</PARA>
+</SECTION>
+</SCT>

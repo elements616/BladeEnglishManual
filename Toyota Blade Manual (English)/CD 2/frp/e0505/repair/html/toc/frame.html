@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- $Id: frame.html,v 1.1 2003/07/16 06:37:51 takeo Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Function-Specific Repair Manual Contents</title>
+
+<script src="../../js/util.js"></script>
+<script language="javascript">
+function load() {
+  var strLocation = location.toString()
+	var pathArray = strLocation.split("\/");
+	var baseDirName = "frp";
+	var pubId = "";
+	for (var i=0; i<pathArray.length; i++) {
+		if (pathArray[i].toString()=="frp") {
+			pubId=pathArray[i+1];
+			break;
+		}
+	}
+	setTermValue("../../../../../repair/html/toc/frp_frame.html?pubId="+pubId, getParameterValue("term"));
+}
+</script>
+</head>
+<body onLoad="load();"></body>
+</html>
+<!--
+<meta http-equiv="refresh" content="1; url=../../../../../repair/html/toc/frp_frame.html">
+-->

@@ -1,0 +1,3700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="10033_S0007" variety="S0007">
+<name>CAN Communication</name>
+<ttl id="10033_S0007_741KB_T000K" variety="T000K">
+<name>CAN Communication System</name>
+<para id="RM0000005RK021X" category="U" type-id="3001G" name-id="95104-00" from="200708" to="200912">
+<name>Terminals of ECU</name>
+<subpara id="RM0000005RK021X_z0" proc-id="RM0550J___0000CDF00000">
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When measuring the resistance of the CAN bus, turn the IG OFF, confirm that warning functions such as the key reminder warning system are not operating, and leave the vehicle for 1 minutes or more without operating the key or opening/closing the doors before starting measurement. If it is necessary to open a door during inspection, open it beforehand.</ptxt>
+</atten3>
+<step1>
+<ptxt>Wiring Harness Connector (CAN J/C1)</ptxt>
+<figure>
+<graphic graphicname="C147903J20" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Connection Destination</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wire Color</ptxt>
+<ptxt>[H/L]</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>ABS &amp; Traction Actuator Assembly (VSC ECU)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>8</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R (Red)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>19</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Wiring Harness Connector (CAN J/C3)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y (Yellow)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>20</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Engine Control Computer (EFI ECU)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B (Black)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>21</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>Wiring Harness Connector (CAN J/C2)</ptxt>
+<figure>
+<graphic graphicname="C155057J10" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Connection Destination</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wire Color</ptxt>
+<ptxt>[H/L]</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Wiring Harness Connector</ptxt>
+<ptxt>(CAN J/C3)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR (Gray)</ptxt>
+<ptxt>[H]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>12</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[L]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Combination Meter Assembly</ptxt>
+<ptxt>(Meter ECU)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G (Green)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Power Steering Computer Assembly</ptxt>
+<ptxt>(EPS ECU)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SB (Sky Blue)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Air Conditioning Amplifier Assembly</ptxt>
+<ptxt>(A/C ECU)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V (Violet)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>15</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Steering Sensor</ptxt>
+<ptxt>(Steering Angle Sensor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR (Brown)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>16</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Yaw Rate Sensor</ptxt>
+<ptxt>(Yaw/G Sensor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L (Blue)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>DLC3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG (Light Green)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>18</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Network Gateway ECU</ptxt>
+<ptxt>(CAN Gateway ECU)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>8</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P (Pink)</ptxt>
+<ptxt>[CA2H]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>19</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CA2L]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Airbag Sensor Assembly</ptxt>
+<ptxt>(A/B ECU)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y (Yellow)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>20</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Navigation Receiver Assembly</ptxt>
+<ptxt>(NAVI ECU)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O (Orange)</ptxt>
+<ptxt>[H]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>22</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[L]</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>Instrument Panel Wire (CAN J/C3)</ptxt>
+<figure>
+<graphic graphicname="C147903J21" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<table pgwide="1">
+<title>V Bus</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Connection Destination</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wire Color</ptxt>
+<ptxt>[H/L]</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Accessory Bus Buffer</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B (Black)</ptxt>
+<ptxt>[H]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>18</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[L]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Instrument Panel Junction Block Assembly</ptxt>
+<ptxt>(Main Body ECU)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>8</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R (Red)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>19</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Wiring Harness Connector</ptxt>
+<ptxt>(CAN J/C2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR (Gray)</ptxt>
+<ptxt>[H]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>20</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[L]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Wiring Harness Connector</ptxt>
+<ptxt>(CAN J/C1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B (Black)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>21</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>MS Bus</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COL2" colwidth="1.40in"/>
+<colspec colname="COL3" colwidth="1.43in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Connection Destination</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wire Color</ptxt>
+<ptxt>[H/L]</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Smart Key Computer Assembly</ptxt>
+<ptxt>(Verification ECU)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SB (Sky Blue)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>12</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Combination Meter Assembly</ptxt>
+<ptxt>(Meter ECU)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G (Green)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Instrument Panel Junction Block Assembly</ptxt>
+<ptxt>(Main Body ECU)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R (Red)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>Instrument Panel Wire (CAN J/C4)</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Identify the connectors connected to CAN J/C4 by the wire color of the communication lines (bus) and the differences in the connector mating surfaces.</ptxt>
+</item>
+<item>
+<ptxt>If CAN J/C4 is disconnected, connecting it to any position will not affect performance; however, considering the effect of tension on the wiring and subsequent serviceability, connect it to its original installation position.</ptxt>
+</item>
+<item>
+<ptxt>If the destination of a connector is unknown, use the connected ECU check function of the SST (TaSCAN) to check which ECUs and sensors disappear from the display when the connector is disconnected.</ptxt>
+</item>
+</list1>
+</atten4>
+<figure>
+<graphic graphicname="C139033J09" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="4.24in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<colspec colname="COL4" colwidth="1.43in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Connection Destination</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wire Color</ptxt>
+<ptxt>[H/L]</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>4WD Computer Assembly</ptxt>
+<ptxt>(4WD ECU)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>A2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L (Blue)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Network Gateway ECU</ptxt>
+<ptxt>(CAN Gateway ECU)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>A3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B (Black)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Distance control computer</ptxt>
+<ptxt>(ACC ECU)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>A4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R (Red)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Television Camera Controller</ptxt>
+<ptxt>(IPA ECU)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>A5</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR (Gray)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Seat Belt Control Computer</ptxt>
+<ptxt>(Pre-crash ECU)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>B5</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R (Red)</ptxt>
+<ptxt>[CANH]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>W (White)</ptxt>
+<ptxt>[CANL]</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>DLC3</ptxt>
+<figure>
+<graphic graphicname="I103137J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CG</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANH</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANL</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>16</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BAT</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Inspect DLC3</ptxt>
+<step3>
+<ptxt>Turn IG OFF.</ptxt>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6(CANH) ←→ 14(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6(CANH) ←→ 16(BAT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14(CANL) ←→ 16(BAT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6(CANH) ←→ 4(CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14(CANL) ←→ 4(CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Engine Control Computer (EFI ECU)</ptxt>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="G100239J07" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B41</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANH</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B49</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANL</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Engine Control Computer (EFI ECU) Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="G101226J02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>With the IG OFF, disconnect the engine control computer (EFI ECU) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), inspect the resistance between each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B41(CANH) ←→ B49(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B41(CANH) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B49(CANL) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B41(CANH) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B49(CANL) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Instrument Panel Junction Block Assembly (Main Body ECU)</ptxt>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="G100255J07" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A15</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANH</ptxt>
+<ptxt>(V Bus Branch Wire)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A16</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANL</ptxt>
+<ptxt>(V Bus Branch Wire)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B11</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANP</ptxt>
+<ptxt>(MS Bus Main Wire)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B12</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANN</ptxt>
+<ptxt>(MS Bus Main Wire)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Instrument Panel Junction Block Assembly (Main Body ECU) Vehicle Harness Inspection (V Bus Branch Line)</ptxt>
+<step3>
+<ptxt>Turn the IG OFF and disconnect connector A of the main body ECU (vehicle front side).</ptxt>
+<figure>
+<graphic graphicname="C129972J04" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<title>V bus branch line</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<colspec colname="COL4" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A15(CANH) ←→ A16(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A15(CANH) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A16(CANL) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A15(CANH) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A16(CANL) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+<step2>
+<ptxt>Instrument Panel Junction Block Assembly (Main Body ECU) Vehicle Harness Inspection (MS Bus Main Line)</ptxt>
+<step3>
+<ptxt>Turn the IG OFF and disconnect connector B of the main body ECU (vehicle front side).</ptxt>
+<figure>
+<graphic graphicname="C129973J06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<title>MS bus main line</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<colspec colname="COL4" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B11(CANP) ←→ B12(CANN)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B11(CANP) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B12(CANN) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B11(CANP) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B12(CANN) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Combination Meter Assembly (Meter ECU)</ptxt>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="E123823J06" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>27</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANH</ptxt>
+<ptxt>(V Bus Main Wire)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>28</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANL</ptxt>
+<ptxt>(V Bus Main Wire)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>TX-</ptxt>
+<ptxt>(MS Bus Main Wire)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>TX1-</ptxt>
+<ptxt>(MS Bus Main Wire)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Combination Meter Assembly (Meter ECU) Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="C141930J09" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG OFF and disconnect the combination meter assembly (meter ECU) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<title>V bus main line</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<colspec colname="COL4" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>27(CANH) ←→ 28(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>27(CANH) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>28(CANL) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>27(CANH) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>28(CANL) - +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>MS bus main line</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<colspec colname="COL4" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14(TX1-) ←→ 13(TX-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14(TX1-) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13(TX-) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14(TX1-) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13(TX-) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Power Steering Computer Assembly (EPS ECU)</ptxt>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="C129627J05" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANH</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C7</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANL</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Power Steering Computer (EPS ECU) Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="C156134J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG OFF and disconnect connector C of the power steering computer (EPS ECU).</ptxt>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.31in"/>
+<colspec colname="COL3" colwidth="2.46in"/>
+<colspec colname="COL4" colwidth="2.31in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1(CANH) ←→ C7(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1(CANH) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C7(CANL) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1(CANH) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C7(CANL) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Air Conditioner Amplifier Assembly (A/C ECU)</ptxt>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="G101219J04" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B11</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANH</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B12</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANL</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Air Conditioner Amplifier Assembly (A/C ECU) Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="C147883J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG OFF and disconnect connector B of the air conditioner amplifier assembly (A/C ECU).</ptxt>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.31in"/>
+<colspec colname="COL3" colwidth="2.46in"/>
+<colspec colname="COL4" colwidth="2.31in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B11(CANH) ←→ B12(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B11(CANH) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B12(CANL) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B11(CANH) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B12(CANL) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Airbag Computer Assembly (A/B ECU)</ptxt>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="G100270J07" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1-13</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANH</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1-22</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANL</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Airbag Computer Assembly (A/B ECU) Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="C147881J04" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG OFF and disconnect connector 1 of the airbag computer assembly (A/B ECU).</ptxt>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.31in"/>
+<colspec colname="COL3" colwidth="2.46in"/>
+<colspec colname="COL4" colwidth="2.31in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1-13(CANH) ←→ 1-22(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1-13(CANH) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1-22(CANL) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1-13(CANH) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1-22(CANL) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>ABS &amp; Traction Actuator Assembly (VSC ECU)</ptxt>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="C154598J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>25</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANH</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANL</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>ABS &amp; Traction Actuator Assembly (VSC ECU) Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="C154597J06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG OFF and disconnect the ABS &amp; traction actuator assembly (VSC ECU) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>25(CANH) ←→ 14(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>25(CANH) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14(CANL) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>25(CANH) ←→ B+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14(CANL) ←→ B+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Steering Sensor (Steering Angle Sensor)</ptxt>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="C156063J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANH</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANL</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Steering Sensor (Steering Angle Sensor) Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="C146385J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG OFF and disconnect the steering sensor (steering angle sensor) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<colspec colname="COL4" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3(CANH) ←→ 2(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3(CANH) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(CANL) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3(CANH) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(CANL) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Yaw Rate Sensor (Yaw / G Sensor)</ptxt>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="C148529J03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANH</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANL</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Yaw Rate Sensor (Yaw/G Sensor) Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="C146388J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG OFF and disconnect the yaw rate sensor (yaw/G sensor) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<colspec colname="COL4" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3(CANH) ←→ 2(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3(CANH) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(CANL) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3(CANH) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(CANL) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Navigation Receiver Assembly (AVN)</ptxt>
+<atten4>
+<ptxt>Equipped on models with genuine Toyota display-integrated HDD navigation.</ptxt>
+</atten4>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="C132076J08" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>H2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANH</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>H3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANL</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Navigation Receiver Assembly (NAVI ECU) Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="E111489J29" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG OFF and disconnect connector H of the navigation receiver assembly (NAVI ECU).</ptxt>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<colspec colname="COL4" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H2(CANH) ←→ H3(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H2(CANH) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H3(CANL) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H2(CANH) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H3(CANL) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Smart Key Computer Assembly (Certification ECU)</ptxt>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="G100253J08" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A27</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANH</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A28</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANL</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Smart Key Computer Assembly (Certification ECU) Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="G100280J21" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG OFF and disconnect the smart key computer assembly (Certification ECU) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<colspec colname="COL4" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A27(CANH) ←→ 28(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A27(CANH) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A28(CANL) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A27(CANH) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>28(CANL) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Network Gateway Computer (CAN Gateway ECU)</ptxt>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="C121576J05" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>16</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CA1H</ptxt>
+<ptxt>(V Bus Branch Wire)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>15</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CA1L</ptxt>
+<ptxt>(V Bus Branch Wire)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>13</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CA2H</ptxt>
+<ptxt>(V Bus No.2 Main Wire)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>12</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CA2L</ptxt>
+<ptxt>(V Bus No.2 Main Wire)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Network Gateway Computer (CAN Gateway ECU) Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="C147891J03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG OFF and disconnect the network gateway computer (CAN gateway ECU) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), inspect the resistance between each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<title>V bus branch line</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<colspec colname="COL4" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>16(CA1H) ←→ 15(CA1L)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>16(CA1H) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>15(CA1L) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>16(CA1H) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>15(CA1L) - +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>V Bus No.2 Main Line</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<colspec colname="COL4" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13(CA2H) ←→ 12(CA2L)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to132 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13(CA2H) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>12(CA2L) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13(CA2H) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>12(CA2L) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>4WD Computer Assembly (4WD ECU)</ptxt>
+<atten4>
+<ptxt>Equipped on 4WD models.</ptxt>
+</atten4>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="C132077J06" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>14</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANH</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>16</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANL</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>4WD Computer Assembly (4WD ECU) Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="C132078J13" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG OFF and disconnect the 4WD computer assembly (4WD ECU) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance of each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<colspec colname="COL4" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14(CANH) ←→ 16(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14(CANH) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>16(CANL) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14(CANH) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>16(CANL) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Television Camera Controller (IPA ECU)</ptxt>
+<atten4>
+<ptxt>Equipped on models with Intelligent Parking Assist.</ptxt>
+</atten4>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="C149039J03" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANH</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A10</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANL</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Television Camera Controller (IPA ECU) Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="C148540J04" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG OFF and disconnect connector A of the television camera controller (IPA ECU).</ptxt>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), inspect the resistance between each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<colspec colname="COL4" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A9(CANH) ←→ A10(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A9(CANH) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A10(CANL) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A9(CANH) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A10(CANL) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Accessory Bus Buffer (Accessory BB)</ptxt>
+<atten4>
+<ptxt>The accessory bus buffer is a connector for connecting dealer-installed options, so normally nothing is connected to it.</ptxt>
+</atten4>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="E110306J06" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Accessory Bus Buffer Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="C129976J05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), inspect the resistance between each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>If the accessory bus buffer is connected to a dealer-installed option, turn the IG OFF, disconnect the connector, and then perform the inspection.</ptxt>
+</atten4>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<colspec colname="COL4" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(CAN+) ←→ 2(CAN-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(CAN+) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(CAN-) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(CAN+) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(CAN-) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Distance Control Computer Assembly (ACC ECU)</ptxt>
+<atten4>
+<ptxt>Equipped on models with radar cruise control.</ptxt>
+</atten4>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="C148251J01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>8</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANH</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANL</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Distance Control Computer Assembly (ACC ECU) Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="C147877J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG OFF and disconnect the distance control computer assembly (ACC ECU) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<colspec colname="COL4" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>8(CANH) ←→ 9(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>8(CANH) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>9(CANL) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>8(CANH) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>9(CANL) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Seat Belt Control Computer (Pre-crash ECU)</ptxt>
+<atten4>
+<ptxt>Equipped on models with pre-crash.</ptxt>
+</atten4>
+<step2>
+<ptxt>Terminals of ECU</ptxt>
+<figure>
+<graphic graphicname="E137690J04" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANH</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANL</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Seat Belt Control Computer (Pre-crash ECU) Vehicle Harness Inspection</ptxt>
+<figure>
+<graphic graphicname="E137694J07" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG OFF and disconnect connector B of the seat belt control computer (pre-crash ECU).</ptxt>
+</step3>
+<step3>
+<ptxt>Using the SST (Toyota electrical tester), inspect the resistance between each terminal of the vehicle harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<colspec colname="COL4" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1(CANH) ←→ B5(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1(CANH) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B5(CANL) ←→ GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1(CANH) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B5(CANL) ←→ +B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

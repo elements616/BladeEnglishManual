@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740149p SYSTEM "grph_ent/a4740149p.png" NDATA png>
+<!ENTITY a4740176p SYSTEM "grph_ent/a4740176p.png" NDATA png>
+
+<!ENTITY T010256A143 SYSTEM "t478010256a143.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010256A143S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010256A143" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Cooling General</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The cooling system is a pressurized, forced-circulation water-cooled type, with a bottom bypass type in which the thermostat with bypass valve is integrated with the water inlet.</PTXT></ITEM>
+<ITEM><PTXT>The cooling fan ON/OFF and fan speed are controlled by the cooling fan computer based on signals from the engine control computer.</PTXT></ITEM>
+<ITEM><PTXT>By adopting a fully sealed reservoir tank, high gas-liquid separation performance and improved cooling system pressure stability have been achieved, and by optimizing its installation position, the air bleed valve used when filling coolant has been eliminated to improve serviceability.</PTXT></ITEM>
+<ITEM><PTXT>For serviceability when replacing coolant, a drain cock for air bleeding is provided on the water inlet.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740149p" WIDTH = "6.903in" HEIGHT = "4.972in" />
+<GRAPHIC GRAPHICNAME = "a4740176p" WIDTH = "6.903in" HEIGHT = "4.583in" />
+</FIGURE>
+</PARA>
+</SECTION>

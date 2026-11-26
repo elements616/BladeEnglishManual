@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../_runtime/legacy.css">
+<script src="../../../../../_runtime/compat.js"></script>
+
+<title>CVT Control (Computer)</title>
+<link type="text/css" href="../css/main2.css" rel="stylesheet">
+<link type="text/css" href="../css/style.css" rel="stylesheet">
+<script src="../js/hidden.js" language="JavaScript"></script>
+</head>
+<body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
+<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td align="left"><input onClick="printCheck()" value="Print" name="submit" type="submit"></td><td align="center"> </td><td align="right"><input onClick="closeWindow()" value="Close" name="submit2" type="submit"></td>
+</tr>
+</table>
+<div align="left">
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">CVT Control (Computer)</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">A transmission control computer integrated with the engine control computer has been adopted. Various signals are communicated between the engine and transmission control computers to perform integrated engine control, achieving both smooth shift characteristics and excellent shift response at a high level.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">Acceleration control (linear feel improvement control), NAVI AI-SHIFT and uphill/downhill shift control have been adopted to achieve smooth shift characteristics and excellent shift response, and neutral control has been adopted to improve fuel economy while the vehicle is stopped.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">Diagnosis and fail-safe functions are provided for serviceability in the event of a system malfunction.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740102p.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT030063A431I01');chgImg('imT030063A431I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT030063A431I01" align="absmiddle"><a name="t030063a431i01">Block Diagram</a></span>
+<br>
+<div id="tmT030063A431I01" style="display:none">
+<br>
+
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740103p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT030063A431I02');chgImg('imT030063A431I02');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT030063A431I02" align="absmiddle"><a name="t030063a431i02">Components and Functions</a></span>
+<br>
+<div id="tmT030063A431I02" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">Components</div>
+</td><td class="gray3_dark">
+<div class="text">Function</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Shift Control Duty Solenoid No.1 (DS1)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Controls the inflow of line pressure to the primary pulley according to the wheel speed and accelerator opening. (Controls the speed of upshifting)</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Shift Control Duty Solenoid No.2 (DS2)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Controls the line pressure and outflow from the primary pulley according to the wheel speed and accelerator opening. (Controls the speed of downshifting)</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Lock-up Solenoid (SL)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Switches the function of the linear solenoid (SLS).</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Lock-up Engagement Pressure Control Duty Solenoid (DSU)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Controls the gradual increase and decrease of the lock-up engagement hydraulic pressure.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Belt Clamping Force Control Linear Solenoid (SLS)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Controls the secondary pulley pressure according to the input shaft torque to control the belt clamping force. In addition, it controls the forward/reverse clutch hydraulic pressure during forward/reverse clutch engagement and during neutral control.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Primary Pulley Speed Sensor (NIN)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Detects the input shaft speed.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Secondary Pulley Speed Sensor (N0UT)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Detects the output shaft speed.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Turbine Speed Sensor (NT)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Detects the turbine speed.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Hydraulic Pressure Sensor</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Detects the belt clamping force.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Fluid Temperature Sensor</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Detects the fluid temperature.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Water Temperature Sensor</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Detects the engine coolant temperature.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Accelerator Position Sensor</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Detects the accelerator opening.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Throttle Position Sensor</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Detects the throttle valve opening angle.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Crankshaft Position Sensor</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Detects the engine speed.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Stop Light Switch</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Detects the ON/OFF state of the brake pedal.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Neutral Start Switch</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Detects the shift position of the automatic transaxle.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">G Sensor</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Detects the inclination angle of the vehicle.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Shift Position Indicator (Built into Combination Meter)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Informs the driver of the shift position in use through the LCD display.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Sport Sequential Shiftmatic Switch</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Detects whether sport sequential mode is selected.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Engine Control Computer (Integrated with Transmission Control Computer)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Performs integrated control of the engine and transaxle and transaxle control based on the signals from each sensor. A diagnosis mode and fail-safe functions are provided for serviceability in the event of a system malfunction.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">DLC3</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">By connecting and operating a diagnostic tool, DTCs and computer data can be read. </div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT030063A431A475');chgImg('imT030063A431A475');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT030063A431A475" align="absmiddle"><a name="t030063a431a475">Engine Integrated Control</a></span>
+<br>
+<div id="tmT030063A431A475" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">By integrating the control of CVT speed and engine torque, fine control is performed so that the engine operates on its optimum fuel economy line.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3810132p.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT030063A431A475I01');chgImg('imT030063A431A475I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT030063A431A475I01" align="absmiddle"><a name="t030063a431a475i01">Basic Control</a></span>
+<br>
+<div id="tmT030063A431A475I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="color1">
+<div class="text">Determination of Target Driving Force</div>
+</td><td class="color1">
+<div class="text">The target engine output is determined from the target driving force requested by the driver, based on the accelerator opening and wheel speed.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Determination of Target Speed</div>
+</td><td class="color1">
+<div class="text">The target primary pulley speed is determined so that the target engine output can be achieved on the engine's optimum fuel economy line, and shift control is performed.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Determination of Target Torque</div>
+</td><td class="color1">
+<div class="text">The target engine torque is determined from the target engine output and the primary pulley speed, and throttle opening control is performed.</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT030063A431A596');chgImg('imT030063A431A596');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT030063A431A596" align="absmiddle"><a name="t030063a431a596">Acceleration Control (Linear Feel Improvement Control)</a></span>
+<br>
+<div id="tmT030063A431A596" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The driver's acceleration request is determined from changes in vehicle speed and accelerator opening, and control shifts to driving force control that provides a good acceleration feel. In this case, the acceleration generated for a constant accelerator opening is kept constant, and the engine speed increases as the vehicle speed increases. This improves the linear acceleration feel and the feel of increasing vehicle speed in response to the driver's accelerator operation.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3810133p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT030063A431A312');chgImg('imT030063A431A312');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT030063A431A312" align="absmiddle"><a name="t030063a431a312">Neutral Control</a></span>
+<br>
+<div id="tmT030063A431A312" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Neutral control reduces engine load and improves fuel economy while the vehicle is stopped (in the D position) by disconnecting the engine from the transmission (partially releasing the starting clutch inside the automatic transmission using linear solenoid SLS). In addition, the gradient is detected by the G sensor, and neutral control is not performed on gradients above a certain level.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3730073p.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT030063A431A312I01');chgImg('imT030063A431A312I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT030063A431A312I01" align="absmiddle"><a name="t030063a431a312i01">Control System</a></span>
+<br>
+<div id="tmT030063A431A312I01" style="display:none">
+<br>
+
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740116p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT030063A431A088');chgImg('imT030063A431A088');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT030063A431A088" align="absmiddle"><a name="t030063a431a088">Uphill / Downhill Shift Control</a></span>
+<br>
+<div id="tmT030063A431A088" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When driving on winding roads with ups and downs, uphill/downhill shift control restricts upshifting when it determines that the vehicle is going uphill, achieving smooth driving.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">In addition, when driving downhill, if a downhill is determined from the throttle opening and vehicle acceleration and brake operation is detected, the transmission downshifts to generate an appropriate engine braking force. The system consists of the throttle position sensor and vehicle speed sensor.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3730037p.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Slope determination is made by comparing the reference acceleration stored in the computer with the actual acceleration calculated from the speed sensor signal. When the actual acceleration is less than the reference acceleration, an uphill road is determined, and when the actual acceleration is greater than the reference acceleration, a downhill road is determined.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740117p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT030063A431A315');chgImg('imT030063A431A315');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT030063A431A315" align="absmiddle"><a name="t030063a431a315">CVT Shift Control</a></span>
+<br>
+<div id="tmT030063A431A315" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Shift control sets the target input shaft speed based on information such as accelerator opening, vehicle speed and brake signal so that the optimum gear ratio and shift speed are obtained. Furthermore, a signal is output to the shift control duty solenoid (DS1,DS2) so that the speed obtained from the primary pulley speed sensor matches the target input shaft speed, optimizing the gear ratio.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">In the D position, control is performed through integrated engine control to maximize fuel economy and driving performance.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3730032p.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">In the M position of sport sequential Shiftmatic mode, M1 to M7 indicate the respective gears as shown in the illustration below. When the set vehicle speed is reached during acceleration, the transmission automatically upshifts.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3730035p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT030063A431A090');chgImg('imT030063A431A090');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT030063A431A090" align="absmiddle"><a name="t030063a431a090">Shift and Lock-up Control</a></span>
+<br>
+<div id="tmT030063A431A090" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Lock-up operation is performed based on a determination from the throttle opening and vehicle speed.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The lock-up operating range has been expanded compared to conventional A/T models, enabling lock-up from the low speed range. In addition, by expanding the lock-up operating range down to the low speed range during deceleration as well, the fuel cut range has been expanded, achieving excellent fuel economy. </div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3730036p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT030063A431A126');chgImg('imT030063A431A126');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT030063A431A126" align="absmiddle"><a name="t030063a431a126">Diagnosis Function</a></span>
+<br>
+<div id="tmT030063A431A126" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">If a malfunction is detected in the speed sensors, solenoids, etc., the check engine warning light in the combination meter assembly illuminates to warn the driver. A new diagnosis system has been adopted for serviceability. By connecting TaSCAN to DLC3, diagnosis results for malfunctioning areas can be displayed. For the list of diagnosis items, refer to the Repair Manual.</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT030063A431A053');chgImg('imT030063A431A053');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT030063A431A053" align="absmiddle"><a name="t030063a431a053">Fail-safe Function</a></span>
+<br>
+<div id="tmT030063A431A053" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">This function prevents a significant loss of drivability even if a malfunction occurs in the sensors or solenoids. For details, refer to the Repair Manual.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT030063A431A053I01');chgImg('imT030063A431A053I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT030063A431A053I01" align="absmiddle"><a name="t030063a431a053i01">Fail-safe Function List</a></span>
+<br>
+<div id="tmT030063A431A053I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">Components</div>
+</td><td class="gray3_dark">
+<div class="text">Function</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Primary Pulley Speed Sensor (NIN)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">The input shaft speed is calculated from the signal from the turbine speed sensor and normal control is performed.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Secondary Pulley Speed Sensor (NOUT)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">The output shaft speed is calculated from the signal from the speed sensor and normal control is performed.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Turbine Speed Sensor (NT)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">The turbine speed is calculated from the signal from the primary pulley speed sensor and normal control is performed.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Shift Control Duty Solenoid No.1 (DS1)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Stops current to the solenoid. The gear ratio is shifted further toward the reduction side than normal.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Shift Control Duty Solenoid No.2 (DS2)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Stops current to the solenoid. The gear ratio is at the highest overdrive side.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Lock-up Solenoid (SL)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Stops current to the solenoid and releases lock-up.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Lock-up Engagement Pressure Control Duty Solenoid (DSU)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Stops current to the solenoid and fully releases lock-up.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Belt Clamping Force Control Linear Solenoid (SLS)</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">After the control current to the solenoid is stopped, the belt clamping force is set to the maximum hydraulic pressure and the gear ratio is fixed at a predetermined value.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Fluid Temperature Sensor</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">The engine control computer fixes the fluid temperature at a predetermined value and performs normal control.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">G Sensor</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">When a malfunction is detected, neutral control is stopped.</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</body>
+</html>

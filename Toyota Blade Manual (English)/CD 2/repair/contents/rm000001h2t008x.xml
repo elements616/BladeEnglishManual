@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001A_S0009" variety="S0009">
+<name>Lighting</name>
+<ttl id="1001A_S0009_7420M_T0014" variety="T0014">
+<name>Headlight Dimmer Switch Assembly</name>
+<para id="RM000001H2T008X" category="G" type-id="3001K" name-id="603JU-00" from="200612">
+<name>Component Inspection</name>
+<subpara id="RM000001H2T008X_01" type-id="01" category="01">
+<s-1 id="RM000001H2T008X_01_0003" proc-id="RM0550J___00008UR00000">
+<ptxt>Inspect Headlight Dimmer Switch Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Measure Light Control Switch Resistance</ptxt>
+<figure>
+<graphic graphicname="B129570" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.37in"/>
+<colspec colname="COL2" align="left" colwidth="1.92in"/>
+<colspec colname="COL3" align="center" colwidth="0.84in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>13(T) - 19(E)</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Light control switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>11(H) - 19(E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>12(A) - 19(E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>13(T) - 19(E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch TAIL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>13(T) - 19(E)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Light control switch HEAD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>11(H) - 19(E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>12(A) - 19(E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch AUTO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>Measure Headlight Dimmer Switch Resistance</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.92in"/>
+<colspec colname="COL3" colwidth="0.84in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14(HF) - 19(E)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Headlight Dimmer Switch FLASH</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>20(HU) - 19(E)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>15(HL) - 19(E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Headlight Dimmer Switch LOW BEAM</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>20(HU) - 19(E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Headlight dimmer switch HI BEAM</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>Inspect "LOW BEAM" and "HI BEAM" with the light control switch in the "HEAD" position.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Measure Turn Signal Switch Resistance</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.92in"/>
+<colspec colname="COL3" colwidth="0.84in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>16(TR) - 19(E)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Turn Signal Switch Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>18(TL) - 19(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>16(TR) - 19(E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn Signal Switch Right</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>18(TL) - 19(E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn Signal Switch Left</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>Measure Front Fog Light Switch Resistance</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.92in"/>
+<colspec colname="COL3" colwidth="0.84in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>7(BFG) - 8(LFG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front fog light switch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Front fog light switch ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

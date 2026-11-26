@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002U_S0003" variety="S0003">
+<name>Glass &amp; Window</name>
+<ttl id="1002U_S0003_744CF_T004B" variety="T004B">
+<name>Power Window System</name>
+<para id="RM000000TYL00CX" category="C" type-id="800LG" name-id="752B3-00" from="200612">
+<dtccode>B2313</dtccode>
+<dtcname>Window Position/Window Sliding Characteristics Not Memorized</dtcname>
+<subpara id="RM000000TYL00CX_01" type-id="31" category="03" proc-id="RM0550J___000026000000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>When the power window regulator master switch assembly (all seats) is operated, the power window regulator motor assemblies (all seats) are driven. The power window regulator motor assemblies (all seats) have a motor function, regulator function and ECU function.</ptxt>
+<ptxt>B2313 is output when it is determined that the power window regulator motor assembly RH (driver side, rear right) or power window regulator motor assembly LH (front passenger side, rear left) has not been set.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Identify the power window regulator motor assembly (ECU) at the location that output this DTC (B2313) before inspecting.</ptxt>
+</item>
+<item>
+<ptxt>The power window system uses the Body Electronics Area Network. First, follow "How to Proceed with Troubleshooting" to perform the "communication function inspection" and confirm that there is no malfunction in the communication system before proceeding with troubleshooting.</ptxt>
+</item>
+<item>
+<ptxt>If AUTO UP is operated after replacing the glass, glass run, etc., the jam protection function may operate. In that case, repeating AUTO UP hold ←→ AUTO DOWN operation 5 times or more returns it to normal operation.</ptxt>
+</item>
+</list1>
+</atten3>
+<table frame="all" colsep="1" rowsep="1">
+<title>Each Seat Motor</title>
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.020989     in"/>
+<colspec colnum="02" colname="C02" colwidth="2.9949     in"/>
+<colspec colnum="03" colname="C03" colwidth="3.131031     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>B2313</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Power window regulator motor assembly (any seat) not set</ptxt>
+</item>
+<item>
+<ptxt>Power window regulator motor assembly (any seat) malfunction</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Power window regulator motor assembly (any seat) </ptxt>
+</item>
+<item>
+<ptxt>Power window regulator motor assembly (any seat) not set</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TYL00CX_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000000TYL00CX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000TYL00CX_04_0004" proc-id="RM0550J___0000C0Q00000">
+<testtitle>Initialize Power Window System</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the IG ON and initialize the power window regulator motor assembly at the location outputting the DTC. (see <xref label="Seep01" href="RM000002FNJ005X"/>) </ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TYL00CX_04_0001" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000TYL00CX_04_0001" proc-id="RM0550J___000026100000">
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF, disconnect the battery for 10 seconds or more, and then turn the IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs and confirm that no DTC is output.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.49in"/>
+<colspec colname="COL2" colwidth="1.64in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC is output again</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TYL00CX_04_0002" fin="true">A</down>
+<right ref="RM000000TYL00CX_04_0003" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TYL00CX_04_0002">
+<testtitle>Replace Power Window Regulator Motor Assembly (Relevant Location)</testtitle>
+</testgrp>
+<testgrp id="RM000000TYL00CX_04_0003">
+<testtitle>End (Cause: Not Initialized)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

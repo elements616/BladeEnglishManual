@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_74XTX_T00H7" variety="T00H7">
+<name>Air Fuel Ratio Sensor (2GR-FE)</name>
+<para id="RM0000020W100EX" category="G" type-id="3001K" name-id="066QD-00" from="200708">
+<name>Component Inspection</name>
+<subpara id="RM0000020W100EX_01" type-id="01" category="01">
+<s-1 id="RM0000020W100EX_01_0001" proc-id="RM0550J___0000FOB00000">
+<ptxt>Air Fuel Ratio Sensor</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Sensor Heater Resistance</ptxt>
+<figure>
+<graphic graphicname="A094395J05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between terminals 2 (+B) ←→ 1 (HT).</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance Inspection</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2(B) - 1(HT)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.8 to3.4Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1(HT) - 4(AF)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10K Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>Sensor Heater Short Circuit Inspection</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), check for a short circuit between terminals 1 (HT) ←→ 2 (+B).</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No continuity</ptxt>
+</specitem>
+</spec>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

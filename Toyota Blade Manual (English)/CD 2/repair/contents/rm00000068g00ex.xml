@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="04">
+<name>Driveline/Axle</name>
+<section id="1000K_S0015" variety="S0015">
+<name>Differential</name>
+<ttl id="1000K_S0015_744ZW_T00A7" variety="T00A7">
+<name>Active Torque Control 4WD System</name>
+<para id="RM00000068G00EX" category="U" type-id="303FJ" name-id="370CS-00" from="200612">
+<name>ECU Data Monitor/Active Test</name>
+<subpara id="RM00000068G00EX_z0" proc-id="RM0550J___00005J000000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>TaSCAN ECU Data Monitor</ptxt>
+<step2>
+<ptxt>Using SST (TaSCAN), follow the screen display to display the [ECU Data Monitor] screen and check the computer data.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<table pgwide="1">
+<title>[Diagnosis Menu Screen: Chassis → 4WD → ECU Data]</title>
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.31in"/>
+<colspec colname="COL2" colwidth="1.53in"/>
+<colspec colname="COL3" colwidth="0.99in"/>
+<colspec colname="COL4" colwidth="1.10in"/>
+<colspec colname="COL5" colwidth="2.15in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Items When Abnormal</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Stop Switch</ptxt>
+<ptxt>[STP]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates brake pedal is depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Brake pedal released → depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stop light switch signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Auto Mode Switch</ptxt>
+<ptxt>[AMSW]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates status of 4 wheel drive control switch</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4 wheel drive control switch OFF → ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4 wheel drive control switch signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Auto Mode Light</ptxt>
+<ptxt>[AMLP]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates illumination status of 4WD AUTO mode indicator light</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4 wheel drive control switch OFF → ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Meter Circuit</ptxt>
+<ptxt>4WD Computer Assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4WD Warning Light</ptxt>
+<ptxt>[4WDL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates illumination status of 4WD warning light</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Light on ←→ off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Meter Circuit</ptxt>
+<ptxt>4WD Computer Assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Speed Sensor FR</ptxt>
+<ptxt>[SPFR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates front right wheel speed</ptxt>
+<ptxt>Display Range: 0 to 326.4km/h</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When stopped</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0km/h</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Speed sensor front RH signal</ptxt>
+<ptxt>ABS &amp; Traction Actuator Assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Speed Sensor FR</ptxt>
+<ptxt>[SPFR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates front right wheel speed</ptxt>
+<ptxt>Display Range: 0 to 326.4km/h</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driving at constant speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>No large fluctuations</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Speed sensor front RH signal</ptxt>
+<ptxt>ABS &amp; Traction Actuator Assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Speed Sensor FL</ptxt>
+<ptxt>[SPFL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates front left wheel speed</ptxt>
+<ptxt>Display Range: 0 to 326.4km/h</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When stopped</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0km/h</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Speed sensor front LH signal</ptxt>
+<ptxt>ABS &amp; Traction Actuator Assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Speed Sensor FL</ptxt>
+<ptxt>[SPFL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates front left wheel speed</ptxt>
+<ptxt>Display Range: 0 to 326.4km/h</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driving at constant speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>No large fluctuations</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Speed sensor front LH signal</ptxt>
+<ptxt>ABS &amp; Traction Actuator Assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Speed Sensor RR</ptxt>
+<ptxt>[SPRR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates rear right wheel speed</ptxt>
+<ptxt>Display Range: 0 to 326.4km/h</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When stopped</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0km/h</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Speed sensor rear RH signal</ptxt>
+<ptxt>ABS &amp; Traction Actuator Assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Speed Sensor RR</ptxt>
+<ptxt>[SPRR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates rear right wheel speed</ptxt>
+<ptxt>Display Range: 0 to 326.4km/h</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driving at constant speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>No large fluctuations</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Speed sensor rear RH signal</ptxt>
+<ptxt>ABS &amp; Traction Actuator Assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Speed Sensor RL</ptxt>
+<ptxt>[SPRL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates rear left wheel speed</ptxt>
+<ptxt>Display Range: 0 to 326.4km/h</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When stopped</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0km/h</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Speed sensor rear LH signal</ptxt>
+<ptxt>ABS &amp; Traction Actuator Assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Speed Sensor RL</ptxt>
+<ptxt>[SPRL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates rear left wheel speed</ptxt>
+<ptxt>Display Range: 0 to 326.4km/h</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driving at constant speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>No large fluctuations</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Speed sensor rear LH signal</ptxt>
+<ptxt>ABS &amp; Traction Actuator Assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Forward and Rearward G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates G sensor value (acceleration/deceleration)</ptxt>
+<ptxt>Display range: -25.105024 to 24.908891m/s<sup>2</sup>
+</ptxt>
+<ptxt>Right: - side / Left: + side</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>During deceleration, during acceleration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proportional to G generated</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G sensor signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SLC Solenoid Current</ptxt>
+<ptxt>[SLC]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates linear solenoid current value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>While driving</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0-3A</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Linear solenoid signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Number of DTCs</ptxt>
+<ptxt>[DTC]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates number of DTCs</ptxt>
+<ptxt>Display range: 0 to 255 pieces</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

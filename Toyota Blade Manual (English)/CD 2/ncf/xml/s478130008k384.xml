@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY c5930007b SYSTEM "grph_ent/c5930007b.png" NDATA png>
+<!ENTITY c5930012b SYSTEM "grph_ent/c5930012b.png" NDATA png>
+
+<!ENTITY T130008K384 SYSTEM "t478130008k384.xml">
+<!ENTITY T130008K384T480 SYSTEM "t478130008k384t480.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T130008K384S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T130008K384" UPDATE = "ORIGINAL" LDUP = "10Mar2004"     INFOTYPE = "PARTS" INDSW = "ON"     SELECT = "Vehicle Outline: Comfort and Usability">
+<TITLE>Front Seat Heater</TITLE>
+<LIST1><ITEM><PTXT>Climate comfort seats are provided depending on the specification.</PTXT></ITEM>
+<ITEM><PTXT>The seat heater system consists of seat heaters provided in the main portions of the seatback and seat cushion, and seat heater switches provided on the center console.</PTXT></ITEM>
+<ITEM><PTXT>An indicator lamp is provided on the surface of the seat heater switch, allowing the operating status of the seat heater to be checked.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930007b" WIDTH = "6.903in" HEIGHT = "5.319in" />
+</FIGURE>
+
+<MECA ID = "T130008K384T480" UPDATE = "ORIGINAL" LDUP = "16Oct2007"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Seat Heater Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the seat heater switch is turned ON in HI mode, current flows from the thermostat to all seat heaters, warming the seat. When the seat heater switch is turned ON in LO mode, current flows from the thermostat to a specific portion of the seatback heater, warming the seatback. The thermostat turns OFF when the seat warms up, cutting off current to the seat heater, and turns ON when the seat temperature drops, resuming current to the seat heater. This operation keeps the seat surface temperature at approximately 40°C in HI mode and approximately 36°C in LO mode.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "25%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Seat Heater Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Seatback Heater</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Seat Cushion Heater</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Set Temperature</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" ALIGN = "CENTER" CONSPIC = "0"><PTXT>HI</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Operates</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Operates</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER" CONSPIC = "0"><PTXT>Approx. 40°C</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" ALIGN = "CENTER"><PTXT>LO</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER" CONSPIC = "0"><PTXT>Operates (set range only)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER" CONSPIC = "0"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER" CONSPIC = "0"><PTXT>Approx. 36°C</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930012b" WIDTH = "6.694in" HEIGHT = "3.431in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

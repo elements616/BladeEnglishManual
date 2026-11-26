@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY K4730035P SYSTEM "grph_ent/k4730035p.png" NDATA png>
+
+<!ENTITY T090010A248 SYSTEM "t478090010a248.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T090010A248S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T090010A248" UPDATE = "ORIGINAL" LDUP = "6Dec2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Front Passenger SRS Airbag</TITLE>
+<LIST1><ITEM><PTXT>The front passenger SRS airbag is located in the upper part of the instrument panel on the front passenger side.</PTXT></ITEM>
+<ITEM><PTXT>The SRS airbag is a non-disassemblable type and consists of the case, inflator, bag, etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "K4730035P" WIDTH = "7.069in" HEIGHT = "3.319in" />
+</FIGURE>
+</PARA>
+</SECTION>

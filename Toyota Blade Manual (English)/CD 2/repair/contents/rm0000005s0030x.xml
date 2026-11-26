@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="10033_S0007" variety="S0007">
+<name>CAN Communication</name>
+<ttl id="10033_S0007_741KB_T000K" variety="T000K">
+<name>CAN Communication System</name>
+<para id="RM0000005S0030X" category="D" type-id="303F3" name-id="950ZZ-01" from="200912">
+<name>Diagnosis System</name>
+<subpara id="RM0000005S0030X_z0" proc-id="RM0550J___0000CDD00001">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CAN Bus Diagnosis (Communication Malfunction DTC Check)</ptxt>
+<figure>
+<graphic graphicname="G031479" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>TaSCAN can display only the malfunction DTCs related to CAN communication, by ECU.</ptxt>
+</atten4>
+<step2>
+<ptxt>Select "Diagnosis" on the TOP menu of the SST (TaSCAN).</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Select "CAN Bus Diagnosis" on the diagnosis menu screen.</ptxt>
+<figure>
+<graphic graphicname="G026833" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Select "Communication Malfunction DTC Check" on the CAN bus diagnosis screen.</ptxt>
+<figure>
+<graphic graphicname="G026834" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>The screen appears and the malfunction DTCs related to CAN communication are displayed by ECU.</ptxt>
+<figure>
+<graphic graphicname="G028214" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>CAN Bus Diagnosis (CAN Bus Connected ECU Check)</ptxt>
+<figure>
+<graphic graphicname="G026834" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>TaSCAN can display the ECUs and sensors that are correctly connected to CAN communication.</ptxt>
+</atten4>
+<step2>
+<ptxt>Select "CAN Bus Connected ECU Check" on the CAN bus diagnosis screen of the SST (TaSCAN).</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>The screen appears and the ECUs and sensors currently connected correctly are displayed.</ptxt>
+<figure>
+<graphic graphicname="G028212" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If an ECU or sensor that should be connected is not displayed, communication in that system has stopped.</ptxt>
+</item>
+<item>
+<ptxt>If no ECUs or sensors are connected to the CAN bus, "No ECUs are currently connected to the CAN bus. " is displayed.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Check the screen display for approximately 1 minutes and check that there are no items alternating between displayed and not displayed.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If there is a one-side open circuit in any branch line other than DLC3, the output of the other, unbroken communication line becomes noise and may interfere with the responses (display) of other ECUs and sensors.</ptxt>
+</item>
+<item>
+<ptxt>If there are ECUs or sensors alternating between displayed and not displayed, inspect the branch lines of those ECUs or sensors and of the ECUs or sensors with no response at all (not displayed) for a one-side open circuit, and repair the abnormal branch line.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Check Installation Status of CAN Communication Systems (ECUs, Sensors)</ptxt>
+<step2>
+<ptxt>ECUs and Sensors Connected to V Bus Circuit</ptxt>
+<step3>
+<ptxt>Engine Control Computer (EFI ECU)</ptxt>
+</step3>
+<step3>
+<ptxt>Instrument Panel Junction Block Assembly (Main Body ECU)</ptxt>
+</step3>
+<step3>
+<ptxt>Combination Meter Assembly (Meter ECU)</ptxt>
+</step3>
+<step3>
+<ptxt>Power Steering Computer Assembly (EPS ECU)</ptxt>
+</step3>
+<step3>
+<ptxt>Air Conditioner Amplifier Assembly (A/C ECU)</ptxt>
+</step3>
+<step3>
+<ptxt>Airbag Computer Assembly (A/B ECU)</ptxt>
+</step3>
+<step3>
+<ptxt>ABS &amp; Traction Actuator Assembly (VSC ECU)</ptxt>
+</step3>
+<step3>
+<ptxt>Steering Sensor (Steering Angle Sensor)</ptxt>
+</step3>
+<step3>
+<ptxt>Yaw Rate Sensor (Yaw / G Sensor)</ptxt>
+</step3>
+<step3>
+<ptxt>Navigation Receiver Assembly (NAVI ECU)</ptxt>
+</step3>
+<step3>
+<ptxt>Network Gateway Computer (CAN Gateway ECU)</ptxt>
+</step3>
+<step3>
+<ptxt>Accessory Bus Buffer</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>ECUs Connected to MS Bus Circuit</ptxt>
+<step3>
+<ptxt>Smart Key Computer Assembly (Certification ECU)</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>ECUs Connected to V Bus No.2 Circuit</ptxt>
+<step3>
+<ptxt>4WD Computer Assembly (4WD ECU)</ptxt>
+</step3>
+<step3>
+<ptxt>Seat Belt Control Computer Assembly (Pre-crash ECU)</ptxt>
+</step3>
+<step3>
+<ptxt>Distance Control Computer Assembly (ACC ECU)</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Systems (ECUs, sensors) using CAN communication differ depending on the model and option settings, so check which systems (ECUs, sensors) are equipped on the vehicle being worked on.</ptxt>
+<step3>
+<ptxt>TaSCAN Display and Method for Checking Vehicle Equipment</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="2.52in"/>
+<colspec colname="COLSPEC1" colwidth="2.28in"/>
+<colspec colname="COLSPEC0" colwidth="2.28in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>ECU/Sensor Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>TaSCAN (CAN Bus Connected ECU Check) Display Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Method for Checking Whether Equipped</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Engine Control Computer</ptxt>
+<ptxt>(EFI ECU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TCCS</ptxt>
+<ptxt>CVT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All Models</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Instrument Panel Junction Block Assembly</ptxt>
+<ptxt>(Main Body ECU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main Body</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All Models</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Combination Meter Assembly</ptxt>
+<ptxt>(Meter ECU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Meter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All Models</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Power Steering Computer Assembly</ptxt>
+<ptxt>(EPS ECU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Electric Power Steering</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All Models</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Air Conditioner Amplifier Assembly</ptxt>
+<ptxt>(A/C ECU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All Models</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Airbag Computer Assembly</ptxt>
+<ptxt>(A/B ECU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Airbag</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All Models</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ABS &amp; Traction Actuator Assembly</ptxt>
+<ptxt>(VSC ECU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS/VSC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All Models</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Steering Sensor</ptxt>
+<ptxt>(Steering Angle Sensor)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering Angle Sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All Models</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Yaw Rate Sensor</ptxt>
+<ptxt>(Yaw/G Sensor)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Yaw Rate/G Sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All Models</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Navigation Receiver Assembly</ptxt>
+<ptxt>(Navigation ECU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AVN1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Models with Genuine Toyota HDD Navigation System</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Smart Key Computer Assembly (Certification ECU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Certification</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All Models</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Network Gateway Computer</ptxt>
+<ptxt>(CAN Gateway ECU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN Gateway</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>4WD Models</ptxt>
+</item>
+<item>
+<ptxt>Models with ACC (Combined with PSB)</ptxt>
+</item>
+<item>
+<ptxt>Models with PSB</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>4WD Computer Assembly</ptxt>
+<ptxt>(4WD ECU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4WD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4WD Models</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Accessory Bus Buffer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accessory Gateway</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Models with Dealer Options Using CAN Communication</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Seat Belt Control Computer</ptxt>
+<ptxt>(Pre-crash ECU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pre-crash</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>w/ Pre-crash Safety System</ptxt>
+<ptxt>(Set with Radar Cruise)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Distance Control Computer Assembly</ptxt>
+<ptxt>(ACC ECU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Radar Cruise</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Millimeter wave radar sensor assembly is mounted behind the radiator grille center ornament</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Diagnostic Trouble Code Chart by ECU</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Using the SST (TaSCAN), CAN communication system DTCs can be displayed by ECU.</ptxt>
+</item>
+<item>
+<ptxt>If CAN communication system DTCs are output, the malfunction cannot be identified from the DTCs alone; therefore, perform troubleshooting from "How to Proceed with Troubleshooting" (refer to <xref label="Seep03" href="RM000001R4W019X"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>Engine Control Computer (EFI ECU) / "TCCS", "CVT" (TaSCAN Display Name)</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COL2" colwidth="3.53in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis Item (TaSCAN Display Name)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>U0100</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine ECU Communication Malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0122</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VSC (ECB) ECU Communication Malfunction (*1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0123</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Yaw Rate Sensor Communication Malfunction (*1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0126</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering Sensor Communication Malfunction (*1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0129</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake ECU Communication Malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0235</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Radar Sensor Communication Malfunction (Radar Sensor → Distance Control ECU) (*1) (*2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U1101</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Distance Control ECU Communication Malfunction (*1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U1102</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Radar Sensor Communication Malfunction (Distance Control ECU → Radar Sensor) (*1) (*2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Diagnostic communication is performed via CAN communication.</ptxt>
+</item>
+<item>
+<ptxt>The EFI ECU also outputs data of the distance control computer assembly (ACC ECU).</ptxt>
+</item>
+<item>
+<ptxt>*1: These are cruise system DTCs.</ptxt>
+</item>
+<item>
+<ptxt>*2:TaSCAN: If it is displayed on the "Communication Malfunction DTC Check" screen but the EFI ECU outputs only U0235 and U1102, it is not a CAN communication malfunction. (Refer to <xref label="Seep01" href="RM00000064N00DX"/> and <xref label="Seep02" href="RM00000064Q00CX"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Combination Meter Assembly (Meter ECU) / Meter (TaSCAN Display Name)</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COLSPEC2" colwidth="3.53in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis Item (TaSCAN Display Name)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>U0100</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EFI ECU Communication Malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0129</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS/VSC ECU Communication Malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>Diagnostic communication is performed via CAN communication.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Power Steering Computer Assembly (EPS ECU) / Electric Power Steering (TaSCAN Display Name)</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COLSPEC6" colwidth="3.53in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis Item (TaSCAN Display Name)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>U0100</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine ECU Communication Malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0129</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake ECU Communication Malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>Diagnostic communication is performed via CAN communication.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Air Conditioning Amplifier Assembly (A/C ECU) / A/C (TaSCAN Display Name)</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COLSPEC6" colwidth="3.53in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis Item (TaSCAN Display Name)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B1499</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine/Meter ECU Communication Malfunction (*3)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Diagnostic communication is performed via CAN communication.</ptxt>
+</item>
+<item>
+<ptxt>*3: Output only while the malfunction is present; not stored as a past malfunction. While communication is stopped, "99" is output by the air conditioning panel diagnosis. (Codes cannot be read with a diagnostic tool while communication is stopped)</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>ABS &amp; Traction Actuator Assembly (VSC ECU) / ABS/VSC (TaSCAN Display Name)</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COLSPEC2" colwidth="3.53in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis Item (TaSCAN Display Name)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>U0073</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0100</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine ECU Communication Malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0123</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Yaw Rate Sensor Communication Malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0124</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G Sensor Communication Malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0126</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering Angle Sensor Communication Malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>Diagnostic communication is performed via CAN communication.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>4WD Computer Assembly (4WD ECU) / 4WD (TaSCAN Display Name)</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COLSPEC6" colwidth="3.53in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis Item (TaSCAN Display Name)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>U0073</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0100</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine ECU Communication Malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0129</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake ECU Communication Malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0126</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering Angle Sensor Communication Malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>Diagnostic communication is performed via CAN communication.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Navigation Receiver Assembly (Navigation ECU) / AVN1 (TaSCAN Display Name)</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COLSPEC6" colwidth="3.53in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis Item (TaSCAN Display Name)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>U0073</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0126</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering Sensor Communication Malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>Diagnostic communication is performed via CAN communication.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Instrument Panel Junction Block Assembly (Main Body ECU) / Main Body (TaSCAN Display Name)</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COLSPEC6" colwidth="3.53in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis Item (TaSCAN Display Name)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>U0327</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Smart/Certification ECU Not Connected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U1002</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sub-network Communication Malfunction (Main Body)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>Diagnostic communication is performed via CAN communication.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Network Gateway Computer (CAN Gateway ECU) / CAN Gateway ECU (TaSCAN Display Name)</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COLSPEC6" colwidth="3.53in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis Item (TaSCAN Display Name)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>U0114</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4WD ECU Not Connected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U1002</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sub-network Communication Malfunction (CAN Gateway)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U1100</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pre-crash ECU Communication Malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U1101</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driving Support ECU Communication Malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>Diagnostic communication is performed via CAN communication.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Smart Key Computer Assembly (Certification ECU) / Certification (TaSCAN Display Name)</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COLSPEC6" colwidth="3.53in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis Item (TaSCAN Display Name)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B2779</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine Starter Communication Malfunction (*1)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Diagnostic communication is performed via CAN communication.</ptxt>
+</item>
+<item>
+<ptxt>*1: Output only on models with remote engine start (dealer option). Past malfunctions are not stored.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Seat Belt Control Computer (Pre-crash ECU) / Pre-crash (TaSCAN Display Name)</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COLSPEC6" colwidth="3.53in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis Item (TaSCAN Display Name)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>U0100</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine ECU Communication Malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0122</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake ECU Communication Malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U0235</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Radar → Distance Control Communication Malfunction (*1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U1101</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Distance Control ECU Communication Malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U1102</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Distance Control → Radar Communication Malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Diagnostic communication is performed via CAN communication.</ptxt>
+</item>
+<item>
+<ptxt>*1:TaSCAN: If it is displayed on the "Communication Malfunction DTC Check" screen but only U0235 is output, it is not a CAN communication malfunction.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC Combination Table (V Bus Branch Line Open, Past Communication Stop Malfunction)</ptxt>
+<step2>
+<ptxt>For past malfunctions of ECUs connected to the V bus (displayed normally in the CAN bus connected ECU check but a DTC is output), refer to the combination table to determine the branch line in which the malfunction occurred.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>ECUs with a branch line open circuit or communication stop cannot respond to the DTC output request from the SST (TaSCAN).</ptxt>
+</item>
+<item>
+<ptxt>A current branch line open circuit or communication stop can be confirmed by performing the "CAN Bus Connected ECU Check" using the SST (TaSCAN): the ECUs and sensors connected to the open branch line do not respond (are not displayed on the screen).</ptxt>
+</item>
+<item>
+<ptxt>If the CAN gateway ECU is outputting a malfunction code, inspect and repair the V bus No.2 malfunction first.</ptxt>
+</item>
+</list1>
+</atten4>
+<figure>
+<graphic graphicname="C219745" width="7.106578999in" height="7.795582503in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>×: May be output when there is a one-side open circuit in a branch line</ptxt>
+</item>
+<item>
+<ptxt>*1: DTCs cannot be output while communication is stopped</ptxt>
+</item>
+<item>
+<ptxt>*2:CAN: Applies when the gateway ECU DTCs are normal (V bus No.2 normal)</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

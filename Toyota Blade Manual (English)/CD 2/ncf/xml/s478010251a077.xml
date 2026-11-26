@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4460014p SYSTEM "grph_ent/a4460014p.png" NDATA png>
+<!ENTITY a4560013p SYSTEM "grph_ent/a4560013p.png" NDATA png>
+
+<!ENTITY T010251A077 SYSTEM "t478010251a077.xml">
+<!ENTITY T010251A077A874 SYSTEM "t478010251a077a874.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010251A077S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010251A077" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Camshaft Position Sensor (G2 Signal)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>An MRE (Magneto Resistance Element) type sensor has been adopted.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4460014p" WIDTH = "6.903in" HEIGHT = "5.708in" />
+</FIGURE>
+<INDICATE ID = "T010251A077I01" INDSW = "OFF">
+<TITLE>Features of MRE Type Sensor</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "29%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "34%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "36%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>MRE Type</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Pickup Coil Type (Reference)</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Signal Output</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Constant digital output from zero engine speed.</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Analog output in which the output voltage changes with engine speed.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T010251A077A874" UPDATE = "ORIGINAL" LDUP = "19May2005"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>MRE Type Cam Position Sensor Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The MRE type cam position sensor consists of a magnet and a sensor circuit (IC) with a built-in MRE.</PTXT></ITEM>
+<ITEM><PTXT>In the MRE type cam position sensor, the rotation of the timing rotor changes the magnetic vector (direction of the magnetic field) applied to the MRE in the cam position sensor, which changes the internal resistance of the MRE. This resistance change is converted to voltage, and the output waveform is compared with a threshold value and shaped into a rectangular wave of Hi (approximately 4V) and Lo (approximately 1V), which is output to the engine control computer. This output signal is compared with the Ne signal to detect the actual camshaft angle and identify cylinders.</PTXT></ITEM>
+<ITEM><PTXT>By identifying the position of the timing rotor from the voltage output as Hi/Lo digital signals from when the engine is stopped and from pattern recognition of the peak and valley widths of the timing rotor, the crank position at starting can be detected earlier than with the conventional pickup coil type cam position sensor, improving engine startability.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4560013p" WIDTH = "6.903in" HEIGHT = "6.736in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

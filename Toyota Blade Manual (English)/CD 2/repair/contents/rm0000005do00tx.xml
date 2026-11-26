@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002U_S0003" variety="S0003">
+<name>Glass &amp; Window</name>
+<ttl id="1002U_S0003_744CF_T004B" variety="T004B">
+<name>Power Window System</name>
+<para id="RM0000005DO00TX" category="U" type-id="3001G" name-id="752AZ-00" from="200612">
+<name>Terminals of ECU</name>
+<subpara id="RM0000005DO00TX_z0" proc-id="RM0550J___000024100000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Power Window Regulator Motor Assembly RH (Driver Side, Rear RH)</ptxt>
+<figure>
+<graphic graphicname="B108700" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Inspect Power Window Regulator Motor Assembly RH (Driver Side, Rear RH)</ptxt>
+<step3>
+<ptxt>Disconnect the power window regulator motor assembly RH (driver side, rear RH) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance and voltage between each terminal of the vehicle side wire harness connector of the power window regulator motor assembly RH (driver side, rear RH).</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>10(UP) ←→ 7(DOWN)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(B) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5(LED) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF → IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 V or less → 11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>9(LIN) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Power Window Regulator Motor Assembly LH (Front Passenger Side, Rear LH)</ptxt>
+<figure>
+<graphic graphicname="B108700" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Inspect Power Window Regulator Motor Assembly LH (Front Passenger Side, Rear LH)</ptxt>
+<step3>
+<ptxt>Disconnect the power window regulator motor assembly LH (front passenger side, rear LH) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance and voltage between each terminal of the vehicle side wire harness connector of the power window regulator motor assembly LH (front passenger side, rear LH).</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>10(UP) ←→ 7(DOWN)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(B) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5(LED) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF → IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 V or less → 11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>9(LIN) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Power Window Regulator Master Switch Assembly</ptxt>
+<figure>
+<graphic graphicname="B129570" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Inspect Power Window Regulator Master Switch Assembly</ptxt>
+<step3>
+<ptxt>Disconnect the power window regulator master switch assembly connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance and voltage between each terminal of the vehicle side wire harness connector of the power window regulator master switch assembly.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.83in"/>
+<colspec colname="COL2" colwidth="1.09in"/>
+<colspec colname="COL3" colwidth="1.21in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>12 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.81in"/>
+<colspec colname="COL2" colwidth="1.08in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>11(B) ←→ 12(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, there may be a malfunction on the vehicle side.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Connect the power window regulator master switch assembly connector and reset the power window regulator motor assembly RH (driver side). (see <xref label="Seep01" href="RM000002FNJ005X"/>)</ptxt>
+</step3>
+<step3>
+<ptxt>Measure the voltage between each terminal of the power window regulator master switch assembly connector.</ptxt>
+<spec>
+<title>Voltage</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="4.25in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>20(UP) ←→ 12(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Power window regulator master switch assembly (driver side) OFF → UP (manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 V or less → 11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>20(UP) ←→ 12(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Driver side door glass fully open → Power window regulator master switch assembly (driver side) UP (auto operation) → Door glass fully closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 V or less → 11 to 14 V → 1 V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>15(DOWN) ←→ 12(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Power window regulator master switch assembly (driver side) OFF → DOWN (manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 V or less → 11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>15(DOWN) ←→ 12(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Driver side door glass fully closed → Power window regulator master switch assembly (driver side) DOWN (auto operation) → Door glass fully open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 V or less → 11 to 14 V → 1 V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>18(LED) ←→ 12(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON → approximately 45 seconds after IG OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 V or less → 11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, the power window regulator master switch assembly (driver side) may be defective.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Power Window Regulator Switch Assembly (Front Passenger Side)</ptxt>
+<figure>
+<graphic graphicname="B129574" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Inspect Power Window Regulator Switch Assembly (Front Passenger Side)</ptxt>
+<atten4>
+<ptxt>Before starting work, check that the window lock switch of the power window regulator master switch assembly (driver side) is set to UNLOCK.</ptxt>
+</atten4>
+<step3>
+<ptxt>Disconnect the power window regulator switch assembly (front passenger side) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle side wire harness connector of the power window regulator switch assembly (front passenger side).</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, there may be a malfunction on the vehicle side.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Connect the power window regulator switch assembly (front passenger side) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Measure the voltage between each terminal of the power window regulator switch assembly (front passenger side) connector.</ptxt>
+<spec>
+<title>Voltage</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="4.25in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6(UP) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Power window regulator switch assembly OFF → UP</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1 V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>7(DOWN) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Power window regulator switch assembly OFF → DOWN</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1 V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>8(AUTO) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Power window regulator switch assembly OFF → UP (auto operation) → Door glass fully closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1 V or less → 11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>8(AUTO) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Power window regulator switch assembly OFF → DOWN (auto operation) → Door glass fully open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1 V or less → 11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4(LED) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>• IG ON → approximately 45 seconds after IG OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1 V or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, the power window regulator switch assembly (front passenger side) may be defective.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Rear Power Window Regulator Switch Assembly (Rear RH)</ptxt>
+<figure>
+<graphic graphicname="B129574" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Inspect Rear Power Window Regulator Switch Assembly (Rear RH)</ptxt>
+<step3>
+<ptxt>Disconnect the rear power window regulator switch assembly (rear RH) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle side wire harness connector of the rear power window regulator switch assembly (rear RH).</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, there may be a malfunction on the vehicle side.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Connect the rear power window regulator switch assembly (rear RH) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Measure the voltage between each terminal of the rear power window regulator switch assembly (rear RH) connector.</ptxt>
+<spec>
+<title>Voltage</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="4.25in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6(UP) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Rear power window regulator switch assembly (rear RH) OFF → UP</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1 V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>7(DOWN) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Rear power window regulator switch assembly (rear RH) OFF → DOWN</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1 V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>8(AUTO) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Rear power window regulator switch assembly (rear RH) OFF → UP (auto operation) → Door glass fully closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1 V or less → 11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>8(AUTO) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Rear power window regulator switch assembly (rear RH) OFF → DOWN (auto operation) → Door glass fully open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1 V or less → 11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4(LED) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>• IG ON → approximately 45 seconds after IG OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1 V or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, the rear power window regulator switch assembly (rear RH) may be defective.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Rear Power Window Regulator Switch Assembly (Rear LH)</ptxt>
+<figure>
+<graphic graphicname="B129574" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Inspect Rear Power Window Regulator Switch Assembly (Rear LH)</ptxt>
+<step3>
+<ptxt>Disconnect the rear power window regulator switch assembly (rear LH) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle side wire harness connector of the rear power window regulator switch assembly (rear LH).</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, there may be a malfunction on the vehicle side.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Connect the rear power window regulator switch assembly (rear LH) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Measure the voltage between each terminal of the rear power window regulator switch assembly (rear LH) connector.</ptxt>
+<spec>
+<title>Voltage</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="4.25in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6(UP) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Rear power window regulator switch assembly (rear LH) OFF → UP</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1 V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>7(DOWN) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Rear power window regulator switch assembly (rear LH) OFF → DOWN</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1 V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>8(AUTO) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Rear power window regulator switch assembly (rear LH) OFF → UP (auto operation) → Door glass fully closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1 V or less → 11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>8(AUTO) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>/IG ON</ptxt>
+<ptxt>• Rear power window regulator switch assembly (rear LH) OFF → DOWN (auto operation) → Door glass fully open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1 V or less → 11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4(LED) ←→ 1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON → approximately 45 seconds after IG OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1 V or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, the rear power window regulator switch assembly (rear LH) may be defective.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Instrument Panel Junction Block Assembly (Main Body ECU)</ptxt>
+<step2>
+<ptxt>Inspect Main Body ECU</ptxt>
+<step3>
+<ptxt>Disconnect the main body ECU connector to be inspected.</ptxt>
+<figure>
+<graphic graphicname="E139319J01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="E139320J01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance and voltage between each terminal of the vehicle side wire harness connector of the main body ECU ←→ body ground.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.13in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>U1 (AM1) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>U4 (GND2) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, there may be a malfunction on the vehicle side.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Connect the main body ECU connectors and measure the voltage and waveform between the terminals of each main body ECU connector ←→ body ground.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.13in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C6 (DCTY) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver door fully closed → open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V → 1 V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>V23 (LIN2) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, the main body ECU may be malfunctioning.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

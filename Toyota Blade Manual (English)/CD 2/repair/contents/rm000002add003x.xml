@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744EH_T0053" variety="T0053">
+<name>Knock Control Sensor (2AZ-FE)</name>
+<para id="RM000002ADD003X" category="G" type-id="3001K" name-id="065AV-00" from="200612">
+<name>Component Inspection</name>
+<subpara id="RM000002ADD003X_01" type-id="01" category="01">
+<s-1 id="RM000002ADD003X_01_0001" proc-id="RM0550J___00002ZK00000">
+<ptxt>Inspect Knock Control Sensor</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Resistance Inspection</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="A065174" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>120 to 280kΩ</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

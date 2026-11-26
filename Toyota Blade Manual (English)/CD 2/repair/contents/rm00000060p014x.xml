@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1002J_S000U" variety="S000U">
+<name>Brake Control</name>
+<ttl id="1002J_S000U_744TG_T0089" variety="T0089">
+<name>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</name>
+<para id="RM00000060P014X" category="C" type-id="300AA" name-id="442OP-00" from="200612">
+<dtccode>C1249/49</dtccode>
+<dtcname>Stop Switch Open Detection</dtcname>
+<subpara id="RM00000060P014X_29" type-id="33" category="03" proc-id="RM0550J___0000A3L00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>The skid control computer (built into the actuator) receives the stop light switch signal to detect the brake operation status.</ptxt>
+<ptxt>The skid control computer has an internal open circuit detection circuit, and outputs this code if it detects an open in the stop light signal input line.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.22in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COL3" colwidth="2.86in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Output Related Items</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1249/49</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With IG1 terminal voltage at 9.5V or higher, an open in the stop light circuit (between A ←→ B or A ←→ body ground) continues for 0.3 seconds or more</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open in wire harness between stop light circuit and actuator</ptxt>
+</item>
+<item>
+<ptxt>Poor connector contact pressure, terminal deformation or corrosion</ptxt>
+</item>
+<item>
+<ptxt>Actuator assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000060P014X_30" type-id="32" category="03" proc-id="RM0550J___0000A3M00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C159147J01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM00000060P014X_31" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM00000060P014X_32" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000060P014X_32_0172" proc-id="RM0550J___0000A3N00000">
+<testtitle>Inspect Fuse (STOP 10A)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance of the fuse (STOP 10A).</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>STOP Fuse</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000060P014X_32_0173" fin="false">OK</down>
+<right ref="RM00000060P014X_32_0178" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000060P014X_32_0173" proc-id="RM0550J___0000A3O00000">
+<testtitle>Inspect Stop Light Illumination</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the IG ON, depress the brake pedal, and check that the stop lights come on.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Comes on</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000060P014X_32_0174" fin="false">OK</down>
+<right ref="RM00000060P014X_32_0179" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000060P014X_32_0174" proc-id="RM0550J___0000A3P00000">
+<testtitle>Inspect Wire Harness and Connector (Actuator Assembly - Stop Light Switch Assembly)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect the actuator assembly and stop light switch assembly connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the connector case and terminals are free of deformation and corrosion.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No deformation or corrosion</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance of the wire harness side connectors between the actuator assembly and stop light switch assembly.</ptxt>
+<figure>
+<graphic graphicname="C160327J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.41in"/>
+<colspec colname="COL2" colwidth="0.81in"/>
+<colspec colname="COL3" colwidth="0.91in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2(STP) - 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000060P014X_32_0175" fin="false">OK</down>
+<right ref="RM00000060P014X_32_0180" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000060P014X_32_0175" proc-id="RM0550J___0000A3Q00000">
+<testtitle>Inspect Wire Harness and Connector (GND1, GND2)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect the actuator assembly connector.</ptxt>
+<figure>
+<graphic graphicname="C154597J03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the wire harness side connector of the actuator assembly and body ground.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.14in"/>
+<colspec colname="COL2" colwidth="0.88in"/>
+<colspec colname="COL3" colwidth="1.11in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 (GND1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000060P014X_32_0176" fin="false">OK</down>
+<right ref="RM00000060P014X_32_0181" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000060P014X_32_0176" proc-id="RM0550J___0000A3R00000">
+<scantool type="1"/>
+<testtitle>Recheck DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTCs, perform a road test, and check the DTCs again. (see <xref label="Seep01" href="RM00000060000PX"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL2" colwidth="2.07in"/>
+<colspec colname="COLSPEC0" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Malfunction Code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000060P014X_32_0177" fin="true">A</down>
+<right ref="RM00000060P014X_32_0182" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000060P014X_32_0177">
+<testtitle>Perform Problem Reproduction Test<xref label="Seep01" href="RM000000ABY03DX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000060P014X_32_0178">
+<testtitle>Replace Fuse</testtitle>
+</testgrp>
+<testgrp id="RM00000060P014X_32_0179">
+<testtitle>Inspect stop light circuit<xref label="Seep01" href="RM000000QUA00MX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000060P014X_32_0180">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM00000060P014X_32_0181">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM00000060P014X_32_0182">
+<testtitle>Replace ABS &amp; Traction Actuator Assembly<xref label="Seep01" href="RM00000304V000X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

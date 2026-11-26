@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="07">
+<name>Steering</name>
+<section id="1000U_S0017" variety="S0017">
+<name>Steering Column</name>
+<ttl id="1000U_S0017_746I2_T00CG" variety="T00CG">
+<name>Steering Lock System</name>
+<para id="RM0000005FS00VX" category="D" type-id="300BB" name-id="480YE-00" from="200612">
+<name>Function Description</name>
+<subpara id="RM0000005FS00VX_z0" proc-id="RM0550J___0000A0Y00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Steering Lock System, Unlock Operation Conditions</ptxt>
+<step2>
+<ptxt>Unlock operation is performed when the following conditions are met.</ptxt>
+<step3>
+<ptxt>Key verification completed</ptxt>
+</step3>
+<step3>
+<ptxt>Engine switch ON</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Steering Lock System, Lock Operation Conditions</ptxt>
+<step2>
+<ptxt>Lock operation is performed when the following conditions are met.</ptxt>
+<step3>
+<ptxt>IG OFF、ACC OFF</ptxt>
+</step3>
+<step3>
+<ptxt>Shift position in P</ptxt>
+</step3>
+<step3>
+<ptxt>Door closed → open</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Engine Switch Indicator Display Function</ptxt>
+<step2>
+<ptxt>If there is a system malfunction when the engine switch is turned ON/OFF or the electrical key is removed, the malfunction is indicated by the engine switch indicator light blinking.</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Indicator Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Display Content</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Display Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Display Time</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Green at 1-second cycle</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Steering Lock Not Released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Unlock completion is not input even though unlock operation was performed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>15 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Amber blinking at 2-second cycle</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Smart start system malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Malfunction occurred in the motor drive circuit in the steering lock actuator</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>15 seconds after power OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>About the Steering Lock ECU</ptxt>
+<step2>
+<ptxt>The steering lock ECU is not connected to the CAN communication system. It communicates with the body multiplex communication system via LIN communication with the certification ECU.</ptxt>
+<atten3>
+<ptxt>If the certification ECU is replaced, the engine may not start unless the driver side door is opened and closed. (This makes the certification ECU store the current steering lock position)</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>The steering lock ECU is built into the steering lock actuator on the steering column.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

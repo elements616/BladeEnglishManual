@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1001Y_S000S" variety="S000S">
+<name>CVT</name>
+<ttl id="1001Y_S000S_744HD_T007Y" variety="T007Y">
+<name>CVT System [Super CVT-i] (K112/K112F)</name>
+<para id="RM000000FUE00OX" category="C" type-id="303M7" name-id="3225A-00" from="200612">
+<dtccode>P2767/61</dtccode>
+<dtcname>Primary Sheave Speed Sensor Circuit</dtcname>
+<subpara id="RM000000FUE00OX_01" type-id="33" category="03" proc-id="RM0550J___000047K00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>The engine control computer detects the input shaft speed from the signal from the primary pulley speed sensor (NIN) and performs shift control.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.18in"/>
+<colspec colname="COL3" colwidth="2.90in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2767/61</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>While driving in the D position with output shaft speed of 300rpm or more (vehicle speed approximately 7km/h or more)</ptxt>
+</item>
+<item>
+<ptxt>Primary pulley speed sensor speed is less than 300r/min</ptxt>
+</item>
+<item>
+<ptxt>Continuously for 2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness and Connector</ptxt>
+<ptxt>(NIN Sensor Signal System)</ptxt>
+</item>
+<item>
+<ptxt>Transmission Revolution Sensor (NIN)</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000FUE00OX_02" type-id="32" category="03" proc-id="RM0550J___000047L00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C102334J13" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000FUE00OX_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000000FUE00OX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000FUE00OX_04_0001" proc-id="RM0550J___000047M00000">
+<testtitle>Read TaSCAN Data (Primary Pulley Speed)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), display the [ECU Data Monitor] screen according to the screen display, and check the computer data.</ptxt>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Powertrain → TCCS → ECU Data Monitor]</title>
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.60in"/>
+<colspec colname="COL2" colwidth="2.33in"/>
+<colspec colname="COL3" colwidth="1.58in"/>
+<colspec colname="COL4" colwidth="1.57in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Item Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Primary Pulley</ptxt>
+<ptxt>Speed</ptxt>
+<ptxt>[NIS]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates primary pulley speed</ptxt>
+<ptxt>Display Range: 0 to 12750rpm</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When stopped</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Primary Pulley</ptxt>
+<ptxt>Speed</ptxt>
+<ptxt>[NIS]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates primary pulley speed</ptxt>
+<ptxt>Display Range: 0 to 12750rpm</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lock-up ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Same as engine speed</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000FUE00OX_04_0002" fin="false">A</down>
+<right ref="RM000000FUE00OX_04_0010" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000FUE00OX_04_0002" proc-id="RM0550J___000047N00000">
+<testtitle>Inspect Transmission Revolution Sensor (NIN)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the transmission revolution sensor (NIN) connector.</ptxt>
+<figure>
+<graphic graphicname="C160034J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2(NIN+) - 1(NIN-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>560 to 680Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000FUE00OX_04_0003" fin="false">OK</down>
+<right ref="RM000000FUE00OX_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000FUE00OX_04_0003" proc-id="RM0550J___000047O00000">
+<testtitle>Inspect Wire Harness and Connector (Primary Pulley Speed Sensor (NIN) - Engine Control Computer)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Connect the transmission revolution sensor (NIN) connector.</ptxt>
+<figure>
+<graphic graphicname="C159285J06" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect engine control computer connector A, and using SST (Toyota electrical tester), measure the resistance between each terminal. (see <xref label="Seep02" href="RM000000FSD00RX"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A101(NIN+) - A102(NIN-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>560 to 680Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000FUE00OX_04_0010" fin="false">OK</down>
+<right ref="RM000000FUE00OX_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000FUE00OX_04_0010" proc-id="RM0550J___0000BLJ00000">
+<testtitle>Replace Engine Control Computer</testtitle>
+<content6 releasenbr="1">
+<ptxt>For the replacement procedure, refer to <xref label="Seep01" href="RM0000020V0005X"/></ptxt>
+</content6>
+<res>
+<down ref="RM000000FUE00OX_04_0005" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000FUE00OX_04_0005" proc-id="RM0550J___000047P00000">
+<scantool type="1"/>
+<testtitle>TaSCAN (A/T / CVT Learned Value Initialization, G Sensor 0-point Learning and CVT Hydraulic Pressure Learning)</testtitle>
+<content6 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Initializing the learned values clears both the G sensor 0-point learning values and the CVT hydraulic pressure learning values, so when replacing the parts in the table below, perform AT/CVT learned value initialization and be sure to perform both G sensor 0-point learning and CVT hydraulic pressure learning.</ptxt>
+<table>
+<tgroup cols="1">
+<colspec colname="COL1" colwidth="4.13in"/>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>Replacement Parts</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Continuously Variable Transaxle</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>Skid control computer</ptxt>
+</item>
+<item>
+<ptxt>Oil Pressure Sensor</ptxt>
+</item>
+<item>
+<ptxt>Yaw Rate Sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+<item>
+<ptxt>After performing AT/CVT learned value initialization, be sure to perform G sensor 0-point learning first, and then CVT hydraulic pressure learning.</ptxt>
+</item>
+<item>
+<ptxt>Be sure to place the vehicle on a level surface and perform 0 point learning.</ptxt>
+</item>
+<item>
+<ptxt>Do not subject the vehicle to vibration while 0 point learning is in progress.</ptxt>
+</item>
+</list1>
+</atten3>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), perform A/T/CVT learned value initialization, G sensor 0 point learning and CVT hydraulic pressure learning.</ptxt>
+<atten4>
+<ptxt>For the procedures for A/T/CVT learned value initialization, G sensor 0-point learning and CVT hydraulic pressure learning, refer to <xref label="Seep01" href="RM0000021F400AX"/>.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check the DTCs again. (see <xref label="Seep02" href="RM000000FSM00TX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000FUE00OX_04_0009" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000FUE00OX_04_0007">
+<testtitle>Replace Transmission Revolution Sensor (NIN)</testtitle>
+</testgrp>
+<testgrp id="RM000000FUE00OX_04_0008">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000000FUE00OX_04_0009">
+<testtitle>Complete</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="RM0000008Y100OX" category="C" type-id="3007P" name-id="065A4-00" from="200612">
+<dtccode>P0500/42</dtccode>
+<dtcname>Vehicle Speed Sensor System</dtcname>
+<subpara id="RM0000008Y100OX_01" type-id="31" category="03" proc-id="RM0550J___00002P000000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The vehicle speed pulse signal output from the ABS speed sensor installed on each wheel is converted by the skid control computer into a vehicle speed pulse signal (equivalent to 4 pulses per 1 revolution of the transaxle rotating shaft), output to the combination meter assembly as the vehicle speed signal, and input to the engine control computer.</ptxt>
+<figure>
+<graphic graphicname="A065387J04" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="3.19in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0500/42</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>While driving</ptxt>
+</item>
+<item>
+<ptxt>SPD signal is not input</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire harness or connector (including instrument panel J/B)</ptxt>
+</item>
+<item>
+<ptxt>Combination Meter Assembly</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>Skid Control Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000008Y100OX_02" type-id="32" category="03" proc-id="RM0550J___00002P100000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="G100110J12" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000008Y100OX_04" type-id="51" category="05" proc-id="RM0550J___00002P700000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the SPD line branches to other ECUs from an option connector, etc., first disconnect those circuits and inspect.</ptxt>
+</item>
+<item>
+<ptxt>Using SST (TaSCAN), read the Freeze Frame Data. Freeze Frame Data records part of the engine operating conditions when a malfunction occurs, and this information is useful for troubleshooting.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000008Y100OX_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000008Y100OX_03_0001" proc-id="RM0550J___00002P200000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Vehicle Speed)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Check that the speedometer operates normally.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Perform a road test of the vehicle.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, read the Data List item [Vehicle Speed] from [Diagnosis Function Menu] → [ECU Data Monitor].</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>SST (TaSCAN) data monitor display and speedometer display are the same</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008Y100OX_03_0004" fin="true">OK</down>
+<right ref="RM0000008Y100OX_03_0002" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008Y100OX_03_0002" proc-id="RM0550J___00002P300000">
+<testtitle>Inspect Combination Meter System</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Inspect the vehicle speed signal circuit of the meter &amp; gauge system.</ptxt>
+</test1>
+<atten4>
+<ptxt>For the procedure, see <xref label="Seep01" href="RM000002YMX000X"/></ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000008Y100OX_03_0003" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000008Y100OX_03_0003" proc-id="RM0550J___00002P400000">
+<testtitle>Inspect Wire Harness and Connector (Engine Control Computer - Combination Meter Assembly)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector B of the engine control computer and the combination meter assembly connector.</ptxt>
+<figure>
+<graphic graphicname="A127855J04" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the engine control computer and combination meter assembly vehicle side connector terminals. (see <xref label="Seep02" href="X39400000QV016D"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B8(SPD) - 36(+S)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B8 (SPD) and 36 (+S) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008Y100OX_03_0012" fin="true">OK</down>
+<right ref="RM0000008Y100OX_03_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008Y100OX_03_0004">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000CD101FX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000008Y100OX_03_0006">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000008Y100OX_03_0012">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

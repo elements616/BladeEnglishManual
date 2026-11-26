@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+  <title>[Electronic Technical Manual]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="X394000010C00QD"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>ETC System Function Description</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">Print</a></td></tr></table><br clear="all" class="beforePng"><a name="X394000010C00QD_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="RM0550J___0000B5J0000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>ETC System Diagnosis Function (Self-diagnosis)</li></ol>
+<ol class="ptxt"></ol><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">The ETC system has a diagnosis function that performs self-diagnosis.<br></li><li class="atten4">The ETC system diagnosis function has the following 3 types.<br></li></ol></p>
+<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">JEITA Standard Error Codes</font><br></p></li><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/e122078.png" name="E122078" alt="E122078" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">To facilitate handling and processing when the toll collection (ETC) computer assembly malfunctions, for ETC users and expressway claim counters (toll gates, etc.), JEITA (Japan Electronics and Information Technology Industries Association) has established JEITA unified error codes that immediately indicate the malfunction. The toll collection (ETC) computer assembly supports this JEITA unified error code display.</font><br><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">When a JEITA standard error code occurs, it is notified by an interrupt display on the multi-display.</dd></dl></p></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/e121676.png" name="E121676" alt="E121676" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">The toll collection (ETC) computer assembly stores the latest 1 detected JEITA unified error codes in non-volatile memory. These can be announced by voice, or called up and displayed from the HDD navigation system display menu. (see<a href="#" onclick="openSeePage('seepage','RM00000014J01XX');return false;"><img border="0" src="../../../../image/extxref.png"></a>)</font><br></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/e122062j01.png" name="E122062J01" alt="E122062J01" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Diagnosis Mode 1 (Error Log)</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">Up to 20 previously input DTCs are stored as an error log, and these can be announced by voice from the toll collection (ETC) computer assembly. (see<a href="#" onclick="openSeePage('seepage','RM000000BY200NX');return false;"><img border="0" src="../../../../image/extxref.png"></a>)</font><br></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/e122069j01.png" name="E122069J01" alt="E122069J01" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Diagnosis Mode 2 (Communication Log)</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">Up to 25 results of communication with the roadside antenna when an ETC vehicle passes through an ETC gate are stored as a communication log, and these can be announced by voice from the toll collection (ETC) computer assembly. (see<a href="#" onclick="openSeePage('seepage','RM000000BY200NX');return false;"><img border="0" src="../../../../image/extxref.png"></a>)</font><br></p></li></ol></ol><br clear="all"><br clear="all"><a name="RM0550J___0000B5J0000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Communication System</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">AVC-LAN</font><br><div class="full"><br clear="all"><img src="../../img/e146250j04.png" name="E146250J04" alt="E146250J04" border="1" class="full"></div><br clear="all"></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">The ETC system communicates with the navigation receiver assembly via AVC-LAN, allowing the usage history list to be displayed and ETC settings to be changed on the display screen.</font><br></p></li>
+<li><p><font class="ptxt">The master device of the AVC-LAN is the navigation receiver assembly.</font><br></p></li>
+<li><p><font class="ptxt">The navigation receiver assembly contains a resistor necessary for communication transmission (60 to 80 Ω between terminals TX+ - TX-).</font><br></p></li>
+<li><p><font class="ptxt">Each ETC system display on the HDD navigation system display is drawn by the navigation receiver assembly according to commands from the toll collection (ETC) computer assembly.</font><br></p></li>
+<li><p><font class="ptxt">If an open or short occurs in the AVC-LAN circuit, communication is interrupted and the system does not operate normally. (The toll collection (ETC) computer assembly can operate on its own)</font><br></p></li></ol></ol><br clear="all"><br clear="all"><br clear="all"><a name="RM0550J___0000B5J0000013step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>HDD Navigation System Diagnosis Function (AVC-LAN)</li></ol>
+<ol class="ptxt"></ol><table class="float"><tr><td><img src="../../img/e141833.png" name="E141833" alt="E141833" border="1" class="half"><br></td></tr></table>
+<ol class="step2">
+<li><p><font class="ptxt">The HDD navigation system has a diagnosis function that can check the connection of and diagnose devices connected via AVC-LAN. (Displayed on the HDD navigation system display)</font><br></p></li>
+<li><p><font class="ptxt">Each device constituting the AVC-LAN is assigned a 3-digit number (in base 16) called a device code (physical address).</font><br></p></li>
+<li><p><font class="ptxt">Each function (unit) within each device constituting the AVC-LAN is assigned a 2-digit number (in base 16) called a logical address.</font><br></p></li></ol><br clear="all"></body></html>

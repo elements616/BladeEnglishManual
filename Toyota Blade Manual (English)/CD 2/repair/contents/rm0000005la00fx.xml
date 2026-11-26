@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="08">
+<name>Heater &amp; Air Conditioner/Ventilation</name>
+<section id="1002K_S000B" variety="S000B">
+<name>Air Conditioner</name>
+<ttl id="1002K_S000B_7421V_T0025" variety="T0025">
+<name>Heater &amp; Air Conditioner System</name>
+<para id="RM0000005LA00FX" category="C" type-id="300BM" name-id="5229E-00" from="200612">
+<dtccode>B1446/46</dtccode>
+<dtcname>D-seat air mix damper operation malfunction</dtcname>
+<subpara id="RM0000005LA00FX_01" type-id="31" category="03" proc-id="RM0550J___00000XR00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The air mix damper servo sends the damper position to the air conditioner amplifier assembly by pulse signals. Based on this signal, the air conditioner amplifier assembly rotates the motor (forward, reverse) and moves the air mix damper (D-seat) to the desired position. This adjusts the proportion of air passing through the heater core after passing through the evaporator, and controls the outlet temperature on the driver side.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+<item>
+<ptxt>Malfunction Duration</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1446/46</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>When air mix damper servo (D-seat) is operating</ptxt>
+</item>
+<item>
+<ptxt>Damper servo drive request signal is output, but servo position information does not change or is abnormal</ptxt>
+</item>
+<item>
+<ptxt>30 seconds or more</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Air mix damper servo (D-seat)</ptxt>
+</item>
+<item>
+<ptxt>Air conditioner harness assembly</ptxt>
+</item>
+<item>
+<ptxt>Air Conditioner Amplifier Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000005LA00FX_02" type-id="32" category="03" proc-id="RM0550J___00000XS00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E144460J04" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000005LA00FX_03" type-id="51" category="05" proc-id="RM0550J___00000XT00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>This diagnostic trouble code is also output if the damper link or damper is locked. Before performing the inspection, confirm that there are no mechanical malfunctions.</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM0000005LA00FX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000005LA00FX_04_0008" proc-id="RM0550J___0000BZ300000">
+<testtitle>Read TaSCAN Data (D Seat Air Mix Target Pulse Count)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), follow the prompts on the screen to display the "ECU Data Monitor" screen and check the computer data.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → A/C → ECU Data Monitor]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.53in"/>
+<colspec colname="COL2" colwidth="2.47in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Item Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side Air Mix Target Pulse Number</ptxt>
+<ptxt>[DAMP]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When driver side temperature setting switch is operated</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Displayed in range 0 to 255 pulses</ptxt>
+</item>
+<item>
+<ptxt>MAX COLD: 6 pulses</ptxt>
+</item>
+<item>
+<ptxt>MAX HOT: 93 pulses</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<title>Result</title>
+<tgroup cols="2" align="right">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Pulse change according to damper operation is abnormal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Pulse change according to damper operation is normal (when inspecting according to Diagnostic Trouble Code Chart)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Pulse change according to damper operation is normal (when inspecting according to List by Symptom)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005LA00FX_04_0002" fin="false">A</down>
+<right ref="RM0000005LA00FX_04_0004" fin="true">B</right>
+<right ref="RM0000005LA00FX_04_0005" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005LA00FX_04_0002">
+<testtitle>Replace Air Mix Damper Servo Sub-assembly</testtitle>
+<res>
+<down ref="RM0000005LA00FX_04_0006" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000005LA00FX_04_0006" proc-id="RM0550J___0000BZ200000">
+<testtitle>Read TaSCAN Data</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), follow the prompts on the screen to display the "ECU Data Monitor" screen and check the computer data.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → A/C → ECU Data Monitor]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.53in"/>
+<colspec colname="COL2" colwidth="2.47in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Item Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side Air Mix Target Pulse Number</ptxt>
+<ptxt>[DAMP]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When driver side temperature setting switch is operated</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Displayed in range 0 to 255 pulses</ptxt>
+</item>
+<item>
+<ptxt>MAX COLD: 6 pulses</ptxt>
+</item>
+<item>
+<ptxt>MAX HOT: 93 pulses</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<title>Result</title>
+<tgroup cols="2" align="right">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Pulse change according to damper operation is abnormal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>No Abnormality</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005LA00FX_04_0003" fin="true">A</down>
+<right ref="RM0000005LA00FX_04_0007" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005LA00FX_04_0004">
+<testtitle>Replace Air Conditioner Amplifier Assembly<xref label="Seep01" href="RM000002140002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005LA00FX_04_0005">
+<testtitle>Go to the next circuit inspection shown in the List by Symptom<xref label="Seep01" href="RM0000005KX01HX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005LA00FX_04_0007">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM0000005LA00FX_04_0003">
+<testtitle>Replace Air Conditioner Harness Assembly<xref label="Seep01" href="RM00000213F002X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

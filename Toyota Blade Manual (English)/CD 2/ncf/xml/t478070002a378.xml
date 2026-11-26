@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARA INFOID = "T070002A378" UPDATE = "ORIGINAL" LDUP = "29Nov2003"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "Vehicle Outline: Driving Performance">
+<TITLE>Electric Power Steering Outline</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Electric power steering has been adopted on all models.</PTXT></ITEM>
+<ITEM><PTXT>Electric power steering generates assist torque during steering by means of a motor and reduction mechanism mounted on the column shaft, reducing the steering effort. Therefore, because assist force is generated only during steering, excellent fuel economy is achieved.</PTXT></ITEM>
+<ITEM><PTXT>The direction and amount of assist force are determined by the electric power steering computer based on the signal from the torque sensor built into the steering column and the meter vehicle speed signal. Control is performed to reduce the steering effort at low speeds and to provide a firm steering feel at high speeds, ensuring an excellent steering feel.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740023c" WIDTH = "6.903in" HEIGHT = "5.514in" />
+</FIGURE>
+<INDICATE ID = "T070002A378I01" INDSW = "OFF">
+<TITLE>Main Components and Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "24%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "75%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY VALIGN = "MIDDLE">
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Power Steering Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Calculates the assist current based on the meter vehicle speed signal and torque sensor output, and drives the motor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Torque Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Detects the twist of the torsion bar, converts the torque generated during steering into an electrical signal, and outputs it to the electric power steering computer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Rotation Angle Sensor (Built into Motor)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Outputs the rotation angle of the motor to the electric power steering computer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Motor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Generates assist force using current from the electric power steering computer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Reduction Mechanism</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Reduces the motor rotation speed and transmits it to the steering gear.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Combination Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When there is a system malfunction, the warning light in the meter is illuminated by a signal from the electric power steering computer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>DLC3</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>The system can be diagnosed using a diagnostic tool.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T070002A378I02" INDSW = "OFF">
+<TITLE>Features</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "76%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Features, etc.</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Low Fuel Consumption</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Whereas hydraulic power steering constantly operates a hydraulic pump using engine power, electric power steering drives the motor only during steering when assist torque is required. As a result, no energy is consumed by the power steering during straight-ahead driving such as at high speeds, achieving excellent fuel economy.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Simplified Construction</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>A simple configuration has been achieved by building the electric power steering components (motor, reduction mechanism and torque sensor) into the steering column and locating the electric power steering computer at the top of the steering column.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Elimination of Hydraulic System</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>The hydraulic piping and driving fluid required for hydraulic power steering are no longer needed, making removal and installation of the steering gear easier.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Weight Reduction</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Weight reduction has been achieved through the elimination of the piping system and the more compact system.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Steering Feel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>By optimizing the assist characteristics based on the meter vehicle speed sensor signal, a steering feel that is light at low speeds and firm at high speeds is achieved.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+</PARA>

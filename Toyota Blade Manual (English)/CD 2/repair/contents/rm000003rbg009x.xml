@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1001Y_S000S" variety="S000S">
+<name>CVT</name>
+<ttl id="1001Y_S000S_744HD_T007Y" variety="T007Y">
+<name>CVT System [Super CVT-i] (K112/K112F)</name>
+<para id="RM000003RBG009X" category="C" type-id="3037R" name-id="CV09D-05" from="200912">
+<dtccode>P0741/64</dtccode>
+<dtcname>SL Solenoid Circuit (Performance)</dtcname>
+<dtccode>P2757/64</dtccode>
+<dtcname>SLU/DSU Solenoid Circuit (Function Malfunction)</dtcname>
+<subpara id="RM000003RBG009X_01" type-id="33" category="03" proc-id="RM0550J___0000I7W00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>The engine control computer uses the lock-up control solenoids (SL and DSU) to perform lock-up control according to driving conditions.</ptxt>
+<atten4>
+<ptxt>The solenoid (DSU) controls the lock-up clutch pressure according to the input torque.</ptxt>
+</atten4>
+<ptxt>During torque converter lock-up control (ON/OFF), the engine control computer compares the turbine speed (NT) and engine speed (NE) to detect mechanical failure of the lock-up control solenoids (SL and DSU).</ptxt>
+<ptxt>If DTCs for other lock-up control solenoid (SL and DSU) circuits are output at the same time, it is necessary to troubleshoot the DTCs other than P0741/64 and P2757/64 first.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC NO.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+<item>
+<ptxt>Malfunction Duration</ptxt>
+</item>
+<item>
+<ptxt>Others</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0741/64</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Driving at 10km/h or more in D position</ptxt>
+</item>
+<item>
+<ptxt>Lock-up ON command is output, but lock-up is not occurring</ptxt>
+</item>
+<item>
+<ptxt>-</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Torque Converter Assembly</ptxt>
+</item>
+<item>
+<ptxt>Continuously Variable Transaxle Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2757/64</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Driving at 10km/h or more in D position</ptxt>
+</item>
+<item>
+<ptxt>(a) Lock-up ON command is output but lock-up does not occur</ptxt>
+<ptxt>(b) Lock-up OFF command is output but lock-up occurs</ptxt>
+</item>
+<item>
+<ptxt>-</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000003RBG009X_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000003RBG009X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000003RBG009X_04_0001" proc-id="RM0550J___0000I7X00000">
+<scantool type="1"/>
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, read the DTCs.</ptxt>
+<table>
+<title>Result</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.30in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0741/64 and P2757/64 are output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Codes other than P0741/64 and P2757/64 are also output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+</content6>
+<res>
+<down ref="RM000003RBG009X_04_0006" fin="false">A</down>
+<right ref="RM000003RBG009X_04_0005" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000003RBG009X_04_0006" proc-id="RM0550J___0000I8000000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, clear the DTCs.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000003RBG009X_04_0007" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000003RBG009X_04_0007" proc-id="RM0550J___0000I8100000">
+<scantool type="4"/>
+<testtitle>Road Test</testtitle>
+<content6 releasenbr="1">
+<atten2>
+<ptxt>Carefully check road safety.</ptxt>
+</atten2>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Be sure to perform this after inspecting and adjusting the engine.</ptxt>
+</item>
+<item>
+<ptxt>Perform the test at normal operating CVT fluid temperature (50 to 100°C).</ptxt>
+</item>
+<item>
+<ptxt>Perform the test with no electrical load, the A/C OFF and the brake OFF.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Lock-up control is not performed when the CVT fluid temperature is 40°C or less and the vehicle speed is 60km/h or less, or when the CVT fluid temperature is 5°C or less.</ptxt>
+</item>
+<item>
+<ptxt>Lock-up control is not performed when the engine coolant temperature is 30°C or less.</ptxt>
+</item>
+<item>
+<ptxt>The lock-up OFF vehicle speed varies according to the ON/OFF status of the electrical load, A/C and brake.</ptxt>
+</item>
+</list1>
+</atten4>
+<test1>
+<ptxt>Using SST (TaSCAN), read the Data Monitor items [Engine Speed], [Lock-up Status] and [Turbine Speed] during the drive test.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.30in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>When lock-up status is ON, turbine speed is lower than engine speed</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>When lock-up status is OFF, turbine speed equals engine speed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>When lock-up status is ON, turbine speed equals engine speed</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>When lock-up status is OFF, turbine speed is lower than engine speed</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000003RBG009X_04_0002" fin="false">A</down>
+<right ref="RM000003RBG009X_04_0009" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000003RBG009X_04_0002" proc-id="RM0550J___0000I7Y00000">
+<testtitle>Replace Continuously Variable Transaxle Assembly and Torque Converter Assembly</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the continuously variable transaxle assembly and torque converter assembly replacement procedure, refer to <xref label="Seep01" href="RM0000020TJ00AX"/>.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000003RBG009X_04_0003" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000003RBG009X_04_0003" proc-id="RM0550J___0000I7Z00000">
+<scantool type="1"/>
+<testtitle>TaSCAN (A/T / CVT Learned Value Initialization, G Sensor 0-point Learning and CVT Hydraulic Pressure Learning)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Initializing the learned values clears both the G sensor 0 point learning and CVT hydraulic pressure learning values, so when replacing the parts in the table below, be sure to perform both G sensor 0 point learning and CVT hydraulic pressure learning after performing AT/CVT learned value initialization.</ptxt>
+<table>
+<tgroup cols="1">
+<colspec colname="COL1" colwidth="4.13in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Replacement Parts</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Continuously Variable Transaxle Assembly</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>Oil Pressure Sensor</ptxt>
+</item>
+<item>
+<ptxt>Yaw Rate Sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+<item>
+<ptxt>After performing AT/CVT learned value initialization, be sure to perform G sensor 0-point learning first, and then CVT hydraulic pressure learning.</ptxt>
+</item>
+<item>
+<ptxt>Be sure to place the vehicle on a level surface and perform 0 point learning.</ptxt>
+</item>
+<item>
+<ptxt>Do not subject the vehicle to vibration while 0 point learning is in progress.</ptxt>
+</item>
+</list1>
+</atten3>
+<test1>
+<ptxt>Using SST (TaSCAN), perform A/T/CVT learned value initialization, G sensor 0 point learning and CVT hydraulic pressure learning. (see <xref label="Seep01" href="RM0000021F400AX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs again. (see <xref label="Seep02" href="RM000000FSM00TX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000003RBG009X_04_0004" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000003RBG009X_04_0004">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000003RBG009X_04_0005">
+<testtitle>Go to the relevant DTC<xref label="Seep01" href="RM000000IZJ01JX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000003RBG009X_04_0009">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000FSP00OX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002U_S0003" variety="S0003">
+<name>Glass &amp; Window</name>
+<ttl id="1002U_S0003_744CF_T004B" variety="T004B">
+<name>Power Window System</name>
+<para id="RM0000005E400IX" category="U" type-id="303FJ" name-id="752B0-00" from="200612">
+<name>ECU Data Monitor/Active Test</name>
+<subpara id="RM0000005E400IX_z0" proc-id="RM0550J___000025N00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Inspection Using TaSCAN</ptxt>
+<step2>
+<ptxt>ECU Data Monitor</ptxt>
+<step3>
+<ptxt>Using SST (TaSCAN), use the ECU Data Monitor to judge whether the system is normal and narrow down the malfunctioning area.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991 - 70200</s-number>
+</sstitem>
+</sst>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → Power Window SW → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<colspec colname="COL3" colwidth="1.53in"/>
+<colspec colname="COL4" colwidth="0.60in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side P/W AUTO SW</ptxt>
+<ptxt>[DPAS]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side AUTO switch operation signal/display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: AUTO switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front Passenger Side P/W Remote AUTO</ptxt>
+<ptxt>[DPRA]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front passenger side switch AUTO operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: AUTO switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear RH P/W Remote AUTO</ptxt>
+<ptxt>[RRRA]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear right switch AUTO operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: AUTO switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear LH P/W Remote AUTO</ptxt>
+<ptxt>[RLRA]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear left switch AUTO operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: AUTO switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front Passenger Side P/W Remote UP</ptxt>
+<ptxt>[RPRU]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front passenger side switch UP operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: UP switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear RH P/W Remote UP</ptxt>
+<ptxt>[RRRU]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear right switch UP operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: UP switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear LH P/W Remote UP</ptxt>
+<ptxt>[RLRU]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear left switch UP operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: UP switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front Passenger Side P/W Remote DOWN</ptxt>
+<ptxt>[RPRD]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front passenger side switch DOWN operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: DOWN switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear RH P/W Remote DOWN</ptxt>
+<ptxt>[RRRD]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear right switch DOWN operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: DOWN switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear LH P/W Remote DOWN</ptxt>
+<ptxt>[RLRD]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear left switch DOWN operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: DOWN switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side Door Lock SW (Lock)</ptxt>
+<ptxt>[MDRS]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Door lock switch lock operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: Lock switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side Door Lock SW (Unlock)</ptxt>
+<ptxt>[MDUR]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Door lock switch unlock operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: Unlock switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Window Lock SW</ptxt>
+<ptxt>[WRCK]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Window lock switch lock operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: Lock switch operating</ptxt>
+<ptxt>OFF: Lock switch not operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Number of DTCs</ptxt>
+<ptxt>[DTC]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Number of diagnostic trouble codes input/Display range: 0 to 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → Main Body → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<colspec colname="COL3" colwidth="1.50in"/>
+<colspec colname="COL4" colwidth="0.62in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Power Window SW Connection Status</ptxt>
+<ptxt>[PWSC]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connection status between power window regulator master switch assembly and body ECU/Display range: Not connected - Connected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connected: Connection detected</ptxt>
+<ptxt>Not connected: Connection not detected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side Motor ECU Connection Status</ptxt>
+<ptxt>[DMRC]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connection status between power window regulator motor assembly RH (driver side) and body ECU/display range: Not connected - Connected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connected: Connection detected</ptxt>
+<ptxt>Not connected: Connection not detected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front Passenger Side Motor ECU Connection Status</ptxt>
+<ptxt>[PMRC]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connection status between power window regulator motor assembly LH (front passenger side) and body ECU/Display range: Not connected - Connected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connected: Connection detected</ptxt>
+<ptxt>Not connected: Connection not detected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear RH Motor ECU Connection Status</ptxt>
+<ptxt>[RRMC]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connection status between power window regulator motor assembly RH (rear right) and body ECU/Display range: Not connected - Connected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connected: Connection detected</ptxt>
+<ptxt>Not connected: Connection not detected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear LH Motor ECU Connection Status</ptxt>
+<ptxt>[RLMC]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connection status between power window regulator motor assembly LH (rear left) and body ECU/Display range: Not connected - Connected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connected: Connection detected</ptxt>
+<ptxt>Not connected: Connection not detected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side Courtesy SW</ptxt>
+<ptxt>[DCTY]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side door courtesy light switch status/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF: Driver side door open</ptxt>
+<ptxt>ON: Driver side door closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → D Seat Motor → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<colspec colname="COL3" colwidth="1.47in"/>
+<colspec colname="COL4" colwidth="0.65in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side P/W AUTO SW</ptxt>
+<ptxt>[DPAS]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side AUTO switch operation signal/display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: AUTO switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side P/W UP SW</ptxt>
+<ptxt>[DPAU]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side switch UP operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: UP switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side P/W DOWN SW</ptxt>
+<ptxt>[DPAD]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side switch DOWN operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: DOWN switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → P-Seat Motor → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<colspec colname="COL3" colwidth="1.44in"/>
+<colspec colname="COL4" colwidth="0.68in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front Passenger Side P/W AUTO SW</ptxt>
+<ptxt>[PPAS]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front passenger side switch AUTO operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: AUTO switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front Passenger Side P/W UP SW</ptxt>
+<ptxt>[PPAU]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front passenger side switch UP operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: UP switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front Passenger Side P/W DOWN SW</ptxt>
+<ptxt>[PPAD]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front passenger side switch DOWN operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: DOWN switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → RR-Seat Motor → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="0.71in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear RH P/W AUTO SW</ptxt>
+<ptxt>[RRPAS]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear right switch AUTO operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: AUTO switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear RH P/W UP SW</ptxt>
+<ptxt>[RRPAU]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear right switch UP operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: UP switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear RH P/W DOWN SW</ptxt>
+<ptxt>[RRPAD]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear right switch DOWN operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: DOWN switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → RL-Seat Motor → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<colspec colname="COL3" colwidth="1.39in"/>
+<colspec colname="COL4" colwidth="0.73in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear LH P/W AUTO SW</ptxt>
+<ptxt>[RLPAS]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear left switch AUTO operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: AUTO switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear LH P/W UP SW</ptxt>
+<ptxt>[RLPAU]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear left switch UP operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: UP switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear LH P/W DOWN SW</ptxt>
+<ptxt>[RLPAD]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear left switch DOWN operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: DOWN switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+<step2>
+<ptxt>Active Test</ptxt>
+<step3>
+<ptxt>Using SST (TaSCAN), perform the Active Test to determine whether the system is OK or NG and narrow down the malfunctioning area.</ptxt>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → D-Seat Motor → Active Test]</title>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Drive</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Power Window</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Up/Down</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → P-Seat Motor → Active Test]</title>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Drive</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Power Window</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Up/Down</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → RR-Seat Motor → Active Test]</title>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Drive</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Power Window</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Up/Down</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → RL-Seat Motor → Active Test]</title>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Drive</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Power Window</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Up/Down</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

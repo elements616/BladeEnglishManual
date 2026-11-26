@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="60001_S0006" variety="S0006">
+<name>Body Multiplex Communication [LIN]</name>
+<ttl id="60001_S0006_741KA_T000J" variety="T000J">
+<name>Large-scale Body Multiplex Communication System [LIN]</name>
+<para id="RM000001W5200KX" category="C" type-id="801NE" name-id="940AO-00" from="200612">
+<dtccode>B2789</dtccode>
+<dtcname>No response from ID code box</dtcname>
+<subpara id="RM000001W5200KX_01" type-id="31" category="03" proc-id="RM0550J___0000BC300000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The smart key computer assembly (certification ECU) outputs this code when information from the immobiliser code computer (ID code box) cannot be received for 10 seconds. Past DTCs are also stored.</ptxt>
+<atten3>
+<ptxt>When replacing the smart key computer assembly (certification ECU) or immobiliser code computer (ID code box), check the registration procedure in the reference section before proceeding.</ptxt>
+</atten3>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="0.89in"/>
+<colspec colname="COL2" colwidth="3.75in"/>
+<colspec colname="COL3" colwidth="2.44in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2789</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>When information from the immobiliser code computer (ID code box) cannot be received for 10 seconds</ptxt>
+</item>
+<item>
+<ptxt>Open circuit in wire harness between ECUs</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness</ptxt>
+</item>
+<item>
+<ptxt>Smart Key Computer Assembly</ptxt>
+<ptxt>(Verification ECU)</ptxt>
+</item>
+<item>
+<ptxt>Immobiliser Code ECU</ptxt>
+<ptxt>(ID Code Box)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001W5200KX_02" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000001W5200KX_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000001W5200KX_03_0001" proc-id="RM0550J___0000BC400000">
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), clear the DTCs. (see <xref label="Seep01" href="RM000000693012X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001W5200KX_03_0002" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001W5200KX_03_0002" proc-id="RM0550J___0000BC500000">
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs. (see <xref label="Seep01" href="RM000000693012X"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>B2789 is not output</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001W5200KX_03_0006" fin="true">OK</down>
+<right ref="RM000001W5200KX_03_0003" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001W5200KX_03_0003" proc-id="RM0550J___0000BC600000">
+<testtitle>Inspect Wire Harness and Connector (Smart Key Computer Assembly - Immobiliser Code Computer)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the smart key computer assembly (certification ECU) connector and the immobiliser code computer (ID code box) connector.</ptxt>
+<figure>
+<graphic graphicname="B156221J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<test2>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="0.95in"/>
+<colspec colname="COL3" colwidth="1.11in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+<ptxt>Certification ECU - ID Code Box</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>10(LIN) - 3 (LIN1) </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="0.95in"/>
+<colspec colname="COL3" colwidth="1.11in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>10 (LIN) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000001W5200KX_03_0009" fin="false">OK</down>
+<right ref="RM000001W5200KX_03_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001W5200KX_03_0009" proc-id="RM0550J___0000BC800000">
+<testtitle>Replace Immobiliser Code Computer</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Replace the immobiliser code computer (ID code box) with a new one. (For the procedure, refer to the registration procedure in the reference section)</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), clear the DTCs. (see <xref label="Seep01" href="RM000000693012X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001W5200KX_03_0010" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001W5200KX_03_0010" proc-id="RM0550J___0000BC900000">
+<testtitle>Code Registration</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), perform immobiliser key code registration. (For the procedure, refer to the registration procedure in the reference section)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001W5200KX_03_0005" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001W5200KX_03_0005" proc-id="RM0550J___0000BC700000">
+<testtitle>Recheck DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs again. (see <xref label="Seep01" href="RM000000693012X"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>B2789 is not output</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001W5200KX_03_0008" fin="true">OK</down>
+<right ref="RM000001W5200KX_03_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001W5200KX_03_0006">
+<testtitle>Go to Problem Symptom Simulation Method<xref label="Seep01" href="RM000000ABY03DX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001W5200KX_03_0007">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000001W5200KX_03_0004">
+<testtitle>Replace Smart Key Computer Assembly (for the procedure, refer to the registration procedure in the reference section)</testtitle>
+</testgrp>
+<testgrp id="RM000001W5200KX_03_0008">
+<testtitle>Complete</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

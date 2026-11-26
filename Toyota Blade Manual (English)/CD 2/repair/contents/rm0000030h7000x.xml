@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="08">
+<name>Heater &amp; Air Conditioner/Ventilation</name>
+<section id="1002K_S000B" variety="S000B">
+<name>Air Conditioner</name>
+<ttl id="1002K_S000B_74224_T002E" variety="T002E">
+<name>Air Conditioning Control Panel Assembly</name>
+<para id="RM0000030H7000X" category="G" type-id="3001K" name-id="5227M-00" from="200612">
+<name>Component Inspection</name>
+<subpara id="RM0000030H7000X_01" type-id="01" category="01">
+<s-1 id="RM0000030H7000X_01_0001" proc-id="RM0550J___00007RI00000">
+<ptxt>Inspect Air Conditioner Control Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Illumination Inspection</ptxt>
+<figure>
+<graphic graphicname="E145425J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Connect a battery to each terminal of the connector, and check the illumination lighting.</ptxt>
+<table>
+<title>Standard:</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>7(ILL+) - 5(GND)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Connect the battery positive to terminal 7 and the battery negative to terminal 5.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illumination comes on</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

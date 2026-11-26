@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002Q_S000F" variety="S000F">
+<name>Navigation</name>
+<ttl id="1002Q_S000F_746OU_T00CJ" variety="T00CJ">
+<name>HDD Navigation System</name>
+<para id="RM00000014J01XX" category="D" type-id="300BB" name-id="652ME-00" from="200612" to="200912">
+<name>Function Description</name>
+<subpara id="RM00000014J01XX_z0" proc-id="RM0550J___0000ACW00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>System Normal Condition Check (Confirming Normal Condition)</ptxt>
+<step2>
+<ptxt>If the symptom corresponds to any of the following, it is intended operation and not a malfunction.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Answer</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A longer route than expected is selected.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Depending on road conditions, the navigation ECU may determine that a longer route is faster.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>The shortest route is not displayed even when distance is given priority.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>For safety reasons, some roads may not be used.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Immediately after the engine is started, the navigation system deviates from the actual position while the vehicle is moving.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If the vehicle starts moving before the navigation system starts up, the system may not respond.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>When driving on certain roads, especially new roads, the vehicle position deviates from the actual position.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the vehicle is driving on a new road not covered by the map disc, the system tries to match the position to another nearby road, causing the position mark to deviate.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>The following symptoms are not malfunctions, but are caused by errors inherent to the GPS, gyro sensor, speed sensor and navigation ECU.</ptxt>
+<step3>
+<ptxt>The current position mark may be displayed on a nearby parallel road.</ptxt>
+<figure>
+<graphic graphicname="I100066" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Immediately after a fork in the road, the current vehicle position mark is displayed in a different position.</ptxt>
+<figure>
+<graphic graphicname="I100067" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When the vehicle turns right or left at an intersection, the current vehicle position mark may be displayed on a nearby parallel road.</ptxt>
+<figure>
+<graphic graphicname="I100068" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When the vehicle is being transported by ferry, etc. or the vehicle itself is not moving, the current vehicle position mark is displayed at the position last measured by GPS.</ptxt>
+<figure>
+<graphic graphicname="I100069" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When the vehicle is driving on a steep slope, the current vehicle position mark deviates from the correct position.</ptxt>
+<figure>
+<graphic graphicname="I100070" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When the vehicle makes continuous turns of 360°, 720° or 1080°, the current vehicle position mark may deviate from the correct position.  </ptxt>
+<figure>
+<graphic graphicname="I100071" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When the vehicle moves irregularly, such as constantly changing lanes, the current vehicle position mark may deviate from the correct position.</ptxt>
+<figure>
+<graphic graphicname="I100072" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When the IG is turned ON or ACC is turned ON while parked on a turntable, the current vehicle position mark may not indicate the correct position. The same thing occurs when leaving a parking lot.</ptxt>
+<figure>
+<graphic graphicname="I038146J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When the vehicle is driving on snowy or mountain roads with tire chains installed or with a spare tire in use, the current vehicle position mark deviates from the correct position.</ptxt>
+<figure>
+<graphic graphicname="I100074" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When a tire is replaced, the current vehicle position mark deviates from the correct position.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Changing the tire diameter may cause a speed sensor error.</ptxt>
+</item>
+<item>
+<ptxt>Performing "Tire Change" in correction mode corrects the current vehicle position quickly.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Radio Frequency Band</ptxt>
+<step2>
+<ptxt>The radio frequency bands used for radio broadcasting are as follows.</ptxt>
+<figure>
+<graphic graphicname="E141946" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>Service Area</ptxt>
+<step2>
+<ptxt>There is a considerable difference in the size of the service areas for AM and FM monaural, and even if AM can be received clearly, FM stereo broadcasts may not be receivable. In addition, FM stereo not only has the smallest service area, but is also susceptible to static and other interference ("fading noise", "multipath noise", "fade out").</ptxt>
+<figure>
+<graphic graphicname="E141945" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>Reception Problems</ptxt>
+<atten4>
+<ptxt>In addition to static problems, there are also problems called "fading noise", "multipath noise" and "fade out". These problems are not caused by electrical noise, but by the nature of the radio waves themselves.</ptxt>
+</atten4>
+<step2>
+<ptxt>Fading Noise</ptxt>
+<figure>
+<graphic graphicname="E141944" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>In addition to electrical interference, AM broadcasts are susceptible to other interference, especially at night. This occurs because AM radio waves are reflected by the ionosphere at night, and the reflected waves interfere with the waves from the same station that reach the vehicle antenna directly. The noise generated by this interference is called "fading noise".</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Multipath Noise</ptxt>
+<figure>
+<graphic graphicname="E141943" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Interference caused by radio waves reflecting off obstacles is called "multipath". Multipath occurs when a signal sent from the broadcast station antenna is reflected by buildings or mountains and interferes with the signal that is received directly. The noise generated by this interference is called "multipath noise".</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Fade Out</ptxt>
+<figure>
+<graphic graphicname="E141947" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Because FM radio waves have a higher frequency than AM radio waves, they are reflected by obstacles such as buildings and mountains. For this reason, when the vehicle goes behind buildings or other obstacles, the FM signal gradually fades or weakens. This phenomenon is called "fade out".</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Noise Problems</ptxt>
+<step2>
+<ptxt>Questionnaire for Noise</ptxt>
+<step3>
+<ptxt>When troubleshooting noise, it is very important to fully understand the customer's complaint. Therefore, use the questionnaire below to accurately diagnose the problem.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.33in"/>
+<colspec colname="COL2" colwidth="2.78in"/>
+<colspec colname="COL3" colwidth="2.97in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Broadcast Method</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Inquiry Details</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Probable Cause</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AM</ptxt>
+</entry>
+<entry>
+<ptxt>Noise occurs in specific places.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>External noise is highly likely.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Noise occurs when listening to a broadcast that is difficult to hear.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The same program may be broadcast from different local stations, and if the program is the same, the customer may be listening to a different station. This mistake occurs often, especially with NHK.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Noise occurs at night.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Beating of radio waves from distant stations is highly likely.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Noise occurs at specific places while driving.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multipath noise and fading noise caused by changes in FM frequency are highly likely.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>If the conditions under which the noise occurs do not match any of the above questionnaire, check based on "Reception Problems". Refer to the previous explanation of multipath and fading.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Points to Note When Checking</ptxt>
+<step3>
+<ptxt>Noise entering the radio is suppressed, so it is normally harmless in actual use, and very loud noise rarely occurs. If very loud noise enters the radio, check that the ground at the area where the antenna is installed is normal.</ptxt>
+</step3>
+<step3>
+<ptxt>Check that all genuine noise suppression parts are installed correctly, and that no non-genuine parts or non-standard wiring have been installed.</ptxt>
+</step3>
+<step3>
+<ptxt>If the radio is not tuned to a channel (not tuned to a broadcast), noise becomes prominent, making it easier to judge the symptom.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Antenna and Noise</ptxt>
+<figure>
+<graphic graphicname="E122223" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>The electrical signal received by the antenna is transmitted to the radio through the core wire of the coaxial cable. Noise waves other than radio waves enter this core wire and cause noise in the radio. To prevent noise from entering the radio, the core wire in the coaxial cable is covered with a mesh wire called a shield wire. This shield wire prevents noise from entering by sending the noise to ground.</ptxt>
+<atten4>
+<ptxt>If the ground of the shield wire is defective, noise will occur.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>CD</ptxt>
+<step2>
+<ptxt>Usable Discs</ptxt>
+<step3>
+<ptxt>This player can only use music CDs, CD-Rs (CD-Recordable) and CD-RWs (CD-ReWritable) bearing the marks shown in the illustration.</ptxt>
+<figure>
+<graphic graphicname="E100925" width="7.106578999in" height="1.771723296in"/>
+</figure>
+</step3>
+</step2>
+<step2>
+<ptxt>Precautions for Disc Use</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Copy control CDs cannot be used.</ptxt>
+</item>
+<item>
+<ptxt>DualDiscs (CD and DVD bonded back to back) cannot be used.</ptxt>
+</item>
+<item>
+<ptxt>DTS-CDs cannot be used.</ptxt>
+</item>
+<item>
+<ptxt>CD-TEXT can be used.</ptxt>
+</item>
+<item>
+<ptxt>CD-Rs and CD-RWs may not be playable due to recording conditions, disc characteristics, scratches, dirt or deterioration from long exposure to the vehicle interior environment.</ptxt>
+</item>
+<item>
+<ptxt>CD-Rs and CD-RWs that have not been finalized cannot be played.</ptxt>
+</item>
+<item>
+<ptxt>Handle discs so as not to leave fingerprints, dirt or scratches on them.</ptxt>
+</item>
+<item>
+<ptxt>When handling a disc, hold it by the center hole and edge with the label side up.</ptxt>
+</item>
+<item>
+<ptxt>If the disc eject button is pressed and the disc is left ejected for a long time, the CD may deform and become unusable.</ptxt>
+</item>
+<item>
+<ptxt>If a disc with cellophane tape, stickers, CD-R labels, rental CD labels, etc. attached, or with traces of their removal, is used, the disc may not eject or the device may malfunction.</ptxt>
+</item>
+<item>
+<ptxt>Store discs away from direct sunlight. (The disc may deform and become unusable)</ptxt>
+</item>
+<item>
+<ptxt>Discs that are not circular with a diameter of 12cm or 8cm cannot be played.</ptxt>
+</item>
+<item>
+<ptxt>Do not use specially shaped discs, as they may cause the device to malfunction.</ptxt>
+</item>
+<item>
+<ptxt>Do not use discs with transparent or translucent sections in the recording area, as they may not load, eject or play normally.</ptxt>
+</item>
+<item>
+<ptxt>When playing a single CD (8cm), a "Toyota Genuine 8cm CD Adapter" is necessary. Using a CD adapter other than a Toyota genuine part may cause a malfunction.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>In cold or rainy weather, condensation (water droplets) may form inside the player, just as the glass inside the vehicle fogs up. In this case, sound may skip or playback may stop, so ventilate or dehumidify for a while before use.</ptxt>
+</item>
+<item>
+<ptxt>If the player vibrates severely, such as when driving on rough roads, sound may skip.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Cleaning</ptxt>
+<figure>
+<graphic graphicname="E141948" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Do not use a lens cleaner, as it may cause the player's pickup section to malfunction.</ptxt>
+</atten3>
+<step3>
+<ptxt>Clean dirt off discs by wiping lightly in a radial direction from the center outward with a soft, dry cloth such as a cleaning cloth for plastic eyeglass lenses.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Pressing hard on a disc by hand or rubbing it with a hard cloth may scratch the surface.</ptxt>
+</item>
+<item>
+<ptxt>Using solvents such as record spray, antistatic agents, alcohol, benzine or thinner, or chemically treated cloths, may damage the disc and make it unusable.</ptxt>
+</item>
+</list1>
+</atten3>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>MP3/WMA</ptxt>
+<step2>
+<ptxt>Playable MP3 File Standards</ptxt>
+<table frame="all">
+<tgroup cols="2">
+<colspec colname="COLSPEC0" colwidth="1.01in"/>
+<colspec colname="COLSPEC1" colwidth="3.12in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Supported Standards</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MP3(MPEG1 LAYER3、MPEG2 LSF LAYER3)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Supported Sampling Frequencies</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>MPEG1 LAYER3:32、44.1、48(kHz)</ptxt>
+</item>
+<item>
+<ptxt>MPEG2 LSF LAYER3:16、22.05、24(kHz)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Supported Bit Rates</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>MPEG1 LAYER3:64、80、96、112、128、160、192、224、256、320(kbps)</ptxt>
+</item>
+<item>
+<ptxt>MPEG2 LSF LAYER3:64、80、96、112、128、144、160(kbps)</ptxt>
+</item>
+<item>
+<ptxt>VBR Supported</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Supported Channel Modes</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stereo, joint stereo, dual channel, monaural</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Playable WMA File Standards</ptxt>
+<table frame="all">
+<tgroup cols="2">
+<colspec colname="col1" colwidth="1.00in"/>
+<colspec colname="col2" colwidth="3.13in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Supported Standards</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>WMA Ver.7、8、9</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Supported Sampling Frequencies</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>32、44.1、48(kHz)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Supported Bit Rates</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Ver.7、8:CBR48、64、80、96、128、160、192(kbps)</ptxt>
+</item>
+<item>
+<ptxt>Ver.9:CBR48、64、80、96、128、160、192、256、320(kbps)</ptxt>
+</item>
+<item>
+<ptxt>Only 2ch playback supported</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>ID3 Tags / WMA Tags</ptxt>
+<step3>
+<ptxt>MP3 files can contain attached text information called ID3 tags, which can store the song title, artist name, etc.</ptxt>
+<atten4>
+<ptxt>ID3 Ver.1.0, 1.1, ID3 Ver.2.2, 2.3 ID3 tags supported (number of characters complies with ID3 Ver.1.0, 1.1)</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>WMA files can contain attached text information called WMA tags, which can store the song title, artist name, etc.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Usable Media</ptxt>
+<step3>
+<ptxt>The media that can be used for MP3/WMA playback are CD-ROM, CD-R (CD-Recordable) and CD-RW (CD-ReWritable) only.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>CD-Rs and CD-RWs are more susceptible to high temperature and humidity than discs used for ordinary music CDs, and some CD-Rs and CD-RWs may not be playable.</ptxt>
+</item>
+<item>
+<ptxt>If a disc has fingerprints or scratches, it may not play or sound may skip.</ptxt>
+</item>
+<item>
+<ptxt>Some CD-Rs and CD-RWs deteriorate with long exposure to the vehicle interior environment.</ptxt>
+</item>
+<item>
+<ptxt>CD-Rs and CD-RWs are sensitive to ultraviolet light, so store them in a case that does not let light through.</ptxt>
+</item>
+</list1>
+</atten3>
+</step3>
+</step2>
+<step2>
+<ptxt>Usable Media Formats</ptxt>
+<step3>
+<ptxt>Usable Media Formats</ptxt>
+<table frame="all">
+<tgroup cols="2">
+<colspec colname="col1" colwidth="1.00in"/>
+<colspec colname="col2" colwidth="3.13in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Disc Format</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CD-ROM Mode1、CD-ROM XA Mode2 Form1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>File Format</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ISO9660 Level 1, Level 2 (Romeo, Joliet)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>MP3/WMA files written in formats other than the above may not play normally, or file names, folder names, etc. may not be displayed correctly.</ptxt>
+</item>
+<item>
+<ptxt>For discs containing a mix of music data and MP3 or WMA format data, only the music data is played.</ptxt>
+</item>
+<item>
+<ptxt>Multi-session is supported, and CD-Rs and CD-RWs with additional MP3/WMA files written can be played. However, only the first session is played.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+<step3>
+<ptxt>Standards and Restrictions</ptxt>
+<table frame="all">
+<tgroup cols="2">
+<colspec colname="col1" colwidth="1.00in"/>
+<colspec colname="col2" colwidth="3.13in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Maximum Directory Levels</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 levels</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Maximum Number of Characters in Folder Name / File Name</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>16 double-byte characters (32 characters when single-byte only)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Maximum Number of Folders</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>192</ptxt>
+<ptxt>(Including the root folder, folders not containing MP3/WMA files and empty folders)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Maximum Number of Files on Disc</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>255</ptxt>
+<ptxt>(Including files other than MP3/WMA files)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+<step2>
+<ptxt>File Names</ptxt>
+<step3>
+<ptxt>Only files with the MP3/WMA extension ".mp3" / ".wma" are recognized and played as MP3/WMA.</ptxt>
+</step3>
+<step3>
+<ptxt>Save MP3/WMA files with the extension ".mp3" / ".wma".</ptxt>
+<atten3>
+<ptxt>If a ".mp3" / ".wma" extension is given to a file other than MP3/WMA, it will be misrecognized as a MP3/WMA file and played, which may produce loud noise and damage the speakers.</ptxt>
+</atten3>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>MD</ptxt>
+<figure>
+<graphic graphicname="E054214J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Usable Discs</ptxt>
+<step3>
+<ptxt>This player can only use MDs bearing the mark shown in the illustration.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Data MDs and Hi-MDs cannot be used. Always use music MDs.</ptxt>
+</item>
+<item>
+<ptxt>Do not use MDs with peeling labels or with name tape attached. (The MD may not eject)</ptxt>
+</item>
+<item>
+<ptxt>Store MDs away from direct sunlight. (The MD may deform and become unusable)</ptxt>
+</item>
+<item>
+<ptxt>Do not force the shutter open. (The MD may be damaged)</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>In cold or rainy weather, condensation (water droplets) may form inside the player, just as the glass inside the vehicle fogs up. In this case, sound may skip or playback may stop, so ventilate or dehumidify for a while before use.</ptxt>
+</item>
+<item>
+<ptxt>If the player vibrates severely, such as when driving on rough roads, sound may skip.</ptxt>
+</item>
+<item>
+<ptxt>MDs recorded in long play mode (MDLP) can be played.</ptxt>
+</item>
+<item>
+<ptxt>When playing sound recorded in LP4 stereo, momentary noise may very rarely be heard due to the characteristics of the compression method.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>AVC-LAN Communication System</ptxt>
+<figure>
+<graphic graphicname="E146250J01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<step2>
+<ptxt>The HDD navigation system uses AVC-LAN for communication between devices.</ptxt>
+</step2>
+<step2>
+<ptxt>The master device of the AVC-LAN is the navigation receiver assembly.</ptxt>
+</step2>
+<step2>
+<ptxt>The navigation receiver assembly contains a resistor necessary for communication transmission (60 to 80 Ω between terminals TX+ and TX-).</ptxt>
+</step2>
+<step2>
+<ptxt>If a malfunction such as a short between communication lines, short to +B or short to GND occurs in the AVC-LAN circuit, communication is interrupted and the HDD navigation system does not operate normally.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>CAN Communication System</ptxt>
+<step2>
+<ptxt>The HDD navigation system uses CAN communication for data communication between the navigation receiver assembly and each ECU.</ptxt>
+</step2>
+<step2>
+<ptxt>If a CAN communication DTC is output, repair the communication line malfunction first, then troubleshoot the HDD navigation system with data communication in a normal condition. (For the procedure, refer to <xref label="Seep03" href="RM0000002RV02BX"/>)</ptxt>
+</step2>
+<step2>
+<ptxt>Each CAN communication line has a specified length and routing, and temporary measures or repairs using bypass wiring, etc. cannot be performed. (see <xref label="Seep04" href="RM0000005RE01SX"/>)</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Diagnosis Function</ptxt>
+<step2>
+<ptxt>The HDD navigation system has a diagnosis function that can check the connection of and diagnose devices connected via AVC-LAN. (Inspection results are shown on the display)</ptxt>
+</step2>
+<step2>
+<ptxt>Each device that makes up the AVC-LAN is assigned a 3-digit number (16-base notation) called a device code (physical address).</ptxt>
+</step2>
+<step2>
+<ptxt>Each function (unit) inside an AVC-LAN device is assigned a 2-digit number (16-base notation) called a logical address.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Back Guide Monitor Adjustment Function</ptxt>
+<step2>
+<ptxt>The HDD navigation system has an adjustment function for the back guide monitor system, and adjustment using the diagnosis screen is necessary when back guide monitor system related parts have been removed and installed. (see <xref label="Seep01" href="RM0000002PB018X"/>)</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

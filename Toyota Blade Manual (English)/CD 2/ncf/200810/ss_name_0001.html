@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../_runtime/legacy.css">
+<script src="../../../_runtime/compat.js"></script>
+
+
+<link rel="stylesheet" href="../css/main2.css" type="text/css" />
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<title>How to Read the Name Label</title>
+<script language="JavaScript1.2" src="../js/hidden.js"></script>
+<script language="JavaScript1.2" src="../js/memo.js"></script>
+<xml id="XmlID" src="../xml/t403t20009k616.xml"></xml>
+<xml id="toyota_ncf" src="../xsl/toyota_ncf.xsl"></xml>
+<script language="JavaScript">
+function setXml(){
+var url=window.dialogArguments;
+here.innerHTML=XmlID.transformNode(toyota_ncf.documentElement);
+}
+</script>
+</head>
+<body onLoad="boVis(5);setXml();printAndClose();changeIcon()">
+<div id="here" align="center">
+</div>
+</body>
+</html>

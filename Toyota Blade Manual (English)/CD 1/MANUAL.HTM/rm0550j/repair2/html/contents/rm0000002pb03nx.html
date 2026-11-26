@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+  <title>[Electronic Technical Manual]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000002PB03NX"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>Back Guide Monitor System Function Description</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">Print</a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000002PB03NX_z0"></a><br clear="all"><a name="1"></a><br clear="all"><br clear="all"><a name="RM0550J___0000HXK0000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Back Guide Monitor System Configuration</li></ol>
+<ol class="ptxt"></ol><div class="full"><br clear="all"><img src="../../img/e168489j08.png" name="E168489J08" alt="E168489J08" border="1" class="full"></div><br clear="all">
+<ol class="step2">
+<li><p><font class="ptxt">The back guide monitor system consists of the following parts.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%
+						"><caption class="tbl-title"><span>Back Guide Monitor System Components 
+				</span></caption><colgroup align="" width="42%
+			"><col align=""></colgroup><colgroup align="" width="58%
+			"><col align=""></colgroup><tr><th align="center">Components<br></th><th align="center">Function Outline<br></th></tr><tr><td>Navigation Receiver Assembly<br></td><td><ol style="list-style-type: disc"><li>Turns the television camera assembly ON/OFF according to the reverse signal input from the park/neutral position switch assembly.<br></li><li>Combines the rear view image input from the television camera assembly with images calculated based on vehicle condition information such as the steering angle signal, and displays it on the display screen.<br></li><li>When the back guide monitor screen or diagnosis screen is displayed, operation is performed using the touch panel on the display screen.<br></li><li>Draws each adjustment screen used on the diagnosis screen.<br></li><li>If a back door open signal is received, camera optical axis adjustment is canceled.<br></li><li>Stores each adjustment value set on the diagnosis screen.<br></li></ol></td></tr><tr><td>Television Camera Assembly<br></td><td>Captures images behind the vehicle and sends the video signal to the navigation receiver assembly.<br></td></tr><tr><td>Combination Meter Assembly<br></td><td>Sends the vehicle speed signal to the navigation receiver assembly.<br></td></tr><tr><td>Neutral Start Switch Assembly<br></td><td>Sends the reverse signal to the navigation receiver assembly when the shift lever is in R.<br></td></tr><tr><td>Steering Sensor<br></td><td>Sends the steering angle signal to the navigation receiver assembly via CAN communication.<br></td></tr><tr><td>Instrument Panel Junction Block Assembly (Main Body ECU)<br></td><td>Sends the back door open/closed signal to the navigation receiver assembly via CAN communication.<br></td></tr></table></p></li></ol><br clear="all"><br clear="all"><br clear="all"><a name="RM0550J___0000HXK0000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Back Guide Monitor Screen Display Mode Setting</li></ol>
+<ol class="ptxt"></ol><div class="full"><br clear="all"><img src="../../img/e195213j01.png" name="E195213J01" alt="E195213J01" border="1" class="full"></div><br clear="all">
+<ol class="step2">
+<li><p><font class="ptxt">The back guide monitor system switches the screen display mode when the display mode switch is pressed while the back guide monitor screen is displayed.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%
+						"><caption class="tbl-title"><span>Back Guide Monitor Screen Display Mode Contents 
+				</span></caption><colgroup align="" width="34%
+			"><col align=""></colgroup><colgroup align="" width="17%
+			"><col align=""></colgroup><colgroup align="" width="17%
+			"><col align=""></colgroup><colgroup align="" width="17%
+			"><col align=""></colgroup><colgroup align="" width="16%
+			"><col align=""></colgroup><tr><th align="center">Back Guide Monitor Screen Display Mode<br></th><th align="center">Distance guide line <br> (red with black outline)<br></th><th align="center">Vehicle width extension line <br> (green)<br></th><th align="center">Estimated course line <br> (yellow)<br></th><th align="center">Parking guide line <br> (green)<br></th></tr><tr><td>Estimated Course Line Display Mode<br></td><td align="center">Display<br></td><td align="center">Display<br></td><td align="center">Display<br></td><td align="center">Not displayed<br></td></tr><tr><td>Parking Guide Line Display Mode<br></td><td align="center">Display<br></td><td align="center">Display<br></td><td align="center">Not displayed<br></td><td align="center">Display<br></td></tr><tr><td>Distance Guide Line Display Mode<br></td><td align="center">Display<br></td><td align="center">Not displayed<br></td><td align="center">Not displayed<br></td><td align="center">Not displayed<br></td></tr></table></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___0000HXK0000013step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Communication System</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">CAN Communication System</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">The back guide monitor system uses CAN communication for data communication between the navigation receiver assembly and each ECU.</font><br></p></li>
+<li><p><font class="ptxt">If there is a problem in the CAN communication line, the navigation receiver assembly outputs a CAN communication malfunction DTC. (Check using the TaSCAN diagnostic tool screen and the navigation receiver assembly diagnosis screen) (see<a href="#" onclick="openSeePage('seepage','RM000000OCQ05NX');return false;"><img border="0" src="../../../../image/extxref.png"></a>、<a href="#" onclick="openSeePage('seepage','RM0000002O803UX');return false;"><img border="0" src="../../../../image/extxref.png"></a>)</font><br></p></li>
+<li><p><font class="ptxt">If a CAN communication malfunction code is output, repair the communication line malfunction, and troubleshoot the back guide monitor system with data communication in a normal condition. (see<a href="#" onclick="openSeePage('seepage','RM0000002O2049X');return false;"><img border="0" src="../../../../image/extxref.png"></a>) </font><br></p></li>
+<li><p><font class="ptxt">Each CAN communication line has a specified length and routing, and temporary measures or repairs using bypass wiring, etc. cannot be performed. (see<a href="#" onclick="openSeePage('seepage','RM0000005RE01SX');return false;"><img border="0" src="../../../../image/extxref.png"></a>)</font><br></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">AVC - LAN Communication System</font><br><div class="full"><br clear="all"><img src="../../img/e122562j12.png" name="E122562J12" alt="E122562J12" border="1" class="full"></div><br clear="all"></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">The back guide monitor system uses AVC - LAN for communication between components.</font><br></p></li>
+<li><p><font class="ptxt">The master component of the AVC - LAN is the navigation receiver assembly.</font><br></p></li>
+<li><p><font class="ptxt">The navigation receiver assembly contains a resistor necessary for communication transmission (60 to 80 Ω between terminals TX+ and TX-).</font><br></p></li>
+<li><p><font class="ptxt">If a malfunction such as a short in the communication line, short to +B or short to GND occurs in the AVC - LAN circuit, communication is interrupted, and the back guide monitor system and HDD navigation system do not operate normally.</font><br></p></li></ol></ol><br clear="all"><br clear="all"><a name="RM0550J___0000HXK0000014step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Video Signal</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Video Signal Circuit</font><br><div class="full"><br clear="all"><img src="../../img/e160001j10.png" name="E160001J10" alt="E160001J10" border="1" class="full"></div><br clear="all"></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">The video signal from the television camera assembly is input to the navigation receiver assembly via an analog signal line (vehicle wire harness).</font><br></p></li></ol>
+<li><p><font class="ptxt">Screen Drawing</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">The video signal input from the camera is processed by the navigation receiver assembly and drawn on the display as the back guide monitor system screen.</font><br></p></li></ol></ol><br clear="all"><br clear="all"><a name="RM0550J___0000HXK0000015step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Diagnosis Function</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/e168511.png" name="E168511" alt="E168511" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Diagnosis System (see<a href="#" onclick="openSeePage('seepage','RM0000002O803UX');return false;"><img border="0" src="../../../../image/extxref.png"></a>)</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">The back guide monitor system has a diagnosis function that allows checking the status of each signal input to the navigation receiver assembly, as well as registration settings, adjustment and checks of the back guide monitor system.</font><br></p></li></ol>
+<li><p><font class="ptxt">TaSCAN Diagnostic Tool</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">By connecting the TaSCAN diagnostic tool, the back guide monitor system can be checked for the items shown in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
+						"><colgroup align="" width="17%
+			"><col align=""></colgroup><colgroup align="" width="67%
+			"><col align=""></colgroup><colgroup align="" width="16%
+			"><col align=""></colgroup><tr><th align="center">Check Item<br></th><th align="center">Description<br></th><th align="center">Procedure<br></th></tr><tr><td>Diagnostic Trouble Code (DTC)<br></td><td>Reading and clearing of DTCs is possible<br></td><td align="center">
+<a href="#" onclick="openSeePage('seepage','RM000000OCQ05NX');return false;"><img border="0" src="../../../../image/extxref.png"></a>
+<br></td></tr></table></p></li></ol></ol><br clear="all"><br clear="all"><a name="RM0550J___0000HXK0000016step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Adjustment</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">Adjustment and checks of the back guide monitor system are performed on the back guide monitor system - diagnosis screen of the navigation receiver assembly. (see<a href="#" onclick="openSeePage('seepage','RM0000002O803UX');return false;"><img border="0" src="../../../../image/extxref.png"></a>)</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution"> Depending on the parts replaced or the work performed during vehicle inspection and maintenance, registration and setting operations for other systems as well as the back guide monitor system may be necessary. (see<a href="#" onclick="openSeePage('seepage','RM000002FZ603QX');return false;"><img border="0" src="../../../../image/extxref.png"></a>)</dd></dl></p></p></li></ol><br clear="all"></body></html>

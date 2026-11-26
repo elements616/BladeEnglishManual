@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740251b SYSTEM "grph_ent/a4740251b.png" NDATA png>
+<!ENTITY a4740402b SYSTEM "grph_ent/a4740402b.png" NDATA png>
+<!ENTITY a4740401b SYSTEM "grph_ent/a4740401b.png" NDATA png>
+
+<!ENTITY T130003K089 SYSTEM "t403130003k089.xml">
+
+<!ENTITY T130003K610 SYSTEM "t403130003k610.xml">
+<!ENTITY T130003K016 SYSTEM "t403130003k016.xml">
+<!ENTITY T130003K334 SYSTEM "t403130003k334.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T130003K089S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T130003K089" UPDATE = "ORIGINAL" LDUP = "31Mar2004"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "Vehicle Outline: Design">
+<TITLE>Exterior Design Concept</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>With "Fascinating Cool - premium expression through fascinating advanced feel" as the common design keyword for the exterior and interior, a new sense of luxury suited to the Japanese market has been created.</PTXT></ITEM>
+<ITEM><PTXT>Under the concept of "dynamic deepening", a form with a sense of motion and depth has been pursued, and a sporty body silhouette creates an advanced feel.</PTXT></ITEM></LIST1>
+</PARA>
+<BIND ID = "T130003K089B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T130003K610" UPDATE = "ORIGINAL" LDUP = "20Apr2004"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "Vehicle Outline: Design">
+<TITLE>Front &amp; Side Area</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The front area uses a "character line" that flows vertically from the hood panel and spreads horizontally at the bottom of the front bumper, emphasizing the three-dimensional center and expressing a sporty and wide feel.</PTXT></ITEM>
+<ITEM><PTXT>Functional parts such as the deep bumper opening, radiator grille and headlights are arranged as if carved in, giving a powerful design befitting the power performance.</PTXT></ITEM>
+<ITEM><PTXT>In the side area, a dynamic side silhouette has been achieved through front and rear fender shapes that assert driving performance, a forward-sloping belt line, and swelling of the hood panel and back door.</PTXT></ITEM>
+<ITEM><PTXT>The front fenders are integrally shaped with the body, and door outside mouldings with a geometric pattern accentuate the sporty feel.</PTXT></ITEM>
+<ITEM><PTXT>Side mudguards are provided on grades other than the standard grade, and the lower portion bulges outward, giving a stable, low center of gravity body.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740251b" WIDTH = "6.903in" HEIGHT = "4.222in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T130003K016" UPDATE = "ORIGINAL" LDUP = "20Apr2004"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "Vehicle Outline: Design">
+<TITLE>Rear Area</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A grade mark has been provided on the right side of the back door on 2GR-FE engine models.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740402b" WIDTH = "6.903in" HEIGHT = "2.653in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T130003K334" UPDATE = "ORIGINAL" LDUP = "10May2004"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "Vehicle Outline: Design">
+<TITLE>Radiator Grille &amp; Emblem</TITLE>
+<LIST1><ITEM><PTXT>The radiator grille of 2GR-FE engine models has a precise mesh shape (dark gray metallic), and the outer frame is chrome-plated to create a sense of luxury.</PTXT></ITEM>
+<ITEM><PTXT>On models with a millimeter wave radar sensor assembly<HINTREF REFID = "H403130003K33401"/>, a millimeter wave transmissive grille cover<HINTREF     REFID = "H403130003K33402"/> has been provided at the emblem.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403130003K33401">Only models w/ pre-crash safety system + radar cruise control system</PTXT></ITEM>
+<ITEM><PTXT ID = "H403130003K33402">Cover that transmits the radar waves emitted from the millimeter wave radar sensor assembly</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740401b" WIDTH = "6.903in" HEIGHT = "3.403in" />
+</FIGURE>
+</PARA>
+</BIND>
+</SECTION>

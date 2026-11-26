@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- $Id: atten_contents.html,v 1.16 2004/04/01 07:37:34 s-okino Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Precaution</title>
+
+
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	var titleName = parent.getTitleName(parent.g_attenParaId);
+	var paraName = parent.getParagraphName(parent.g_attenParaId);
+	sdisp.innerHTML = "<p class='location'>" + titleName + " ／ " + paraName + "</p>";
+
+	var paraXml = parent.initXml(parent.g_attenParaId+".xml",false,false);
+	if ( paraXml == null ) {
+		alert("Relevant File "+parent.g_attenParaId+".xml does not exist.");
+		return;
+	}
+	
+	parent.display(paraXml, parent.g_contentsXsl, disp, null);
+
+	var subparaNode = paraXml.selectSingleNode("//subpara");
+	if ( subparaNode == null ) {
+		alert("Relevant File "+parent.g_attenParaId+".xml has no subparaNode.");
+		return;
+	}
+	var textId = subparaNode.getAttribute("id");
+	var memoId = subparaNode.getAttribute("proc-id");
+	generalMemo.innerHTML = 
+		 "<a href=\"javascript:parent.openMemo('"+textId+"','"+memoId+"');\" >"
+		+"<img src='../../img/memo.png' id='"+memoId+"'  border='0' /> "
+		+"</a>"
+		;
+	parent.loadMemoData (document,parent.REPAIR);
+}
+</script>
+</head>
+<body onLoad="init();">
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+	<tr>
+		<td><div id="sdisp"></div></td>
+		<td id="generalMemo" align="right" width="40"><br>
+		</td>
+	</tr>
+</table>
+<div id="disp"></div>
+</body>
+</html>

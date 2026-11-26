@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1001Y_S000S" variety="S000S">
+<name>CVT</name>
+<ttl id="1001Y_S000S_744HD_T007Y" variety="T007Y">
+<name>CVT System [Super CVT-i] (K112/K112F)</name>
+<para id="RM000000WGN00DX" category="C" type-id="800K5" name-id="32263-00" from="200612">
+<dtccode>U0129/A2</dtccode>
+<dtcname>Brake ECU Communication Malfunction</dtcname>
+<subpara id="RM000000WGN00DX_01" type-id="31" category="03" proc-id="RM0550J___000047Q00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>CAN (Controller Area Network) is a multiplex communication system for vehicles. It is a serial data communication system for real-time applications, and has excellent communication speed and malfunction detection functions. By combining the CANH bus line and the CANL bus line, CAN performs communication based on differential voltage.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Malfunctions on the CAN bus (communication lines) can be inspected from the DLC3 connector. (Except for an open circuit in the DLC3 branch line)</ptxt>
+</item>
+<item>
+<ptxt>Using TaSCAN, DTCs related to CAN communication can be checked.</ptxt>
+</item>
+<item>
+<ptxt>DLC3 is connected to the CAN communication lines, but CAN communication cannot detect malfunctions on the DLC3 branch line.</ptxt>
+</item>
+</list1>
+</atten4>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.08in"/>
+<colspec colname="COL2" colwidth="3.14in"/>
+<colspec colname="COL3" colwidth="2.86in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0129/A2</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Communication interruption between the engine control computer and skid control computer assembly</ptxt>
+</item>
+<item>
+<ptxt>2.22 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire harness and connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>Skid Control Computer Assembly</ptxt>
+</item>
+<item>
+<ptxt>CAN Communication System</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000WGN00DX_02" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000000WGN00DX_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000WGN00DX_03_0004" proc-id="RM0550J___000047S00000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and clear the DTCs following the TaSCAN screen display. (see <xref label="Seep01" href="RM000000FSM00TX"/>)</ptxt>
+<atten3>
+<ptxt>Clearing the DTCs also clears the freeze frame data, so be sure to save the freeze frame data before clearing.</ptxt>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WGN00DX_03_0005" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000WGN00DX_03_0005" proc-id="RM0550J___000047T00000">
+<testtitle>Road Test</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Perform a road test. (see <xref label="Seep01" href="RM000000FSU00TX_01_0005"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WGN00DX_03_0001" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000WGN00DX_03_0001" proc-id="RM0550J___000047R00000">
+<scantool type="1"/>
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), following the screen display, display the [Diagnosis Menu/TCCS] screen and select [DTC Freeze Data]. (see <xref label="Seep01" href="RM000000FSM00TX"/>)</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.65in"/>
+<colspec colname="COL2" colwidth="1.48in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0129/A2 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0129/A2 is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000WGN00DX_03_0003" fin="true">A</down>
+<right ref="RM000000WGN00DX_03_0002" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WGN00DX_03_0002">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000FSP00OX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000WGN00DX_03_0003">
+<testtitle>Repair CAN communication system<xref label="Seep01" href="RM000001R4W009X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

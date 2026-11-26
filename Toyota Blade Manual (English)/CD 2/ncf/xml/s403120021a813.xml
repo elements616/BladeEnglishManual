@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4960039e SYSTEM "grph_ent/a4960039e.png" NDATA png>
+
+<!ENTITY T120021A813 SYSTEM "t403120021a813.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120021A813S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120021A813" UPDATE = "ORIGINAL" LDUP = "20Jun2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>HDD Navigation Picture Quality Adjustment Mode Functions</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By pressing the "Picture Quality/Off" panel switch, the screen changes to the picture quality adjustment mode screen, where picture quality can be adjusted.</PTXT></ITEM>
+<ITEM><PTXT>On NTSC video display screens such as TV, 4 items (tint, color depth, contrast and brightness) can be adjusted; on RGB video display screens such as the navigation screen, contrast and brightness can be adjusted.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A813I01" INDSW = "OFF">
+<TITLE>Picture Quality Adjustment Mode Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4960039e" WIDTH = "6.903in" HEIGHT = "2.847in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+</SECTION>

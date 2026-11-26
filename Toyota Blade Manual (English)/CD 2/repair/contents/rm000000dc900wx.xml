@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1002B_S001H" variety="S001H">
+<name>Automatic Transaxle</name>
+<ttl id="1002B_S001H_74Y0X_T00H8" variety="T00H8">
+<name>Electronically Controlled Automatic Transaxle [ECT] (U660E)</name>
+<para id="RM000000DC900WX" category="C" type-id="3055L" name-id="261I7-00" from="200708">
+<dtccode>P0748/62</dtccode>
+<dtcname>SL1 Solenoid Circuit (Open)</dtcname>
+<dtccode>P0778/63</dtccode>
+<dtcname>SL2 Solenoid Circuit (Open)</dtcname>
+<dtccode>P0798/76</dtccode>
+<dtcname>SL3 Solenoid Circuit (Open)</dtcname>
+<dtccode>P2810/46</dtccode>
+<dtcname>SL4 Solenoid Circuit (Open)</dtcname>
+<subpara id="RM000000DC900WX_05" type-id="33" category="03" proc-id="RM0550J___0000FT700000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>The transmission control computer shifts from 1 to 6 by combining the ON-OFF operation of the SL1, SL2, SL3 and SL4 solenoids.</ptxt>
+<ptxt>If an open or short occurs in any solenoid valve circuit, the transmission control computer turns other solenoid valves ON or OFF as a fail-safe function. Also, if all solenoid valves malfunction, only the mechanical hydraulic circuit operates and the transmission is shifted manually. (In the case of an open or short, the transmission control computer stops current flow to the malfunctioning solenoid valve.)</ptxt>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.020989     in"/>
+<colspec colnum="02" colname="C02" colwidth="2.718154     in"/>
+<colspec colnum="03" colname="C03" colwidth="3.407777     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0748/62</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>While driving with gear shifting</ptxt>
+</item>
+<item>
+<ptxt>Open or short in solenoid SL1 circuit</ptxt>
+</item>
+<item>
+<ptxt>Continuously for 1 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Wire harness and connector (SL1 signal circuit)</ptxt>
+</item>
+<item>
+<ptxt>Transmission wire</ptxt>
+</item>
+<item>
+<ptxt>Clutch control solenoid No.1 (SL1)</ptxt>
+</item>
+<item>
+<ptxt>Transmission Control Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0778/63</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>While driving with gear shifting</ptxt>
+</item>
+<item>
+<ptxt>Open or short in solenoid SL2 circuit</ptxt>
+</item>
+<item>
+<ptxt>Continuously for 1 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Wire harness and connector (SL2 signal circuit)</ptxt>
+</item>
+<item>
+<ptxt>Transmission wire</ptxt>
+</item>
+<item>
+<ptxt>Clutch control solenoid No.2 (SL2)</ptxt>
+</item>
+<item>
+<ptxt>Transmission Control Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0798/76</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>While driving with gear shifting</ptxt>
+</item>
+<item>
+<ptxt>Open or short in solenoid SL3 circuit</ptxt>
+</item>
+<item>
+<ptxt>Continuously for 1 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire harness and connector (SL3 signal circuit)</ptxt>
+</item>
+<item>
+<ptxt>Transmission wire</ptxt>
+</item>
+<item>
+<ptxt>Clutch control solenoid No.1 (SL3)</ptxt>
+</item>
+<item>
+<ptxt>Transmission Control Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P2810/46</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>While driving with gear shifting</ptxt>
+</item>
+<item>
+<ptxt>Open or short in solenoid SL4 circuit</ptxt>
+</item>
+<item>
+<ptxt>Continuously for 1 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Wire harness and connector (SL4 signal circuit)</ptxt>
+</item>
+<item>
+<ptxt>Transmission wire</ptxt>
+</item>
+<item>
+<ptxt>Clutch control solenoid No.2 (SL4)</ptxt>
+</item>
+<item>
+<ptxt>Transmission Control Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000DC900WX_06" type-id="32" category="03" proc-id="RM0550J___0000FT800000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C139037J02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000DC900WX_07" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000000DC900WX_08" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000DC900WX_08_0011" proc-id="RM0550J___0000FT900000">
+<testtitle>Inspect Transmission Wire (SL1/SL2/SL3/SL4)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Remove the transmission control computer. (see <xref label="Seep01" href="RM0000024M9003X"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal.</ptxt>
+<figure>
+<graphic graphicname="C133212J15" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.99in"/>
+<colspec colname="COL2" colwidth="1.11in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>14(SL1+) - 13(SL1-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.0 to 5.6Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>9(SL2+) - 8(SL2-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.0 to 5.6Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>16(SL3+) - 15(SL3-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.0 to 5.6Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>22(SL4+) - 21(SL4-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.0 to 5.6Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.99in"/>
+<colspec colname="COL2" colwidth="1.11in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>14 (SL1+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>9 (SL2+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>16 (SL3+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>22 (SL4+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SL1 malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SL2 malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SL3 malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>D</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SL4 malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>E</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000DC900WX_08_0020" fin="false">A</down>
+<right ref="RM000000DC900WX_08_0013" fin="false">B</right>
+<right ref="RM000000DC900WX_08_0014" fin="false">C</right>
+<right ref="RM000000DC900WX_08_0022" fin="false">D</right>
+<right ref="RM000000DC900WX_08_0015" fin="false">E</right>
+</res>
+</testgrp>
+<testgrp id="RM000000DC900WX_08_0020" proc-id="RM0550J___0000HCD00000">
+<testtitle>Repair or Replace Transmission Control Computer Assembly</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>Replace the transmission control computer assembly. (see <xref label="Seep01" href="RM0000024M8003X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000DC900WX_08_0024" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000DC900WX_08_0024">
+<testtitle>A/T Unit Compensation<xref label="Seep01" href="RM000000OLY013X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000DC900WX_08_0013" proc-id="RM0550J___0000FTA00000">
+<testtitle>Inspect Clutch Control Solenoid NO.1 (SL1)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="C053442J08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test1>
+<ptxt>Disconnect the connector of clutch control solenoid No.1 (SL1).</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the battery positive to terminal 2 and the battery negative to terminal 1 of clutch control solenoid No.1 (SL1) via a 12V-21W bulb, and check that the valve in the solenoid operates.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Operates (operating sound heard)</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.90in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<colspec colname="COL3" colwidth="1.09in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal 1 - Terminal 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.0 to 5.6Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000DC900WX_08_0019" fin="true">OK</down>
+<right ref="RM000000DC900WX_08_0016" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000DC900WX_08_0014" proc-id="RM0550J___0000FTB00000">
+<testtitle>Inspect Clutch Control Solenoid NO.2 (SL2)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="C053442J08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test1>
+<ptxt>Disconnect the connector of clutch control solenoid No.2 (SL2).</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the battery positive to terminal 2 and the battery negative to terminal 1 of clutch control solenoid No.2 (SL2) via a 12V-21W bulb, and check that the valve in the solenoid operates.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Operates (operating sound heard)</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.90in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<colspec colname="COL3" colwidth="1.09in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal 1 - Terminal 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.0 to 5.6Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000DC900WX_08_0019" fin="true">OK</down>
+<right ref="RM000000DC900WX_08_0017" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000DC900WX_08_0022" proc-id="RM0550J___0000FTD00000">
+<testtitle>Inspect Clutch Control Solenoid NO.1 (SL3)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="C053442J08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test1>
+<ptxt>Disconnect the connector of clutch control solenoid No.2 (SL3).</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the battery positive to terminal 2 and the battery negative to terminal 1 of clutch control solenoid No.1 (SL3) via a 12V-21W bulb, and check that the valve in the solenoid operates.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Operates (operating sound heard)</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.90in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<colspec colname="COL3" colwidth="1.09in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal 1 - Terminal 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.0 to 5.6Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000DC900WX_08_0019" fin="true">OK</down>
+<right ref="RM000000DC900WX_08_0023" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000DC900WX_08_0015" proc-id="RM0550J___0000FTC00000">
+<testtitle>Inspect Clutch Control Solenoid NO.2 (SL4)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="C053442J08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test1>
+<ptxt>Disconnect the connector of clutch control solenoid No.2 (SL4).</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the battery positive to terminal 2 and the battery negative to terminal 1 of clutch control solenoid No.2 (SL4) via a 12V-21W bulb, and check that the valve in the solenoid operates.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Operates (operating sound heard)</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.90in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<colspec colname="COL3" colwidth="1.09in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal 1 - Terminal 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.0 to 5.6Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000DC900WX_08_0019" fin="true">OK</down>
+<right ref="RM000000DC900WX_08_0018" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000DC900WX_08_0016">
+<testtitle>Replace Clutch Control Solenoid NO.1 (SL1)</testtitle>
+</testgrp>
+<testgrp id="RM000000DC900WX_08_0017">
+<testtitle>Replace Clutch Control Solenoid NO.2 (SL2)</testtitle>
+</testgrp>
+<testgrp id="RM000000DC900WX_08_0023">
+<testtitle>Replace Clutch Control Solenoid NO.1 (SL3)</testtitle>
+</testgrp>
+<testgrp id="RM000000DC900WX_08_0018">
+<testtitle>Replace Clutch Control Solenoid NO.2 (SL4)</testtitle>
+</testgrp>
+<testgrp id="RM000000DC900WX_08_0019">
+<testtitle>Repair or Replace Transmission Wire<xref label="Seep01" href="RM000002BOQ004X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

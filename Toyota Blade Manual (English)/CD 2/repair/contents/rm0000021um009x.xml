@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10024_S000T" variety="S000T">
+<name>Starting</name>
+<ttl id="10024_S000T_74XTS_T00H2" variety="T00H2">
+<name>Starter Assembly (2GR-FE)</name>
+<para id="RM0000021UM009X" category="G" type-id="3001K" name-id="16270-00" from="200708">
+<name>Component Inspection</name>
+<subpara id="RM0000021UM009X_01" type-id="01" category="01">
+<s-1 id="RM0000021UM009X_01_0001" proc-id="RM0550J___0000FIT00000">
+<ptxt>Inspect Starter Assembly</ptxt>
+<content1 releasenbr="1">
+<atten3>
+<ptxt>Perform each test within a short time (3-5 seconds).</ptxt>
+</atten3>
+<s2>
+<ptxt>Operation Check</ptxt>
+<s3>
+<ptxt>Remove the nut and disconnect terminal C.</ptxt>
+<figure>
+<graphic graphicname="A130457J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Check that the pinion gear moves outward when connected as shown in the illustration.</ptxt>
+<figure>
+<graphic graphicname="A130458J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>With the pinion gear moved outward, disconnect the cable from terminal C and check that the pinion gear remains out.</ptxt>
+<figure>
+<graphic graphicname="A130459J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>With the pinion gear remaining out, disconnect the cable from the starter body and check that the pinion gear returns inward.</ptxt>
+<figure>
+<graphic graphicname="A130460J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Connect the harness to terminal C and tighten it with the nut.</ptxt>
+<torque>
+<torqueitem>
+<t-value1>10</t-value1>
+<t-value2>102</t-value2>
+</torqueitem>
+</torque>
+</s3>
+<s3>
+<ptxt>Secure the starter in a vise between aluminum plates.</ptxt>
+</s3>
+<s3>
+<ptxt>Connect the cables as shown in the illustration, and connect SST (AC/DC probe 400A) to the positive cable.</ptxt>
+<figure>
+<graphic graphicname="A130461J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09083-00300</s-number>
+</sstitem>
+</sst>
+</s3>
+<s3>
+<ptxt>Connect terminal 50 and measure the current when the reading of SST (Toyota electrical tester) is stable.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>90A or less (approximately 11.5V)</ptxt>
+</specitem>
+</spec>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

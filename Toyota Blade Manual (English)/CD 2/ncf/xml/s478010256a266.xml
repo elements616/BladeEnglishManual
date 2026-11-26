@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740048p SYSTEM "grph_ent/a4740048p.png" NDATA png>
+
+<!ENTITY T010256A266 SYSTEM "t478010256a266.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010256A266S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010256A266" UPDATE = "ORIGINAL" LDUP = "10Oct2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Reservoir Tank</TITLE>
+<LIST1><ITEM><PTXT>A fully sealed type with both gas-liquid separation performance and cooling system pressure stabilization performance has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>The radiator reservoir tank cap performs the role of a conventional radiator cap, regulating the radiator internal pressure.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740048p" WIDTH = "6.903in" HEIGHT = "3.833in" />
+</FIGURE>
+<SPEC ID = "T010256A266X01" INDSW = "OFF">
+<TITLE>Reservoir Tank Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "34%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "48%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Cap Valve Opening Pressure [kPa]</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>108</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE"><PTXT>Coolant Capacity</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Filling Line [L]</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>1.3</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>FULL Line [L]</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>0.7</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2"><PTXT>LOW Line [L]</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>0.5</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>

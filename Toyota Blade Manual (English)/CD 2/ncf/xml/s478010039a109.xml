@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740034p SYSTEM "grph_ent/a4740034p.png" NDATA png>
+
+<!ENTITY T010039A109 SYSTEM "t478010039a109.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010039A109S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010039A109" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>VVT-i Controller</TITLE>
+<LIST1><ITEM><PTXT>A vane-type VVT-i controller has been provided on the intake camshaft.</PTXT></ITEM>
+<ITEM><PTXT>It consists of a housing fixed to the timing gear and a vane fixed to the camshaft.</PTXT></ITEM>
+<ITEM><PTXT>By applying oil pressure from the OCV (oil control valve) to the advance chamber and retard chamber of the VVT-i controller, the vane is rotated, continuously varying the phase of the intake camshaft.</PTXT></ITEM>
+<ITEM><PTXT>When the engine is stopped, it is locked at the most retarded position by the lock pin. When the engine starts, the lock pin is released by oil pressure.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740034p" WIDTH = "6.903in" HEIGHT = "3.417in" />
+</FIGURE>
+</PARA>
+</SECTION>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="1000C_S000O" variety="S000O">
+<name>Cooling</name>
+<ttl id="1000C_S000O_744FZ_T006L" variety="T006L">
+<name>Cooling System (2AZ-FE)</name>
+<para id="RM0000020WO006X" category="N" type-id="8009I" name-id="121DW-00" from="200612">
+<name>Function Inspection</name>
+<subpara id="RM0000020WO006X_01" type-id="01" category="01">
+<s-1 id="RM0000020WO006X_01_0001" proc-id="RM0550J___00002WP00000">
+<ptxt>Coolant Leak Inspection</ptxt>
+<content1 releasenbr="1">
+<atten2>
+<ptxt>To avoid the danger of being burned, do not remove the reservoir tank cap while the engine and radiator are still hot. Liquid and steam will spray out under pressure.</ptxt>
+</atten2>
+<s2>
+<ptxt>Fill the radiator with coolant and install a radiator cap tester.</ptxt>
+<figure>
+<graphic graphicname="A162961J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Warm up the engine.</ptxt>
+</s2>
+<s2>
+<ptxt>118kPa{1.2kgf/cm<sup>2</sup>Pump it to } and check that the pressure does not drop.</ptxt>
+<atten4>
+<ptxt>If the pressure drops, check the hoses, radiator and water pump for leaks. If there are no external leaks, check the heater core, cylinder block and cylinder head.</ptxt>
+</atten4>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000020WO006X_01_0002" proc-id="RM0550J___00003RV00000">
+<ptxt>Inspect Coolant Level</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>When the engine is cold, check that the coolant level in the reserve tank is between FULL and LOW.</ptxt>
+<figure>
+<graphic graphicname="A163276J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>If the level is low, add coolant up to the FULL position.</ptxt>
+</atten4>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000020WO006X_01_0003" proc-id="RM0550J___000036O00000">
+<ptxt>Inspect Coolant</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the reserve tank cap.</ptxt>
+<atten2>
+<ptxt>To avoid the danger of being burned, do not remove the reservoir tank cap while the engine and radiator are still hot. Liquid and steam will spray out under pressure.</ptxt>
+</atten2>
+</s2>
+<s2>
+<ptxt>Check that there are no excessive deposits of rust or scale around the reserve tank cap and water inlet.</ptxt>
+<atten4>
+<ptxt>If it is excessively dirty, replace the coolant.</ptxt>
+</atten4>
+</s2>
+<s2>
+<ptxt>Install the reserve tank cap.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000020WO006X_01_0004" proc-id="RM0550J___00003RW00000">
+<ptxt>Inspect Reserve Tank Cap Sub-assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Wash off any scale and foreign matter adhering to the packing &lt;1&gt; with water.</ptxt>
+<figure>
+<graphic graphicname="A112200J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Always perform the work by hand.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>Perform a visual inspection.</ptxt>
+<s3>
+<ptxt>Check that the resin and rubber parts are not deformed, cracked or damaged.</ptxt>
+</s3>
+<s3>
+<ptxt>Check that the packing &lt;1&gt; is not swollen.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt> Perform a function inspection.</ptxt>
+<figure>
+<graphic graphicname="A110393J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<s3>
+<ptxt>Wet the packings &lt;1&gt; and &lt;2&gt; with coolant.</ptxt>
+</s3>
+<s3>
+<ptxt> Using a radiator cap tester, measure the maximum valve opening pressure while pumping several times.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.08in"/>
+<colspec colname="COL2" colwidth="3.05in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt> 93.3 to 122.7 kPa {0.95 to 1.25 kgf/cm<sup>2</sup>}</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Limit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>78.5 kPa {0.8 kgf/cm<sup>2</sup>}</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pumping speed: 1 times within 1 seconds</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>Tilt the radiator cap tester 30° or more when performing the inspection.</ptxt>
+</atten3>
+<atten4>
+<ptxt>If the maximum valve opening pressure does not exceed the limit, replace the reserve tank cap.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

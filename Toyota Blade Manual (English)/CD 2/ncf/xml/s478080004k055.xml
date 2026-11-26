@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740048e SYSTEM "grph_ent/a4740048e.png" NDATA png>
+
+<!ENTITY T080004K055 SYSTEM "t478080004k055.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T080004K055S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T080004K055" UPDATE = "ORIGINAL" LDUP = "13Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Pressure Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A pressure sensor that detects the refrigerant pressure and outputs it to the air conditioner computer as a voltage change has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>It is mounted on the high-pressure piping block behind the condenser.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740048e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</PARA>
+</SECTION>

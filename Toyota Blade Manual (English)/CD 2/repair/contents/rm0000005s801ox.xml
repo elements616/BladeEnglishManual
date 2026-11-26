@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="10033_S0007" variety="S0007">
+<name>CAN Communication</name>
+<ttl id="10033_S0007_741KB_T000K" variety="T000K">
+<name>CAN Communication System</name>
+<para id="RM0000005S801OX" category="J" type-id="305C8" name-id="950V8-00" from="200612">
+<dtccode/>
+<dtcname>CAN Bus One-side Open Circuit Inspection</dtcname>
+<subpara id="RM0000005S801OX_01" type-id="33" category="03" proc-id="RM0550J___00000CX00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>If there are ECUs (sensors) not displayed on the "CAN Bus Connected ECU Check" screen of TaSCAN and ECUs (sensors) alternating between displayed and not displayed, a one-side open circuit has occurred in a CAN bus branch line.</ptxt>
+<atten4>
+<ptxt>If there are ECUs (sensors) alternating between displayed and not displayed in the "CAN Bus Connected ECU Check", the incomplete signal output by the ECU with the one-side open branch line becomes noise and affects the signals of ECUs communicating normally.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000005S801OX_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM0000005S801OX_05" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000005S801OX_05_0007" proc-id="RM0550J___00000CY00000">
+<testtitle>Check CAN Bus Connected ECUs</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Check which systems (ECUs, sensors) using CAN communication are equipped on the vehicle brought to the workshop. (see <xref label="Seep01" href="RM0000005S001MX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (TaSCAN), select and execute "CAN Bus Diagnosis" → "CAN Bus Connected ECU Check".</ptxt>
+</test1>
+<test1>
+<ptxt>Check the screen display for approximately 1 minutes and identify the ECU and sensor items that are not displayed at all and those alternating between displayed and not displayed.</ptxt>
+</test1>
+<test1>
+<ptxt>Perform the communication stop mode inspection for the ECUs and sensors that are not displayed on the screen at all. (Refer to Problem Symptoms Table <xref label="Seep02" href="RM0000005RL01NX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005S801OX_05_0008" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000005S801OX_05_0008">
+<testtitle>Go to the related circuit inspection shown in the List by Symptom</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

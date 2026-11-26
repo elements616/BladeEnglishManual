@@ -1,0 +1,1974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="X39400000QV016D" category="U" type-id="3001G" name-id="0659M-00" from="200612">
+<name>Terminals of ECU</name>
+<subpara id="X39400000QV016D_z0" proc-id="RM0550J___00002O900000">
+<content5 releasenbr="1">
+<ptxt/>
+<figure>
+<graphic graphicname="A159951J01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>ECU Terminal Voltage Table (EFI System)</title>
+<tgroup cols="4" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="2.08in"/>
+<colspec colnum="02" colname="C02" colwidth="1.06in"/>
+<colspec colnum="03" colname="C03" colwidth="2.46in"/>
+<colspec colnum="04" colname="C04" colwidth="1.48in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+<ptxt>(Terminal Symbol)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Input</ptxt>
+<ptxt>Output</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A41(M-)←→A43(ME01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A42(M+)←→A43(ME01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A43 (ME01) ←→ Engine ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always (continuity check)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A44 (E02) ←→ Engine ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always (continuity check)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A45 (E01) ←→ Engine ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always (continuity check)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A46 (E04) ←→ Engine ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always (continuity check)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A47(HT1B)←→A86(E03)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Oxygen sensor warmed up, at idle</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 3 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A49(PRG)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 3)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A50(ALT)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A51(RLO)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>20 minutes after warm-up, during charging control, constant speed driving</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 4)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A51(RLO)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>20 minutes after warm-up, during charging control, accelerating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A51(RLO)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>20 minutes after warm-up, during charging control, decelerating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 6)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A52(STAR)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift position P, N → other than P, N</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1V → pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A64(OX1B)←→A87(EX1B)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Oxygen sensor warmed up, engine speed held at 2500r/min for 2 minutes</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 7)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A65(THA)←→A88(ETHA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Intake air temperature 0 to 80°C (warm engine)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 3.4 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A67(VCTA)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A68(IB)←→A92(EIB)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+<ptxt>Battery thermometer sensor ambient temperature: -30 to 90°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 4.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A69(VCIB)←→A92(EIB)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A81(IGF1)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 8)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A82(IGT4)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 8)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A83(IGT3)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 8)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A84(IGT2)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 8)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A85(IGT1)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 8)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A86 (E03) ←→ Engine ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always (continuity check)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A97(THW)←→A96(ETHW)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Coolant temperature 60 to 120°C (warm engine)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.2 to 1.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A99(G2+)←→A98(G2-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 9)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A100(OC1+)←→A123(OC1-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 10)</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>104 (E1) ←→ Engine ground</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Ground</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Always (continuity check)</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A110(KNK1)←→A111(EKNK)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>After warm-up, engine speed held at 4000r/min</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 11)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A112(A1A+)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3 to 3.6 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A113(A1A-)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2.7 to 3.3 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A114(VTA2)←→A91(ETA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, throttle valve fully closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2.1 to 3.1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A114(VTA2)←→A91(ETA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, throttle valve fully open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.6 to 5.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A115(VTA1)←→A91(ETA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, throttle valve fully closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 1.1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A115(VTA1)←→A91(ETA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, throttle valve fully open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.3 to 4.9V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A118(VG)←→A116(E2G)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 3.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A120(THB)←→A92(EIB)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 4.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A122(NE+)←→A121(NE-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 9)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A105( # 40)←→A45(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 12)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A106( # 30)←→A45(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 12)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A107( # 20)←→A45(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 12)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A108( # 10)←→A45(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 12)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A109(HA1A)←→A46(E04)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Air fuel ratio sensor before warm-up, at idle</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 3 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1(+B2)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2(+B)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B3(+BM)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always (continuity check)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B7(FC)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B7(FC)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 1.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B8(SPD)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driving at approximately 20km/h</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 13)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B13(ACCR)←→A45(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>During cranking</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B14(STSW)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Brake pedal depressed, engine switch held pushed → engine switch released after approx. 1 seconds</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B15(TACH)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 14)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B20(BATT)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always (continuity check)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B24(W)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Disconnect the coolant temperature sensor connector</ptxt>
+<ptxt>(When check engine warning light is ON)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 1.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B24(W)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>At idle after warm-up</ptxt>
+<ptxt>(When check engine warning light is OFF)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B27(TC)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B27(TC)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminals TC and CG of DLC3 shorted</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 3 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B28(IGSW)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B32 (EC) - Engine ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always (continuity check)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B35(ST1-)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stop light switch ON</ptxt>
+<ptxt>(Brake pedal depressed)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 1.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B35(ST1-)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stop light switch OFF</ptxt>
+<ptxt>(Brake pedal not depressed)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>7.5 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B36(STP)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stop light switch ON</ptxt>
+<ptxt>(Brake pedal depressed)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>7.5 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B36(STP)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stop light switch OFF</ptxt>
+<ptxt>(Brake pedal not depressed)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 1.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B41(CANH)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 15)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B49(CANL)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 16)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B44(MREL)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B44(MREL)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF (3 seconds or more after OFF)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 1.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B48(STA)←→A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>During cranking</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5.5 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B55(VPA)←→B59(EPA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Accelerator pedal fully closed</ptxt>
+<ptxt>(Engine stopped, IG ON)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 1.1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B55(VPA)←→B59(EPA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Accelerator pedal fully open</ptxt>
+<ptxt>(Engine stopped, IG ON)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2.6 to 4.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B56(VPA2)←→B60(EPA2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Accelerator pedal fully closed</ptxt>
+<ptxt>(Engine stopped, IG ON)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.2 to 2.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B56(VPA2)←→B60(EPA2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Accelerator pedal fully open</ptxt>
+<ptxt>(Engine stopped, IG ON)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.4 to 5.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B57(VCPA)←→B59(EPA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B58(VCP2)←→B60(EPA2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<step1>
+<ptxt>Oscilloscope Waveforms</ptxt>
+<atten4>
+<ptxt>The oscilloscope waveforms shown are reference examples; noise, chattering waveforms, etc. are omitted.</ptxt>
+</atten4>
+<step2>
+<ptxt>Waveform 1</ptxt>
+<figure>
+<graphic graphicname="A020297J06" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>M- ←→ ME01</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5V/DIV、1ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The waveform cycle changes according to the throttle opening angle.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 2</ptxt>
+<figure>
+<graphic graphicname="A020298J05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>M+ ←→ ME01</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5V/DIV、1ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The waveform cycle changes according to the throttle opening angle.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 3</ptxt>
+<figure>
+<graphic graphicname="A096658J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PRG ←→ E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5V/DIV、50ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Depending on conditions, the waveform shown in the illustration may not be generated.</ptxt>
+</item>
+<item>
+<ptxt>Depending on conditions, the duty ratio may differ.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 4</ptxt>
+<figure>
+<graphic graphicname="A084458J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RLO ←→ E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2V/DIV、50ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20 minutes after warm-up, during charging control, constant speed driving</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>Since the duty ratio changes depending on the electrical load and battery condition, a constant value is not output.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 5</ptxt>
+<figure>
+<graphic graphicname="A084456J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RLO ←→ E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2V/DIV、50ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20 minutes after warm-up, during charging control, accelerating</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>Since the duty ratio changes depending on the electrical load and battery condition, a constant value is not output.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 6</ptxt>
+<figure>
+<graphic graphicname="A084457J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RLO ←→ E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2V/DIV、50ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20 minutes after warm-up, during charging control, decelerating</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>Since the duty ratio changes depending on the electrical load and battery condition, a constant value is not output.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 7</ptxt>
+<figure>
+<graphic graphicname="A096903J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OX1B ←→ EX1B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1V/DIV、500ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Oxygen sensor warmed up, engine speed held at 2500r/min for 2 minutes</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Depending on conditions, the waveform shown in the illustration may not be generated.</ptxt>
+</item>
+<item>
+<ptxt>Depending on conditions, the waveform cycle may differ.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 8</ptxt>
+<figure>
+<graphic graphicname="A125120J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CH1:IGT1、IGT2、IGT3、IGT4、 ←→ E1</ptxt>
+<ptxt>CH2:IGF1 ←→ E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2V/DIV、20ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>As the engine speed increases, each waveform cycle becomes shorter.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 9</ptxt>
+<figure>
+<graphic graphicname="A063955J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CH1:G2+ ←→ G2-</ptxt>
+<ptxt>CH2:NE+ ←→ NE-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5V/DIV、20ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>As the engine speed increases, each waveform cycle becomes shorter.</ptxt>
+</atten4>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>As the engine speed increases, each waveform amplitude becomes larger.</ptxt>
+</item>
+<item>
+<ptxt>As the engine speed increases, each waveform cycle becomes shorter.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 10</ptxt>
+<figure>
+<graphic graphicname="A065135J04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OC1+ ←→ OC1-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5V/DIV、1ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>As the engine speed increases, the waveform cycle becomes shorter.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 11</ptxt>
+<figure>
+<graphic graphicname="A082985J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>KNK1 ←→ EKNK</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1V/DIV、1ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>After warm-up, engine speed held at 4000r/min</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>As the engine speed increases, each waveform amplitude becomes larger.</ptxt>
+</item>
+<item>
+<ptxt>The waveform amplitude differs slightly between vehicles.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 12</ptxt>
+<figure>
+<graphic graphicname="A093279J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>#10、#20、#30、#40、 ←→ E01</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2V/DIV、20ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>As the engine speed increases, the waveform cycle becomes shorter.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 13</ptxt>
+<figure>
+<graphic graphicname="A005135J17" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SPD ←→ E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2V/DIV、20ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driving at approximately 20km/h</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>As the vehicle speed increases, the waveform cycle becomes shorter.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 14</ptxt>
+<figure>
+<graphic graphicname="A020294J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TACH ←→ E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5V/DIV、10ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>As the engine speed increases, the waveform cycle becomes shorter.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 15</ptxt>
+<figure>
+<graphic graphicname="A086154J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANH ←→ E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1V/DIV、10μs/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Waveform 13</ptxt>
+<figure>
+<graphic graphicname="A086155J05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="2.85in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANL ←→ E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1V/DIV、10μs/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

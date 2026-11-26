@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001A_S0009" variety="S0009">
+<name>Lighting</name>
+<ttl id="1001A_S0009_7420O_T0016" variety="T0016">
+<name>Lighting</name>
+<para id="RM0000030GL000X" category="A" type-id="802EH" name-id="603L6-00" from="200612">
+<name>Registration Settings</name>
+<subpara id="RM0000030GL000X_03" type-id="11" category="10" proc-id="RM0550J___00007NP00000">
+<content3 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When work that changes the vehicle height, such as removal/installation or replacement of the height control sensor or replacement of the suspension, has been performed, or when the headlight leveling computer assembly has been replaced, perform initialization using procedure 1 or procedure 2 below.</ptxt>
+</item>
+<item>
+<ptxt>After initializing the headlight leveling computer assembly, perform headlight aim adjustment. </ptxt>
+</item>
+</list1>
+</atten3>
+</content3>
+</subpara>
+<subpara id="RM0000030GL000X_04" type-id="01" category="01">
+<s-1 id="RM0000030GL000X_04_0003" proc-id="RM0550J___00007NQ00000">
+<ptxt>Headlight Leveling Computer Assembly Initialization Procedure (Initialization without TaSCAN)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Vehicle Condition Check (*1)</ptxt>
+<s3>
+<ptxt>Put the vehicle in the following condition.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Reduce the remaining fuel to approximately 10 liters or less.</ptxt>
+</item>
+<item>
+<ptxt>Unload any removable luggage from the vehicle. (Spare tire and on-board tools remain loaded)</ptxt>
+</item>
+<item>
+<ptxt>No occupants.</ptxt>
+</item>
+<item>
+<ptxt>Headlights off.</ptxt>
+</item>
+<item>
+<ptxt>Vehicle stopped with no change in vehicle height. (Vehicle stable on a level surface)</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>If the above is not performed, initialization cannot be performed normally.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Check Warning Display </ptxt>
+<s3>
+<ptxt>3 seconds after turning the IG OFF → ON, check the headlight leveling warning light indication in the combination meter.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="5.65in"/>
+<colspec colname="COL2" colwidth="1.44in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Work Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Warning Display</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Initialization malfunction or headlight leveling computer assembly replaced (new)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Blinks</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Height control sensor replacement/removal, suspension replacement, etc.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Goes off</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If not within the standard, inspect the headlight leveling computer assembly, wire harness and connectors.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Initialization Operation</ptxt>
+<s3>
+<ptxt>Using SST, connect terminals 8 (LVL) and 4 (CG) of DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="C052361J12" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Within 20 seconds after connecting the initialization terminals, operate the light control switch OFF → HEAD 3 times or more. (*2)</ptxt>
+<atten3>
+<ptxt>Operate the switch at 1 second intervals.</ptxt>
+</atten3>
+</s3>
+<s3>
+<ptxt>Check the warning display.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Work Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Warning Display</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Replace Headlight Leveling Computer Assembly (New)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Blinks 2Hz2 times → blinks 2Hz3 times, then goes off (initialization completed normally)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Height control sensor replacement/removal, suspension replacement, etc.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No blinking → blinks 2Hz3 times, then goes off (initialization completed normally)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the operation (*2) does not finish normally even after repeating it 20 times or more, start again from step (*1). </ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000030GL000X_04_0004" proc-id="RM0550J___00007NR00000">
+<ptxt>Headlight Leveling Computer Assembly Initialization Procedure (Initialization Using TaSCAN)</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>When initializing the headlight leveling computer assembly using SST (TaSCAN), initialization can be performed without reducing the remaining fuel to approximately 10 liters or less.</ptxt>
+</atten4>
+<s2>
+<ptxt>Check Vehicle Condition </ptxt>
+<s3>
+<ptxt>Put the vehicle in the following condition. (*1)</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Unload any removable luggage from the vehicle. (Spare tire and on-board tools remain loaded)</ptxt>
+</item>
+<item>
+<ptxt>No occupants.</ptxt>
+</item>
+<item>
+<ptxt>Headlights off.</ptxt>
+</item>
+<item>
+<ptxt>Vehicle stopped with no change in vehicle height. (Vehicle stable on a level surface)</ptxt>
+<atten4>
+<ptxt>If the above is not performed, initialization cannot be performed normally.</ptxt>
+</atten4>
+</item>
+</list1>
+</s3>
+</s2>
+<s2>
+<ptxt>Check Warning Display </ptxt>
+<s3>
+<ptxt>3 seconds after turning the IG OFF → ON, check the headlight leveling warning light indication in the combination meter.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="5.65in"/>
+<colspec colname="COL2" colwidth="1.44in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Work Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Warning Display</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Initialization malfunction or headlight leveling computer assembly replaced (new)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Blinks</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Height control sensor replacement/removal, suspension replacement, etc.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Goes off</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If not within the standard, inspect the headlight leveling computer assembly, wire harness and connectors.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Initialization Operation</ptxt>
+<s3>
+<ptxt>With the IG OFF, connect SST (TaSCAN) to the DLC3 connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</s3>
+<s3>
+<ptxt>Turn IG ON.</ptxt>
+</s3>
+<s3>
+<ptxt>From the SST (TaSCAN) main menu, select "Utility → Auto Leveling → Height Sensor Initialization".</ptxt>
+</s3>
+<s3>
+<ptxt>Following the SST (TaSCAN) screen display, press the "Start" button.</ptxt>
+</s3>
+<s3>
+<ptxt>Check the needle position of the fuel receiver gauge, and determine the applicable position ID from the current needle position.</ptxt>
+<figure>
+<graphic graphicname="E144388J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Analog Type</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.54in"/>
+<colspec colname="COL2" colwidth="1.59in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Needle Position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Position ID</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Needle in range A</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FULL to 3/4 or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Needle in range B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Less than 3/4 to 1/2 or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Needle in range C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Less than 1/2 to 1/4 or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Needle in range D</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Less than 1/4 to EMPTY or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Needle in range E</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>EMPTY</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+<s3>
+<ptxt>Enter the applicable position ID into SST (TaSCAN) and press the "Register" button.</ptxt>
+<atten4>
+<ptxt>The "Register" button cannot be pressed unless the position ID is entered.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check the warning display.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Work Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Warning Display</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Replace Headlight Leveling Computer Assembly (New)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Blinks 2Hz2 times → blinks 2Hz3 times, then goes off (initialization completed normally)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Height control sensor replacement/removal, suspension replacement, etc.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>No blinking → blinks 2Hz3 times, then goes off (initialization completed normally)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If it does not complete normally, redo the procedure from step (*1).</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Following the SST (TaSCAN) screen display, press the "Complete" button.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

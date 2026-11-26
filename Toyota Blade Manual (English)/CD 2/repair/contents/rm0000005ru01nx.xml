@@ -1,0 +1,2096 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="10033_S0007" variety="S0007">
+<name>CAN Communication</name>
+<ttl id="10033_S0007_741KB_T000K" variety="T000K">
+<name>CAN Communication System</name>
+<para id="RM0000005RU01NX" category="J" type-id="303AL" name-id="950V5-01" from="200912">
+<dtccode/>
+<dtcname>CAN Bus Line Short to Each Other Inspection</dtcname>
+<subpara id="RM0000005RU01NX_01" type-id="33" category="03" proc-id="RM0550J___00000B100001">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>If the resistance between 6 (CANH) and 14 (CANL) of DLC3 is less than 54 Ω, a short circuit between the CAN bus lines is suspected. </ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Suspected Area</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Resistance between 6 (CANH) and 14 (CANL) of DLC3 is less than 54 Ω</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>(1), (2), (3), (4), (5), (6), (7), (8), (9), (10), (11), (12), (13), (14), (15) short circuit between lines</ptxt>
+</item>
+<item>
+<ptxt>Combination Meter Assembly (Meter ECU)</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer (EFI ECU)</ptxt>
+</item>
+<item>
+<ptxt>Instrument Panel Junction Block Assembly (Main Body ECU)</ptxt>
+</item>
+<item>
+<ptxt>Power Steering Computer Assembly (EPS ECU)</ptxt>
+</item>
+<item>
+<ptxt>Air Conditioner Amplifier Assembly (A/C ECU)</ptxt>
+</item>
+<item>
+<ptxt>Airbag Computer Assembly (A/B ECU)</ptxt>
+</item>
+<item>
+<ptxt>ABS &amp; Traction Actuator Assembly (VSC ECU)</ptxt>
+</item>
+<item>
+<ptxt>Steering Sensor (Steering Angle Sensor) </ptxt>
+</item>
+<item>
+<ptxt>Yaw Rate Sensor (Yaw / G Sensor)</ptxt>
+</item>
+<item>
+<ptxt>Navigation Receiver Assembly (Navigation ECU)</ptxt>
+</item>
+<item>
+<ptxt>Network Gateway Computer (CAN Gateway ECU)</ptxt>
+</item>
+<item>
+<ptxt>Accessory Bus Buffer</ptxt>
+</item>
+<item>
+<ptxt>Wiring Harness Connector (CAN J/C1)</ptxt>
+</item>
+<item>
+<ptxt>Wiring Harness Connector (CAN J/C2)</ptxt>
+</item>
+<item>
+<ptxt>Wiring Harness Connector (CAN J/C3)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000005RU01NX_02" type-id="32" category="03" proc-id="RM0550J___00000B200001">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B162444J02" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="B162445J02" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<atten4>
+<ptxt>2WD models equipped with neither pre-crash safety nor radar cruise control have no CAN gateway ECU wiring.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000005RU01NX_03" type-id="51" category="05" proc-id="RM0550J___00000B300001">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When measuring the resistance of the CAN bus, turn the IG OFF, confirm that warning functions such as the key reminder warning system are not operating, and leave the vehicle for 1 minutes or more without operating the key or switches or opening/closing the doors before starting measurement. If it is necessary to open a door during inspection, open it beforehand.</ptxt>
+</atten3>
+<atten4>
+<ptxt>When disconnecting a connector, check that the connector terminals and connector case are free of damage, deformation, corrosion, etc.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000005RU01NX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000005RU01NX_04_0001" proc-id="RM0550J___00000B400001">
+<testtitle>CAN Bus Line Short Circuit Inspection (DLC3 Branch Line)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect the CAN J/C2 connector.</ptxt>
+<figure>
+<graphic graphicname="I103137J04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the terminals of DLC3.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.03in"/>
+<colspec colname="COL2" colwidth="1.05in"/>
+<colspec colname="COL3" colwidth="1.05in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>6(CANH) - 14(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0101" fin="false">OK</down>
+<right ref="RM0000005RU01NX_04_0148" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0101" proc-id="RM0550J___00007O800001">
+<testtitle>Connect Connector</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the CAN J/C2 connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0102" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0102" proc-id="RM0550J___00007O900001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C1 Connection Line)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect the CAN J/C1 connector.</ptxt>
+<figure>
+<graphic graphicname="I103137J04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the terminals of DLC3.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.93in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<colspec colname="COL3" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>6(CANH) - 14(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>108 to 132Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0103" fin="false">OK</down>
+<right ref="RM0000005RU01NX_04_0110" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0103" proc-id="RM0550J___00007OA00001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C1 - EFI ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus main line terminals between CAN J/C1 and the EFI ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J40" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.83in"/>
+<colspec colname="COL2" colwidth="1.17in"/>
+<colspec colname="COL3" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>10(CANH) - 21(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>108 to 132Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0104" fin="false">OK</down>
+<right ref="RM0000005RU01NX_04_0106" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0104" proc-id="RM0550J___00007OB00001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C1 - VSC ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C1 and the VSC ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J41" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.86in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<colspec colname="COL3" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>8(CANH) - 19(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0105" fin="true">OK</down>
+<right ref="RM0000005RU01NX_04_0108" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0105">
+<testtitle>Replace CAN J/C (CAN J/C1)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0106" proc-id="RM0550J___00007OC00001">
+<testtitle>CAN Bus Line Short Circuit Inspection (EFI ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect connector B of the engine control computer (EFI ECU).</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus main line terminals between CAN J/C1 and the EFI ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J40" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.75in"/>
+<colspec colname="COL2" colwidth="1.19in"/>
+<colspec colname="COL3" colwidth="1.19in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>10(CANH) - 21(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0107" fin="true">OK</down>
+<right ref="RM0000005RU01NX_04_0149" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0107">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADG003X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0108" proc-id="RM0550J___00007OD00001">
+<testtitle>CAN Bus Line Short Circuit Inspection (VSC ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect the ABS &amp; traction control computer (VSC ECU) connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C1 and the VSC ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J41" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.81in"/>
+<colspec colname="COL2" colwidth="1.16in"/>
+<colspec colname="COL3" colwidth="1.16in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>8(CANH) -19(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0109" fin="true">OK</down>
+<right ref="RM0000005RU01NX_04_0150" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0109">
+<testtitle>Replace ABS &amp; Traction Actuator Assembly<xref label="Seep01" href="RM00000304U000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0110" proc-id="RM0550J___00007OE00001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C1 - CAN J/C3)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect the CAN J/C3 connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus main line terminals of CAN J/C1 and CAN J/C3.</ptxt>
+<figure>
+<graphic graphicname="C147146J42" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.82in"/>
+<colspec colname="COL2" colwidth="1.17in"/>
+<colspec colname="COL3" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>9(CANH) -20(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0111" fin="false">OK</down>
+<right ref="RM0000005RU01NX_04_0151" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0111" proc-id="RM0550J___00007OF00001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C3 Connection Line)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the terminals of DLC3.</ptxt>
+<figure>
+<graphic graphicname="I103137J04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.82in"/>
+<colspec colname="COL2" colwidth="1.17in"/>
+<colspec colname="COL3" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>6(CANH) - 14(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>108 to 132Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0112" fin="false">OK</down>
+<right ref="RM0000005RU01NX_04_0119" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0112" proc-id="RM0550J___00007OG00001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C3 - Accessory Bus Buffer)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C3 and the accessory bus buffer.</ptxt>
+<figure>
+<graphic graphicname="C147146J43" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.86in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<colspec colname="COL3" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>7(H) - 18(L)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0113" fin="false">OK</down>
+<right ref="RM0000005RU01NX_04_0115" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0113" proc-id="RM0550J___00007SY00001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C3 - Main Body ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C3 and the main body ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J44" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.94in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>8(CANH) - 19(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0114" fin="true">OK</down>
+<right ref="RM0000005RU01NX_04_0117" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0114">
+<testtitle>Replace CAN J/C (CAN J/C3)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0115" proc-id="RM0550J___00007SZ00001">
+<testtitle>CAN Bus Line Short Circuit Inspection (Accessory Bus Buffer)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>With the IG OFF, disconnect the accessory bus buffer connector from the dealer-installed option.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C3 and the accessory bus buffer.</ptxt>
+<figure>
+<graphic graphicname="C147146J43" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.85in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<colspec colname="COL3" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>7(H) - 18(L)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0116" fin="true">OK</down>
+<right ref="RM0000005RU01NX_04_0152" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0116">
+<testtitle>Optional Equipment Check</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0117" proc-id="RM0550J___00007T000001">
+<testtitle>CAN Bus Line Short Circuit Inspection (Main Body ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect connector A from the instrument panel junction block assembly (main body ECU).</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C3 and the main body ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J44" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.85in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<colspec colname="COL3" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>8(CANH) - 19(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0118" fin="true">OK</down>
+<right ref="RM0000005RU01NX_04_0153" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0118">
+<testtitle>Replace Instrument Panel Junction Block Assembly</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0119" proc-id="RM0550J___00007T100001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C3 - CAN J/C2)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect the CAN J/C2 connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus main line terminals between CAN J/C No.3 and CAN J/C2.</ptxt>
+<figure>
+<graphic graphicname="C147146J45" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.82in"/>
+<colspec colname="COL2" colwidth="1.19in"/>
+<colspec colname="COL3" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>9(H) - 20(L)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0120" fin="false">OK</down>
+<right ref="RM0000005RU01NX_04_0154" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0120" proc-id="RM0550J___00007T200001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C2 - Steering Sensor)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C2 and the steering sensor.</ptxt>
+<figure>
+<graphic graphicname="C147146J46" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.82in"/>
+<colspec colname="COL2" colwidth="1.18in"/>
+<colspec colname="COL3" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>5(CANH) - 16(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0121" fin="false">OK</down>
+<right ref="RM0000005RU01NX_04_0129" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0121" proc-id="RM0550J___00007T300001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C2 - Yaw Rate Sensor)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C2 and the yaw rate sensor.</ptxt>
+<figure>
+<graphic graphicname="C147146J47" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.86in"/>
+<colspec colname="COL2" colwidth="1.18in"/>
+<colspec colname="COL3" colwidth="1.09in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>6(CANH) - 17(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0122" fin="false">OK</down>
+<right ref="RM0000005RU01NX_04_0131" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0122" proc-id="RM0550J___00007TX00001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C2 - EPS ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C2 and the EPS ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J48" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.85in"/>
+<colspec colname="COL2" colwidth="1.19in"/>
+<colspec colname="COL3" colwidth="1.09in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3(CANH) - 14(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0123" fin="false">OK</down>
+<right ref="RM0000005RU01NX_04_0133" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0123" proc-id="RM0550J___00007TY00001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C2 - A/B ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C2 and the A/B ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J49" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.74in"/>
+<colspec colname="COL2" colwidth="1.23in"/>
+<colspec colname="COL3" colwidth="1.16in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>9(CANH) - 20(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0124" fin="false">OK</down>
+<right ref="RM0000005RU01NX_04_0135" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0124" proc-id="RM0550J___00007TZ00001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C2 - A/C ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C2 and the A/C ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J50" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.79in"/>
+<colspec colname="COL2" colwidth="1.17in"/>
+<colspec colname="COL3" colwidth="1.17in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>4(CANH) - 15(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0125" fin="false">OK</down>
+<right ref="RM0000005RU01NX_04_0137" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0125" proc-id="RM0550J___00007U000001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C2 - Meter ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C2 and the meter ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J51" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.75in"/>
+<colspec colname="COL2" colwidth="1.19in"/>
+<colspec colname="COL3" colwidth="1.19in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2(CANH) - 13(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0126" fin="false">OK</down>
+<right ref="RM0000005RU01NX_04_0139" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0126" proc-id="RM0550J___00007U100001">
+<testtitle>Vehicle Check</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the vehicle specifications.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.97in"/>
+<colspec colname="COL2" colwidth="1.16in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Specifications</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Models without HDD Navigation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Models with HDD Navigation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0127" fin="false">A</down>
+<right ref="RM0000005RU01NX_04_0141" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0127" proc-id="RM0550J___00007U200001">
+<testtitle>Vehicle Check</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the vehicle specifications.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.99in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Specifications</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Models without PSB and ACC or 2WD Models</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Models with PSB and ACC or 4WD Models</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0128" fin="true">A</down>
+<right ref="RM0000005RU01NX_04_0142" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0128">
+<testtitle>Replace CAN J/C (CAN J/C2)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0129" proc-id="RM0550J___00007U300001">
+<testtitle>CAN Bus Line Short Circuit Inspection (Steering Sensor)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect the connector from the steering sensor.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C2 and the steering sensor.</ptxt>
+<figure>
+<graphic graphicname="C147146J46" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.85in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<colspec colname="COL3" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>5(CANH) - 16(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0130" fin="true">OK</down>
+<right ref="RM0000005RU01NX_04_0155" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0130">
+<testtitle>Replace Steering Sensor<xref label="Seep01" href="RM000004CNP000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0131" proc-id="RM0550J___00007U400001">
+<testtitle>CAN Bus Line Short Circuit Inspection (Yaw Rate Sensor)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect the connector from the yaw rate sensor.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C2 and the yaw rate sensor.</ptxt>
+<figure>
+<graphic graphicname="C147146J47" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.86in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<colspec colname="COL3" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>6(CANH) - 17(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0132" fin="true">OK</down>
+<right ref="RM0000005RU01NX_04_0156" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0132">
+<testtitle>Replace yaw rate sensor assembly<xref label="Seep01" href="RM000003053000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0133" proc-id="RM0550J___00007U500001">
+<testtitle>CAN Bus Line Short Circuit Inspection (EPS ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect the connector from the EPS ECU.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C2 and the EPS ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J48" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.83in"/>
+<colspec colname="COL2" colwidth="1.16in"/>
+<colspec colname="COL3" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3(CANH) - 14(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0134" fin="true">OK</down>
+<right ref="RM0000005RU01NX_04_0157" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0134">
+<testtitle>Replace Power Steering Computer Assembly<xref label="Seep01" href="RM000004BYJ000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0135" proc-id="RM0550J___00007U600001">
+<testtitle>CAN Bus Line Short Circuit Inspection (A/B ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect the connector from the A/B ECU.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C2 and the A/B ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J49" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.79in"/>
+<colspec colname="COL2" colwidth="1.18in"/>
+<colspec colname="COL3" colwidth="1.16in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>9(CANH) - 20(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0136" fin="true">OK</down>
+<right ref="RM0000005RU01NX_04_0158" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0136">
+<testtitle>Replace Airbag Computer Assembly<xref label="Seep01" href="RM000002RQZ002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0137" proc-id="RM0550J___00007U700001">
+<testtitle>CAN Bus Line Short Circuit Inspection (A/C ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect connector A from the A/C ECU.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C2 and the A/C ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J50" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.75in"/>
+<colspec colname="COL2" colwidth="1.19in"/>
+<colspec colname="COL3" colwidth="1.19in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>4(CANH) - 15(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0138" fin="true">OK</down>
+<right ref="RM0000005RU01NX_04_0159" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0138">
+<testtitle>Replace Air Conditioner Amplifier Assembly<xref label="Seep01" href="RM00000213Z002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0139" proc-id="RM0550J___00007U800001">
+<testtitle>CAN Bus Line Short Circuit Inspection (Meter)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect the connector from the meter.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C2 and the meter.</ptxt>
+<figure>
+<graphic graphicname="C147146J51" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.82in"/>
+<colspec colname="COL2" colwidth="1.15in"/>
+<colspec colname="COL3" colwidth="1.16in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2(CANH) - 13(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0140" fin="true">OK</down>
+<right ref="RM0000005RU01NX_04_0160" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0140">
+<testtitle>Replace Combination Meter Assembly<xref label="Seep01" href="RM000002C0F001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0141" proc-id="RM0550J___00007U900001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C2 - Navigation ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus terminals between CAN J/C2 and the navigation ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J52" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.82in"/>
+<colspec colname="COL2" colwidth="1.17in"/>
+<colspec colname="COL3" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>11(H) - 22(L)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0142" fin="false">OK</down>
+<right ref="RM0000005RU01NX_04_0144" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0142" proc-id="RM0550J___00007UA00001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN J/C2 - CAN Gateway ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C2 and the CAN gateway ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J53" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.85in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<colspec colname="COL3" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>8(CANH) - 19(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0143" fin="true">OK</down>
+<right ref="RM0000005RU01NX_04_0146" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0143">
+<testtitle>Replace CAN J/C (CAN J/C2)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0144" proc-id="RM0550J___00007UB00001">
+<testtitle>CAN Bus Line Short Circuit Inspection (Navigation ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect connector D from the navigation receiver assembly (navigation ECU).</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C2 and the navigation receiver assembly (navigation ECU).</ptxt>
+<figure>
+<graphic graphicname="C147146J52" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.81in"/>
+<colspec colname="COL2" colwidth="1.16in"/>
+<colspec colname="COL3" colwidth="1.16in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>11(H) - 22(L)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0145" fin="true">OK</down>
+<right ref="RM0000005RU01NX_04_0161" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0145">
+<testtitle>Replace navigation receiver assembly (navigation ECU)<xref label="Seep01" href="RM000001XG4006X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0146" proc-id="RM0550J___00007UC00001">
+<testtitle>CAN Bus Line Short Circuit Inspection (CAN Gateway ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG OFF and disconnect the connector from the CAN gateway ECU.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between the V bus branch line terminals between CAN J/C2 and the CAN gateway ECU.</ptxt>
+<figure>
+<graphic graphicname="C147146J53" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.85in"/>
+<colspec colname="COL2" colwidth="1.15in"/>
+<colspec colname="COL3" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>8(CANH) - 19(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005RU01NX_04_0147" fin="true">OK</down>
+<right ref="RM0000005RU01NX_04_0162" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0147">
+<testtitle>Replace network gateway computer<xref label="Seep01" href="RM000002RWT004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0148">
+<testtitle>Replace DLC branch line or connector</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0149">
+<testtitle>Repair or replace CAN bus main line or connector (CAN J/C1 - EFI ECU)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0150">
+<testtitle>Repair or replace CAN bus branch line or connector (CAN J/C1 - VSC ECU)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0151">
+<testtitle>Repair or replace CAN bus main line or connector (CAN J/C1 - CAN J/C3)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0152">
+<testtitle>Repair or replace CAN bus branch line or connector (CAN J/C3 - accessory bus buffer)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0153">
+<testtitle>Repair or replace CAN bus branch line or connector (CAN J/C3 - main body ECU)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0154">
+<testtitle>Repair or replace CAN bus main line or connector (CAN J/C3 - CAN J/C2)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0155">
+<testtitle>Repair or replace CAN bus branch line or connector (CAN J/C2 - steering sensor)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0156">
+<testtitle>Repair or replace CAN bus branch line or connector (CAN J/C2 - yaw rate sensor)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0157">
+<testtitle>Repair or replace CAN bus branch line or connector (CAN J/C2 - EPS ECU)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0158">
+<testtitle>Repair or replace CAN bus branch line or connector (CAN J/C2 - A/B ECU)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0159">
+<testtitle>Repair or replace CAN bus branch line or connector (CAN J/C2 - A/C ECU)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0160">
+<testtitle>Repair or replace CAN bus branch line or connector (CAN J/C2 - meter ECU)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0161">
+<testtitle>Repair or replace CAN bus branch line or connector (CAN J/C2 - navigation receiver assembly)</testtitle>
+</testgrp>
+<testgrp id="RM0000005RU01NX_04_0162">
+<testtitle>Repair or replace CAN bus branch line or connector (CAN J/C2 - CAN gateway ECU)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

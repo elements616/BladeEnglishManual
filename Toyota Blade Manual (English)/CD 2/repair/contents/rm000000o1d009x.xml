@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002S_S000E" variety="S000E">
+<name>Vehicle Surroundings Monitor</name>
+<ttl id="1002S_S000E_742B9_T003J" variety="T003J">
+<name>Intelligent Parking Assist System</name>
+<para id="RM000000O1D009X" category="C" type-id="8038Y" name-id="672E0-00" from="200612" to="200912">
+<dtccode>C1611</dtccode>
+<dtcname>ECU Malfunction</dtcname>
+<subpara id="RM000000O1D009X_04" type-id="33" category="03" proc-id="RM0550J___00007LN00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when the television camera controller determines through its self-diagnosis that there is an internal circuit malfunction.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1611</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Sub-CPU Communication Malfunction</ptxt>
+</item>
+<item>
+<ptxt>Calculation malfunction detected</ptxt>
+</item>
+<item>
+<ptxt>High-speed RAM Check Malfunction</ptxt>
+</item>
+<item>
+<ptxt>Normal RAM Check Malfunction</ptxt>
+</item>
+<item>
+<ptxt>ROM SUM Check Malfunction</ptxt>
+</item>
+<item>
+<ptxt>IPA Application Cycle Malfunction</ptxt>
+</item>
+<item>
+<ptxt>Mirror Check Malfunction</ptxt>
+</item>
+<item>
+<ptxt>FPU Calculation Malfunction</ptxt>
+</item>
+<item>
+<ptxt>EEPROM malfunction (initial read error)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Television Camera Controller</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000O1D009X_05" type-id="51" category="05" proc-id="RM0550J___00007LO00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When the battery terminal is disconnected, perform the setting operations required when the battery terminal is removed and installed. (see <xref label="Seep01" href="RM000001LYW00PX"/>)</ptxt>
+</item>
+<item>
+<ptxt>Depending on the parts replaced or the work performed during inspection, registration settings for other systems may be necessary in addition to the intelligent parking assist system. (see <xref label="Seep02" href="RM00000304S000X"/>)</ptxt>
+</item>
+</list1>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000O1D009X_06" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000O1D009X_06_0004" proc-id="RM0550J___00007LP00000">
+<testtitle>Recheck DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Check DTC</ptxt>
+<test2>
+<ptxt>Using SST (TaSCAN), read the DTCs by following the screen display. (see <xref label="Seep01" href="RM000000OCQ007X"/>)</ptxt>
+</test2>
+<test2>
+<ptxt>Select "Clear" on the screen to clear the data. </ptxt>
+</test2>
+<test2>
+<ptxt>Turn IG OFF.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Recheck DTC</ptxt>
+<test2>
+<ptxt>Start the engine, check the DTCs again, and proceed to the following destination.</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No DTC Output (Normal)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>"C1611" is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000O1D009X_06_0006" fin="true">A</down>
+<right ref="RM000000O1D009X_06_0005" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000O1D009X_06_0005">
+<testtitle>Replace Television Camera Controller<xref label="Seep01" href="RM000000MZ5001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000O1D009X_06_0006">
+<testtitle>Perform Problem Reproduction Test<xref label="Seep01" href="RM000000ABY03DX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

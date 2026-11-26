@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY c5930034e SYSTEM "grph_ent/c5930034e.png" NDATA png>
+<!ENTITY c5930059e SYSTEM "grph_ent/c5930059e.png" NDATA png>
+
+<!ENTITY T120021A811 SYSTEM "t478120021a811.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120021A811S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120021A811" UPDATE = "ORIGINAL" LDUP = "9May2006"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>HDD Navigation Audio Mode Functions</TITLE>
+<LIST1><TITLE>Audio Mode Screen</TITLE>
+<ITEM><PTXT>By selecting the "Audio" button on the start screen while using the audio, the screen changes to the audio mode screen, where the operating status and operation of music sources (AM/FM radio, CD, etc.) and audio adjustments such as sound quality and volume balance can be performed.</PTXT></ITEM>
+<ITEM><PTXT>Music sources have been enhanced by supporting WMA (Windows Media Audio)/MP3 (MPEG1 Audio Layer3) and adopting a sound library that allows music CDs to be recorded on the built-in HDD.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930034e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+<LIST1><TITLE>Sound Library</TITLE>
+<ITEM><PTXT>Up to 2000 songs<HINTREF REFID = "H478120021A81101"/> from music CDs can be recorded onto the built-in HDD. Recorded music is managed in 4 play modes (artist, recording date, genre, my best), and the desired music can be easily searched for and played from these.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478120021A81101">Depending on the recording time, recording quality, free space on the HDD, etc., it may not be possible to record 2000 songs.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930059e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</PARA>
+</SECTION>

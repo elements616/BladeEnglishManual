@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002T_S000D" variety="S000D">
+<name>Other Electrical</name>
+<ttl id="1002T_S000D_742B1_T003C" variety="T003C">
+<name>ETC System</name>
+<para id="RM000001USD016X" category="L" type-id="30021" name-id="CM0B8-18" from="200912">
+<name>Precautions</name>
+<subpara id="RM000001USD016X_z0" proc-id="RM0550J___0000I9P00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Precautions for ETC System</ptxt>
+<step2>
+<ptxt>Handling of ETC Card</ptxt>
+<step3>
+<ptxt>ETC cards are made of a heat-resistant polyester resin developed so that the card can remain in use while inserted in the ETC on-board unit. If left in a vehicle under the hot sun, the card may be damaged.</ptxt>
+</step3>
+<step3>
+<ptxt>Data is read from and written to the ETC card when the ETC card is inserted, when passing through an ETC gate, when communicating with antennas installed on main lanes and ramps, and when checking the usage history. If the ETC card is removed from the on-board unit at this time, the data in the ETC card may be damaged.</ptxt>
+</step3>
+<step3>
+<ptxt>If the ETC card is left in the vehicle when leaving the vehicle, it may be stolen.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not insert anything other than a properly issued ETC card into the on-board unit.</ptxt>
+</step3>
+<step3>
+<ptxt>If a problem occurs with the ETC card, contact the ETC card issuer.</ptxt>
+</step3>
+<step3>
+<ptxt>If communication with the roadside unit does not end normally when passing through an ETC gate, follow the instructions of the ETC gate attendant.</ptxt>
+</step3>
+<step3>
+<ptxt>If an expired ETC card is inserted into the ETC on-board unit, the multi-display voice announces "Bong, the ETC card has expired". However, the on-board unit displays usable (*).</ptxt>
+<atten4>
+<ptxt>*: When usable, the green indicator on the ETC on-board unit comes on, and "ETC Card Inserted" is displayed on the ETC menu screen of the HDD navigation system.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>ETC Card Processing</ptxt>
+<step3>
+<ptxt>On toll roads that use an entrance ticket system, if writing to the ETC card fails after passing through an ETC gate, the following occurs.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>When writing to the ETC card fails at the entrance gate</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When writing to the ETC card fails at the exit gate</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The gate bar does not open at the exit gate, so the ETC card must be handed to the attendant at the toll booth (exit or ticket inspection booth) for processing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ETC can still be used afterwards, but the usage history for which writing failed is not recorded on the ETC card</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+<step2>
+<ptxt>Setup</ptxt>
+<step3>
+<ptxt>When using ETC for the first time after purchase, the ETC on-board unit must be registered using a setup card.</ptxt>
+</step3>
+<step3>
+<ptxt>During setup, the information on the vehicle inspection certificate is written to the ETC on-board unit. Therefore, when the ETC on-board unit is installed in a different vehicle or the contents of the vehicle inspection certificate change, a new application must be made to ORSE (Organization for Road System Enhancement) and the unit must be set up again.</ptxt>
+</step3>
+<step3>
+<ptxt>A separate setup fee is required for setup.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Muting Voice Messages When Not Set Up</ptxt>
+<step3>
+<ptxt>If the ETC on-board unit has not yet been set up, it announces by voice "Beep beep, not set up" when ACC is turned ON. The voice message when not set up can be muted by pressing the "VOL DOWN" switch several times to set the volume to "zero".</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Navigation Antenna Assembly</ptxt>
+<step3>
+<ptxt>The navigation antenna assembly is built into the top of the instrument panel; if there is anything covering the area above the antenna, communication with the roadside unit may not be performed.</ptxt>
+</step3>
+<step3>
+<ptxt>If there is dirt such as snow, mud or bird droppings on the windshield glass, communication with the roadside unit may not be performed normally.</ptxt>
+</step3>
+<step3>
+<ptxt>If stickers or film are applied to the windshield glass, communication with the roadside unit may not be performed normally.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for ETC System Inspection</ptxt>
+<step2>
+<ptxt>ETC On-board Unit Tester</ptxt>
+<step3>
+<ptxt>The ETC on-board unit communicates and exchanges information with roadside units installed at toll gates (radio devices installed at toll road entrances/exits and on main lanes) at a very high frequency of 5.8 GHz. Therefore, since it is difficult to inspect the communication operating state, use an ETC on-board unit tester to inspect the communication operation of the ETC on-board unit.</ptxt>
+<atten3>
+<ptxt>The ETC on-board unit tester does not measure the transmitting/receiving sensitivity of the ETC on-board unit or roadside unit. Therefore, it does not guarantee communication between the ETC on-board unit and roadside unit at toll gates.</ptxt>
+</atten3>
+<atten4>
+<ptxt>Use an ETC on-board unit tester that conforms to the ETC on-board unit tester standard specifications of the JEITA (Japan Electronics and Information Technology Industries Association) ETC promotion committee.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

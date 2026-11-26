@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001I_S000I" variety="S000I">
+<name>Door Lock</name>
+<ttl id="1001I_S000I_744CL_T004H" variety="T004H">
+<name>Smart Entry &amp; Start System (Smart Entry)</name>
+<para id="RM000001ID300CX" category="D" type-id="303FN" name-id="622PR-00" from="200612">
+<name>Customize Function</name>
+<subpara id="RM000001ID300CX_z0" proc-id="RM0550J___00005UV00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Smart Entry Cancel Function</ptxt>
+<step2>
+<ptxt>Smart Entry Cancel</ptxt>
+<step3>
+<ptxt>When cancel is set, the following functions stop operating.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Smart entry control</ptxt>
+</item>
+<item>
+<ptxt>Electrical key transmitter (electronic key) lock-in prevention (cabin and trunk) control </ptxt>
+</item>
+<item>
+<ptxt>Smart Back Door Open Control</ptxt>
+</item>
+<item>
+<ptxt>Smart warning control</ptxt>
+</item>
+</list1>
+</step3>
+</step2>
+<step2>
+<ptxt>Smart Cancel Setting Procedure</ptxt>
+<step3>
+<ptxt>Set the cancel with the following operation. To return from the cancel state, perform the same operation again.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="1.11in"/>
+<colspec colname="COL2" colwidth="5.97in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Procedure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Operation</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Prerequisites</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power OFF, driver door closed, driver door unlocked</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Operation 1</ptxt>
+</entry>
+<entry>
+<ptxt>Perform wireless unlock 1 times</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Operation 2</ptxt>
+</entry>
+<entry>
+<ptxt>Within 5 seconds of performing [Operation 1], open the driver door</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Operation 3</ptxt>
+</entry>
+<entry>
+<ptxt>Within 5 seconds of performing [Operation 2], perform wireless unlock 2 times</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Operation 4</ptxt>
+</entry>
+<entry>
+<ptxt>Within 30 seconds of performing [Operation 3], open → close the driver door 2 times, then open it again (driver door open → close → open → close → open)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Operation 5</ptxt>
+</entry>
+<entry>
+<ptxt>Within 30 seconds of performing [Operation 4], perform wireless unlock 2 times</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Operation 6</ptxt>
+</entry>
+<entry>
+<ptxt>Within 30 seconds of performing [Operation 5], open → close the driver door 1 times, then open it again (driver door open → close → open)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Operation 7</ptxt>
+</entry>
+<entry>
+<ptxt>Within 5 seconds after performing [Operation 6], close the driver door  </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Complete</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When smart cancel is set: Wireless door lock buzzer sounds 2 times "beep, beep"</ptxt>
+<ptxt>When returning from smart cancel: Wireless door lock buzzer sounds 1 time "beep"</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>If the driver door is opened → closed during [Operation 3] or [Operation 5], the cancel operation is aborted.</ptxt>
+</atten3>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740386b SYSTEM "grph_ent/a4740386b.png" NDATA png>
+<!ENTITY a4740161b SYSTEM "grph_ent/a4740161b.png" NDATA png>
+<!ENTITY a4740349b SYSTEM "grph_ent/a4740349b.png" NDATA png>
+<!ENTITY a4740383b SYSTEM "grph_ent/a4740383b.png" NDATA png>
+
+<!ENTITY T120025K532 SYSTEM "t478120025k532.xml">
+<!ENTITY T120025K532K866 SYSTEM "t478120025k532k866.xml">
+<!ENTITY T120025K532K867 SYSTEM "t478120025k532k867.xml">
+<!ENTITY T120025K532K868 SYSTEM "t478120025k532k868.xml">
+<!ENTITY T120025K532K654 SYSTEM "t478120025k532k654.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120025K532S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120025K532" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "Vehicle Outline: Comfort and Usability">
+<TITLE>Multi-information Display</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>All models have a display design that gives consideration to the visibility of the clock display (date/clock display) and the outside temperature display (outside temperature display mode).</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740386b" WIDTH = "6.903in" HEIGHT = "3.181in" />
+</FIGURE>
+<LIST1><TITLE>w/ 2GR-FE Engine</TITLE>
+<ITEM><PTXT>With the adoption of the pre-crash safety system and the radar cruise control system, various display functions have been provided.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T120025K532K866" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Multi-information Display Indications and Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Additions</TITLE>
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "34%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "12%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "53%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Display Function Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Power Source</PTXT>
+<PTXT>Position</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Main Functions</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Radar Cruise Display Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1" ALIGN = "CENTER"><PTXT>ON</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Displays radar cruise control system control information.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Pre-crash Safety Display Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Displays warnings from the pre-crash safety system.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T120025K532K867" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Display Switching Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>If a warning mode, etc. interrupts the display while cruise information is displayed, the display can be switched between that mode and cruise information mode by pressing the DISP (display item selection) switch.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740161b" WIDTH = "6.903in" HEIGHT = "2.153in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K532K868" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Multi-information Display Flow</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The multi-information display shows each mode according to the following flow. For details of the display contents in each mode, refer to the descriptions of each mode shown below.</PTXT></ITEM></LIST1>
+<FIGURE>
+<TITLE>When the pre-crash safety system and radar cruise control system are included</TITLE>
+<GRAPHIC GRAPHICNAME = "a4740349b" WIDTH = "6.847in" HEIGHT = "8.972in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K532K654" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Multi-information Display Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Signals from each vehicle system are input to the meter computer in the combination meter; based on these signals, the meter computer calculates each value displayed in cruise information mode, displays information via the multi-information display, and controls illumination and blinking of the master warning indicator light. In addition, the signal from the DISP (display item selection) switch is input to switch between each display item and display mode.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740383b" WIDTH = "6.903in" HEIGHT = "6.583in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

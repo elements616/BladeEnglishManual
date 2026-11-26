@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T100001A500A747" UPDATE = "ORIGINAL" LDUP = "28Jun2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Ignition Operation</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740012b" WIDTH = "6.903in" HEIGHT = "4.569in" />
+</FIGURE>
+<INDICATE ID = "T100001A500A747I01" INDSW = "OFF">
+<TITLE>Power ON (ACC or IG ON) Operation Description</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>The driver enters the vehicle carrying the electronic key and presses the engine switch without depressing the brake pedal. → The main body ECU recognizes engine switch ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Sends a key ID code verification request to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Generates request signals and sends them to the indoor antennas (front/rear)/luggage room inside antenna.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Indoor antenna (front/rear)/luggage room inside antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Transmits the request signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Electronic Key</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>When it receives the request signal, it returns the ID code including the response code.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Door Control Receiver</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives the ID code from the electronic key and sends it to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Identifies and verifies the ID code, and if inside verification is OK, sends a key verification OK response to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>If the power is OFF, turns the ACC relay ON; if already ACC ON, turns the IG1 and IG2 relays ON. Illuminates the indicator on the engine switch in amber.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>9</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>After confirming that the power mode has changed, if the steering lock is locked, sends a steering unlock command to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Receives the steering unlock command and supplies power to the steering lock motor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>11</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Steering Lock ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>After confirming through the ID code box that the certification ECU is an authorized ECU, unlocks the steering. Sends unlock completion information to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>14</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the steering lock is "unlocked", sends an immobiliser unset command to the ID code box.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>15</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>ID Code Box</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the certification ECU is an authorized ECU, sends an immobiliser unset command to the engine ECU.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A747I02" INDSW = "OFF">
+<TITLE>Engine Start Operation Description</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>16</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>The driver enters the vehicle carrying the electronic key and depresses the brake pedal.</PTXT>
+<PTXT>→ The main body ECU recognizes stop light switch ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Sends a key ID code verification request to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Generates request signals and sends them to the indoor antennas (front/rear)/luggage room inside antenna.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Indoor antenna (front/rear)/luggage room inside antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Transmits the request signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Electronic Key</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>When it receives the request signal, it returns the ID code including the response code.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Door Control Receiver</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives the ID code from the electronic key and sends it to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Identifies and verifies the ID code, and if inside verification is OK, sends a key verification OK response to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>9</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Because the brake pedal is depressed, illuminates the indicator on the engine switch in green.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Press the engine switch. → The main body ECU recognizes engine switch ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After turning the ACC relay ON, turns the IG1 and IG2 relays ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>After confirming that the power mode has changed, if the steering lock is locked, sends a steering unlock command to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Receives the steering unlock command and supplies power to the steering lock motor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>11</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "2"><PTXT>Steering Lock ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "2"><PTXT>After confirming through the ID code box that the certification ECU is an authorized ECU, unlocks the steering. Sends unlock completion information to the certification ECU and main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>13</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>14</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the steering lock is "unlocked", sends an immobiliser unset command to the ID code box.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>15</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>ID Code Box</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the certification ECU is an authorized ECU, sends an immobiliser unset command to the engine ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>17</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>After confirming that the steering lock is "unlocked", sends a start request signal to the engine ECU. After receiving the engine speed, turns off the indicator on the engine switch.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>9</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A747I03" INDSW = "OFF">
+<TITLE>Power ON (ACC or IG ON) Operation (When Electronic Key Battery Is Depleted) Description</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>16</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>The driver enters the vehicle carrying the electronic key and depresses the brake pedal.</PTXT>
+<PTXT>→ The main body ECU recognizes stop light switch ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Sends a key ID code verification request to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Generates request signals and sends them to the indoor antennas (front/rear)/luggage room inside antenna.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Indoor antenna (front/rear)/luggage room inside antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Transmits the request signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>18</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Because there is no response from the electronic key, drives the immobiliser amplifier built into the engine switch.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>19</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Engine Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Radio waves for immobiliser communication are output from the immobiliser amplifier.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>20</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Electronic Key</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Touch the electronic key to the front of the engine switch.</PTXT>
+<PTXT>→ The electronic key receives the radio waves from the engine switch and outputs response radio waves.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>21</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Engine Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives the response radio waves from the electronic key and sends the electronic key ID code to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>Identifies and verifies the ID code from the electronic key, and if verification is OK, sends a key verification OK response to the main body ECU. At the same time, sends a buzzer sounding request signal to the meter ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>22</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Engine Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Move the electronic key away from the engine switch, release the brake pedal, and perform the engine switch ON operation.</PTXT>
+<PTXT>→ The main body ECU recognizes engine switch ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>If the power is OFF, turns the ACC relay ON; if already ACC ON, turns the IG1 and IG2 relays ON. Illuminates the indicator on the engine switch in amber.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>9</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>After confirming that the power mode has changed, if the steering lock is locked, sends a steering unlock command to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Receives the steering unlock command and supplies power to the steering lock motor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>11</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Steering Lock ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>After confirming through the ID code box that the certification ECU is an authorized ECU, unlocks the steering. Sends unlock completion information to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>14</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the steering lock is "unlocked", sends an immobiliser unset command to the ID code box.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>15</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>ID Code Box</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the certification ECU is an authorized ECU, sends an immobiliser unset command to the engine ECU.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A747I04" INDSW = "OFF">
+<TITLE>Engine Start (When Electronic Key Battery Is Depleted) Operation Description</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>16</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>The driver enters the vehicle carrying the electronic key and depresses the brake pedal.</PTXT>
+<PTXT>→ The main body ECU recognizes stop light switch ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Sends a key ID code verification request to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Generates request signals and sends them to the indoor antennas (front/rear)/luggage room inside antenna.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Indoor antenna (front/rear)/luggage room inside antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Transmits the request signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>18</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Because there is no response from the electronic key, drives the immobiliser amplifier built into the engine switch.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>19</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Engine Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Radio waves for immobiliser communication are output from the immobiliser amplifier.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>20</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Electronic Key</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Touch the electronic key to the front of the engine switch.</PTXT>
+<PTXT>→ The electronic key receives the radio waves from the engine switch and outputs response radio waves.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>21</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Engine Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives the response radio waves from the electronic key and sends the electronic key ID code to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>Identifies and verifies the ID code from the electronic key, and if verification is OK, sends a key verification OK response to the main body ECU. At the same time, sends a buzzer sounding request signal to the meter ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>22</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Engine Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Move the electronic key away from the engine switch and perform the engine switch ON operation.</PTXT>
+<PTXT>→ The main body ECU recognizes engine switch ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After turning the ACC relay ON, turns the IG1 and IG2 relays ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>After confirming that the power mode has changed, if the steering lock is locked, sends a steering unlock command to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Receives the steering unlock command and supplies power to the steering lock motor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>11</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "2"><PTXT>Steering Lock ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "2"><PTXT>After confirming through the ID code box that the certification ECU is an authorized ECU, unlocks the steering. Sends unlock completion information to the certification ECU and main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>13</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>14</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the steering lock is "unlocked", sends an immobiliser unset command to the ID code box.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>15</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>ID Code Box</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the certification ECU is an authorized ECU, sends an immobiliser unset command to the engine ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>17</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>After confirming that the steering lock is "unlocked", sends a start request signal to the engine ECU. After receiving the engine speed, turns off the indicator on the engine switch.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>9</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A747I05" INDSW = "OFF">
+<TITLE>Engine Stop, Steering Lock and Immobiliser Set Operation Description</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>When the vehicle is stopped, move the shift position to "P" and press the engine switch.</PTXT>
+<PTXT>→ The main body ECU recognizes shift position "P", engine switch ON and a vehicle speed of 0 km/h.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1" CONSPIC = "0"><PTXT>The main body ECU controls the ACC relay, IG1 relay and IG2 relay OFF and turns off the indicator on the engine switch.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>9</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>14</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>The certification ECU recognizes power OFF and sends an immobiliser set command to the ID code box.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>15</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>ID Code Box</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the certification ECU is an authorized ECU, sends an immobiliser set command to the engine ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>The driver opens the door.</PTXT>
+<PTXT>→ The certification ECU recognizes that the door is open. Sends a steering lock command to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Receives the steering unlock command and supplies power to the steering lock motor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>11</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "2"><PTXT>Steering Lock ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "2"><PTXT>After confirming through the ID code box that the certification ECU is an authorized ECU, locks the steering. Sends lock completion information to the certification ECU and main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>13</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>

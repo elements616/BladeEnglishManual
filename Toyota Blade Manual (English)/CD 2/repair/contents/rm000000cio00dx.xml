@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1000N_S0010" variety="S0010">
+<name>Brake</name>
+<ttl id="1000N_S0010_744Y6_T009R" variety="T009R">
+<name>Rear Brake</name>
+<para id="RM000000CIO00DX" category="A" type-id="8000D" name-id="45113-00" from="200612">
+<name>Inspection</name>
+<subpara id="RM000000CIO00DX_01" type-id="01" category="01">
+<s-1 id="RM000000CIO00DX_01_0006" proc-id="RM0550J___000077I00000">
+<ptxt>Inspect Disc Brake Piston and Cylinder</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check that the side surface and inner surface of the disc brake piston are not damaged.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000CIO00DX_01_0007" proc-id="RM0550J___000077J00000">
+<ptxt>Inspect Disc Brake Pad Thickness</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using a vernier caliper, measure the brake pad thickness.</ptxt>
+<spec>
+<title>Limit</title>
+<specitem>
+<ptxt>1.0mm</ptxt>
+</specitem>
+<subtitle>Reference Value</subtitle>
+<specitem>
+<ptxt>9.5mm (new)</ptxt>
+</specitem>
+</spec>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000CIO00DX_01_0008" proc-id="RM0550J___000077K00000">
+<ptxt>Inspect Rear Disc Brake Pad Support Plate</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>With the rear disc brake pad support plates installed to the disc brake cylinder mounting, clean the brake pad contact surfaces with brake cleaner or equivalent.</ptxt>
+</s2>
+<s2>
+<ptxt>With the rear disc brake pad support plates installed, check for looseness, deformation, cracks, rust and foreign matter that is difficult to remove.</ptxt>
+</s2>
+<s2>
+<ptxt>When installing the disc brake pads, check that the rear disc brake pad support plates have sufficient spring force and the disc brake pads do not easily come off after installation.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000CIO00DX_01_0009" proc-id="RM0550J___000077L00000">
+<ptxt>Inspect Disc Thickness</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using a micrometer, measure the disc thickness.</ptxt>
+<spec>
+<title>Limit</title>
+<specitem>
+<ptxt>8.5mm</ptxt>
+</specitem>
+<subtitle>Reference Value</subtitle>
+<specitem>
+<ptxt>10.0mm (new)</ptxt>
+</specitem>
+</spec>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000CIO00DX_01_0010" proc-id="RM0550J___000077M00000">
+<ptxt>Inspect Disc Runout</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Before inspecting the disc runout, inspect the rear axle hub bearing looseness and the rear axle hub runout.</ptxt>
+<ptxt>(see <xref label="Seep01" href="RM000000UL100CX"/>)</ptxt>
+</s2>
+<s2>
+<ptxt>Align the matchmarks on the disc and axle hub, and secure the disc with the hub nuts.</ptxt>
+<torque>
+<torqueitem>
+<t-value1>103</t-value1>
+<t-value2>1050</t-value2>
+</torqueitem>
+</torque>
+</s2>
+<s2>
+<ptxt>Using a dial indicator, measure the disc runout at 10mm inside the outer edge of the rear disc.  </ptxt>
+<figure>
+<graphic graphicname="C160673" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Limit</title>
+<specitem>
+<ptxt>0.15mm</ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>If the runout exceeds the limit, change the installation position of the disc relative to the axle hub so that the runout is minimized. If the runout still exceeds the limit after changing the position of the disc relative to the axle hub, machine the disc. If the thickness after machining is less than the disc thickness limit, replace the disc with a new one.</ptxt>
+</atten3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- $Id: gen_contents.html,v 1.12 2003/07/08 05:30:43 miya Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - General Paragraph</title>
+
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	parent.display(parent.g_objXml, parent.g_objContentsXsl, disp, null);
+	if (parent.g_category=="M"||parent.g_category=="N") {
+		parent.loadMemoData (document,parent.REPAIR);
+	}
+}
+</script>
+</head>
+<body onLoad="init();">
+	<div id="disp"></div>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>

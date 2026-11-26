@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- $Id: prt_frame.html,v 1.9 2003/07/17 03:55:38 sugita Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Print Diagnosis History</title>
+
+<script src="../../js/util.js"></script>
+<script src="../../js/xml.js"></script>
+<script src="../../js/style.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/scantool.js"></script>
+<script language="javascript">
+//
+//  Contents画面の初期表示
+//  初期化
+//
+var g_hstXsl = initXsl("../../xsl/trb_dag/prt_contents.xsl");
+var g_cttXsl = initXsl("../../xsl/trb_dag/contents.xsl");
+
+function initContents() {
+	var args = window.dialogArguments;
+	if (args == null || args.length != 5) {
+		alert("The parameter is invalid.");
+		return;
+	}
+	var _title  = args[0];
+	var _cttXml = args[1];
+	var _idPath = args[2];
+	var _rsPath = args[3];
+	var _lsid   = args[4];
+	contents.ttl.innerHTML = _title;
+
+	var _h = new Hashtable();
+	var _innerVal = "";
+	for (var i = 0; i < _idPath.length; i++) {
+		_h.put("testid", _idPath[i]);
+		_h.put("testrs", _rsPath[i]);
+		iterateDisplay(_cttXml, g_hstXsl, contents.disp, _h, i==0?true:false);
+	}
+	_h.clear();
+	_h.put("testid", _lsid);
+	iterateDisplay(_cttXml, g_hstXsl, contents.disp, _h, false);
+
+	contents.disp.innerHTML += "<br><hr><br>";
+
+	// add last id's tejyun
+	_h.clear();
+	_h.put("testid", _lsid);
+	iterateDisplay(_cttXml, g_cttXsl, contents.disp, _h, false);
+	disableSeepage(contents.document);
+
+	// add scantool's result
+	for(var i = 0; i <= _idPath.length; i++) {
+		var _crtid = _lsid;
+		if( i != _idPath.length) _crtid = _idPath[i];
+		if(_cttXml.selectNodes("//testgrp[@id='"+ _crtid + "']/scantool").length > 0) {
+			var _retHtml = getScanDispHtml(readResultFile(_crtid));
+			var _itemid  = "scan" + _crtid;
+			if( _retHtml != null && _retHtml.length != 0)
+				contents.disp.all.item(_itemid).innerHTML = _retHtml;
+		}
+	}
+}
+
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="prt_global.html" scrolling="no" noresize frameborder="no">
+	<frame name="contents" src="prt_contents.html" frameborder="no">
+</frameset>
+<noframes>
+	<body>Please use a browser that supports frames</body>
+</noframes>
+</html>

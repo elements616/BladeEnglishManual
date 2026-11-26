@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1002M_S001G" variety="S001G">
+<name>Pre-crash Safety</name>
+<ttl id="1002M_S001G_74WT7_T00FP" variety="T00FP">
+<name>Pre-crash Safety System</name>
+<para id="RM000004B48000X" category="C" type-id="801HX" name-id="540N6-01" from="200810">
+<dtccode>B2071/41</dtccode>
+<dtcname>Stop Light Drive Relay Malfunction</dtcname>
+<subpara id="RM000004B48000X_01" type-id="31" category="03" proc-id="RM0550J___0000I9A00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when the distance control computer detects a stop light switch relay malfunction and transmits it to the seat belt control computer via CAN communication.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.07in"/>
+<colspec colname="COL2" colwidth="2.78in"/>
+<colspec colname="COL3" colwidth="3.23in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2071/41</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When stop light relay malfunctions</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Radar cruise control system</ptxt>
+</item>
+<item>
+<ptxt>Seat Belt Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000004B48000X_02" type-id="32" category="03" proc-id="RM0550J___0000I9B00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E171455J03" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000004B48000X_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000004B48000X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000004B48000X_04_0001" proc-id="RM0550J___0000I9C00000">
+<testtitle>Inspect Fuse (STOP, ECU-IG No.1)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance of the fuse.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>STOP Fuse</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECU-IG No.1 Fuse</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>If the fuse blows again, a short to GND in the power supply circuit is suspected.</ptxt>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM000004B48000X_04_0002" fin="false">OK</down>
+<right ref="RM000004B48000X_04_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000004B48000X_04_0002" proc-id="RM0550J___0000I9D00000">
+<testtitle>Inspect Stop Light Operation</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the IG ON, depress the brake pedal, and check that the stop lights come on.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Stop lights come on</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000004B48000X_04_0006" fin="false">OK</down>
+<right ref="RM000004B48000X_04_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000004B48000X_04_0006" proc-id="RM0550J___0000I9E00000">
+<testtitle>Inspect BRAKE LP Relay</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Remove the brake light relay.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<figure>
+<graphic graphicname="E106511" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.03in"/>
+<colspec colname="COL2" colwidth="2.07in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - 4</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 4</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>When battery voltage is applied between terminals 1 and 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000004B48000X_04_0007" fin="false">OK</down>
+<right ref="RM000004B48000X_04_0013" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000004B48000X_04_0007" proc-id="RM0550J___0000I9F00000">
+<testtitle>Inspect Wire Harness and Connector (Battery - BRAKE LP Relay)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, refer to <xref label="Seep01" href="RM0000005D7044X"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage of each terminal of the relay block.</ptxt>
+<figure>
+<graphic graphicname="C160326J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2 (RLY+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>5 (ST+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000004B48000X_04_0008" fin="false">OK</down>
+<right ref="RM000004B48000X_04_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000004B48000X_04_0008" proc-id="RM0550J___0000I9G00000">
+<testtitle>Inspect Wire Harness and Connector (BRAKE LP Relay, Stop Light Control Relay - ABS &amp; Traction Actuator Assembly)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, refer to <xref label="Seep02" href="RM0000005D7044X"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the ABS &amp; traction actuator assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the BRAKE LP relay has been removed from the engine room relay block.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the stop light control relay connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals of the vehicle wire harness. (For terminals, refer to <xref label="Seep01" href="RM0000006E900JX"/>)</ptxt>
+<figure>
+<graphic graphicname="C221145J01" width="2.775699831in" height="6.791605969in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1(RLY-) - A31(STP0)</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3(STPL) - A2(STP)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2(STP) - A22(STP2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1 (RLY-) - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2 (STP) - Body ground</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000004B48000X_04_0009" fin="false">OK</down>
+<right ref="RM000004B48000X_04_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000004B48000X_04_0009" proc-id="RM0550J___0000I9H00000">
+<testtitle>Replace ABS &amp; Traction Actuator Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the ABS &amp; traction actuator assembly with a new one. (For the procedure, refer to <xref label="Seep01" href="RM00000304V000X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000004B48000X_04_0010" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000004B48000X_04_0010" proc-id="RM0550J___0000I9I00000">
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), follow the prompts on the screen to display the "System Diagnosis Menu/Pre-crash" screen, and select "DTC".</ptxt>
+</test1>
+<test1>
+<ptxt>Select "Clear" on the screen to clear the data. (For the procedure, refer to <xref label="Seep01" href="RM0000006EM00JX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Follow the prompts on the SST (TaSCAN) screen to display the "System Diagnosis Menu/Pre-crash" screen, and select "DTC". (For the procedure, refer to <xref label="Seep02" href="RM0000006EM00JX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Check for DTCs again.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.10in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC B2071 is not output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC B2071 is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000004B48000X_04_0015" fin="true">A</down>
+<right ref="RM000004B48000X_04_0016" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000004B48000X_04_0011">
+<testtitle>Replace Fuse</testtitle>
+</testgrp>
+<testgrp id="RM000004B48000X_04_0012">
+<testtitle>Inspect stop light circuit<xref label="Seep01" href="RM000004B1M000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000004B48000X_04_0013">
+<testtitle>Replace BRAKE LP Relay</testtitle>
+</testgrp>
+<testgrp id="RM000004B48000X_04_0014">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000004B48000X_04_0015">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000004B48000X_04_0016">
+<testtitle>Replace Seat Belt Control Computer<xref label="Seep01" href="RM000002SZU002X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="07">
+<name>Steering</name>
+<section id="1000U_S0017" variety="S0017">
+<name>Steering Column</name>
+<ttl id="1000U_S0017_745FR_T00AZ" variety="T00AZ">
+<name>Electric Power Steering System</name>
+<para id="RM000000URO00DX" category="S" type-id="3001E" name-id="480XO-01" from="200612" to="200912">
+<name>Diagnostic Trouble Code Chart</name>
+<subpara id="RM000000URO00DX_z0" proc-id="RM0550J___00005WZ00000">
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>Diagnostic Trouble Code Chart</title>
+<tgroup cols="5" colsep="1" rowsep="1" align="center">
+<colspec colnum="1" colname="1" colwidth="1.42in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="1.42in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.42in" colsep="0"/>
+<colspec colnum="4" colname="4" colwidth="1.42in" colsep="0"/>
+<colspec colnum="5" colname="5" colwidth="1.4in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>Diagnostic Trouble Code (DTC)</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Diagnosis Item</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>Light Illuminated</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Return to Normal Procedure</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>Reference Page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1511/11</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Torque Sensor Malfunction 1</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Turn IG ON again</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000000W9S00DX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1512/11</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Torque Sensor Malfunction 2</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Turn IG ON again</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000000W9S00DX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1513/11</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Torque Sensor Deviation Excessive</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Turn IG ON again</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000000W9S00DX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1514/11</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Torque Sensor Power Supply Voltage Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Turn IG ON again</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000000W9S00DX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1515/15</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Torque Sensor 0 Point Calibration Not Performed</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Perform 0 point calibration</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM0000004TD00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1516/16</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Torque Sensor 0 Point Calibration Incomplete</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Clear DTC</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM0000004TE00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1517/11</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Torque Hold Malfunction Continues</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Turn IG ON again</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000000W9S00DX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1521/25</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Motor Overcurrent Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Turn IG ON again</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000001Z2O007X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1522/25</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Motor Power Supply Sensor Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Turn IG ON again</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM00000250Y004X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1523/24</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Motor Current Deviation Excessive</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Turn IG ON again</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM00000250Y004X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1524/24</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Motor Terminal Voltage Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Turn IG ON again</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM00000250Y004X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1525/17</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Rotation Angle Sensor Output Calibration Not Performed</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Perform rotation angle sensor output calibration</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM0000004TD00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1526/18</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Rotation Angle Sensor Output Calibration Incomplete</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Clear DTC</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM0000004TE00JX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1528/12</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Motor Rotation Angle Sensor Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Turn IG ON again</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM0000022S1007X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1531/25</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>ECU Malfunction 1</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Turn IG ON again</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000001Z2O007X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1532/25</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>ECU Malfunction 2</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Turn IG ON again</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000001Z2O007X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1533/25</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>ECU Internal Temperature Sensor Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>After normal judgment</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000001Z2O007X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1534/25</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>EEPROM Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Turn IG ON again</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000001Z2O007X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1541/13</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Vehicle Speed Signal Malfunction 1</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>After normal judgment</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM00000057F00GX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1551/25</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>IG Power Supply Voltage Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>After normal judgment</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000001YRG007X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1552/22</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>PIG Power Supply Voltage Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>After normal judgment</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000001YRH007X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1554/23</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Power Relay Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Turn IG ON again</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000001Z2O007X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1555/25</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Motor Relay Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Turn IG ON again</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM00000250Y004X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1581/26</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Assist Map Not Written</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>After assist map is selected</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000001YRJ00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>U0100/41</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Engine ECU Communication Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>After communication is restored</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000002GFH005X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>U0129/42</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Brake ECU Communication Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>After communication is restored</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000002GFH005X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>U1105/46</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Parking Assist ECU Communication Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>After communication is restored</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>
+<xref href="RM000002GFH005X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

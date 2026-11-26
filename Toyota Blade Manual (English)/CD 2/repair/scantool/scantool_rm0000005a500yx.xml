@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-db>
+<pub id="RM0550J">
+<servcat id="10">
+<section id="1002P_S0005" variety="S0005">
+<ttl id="1002P_S0005_741K5_T000E" variety="T000E">
+<para id="RM0000005A500YX" category="J" type-id="300N2" name-id="630WS-00" from="200612">
+<subpara id="RM0000005A500YX_06">
+<testgrp id="RM0000005A500YX_06_0015">
+<scantool type="4">
+<parameter key="ecu-id">8</parameter>
+<parameter key="ecu-category-name">ABS/VSC</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">4</parameter>
+<parameter key="pid-id-num">1</parameter>
+<datamonitor no="1">
+<parameter key="pid-id">43</parameter>
+<parameter key="datamonitor-name">Vehicle Speed</parameter>
+</datamonitor>
+</scantool>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-db>

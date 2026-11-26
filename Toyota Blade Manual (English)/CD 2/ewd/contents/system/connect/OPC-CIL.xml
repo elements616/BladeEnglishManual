@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectionList>
+	<connector type="gp" code="FP">
+		<pin>
+			<line id="1" color="W-B">
+				<connector type="conn" code="F51">
+					<pin no="5"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F51">
+		<pin no="8">
+			<line id="2" color="W-B">
+				<connector type="conn" code="F68">
+					<pin no="1"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F68">
+		<pin no="2">
+			<line id="3" color="GR">
+				<connector type="jbc" code="2Q">
+					<pin no="3"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+</connectionList>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002Q_S000F" variety="S000F">
+<name>Navigation</name>
+<ttl id="1002Q_S000F_746OU_T00CJ" variety="T00CJ">
+<name>HDD Navigation System</name>
+<para id="RM000004BQM000X" category="J" type-id="8054I" name-id="653FZ-01" from="200912">
+<dtccode/>
+<dtcname>No Sound Output from Device Connected to AUX Terminal</dtcname>
+<subpara id="RM000004BQM000X_01" type-id="32" category="03" proc-id="RM0550J___0000INC00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E195397J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000004BQM000X_02" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000004BQM000X_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000004BQM000X_03_0001" proc-id="RM0550J___0000INA00000">
+<testtitle>Inspect Wire Harness and Connector (Navigation Receiver Assembly - Stereo Jack Adapter Assembly NO.1)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Pre-inspection Preparation</ptxt>
+<test2>
+<ptxt>Disconnect connector K of the navigation receiver assembly.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the stereo jack adapter assembly NO.1 connector.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals of the vehicle wire harness between the navigation receiver assembly and stereo jack adapter assembly NO.1.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>K8(ADPG) - 9(AUXO)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>K3(VAR+) - 6(ARO)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>K4(VAL+) - 7(ALO)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>K7(VA-) - 8(ASGN)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>K1(AGND) - 10(AGND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each connector terminal of the navigation receiver assembly vehicle side wire harness and body ground.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>K8 (ADPG) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>K3 (VAR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>K4 (VAL+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>K7 (VA-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>K1 (AGND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000004BQM000X_03_0002" fin="false">OK</down>
+<right ref="RM000004BQM000X_03_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000004BQM000X_03_0002" proc-id="RM0550J___0000INB00000">
+<testtitle>Replace Stereo Jack Adapter Assembly NO.1</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Stereo Jack Adapter Assembly NO.1 Swap Inspection</ptxt>
+<test2>
+<ptxt>Prepare a new stereo jack adapter assembly NO.1 and replace it. (see <xref label="Seep01" href="RM000004AZM000X"/>)</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Check if the malfunction recurs.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Returns to normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Malfunction recurs</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000004BQM000X_03_0003" fin="true">A</down>
+<right ref="RM000004BQM000X_03_0005" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000004BQM000X_03_0003">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000004BQM000X_03_0004">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000004BQM000X_03_0005">
+<testtitle>Replace Navigation Receiver Assembly<xref label="Seep01" href="RM000001XG5006X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

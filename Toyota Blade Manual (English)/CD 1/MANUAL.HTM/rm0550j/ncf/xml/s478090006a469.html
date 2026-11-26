@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../_runtime/legacy.css">
+<script src="../../../../../_runtime/compat.js"></script>
+
+<title>Pre-crash Safety System Outline</title>
+<link type="text/css" href="../css/main2.css" rel="stylesheet">
+<link type="text/css" href="../css/style.css" rel="stylesheet">
+<script src="../js/hidden.js" language="JavaScript"></script>
+</head>
+<body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
+<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td align="left"><input onClick="printCheck()" value="Print" name="submit" type="submit"></td><td align="center"> </td><td align="right"><input onClick="closeWindow()" value="Close" name="submit2" type="submit"></td>
+</tr>
+</table>
+<div align="left">
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="blue" width="5%"> </td><td align="center" class="blue" width="80%">Pre-crash Safety System Outline</td><td width="15%" class="blue" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">A pre-crash safety system (radar type) with millimeter wave radar has been adopted and is provided depending on the vehicle specification.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">The pre-crash safety system predicts a collision with a vehicle or obstacle ahead and, before the collision, retracts the seat belts and performs brake assist control and brake control, reducing the impact in a collision.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">During sudden braking, or when the ABS &amp; traction actuator assembly (skid control computer) determines that vehicle control has been lost (spin condition, etc.), the seat belts are retracted to reduce the impact in a collision.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740210c.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006A469I01');chgImg('imT090006A469I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT090006A469I01" align="absmiddle"><a name="t090006a469i01">Main Components and Functions</a></span>
+<br>
+<div id="tmT090006A469I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">Components</div>
+</td><td class="gray3_dark">
+<div class="text">Function</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Millimeter Wave Radar Sensor Assembly</div>
+</td><td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Transmits and receives millimeter waves to recognize obstacles.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Distance Control Computer Assembly</div>
+</td><td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Determines whether a collision is unavoidable based on information from each sensor, and sends operation request signals to the ABS &amp; traction actuator assembly (skid control computer) and the seat belt control computer.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">ABS &amp; Traction Actuator Assembly (Skid Control Computer)</div>
+</td><td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Sends control signals to the brake actuator based on signals from the distance control computer assembly. In addition, sends the emergency brake operation signal to the seat belt control computer.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Sends the vehicle speed signal to the distance control computer assembly.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Combination Meter Assembly</div>
+</td><td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Informs the driver of the system status.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Seat Belt Control Computer</div>
+</td><td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Performs pre-crash seat belt control based on signals from the distance control computer assembly and the ABS &amp; traction actuator assembly (skid control computer).</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Front Seat Outer Belt Assembly (Pre-crash Seat Belt)</div>
+</td><td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Retracts the seat belt with a motor before a collision.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Front Seat Inner Belt Assembly (Buckle Switch)</div>
+</td><td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Detects whether the seat belt is fastened or unfastened.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Skid Control Buzzer</div>
+</td><td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Sounds before and during pre-crash brake operation.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">Pre-crash System Cancel Switch Assembly</div>
+</td><td class="color1" valign="MIDDLE" align="LEFT">
+<div class="text">When the switch is "ON", pre-crash brake operation is stopped.</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="blue" width="5%"> </td><td align="center" class="blue" width="80%">Related Systems</td><td width="15%" class="blue" align="right"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006A471A495R01');chgImg('imT090006A471A495R01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT090006A471A495R01" align="absmiddle"><a name="t090006a471a495r01">Non-operating Conditions</a></span>
+<br>
+<div id="tmT090006A471A495R01" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The non-operating conditions are as follows.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006A471A495R01I01');chgImg('imT090006A471A495R01I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT090006A471A495R01I01" align="absmiddle"><a name="t090006a471a495r01i01">Non-operating Conditions</a></span>
+<br>
+<div id="tmT090006A471A495R01I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark" colspan="2" rowspan="5" valign="MIDDLE">
+
+<div class="text">Pre-crash Safety System</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">When the vehicle speed is 5km/h or less</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When IG-OFF or IG-ACC</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When there is a system malfunction<a href="#H478090006A471A495R0101"><sup>*1</sup></a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When the pre-crash sensor cannot detect an object as a collision object<a href="#H478090006A471A495R0102"><sup>*2</sup></a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">the detection area of the pre-crash sensor<a href="#H478090006A471A495R0103"><sup>*3</sup></a>When colliding with a collision object outside</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" rowspan="4" valign="MIDDLE">
+<div class="text"></div>
+
+<div class="text">Pre-crash Seat Belt</div>
+
+<div class="text"></div>
+</td><td class="gray3_dark" rowspan="2" valign="MIDDLE">
+<div class="text">Common</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">When the pre-crash system is not operating</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When the seat belt is not fastened</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">Brake Linked</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">When the vehicle speed is 30km/h or less</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">Radar Linked</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">When the relative speed with the collision object is 30km/h or less</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" colspan="2" rowspan="3" valign="MIDDLE">
+
+<div class="text">Pre-crash Brake Assist</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">When the pre-crash system is not operating</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When the vehicle speed is 30km/h or less</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When the driver does not depress the brake</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" colspan="2" rowspan="3" valign="MIDDLE">
+
+<div class="text">Pre-crash Brake</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">When the pre-crash system is not operating</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When the vehicle speed is 15km/h or less</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When the pre-crash brake OFF switch is ON</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">HINT</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="27">*1</td><td class="text"><a name="H478090006A471A495R0101"></a>
+<div class="text">When the system cannot operate due to a system malfunction, "PCS system check" and "PCS currently unavailable" are displayed on the multi-information display.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="27">*2</td><td class="text"><a name="H478090006A471A495R0102"></a>
+<div class="text">Plastic objects such as pylons cannot be detected. In addition, people, bicycles, motorcycles, standing trees, animals, snow walls, etc. may be difficult to detect.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="27">*3</td><td class="text"><a name="H478090006A471A495R0103"></a>
+<div class="text">The millimeter wave radar detects collision objects within a range of ±10° vertically and horizontally from the front of the radar. Therefore, it does not operate in side or rear collisions.</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006A471A496R02');chgImg('imT090006A471A496R02');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT090006A471A496R02" align="absmiddle"><a name="t090006a471a496r02">Other Operating Cases</a></span>
+<br>
+<div id="tmT090006A471A496R02" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">In cases such as the following, the pre-crash sensor may detect an object and the pre-crash safety system may operate even if there is no possibility of a collision; this does not indicate a malfunction.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3940129c.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006A469B');chgImg('imT090006A469B');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_a0.gif" border="0" id="imT090006A469B" align="absmiddle"><a name="t090006a469b">Related Parts</a></span>
+<br>
+<div id="tmT090006A469B" style="display:none">
+<br>
+
+<br>
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Millimeter Wave</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">Millimeter waves are radio waves in a very high frequency band from 30GHz to 300GHz, with an extremely short wavelength in a vacuum of 1 to 10mm. Millimeter waves are not easily affected by conditions such as rain, fog or snow, and provide excellent object recognition performance. A 76GHz band radar is used in the pre-crash safety system.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/k4730075c.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Pre-crash Sensor</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">Obstacles are recognized through the millimeter wave radar, the possibility of a collision is determined, and operation request signals are sent to each computer.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740215c.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006A471A368');chgImg('imT090006A471A368');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT090006A471A368" align="absmiddle"><a name="t090006a471a368">Pre-crash Seat Belt Operation</a></span>
+<br>
+<div id="tmT090006A471A368" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the pre-crash sensor determines that a collision is unavoidable. (Radar linked)</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the driver depresses the brake suddenly. Or when vehicle skidding is determined (brake linked)</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Under normal conditions, the shaft is free due to the clutch mechanism.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When current is applied to the motor and rotation is transmitted through the reduction gear, the clutch engages and the webbing is retracted.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">In addition, after operation, a retraction operation is performed again to release the belt retraction.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/k4730079c.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006A471A369');chgImg('imT090006A471A369');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT090006A471A369" align="absmiddle"><a name="t090006a471a369">Pre-crash Brake Assist Control</a></span>
+<br>
+<div id="tmT090006A471A369" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the pre-crash sensor determines that the possibility of a collision is high, braking pressure is boosted when the driver depresses the brake pedal.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/k4730084c.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">If the brake pedal was depressed before the possibility of a collision was determined to be high, pressure is boosted immediately as soon as the possibility of a collision is determined to be high. However, the assist effect applies only to the additional brake pedal depression amount newly applied by the driver.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/k4730085c.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006A471A370');chgImg('imT090006A471A370');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT090006A471A370" align="absmiddle"><a name="t090006a471a370">Pre-crash Brake Control</a></span>
+<br>
+<div id="tmT090006A471A370" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Operates when the pre-crash sensor detects a collision object such as a preceding vehicle or road structure and determines that a collision is unavoidable.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/k4730081c.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006A471A377');chgImg('imT090006A471A377');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT090006A471A377" align="absmiddle"><a name="t090006a471a377">Operating Range of Each Control</a></span>
+<br>
+<div id="tmT090006A471A377" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The operating range of each control of the pre-crash safety system is as follows.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/k4730080c.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006A471A495');chgImg('imT090006A471A495');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT090006A471A495" align="absmiddle"><a name="t090006a471a495">Non-operating Conditions</a></span>
+<br>
+<div id="tmT090006A471A495" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The non-operating conditions are as follows.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006A471A495I01');chgImg('imT090006A471A495I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT090006A471A495I01" align="absmiddle"><a name="t090006a471a495i01">Non-operating Conditions</a></span>
+<br>
+<div id="tmT090006A471A495I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark" colspan="2" rowspan="5" valign="MIDDLE">
+
+<div class="text">Pre-crash Safety System</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">When the vehicle speed is 5km/h or less</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When IG-OFF or IG-ACC</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When there is a system malfunction<a href="#H478090006A471A49501"><sup>*1</sup></a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When the pre-crash sensor cannot detect an object as a collision object<a href="#H478090006A471A49502"><sup>*2</sup></a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">the detection area of the pre-crash sensor<a href="#H478090006A471A49503"><sup>*3</sup></a>When colliding with a collision object outside</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" rowspan="4" valign="MIDDLE">
+<div class="text"></div>
+
+<div class="text">Pre-crash Seat Belt</div>
+
+<div class="text"></div>
+</td><td class="gray3_dark" rowspan="2" valign="MIDDLE">
+<div class="text">Common</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">When the pre-crash system is not operating</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When the seat belt is not fastened</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">Brake Linked</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">When the vehicle speed is 30km/h or less</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">Radar Linked</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">When the relative speed with the collision object is 30km/h or less</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" colspan="2" rowspan="3" valign="MIDDLE">
+
+<div class="text">Pre-crash Brake Assist</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">When the pre-crash system is not operating</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When the vehicle speed is 30km/h or less</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When the driver does not depress the brake</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" colspan="2" rowspan="3" valign="MIDDLE">
+
+<div class="text">Pre-crash Brake</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">When the pre-crash system is not operating</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When the vehicle speed is 15km/h or less</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">When the pre-crash brake OFF switch is ON</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">HINT</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="27">*1</td><td class="text"><a name="H478090006A471A49501"></a>
+<div class="text">When the system cannot operate due to a system malfunction, "PCS system check" and "PCS currently unavailable" are displayed on the multi-information display.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="27">*2</td><td class="text"><a name="H478090006A471A49502"></a>
+<div class="text">Plastic objects such as pylons cannot be detected. In addition, people, bicycles, motorcycles, standing trees, animals, snow walls, etc. may be difficult to detect.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="27">*3</td><td class="text"><a name="H478090006A471A49503"></a>
+<div class="text">The millimeter wave radar detects collision objects within a range of ±10° vertically and horizontally from the front of the radar. Therefore, it does not operate in side or rear collisions.</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006A471A496');chgImg('imT090006A471A496');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT090006A471A496" align="absmiddle"><a name="t090006a471a496">Other Operating Cases</a></span>
+<br>
+<div id="tmT090006A471A496" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">In cases such as the following, the pre-crash sensor may detect an object and the pre-crash safety system may operate even if there is no possibility of a collision; this does not indicate a malfunction.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3940129c.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Warning Lamp &amp; Indicator</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">Each indicator and warning light is provided in the combination meter assembly.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">When the power is turned ON (IG ON), the PCS indicator light illuminates for 3 seconds for a bulb check.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740222c.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006A230X01');chgImg('imT090006A230X01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT090006A230X01" align="absmiddle"><a name="t090006a230x01">Function List</a></span>
+<br>
+<div id="tmT090006A230X01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">Description</div>
+</td><td class="gray3_dark">
+<div class="text">Multi-information Display</div>
+</td><td class="gray3_dark">
+<div class="text">PCS Indicator Light</div>
+</td><td class="gray3_dark">
+<div class="text">Master Caution Warning Light</div>
+</td><td class="gray3_dark">
+<div class="text">Details</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Pre-crash Braking Advance Warning</div>
+</td><td class="color1" valign="MIDDLE" align="CENTER">
+<img src="../xml/grph_ent/a4740223c.png"><br>
+
+</td><td class="color1" valign="MIDDLE" align="CENTER">
+<div class="text">Blinking</div>
+</td><td class="color1" valign="MIDDLE" align="CENTER">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">Warns that a collision has been determined to be unavoidable and the pre-crash brake will operate.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Pre-crash Seat Belt Malfunction</div>
+</td><td class="color1" rowspan="4" valign="MIDDLE" align="CENTER">
+<img src="../xml/grph_ent/a4740224c.png"><br>
+
+</td><td class="color1" rowspan="4" valign="MIDDLE" align="CENTER">
+
+<div class="text">Illuminated</div>
+</td><td class="color1" rowspan="4" valign="MIDDLE" align="CENTER">
+
+<div class="text">Illuminated</div>
+</td><td class="color1" rowspan="4">
+<div class="text">Warns that control has been prohibited when there is a malfunction in a system or communication has been interrupted for 3 seconds or more. However, control continues for functions whose normal operation can be ensured.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Pre-crash Brake Assist Malfunction</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Pre-crash Brake Malfunction</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Communication Interruption</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Temporarily Unavailable</div>
+</td><td class="color1" valign="MIDDLE" align="CENTER">
+<img src="../xml/grph_ent/a4740225c.png"><br>
+
+</td><td class="color1" valign="MIDDLE" align="CENTER">
+<div class="text">Blinking</div>
+</td><td class="color1" valign="MIDDLE" align="CENTER">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">Informs that the system is temporarily unavailable due to dirt on the millimeter wave radar, overheating of the seat belt control computer, etc.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Pre-crash Brake OFF Switch "ON"</div>
+</td><td class="color1" valign="MIDDLE" align="CENTER">
+<div class="text">-</div>
+</td><td class="color1" valign="MIDDLE" align="CENTER">
+<div class="text">Blinking</div>
+</td><td class="color1" valign="MIDDLE" align="CENTER">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">Informs that the pre-crash system cancel switch assembly is "ON" and pre-crash brake control is OFF.</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Seat Belt Control Computer</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">When the seat belt control computer receives a pre-crash seat belt operation request signal from the distance control computer assembly or the ABS &amp; traction actuator assembly (skid control computer), it operates the internal motor drive circuit to retract the seat belt.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">If a collision does not actually occur even though the pre-crash seat belt has operated, the motor is rotated in reverse to return the belt to its tension before operation.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740226c.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006Ab10A123');chgImg('imT090006Ab10A123');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT090006Ab10A123" align="absmiddle"><a name="t090006ab10a123">Operation of Diagnosis Circuit</a></span>
+<br>
+<div id="tmT090006Ab10A123" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The seat belt control computer detects system malfunctions in 2 ways: a primary check and a constant check.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When a malfunction is detected in the system, a warning is displayed in the combination meter.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740227c.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006Ab10A123I01');chgImg('imT090006Ab10A123I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT090006Ab10A123I01" align="absmiddle"><a name="t090006ab10a123i01">Check Details</a></span>
+<br>
+<div id="tmT090006Ab10A123I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">Check</div>
+</td><td class="gray3_dark">
+<div class="text">Outline</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Primary Check</div>
+</td><td class="color1">
+<div class="text">Performed for 3 seconds when the power is turned ON (IG ON). During the check, the PCS indicator light in the combination meter illuminates. If there is no malfunction, the light turns off and the pre-crash seat belt becomes ready to operate.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Constant Check</div>
+</td><td class="color1">
+<div class="text">After the primary check is completed, the diagnosis circuit in the seat belt control computer constantly checks the system for malfunctions.</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT090006Ab10A367');chgImg('imT090006Ab10A367');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT090006Ab10A367" align="absmiddle"><a name="t090006ab10a367">Diagnosis Function</a></span>
+<br>
+<div id="tmT090006Ab10A367" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">By switching to the diagnosis mode, the diagnosis result for the malfunction location can be displayed by the number of times the indicator light blinks. In addition, a new diagnosis function has been adopted, and the diagnostic trouble code for the malfunction location can be read by connecting a diagnostic tool to DLC3. For details on the diagnosis mode, refer to the Repair Manual.</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Seat Belt Outline</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">The child seat securing mechanism of the rear seat 3-point ELR seat belts has been discontinued.</div>
+</td>
+</tr>
+</table>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+</div>
+</body>
+</html>

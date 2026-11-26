@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002U_S0003" variety="S0003">
+<name>Glass &amp; Window</name>
+<ttl id="1002U_S0003_744BC_T0043" variety="T0043">
+<name>Windshield Glass</name>
+<para id="RM000002YVE000X" category="G" type-id="3001K" name-id="752BJ-00" from="200612">
+<name>Component Inspection</name>
+<subpara id="RM000002YVE000X_01" type-id="01" category="01">
+<s-1 id="RM000002YVE000X_01_0001" proc-id="RM0550J___000023Q00000">
+<ptxt>Inspect Windshield Glass (w/ Cold Area Specification)</ptxt>
+<content1 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<s2>
+<ptxt>Disconnect the front windshield deicer connector.</ptxt>
+<figure>
+<graphic graphicname="B167355" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the connector.</ptxt>
+<figure>
+<graphic graphicname="B163199J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Resistance</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry>
+<ptxt>Condition</ptxt>
+</entry>
+<entry>
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>1(B2) - 2(E)</ptxt>
+</entry>
+<entry>
+<ptxt>Always</ptxt>
+</entry>
+<entry>
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>2(E) - 3(B)</ptxt>
+</entry>
+<entry>
+<ptxt>Always</ptxt>
+</entry>
+<entry>
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

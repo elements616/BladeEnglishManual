@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002S_S000E" variety="S000E">
+<name>Vehicle Surroundings Monitor</name>
+<ttl id="1002S_S000E_742B9_T003J" variety="T003J">
+<name>Intelligent Parking Assist System</name>
+<para id="RM000002A0Z004X" category="N" type-id="8009I" name-id="672DQ-00" from="200612" to="200912">
+<name>Function Inspection</name>
+<subpara id="RM000002A0Z004X_01" type-id="01" category="01">
+<s-1 id="RM000002A0Z004X_01_0002" proc-id="RM0550J___000070M00000">
+<ptxt>Inspect Wheel Speed Sensor Travel Distance Information</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Pre-inspection Preparation</ptxt>
+<s3>
+<ptxt>On a level surface, stop the vehicle with the steering wheel in the straight-ahead position.</ptxt>
+<atten3>
+<ptxt>As this inspection involves moving the vehicle, secure a wide area where the surroundings can be safely monitored.</ptxt>
+</atten3>
+</s3>
+<s3>
+<ptxt>Mark the road surface at the vehicle's stop position with chalk or similar.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Inspect Wheel Speed Sensor Travel Distance Information</ptxt>
+<s3>
+<ptxt>Turn the IG OFF and connect the SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</s3>
+<s3>
+<ptxt>Start the engine and display the "ECU Data Monitor" screen following the SST (TaSCAN) screen display.</ptxt>
+<table pgwide="1">
+<title>[Diagnosis Menu Screen: Chassis → IPA → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.33in"/>
+<colspec colname="COL3" colwidth="2.49in"/>
+<colspec colname="COL4" colwidth="0.84in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RH Wheel Distance Information</ptxt>
+<ptxt>[RWSD]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Right wheel travel distance information (wheel speed pulses) displayed as a number from "0" to "255"</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 255 [pulses]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 pulses = 20.14 mm</ptxt>
+<ptxt>(Varies depending on tire size, inflation pressure and wear condition.)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>LH Wheel Distance Information</ptxt>
+<ptxt>[LWSD]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Left wheel travel distance information (wheel speed pulses) displayed as a number from "0" to "255"</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 255 [pulses]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 pulses = 20.14 mm</ptxt>
+<ptxt>(Varies depending on tire size, inflation pressure and wear condition.)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+<s3>
+<ptxt>Read the right and left wheel travel distance information before driving.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>0</ptxt>
+</specitem>
+</spec>
+</s3>
+<s3>
+<ptxt>With the steering wheel kept straight, drive forward approximately 2 m and stop.</ptxt>
+</s3>
+<s3>
+<ptxt>Mark the road surface at the vehicle's stop position with chalk or similar, and measure the distance between the marks made before and after driving.</ptxt>
+</s3>
+<s3>
+<ptxt>After driving, read the right and left wheel travel distance information again, and check that it nearly matches the distance traveled.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>Nearly matches the distance traveled</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the travel distance information (wheel speed pulses) read with SST (TaSCAN) is "100", the vehicle has moved forward 100 x 20.14mm = 2.014 m (this varies with tire size, inflation pressure and wear condition.).</ptxt>
+</item>
+<item>
+<ptxt>If the travel distance information (wheel speed pulses) exceeds "255", it returns to "0" (0 = 256), so add 256 to the value after driving forward and calculate as follows. Pulse change = After driving forward + 256 - Before driving forward</ptxt>
+</item>
+<item>
+<ptxt>If the right side differs from the actual distance traveled, replace the speed sensor front RH. (see <xref label="Seep01" href="RM00000304Y000X"/>)</ptxt>
+</item>
+<item>
+<ptxt>If the left side differs from the actual distance traveled, replace the speed sensor front LH. (see <xref label="Seep02" href="RM00000304Y000X"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

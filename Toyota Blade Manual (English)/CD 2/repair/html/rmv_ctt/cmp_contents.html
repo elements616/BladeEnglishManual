@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- $Id: cmp_contents.html,v 1.13 2006/06/22 04:50:56 k-narumi Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Component Diagram</title>
+
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script src="../../js/util.js"></script>
+<script src="../../js/svg.js"></script>
+<script language="javascript">
+var g_partId   = null;
+
+//
+//  ローカル画面の初期表示
+//  初期化
+//
+function init() {
+	initSvg( window.self );
+	var args = window.dialogArguments;
+	if (args == null || args.length != 3) {
+		alert("The parameter is invalid.");
+		return;
+	}
+	g_partId = args[0];
+	if (g_partId == null) {
+		alert("No part ID is specified.");
+		return;
+	}
+	var illustId = args[1];
+	if (illustId == null) {
+		alert("No illustration ID is specified.");
+		return;
+	}
+	//alert(" g_partId  ="+g_partId +" illustNode ="+illustId);
+	createSVGInnerHtml(disp, illustId);
+	svgTitle.innerHTML = illustId;
+	var ttlName = args[2];
+	if (ttlName != null) {
+	  var idx = ttlName.lastIndexOf("／");
+	  if (idx > 0) {
+	    ttlName = ttlName.substring(0, idx);
+	  }
+	}
+	ttl.innerHTML = ttlName;
+
+	setIsAcceptEvent( false );
+	setTimeout("hideMessage()", ONLOAD_POLLING_TIME);
+	setTimeout("selectPart()", ONLOAD_POLLING_TIME);
+}
+
+//SVG画像中の部品位置を取り出し、中央に配置されるよう画像をスクロールする。
+//該当する部品の選択した色を変更する。
+function selectPart(){
+	var svgobj = document.all('svgdata');
+	if( g_partId == null){
+		return;
+	}
+	if (svgobj != null) {
+		forceChangeTxtCol( g_partId , svgdata , COLOR_SELECT);
+		centerItem( g_partId , window.self, svgdata);
+	}else{
+		setTimeout("selectPart()", ONLOAD_POLLING_TIME);
+	}
+}
+</script>
+</head>
+<body onLoad="init();">
+<center>
+	<div id="msg" class='message' ><br/><br/><br/>Please wait. 。 。</div>
+	<div id="ttl"></div>
+	<div id="disp"></div>
+</center>
+<div id='svgTitle' class='illustId'></div>
+</body>
+</html>

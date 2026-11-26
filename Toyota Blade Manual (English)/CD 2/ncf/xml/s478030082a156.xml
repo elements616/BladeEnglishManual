@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a3810096p SYSTEM "grph_ent/a3810096p.png" NDATA png>
+<!ENTITY a3810097p SYSTEM "grph_ent/a3810097p.png" NDATA png>
+
+<!ENTITY T030082A156 SYSTEM "t478030082a156.xml">
+<!ENTITY T030082A156A931 SYSTEM "t478030082a156a931.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T030082A156S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T030082A156" UPDATE = "ORIGINAL" LDUP = "19Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Cases</TITLE>
+<LIST1><ITEM><PTXT>High rigidity is ensured by optimum placement of ribs and case shapes using FEM analysis, suppressing deformation due to loads from the gear train. An aluminum alloy case and cover have been adopted to reduce weight.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810096p" WIDTH = "7.028in" HEIGHT = "4.153in" />
+</FIGURE>
+
+<MECA ID = "T030082A156A931" UPDATE = "ORIGINAL" LDUP = "18Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Differential Case</TITLE>
+<LIST1><ITEM><PTXT>The window shape of the differential case is asymmetrical, which is advantageous during driving. This reduces tensile stress concentration during driving, so the allowable torque can be increased while keeping the lightweight 2-pinion type, achieving a significant weight reduction by reducing the number of parts.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810097p" WIDTH = "6.903in" HEIGHT = "4.611in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

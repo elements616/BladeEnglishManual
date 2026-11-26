@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_74Y29_T00I8" variety="T00I8">
+<name>Accelerator Pedal Assembly (2GR-FE)</name>
+<para id="RM0000030GN003X" category="G" type-id="3001K" name-id="066QL-00" from="200708">
+<name>Component Inspection</name>
+<subpara id="RM0000030GN003X_01" type-id="01" category="01">
+<s-1 id="RM0000030GN003X_01_0002" proc-id="RM0550J___0000H3A00000">
+<ptxt>Accelerator Position Sensor Function Inspection</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</s2>
+<s2>
+<ptxt>Turn IG ON.</ptxt>
+</s2>
+<s2>
+<ptxt>Following the screen display, select [ECU Data Monitor] → [Accelerator Sensor No. 1 Voltage (VPA1) and Accelerator Sensor No. 2 Voltage (VPA2)], and check the values when the accelerator pedal is operated.</ptxt>
+<spec>
+<title>Standard</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Abbreviation]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Accelerator Sensor No. 1 Voltage</ptxt>
+<ptxt>[VPA1]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Accelerator pedal fully open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.1 to 4.6 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Accelerator pedal fully closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.4 to 1.4 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Accelerator Sensor No. 2 Voltage</ptxt>
+<ptxt>[VPA2]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Accelerator pedal fully open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.9 to 5.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Accelerator pedal fully closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.0 to 2.2 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

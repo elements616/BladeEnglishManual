@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740096p SYSTEM "../xml/grph_ent/a4740096p.png" NDATA png>
+<!ENTITY a4740097p SYSTEM "../xml/grph_ent/a4740097p.png" NDATA png>
+<!ENTITY a4740098p SYSTEM "../xml/grph_ent/a4740098p.png" NDATA png>
+<!ENTITY a4740053p SYSTEM "../xml/grph_ent/a4740053p.png" NDATA png>
+<!ENTITY a4740099p SYSTEM "../xml/grph_ent/a4740099p.png" NDATA png>
+<!ENTITY a4740100p SYSTEM "../xml/grph_ent/a4740100p.png" NDATA png>
+<!ENTITY a4740009p SYSTEM "../xml/grph_ent/a4740009p.png" NDATA png>
+<!ENTITY a4740010p SYSTEM "../xml/grph_ent/a4740010p.png" NDATA png>
+<!ENTITY a4740011p SYSTEM "../xml/grph_ent/a4740011p.png" NDATA png>
+
+<!ENTITY T010044A154 SYSTEM "../xml/t403010044a154.xml">
+<!ENTITY T010044A154A217 SYSTEM "../xml/t403010044a154a217.xml">
+<!ENTITY T010044A154A218 SYSTEM "../xml/t403010044a154a218.xml">
+<!ENTITY T010044A155 SYSTEM "../xml/t403010044a155.xml">
+<!ENTITY T010044A155A302 SYSTEM "../xml/t403010044a155a302.xml">
+<!ENTITY T010044A155A219 SYSTEM "../xml/t403010044a155a219.xml">
+<!ENTITY T010044A398 SYSTEM "../xml/t403010044a398.xml">
+<!ENTITY T010044A398A280 SYSTEM "../xml/t403010044a398a280.xml">
+<!ENTITY T010044A398A281 SYSTEM "../xml/t403010044a398a281.xml">
+<!ENTITY T010044A398A053 SYSTEM "../xml/t403010044a398a053.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T010044A154S"><SCTITLE/>
+
+<PARA INFOID = "T010044A154" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Starter</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A compact, lightweight, high-output, high-efficiency PS (Planetary reduction-Segment conductor motor) starter has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>A rectangular conductor armature coil has been adopted to reduce size and weight.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740096p" WIDTH = "6.917in" HEIGHT = "2.875in" />
+</FIGURE>
+<SPEC ID = "T010044A154X01" INDSW = "OFF">
+<TITLE>Starter Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>PS Starter</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Rated Voltage [V]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Rated Output [kW]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>1.6</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+
+<MECA ID = "T010044A154A217" UPDATE = "ORIGINAL" LDUP = "29Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Armature Coil</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By using bare rectangular wire for the armature coil, the space factor has been improved, increasing starter torque.</PTXT></ITEM>
+<ITEM><PTXT>The cylindrical commutator has been eliminated, shortening the armature shaft length.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740097p" WIDTH = "6.917in" HEIGHT = "2.681in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T010044A154A218" UPDATE = "ORIGINAL" LDUP = "29Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Field Coil</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Interpolar magnets have been adopted between the field coils. This improves the magnetic circuit and increases the magnetic flux, allowing size reduction and shortening the yoke axial length.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740098p" WIDTH = "6.917in" HEIGHT = "2.917in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010044A155S"><SCTITLE/>
+
+<PARA INFOID = "T010044A155" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Alternator</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A compact, lightweight, high-output, high-efficiency segment conductor type alternator has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>A segment joining method, in which segment conductors (rectangular copper wire) are inserted and welded, has been adopted for the stator winding method.</PTXT></ITEM>
+<ITEM><PTXT>A clutch has been provided in the alternator pulley, reducing accessory belt friction to improve fuel economy.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740053p" WIDTH = "6.903in" HEIGHT = "3.361in" />
+</FIGURE>
+<SPEC ID = "T010044A155X01" INDSW = "OFF">
+<TITLE>Alternator Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Segment Conductor (SE0)</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Rated Output [A]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>100</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Rated Voltage [V]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Regulator Adjusting Voltage [V] (5000r/min,10A,25°C)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>12.2~15.3</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Output Start Speed [r/min]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>1500 or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Maximum Allowable Speed [r/min]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>18000</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+
+<MECA ID = "T010044A155A302" UPDATE = "ORIGINAL" LDUP = "20Jul2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Alternator Pulley</TITLE>
+<LIST1><ITEM><PTXT>A helical coil-shaped clutch located between the outer and inner races of the pulley transmits torque to the alternator only in the engine's forward rotation direction, reducing the load on the accessory belt.</PTXT></ITEM>
+<ITEM><PTXT>Compactness has been achieved by integrating the inner race with the nut that fastens it to the alternator shaft.</PTXT></ITEM>
+<ITEM><PTXT>A plastic cap is provided on the front of the pulley to cover the inside and prevent the entry of muddy water, etc., ensuring reliability in harsh environments.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740099p" WIDTH = "6.972in" HEIGHT = "4.333in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T010044A155A219" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Stator Coil</TITLE>
+<LIST1><ITEM><PTXT>A segment joining method, in which segment conductors (rectangular copper wire) are inserted and welded, has been adopted for the stator winding method. This achieves compact size, high output and high efficiency. Also, mesh-like ventilation gaps have been provided between the coil ends, and the inner surface of the coil ends that receives the cooling air has been smoothed, creating a smooth, interference-free air flow that improves cooling and reduces wind noise.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740100p" WIDTH = "6.903in" HEIGHT = "2.347in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010044A398S"><SCTITLE/>
+
+<PARA INFOID = "T010044A398" UPDATE = "ORIGINAL" LDUP = "24Mar2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Charging Control System</TITLE>
+<LIST1><ITEM><PTXT>By lowering the generated voltage when the vehicle is idling or driving at constant speed and raising it during deceleration, the engine load due to alternator power generation is reduced, lowering engine fuel consumption. In addition, during acceleration, the generated voltage is adjusted so that the integrated current value<HINTREF     REFID = "H403010044A39801"/> approaches the target value.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403010044A39801">The integrated current value is the integrated value of the battery input/output current detected by the current sensor.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740009p" WIDTH = "6.917in" HEIGHT = "3.125in" />
+</FIGURE>
+
+<MECA ID = "T010044A398A280" UPDATE = "ORIGINAL" LDUP = "24Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Battery Current Sensor</TITLE>
+<LIST1><ITEM><PTXT>Installed on the negative terminal of the battery, it detects the battery charge/discharge current and sends a signal to the engine control computer. Based on this signal, the engine control computer calculates the battery capacity. A Hall IC is used to detect the charge/discharge current; it converts the change in magnetic flux density generated in the core by the battery charge/discharge current into a voltage and outputs it.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740010p" WIDTH = "6.917in" HEIGHT = "3.306in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T010044A398A281" UPDATE = "ORIGINAL" LDUP = "24Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Battery Temperature Sensor</TITLE>
+<LIST1><ITEM><PTXT>If the battery fluid temperature is too low or too high, it can accelerate battery deterioration or cause the battery to discharge. Also, since the current acceptance characteristics change with battery fluid temperature, the battery is protected by detecting the battery fluid temperature and sending a signal to the engine control computer.</PTXT></ITEM>
+<ITEM><PTXT>The battery temperature sensor is built into the battery current sensor and is located near the negative terminal, where it is less affected by engine heat.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740011p" WIDTH = "6.917in" HEIGHT = "2.431in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T010044A398A053" UPDATE = "ORIGINAL" LDUP = "24Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Fail-safe Function</TITLE>
+<LIST1><ITEM><PTXT>When a sensor malfunctions, or when the engine control computer judges it necessary based on battery condition, electrical load operating status, etc., alternator charging control is stopped and the system switches to constant voltage generation mode.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Conditions for Switching to Constant Voltage Generation Mode</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "51%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "48%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Concept</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When Battery Capacity Is Low</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>The state of charge is judged from the battery capacity and fluid temperature, and charging control is stopped during overcharge or overdischarge to protect the battery and prevent capacity reduction.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When Battery Fluid Temperature Is Low or High</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When Wipers Are Operating or Blower Motor Is Operating Under High Load</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the power supply voltage changes due to the operation of electrical equipment, the alternator generated voltage changes due to charging control. To prevent an unnatural feeling while driving due to the resulting change in engine load, charging control is temporarily stopped.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When a malfunction is detected in any of the following sensors and switches: current sensor, temperature sensor, vehicle speed sensor, throttle position sensor, crank angle sensor, stop light switch, neutral start switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>When a sensor system malfunctions, charging control is stopped to prevent a decrease in battery capacity.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When Engine Is Started</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Prevents a decrease in battery capacity due to the vehicle being left unused, protecting the battery.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When 2 Hours Have Elapsed During Charging Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The charge capacity is checked periodically and errors in the integrated current value caused by long periods of charging and discharging are corrected, preventing a decrease in battery capacity.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When Cumulative Operating Time Reaches 20 Hours</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Sufficient charging is performed periodically to prevent a reduction in battery life caused by repeated charging and discharging.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+</PARA>
+</SECTION>
+</SCT>

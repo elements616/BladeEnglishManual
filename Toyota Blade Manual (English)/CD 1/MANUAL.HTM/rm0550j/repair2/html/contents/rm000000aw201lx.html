@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+  <title>[Electronic Technical Manual]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000AW201LX"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>Electronically Controlled Automatic Transaxle [ECT] (U660E) DTC Check / Clear</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">Print</a></td></tr></table><br clear="all" class="beforePng"><a name="RM000000AW201LX_z0"></a><br clear="all"><a name="1"></a><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">Using SST (TaSCAN), check mode as well as normal mode can be selected, which increases malfunction detection sensitivity compared to normal mode.<br></li><li class="atten4">Perform inspection in check mode when a malfunction is suspected in a sensor signal circuit but the normal code is output in normal mode.<br></li></ol></p><br clear="all"><br clear="all"><a name="RM0550J___0000FSX0000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>DTC Check (Reading Using TaSCAN)</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">Connect SST (TaSCAN) to DLC3.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200 &nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">Following the SST (TaSCAN) screen display, select Main Menu [Diagnosis] → Diagnosis Menu [Powertrain] → [ECT] → System Diagnosis Menu [Mode Change], and select normal mode or check mode.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c173972.png" name="C173972" alt="C173972" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Following the SST (TaSCAN) screen display, select Main Menu [Diagnosis] → Diagnosis Menu [Powertrain] → [ECT] → System Diagnosis Menu [DTC Freeze Frame Data], and check the DTCs.</font><br><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th class="atten4">Display Item<br></th><th class="atten4">Description<br></th></tr><tr><td class="atten4">Number of Current DTCs<br></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">DTCs indicating malfunctions<br></li></ol></td></tr><tr><td class="atten4">Number of Pending Codes<br></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">DTCs indicating provisional malfunctions<br></li><li class="atten4">Although a malfunction has not been confirmed, the possibility of a malfunction can be known<br></li></ol></td></tr></table><dl class="reference"><dd class="reference">A provisional malfunction means that, for DTCs detected with 2-trip detection logic (such as P0705/C2), the engine control computer stores a malfunction on the 1 trip as a provisional malfunction.</dd></dl></p></p></li></ol><br clear="all"><br clear="all"><br clear="all"><a name="RM0550J___0000FSX0000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>DTC Check (Reading Using Check Engine Warning Light)</li></ol>
+<ol class="ptxt"></ol><table class="float"><tr><td><img src="../../img/a146915j06.png" name="A146915J06" alt="A146915J06" border="1" class="half"><br></td></tr></table><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">Before reading DTCs, turn the IG ON and check that the check engine warning light comes on.<br></li><li class="atten3">Inspection in check mode cannot be performed.<br></li></ol></p>
+<ol class="step2">
+<li><p><font class="ptxt">Turn IG OFF.</font><br></p></li>
+<li><p><font class="ptxt">Using SST (diagnosis check wire No.2), connect between terminals 13 (TC) ←→ 4 (CG) of the DLC3.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040 &nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">Never connect the wrong terminals as this will cause a malfunction.</dd></dl></p></p></li>
+<li><p><font class="ptxt">Turn IG ON.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Read the DTC (number of blinks of the check engine warning light).</font><br><div class="full"><br clear="all"><img src="../../img/a159765j07.png" name="A159765J07" alt="A159765J07" border="1" class="full"></div><br clear="all"><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">When letters are used in a TCCS code, such as [C2], the code is expressed as a 2-digit base-16 number. In this case, the light blinks 12 times and then blinks 2 times. (Blinking intervals are the same)</dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="41.8%
+						"><caption class="tbl-title"><span>Base-16 Conversion Table 
+				</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">Base-16<br></th><th align="center">Number of Blinks<br></th></tr><tr><td align="center">A<br></td><td align="center">10<br></td></tr><tr><td align="center">B<br></td><td align="center">11<br></td></tr><tr><td align="center">C<br></td><td align="center">12<br></td></tr><tr><td align="center">D<br></td><td align="center">13<br></td></tr><tr><td align="center">E<br></td><td align="center">14<br></td></tr><tr><td align="center">F<br></td><td align="center">15<br></td></tr></table><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">If normal, the light repeatedly comes on for 0.245 seconds and goes off for 0.24 seconds. <br></li><li class="atten4">If there is 1 DTC, the same code is output at 4.5-second intervals. <br></li><li class="atten4">When multiple codes are output, the different codes are output at 2.5-second intervals. After one cycle is complete, the same output is repeated after 4.5 seconds.<br></li><li class="atten4">If 2 or more code numbers are output, they are displayed in order from the smallest code number. <br></li></ol></p></p></li>
+<li><p><font class="ptxt">Turn IG OFF.</font><br></p></li>
+<li><p><font class="ptxt">Disconnect terminals 13 (TC) ←→ 4 (CG) of the DLC3.</font><br></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___0000FSX0000013step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Clearing DTC Memory (Clearing Using TaSCAN)</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">Using SST (TaSCAN), display the [Diagnosis Menu / ECT] screen according to the screen display, and select [DTC].</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200 &nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">Select [Clear] on the screen to clear the data.</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">DTCs and freeze frame data are cleared at the same time.</dd></dl></p></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___0000FSX0000014step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Clearing DTC Memory (Clearing by Removing Fuse)</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a157409j03.png" name="A157409J03" alt="A157409J03" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">After repairing the malfunctioning area, remove the EFI MAIN fuse and ETCS fuse in the engine room for 60 seconds or more, and then reinstall them.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a146915j06.png" name="A146915J06" alt="A146915J06" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Using SST, connect terminals 13 (TC) ←→ 4 (CG) of DLC3.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040 &nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">Never connect the wrong terminals as this will cause a malfunction.</dd></dl></p></p></li>
+<li><p><font class="ptxt">Turn IG ON.</font><br></p></li>
+<li><p><font class="ptxt">Check that the normal code is output.</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">If a malfunction code is output, repair again according to the code.</dd></dl></p></p></li>
+<li><p><font class="ptxt">Turn IG OFF.</font><br></p></li>
+<li><p><font class="ptxt">Disconnect terminals 13 (TC) ←→ 4 (CG) of the DLC3.</font><br></p></li></ol><br clear="all"></body></html>

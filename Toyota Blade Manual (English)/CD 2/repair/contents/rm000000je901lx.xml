@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002Q_S000F" variety="S000F">
+<name>Navigation</name>
+<ttl id="1002Q_S000F_746OU_T00CJ" variety="T00CJ">
+<name>HDD Navigation System</name>
+<para id="RM000000JE901LX" category="N" type-id="8009I" name-id="652MC-00" from="200612" to="200912">
+<name>Function Inspection</name>
+<subpara id="RM000000JE901LX_01" type-id="01" category="01">
+<s-1 id="RM000000JE901LX_01_0009" proc-id="RM0550J___0000ADY00000">
+<ptxt>Display Color Bar Check</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>For diagnosis screen transitions, refer to <xref label="Seep01" href="RM0000002RV02BX"/>.</ptxt>
+</atten4>
+<s2>
+<ptxt>Start Diagnosis</ptxt>
+<s3>
+<ptxt>Start diagnosis and display the diagnosis check menu screen. (see <xref label="Seep02" href="RM0000002RV02BX"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Select "Display Check" on the diagnosis check menu screen to display the display check menu screen.</ptxt>
+</s3>
+<s3>
+<ptxt>Select "Color Bar Check" on the display check menu screen to display the display color bar check screen.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Display Color Bar Check</ptxt>
+<figure>
+<graphic graphicname="E115778" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Check that the set colors match the displayed colors.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Set colors match displayed colors</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When black, red, green, blue, white or horizontal stripes is selected, the selected color or stripes are displayed over the entire screen.</ptxt>
+</item>
+<item>
+<ptxt>Touch the screen to return.</ptxt>
+</item>
+<item>
+<ptxt>If the picture quality has been adjusted, the display is shown at the set brightness.</ptxt>
+</item>
+<item>
+<ptxt>If the display color bar check result is abnormal, the navigation receiver assembly can be judged to be faulty.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+<s3>
+<ptxt>Compare with the display colors of the navigation color bar check and check that there is no difference.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No difference</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the navigation color bar check result is normal and the display color bar check result is abnormal, the navigation receiver assembly can be judged to be faulty.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000JE901LX_01_0010" proc-id="RM0550J___0000ADZ00000">
+<ptxt>Display Touch Switch Check</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>For diagnosis screen transitions, refer to <xref label="Seep01" href="RM0000002RV02BX"/>.</ptxt>
+</atten4>
+<s2>
+<ptxt>Start Diagnosis</ptxt>
+<s3>
+<ptxt>Start diagnosis and display the diagnosis check menu screen. (see <xref label="Seep02" href="RM0000002RV02BX"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Select "Display Check" on the diagnosis check menu screen to display the display check menu screen.</ptxt>
+</s3>
+<s3>
+<ptxt>Select "Touch Switch Check" on the display check menu screen to display the display pressure-sensitive touch switch check screen.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Display Touch Switch Check</ptxt>
+<figure>
+<graphic graphicname="E101281" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Touch the screen and check that a cross-shaped cursor is displayed at the touched location.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Cursor is displayed at the touched location</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Once a location is judged as touched, the cursor remains displayed until another location is touched.</ptxt>
+</item>
+<item>
+<ptxt>If the display pressure-sensitive touch switch check result is abnormal, the navigation receiver assembly can be judged to be faulty.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000JE901LX_01_0011" proc-id="RM0550J___0000AE000000">
+<ptxt>Display Panel Switch Check</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>For diagnosis screen transitions, refer to <xref label="Seep01" href="RM0000002RV02BX"/>.</ptxt>
+</atten4>
+<s2>
+<ptxt>Start Diagnosis</ptxt>
+<s3>
+<ptxt>Start diagnosis and display the diagnosis check menu screen. (see <xref label="Seep02" href="RM0000002RV02BX"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Select "Display Check" on the diagnosis check menu screen to display the display check menu screen.</ptxt>
+</s3>
+<s3>
+<ptxt>Select "Panel Switch Check" on the display check menu screen to display the display panel switch check screen.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Panel Switch Inspection</ptxt>
+<figure>
+<graphic graphicname="E122010" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<s3>
+<ptxt>Operate each switch and check that it matches the screen display.</ptxt>
+<table>
+<title>Display Panel Switch Check Screen Display Content</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.50in"/>
+<colspec colname="COL2" colwidth="2.63in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Pressed Switch Name</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Displays the name of the pressed switch while it is pressed</ptxt>
+</item>
+<item>
+<ptxt>If multiple switches are pressed, "Multiple Switches" is displayed</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Operated Switch Name</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the name of the operated rotary switch (screen display is cleared after 6 seconds of no operation)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Switch Rotation Direction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the state of the operated rotary switch (screen display is cleared after 6 seconds of no operation)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display Menu</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Calls up the display check menu screen</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>If the display panel switch check result is abnormal, the navigation receiver assembly can be judged to be faulty.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000JE901LX_01_0012" proc-id="RM0550J___0000AE100000">
+<ptxt>Display Vehicle Signal Check</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>For diagnosis screen transitions, refer to <xref label="Seep01" href="RM0000002RV02BX"/>.</ptxt>
+</atten4>
+<s2>
+<ptxt>Start Diagnosis</ptxt>
+<s3>
+<ptxt>Start diagnosis and display the diagnosis check menu screen. (see <xref label="Seep02" href="RM0000002RV02BX"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Select "Display Check" on the diagnosis check menu screen to display the display check menu screen.</ptxt>
+</s3>
+<s3>
+<ptxt>Select "Vehicle Signal Check" on the display check menu screen to display the display vehicle signal check screen.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Display Vehicle Signal Check</ptxt>
+<figure>
+<graphic graphicname="E115045" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Check the status of the vehicle signals input to the display (navigation receiver assembly).</ptxt>
+<table pgwide="1">
+<title>Display Vehicle Signal Check Screen Display Content</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.50in"/>
+<colspec colname="COLSPEC0" colwidth="2.58in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Display Method</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Signal Input Terminal</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Battery Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays battery voltage [V]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Navigation receiver assembly A4 (B) terminal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the IG signal status as "ON"/"OFF"</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Navigation receiver assembly F2 (IG) terminal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>PKB</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the parking brake status as "ON"/"OFF" (with IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Navigation receiver assembly F1 (PKB) terminal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>REV</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the REV signal status as "ON"/"OFF" (with IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Navigation receiver assembly F5 (REV) terminal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Calculates vehicle speed from the SPD pulse signal and displays it</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Navigation receiver assembly F3 (SPD) terminal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TAIL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the TAIL signal (headlight dimmer switch) status as "ON"/"OFF"</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Navigation receiver assembly A10 (ILL+) terminal</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The vehicle signals are updated every 1 seconds.</ptxt>
+</item>
+<item>
+<ptxt>If the display vehicle signal check result is abnormal, the vehicle wire harness or connector of each terminal can be judged to be faulty. (see <xref label="Seep03" href="RM0000008JX01OX"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000JE901LX_01_0019" proc-id="RM0550J___0000AE400000">
+<ptxt>CAN Connection Check</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>For diagnosis screen transitions, refer to <xref label="Seep01" href="RM0000002RV02BX"/>.</ptxt>
+</atten4>
+<s2>
+<ptxt>Start Diagnosis</ptxt>
+<s3>
+<ptxt>Start diagnosis and display the diagnosis check menu screen. (see <xref label="Seep02" href="RM0000002RV02BX"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Select "Display Check" on the diagnosis check menu screen to display the display check menu screen.</ptxt>
+</s3>
+<s3>
+<ptxt>Select "CAN Connection Check" on the display check menu screen to display the CAN connection check screen.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>CAN Connection Check</ptxt>
+<figure>
+<graphic graphicname="E122212" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Check the status of CAN communication connected to the navigation receiver assembly.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>"OK" is displayed</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The check result is displayed only with the IG ON.</ptxt>
+</item>
+<item>
+<ptxt>"NG" is displayed if a disconnected connector or CAN bus malfunction is detected.</ptxt>
+</item>
+<item>
+<ptxt>If the CAN connection check is abnormal, refer to CAN Communication System. (see <xref label="Seep03" href="RM000001R4W009X"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000JE901LX_01_0013" proc-id="RM0550J___0000AE200000">
+<ptxt>Vehicle Signal &amp; Sensor Check</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>For diagnosis screen transitions, refer to <xref label="Seep01" href="RM0000002RV02BX"/>.</ptxt>
+</atten4>
+<s2>
+<ptxt>Start Diagnosis</ptxt>
+<s3>
+<ptxt>Start diagnosis and display the diagnosis check menu screen. (see <xref label="Seep02" href="RM0000002RV02BX"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Select "Navigation Check" on the diagnosis check menu screen to display the navigation check menu screen.</ptxt>
+</s3>
+<s3>
+<ptxt>Select "Vehicle Signal &amp; Sensor Check" on the navigation check menu screen to display the vehicle signal &amp; sensor check screen.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Vehicle Signal &amp; Sensor Check</ptxt>
+<figure>
+<graphic graphicname="E122211" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<title>Vehicle Signal &amp; Sensor Check Screen Display Content</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COLSPEC1" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Display Method</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Signal Input Terminal</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>REV Signal Status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the REV signal status as "ON"/"OFF" (with IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Navigation receiver assembly F5 (REV) terminal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SPD Signal Status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays SPD signal status (cumulative number of input pulses since this screen was displayed, and vehicle speed [km/h])</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Navigation receiver assembly F3 (SPD) terminal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Gyro Sensor Output Status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays gyro sensor output status (voltage value [V] and amount of change in heading [degrees] since this screen was displayed)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Reset</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Resets the gyro sensor relative heading and SPD signal pulse count display items and sets the display content to "0"</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<s3>
+<ptxt>Check the status of the vehicle signals (REV, SPD) input to the navigation receiver assembly.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The vehicle signals are updated every 1 seconds.</ptxt>
+</item>
+<item>
+<ptxt>If the REV signal status and SPD signal status are abnormal, the vehicle wire harness or connector of each terminal can be judged to be faulty. (see <xref label="Seep03" href="RM0000008JX01OX"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check the gyro sensor output status.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>Gyro sensor voltage value: 2.1 - 2.9 V</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the gyro sensor output status is abnormal, the navigation receiver assembly can be judged to be faulty.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000JE901LX_01_0014" proc-id="RM0550J___0000AE300000">
+<ptxt>Navigation Color Bar Check</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>For diagnosis screen transitions, refer to <xref label="Seep01" href="RM0000002RV02BX"/>.</ptxt>
+</atten4>
+<s2>
+<ptxt>Start Diagnosis</ptxt>
+<s3>
+<ptxt>Start diagnosis and display the diagnosis check menu screen. (see <xref label="Seep02" href="RM0000002RV02BX"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Select "Navigation Check" on the diagnosis check menu screen to display the navigation check menu screen.</ptxt>
+</s3>
+<s3>
+<ptxt>Select "Color Bar Check" on the navigation check menu screen to display the navigation color bar check screen.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Navigation Color Bar Check</ptxt>
+<figure>
+<graphic graphicname="E122213" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Check that the set colors match the displayed colors.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Set colors match displayed colors</ptxt>
+</specitem>
+</spec>
+</s3>
+<s3>
+<ptxt>Compare with the display colors of the display color bar check and check that there is no difference.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No difference</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the display color bar check result is normal and the navigation color bar check result is abnormal, the navigation receiver assembly can be judged to be faulty.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000JE901LX_01_0008" proc-id="RM0550J___0000ADX00000">
+<ptxt>HDD Information</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>For diagnosis screen transitions, refer to <xref label="Seep01" href="RM0000002RV02BX"/>.</ptxt>
+</atten4>
+<s2>
+<ptxt>Start Diagnosis</ptxt>
+<s3>
+<ptxt>Start diagnosis and display the diagnosis check menu screen. (see <xref label="Seep02" href="RM0000002RV02BX"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Select "Navigation Check" on the diagnosis check menu screen to display the navigation check menu screen.</ptxt>
+</s3>
+<s3>
+<ptxt>Select "HDD Information" on the navigation check menu screen to display the HDD information screen.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>HDD Information</ptxt>
+<figure>
+<graphic graphicname="E100881" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Check the code and take action according to the list.</ptxt>
+<table>
+<title>Product Information Screen Display Contents</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.49in"/>
+<colspec colname="COL2" colwidth="2.64in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays a code corresponding to the malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Time of Occurrence</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Displays the time when the code was detected as "year" "month" "day" "hour" "minute" "second"</ptxt>
+</item>
+<item>
+<ptxt>The time uses information obtained from the GPS receiver and is displayed in Japan Standard Time</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the previous page (grayed out when the top row is displayed)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Next</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the next page (grayed out when the bottom row is displayed)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SMART Test</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Performs the SMART test</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Clear Diagnosis</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Clears all displayed diagnostic information (press and hold for 3 seconds)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Code List</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="0.39in"/>
+<colspec colname="COL2" colwidth="1.61in"/>
+<colspec colname="COL3" colwidth="3.00in"/>
+<colspec colname="COLSPEC0" colwidth="2.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Code</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Malfunction Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>HDD cannot be recognized</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>03</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>READ Error</ptxt>
+<ptxt>(Above -20°C to below 65°C)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If this code occurs frequently with symptoms such as the map not being displayed or memory points not being registered, replace the navigation receiver assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>04</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>WRITE Error</ptxt>
+<ptxt>(Above -20°C to below 65°C)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If this code occurs frequently with symptoms such as the map not being displayed or memory points not being registered, replace the navigation receiver assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>READ Error &amp; Low Temperature</ptxt>
+<ptxt>(-20°C or less)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn the IG ON and check that the temperature of the navigation receiver assembly has become sufficiently high</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code is recorded when a READ/WRITE error occurs while the HDD temperature is outside the guaranteed operating temperature, and is not a malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>WRITE Error &amp; Low Temperature</ptxt>
+<ptxt>(-20°C or less)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn the IG ON and check that the temperature of the navigation receiver assembly has become sufficiently high</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code is recorded when a READ/WRITE error occurs while the HDD temperature is outside the guaranteed operating temperature, and is not a malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>23</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>READ Error &amp; High Temperature</ptxt>
+<ptxt>(65°C or higher)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Park the vehicle in a cool shaded place and turn the IG OFF</ptxt>
+</item>
+<item>
+<ptxt>Check that the temperature of the navigation receiver assembly has become sufficiently low, then turn the IG ON</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>This code is recorded when a READ/WRITE error occurs while the HDD temperature is outside the guaranteed operating temperature, and is not a malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>24</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>WRITE Error &amp; High Temperature</ptxt>
+<ptxt>(65°C or higher)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Park the vehicle in a cool shaded place and turn the IG OFF</ptxt>
+</item>
+<item>
+<ptxt>Check that the temperature of the navigation receiver assembly has become sufficiently low, then turn the IG ON</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>This code is recorded when a READ/WRITE error occurs while the HDD temperature is outside the guaranteed operating temperature, and is not a malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+</s2>
+<s2>
+<ptxt>SMART Test</ptxt>
+<figure>
+<graphic graphicname="E100881" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Select "SMART Test" on the HDD information screen to display the SMART test result.</ptxt>
+</s3>
+<s3>
+<ptxt>Check the SMART test result.</ptxt>
+<figure>
+<graphic graphicname="E100882" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>"OK" is displayed</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>It takes approximately 90 seconds for the check to complete.</ptxt>
+</item>
+<item>
+<ptxt>If the SMART test result is "NG", the navigation receiver assembly can be judged to be faulty.</ptxt>
+</item>
+<item>
+<ptxt>"NG" may also be displayed when the HDD cannot be read or written due to low or high temperature. Therefore, if code 13, 14, 23 or 24 is displayed in the HDD information, take the action in the code list and then perform the SMART test again.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000JE901LX_01_0003" proc-id="RM0550J___0000ADV00000">
+<ptxt>Check Navigation Voice Guidance Settings (When Voice Guidance is not Heard)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Setting Inspection</ptxt>
+<s3>
+<ptxt>In the voice settings on the menu screen, set the volume to maximum and check the voice output.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>"Guidance will be given at this volume" is announced</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<title>In the following cases, voice guidance is not given even if the system is normal.</title>
+<item>
+<ptxt>When a destination has not been set. (Voice such as prefecture border guidance is output)</ptxt>
+</item>
+<item>
+<ptxt>When not driving on the route (no remaining distance display at the lower left of the current position screen). (Voice such as prefecture border guidance is output)</ptxt>
+</item>
+<item>
+<ptxt>When "Guidance in Other Modes" is not set. (Voice guidance is not given on screens other than the map screen)</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000JE901LX_01_0004" proc-id="RM0550J___0000ADW00000">
+<ptxt>Check Gyro Initialization (When Vehicle Position Mark Rotates)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Operate Again</ptxt>
+<s3>
+<ptxt>Turn the IG OFF → ON and check whether it returns to normal.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Return to Normal</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If ACC or IG is turned ON while the vehicle is rotating (such as on a turntable), the navigation receiver assembly memorizes the angular velocity at that time as the reference, so the vehicle position rotates even if the system is normal.</ptxt>
+</item>
+<item>
+<ptxt>In the above case, turning the IG OFF → ON with the vehicle stopped returns it to normal.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

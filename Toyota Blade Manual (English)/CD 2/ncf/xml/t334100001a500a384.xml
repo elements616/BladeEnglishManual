@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T100001A500A384" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Smart Entry &amp; Start System Outline</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Based on the result of ID code verification between the electronic key and the vehicle, etc., the certification ECU communicates with the main body ECU, ID code box, steering lock ECU, etc. via LIN communication to control the system.</PTXT></ITEM>
+<ITEM><PTXT>Depending on the function to be performed, the certification ECU outputs request signals to the inside/outside antennas to perform "ID code verification with the electronic key" and "position confirmation of the electronic key (or key holder)". Then, when it receives the ID code including the response code from the electronic key that received this request signal, it performs identification/verification and sends operation command signals to each ECU according to the function.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740007b" WIDTH = "6.903in" HEIGHT = "7.556in" />
+</FIGURE>
+</MECA>

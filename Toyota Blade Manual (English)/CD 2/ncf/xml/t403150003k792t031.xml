@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T150003K792T031" UPDATE = "ORIGINAL" LDUP = "17Mar2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>CAN Gateway Computer</TITLE>
+<LIST1><ITEM><PTXT>To reduce the communication load between ECUs caused by the increase in ECUs in the CAN communication circuit due to increased functionality, a CAN gateway computer has been adopted and the CAN communication main line has been divided into 2 systems.</PTXT></ITEM>
+<ITEM><PTXT>Highly important data from each ECU is set as a priority frame with a short delay time, reducing the data transmission delay within the gateway.</PTXT></ITEM>
+<ITEM><PTXT>When the CAN gateway computer detects a malfunction in itself, it stops relaying data between buses to avoid transmitting incorrect data.</PTXT></ITEM></LIST1></MECA>

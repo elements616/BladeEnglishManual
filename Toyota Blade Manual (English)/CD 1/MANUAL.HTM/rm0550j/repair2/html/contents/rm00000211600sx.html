@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+  <title>[Electronic Technical Manual]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM00000211600SX"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>DTC P1605 Unstable Idle</h3></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">Print</a></td></tr></table><h2>Preparation List<a href="#" onclick="openSeePage('ppr','RM00000211600SX');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all"><a name="RM00000211600SX_01"></a><h2>Circuit Description</h2><br clear="all"><a name="1"></a><font class="ptxt">The DTC is output when the idle speed drops or becomes unstable from a state in which the engine load is small and the engine is idling stably. The freeze frame data, which stores the conditions when the DTC was output, can be checked using SST (TaSCAN). Serviceability is improved by making it possible to check the engine operating condition at the time of unstable idling using the freeze frame data. Also, since unstable idling caused by running out of fuel is also detected, it is necessary to check whether the vehicle has run out of fuel before starting work.</font><br><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><colgroup align="" width="24%
+			"><col align=""></colgroup><colgroup align="" width="76%
+			"><col align=""></colgroup><tr><th align="center">DTC No.<br>SAE<br></th><th align="center">DTC Detection Conditions<br>1. Diagnosis conditions 2. Malfunction status 3. Malfunction duration 4. Other<br></th></tr><tr><td align="center">P1605<br></td><td><ol style="list-style-type: decimal"><li>5 seconds after ISC learning is completed after engine start<br></li><li>Engine speed drops to 400r/min or less<br></li><li>-<br></li><li>1 trip<br></li></ol></td></tr></table><br clear="all"><br clear="all"><a name="RM00000211600SX_02"></a><h2>Inspection Procedure</h2><br clear="all"><a name="1"></a><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">If other DTCs are displayed, troubleshoot the corresponding DTCs first.<br></li><li class="atten4">Since DTC P1605 differs from conventional diagnostic trouble codes, the diagnostic procedure below is described as 1 possible method.<br></li></ol></p><br clear="all"><a name="RM00000211600SX_03_0001"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">Step 1</td><td width="90%" class="s1">Read DTC</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Connect SST (TaSCAN) to DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn IG ON.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Check the DTCs by following the SST (TaSCAN) screen display. (see<a href="#" onclick="openSeePage('seepage','RM0000008YS014X');return false;"><img border="0" src="../../../../image/extxref.png"></a>)</font><br><p><dl class="spec"><dt class="spec">Result</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="73%
+			"><col align=""></colgroup><colgroup align="" width="27%
+			"><col align=""></colgroup><tr><th align="center">Result<br></th><th align="center">Proceed to<br></th></tr><tr><td align="center">Only P1605 is displayed<br></td><td align="center">A<br></td></tr><tr><td align="center">Other DTCs are displayed<br></td><td align="center">B<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">Go to Related DTC Chart<a href="#" onclick="openSeePage('seepage','RM000001KT7004X');return false;">
+			(see <img border="0" src="../../../../image/extxref.png"> for procedure)
+		</a>
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM00000211600SX_03_0002"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">Step 2</td><td width="90%" class="s1">Check Freeze Frame Data</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Use the time-series freeze frame data to check the data at and after DTC detection, to assist with troubleshooting.</dd></dl></p>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Connect SST (TaSCAN) to DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn IG ON.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Following the screen display of SST (TaSCAN), check the time-series freeze frame data, and check the vehicle condition at the time of unstable idling. (see<a href="#" onclick="openSeePage('seepage','RM000000CCZ03QX');return false;"><img border="0" src="../../../../image/extxref.png"></a>)</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Check the freeze frame data for when the engine is cold / warmed up.</font><br><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">Item Name<br></th><th align="center">Abbreviation<br></th></tr><tr><td align="center">Engine Coolant Temperature<br></td><td align="center">THW<br></td></tr><tr><td align="center">Coolant Temperature at Start<br></td><td align="center">THWS<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Check the freeze frame data for the idling condition.</font><br><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">Item Name<br></th><th align="center">Abbreviation<br></th></tr><tr><td align="center">Engine Speed<br></td><td align="center">ESPD<br></td></tr><tr><td align="center">Idle SW<br></td><td align="center">IDL<br></td></tr><tr><td align="center">Neutral Start SW<br></td><td align="center">NSW<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Check the freeze frame data for purge VSV operation.</font><br><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">Item Name<br></th><th align="center">Abbreviation<br></th></tr><tr><td align="center">Purge VSV Drive Duty Ratio<br></td><td align="center">EVAP<br></td></tr><tr><td align="center">Purge Rate<br></td><td align="center">PRF<br></td></tr><tr><td align="center">Purge Concentration Learned Value<br></td><td align="center">PRD<br></td></tr><tr><td align="center">Purge VSV<br></td><td align="center">PRG<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Check the freeze frame data for the idle control condition.</font><br><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">Item Name<br></th><th align="center">Abbreviation<br></th></tr><tr><td align="center">Throttle Opening<br></td><td align="center">THPO<br></td></tr><tr><td align="center">ISC Flow Rate<br></td><td align="center">ISCF<br></td></tr><tr><td align="center">ISC Opening<br></td><td align="center">ISCO<br></td></tr><tr><td align="center">Idle Stabilization Advance (1 Cylinder)<br></td><td align="center">IDA#1<br></td></tr><tr><td align="center">Idle Stabilization Advance (2 Cylinder)<br></td><td align="center">IDA#2<br></td></tr><tr><td align="center">Idle Stabilization Advance (3 Cylinder)<br></td><td align="center">IDA#3<br></td></tr><tr><td align="center">Idle Stabilization Advance (4 Cylinder)<br></td><td align="center">IDA#4<br></td></tr><tr><td align="center">Idle Stabilization Advance (5 Cylinder)<br></td><td align="center">IDA#5<br></td></tr><tr><td align="center">Idle Stabilization Advance (6 Cylinder)<br></td><td align="center">IDA#6<br></td></tr><tr><td align="center">ISC Feedback Amount<br></td><td align="center">ISCFB<br></td></tr><tr><td align="center">ISC Learned Amount<br></td><td align="center">ISCLV<br></td></tr><tr><td align="center">Electrical Load Correction Amount<br></td><td align="center">ELOCP<br></td></tr><tr><td align="center">A/C Correction Amount<br></td><td align="center">A/CCP<br></td></tr><tr><td align="center">Speed Drop Control Judgment Status<br></td><td align="center">RDCF<br></td></tr><tr><td align="center">N Range Control Status<br></td><td align="center">N<br></td></tr><tr><td align="center">Shift position P, R, N, D range<br></td><td align="center">P、R、N、D<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="8"><p><font class="ptxt">Check the freeze frame data for engine load / electrical load.</font><br><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">Item Name<br></th><th align="center">Abbreviation<br></th></tr><tr><td align="center">Engine Load Value<br></td><td align="center">CALO<br></td></tr><tr><td align="center">Electrical Load Signal<br></td><td align="center">ELS<br></td></tr><tr><td align="center">A/C Signal<br></td><td align="center">A/C<br></td></tr><tr><td align="center">Power Steering SW <br></td><td align="center">PSSW<br></td></tr><tr><td align="center">Electric Fan<br></td><td align="center">FAN<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="9"><p><font class="ptxt">Check the items above and perform a reproduction test.</font><br></p></li></ol>
+<ol class="s2">
+<li value="10"><p><font class="ptxt">Based on each freeze frame data item and the reproduction test, compare with the reference values in the ECU data monitor list (<a href="#" onclick="openSeePage('seepage','RM000000CD2022X');return false;"><img border="0" src="../../../../image/extxref.png"></a>) to check the vehicle condition, and identify the parts to be inspected.</font><br><p><dl class="spec"><dt class="spec">Result</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="73%
+			"><col align=""></colgroup><colgroup align="" width="27%
+			"><col align=""></colgroup><tr><th align="center">Result<br></th><th align="center">Proceed to<br></th></tr><tr><td align="center">Malfunctioning part can be identified<br></td><td align="center">A<br></td></tr><tr><td align="center">Malfunctioning part cannot be identified<br></td><td align="center">B<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">Inspection for Intermittent Problems<a href="#" onclick="openSeePage('seepage','RM000000CD101YX');return false;">
+			(see <img border="0" src="../../../../image/extxref.png"> for procedure)
+		</a>
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">Inspect and Repair Malfunctioning Area 
+										</td></tr></table></td></tr></table><br></body></html>

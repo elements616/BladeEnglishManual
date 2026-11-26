@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1002J_S000U" variety="S000U">
+<name>Brake Control</name>
+<ttl id="1002J_S000U_744TG_T0089" variety="T0089">
+<name>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</name>
+<para id="RM00000060000PX" category="D" type-id="303F4" name-id="442O5-00" from="200612">
+<name>DTC Check/Clear</name>
+<subpara id="RM00000060000PX_z0" proc-id="RM0550J___00004IS00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Check DTC Output</ptxt>
+<step2>
+<ptxt>Reading DTCs Using the SST (TaSCAN)</ptxt>
+<step3>
+<ptxt>Turn the IG OFF and connect the SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step3>
+<step3>
+<ptxt>Turn the IG ON and read the DTCs following the display screen of the SST (TaSCAN).</ptxt>
+<atten3>
+<ptxt>If there is a malfunction, clear the stored DTCs after repair.</ptxt>
+</atten3>
+</step3>
+</step2>
+<step2>
+<ptxt>Reading DTCs Using the Meter Display</ptxt>
+<figure>
+<graphic graphicname="C146309J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Turn IG OFF.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST, connect terminals 13 (TC) ←→ 4 (CG) of DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Do not connect the connector in the wrong position, as this will cause a malfunction.</ptxt>
+</item>
+<item>
+<ptxt>Perform this with the vehicle stopped.</ptxt>
+</item>
+</list1>
+</atten3>
+</step3>
+<step3>
+<ptxt>Turn IG ON.</ptxt>
+</step3>
+<step3>
+<ptxt>Read the DTCs displayed on the multi-information display.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the IG OFF and disconnect terminals 13 (TC) ←→ 4 (CG) of DLC3.</ptxt>
+<atten3>
+<ptxt>If there is a malfunction, clear the stored DTCs after repair.</ptxt>
+</atten3>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Clear DTCs and Freeze Frame Data</ptxt>
+<step2>
+<ptxt>DTC Clearing Method (TaSCAN)</ptxt>
+<step3>
+<ptxt>Turn the IG OFF and connect the SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step3>
+<step3>
+<ptxt>Turn the IG ON and clear the DTCs following the display screen of the SST (TaSCAN).</ptxt>
+<atten4>
+<ptxt>If the malfunction persists, the DTCs may not be cleared.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>DTC Clearing Method (DLC3 Short)</ptxt>
+<figure>
+<graphic graphicname="C146309J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Turn IG OFF.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST, connect terminals 13 (TC) ←→ 4 (CG) of DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<atten3>
+<ptxt>Do not connect the connector in the wrong position, as this will cause a malfunction.</ptxt>
+</atten3>
+</step3>
+<step3>
+<ptxt>Turn the IG ON and depress the brake pedal 8 times or more within 5 seconds.</ptxt>
+</step3>
+<step3>
+<ptxt>Check that the normal code is output.</ptxt>
+<atten4>
+<ptxt>If the malfunction persists, the DTCs may not be cleared.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

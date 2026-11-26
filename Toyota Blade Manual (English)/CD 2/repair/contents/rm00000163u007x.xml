@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002S_S000E" variety="S000E">
+<name>Vehicle Surroundings Monitor</name>
+<ttl id="1002S_S000E_746W3_T00DH" variety="T00DH">
+<name>Back Guide Monitor</name>
+<para id="RM00000163U007X" category="M" type-id="80036" name-id="672EK-00" from="200612" to="200912">
+<name>Initialization</name>
+<subpara id="RM00000163U007X_01" type-id="01" category="01">
+<s-1 id="RM00000163U007X_01_0001" proc-id="RM0550J___0000BCY00000">
+<ptxt>Initialization</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>If [System initializing] is displayed on the back guide monitor screen after disconnecting the battery terminal (removing/installing the battery terminal, disconnecting/reconnecting the steering sensor connector), etc., perform either of the following operations to correct the deviation of the steering angle neutral point.</ptxt>
+<s3>
+<ptxt>Method 1... Turn the steering wheel fully to both the left and right to correct the steering angle neutral point.</ptxt>
+</s3>
+<s3>
+<ptxt>Method 2: Drive the vehicle for 20km/h or more and for 5 minutes or more on a route with as few corners, curves and traffic jams as possible. Then stop the vehicle and check whether the neutral point has been learned. If learning has not been completed, continue driving.</ptxt>
+<atten4>
+<ptxt>The navigation receiver assembly determines the straight-ahead condition and the neutral point is learned.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

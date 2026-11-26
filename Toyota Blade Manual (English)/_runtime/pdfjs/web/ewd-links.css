@@ -1,0 +1,6 @@
+/* Clickable connector codes on Disc 1 wiring diagrams (see ewd-links.js) */
+.textLayer span.ewd-link { position: static !important; transform: none !important; display: inline !important;
+  cursor: pointer !important; background: rgba(255, 196, 0, .35); border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(214, 140, 0, .7); pointer-events: auto !important; }
+.textLayer span.ewd-link:hover { background: rgba(255, 150, 0, .55); }
+.textLayer span.ewd-link.ewd-active { background: rgba(255, 60, 0, .55); box-shadow: 0 0 0 2px #d43000; }

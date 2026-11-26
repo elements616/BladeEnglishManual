@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002S_S000E" variety="S000E">
+<name>Vehicle Surroundings Monitor</name>
+<ttl id="1002S_S000E_746W2_T00DG" variety="T00DG">
+<name>Back Guide Monitor System</name>
+<para id="RM0000002O401CX" category="S" type-id="3001E" name-id="672EA-00" from="200612" to="200912">
+<name>Diagnostic Trouble Code Chart</name>
+<subpara id="RM0000002O401CX_z0" proc-id="RM0550J___0000BCF00000">
+<content5 releasenbr="1">
+<atten3>
+<ptxt>This DTC is displayed on the service inspection screen.</ptxt>
+</atten3>
+<step1>
+<ptxt>AVN</ptxt>
+<atten4>
+<ptxt>Logical address 5C: Camera unit</ptxt>
+</atten4>
+<table pgwide="1">
+<title>Service inspection screen display name: AVN, Part name: Navigation receiver assembly, Physical address: 140</title>
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="0.75in"/>
+<colspec colname="COL3" colwidth="1.89in"/>
+<colspec colname="COL4" colwidth="1.86in"/>
+<colspec colname="COLSPEC0" colwidth="1.58in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Trouble Code (DTC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5C-40</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Camera Image Malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No synchronizing signal from camera</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Inspect W/H between television camera assembly and navigation receiver</ptxt>
+</item>
+<item>
+<ptxt>Replace the television camera assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5C-41</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Steering Sensor Malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering sensor malfunction detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace the steering sensor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5C-42</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Steering Sensor Communication Line Malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No signal from steering sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Troubleshooting Flowchart [Expected Course Line is not Displayed and "Guide Unavailable" is Displayed]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

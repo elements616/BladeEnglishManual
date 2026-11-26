@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+  <title>[Electronic Technical Manual]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000021F400AX"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>CVT System [Super CVT-i] (K112/K112F) Utility</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">Print</a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000021F400AX_z0"></a><br clear="all"><a name="1"></a><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">Initializing the learned values clears both the G sensor 0-point learning values and the CVT hydraulic pressure learning values, so when replacing the parts in the table below, perform AT/CVT learned value initialization and be sure to perform both G sensor 0-point learning and CVT hydraulic pressure learning.<br><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="100%
+			"><col align=""></colgroup><tr><td class="atten3" align="center">Replacement Parts<br></td></tr><tr><td class="atten3"><ol style="list-style-type: disc"><li class="atten3">Continuously Variable Transaxle<br></li><li class="atten3">Engine Control Computer<br></li><li class="atten3">Skid control computer<br></li><li class="atten3">Oil Pressure Sensor<br></li><li class="atten3">Yaw Rate Sensor<br></li></ol></td></tr></table></li><li class="atten3">After performing AT/CVT learned value initialization, be sure to perform G sensor 0-point learning first, and then CVT hydraulic pressure learning.<br></li><li class="atten3">When replacing the skid control computer or the yaw rate sensor on vehicles with the Intelligent Parking Assist system, be sure to also perform G sensor 0 point writing for the Intelligent Parking Assist system.<br></li></ol></p><br clear="all"><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">For the Intelligent Parking Assist system G sensor 0 point writing procedure, refer to<a href="#" onclick="openSeePage('seepage','RM0000002O8017X');return false;"><img border="0" src="../../../../image/extxref.png"></a>for reference.</dd></dl></p><br clear="all"><br clear="all"><a name="RM0550J___00004720000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>A/T / CVT Learned Value Initialization, G Sensor 0-point Learning and CVT Hydraulic Pressure Learning</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">TaSCAN - A/T/CVT Learned Value Initialization</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">Turn the IG OFF, move the shift lever to the P position and apply the parking brake.</font><br></p></li>
+<li><p><font class="ptxt">Turn the IG ON (engine stopped).</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">The engine will not start.</dd></dl></p></p></li>
+<li><p><font class="ptxt">Using SST (TaSCAN), following the screen display, select [Utility] from the TOP menu and select [Transmission] in the utility category.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">Select [A/T/CVT Learned Value Initialization] on the screen to initialize the learned values.</font><br></p></li></ol>
+<li><p><font class="ptxt">TaSCAN - G Sensor 0 Point Learning</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">Be sure to place the vehicle on a level surface and perform 0 point learning.<br></li><li class="atten3">Do not subject the vehicle to vibration while 0 point learning is in progress.<br></li><li class="atten3">Do not start the engine, to avoid idling vibration.<br></li></ol></p></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">Turn the IG ON (engine stopped) and wait for 2 seconds or more.</font><br></p></li>
+<li><p><font class="ptxt">Using SST (TaSCAN), following the screen display, select [Utility] from the TOP menu and select [Transmission] in the utility category.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">Select [G Sensor 0 Point Learning Start] on the screen to perform G sensor 0 point learning. (*1)</font><br><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">When [Complete] is displayed on the screen, G sensor 0 point learning is complete.<br></li><li class="atten4">If [Error] is displayed on the screen and the check engine warning light comes on, there may be a malfunction in the G sensor circuit.<br></li><li class="atten4">If the vehicle is subjected to vibration during 0 point learning, 0 point learning may be canceled. (If [Error] is displayed on the screen and the check engine warning light does not illuminate) In that case, perform the work in (*1) again.<br></li></ol></p></p></li></ol>
+<li><p><font class="ptxt">TaSCAN - CVT Hydraulic Pressure Learning</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">Turn the IG OFF and wait for 30 seconds or more.</font><br></p></li>
+<li><p><font class="ptxt">Turn the IG ON (engine stopped) and wait for 2 seconds or more.</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">The engine will not start.</dd></dl></p></p></li>
+<li><p><font class="ptxt">Using SST (TaSCAN), follow the screen instructions to select [Work Support] on the TOP menu, then select [Transmission] in the work support category.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">Start the engine and wait for 5 seconds or more.</font><br></p></li>
+<li><p><font class="ptxt">Select [CVT Hydraulic Pressure Learning Start] on the screen to perform CVT hydraulic pressure learning.</font><br><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">During CVT hydraulic pressure learning, the engine is in an idle-up state.<br></li><li class="atten4">CVT hydraulic pressure learning is complete when [Complete] is displayed on the screen.<br></li><li class="atten4">The CVT hydraulic pressure learned values are not initialized just by disconnecting the battery terminal.<br></li></ol></p></p></li></ol></ol><br clear="all"></body></html>

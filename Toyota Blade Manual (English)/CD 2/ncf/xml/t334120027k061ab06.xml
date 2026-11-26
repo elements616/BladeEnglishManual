@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T120027K061Ab06" UPDATE = "ORIGINAL" LDUP = "9Jun2006"     MECATYPE = "GENERAL" INDSW = "OFF" UNPRINT = "ON">
+<TITLE>Roof Illumination</TITLE>
+<LIST1><ITEM><PTXT>A large roof illumination integrating the front personal light, room light and 3-LED (indirect lighting) illumination light has been provided on the G grade.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740015e" WIDTH = "7.111in" HEIGHT = "3.583in" />
+</FIGURE>
+<INDICATE ID = "T120027K061Ab06I01" INDSW = "OFF">
+<TITLE>Roof Illumination Control Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "7%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "60%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "32%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Vehicle Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Light<HINTREF REFID = "H334120027K061Ab0601"/> Condition</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When any seat is unlocked from the state with the power source position (IG) OFF, all doors closed and all doors locked.<SUP></SUP></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Illuminates for approximately 15 seconds (including fade-in) and then goes off (fade-out)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When any door is opened from the state in No.1 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>On (fade-in)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When all doors are closed from the state in No.2 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Illuminates for approximately 15 seconds and then goes off (fade-out)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the power source position (IG) is turned ON with the shift position in "P".</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Illuminates dimmed at medium brightness (fade-in)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the shift position is moved from "P" to other than "P" with the taillights off, from the state in No.4 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Off (fade-out)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the shift position is moved from "P" to other than "P" with the taillights on, from the state in No.4 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Illuminates dimmed at low brightness</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the shift position is moved from other than "P" to "P", from the state in No.5,6 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Illuminates dimmed at medium brightness</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the power source position (IG) is changed from ON to OFF, from the state in No.7 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>On (fade-in)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>9</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When all doors are closed and all doors are locked with the power source position (IG) OFF.</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Off (fade-out)</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H334120027K061Ab0601">The light refers to the indirect lighting.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE></MECA>

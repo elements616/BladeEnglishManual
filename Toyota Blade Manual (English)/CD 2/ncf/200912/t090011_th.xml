@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY c5930027e SYSTEM "../xml/grph_ent/c5930027e.png" NDATA png>
+<!ENTITY c5480046e SYSTEM "../xml/grph_ent/c5480046e.png" NDATA png>
+<!ENTITY a4740043e SYSTEM "../xml/grph_ent/a4740043e.png" NDATA png>
+<!ENTITY c5930029e SYSTEM "../xml/grph_ent/c5930029e.png" NDATA png>
+
+<!ENTITY T120011K077 SYSTEM "../xml/t478120011k077.xml">
+<!ENTITY T120021T586Ka69 SYSTEM "../xml/t478120021t586ka69.xml">
+<!ENTITY T120012K056 SYSTEM "../xml/t478120012k056.xml">
+<!ENTITY T120012K165 SYSTEM "../xml/t478120012k165.xml">
+<!ENTITY T120012K164 SYSTEM "../xml/t478120012k164.xml">
+<!ENTITY T120012T609 SYSTEM "../xml/t478120012t609.xml">
+<!ENTITY T120012C047 SYSTEM "../xml/t478120012c047.xml">
+<!ENTITY T120021T586 SYSTEM "../xml/t478120021t586.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T120011K077S"><SCTITLE/>
+
+<PARA INFOID = "T120011K077" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     INFOTYPE = "SYSTEM" INDSW = "ON"     SELECT = "Vehicle Outline: Comfort and Usability">
+<TITLE>Audio &amp; Visual Outline</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>As the audio system, the HDD navigation and the AM/FM electronic tuner with odd-size CD player continue to be used, and the AM/FM electronic tuner with odd-size in-dash CD changer has been discontinued.</PTXT></ITEM>
+<ITEM><PTXT>The HDD navigation has been changed from the 05 model year specification to the 09 model year specification.</PTXT></ITEM></LIST1>
+</PARA>
+<BIND ID = "T120011K077B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T120012K056" UPDATE = "ORIGINAL" LDUP = "12May2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Antenna</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The diversity TV antennas in the back window glass and rear spoiler have been discontinued.</PTXT></ITEM></LIST1>
+</PARA>
+
+<PARA INFOID = "T120012K165" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Speaker</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A 6 speaker system has been provided on all models.</PTXT></ITEM></LIST1>
+<SPEC ID = "T120012K165X01" INDSW = "OFF">
+<TITLE>Speaker Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "26%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "26%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "23%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Item/ Speaker Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Front Speaker</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Front Tweeter</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Rear Speaker</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Installation Position</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Lower Part of LH and RH Front Door Trims</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Upper Part of LH and RH Front Door Trims</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Lower Part of LH and RH Rear Door Trims</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Full Range</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Tweeter</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Full Range</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Diameter [cm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>16</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>14</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Rated (Maximum) Input [W]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>20(40)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>20(50)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>20(40)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Voice Coil Impedance [Ω]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>4</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+
+<PARA INFOID = "T120012K164" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Steering Switch</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Due to the change in the steering wheel shape, the design of the steering switches, which allow volume adjustment and audio mode switching, has been changed. They are located on the left side of the front of the steering pad.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930027e" WIDTH = "6.903in" HEIGHT = "3.556in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T120012T609" UPDATE = "ORIGINAL" LDUP = "3Mar2009"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>USB Terminal and AUX Input Terminal</TITLE>
+<LIST1><ITEM><PTXT>A USB port to which a USB memory or "iPod" can be connected has been provided.</PTXT></ITEM>
+<ITEM><PTXT>An AUX input jack to which portable audio devices, etc. can be connected has been provided.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5480046e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T120012C047" UPDATE = "ORIGINAL" LDUP = "7Jul2006"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Non-standard Size AM/FM Electronic Tuner with Integrated CD Player</TITLE>
+<LIST1><ITEM><PTXT>An irregular-size CD player integrated AM/FM electronic tuner has been adopted and combined with the 6 speaker system.</PTXT></ITEM>
+<ITEM><PTXT>Tone control memory has been adopted. Tone control (bass and treble) values can be stored for each mode (CD, AM, FM, etc.).</PTXT></ITEM>
+<ITEM><PTXT>By adopting a CD text display function, information pre-entered on the CD being played (artist name, track name, etc.) can be displayed.</PTXT></ITEM>
+<ITEM><PTXT>CDs recorded in WMA (Windows Media Audio) and MP3 (MPEG Audio Layer 3) formats can be played<HINTREF     REFID = "H478120012C04701"/>, improving marketability.</PTXT></ITEM>
+<ITEM><PTXT>An automatic sound levelizer function has been adopted, providing excellent usability.</PTXT></ITEM>
+<ITEM><PTXT>Noise has been reduced by digital signal processing of AM/FM reception.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478120012C04701">Depending on the device used for recording, some CD-Rs and CD-RWs may not play.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740043e" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+<SPEC ID = "T120012C047X01" INDSW = "OFF">
+<TITLE>Irregular-size CD Player Integrated AM/FM Electronic Tuner Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "11%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "88%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY VALIGN = "MIDDLE">
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Radio</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>PLL synthesizer tuning. Manual preset: up to 6 stations each for AM/FM. Auto preset: up to 6 stations each for AM/FM. Automatic reception sensitivity switching (AM). Traffic information reception. Digital signal processing.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>DISC(CD)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>FAST UP/DOWN。 TRACK UP/DOWN。 TRACK RANDOM。 TRACK RPT。 CD text display function.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Music CD (MP3/WMA)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>FAST UP/DOWN。 FOLDER UP/DOWN。 FILE UP/DOWN。 RANDOM within DISC. RANDOM within FOLDER. FOLDER RPT。 FILE RPT。 Folder list display. File list display.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Others</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Tone control (bass and treble). Tone control memory. Volume balance control (front/rear and left/right). Direct source change. Built-in FIX equalizer. Automatic sound levelizer function. LIVE-ACS function. Maximum total output 160W (40W x 4).</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+
+<PARA INFOID = "T120021T586" UPDATE = "ORIGINAL" LDUP = "12Feb2009"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>HDD Navigation Receiver</TITLE>
+<LIST1><ITEM><PTXT>The HDD navigation receiver consists of a retractable display panel section and the main unit.</PTXT></ITEM>
+<ITEM><PTXT>Map information, route information, voice guidance data, etc. are stored on the built-in hard disk to increase the amount of information and achieve faster response.</PTXT></ITEM>
+<ITEM><PTXT>The display panel section incorporates a color LCD panel that supports pressure-sensitive touch panel operation and displays the navigation screen, audio screen, etc. In addition, panel switches are arranged around the display.</PTXT></ITEM></LIST1>
+<LIST1><ITEM><PTXT>By adopting LEDs for the backlight that illuminates the LCD panel, a display with higher brightness than the conventional type has been achieved. In addition, startup performance (brightness recovery) at low temperatures, response and color reproduction have been improved. Furthermore, the display module is mercury-free, which is environmentally friendly.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021T586I01" INDSW = "OFF">
+<TITLE>HDD Navigation Receiver</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930029e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+
+<MECA ID = "T120021T586Ka69" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Color LCD Panel</TITLE>
+<LIST1><ITEM><PTXT>The display uses a TFT (Thin Film Transistor) type LCD panel with a 7-inch wide screen with an aspect ratio of 9:16 (height 91.44 x width 152.40mm). The liquid crystal cells are subdivided into pixels of 234 vertical x 1200 horizontal; each liquid crystal cell (pixel) corresponding to each color filter is controlled in an analog manner from fully closed to fully open by the RGB video signals, so that colors are mixed additively and all colors can be expressed.</PTXT></ITEM></LIST1>
+<SPEC ID = "T120021T586Ka69X01" INDSW = "OFF">
+<TITLE>Color LCD Panel Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Display Method</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>TN Liquid Crystal Transmissive Type</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Color Display</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>RGB color filter, additive color mixing<HINTREF     REFID = "H478120021T586Ka6901"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Drive Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>TFT, active matrix drive</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Display Screen Size [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>91.44 high × 152.40 wide</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Number of Display Pixels [dots]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>234 high × 1200 wide (RGB)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Pixel Size [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>0.3908 high × 0.1270 wide</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Color Filter Arrangement</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>RGB Stripe Arrangement</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478120021T586Ka6901">A method of expressing colors by adding the 3 primary colors of light: R (red), G (green) and B (blue).</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></SPEC></MECA>
+</PARA>
+</BIND>
+</SECTION>
+</SCT>

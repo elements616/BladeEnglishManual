@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1002B_S001H" variety="S001H">
+<name>Automatic Transaxle</name>
+<ttl id="1002B_S001H_74Y10_T00HB" variety="T00HB">
+<name>Neutral Start Switch Assembly (U660E)</name>
+<para id="RM000002BOL003X" category="G" type-id="3001K" name-id="261JH-00" from="200708">
+<name>Component Inspection</name>
+<subpara id="RM000002BOL003X_01" type-id="01" category="01">
+<s-1 id="RM000002BOL003X_01_0001" proc-id="RM0550J___0000FWN00000">
+<ptxt>Resistance Inspection</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST (Toyota electrical tester), check the resistance between the terminals of the connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="C141932J04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1(RB) - 3(PL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4(B) - 9(L)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2(RL) - 1(RB)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1(RB) - 8(NL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>N position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4(B) - 9(L)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>N position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1(RB) - 7(DL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>D Position</ptxt>
+<ptxt>S position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T010251A077A874" UPDATE = "ORIGINAL" LDUP = "19May2005"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>MRE Type Cam Position Sensor Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The MRE type cam position sensor consists of a magnet and a sensor circuit (IC) with a built-in MRE.</PTXT></ITEM>
+<ITEM><PTXT>In the MRE type cam position sensor, the rotation of the timing rotor changes the magnetic vector (direction of the magnetic field) applied to the MRE in the cam position sensor, which changes the internal resistance of the MRE. This resistance change is converted to voltage, and the output waveform is compared with a threshold value and shaped into a rectangular wave of Hi (approximately 4V) and Lo (approximately 1V), which is output to the engine control computer. This output signal is compared with the Ne signal to detect the actual camshaft angle and identify cylinders.</PTXT></ITEM>
+<ITEM><PTXT>By identifying the position of the timing rotor from the voltage output as Hi/Lo digital signals from when the engine is stopped and from pattern recognition of the peak and valley widths of the timing rotor, the crank position at starting can be detected earlier than with the conventional pickup coil type cam position sensor, improving engine startability.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4560013p" WIDTH = "6.903in" HEIGHT = "6.736in" />
+</FIGURE>
+</MECA>

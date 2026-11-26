@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740082e SYSTEM "grph_ent/a4740082e.png" NDATA png>
+<!ENTITY k3960087e SYSTEM "grph_ent/k3960087e.png" NDATA png>
+<!ENTITY k3960090e SYSTEM "grph_ent/k3960090e.png" NDATA png>
+<!ENTITY a4740110e SYSTEM "grph_ent/a4740110e.png" NDATA png>
+
+<!ENTITY T120028K359 SYSTEM "t285120028k359.xml">
+<!ENTITY T120028K359K108 SYSTEM "t285120028k359k108.xml">
+<!ENTITY T120028K359K411 SYSTEM "t285120028k359k411.xml">
+
+<!ENTITY T120028K067 SYSTEM "t478120028k067.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120028K359S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120028K359" UPDATE = "ORIGINAL" LDUP = "31Aug2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Rear Wiper System</TITLE>
+<LIST1><ITEM><PTXT>A wiper with an intermittent function is standard on all models.</PTXT></ITEM>
+<ITEM><PTXT>Rigidity has been ensured by integrating the wiper motor and shaft with a bracket.</PTXT></ITEM>
+<ITEM><PTXT>Resin has been adopted as the material of the rear wiper arm &amp; blade to reduce weight, and the integrated shape improves appearance. In addition, the rear wiper arm &amp; blade has a removable structure for excellent serviceability.</PTXT></ITEM>
+<ITEM><PTXT>The wiper operating angle has been increased by passing the rear wiper drive shaft through the glass. This allows a wide area to be wiped, ensuring rear visibility in rainy weather.</PTXT></ITEM>
+<ITEM><PTXT>The rear wiper &amp; washer switch is integrated with the wiper control switch, and the rear wiper relay is built into the wiper control switch to simplify the wire harness.</PTXT></ITEM>
+<ITEM><PTXT>The rear wiper blade length is 305mm.</PTXT></ITEM>
+<ITEM><PTXT>Winter blades are available as a dealer-installed option for cold area specification models.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740082e" WIDTH = "6.903in" HEIGHT = "3.556in" />
+</FIGURE>
+
+<MECA ID = "T120028K359K108" UPDATE = "ORIGINAL" LDUP = "28Apr2004" INDSW = "OFF">
+<TITLE>Intermittent Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the rear wiper switch is moved to the INT position, the rear wiper operates intermittently 1 time(s) every approximately 12 seconds.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k3960087e" WIDTH = "7.069in" HEIGHT = "2.333in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120028K359K411" UPDATE = "ORIGINAL" LDUP = "28Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Rear Wiper Intermittent Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the rear wiper control switch is moved to the INT position, the capacitor in the intermittent control circuit discharges and turns Tr ON, so current flows through the relay coil → Tr → rear wiper relay terminal C1 → rear wiper switch terminal C1R → ground, and the relay contact turns ON. As a result, current flows from rear wiper relay terminal +B through the relay contact → rear wiper relay terminal LM → rear wiper motor terminal +1 → wiper motor → ground, and the rear wiper motor operates.</PTXT></ITEM>
+<ITEM><PTXT>Immediately after the rear wiper motor starts operating, the capacitor in the intermittent control circuit completes discharging, so Tr turns OFF and the relay contact turns OFF. Even when the relay contact is OFF, until the rear wiper motor stops at the automatic stop position, current flows through rear wiper motor terminal +B → rear wiper motor internal contact → rear wiper motor terminal S → rear wiper relay terminal SM → relay contact → rear wiper relay terminal LM → rear wiper motor terminal +1 → ground, so the rear wiper motor operates.</PTXT></ITEM>
+<ITEM><PTXT>When it reaches the automatic stop position, the rear wiper motor internal contact switches and the rear wiper motor stops. The capacitor in the intermittent control circuit is charged approximately 12 seconds after discharging is complete; after charging is complete, it discharges again and turns Tr ON, which turns the relay contact ON. The repetition of this discharging and charging is the intermittent operation.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k3960090e" WIDTH = "7.069in" HEIGHT = "3.514in" />
+</FIGURE>
+</MECA>
+</PARA>
+<BIND ID = "T120028K359B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T120028K067" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Washer</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A 2.5L washer tank has been adopted and installed under the right front fender apron.</PTXT></ITEM>
+<ITEM><PTXT>A diffusion type injection method has been adopted for the front washer nozzles, widening the area on the glass where the washer fluid lands to improve cleaning performance.</PTXT></ITEM>
+<ITEM><PTXT>The diffusion type washer nozzle vibrates the flow of washer fluid as it passes through and sprays the washer fluid in a fan shape, so that it is sprayed over a wide area of the front wiper wiping range. In addition, by reducing the amount of fluid in the center of the spray range, care has been taken not to obstruct the driver's view when the washer is used while driving.</PTXT></ITEM>
+<ITEM><PTXT>Flat spray type rear washer nozzles have been adopted on all models; by spraying the washer fluid in a fan shape, the area on the glass where it lands is widened to improve wiping performance.</PTXT></ITEM></LIST1>
+<HINT>
+<PTXT>Due to its structure, the landing point of the diffusion type washer nozzle cannot be adjusted. Never attempt to adjust the landing point of the washer fluid, as this may damage the front washer nozzle. Adjust the landing point by replacing the nozzle with one having a different spray angle. (For details, refer to the Repair Manual.)</PTXT></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740110e" WIDTH = "6.903in" HEIGHT = "6.306in" />
+</FIGURE>
+</PARA>
+</BIND>
+</SECTION>

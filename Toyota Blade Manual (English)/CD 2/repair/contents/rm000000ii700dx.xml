@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="08">
+<name>Heater &amp; Air Conditioner/Ventilation</name>
+<section id="1002K_S000B" variety="S000B">
+<name>Air Conditioner</name>
+<ttl id="1002K_S000B_74227_T002H" variety="T002H">
+<name>Cooler Thermistor (Solar Sensor)</name>
+<para id="RM000000II700DX" category="G" type-id="8000T" name-id="52285-00" from="200612">
+<name>On-vehicle Inspection</name>
+<subpara id="RM000000II700DX_01" type-id="01" category="01">
+<s-1 id="RM000000II700DX_01_0001" proc-id="RM0550J___000016G00000">
+<ptxt>Inspect Cooler Thermistor (Solar Sensor)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Voltage Inspection (Dual Mode Automatic Air Conditioner)</ptxt>
+<figure>
+<graphic graphicname="E127185" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between each terminal of the cooler thermistor (solar sensor) connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="0.85in"/>
+<colspec colname="COL2" colwidth="2.34in"/>
+<colspec colname="COL3" colwidth="0.94in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Not exposed to direct sunlight (sensor covered with cloth)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 0.8V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>When inspection light is brought close</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.8 to 4.3V</ptxt>
+<ptxt>(Changes according to light intensity)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>1 - 3</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Not exposed to direct sunlight (sensor covered with cloth)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 0.8V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>When inspection light is brought close</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.8 to 4.3V</ptxt>
+<ptxt>(Changes according to light intensity)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>The sensor may not respond if the light is weak, so use an incandescent inspection light and bring it to within approximately 30cm of the sensor when measuring.</ptxt>
+</atten3>
+</s3>
+</s2>
+<s2>
+<ptxt>Voltage Inspection (Automatic Air Conditioner)</ptxt>
+<figure>
+<graphic graphicname="E104152" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between each terminal of the cooler thermistor (solar sensor) connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="0.83in"/>
+<colspec colname="COL2" colwidth="2.35in"/>
+<colspec colname="COL3" colwidth="0.95in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Not exposed to direct sunlight (sensor covered with cloth)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 0.8V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>When inspection light is brought close</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.8 to 4.3V</ptxt>
+<ptxt>(Changes according to light intensity)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>The sensor may not respond if the light is weak, so use an incandescent inspection light and bring it to within approximately 30cm of the sensor when measuring.</ptxt>
+</atten3>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

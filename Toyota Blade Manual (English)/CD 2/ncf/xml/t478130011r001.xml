@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARA INFOID = "T130011R001" UPDATE = "ORIGINAL" LDUP = "2Dec2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Power Window Computer</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The power window ECU (computer) detects the amount of door glass movement by counting the pulses output by the Hall IC, at 2 cycles per 1 rotation of the motor shaft. Together with this, it determines the motor rotation direction (door glass movement direction) from the rotation direction signal output by the Hall IC. Various functions are controlled based on the position and movement direction information obtained from this Hall IC.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740039b" WIDTH = "6.903in" HEIGHT = "1.833in" />
+</FIGURE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>At the same time, the power window ECU (computer) detects changes in the door glass movement speed by detecting changes in motor rotation speed from the intervals of the pulses output by Hall IC1. This allows it to recognize the load applied to the door glass and control the jam protection function and overload stop function.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740040b" WIDTH = "6.903in" HEIGHT = "1.375in" />
+</FIGURE>
+</PARA>

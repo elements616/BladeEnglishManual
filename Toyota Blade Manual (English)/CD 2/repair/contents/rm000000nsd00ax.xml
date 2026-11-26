@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1002B_S001H" variety="S001H">
+<name>Automatic Transaxle</name>
+<ttl id="1002B_S001H_74Y1A_T00HL" variety="T00HL">
+<name>Line Pressure Control Solenoid Assembly (U660E)</name>
+<para id="RM000000NSD00AX" category="G" type-id="3001K" name-id="261JC-00" from="200708">
+<name>Component Inspection</name>
+<subpara id="RM000000NSD00AX_01" type-id="01" category="01">
+<s-1 id="RM000000NSD00AX_01_0001" proc-id="RM0550J___0000G3M00000">
+<ptxt>Operation Check</ptxt>
+<content1 releasenbr="1">
+<figure>
+<graphic graphicname="C053442J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s2>
+<ptxt>Check that the valve inside the solenoid operates when battery positive (+) is connected to terminal 2 and battery negative (-) is connected to terminal 1 of the line pressure control solenoid assembly (SLT) via a 12V-21W bulb.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Operates (operating sound heard)</ptxt>
+</specitem>
+</spec>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000NSD00AX_01_0002" proc-id="RM0550J___0000G3N00000">
+<ptxt>Resistance Inspection</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST (Toyota electrical tester), check the resistance between the terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.0 to 5.6Ω(20°C)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

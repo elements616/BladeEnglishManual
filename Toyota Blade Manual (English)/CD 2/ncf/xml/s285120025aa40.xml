@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740202b SYSTEM "grph_ent/a4740202b.png" NDATA png>
+<!ENTITY a4740206b SYSTEM "grph_ent/a4740206b.png" NDATA png>
+<!ENTITY a4740200b SYSTEM "grph_ent/a4740200b.png" NDATA png>
+<!ENTITY a4740205b SYSTEM "grph_ent/a4740205b.png" NDATA png>
+<!ENTITY a4740203b SYSTEM "grph_ent/a4740203b.png" NDATA png>
+<!ENTITY a4740204b SYSTEM "grph_ent/a4740204b.png" NDATA png>
+<!ENTITY a4740201b SYSTEM "grph_ent/a4740201b.png" NDATA png>
+<!ENTITY a4740207b SYSTEM "grph_ent/a4740207b.png" NDATA png>
+
+<!ENTITY T120025Aa40 SYSTEM "t285120025aa40.xml">
+<!ENTITY T120025Aa40K399 SYSTEM "t285120025aa40k399.xml">
+<!ENTITY T120025Aa40T089 SYSTEM "t285120025aa40t089.xml">
+<!ENTITY T120025Aa40A749 SYSTEM "t285120025aa40a749.xml">
+<!ENTITY T120025Aa40K889 SYSTEM "t285120025aa40k889.xml">
+<!ENTITY T120025Aa40K647 SYSTEM "t285120025aa40k647.xml">
+<!ENTITY T120025Aa40K648 SYSTEM "t285120025aa40k648.xml">
+<!ENTITY T120025Aa40K397 SYSTEM "t285120025aa40k397.xml">
+<!ENTITY T120025Aa40Ab15 SYSTEM "t285120025aa40ab15.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120025Aa40S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120025Aa40" UPDATE = "ORIGINAL" LDUP = "13Jul2006"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Single-tone Buzzer</TITLE>
+
+<MECA ID = "T120025Aa40K399" UPDATE = "ORIGINAL" LDUP = "22Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Reverse Warning Buzzer Specifications</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Sounds when the shift position is "R" (reverse).</PTXT></ITEM>
+<ITEM><PTXT>Stops immediately when the above sounding conditions are cancelled.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740202b" WIDTH = "6.903in" HEIGHT = "1.194in" /><FIGCAPTION><L ja="約0.455秒">approx. 0.455 s</L><L ja="約0.245秒">approx. 0.245 s</L><L ja="〔周波数約1.9kHz〕">[Frequency approx. 1.9 kHz]</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025Aa40T089" UPDATE = "ORIGINAL" LDUP = "4Jul2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Key Reminder Buzzer Specifications</TITLE>
+<LIST1><ITEM><PTXT>Sounds when the driver door is opened with the power source mode in ACC or OFF and the electronic key inside the vehicle.</PTXT></ITEM>
+<ITEM><PTXT>Stops immediately when the above sounding conditions are cancelled.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740206b" WIDTH = "6.903in" HEIGHT = "1.194in" /><FIGCAPTION><L ja="約0.6秒">approx. 0.6 s</L><L ja="〔周波数約1.9kHz〕">[Frequency approx. 1.9 kHz]</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025Aa40A749" UPDATE = "ORIGINAL" LDUP = "25Dec2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Smart Entry &amp; Start System Warning Buzzer Specifications</TITLE>
+<LIST1><ITEM><PTXT>Sounds as a single tone, intermittent tone or continuous tone in response to sounding requests from the Certification ECU and Main Body ECU.<XREF     REFID = "T285100001A500A748"/>
+</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740200b" WIDTH = "6.903in" HEIGHT = "3.139in" /><FIGCAPTION><L ja="約0.6秒">approx. 0.6 s</L><L ja="〔周波数約1.9kHz〕">[Frequency approx. 1.9 kHz]</L><L ja="単発音">Single tone</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025Aa40K889" UPDATE = "ORIGINAL" LDUP = "4Jul2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Warning Mode Display-linked Buzzer Specifications</TITLE>
+<LIST1><ITEM><PTXT>Sounds 1 time(s) when a system malfunction warning is shown on the multi-information display.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740205b" WIDTH = "6.903in" HEIGHT = "1.389in" /><FIGCAPTION><L ja="約0.6秒">approx. 0.6 s</L><L ja="〔周波数約1.9kHz〕">[Frequency approx. 1.9 kHz]</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025Aa40K647" UPDATE = "ORIGINAL" LDUP = "4Jul2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Reject Warning Buzzer Specifications</TITLE>
+<LIST1><ITEM><PTXT>Sounds 2 time(s) when an operation that cannot shift gears is performed with the shift position in "M".</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740203b" WIDTH = "6.903in" HEIGHT = "1.389in" /><FIGCAPTION><L ja="約0.13秒">approx. 0.13 s</L><L ja="〔周波数約1.9kHz〕">[Frequency approx. 1.9 kHz]</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025Aa40K648" UPDATE = "ORIGINAL" LDUP = "22Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Seat Belt Warning Buzzer Specifications</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the vehicle speed reaches approximately 20km/h or more with the power source mode ON and the driver or front passenger seat belt unfastened, the meter computer sounds the buzzer in the combination meter to prompt the occupant to fasten the seat belt.</PTXT></ITEM>
+<ITEM><PTXT>For approximately the first 30 seconds, the seat belt unfastened warning buzzer sounds as level 1 with an intermittent tone of 1.2-second cycle. If the seat belt is not fastened within approximately 30 seconds, the buzzer sounds as level 2 with an intermittent tone of 0.4-second cycle for approximately 90 seconds.</PTXT></ITEM>
+<ITEM><PTXT>If the driver and front passenger seat belts are fastened while the buzzer is sounding at level 1 or 2, the buzzer stops sounding.</PTXT></ITEM>
+<ITEM><PTXT>Even if the vehicle speed drops below approximately 20km/h while the buzzer is sounding at level 1 or level 2, the buzzer continues to sound. In addition, after the buzzer has finished sounding (120 seconds after it starts), the buzzer will not sound even if the vehicle speed drops below 20km/h and then rises to 20km/h or more again.</PTXT></ITEM>
+<ITEM><PTXT>The buzzer stops sounding when the shift position is moved to "R".</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740204b" WIDTH = "6.903in" HEIGHT = "3.153in" /><FIGCAPTION><L ja="〔周波数約1.9kHz〕">[Frequency approx. 1.9 kHz]</L><L ja="約0.6秒">approx. 0.6 s</L><L ja="電源ポジション">Power mode</L><L ja="約20km/h以上">approx. 20 km/h or more</L><L ja="車速">Vehicle speed</L><L ja="約20km/h未満">Less than approx. 20 km/h</L><L ja="レベル1ブザー">Level 1 buzzer</L><L ja="約0.2秒">approx. 0.2 s</L><L ja="レベル2">Level 2</L><L ja="ウォーニングレベル1ブザー">Warning level 1 buzzer</L><L ja="レベル2ブザー">Level 2 buzzer</L><L ja="約30秒">approx. 30 s</L><L ja="約90秒">approx. 90 s</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025Aa40K397" UPDATE = "ORIGINAL" LDUP = "22Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Light Reminder Warning Buzzer Specifications</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Sounds when the driver door is opened with the taillights ON.</PTXT></ITEM>
+<ITEM><PTXT>Stops immediately when the above sounding conditions are cancelled.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740201b" WIDTH = "6.903in" HEIGHT = "1.167in" /><FIGCAPTION><L ja="〔周波数約1.9kHz〕">[Frequency approx. 1.9 kHz]</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025Aa40Ab15" UPDATE = "ORIGINAL" LDUP = "13Jul2006"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Single Tone Buzzer Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Reverse Warning Buzzer Operation</TITLE>
+<ITEM><PTXT>When the meter computer receives a shift position "R" signal from the engine control computer via the CAN communication system, it sounds the buzzer.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Key Reminder Warning Buzzer Operation</TITLE>
+<ITEM><PTXT>When the meter computer receives a key reminder warning buzzer sounding request signal from the Certification ECU via the CAN communication system with the power source mode OFF, it sounds the buzzer.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Smart Entry &amp; Start System Warning Buzzer Operation</TITLE>
+<ITEM><PTXT>When the meter computer receives a warning buzzer sounding request signal from the Certification ECU and Main Body ECU via the CAN communication system, it sounds the buzzer.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Warning Mode Display-linked Buzzer Operation</TITLE>
+<ITEM><PTXT>For the operation of the warning mode display-linked buzzer, refer to "Multi-information Display Warning Display Mode".<XREF     REFID = "S285120025K664"/>
+</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Reject Warning Buzzer Operation</TITLE>
+<ITEM><PTXT>When the meter computer receives a downshift reject signal from the engine control computer via the CAN communication system, it sounds the buzzer.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Light Reminder Warning Buzzer Operation</TITLE>
+<ITEM><PTXT>When the meter computer receives a driver door courtesy light switch ON signal from the Main Body ECU via the CAN communication system with the taillights ON and the power source mode OFF, it sounds the buzzer.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Driver Seat Belt Unfastened Warning Buzzer Operation</TITLE>
+<ITEM><PTXT>When the driver seat belt is unfastened (driver seat belt inner buckle switch ON), the Main Body ECU outputs a driver seat belt unfastened warning signal to the meter computer. While receiving this signal, the meter computer sounds the buzzer when the vehicle speed signal from the skid control computer reaches approximately 20km/h or more.<XREF     REFID = "S285120025K147"/>
+</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Front Passenger Seat Belt Unfastened Warning Buzzer Operation</TITLE>
+<ITEM><PTXT>When the meter computer receives an occupant detection sensor ON and front passenger seat belt inner buckle switch ON (front passenger seat belt not fastened) signal and the vehicle speed reaches approximately 20km/h or more, it sounds the buzzer in the same way as the driver seat belt unfastened warning buzzer.</PTXT></ITEM>
+<ITEM><PTXT>As with the driver seat belt unfastened warning buzzer, the buzzer stops when the seat belt inner buckle switch turns OFF (seat belt fastened) or the power source mode is turned OFF.<XREF     REFID = "S285120025K147"/>
+</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740207b" WIDTH = "6.903in" HEIGHT = "5.153in" /><FIGCAPTION><L ja="+IG +B">+IG +B</L><L ja="コンビネーションメーター">Combination Meter</L><L ja="テールランプリレー">Tail Light Relay</L><L ja="助手席シートベルトインナーバックルスイッチ">Front Passenger Seat Belt Inner Buckle Switch</L><L ja="乗員検知センサー">Occupant Detection Sensor</L><L ja="CAN通信">CAN communication</L><L ja="メインボデーECU（インストルメントパネルジャンクションブロックASSY）">Main Body ECU (Instrument Panel Junction Block Assembly)</L><L ja="ブザー">Buzzer</L><L ja="エンジンコントロールコンピューター">Engine Control Computer</L><L ja="スキッドコントロールコンピューター">Skid Control Computer</L><L ja="照合ECU">Certification ECU</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

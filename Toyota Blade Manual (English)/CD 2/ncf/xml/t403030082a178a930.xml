@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T030082A178A930" UPDATE = "ORIGINAL" LDUP = "18Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Integrated Powertrain Control</TITLE>
+<LIST1><ITEM><PTXT>Integrated powertrain control, which controls the engine and transaxle in an integrated manner, has been adopted to improve drivability and comfort.</PTXT></ITEM>
+<ITEM><PTXT>During upshift and downshift transitions, high-quality shift feel and high responsiveness in accordance with the driver's intention have been achieved.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T030082A178A930I01" INDSW = "OFF">
+<TITLE>Start-off Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Engine torque is optimally controlled in real time according to the transient characteristics of the torque converter, achieving both "reduced lurching and suppressed tire slip" and "high responsiveness" when starting off, and ensuring refined start-off performance.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740248p" WIDTH = "6.917in" HEIGHT = "3.042in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T030082A178A930I02" INDSW = "OFF">
+<TITLE>Deceleration Enhancement Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Deceleration that faithfully reflects the driver's intention has been achieved, and smooth acceleration is achieved without downshifts unintended by the driver during re-acceleration.</PTXT></ITEM>
+<ITEM><PTXT>The gear for accelerator OFF is determined from the change in accelerator pedal opening, and inadvertent upshifts contrary to the driver's intention are prohibited.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740243p" WIDTH = "6.903in" HEIGHT = "2.903in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T030082A178A930I03" INDSW = "OFF">
+<TITLE>Shift Transient Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Powertrain integrated control enables control with high robustness<HINTREF     REFID = "H403030082A178A93001"/> that is not affected by engine combustion conditions (fuel properties, operating environment, etc.), stably outputs the engine torque requested by the driver in real time, and generates optimum clutch engagement hydraulic pressure according to engine torque through direct pressure control using high-response, high-capacity linear solenoids, achieving both stable shift characteristics and responsiveness.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740258p" WIDTH = "6.903in" HEIGHT = "3.903in" />
+</FIGURE>
+</INDICATE>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403030082A178A93001">The system does not become unstable due to disturbances or modeling errors</PTXT></ITEM></LIST1></HINT></MECA>

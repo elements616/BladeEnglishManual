@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002Q_S000F" variety="S000F">
+<name>Navigation</name>
+<ttl id="1002Q_S000F_746OU_T00CJ" variety="T00CJ">
+<name>HDD Navigation System</name>
+<para id="RM000002U3O02WX" category="J" type-id="804QE" name-id="653G1-01" from="200912">
+<dtccode/>
+<dtcname>Poor sound quality / no sound only when playing USB memory or "iPod"</dtcname>
+<subpara id="RM000002U3O02WX_02" type-id="32" category="03" proc-id="RM0550J___0000IKH00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E195394J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000002U3O02WX_04" type-id="51" category="05" proc-id="RM0550J___0000IKL00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Depending on the part replaced, setting work may be necessary. (see <xref label="Seep01" href="RM0000002RM03SX"/>)</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000002U3O02WX_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000002U3O02WX_03_0001" proc-id="RM0550J___0000IKI00000">
+<testtitle>Inspect Wire Harness and Connector (Multimedia Interface Computer - Navigation Receiver Assembly)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Pre-inspection Preparation</ptxt>
+<test2>
+<ptxt>Disconnect connector A of the multimedia interface computer.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect connector C of the navigation receiver assembly.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle wire harness connector between the multimedia interface computer and navigation receiver assembly.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A2(URO+) - C2(CDR+)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A3(URO-) - C3(CDR-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A4(ULO+) - C4(CDL+)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A5(ULO-) - C5(CDL-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A6(MUT1) - C6(MUTE)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the multimedia interface computer vehicle side wire harness connector and body ground.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A2 (URO+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A3 (URO-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A4 (ULO+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A5 (ULO-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A1 (USD1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A6 (MUT1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000002U3O02WX_03_0008" fin="false">OK</down>
+<right ref="RM000002U3O02WX_03_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002U3O02WX_03_0008" proc-id="RM0550J___0000IKB00000">
+<testtitle>Inspect Wire Harness and Connector (Stereo Jack Adapter Assembly NO.1 - Multimedia Interface Computer)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Pre-inspection Preparation</ptxt>
+<test2>
+<ptxt>Disconnect connector C of the multimedia interface computer.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the stereo jack adapter assembly NO.1 connector.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle wire harness connectors between the multimedia interface ECU and stereo jack adapter assembly NO.1.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C2(UDI+) - 3(UDO+)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C3(UDI-) - 2(UDO-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C5(UESS) - 5(UJSS)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the stereo jack adapter assembly NO.1 vehicle side wire harness connector and body ground.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3 (UDO+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 (UDO-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5 (UJSS) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000002U3O02WX_03_0009" fin="false">OK</down>
+<right ref="RM000002U3O02WX_03_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002U3O02WX_03_0009" proc-id="RM0550J___0000IKJ00000">
+<testtitle>Replace Stereo Jack Adapter Assembly NO.1</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Stereo Jack Adapter Assembly NO.1 Swap Inspection</ptxt>
+<test2>
+<ptxt>Prepare a new stereo jack adapter assembly NO.1 and replace it. (see <xref label="Seep01" href="RM000004AZM000X"/>)</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Check if the malfunction recurs.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Malfunction recurs</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Returns to normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002U3O02WX_03_0010" fin="false">A</down>
+<right ref="RM000002U3O02WX_03_0005" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000002U3O02WX_03_0010" proc-id="RM0550J___0000IKK00000">
+<testtitle>Replace Multimedia Interface Computer</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Multimedia Interface ECU Swap Inspection</ptxt>
+<test2>
+<ptxt>Prepare a new multimedia interface ECU and replace it. (see <xref label="Seep01" href="RM000004AZJ000X"/>)</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Check if the malfunction recurs.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Returns to normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Malfunction recurs</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002U3O02WX_03_0015" fin="true">A</down>
+<right ref="RM000002U3O02WX_03_0011" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000002U3O02WX_03_0015">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000002U3O02WX_03_0014">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000002U3O02WX_03_0003">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000002U3O02WX_03_0005">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000002U3O02WX_03_0011">
+<testtitle>Replace Navigation Receiver Assembly<xref label="Seep01" href="RM000001XG5006X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

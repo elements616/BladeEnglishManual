@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="04">
+<name>Driveline/Axle</name>
+<section id="1000K_S0015" variety="S0015">
+<name>Differential</name>
+<ttl id="1000K_S0015_744ZW_T00A7" variety="T00A7">
+<name>Active Torque Control 4WD System</name>
+<para id="X36100000HW008D" category="S" type-id="3001E" name-id="370E9-00" from="200612">
+<name>Diagnostic Trouble Code Chart</name>
+<subpara id="X36100000HW008D_z0" proc-id="RM0550J___00005I400000">
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title/>
+<tgroup cols="6" colsep="1" rowsep="1" align="center">
+<colspec colnum="1" colname="1" colwidth="0.85in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="0.92in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="3.40in" colsep="0"/>
+<colspec colnum="4" colname="4" colwidth="0.64in" colsep="0"/>
+<colspec colnum="5" colname="5" colwidth="0.64in" colsep="0"/>
+<colspec colnum="6" colname="6" colwidth="0.63in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>Diagnostic Trouble Code (DTC)</ptxt>
+</entry>
+<entry colname="2" colsep="1">
+<ptxt>Diagnosis Item</ptxt>
+</entry>
+<entry colname="3" colsep="1">
+<ptxt>Inspection Area</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>Light Illuminated</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>Code Memory</ptxt>
+</entry>
+<entry colname="6" colsep="1">
+<ptxt>Reference Page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1241/94</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Power Source Voltage Drop Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Battery</ptxt>
+<ptxt>• ECU-IG1 fuse</ptxt>
+<ptxt>• Wire harness and connector (IG1 terminal system, GND terminal system)</ptxt>
+<ptxt>• Alternator</ptxt>
+<ptxt>• 4WD computer assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="6" colsep="1">
+<ptxt>
+<xref href="RM00000068H00EX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1280/82</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Engine System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Shift position sensor</ptxt>
+<ptxt>• Wire harness and connector (shift position sensor system)</ptxt>
+<ptxt>• Throttle position sensor</ptxt>
+<ptxt>• Wire harness and connector (throttle position sensor system) </ptxt>
+<ptxt>• Crankshaft position sensor</ptxt>
+<ptxt>• Wire harness and connector (crankshaft position sensor system)</ptxt>
+<ptxt>• Engine control computer </ptxt>
+<ptxt>• 4WD computer assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="6" colsep="1">
+<ptxt>
+<xref href="X36100000I1008C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1296/96</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>ABS System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Speed sensor</ptxt>
+<ptxt>• Yaw rate sensor (G sensor)</ptxt>
+<ptxt>• Wire harness and connector (speed sensor system, G sensor system)</ptxt>
+<ptxt>• ABS &amp; traction actuator assembly (skid control computer)</ptxt>
+<ptxt>• 4WD computer assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="6" colsep="1">
+<ptxt>
+<xref href="X36100000I3008C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1298/98</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Linear Solenoid Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Transmission coupling assembly (linear solenoid SLC)</ptxt>
+<ptxt>• 4WD computer assembly</ptxt>
+<ptxt>• Wire harness and connector (linear solenoid system)</ptxt>
+<ptxt>• 4WD computer assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="6" colsep="1">
+<ptxt>
+<xref href="X36100000I4008C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>C1299/99</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>4WD Control Suspended</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Tire size (front and rear wheels)</ptxt>
+<ptxt>• Transmission coupling assembly (linear solenoid SLC)</ptxt>
+<ptxt>• 4WD computer assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="6" colsep="1">
+<ptxt>
+<xref href="X36100000I5008C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>U0073/86</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>CAN communication malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Wire harness and connector (CANH, CANL signal system)</ptxt>
+<ptxt>• 4WD computer assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="6" colsep="1">
+<ptxt>
+<xref href="RM000000IKO00EX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>U0100/85</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Engine ECU Communication Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Wire harness and connector (CANH, CANL signal system)</ptxt>
+<ptxt>• Engine control computer</ptxt>
+<ptxt>• 4WD computer assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="6" colsep="1">
+<ptxt>
+<xref href="RM000001XLW005X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1">
+<ptxt>U0129/83</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Brake ECU Communication Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>• Wire harness and connector (CANH, CANL signal system)</ptxt>
+<ptxt>• ABS &amp; traction actuator assembly (skid control computer)</ptxt>
+<ptxt>• 4WD computer assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="6" colsep="1">
+<ptxt>
+<xref href="RM00000200F005X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

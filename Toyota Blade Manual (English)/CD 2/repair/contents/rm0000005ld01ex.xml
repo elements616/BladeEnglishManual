@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="08">
+<name>Heater &amp; Air Conditioner/Ventilation</name>
+<section id="1002K_S000B" variety="S000B">
+<name>Air Conditioner</name>
+<ttl id="1002K_S000B_7421V_T0025" variety="T0025">
+<name>Heater &amp; Air Conditioner System</name>
+<para id="RM0000005LD01EX" category="C" type-id="300BV" name-id="522Q8-00" from="200708">
+<dtccode>B1451/51</dtccode>
+<dtcname>External variable compressor solenoid malfunction</dtcname>
+<subpara id="RM0000005LD01EX_05" type-id="31" category="03" proc-id="RM0550J___0000EQL00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The compressor assembly (w/ pulley) (2AZ-FE models) and cooler compressor w/ magnetic clutch assembly (2GR-FE models) change the refrigerant discharge volume according to signals from the air conditioner amplifier assembly. The air conditioner amplifier assembly converts the discharge capacity appropriate to changes in heat load, engine speed, etc. into a signal and controls the compressor.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Condition</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+<item>
+<ptxt>Malfunction Duration</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1451/51</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>When compressor assembly (w/ pulley) (2AZ-FE models) and cooler compressor w/ magnetic clutch assembly (2GR-FE models) are operating</ptxt>
+</item>
+<item>
+<ptxt>Open or short in compressor variable capacity control circuit</ptxt>
+</item>
+<item>
+<ptxt>Current malfunction only</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Compressor assembly (w/ pulley) (2AZ-FE models)</ptxt>
+</item>
+<item>
+<ptxt>Wire harness and connector (compressor assembly (w/ pulley) - air conditioner amplifier assembly)</ptxt>
+</item>
+<item>
+<ptxt>Cooler compressor w/ magnetic clutch assembly (2GR-FE models)</ptxt>
+</item>
+<item>
+<ptxt>Wire harness and connector (cooler compressor w/ magnetic clutch assembly - air conditioner amplifier assembly)</ptxt>
+</item>
+<item>
+<ptxt>Air Conditioner Amplifier Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000005LD01EX_06" type-id="32" category="03" proc-id="RM0550J___0000EQM00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E155263J01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000005LD01EX_07" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM0000005LD01EX_08" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000005LD01EX_08_0016" proc-id="RM0550J___0000F3800000">
+<testtitle>Check Vehicle (Engine Type)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the engine type of the vehicle.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2AZ-FE Models</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2GR-FE Models</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005LD01EX_08_0008" fin="false">A</down>
+<right ref="RM0000005LD01EX_08_0017" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005LD01EX_08_0008" proc-id="RM0550J___0000EQN00000">
+<testtitle>Read TaSCAN Data (Externally Variable Output Current Value)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST, inspect the ECU Data Monitor by following the screen instructions.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → A/C → ECU Data Monitor]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.17in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Item Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>External Variable Output Current Value</ptxt>
+<ptxt>[OROA]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When compressor assembly (w/ pulley) is operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Displayed in range 0A (minimum capacity) to 1A (maximum capacity)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<title>Result</title>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ECU Data Monitor reference values are abnormal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECU Data Monitor reference values are normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005LD01EX_08_0009" fin="false">A</down>
+<right ref="RM0000005LD01EX_08_0012" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005LD01EX_08_0009" proc-id="RM0550J___0000EQO00000">
+<testtitle>Inspect Compressor Assembly (with Pulley)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the compressor assembly (w/ pulley) connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<figure>
+<graphic graphicname="E103261J07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC0" colwidth="1.73in"/>
+<colspec colname="COL2" colwidth="1.04in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1(SOL-) - 2(SOL+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always (compressor temperature 25°C)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10.1 to 11.1Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005LD01EX_08_0010" fin="false">OK</down>
+<right ref="RM0000005LD01EX_08_0013" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005LD01EX_08_0010" proc-id="RM0550J___0000EQP00000">
+<testtitle>Inspect Wire Harness and Connector (Compressor Assembly (with Pulley) - Body Ground)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the compressor assembly (w/ pulley) vehicle side wire harness connector terminal and body ground.</ptxt>
+<figure>
+<graphic graphicname="E103260J05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (SOL-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005LD01EX_08_0011" fin="false">OK</down>
+<right ref="RM0000005LD01EX_08_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005LD01EX_08_0011" proc-id="RM0550J___0000EQQ00000">
+<testtitle>Inspect Wire Harness and Connector (Compressor Assembly (with Pulley) - Air Conditioner Amplifier Assembly)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the air conditioner amplifier assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals of the vehicle wire harness and between the terminals and body ground.</ptxt>
+<figure>
+<graphic graphicname="E155343J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2 (SOL+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2(SOL+) - A2(SOL+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005LD01EX_08_0012" fin="true">OK</down>
+<right ref="RM0000005LD01EX_08_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005LD01EX_08_0017" proc-id="RM0550J___0000F3900000">
+<testtitle>Read TaSCAN Data (Externally Variable Output Current Value)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST, inspect the ECU Data Monitor by following the screen instructions.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → A/C → ECU Data Monitor]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.17in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Item Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>External Variable Output Current Value</ptxt>
+<ptxt>[OROA]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When cooler compressor w/ magnetic clutch assembly is operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Displayed in range 0A (minimum capacity) to 1A (maximum capacity)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<title>Result</title>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ECU Data Monitor reference values are abnormal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECU Data Monitor reference values are normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005LD01EX_08_0018" fin="false">A</down>
+<right ref="RM0000005LD01EX_08_0012" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005LD01EX_08_0018" proc-id="RM0550J___0000F3F00000">
+<testtitle>Inspect Cooler Compressor w/ Magnetic Clutch Assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the cooler compressor w/ magnetic clutch assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<figure>
+<graphic graphicname="E103261J08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.73in"/>
+<colspec colname="COL3" colwidth="1.04in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A1(SOL-) A2(SOL+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always (compressor temperature 25°C)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10.1 to 11.1Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005LD01EX_08_0019" fin="false">OK</down>
+<right ref="RM0000005LD01EX_08_0021" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005LD01EX_08_0019" proc-id="RM0550J___0000F3A00000">
+<testtitle>Inspect Wire Harness and Connector (Cooler Compressor w/ Magnetic Clutch Assembly - Body Ground)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the cooler compressor w/ magnetic clutch assembly vehicle side wire harness connector terminal and body ground.</ptxt>
+<figure>
+<graphic graphicname="E103260J07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A1 (SOL-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005LD01EX_08_0020" fin="false">OK</down>
+<right ref="RM0000005LD01EX_08_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005LD01EX_08_0020" proc-id="RM0550J___0000F3B00000">
+<testtitle>Inspect Wire Harness and Connector (Cooler Compressor w/ Magnetic Clutch Assembly - Air Conditioner Amplifier Assembly)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the air conditioner amplifier assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals of the vehicle wire harness and between the terminals and body ground.</ptxt>
+<figure>
+<graphic graphicname="E155343J02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2 (SOL+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A2(SOL+) - A2(SOL+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005LD01EX_08_0012" fin="true">OK</down>
+<right ref="RM0000005LD01EX_08_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005LD01EX_08_0012">
+<testtitle>Replace Air Conditioner Amplifier Assembly<xref label="Seep01" href="RM000002140002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005LD01EX_08_0013">
+<testtitle>Replace Compressor Assembly (w/ Pulley)<xref label="Seep01" href="RM00000213P001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005LD01EX_08_0021">
+<testtitle>Replace Cooler Compressor w/ Magnetic Clutch Assembly<xref label="Seep01" href="RM00000298H006X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005LD01EX_08_0014">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

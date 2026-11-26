@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+  <title>[Electronic Technical Manual]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000FSM00TX"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>CVT System [Super CVT-i] (K112/K112F) DTC Check/Clear</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">Print</a></td></tr></table><br clear="all" class="beforePng"><a name="RM000000FSM00TX_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="RM0550J___000046Q0000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>DTC Check (Reading Using TaSCAN) </li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">Using SST (TaSCAN), following the screen display, display the [Diagnosis Menu/TCCS] screen and select [DTC Freeze Data].</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">Check the diagnostic trouble codes.</font><br><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">If freeze frame data is recorded, [F] is displayed at the left end and the color of that row changes.  </dd></dl></p></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___000046Q0000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Check Freeze Frame Data Using TaSCAN </li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">Using SST (TaSCAN), following the screen display, select the DTC recording freeze frame data (F displayed) from the [DTC Check] screen.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">The engine condition (ECU data) at the time of DTC detection and before and after detection (before: 1.5 seconds, after: 0.5 seconds) can be checked at 0.5-second intervals. <br></li><li class="atten4">Check that the malfunction symptoms from the customer problem analysis are consistent with the Diagnostic Trouble Code Chart. <br></li><li class="atten4">After repair, perform a confirmation test referring to the driving conditions confirmed above. <br></li></ol></p></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___000046Q0000013step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Clearing DTC Memory (Clearing Using TaSCAN)</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">Using SST (TaSCAN), following the screen display, display the [Diagnosis Menu/TCCS] screen and select [DTC].</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">Select [Clear] on the screen to clear the data.</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">DTCs and freeze frame data are cleared at the same time.</dd></dl></p></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___000046Q0000014step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>DTC Check (Reading Using Check Engine Warning Light) </li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c140838j03.png" name="C140838J03" alt="C140838J03" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Using SST (diagnosis check wire No.2), connect between terminals 13 (TC) ←→ 4 (CG) of the DLC3.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">Never connect the wrong terminals as this will cause a malfunction.</dd></dl></p></p></li>
+<li><p><font class="ptxt">Turn IG ON.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Read the DTC (number of blinks of the check engine warning light).</font><br><div class="full"><br clear="all"><img src="../../img/a035691j01.png" name="A035691J01" alt="A035691J01" border="1" class="full"></div><br clear="all"><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">When letters are used, as in TCCS code C1, the code is expressed as a 2-digit base 16 number. For C1, the light blinks 12 times and then blinks 1 times. (Blinking intervals are the same)</dd></dl><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><caption class="tbl-title"><span class="atten3">Base-16 Conversion Table 
+				</span></caption><colgroup align="center" width="50%
+			"><col align=""></colgroup><colgroup align="center" width="50%
+			"><col align=""></colgroup><tr><th class="atten3">Base-16<br></th><th class="atten3">Number of Blinks<br></th></tr><tr><td class="atten3">A<br></td><td class="atten3">10<br></td></tr><tr><td class="atten3">B<br></td><td class="atten3">11<br></td></tr><tr><td class="atten3">C<br></td><td class="atten3">12<br></td></tr><tr><td class="atten3">D<br></td><td class="atten3">13<br></td></tr><tr><td class="atten3">E<br></td><td class="atten3">14<br></td></tr><tr><td class="atten3">F<br></td><td class="atten3">15<br></td></tr></table></p><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">If normal, the light repeatedly comes on for 0.26 seconds and goes off for 0.26 seconds. <br></li><li class="atten4">If there is 1 DTC, the same code is output at intervals of 4.5 seconds. <br></li><li class="atten4">When multiple codes are output, the different codes are output at 2.5-second intervals. After one cycle is complete, the same output is repeated after 4.5 seconds. <br></li><li class="atten4">If 2 or more code numbers are output, they are displayed in order from the smallest code number. <br></li></ol></p></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___000046Q0000015step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Clearing DTC Memory (Clearing by Removing Fuse) </li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">After repairing the malfunctioning area, remove the EFI fuse (20A) and ETC-S fuse (10A) in the engine room for 60 seconds or more, then reconnect them.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c140838j03.png" name="C140838J03" alt="C140838J03" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Using SST (diagnosis check wire No.2), connect between terminals 13 (TC) ←→ 4 (CG) of the DLC3.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">Never connect the wrong terminals as this will cause a malfunction.</dd></dl></p></p></li>
+<li><p><font class="ptxt">Turn IG ON.</font><br></p></li>
+<li><p><font class="ptxt">Check that the normal code is output.</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">If a malfunction code is output, repair again according to the code.</dd></dl></p></p></li>
+<li><p><font class="ptxt">Turn IG OFF.</font><br></p></li>
+<li><p><font class="ptxt">Disconnect terminals 13 (TC) ←→ 4 (CG) of the DLC3.</font><br></p></li></ol><br clear="all"></body></html>

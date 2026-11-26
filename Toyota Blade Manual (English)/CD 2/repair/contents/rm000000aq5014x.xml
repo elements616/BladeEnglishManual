@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001C_S000C" variety="S000C">
+<name>Audio &amp; Visual</name>
+<ttl id="1001C_S000C_742AC_T002N" variety="T002N">
+<name>Audio System</name>
+<para id="RM000000AQ5014X" category="U" type-id="3001G" name-id="641KH-00" from="200612">
+<name>Terminals of ECU</name>
+<subpara id="RM000000AQ5014X_z0" proc-id="RM0550J___000017D00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Radio Receiver Assembly</ptxt>
+<figure>
+<graphic graphicname="E131315J02" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<title>Connector A</title>
+<tgroup cols="8">
+<colspec colname="COLSPEC0" colwidth="0.36in"/>
+<colspec colname="COL1" colwidth="0.70in"/>
+<colspec colname="COL2" colwidth="0.73in"/>
+<colspec colname="COLSPEC1" colwidth="0.87in"/>
+<colspec colname="COL3" colwidth="0.47in"/>
+<colspec colname="COL4" colwidth="1.08in"/>
+<colspec colname="COL5" colwidth="0.94in"/>
+<colspec colname="COL6" colwidth="1.93in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connect Tester</ptxt>
+<ptxt>Positive-Negative</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Problem Symptoms when Out of Standard</ptxt>
+<ptxt>O: When open</ptxt>
+<ptxt>S: When shorted to body</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FR+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A1-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice output in progress</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with the sound is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No sound from front speaker assembly No.1 (RH) and speaker assembly FR No.2 (RH)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FL+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A2-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice output in progress</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with the sound is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No sound from front speaker assembly No.1 (LH) and speaker assembly FR No.2 (LH)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ACC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A3-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACC ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O: System does not operate</ptxt>
+<ptxt>S: Fuse blown</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A4-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O: System does not operate</ptxt>
+<ptxt>S: Fuse blown</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FR-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A5-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice output in progress</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with the sound is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No sound from front speaker assembly No.1 (RH) and speaker assembly FR No.2 (RH)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FL-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A6-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice output in progress</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with the sound is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No sound from front speaker assembly No.1 (LH) and speaker assembly FR No.2 (LH)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>E</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A7 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O: Slight increase in noise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>8</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ANT</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A8-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receiving radio (AM/FM)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Poor AM/FM reception sensitivity</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>10</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ILL+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A10-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Headlight dimmer switch TAIL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O: Night illumination does not come on</ptxt>
+<ptxt>S: Fuse blown</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Connector B</title>
+<tgroup cols="8">
+<colspec colname="COLSPEC2" colwidth="0.35in"/>
+<colspec colname="COL1" colwidth="0.71in"/>
+<colspec colname="COL2" colwidth="0.72in"/>
+<colspec colname="COLSPEC4" colwidth="0.88in"/>
+<colspec colname="COL3" colwidth="0.47in"/>
+<colspec colname="COL4" colwidth="1.05in"/>
+<colspec colname="COL5" colwidth="0.97in"/>
+<colspec colname="COL6" colwidth="1.93in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connect Tester</ptxt>
+<ptxt>Positive-Negative</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Problem Symptoms when Out of Standard</ptxt>
+<ptxt>O: When open</ptxt>
+<ptxt>S: When shorted to body</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>RR+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B1-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice output in progress</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with the sound is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No sound from speaker assembly RR (RH)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>RL+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B2-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice output in progress</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with the sound is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No sound from speaker assembly RR (LH)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>RR-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B3-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice output in progress</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with the sound is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No sound from speaker assembly RR (RH)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>RL-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B6-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice output in progress</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with the sound is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No sound from speaker assembly RR (LH)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Connector D</title>
+<tgroup cols="8">
+<colspec colname="COLSPEC5" colwidth="0.35in"/>
+<colspec colname="COL1" colwidth="0.71in"/>
+<colspec colname="COL2" colwidth="0.72in"/>
+<colspec colname="COLSPEC6" colwidth="0.88in"/>
+<colspec colname="COL3" colwidth="0.47in"/>
+<colspec colname="COL4" colwidth="1.04in"/>
+<colspec colname="COL5" colwidth="0.98in"/>
+<colspec colname="COL6" colwidth="1.93in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connect Tester</ptxt>
+<ptxt>Positive-Negative</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Problem Symptoms when Out of Standard</ptxt>
+<ptxt>O: When open</ptxt>
+<ptxt>S: When shorted to body</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SPD</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>D3-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Drive at 5km/h or more</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1V or less to 9V or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ASL (Auto Sound Levelizer) does not operate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SWG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>D6-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Steering pad switch cannot be operated</ptxt>
+</item>
+<item>
+<ptxt>Steering pad switch night illumination does not come on</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SW1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>D7-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No switch pressed → VOL- switch pressed → VOL+ switch pressed → SEEK- switch pressed → SEEK+ switch pressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2.7V or more → Approx. 2.3V → Approx. 1.6V → Approx. 1.0V → 0.8V or less</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SEEK operation and volume adjustment cannot be performed with steering pad switch</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>8</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SW2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>D8-A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No switch pressed → MODE switch pressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2.7V or more → 0.8V or less</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MODE cannot be operated with the steering pad switch</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

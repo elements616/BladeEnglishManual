@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T110002K776W003" UPDATE = "ORIGINAL" LDUP = "19Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Vehicle-to-vehicle Distance Control Mode</TITLE>
+<LIST1><ITEM><PTXT>The radar cruise control system performs the following controls in vehicle-to-vehicle distance control mode.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T110002K776W003I01" INDSW = "OFF">
+<TITLE>Set Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When the - SET switch is turned ON while driving at or above the minimum set vehicle speed (approximately 50km/h) with the main switch ON, the vehicle speed when the switch is turned OFF is stored as the set vehicle speed and control starts.</PTXT></ITEM>
+<ITEM><PTXT>If the - SET switch is turned ON while driving at or above the maximum set vehicle speed (approximately 100km/h), the maximum set vehicle speed (approximately 100km/h) is stored as the set vehicle speed and control is performed.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W003I02" INDSW = "OFF">
+<TITLE>Auto Cancel Control</TITLE>
+<LIST1><ITEM><PTXT>When any of the following conditions (No.1 to 11) occurs while driving in vehicle-to-vehicle distance control mode, control is cancelled.</PTXT></ITEM>
+<ITEM><PTXT>In conditions No.1, 2 and 4, control is prohibited until the main switch is turned ON again.</PTXT></ITEM>
+<ITEM><PTXT>In conditions No.5 to 7, control is prohibited until the engine switch is turned ON (IG) again.</PTXT></ITEM>
+<ITEM><PTXT>In the No.8 and 9 conditions, control is prohibited until the system recovers<HINTREF REFID = "H478110002K776W00301"/> from the No.8 and 9 conditions or the main switch is turned ON again.</PTXT>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478110002K776W00301">After recovery, control can be resumed by operating the +RES switch.</PTXT></ITEM></LIST1></HINT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "7" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "4%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "48%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "7%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "9%"/>
+<COLSPEC COLNUM = "7" COLNAME = "7" COLWIDTH = "4%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "6"><PTXT>In Combination Meter Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "7" MOREROWS = "1"><PTXT>Set Vehicle Speed</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Multi-information Display Indication</PTXT></ENTRY>
+<ENTRY COLNAME = "4">
+<PTXT>
+<HINTREF REFID = "H478110002K776W00302"/>
+</PTXT>
+<GRAPHIC GRAPHICNAME = "a4740183b" WIDTH = "0.403in" HEIGHT = "0.361in" />
+</ENTRY>
+<ENTRY COLNAME = "5">
+<PTXT>
+<HINTREF REFID = "H478110002K776W00303"/>
+</PTXT>
+<GRAPHIC GRAPHICNAME = "a4740250b" WIDTH = "0.417in" HEIGHT = "0.167in" />
+</ENTRY>
+<ENTRY COLNAME = "6"><PTXT>Single Tone</PTXT>
+<PTXT>Buzzer</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Vehicle Speed Signal Malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Check Cruise System</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "6"><PTXT>Sounds once</PTXT></ENTRY>
+<ENTRY COLNAME = "7" MOREROWS = "1"><PTXT>Cleared</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Throttle Control Motor Malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>(No display)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>ON →</PTXT>
+<PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "6" MOREROWS = "1"><PTXT>Does not sound</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>During VSC operation or brake operation by the pre-crash safety system</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>(No display)</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "7"><PTXT>Retained in memory</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the stop light switch assembly has an open or short circuit</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "3"><PTXT>Check Cruise System</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "5"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "5" MOREROWS = "5"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "6" MOREROWS = "5"><PTXT>Sounds once</PTXT></ENTRY>
+<ENTRY COLNAME = "7" MOREROWS = "3"><PTXT>Cleared</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the millimeter wave radar sensor assembly malfunctions</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the optical axis of the millimeter wave radar sensor assembly is misaligned</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When a radar cruise control system malfunction other than 5.6 above occurs</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When dirt adheres to the millimeter wave radar sensor assembly, or when the millimeter wave radar sensor assembly judges that recognition of the preceding vehicle is difficult due to bad weather</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Radar Dirty Clean Radar</PTXT></ENTRY>
+<ENTRY COLNAME = "7" MOREROWS = "3"><PTXT>Retained in memory</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>9</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the wipers operate at HI</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Cruise Not Available in Bad Weather</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the vehicle speed drops to or below the low speed limit (approximately 40km/h)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>(No display)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "5" MOREROWS = "1"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "6" MOREROWS = "1"><PTXT>Sounds 2 times in succession</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>11</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the vehicle speed drops to or below the minimum set vehicle speed (approximately 45km/h) while the - SET switch is ON</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478110002K776W00302">Master Warning Indicator Light</PTXT></ITEM>
+<ITEM><PTXT ID = "H478110002K776W00303">CRUISE Operation/Warning Indicator Light</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W003I03" INDSW = "OFF">
+<TITLE>Manual Cancel Control</TITLE>
+<LIST1><ITEM><PTXT>When any of the following conditions (No.1 to 5) occurs while driving in vehicle-to-vehicle distance control mode, control is cancelled while the set vehicle speed is retained in memory.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "93%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Condition</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Stop light switch assembly ON (brake pedal depressed)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Shift the shift position to a position other than "D"</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>With the shift position in "D", shift to 3, 2 or 1 gear by operating the transmission shift switch</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Cruise control main switch CANCEL switch ON</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Cruise control main switch main switch OFF (the set vehicle speed is cleared)</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>

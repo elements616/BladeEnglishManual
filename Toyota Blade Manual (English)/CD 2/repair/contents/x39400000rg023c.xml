@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_74WIJ_T00FO" variety="T00FO">
+<name>EFI System (2GR-FE)</name>
+<para id="X39400000RG023C" category="C" type-id="302J7" name-id="066O5-00" from="200708">
+<dtccode>P0604/89</dtccode>
+<dtcname>RAM malfunction</dtcname>
+<dtccode>P0606/89</dtccode>
+<dtcname>ECU Internal Malfunction 1</dtcname>
+<dtccode>P0607/89</dtccode>
+<dtcname>ECU Internal Malfunction 2</dtcname>
+<dtccode>P0657/89</dtccode>
+<dtcname>Actuator Power Supply Circuit</dtcname>
+<subpara id="X39400000RG023C_10" type-id="31" category="03" proc-id="RM0550J___0000D9C00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>When this DTC is stored, the engine control computer cuts off the current to the throttle motor, and the throttle valve is returned to a predetermined opening angle (6°) by the return spring.</ptxt>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.498008     in"/>
+<colspec colnum="02" colname="C02" colwidth="3.154628     in"/>
+<colspec colnum="03" colname="C03" colwidth="2.494272     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTCNo.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+<item>
+<ptxt>Malfunction Duration</ptxt>
+</item>
+<item>
+<ptxt>Others</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Malfunction Item</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0604/89</ptxt>
+<ptxt>P0606/89</ptxt>
+<ptxt>P0607/89</ptxt>
+<ptxt>P0657/89</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Engine control computer internal malfunction</ptxt>
+</item>
+<item>
+<ptxt>1 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Engine Control Computer</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="X39400000RG023C_11" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="X39400000RG023C_12" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="X39400000RG023C_12_0005" proc-id="RM0550J___0000D9E00000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and clear the DTCs following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM0000008YS014X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RG023C_12_0001" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="X39400000RG023C_12_0001" proc-id="RM0550J___0000D9D00000">
+<scantool type="1"/>
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Perform a road test.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and check the DTCs following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM0000008YS014X"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.11in"/>
+<colspec colname="COL2" colwidth="1.02in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC is displayed again</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Another DTC is displayed again</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Normal code displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RG023C_12_0002" fin="true">A</down>
+<right ref="X39400000RG023C_12_0003" fin="true">B</right>
+<right ref="X39400000RG023C_12_0004" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RG023C_12_0002">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADB004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000RG023C_12_0003">
+<testtitle>Go to Related DTC Chart<xref label="Seep01" href="RM000001KT7004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000RG023C_12_0004">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000CD101YX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

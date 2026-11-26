@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1002M_S001G" variety="S001G">
+<name>Pre-crash Safety</name>
+<ttl id="1002M_S001G_74WT7_T00FP" variety="T00FP">
+<name>Pre-crash Safety System</name>
+<para id="RM000003UEX00AX" category="C" type-id="8007I" name-id="540LB-11" from="200708">
+<dtccode>B2036/22</dtccode>
+<dtcname>PSBECU Malfunction12</dtcname>
+<subpara id="RM000003UEX00AX_01" type-id="31" category="03" proc-id="RM0550J___0000HWM00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when the self-diagnosis of the seat belt control computer determines that there is an internal circuit malfunction, or when the power source voltage (+B) is not input to the seat belt control computer.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.13in"/>
+<colspec colname="COL2" colwidth="2.97in"/>
+<colspec colname="COL3" colwidth="2.98in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2036/22</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Seat belt control computer internal malfunction</ptxt>
+</item>
+<item>
+<ptxt>Power source voltage (+B) not input</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness and Connector</ptxt>
+</item>
+<item>
+<ptxt>Seat Belt Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000003UEX00AX_02" type-id="51" category="05" proc-id="RM0550J___0000HWN00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten2>
+<ptxt>The front seat outer belt assembly has a built-in pretensioner, and incorrect inspection such as checking the wrong connector may cause the pretensioner to activate, so be very careful to follow the inspection procedure correctly.</ptxt>
+</atten2>
+<atten3>
+<ptxt>Inspect the fuses for circuits related to this system before performing the following troubleshooting.</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000003UEX00AX_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000003UEX00AX_03_0001" proc-id="RM0550J___0000HWO00000">
+<testtitle>Inspect Power Source Voltage (+B Terminal Voltage)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect seat belt control computer connector A.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals of the seat belt control computer vehicle side wire harness. (see <xref label="Seep01" href="RM0000006E900JX"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="E168371J06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>7 (+B) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten2>
+<ptxt>Do not inspect the wrong connector.</ptxt>
+</atten2>
+</test1>
+</content6>
+<res>
+<down ref="RM000003UEX00AX_03_0002" fin="true">OK</down>
+<right ref="RM000003UEX00AX_03_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000003UEX00AX_03_0002">
+<testtitle>Replace Seat Belt Control Computer<xref label="Seep01" href="RM000002SZU002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000003UEX00AX_03_0003">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

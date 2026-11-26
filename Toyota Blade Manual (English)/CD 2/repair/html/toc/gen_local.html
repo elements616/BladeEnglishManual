@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- $Id: gen_local.html,v 1.11 2003/11/07 07:22:58 kato Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - General Paragraph</title>
+
+<link href="../../css/local.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+//
+// 初期表示
+//
+function init() {
+	// もしパラグラフが付随作業などの要領であれば
+	// タイトル、パラグラフを取得表示を行う。
+	if (parent.g_category=="L") {
+		parent.document.title="[Electronic Technical Manual] - Precaution";
+	}	else if (parent.g_category=="F") {
+		parent.document.title="[Electronic Technical Manual] - Introduction, etc.";
+	}	else if (parent.g_category=="H") {
+		parent.document.title="[Electronic Technical Manual] - Periodic Inspection";
+	}	else if (parent.g_category=="M") {
+		parent.document.title="[Electronic Technical Manual] - Removal/Installation Navigation";
+	}	else if (parent.g_category=="N") {
+		parent.document.title="[Electronic Technical Manual] - Maintenance";
+	}	else if (parent.g_category=="S") {
+		parent.document.title="[Electronic Technical Manual] - Diagnosis Contents (DTC)";
+	}	else if (parent.g_category=="T") {
+		parent.document.title="[Electronic Technical Manual] - Diagnosis Contents (Symptom)";
+	}	else if (parent.g_category=="D") {
+		parent.document.title="[Electronic Technical Manual] - Pre-check";
+	}	else if (parent.g_category=="U") {
+		parent.document.title="[Electronic Technical Manual] - Inspection Data";
+	}	else if (parent.g_category=="V") {
+		parent.document.title="[Electronic Technical Manual] - Diagnosis Procedure Navigation";
+	}
+
+	if (parent.g_category=="M"||parent.g_category=="N") {
+		var paraName = parent.getParagraphName(parent.g_paraId, "name", parent.g_objXml);
+	/**
+		var ttlName = parent.getTitleName(parent.g_paraId, parent.g_objXml);
+		ttl.innerHTML=ttlName;
+		para.innerHTML="<br/>"+paraName+"<br/><br/>";
+	**/
+		if (parent.g_category=="M") {
+			ttl.innerHTML="Removal/Installation Navigation";
+		}	else if (parent.g_category=="N") {
+			ttl.innerHTML="Maintenance";
+		}
+		para.innerHTML="<br/>"+paraName+"<br/><br/>";
+		ttl.style.display="";
+		para.style.display="";
+	}
+	parent.display(parent.g_objXml, parent.g_objLocalXsl, disp, null);
+	parent.hiliteTopLink(this.document);
+}
+
+//
+// 付随作業などの手順頭出し
+//
+function selectId(id){
+	parent.contents.location.hash = id;
+}
+</script>
+</head>
+<body onLoad="init()">
+	<div id="ttl" class="text" style="display: none;"></div>
+	<div id="para" class="gentext" style="display: none;"></div>
+	<div id="disp"></div>
+</body>
+</html>

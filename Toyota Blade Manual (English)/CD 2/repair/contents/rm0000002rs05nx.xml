@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001C_S000C" variety="S000C">
+<name>Audio &amp; Visual</name>
+<ttl id="1001C_S000C_742AC_T002N" variety="T002N">
+<name>Audio System</name>
+<para id="RM0000002RS05NX" category="S" type-id="3001E" name-id="641GO-01" from="200912">
+<name>Diagnostic Trouble Code Chart</name>
+<subpara id="RM0000002RS05NX_z0" proc-id="RM0550J___0000ICA00000">
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>This DTC is displayed in the service inspection. </ptxt>
+</item>
+<item>
+<ptxt>The display consists of the logical address (2-digit base 16 number) - DTC (2-digit base 16 number).</ptxt>
+</item>
+</list1>
+</atten4>
+<step1>
+<ptxt>Physical address: 190, part name: Radio Receiver Assembly</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Logical address 01: Communication control</ptxt>
+</item>
+<item>
+<ptxt>Logical Address 21:SW</ptxt>
+</item>
+<item>
+<ptxt>Logical Address 60: Radio Unit</ptxt>
+</item>
+<item>
+<ptxt>Logical Address 62:CD-P</ptxt>
+</item>
+</list1>
+</atten4>
+<table frame="all" pgwide="1">
+<title>Part name: radio receiver assembly, physical address: 190</title>
+<tgroup cols="5">
+<colspec colname="col2" colwidth="1.00in"/>
+<colspec colname="col3" colwidth="0.75in"/>
+<colspec colname="col4" colwidth="1.75in"/>
+<colspec colname="col5" colwidth="2.00in"/>
+<colspec colname="COLSPEC0" colwidth="1.58in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Trouble Code (DTC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-21</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ROM malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Checksum error detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace radio receiver assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-22</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RAM malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RAM area write/read error</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace radio receiver assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-D5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Registered component lost</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>The component indicated by the sub-code is disconnected from the system after ACC ON</ptxt>
+</item>
+<item>
+<ptxt>The component indicated by the sub-code has been disconnected from the system after ACC ON</ptxt>
+</item>
+<item>
+<ptxt>Communication with the component indicated by the sub-code cannot be established when ACC is ON</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the component indicated by the sub-code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored even when no malfunction is found, depending on the battery condition or the power source waveform at engine start</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-D6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Master Absent</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>The device that stored this code was disconnected from the system when ACC was ON</ptxt>
+</item>
+<item>
+<ptxt>The master component was disconnected when this code was stored</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the radio receiver assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored even when no malfunction is found, depending on the battery condition or the power source waveform at engine start</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-D7</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Connection Check Malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>The component that stored this code has been disconnected from the system after the engine was started</ptxt>
+</item>
+<item>
+<ptxt>The master component was disconnected when this code was stored</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the radio receiver assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code is stored when the radio receiver assembly power turns OFF after ACC ON and 210 seconds elapse</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-D8</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No response to connection check</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>The component indicated by the sub-code is disconnected from the system after ACC ON</ptxt>
+</item>
+<item>
+<ptxt>The component indicated by the sub-code has been disconnected from the system after ACC ON</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the component indicated by the sub-code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code is stored when the power of the component indicated by the sub-code turns OFF after ACC ON and 180 seconds elapse</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-D9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Last mode error</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>The component that was operating (outputting sound or images) before the ignition was turned OFF is disconnected from the system when ACC is ON</ptxt>
+</item>
+<item>
+<ptxt>The component that was operating (outputting sound or images) before the ignition was turned OFF has been disconnected from the system when ACC was ON</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the component indicated by the sub-code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored even when no malfunction is found, depending on the battery condition or the power source waveform at engine start</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-DA</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No response to ON/OFF command</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The component indicated by the sub-code did not respond during sound/image mode switching (detected when the screen or sound does not switch with button operation, etc.)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the component indicated by the sub-code</ptxt>
+</item>
+<item>
+<ptxt>If the malfunction recurs, replace the component indicated by the sub-code</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-DB</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Mode status error</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2-fold sounding of the component indicated by the sub-code was detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the component indicated by the sub-code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored even when no malfunction is found, depending on the battery condition or the power source waveform at engine start</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-DC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmission Failure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmission to the component indicated by the sub-code has failed (this code may not be directly related to a malfunction)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>If the component indicated by the sub-code is also stored in other components, inspect the power supply system and AVC-LAN communication system W/H of the component indicated by the sub-code</ptxt>
+</item>
+<item>
+<ptxt>If this code is not recorded in other components, clear the DTC and monitor for a while</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored if the engine is restarted 60 seconds after it was started</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-DD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Master Reset (Momentary Interruption)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The master device was disconnected from the system after the engine was started</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the radio receiver assembly</ptxt>
+</item>
+<item>
+<ptxt>If the malfunction occurs frequently, replace the radio receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored if the engine is restarted after it was started</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-DE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Slave reset (momentary interruption)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A slave component has been disconnected from the system after the engine was started</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the component indicated by the sub-code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored if the engine is restarted after it was started</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-DF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Master Malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>The component with a display became abnormal, and the master function switched to the audio component</ptxt>
+</item>
+<item>
+<ptxt>A malfunction occurred in communication between the sub-master (audio) device and the master device</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the radio receiver assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code is stored when the radio receiver assembly power turns OFF after ACC ON and 210 seconds elapse</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-E0</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Registration Complete Notification Malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The "Registration Complete Notification" command cannot be received from the master device</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code is also detected by engineering diagnosis even when not directly related to a malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored even when no malfunction is found, depending on the battery condition or the power source waveform at engine start</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-E1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio processing component ON error</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The amplifier component detected that the amplifier output stopped even though the source component was operating</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the radio receiver assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored even when no malfunction is found, depending on the battery condition or the power source waveform at engine start</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-E2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON/OFF Instruction Parameter Malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>There was a malfunction in the command from the master device controlling ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace radio receiver assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-E3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Registration Request Transmission</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>A "Registration Request" command was output from the device indicated by the sub-code</ptxt>
+</item>
+<item>
+<ptxt>A "registration request" command was output by the sub-master component upon receiving a "connection check command" command</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>This code is an engineering diagnosis and is detected even when not directly related to a malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored even when no malfunction is found, depending on the battery condition or the power source waveform at engine start</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-E4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiple frame transmission terminated midway</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiple frame transmission terminated midway</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code is an engineering diagnosis and is detected even when not directly related to a malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored even when no malfunction is found, depending on the battery condition or the power source waveform at engine start</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>21-10</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Panel SW malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Panel SW detection circuit malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace radio receiver assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>60-10</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AM tuner PLL not locked</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AM tuner PLL circuit malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Clear the DTC and inspect the radio antenna wiring</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the radio receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>60-11</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FM tuner PLL not locked</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FM tuner PLL circuit malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Clear the DTC and inspect the radio antenna wiring</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the radio receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>60-43</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AM tuner malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AM tuner malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace radio receiver assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>60-44</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FM tuner malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FM tuner malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace radio receiver assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-10</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CD mechanism malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A CD mechanism malfunction was detected other than during insertion/ejection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace radio receiver assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-42</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CD cannot be read</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CD signal cannot be read</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Inspect the CD (for cracks, etc.) (operate again with a different CD)</ptxt>
+</item>
+<item>
+<ptxt>Clean the CD player (pickup lens)</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the radio receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-44</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CD malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>There is a CD mechanism malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Inspect the CD (for cracks, etc.)</ptxt>
+</item>
+<item>
+<ptxt>Check for foreign matter  </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-45</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EJECT malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CD cannot be ejected</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Replace the CD</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the radio receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-46</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CD scratched, dirty or upside down</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>CD is dirty or scratched</ptxt>
+</item>
+<item>
+<ptxt>CD is upside down</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Inspect the CD (operate again with a different CD)</ptxt>
+</item>
+<item>
+<ptxt>Clean the CD</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the radio receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-47</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CD high temperature detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The CD mechanism became hot</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Clear the DTC and leave the unit for a while with the power (ACC) OFF</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the radio receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-48</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Overcurrent malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Internal current malfunction detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace radio receiver assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-7D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cannot play</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Unsupported MP3/WMA file</ptxt>
+</item>
+<item>
+<ptxt>File with the extension MP3/WMA whose header information cannot be read and which cannot be played</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>If a supported file plays normally, there is no malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-7E</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No playable files</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Disc with no music data recorded</ptxt>
+</item>
+<item>
+<ptxt>There are no playable files (MP3/WMA) </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>If a supported file plays normally, there is no malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-7F</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Copyright protection error</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>File is copyright protected and cannot be played</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If a supported file plays normally, there is no malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

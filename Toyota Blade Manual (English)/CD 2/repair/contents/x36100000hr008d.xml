@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="04">
+<name>Driveline/Axle</name>
+<section id="1000K_S0015" variety="S0015">
+<name>Differential</name>
+<ttl id="1000K_S0015_744ZW_T00A7" variety="T00A7">
+<name>Active Torque Control 4WD System</name>
+<para id="X36100000HR008D" category="L" type-id="3001A" name-id="370CM-00" from="200612">
+<name>Precautions</name>
+<subpara id="X36100000HR008D_z0" proc-id="RM0550J___00005I100000">
+<content5 releasenbr="2">
+<step1>
+<ptxt>Precautions for ABS and VSC System</ptxt>
+<step2>
+<ptxt>If a malfunction occurs in the Active Torque Control 4WD system, a malfunction in the ABS and VSC systems is also possible, so read the precautions for the ABS with EBD &amp; TRC &amp; VSC &amp; BA system.</ptxt>
+<atten4>
+<ptxt>For precautions for the ABS with EBD &amp; TRC &amp; VSC &amp; BA system, refer to <xref label="Seep02" href="RM0000005ZR00SX"/>.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Since the Active Torque Control 4WD system performs control using signals input from the ABS with EBD &amp; TRC &amp; VSC &amp; BA system, if there is a malfunction in the ABS and VSC systems, repair the ABS and VSC systems first.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for Handling and Work</ptxt>
+<step2>
+<ptxt>Unless otherwise specified in the inspection method, be sure to remove and install the 4WD computer assembly, sensors, etc. with the ignition OFF.</ptxt>
+</step2>
+<step2>
+<ptxt>After removing and installing the 4WD computer assembly, sensors, etc., be sure to check the DTCs, and if a normal code is not output, clear the DTCs and check that the normal code is output.</ptxt>
+</step2>
+<step2>
+<ptxt>Before starting work, check that the correct tires are installed and that parts other than the transmission coupling assembly and 4WD control related parts are normal.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

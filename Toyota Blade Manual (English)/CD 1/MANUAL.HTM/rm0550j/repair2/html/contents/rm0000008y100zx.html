@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+  <title>[Electronic Technical Manual]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000008Y100ZX"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>DTC P0500/42 Vehicle Speed Sensor Circuit</h3></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">Print</a></td></tr></table><h2>Preparation List<a href="#" onclick="openSeePage('ppr','RM0000008Y100ZX');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all"><a name="RM0000008Y100ZX_01"></a><h2>Circuit Description</h2><br clear="all"><a name="1"></a><font class="ptxt">The vehicle speed pulse signal output from the ABS speed sensor installed on each wheel is converted by the skid control computer into a vehicle speed pulse signal (equivalent to 4 pulses per 1 revolution of the transaxle rotating shaft), output to the combination meter assembly as the vehicle speed signal, and input to the engine control computer.</font><br><br clear="all"><div class="full"><br clear="all"><img src="../../img/a065387j10.png" name="A065387J10" alt="A065387J10" border="1" class="full"></div><br clear="all"><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><colgroup align="" width="19%
+			"><col align=""></colgroup><colgroup align="" width="31%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">DTC No.<br>SAE/TCCS<br></th><th align="center">DTC Detection Condition<br><ol style="list-style-type: decimal"><li>Diagnosis Condition<br></li><li>Abnormal Condition<br></li><li>Malfunction Duration<br></li><li>Others<br></li></ol></th><th align="center">Inspection Area<br></th></tr><tr><td align="center">P0500/42<br></td><td><ol style="list-style-type: decimal"><li>While driving<br></li><li>SPD signal is not input<br></li><li>2 seconds or more<br></li><li>1 trip<br></li></ol></td><td><ol style="list-style-type: disc"><li>Wire Harness or Connector<br></li><li>Combination Meter Assembly<br></li><li>Engine Control Computer<br></li><li>Skid Control Computer Assembly<br></li></ol></td></tr></table><br clear="all"><br clear="all"><a name="RM0000008Y100ZX_02"></a><h2>Wiring Diagram</h2><br clear="all"><a name="1"></a><div class="full"><br clear="all"><img src="../../img/g100110j13.png" name="G100110J13" alt="G100110J13" border="1" class="full"></div><br clear="all"><br clear="all"><br clear="all"><a name="RM0000008Y100ZX_04"></a><h2>Inspection Procedure</h2><br clear="all"><a name="1"></a><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">If the SPD line branches to other ECUs from an option connector, etc., first disconnect those circuits and inspect.<br></li><li class="atten4">Using SST (TaSCAN), read the Freeze Frame Data. Freeze Frame Data records part of the engine operating conditions when a malfunction occurs, and this information is useful for troubleshooting.<br></li></ol></p><br clear="all"><a name="RM0000008Y100ZX_03_0001"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">Step 1</td><td width="90%" class="s1">Read TaSCAN Data (Vehicle Speed)</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Check that the speedometer operates normally.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Connect SST (TaSCAN) to DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Perform a road test of the vehicle.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Following the SST (TaSCAN) screen display, read the Data List item [Vehicle Speed] from [ECU Data Monitor].</font><br><p><dl class="spec"><dt class="spec">Specified Condition</dt><dd class="spec">SST (TaSCAN) data monitor display and speedometer display are the same<br></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">Inspect Combination Meter System<a href="#" onclick="openSeePage('seepage','RM000002YMX000X');return false;">
+			(see <img border="0" src="../../../../image/extxref.png"> for procedure)
+		</a>
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">Inspection for Intermittent Problems<a href="#" onclick="openSeePage('seepage','RM000000CD101YX');return false;">
+			(see <img border="0" src="../../../../image/extxref.png"> for procedure)
+		</a>
+&nbsp;
+										</td></tr></table></td></tr></table><br></body></html>

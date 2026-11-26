@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- $Id: gen_global.html,v 1.14 2003/06/26 09:32:08 watanabe Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - General Paragraph</title>
+
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+<!--
+//「準備品」リンク表示・非表示
+function init(){
+	var pprXml = parent.initXml("ppr_"+parent.g_paraId+".xml",false,false);
+	if(pprXml == null) ppr.style.visibility="hidden";
+}
+
+//「準備品」クリック時
+function switchPreparation(){
+	var paraId = parent.g_paraId ;
+	if( paraId == null )  return; 
+	var args = new Array(paraId);
+	parent.setDisplayArgs(args );
+	//準備品を画面で表示する
+	parent.openDialog("ppr", "ppr_frame.html");
+}
+
+-->
+</script>
+</head>
+<body onload="init()">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td class="top"></td></tr>
+	<tr><td height="4"></td></tr>
+	<tr>
+		<td align="right">
+			<table border="0" cellspacing="0" cellpadding="2">
+				<tr>
+					<td id="ppr" style="visibility:visible">
+						<a class="button" href="#" onClick="switchPreparation()">Preparation</a>
+					</td>
+					<td>
+						<a class="button" href="#" onClick="parent.printFrame(parent.sts.disp.innerHTML,parent.contents.disp.innerHTML,'Print General Paragraph');">Print</a>
+					</td>
+					<td width="30"><br></td>
+					<td>
+						<a class="button" href="javascript:parent.backTocPage(parent.g_bp, parent.g_bd)">Go to Contents Screen</a>
+						<a class="button" href="javascript:parent.openNewWindow('../index.html')">Show in Separate Window</a>
+						<a class="button" href="javascript:parent.setTermValue('../index.html', parent.getParameterValue('term'))" target="_top">To Function Selection</a>
+					</td>
+					<td width="5"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

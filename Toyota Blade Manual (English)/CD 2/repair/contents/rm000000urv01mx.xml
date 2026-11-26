@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="07">
+<name>Steering</name>
+<section id="1000U_S0017" variety="S0017">
+<name>Steering Column</name>
+<ttl id="1000U_S0017_745FR_T00AZ" variety="T00AZ">
+<name>Electric Power Steering System</name>
+<para id="RM000000URV01MX" category="U" type-id="303FJ" name-id="480WJ-02" from="200912">
+<name>ECU Data Monitor/Active Test</name>
+<subpara id="RM000000URV01MX_z0" proc-id="RM0550J___0000ILQ00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>ECU Data Monitor</ptxt>
+<step2>
+<ptxt>Turn IG OFF.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Turn the IG ON, select "Diagnosis" → "Chassis" → "Electric Power Steering" → "ECU Data Monitor" on the display screen of SST (TaSCAN), and check the ECU data monitor.</ptxt>
+</step2>
+</step1>
+<table frame="all" pgwide="1">
+<title>ECU Data Monitor Chart</title>
+<tgroup cols="4">
+<colspec colname="col1" colwidth="1.49in"/>
+<colspec colname="col2" colwidth="2.37in"/>
+<colspec colname="col3" colwidth="2.54in"/>
+<colspec colname="col4" colwidth="0.68in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Vehicle Speed</ptxt>
+<ptxt>[SPD]</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Indicates vehicle speed input from meter</ptxt>
+<ptxt>Display range: 0to300km/h</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0km/h: Vehicle stopped</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No large fluctuation: Driving at constant speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Speed</ptxt>
+<ptxt>[ESPD]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates engine speed</ptxt>
+<ptxt>Display range: 0to12800rpm</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No large fluctuation: Engine running at constant speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Motor Current</ptxt>
+<ptxt>[MEC]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates current flowing to motor</ptxt>
+<ptxt>Display range: -327.68to327.67A</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes in proportion to steering effort: Engine running, steering wheel turned</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Motor Current (Requested Value)</ptxt>
+<ptxt>[MECO]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates requested value of current to motor</ptxt>
+<ptxt>Display range: -327.68to327.67A</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes in proportion to steering effort: Engine running, steering wheel turned</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Steering Angular Velocity</ptxt>
+<ptxt>[SRD]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates steering angular velocity</ptxt>
+<ptxt>Display range: -32768to32767deg/s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes in proportion to steering speed: Engine running, steering wheel turned</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Thermistor Temperature</ptxt>
+<ptxt>[THT]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates ECU board temperature</ptxt>
+<ptxt>Display Range: -40to150°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>PIG Power Supply</ptxt>
+<ptxt>[PIG]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates motor drive power supply voltage</ptxt>
+<ptxt>Display range: 0to20.1531V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9to16V: Engine running, power steering operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IG Power Supply Voltage</ptxt>
+<ptxt>[IGV]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates ECU power supply status</ptxt>
+<ptxt>Display range: 0to20.1531V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9to16V:IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="3" valign="middle" align="center">
+<ptxt>Steering Angle Sensor Signal Status</ptxt>
+<ptxt>[SSSS]</ptxt>
+</entry>
+<entry morerows="3" valign="middle">
+<ptxt>Indicates steering angle sensor signal status</ptxt>
+<ptxt>Display: Usable/Not Learned/Sensor Malfunction/Communication Malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Usable: Steering angle sensor signal normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Not learned: Steering angle sensor 0 point not learned</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sensor malfunction: Steering angle sensor malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Communication malfunction: Communication malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Steering Torque</ptxt>
+<ptxt>[OTRQ]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates steering torque</ptxt>
+<ptxt>Display range: -7.0to7.0Nm</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes in proportion to steering effort: Engine running, steering wheel turned</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Motor Rotation Angle</ptxt>
+<ptxt>[MRDG]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates the motor rotation angle</ptxt>
+<ptxt>Display range: 0to1441.77deg</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes within 0to360deg: Engine running, steering wheel turned</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Motor Current 2 (Requested Value)</ptxt>
+<ptxt>[MCO2]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates requested value of current to motor</ptxt>
+<ptxt>Display range: -327.68to327.67A</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes in proportion to steering effort: Engine running, steering wheel turned</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Post-coil Boost Voltage</ptxt>
+<ptxt>[PIG2]</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Indicates post-coil boost voltage value</ptxt>
+<ptxt>Display range: 0to45.955V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approximately 27V: Engine running, steering wheel not turned</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Changes within 16to35V: Engine running, steering wheel turned</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Motor Power Supply Voltage</ptxt>
+<ptxt>[BPIG]</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Indicates motor power supply voltage</ptxt>
+<ptxt>Display range: 0to45.955V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approximately 27V: Engine running, steering wheel not turned</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Changes within 4to35V: Engine running, steering wheel turned</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Motor Terminal Voltage (U Phase)</ptxt>
+<ptxt>[MPVU]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates motor U terminal voltage</ptxt>
+<ptxt>Display range: 0to46.667V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes within 4to35V: Engine running, steering wheel turned</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Motor Terminal Voltage (V Phase)</ptxt>
+<ptxt>[MPVV]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates motor V terminal voltage</ptxt>
+<ptxt>Display range: 0to46.667V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes within 4to35V: Engine running, steering wheel turned</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Motor Terminal Voltage (W Phase)</ptxt>
+<ptxt>[MPVW]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates motor W terminal voltage</ptxt>
+<ptxt>Display range: 0to46.667V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes within 4to35V: Engine running, steering wheel turned</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>Torque Sensor 1 Output</ptxt>
+<ptxt>[TRQ1]</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Indicates torque sensor 1 output value</ptxt>
+<ptxt>Display range: 0to5V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2.3to2.7V: Engine running, steering without load (neutral position)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2.5to3.8V: Engine running, steering turned right</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1.2to2.5V: Engine running, steering turned left</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>Torque Sensor 2 Output</ptxt>
+<ptxt>[TRQ2]</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Indicates torque sensor 2 output value</ptxt>
+<ptxt>Display range: 0to5V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2.3to2.7V: Engine running, steering without load (neutral position)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1.2to2.5V: Engine running, steering turned right</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2.5to3.8V: Engine running, steering turned left</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Torque Sensor 1 (0-point Value)</ptxt>
+<ptxt>[OP1]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates torque sensor 1 output value at 0 point</ptxt>
+<ptxt>Display range: 0to5V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Torque Sensor 2 (0-point Value)</ptxt>
+<ptxt>[OP2]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates torque sensor 2 output value at 0 point</ptxt>
+<ptxt>Display range: 0to5V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Number of IG cycles after DTC detection</ptxt>
+<ptxt>[DIGN]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates number of IG ON times since DTC detection</ptxt>
+<ptxt>Display range: 0to255 times</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>PS Assist Signal</ptxt>
+<ptxt>[PSAS]</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Indicates whether power steering is in assist state</ptxt>
+<ptxt>Display: Assist/Stop</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop: IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center"/>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Assist: Engine running</ptxt>
+</entry>
+<entry valign="middle" align="center"/>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Number of DTCs</ptxt>
+<ptxt>[DIAG]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates number of stored DTCs</ptxt>
+<ptxt>Display Range: 0to255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

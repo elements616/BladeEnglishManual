@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_74WIJ_T00FO" variety="T00FO">
+<name>EFI System (2GR-FE)</name>
+<para id="RM000002PE5003X" category="C" type-id="304P1" name-id="066O8-00" from="200708">
+<dtccode>P0606/63</dtccode>
+<dtcname>ECU Internal Malfunction 1</dtcname>
+<subpara id="RM000002PE5003X_03" type-id="31" category="03" proc-id="RM0550J___0000HSR00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>When this DTC is stored, the engine control computer cuts off the current to the throttle motor, and the throttle valve is returned to a predetermined opening angle (6°) by the return spring.</ptxt>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.92in"/>
+<colspec colnum="02" colname="C02" colwidth="3.19in"/>
+<colspec colnum="03" colname="C03" colwidth="2.97in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0606/63</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Engine control computer internal malfunction or air fuel ratio sensor malfunction (B1S1, B2S1)</ptxt>
+</item>
+<item>
+<ptxt>60 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Exhaust Gas Leaks</ptxt>
+</item>
+<item>
+<ptxt>Air fuel ratio sensor (B1S1, B2S1)</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000002PE5003X_01" type-id="51" category="05" proc-id="RM0550J___0000HSM00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If P0606 is output using SST (TaSCAN), be sure to short DLC3 and read the code using the check engine warning light. (see <xref label="Seep01" href="RM0000008YS014X"/>)</ptxt>
+</item>
+<item>
+<ptxt>For the procedure when TCCS code "89" is output, refer to <xref label="Seep02" href="X39400000RG023C"/></ptxt>
+</item>
+</list1>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000002PE5003X_02" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000002PE5003X_02_0002" proc-id="RM0550J___0000HSO00000">
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs by following the SST (TaSCAN) screen display.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="5.40in"/>
+<colspec colname="COL2" colwidth="1.68in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Only DTC P0606/63 is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTCs other than DTC P0606/63 are also output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002PE5003X_02_0001" fin="false">A</down>
+<right ref="RM000002PE5003X_02_0004" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000002PE5003X_02_0001" proc-id="RM0550J___0000HSN00000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (A/F Sensor Voltage B1S1, A/F Sensor Voltage B2S1)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the main switch of SST (TaSCAN) ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes.</ptxt>
+</test1>
+<test1>
+<ptxt>Depress the accelerator pedal and hold at 2500 r/min for approximately 3 minutes to warm up the air fuel ratio sensor.</ptxt>
+</test1>
+<test1>
+<ptxt>Allow the engine to idle.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, read [ECU Data Monitor] - [A/F Sensor Voltage B1S1 / A/F Sensor Voltage B2S1], and check that the air fuel ratio sensor output voltage is normal (varies around 3.3 V).</ptxt>
+<atten3>
+<ptxt>Perform this immediately after the sensor warm-up procedure, as the air fuel ratio sensor will cool down.</ptxt>
+</atten3>
+</test1>
+<test1>
+<ptxt>Cancel the maintenance mode and move the shift position to "B".</ptxt>
+</test1>
+<test1>
+<ptxt>Accelerate to 60 km/h and check that the output voltage of the air fuel ratio sensor rises (lean condition) when the accelerator pedal is released (during deceleration fuel cut).</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>If the air fuel ratio sensor output is fixed at 3.3 V, the circuit may be open.</ptxt>
+</item>
+<item>
+<ptxt>If the air fuel ratio sensor output is fixed at 3.8 V or more or 2.8 V or less, the circuit may be shorted.</ptxt>
+</item>
+<item>
+<ptxt>When the engine control computer performs deceleration fuel cut, the air-fuel ratio becomes lean and the air fuel ratio sensor voltage rises.</ptxt>
+</item>
+<item>
+<ptxt>The engine control computer needs to learn the throttle position fully closed position for fuel cut. If the battery terminal has been disconnected, the learned value is canceled, so it is necessary to drive at 16 km/h or more to perform learning.</ptxt>
+</item>
+<item>
+<ptxt>During acceleration, etc., the engine control computer temporarily increases the fuel amount, so the air fuel ratio sensor output voltage may be 2.8 V or less.</ptxt>
+</item>
+<item>
+<ptxt>The air fuel ratio sensor uses a current detection element, so there is no voltage change even if the engine control computer terminal voltage is measured. The voltage displayed on SST (TaSCAN) is the current output by the air fuel ratio sensor converted into voltage.</ptxt>
+</item>
+</list1>
+</test1>
+<figure>
+<graphic graphicname="A168064J03" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content6>
+<res>
+<down ref="RM000002PE5003X_02_0007" fin="false">OK</down>
+<right ref="RM000002PE5003X_02_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002PE5003X_02_0007" proc-id="RM0550J___0000HSQ00000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and clear the DTCs following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM0000008YS014X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002PE5003X_02_0009" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002PE5003X_02_0009" proc-id="RM0550J___0000HSS00000">
+<scantool type="4"/>
+<testtitle>Perform Operation Check Drive</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the main switch of SST (TaSCAN) ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes. (A)</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, select [ECU Data Monitor] - [F/C at Idle ON].</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at 75 to 80km/h for approximately 2 minutes. (B)</ptxt>
+</test1>
+<test1>
+<ptxt>Move the shift position to 2 gear. (C)</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at a speed suitable for fuel cut. (For details, see the hint below)(D)</ptxt>
+<atten4>
+<ptxt>Fuel cut is performed under the following conditions.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Release the accelerator pedal.</ptxt>
+</item>
+<item>
+<ptxt>Fuel injection resumes at 1200r/min</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+<test1>
+<ptxt>Drive the vehicle with the accelerator pedal depressed at a speed of 65km/h or more for 10 seconds or more. (E)</ptxt>
+</test1>
+<test1>
+<ptxt>Immediately after performing step (E), release the accelerator for 4 seconds or more to perform fuel cut. (Do not depress the brake pedal at this time)(F)</ptxt>
+</test1>
+<test1>
+<ptxt>Decelerate the vehicle until it reaches 10km/h.</ptxt>
+</test1>
+<test1>
+<ptxt>Repeat steps (C) through (E) 3 times or more.</ptxt>
+<atten2>
+<ptxt>When performing this driving test, be sure to obey speed limits and other traffic laws.</ptxt>
+</atten2>
+<atten4>
+<ptxt>If there is a malfunction, the check engine warning light comes on during step (B).</ptxt>
+</atten4>
+</test1>
+<figure>
+<graphic graphicname="A107162J06" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<figure>
+<graphic graphicname="A107163J03" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content6>
+<res>
+<down ref="RM000002PE5003X_02_0003" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002PE5003X_02_0003" proc-id="RM0550J___0000HSP00000">
+<scantool type="1"/>
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="2">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Read the DTCs following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM0000008YS014X"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>P0606/63 is not output</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002PE5003X_02_0005" fin="true">OK</down>
+<right ref="RM000002PE5003X_02_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002PE5003X_02_0005">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000CD101YX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002PE5003X_02_0004">
+<testtitle>Go to Related DTC Chart<xref label="Seep01" href="RM000001KT7004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002PE5003X_02_0008">
+<testtitle>Replace Air Fuel Ratio Sensor<xref label="Seep01" href="RM0000020W200EX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002PE5003X_02_0006">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADB004X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

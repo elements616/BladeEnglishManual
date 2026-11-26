@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!-- $Id: global.html,v 1.42 2005/03/23 01:15:15 k-narumi Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Removal/Installation Procedure</title>
+
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+<!--
+//「要領スルー」クリック時
+function switchThrough(){
+	parent.g_flag = 1;
+	if (parent.g_category!="A") return;
+	parent.local.localDisplay();
+	parent.local.location.hash="TOP";
+	parent.contents.initContents(null);
+	//if (parent.g_s1Id != null) {
+	//	parent.local.location.hash = parent.g_s1Id;
+	//}	
+}
+//「要領」クリック時
+function switchContents(){
+	parent.g_flag = 0;
+	if (parent.g_category!="A") return;
+	parent.local.localDisplay();
+	parent.local.location.hash="TOP";
+	parent.contents.initContents(null);
+	//if (parent.g_s1Id != null) {
+	//	parent.local.location.hash = parent.g_s1Id;
+	//}
+}
+
+//「準備品」クリック時
+function switchPreparation(){
+	var paraId = parent.g_nowParagraphId;
+	if( paraId == null )  paraId = parent.g_firstParagraphId;
+	if( paraId == null )  return; 
+	if (parent.g_category!="G") {
+		var args = new Array(paraId);
+	} else {
+		var ttlId = parent.g_tocXml.selectSingleNode("//ttl[child::para[@id='"+paraId+"']]").getAttribute("id");
+		var paraItems = parent.g_tocXml.selectNodes("//ttl[@id='"+ ttlId +"']/para[@category='G']/@id");
+		var args = new Array();
+		for (var i=0; i<paraItems.length; i++) {
+			var paraid = paraItems.item(i).nodeTypedValue;
+			args.push(paraid);
+		}
+	}
+	parent.setDisplayArgs(args );
+	//準備品を画面で表示する
+	parent.openDialog("ppr", "ppr_frame.html");
+}
+
+//「印刷（要領スルー）」クリック時
+function switchPrint(){
+	if (parent.g_category=="A") {
+		parent.setDisplayArgs(new Array(parent.g_nowObjXml,parent.sts.disp.innerHTML));
+		parent.openDialog("pdisplay", "trt_frame.html");
+	} else {
+		parent.printFrame(parent.sts.disp.innerHTML,parent.contents.disp.innerHTML,'Print Removal/Installation Procedure');
+	}
+}
+
+//「構成図」クリック時
+function switchComponent(){
+	var args = getComponentArgs();
+	if( args == null )  return; 
+	parent.setDisplayArgs(args );
+
+	//構成図を画面で表示する
+	parent.openDialog("component", "cmp_frame.html");
+}
+
+//「構成図」のイラストIDを取得する
+function getComponentArgs(){
+	var illustId = parent.findParameterValue("illust" ,location.search, parent.location.search);
+	var secId    = parent.g_sectionId;
+	var secvarId = parent.g_sectionVa;
+	var ttlId    = parent.g_titleId;
+	var paraId   = parent.g_paraId;
+	if( secId  == null || secvarId ==null || ttlId ==null) {
+		var  str = parent.getParaParentParameter(parent.g_tocXml , paraId );
+		secId    = parent.findParameterValue("section" ,  str );
+		secvarId = parent.findParameterValue("sectionvar" ,  str );
+		ttlId    = parent.findParameterValue("ttl" ,  str );
+	}
+
+	var procXml  = parent.initXml("proc_"+secId+".xml",false,false);
+	if ( procXml == null ) {
+		alert("Relevant File "+"proc_"+ secId +".xml does not exist.");
+		return;
+	}
+	var sId = parent.g_nowTitleId;
+
+	//手順から部品IDを取得する
+	var s1partNode = procXml.selectSingleNode("//subpara/s-1[@id='"+ sId+"']/parts");
+	if( s1partNode == null){
+		alert("There is no applicable part. [Procedure ID:"+sId+"]");
+		return null;
+	}
+	var partId   = s1partNode.getAttribute("id");
+
+	//もし絵目次から場合は　イラストIDに部品IDを含むかどうか判断
+	//alert("もし絵目次から場合は　部品ID("+partId +")を含むイラストID("+illustId+")を探す");
+	var illustPartNode = parent.g_compoXml.selectSingleNode("//illust[@id='"+ illustId +"']/parts[@id='"+ partId +"']");
+	if( illustPartNode != null){
+		return new Array(partId, illustId, parent.sts.disp.innerHTML);
+	}
+
+	//alert("同一タイトル内で　部品ID("+partId +")を含むイラストID("+illustId+")を探す");
+	//同一タイトル内で　部品IDを含むイラストIDを探す
+	illustPartNode = parent.g_compoXml.selectSingleNode("//ttl[@id='"+ ttlId +"']/para[@category='K' ]/subpara/illust/parts[@id='"+ partId +"']");
+	if( illustPartNode != null){
+		return new Array(partId, illustPartNode.parentNode.getAttribute("id"), parent.sts.disp.innerHTML);
+	}
+
+	//alert("同一セクション内で　部品ID("+partId +")を含むイラストIDを探す");
+	//同一セクション内で　部品IDを含むイラストIDを探す
+	illustPartNode = parent.g_compoXml.selectSingleNode("//section[@id='"+ secId +"']/ttl/para[@category='K' ]/subpara/illust/parts[@id='"+ partId +"']");
+	if( illustPartNode != null){
+		return new Array(partId , illustPartNode.parentNode.getAttribute("id"), parent.sts.disp.innerHTML);
+	}
+	alert("There is no applicable component diagram. [Procedure ID:"+sId+"]");
+	return null;
+}
+function init() {
+	if (parent.g_category=="A") {
+		var nodes = parent.g_tocXml.selectNodes("//para[@category='M']");
+		if ((nodes != null) && (nodes.length>0)) {
+			additional.style.display = "inline";
+			additional.style.visibility = "visible";
+		} else {
+			additional.style.display = "inline";
+			additional.style.visibility = "hidden";
+		}
+	} else {
+		additional.style.display = "none";
+	}
+	enabledPreparation();
+	disabledComponent();
+	parts.style.display = (parent.g_category=="G")?"inline":"none";
+}
+
+// 準備品リンクの表示/非表示切替
+function enabledPreparation() {
+	var paraId = parent.g_nowParagraphId;
+	if (paraId == null)  paraId = parent.g_firstParagraphId;
+	if (paraId == null) {
+		ppr.style.visibility="hidden";
+		return;
+	}
+	if (parent.g_category!="G") {
+		paraId = paraId.toLowerCase()
+		var pprXml = parent.initXml("ppr_"+paraId+".xml", false, false);
+		ppr.style.visibility = (pprXml==null)?"hidden":"visible";
+	} else {
+		var ttlId = parent.g_tocXml.selectSingleNode("//ttl[child::para[@id='"+paraId+"']]").getAttribute("id");
+		var paraItems = parent.g_tocXml.selectNodes("//ttl[@id='"+ ttlId +"']/para[@category='G']/@id");
+		if (paraItems==null) {
+			ppr.style.visibility="hidden";
+			return;
+		}
+		for (var i=0; i<paraItems.length; i++) {
+			var paraid = paraItems.item(i).nodeTypedValue;
+			paraid = paraid.toLowerCase();
+			var pprXml = parent.initXml("ppr_"+paraid+".xml", false, false);
+			if (pprXml!=null) {
+				ppr.style.visibility="visible";
+				return;
+			}
+		}
+		ppr.style.visibility="hidden";
+	}
+}
+
+// 構成図リンクの表示/非表示切替
+function disabledComponent() {
+	if (parent.g_category=="A") {
+		var frpXml = parent.initXml("../../../../frp.xml", true, false);
+		component.style.visibility = (frpXml!=null)?"hidden":"visible";
+	} else {
+		component.style.visibility = "hidden";
+	}
+}
+
+//「付随作業」クリック時
+function switchAdditional(){
+	parent.setDisplayArgs(new Array(parent.g_tocXml));
+	//付随作業を画面で表示する
+	parent.openDialog("additional", "add_frame.html");
+}
+
+//「部品配置図」クリック時
+function switchParts(){
+	var args = getPartsArgs();
+	if( args == null )  return; 
+	parent.setDisplayArgs(args );
+	//部品配置図を画面で表示する
+	parent.openDialog("component", "parts_frame.html");
+}
+
+//「部品配置図」のイラストIDを取得する
+function getPartsArgs(){
+	var paraId   = parent.g_nowParagraphId;
+	if (paraId == null)  paraId = parent.g_firstParagraphId;
+
+	var  str = parent.getParaParentParameter(parent.g_tocXml , paraId);
+	var servcatId = parent.findParameterValue("servcat" ,  str);
+	var secId = parent.findParameterValue("section" , str);
+	var ttlId = parent.findParameterValue("ttl" , str);
+
+	var psrhObjXml = parent.initXml("psearch_"+ servcatId.toLowerCase() +".xml");
+
+	//タイトルから部品IDを取得する
+	if (psrhObjXml==null) {
+		alert("Relevant File"+"psearch_"+servcatId+".xml does not exist.");
+	}
+	var ttlpartNode = psrhObjXml.selectSingleNode("//ttl[@id='"+ ttlId +"']/parts");
+	if( ttlpartNode == null){
+		alert("There is no applicable part. [Title ID:"+ttlId +"]");
+		return null;
+	}
+	var partId = ttlpartNode.getAttribute("id");
+
+	//同一タイトル内で　部品IDを含むイラストIDを探す
+	illustPartNode = parent.g_compoXml.selectSingleNode("//ttl[@id='"+ ttlId +"']/para[@category='R' ]/subpara/illust/parts[@id='"+ partId +"']");
+	if( illustPartNode != null){
+		return new Array(partId , illustPartNode.parentNode.getAttribute("id"), parent.sts.disp.innerHTML);
+	}
+
+	//同一セクション内で　部品IDを含むイラストIDを探す
+	illustPartNode = parent.g_compoXml.selectSingleNode("//section[@id='"+ secId +"']/ttl/para[@category='R' ]/subpara/illust/parts[@id='"+ partId +"']");
+	if( illustPartNode != null){
+		return new Array(partId , illustPartNode.parentNode.getAttribute("id"), parent.sts.disp.innerHTML);
+	}
+
+	//同一サービスカテゴリ内で　部品IDを含むイラストIDを探す
+	illustPartNode = parent.g_compoXml.selectSingleNode("//servcat[@id='"+ parent.g_servcatId +"']/section/ttl/para[@category='R' ]/subpara/illust/parts[@id='"+ partId +"']");
+	if( illustPartNode != null){
+		return new Array(partId , illustPartNode.parentNode.getAttribute("id"), parent.sts.disp.innerHTML);
+	}
+	alert("There is no applicable parts location diagram. [Title ID:"+ttlId +"]");
+	return null;
+}
+-->
+</script>
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td colspan="2" class="top"></td>
+	</tr>
+	<tr>
+		<td colspan="2" height="4"></td>
+	</tr>
+	<tr>
+		<td>
+			<table border="0" cellspacing="0" cellpadding="0" width="175">
+				<tr valign="middle"> 
+					<td width="10"><br></td>
+					<td align="right" width="15">
+						<img id="left" src="../../img/tab_on_l.png" width="15">
+					</td>
+					<td id="content" width="80" class="tab-ac" onClick="switchContents(); parent.switchTag(this.document, 'content', 'through', 'left', 'middle', 'right');">Procedure</td>
+					<td>
+						<img id="middle" src="../../img/tab_on2_r.png" width="15">
+					</td>
+					<td id="through" width="80" class="tab-non" onClick="switchThrough(); parent.switchTag(this.document, 'through', 'content', 'left', 'middle', 'right');">Procedure Run-through</td>
+					<td align="left" width="15">
+						<img id="right" src="../../img/tab_on_r.png" width="15">
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td align="right">
+			<table cellpadding="2" cellspacing="0" border="0">
+				<tr> 
+					<td>
+						<a class="button" href="#" id="component" onClick="switchComponent()">Component Diagram</a>
+						<a class="button" href="#" id="additional" style="visibility:hidden" onClick="switchAdditional()">Related Work</a><a class="button" href="#" id="parts" style="visibility:visible" onClick="switchParts()">Parts Location</a>
+						<a id="ppr" class="button" href="#" onClick="switchPreparation()" style="visibility: hidden">Preparation</a>
+						<!--この行は改行禁止--><a id="prt" class="button" href="#" onClick="parent.printFrame(parent.sts.disp.innerHTML,parent.contents.disp.innerHTML,'Print Removal/Installation Procedure');" style="visibility: visible; display: inline">Print</a><a id="trt" class="button" href="#" onClick="switchPrint();" style="visibility: hidden; display: none">Print</a>
+					</td>
+					<td width="30"><br></td>
+					<td>
+						<a class="button" href="#" onClick="parent.backTocPage(parent.g_bp, parent.g_bd)">Go to Contents Screen</a>
+						<a class="button" href="javascript:parent.openNewWindow('../index.html')">Show in Separate Window</a>
+						<a class="button" href="javascript:parent.setTermValue('../index.html', parent.getParameterValue('term', parent.location))" target="_top">To Function Selection</a>
+					</td>
+					<td width="5"><br></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1001Y_S000S" variety="S000S">
+<name>CVT</name>
+<ttl id="1001Y_S000S_744HD_T007Y" variety="T007Y">
+<name>CVT System [Super CVT-i] (K112/K112F)</name>
+<para id="RM0000013KJ00CX" category="C" type-id="800YE" name-id="32262-00" from="200612">
+<dtccode>P282B/77</dtccode>
+<dtcname>Pressure Control Solenoid Circuit</dtcname>
+<subpara id="RM0000013KJ00CX_01" type-id="33" category="03" proc-id="RM0550J___000048C00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>The engine control computer controls solenoid SLS by signals, and controls the belt clamping pressure according to the input torque.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.25in"/>
+<colspec colname="COL2" colwidth="3.17in"/>
+<colspec colname="COL3" colwidth="2.66in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P282B/77</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>While driving</ptxt>
+</item>
+<item>
+<ptxt>Short or open in solenoid SLS circuit</ptxt>
+</item>
+<item>
+<ptxt>Detected continuously for 1 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness and Connector</ptxt>
+<ptxt>(Solenoid SLS Signal System)</ptxt>
+</item>
+<item>
+<ptxt>Continuously Variable Transaxle</ptxt>
+<ptxt>(Solenoid SLS)</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000013KJ00CX_02" type-id="32" category="03" proc-id="RM0550J___000048D00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C159498J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000013KJ00CX_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM0000013KJ00CX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000013KJ00CX_04_0002" proc-id="RM0550J___000048E00000">
+<testtitle>Inspect Continuously Variable Transaxle Assembly (Solenoid SLS)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the transmission wire connector.</ptxt>
+<figure>
+<graphic graphicname="C102330J45" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3(SLS+) - 8(SLS-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5.1 to 5.5Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000013KJ00CX_04_0003" fin="false">OK</down>
+<right ref="RM0000013KJ00CX_04_0006" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000013KJ00CX_04_0003" proc-id="RM0550J___000048F00000">
+<testtitle>Inspect Wire Harness and Connector (Continuously Variable Transaxle [Transmission Wire] - Engine Control Computer)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Connect the transmission wire connector.</ptxt>
+<figure>
+<graphic graphicname="C159285J08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer, and using SST (Toyota electrical tester), measure the resistance between the terminals of the vehicle side connector. (see <xref label="Seep02" href="RM000000FSD00RX"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COLSPEC1" colwidth="1.17in"/>
+<colspec colname="COLSPEC2" colwidth="1.19in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A76(SLS+) - A75(SLS-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5.1 to 5.5Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000013KJ00CX_04_0004" fin="false">OK</down>
+<right ref="RM0000013KJ00CX_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000013KJ00CX_04_0004" proc-id="RM0550J___0000BLN00000">
+<testtitle>Replace Engine Control Computer</testtitle>
+<content6 releasenbr="2">
+<ptxt>For the replacement procedure, refer to <xref label="Seep01" href="RM0000020V0005X"/></ptxt>
+</content6>
+<res>
+<down ref="RM0000013KJ00CX_04_0005" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000013KJ00CX_04_0005" proc-id="RM0550J___000048G00000">
+<scantool type="1"/>
+<testtitle>TaSCAN (A/T / CVT Learned Value Initialization, G Sensor 0-point Learning and CVT Hydraulic Pressure Learning)</testtitle>
+<content6 releasenbr="2">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Initializing the learned values clears both the G sensor 0-point learning values and the CVT hydraulic pressure learning values, so when replacing the parts in the table below, perform AT/CVT learned value initialization and be sure to perform both G sensor 0-point learning and CVT hydraulic pressure learning.</ptxt>
+<table>
+<tgroup cols="1">
+<colspec colname="COL1" colwidth="4.13in"/>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>Replacement Parts</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Continuously Variable Transaxle</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>Skid control computer</ptxt>
+</item>
+<item>
+<ptxt>Oil Pressure Sensor</ptxt>
+</item>
+<item>
+<ptxt>Yaw Rate Sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+<item>
+<ptxt>After performing AT/CVT learned value initialization, be sure to perform G sensor 0-point learning first, and then CVT hydraulic pressure learning.</ptxt>
+</item>
+<item>
+<ptxt>Be sure to place the vehicle on a level surface and perform 0 point learning.</ptxt>
+</item>
+<item>
+<ptxt>Do not subject the vehicle to vibration while 0 point learning is in progress.</ptxt>
+</item>
+</list1>
+</atten3>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), perform A/T/CVT learned value initialization, G sensor 0 point learning and CVT hydraulic pressure learning.</ptxt>
+<atten4>
+<ptxt>For the procedures for A/T/CVT learned value initialization, G sensor 0-point learning and CVT hydraulic pressure learning, refer to <xref label="Seep01" href="RM0000021F400AX"/>.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check the DTCs again. (see <xref label="Seep02" href="RM000000FSM00TX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000013KJ00CX_04_0009" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000013KJ00CX_04_0006" proc-id="RM0550J___0000BLO00000">
+<testtitle>Replace Continuously Variable Transaxle Assembly</testtitle>
+<content6 releasenbr="2">
+<ptxt>For the replacement procedure, refer to <xref label="Seep01" href="RM0000020TJ00AX"/></ptxt>
+</content6>
+<res>
+<down ref="RM0000013KJ00CX_04_0007" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000013KJ00CX_04_0007" proc-id="RM0550J___000048H00000">
+<scantool type="1"/>
+<testtitle>TaSCAN (A/T / CVT Learned Value Initialization, G Sensor 0-point Learning and CVT Hydraulic Pressure Learning)</testtitle>
+<content6 releasenbr="2">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Initializing the learned values clears both the G sensor 0-point learning values and the CVT hydraulic pressure learning values, so when replacing the parts in the table below, perform AT/CVT learned value initialization and be sure to perform both G sensor 0-point learning and CVT hydraulic pressure learning.</ptxt>
+<table>
+<tgroup cols="1">
+<colspec colname="COL1" colwidth="4.13in"/>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>Replacement Parts</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Continuously Variable Transaxle</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>Skid control computer</ptxt>
+</item>
+<item>
+<ptxt>Oil Pressure Sensor</ptxt>
+</item>
+<item>
+<ptxt>Yaw Rate Sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+<item>
+<ptxt>After performing AT/CVT learned value initialization, be sure to perform G sensor 0-point learning first, and then CVT hydraulic pressure learning.</ptxt>
+</item>
+<item>
+<ptxt>Be sure to place the vehicle on a level surface and perform 0 point learning.</ptxt>
+</item>
+<item>
+<ptxt>Do not subject the vehicle to vibration while 0 point learning is in progress.</ptxt>
+</item>
+</list1>
+</atten3>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), perform A/T/CVT learned value initialization, G sensor 0 point learning and CVT hydraulic pressure learning.</ptxt>
+<atten4>
+<ptxt>For the procedures for A/T/CVT learned value initialization, G sensor 0-point learning and CVT hydraulic pressure learning, refer to <xref label="Seep01" href="RM0000021F400AX"/>.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check the DTCs again. (see <xref label="Seep02" href="RM000000FSM00TX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000013KJ00CX_04_0009" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000013KJ00CX_04_0008">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000013KJ00CX_04_0009">
+<testtitle>Complete</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

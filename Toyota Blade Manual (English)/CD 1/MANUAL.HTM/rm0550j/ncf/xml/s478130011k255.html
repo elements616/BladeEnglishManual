@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../_runtime/legacy.css">
+<script src="../../../../../_runtime/compat.js"></script>
+
+<title>Power Window System</title>
+<link type="text/css" href="../css/main2.css" rel="stylesheet">
+<link type="text/css" href="../css/style.css" rel="stylesheet">
+<script src="../js/hidden.js" language="JavaScript"></script>
+</head>
+<body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
+<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td align="left"><input onClick="printCheck()" value="Print" name="submit" type="submit"></td><td align="center"> </td><td align="right"><input onClick="closeWindow()" value="Close" name="submit2" type="submit"></td>
+</tr>
+</table>
+<div align="left">
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="blue" width="5%"> </td><td align="center" class="blue" width="80%">Power Window System</td><td width="15%" class="blue" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">"Power windows with one-touch auto function", equipped with a jam protection function, key-off operation, etc. for the door glass of all seats, have been adopted. The jam protection function works not only during auto up operation but also during manual up operation.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">An X-arm type window regulator has been adopted for the front doors and a single-arm type for the rear doors.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">Remote control of the door glass of each seat is performed using the LIN communication system.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">The door glass position/movement direction required for system control is detected with a pulse sensor (Hall IC), simplifying the system. An initialization operation is required when the power window motor assembly or window regulator assembly has been replaced, etc.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">To prevent the information required for power window control from being lost when the ECU power is OFF, the information is stored in the EEPROM<a href="#H478130011K25501"><sup>*
+					</sup></a>built into the power window ECU.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">HINT</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="27">*</td><td class="text"><a name="H478130011K25501"></a>
+<div class="text">Abbreviation for Electronically Erasable and Programmable Read Only Memory. (Non-volatile memory)</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT130011K255I01');chgImg('imT130011K255I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT130011K255I01" align="absmiddle"><a name="t130011k255i01">Power Window System Function List</a></span>
+<br>
+<div id="tmT130011K255I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">Function</div>
+</td><td class="gray3_dark">
+<div class="text">Outline</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Manual Up &amp; Down Function</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<div class="text">While the door glass switch of the driver seat or each seat is operated to the up side (pulled) or down side (pushed) to the 1 stage, the corresponding door glass moves up or down.</div>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">One-touch Auto Up &amp; Down Function</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<div class="text">When the door glass switch of the driver seat or each seat is operated to the up side (pulled) or down side (pushed) to the 2 stage, the corresponding door glass automatically moves up or down to the fully closed or fully open position.</div>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Power Window Jam Protection Function</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<div class="text">During up operation<a href="#H478130011K25502"><sup>*1</sup></a>, if an object is caught by the door glass, the window automatically starts moving down approximately 50mm.</div>
+
+<div class="text">If the opening amount does not reach approximately 200mm, the window moves down until it reaches approximately 200mm.</div>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Window Lock</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<div class="text">By turning ON (pushing in) the window lock switch of the master switch, power window operation of all seats other than the driver seat can be disabled.</div>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Key-off Operation Function</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<div class="text">The power windows of all seats can be operated for approximately 45 seconds after IG ON → IG OFF, or until the driver side door is opened → closed. The jam protection function also operates.</div>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Fail Mode LED Blinking</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<div class="text">In the event of an initial fail (when the window position could not be read normally from the EEPROM when a CPU reset occurred) or a LIN communication fail (when the LIN communication signal could not be received normally for a certain period), the system enters fail mode through self-diagnosis<a href="#H478130011K25503"><sup>*2</sup></a>and the indicator light (LED) built into the switch knob blinks.</div>
+</table>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">HINT</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="27">*1</td><td class="text"><a name="H478130011K25502"></a>
+<div class="text">If the auto up operation of the door glass switch is held, the jam protection function does not operate.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="27">*2</td><td class="text"><a name="H478130011K25503"></a>
+<div class="text">If a malfunction occurs in the Hall IC that detects the position, speed and direction of the door glass, or if the error between the position information detected by the Hall IC and the position information stored by the power window motor exceeds the specified value, the system enters fail mode through self-diagnosis (indicator light built into the switch knob blinks).</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT130011K255I02');chgImg('imT130011K255I02');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT130011K255I02" align="absmiddle"><a name="t130011k255i02">Power Window System Components</a></span>
+<br>
+<div id="tmT130011K255I02" style="display:none">
+<br>
+
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740034b.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT130011K255I03');chgImg('imT130011K255I03');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT130011K255I03" align="absmiddle"><a name="t130011k255i03">Power Window System Components Main Function List</a></span>
+<br>
+<div id="tmT130011K255I03" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">Components</div>
+</td><td class="gray3_dark">
+<div class="text">Main Function</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Window Regulator</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+
+<div class="text">Moves the door glass up/down by forward/reverse rotation of the power window motor.</div>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Power Window Motor (with Built-in Power Window ECU)</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+
+<div class="text">Drives the power window motor under the control of the built-in ECU.</div>
+
+<div class="text">Drives the window regulator of each seat by forward/reverse rotation of the power window motor.</div>
+
+<div class="text">The Hall IC built into the power window motor outputs pulse signals, and the power window ECU determines jamming according to the rate of change.</div>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Main Body ECU</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+
+<div class="text">Receives status signals from the door courtesy light switches of each seat, etc., and sends the "power window operation permission signal". [Key-off Operation]</div>
+
+<div class="text">Sends the power window motor operation request signal for each seat to the power window ECU of each seat. [Remote Control Operation]</div>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Master Switch</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+
+<div class="text">Detects the status signal of the window lock switch and sends it to the power window ECU of each seat.</div>
+
+<div class="text">Sends the power window motor operation request signal for each seat to the main body ECU. [Remote Control Operation]</div>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Door Glass Switch of Each Seat</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+
+<div class="text">Sends the power window motor operation request signal to the power window ECU of its own seat.</div>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Door Courtesy Light Switches (All Doors)</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+
+<div class="text">Detects the open/closed state of each door (ON when the door is open, OFF when the door is closed) and outputs it to the main body ECU. [Key-off Operation Determination Condition]</div>
+</table>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT130011K255I04');chgImg('imT130011K255I04');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT130011K255I04" align="absmiddle"><a name="t130011k255i04">Power Window System Wiring Diagram</a></span>
+<br>
+<div id="tmT130011K255I04" style="display:none">
+<br>
+
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740035b.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT130011K255K176');chgImg('imT130011K255K176');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT130011K255K176" align="absmiddle"><a name="t130011k255k176">Power Window Initialization Operation</a></span>
+<br>
+<div id="tmT130011K255K176" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">In this system, a pulse sensor electrically reads the door glass position from the rotation of the motor, and various functions are controlled based on this information.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the power window motor assembly, window regulator assembly, etc. has been replaced, the current door glass position information stored by the system is lost, so an initialization operation must be performed to have the system "learn" the door glass position.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Note that if the system has not "learned" the current door glass position, some functions such as the jam protection function will not operate.</div>
+</td>
+</tr>
+</table>
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">Initialization Operation</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+
+<div class="text">Turn the IG ON and move the door glass to any position. Next, hold the door glass switch in the auto up position, and continue holding it in the auto up position for approximately 1 seconds after the door glass is fully closed; the system then stores the fully closed state of the door glass as the reference position (origin 0)<a href="#H478130011K255K17601"><sup>*</sup></a>.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">After the initialization operation, always perform a function check of the power window system. For details of the initialization operation and function check, refer to the Repair Manual.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">HINT</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="27">*</td><td class="text"><a name="H478130011K255K17601"></a>
+<div class="text">The reference position (origin 0) of the door glass is updated each time the fully closed state is detected.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740036b.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT130011K255K582');chgImg('imT130011K255K582');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT130011K255K582" align="absmiddle"><a name="t130011k255k582">Manual Up &amp; Down Operation</a></span>
+<br>
+<div id="tmT130011K255K582" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">Manual Operation by Each Seat's Door Glass Switch</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the driver side door glass switch in the master switch or the door glass switch of each seat is operated to the up &lt;down&gt; side to the 1 stage with IG ON, the "manual up &lt;down&gt; operation request signal" is sent to the power window motor (with built-in ECU) of the driver seat or each seat.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">While the power window motor (with built-in ECU) of the driver seat or each seat is receiving the "manual up &lt;down&gt; operation request signal", it rotates the power window motor to the up &lt;down&gt; side.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the driver side door glass switch in the master switch or the door glass switch of each seat turns OFF, transmission of the "manual up &lt;down&gt; operation request signal" stops at that point, and the power window motor (with built-in ECU) of the driver seat or each seat also stops operating.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">Remote Control Operation by Master Switch</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the door glass switch for each seat in the master switch is operated to the up &lt;down&gt; side to the 1 stage with IG ON, the "remote control up &lt;down&gt;" signal is sent via LIN communication to the corresponding power window motor (with built-in ECU) of each seat.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">While the corresponding power window motor (with built-in ECU) of each seat is receiving the "remote control up &lt;down&gt;" signal, it rotates its own power window motor to the up &lt;down&gt; side in the same way as manual operation by each seat's door glass switch.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the door glass switch for each seat in the master switch turns OFF, transmission of the "remote control up &lt;down&gt;" signal stops at that point, and the corresponding power window motor (with built-in ECU) of each seat also stops operating.</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT130011K255K581');chgImg('imT130011K255K581');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT130011K255K581" align="absmiddle"><a name="t130011k255k581">Auto Up &amp; Down Operation</a></span>
+<br>
+<div id="tmT130011K255K581" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">Auto Operation by Each Door Glass Switch</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the driver door glass switch in the master switch or the door glass switch of each seat is operated to the 2 position on the up (down) side with the IG ON, an "auto up (down) operation request signal" is sent to the driver or each seat power window motor (with built-in ECU). When the driver or each seat power window motor (with built-in ECU) receives this signal, it rotates the power window motor of that seat in the same way as manual up (down) operation.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">At this time, each power window motor (with built-in ECU) counts the pulse signals from its built-in Hall IC, and even after the "auto up (down) operation request signal" stops, it continues to rotate until it detects from the motor rotation count that the door glass has reached the fully closed (fully open) position.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">Remote Control Auto Operation by Master Switch</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the door glass switch of a seat in the master switch is operated to the 2 position on the up (down) side with the IG ON, a "remote control auto up (down)" signal for the corresponding switch is sent to each seat power window motor (with built-in ECU) via LIN communication.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When each seat power window motor (with built-in ECU) receives the "remote control auto up (auto down)" signal, it rotates its own power window motor up (down) to the fully closed (fully open) position in the same way as auto operation by each door glass switch.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">Stopping Auto Operation</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Auto operation stops when any of the conditions below is met.</div>
+</td>
+</tr>
+</table>
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">Auto Operation Stop Conditions</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The power window motor (with built-in ECU) under auto operation control detects that the door glass is fully closed (fully open).</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The power window motor (with built-in ECU) under auto operation control receives an ON input from the operation switch in the opposite direction.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Approximately 10 seconds have elapsed since auto operation started.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The power window motor (with built-in ECU) under auto operation control receives an opposite-direction "remote control" signal or a "window lock" signal via LIN communication. (Front passenger side / rear RH / rear LH only)</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT130011K255K583');chgImg('imT130011K255K583');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT130011K255K583" align="absmiddle"><a name="t130011k255k583">Power Window Jam Protection Function Operation</a></span>
+<br>
+<div id="tmT130011K255K583" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">Operation Outline</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">For the jam protection function, the power window motor (with built-in ECU) of each door controls the corresponding door glass.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When all of the prerequisites below are met and any of the following occurs: power window motor lock, change in rotation speed, or pulse disturbance, the power window motor (with built-in ECU) determines that jamming has occurred and performs reverse operation. To prevent malfunction, jamming is not judged while the door glass position is within the specified range.</div>
+</td>
+</tr>
+</table>
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">Prerequisites</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+
+<div class="text">Manual, auto or key-off operation is performing an up operation.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The power window motor (with built-in ECU) has "learned" the fully closed position of the door glass as the reference point (origin 0).</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The door glass position is not just before the fully closed position or just after the start of up operation from the fully open position (specified range).</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The power window motor (with built-in ECU) is not just after starting to operate.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">Reverse Conditions and Lowering Amount after Jam Detection</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the jam protection function operates and the opening (clearance) of the door glass has not reached approximately 200mm after lowering for approximately 50mm or 1 seconds, reverse operation continues until approximately 200mm or 5 seconds have elapsed. However, if the door glass reaches the fully open position before the down operation reaches approximately 50mm, operation ends at that point.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">During reverse operation, manual up and auto up switch signal inputs are prohibited. (Switch input is accepted after reverse operation ends.) Manual down and auto down switch signals during reverse operation are accepted, but down operation is performed after reverse operation ends.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">Jam Protection Reverse Operation</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the power window motor (with built-in ECU) determines jamming, it reverses the power window motor (with built-in ECU) by having the built-in motor drive circuit (relay) send current to the down side.</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT130011K255K310');chgImg('imT130011K255K310');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT130011K255K310" align="absmiddle"><a name="t130011k255k310">Power Window Key-off Operation</a></span>
+<br>
+<div id="tmT130011K255K310" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the IG is turned from ON to OFF, the main body ECU detects this, starts counting approximately 45 seconds of key-off operation, and sends a "power window operation permission signal" to each seat power window ECU via LIN communication. This permits power window operation at all doors.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When approximately 45 seconds have elapsed, or when the main body ECU receives driver door courtesy light switch 0N → OFF, the "power window operation permission signal" is turned OFF. However, if the "power window operation permission signal" turns OFF during auto operation or jam protection control, each operation is carried out to completion, and jam protection control is performed during auto operation as well.</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT130011K255K587');chgImg('imT130011K255K587');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT130011K255K587" align="absmiddle"><a name="t130011k255k587">Window Lock Operation</a></span>
+<br>
+<div id="tmT130011K255K587" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the window lock switch is turned ON with the IG ON or during key-off operation, a window lock switch ON signal is sent from the master switch to the main body ECU and each seat power window motor (with built-in ECU) via LIN communication.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">While each seat power window motor (with built-in ECU) is receiving the "window lock" signal, power window control of its own door glass is stopped.</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT130011K255K251');chgImg('imT130011K255K251');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT130011K255K251" align="absmiddle"><a name="t130011k255k251">Fail-safe for Door Glass Position Detection</a></span>
+<br>
+<div id="tmT130011K255K251" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When a malfunction is detected in the Hall IC that detects door glass position, speed and direction, or when there is an error of more than the specified amount between the position the power window motor (with built-in ECU) "learned" as the fully closed position and the actual door glass position, the system shifts to fail mode through self-diagnosis.</div>
+</td>
+</tr>
+</table>
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">List of Fail-safes for Door Glass Position Detection</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">№</div>
+</td><td class="gray3_dark">
+<div class="text">Item</div>
+</td><td class="gray3_dark">
+<div class="text">Condition</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">1</div>
+</td><td class="color1">
+<div class="text">Sensor Fail (Pulse Direction Malfunction)</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When pulses in the direction opposite to the drive direction of the power window motor (with built-in ECU) are detected continuously for more than the specified amount during close/open operation.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">2</div>
+</td><td class="color1">
+<div class="text">Sensor Fail (Pulse Stop Malfunction)</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When no pulse is detected from the Hall IC for longer than the specified time during close operation.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">3</div>
+</td><td class="color1">
+<div class="text">Initial Fail</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+
+<div class="text">When the door glass position could not be read correctly at a CPU reset.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When motor lock is detected at a position other than fully open during open operation.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the door glass position information exceeds the fully open (fully closed) position information stored in the CPU.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">4</div>
+</td><td class="color1">
+<div class="text">LIN Communication Fail</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+
+<div class="text">When a LIN communication interruption is detected.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The operation mode in fail mode differs depending on the type of fail-safe.</div>
+</td>
+</tr>
+</table>
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">List of Operation Modes during Fail</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark" colspan="4" rowspan="2">
+<div class="text">Switch Operation / Remote Operation Signal</div>
+</td><td class="gray3_dark" colspan="5">
+<div class="text">Fail Mode</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark">
+<div class="text">Either 1 or 2 (IG ON)</div>
+</td><td class="gray3_dark">
+<div class="text">3 (IG ON)</div>
+</td><td class="gray3_dark">
+<div class="text">4 (Always)</div>
+</td><td class="gray3_dark">
+<div class="text">Combined fail of any of 1 to 2 and 4 (Always)</div>
+</td><td class="gray3_dark">
+<div class="text">Combined fail of 3 and 4 (Always)</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="7">
+<div class="text">Driver Seat</div>
+</td><td class="color1" rowspan="12">
+<div class="text">Own Seat Switch Operation</div>
+</td><td class="color1" rowspan="2">
+<div class="text">Manual</div>
+</td><td class="color1">
+<div class="text">UP</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">◎</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">◎</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">DOWN</div>
+</td><td class="color1">
+<div class="text">○</div>
+</td><td class="color1">
+<div class="text">○</div>
+</td><td class="color1">
+<div class="text">○</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">○</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Automatic</div>
+</td><td class="color1">
+<div class="text">UP Hold</div>
+</td><td class="color1">
+<div class="text">○</div>
+</td><td class="color1">
+<div class="text">△</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">Automatic</div>
+</td><td class="color1">
+<div class="text">UP</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">DOWN</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">Remote Manual</div>
+</td><td class="color1">
+<div class="text">UP</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">DOWN</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="10">
+<div class="text">Front Passenger Side / Rear RH / Rear LH</div>
+</td><td class="color1" rowspan="2">
+<div class="text">Manual</div>
+</td><td class="color1">
+<div class="text">UP</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">◎</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">◎</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">DOWN</div>
+</td><td class="color1">
+<div class="text">○</div>
+</td><td class="color1">
+<div class="text">○</div>
+</td><td class="color1">
+<div class="text">○</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">○</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Automatic</div>
+</td><td class="color1">
+<div class="text">UP Hold</div>
+</td><td class="color1">
+<div class="text">○</div>
+</td><td class="color1">
+<div class="text">△</div>
+</td><td class="color1">
+<div class="text">◎</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">◎</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">Automatic</div>
+</td><td class="color1">
+<div class="text">UP</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">◎</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">DOWN</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">○</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="5">
+<div class="text">Remote</div>
+
+<div class="text">Operation Signal</div>
+</td><td class="color1" rowspan="2">
+<div class="text">Remote Manual</div>
+</td><td class="color1">
+<div class="text">UP</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">DOWN</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Remote Auto</div>
+</td><td class="color1">
+<div class="text">UP Hold</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">Remote Auto</div>
+</td><td class="color1">
+<div class="text">UP</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">DOWN</div>
+</td><td class="color1">
+<div class="text">&times;</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">HINT</td>
+</tr>
+</table>
+
+<div class="text">◎: Operation permitted (with jam protection), ○: Operation permitted (without jam protection), △: Operation permitted (no jam protection until the fully closed position is detected), ×: Operation prohibited</div>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="27">*1</td><td class="text">
+<div class="text">Auto UP hold operation results in manual UP operation.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="27">*2</td><td class="text">
+<div class="text">Reverse operation is performed when the fully closed position is reached.</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT130011K255K313');chgImg('imT130011K255K313');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT130011K255K313" align="absmiddle"><a name="t130011k255k313">Fail-safe for Power Window Motor Drive Control</a></span>
+<br>
+<div id="tmT130011K255K313" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">This prevents the motor from continuing to run for longer than the specified time during auto operation, protecting the motor and circuit. Also, if the door glass position information is incorrect and the jam protection function operates at the fully closed position so that the door glass cannot be fully closed, the position information is set to the "not learned" state so that the door glass can be fully closed.</div>
+</td>
+</tr>
+</table>
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">Continuous Operation Limit Function</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="color1">
+<div class="text">When the motor drive time (relay ON time) by each door glass switch is long, the relay is automatically turned OFF after approximately 10 seconds.</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT130011K255B');chgImg('imT130011K255B');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_a0.gif" border="0" id="imT130011K255B" align="absmiddle"><a name="t130011k255b">Related Parts</a></span>
+<br>
+<div id="tmT130011K255B" style="display:none">
+<br>
+
+<br>
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Power Window Motor Assembly</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">A power window ECU (computer) is built into the power window motor.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">The power window motor assembly consists of the power window motor body, connector section, gear section and power window ECU (computer).</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">A pulse sensor for the jam protection function is integrated into the power window ECU (computer) and detects the rotation of the power window motor.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740037b.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT130011K257K371');chgImg('imT130011K257K371');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT130011K257K371" align="absmiddle"><a name="t130011k257k371">Hall IC</a></span>
+<br>
+<div id="tmT130011K257K371" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The 2 Hall ICs output pulse signals synchronized with motor rotation to the power window ECU (computer) of their own seat, using a magnet provided on the armature shaft of the power window motor.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740038b.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Power Window Computer</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">The power window ECU (computer) detects the amount of door glass movement by counting the pulses output by the Hall IC, at 2 cycles per 1 rotation of the motor shaft. Together with this, it determines the motor rotation direction (door glass movement direction) from the rotation direction signal output by the Hall IC. Various functions are controlled based on the position and movement direction information obtained from this Hall IC.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740039b.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">At the same time, the power window ECU (computer) detects changes in the door glass movement speed by detecting changes in motor rotation speed from the intervals of the pulses output by Hall IC1. This allows it to recognize the load applied to the door glass and control the jam protection function and overload stop function.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740040b.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+</div>
+</body>
+</html>

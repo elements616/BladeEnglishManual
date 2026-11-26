@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY c5930054e SYSTEM "grph_ent/c5930054e.png" NDATA png>
+<!ENTITY a4740222b SYSTEM "grph_ent/a4740222b.png" NDATA png>
+<!ENTITY a4740223b SYSTEM "grph_ent/a4740223b.png" NDATA png>
+<!ENTITY a4740224b SYSTEM "grph_ent/a4740224b.png" NDATA png>
+<!ENTITY a4740225b SYSTEM "grph_ent/a4740225b.png" NDATA png>
+<!ENTITY a4740226b SYSTEM "grph_ent/a4740226b.png" NDATA png>
+<!ENTITY a4740227b SYSTEM "grph_ent/a4740227b.png" NDATA png>
+<!ENTITY a4740228b SYSTEM "grph_ent/a4740228b.png" NDATA png>
+<!ENTITY a4740248b SYSTEM "grph_ent/a4740248b.png" NDATA png>
+<!ENTITY a4740219b SYSTEM "grph_ent/a4740219b.png" NDATA png>
+<!ENTITY a4740220b SYSTEM "grph_ent/a4740220b.png" NDATA png>
+<!ENTITY a4740221b SYSTEM "grph_ent/a4740221b.png" NDATA png>
+<!ENTITY a4740231b SYSTEM "grph_ent/a4740231b.png" NDATA png>
+<!ENTITY a4740233b SYSTEM "grph_ent/a4740233b.png" NDATA png>
+<!ENTITY a4740232b SYSTEM "grph_ent/a4740232b.png" NDATA png>
+<!ENTITY a4740229b SYSTEM "grph_ent/a4740229b.png" NDATA png>
+<!ENTITY a4740230b SYSTEM "grph_ent/a4740230b.png" NDATA png>
+<!ENTITY a4740234b SYSTEM "grph_ent/a4740234b.png" NDATA png>
+<!ENTITY a4740236b SYSTEM "grph_ent/a4740236b.png" NDATA png>
+<!ENTITY c5930055e SYSTEM "grph_ent/c5930055e.png" NDATA png>
+
+<!ENTITY T120025K664 SYSTEM "t478120025k664.xml">
+<!ENTITY T120025K664K874 SYSTEM "t478120025k664k874.xml">
+<!ENTITY T120025K664Ab00 SYSTEM "t478120025k664ab00.xml">
+<!ENTITY T120025K664K877 SYSTEM "t478120025k664k877.xml">
+<!ENTITY T120025K664Kd05 SYSTEM "t478120025k664kd05.xml">
+<!ENTITY T120025K664Kd04 SYSTEM "t478120025k664kd04.xml">
+<!ENTITY T120025K664K876 SYSTEM "t478120025k664k876.xml">
+<!ENTITY T120025K664Kc97 SYSTEM "t478120025k664kc97.xml">
+<!ENTITY T120025K664K879 SYSTEM "t478120025k664k879.xml">
+<!ENTITY T120025K664Ab14 SYSTEM "t478120025k664ab14.xml">
+<!ENTITY T120025K664A647 SYSTEM "t478120025k664a647.xml">
+<!ENTITY T120025K664K875 SYSTEM "t478120025k664k875.xml">
+<!ENTITY T120025K664Kc99 SYSTEM "t478120025k664kc99.xml">
+<!ENTITY T120025K664Ab16 SYSTEM "t478120025k664ab16.xml">
+<!ENTITY T120025K664Ab11 SYSTEM "t478120025k664ab11.xml">
+<!ENTITY T120025K664Ab53 SYSTEM "t478120025k664ab53.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120025K664S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120025K664" UPDATE = "ORIGINAL" LDUP = "8Jul2006"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Multi-information Display Warning Display Mode</TITLE>
+<LIST1><ITEM><PTXT>A power steering warning item has been added to the warning display mode.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T120025K664K874" UPDATE = "ORIGINAL" LDUP = "8Jul2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Display Flow in Warning Display Mode</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930054e" WIDTH = "6.903in" HEIGHT = "7.806in" /><FIGCAPTION><L ja="マスターウォーニングインジケーターランプ 点滅 点灯 消灯">Master Warning Indicator Light: Blinking / ON / OFF</L><L ja="メーター内ブザー">Meter buzzer</L><L ja="初回表示時に1回吹鳴 ●：吹鳴あり −：吹鳴なし">Sounds once on first display / ●: Sounds / -: Does not sound</L><L ja="表示順序">Display order</L><L ja="項目〔表示内容〕">Item [Display Content]</L><L ja="VSCアクティブテストモード〔VSCチェック〕*1 VSCテストモード〔VSC〕 *1">VSC active test mode [Check VSC]*1 / VSC test mode [VSC] / *1</L><L ja="*2">*2</L><L ja="4WDアクティブテストモード〔4WDチェック〕*1 4WDテストモード〔4WD〕 *1 ブレーキ異常〔ブレーキチェック〕 スマートキー車内有無警告〔キーが見つかりません〕 始動時操作案内〔始動時はブレーキを踏んで下さい〕 スマートシフト位置警告〔Pレンジに入れて下さい〕 ステアリングロック解除〔ステアリングロック未解除〕 半ドア警告*1 パーキングブレーキ未解除〔パーキングブレーキ未解除〕 ABS異常〔ABSチェック〕 VSC異常〔VSCチェック〕 AIR BAG異常〔エアバッグチェック〕 悪天候クルーズできません 4WDシステム異常〔4WDチェック〕 EPSシステム異常 エンジン油圧不足〔エンジン油圧不足〕 エンジンシステム異常〔エンジンチェック〕 バッテリーチェック〔充電チェック〕 ステアリングロックシステム確認〔ステアリングロック確認〕 PCSシステムチェック PCS現在使用できません レーダー汚れ清掃必要 クルーズシステムチェック スマートキーバッテリー残量警告〔キーバッテリ残りわずか〕 残燃料少量警告〔給油して下さい〕 *4 *1：新規ウォーニング発生時も2秒間の表示となります。">4WD active test mode [Check 4WD]*1 / 4WD test mode [4WD] / *1 / Brake malfunction [Check brakes] / Smart key in-vehicle warning [Key not found] / Starting operation guide [Depress the brake when starting] / Smart shift position warning [Shift to P] / Steering lock release [Steering lock not released] / Door ajar warning *1 / Parking brake not released [Parking brake not released] / ABS malfunction [Check ABS] / VSC malfunction [Check VSC] / AIR BAG malfunction [Check airbag] / Cruise unavailable in bad weather / 4WD system malfunction [Check 4WD] / EPS system malfunction / Low engine oil pressure [Low engine oil pressure] / Engine system malfunction [Check engine] / Battery check [Check charging] / Steering lock system check [Check steering lock] / PCS system check / PCS currently unavailable / Radar dirty, cleaning required / Cruise system check / Smart key battery level warning [Key battery low] / Low fuel warning [Refuel] / *4 / *1: When a new warning occurs, it is also displayed for 2 s.</L><L ja="● *3">● / *3</L><L ja="● ● *3 *3">● / ● / *3 / *3</L><L ja="*2：4Hz（1秒間に4回点灯する速さ）で点滅します。 *3：専用ブザー吹鳴のためメーター内ブザーによる吹鳴はありません。 *4：初回の6秒間のみ表示します。 *5：2Hz（1秒間に2回点灯する速さ）で点滅します。">*2: Blinks at 4 Hz (4 times per second). / *3: A dedicated buzzer sounds, so the meter buzzer does not sound. / *4: Displayed only for the first 6 s. / *5: Blinks at 2 Hz (2 times per second).</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K664Ab00" UPDATE = "ORIGINAL" LDUP = "8Jul2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Smart Entry &amp; Start System Warning Display</TITLE>
+<LIST1><TITLE>Electronic Key Inside Vehicle Warning</TITLE>
+<ITEM><PTXT>Warns that the electronic key is not inside the vehicle (electronic key not carried).</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740222b" WIDTH = "6.903in" HEIGHT = "1.278in" /><FIGCAPTION><L ja="マスターウォーニングインジケーターランプ">Master Warning Indicator Light</L><L ja="キーが見つかりません">Key not found</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+<LIST1><TITLE>Starting Operation Guide</TITLE>
+<ITEM><PTXT>Displayed when the engine switch is pressed without depressing the brake and the engine switch mode is changed 2 times in succession.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740223b" WIDTH = "6.903in" HEIGHT = "1.278in" /><FIGCAPTION><L ja="マスターウォーニングインジケーターランプ">Master Warning Indicator Light</L><L ja="始動時はブレーキを踏んで下さい">Depress the brake when starting</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+<LIST1><TITLE>Smart Shift Position Warning</TITLE>
+<ITEM><PTXT>Warns when the driver takes the electronic key out of the vehicle with the shift position in a position other than "P".</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740224b" WIDTH = "6.903in" HEIGHT = "1.278in" /><FIGCAPTION><L ja="マスターウォーニングインジケーターランプ">Master Warning Indicator Light</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+<LIST1><TITLE>Steering Lock Not Released</TITLE>
+<ITEM><PTXT>Displayed when the steering lock is not released.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740225b" WIDTH = "6.903in" HEIGHT = "1.278in" /><FIGCAPTION><L ja="マスターウォーニングインジケーターランプ">Master Warning Indicator Light</L><L ja="ステアリングロック未解除">Steering lock not released</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+<LIST1><TITLE>Check Steering Lock System</TITLE>
+<ITEM><PTXT>Warns that a malfunction has occurred in the steering lock system.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740226b" WIDTH = "6.903in" HEIGHT = "1.278in" /><FIGCAPTION><L ja="マスターウォーニングインジケーターランプ">Master Warning Indicator Light</L><L ja="ステアリングロック確認">Check steering lock</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+<LIST1><TITLE>Electronic Key Battery Low Warning</TITLE>
+<ITEM><PTXT>Warns that the electronic key battery is low.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740227b" WIDTH = "6.903in" HEIGHT = "1.278in" /><FIGCAPTION><L ja="マスターウォーニングインジケーターランプ">Master Warning Indicator Light</L><L ja="キーバッテリ残りわずか">Key battery low</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K664K877" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Door Warning (Each Seat)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Warns individually for each door that the door is open or ajar.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740228b" WIDTH = "6.903in" HEIGHT = "1.417in" /><FIGCAPTION><L ja="マスターウォーニングインジケーターランプ">Master Warning Indicator Light</L><L ja="点灯">ON</L><L ja="注）イラストは全てのドアが開いた状態で表現しています。">Note) The illustration shows all doors open.</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K664Kd05" UPDATE = "ORIGINAL" LDUP = "18Jul2006"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Back Door Warning</TITLE>
+<LIST1><ITEM><PTXT>Warns that the back door is open or ajar.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740248b" WIDTH = "6.903in" HEIGHT = "1.278in" /><FIGCAPTION><L ja="マスターウォーニングインジケーターランプ">Master Warning Indicator Light</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K664Kd04" UPDATE = "ORIGINAL" LDUP = "8Aug2006"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Brake Warning</TITLE>
+<LIST1><ITEM><PTXT>Warns that a malfunction has occurred in the brake system.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740219b" WIDTH = "6.903in" HEIGHT = "1.278in" /><FIGCAPTION><L ja="マスターウォーニングインジケーターランプ">Master Warning Indicator Light</L><L ja="ブレーキチェック">Check brakes</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K664K876" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Parking Brake Warning</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Warns that the vehicle is being driven (vehicle speed approximately 5km/h or more) with the parking brake applied.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740220b" WIDTH = "6.903in" HEIGHT = "1.278in" /><FIGCAPTION><L ja="マスターウォーニングインジケーターランプ">Master Warning Indicator Light</L><L ja="パーキングブレーキ未解除">Parking brake not released</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K664Kc97" UPDATE = "ORIGINAL" LDUP = "12Jul2006"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>ABS Warning</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Warns that a malfunction has occurred in the ABS system.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740221b" WIDTH = "6.903in" HEIGHT = "1.278in" /><FIGCAPTION><L ja="マスターウォーニングインジケーターランプ">Master Warning Indicator Light</L><L ja="ABSチェック">Check ABS</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K664K879" UPDATE = "ORIGINAL" LDUP = "8Jul2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>VSC Warning</TITLE>
+<LIST1><ITEM><PTXT>Warns that a malfunction has occurred in the VSC system.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740231b" WIDTH = "6.903in" HEIGHT = "1.194in" /><FIGCAPTION><L ja="VSCチェック">Check VSC</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K664Ab14" UPDATE = "ORIGINAL" LDUP = "13Jul2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Airbag Warning</TITLE>
+<LIST1><ITEM><PTXT>Warns that a malfunction has occurred in the SRS airbag system.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740233b" WIDTH = "6.903in" HEIGHT = "1.194in" /><FIGCAPTION><L ja="エアバッグチェック">Check airbag</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K664A647" UPDATE = "ORIGINAL" LDUP = "8Jul2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>4WD System Warning</TITLE>
+<LIST1><ITEM><PTXT>Warns that a malfunction has occurred in the 4WD system.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740232b" WIDTH = "6.903in" HEIGHT = "1.194in" /><FIGCAPTION><L ja="4WDチェック">Check 4WD</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K664K875" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Engine Oil Pressure Warning Display</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Warns that the engine oil pressure has dropped extremely low.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740229b" WIDTH = "6.903in" HEIGHT = "1.278in" /><FIGCAPTION><L ja="マスターウォーニングインジケーターランプ">Master Warning Indicator Light</L><L ja="エンジン油圧不足">Low engine oil pressure</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K664Kc99" UPDATE = "ORIGINAL" LDUP = "12Jul2006"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Engine System Warning</TITLE>
+<LIST1><ITEM><PTXT>Warns that a malfunction has occurred in the engine system.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740230b" WIDTH = "6.903in" HEIGHT = "1.278in" /><FIGCAPTION><L ja="マスターウォーニングインジケーターランプ">Master Warning Indicator Light</L><L ja="エンジンチェック">Check engine</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K664Ab16" UPDATE = "ORIGINAL" LDUP = "14Jul2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Charge Warning</TITLE>
+<LIST1><ITEM><PTXT>Warns that a malfunction has occurred in the charging system, such as the battery.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740234b" WIDTH = "6.903in" HEIGHT = "1.278in" /><FIGCAPTION><L ja="充電系チェック">Check charging system</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K664Ab11" UPDATE = "ORIGINAL" LDUP = "13Jul2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Low Fuel Level Warning</TITLE>
+<LIST1><ITEM><PTXT>Warns that the fuel level is low (approximately 9L or less).</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740236b" WIDTH = "6.903in" HEIGHT = "1.194in" /><FIGCAPTION><L ja="給油して下さい">Refuel</L><L ja="消灯">OFF</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K664Ab53" UPDATE = "ORIGINAL" LDUP = "13Sep2008"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Electric Power Steering Warning</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Warns that a malfunction has occurred in the electric power steering system.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930055e" WIDTH = "6.903in" HEIGHT = "1.583in" /><FIGCAPTION><L ja="パワーステアリングチェック">Check power steering</L><L ja="点灯">ON</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

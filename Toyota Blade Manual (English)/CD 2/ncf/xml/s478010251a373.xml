@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740143p SYSTEM "grph_ent/a4740143p.png" NDATA png>
+<!ENTITY a3940038p SYSTEM "grph_ent/a3940038p.png" NDATA png>
+<!ENTITY s4270044p SYSTEM "grph_ent/s4270044p.png" NDATA png>
+<!ENTITY s4270010p SYSTEM "grph_ent/s4270010p.png" NDATA png>
+
+<!ENTITY T010251A373 SYSTEM "t478010251a373.xml">
+
+<!ENTITY T010251A148K732 SYSTEM "t478010251a148k732.xml">
+<!ENTITY T010251A148K732R01 SYSTEM "t478010251a148k732r01.xml">
+<!ENTITY T010251A078 SYSTEM "t478010251a078.xml">
+<!ENTITY T010251A148 SYSTEM "t478010251a148.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010251A373S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010251A373" UPDATE = "ORIGINAL" LDUP = "22Dec2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>2-system Intake System</TITLE>
+<LIST1><ITEM><PTXT>A 2-way intake system that switches the intake passage in 2 stages according to the driving conditions has been adopted to achieve both high performance and low noise.</PTXT></ITEM>
+<ITEM><PTXT>A 2-way intake valve is located in the air cleaner case, and the shape allows a large volume of intake air to flow, reducing intake resistance.</PTXT></ITEM>
+<ITEM><PTXT>During normal driving, air is drawn only through the cool air intake, and in the high-speed, high-load range, air is drawn through both the cool air intake and the 2-way intake valve.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740143p" WIDTH = "6.903in" HEIGHT = "4.611in" />
+</FIGURE>
+<INDICATE ID = "T010251A373I01" INDSW = "OFF">
+<TITLE>Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "66%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Device Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" ALIGN = "LEFT"><PTXT>Crankshaft Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the engine speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Throttle Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the throttle valve opening angle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>2-way Intake Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Mounted on the air cleaner case, it opens and closes using vacuum from the 2-way intake VSV.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>2-way Intake VSV</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Switches the vacuum to the 2-way intake valve; when vacuum is sent to the diaphragm, the 2-way intake valve opens.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Vacuum Tank</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Mounted on the air cleaner cap, it stores the vacuum needed in the medium speed range under high load.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Diaphragm</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Mounted on the air cleaner case, it opens and closes the 2-way intake valve using vacuum from the 2-way intake VSV.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Sends a signal to the 2-way intake VSV at the appropriate timing based on the signals from the crank position sensor and throttle position sensor.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+</PARA>
+<PARA INFOID = "T010251A373P" UPDATE = "ORIGINAL" LDUP = "99XXX9999" INFOTYPE = "SYSTEM" INDSW = "ON" UNPRINT="OFF">
+<TITLE>Related Systems</TITLE>
+
+<MECA ID = "T010251A148K732R01" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Fail-safe Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The throttle position sensor detects the opening angle with 2 systems: a main circuit and a sub circuit. If a malfunction occurs in the signal, the engine control computer switches to limp mode.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T010251A148K732R01I01" INDSW = "OFF">
+<TITLE>When Malfunction Is Detected</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>If a malfunction occurs in either or both circuits, the engine control computer detects the malfunction from the voltage difference between the main circuit and sub circuit. At this time, power to the throttle motor is cut and the throttle valve is returned to a predetermined opening angle by the return spring. Limp mode driving is made possible by controlling engine output using fuel injection control and ignition timing control. Also, even if the engine control computer detects another malfunction such as in the throttle motor, limp mode driving is made possible by performing the above control.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3940038p" WIDTH = "6.917in" HEIGHT = "5.028in" />
+</FIGURE>
+</INDICATE></MECA>
+</PARA>
+<BIND ID = "T010251A373B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T010251A078" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Crankshaft Position Sensor (Ne Signal)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A highly accurate electromagnetic pickup type sensor has been adopted. Detects the crank position and crank angular velocity.</PTXT></ITEM>
+<ITEM><PTXT>The timing rotor on the crankshaft has 34 signal teeth with 2 teeth missing for top dead center detection. The crank position sensor detects the crank rotation signal every 10° and can accurately detect top dead center from the missing teeth area.</PTXT></ITEM>
+<ITEM><PTXT>As the crankshaft rotates, the air gap between the timing rotor protrusions and the crank position sensor changes, so the magnetic flux passing through the coil of the crank position sensor increases and decreases, generating an electromotive force in the coil. Because this generated voltage is reversed when the timing rotor protrusion approaches and moves away from the cam position sensor, it appears as an AC voltage.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "s4270044p" WIDTH = "6.903in" HEIGHT = "2.903in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T010251A148" UPDATE = "ORIGINAL" LDUP = "2Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Throttle Position Sensor</TITLE>
+<LIST1><ITEM><PTXT>A non-contact type throttle position sensor has been adopted, using a Hall element<HINTREF     REFID = "H478010251A14802"/> that can extract the magnetic field strength as an electrical signal using the Hall effect<HINTREF     REFID = "H478010251A14801"/>, which provides an output voltage linear to the throttle valve opening angle. When the throttle valve opening angle changes, the angle of the magnetic field relative to the flow of the applied current in the Hall element changes, so the strength of the magnetic field perpendicular to the applied current changes. As a result, the change in voltage generated perpendicular to both the applied current and the magnetic field is sent to the engine control computer as the throttle valve opening angle signal. In addition, reliability is ensured by adopting a 2-system (main and sub) sensor with different output characteristics.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478010251A14801">This is a phenomenon in which, when a current flows through a rod- or plate-shaped conductor or semiconductor and a magnetic field is applied perpendicular to it, a potential difference is generated in the direction perpendicular to both the current and the magnetic field.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478010251A14802">This is an electronic component that uses the electromotive force generated by the potential difference in a magnetic field.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "s4270010p" WIDTH = "6.903in" HEIGHT = "5.056in" />
+</FIGURE>
+
+<MECA ID = "T010251A148K732" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Fail-safe Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The throttle position sensor detects the opening angle with 2 systems: a main circuit and a sub circuit. If a malfunction occurs in the signal, the engine control computer switches to limp mode.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T010251A148K732I01" INDSW = "OFF">
+<TITLE>When Malfunction Is Detected</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>If a malfunction occurs in either or both circuits, the engine control computer detects the malfunction from the voltage difference between the main circuit and sub circuit. At this time, power to the throttle motor is cut and the throttle valve is returned to a predetermined opening angle by the return spring. Limp mode driving is made possible by controlling engine output using fuel injection control and ignition timing control. Also, even if the engine control computer detects another malfunction such as in the throttle motor, limp mode driving is made possible by performing the above control.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3940038p" WIDTH = "6.917in" HEIGHT = "5.028in" />
+</FIGURE>
+</INDICATE></MECA>
+</PARA>
+</BIND>
+</SECTION>

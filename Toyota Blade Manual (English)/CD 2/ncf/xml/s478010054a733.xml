@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740068p SYSTEM "grph_ent/a4740068p.png" NDATA png>
+<!ENTITY a4740015p SYSTEM "grph_ent/a4740015p.png" NDATA png>
+
+<!ENTITY T010054A733 SYSTEM "t478010054a733.xml">
+
+<!ENTITY T010054A090 SYSTEM "t478010054a090.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010054A733S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010054A733" UPDATE = "ORIGINAL" LDUP = "15Feb2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Fuel Pump Control</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Turns the fuel pump ON and OFF based on the starter signal and engine speed signal.</PTXT></ITEM>
+<ITEM><PTXT>In addition to when the engine is stopped, when the airbag deployment signal from the airbag ECU is input to the engine control computer upon airbag deployment, the fuel pump is stopped to minimize fuel leakage.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740068p" WIDTH = "6.903in" HEIGHT = "3.444in" />
+</FIGURE>
+</PARA>
+<BIND ID = "T010054A733B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T010054A090" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Fuel Pump</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A circumferential flow type in-tank fuel pump has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>By integrating the charcoal canister, fuel filter and pressure regulator into the fuel pump assembly, the number of parts and weight have been reduced and space in the engine room has been saved.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740015p" WIDTH = "6.903in" HEIGHT = "2.819in" />
+</FIGURE>
+<SPEC ID = "T010054A090X01" INDSW = "OFF">
+<TITLE>Fuel Pump Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Discharge Pressure [kPa { kgf/cm<SUP>2</SUP>}]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>324(3.30)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Discharge Rate [L/h] (at Discharge Pressure 324kPa{3.30kgf/cm2})</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>120 or more</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+<SPEC ID = "T010054A090X02" INDSW = "OFF">
+<TITLE>Fuel Filter Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Filtration Method</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Filter Paper Type</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Filtration Area [cm<SUB></SUB><SUP>2</SUP>]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>1400</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</BIND>
+</SECTION>

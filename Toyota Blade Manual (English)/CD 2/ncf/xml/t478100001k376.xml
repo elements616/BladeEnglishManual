@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARA INFOID = "T100001K376" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Wireless Remote Control System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A wireless remote control system has been adopted, enabling remote locking/unlocking of all doors with the electronic key.</PTXT></ITEM>
+<ITEM><PTXT>An encrypted code has been adopted for the weak radio waves (identification code) used between the electronic key and the door control receiver for improved security.</PTXT></ITEM>
+<ITEM><PTXT>A customize function using the diagnostic tool (TaSCAN) enables adjustment and setting of various functions.<XREF     REFID = "S478150004T074"/>
+</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "s5420102b" WIDTH = "6.903in" HEIGHT = "3.181in" />
+</FIGURE>
+<INDICATE ID = "T100001K376I01" INDSW = "ON">
+<TITLE>List of Wireless Remote Control Main Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "66%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Function Outline</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Wireless Lock &amp; Unlock Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Pressing the lock/unlock button locks/unlocks all doors.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Wireless Security Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>After the Certification ECU receives the encrypted code transmitted from the electronic key via the door control receiver, it verifies the code, and when it recognizes the code as that of its own vehicle, door unlocking, etc. becomes possible.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>30-second Auto Lock Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>If the doors are left unlocked for approximately 30 seconds after being unlocked by pressing the unlock button, all doors are locked automatically to prevent the vehicle from being left unlocked.<HINTREF     REFID = "H478100001K37601"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Door Ajar Warning Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>If the lock button is pressed to lock the doors while any door is ajar or open, the wireless answer-back buzzer sounds for approximately 10 seconds to warn that a door has not been closed.<HINTREF     REFID = "H478100001K37602"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Answer-back [Buzzer Sounding &amp; Hazard Flashing] Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the doors are locked/unlocked using the wireless remote control, the wireless answer-back buzzer sounds and the hazard warning lights flash 1 time(s) when locking and 2 time(s) when unlocking.<HINTREF     REFID = "H478100001K37603"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Illumination Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the doors are unlocked by the wireless remote control with the room light switch in the "DOOR" position, the room light, etc. illuminates for approximately 15 seconds.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478100001K37601">If any door is opened or all doors are locked within 30 seconds, the 30-second auto lock function is cancelled.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K37602">The buzzer stops sounding when the power is turned ON (ACC/IG ON), all doors are closed, the door lock control switch (key-linked) is operated, or the doors are unlocked by the wireless/smart unlock function.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K37603">The answer-back function also operates when locking is performed by the 30-second auto lock function.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+<INDICATE ID = "T100001K376I02" INDSW = "OFF">
+<TITLE>Wireless Remote Control System Wiring Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740004b" WIDTH = "6.903in" HEIGHT = "5.875in" />
+</FIGURE>
+</INDICATE>
+&T100001K376K782;
+</PARA>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1002J_S000U" variety="S000U">
+<name>Brake Control</name>
+<ttl id="1002J_S000U_744TG_T0089" variety="T0089">
+<name>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</name>
+<para id="RM00000060X00VX" category="J" type-id="300VX" name-id="442P1-00" from="200612">
+<dtccode/>
+<dtcname>Brake Pedal Travel Is Excessive (No Fluid Leakage or Air in Lines)</dtcname>
+<subpara id="RM00000060X00VX_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM00000060X00VX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000060X00VX_04_0007" proc-id="RM0550J___00007UL00000">
+<testtitle>Preliminary Inspection</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect Brake Pedal</ptxt>
+<test2>
+<ptxt>Operate the brake pedal and inspect for mechanical malfunctions in pedal operation.</ptxt>
+</test2>
+<test2>
+<ptxt>Inspect the brake pedal height, freeplay and reserve distance. (see <xref label="Seep01" href="RM000000CHV00HX"/>)</ptxt>
+<atten4>
+<ptxt>To identify the malfunctioning part, adjust the pedal height after completing each inspection.</ptxt>
+</atten4>
+</test2>
+</test1>
+<test1>
+<ptxt>Inspect Wheel Brakes</ptxt>
+<test2>
+<ptxt>Inspect that the disc brake pads of each wheel brake are installed correctly.</ptxt>
+</test2>
+<test2>
+<ptxt>Inspect for loose bleeder plugs and union bolts, damaged gaskets, and fluid leakage from the wheel cylinders.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Inspect for Brake Fluid Leakage and Air Entry</ptxt>
+<test2>
+<ptxt>Check the fluid level in the brake master cylinder reservoir.</ptxt>
+</test2>
+<test2>
+<ptxt>Operate the brake pedal repeatedly and check that there is no abnormal feel (spongy feel from air) when operating the pedal.</ptxt>
+</test2>
+<test2>
+<ptxt>Inspect for changes in the fluid level in the brake master cylinder reservoir.</ptxt>
+</test2>
+<test2>
+<ptxt>If the fluid level decreases, inspect for fluid leakage due to damaged flexible hoses or brake tubes, loose union nuts, or a faulty master cylinder seal.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Bleed Brake Line</ptxt>
+<test2>
+<ptxt>Bleed the air from the brake pipelines and actuator assembly. (see <xref label="Seep02" href="RM000000DB000BX"/>)</ptxt>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM00000060X00VX_04_0008" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000060X00VX_04_0008" proc-id="RM0550J___00007UM00000">
+<scantool type="8"/>
+<testtitle>Perform Active Test (ABS Motor Relay)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Depress the brake pedal while the brake pedal continues to sink.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (TaSCAN), drive the ABS motor relay with the Active Test and inspect the change in pedal height when the pump motor rotates. (see <xref label="Seep01" href="RM000000602011X"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No change in brake pedal height (pedal remains sunk and does not return)</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000060X00VX_04_0009" fin="false">OK</down>
+<right ref="RM00000060X00VX_04_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000060X00VX_04_0009" proc-id="RM0550J___00007UN00000">
+<testtitle>Inspect Brake Master Cylinder Sub-assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect that there is no fluid leakage from the brake master cylinder and that the piston does not sink.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No fluid leakage or sinking</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000060X00VX_04_0010" fin="true">OK</down>
+<right ref="RM00000060X00VX_04_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000060X00VX_04_0010">
+<testtitle>Replace brake booster assembly<xref label="Seep01" href="RM000000CI800DX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000060X00VX_04_0011">
+<testtitle>Replace ABS &amp; Traction Actuator Assembly<xref label="Seep01" href="RM00000304V000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000060X00VX_04_0012">
+<testtitle>Repair or replace brake master cylinder sub-assembly<xref label="Seep01" href="RM000002ZRS000X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

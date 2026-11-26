@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1002J_S000U" variety="S000U">
+<name>Brake Control</name>
+<ttl id="1002J_S000U_744TG_T0089" variety="T0089">
+<name>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</name>
+<para id="RM00000060Z00WX" category="J" type-id="3030W" name-id="442OZ-00" from="200612">
+<dtccode/>
+<dtcname>ABS Operates Too Early (ABS Operates Before Wheels Lock)</dtcname>
+<subpara id="RM00000060Z00WX_04" type-id="33" category="03" proc-id="RM0550J___00007UD00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>Troubleshoot the symptom in which ABS operates early due to noise in the wheel speed sensor output signals, output differences, etc.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM00000060Z00WX_05" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM00000060Z00WX_06" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000060Z00WX_06_0004" proc-id="RM0550J___00007UE00000">
+<testtitle>Test Mode Inspection (Speed Sensor System)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Enter test mode, inspect the speed sensors, and check the output of test mode codes and DTCs. (see <xref label="Seep01" href="RM00000060100QX"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Test mode codes are cleared normally and the normal DTC is output</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>When cleaning the speed sensor and rotor of the 4 wheel: front (see <xref label="Seep02" href="RM00000304Y000X"/>), 2WD models rear (see <xref label="Seep03" href="RM0000021SB004X"/>), 4WD models rear (see <xref label="Seep04" href="RM000003051000X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM00000060Z00WX_06_0005" fin="true">OK</down>
+<right ref="RM00000060Z00WX_06_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000060Z00WX_06_0005">
+<testtitle>Clean the speed sensors and rotors of the 4 wheels</testtitle>
+</testgrp>
+<testgrp id="RM00000060Z00WX_06_0006">
+<testtitle>Inspect and repair relevant speed sensor system<xref label="Seep01" href="RM00000060900ZX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

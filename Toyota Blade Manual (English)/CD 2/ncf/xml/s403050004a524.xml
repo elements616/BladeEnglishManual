@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+
+<!ENTITY T050004A524 SYSTEM "t403050004a524.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T050004A524S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T050004A524" UPDATE = "ORIGINAL" LDUP = "27Feb2004"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "Vehicle Outline: Driving Performance">
+<TITLE>Front Suspension Outline</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>As before, MacPherson strut type suspension with L-shaped lower arms is adopted.</PTXT></ITEM>
+<ITEM><PTXT>With the adoption of the 2GR-FE engine, the suspension geometry has been optimized, achieving a high level of handling, stability and ride comfort.</PTXT></ITEM>
+<ITEM><PTXT>The steering gear box is mounted directly to the suspension member, improving the feeling of rigidity during initial steering operation.</PTXT></ITEM></LIST1>
+<SPEC ID = "T050004A524X01" INDSW = "OFF">
+<TITLE>Alignment Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "34%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "21%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Engine</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>2AZ-FE</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>2GR-FE</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Drive Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>2WD</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>4WD</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>2WD</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Camber [Degrees]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-0°10′</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Caster [Degrees]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>5°50′</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Steering Axis Inclination [Degrees]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>12°10′</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>12°00′</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>12°00′</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Toe-in [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>

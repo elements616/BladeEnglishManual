@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="1001O_S001F" variety="S001F">
+<name>Cruise Control</name>
+<ttl id="1001O_S001F_74QXD_T00FC" variety="T00FC">
+<name>Radar Cruise Control System</name>
+<para id="RM000000HSM00FX" category="C" type-id="302FA" name-id="5914X-00" from="200708">
+<dtccode>P0503/23</dtccode>
+<dtcname>Cruise Vehicle Speed Sensor System</dtcname>
+<subpara id="RM000000HSM00FX_01" type-id="31" category="03" proc-id="RM0550J___0000CAR00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt> The ABS &amp; traction actuator assembly outputs the vehicle speed signal to the engine control computer via the combination meter assembly.</ptxt>
+<table frame="all" pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="col1" colwidth="1.00in"/>
+<colspec colname="col2" colwidth="3.00in"/>
+<colspec colname="col3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0503/23</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>During cruise control operation</ptxt>
+</item>
+<item>
+<ptxt>Sudden change in vehicle speed signal input</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ABS with EBD &amp; TRC &amp; VSC &amp; BA system</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000HSM00FX_03" type-id="51" category="05" proc-id="RM0550J___0000CAS00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>This DTC may be output together with brake system DTCs; if output together, perform brake system diagnosis first.</ptxt>
+</item>
+<item>
+<ptxt>When the engine control computer is replaced with a new one, be sure to perform initialization. (see <xref label="Seep01" href="RM000002GO2003X"/>)</ptxt>
+</item>
+</list1>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000HSM00FX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000HSM00FX_04_0001" proc-id="RM0550J___0000CAT00000">
+<testtitle>Check DTC (ABS with EBD &amp; TRC &amp; VSC &amp; BA System)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), follow the prompts on the screen to display the "System Diagnosis Menu/ABS/VSC" screen.</ptxt>
+</test1>
+<test1>
+<ptxt>Select DTC freeze data and check the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTCs are output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000HSM00FX_04_0006" fin="false">A</down>
+<right ref="RM000000HSM00FX_04_0004" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000HSM00FX_04_0006" proc-id="RM0550J___0000CEE00000">
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Clear the DTCs using SST (TaSCAN). (see <xref label="Seep01" href="RM00000064C00EX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000HSM00FX_04_0007" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000HSM00FX_04_0007" proc-id="RM0550J___0000CEF00000">
+<testtitle>Check DTC (Radar Cruise Control System)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Put the vehicle in the conditions under which the DTC is detected.</ptxt>
+<atten4>
+<ptxt>The system cannot detect the malfunction unless the detection conditions are met.</ptxt>
+</atten4>
+<test2>
+<ptxt>Drive within the cruise control set vehicle speed range.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn the cruise control main switch ON.</ptxt>
+</test2>
+<test2>
+<ptxt>Press the -SET switch to perform cruise control.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs. (see <xref label="Seep01" href="RM00000064C00EX"/>)</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.72in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0503 is not output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0503 is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000HSM00FX_04_0008" fin="true">A</down>
+<right ref="RM000000HSM00FX_04_0005" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000HSM00FX_04_0008">
+<testtitle>Perform Problem Reproduction Test<xref label="Seep01" href="RM000000ABY04BX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000HSM00FX_04_0005">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADB004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000HSM00FX_04_0004">
+<testtitle>Go to ABS with EBD &amp; TRC &amp; VSC &amp; BA System (Diagnostic Trouble Code Chart)<xref label="Seep01" href="RM0000005ZT00PX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

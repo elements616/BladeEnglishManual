@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1002M_S001G" variety="S001G">
+<name>Pre-crash Safety</name>
+<ttl id="1002M_S001G_74WT7_T00FP" variety="T00FP">
+<name>Pre-crash Safety System</name>
+<para id="RM000000DBF00JX" category="C" type-id="8007U" name-id="540JM-00" from="200708">
+<dtccode>B2070/41</dtccode>
+<dtcname>VSC Buzzer Malfunction</dtcname>
+<subpara id="RM000000DBF00JX_01" type-id="31" category="03" proc-id="RM0550J___0000CV300000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="unordered">
+<item>
+<ptxt>This DTC is output when a malfunction occurs in the skid control buzzer.</ptxt>
+</item>
+<item>
+<ptxt>The buzzer sounding command from the seat belt control computer is sent to the ABS &amp; traction actuator assembly via CAN communication, and the ABS &amp; traction actuator assembly sounds the skid control buzzer.</ptxt>
+</item>
+</list1>
+<table frame="all" pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="col1" colwidth="1.00in"/>
+<colspec colname="col2" colwidth="3.00in"/>
+<colspec colname="col3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2070/41</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Skid control buzzer malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ABS with EBD &amp; TRC &amp; VSC &amp; BA system</ptxt>
+</item>
+<item>
+<ptxt>Seat Belt Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000DBF00JX_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000000DBF00JX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000DBF00JX_04_0007" proc-id="RM0550J___0000CV400000">
+<testtitle>Perform TaSCAN Active Test (VSC/HB Buzzer)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), follow the prompts on the screen to display the "Active Test" screen and perform the Active Test.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Buzzer sounds</ptxt>
+</specitem>
+<table pgwide="1">
+<title>[System Selection Screen: Chassis → ABS/VSC → Active Test]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COLSPEC0" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Details</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Restrictions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSC/HB Buzzer</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON - OFF possible</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Possible at vehicle speed of 0km/h</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000DBF00JX_04_0003" fin="true">OK</down>
+<right ref="RM000000DBF00JX_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000DBF00JX_04_0003">
+<testtitle>Replace Seat Belt Control Computer<xref label="Seep01" href="RM000002SZU002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000DBF00JX_04_0006">
+<testtitle>Go to the relevant flowchart<xref label="Seep01" href="RM00000061000RX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

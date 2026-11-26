@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="04">
+<name>Driveline/Axle</name>
+<section id="1000K_S0015" variety="S0015">
+<name>Differential</name>
+<ttl id="1000K_S0015_744ZW_T00A7" variety="T00A7">
+<name>Active Torque Control 4WD System</name>
+<para id="RM00000068H00EX" category="C" type-id="3052N" name-id="370EC-00" from="200612">
+<dtccode>C1241/94</dtccode>
+<dtcname>Power Source Voltage Drop Malfunction</dtcname>
+<subpara id="RM00000068H00EX_01" type-id="33" category="03" proc-id="RM0550J___00005J100000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>When a malfunction occurs in the power supply circuit, or when a communication malfunction occurs between the skid control computer and the 4WD computer assembly, the 4WD computer assembly detects a power supply voltage drop malfunction.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.01in"/>
+<colspec colname="COL2" colwidth="2.99in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1241/94</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>With a vehicle speed of 3km/h or more, the IG1 terminal voltage remains at 9.5V or less for 10 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>With the IG1 terminal voltage at 9.5V or less, data cannot be received from the ABS &amp; traction actuator assembly (skid control computer) for 60 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>With the IG1 terminal voltage at 17V or more, data cannot be received from the skid control computer for 3 seconds or more</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Battery</ptxt>
+</item>
+<item>
+<ptxt>ECU-IG1 Fuse</ptxt>
+</item>
+<item>
+<ptxt>Wire harness and connector (IG1 terminal circuit, GND terminal circuit)</ptxt>
+</item>
+<item>
+<ptxt>Alternator</ptxt>
+</item>
+<item>
+<ptxt>4WD Computer Assembly</ptxt>
+</item>
+<item>
+<ptxt>ABS &amp; Traction Actuator Assembly (Skid Control Computer)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000068H00EX_03" type-id="32" category="03" proc-id="RM0550J___00005J200000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C163017J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM00000068H00EX_05" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM00000068H00EX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000068H00EX_04_0001" proc-id="RM0550J___00005J300000">
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the ignition switch ON and, following the SST (TaSCAN) screen display, read the DTCs of the ABS with EBD &amp; TRC &amp; VSC &amp; BA system.</ptxt>
+<atten4>
+<ptxt>For the ABS with EBD &amp; TRC &amp; VSC &amp; BA system procedure, refer to <xref label="Seep02" href="RM00000060000PX"/>.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check if any speed sensor malfunction codes (C0200/31, C0205/32, C0210/33, C0215/34, C1235/35, C1236/36, C1238/38, C1239/39) of the ABS with EBD &amp; TRC &amp; VSC &amp; BA system are output in addition to DTC C1241/94.</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Speed sensor malfunction codes are not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Speed sensor malfunction codes are output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000068H00EX_04_0003" fin="false">A</down>
+<right ref="RM00000068H00EX_04_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000068H00EX_04_0003" proc-id="RM0550J___00005J400000">
+<testtitle>Inspect Battery</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn IG OFF.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), inspect the battery voltage.</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>11 to 14V</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM00000068H00EX_04_0004" fin="false">OK</down>
+<right ref="RM00000068H00EX_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000068H00EX_04_0004" proc-id="RM0550J___00005J500000">
+<testtitle>Inspect Fuse (ECU-IG1)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using SST (Toyota electrical tester), inspect the resistance of the ECU-IG1 fuse.</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>1 Ω or less</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM00000068H00EX_04_0005" fin="false">OK</down>
+<right ref="RM00000068H00EX_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000068H00EX_04_0005" proc-id="RM0550J___00005J600000">
+<testtitle>Inspect Wire Harness and Connector (Power Source Circuit)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep02" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect the 4WD computer assembly connector.</ptxt>
+<figure>
+<graphic graphicname="C117072J10" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the vehicle side connector terminal of the 4WD computer assembly and body ground. (see <xref label="Seep01" href="RM00000068800EX"/> for Terminals of ECU)</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Voltage</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.88in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<colspec colname="COLSPEC0" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>11 (IG1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM00000068H00EX_04_0011" fin="false">OK</down>
+<right ref="RM00000068H00EX_04_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000068H00EX_04_0011" proc-id="RM0550J___00005J700000">
+<testtitle>Inspect Wire Harness and Connector (Ground Circuit)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Turn IG OFF.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the wire harness side connector terminal of the 4WD computer assembly and body ground. (see <xref label="Seep02" href="RM00000068800EX"/> for Terminals of ECU)</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="C117072J11" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.88in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<colspec colname="COLSPEC0" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>23 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM00000068H00EX_04_0009" fin="true">OK</down>
+<right ref="RM00000068H00EX_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000068H00EX_04_0006">
+<testtitle>Go to Diagnostic Trouble Code Chart<xref label="Seep01" href="RM0000005ZT00PX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000068H00EX_04_0007">
+<testtitle>Inspect and replace battery or charging system</testtitle>
+</testgrp>
+<testgrp id="RM00000068H00EX_04_0008">
+<testtitle>Replace Fuse</testtitle>
+</testgrp>
+<testgrp id="RM00000068H00EX_04_0012">
+<testtitle>Inspect Power Supply Circuit</testtitle>
+</testgrp>
+<testgrp id="RM00000068H00EX_04_0009">
+<testtitle>Replace 4WD computer assembly<xref label="Seep01" href="RM000002WLE001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000068H00EX_04_0010">
+<testtitle>Repair or Replace Wire Harness and Connector</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

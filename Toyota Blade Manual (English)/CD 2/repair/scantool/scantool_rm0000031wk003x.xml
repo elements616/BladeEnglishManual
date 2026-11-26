@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-db>
+<pub id="RM0550J">
+<servcat id="01">
+<section id="10006_S000J" variety="S000J">
+<ttl id="10006_S000J_74WIJ_T00FO" variety="T00FO">
+<para id="RM0000031WK003X" category="C" type-id="8021O" name-id="066OM-00" from="200708">
+<subpara id="RM0000031WK003X_03">
+<testgrp id="RM0000031WK003X_03_0001">
+<scantool type="1">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">1</parameter>
+</scantool>
+</testgrp>
+<testgrp id="RM0000031WK003X_03_0002">
+<scantool type="4">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">4</parameter>
+<parameter key="pid-id-num">2</parameter>
+<datamonitor no="1">
+<parameter key="pid-id">74</parameter>
+<parameter key="datamonitor-name">A/F Sensor Voltage B1S1</parameter>
+</datamonitor>
+<datamonitor no="2">
+<parameter key="pid-id">265</parameter>
+<parameter key="datamonitor-name">A/F Sensor Voltage B2S1</parameter>
+</datamonitor>
+</scantool>
+</testgrp>
+<testgrp id="RM0000031WK003X_03_0036">
+<scantool type="2">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">2</parameter>
+<parameter key="diag-freeze-flag">1</parameter>
+</scantool>
+</testgrp>
+<testgrp id="RM0000031WK003X_03_0004">
+<scantool type="1">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">1</parameter>
+</scantool>
+</testgrp>
+<testgrp id="RM0000031WK003X_03_0037">
+<scantool type="2">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">2</parameter>
+<parameter key="diag-freeze-flag">1</parameter>
+</scantool>
+</testgrp>
+<testgrp id="RM0000031WK003X_03_0007">
+<scantool type="1">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">1</parameter>
+</scantool>
+</testgrp>
+<testgrp id="RM0000031WK003X_03_0038">
+<scantool type="2">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">2</parameter>
+<parameter key="diag-freeze-flag">1</parameter>
+</scantool>
+</testgrp>
+<testgrp id="RM0000031WK003X_03_0017">
+<scantool type="1">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">1</parameter>
+</scantool>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-db>

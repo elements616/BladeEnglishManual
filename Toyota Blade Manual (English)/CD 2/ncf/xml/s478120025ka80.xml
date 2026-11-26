@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740388b SYSTEM "grph_ent/a4740388b.png" NDATA png>
+
+<!ENTITY T120025Ka80 SYSTEM "t478120025ka80.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120025Ka80S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120025Ka80" UPDATE = "ORIGINAL" LDUP = "4Jul2006"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Multi-information Display Outside Temperature Display Mode</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740388b" WIDTH = "6.903in" HEIGHT = "1.250in" />
+</FIGURE>
+<SPEC ID = "T120025Ka80X01" INDSW = "OFF">
+<TITLE>Outside Temperature Display Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "83%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Display Range</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>-40~50℃</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>The outside temperature data input from the ambient temperature sensor is corrected using the vehicle speed signal data input from the skid control computer, and a more accurate outside temperature is calculated and displayed.</PTXT></ITEM>
+<ITEM><PTXT>When the outside temperature is below -40°C, -40°C is displayed.</PTXT></ITEM>
+<ITEM><PTXT>When the outside temperature is 50°C or higher, 50°C is displayed.</PTXT></ITEM>
+<ITEM><PTXT>If a communication malfunction or input signal malfunction occurs, bars (--) are displayed.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>

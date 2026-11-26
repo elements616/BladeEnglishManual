@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-db>
+<pub id="RM0550J">
+<servcat id="01">
+<section id="10006_S000J" variety="S000J">
+<ttl id="10006_S000J_74WIJ_T00FO" variety="T00FO">
+<para id="RM00000211100RX" category="C" type-id="3008O" name-id="066NU-00" from="200708">
+<subpara id="RM00000211100RX_04">
+<testgrp id="RM00000211100RX_04_0001">
+<scantool type="4">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">4</parameter>
+<parameter key="pid-id-num">1</parameter>
+<datamonitor no="1">
+<parameter key="pid-id">61</parameter>
+<parameter key="datamonitor-name">Engine Speed</parameter>
+</datamonitor>
+</scantool>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-db>

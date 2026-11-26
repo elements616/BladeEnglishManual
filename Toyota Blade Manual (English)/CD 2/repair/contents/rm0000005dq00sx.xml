@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002U_S0003" variety="S0003">
+<name>Glass &amp; Window</name>
+<ttl id="1002U_S0003_744CF_T004B" variety="T004B">
+<name>Power Window System</name>
+<para id="RM0000005DQ00SX" category="J" type-id="301BM" name-id="752B5-00" from="200612">
+<dtccode/>
+<dtcname>Driver Side Door Glass AUTO UP/DOWN Does Not Operate (Manual Operation Is Possible)</dtcname>
+<subpara id="RM0000005DQ00SX_01" type-id="31" category="03" proc-id="RM0550J___000024900000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>If AUTO does not function, the fail-safe function may be operating. In addition, AUTO will not function if the registration setting (see <xref label="Seep01" href="RM000002FNJ005X"/>) of the power window regulator motor assembly RH (driver side), which is performed after repair, has not been performed.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The power window system uses the Body Electronics Area Network. First, follow "How to Proceed with Troubleshooting" to perform the "communication function inspection" and confirm that there is no malfunction in the communication system before proceeding with troubleshooting.</ptxt>
+</item>
+<item>
+<ptxt>If the power window regulator motor assembly RH (driver side) has been replaced with a new one, perform the registration setting of the power window system. (see <xref label="Seep02" href="RM000002FNJ005X"/>)</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>If there is a malfunction in the pulse sensor in the power window regulator motor assembly RH (driver side), the fail-safe function operates. During fail-safe, remote operation of each window and AUTO operation are disabled. (Only AUTO UP hold and manual down operation are possible)</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000005DQ00SX_02" type-id="32" category="03" proc-id="RM0550J___000024A00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B167357J02" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000005DQ00SX_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM0000005DQ00SX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000005DQ00SX_04_0001" proc-id="RM0550J___000024B00000">
+<testtitle>Read TaSCAN Data (Main Body)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Data Monitor</ptxt>
+<test2>
+<ptxt>Using SST (TaSCAN), check the Body Electronics Area Network (LIN) connection status of the power window regulator motor assembly RH (driver side).</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → Main Body → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<colspec colname="COL3" colwidth="1.06in"/>
+<colspec colname="COL4" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side Motor ECU Connection Status</ptxt>
+<ptxt>[DMRC]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connection status between power window regulator motor assembly RH (driver side) and body ECU/display range: Not connected - Connected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connected: Connection detected</ptxt>
+<ptxt>Not connected: Connection not detected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005DQ00SX_04_0012" fin="false">OK</down>
+<right ref="RM0000005DQ00SX_04_0002" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005DQ00SX_04_0012" proc-id="RM0550J___000024C00000">
+<testtitle>Read TaSCAN Data (Power Window SW)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Data Monitor</ptxt>
+<test2>
+<ptxt>Using SST (TaSCAN), read the data when operating the power window regulator master switch assembly (driver side).</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → Power Window SW → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<colspec colname="COL3" colwidth="1.06in"/>
+<colspec colname="COL4" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side P/W AUTO SW</ptxt>
+<ptxt>[DPAS]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side AUTO switch operation signal/display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: AUTO switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005DQ00SX_04_0013" fin="false">OK</down>
+<right ref="RM0000005DQ00SX_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005DQ00SX_04_0013" proc-id="RM0550J___000024D00000">
+<testtitle>Read TaSCAN Data (D Seat Motor)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Data Monitor</ptxt>
+<test2>
+<ptxt>Using SST (TaSCAN), read the data when operating the power window regulator master switch assembly (driver side).</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → D Seat Motor → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<colspec colname="COL3" colwidth="1.06in"/>
+<colspec colname="COL4" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side P/W AUTO SW</ptxt>
+<ptxt>[DPAS]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side AUTO switch operation signal/display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: AUTO switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005DQ00SX_04_0006" fin="true">OK</down>
+<right ref="RM0000005DQ00SX_04_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005DQ00SX_04_0006">
+<testtitle>Replace Power Window Regulator Motor Assembly RH (Driver Side)<xref label="Seep01" href="RM000001F77008X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005DQ00SX_04_0002">
+<testtitle>LIN communication line inspection<xref label="Seep01" href="RM000000Y0K00DX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005DQ00SX_04_0007">
+<testtitle>Replace power window regulator master switch assembly (driver side)<xref label="Seep01" href="RM000001F77008X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005DQ00SX_04_0011">
+<testtitle>Repair or replace wire harness or connector (power window regulator master switch assembly (driver side) - power window regulator motor assembly RH (driver side))</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

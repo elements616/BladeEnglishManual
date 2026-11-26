@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="07">
+<name>Steering</name>
+<section id="1000U_S0017" variety="S0017">
+<name>Steering Column</name>
+<ttl id="1000U_S0017_746I2_T00CG" variety="T00CG">
+<name>Steering Lock System</name>
+<para id="RM0000005JE00WX" category="J" type-id="3053F" name-id="480YO-00" from="200612">
+<dtccode/>
+<dtcname>Steering Lock Is Not Released (Engine Cannot Be Started)</dtcname>
+<subpara id="RM0000005JE00WX_03" type-id="33" category="03" proc-id="RM0550J___0000C8A00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>The steering lock actuator drives a motor to insert the lock bar into the steering column and lock the steering wheel.</ptxt>
+<ptxt>The lock cover may catch in the lock hole of the steering column, preventing the steering lock from being released. In this case, as with conventional plate key vehicles, performing the starting operation while moving the steering wheel back and forth will pull out the lock bar and release the lock.</ptxt>
+<atten3>
+<ptxt>If the smart key computer assembly (certification ECU), immobiliser code computer (ID code box) or engine control computer (EFI ECU) is replaced, the steering lock may not be released and the engine may not start unless initialization is performed. (For the initialization procedure, refer to the registration methods in the reference section)</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM0000005JE00WX_01" type-id="51" category="05" proc-id="RM0550J___0000A1600000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>When using the tool with the IG OFF, after connecting the tool to the vehicle, repeatedly turn the courtesy switch of any door ON/OFF until communication between the tool and the vehicle starts. (ON/OFF interval within 1.5 seconds)</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000005JE00WX_02" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000005JE00WX_02_0001" proc-id="RM0550J___0000A1700000">
+<testtitle>Operation Check</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Depress the brake pedal, push the engine switch and check that the engine starts.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Engine starts</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005JE00WX_02_0014" fin="false">OK</down>
+<right ref="RM0000005JE00WX_02_0023" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0014" proc-id="RM0550J___0000A1B00000">
+<testtitle>Check DTC Output</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using SST (TaSCAN), check whether any main body ECU diagnostic trouble codes are output. (see <xref label="Seep01" href="RM0000005GM00UX"/>)</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.30in"/>
+<colspec colname="COL2" align="center" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>No main body ECU malfunction code output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Main body ECU malfunction code output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If there is no malfunction, inspect the wire harness and terminals.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000005JE00WX_02_0015" fin="false">A</down>
+<right ref="RM0000005JE00WX_02_0024" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0015" proc-id="RM0550J___0000A1C00000">
+<testtitle>Check DTC Output</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using SST (TaSCAN), check that no certification ECU DTCs are output (see <xref label="Seep01" href="RM0000005GM00UX"/>).</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.30in"/>
+<colspec colname="COL2" align="center" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>No certification ECU malfunction code output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Certification ECU malfunction code output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000005JE00WX_02_0016" fin="false">A</down>
+<right ref="RM0000005JE00WX_02_0025" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0016" proc-id="RM0550J___0000A1D00000">
+<testtitle>Read TaSCAN Data</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Within 10 seconds of performing the engine starting operation, read the certification ECU data monitor and check [Steering Lock Operation Request Reception History]. (see <xref label="Seep01" href="RM0000005GN00VX"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Command received</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005JE00WX_02_0002" fin="false">OK</down>
+<right ref="RM0000005JE00WX_02_0019" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0002" proc-id="RM0550J___0000A1800000">
+<testtitle>Inspect Steering Lock Actuator Assembly (B, Voltage, GND and SGND Continuity)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the steering lock actuator and body ground.</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="C104383J58" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Resistance:</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.43in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<colspec colname="COL3" colwidth="0.87in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 (SGND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>If there is a malfunction, check the ground point for looseness.</ptxt>
+</atten3>
+<test1>
+<ptxt>With the IG OFF and IG ON, inspect the voltage between the terminals of the steering lock actuator.</ptxt>
+<table>
+<title>Voltage:</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.43in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<colspec colname="COL3" colwidth="0.87in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>7(B) - 1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>7(B) - 2(SGND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005JE00WX_02_0003" fin="false">OK</down>
+<right ref="RM0000005JE00WX_02_0026" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0003" proc-id="RM0550J___0000A1900000">
+<testtitle>Inspect Steering Lock Actuator Assembly (IGE Continuity)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using SST (Toyota electrical tester), inspect the voltage between steering lock actuator terminals 3 (IGE) ←→ 2 (SGND) immediately after the IG is turned ON.</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="C104383J59" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Result:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.30in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 V or less occurs immediately after IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Remains at 11to14 V and never drops to 1 V or less</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content6>
+<res>
+<down ref="RM0000005JE00WX_02_0028" fin="true">A</down>
+<right ref="RM0000005JE00WX_02_0027" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0019" proc-id="RM0550J___0000A1E00000">
+<testtitle>Read TaSCAN Data</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using SST (TaSCAN), read the certification ECU data monitor and check [S Code Verification Result]. (For the procedure, refer to <xref label="Seep01" href="RM0000005GN00VX"/>)</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>OK</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM0000005JE00WX_02_0020" fin="false">OK</down>
+<right ref="RM0000005JE00WX_02_0021" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0020" proc-id="RM0550J___0000A1F00000">
+<testtitle>Read TaSCAN Data</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using SST (TaSCAN), read the certification ECU data monitor and check [L Code Verification Result]. (For the procedure, refer to <xref label="Seep01" href="RM0000005GN00VX"/>)</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>OK</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM0000005JE00WX_02_0009" fin="false">OK</down>
+<right ref="RM0000005JE00WX_02_0022" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0009" proc-id="RM0550J___0000A1A00000">
+<testtitle>Replace Steering Lock Actuator Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the steering actuator with a new one. (see <xref label="Seep01" href="RM000000UCZ00QX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Operate the steering wheel and check the steering lock status.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Steering lock is released and engine starts</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005JE00WX_02_0029" fin="true">OK</down>
+<right ref="RM0000005JE00WX_02_0031" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0021" proc-id="RM0550J___0000A1G00000">
+<testtitle>Replace Immobiliser Code Computer (ID Code Box)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the immobiliser code computer (ID code box) with a new one.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN) again, read the certification ECU data monitor and check [S Code Verification Result]. (see <xref label="Seep01" href="RM0000005GN00VX"/>)</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>OK</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM0000005JE00WX_02_0029" fin="true">OK</down>
+<right ref="RM0000005JE00WX_02_0031" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0022" proc-id="RM0550J___0000A1H00000">
+<testtitle>Replace Immobiliser Code Computer (ID Code Box)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the immobiliser code computer (ID code box) with a new one.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN) again, read the certification ECU data monitor and check [L Code Verification Result]. (see <xref label="Seep01" href="RM0000005GN00VX"/>)</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>OK</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM0000005JE00WX_02_0029" fin="true">OK</down>
+<right ref="RM0000005JE00WX_02_0028" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0023">
+<testtitle>Go to Smart Entry &amp; Start System (Smart Entry)<xref label="Seep01" href="RM0000005FT00QX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0024">
+<testtitle>Go to Related DTC Chart<xref label="Seep01" href="RM0000005GI00VX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0025">
+<testtitle>Go to Related DTC Chart<xref label="Seep01" href="RM0000005GI00VX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0026">
+<testtitle>Repair or Replace Wire Harness</testtitle>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0027">
+<testtitle>Repair or Replace Wire Harness</testtitle>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0028">
+<testtitle>Replace Steering Lock Actuator Assembly</testtitle>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0029">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM0000005JE00WX_02_0031">
+<testtitle>Replace Certification ECU</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

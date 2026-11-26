@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002T_S000D" variety="S000D">
+<name>Other Electrical</name>
+<ttl id="1002T_S000D_742B1_T003C" variety="T003C">
+<name>ETC System</name>
+<para id="RM0000021TU001X" category="N" type-id="8009I" name-id="7325V-00" from="200612" to="200912">
+<name>Function Inspection</name>
+<subpara id="RM0000021TU001X_01" type-id="01" category="01">
+<s-1 id="RM0000021TU001X_01_0001" proc-id="RM0550J___00001HF00000">
+<ptxt>Basic Inspection (Check JEITA Standard Error Codes)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check Toll Collection (ETC) Computer Assembly Startup</ptxt>
+<s3>
+<ptxt>Turn ACC ON.</ptxt>
+</s3>
+<s3>
+<ptxt>Check that the green indicator and amber indicator illuminate for 5 seconds.</ptxt>
+</s3>
+<s3>
+<ptxt>Check that the startup check ends normally and the indicators go off.</ptxt>
+<atten4>
+<ptxt>If there is a malfunction in the toll collection (ETC) computer assembly, the amber indicator blinks, and the following notification is given depending on the specification.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.03in"/>
+<colspec colname="COL2" colwidth="3.10in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Specifications</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Notification Content When Malfunctioning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Vehicles w/o HDD navigation system</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The toll collection (ETC) computer assembly gives the voice notification "Beep. A malfunction has occurred. ETC cannot be used. Error 04". (see <xref label="Seep01" href="RM000001US9001X"/>)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicles w/ HDD navigation system</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The multi-vision voice gives the notification "Bong. A malfunction has occurred in the ETC. ETC cannot be used", and the JEITA standard error code is displayed on the multi-display. (see <xref label="Seep02" href="RM000001US9001X"/>)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>ETC Card Insertion Check (Vehicles w/o HDD Navigation System)</ptxt>
+<s3>
+<ptxt>Insert the ETC card.</ptxt>
+</s3>
+<s3>
+<ptxt>The toll collection (ETC) computer assembly gives the voice notification "Beep", the green indicator starts blinking, and card authentication starts.</ptxt>
+</s3>
+<s3>
+<ptxt>Check that the toll collection (ETC) computer assembly gives the voice notification "Bong. The ETC card has been inserted" and the green indicator illuminates.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If there is a problem with the ETC card, the amber indicator blinks and the toll collection (ETC) computer assembly gives the voice notification "Beep beep. Cannot read card. Error ** (JEITA standard error code)". (see <xref label="Seep03" href="RM000001US9001X"/>)</ptxt>
+</item>
+<item>
+<ptxt>The warning sound of the toll collection (ETC) computer assembly continues until the card is removed.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>ETC Card Insertion Check (Vehicles w/ HDD Navigation System)</ptxt>
+<atten3>
+<ptxt>The multi-vision does not give guidance until 20 seconds or more have elapsed after the ignition switch is turned to ACC.</ptxt>
+</atten3>
+<s3>
+<ptxt>Insert the ETC card.</ptxt>
+</s3>
+<s3>
+<ptxt>The multi-vision voice gives the notification "Beep", the green indicator on the ETC unit starts blinking, and card authentication starts.</ptxt>
+</s3>
+<s3>
+<ptxt>Check that the multi-vision voice gives the notification "Bong. The ETC card has been inserted" and the green indicator on the ETC unit illuminates.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If there is a problem with the ETC card, the amber indicator on the ETC unit blinks, the multi-vision voice gives the notification "Bong. Cannot read card. Please check the card", and the JEITA standard error code is displayed on the multi-display. (see <xref label="Seep04" href="RM000001US9001X"/>)</ptxt>
+</item>
+<item>
+<ptxt>The warning sound of the toll collection (ETC) computer assembly continues until the card is removed.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000021TU001X_01_0002" proc-id="RM0550J___00001HG00000">
+<ptxt>ETC Registration Information (Models with HDD Navigation System)</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>The following information of the toll collection (ETC) computer assembly can be checked on the ETC registration information screen of the HDD navigation display.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>On-board unit management number</ptxt>
+</item>
+<item>
+<ptxt>On-board unit registration number</ptxt>
+</item>
+<item>
+<ptxt>Setup card issue date</ptxt>
+</item>
+<item>
+<ptxt>Setup card information expiration date</ptxt>
+</item>
+<item>
+<ptxt>Unified Error Code</ptxt>
+</item>
+</list1>
+</atten4>
+<s2>
+<ptxt>ETC Registration Information Screen Display</ptxt>
+<atten4>
+<ptxt>The screen is an example display and may differ from the actual screen.</ptxt>
+</atten4>
+<s3>
+<ptxt>Press the "Info G" button to display the information screen.</ptxt>
+</s3>
+<s3>
+<ptxt>Press "ETC" on the information screen.</ptxt>
+<figure>
+<graphic graphicname="E131432" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<figure>
+<graphic graphicname="E101295" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>Press "Display Registration Information" on the ETC menu screen.</ptxt>
+</s3>
+</s2>
+<s2>
+<figure>
+<graphic graphicname="E121676" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>Check Screen Display Content</ptxt>
+<s3>
+<ptxt>Check the on-board unit management number.</ptxt>
+<table>
+<title>On-board Unit Management Number Display Content</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Digits</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Meaning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>XXXXX (5 digits)</ptxt>
+</entry>
+<entry>
+<ptxt>SAM (encryption IC) manufacturer code</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>XXXXXXXX (8 digits)</ptxt>
+</entry>
+<entry>
+<ptxt>SAM production lot No.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>XXXXXX (6 digits)</ptxt>
+</entry>
+<entry>
+<ptxt>SAM serial No.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The on-board unit management number is displayed as "XXXXX-XXXXXXXX-XXXXXX" (X is a number from 0 to 9).</ptxt>
+</item>
+<item>
+<ptxt>Record this display content on the customer problem analysis sheet.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check the on-board unit registration number.</ptxt>
+<table>
+<title>On-board Unit Registration Number Display Content</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Digits</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Meaning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>XXX (3 digits)</ptxt>
+</entry>
+<entry>
+<ptxt>On-board unit model</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>XXXXXXXX (8 digits)</ptxt>
+</entry>
+<entry>
+<ptxt>Serial No.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The on-board unit registration number is displayed as "XXX-XXXXXXXX" (X is a number from 0 to 9).</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check the setup card issue date.</ptxt>
+<atten4>
+<ptxt>If the on-board unit has not been set up, " Year Month Day" is displayed.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check the setup card information expiration date.</ptxt>
+<atten4>
+<ptxt>If the on-board unit has not been set up and the expiration date (*) of the setup card information has not been set, " Year Month Day" is displayed. (*: Not the expiration date of the ETC card)</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check the standard error code.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The latest JEITA standard error code is displayed.</ptxt>
+</item>
+<item>
+<ptxt>If there are error codes, the last 1 error that occurred is displayed. Note that the last recorded error code may be displayed even when the system is normal, so it does not necessarily indicate the current condition.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000021TU001X_01_0003" proc-id="RM0550J___00001HH00000">
+<ptxt>Check Latest Stored JEITA Standard Error Codes</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check by Unit Voice Guidance</ptxt>
+<s3>
+<ptxt>Remove the ETC card and turn the ignition switch to ACC.</ptxt>
+</s3>
+<s3>
+<ptxt>When the "History" switch is pressed for 2 seconds or more, the latest JEITA standard error code is announced.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The latest JEITA standard error code is announced.</ptxt>
+</item>
+<item>
+<ptxt>If there are error codes, the last 1 error that occurred is announced. Note that the last recorded error code may be announced even when the system is normal, so it does not necessarily indicate the current condition.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000021TU001X_01_0004" proc-id="RM0550J___00001HI00000">
+<ptxt>Clear Latest Stored JEITA Standard Error Codes</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>There are 2 methods for clearing the latest recorded JEITA standard error code.</ptxt>
+</atten4>
+<s2>
+<ptxt>Clearing method 1</ptxt>
+<s3>
+<ptxt>Start ETC diagnosis mode 1 or mode 2. (see <xref label="Seep01" href="RM000000BY200NX"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Press the "History" switch and "VOL UP" switch simultaneously for 2 seconds or more to clear the latest standard error code.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Clearing method 2 (vehicles w/ HDD navigation system)</ptxt>
+<s3>
+<ptxt>Start the HDD navigation system diagnosis mode. (see <xref label="Seep02" href="RM0000002RV02BX"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>On the service inspection screen, select "Check" for "ETC" to display the individual diagnosis ETC screen.</ptxt>
+<figure>
+<graphic graphicname="E126097" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>On the individual diagnosis ETC screen, select "Clear Diagnosis" (press and hold for 3 seconds or more) to clear the diagnosis.</ptxt>
+<figure>
+<graphic graphicname="E101203" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

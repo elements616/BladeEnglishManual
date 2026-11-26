@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T120021A808Ab84" UPDATE = "ORIGINAL" LDUP = "9Feb2007"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Guidance Display</TITLE>
+<LIST1><TITLE>Stop Sign Guidance</TITLE>
+<ITEM><PTXT>When a stop sign guidance point is approached, a stop sign guidance mark is displayed at the upper right of the map, and the voice guidance "(Chime) There is a stop sign ahead. " is given. Stop sign guidance can be switched between "On" and "Off".</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a5060125e" WIDTH = "6.903in" HEIGHT = "2.167in" />
+</FIGURE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5690028e" WIDTH = "6.903in" HEIGHT = "3.153in" />
+</FIGURE>
+<CAUTION>
+<LIST1><ITEM><PTXT>Stop sign guidance may not be given in the following cases.</PTXT>
+<PTXT>• Points for which there is no information in the map data</PTXT>
+<PTXT>• When the vehicle position cannot be determined accurately</PTXT>
+<PTXT>• Roads other than those entering a road with 2 or more lanes in each direction in the stop sign guidance function target area</PTXT>
+<PTXT>• When the distance from the entry point to the stop sign intersection is short</PTXT>
+<PTXT>Stop sign guidance may be given erroneously in the following cases.</PTXT>
+<PTXT>• When the vehicle position cannot be determined accurately</PTXT>
+<PTXT>• When the actual road conditions differ from the map data (e.g. the intersection has been changed to one with traffic signals)</PTXT>
+<PTXT>Voice guidance may not be given in the following cases.</PTXT>
+<PTXT>• When there are consecutive stop sign intersections</PTXT>
+<PTXT>• When it overlaps with other navigation voice guidance, etc.</PTXT>
+<PTXT>Stop sign guidance is only an auxiliary function. Do not rely excessively on the guidance; always pay attention to road conditions and drive safely.</PTXT></ITEM></LIST1></CAUTION>
+<LIST1><TITLE>Road Shape Guidance</TITLE>
+<ITEM><PTXT>When approaching a road shape guidance point such as a railroad crossing, merging road, sharp curve or lane reduction<HINTREF REFID = "H478120021A808Ab8401"/>, a guidance mark is displayed at the upper right of the map and voice guidance is given. The railroad crossing guidance mark is also displayed on the map. Road shape guidance (railroad crossing/merging/curve/lane warning) can be switched between "On" and "Off".</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478120021A808Ab8401">Only while driving on urban expressways</PTXT></ITEM></LIST1></HINT>
+<CAUTION>
+<PTXT>Road shape guidance is only an auxiliary function. Do not rely excessively on the guidance; always pay attention to road conditions and drive safely.</PTXT></CAUTION>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a5110010e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+<LIST1><TITLE>Right/Left Turn Lane Guidance</TITLE>
+<ITEM><PTXT>If there is a right (left) turn lane at an intersection where the vehicle goes straight, the voice guidance "(Chime) There is a right (left) turn lane ahead. " is given when approaching the intersection. During destination guidance, right/left turn lanes are not announced at intersections where the vehicle turns right (left).</PTXT></ITEM></LIST1>
+<CAUTION>
+<PTXT>Right/left turn lane guidance is only an auxiliary function. Do not rely excessively on the guidance; always pay attention to road conditions and drive safely.</PTXT></CAUTION>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5690029e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+<LIST1><TITLE>Accident-prone Location Guidance</TITLE>
+<ITEM><PTXT>Locations where traffic accidents frequently occur can be announced. Accident-prone location guidance can be switched between "On" and "Off".</PTXT></ITEM>
+<ITEM><PTXT>On ordinary roads, an icon is displayed on the map at locations where traffic accidents frequently occur.</PTXT></ITEM>
+<ITEM><PTXT>On expressways, when a location where traffic accidents frequently occur is approached, an icon is displayed at the upper right of the map and voice guidance is given.</PTXT></ITEM></LIST1>
+<HINT>
+<PTXT>It can be displayed on maps from 1/5000 to 1/80000. (Excluding the entire route map display screen)</PTXT></HINT>
+<CAUTION>
+<PTXT>Accident-prone location guidance is only an auxiliary function. Do not rely excessively on the guidance; always pay attention to road conditions and drive safely.</PTXT></CAUTION>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5400709e" WIDTH = "6.903in" HEIGHT = "2.569in" />
+</FIGURE>
+<LIST1><TITLE>School Zone Guidance</TITLE>
+<ITEM><PTXT>When approaching a school<HINTREF REFID = "H478120021A808Ab8402"/>, an icon is displayed at the upper right of the map, and "Bong, there is a school nearby. " is given when approaching the intersection. School zone guidance can be switched between "On" and "Off".</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478120021A808Ab8402">Elementary schools, junior high schools and special needs schools (including schools for the deaf and blind) nationwide, and the elementary and junior high school levels of foreign schools (dedicated school buildings only)</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a5060129e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+<HINT>
+<PTXT>School zone guidance may not be given in the following cases.</PTXT>
+<PTXT>• Points for which there is no information in the map data</PTXT>
+<PTXT>• Saturdays and Sundays</PTXT>
+<PTXT>• From 7 p.m. to 7 a.m.</PTXT>
+<PTXT>• Around the home when the home is registered</PTXT>
+<PTXT>• While driving on toll roads or motorways</PTXT>
+<PTXT>• Immediately after ACC ON, nearby schools for which guidance was already given before ACC OFF</PTXT>
+<PTXT>Voice guidance may not be given in the following cases.</PTXT>
+<PTXT>• When another school is approached while guidance is displayed</PTXT>
+<PTXT>• When it overlaps with other navigation voice guidance, etc.</PTXT></HINT>
+<CAUTION>
+<LIST1><ITEM><PTXT>School zone guidance is only an auxiliary function. Do not rely excessively on the guidance; always pay attention to road conditions and drive safely.</PTXT></ITEM></LIST1></CAUTION></MECA>

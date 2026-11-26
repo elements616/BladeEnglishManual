@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../_runtime/legacy.css">
+<script src="../../../../../_runtime/compat.js"></script>
+
+<title>Automatic Light Control System</title>
+<link type="text/css" href="../css/main2.css" rel="stylesheet">
+<link type="text/css" href="../css/style.css" rel="stylesheet">
+<script src="../js/hidden.js" language="JavaScript"></script>
+</head>
+<body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
+<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td align="left"><input onClick="printCheck()" value="Print" name="submit" type="submit"></td><td align="center"> </td><td align="right"><input onClick="closeWindow()" value="Close" name="submit2" type="submit"></td>
+</tr>
+</table>
+<div align="left">
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="blue" width="5%"> </td><td align="center" class="blue" width="80%">Automatic Light Control System</td><td width="15%" class="blue" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">An automatic light control system has been adopted, which detects the ambient brightness and automatically turns on the taillights and headlights when the light control switch is moved to the AUTO position with the power switch (IG) ON.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">The circuit that controls the system is built into the main body ECU (instrument panel junction block assembly) installed on the front passenger side inside the instrument panel.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">A function has been adopted that, through control by the automatic light control system, extends the off delay time to prevent momentary headlight illumination when the headlights are repeatedly turned on again immediately after turning off.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">By adopting a customize function using the diagnostic tool (TaSCAN), the automatic light control sensitivity, automatic light control delay time, etc. can be set. For details of the customize function, refer to the control system. <img alt="Cross Reference" onClick="pocModal('s478150004t073.html#t150004t073t096')" onMouseOut="this.src = '../images/reference_0.gif'" onMouseOver="this.src = '../images/reference_1.gif'" style="margin:0px 5px 0px 0px;cursor:hand" align="absmiddle" height="15" width="23" src="../images/reference_0.gif">
+</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120027K129K629');chgImg('imT120027K129K629');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120027K129K629" align="absmiddle"><a name="t120027k129k629">Automatic Light Control System Function</a></span>
+<br>
+<div id="tmT120027K129K629" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The automatic light control system controls the taillights and headlights as shown in the table below according to conditions such as the light control switch position and ambient brightness.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120027K129K629I01');chgImg('imT120027K129K629I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120027K129K629I01" align="absmiddle"><a name="t120027k129k629i01">Light Operation List by Automatic Light Control System</a></span>
+<br>
+<div id="tmT120027K129K629I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">No.</div>
+</td><td class="gray3_dark">
+<div class="text">Light Control Switch Position</div>
+</td><td class="gray3_dark">
+<div class="text">Power Switch (IG)</div>
+</td><td class="gray3_dark">
+<div class="text">Driver Side Door Courtesy Light Switch</div>
+</td><td class="gray3_dark">
+<div class="text">Ambient Condition</div>
+</td><td class="gray3_dark">
+<div class="text">Tail lights</div>
+</td><td class="gray3_dark">
+<div class="text">Headlight</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">1</div>
+</td><td class="color1">
+<div class="text">OFF</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">Off</div>
+</td><td class="color1">
+<div class="text">Off</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">2</div>
+</td><td class="color1">
+<div class="text">TAIL</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">Illuminated</div>
+</td><td class="color1">
+<div class="text">Off</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">3</div>
+</td><td class="color1">
+<div class="text">HEAD</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">-</div>
+</td><td class="color1">
+<div class="text">Illuminated</div>
+</td><td class="color1">
+<div class="text">Illuminated</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">4</div>
+</td><td class="color1">
+<div class="text">AUTO</div>
+</td><td class="color1">
+<div class="text">ON</div>
+</td><td class="color1">
+<div class="text">OFF</div>
+</td><td class="color1">
+<div class="text">Bright</div>
+</td><td class="color1">
+<div class="text">Off</div>
+</td><td class="color1">
+<div class="text">Off</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">5</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">Momentarily Dark</div>
+</td><td class="color1">
+<div class="text">Illuminated</div>
+</td><td class="color1">
+<div class="text">Off</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">6</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">Dim</div>
+</td><td class="color1">
+<div class="text">Illuminated</div>
+</td><td class="color1">
+<div class="text">Off</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">7</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">Dark</div>
+</td><td class="color1">
+<div class="text">Illuminated</div>
+</td><td class="color1">
+<div class="text">Illuminated</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">8</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">Momentarily Bright</div>
+</td><td class="color1">
+<div class="text">Illuminated</div>
+</td><td class="color1">
+<div class="text">Illuminated</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">9</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">OFF</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">Dark</div>
+</td><td class="color1">
+<div class="text">Illuminated</div>
+</td><td class="color1">
+<div class="text">Illuminated</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">10</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">ON</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">Off</div>
+</td><td class="color1">
+<div class="text">Off</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">11</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">OFF</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">Off</div>
+</td><td class="color1">
+<div class="text">Off</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">12</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">ON</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">Illuminated</div>
+</td><td class="color1">
+<div class="text">Illuminated</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">13</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">ON</div>
+</td><td class="color1">
+<div class="text">&uarr;</div>
+</td><td class="color1">
+<div class="text">Illuminated</div>
+</td><td class="color1">
+<div class="text">Illuminated</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120027K129K630');chgImg('imT120027K129K630');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120027K129K630" align="absmiddle"><a name="t120027k129k630">Automatic Light Control System Operation</a></span>
+<br>
+<div id="tmT120027K129K630" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The automatic light control system controls turning on/off of the taillights and headlights as shown in the table. The following operations are explained using the No. in the Light Operation List by Automatic Light Control System.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120027K129K630I01');chgImg('imT120027K129K630I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120027K129K630I01" align="absmiddle"><a name="t120027k129k630i01">Automatic Light Control System Operation List</a></span>
+<br>
+<div id="tmT120027K129K630I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">Operating Conditions</div>
+</td><td class="gray3_dark">
+<div class="text">Basic Operation</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">When Ambient Condition Is Bright (No.4)</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+
+<div class="text">When the ambient condition is brighter than the taillight off illuminance and headlight off illuminance, both the taillights and headlights are turned off.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">When It Momentarily Becomes Dark While the Ambient Condition Is Bright (No.5)</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+
+<div class="text">When the ambient condition changes from headlight off illuminance to on illuminance while it is bright, the taillights illuminate because the taillight on illuminance has already been reached, but the headlights do not illuminate. If it is still darker than the on illuminance after the delay time has elapsed, the headlights illuminate; if it is brighter than the on illuminance after the delay time has elapsed, the headlights remain off, which prevents momentary headlight illumination when it becomes momentarily dark while passing under an overpass or along a tree-lined road in bright conditions. However, if it becomes as dark as the headlight rapid-on illuminance, the headlights illuminate.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">When Ambient Condition Is Dim, Dark or Momentarily Bright (No.6 to No.8)</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+
+<div class="text">When the ambient condition is dim and becomes darker than the taillight on illuminance, the taillights illuminate. (No.6)</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When it becomes even darker than the headlight on illuminance, the headlights also illuminate. (No.7)</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Even if the ambient condition momentarily becomes bright due to street lights, etc. while the headlights are illuminated, the headlights do not turn off. (No.8)</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">When Power Switch (IG) Is Turned OFF (No.9)</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+
+<div class="text">When the power switch (IG) is turned OFF from the above state (No.6 to No.8), both the taillights and headlights remain illuminated. If the light control switch is then turned OFF once and set to AUTO again from this state, both the taillights and headlights turn off.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">When the Power Switch (IG) Is Turned OFF and the Driver Side Door Is Opened, and Then Closed (No.10, No.11)</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+
+<div class="text">When the driver side door is opened (driver side door courtesy light switch ON) from the above state (No.9), both the taillights and headlights turn off. (No.10)</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the driver side door is closed (driver side door courtesy light switch OFF) from the above state, both the taillights and headlights remain off. (No.11)</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">When the Power Switch (IG) Is Turned ON Again with the Driver Side Door Closed (No.12)</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+
+<div class="text">When the power switch (IG) is turned ON again from the above state (No.10, No.11) and the ambient condition is dark, both the taillights and headlights illuminate.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">When the Driver Side Door Is Opened Again from the Above State (No.12) (No.13)</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+
+<div class="text">Even if the driver side door is opened again (driver side door courtesy light switch ON) from the above state (No.12), both the taillights and headlights remain illuminated if the ambient condition is dark.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740079e.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120027K129K631');chgImg('imT120027K129K631');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120027K129K631" align="absmiddle"><a name="t120027k129k631">Fail-safe Function of Automatic Light Control System</a></span>
+<br>
+<div id="tmT120027K129K631" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the output frequency from the light control sensor falls below 30Hz, the main body ECU (instrument panel junction block assembly) determines that the light control sensor has failed or that there is an open or short in the wire harness, and performs fail-safe.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">If an input malfunction from the light control sensor is detected when the light control switch is in the AUTO position and the power switch (IG) is ON, and the headlights and taillights are illuminated, the main body ECU (instrument panel junction block assembly) keeps them illuminated until the headlights and taillights are turned OFF by the light auto turn off system or the light control switch is turned OFF. If the headlights and taillights are off, control by the automatic light control system is not performed and they remain off. If the output frequency from the light control sensor returns to normal during fail-safe, control by the automatic light control system automatically resumes.</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120027K129B');chgImg('imT120027K129B');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_a0.gif" border="0" id="imT120027K129B" align="absmiddle"><a name="t120027k129b">Related Parts</a></span>
+<br>
+<div id="tmT120027K129B" style="display:none">
+<br>
+
+<br>
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Light Control Sensor</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">Detects the illuminance around the vehicle with the scanner section (integrated optical sensor) and outputs it as a frequency signal to the main body ECU (instrument panel junction block assembly). It is installed on the right side of the upper part of the instrument panel.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740078e.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+</div>
+</body>
+</html>

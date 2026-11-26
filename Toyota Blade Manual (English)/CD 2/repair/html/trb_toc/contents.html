@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- $Id: contents.html,v 1.26 2004/04/01 07:37:34 s-okino Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Troubleshooting Contents</title>
+
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+//
+//  文書構成XMLファイル,グループ一覧XSLファイルを読み込みDOMオブジェクトを作成。
+//  作成したDOMオブジェクトを使用して指定されたHTML要素に画面表示。
+//
+function init() {
+	paraId = parent.findParameterValue("parag" , location.search , parent.location.search);
+	if (paraId == null) {
+		return;
+	}
+
+	paracat = parent.findParameterValue("paracat", location.search , parent.location.search);
+	if (paracat == null) {
+		return;
+	}
+
+	parent.g_paraXml = parent.initXml(paraId.toLowerCase() + ".xml",false,false);
+	if ( parent.g_paraXml == null ) {
+		alert("Relevant File "+paraId.toLowerCase()+".xml does not exist.");
+		return;
+	}
+
+	if (paracat == "S") {
+		parent.display(parent.g_paraXml, parent.g_diaglistXsl, disp, null);
+	}else if (paracat == "T") {
+		parent.display(parent.g_paraXml, parent.g_symptomlistXsl, disp, null);
+	}else{
+		alert("Parameter paracat "+paracat +"is not set.");
+	}
+}
+
+//
+// 選択した点検箇所画面に遷移します。
+//
+// @listId:      症状一覧のパラグラフID
+// @areaId:      点検箇所(パラ、手順IDなど)
+// @suspectArea: 症状のポジション
+//
+function selectSuspectedArea(listId, areaId, suspectArea, tblId) {
+	if (listId==null) {
+		alert("The required information could not be obtained.");
+		return;
+	}
+	if (areaId==null||areaId.length<1) {
+		alert("Inspection location information is not registered.");
+		return;
+	}
+
+	var blink   = parent.getBackParameter(location.pathname,location.search);
+	var termId  = parent.findParameterValue("term", location.search , parent.location.search);
+
+	parent.setTermValue("../trb_sym/frame.html?parag="+listId+"&ref="+suspectArea+"_"+areaId+"&tblId="+tblId+"&"+blink, termId);
+}
+</script>
+</head>
+<body onLoad="init()">
+<div id="disp">
+<table border="0" cellspacing="0" cellpadding="0" width="621" height="352">
+	<tr>
+		<td class="initial-display">
+			<table width="520" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="gray5" width="380">Repair Manual</td>
+					<td class="gray4" width="140">Troubleshooting</td>
+				</tr>
+				<tr>
+					<td colspan="2"> </td>
+				</tr>
+				<tr>
+					<td class="text00" colspan="2">Select an item from the pull-down in the left menu.</td>
+				</tr>
+				<tr>
+					<td colspan="2"> </td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div>
+</body>
+</html>

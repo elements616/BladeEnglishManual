@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1000N_S0010" variety="S0010">
+<name>Brake</name>
+<ttl id="1000N_S0010_744Y2_T009N" variety="T009N">
+<name>Brake Pedal Support Assembly</name>
+<para id="RM000002QWD006X" category="N" type-id="3000G" name-id="4519X-00" from="200810">
+<name>Adjustment</name>
+<subpara id="RM000002QWD006X_01" type-id="01" category="01">
+<s-1 id="RM000002QWD006X_01_0001" proc-id="RM0550J___0000HWJ00000">
+<ptxt>Brake Pedal Height Inspection/Adjustment</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Inspect brake pedal height</ptxt>
+<figure>
+<graphic graphicname="C199737J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<s3>
+<ptxt>Turn back the carpet.</ptxt>
+</s3>
+<s3>
+<ptxt>Turn back the dash silencer from the slit in the dash silencer.</ptxt>
+</s3>
+<s3>
+<ptxt>Measure the shortest distance from the brake pedal pad to the dash panel.</ptxt>
+<spec>
+<title>Standard (from dash panel)</title>
+<specitem>
+<ptxt>135.0±5mm</ptxt>
+</specitem>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>Adjust brake pedal height</ptxt>
+<s3>
+<ptxt>Disconnect the stop light switch connector.</ptxt>
+</s3>
+<s3>
+<ptxt>Loosen the clevis lock nut, and turn the push rod to adjust the pedal height.</ptxt>
+<spec>
+<title>Standard (from dash panel)</title>
+<specitem>
+<ptxt>135.0±5mm</ptxt>
+</specitem>
+</spec>
+</s3>
+<s3>
+<ptxt>Tighten the clevis lock nut.</ptxt>
+<torque>
+<torqueitem>
+<t-value1>26</t-value1>
+<t-value2>265</t-value2>
+</torqueitem>
+</torque>
+</s3>
+<s3>
+<ptxt>Insert the stop light switch into the adjuster until the stop light switch contacts the brake pedal.</ptxt>
+<figure>
+<graphic graphicname="C144923J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Do not push in the brake pedal when inserting the stop light switch.</ptxt>
+</item>
+<item>
+<ptxt>Perform the work while supporting the brake pedal so that it is pulled up.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+<s3>
+<ptxt>Turn the stop light switch approximately 1/4 turn clockwise.</ptxt>
+<figure>
+<graphic graphicname="C131701J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Do not push in the brake pedal when inserting the stop light switch.</ptxt>
+</item>
+<item>
+<ptxt>Perform the work while supporting the brake pedal so that it is pulled up.</ptxt>
+</item>
+<item>
+<ptxt>The turning torque of the stop light switch when turned clockwise should be 1.5N*m {15kgf*cm} or less.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+<s3>
+<ptxt>Connect the stop light switch connector.</ptxt>
+</s3>
+<s3>
+<ptxt>Check the shaft protrusion (amount of projection).</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>0.5 to 2.6mm</ptxt>
+</specitem>
+</spec>
+</s3>
+<s3>
+<ptxt>Check that the stop lights do not illuminate when the brake pedal is not depressed.    </ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000002QWD006X_01_0002" proc-id="RM0550J___0000HWK00000">
+<ptxt>Inspect Brake Pedal Free Play</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>After stopping the engine, depress the pedal firmly several times until there is no vacuum in the brake booster.</ptxt>
+</s2>
+<s2>
+<ptxt>Inspect the brake pedal free play.</ptxt>
+<figure>
+<graphic graphicname="C132708J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>1.0 to 6.0mm</ptxt>
+</specitem>
+</spec>
+<s3>
+<ptxt>If the free play is 1mm or less, check the shaft protrusion of the stop light switch assembly.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>0.5 to 2.6mm</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the shaft protrusion is out of the standard range, adjust the shaft protrusion of the stop light switch assembly.</ptxt>
+</item>
+<item>
+<ptxt>If the shaft protrusion is within the standard range, the brake pedal is normal even if the free play is 1mm or less.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000002QWD006X_01_0003" proc-id="RM0550J___0000HWL00000">
+<ptxt>Inspect Brake Pedal Reserve Distance</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>Measure at the same point as for the brake pedal height inspection.</ptxt>
+</atten4>
+<s2>
+<ptxt>Inspect the brake pedal reserve distance.</ptxt>
+<spec>
+<title>Standard (from dash panel)</title>
+<specitem>
+<ptxt>69mm or more (depressing force 294N{30kgf})</ptxt>
+</specitem>
+</spec>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

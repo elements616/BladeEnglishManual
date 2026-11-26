@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="RM000002CVW008X" category="C" type-id="800B3" name-id="065AK-00" from="200612" to="200912">
+<dtccode>P2237/21</dtccode>
+<dtcname>A/F Sensor B1S1 Open</dtcname>
+<dtccode>P2238/21</dtccode>
+<dtcname>A/F Sensor B1S1 Open Circuit (Low)</dtcname>
+<dtccode>P2239/21</dtccode>
+<dtcname>A/F Sensor B1S1 Open Circuit (High)</dtcname>
+<dtccode>P2252/21</dtccode>
+<dtcname>A/F Sensor B1S1 - Voltage (Low)</dtcname>
+<dtccode>P2253/21</dtccode>
+<dtcname>A/F Sensor B1S1 - Voltage (High)</dtcname>
+<subpara id="RM000002CVW008X_01" type-id="31" category="03" proc-id="RM0550J___00002VQ00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>These DTCs are stored when an open circuit, short circuit or output drop of the A/F sensor (air fuel ratio sensor) is detected. To detect these, the engine control computer checks the A/F sensor voltage with the IG ON, and the admittance (ease of current flow) while the engine is running. Normally, the A/F sensor voltage is between 0.6V and 4.4V; a malfunction is determined if it is outside this range or if the admittance is lower than the standard value. If the same malfunction is detected during continuous operation, the warning light comes on and a DTC is stored. The A/F sensor consists of an element made of various metals and a heater for activating the element, and is located between the exhaust manifold and catalytic converter. The element outputs the oxygen concentration in the exhaust gas as a voltage. The engine control computer calculates the air-fuel ratio based on this voltage and adjusts the fuel injection volume according to the air-fuel ratio and engine conditions. While the engine is running, the A/F sensor voltage varies between 0.6V and 4.4V; the voltage rises when there is more oxygen in the exhaust gas (air-fuel ratio lean) and falls when there is less oxygen in the exhaust gas (air-fuel ratio rich). The heater heats the element according to engine conditions to activate it. Battery voltage is applied to the heater, which is controlled by a duty signal.</ptxt>
+<figure>
+<graphic graphicname="A088467J05" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.8384652     in"/>
+<colspec colnum="02" colname="C02" colwidth="3.154228     in"/>
+<colspec colnum="03" colname="C03" colwidth="3.154227     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTCNo.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2237/21</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Engine running</ptxt>
+</item>
+<item>
+<ptxt>Open circuit between A1A+ terminal and A1A- terminal is detected</ptxt>
+</item>
+<item>
+<ptxt>10 seconds</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Air Fuel Ratio Sensor (A/F Sensor)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P2238/21</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON or engine running</ptxt>
+</item>
+<item>
+<ptxt>When 1 of the following conditions are met:</ptxt>
+<ptxt>• Decrease in A/F sensor output is detected</ptxt>
+<ptxt>• A1A+ terminal voltage is 0.5V or less</ptxt>
+<ptxt>• Voltage between A1A+ terminal and A1A- terminal is 0.1V or less</ptxt>
+</item>
+<item>
+<ptxt>10 seconds</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Air Fuel Ratio Sensor (A/F Sensor)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P2239/21</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>A1A+ terminal voltage is 4.5V or more</ptxt>
+</item>
+<item>
+<ptxt>10 seconds</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Air Fuel Ratio Sensor (A/F Sensor)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P2252/21</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>A1A- terminal voltage is 0.5V or less</ptxt>
+</item>
+<item>
+<ptxt>10 seconds</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Air Fuel Ratio Sensor (A/F Sensor)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P2253/21</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>A1A- terminal voltage is 4.5V or more</ptxt>
+</item>
+<item>
+<ptxt>10 seconds</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Air Fuel Ratio Sensor (A/F Sensor)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000002CVW008X_02" type-id="32" category="03" proc-id="RM0550J___00002VR00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A160909J02" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000002CVW008X_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000002CVW008X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000002CVW008X_04_0003" proc-id="RM0550J___00002VS00000">
+<testtitle>Inspect Wire Harness or Connector (Engine Control Computer - Air Fuel Ratio Sensor)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For wire harness inspection procedures and precautions, refer to <xref label="Seep01" href="RM0000005D701ZX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer and the air fuel ratio sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the engine control computer and the air fuel ratio sensor vehicle side connector. (see <xref label="Seep02" href="X39400000QV016D"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="A127715J07" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.54in"/>
+<colspec colname="COLSPEC0" colwidth="1.21in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A112(A1A+) - 3(A1A+)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A113(A1A-) - 4(A1A-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A112 (A1A+) and 3 (A1A+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A113 (A1A-) and 4 (A1A-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002CVW008X_04_0004" fin="false">OK</down>
+<right ref="RM000002CVW008X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002CVW008X_04_0004" proc-id="RM0550J___00008ID00000">
+<testtitle>Replace Air Fuel Ratio Sensor</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the air fuel ratio sensor replacement procedure, refer to <xref label="Seep01" href="RM0000020W300AX"/></ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000002CVW008X_04_0009" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002CVW008X_04_0009" proc-id="RM0550J___00002VU00000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect connector A of the engine control computer.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), clear the DTCs. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002CVW008X_04_0005" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002CVW008X_04_0005" proc-id="RM0550J___00002VT00000">
+<scantool type="1"/>
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="2">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>After warming up the engine, drive in city traffic for 10 minutes.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.24in"/>
+<colspec colname="COL2" colwidth="0.89in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTCs P2237, P2238, P2239, P2252 and P2253 are not output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTCs P2237, P2238, P2239, P2252 and P2253 are output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>The DTC judgment can be confirmed using the [Diagnosis Judgment Result Check] function of SST (TaSCAN). (see <xref label="Seep02" href="RM000000CCX015X"/>)</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000002CVW008X_04_0008" fin="true">A</down>
+<right ref="RM000002CVW008X_04_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000002CVW008X_04_0006">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002CVW008X_04_0007">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000002CVW008X_04_0008">
+<testtitle>Complete</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

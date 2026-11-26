@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_74WIJ_T00FO" variety="T00FO">
+<name>EFI System (2GR-FE)</name>
+<para id="RM0000008Y100ZX" category="C" type-id="3007P" name-id="066O0-00" from="200708">
+<dtccode>P0500/42</dtccode>
+<dtcname>Vehicle Speed Sensor System</dtcname>
+<subpara id="RM0000008Y100ZX_01" type-id="31" category="03" proc-id="RM0550J___0000D8F00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The vehicle speed pulse signal output from the ABS speed sensor installed on each wheel is converted by the skid control computer into a vehicle speed pulse signal (equivalent to 4 pulses per 1 revolution of the transaxle rotating shaft), output to the combination meter assembly as the vehicle speed signal, and input to the engine control computer.</ptxt>
+<figure>
+<graphic graphicname="A065387J10" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.33in"/>
+<colspec colname="COL2" colwidth="2.21in"/>
+<colspec colname="COL3" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+<item>
+<ptxt>Malfunction Duration</ptxt>
+</item>
+<item>
+<ptxt>Others</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0500/42</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>While driving</ptxt>
+</item>
+<item>
+<ptxt>SPD signal is not input</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Combination Meter Assembly</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>Skid Control Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000008Y100ZX_02" type-id="32" category="03" proc-id="RM0550J___0000D8G00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="G100110J13" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000008Y100ZX_04" type-id="51" category="05" proc-id="RM0550J___0000D8L00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the SPD line branches to other ECUs from an option connector, etc., first disconnect those circuits and inspect.</ptxt>
+</item>
+<item>
+<ptxt>Using SST (TaSCAN), read the Freeze Frame Data. Freeze Frame Data records part of the engine operating conditions when a malfunction occurs, and this information is useful for troubleshooting.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000008Y100ZX_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000008Y100ZX_03_0001" proc-id="RM0550J___0000D8H00000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Vehicle Speed)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Check that the speedometer operates normally.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Perform a road test of the vehicle.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, read the Data List item [Vehicle Speed] from [ECU Data Monitor].</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>SST (TaSCAN) data monitor display and speedometer display are the same</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008Y100ZX_03_0013" fin="true">OK</down>
+<right ref="RM0000008Y100ZX_03_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008Y100ZX_03_0013">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000CD101YX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000008Y100ZX_03_0014">
+<testtitle>Inspect Combination Meter System<xref label="Seep01" href="RM000002YMX000X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

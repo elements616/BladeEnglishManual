@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740023e SYSTEM "grph_ent/a4740023e.png" NDATA png>
+<!ENTITY a4740024e SYSTEM "grph_ent/a4740024e.png" NDATA png>
+<!ENTITY a4740025e SYSTEM "grph_ent/a4740025e.png" NDATA png>
+<!ENTITY a4740026e SYSTEM "grph_ent/a4740026e.png" NDATA png>
+<!ENTITY a4740090e SYSTEM "grph_ent/a4740090e.png" NDATA png>
+<!ENTITY c4210044e SYSTEM "grph_ent/c4210044e.png" NDATA png>
+
+<!ENTITY T120018K550 SYSTEM "t403120018k550.xml">
+<!ENTITY T120018K550K173 SYSTEM "t403120018k550k173.xml">
+<!ENTITY T120018K550K167 SYSTEM "t403120018k550k167.xml">
+<!ENTITY T120018K550K171 SYSTEM "t403120018k550k171.xml">
+<!ENTITY T120018K550K168 SYSTEM "t403120018k550k168.xml">
+<!ENTITY T120018K550K221 SYSTEM "t403120018k550k221.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120018K550S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120018K550" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Back Guide Monitor System Handling Precautions</TITLE>
+<LIST1><ITEM><PTXT>Observe the following when using the back guide monitor system.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T120018K550K173" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>General Precautions for Using the Back Guide Monitor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Do not rely excessively on the back guide monitor. Reverse carefully, just as with vehicles without a back guide monitor.</PTXT></ITEM>
+<ITEM><PTXT>Never reverse while looking only at the screen. The image displayed on the screen may differ from the actual conditions, and reversing while looking only at the screen may result in a collision or an unexpected accident. When reversing, always use the inner rear view mirror and outer mirrors as well, and directly confirm that it is safe behind and around the vehicle.</PTXT></ITEM>
+<ITEM><PTXT>Do not subject the rear view monitor camera to strong impacts or force. The camera direction may be misaligned, causing malfunctions. Special tools are required to adjust the camera direction, so always have it done at a dealer.</PTXT></ITEM>
+<ITEM><PTXT>Use with the back door securely closed.</PTXT></ITEM>
+<ITEM><PTXT>Do not use when the road surface is slippery (icy or snowy roads, etc.) or when tire chains are used. Doing so may result in a collision or an unexpected accident.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120018K550K167" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Display Precautions Related to Vehicle Load and Road Surface Conditions</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Note that, depending on the number of occupants, load conditions, road gradient and unevenness, errors may occur between the distances and course shown by the distance guide lines and estimated course and the actual distances and course on the road surface.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740023e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+<LIST1><ITEM><PTXT>If there is a steep slope behind the vehicle, obstacles may appear farther away than they actually are, as shown in the illustration below.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740024e" WIDTH = "6.903in" HEIGHT = "2.903in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120018K550K171" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Display Precautions When Obstacles Are Three-dimensional Objects</TITLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Since the distance guide lines and estimated course lines are based on the road surface, note the following points when there are three-dimensional objects (walls, vehicles, etc.) behind the vehicle.</TITLE>
+<ITEM><PTXT>When the estimated course lines pass near a three-dimensional object, contact may actually occur even if it appears on the screen that there will be no contact, as shown in the illustration below.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740025e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Distance intervals differ between three-dimensional objects (vehicles, etc.) and flat objects (road surface, etc.) shown on the screen. As shown in the illustration, A and B are actually at the same distance and C is farther than A and B, but they appear on the screen in the order B, C, A, so reversing to the position of B on the screen will result in contact with the three-dimensional object.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740026e" WIDTH = "6.903in" HEIGHT = "3.153in" />
+</FIGURE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>On slippery road surfaces such as snowy roads, errors may occur between the estimated course lines and the actual course.</PTXT></ITEM>
+<ITEM><PTXT>When there is a parking space line on only one side, the lines may appear parallel on the screen even though they are not actually parallel.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120018K550K168" UPDATE = "ORIGINAL" LDUP = "14Apr2004" INDSW = "OFF" MECATYPE = "GENERAL">
+<TITLE>Display Precautions for Using Parallel Parking Guide</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Even when parallel parking with the parallel parking guide, the vehicle may collide with something depending on the operation method, road conditions, road surface conditions and vehicle conditions when parking; always drive while directly confirming that it is safe behind and around the vehicle.</PTXT></ITEM>
+<ITEM><PTXT>Use the parallel parking guide when parking on a flat, straight road. Do not use it when the parking position is on a curve or slope. Doing so may result in a collision or an unexpected accident.</PTXT></ITEM>
+<ITEM><PTXT>The space required for parking varies slightly depending on vehicle conditions (number of occupants, load, etc.) and road conditions (gradient, unevenness, etc.).</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120018K550K221" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Other Back Guide Monitor Precautions</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the battery is replaced or its capacity drops, etc., "System Initializing" is displayed on the screen to indicate that the system is being initialized; touching the "Help" switch on the system initialization screen changes to the help screen, which explains how to complete initialization (turn the steering wheel fully to the left and right). When initialization is completed, the normal display returns.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740090e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+<LIST1><ITEM><PTXT>If the tires are replaced with tires of a different size, the estimated course lines may become inaccurate.</PTXT></ITEM>
+<ITEM><PTXT>When reversing the vehicle, always directly confirm with your own eyes that it is safe behind and around the vehicle. Never reverse while looking at the screen.</PTXT></ITEM>
+<ITEM><PTXT>The range shown by the rear view monitor camera is limited, and objects near either corner of the bumper or under the bumper are not shown.</PTXT></ITEM>
+<ITEM><PTXT>Since the rear view monitor camera uses a special lens, the distance intervals shown on the screen differ from the actual distances.</PTXT></ITEM>
+<ITEM><PTXT>The screen may be difficult to see when sunlight or headlight beams shine directly on the lens, in dark places (at night, etc.), or when the temperature near the lens is high or low, but this is not a malfunction.</PTXT></ITEM>
+<ITEM><PTXT>If the glass in front of the lens is dirty, a clear image cannot be obtained. Remove any water droplets, snow, mud, etc. that adhere to it.</PTXT></ITEM>
+<ITEM><PTXT>If a high-intensity point (such as the sun reflecting off the bumper) appears on the screen, the smear phenomenon<HINTREF     REFID = "H403120018K550K22101"/> peculiar to CCD cameras may occur.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H403120018K550K22101">A phenomenon in which a trail extends above and below (vertically) a high-brightness point (such as sunlight reflected off the vehicle body) captured by the camera.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c4210044e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

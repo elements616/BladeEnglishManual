@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002T_S000D" variety="S000D">
+<name>Other Electrical</name>
+<ttl id="1002T_S000D_742B1_T003C" variety="T003C">
+<name>ETC System</name>
+<para id="RM00000365G014X" category="C" type-id="803NR" name-id="CM0CH-16" from="200912">
+<dtccode>B15F4</dtccode>
+<dtcname>ETC operation malfunction</dtcname>
+<subpara id="RM00000365G014X_01" type-id="33" category="03" proc-id="RM0550J___0000IAR00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when a malfunction is detected in ETC operation.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="4.44in"/>
+<colspec colname="COL3" colwidth="1.27in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B15F4</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DSRC communication detected with no IC card (IC card improperly inserted)</ptxt>
+</item>
+<item>
+<ptxt>On-board unit instruction information "No passage" received with card inserted</ptxt>
+</item>
+<item>
+<ptxt>DSRC communication during card error, and on-board unit instruction information "No passage" received</ptxt>
+</item>
+<item>
+<ptxt>DSRC communication during ETC card authentication, and on-board unit instruction information "No passage" received</ptxt>
+</item>
+<item>
+<ptxt>Card removal detected while data was being read from ETC card</ptxt>
+</item>
+<item>
+<ptxt>Card removal detected while data was being written to ETC card</ptxt>
+</item>
+<item>
+<ptxt>No-application error detected because there is no ETC application in the IC card</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000365G014X_02" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM00000365G014X_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000365G014X_03_0001" proc-id="RM0550J___0000IAS00000">
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check Error Code</ptxt>
+<test2>
+<ptxt>Start diagnosis mode 1. (see <xref label="Seep01" href="RM000000BY201ZX"/>)</ptxt>
+</test2>
+<test2>
+<ptxt>Check the error code and take the following action.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="0.97in"/>
+<colspec colname="COL2" colwidth="2.70in"/>
+<colspec colname="COL3" colwidth="3.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Error Code</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>44</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Communication with no card inserted</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Explain to the customer that this is a record of communication with an ETC gate, an advance notice antenna before an ETC gate, or an ETC card not-inserted notification antenna while no ETC card was inserted</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>45</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>"No passage" received from roadside unit with ETC card inserted</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Explain to the customer that this record remains when the vehicle is stopped by the roadside unit for some reason (e.g. expired ETC card), ask the customer for the toll gate, date and time of the occurrence, etc., obtain the customer's consent to inquire about the travel record with the road operator, and then inquire with the road operator about the cause of "No passage"</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>46</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>"No passage" received from roadside unit because ETC card authentication was not complete</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Explain to the customer that it takes slightly less than 10 seconds to recognize that an ETC card has been inserted, and ask them not to insert the ETC card near an ETC gate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>47</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>"No passage" received from roadside unit because an ETC card read error was occurring</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Explain to the customer that they should check the ETC card condition before driving, and that if an error occurs while driving, they should proceed to a general lane or mixed lane at the toll gate (both entrance and exit). At the entrance, take a ticket from the automatic ticket machine, and pay with the ticket at the exit. If an error occurs while driving on the expressway, go to a general lane or mixed lane at the exit and follow the instructions of the attendant</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>74</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Card removed while ETC card was being read</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Explain that removing the ETC card while it is being confirmed as inserted or while history is being read may damage the ETC card</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>75</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Card removed while ETC card was being written</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Explain that if the ETC card is removed near a toll gate, data may be being written to it, and removing the card at that time may damage the ETC card</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>77</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IC card other than ETC card inserted</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The card the customer is using may not be an ETC card. Ask the customer to check the card once again</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM00000365G014X_03_0002" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000365G014X_03_0002">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

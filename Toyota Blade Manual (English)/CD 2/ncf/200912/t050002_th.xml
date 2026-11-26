@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740102p SYSTEM "../xml/grph_ent/a4740102p.png" NDATA png>
+<!ENTITY a4740103p SYSTEM "../xml/grph_ent/a4740103p.png" NDATA png>
+<!ENTITY a3810132p SYSTEM "../xml/grph_ent/a3810132p.png" NDATA png>
+<!ENTITY a3810133p SYSTEM "../xml/grph_ent/a3810133p.png" NDATA png>
+<!ENTITY a3730073p SYSTEM "../xml/grph_ent/a3730073p.png" NDATA png>
+<!ENTITY a4740116p SYSTEM "../xml/grph_ent/a4740116p.png" NDATA png>
+<!ENTITY a3730037p SYSTEM "../xml/grph_ent/a3730037p.png" NDATA png>
+<!ENTITY a4740117p SYSTEM "../xml/grph_ent/a4740117p.png" NDATA png>
+<!ENTITY a3730032p SYSTEM "../xml/grph_ent/a3730032p.png" NDATA png>
+<!ENTITY a3730035p SYSTEM "../xml/grph_ent/a3730035p.png" NDATA png>
+<!ENTITY a3730036p SYSTEM "../xml/grph_ent/a3730036p.png" NDATA png>
+<!ENTITY a3810157p SYSTEM "../xml/grph_ent/a3810157p.png" NDATA png>
+<!ENTITY a3810148p SYSTEM "../xml/grph_ent/a3810148p.png" NDATA png>
+<!ENTITY a4740119p SYSTEM "../xml/grph_ent/a4740119p.png" NDATA png>
+<!ENTITY a3810146p SYSTEM "../xml/grph_ent/a3810146p.png" NDATA png>
+<!ENTITY a4740118p SYSTEM "../xml/grph_ent/a4740118p.png" NDATA png>
+<!ENTITY a4740120p SYSTEM "../xml/grph_ent/a4740120p.png" NDATA png>
+<!ENTITY a4740108p SYSTEM "../xml/grph_ent/a4740108p.png" NDATA png>
+<!ENTITY a3730004p SYSTEM "../xml/grph_ent/a3730004p.png" NDATA png>
+<!ENTITY a4740104p SYSTEM "../xml/grph_ent/a4740104p.png" NDATA png>
+<!ENTITY a4740105p SYSTEM "../xml/grph_ent/a4740105p.png" NDATA png>
+<!ENTITY a3810159p SYSTEM "../xml/grph_ent/a3810159p.png" NDATA png>
+<!ENTITY a3810160p SYSTEM "../xml/grph_ent/a3810160p.png" NDATA png>
+<!ENTITY a3810161p SYSTEM "../xml/grph_ent/a3810161p.png" NDATA png>
+<!ENTITY a3730010p SYSTEM "../xml/grph_ent/a3730010p.png" NDATA png>
+<!ENTITY a3730011p SYSTEM "../xml/grph_ent/a3730011p.png" NDATA png>
+<!ENTITY a4740106p SYSTEM "../xml/grph_ent/a4740106p.png" NDATA png>
+<!ENTITY a3730013p SYSTEM "../xml/grph_ent/a3730013p.png" NDATA png>
+<!ENTITY a3730014p SYSTEM "../xml/grph_ent/a3730014p.png" NDATA png>
+<!ENTITY a3730015p SYSTEM "../xml/grph_ent/a3730015p.png" NDATA png>
+<!ENTITY a4740121p SYSTEM "../xml/grph_ent/a4740121p.png" NDATA png>
+<!ENTITY a4740131p SYSTEM "../xml/grph_ent/a4740131p.png" NDATA png>
+<!ENTITY a3730018p SYSTEM "../xml/grph_ent/a3730018p.png" NDATA png>
+<!ENTITY a3730019p SYSTEM "../xml/grph_ent/a3730019p.png" NDATA png>
+<!ENTITY a4740107p SYSTEM "../xml/grph_ent/a4740107p.png" NDATA png>
+<!ENTITY a3730021p SYSTEM "../xml/grph_ent/a3730021p.png" NDATA png>
+<!ENTITY a3730022p SYSTEM "../xml/grph_ent/a3730022p.png" NDATA png>
+<!ENTITY a3730025p SYSTEM "../xml/grph_ent/a3730025p.png" NDATA png>
+<!ENTITY a3730026p SYSTEM "../xml/grph_ent/a3730026p.png" NDATA png>
+<!ENTITY a4740109p SYSTEM "../xml/grph_ent/a4740109p.png" NDATA png>
+<!ENTITY A4740133P SYSTEM "../xml/grph_ent/a4740133p.png" NDATA png>
+<!ENTITY a4740079p SYSTEM "../xml/grph_ent/a4740079p.png" NDATA png>
+<!ENTITY a4740080p SYSTEM "../xml/grph_ent/a4740080p.png" NDATA png>
+<!ENTITY a4740110p SYSTEM "../xml/grph_ent/a4740110p.png" NDATA png>
+<!ENTITY a3810143p SYSTEM "../xml/grph_ent/a3810143p.png" NDATA png>
+<!ENTITY a3810144p SYSTEM "../xml/grph_ent/a3810144p.png" NDATA png>
+<!ENTITY a4740111p SYSTEM "../xml/grph_ent/a4740111p.png" NDATA png>
+<!ENTITY a4740112p SYSTEM "../xml/grph_ent/a4740112p.png" NDATA png>
+
+<!ENTITY T030063A431 SYSTEM "../xml/t478030063a431.xml">
+<!ENTITY T030063A431A475 SYSTEM "../xml/t478030063a431a475.xml">
+<!ENTITY T030063A431A596 SYSTEM "../xml/t478030063a431a596.xml">
+<!ENTITY T030063A431A312 SYSTEM "../xml/t478030063a431a312.xml">
+<!ENTITY T030063A431A088 SYSTEM "../xml/t478030063a431a088.xml">
+<!ENTITY T030063A431A315 SYSTEM "../xml/t478030063a431a315.xml">
+<!ENTITY T030063A431A090 SYSTEM "../xml/t478030063a431a090.xml">
+<!ENTITY T030063A431A126 SYSTEM "../xml/t478030063a431a126.xml">
+<!ENTITY T030063A431A053 SYSTEM "../xml/t478030063a431a053.xml">
+<!ENTITY T030063A875 SYSTEM "../xml/t478030063a875.xml">
+<!ENTITY T030063A875A332 SYSTEM "../xml/t478030063a875a332.xml">
+<!ENTITY T030063A875A331 SYSTEM "../xml/t478030063a875a331.xml">
+<!ENTITY T030063A875A333 SYSTEM "../xml/t478030063a875a333.xml">
+<!ENTITY T030063A102A316 SYSTEM "../xml/t478030063a102a316.xml">
+<!ENTITY T030063A102A317 SYSTEM "../xml/t478030063a102a317.xml">
+<!ENTITY T030063A102 SYSTEM "../xml/t478030063a102.xml">
+<!ENTITY T030063A835 SYSTEM "../xml/t478030063a835.xml">
+<!ENTITY T030063A098 SYSTEM "../xml/t478030063a098.xml">
+<!ENTITY T030063A156 SYSTEM "../xml/t478030063a156.xml">
+<!ENTITY T030063A100 SYSTEM "../xml/t478030063a100.xml">
+<!ENTITY T030063A100Kb44 SYSTEM "../xml/t478030063a100kb44.xml">
+<!ENTITY T030063A100Kb45 SYSTEM "../xml/t478030063a100kb45.xml">
+<!ENTITY T030063A430 SYSTEM "../xml/t478030063a430.xml">
+<!ENTITY T030063A430A321 SYSTEM "../xml/t478030063a430a321.xml">
+<!ENTITY T030063A430A472 SYSTEM "../xml/t478030063a430a472.xml">
+<!ENTITY T030063A430A473 SYSTEM "../xml/t478030063a430a473.xml">
+<!ENTITY T030063A430A474 SYSTEM "../xml/t478030063a430a474.xml">
+<!ENTITY T030063A430T005 SYSTEM "../xml/t478030063a430t005.xml">
+<!ENTITY T030063A430A471 SYSTEM "../xml/t478030063a430a471.xml">
+<!ENTITY T030063A101 SYSTEM "../xml/t478030063a101.xml">
+<!ENTITY T030063A434 SYSTEM "../xml/t478030063a434.xml">
+<!ENTITY T030063A174 SYSTEM "../xml/t478030063a174.xml">
+<!ENTITY T030063A836 SYSTEM "../xml/t478030063a836.xml">
+<!ENTITY T030063A176 SYSTEM "../xml/t478030063a176.xml">
+<!ENTITY T030063A148 SYSTEM "../xml/t478030063a148.xml">
+<!ENTITY T030063A148K732 SYSTEM "../xml/t478030063a148k732.xml">
+<!ENTITY T030063A082 SYSTEM "../xml/t478030063a082.xml">
+<!ENTITY T030063A537 SYSTEM "../xml/t478030063a537.xml">
+<!ENTITY T030063A425 SYSTEM "../xml/t478030063a425.xml">
+<!ENTITY T030063A435 SYSTEM "../xml/t478030063a435.xml">
+<!ENTITY T030063A834 SYSTEM "../xml/t478030063a834.xml">
+<!ENTITY T030063A834A266 SYSTEM "../xml/t478030063a834a266.xml">
+<!ENTITY T030063A834A311 SYSTEM "../xml/t478030063a834a311.xml">
+<!ENTITY T030063A834Aa79 SYSTEM "../xml/t478030063a834aa79.xml">
+<!ENTITY T030063A834A595 SYSTEM "../xml/t478030063a834a595.xml">
+<!ENTITY T030063A102R01 SYSTEM "../xml/t478030063a102r01.xml">
+<!ENTITY T030063A102A316R01 SYSTEM "../xml/t478030063a102a316r01.xml">
+<!ENTITY T030063A102A317R02 SYSTEM "../xml/t478030063a102a317r02.xml">
+<!ENTITY T030063A835R02 SYSTEM "../xml/t478030063a835r02.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T030063A431S"><SCTITLE/>
+
+<PARA INFOID = "T030063A431" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "ECU List">
+<TITLE>CVT Control (Computer)</TITLE>
+<LIST1><ITEM><PTXT>A transmission control computer integrated with the engine control computer has been adopted. Various signals are communicated between the engine and transmission control computers to perform integrated engine control, achieving both smooth shift characteristics and excellent shift response at a high level.</PTXT></ITEM>
+<ITEM><PTXT>Acceleration control (linear feel improvement control), NAVI AI-SHIFT and uphill/downhill shift control have been adopted to achieve smooth shift characteristics and excellent shift response, and neutral control has been adopted to improve fuel economy while the vehicle is stopped.</PTXT></ITEM>
+<ITEM><PTXT>Diagnosis and fail-safe functions are provided for serviceability in the event of a system malfunction.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740102p" WIDTH = "6.903in" HEIGHT = "6.361in" />
+</FIGURE>
+<INDICATE ID = "T030063A431I01" INDSW = "OFF">
+<TITLE>Block Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740103p" WIDTH = "6.903in" HEIGHT = "6.431in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T030063A431I02" INDSW = "OFF">
+<TITLE>Components and Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "41%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "58%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.1 (DS1)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Controls the inflow of line pressure to the primary pulley according to the wheel speed and accelerator opening. (Controls the speed of upshifting)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.2 (DS2)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Controls the line pressure and outflow from the primary pulley according to the wheel speed and accelerator opening. (Controls the speed of downshifting)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Lock-up Solenoid (SL)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Switches the function of the linear solenoid (SLS).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Lock-up Engagement Pressure Control Duty Solenoid (DSU)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Controls the gradual increase and decrease of the lock-up engagement hydraulic pressure.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Belt Clamping Force Control Linear Solenoid (SLS)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Controls the secondary pulley pressure according to the input shaft torque to control the belt clamping force. In addition, it controls the forward/reverse clutch hydraulic pressure during forward/reverse clutch engagement and during neutral control.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Primary Pulley Speed Sensor (NIN)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the input shaft speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Secondary Pulley Speed Sensor (N0UT)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the output shaft speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Turbine Speed Sensor (NT)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the turbine speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Hydraulic Pressure Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the belt clamping force.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Fluid Temperature Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the fluid temperature.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Water Temperature Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the engine coolant temperature.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Accelerator Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the accelerator opening.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Throttle Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the throttle valve opening angle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Crankshaft Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the engine speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Stop Light Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the ON/OFF state of the brake pedal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Neutral Start Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the shift position of the automatic transaxle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>G Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the inclination angle of the vehicle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Position Indicator (Built into Combination Meter)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Informs the driver of the shift position in use through the LCD display.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Sport Sequential Shiftmatic Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects whether sport sequential mode is selected.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Engine Control Computer (Integrated with Transmission Control Computer)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Performs integrated control of the engine and transaxle and transaxle control based on the signals from each sensor. A diagnosis mode and fail-safe functions are provided for serviceability in the event of a system malfunction.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>DLC3</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>By connecting and operating a diagnostic tool, DTCs and computer data can be read. </PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T030063A431A475" UPDATE = "ORIGINAL" LDUP = "6May2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Engine Integrated Control</TITLE>
+<LIST1><ITEM><PTXT>By integrating the control of CVT speed and engine torque, fine control is performed so that the engine operates on its optimum fuel economy line.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810132p" WIDTH = "6.917in" HEIGHT = "5.528in" />
+</FIGURE>
+<INDICATE ID = "T030063A431A475I01" INDSW = "OFF">
+<TITLE>Basic Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "82%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Determination of Target Driving Force</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The target engine output is determined from the target driving force requested by the driver, based on the accelerator opening and wheel speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Determination of Target Speed</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The target primary pulley speed is determined so that the target engine output can be achieved on the engine's optimum fuel economy line, and shift control is performed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Determination of Target Torque</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The target engine torque is determined from the target engine output and the primary pulley speed, and throttle opening control is performed.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T030063A431A596" UPDATE = "ORIGINAL" LDUP = "2Jul2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Acceleration Control (Linear Feel Improvement Control)</TITLE>
+<LIST1><ITEM><PTXT>The driver's acceleration request is determined from changes in vehicle speed and accelerator opening, and control shifts to driving force control that provides a good acceleration feel. In this case, the acceleration generated for a constant accelerator opening is kept constant, and the engine speed increases as the vehicle speed increases. This improves the linear acceleration feel and the feel of increasing vehicle speed in response to the driver's accelerator operation.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810133p" WIDTH = "6.917in" HEIGHT = "3.167in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A431A312" UPDATE = "ORIGINAL" LDUP = "23Dec2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Neutral Control</TITLE>
+<LIST1><ITEM><PTXT>Neutral control reduces engine load and improves fuel economy while the vehicle is stopped (in the D position) by disconnecting the engine from the transmission (partially releasing the starting clutch inside the automatic transmission using linear solenoid SLS). In addition, the gradient is detected by the G sensor, and neutral control is not performed on gradients above a certain level.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730073p" WIDTH = "6.917in" HEIGHT = "3.694in" />
+</FIGURE>
+<INDICATE ID = "T030063A431A312I01" INDSW = "OFF">
+<TITLE>Control System</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740116p" WIDTH = "6.903in" HEIGHT = "3.361in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T030063A431A088" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Uphill / Downhill Shift Control</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When driving on winding roads with ups and downs, uphill/downhill shift control restricts upshifting when it determines that the vehicle is going uphill, achieving smooth driving.</PTXT></ITEM>
+<ITEM><PTXT>In addition, when driving downhill, if a downhill is determined from the throttle opening and vehicle acceleration and brake operation is detected, the transmission downshifts to generate an appropriate engine braking force. The system consists of the throttle position sensor and vehicle speed sensor.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730037p" WIDTH = "6.917in" HEIGHT = "3.750in" />
+</FIGURE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Slope determination is made by comparing the reference acceleration stored in the computer with the actual acceleration calculated from the speed sensor signal. When the actual acceleration is less than the reference acceleration, an uphill road is determined, and when the actual acceleration is greater than the reference acceleration, a downhill road is determined.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740117p" WIDTH = "6.917in" HEIGHT = "2.028in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A431A315" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>CVT Shift Control</TITLE>
+<LIST1><ITEM><PTXT>Shift control sets the target input shaft speed based on information such as accelerator opening, vehicle speed and brake signal so that the optimum gear ratio and shift speed are obtained. Furthermore, a signal is output to the shift control duty solenoid (DS1,DS2) so that the speed obtained from the primary pulley speed sensor matches the target input shaft speed, optimizing the gear ratio.</PTXT></ITEM>
+<ITEM><PTXT>In the D position, control is performed through integrated engine control to maximize fuel economy and driving performance.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730032p" WIDTH = "6.917in" HEIGHT = "2.306in" />
+</FIGURE>
+<LIST1><ITEM><PTXT>In the M position of sport sequential Shiftmatic mode, M1 to M7 indicate the respective gears as shown in the illustration below. When the set vehicle speed is reached during acceleration, the transmission automatically upshifts.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730035p" WIDTH = "6.917in" HEIGHT = "2.583in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A431A090" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Shift and Lock-up Control</TITLE>
+<LIST1><ITEM><PTXT>Lock-up operation is performed based on a determination from the throttle opening and vehicle speed.</PTXT></ITEM>
+<ITEM><PTXT>The lock-up operating range has been expanded compared to conventional A/T models, enabling lock-up from the low speed range. In addition, by expanding the lock-up operating range down to the low speed range during deceleration as well, the fuel cut range has been expanded, achieving excellent fuel economy. </PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730036p" WIDTH = "6.903in" HEIGHT = "2.778in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A431A126" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Diagnosis Function</TITLE>
+<LIST1><ITEM><PTXT>If a malfunction is detected in the speed sensors, solenoids, etc., the check engine warning light in the combination meter assembly illuminates to warn the driver. A new diagnosis system has been adopted for serviceability. By connecting TaSCAN to DLC3, diagnosis results for malfunctioning areas can be displayed. For the list of diagnosis items, refer to the Repair Manual.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T030063A431A053" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Fail-safe Function</TITLE>
+<LIST1><ITEM><PTXT>This function prevents a significant loss of drivability even if a malfunction occurs in the sensors or solenoids. For details, refer to the Repair Manual.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T030063A431A053I01" INDSW = "OFF">
+<TITLE>Fail-safe Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "68%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Primary Pulley Speed Sensor (NIN)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>The input shaft speed is calculated from the signal from the turbine speed sensor and normal control is performed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Secondary Pulley Speed Sensor (NOUT)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>The output shaft speed is calculated from the signal from the speed sensor and normal control is performed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Turbine Speed Sensor (NT)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>The turbine speed is calculated from the signal from the primary pulley speed sensor and normal control is performed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.1 (DS1)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Stops current to the solenoid. The gear ratio is shifted further toward the reduction side than normal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.2 (DS2)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Stops current to the solenoid. The gear ratio is at the highest overdrive side.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Lock-up Solenoid (SL)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Stops current to the solenoid and releases lock-up.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Lock-up Engagement Pressure Control Duty Solenoid (DSU)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Stops current to the solenoid and fully releases lock-up.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Belt Clamping Force Control Linear Solenoid (SLS)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>After the control current to the solenoid is stopped, the belt clamping force is set to the maximum hydraulic pressure and the gear ratio is fixed at a predetermined value.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Fluid Temperature Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>The engine control computer fixes the fluid temperature at a predetermined value and performs normal control.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>G Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>When a malfunction is detected, neutral control is stopped.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A098S"><SCTITLE/>
+
+<PARA INFOID = "T030063A098" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Torque Converter</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Its compact size and high transmission efficiency achieve excellent starting and acceleration performance and low fuel consumption. </PTXT></ITEM>
+<ITEM><PTXT>A damper construction that allows lock-up operation from the low speed range has been adopted, absorbing engine torque fluctuations and achieving an excellent ride.</PTXT></ITEM>
+<ITEM><PTXT>A compact torus shape has been adopted, making the torque converter more compact.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730004p" WIDTH = "6.917in" HEIGHT = "2.708in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A156S"><SCTITLE/>
+
+<PARA INFOID = "T030063A156" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Cases</TITLE>
+<LIST1><ITEM><PTXT>High rigidity is ensured by optimum placement of ribs and case shapes using FEM analysis, suppressing deformation due to loads from the gear train.</PTXT></ITEM>
+<ITEM><PTXT>An aluminum alloy case and cover have been adopted to reduce weight.</PTXT></ITEM>
+<ITEM><PTXT>The shape and rib arrangement have been designed to reduce vibration in the range where gear noise occurs, while minimizing any weight increase.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740104p" WIDTH = "6.903in" HEIGHT = "3.458in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A100S"><SCTITLE/>
+
+<PARA INFOID = "T030063A100" UPDATE = "ORIGINAL" LDUP = "11Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Gear Train</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The torque converter and oil pump are located on the input shaft, and a planetary gear is used as the forward/reverse switching mechanism.</PTXT></ITEM>
+<ITEM><PTXT>It consists of a continuously variable transmission mechanism made up of 1 pair of pulleys and a metal belt, a reduction gear pair, a final gear pair and a differential mechanism. Shifting is performed steplessly by varying the winding diameter of the metal belt on the pulleys, whose groove width is varied by hydraulic pressure.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740105p" WIDTH = "6.903in" HEIGHT = "6.639in" />
+</FIGURE>
+
+<MECA ID = "T030063A100Kb44" UPDATE = "ORIGINAL" LDUP = "6Dec2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Construction of K112/K112F Gear Train</TITLE>
+<INDICATE ID = "T030063A100Kb44I01" INDSW = "OFF">
+<TITLE>Gear Train Components</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810159p" WIDTH = "6.917in" HEIGHT = "3.903in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T030063A100Kb45" UPDATE = "ORIGINAL" LDUP = "6Dec2005"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Operation of K112/K112F Gear Train</TITLE>
+<INDICATE ID = "T030063A100Kb45I01" INDSW = "OFF">
+<TITLE>At Lowest Gear Ratio in D Position</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810160p" WIDTH = "6.917in" HEIGHT = "3.847in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T030063A100Kb45I02" INDSW = "OFF">
+<TITLE>At Highest Overdrive Ratio in D Position</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810161p" WIDTH = "6.917in" HEIGHT = "3.833in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T030063A100Kb45I03" INDSW = "OFF">
+<TITLE>In N Position</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730010p" WIDTH = "6.917in" HEIGHT = "4.236in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T030063A100Kb45I04" INDSW = "OFF">
+<TITLE>In R Position</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730011p" WIDTH = "6.917in" HEIGHT = "4.347in" />
+</FIGURE>
+</INDICATE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A430S"><SCTITLE/>
+
+<PARA INFOID = "T030063A430" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Continuously Variable Transmission Mechanism (CVT Mechanism)</TITLE>
+<LIST1><ITEM><PTXT>Whereas a conventional automatic transaxle performs stepped shifting using planetary gears, the Super CVT-i automatic transaxle shifts using 1 pair of pulleys, whose groove width can be freely varied by hydraulic pressure, and a metal belt. During shifting, the pulley width is varied to shift steplessly. Furthermore, a wide gear ratio range ensures excellent fuel economy and quietness.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740106p" WIDTH = "6.903in" HEIGHT = "6.736in" />
+</FIGURE>
+
+<MECA ID = "T030063A430A321" UPDATE = "ORIGINAL" LDUP = "10Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Continuously Variable Transmission Mechanism Components</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>It consists of pulleys with pistons and a metal belt, and shifting is performed by varying the pulley width through operation of the pistons in the primary and secondary pulleys.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730013p" WIDTH = "6.014in" HEIGHT = "4.056in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A430A472" UPDATE = "ORIGINAL" LDUP = "10Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>CVT Pulley</TITLE>
+<LIST1><ITEM><PTXT>A double piston construction has been adopted for the primary pulley, pressing the belt with the pressure generated in two hydraulic chambers in series. This allows the outer diameter of the hydraulic chambers to be reduced, making the system more compact.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730014p" WIDTH = "5.056in" HEIGHT = "3.194in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A430A473" UPDATE = "ORIGINAL" LDUP = "10Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>CVT Metal Belt</TITLE>
+<LIST1><ITEM><PTXT>The metal belt consists of metal elements and 2 rows of steel rings.</PTXT></ITEM>
+<ITEM><PTXT>Whereas ordinary chains and rubber belts transmit power by tension, the metal belt transmits power by the compression of the elements (pushing of the elements).</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730015p" WIDTH = "5.667in" HEIGHT = "2.486in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A430A474" UPDATE = "ORIGINAL" LDUP = "10Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Forward/Reverse Switching Mechanism</TITLE>
+<LIST1><ITEM><PTXT>A single pinion type planetary gear has been adopted as the forward/reverse switching mechanism.</PTXT></ITEM>
+<ITEM><PTXT>It consists of a reverse brake that holds the planetary carrier and a forward clutch that transmits engine driving force to the planetary sun gear.</PTXT></ITEM>
+<ITEM><PTXT>A centrifugal hydraulic pressure cancel chamber is provided in the forward clutch to eliminate the centrifugal hydraulic pressure of the fluid generated by rotation, improving hydraulic response.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740121p" WIDTH = "6.917in" HEIGHT = "3.917in" />
+</FIGURE>
+<LIST1><ITEM><PTXT>When moving forward, the forward clutch is engaged, and the driving force from the engine is input from the input shaft to the sun gear and output directly to the continuously variable transmission mechanism.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740131p" WIDTH = "6.917in" HEIGHT = "3.361in" />
+</FIGURE>
+<LIST1><ITEM><PTXT>When reversing, the driving force from the engine is input to the ring gear. It is then input to the sun gear through the pinion gears, whose revolution is stopped by the reverse brake, and the driving force from the engine is output to the continuously variable transmission mechanism in the reverse direction of rotation.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730018p" WIDTH = "6.917in" HEIGHT = "3.569in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A430T005" UPDATE = "ORIGINAL" LDUP = "10Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Low Fuel Consumption</TITLE>
+<LIST1><ITEM><PTXT>Compared with a conventional stepped A/T, driving close to the optimum fuel economy line (a preset high-torque range with good fuel consumption rate) is possible, drawing out the maximum engine performance. In addition, by expanding the lock-up range to the low speed side, the high-efficiency range can be used during acceleration and the fuel cut range can be expanded during deceleration, contributing to low fuel consumption. The wide gear ratio range lowers engine speed during high-speed driving by making use of the high gear, achieving excellent fuel economy.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730019p" WIDTH = "6.333in" HEIGHT = "2.944in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A430A471" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>CVT Power Performance</TITLE>
+<LIST1><ITEM><PTXT>A characteristic of the CVT is that it can maintain the engine speed in the high-output range.</PTXT></ITEM>
+<ITEM><PTXT>Unlike a conventional stepped A/T, a stepless CVT can accelerate while maintaining an efficient engine speed, so the maximum output range can be used efficiently and the driving force of the engine can be fully utilized.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740107p" WIDTH = "6.708in" HEIGHT = "3.014in" />
+</FIGURE>
+<LIST1><ITEM><PTXT>In a conventional stepped A/T, the driving force characteristics of the engine (relationship between engine speed, torque and vehicle speed, etc.) are determined by each gear. Therefore, while the driving force characteristics lie on the curves drawn by each gear, with a CVT the driving force characteristics can be set freely. As a result, compared with the stepped driving force characteristics that occur with stepped shifting, smooth shift characteristics are achieved and engine characteristics can be fully utilized.</PTXT></ITEM>
+<ITEM><PTXT>During vehicle acceleration, engine performance is fully utilized by shortening the initial time lag that occurs when the accelerator is depressed and by optimally controlling the driving force (engine speed x output shaft torque).</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730021p" WIDTH = "6.917in" HEIGHT = "3.625in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A101S"><SCTITLE/>
+
+<PARA INFOID = "T030063A101" UPDATE = "ORIGINAL" LDUP = "11Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Oil Pump</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A non-crescent type high-pressure oil pump has been adopted, reducing the theoretical discharge volume and drive torque.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730022p" WIDTH = "6.917in" HEIGHT = "3.167in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A102S"><SCTITLE/>
+
+<PARA INFOID = "T030063A102" UPDATE = "ORIGINAL" LDUP = "9Jan2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Hydraulic Control Section</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The rigidity of the valve body has been increased to handle the higher pressure of the hydraulic circuit. In addition, all solenoid valves are mounted on the lower valve body side for easier servicing.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740118p" WIDTH = "6.917in" HEIGHT = "5.278in" />
+</FIGURE>
+<INDICATE ID = "T030063A102I01" INDSW = "OFF">
+<TITLE>Solenoid Names and Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "40%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "59%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT> Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.1 (DS1)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls the inflow of line pressure to the primary pulley according to the wheel speed and accelerator opening. (Controls the speed of upshifting)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.2 (DS2)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls the outflow of line pressure from the primary pulley according to the wheel speed and accelerator opening. (Controls the speed of downshifting)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Lock-up Solenoid (SL)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Switches the function of the linear solenoid (SLS).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Lock-up Engagement Pressure Control Duty Solenoid (DSU)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Controls the gradual increase and decrease of the lock-up engagement hydraulic pressure.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Belt Clamping Force Control Linear Solenoid (SLS)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls the secondary pulley pressure according to the input shaft torque to control the belt clamping force. In addition, it controls the forward/reverse clutch hydraulic pressure during forward/reverse clutch engagement and during neutral control.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T030063A102I02" INDSW = "OFF">
+<TITLE>Hydraulic Control Block Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740120p" WIDTH = "6.917in" HEIGHT = "8.889in" />
+</FIGURE>
+</INDICATE>
+
+<MECA ID = "T030063A102A316" UPDATE = "ORIGINAL" LDUP = "10Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Belt Clamping Force Control Mechanism</TITLE>
+<LIST1><ITEM><PTXT>In the CVT belt mechanism, the CVT belt clamping force for transmitting torque is controlled by controlling the secondary pulley hydraulic pressure. In addition, by placing a pressure control valve and solenoid valve downstream of the line pressure, the belt clamping force can be controlled with the optimum hydraulic pressure, achieving excellent power transmission performance.                  
+         </PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740119p" WIDTH = "6.903in" HEIGHT = "4.833in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A102A317" UPDATE = "ORIGINAL" LDUP = "10Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Shift Control Mechanism</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Shift control is performed by controlling the inflow and outflow of hydraulic pressure to the primary pulley.
+                             </PTXT></ITEM>
+<ITEM><PTXT>Electronic control of this process increases the freedom of shift control, achieving driving that responds to the driver's intentions, as well as gear ratios and shift speeds that allow driving on the engine's optimum fuel economy line. In addition, by separating upshift and downshift control, fine control is achieved.
+                                 </PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810146p" WIDTH = "6.903in" HEIGHT = "5.222in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A434S"><SCTITLE/>
+
+<PARA INFOID = "T030063A434" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Reduction Gear and Differential Mechanism</TITLE>
+<LIST1><ITEM><PTXT>Reduction gears are provided as a reduction mechanism and for transmitting the driving force output from the continuously variable transmission mechanism to the differential drive pinion.</PTXT></ITEM>
+<ITEM><PTXT>The reduction drive gear is supported by 2 independent bearings, optimizing tooth contact with the driven gear. This achieves excellent quietness.</PTXT></ITEM>
+<ITEM><PTXT>The front differential is a 2-pinion type using helical gears for the reduction mechanism and straight bevel gears for the differential mechanism.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730025p" WIDTH = "6.917in" HEIGHT = "3.722in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A174S"><SCTITLE/>
+
+<PARA INFOID = "T030063A174" UPDATE = "ORIGINAL" LDUP = "10Jan2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Parking Lock Mechanism</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A parking lock gear is located at the secondary pulley. The parking lock pawl engages with the parking lock gear to lock the rotation of the transmission.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730026p" WIDTH = "4.875in" HEIGHT = "3.319in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A835S"><SCTITLE/>
+
+<PARA INFOID = "T030063A835" UPDATE = "ORIGINAL" LDUP = "7Sep2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Pulley Speed Sensors and Turbine Speed Sensor</TITLE>
+<LIST1><ITEM><PTXT>The primary pulley speed sensor (NIN), which detects the input shaft speed, is located at the primary pulley, and the secondary pulley speed sensor (NOUT), which detects the output shaft speed, is located on the secondary pulley shaft (reduction drive gear).</PTXT></ITEM>
+<ITEM><PTXT>The turbine speed sensor (NT) for lock-up engagement pressure control and forward/reverse clutch pressure control is located at the forward clutch drum.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740108p" WIDTH = "6.903in" HEIGHT = "2.889in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A836S"><SCTITLE/>
+
+<PARA INFOID = "T030063A836" UPDATE = "ORIGINAL" LDUP = "7Sep2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Hydraulic Pressure Sensor</TITLE>
+<LIST1><ITEM><PTXT>The hydraulic pressure sensor detects the belt clamping force so that the belt clamping force can be optimally controlled.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740109p" WIDTH = "6.903in" HEIGHT = "2.639in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A176S"><SCTITLE/>
+
+<PARA INFOID = "T030063A176" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Fluid Temperature Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A fluid temperature sensor is provided to perform shift control according to the fluid temperature, as well as lock-up engagement pressure control, forward/reverse clutch pressure control and belt clamping force control.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "A4740133P" WIDTH = "6.917in" HEIGHT = "2.931in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A148S"><SCTITLE/>
+
+<PARA INFOID = "T030063A148" UPDATE = "ORIGINAL" LDUP = "2Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Throttle Position Sensor</TITLE>
+<LIST1><ITEM><PTXT>A non-contact type throttle position sensor has been adopted, using a Hall element<HINTREF     REFID = "H478030063A14802"/> that can extract the magnetic field strength as an electrical signal using the Hall effect<HINTREF     REFID = "H478030063A14801"/>, which provides an output voltage linear to the throttle valve opening angle. When the throttle valve opening angle changes, the angle of the magnetic field relative to the flow of the applied current in the Hall element changes, so the strength of the magnetic field perpendicular to the applied current changes. As a result, the change in voltage generated perpendicular to both the applied current and the magnetic field is sent to the engine control computer as the throttle valve opening angle signal. In addition, reliability is ensured by adopting a 2-system (main and sub) sensor with different output characteristics.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478030063A14801">This is a phenomenon in which, when a current flows through a rod- or plate-shaped conductor or semiconductor and a magnetic field is applied perpendicular to it, a potential difference is generated in the direction perpendicular to both the current and the magnetic field.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478030063A14802">This is an electronic component that uses the electromotive force generated by the potential difference in a magnetic field.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740079p" WIDTH = "6.903in" HEIGHT = "4.736in" />
+</FIGURE>
+
+<MECA ID = "T030063A148K732" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Fail-safe Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The throttle position sensor detects the opening angle with 2 systems: a main circuit and a sub circuit. If a malfunction occurs in the signal, the engine control computer switches to limp mode.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T030063A148K732I01" INDSW = "OFF">
+<TITLE>When Malfunction Is Detected</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>If a malfunction occurs in either or both circuits, the engine control computer detects the malfunction from the voltage difference between the main circuit and sub circuit. At this time, power to the throttle motor is cut and the throttle valve is returned to a predetermined opening angle by the return spring. Limp mode driving is made possible by controlling engine output using fuel injection control and ignition timing control. Also, even if the engine control computer detects another malfunction such as in the throttle motor, limp mode driving is made possible by performing the above control.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740080p" WIDTH = "6.917in" HEIGHT = "3.792in" />
+</FIGURE>
+</INDICATE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A082S"><SCTITLE/>
+
+<PARA INFOID = "T030063A082" UPDATE = "ORIGINAL" LDUP = "2Oct2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Neutral Start Switch</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Detects the shift lever position.</PTXT></ITEM></LIST1>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A425S"><SCTITLE/>
+
+<PARA INFOID = "T030063A425" UPDATE = "ORIGINAL" LDUP = "23Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Oil Level Detection Mechanism</TITLE>
+<LIST1><ITEM><PTXT>A new oil level detection mechanism (overflow method) has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>When adjusting the oil level during repair or replacement, the oil level can be adjusted mechanically by the overflow method, improving the accuracy of oil level control. For detailed oil filling and adjustment procedures, refer to the Repair Manual.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810143p" WIDTH = "6.917in" HEIGHT = "3.194in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A435S"><SCTITLE/>
+
+<PARA INFOID = "T030063A435" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Caution Label</TITLE>
+<LIST1><ITEM><PTXT>A label prompting initialization of the engine control computer when the transaxle assembly or engine control computer is replaced is affixed to the top of the transaxle case.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810144p" WIDTH = "6.903in" HEIGHT = "3.903in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A875S"><SCTITLE/>
+
+<PARA INFOID = "T030063A875" UPDATE = "ORIGINAL" LDUP = "8Sep2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>NAVI/AI-SHIFT</TITLE>
+<LIST1><ITEM><PTXT>Road conditions are judged 3-dimensionally based on road gradient information and road corner information from the navigation system, and CVT gear ratio control suited to various roads is performed. This achieves smooth and comfortable driving. NAVI AI-SHIFT control is performed only in the D position. NAVI AI-SHIFT control is not performed when sport sequential Shiftmatic is selected.</PTXT></ITEM>
+<ITEM><PTXT>NAVI AI-SHIFT control is performed only on vehicles with the factory-option navigation system.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810157p" WIDTH = "6.903in" HEIGHT = "5.486in" />
+</FIGURE>
+<INDICATE ID = "T030063A875I01" INDSW = "OFF">
+<TITLE>Development Objectives</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Assisting vehicle deceleration when entering corners</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Improving accelerator controllability in the middle of and when exiting corners</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Improving driveability on roads combining corners and ups and downs, such as mountain roads</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T030063A875I02" INDSW = "OFF">
+<TITLE>Downshift/Upshift Operating Conditions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "32%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "67%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Shift Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Conditions (Downshift/Upshift Is Performed When All Conditions Are Met)</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE"><PTXT>Downshift/Upshift Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>"On" selected with the "NAVI AI-SHIFT On/Off" switch on the navigation screen</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>D position selected</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2"><PTXT>Vehicle speed from approximately 15km/h to approximately 100km/h</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T030063A875A332" UPDATE = "ORIGINAL" LDUP = "26Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Configuration of NAVI AI-SHIFT</TITLE>
+<LIST1><ITEM><PTXT>NAVI AI-SHIFT performs control based on mutual communication between the navigation system and transmission control computer and information from various sensors.</PTXT></ITEM>
+<ITEM><PTXT>A "NAVI AI-SHIFT On/Off" switch is provided on the navigation screen. This turns NAVI AI-SHIFT ON and OFF.</PTXT></ITEM>
+<ITEM><PTXT>By selecting the "NAVI AI-SHIFT Control Level Strong/Weak" switch on the navigation screen, a large or small downshift amount can be selected.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810148p" WIDTH = "6.903in" HEIGHT = "3.861in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A875A331" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>NAVI AI-SHIFT Non-operating Conditions, Restrictions, etc.</TITLE>
+<LIST1><ITEM><PTXT>Control is not performed under the following conditions.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T030063A875A331I01" INDSW = "OFF">
+<TITLE>When NAVI AI-SHIFT Is Not Performed</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>"Off" selected with the "NAVI AI-SHIFT On/Off" switch on the navigation screen</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Shift lever in a position other than D</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the vehicle speed is outside the range of approximately 15 to approximately 100km/h</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the transmission control computer, automatic transmission parts (shift solenoids, vehicle speed sensor, etc.) or electronic throttle malfunctions</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When driving through an intersection while the navigation system is not providing route guidance</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>When the factory-option navigation system is not installed</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T030063A875A331I02" INDSW = "OFF">
+<TITLE>NAVI AI-SHIFT may not operate correctly under the following conditions.</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When a tire is punctured</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the tire size differs from the specified size</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the spare tire is installed</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>When the road information in the navigation system differs from the actual road shape</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T030063A875A331I03" INDSW = "OFF">
+<TITLE>Under the following conditions, control is performed using only road gradient information, and control using corner information is not performed.</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the navigation system malfunctions</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When there is a communication malfunction between the navigation ECU and engine ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the navigation system has no map information</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the positioning accuracy of the navigation system decreases</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When GPS signals cannot be received</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When there is a road adjacent to the road being driven on</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the road is narrow (excluding national and prefectural roads)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>When the road information in the navigation system differs from the actual road shape</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<HINT>
+<PTXT>It may not operate correctly depending on the situation, so do not rely too heavily on NAVI AI-SHIFT; always pay attention to road conditions and drive at a safe speed.</PTXT></HINT></MECA>
+
+<MECA ID = "T030063A875A333" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>NAVI AI-SHIFT Fail-safe Function</TITLE>
+<LIST1><ITEM><PTXT>A fail-safe function that stops control if any malfunction occurs in the navigation system or ECT system is provided. When a malfunction occurs, control is immediately prohibited or switched to control using only road gradient information.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T030063A875A333I01" INDSW = "OFF">
+<TITLE>Fail-safe List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "24%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "52%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "23%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Category</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Malfunction Item</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "3"><PTXT>Transmission Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Transmission output speed sensor malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "3"><PTXT>NAVI AI-SHIFT prohibited</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Accelerator opening signal malfunction</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Transmission solenoid malfunction</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Communication malfunction with navigation computer</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "3"><PTXT>Navigation Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>GPS malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "3"><PTXT>Switch to control using only road gradient information</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Navigation vehicle speed signal malfunction</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Gyro malfunction</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2"><PTXT>Transmission control computer communication malfunction</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+</PARA>
+<BIND ID = "T030063A875B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T030063A102R01" UPDATE = "ORIGINAL" LDUP = "9Jan2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Hydraulic Control Section</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The rigidity of the valve body has been increased to handle the higher pressure of the hydraulic circuit. In addition, all solenoid valves are mounted on the lower valve body side for easier servicing.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740118p" WIDTH = "6.917in" HEIGHT = "5.278in" />
+</FIGURE>
+<INDICATE ID = "T030063A102R01I01" INDSW = "OFF">
+<TITLE>Solenoid Names and Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "40%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "59%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT> Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.1 (DS1)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls the inflow of line pressure to the primary pulley according to the wheel speed and accelerator opening. (Controls the speed of upshifting)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.2 (DS2)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls the outflow of line pressure from the primary pulley according to the wheel speed and accelerator opening. (Controls the speed of downshifting)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Lock-up Solenoid (SL)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Switches the function of the linear solenoid (SLS).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Lock-up Engagement Pressure Control Duty Solenoid (DSU)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Controls the gradual increase and decrease of the lock-up engagement hydraulic pressure.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Belt Clamping Force Control Linear Solenoid (SLS)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls the secondary pulley pressure according to the input shaft torque to control the belt clamping force. In addition, it controls the forward/reverse clutch hydraulic pressure during forward/reverse clutch engagement and during neutral control.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T030063A102R01I02" INDSW = "OFF">
+<TITLE>Hydraulic Control Block Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740120p" WIDTH = "6.917in" HEIGHT = "8.889in" />
+</FIGURE>
+</INDICATE>
+
+<MECA ID = "T030063A102A316R01" UPDATE = "ORIGINAL" LDUP = "10Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Belt Clamping Force Control Mechanism</TITLE>
+<LIST1><ITEM><PTXT>In the CVT belt mechanism, the CVT belt clamping force for transmitting torque is controlled by controlling the secondary pulley hydraulic pressure. In addition, by placing a pressure control valve and solenoid valve downstream of the line pressure, the belt clamping force can be controlled with the optimum hydraulic pressure, achieving excellent power transmission performance.                  
+         </PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740119p" WIDTH = "6.903in" HEIGHT = "4.833in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A102A317R02" UPDATE = "ORIGINAL" LDUP = "10Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Shift Control Mechanism</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Shift control is performed by controlling the inflow and outflow of hydraulic pressure to the primary pulley.
+                             </PTXT></ITEM>
+<ITEM><PTXT>Electronic control of this process increases the freedom of shift control, achieving driving that responds to the driver's intentions, as well as gear ratios and shift speeds that allow driving on the engine's optimum fuel economy line. In addition, by separating upshift and downshift control, fine control is achieved.
+                                 </PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810146p" WIDTH = "6.903in" HEIGHT = "5.222in" />
+</FIGURE>
+</MECA>
+</PARA>
+
+<PARA INFOID = "T030063A835R02" UPDATE = "ORIGINAL" LDUP = "7Sep2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Pulley Speed Sensors and Turbine Speed Sensor</TITLE>
+<LIST1><ITEM><PTXT>The primary pulley speed sensor (NIN), which detects the input shaft speed, is located at the primary pulley, and the secondary pulley speed sensor (NOUT), which detects the output shaft speed, is located on the secondary pulley shaft (reduction drive gear).</PTXT></ITEM>
+<ITEM><PTXT>The turbine speed sensor (NT) for lock-up engagement pressure control and forward/reverse clutch pressure control is located at the forward clutch drum.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740108p" WIDTH = "6.903in" HEIGHT = "2.889in" />
+</FIGURE>
+</PARA>
+</BIND>
+</SECTION>
+<SECTION SCID = "T030063A537S"><SCTITLE/>
+
+<PARA INFOID = "T030063A537" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>CVT Fluid Warmer</TITLE>
+<LIST1><ITEM><PTXT>A CVT fluid warmer is provided instead of the common CVT fluid cooler built into the radiator.</PTXT></ITEM>
+<ITEM><PTXT>The CVT fluid warmer speeds up warm-up of the CVT fluid when the engine is started and functions as an oil cooler during normal driving.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740110p" WIDTH = "6.903in" HEIGHT = "3.042in" />
+</FIGURE>
+<SPEC ID = "T030063A537X01" INDSW = "OFF">
+<TITLE>CVT Fluid Warmer Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Core Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Aluminum Water-cooled Multi-plate Type</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Core Specifications</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>φ90 x 6 Stages</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Oil Capacity [L]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>0.06</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Oil Side Heat Dissipation Area [m<SUP>2</SUP>]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>0.12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Water Side Heat Dissipation Area [m<SUP>2</SUP>]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>0.08</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Dry Weight [kg]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>0.38</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T030063A834S"><SCTITLE/>
+
+<PARA INFOID = "T030063A834" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Sport Sequential Shiftmatic</TITLE>
+<LIST1><ITEM><PTXT>With sport sequential Shiftmatic, selecting the M position (indicating manual shift), located beside the D position of the shift lever, changes from automatic shift mode to sport sequential Shiftmatic mode, enabling driving in the gear selected by shift lever operation and providing engine braking force according to each gear.</PTXT></ITEM>
+<ITEM><PTXT>A gate type shift lever has been adopted, and operating the shift up switch/shift down switch creates a manual-like shift feel.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740111p" WIDTH = "6.903in" HEIGHT = "3.000in" />
+</FIGURE>
+
+<MECA ID = "T030063A834A266" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Indicator &amp; Gear Display</TITLE>
+<LIST1><ITEM><PTXT>A gear position indicator is located in the shift display in the combination meter. The gear position indicator displays the selected gear when in the M position.</PTXT></ITEM>
+<ITEM><PTXT>When the M position is selected, "M" illuminates in the upper left of the shift display. In addition, when the P, R, N or D position is selected, P, R, N or D is displayed on the gear position indicator.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740112p" WIDTH = "6.903in" HEIGHT = "2.986in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A834A311" UPDATE = "ORIGINAL" LDUP = "10Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Gears Available in Sequential Shift Mode</TITLE>
+<LIST1><ITEM><PTXT>The gears available in sport sequential Shiftmatic mode are shown in the table below.</PTXT></ITEM>
+<ITEM><PTXT>If the vehicle stops while driving in sport sequential Shiftmatic mode, the transmission automatically downshifts to gear 1.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Shift Operation Mode</TITLE>
+<TGROUP COLS = "5" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "22%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "21%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Shift Position</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Sport Sequential Shiftmatic Mode (+/-)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Available Gears</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Sport Sequential Shiftmatic Indicator</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Gear Position Indicator</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" ALIGN = "CENTER"><PTXT>D</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Continuously Variable</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>D Displayed</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>M</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Possible</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>1,2,3,4,5,6,7</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE"><PTXT>Illuminated (M)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE"><PTXT>1 to 7 Displayed</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T030063A834Aa79" UPDATE = "ORIGINAL" LDUP = "6Dec2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Automatic Shifting Related to Sport Sequential Shiftmatic</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>The transmission automatically upshifts 1 gear to prevent the engine speed from becoming too high.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>The transmission automatically downshifts 1 gear to prevent the engine speed from becoming too low.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T030063A834A595" UPDATE = "ORIGINAL" LDUP = "2Jul2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Rejections (Restrictions) Related to Sport Sequential Shiftmatic</TITLE>
+<LIST1><ITEM><PTXT>If a system failure or malfunction occurs, or if it is determined that a shift operation request cannot be performed, sport sequential Shiftmatic operation is restricted. In this case, the driver is informed by a warning sound.</PTXT></ITEM>
+<ITEM><PTXT>In response to a driver's downshift request, if the vehicle speed when the downshift is performed would be above or below a certain speed, the gear change is restricted and the driver is informed by a warning sound.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Restricted Vehicle Speed During Downshifting (Reference)</TITLE>
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "33%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Downshift</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Lower Vehicle Speed Limit [km/h]<HINTREF REFID = "H478030063A834A59501"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Upper Vehicle Speed Limit [km/h]<HINTREF REFID = "H478030063A834A59501"/></PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>7→6</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>50</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>6→5</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>40</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>160</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>5→4</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>30</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>130</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>4→3</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>25</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>100</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>3→2</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>20</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>80</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>2→1</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>60</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478030063A834A59501"> The restricted vehicle speeds are reference values. The restricted vehicle speeds differ slightly between 2WD models and 4WD models.</PTXT></ITEM></LIST1></HINT></MECA>
+</PARA>
+</SECTION>
+</SCT>

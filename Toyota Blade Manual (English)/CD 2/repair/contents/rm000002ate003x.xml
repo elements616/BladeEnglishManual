@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1002B_S001H" variety="S001H">
+<name>Automatic Transaxle</name>
+<ttl id="1002B_S001H_74Y0Z_T00HA" variety="T00HA">
+<name>Automatic Transaxle Fluid (U660E)</name>
+<para id="RM000002ATE003X" category="N" type-id="3000Y" name-id="261JD-00" from="200708">
+<name>Refill</name>
+<subpara id="RM000002ATE003X_01" type-id="01" category="01">
+<s-1 id="RM000002ATE003X_01_0001" proc-id="RM0550J___0000FVX00000">
+<ptxt>Add Automatic Transaxle Fluid</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Vehicle Condition Check</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Perform the work after the fluid temperature has dropped to room temperature.</ptxt>
+</item>
+<item>
+<ptxt>Leave the vehicle for a long time (overnight) after stopping the engine.</ptxt>
+</item>
+</list1>
+</atten4>
+</s2>
+<s2>
+<ptxt>Work Content Check</ptxt>
+<s3>
+<ptxt>Refer to the work flow below and follow the procedure.</ptxt>
+<figure>
+<graphic graphicname="C108474J07" width="7.106578999in" height="7.795582503in"/>
+</figure>
+<atten4>
+<ptxt>The fluid filling procedure differs depending on the work performed.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>If a large amount of fluid is to be added, go to step [*1]</ptxt>
+</s3>
+<s3>
+<ptxt>If a small amount of fluid is to be added, go to step [*2]</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Add fluid (when a large amount of fluid is to be added) [*1]</ptxt>
+<s3>
+<ptxt>Keeping the vehicle level, lift it up.</ptxt>
+</s3>
+<s3>
+<ptxt>Remove engine under cover NO.1.</ptxt>
+</s3>
+<s3>
+<ptxt>Remove the engine under cover rear LH.</ptxt>
+</s3>
+<s3>
+<ptxt>Using a socket hexagon wrench 6, remove the overflow plug and gasket.</ptxt>
+<figure>
+<graphic graphicname="C139603J03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Remove the refill plug and gasket.</ptxt>
+</s3>
+<s3>
+<ptxt>Add fluid through the refill hole until fluid flows out of the overflow.  </ptxt>
+<figure>
+<graphic graphicname="C139604" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten3>
+<ptxt>Use Toyota Genuine ATF WS as the fluid to be added.</ptxt>
+</atten3>
+</s3>
+<s3>
+<ptxt>Using a socket hexagon wrench 6, temporarily tighten the overflow plug with the gasket.</ptxt>
+<figure>
+<graphic graphicname="C139605" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Add the specified amount of fluid through the refill hole.</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="4.82in"/>
+<colspec colname="COL2" colwidth="2.26in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Related Work</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Refill Amount (Reference)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>When removing/installing the oil pan or drive shaft, or replacing an oil seal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2.8L</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>When removing/installing the torque converter assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.8L</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>When the transaxle assembly has been replaced (new torque converter assembly used)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.3L</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>When the transaxle assembly has been replaced (torque converter assembly reused)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3.4L</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>The refill amount varies depending on the related work.</ptxt>
+</atten3>
+</s3>
+<s3>
+<ptxt>Temporarily tighten the refill plug with the gasket.</ptxt>
+<figure>
+<graphic graphicname="C139606" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Lower the vehicle.</ptxt>
+</s3>
+<s3>
+<ptxt>Go to Oil Temperature Detection Mode Switching (When Terminal TC Is Shorted) [*3]</ptxt>
+</s3>
+<s3>
+<ptxt>Go to Oil Temperature Detection Mode Switching (When Using SST (TaSCAN)) [*4]</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Add fluid (when a small amount of fluid is to be added) [*2]</ptxt>
+<s3>
+<ptxt>Keeping the vehicle level, lift it up.</ptxt>
+</s3>
+<s3>
+<ptxt>Remove engine under cover NO.1.</ptxt>
+</s3>
+<s3>
+<ptxt>Remove the engine under cover rear LH.</ptxt>
+</s3>
+<s3>
+<ptxt>Remove the refill plug and gasket.</ptxt>
+<figure>
+<graphic graphicname="C139606" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Add the specified amount of fluid through the refill hole.</ptxt>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Related Work</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Refill Amount (Reference)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>When the oil cooler and cooler hoses have been removed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.5L</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>When oil seepage, etc. has been repaired</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.5L</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>Use Toyota Genuine ATF WS as the fluid to be added.</ptxt>
+</atten3>
+</s3>
+<s3>
+<ptxt>Temporarily tighten the refill plug with the gasket.</ptxt>
+<figure>
+<graphic graphicname="C139606" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Lower the vehicle.</ptxt>
+</s3>
+<s3>
+<ptxt>Go to Oil Temperature Detection Mode Switching (When Terminal TC Is Shorted) [*3]</ptxt>
+</s3>
+<s3>
+<ptxt>Go to Oil Temperature Detection Mode Switching (When Using SST (TaSCAN)) [*4]</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Switch to fluid temperature detection mode (when shorting TC terminal) [*3]</ptxt>
+<s3>
+<ptxt>Turn IG ON.</ptxt>
+</s3>
+<s3>
+<ptxt>Turn the A/C OFF.</ptxt>
+</s3>
+<s3>
+<ptxt>Turn IG OFF.</ptxt>
+</s3>
+<s3>
+<ptxt>Using SST, connect terminals 13 (TC) and 4 (CG) of DLC3.</ptxt>
+<figure>
+<graphic graphicname="C101492J08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+</s3>
+<s3>
+<ptxt>Start the engine.</ptxt>
+</s3>
+<s3>
+<ptxt>Slowly move the shift lever from the P range to the D range, and then shift back to the P range.</ptxt>
+</s3>
+<s3>
+<ptxt>Switch to oil temperature detection mode.</ptxt>
+<figure>
+<graphic graphicname="C162857J02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="1" align="center">
+<colspec colname="COL1" colwidth="4.13in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Oil Temperature Detection Mode Switching Procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Perform the N - D operation within 1.5 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Perform the above operation continuously for 6 seconds or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+<s3>
+<ptxt>The meter indicator light [D] illuminates for 2 seconds and then goes off.</ptxt>
+<figure>
+<graphic graphicname="C161477" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Depending on the fluid temperature, the meter indicator light comes on, goes off or blinks.</ptxt>
+<figure>
+<graphic graphicname="C151182J04" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Add fluid while the meter indicator light is illuminated.</ptxt>
+</item>
+<item>
+<ptxt>If the meter indicator light is off, adjust the fluid temperature [*4] to between 40° and C-45°C.</ptxt>
+</item>
+<item>
+<ptxt>If the meter indicator light is blinking, check the vehicle condition and wait for the fluid temperature to drop before performing the work.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+</s2>
+<s2>
+<ptxt>Adjust fluid temperature (when shorting TC terminal) [*4]</ptxt>
+<s3>
+<ptxt>Move the shift lever to the P range.</ptxt>
+</s3>
+<s3>
+<ptxt>Disconnect terminals 13 (TC) ←→ 4 (CG) of DLC3.</ptxt>
+<figure>
+<graphic graphicname="C101492J08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Be sure to open terminal TC, as the fluid level cannot be adjusted accurately unless it is open.</ptxt>
+</atten3>
+</s3>
+<s3>
+<ptxt>Warm up the engine at idle to raise the automatic transaxle fluid temperature.   </ptxt>
+</s3>
+<s3>
+<ptxt>As soon as the meter indicator light [D] illuminates, lift up the vehicle.  </ptxt>
+<figure>
+<graphic graphicname="C161477" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Adjust the fluid level while the meter indicator light is illuminated.</ptxt>
+</atten3>
+</s3>
+<s3>
+<ptxt>Go to Fluid Level Check [*7]</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Switch to fluid temperature detection mode (when using SST (TaSCAN)) [*5]</ptxt>
+<s3>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</s3>
+<s3>
+<ptxt>Start the engine with the A/C OFF.</ptxt>
+</s3>
+<s3>
+<ptxt>Select Active Test (TC terminal ON), and turn the TC terminal ON with the A/T fluid temperature displayed.</ptxt>
+</s3>
+<s3>
+<ptxt>Slowly move the shift lever from the P range to the D range, and then shift back to the P range.</ptxt>
+</s3>
+<s3>
+<ptxt>Switch to oil temperature detection mode.</ptxt>
+<figure>
+<graphic graphicname="C162857J02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="1" align="center">
+<colspec colname="COL1" colwidth="4.13in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Oil Temperature Detection Mode Switching Procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Perform the N - D operation within 1.5 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Perform the above operation continuously for 6 seconds or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+<s3>
+<ptxt>The meter indicator light [D] illuminates for 2 seconds and then goes off.</ptxt>
+<figure>
+<graphic graphicname="C161477" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Depending on the fluid temperature, the meter indicator light comes on, goes off or blinks.</ptxt>
+<figure>
+<graphic graphicname="C151182J04" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Add fluid while the meter indicator light is illuminated.</ptxt>
+</item>
+<item>
+<ptxt>If the meter indicator light is off, adjust the fluid temperature [*6] to between 40° and C-45°C.</ptxt>
+</item>
+<item>
+<ptxt>If the meter indicator light is blinking, check the vehicle condition and wait for the fluid temperature to drop before performing the work.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+</s2>
+<s2>
+<ptxt>Adjust fluid temperature (when using SST (TaSCAN)) [*6]</ptxt>
+<s3>
+<ptxt>Move the shift lever to the P range.</ptxt>
+</s3>
+<s3>
+<ptxt>Turn the TC terminal from ON to OFF.</ptxt>
+<atten3>
+<ptxt>Be sure to open terminal TC, as the fluid level cannot be adjusted accurately unless it is open.</ptxt>
+</atten3>
+</s3>
+<s3>
+<ptxt>Warm up the engine at idle to raise the automatic transaxle fluid temperature.   </ptxt>
+</s3>
+<s3>
+<ptxt>As soon as the meter indicator light [D] illuminates, lift up the vehicle.</ptxt>
+<figure>
+<graphic graphicname="C161477" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Adjust the fluid level while the meter indicator light is illuminated.</ptxt>
+</atten3>
+</s3>
+<s3>
+<ptxt>Go to Fluid Level Check [*7]</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Check fluid level [*7]</ptxt>
+<atten4>
+<ptxt>The fluid level adjustment method differs depending on whether or not the fluid overflows.</ptxt>
+</atten4>
+<s3>
+<ptxt>Using a socket hexagon wrench 6, remove the overflow plug and gasket.</ptxt>
+<figure>
+<graphic graphicname="C139605" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Check the fluid condition.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>"Overflow" refers to the condition in which fluid flows out of the overflow tube.</ptxt>
+</item>
+<item>
+<ptxt>If only a small amount of fluid flows out, it may just be the fluid that had collected in the overflow tube (approximately 1cc), so judge that it is not overflowing.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+<s3>
+<ptxt>If fluid overflows, go to step [*8]</ptxt>
+</s3>
+<s3>
+<ptxt>If fluid does not overflow, go to step [*9]</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Adjust fluid level (when fluid overflows) [*8]</ptxt>
+<atten3>
+<ptxt>The drained fluid is hot, so handle it with care.</ptxt>
+</atten3>
+<s3>
+<ptxt>When the fluid flow becomes a trickle, fully tighten the overflow plug with a new gasket.</ptxt>
+<figure>
+<graphic graphicname="C139607" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<torque>
+<torqueitem>
+<t-value1>40</t-value1>
+<t-value2>408</t-value2>
+</torqueitem>
+</torque>
+</s3>
+<s3>
+<ptxt>Fully tighten the refill plug with a new gasket.</ptxt>
+<figure>
+<graphic graphicname="C139606" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<torque>
+<torqueitem>
+<t-value1>49</t-value1>
+<t-value2>500</t-value2>
+</torqueitem>
+</torque>
+</s3>
+<s3>
+<ptxt>Install the engine under cover rear LH.</ptxt>
+</s3>
+<s3>
+<ptxt>Install engine under cover NO.1.</ptxt>
+</s3>
+<s3>
+<ptxt>Lower the vehicle.</ptxt>
+</s3>
+<s3>
+<ptxt>Turn IG OFF and disconnect SST (TaSCAN).</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Refill fluid (when fluid does not overflow) [*9]</ptxt>
+<s3>
+<ptxt>Remove the refill plug and gasket.</ptxt>
+<figure>
+<graphic graphicname="C139606" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Add fluid through the refill hole until fluid flows out of the overflow.</ptxt>
+<figure>
+<graphic graphicname="C139604" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten3>
+<ptxt>Use Toyota Genuine ATF WS as the fluid to be added.</ptxt>
+</atten3>
+</s3>
+<s3>
+<ptxt>When the fluid flow becomes a trickle, fully tighten the overflow plug with a new gasket.</ptxt>
+<figure>
+<graphic graphicname="C139608" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<torque>
+<torqueitem>
+<t-value1>40</t-value1>
+<t-value2>408</t-value2>
+</torqueitem>
+</torque>
+</s3>
+<s3>
+<ptxt>Fully tighten the refill plug with a new gasket.</ptxt>
+<figure>
+<graphic graphicname="C139606" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<torque>
+<torqueitem>
+<t-value1>49</t-value1>
+<t-value2>500</t-value2>
+</torqueitem>
+</torque>
+</s3>
+<s3>
+<ptxt>Install the engine under cover rear LH.</ptxt>
+</s3>
+<s3>
+<ptxt>Install engine under cover NO.1.</ptxt>
+</s3>
+<s3>
+<ptxt>Lower the vehicle.</ptxt>
+</s3>
+<s3>
+<ptxt>Turn IG OFF and disconnect SST (TaSCAN).</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

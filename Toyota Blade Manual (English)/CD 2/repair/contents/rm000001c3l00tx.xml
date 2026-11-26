@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002R_S000G" variety="S000G">
+<name>G-BOOK</name>
+<ttl id="1002R_S000G_742BR_T003W" variety="T003W">
+<name>G-BOOK System</name>
+<para id="RM000001C3L00TX" category="D" type-id="3001B" name-id="66153-00" from="200612" to="200912">
+<name>How to Proceed with Troubleshooting</name>
+<subpara id="RM000001C3L00TX_z0" proc-id="RM0550J___0000B3B00000">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Compared to a normal navigation system, symptoms caused by "communication (radio wave conditions)" and "center (server)" may occur; therefore, proceed with troubleshooting after fully understanding the construction and operation of G-BOOK.</ptxt>
+</atten4>
+<descript-diag>
+<descript-testgroup>
+<testtitle>Vehicle brought to workshop</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Customer Problem Analysis and Symptom Check</testtitle>
+<test1>
+<ptxt>Customer Problem Analysis and Symptom Check (see <xref label="Seep01" href="RM000001C3M00TX"/>)</ptxt>
+<test2>
+<ptxt>Check on which screen the problem symptom occurs. (Occurs only on G-BOOK screen / occurs only on navigation screen / occurs only on TV screen / occurs on all screens / occurs elsewhere)</ptxt>
+</test2>
+<test2>
+<ptxt>G-BOOK provides a variety of services using communication. Therefore, it is important to determine whether the problem is caused by the communication system, including radio wave conditions, or by something else. Perform thorough customer problem analysis according to the questionnaire, and ask about the conditions of occurrence carefully to determine whether the problem may be temporary due to poor radio wave conditions.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Screen Display Message and Problem Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The message "Please check the telephone" is displayed from the first connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>It is highly likely that the cellular phone being used is not G-BOOK compatible, so have the customer check it (compatible models can be checked at G-BOOK.com on the Internet)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>The message "Cannot display because the line is busy, etc. Please wait a while before operating" is temporarily displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This is due to radio wave conditions or base station congestion and is not a malfunction (explain to the customer and have them continue using it)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>The message "Could not acquire information because the line is busy, etc." is temporarily displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This is due to radio wave conditions or base station congestion and is not a malfunction (explain to the customer and have them continue using it)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>The message "Please wait" appears and it temporarily takes a long time until the screen is displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This is due to radio wave conditions or base station congestion and is not a malfunction (explain to the customer and have them continue using it)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Occurrence of a constant malfunction other than the above</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<results>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Basic Inspection</testtitle>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Basic Inspection</ptxt>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), inspect the battery voltage.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>11 to 14 V (IG OFF)</ptxt>
+</specitem>
+</spec>
+</test2>
+<test2>
+<ptxt>Inspect locations that can be checked visually, such as blown fuses, open or short circuits in the wire harness, and poor connector connections.</ptxt>
+</test2>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Service Inspection</testtitle>
+<atten4>
+<ptxt>For details of the procedure, refer to <xref label="Seep02" href="RM0000002RV02BX"/></ptxt>
+</atten4>
+<test1>
+<ptxt>AVC-LAN Connection Check</ptxt>
+<test2>
+<ptxt>Start diagnosis.</ptxt>
+</test2>
+<test2>
+<ptxt>On the service inspection screen, check that all connected devices are displayed.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL2" colwidth="3.25in"/>
+<colspec colname="COLSPEC0" colwidth="0.88in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Part Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Device Name</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>AVN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Toll Collection (ETC) Computer Assembly (w/ ETC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ETC</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Television camera controller (w/ intelligent parking assist system)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAMERA-C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+</test1>
+<test1>
+<ptxt>Check DTC</ptxt>
+<test2>
+<ptxt>Record the DTCs.</ptxt>
+</test2>
+<test2>
+<ptxt>Perform inspection and repair according to the instructions in the Diagnostic Trouble Code Chart.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.25in"/>
+<colspec colname="COL2" colwidth="0.88in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Device Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>AVN</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep03" href="RM0000002RS03EX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ETC (w/ ETC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep04" href="RM000001US9001X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CAMERA-C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep09" href="RM0000002O401AX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+</test1>
+<test1>
+<ptxt>Clear DTC</ptxt>
+</test1>
+<test1>
+<ptxt>Recheck DTC</ptxt>
+<test2>
+<ptxt>Based on the recorded DTCs, reproduce the problem symptom and check whether the DTCs are output again.</ptxt>
+</test2>
+</test1>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.24in"/>
+<colspec colname="COL2" colwidth="0.89in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>No code, symptom can be confirmed and reproduced</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No code, symptom cannot be confirmed and reproduced</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Code output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>All connected devices other than AVN are not displayed (w/ ETC)</ptxt>
+</item>
+<item>
+<ptxt>All connected devices other than AVN are displayed as "Not Connected" (w/ ETC)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>D</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>Go to Symptom Simulation (see <xref label="Seep08" href="RM000000ABY03DX"/>)</action-ci-right>
+<result>C</result>
+<action-ci-right>Go to step 7</action-ci-right>
+<result>D</result>
+<action-ci-right>Go to Troubleshooting Flowchart AVC-LAN Malfunction (see <xref label="Seep12" href="RM0000007EM02GX"/>)</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>List by Symptom</testtitle>
+<test1>
+<ptxt>Problem Symptoms Table (see <xref label="Seep05" href="RM000001C3P00OX"/>)</ptxt>
+</test1>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Not listed in List by Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Corresponds to List by Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>Go to step 7</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Perform troubleshooting using the following methods based on the problem symptom</testtitle>
+<test1>
+<ptxt>Terminals of ECU (see <xref label="Seep06" href="RM000001YXB00GX"/>)</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Adjust, Repair or Replace</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Work after Replacement</testtitle>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When replacing the navigation receiver assembly, perform the vehicle association setting, and then perform the G-BOOK use resumption operation and HELPNET service start operation. (see <xref label="Seep07" href="RM000001C3S00RX"/>)</ptxt>
+</item>
+<item>
+<ptxt>The G-BOOK online service cannot be used until the vehicle association setting at the G-BOOK Support Center is completed.</ptxt>
+</item>
+<item>
+<ptxt>The HELPNET service is provided from the time the service start operation (manual maintenance check) is completed normally.</ptxt>
+</item>
+<item>
+<ptxt>If the navigation receiver assembly is replaced while a purchased G-SOUND unlimited license exists, perform G-SOUND license recovery. (see <xref label="Seep10" href="RM000001C3S00RX"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Confirmation Test</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

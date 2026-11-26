@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_74WIJ_T00FO" variety="T00FO">
+<name>EFI System (2GR-FE)</name>
+<para id="RM0000031X1003X" category="C" type-id="30091" name-id="066O2-00" from="200708">
+<dtccode>P0505/33</dtccode>
+<dtcname>ISCV Circuit</dtcname>
+<subpara id="RM0000031X1003X_01" type-id="31" category="03" proc-id="RM0550J___0000D8T00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The idle speed is controlled by the electronic throttle control system.</ptxt>
+<ptxt>The electronic throttle control system consists of a throttle motor that drives the throttle valve, and a throttle position sensor that detects the throttle valve opening angle.</ptxt>
+<ptxt>The engine control computer controls the throttle motor to adjust the throttle valve opening appropriately so that the idle speed reaches the target idle speed.</ptxt>
+<ptxt>If the difference between the actual idle speed and the target idle speed is outside the judgment value and the idle speed control learned value has reached its maximum, and this condition occurs 5 times or more during 1 trips, the engine control computer determines that there is a malfunction in the idle speed control, illuminates the check engine warning light and stores a DTC.</ptxt>
+<ptxt>Example:</ptxt>
+<ptxt>If the actual idle speed falls 100 (*1) rpm or more below the target idle speed, or rises 200 rpm or more above it, 5 times during 1 driving cycles, the engine control computer illuminates the check engine warning light and stores a DTC. (2 trip detection logic)</ptxt>
+<atten4>
+<ptxt>*1: The reference engine speed varies depending on the engine load (e.g. A/C ON/OFF, electrical load ON/OFF).</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="A175208J01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" align="center" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.06in"/>
+<colspec colname="COL4" colwidth="3.90in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL4" valign="middle">
+<ptxt>P0505/33</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="6" valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis Condition</ptxt>
+</entry>
+<entry namest="COL3" nameend="COL4">
+<ptxt>Vehicle stopped (idling) after being driven at 10 km/h or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Abnormal Condition</ptxt>
+</entry>
+<entry namest="COL3" nameend="COL4">
+<list1 type="nonmark">
+<item>
+<ptxt>When both of the following conditions are met</ptxt>
+</item>
+<list2 type="ordered">
+<item>
+<ptxt>When the value obtained by subtracting the target engine speed from the actual engine speed is detected as -100r/min or less or 200r/min or more 5 times during 1 driving cycles</ptxt>
+</item>
+<item>
+<ptxt>Idle speed control learned value is 1.3L/s or less, or 8.5L/s or more</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Malfunction Duration</ptxt>
+</entry>
+<entry namest="COL3" nameend="COL4" valign="middle">
+<ptxt>10 minutes</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Trip Count</ptxt>
+</entry>
+<entry namest="COL3" nameend="COL4" valign="middle">
+<ptxt>2 trip</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Detection Method</ptxt>
+</entry>
+<entry namest="COL3" nameend="COL4" valign="middle">
+<ptxt>Detected 1 times during 1 trips (no detection after judgment)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Sensors Used for Detection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Crankshaft Position Sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sub</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Speed Sensor</ptxt>
+</item>
+<item>
+<ptxt>E.F.I. water temperature sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Inspection Area</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL4">
+<list1 type="unordered">
+<item>
+<ptxt>Electronic throttle control system</ptxt>
+</item>
+<item>
+<ptxt>Intake system (air leakage)</ptxt>
+</item>
+<item>
+<ptxt>PCV valve, PCV hose and PCV hose connection condition</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<topic>
+<title>Confirmation Driving</title>
+<ptxt>By performing confirmation driving, it is possible to check whether the DTC is reproduced.</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</item>
+<item>
+<ptxt>Turn IG ON.</ptxt>
+</item>
+<item>
+<ptxt>Using SST (TaSCAN), clear the DTCs.</ptxt>
+</item>
+<item>
+<ptxt>Start the engine and warm it up until the engine coolant temperature stabilizes.</ptxt>
+</item>
+<item>
+<ptxt>Drive the vehicle at a speed of 10km/h or more.</ptxt>
+</item>
+<item>
+<ptxt>Run the engine at idle for 20 seconds.</ptxt>
+</item>
+<item>
+<ptxt>Repeat steps 5 → 6 5 times or more.</ptxt>
+</item>
+<item>
+<ptxt>Following the SST (TaSCAN) screen display, check the DTC result. (see <xref label="Seep01" href="RM0000008YS014X"/>)</ptxt>
+</item>
+</list1>
+</topic>
+</content5>
+</subpara>
+<subpara id="RM0000031X1003X_03" type-id="51" category="05" proc-id="RM0550J___0000D8U00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read the freeze frame data using SST (TaSCAN). The freeze frame data records part of the engine operating condition when the malfunction occurred, and this information is useful when troubleshooting.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000031X1003X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000031X1003X_04_0001" proc-id="RM0550J___0000D8V00000">
+<scantool type="1"/>
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the main switch of SST (TaSCAN) ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs by following the SST (TaSCAN) screen display.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.30in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Only P0505/33 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Codes other than P0505/33 are also output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X1003X_04_0002" fin="false">A</down>
+<right ref="RM0000031X1003X_04_0007" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X1003X_04_0002" proc-id="RM0550J___0000D8W00000">
+<testtitle>Inspect PCV Hose</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the PCV hose connections and check for damage.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>The PCV hose is connected correctly and is not damaged.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X1003X_04_0003" fin="false">OK</down>
+<right ref="RM0000031X1003X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X1003X_04_0003" proc-id="RM0550J___0000D8X00000">
+<testtitle>Inspect Intake System</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that there is no air leakage from any part of the intake system (disconnected vacuum hoses, air leaking from gaskets).</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No air leakage.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X1003X_04_0004" fin="false">OK</down>
+<right ref="RM0000031X1003X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X1003X_04_0004" proc-id="RM0550J___0000D8Y00000">
+<testtitle>Replace Throttle Body Assembly (w/ Motor)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect engine wire No.3 (battery negative terminal).</ptxt>
+</test1>
+<test1>
+<ptxt>Remove the air cleaner assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Remove the throttle body assembly with motor. (see <xref label="Seep01" href="RM0000020UP00EX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Install a new throttle body assembly with motor. (see <xref label="Seep02" href="RM0000020UM00FX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Install the air cleaner assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect engine wire No.3 (battery negative terminal).</ptxt>
+</test1>
+<test1>
+<ptxt>System Initialization</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X1003X_04_0005" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000031X1003X_04_0005" proc-id="RM0550J___0000D8Z00000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the main switch of SST (TaSCAN) ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, clear the DTCs. (see <xref label="Seep01" href="RM0000008YS014X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X1003X_04_0006" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000031X1003X_04_0006" proc-id="RM0550J___0000D9000000">
+<scantool type="1"/>
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine and warm it up until the engine coolant temperature stabilizes.</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at a speed of 10km/h or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Run the engine at idle for 20 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Repeat steps 5 → 6 5 times or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, check the DTC result.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTCs are output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000031X1003X_04_0011" fin="true">A</down>
+<right ref="RM0000031X1003X_04_0010" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X1003X_04_0007">
+<testtitle>Go to Related DTC Chart<xref label="Seep01" href="RM000001KT7004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000031X1003X_04_0008">
+<testtitle>Repair or replace PCV hose</testtitle>
+</testgrp>
+<testgrp id="RM0000031X1003X_04_0009">
+<testtitle>Repair or replace intake system</testtitle>
+</testgrp>
+<testgrp id="RM0000031X1003X_04_0010">
+<testtitle>System Normal</testtitle>
+</testgrp>
+<testgrp id="RM0000031X1003X_04_0011">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADB004X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

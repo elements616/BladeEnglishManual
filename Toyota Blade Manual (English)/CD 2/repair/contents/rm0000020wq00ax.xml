@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="1000C_S000O" variety="S000O">
+<name>Cooling</name>
+<ttl id="1000C_S000O_744GA_T006W" variety="T006W">
+<name>Cooling Fan System (2AZ-FE)</name>
+<para id="RM0000020WQ00AX" category="N" type-id="8009I" name-id="121DX-00" from="200612">
+<name>Function Inspection</name>
+<subpara id="RM0000020WQ00AX_01" type-id="01" category="01">
+<s-1 id="RM0000020WQ00AX_01_0001" proc-id="RM0550J___00003UQ00000">
+<ptxt>Function Inspection when Cold (Engine Coolant Temperature 83°C or Less)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check that the fan does not rotate when the ignition switch is turned ON with the A/C switch OFF.</ptxt>
+</s2>
+<s2>
+<ptxt>Turn IG OFF.</ptxt>
+</s2>
+<s2>
+<ptxt>Disconnect the E.F.I. water temperature connector.</ptxt>
+<figure>
+<graphic graphicname="A112176" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Check that the fan rotates when the ignition switch is turned ON.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000020WQ00AX_01_0002" proc-id="RM0550J___00003UR00000">
+<ptxt>Function Inspection when Hot (Engine Coolant Temperature 96°C or Higher)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>After warming up the engine, check that the A/C switch is OFF.</ptxt>
+</s2>
+<s2>
+<ptxt>Check that the fan starts rotating when the coolant temperature reaches 96°C or more, and stops when it falls to approximately 94.5°C or less.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The fan is controlled by the engine control computer. </ptxt>
+</item>
+<item>
+<ptxt>The engine coolant temperature can be checked with "ECU Data Monitor" of SST (TaSCAN).</ptxt>
+</item>
+</list1>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

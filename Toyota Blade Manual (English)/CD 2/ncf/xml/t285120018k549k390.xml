@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T120018K549K390" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Modes and Selection Operations</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the shift position is moved to "R" (reverse) with the power source mode ON (IG), the rear image display starts; touching "Course Display" or "Parallel Parking Guide" on the image behind vehicle display screen changes to "Parallel Parking Guide Mode", and parallel parking guidance is provided.</PTXT></ITEM>
+<ITEM><PTXT>Touching "Course Clear" hides the estimated course lines. At this time, the "Course Display" switch is displayed in the same position; touching "Course Display" returns to the original screen.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>List of Back Guide Monitor Modes</TITLE>
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "35%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Course Display Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Parallel Parking Guide Mode</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Purpose</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When parking in a garage, or when detailed guidance is not needed for parallel parking</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>When detailed guidance is needed for parallel parking</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Voice Guidance</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>No</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Yes</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Guide Display ON/OFF Switching</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Possible<HINTREF REFID = "H285120018K549K39001"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Not Possible</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H285120018K549K39001">When guide display OFF is selected, only the rear image and the distance guide line (fixed: red) are displayed.</PTXT></ITEM></LIST1></HINT></MECA>

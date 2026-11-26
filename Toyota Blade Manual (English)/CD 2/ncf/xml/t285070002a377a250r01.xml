@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T070002A377A250R01" UPDATE = "ORIGINAL" LDUP = "29Nov2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Assist Control Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Power assist control has the following functions.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Basic Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Calculates the assist current and assist direction from the torque sensor signal and drives the drive circuit to output drive current to the motor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Inertia Compensation Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Increases the responsiveness of the assist force during steering to improve steering feel.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Friction Compensation Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Eliminates the feeling of friction during steering to improve steering feel.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Return Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Optimizes the return characteristics during steering.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>System Overheat Protection Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Provides overheat protection for the motor and electric power steering computer.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>

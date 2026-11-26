@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- $Id: frame.html,v 1.42 2003/12/05 11:01:43 kato Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Inspection Procedure</title>
+
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/style.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/memo.js"></script>
+
+<script language="JavaScript"> 
+<!--
+//
+//  文書構成XMLファイル,点検XSLファイルを読み込みDOMオブジェクトを作成。
+//  作成したDOMオブジェクトを使用して指定されたHTML要素に画面表示。
+//
+var g_servcatId   = null;                      //選ばれたpara-id,illust-idのservcat-id
+var g_paraId      = null;                      //目次から受け取ったpara-id
+var g_firstTid    = getParameterValue("ttl");  //localframeでtopに現れるtitle-id
+var g_nowTtlId    = getParameterValue("ttl");  //現在選択されているtitle-id
+var g_psrhObjXml  = null;                      //pserch_(servcat-id).xmlobj
+var g_hashParaIdArray = new Hashtable();       //title-id(key)に関連する複数のpara-id(value)
+var g_hashStIv    = new Hashtable();           //ttl-id_("secid","secval","ttlval")(key)に対応するsection-id/section-variety/ttl-variety(value)を格納している。
+var g_hashXml     = new Hashtable();           //para-id(key)-objXml(value)
+var g_hash        = new Hashtable();           //ttl-id(key)ttl-name(value)
+
+var g_tocXml   = initXml("toc_rpr.xml");
+var g_compoXml = initXml("components.xml");
+var g_contXsl  = initXsl("../../xsl/isp/contents.xsl");
+g_tocXml.setProperty("SelectionLanguage", "XPath");	
+g_compoXml.setProperty("SelectionLanguage", "XPath");
+
+initFrame();
+var g_bp = getParameterValue("bp");
+var g_bd = getParameterValue("bd");
+
+function initFrame(){
+	var fillustId = getParameterValue("illust");
+	g_paraId = getParameterValue("parag");
+	if(fillustId != null) init(fillustId);      //絵目次から遷移
+	else                  initParaId(g_paraId); //目次から遷移
+}
+
+function initParaId(paraid){
+	var ttlNode = g_tocXml.selectSingleNode("//para[@id='" + paraid + "']").parentNode;
+	g_nowTtlId  = ttlNode.getAttribute("id");
+	var ttlName  = ttlNode.selectSingleNode("name").nodeTypedValue;
+	g_servcatId = ttlNode.selectSingleNode("ancestor::servcat").getAttribute("id");
+	g_psrhObjXml = initXml("psearch_"+ g_servcatId.toLowerCase() +".xml");
+	
+	// 脱着要領表示のためg_hashStIvに値をputしておく
+	var ttlVa = ttlNode.getAttribute("variety");
+	var secId = ttlNode.selectSingleNode("ancestor::section").getAttribute("id");
+	var secVa = ttlNode.selectSingleNode("ancestor::section").getAttribute("variety");
+	g_hashStIv.put(g_nowTtlId+"_secId",secId);
+	g_hashStIv.put(g_nowTtlId+"_secVa",secVa);
+	g_hashStIv.put(g_nowTtlId+"_ttlVa",ttlVa);
+
+	g_hash.put(g_nowTtlId,ttlName);
+
+	var paraNode = ttlNode.selectNodes("para[@category='G']");
+	var paraIdArray = new Array();
+	for(k=0;k<paraNode.length;k++){ 
+		paraIdArray[k] = paraNode.item(k).getAttribute("id");
+		if(g_firstTid == null)  g_firstTid = g_nowTtlId;//from目次
+		var objXml = initXml(paraIdArray[k].toLowerCase() + ".xml", false, false);
+		if(objXml != null)  g_hashXml.put(paraIdArray[k],objXml);
+	}
+	g_hashParaIdArray.put(g_nowTtlId,paraIdArray);
+}
+
+function init(illustId){
+	var illust = g_compoXml.selectSingleNode("//illust[@id='"+ illustId +"']");
+	if(illust == null) {
+		alert("The illustration does not exist. [illustId=" + illustId + "]");
+		return;
+	}
+	var partsList = illust.selectNodes("parts");
+	var array = new Array();
+	for(i=0;i<partsList.length;i++){
+		var partsId = partsList.item(i).getAttribute("id");
+		array[i] = partsId;
+	}
+	//servcatIdからpserch_"servcatId".xmlファイルを特定、objを作る。
+	g_servcatId = illust.selectSingleNode("ancestor::servcat").getAttribute("id");
+	g_psrhObjXml = initXml("psearch_"+ g_servcatId.toLowerCase() +".xml");
+	g_psrhObjXml.setProperty("SelectionLanguage", "XPath");
+	
+	for (j=0; j<array.length; j++) {
+		var ttlNodeList = g_psrhObjXml.selectNodes("//ttl[child::parts[@id ='"+ array[j] +"'] and child::para[@category ='G']]");
+		for (var li=0; li<ttlNodeList.length; li++) {
+			var ttlNode = ttlNodeList.item(li);
+			if(ttlNode != null){
+				var ttlId = ttlNode.getAttribute("id");
+				var ttlVa = ttlNode.getAttribute("variety");
+				var secId = ttlNode.selectSingleNode("ancestor::section").getAttribute("id");
+				var secVa = ttlNode.selectSingleNode("ancestor::section").getAttribute("variety");
+				var tname = ttlNode.selectSingleNode("name").nodeTypedValue;
+				g_hash.put(ttlId,tname);
+				g_hashStIv.put(ttlId+"_secId",secId);
+				g_hashStIv.put(ttlId+"_secVa",secVa);
+				g_hashStIv.put(ttlId+"_ttlVa",ttlVa);
+
+				var paraNode = ttlNode.selectNodes("para[@category='G']");
+				var paraIdArray = new Array();
+				for (k=0; k<paraNode.length; k++) {
+					paraIdArray[k] = paraNode.item(k).getAttribute("id");
+					if(g_firstTid == null) g_firstTid = ttlId;
+					var objXml = initXml(paraIdArray[k].toLowerCase() + ".xml", false, false);
+					if (objXml != null) {
+						g_hashXml.put(paraIdArray[k],objXml);
+					}
+				}
+				g_hashParaIdArray.put(ttlId,paraIdArray);
+			}
+		}
+	}
+}
+
+// 脱着要領へリンク表示/非表示切り替え
+function setGlobalNaviLinks(paraId) {
+	global.remove.style.visibility=(hasSiblingParagraph(g_tocXml, paraId, "A"))?"visible":"hidden";
+}
+-->
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="global.html" scrolling="no" noresize frameborder="no">
+	<frameset cols="250, *" frameborder="yes" border="1" framespacing="1" bordercolor="#cccccc">
+		<frame name="local" src="local.html" frameborder="no" >
+		<frameset rows="30, *" frameborder="no" border="0" framespaceing="0">
+			<frame name="sts" src="status.html" frameborder="no" scrolling="auto">
+			<frame name="contents" src="contents.html" frameborder="no">
+		</frameset>
+	</frameset>
+</frameset>
+<noframes>
+	<body>Please use a browser that supports frames</body>
+</noframes>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- $Id: gen_frame.html,v 1.21 2003/10/06 02:07:19 takeo Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - General Paragraph</title>
+
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/style.js"></script>
+<script src="../../js/memo.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script language="javascript">
+//var g_paraId         = "X32100000000001";  // for test
+//var g_paraId         = "X32100000000006";  // for test
+//var g_paraId         = "X32100004000038";  // for test
+var g_tocXml         = initXml("toc_rpr.xml");
+var g_paraId         = getParameterValue("parag");
+if (g_paraId==null) g_paraId="";
+var g_bp             = getParameterValue("bp");
+var g_bd             = getParameterValue("bd");
+var g_xmlfile        = g_paraId.toLowerCase() + ".xml";
+var g_objXml         = initXml(g_xmlfile,false,false);
+var g_category       = "";
+if (g_objXml!=null) {
+	var cat = g_objXml.selectSingleNode("//para/@category");
+	if (cat!=null) g_category = cat.nodeTypedValue;
+}
+var g_objLocalXsl    = null;
+var g_objContentsXsl = null;
+if (g_category=="M"||g_category=="N") {
+	g_objLocalXsl    = initXsl("../../xsl/rmv/local.xsl");
+	g_objContentsXsl = initXsl("../../xsl/rmv/through.xsl");
+} else {
+	g_objLocalXsl    = initXsl("../../xsl/toc/local.xsl");
+	g_objContentsXsl = initXsl("../../xsl/toc/contents.xsl");
+}
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="gen_global.html" scrolling="no" noresize frameborder="no">
+	<frameset cols="222, *" frameborder="yes" border="1" framespacing="1" bordercolor="#cccccc">
+		<frame name="local" src="gen_local.html" frameborder="no" >
+		<frameset rows="30, *" frameborder="no" border="0" framespaceing="0">
+			<frame name="sts" src="gen_status.html" frameborder="no" scrolling="auto">
+			<frame name="contents" src="gen_contents.html" frameborder="no">
+		</frameset>
+	</frameset>
+</frameset>
+<noframes>
+	<body>Please use a browser that supports frames</body>
+</noframes>
+</html>

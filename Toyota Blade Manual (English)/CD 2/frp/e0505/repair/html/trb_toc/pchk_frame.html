@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- $Id: pchk_frame.html,v 1.15 2003/06/11 06:56:54 szg Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Pre-check</title>
+
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/style.js"></script>
+<script src="../../js/memo.js"></script>
+<script language="javascript">
+var g_hash = new Hashtable();
+var g_contentsXsl   = initXsl("../../xsl/toc/contents.xsl");
+var args = window.dialogArguments;
+var g_objXml = args[0];
+var g_tocObjXml = args[1];
+var g_ttlId = g_objXml.selectSingleNode("//ttl").getAttribute("id");
+g_tocObjXml.setProperty("SelectionLanguage", "XPath");
+var g_pchkParaList = g_tocObjXml.selectSingleNode("//ttl[@id='"+g_ttlId+"']").selectNodes("para[@category='D']");
+for(i=0;i<g_pchkParaList.length;i++){
+	var paraName = g_pchkParaList.item(i).selectSingleNode("name").nodeTypedValue;
+	var paraId = g_pchkParaList.item(i).getAttribute('id');
+	g_hash.put(paraId,paraName);
+}
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="pchk_global.html" scrolling="no" noresize frameborder="no">
+	<frameset cols="250, *" frameborder="yes" border="1" framespacing="1" bordercolor="#cccccc">
+		<frame name="local" src="pchk_local.html" frameborder="no" >
+		<frameset rows="30, *" frameborder="no" border="0" framespaceing="0">
+			<frame name="sts" src="about:blank" frameborder="no" scrolling="no">
+			<frame name="contents" src="about:blank" frameborder="no">
+		</frameset>
+	</frameset>
+</frameset>
+<noframes>
+	<body>Please use a browser that supports frames</body>
+</noframes>
+</html>

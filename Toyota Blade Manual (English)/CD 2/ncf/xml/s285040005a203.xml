@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740007c SYSTEM "grph_ent/a4740007c.png" NDATA png>
+
+<!ENTITY T040005A203 SYSTEM "t285040005a203.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T040005A203S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T040005A203" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Tire &amp; Disc Wheel</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>205/55R16 89V size tires &amp; 16× 6 <SUP>1</SUP>/<SUB>2</SUB>J size aluminum wheels have been adopted on all models.</PTXT></ITEM>
+<ITEM><PTXT>Exclusive center ornaments have been provided on the aluminum wheels.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740007c" WIDTH = "6.903in" HEIGHT = "3.194in" />
+</FIGURE>
+<SPEC ID = "T040005A203X01" INDSW = "OFF">
+<TITLE>Disc Wheel Dimensions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "7" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "11%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "11%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "11%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "11%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "7" COLNAME = "7" COLWIDTH = "16%"/>
+<THEAD VALIGN = "MIDDLE">
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A: Rim width</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>B: Rim diameter</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>C:P.C.D.</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>D: Hub diameter</PTXT></ENTRY>
+<ENTRY COLNAME = "6"><PTXT>E: Bolt hole diameter</PTXT></ENTRY>
+<ENTRY COLNAME = "7"><PTXT>F: Offset</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" ALIGN = "CENTER"><PTXT>16×6<SUP> 1</SUP>/<SUB>2</SUB>J Aluminum [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>165</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>405.6</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>114.3</PTXT></ENTRY>
+<ENTRY COLNAME = "5" ALIGN = "CENTER"><PTXT>60</PTXT></ENTRY>
+<ENTRY COLNAME = "6" ALIGN = "CENTER"><PTXT>19</PTXT></ENTRY>
+<ENTRY COLNAME = "7" ALIGN = "CENTER"><PTXT>45</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>

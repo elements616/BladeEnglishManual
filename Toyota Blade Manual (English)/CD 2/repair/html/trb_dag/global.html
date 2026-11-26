@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- $Id: global.html,v 1.38 2003/07/18 09:51:35 miya Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Diagnosis Procedure</title>
+
+
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+<!--
+//
+// グローバルナビ各種リンクの表示／非表示設定
+//
+//
+function init() {
+  var enableCaution = false;
+	var enableIspdata = false;
+	if (parent.g_tocXml && parent.g_paraId) {
+		enableCaution = parent.hasSiblingParagraph(parent.g_tocXml, parent.g_paraId, "L");
+		enableIspdata = parent.hasSiblingParagraph(parent.g_tocXml, parent.g_paraId, "U");
+	}
+	this.caution.style.visibility=(enableCaution)?"visible":"hidden";
+	this.ispdata.style.visibility=(enableIspdata)?"visible":"hidden";
+	var pprXml = parent.initXml("ppr_"+parent.g_paraId+".xml",false,false);
+	if(pprXml == null) ppr.style.visibility="hidden";
+}
+
+//「準備品」クリック時
+function switchPreparation(){
+	var paraId = parent.g_paraId ;
+	if( paraId == null )  return; 
+	var args = new Array(paraId);
+	parent.setDisplayArgs(args );
+	//準備品を画面で表示する
+	parent.openDialog("ppr", "ppr_frame.html");
+}
+
+//
+// 印刷リンク, 準備品リンククリック時の処理
+//
+function setPopupArguments(type, url) {
+	if( parent.g_cttXml == null ) return;
+	parent.setDisplaySource(parent.g_cttXml);
+	if(type == "print" || type == "tprint"){
+		parent.setDisplayArgs(parent.g_args);
+	} else 	if(type == "attention" || type == "checkdata" || type == "precheck"){
+		parent.setDisplayArgs(parent.g_tocXml);
+	} else	if (type == "guide") {
+		parent.setDisplayArgs(parent.getParameterValue("term"));
+	}
+	parent.openDialog(type, url);
+}
+-->
+</script>
+</head>
+<body onLoad="init();" onunload="parent.deleteResultFile();">
+<form>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td colspan="2" class="top"></td>
+	</tr>
+	<tr>
+		<td colspan="2" height="4"></td>
+	</tr>
+	<tr>
+		<td>
+			<table border="0" cellspacing="0" cellpadding="0" width="175">
+				<tr valign="middle"> 
+					<td width="10"><br></td>
+					<td align="right" width="15">
+						<img id="left" src="../../img/tab_on_l.png" width="15">
+					</td>
+					<td id="content" width="80" class="tab-ac" onClick="parent.switchTag(this.document, 'content', 'through', 'left', 'middle', 'right'); parent.local.init(); parent.contents.init();">Procedure</td>
+					<td>
+						<img id="middle" src="../../img/tab_on2_r.png" width="15">
+					</td>
+					<td id="through" width="80" class="tab-non" onClick="parent.switchTag(this.document, 'through', 'content', 'left', 'middle', 'right'); parent.display(parent.g_cttXml, parent.g_tclXsl, parent.local.disp, null); parent.display(parent.g_cttXml, parent.g_tctXsl, parent.contents.disp, null); parent.hiliteTopLink(parent.local.document); parent.contents.location.hash='ctop';parent.loadMemoData (parent.contents.document,parent.REPAIR); parent.Frame.rows='30, 0, *'; parent.scantool.closeTest();">Procedure Run-through</td>
+					<td align="left" width="15">
+						<img id="right" src="../../img/tab_on_r.png" width="15">
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td align="right">
+			<table cellpadding="1" cellspacing="0" border="0" >
+				<tr>
+					<td width="5"><br></td>
+					<td>
+						<a id="caution" class="button" href="#" onClick="setPopupArguments('attention', '../trb_toc/atten_frame.html')">Precautions</a>
+						<a id="ispdata" class="button" href="#" onClick="setPopupArguments('checkdata', '../trb_toc/cdata_frame.html')">Inspection Data</a>
+						<a id="tecnote" class="button" href="#" onClick="setPopupArguments('guide', 'guide_frame.html')">Technical Description</a>
+						<a id="ppr" class="button" href="#" onClick="switchPreparation()">Preparation</a>
+						<!--この行は改行禁止--><a id="prt" class="button" href="#" onClick="parent.printHistoryFrame();" style="visibility: visible; display: inline">Print</a><a id="trt" class="button" href="#" onClick="parent.printFrame(parent.sts.disp.innerHTML,parent.contents.disp.innerHTML,'Print Diagnosis Procedure');" style="visibility: hidden; display: none">Print</a>
+					</td>
+					<td width="30"><br></td>
+					<td>
+						<a class="button" href="javascript:parent.backTocPage(parent.g_bp, parent.g_bd)">Go to Contents Screen</a>
+						<a class="button" href="javascript:parent.openNewWindow('../index.html')">Show in Separate Window</a>
+						<a class="button" href="javascript:parent.setTermValue('../index.html', parent.getParameterValue('term'))" target="_top">To Function Selection</a>
+					</td>
+					<td width="5"><br/></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

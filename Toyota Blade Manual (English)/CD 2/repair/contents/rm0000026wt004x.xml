@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_74WIJ_T00FO" variety="T00FO">
+<name>EFI System (2GR-FE)</name>
+<para id="RM0000026WT004X" category="C" type-id="8012W" name-id="066NK-00" from="200708">
+<dtccode>P0037/29</dtccode>
+<dtcname>O2 Sensor Heater Performance DeteriorationB1S2</dtcname>
+<dtccode>P0038/29</dtccode>
+<dtcname>O2 Sensor Heater OvercurrentB1S2</dtcname>
+<dtccode>P0057/27</dtccode>
+<dtcname>O2 Sensor Heater Performance DeteriorationB2S2</dtcname>
+<dtccode>P0058/27</dtccode>
+<dtcname>O2 Sensor Heater OvercurrentB2S2</dtcname>
+<subpara id="RM0000026WT004X_01" type-id="31" category="03" proc-id="RM0550J___0000D2Y00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>A three-way catalytic converter is used to efficiently purify the CO, HC and NOx in the exhaust gas. This three-way catalytic converter functions most efficiently near the stoichiometric air-fuel ratio. For this reason, CO, HC and NOx cannot be efficiently purified unless the engine is accurately controlled near the stoichiometric air-fuel ratio. The oxygen sensor is installed for the purpose of this control. The oxygen sensor has the characteristic of outputting a voltage proportional to the air-fuel ratio, and the engine control computer controls the air-fuel ratio based on that voltage. The heated oxygen sensor has a heater that warms the zirconia element. The heater is controlled by the engine control computer, and current flows to the heater to prevent the oxygen sensor from cooling and becoming unable to operate accurately when the exhaust gas temperature is low (such as when the intake air volume is small).</ptxt>
+<figure>
+<graphic graphicname="A115539J02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.9685897     in"/>
+<colspec colnum="02" colname="C02" colwidth="3.231049     in"/>
+<colspec colnum="03" colname="C03" colwidth="2.947281     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+<item>
+<ptxt>Malfunction Duration</ptxt>
+</item>
+<item>
+<ptxt>Others</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0037/29</ptxt>
+<ptxt>(B1S2)</ptxt>
+<ptxt>P0057/27</ptxt>
+<ptxt>(B2S2)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>Oxygen sensor heater operating (after engine start) and battery voltage 10.5V or more</ptxt>
+</item>
+<item>
+<ptxt>Oxygen sensor heater current 0.3A or less</ptxt>
+</item>
+<item>
+<ptxt>0.5 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Oxygen Sensor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0038/29</ptxt>
+<ptxt>(B1S2)</ptxt>
+<ptxt>P0058/27</ptxt>
+<ptxt>(B2S2)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>Oxygen sensor heater operating</ptxt>
+</item>
+<item>
+<ptxt>Oxygen sensor heater current 3.5A or more</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Oxygen Sensor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000026WT004X_02" type-id="32" category="03" proc-id="RM0550J___0000D2Z00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A176825J01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000026WT004X_03" type-id="51" category="05" proc-id="RM0550J___0000D3000000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Using TaSCAN, read the Freeze Frame Data. Freeze Frame Data records part of the engine operating conditions when a malfunction occurs, and this information is useful for troubleshooting.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000026WT004X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000026WT004X_04_0010" proc-id="RM0550J___0000D3500000">
+<scantool type="1"/>
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and read the DTCs following the SST (TaSCAN) screen display.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.10in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0037/29 and P0038/29 output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0057/27 and P0058/27 output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026WT004X_04_0001" fin="false">A</down>
+<right ref="RM0000026WT004X_04_0008" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026WT004X_04_0001" proc-id="RM0550J___0000D3100000">
+<testtitle>Inspect Oxygen Sensor (B1S2)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the oxygen sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A176826J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the oxygen sensor connector terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COLSPEC0" colwidth="1.38in"/>
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1(HT1B) - 2(+B)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 16Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1(HT1B) - 4(E2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026WT004X_04_0004" fin="true">NG</down>
+<right ref="RM0000026WT004X_04_0002" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026WT004X_04_0008" proc-id="RM0550J___0000D3400000">
+<testtitle>Inspect Oxygen Sensor NO.2 (B2S2)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the oxygen sensor NO.2 connector.</ptxt>
+<figure>
+<graphic graphicname="A111968J06" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the oxygen sensor NO.2 connector terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COLSPEC1" colwidth="1.38in"/>
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1(HT2B) - 2(+B)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 16Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1(HT2B) - 4(E2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026WT004X_04_0002" fin="false">OK</down>
+<right ref="RM0000026WT004X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026WT004X_04_0002" proc-id="RM0550J___0000D3200000">
+<testtitle>Inspect Wire Harness and Connector (Power Source Circuit)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+<figure>
+<graphic graphicname="A176827J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the oxygen sensor connector terminals.</ptxt>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COLSPEC2" colwidth="1.38in"/>
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2 (+B) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COLSPEC2" colwidth="1.38in"/>
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2 (+B) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026WT004X_04_0003" fin="false">OK</down>
+<right ref="RM0000026WT004X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026WT004X_04_0003" proc-id="RM0550J___0000D3300000">
+<testtitle>Inspect Wire Harness and Connector (Engine Control Computer - Oxygen Sensor)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal. (see <xref label="Seep02" href="X39400000QV01SD"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="A176828J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="4.76in"/>
+<colspec colname="COL2" colwidth="1.15in"/>
+<colspec colname="COL3" colwidth="1.18in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A48(HT1B) -1(HT1B)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A47(HT2B) - 1(HT2B)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="4.76in"/>
+<colspec colname="COL2" colwidth="1.15in"/>
+<colspec colname="COL3" colwidth="1.18in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A48 (HT1B) and 1 (HT1B) - other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A47 (HT2B) and 1 (HT2B) - other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026WT004X_04_0006" fin="true">OK</down>
+<right ref="RM0000026WT004X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026WT004X_04_0004">
+<testtitle>Replace Oxygen Sensor (B1S2)<xref label="Seep01" href="RM0000020VY00EX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000026WT004X_04_0009">
+<testtitle>Replace Oxygen Sensor NO.2 (B2S2)<xref label="Seep01" href="RM0000020VY00EX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000026WT004X_04_0005">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000026WT004X_04_0006">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADB004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000026WT004X_04_0007">
+<testtitle>Inspect Power Supply Circuit</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

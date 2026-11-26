@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740087p SYSTEM "grph_ent/a4740087p.png" NDATA png>
+<!ENTITY a4740088p SYSTEM "grph_ent/a4740088p.png" NDATA png>
+
+<!ENTITY T010039A134 SYSTEM "t285010039a134.xml">
+<!ENTITY T010039A134A214 SYSTEM "t285010039a134a214.xml">
+<!ENTITY T010039A134A215 SYSTEM "t285010039a134a215.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010039A134S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010039A134" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Crankshaft</TITLE>
+<LIST1><ITEM><PTXT>By adopting an offset crank, in which the crankshaft centerline is offset from the cylinder bore centerline, the maximum combustion pressure can be transmitted efficiently. Also, friction loss is reduced by reducing piston side force, and thermal efficiency is improved by changes in piston speed, lowering fuel consumption.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T010039A134A214" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Reduction of Piston Side Force</TITLE>
+<LIST1><ITEM><PTXT>The maximum combustion pressure is efficiently transmitted to the crankshaft, and the thrust force acting on the piston during the combustion stroke is reduced to reduce friction loss.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740087p" WIDTH = "6.903in" HEIGHT = "3.389in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T010039A134A215" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Change in Piston Speed</TITLE>
+<LIST1><ITEM><PTXT>A region where the piston speed is slower occurs in the first half of the combustion stroke (Fig. 1). As a result, combustion takes place with the piston closer to top dead center, increasing combustion pressure and improving thermal efficiency (Fig. 2).</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740088p" WIDTH = "6.903in" HEIGHT = "2.944in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

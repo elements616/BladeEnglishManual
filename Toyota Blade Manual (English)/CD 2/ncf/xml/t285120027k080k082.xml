@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T120027K080K082" UPDATE = "ORIGINAL" LDUP = "22Jan2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Auto Leveling Operation</TITLE>
+<LIST1><ITEM><PTXT>The headlight leveling computer, which controls the auto leveling system, receives the vehicle speed signal and the vehicle height change signal from the height control sensor. Based on these signals, it calculates the change in pitch angle of the vehicle posture and drives the headlight leveling actuators according to the posture of the stopped vehicle to control the headlight beam axis.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4480081e" WIDTH = "6.903in" HEIGHT = "3.681in" />
+</FIGURE>
+<INDICATE ID = "T120027K080K082I01" INDSW = "OFF">
+<TITLE>Auto Leveling Control List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "20%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "54%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Vehicle Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Control Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Control Content</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When Headlights ON</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Headlight ON Control</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>When the headlights are switched from OFF to ON, the headlight leveling actuators are driven according to the current pitch angle change while the vehicle is stopped.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Vehicle Stopped</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Stopped Control</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>With the headlights ON, the headlight leveling actuators are driven according to the pitch angle at which a change in vehicle posture is detected.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>

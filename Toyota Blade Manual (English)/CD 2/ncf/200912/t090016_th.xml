@@ -1,0 +1,1965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740001b SYSTEM "../xml/grph_ent/a4740001b.png" NDATA png>
+<!ENTITY a4740002b SYSTEM "../xml/grph_ent/a4740002b.png" NDATA png>
+<!ENTITY a4740013b SYSTEM "../xml/grph_ent/a4740013b.png" NDATA png>
+<!ENTITY s5420102b SYSTEM "../xml/grph_ent/s5420102b.png" NDATA png>
+<!ENTITY a4740004b SYSTEM "../xml/grph_ent/a4740004b.png" NDATA png>
+<!ENTITY a4740005b SYSTEM "../xml/grph_ent/a4740005b.png" NDATA png>
+<!ENTITY a4740006b SYSTEM "../xml/grph_ent/a4740006b.png" NDATA png>
+<!ENTITY a4740007b SYSTEM "../xml/grph_ent/a4740007b.png" NDATA png>
+<!ENTITY a4740008b SYSTEM "../xml/grph_ent/a4740008b.png" NDATA png>
+<!ENTITY a4740009b SYSTEM "../xml/grph_ent/a4740009b.png" NDATA png>
+<!ENTITY a4740010b SYSTEM "../xml/grph_ent/a4740010b.png" NDATA png>
+<!ENTITY a4740011b SYSTEM "../xml/grph_ent/a4740011b.png" NDATA png>
+<!ENTITY a4740049b SYSTEM "../xml/grph_ent/a4740049b.png" NDATA png>
+<!ENTITY a4740050b SYSTEM "../xml/grph_ent/a4740050b.png" NDATA png>
+<!ENTITY a4740012b SYSTEM "../xml/grph_ent/a4740012b.png" NDATA png>
+
+<!ENTITY T100001K211 SYSTEM "../xml/t478100001k211.xml">
+<!ENTITY T100001K211K595 SYSTEM "../xml/t478100001k211k595.xml">
+<!ENTITY T100001K211K596 SYSTEM "../xml/t478100001k211k596.xml">
+<!ENTITY T100001K211K597 SYSTEM "../xml/t478100001k211k597.xml">
+<!ENTITY T100001K633 SYSTEM "../xml/t478100001k633.xml">
+<!ENTITY T100001K376 SYSTEM "../xml/t478100001k376.xml">
+<!ENTITY T100001K376K782 SYSTEM "../xml/t478100001k376k782.xml">
+<!ENTITY T100001A500 SYSTEM "../xml/t478100001a500.xml">
+<!ENTITY T100001A500A384 SYSTEM "../xml/t478100001a500a384.xml">
+<!ENTITY T100001A500K786 SYSTEM "../xml/t478100001a500k786.xml">
+<!ENTITY T100001A500A742 SYSTEM "../xml/t478100001a500a742.xml">
+<!ENTITY T100001A500A748 SYSTEM "../xml/t478100001a500a748.xml">
+<!ENTITY T100001A500A743 SYSTEM "../xml/t478100001a500a743.xml">
+<!ENTITY T100001A500C088 SYSTEM "../xml/t478100001a500c088.xml">
+<!ENTITY T100001A500A402 SYSTEM "../xml/t478100001a500a402.xml">
+<!ENTITY T100001A500A745 SYSTEM "../xml/t478100001a500a745.xml">
+<!ENTITY T100001A500A746 SYSTEM "../xml/t478100001a500a746.xml">
+<!ENTITY T100001A500A747 SYSTEM "../xml/t478100001a500a747.xml">
+<!ENTITY T100001A720K803 SYSTEM "../xml/t478100001a720k803.xml">
+<!ENTITY T100001A720K081 SYSTEM "../xml/t478100001a720k081.xml">
+<!ENTITY T100001A720K158 SYSTEM "../xml/t478100001a720k158.xml">
+<!ENTITY T100001A720K268 SYSTEM "../xml/t478100001a720k268.xml">
+<!ENTITY T100001A720 SYSTEM "../xml/t478100001a720.xml">
+<!ENTITY T100001A720R01 SYSTEM "../xml/t478100001a720r01.xml">
+<!ENTITY T100001A720K803R01 SYSTEM "../xml/t478100001a720k803r01.xml">
+<!ENTITY T100001A720K081R02 SYSTEM "../xml/t478100001a720k081r02.xml">
+<!ENTITY T100001A720K158R03 SYSTEM "../xml/t478100001a720k158r03.xml">
+<!ENTITY T100001A720K268R04 SYSTEM "../xml/t478100001a720k268r04.xml">
+<!ENTITY T100001K633R02 SYSTEM "../xml/t478100001k633r02.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T100001A720S"><SCTITLE/>
+
+<PARA INFOID = "T100001A720" UPDATE = "ORIGINAL" LDUP = "24Dec2004"     INFOTYPE = "PARTS" INDSW = "ON"     SELECT = "Vehicle Outline: Comfort and Usability">
+<TITLE>Electronic Key</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The design of the electronic key has been changed.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "s5420102b" WIDTH = "6.903in" HEIGHT = "3.181in" />
+</FIGURE>
+
+<MECA ID = "T100001A720K803" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Key Set Specifications</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The standard key set includes 2 electronic keys.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T100001A720K081" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Auto Power OFF</TITLE>
+<LIST1><ITEM><PTXT>Even if a button on the electronic key is held down, transmission of the weak radio waves stops after approximately 20 seconds.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T100001A720K158" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Identification Code Registration Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By registering the transponder ID code, electronic key ID code and transmitter identification code in the verification ECU, the system can accommodate the use of multiple electronic keys, etc. (For the methods of adding, rewriting, checking and prohibiting identification codes, refer to the Repair Manual.)</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T100001A720K268" UPDATE = "ORIGINAL" LDUP = "18Mar2004" INDSW = "OFF" MECATYPE = "GENERAL">
+<TITLE>Transmitter Operation Indicator Light</TITLE>
+<LIST1><ITEM><PTXT>The operation indicator light (LED) illuminates not only during button operation but also during communication (transmission) for ID verification, allowing the operating condition and battery depletion to be checked.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T100001K633S"><SCTITLE/>
+
+<PARA INFOID = "T100001K633" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Engine Switch</TITLE>
+<LIST1><ITEM><PTXT>The switch has a built-in indicator light, and the current power mode can be checked by its illumination state and color.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740013b" WIDTH = "6.917in" HEIGHT = "2.181in" />
+</FIGURE>
+<INDICATE ID = "T100001K633I01" INDSW = "OFF">
+<TITLE>Indicator Light Status List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "67%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Status</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Any of the following conditions is met</PTXT>
+<LIST1><ITEM><PTXT>Engine start completed</PTXT></ITEM>
+<ITEM><PTXT>Power (ACC and IG) OFF<HINTREF REFID = "H478100001K63301"/></PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Green</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Engine start standby<HINTREF     REFID = "H478100001K63302"/></PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Blinking (1-second interval)<HINTREF     REFID = "H478100001K63303"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Steering Lock Not Released</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Amber</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Power (ACC or IG) ON<HINTREF     REFID = "H478100001K63301"/></PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Blinking (2-second interval)<HINTREF     REFID = "H478100001K63304"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>System Malfunction</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478100001K63301">Brake OFF (stop light switch OFF)</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K63302">Shift position "P" or "N", key verification OK and brake ON (stop light switch ON)</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K63303">Blinking ends when 15 seconds have elapsed since blinking started, or when the power (ACC or IG) ON or engine start operation is performed again</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K63304">Blinking ends when the system recovers from the malfunction</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T100001K211S"><SCTITLE/>
+
+<PARA INFOID = "T100001K211" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Power Door Lock System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A power door lock system with a driver door key-linked door lock function, key lock-in prevention function, etc. is used.</PTXT></ITEM>
+<ITEM><PTXT>The door lock assembly reduces the number of parts while also giving consideration to theft prevention, by using a housing integrated with the protector, a cable connection with the door inside handle, direct connection between the door key cylinder and door lock, and integration of the actuator housing and protector.</PTXT></ITEM>
+<ITEM><PTXT>Grip type door outside handles are used for all doors, providing excellent operability.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T100001K211I01" INDSW = "OFF">
+<TITLE>Power Door Lock System Components</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740001b" WIDTH = "6.903in" HEIGHT = "6.250in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T100001K211I02" INDSW = "OFF">
+<TITLE>Power Door Lock System Main Component Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Main Body ECU (Instrument Panel Junction Block Assembly)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Receives signals from various switches and controls the entire power door lock system.</PTXT></ITEM>
+<ITEM><PTXT>Outputs lock/unlock signals to the door lock assemblies to drive the door lock control motors.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Door Lock Control Switch (for Manual Operation)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Outputs door lock/unlock request signals to the main body ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Door Courtesy Light Switches (All Doors)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Detects the opening and closing of each door.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Driver Door Lock Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Locks/unlocks the driver door by rotating the built-in driver door lock control motor forward/in reverse.</PTXT></ITEM>
+<ITEM><PTXT>Outputs door lock/unlock request signals to the main body ECU through the built-in door lock control switch (for key-linked operation).</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Door Lock Assemblies (Front Passenger/Rear RH/Rear LH)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Locks/unlocks each door by rotating the built-in door lock control motor forward/in reverse.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Back Door Lock Assembly (with Built-in Courtesy Light Switch)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1><ITEM><PTXT>Locks/unlocks the back door by driving the built-in back door lock control motor.</PTXT></ITEM>
+<ITEM><PTXT>Detects the opening and closing of the back door.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001K211I03" INDSW = "OFF">
+<TITLE>Power Door Lock System Wiring Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740002b" WIDTH = "6.903in" HEIGHT = "4.472in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T100001K211I04" INDSW = "OFF">
+<TITLE>Main Functions List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "37%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "62%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Main Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Outline</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Manual Lock &lt;Unlock&gt; Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Lock/unlock using the door lock control switch (for manual operation).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Door Key-linked Lock &lt;Unlock&gt; Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Lock/unlock by inserting the mechanical key into the driver door key cylinder.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Key Lock-in Prevention Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that does not lock the doors while the key is left in the cabin.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Door Lock Security Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that prevents unlocking with the door lock control switch (for manual operation) on the cabin side when the doors have been locked with the wireless function/smart function.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T100001K211K595" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Manual Lock &lt;Unlock&gt; Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the door lock control switch (for manual operation) in the master switch is operated to the lock &lt;unlock&gt; side, the driver side manual lock &lt;unlock&gt; switch signal is input to the main body ECU.</PTXT></ITEM>
+<ITEM><PTXT>On receiving this signal, the main body ECU applies current to all door lock control motors, rotating them to the lock &lt;unlock&gt; side.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T100001K211K596" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Door Key-linked Lock &lt;Unlock&gt; Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the mechanical key is inserted into the driver door key cylinder and turned to the lock &lt;unlock&gt; side, the door lock control switch (for key-linked operation) turns ON to the lock &lt;unlock&gt; side.</PTXT></ITEM>
+<ITEM><PTXT>As a result, the driver door key-linked lock &lt;unlock&gt; switch signal is sent to the main body ECU, and all doors are locked &lt;unlocked&gt; in the same way as with manual lock &lt;unlock&gt; operation.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T100001K211K597" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Key Lock-in Prevention Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the electronic key is in the cabin and a situation such as the following occurs, the main body ECU sends a door unlock request signal to the door lock control motor of each door.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Key Lock-in Prevention Function Operating Conditions</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When the driver (front passenger) manual switch is operated to the lock side with ACC ON or IG ON and the driver (front passenger) door open.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When the driver (front passenger) lock position changes from unlock to lock with ACC ON or IG ON and the driver (front passenger) door open.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>When the above operating conditions are met, the main body ECU drives each door lock control motor to the unlock side to unlock the doors.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+<BIND ID = "T100001K211B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T100001K633R02" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Engine Switch</TITLE>
+<LIST1><ITEM><PTXT>The switch has a built-in indicator light, and the current power mode can be checked by its illumination state and color.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740013b" WIDTH = "6.917in" HEIGHT = "2.181in" />
+</FIGURE>
+<INDICATE ID = "T100001K633R02I01" INDSW = "OFF">
+<TITLE>Indicator Light Status List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "67%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Status</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Any of the following conditions is met</PTXT>
+<LIST1><ITEM><PTXT>Engine start completed</PTXT></ITEM>
+<ITEM><PTXT>Power (ACC and IG) OFF<HINTREF REFID = "H478100001K633R0201"/></PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Green</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Engine start standby<HINTREF     REFID = "H478100001K633R0202"/></PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Blinking (1-second interval)<HINTREF     REFID = "H478100001K633R0203"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Steering Lock Not Released</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Amber</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Power (ACC or IG) ON<HINTREF     REFID = "H478100001K633R0201"/></PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Blinking (2-second interval)<HINTREF     REFID = "H478100001K633R0204"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>System Malfunction</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478100001K633R0201">Brake OFF (stop light switch OFF)</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K633R0202">Shift position "P" or "N", key verification OK and brake ON (stop light switch ON)</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K633R0203">Blinking ends when 15 seconds have elapsed since blinking started, or when the power (ACC or IG) ON or engine start operation is performed again</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K633R0204">Blinking ends when the system recovers from the malfunction</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+</PARA>
+</BIND>
+</SECTION>
+<SECTION SCID = "T100001K376S"><SCTITLE/>
+
+<PARA INFOID = "T100001K376" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Wireless Remote Control System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A wireless remote control system has been adopted, enabling remote locking/unlocking of all doors with the electronic key.</PTXT></ITEM>
+<ITEM><PTXT>An encrypted code has been adopted for the weak radio waves (identification code) used between the electronic key and the door control receiver for improved security.</PTXT></ITEM>
+<ITEM><PTXT>A customize function using the diagnostic tool (TaSCAN) enables adjustment and setting of various functions.<XREF     REFID = "S478150004T074"/>
+</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "s5420102b" WIDTH = "6.903in" HEIGHT = "3.181in" />
+</FIGURE>
+<INDICATE ID = "T100001K376I01" INDSW = "ON">
+<TITLE>List of Wireless Remote Control Main Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "66%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Function Outline</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Wireless Lock &amp; Unlock Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Pressing the lock/unlock button locks/unlocks all doors.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Wireless Security Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>After the Certification ECU receives the encrypted code transmitted from the electronic key via the door control receiver, it verifies the code, and when it recognizes the code as that of its own vehicle, door unlocking, etc. becomes possible.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>30-second Auto Lock Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>If the doors are left unlocked for approximately 30 seconds after being unlocked by pressing the unlock button, all doors are locked automatically to prevent the vehicle from being left unlocked.<HINTREF     REFID = "H478100001K37601"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Door Ajar Warning Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>If the lock button is pressed to lock the doors while any door is ajar or open, the wireless answer-back buzzer sounds for approximately 10 seconds to warn that a door has not been closed.<HINTREF     REFID = "H478100001K37602"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Answer-back [Buzzer Sounding &amp; Hazard Flashing] Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the doors are locked/unlocked using the wireless remote control, the wireless answer-back buzzer sounds and the hazard warning lights flash 1 time(s) when locking and 2 time(s) when unlocking.<HINTREF     REFID = "H478100001K37603"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Illumination Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the doors are unlocked by the wireless remote control with the room light switch in the "DOOR" position, the room light, etc. illuminates for approximately 15 seconds.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478100001K37601">If any door is opened or all doors are locked within 30 seconds, the 30-second auto lock function is cancelled.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K37602">The buzzer stops sounding when the power is turned ON (ACC/IG ON), all doors are closed, the door lock control switch (key-linked) is operated, or the doors are unlocked by the wireless/smart unlock function.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K37603">The answer-back function also operates when locking is performed by the 30-second auto lock function.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+<INDICATE ID = "T100001K376I02" INDSW = "OFF">
+<TITLE>Wireless Remote Control System Wiring Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740004b" WIDTH = "6.903in" HEIGHT = "5.875in" />
+</FIGURE>
+</INDICATE>
+
+<MECA ID = "T100001K376K782" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Wireless Door Lock (Unlock) Operation</TITLE>
+<LIST1><ITEM><PTXT>When the lock button 〈unlock button〉 is pressed, the vehicle identification code and function code are transmitted by weak radio waves. When the door control receiver receives these, it sends them to the Certification ECU.</PTXT></ITEM>
+<ITEM><PTXT>The Certification ECU verifies the identification code and determines the function code; when it recognizes that the identification code matches that of its own vehicle and that the function code is door lock/〈unlock〉, it outputs this as code data to the Main Body ECU.</PTXT></ITEM>
+<ITEM><PTXT>When the Main Body ECU receives the lock 〈unlock〉 signal, it turns ON the lock relay 〈unlock relay〉 and locks 〈unlocks〉 all doors, in the same way as manual lock 〈unlock〉 operation of the power door lock system.<HINTREF     REFID = "H478100001K376K78201"/></PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478100001K376K78201">When the Main Body ECU receives the door lock position switch OFF 〈ON〉 state signal from each door lock assembly and confirms lock 〈unlock〉, it performs answer-back output. For door unlock operation, if no door is opened (door courtesy light switch ON) for approximately 30 seconds, all doors are locked (auto lock control starts).</PTXT></ITEM></LIST1></HINT></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T100001A500S"><SCTITLE/>
+
+<PARA INFOID = "T100001A500" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Smart Entry &amp; Start System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The Smart Entry &amp; Start System is used to dramatically improve convenience and to showcase advanced technology.</PTXT></ITEM>
+<ITEM><PTXT>The Smart Entry &amp; Start System allows various controls to be performed without handling the electronic key, based on the result of electronic ID code verification by wireless communication between the electronic key and the vehicle.</PTXT></ITEM>
+<ITEM><PTXT>A warning function is provided to warn in advance of several problems that can occur when the user becomes less conscious of carrying the electronic key, providing excellent usability.</PTXT></ITEM>
+<ITEM><PTXT>A key cancel function is provided so that the user can stop the Smart Entry &amp; Start System control as desired. When canceled, Smart Entry &amp; Start System control stops, but door lock/unlock by the wireless door lock/unlock function does not stop.</PTXT></ITEM>
+<ITEM><PTXT>An identification code registration function is used, allowing multiple electronic keys to be used.</PTXT></ITEM></LIST1>
+<CAUTION>
+<LIST1><ITEM><PTXT>The electronic key emits weak radio waves. Persons using a pacemaker should check the instruction manual of the pacemaker before use.</PTXT></ITEM>
+<ITEM><PTXT>Persons using an implanted cardiac pacemaker or implanted defibrillator should not come within approximately 22cm of the outside antennas or inside antennas. The radio waves may affect the operation of implanted cardiac pacemakers and implanted defibrillators.</PTXT></ITEM>
+<ITEM><PTXT>The smart function does not operate under the following conditions.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When smart control has been canceled with the key cancel function</PTXT></ITEM>
+<ITEM><PTXT>When the electronic key battery is depleted (the indicator light does not blink/illuminate when any button on the key is pressed)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></CAUTION>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Door Lock Functions of the Smart Entry &amp; Start System</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Main Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function Outline</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Door Unlock Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that unlocks the doors (back door) when the front door outside handle is gripped (the back door opener switch is pressed) and outside verification is OK.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Door Lock Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that locks the doors (back door) when the lock switch (back door lock switch) is pressed and outside verification is OK.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Ignition Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that changes the power mode and starts the engine through a combined operation of the engine switch and brake pedal when inside verification is OK (when the key battery is depleted, hold the electronic key in front of the engine switch).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Illumination Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that illuminates each illumination light when outside verification is OK.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Warning Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that sounds warnings to prevent situations in which the user becomes unaware of the electronic key.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Function to Prevent Locking the Electronic Key in the Cabin</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that prevents the key from being locked in by sounding the wireless answer-back buzzer when an attempt is made to lock the doors with the Smart Entry &amp; Start System door lock function while the electronic key is in the cabin.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Power Saving Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that extends the interval of or stops the periodic transmission of request signals when the vehicle is not used for a long period, preventing battery discharge.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Key Cancel Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that stops Smart Entry &amp; Start System control when a certain operation is performed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Immobiliser Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that permits the engine to be started only with pre-registered electronic keys, preventing unauthorized engine starting.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<INDICATE ID = "T100001A500I01" INDSW = "OFF">
+<TITLE>Smart Entry &amp; Start System Components 1</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740005b" WIDTH = "6.903in" HEIGHT = "4.278in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T100001A500I02" INDSW = "OFF">
+<TITLE>Smart Entry &amp; Start System Main Component Functions 1</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "76%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Identifies and verifies the ID code from the door control receiver and sends signals to each ECU according to the function to be performed. (Controls the entire system)</PTXT></ITEM>
+<ITEM><PTXT>Sends request codes to each oscillator.</PTXT></ITEM>
+<ITEM><PTXT>Performs encrypted code communication with the ID code box during ignition operation.</PTXT></ITEM>
+<ITEM><PTXT>Sounds the wireless answer-back buzzer during answer-back. [Answer-back Function]</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Engine ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Receives the engine start request signal from the main body ECU and starts the engine.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Indoor Antenna (Front/Rear)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Transmits the request code from the certification ECU, forming a detection area in the cabin.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Door Control Receiver</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Receives the Smart Entry &amp; Start System transmission code/wireless transmission code from the electronic key and sends it to the certification ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Front Door Outside Handle</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Transmits the request signal from the outside oscillator via the built-in antenna, forming a detection area.</PTXT></ITEM>
+<ITEM><PTXT>Outputs the lock switch condition (ON/OFF) to the certification ECU. [Door Lock Function]</PTXT></ITEM>
+<ITEM><PTXT>Has a built-in touch sensor. [Door Unlock Function]</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Luggage Room Inside/Outside Antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Transmits the request code from the certification ECU, forming detection areas inside/outside the luggage room.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Back Door Lock/Opener Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sends the back door lock switch ON signal to the certification ECU.</PTXT></ITEM>
+<ITEM><PTXT>Sends the back door opener switch ON signal to the certification ECU via the main body ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Wireless Answer-back Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sounds during answer-back or warnings under the control of the certification ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500I03" INDSW = "OFF">
+<TITLE>Smart Entry &amp; Start System Components 2</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740006b" WIDTH = "6.903in" HEIGHT = "3.778in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T100001A500I04" INDSW = "OFF">
+<TITLE>Smart Entry &amp; Start System Main Component Functions 2</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "24%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "75%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Main Body ECU (Instrument Panel Junction Block Assembly)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Drives the power source (ACC,IG1,IG2) relays.</PTXT></ITEM>
+<ITEM><PTXT>Sends the engine start request signal to the engine ECU.</PTXT></ITEM>
+<ITEM><PTXT>Sends the ON/OFF signals of each door courtesy light switch to the certification ECU, etc. via LIN communication.</PTXT></ITEM>
+<ITEM><PTXT>Confirms completion of all-door lock/unlock operation and drives the flasher relay. [Answer-back Function]</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Flasher Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Blinks the hazard warning lights during answer-back under the control of the main body ECU. [Answer-back Function]</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>IG1,IG2,ACC Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Turns ON/OFF under the control of the main body ECU, supplying power to each system.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Engine Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Sends the engine start, IG ON and ACC ON signals to the main body ECU.</PTXT></ITEM>
+<ITEM><PTXT>Receives the ID code when the electronic key battery is depleted and sends it to the certification ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>ID Code Box</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Receives commands from the certification ECU and sends immobiliser set/unset commands to the engine ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Shift Lock ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects the shift position "P" condition.</PTXT></ITEM>
+<ITEM><PTXT>Sends the shift position signal to the main body ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Steering Lock ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Receives the "steering unlock" signal from the certification ECU and releases the steering lock.</PTXT></ITEM>
+<ITEM><PTXT>Receives the "steering lock" signal from the certification ECU and locks the steering.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Combination Meter [Built-in Meter ECU]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Provides warnings (meter information display and single-tone buzzer in the meter) according to operation command signals from the certification ECU.</PTXT></ITEM>
+<ITEM><PTXT>Displays information when a malfunction occurs in the Smart Entry &amp; Start System.</PTXT></ITEM>
+<ITEM><PTXT>Sends the vehicle speed signal to the main body ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Stop Light Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects that the brake is depressed (ON) and outputs it to the main body ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T100001A500A384" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Smart Entry &amp; Start System Outline</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Based on the result of ID code verification between the electronic key and the vehicle, etc., the certification ECU communicates with the main body ECU, ID code box, steering lock ECU, etc. via LIN communication to control the system.</PTXT></ITEM>
+<ITEM><PTXT>Depending on the function to be performed, the certification ECU outputs request signals to the inside/outside antennas to perform "ID code verification with the electronic key" and "position confirmation of the electronic key (or key holder)". Then, when it receives the ID code including the response code from the electronic key that received this request signal, it performs identification/verification and sends operation command signals to each ECU according to the function.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740007b" WIDTH = "6.903in" HEIGHT = "7.556in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T100001A500K786" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Smart Entry &amp; Start System Detection Areas</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Request signals sent from the certification ECU are transmitted from the antennas via each oscillator, forming the electronic key detection areas. The detection areas formed by the outside antennas and the luggage room outside antenna extend approximately 0.7 to 1.0m from the front door outside handles and the center of the rear bumper.</PTXT></ITEM>
+<ITEM><PTXT>The detection area of the outside antennas is formed by request signals transmitted periodically approximately every 0.25 seconds while parked (engine switch OFF, doors locked<HINTREF     REFID = "H478100001A500K78601"/>), detecting the approach of the electrical key (key holder). In addition, when locking the doors, it is formed when the lock switch is ON, detecting that the electronic key (key holder) is outside the cabin.</PTXT></ITEM>
+<ITEM><PTXT>The detection area of the luggage room outside antenna is formed when the back door lock/opener switch is ON.</PTXT></ITEM>
+<ITEM><PTXT>The cabin detection area is formed when the driver/front passenger door is opened or closed, when the brake is depressed, when the power mode changes, when the conditions for various warnings are met, and when the lock switch is ON, detecting that the electronic key (key holder) is in the cabin.</PTXT></ITEM>
+<ITEM><PTXT>Using the customize function, either "engine can be started in the detection area of the indoor antennas (front and rear)" or "engine can be started in the detection areas of the indoor antennas (front and rear) and the luggage room inside antenna" can be selected.<XREF     REFID = "S478150004T079"/>
+</PTXT></ITEM></LIST1>
+<CAUTION>
+<LIST1><ITEM><PTXT>Depending on the vehicle body shape, there are places where the electronic key does not operate easily.</PTXT></ITEM>
+<ITEM><PTXT>Even if the electronic key is within the outside key detection area, it may not be detected properly if it is near the windows, door outside handles, center of the rear bumper, etc.</PTXT></ITEM>
+<ITEM><PTXT>Even if the electronic key is within the cabin key detection area, it may not be detected properly if it is on the instrument panel, in the glove box or on the floor.</PTXT></ITEM>
+<ITEM><PTXT>Depending on how the electronic key is held, it may not operate easily.</PTXT></ITEM>
+<ITEM><PTXT>Under the following conditions, the electronic key detection area may become narrower or the electronic key may not be detected properly.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When the electronic key battery is depleted</PTXT></ITEM>
+<ITEM><PTXT>When there are facilities that generate strong radio waves nearby, such as a TV tower, power plant, broadcasting station or gas station</PTXT></ITEM>
+<ITEM><PTXT>When carrying the electronic key together with a wireless communication device such as a radio transceiver or cellular phone</PTXT></ITEM>
+<ITEM><PTXT>When the electronic key is covered by or in contact with a metal object</PTXT></ITEM>
+<ITEM><PTXT>When a radio wave type keyless entry system is being operated nearby</PTXT></ITEM>
+<ITEM><PTXT>When placed near equipment that generates high voltage or noise</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></CAUTION>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740008b" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T100001A500A742" UPDATE = "ORIGINAL" LDUP = "11Mar2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Ignition Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When carrying the electronic key in the cabin detection area, the power mode can be changed by pressing the engine switch in combination with brake operation. In addition, if the electronic key battery is depleted, the same function operates by touching the key ornament to the engine switch and operating the brake pedal and engine switch within 5 seconds after a beep sounds.</PTXT></ITEM>
+<ITEM><PTXT>When the engine switch is pressed without depressing the brake pedal, the power mode changes in the order OFF → ACC → IG ON → OFF → (repeat).</PTXT></ITEM>
+<ITEM><PTXT>When the engine switch is pressed while depressing the brake pedal with the shift position in "P" or "N", the engine starts.</PTXT></ITEM>
+<ITEM><PTXT>When the vehicle is stopped and the engine switch is pressed with the shift position in "P" while the engine is running, the power mode changes to OFF. When the shift position is in any position other than "P", it changes to ACC.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740009b" WIDTH = "6.903in" HEIGHT = "4.069in" />
+</FIGURE>
+<LIST1><TITLE>Emergency Start Control</TITLE>
+<ITEM><PTXT>If the engine start conditions are not met due to a malfunction such as a blown stop light fuse or a faulty stop light switch, the engine can be started by moving the shift position to "P", setting the power mode to "ACC" with the engine switch, then depressing the brake pedal and pressing and holding the engine switch for approximately 15 seconds or more.</PTXT></ITEM></LIST1>
+<CAUTION>
+<LIST1><ITEM><PTXT>Do not start the engine using the above method except in an emergency.</PTXT></ITEM></LIST1></CAUTION></MECA>
+
+<MECA ID = "T100001A500A748" UPDATE = "ORIGINAL" LDUP = "11Mar2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Warning Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Because of its convenience, the Smart Entry &amp; Start System may cause the driver to become unaware of the key. As a result, problems such as "not noticing that the electronic key has been taken outside the cabin (taken out by a passenger)", "the driver exiting the vehicle with the engine running" and "the driver exiting the vehicle with the shift position in a position other than "P"" may occur.</PTXT></ITEM>
+<ITEM><PTXT>The warning function prevents these problems by warning the driver and passengers with the meter display, the built-in single-tone buzzer in the meter and the wireless answer-back buzzer before such situations arise.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740010b" WIDTH = "6.903in" HEIGHT = "4.375in" />
+</FIGURE>
+<INDICATE ID = "T100001A500A748I01" INDSW = "OFF">
+<TITLE>Exit Warning with Shift Position Other Than "P" (Power Left ON)</TITLE>
+<PTXT>Assumed situation: The driver opened the door with the shift position in a position other than "P" and attempted to exit.</PTXT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "50%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Meaning of Warning</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>Prevention of sudden start, vehicle theft and roll-away</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Start Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>All of the following conditions are met</PTXT>
+<LIST1><ITEM><PTXT>Shift position other than "P"</PTXT></ITEM>
+<ITEM><PTXT>Power ON (ACC or IG ON)</PTXT></ITEM>
+<ITEM><PTXT>Driver door "open"</PTXT></ITEM>
+<ITEM><PTXT>No vehicle speed</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Details</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Single-tone buzzer in meter</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Sounds continuously (beep) when detected</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Warning Stop Conditions</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Any of the following conditions is met</PTXT>
+<LIST1><ITEM><PTXT>Shift position "P"</PTXT></ITEM>
+<ITEM><PTXT>Power OFF (ACC and IG OFF)</PTXT></ITEM>
+<ITEM><PTXT>Driver door "closed"</PTXT></ITEM>
+<ITEM><PTXT>Vehicle speed present</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<PTXT>Assumed situation: The driver then took the key out, closed the door and attempted to leave the vehicle.</PTXT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "50%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Meaning of Warning</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>Prevention of sudden start, vehicle theft and roll-away</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Start Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>All of the following conditions are met</PTXT>
+<LIST1><ITEM><PTXT>Shift position other than "P"</PTXT></ITEM>
+<ITEM><PTXT>Power ON (ACC or IG ON)</PTXT></ITEM>
+<ITEM><PTXT>Driver door "open" → "closed"</PTXT></ITEM>
+<ITEM><PTXT>No vehicle speed</PTXT></ITEM>
+<ITEM><PTXT>No electronic key in the cabin (inside verification NG)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" CONSPIC = "0"><PTXT>Warning Details</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Single-tone buzzer in meter</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Sounds continuously (beep) when detected</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Wireless Answer-back Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Sounds continuously (beep) when detected</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Multi-information Display</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>"Shift to P" and "Key not detected" are displayed alternately</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2"><PTXT>Warning Stop Conditions</PTXT>
+<PTXT></PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Electronic key in the cabin</PTXT>
+<PTXT>(Inside verification OK)</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>"Wireless answer-back buzzer" stops sounding</PTXT></ITEM>
+<ITEM><PTXT>"Single-tone buzzer in meter" stops sounding</PTXT></ITEM>
+<ITEM><PTXT>Only "Shift to P" is displayed on the multi-information display</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Vehicle speed present</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>"Wireless answer-back buzzer" stops sounding</PTXT></ITEM>
+<ITEM><PTXT>"Single-tone buzzer in meter" stops sounding</PTXT></ITEM>
+<ITEM><PTXT>Only "Key not detected" is displayed on the multi-information display</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Power OFF (ACC and IG OFF)</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>All warnings stop</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A748I02" INDSW = "OFF">
+<TITLE>Electronic Key Reminder Warning</TITLE>
+<PTXT>Assumed situation (1): The driver opened the driver door with the shift position in "P" and ACC ON and attempted to leave the vehicle.</PTXT>
+<PTXT>Assumed situation (2): The driver opened the driver door with the steering lock "unlocked" and attempted to leave the vehicle.</PTXT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "50%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Meaning of Warning</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>Vehicle theft prevention</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Start Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>Either of the following conditions (1) or (2) is met</PTXT>
+<LIST1><ITEM><PTXT>(1) ACC ON (IG OFF → ACC ON) &amp; driver door "open"</PTXT></ITEM>
+<ITEM><PTXT>(2) Power OFF (ACC and IG OFF) &amp; steering lock "unlocked" &amp; driver door "open"</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Details</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Single-tone buzzer in meter</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Sounds intermittently (beep, beep, beep...) when detected</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Warning Stop Conditions</PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Either of the following conditions (1) or (2) is met</PTXT>
+<LIST1><ITEM><PTXT>(1) Warning stops when IG ON or driver door "closed"</PTXT></ITEM>
+<ITEM><PTXT>(2) Warning stops when power OFF (ACC and IG OFF) &amp; steering lock "locked"</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A748I03" INDSW = "OFF">
+<TITLE>Exit Warning with Shift Position "P" and Power Left ON</TITLE>
+<PTXT>Assumed situation: With the shift position in "P", the driver took the electronic key out, opened and closed the driver door and attempted to leave the vehicle.</PTXT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "50%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Meaning of Warning</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>Prevention of vehicle theft, inability to restart the engine and battery discharge</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Start Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>All of the following conditions are met</PTXT>
+<LIST1><ITEM><PTXT>Shift position "P"</PTXT></ITEM>
+<ITEM><PTXT>Power ON (ACC or IG ON)</PTXT></ITEM>
+<ITEM><PTXT>Driver door "open" → "closed"</PTXT></ITEM>
+<ITEM><PTXT>No electronic key in the cabin (inside verification NG)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" CONSPIC = "0"><PTXT>Warning Details</PTXT>
+<PTXT></PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Single-tone buzzer in meter</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sounds 1 time (beep) when detected</PTXT>
+<PTXT>(If inside verification remains NG, sounds 1 time again when driving first starts)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Wireless Answer-back Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sounds 3 times (beep, beep, beep) when detected</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Multi-information Display</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>"Key not detected" is displayed</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Warning Stop Conditions</PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>All warnings stop when any of the following conditions is met</PTXT>
+<LIST1><ITEM><PTXT>Power OFF (ACC and IG OFF)</PTXT></ITEM>
+<ITEM><PTXT>Electronic key in the cabin (inside verification OK)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<PTXT>Assumed situation: The driver then pressed the lock switch on the door outside handle to perform smart door lock.</PTXT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "50%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Meaning of Warning</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>Prevention of vehicle theft and battery discharge</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Start Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>All of the following conditions are met</PTXT>
+<LIST1><ITEM><PTXT>Shift position "P"</PTXT></ITEM>
+<ITEM><PTXT>Power ON (ACC or IG ON)</PTXT></ITEM>
+<ITEM><PTXT>All doors "closed"</PTXT></ITEM>
+<ITEM><PTXT>Electronic key outside the cabin (outside verification OK)</PTXT></ITEM>
+<ITEM><PTXT>Door handle lock switch ON</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" CONSPIC = "0"><PTXT>Warning Details</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Wireless Answer-back Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sounds for 2 seconds (long beep) when detected</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Multi-information Display</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>"Key not detected" continues to be displayed<HINTREF     REFID = "H478100001A500A74801"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Warning Stop Conditions</PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>"Wireless answer-back buzzer" stops sounding when any of the following conditions is met</PTXT>
+<LIST1><ITEM><PTXT>Power OFF (ACC and IG OFF) &amp; no electronic key outside the cabin (outside verification NG)</PTXT></ITEM>
+<ITEM><PTXT>Electronic key in the cabin (inside verification OK) &amp; no electronic key outside the vehicle (outside verification NG)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478100001A500A74801">Assumed situation: The display ends when the warning stop conditions are met for when, with the shift position in "P", the driver took the electronic key out, opened and closed the driver door and attempted to leave the vehicle</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A748I04" INDSW = "OFF">
+<TITLE>Smart Door Ajar Warning</TITLE>
+<PTXT>Assumed situation: Smart door lock was attempted with one of the vehicle doors "open".</PTXT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "50%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Meaning of Warning</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>Vehicle theft prevention</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Start Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>All of the following conditions are met</PTXT>
+<LIST1><ITEM><PTXT>Power OFF (ACC and IG OFF)</PTXT></ITEM>
+<ITEM><PTXT>Any door "open"</PTXT></ITEM>
+<ITEM><PTXT>Smart door lock operation performed</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Details</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Wireless Answer-back Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sounds continuously (beep) when detected</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Warning Stop Conditions</PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>"Wireless answer-back buzzer" stops sounding when any of the following conditions is met</PTXT>
+<LIST1><ITEM><PTXT>Power ON (ACC or IG ON)</PTXT></ITEM>
+<ITEM><PTXT>All doors "closed"</PTXT></ITEM>
+<ITEM><PTXT>Wireless unlock operation performed</PTXT></ITEM>
+<ITEM><PTXT>Smart door unlock operation performed</PTXT></ITEM>
+<ITEM><PTXT>10 seconds elapsed after the warning started</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A748I05" INDSW = "OFF">
+<TITLE>Passenger Key Take-out Warning</TITLE>
+<PTXT>Assumed situation: A passenger took the electronic key out with the power ON.</PTXT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "50%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Meaning of Warning</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>Prevention of inability to restart</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Start Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>All of the following conditions are met</PTXT>
+<LIST1><ITEM><PTXT>Power ON (ACC or IG ON)</PTXT></ITEM>
+<ITEM><PTXT>Door other than the driver door "open" → "closed"</PTXT></ITEM>
+<ITEM><PTXT>No vehicle speed</PTXT></ITEM>
+<ITEM><PTXT>No electronic key in the cabin (inside verification NG)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" CONSPIC = "0"><PTXT>Warning Details</PTXT>
+<PTXT></PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Single-tone buzzer in meter</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sounds 1 time (beep) when detected</PTXT>
+<PTXT>(If inside verification remains NG, sounds 1 time again when driving first starts)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Wireless Answer-back Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sounds 3 times (beep, beep, beep) when detected</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Multi-information Display</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>"Key not detected" is displayed</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Warning Stop Conditions</PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>All warnings stop when any of the following conditions is met</PTXT>
+<LIST1><ITEM><PTXT>Power OFF (ACC and IG OFF)</PTXT></ITEM>
+<ITEM><PTXT>Electronic key in the cabin (inside verification OK)</PTXT></ITEM>
+<ITEM><PTXT>Vehicle speed present</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A748I06" INDSW = "OFF">
+<TITLE>Electronic Key Out of Area Warning</TITLE>
+<PTXT>Assumed situation: An attempt was made to start the engine or turn the power ON with no electronic key in the cabin or with the electronic key battery depleted.</PTXT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "50%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Meaning of Warning</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>Prevention of user confusion</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Start Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>All of the following conditions are met</PTXT>
+<LIST1><ITEM><PTXT>Engine switch ON</PTXT></ITEM>
+<ITEM><PTXT>No electronic key in the cabin (inside verification NG)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" CONSPIC = "0"><PTXT>Warning Details</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Single-tone buzzer in meter</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sounds 1 time (beep) when detected</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2"><PTXT>Multi-information Display</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>"Key not detected" is displayed for a maximum of 8 seconds<HINTREF     REFID = "H478100001A500A74802"/></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478100001A500A74802">Turns off automatically when 8 seconds have elapsed after the warning started, or, if inside verification is OK within 8 seconds after the warning started, turns off as soon as the key is detected.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A748I07" INDSW = "OFF">
+<TITLE>Electronic Key Left Behind Warning</TITLE>
+<PTXT>Assumed situation: The driver exited with the electronic key in the cabin and pressed the door lock switch to perform smart door lock.</PTXT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "50%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Meaning of Warning</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>Prevention of vehicle theft due to the electronic key being left behind</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Start Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>All of the following conditions are met</PTXT>
+<LIST1><ITEM><PTXT>Power OFF (ACC and IG OFF)</PTXT></ITEM>
+<ITEM><PTXT>All doors "closed"</PTXT></ITEM>
+<ITEM><PTXT>Door handle lock switch ON</PTXT></ITEM>
+<ITEM><PTXT>Electronic key in the cabin (inside verification OK)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Details</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Wireless Answer-back Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sounds for 2 seconds (long beep) when detected</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A748I08" INDSW = "OFF">
+<TITLE>Electronic Key Battery Low Warning</TITLE>
+<PTXT>Assumed situation: The vehicle was driven with an electronic key whose battery was low.</PTXT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "50%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Meaning of Warning</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>Convenience function</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Start Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>All of the following conditions are met</PTXT>
+<LIST1><ITEM><PTXT>IG ON → OFF after IG ON has continued for 20 minutes or more</PTXT></ITEM>
+<ITEM><PTXT>Electronic key battery is low</PTXT></ITEM>
+<ITEM><PTXT>Electronic key in the cabin (inside verification OK)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" CONSPIC = "0"><PTXT>Warning Details</PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Single-tone buzzer in meter</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sounds 1 time (beep) when detected</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2"><PTXT>Multi-information Display</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>"Key battery low" is displayed</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A748I09" INDSW = "OFF">
+<TITLE>Steering Lock Not Released Warning</TITLE>
+<LIST1><ITEM><PTXT>Assumed situation: The steering lock is caught in the steering and cannot be released.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "50%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Meaning of Warning</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>Convenience function</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Start Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>When the steering lock cannot be released even after the steering unlock operation has been performed for a certain period, and the engine cannot be started</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" CONSPIC = "0"><PTXT>Warning Details</PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Indicator Light</PTXT>
+<PTXT>(Engine switch)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Blinks green at 1-second intervals for 15 seconds</PTXT>
+<PTXT>(Turns off automatically after 15 seconds)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2"><PTXT>Multi-information Display</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>"Steering lock not released" is displayed for 15 seconds</PTXT>
+<PTXT>(Turns off automatically after being displayed for 15 seconds)</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A748I10" INDSW = "OFF">
+<TITLE>Steering Lock Malfunction Warning</TITLE>
+<LIST1><ITEM><PTXT>Assumed situation: A malfunction in the steering lock ECU is detected.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "50%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Meaning of Warning</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>Malfunction detection</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Start Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>When an internal malfunction of the steering lock ECU is detected</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" CONSPIC = "0"><PTXT>Warning Details</PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Indicator Light</PTXT>
+<PTXT>(Engine switch)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Blinks amber at 2-second intervals</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Multi-information Display</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>"Check steering lock system" is displayed</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Warning Stop Conditions</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>When the internal malfunction of the steering lock ECU is cleared</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A748I11" INDSW = "OFF">
+<TITLE>Power Source Malfunction Warning</TITLE>
+<LIST1><ITEM><PTXT>Assumed situation: A malfunction in the main body ECU is detected.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "50%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Meaning of Warning</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>Malfunction detection</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Start Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>When an internal malfunction of the main body ECU is detected</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Details</PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Indicator Light</PTXT>
+<PTXT>(Engine switch)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Blinks amber at 2-second intervals</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Warning Stop Conditions</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>When the internal malfunction of the main body ECU is cleared</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T100001A500A743" UPDATE = "ORIGINAL" LDUP = "11Mar2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Power Saving Function</TITLE>
+<INDICATE ID = "T100001A500A743I01" INDSW = "OFF">
+<TITLE>Vehicle Battery Power Saving Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Because the Smart Entry &amp; Start System forms the outside detection area by periodically transmitting request signals every 0.25 seconds, the vehicle battery may become discharged if the vehicle is left unused for a long time. Therefore, the following controls are provided to prevent battery discharge.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>If there is no response from the electronic key for 5 days or more, the periodic transmission interval of request signals is extended to 0.75 seconds.</PTXT></ITEM>
+<ITEM><PTXT>If there is no response from the electronic key for 14 days or more, periodic transmission of request signals (formation of the detection area) is stopped.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A743I02" INDSW = "OFF">
+<TITLE>Electronic Key Battery Power Saving Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Even if the lock or unlock button on the electronic key is held down, transmission stops automatically after approximately 20 seconds.</PTXT></ITEM>
+<ITEM><PTXT>If the electronic key is left in the outside detection area for a long time, the electronic key continues to transmit the ID code to the indoor tuner, which may discharge the electronic key battery. Therefore, the following controls are provided to prevent battery discharge.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>If the electronic key is in the outside detection area for 10 minutes or more, periodic transmission of request signals (formation of the detection area) is stopped.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A743I03" INDSW = "OFF">
+<TITLE>Return Conditions</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When any of the following conditions is met, the system returns from power saving control to normal Smart Entry &amp; Start System control.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Door lock/unlock by the wireless remote control function.</PTXT></ITEM>
+<ITEM><PTXT>Door lock/unlock by inserting the mechanical key into the driver door key cylinder.</PTXT></ITEM>
+<ITEM><PTXT>Door lock by the smart door lock function.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T100001A500C088" UPDATE = "ORIGINAL" LDUP = "11Jul2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Key Cancel Function</TITLE>
+<LIST1><ITEM><PTXT>A key cancel function<HINTREF     REFID = "H478100001A500C08801"/> has been provided, which allows the following Smart Entry &amp; Start System controls to be canceled by performing a specific operation. For details on the operating procedure, etc., refer to the customize function.<XREF     REFID = "T478150004T079T097"/>
+</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Cancelable Items List</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Smart Entry &amp; Start System Control</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Warning Function</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Function to Prevent Locking the Electronic Key in the Cabin</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Smart Back Door Open Control</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478100001A500C08801">When the key function is canceled, the doors can be locked/unlocked using the wireless remote control function or the mechanical key. In addition, the engine can be started by touching the ornament of the electronic key to the front of the engine switch.</PTXT></ITEM></LIST1></HINT></MECA>
+
+<MECA ID = "T100001A500A402" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Immobiliser Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Setting the Immobiliser System</TITLE>
+<ITEM><PTXT>When the power is changed from ON (ACC or IG ON) to OFF (ACC and IG OFF), the security indicator light in the air conditioning control panel blinks continuously at an interval of approximately 2.0 seconds (0.2 seconds ON, ON/1.8 seconds OFF), indicating that the immobiliser system is set. The security indicator light is controlled by the certification ECU.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Unsetting the Immobiliser System</TITLE>
+<ITEM><PTXT>Only when the IDs match as a result of verification<HINTREF REFID = "H478100001A500A40201"/> is the immobiliser system released; when the engine switch is pushed, the security indicator light goes off and engine starting is permitted.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478100001A500A40201">When the key battery is depleted, touching the electronic key to the engine switch causes electromagnetic waves to be generated (a magnetic field to be formed) around the engine switch. This causes the electronic key to transmit its ID code, and the certification ECU verifies it against the registered ID codes.</PTXT></ITEM></LIST1></HINT>
+<INDICATE ID = "T100001A500A402I01" INDSW = "OFF">
+<TITLE>Security Indicator Light and Engine Immobiliser System Status Table</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "39%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "60%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Security Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Engine Immobiliser System Status</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" ALIGN = "CENTER"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Unset (engine start standby)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" ALIGN = "CENTER"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Set complete (immobiliser control in progress)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" ALIGN = "CENTER"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>In registration mode</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740011b" WIDTH = "6.903in" HEIGHT = "2.653in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T100001A500A745" UPDATE = "ORIGINAL" LDUP = "24Dec2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Door Unlock Operation</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740049b" WIDTH = "6.903in" HEIGHT = "2.389in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Driver/Front Passenger Door Unlock</TITLE>
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "7%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "56%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>№</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sends request signals to the outside antennas.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Front door outside handle (with built-in outside antenna/touch sensor)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Transmits the request signal. → Forms the outside detection area.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Electronic Key</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>When the electronic key (or key holder) enters the outside detection area and receives the request signal, it returns the ID code including the response code.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Door Control Receiver</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives the ID code from the electronic key and sends it to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Identifies and verifies the ID code. The touch sensor in the door outside handle for which verification was OK is activated, and the system enters door unlock standby mode<HINTREF     REFID = "H478100001A500A74501"/>.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Door outside handle (with built-in outside antenna/touch sensor)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>When the touch sensor detects that the door outside handle has been gripped in door unlock standby mode<HINTREF REFID = "H478100001A500A74501"/>, it sends a touch sensor ON signal to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sends the door unlock control signal to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Performs door unlock (door lock position switch ON).<HINTREF     REFID = "H478100001A500A74502"/></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478100001A500A74501">From the door unlock standby state until there is input to the touch sensor, outside verification is performed every 3 seconds, and if verification is OK, the system again waits for touch sensor input. If there is no input for approximately 10 minutes or more, verification stops and the system enters standby; door unlock operation becomes possible again (standby canceled) by the signals from lock operation with the wireless remote control function or door lock control switch (for manual operation), or from door key-linked lock/unlock.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001A500A74502">When the main body ECU confirms door unlock, it performs answer-back output. In addition, if no door is opened (courtesy light switch ON) for approximately 30 seconds, a door lock signal is output to all doors to lock them.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE>
+<INDICATE ID = "T100001A500A745I01" INDSW = "OFF">
+<TITLE>Back Door Unlock</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "7%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "56%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>№</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>8,9</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>With the power OFF (ACC and IG OFF), all doors locked and all doors closed, press the back door opener switch while carrying the electronic key. → The main body ECU recognizes back door opener switch ON and sends the back door opener switch ON signal to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sends the request signal to the luggage room outside antenna.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>11</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Luggage Room Outside Antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Transmits the request signal. → Forms the luggage room outside detection area.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Electronic Key</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>When it receives the request signal, it returns the ID code including the response code.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Door Control Receiver</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives the ID code from the electronic key and sends it to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Identifies and verifies the ID code, and if it matches, sends a back door unlock command to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>12</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After back door unlock is performed, the back door opens.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T100001A500A746" UPDATE = "ORIGINAL" LDUP = "24Dec2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Door Lock Operation</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740050b" WIDTH = "6.903in" HEIGHT = "3.125in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "7%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "56%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>№</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Exit the vehicle carrying the electronic key, and with the power OFF (ACC and IG OFF) and all doors closed, press the lock switch of the front door/back door. <HINTREF     REFID = "H478100001A500A74601"/> → The certification ECU recognizes that the lock switch of the corresponding door is ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sends request signals to each antenna.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Outside antenna/luggage room outside antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>Transmits the request signal.</PTXT>
+<PTXT></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Indoor antenna (front/rear)/luggage room inside antenna</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Electronic Key</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>When it receives the request signal, it returns the ID code including the response code.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Door Control Receiver</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives the ID code from the electronic key and sends it to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Identifies and verifies the ID code, and if outside verification is OK, inside verification is NG and all doors are closed, sends the door lock control signal to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Performs door lock (door lock position switch OFF)/back door lock.<HINTREF     REFID = "H478100001A500A74602"/></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H478100001A500A74601">If the door lock switch is pressed with the electronic key left in the cabin, the warning function operates as "electronic key left behind" (the wireless answer-back buzzer sounds for 2 seconds). In addition, even if the electronic key is outside the cabin, the "electronic key left behind" warning function may operate if the door lock switch is pressed with the key held close to the door. Even if outside verification is OK and inside verification is NG, if any courtesy light switch is ON, the door is determined to be ajar and the warning function operates.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001A500A74602">When the main body ECU confirms door lock, it performs answer-back output. Assuming that the user may pull the door outside handle after locking to confirm the lock, a standby period of approximately 3 seconds is provided after the driver door is locked before outside verification for door unlock is performed.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></MECA>
+
+<MECA ID = "T100001A500A747" UPDATE = "ORIGINAL" LDUP = "28Jun2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Ignition Operation</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740012b" WIDTH = "6.903in" HEIGHT = "4.569in" />
+</FIGURE>
+<INDICATE ID = "T100001A500A747I01" INDSW = "OFF">
+<TITLE>Power ON (ACC or IG ON) Operation Description</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>The driver enters the vehicle carrying the electronic key and presses the engine switch without depressing the brake pedal. → The main body ECU recognizes engine switch ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Sends a key ID code verification request to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Generates request signals and sends them to the indoor antennas (front/rear)/luggage room inside antenna.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Indoor antenna (front/rear)/luggage room inside antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Transmits the request signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Electronic Key</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>When it receives the request signal, it returns the ID code including the response code.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Door Control Receiver</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives the ID code from the electronic key and sends it to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Identifies and verifies the ID code, and if inside verification is OK, sends a key verification OK response to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>If the power is OFF, turns the ACC relay ON; if already ACC ON, turns the IG1 and IG2 relays ON. Illuminates the indicator on the engine switch in amber.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>9</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>After confirming that the power mode has changed, if the steering lock is locked, sends a steering unlock command to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Receives the steering unlock command and supplies power to the steering lock motor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>11</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Steering Lock ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>After confirming through the ID code box that the certification ECU is an authorized ECU, unlocks the steering. Sends unlock completion information to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>14</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the steering lock is "unlocked", sends an immobiliser unset command to the ID code box.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>15</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>ID Code Box</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the certification ECU is an authorized ECU, sends an immobiliser unset command to the engine ECU.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A747I02" INDSW = "OFF">
+<TITLE>Engine Start Operation Description</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>16</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>The driver enters the vehicle carrying the electronic key and depresses the brake pedal.</PTXT>
+<PTXT>→ The main body ECU recognizes stop light switch ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Sends a key ID code verification request to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Generates request signals and sends them to the indoor antennas (front/rear)/luggage room inside antenna.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Indoor antenna (front/rear)/luggage room inside antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Transmits the request signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Electronic Key</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>When it receives the request signal, it returns the ID code including the response code.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Door Control Receiver</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives the ID code from the electronic key and sends it to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Identifies and verifies the ID code, and if inside verification is OK, sends a key verification OK response to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>9</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Because the brake pedal is depressed, illuminates the indicator on the engine switch in green.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Press the engine switch. → The main body ECU recognizes engine switch ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After turning the ACC relay ON, turns the IG1 and IG2 relays ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>After confirming that the power mode has changed, if the steering lock is locked, sends a steering unlock command to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Receives the steering unlock command and supplies power to the steering lock motor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>11</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "2"><PTXT>Steering Lock ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "2"><PTXT>After confirming through the ID code box that the certification ECU is an authorized ECU, unlocks the steering. Sends unlock completion information to the certification ECU and main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>13</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>14</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the steering lock is "unlocked", sends an immobiliser unset command to the ID code box.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>15</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>ID Code Box</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the certification ECU is an authorized ECU, sends an immobiliser unset command to the engine ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>17</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>After confirming that the steering lock is "unlocked", sends a start request signal to the engine ECU. After receiving the engine speed, turns off the indicator on the engine switch.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>9</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A747I03" INDSW = "OFF">
+<TITLE>Power ON (ACC or IG ON) Operation (When Electronic Key Battery Is Depleted) Description</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>16</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>The driver enters the vehicle carrying the electronic key and depresses the brake pedal.</PTXT>
+<PTXT>→ The main body ECU recognizes stop light switch ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Sends a key ID code verification request to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Generates request signals and sends them to the indoor antennas (front/rear)/luggage room inside antenna.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Indoor antenna (front/rear)/luggage room inside antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Transmits the request signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>18</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Because there is no response from the electronic key, drives the immobiliser amplifier built into the engine switch.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>19</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Engine Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Radio waves for immobiliser communication are output from the immobiliser amplifier.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>20</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Electronic Key</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Touch the electronic key to the front of the engine switch.</PTXT>
+<PTXT>→ The electronic key receives the radio waves from the engine switch and outputs response radio waves.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>21</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Engine Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives the response radio waves from the electronic key and sends the electronic key ID code to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>Identifies and verifies the ID code from the electronic key, and if verification is OK, sends a key verification OK response to the main body ECU. At the same time, sends a buzzer sounding request signal to the meter ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>22</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Engine Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Move the electronic key away from the engine switch, release the brake pedal, and perform the engine switch ON operation.</PTXT>
+<PTXT>→ The main body ECU recognizes engine switch ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>If the power is OFF, turns the ACC relay ON; if already ACC ON, turns the IG1 and IG2 relays ON. Illuminates the indicator on the engine switch in amber.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>9</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>After confirming that the power mode has changed, if the steering lock is locked, sends a steering unlock command to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Receives the steering unlock command and supplies power to the steering lock motor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>11</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Steering Lock ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>After confirming through the ID code box that the certification ECU is an authorized ECU, unlocks the steering. Sends unlock completion information to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>14</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the steering lock is "unlocked", sends an immobiliser unset command to the ID code box.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>15</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>ID Code Box</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the certification ECU is an authorized ECU, sends an immobiliser unset command to the engine ECU.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A747I04" INDSW = "OFF">
+<TITLE>Engine Start (When Electronic Key Battery Is Depleted) Operation Description</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>16</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>The driver enters the vehicle carrying the electronic key and depresses the brake pedal.</PTXT>
+<PTXT>→ The main body ECU recognizes stop light switch ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Sends a key ID code verification request to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Generates request signals and sends them to the indoor antennas (front/rear)/luggage room inside antenna.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Indoor antenna (front/rear)/luggage room inside antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Transmits the request signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>18</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Because there is no response from the electronic key, drives the immobiliser amplifier built into the engine switch.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>19</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Engine Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Radio waves for immobiliser communication are output from the immobiliser amplifier.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>20</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Electronic Key</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Touch the electronic key to the front of the engine switch.</PTXT>
+<PTXT>→ The electronic key receives the radio waves from the engine switch and outputs response radio waves.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>21</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Engine Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives the response radio waves from the electronic key and sends the electronic key ID code to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>Identifies and verifies the ID code from the electronic key, and if verification is OK, sends a key verification OK response to the main body ECU. At the same time, sends a buzzer sounding request signal to the meter ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>22</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Engine Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Move the electronic key away from the engine switch and perform the engine switch ON operation.</PTXT>
+<PTXT>→ The main body ECU recognizes engine switch ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After turning the ACC relay ON, turns the IG1 and IG2 relays ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>After confirming that the power mode has changed, if the steering lock is locked, sends a steering unlock command to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Receives the steering unlock command and supplies power to the steering lock motor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>11</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "2"><PTXT>Steering Lock ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "2"><PTXT>After confirming through the ID code box that the certification ECU is an authorized ECU, unlocks the steering. Sends unlock completion information to the certification ECU and main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>13</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>14</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the steering lock is "unlocked", sends an immobiliser unset command to the ID code box.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>15</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>ID Code Box</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the certification ECU is an authorized ECU, sends an immobiliser unset command to the engine ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>17</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>After confirming that the steering lock is "unlocked", sends a start request signal to the engine ECU. After receiving the engine speed, turns off the indicator on the engine switch.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>9</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500A747I05" INDSW = "OFF">
+<TITLE>Engine Stop, Steering Lock and Immobiliser Set Operation Description</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>When the vehicle is stopped, move the shift position to "P" and press the engine switch.</PTXT>
+<PTXT>→ The main body ECU recognizes shift position "P", engine switch ON and a vehicle speed of 0 km/h.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1" CONSPIC = "0"><PTXT>The main body ECU controls the ACC relay, IG1 relay and IG2 relay OFF and turns off the indicator on the engine switch.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>9</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>14</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>The certification ECU recognizes power OFF and sends an immobiliser set command to the ID code box.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>15</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>ID Code Box</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After confirming that the certification ECU is an authorized ECU, sends an immobiliser set command to the engine ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>The driver opens the door.</PTXT>
+<PTXT>→ The certification ECU recognizes that the door is open. Sends a steering lock command to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Receives the steering unlock command and supplies power to the steering lock motor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>11</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "2"><PTXT>Steering Lock ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "2"><PTXT>After confirming through the ID code box that the certification ECU is an authorized ECU, locks the steering. Sends lock completion information to the certification ECU and main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>13</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+</PARA>
+<BIND ID = "T100001A500B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T100001A720R01" UPDATE = "ORIGINAL" LDUP = "24Dec2004"     INFOTYPE = "PARTS" INDSW = "ON"     SELECT = "Vehicle Outline: Comfort and Usability">
+<TITLE>Electronic Key</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The design of the electronic key has been changed.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "s5420102b" WIDTH = "6.903in" HEIGHT = "3.181in" />
+</FIGURE>
+
+<MECA ID = "T100001A720K803R01" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Key Set Specifications</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The standard key set includes 2 electronic keys.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T100001A720K081R02" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Auto Power OFF</TITLE>
+<LIST1><ITEM><PTXT>Even if a button on the electronic key is held down, transmission of the weak radio waves stops after approximately 20 seconds.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T100001A720K158R03" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Identification Code Registration Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By registering the transponder ID code, electronic key ID code and transmitter identification code in the verification ECU, the system can accommodate the use of multiple electronic keys, etc. (For the methods of adding, rewriting, checking and prohibiting identification codes, refer to the Repair Manual.)</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T100001A720K268R04" UPDATE = "ORIGINAL" LDUP = "18Mar2004" INDSW = "OFF" MECATYPE = "GENERAL">
+<TITLE>Transmitter Operation Indicator Light</TITLE>
+<LIST1><ITEM><PTXT>The operation indicator light (LED) illuminates not only during button operation but also during communication (transmission) for ID verification, allowing the operating condition and battery depletion to be checked.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+</BIND>
+</SECTION>
+</SCT>

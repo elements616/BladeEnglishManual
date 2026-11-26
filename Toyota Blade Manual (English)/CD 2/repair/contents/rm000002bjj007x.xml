@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1002B_S001H" variety="S001H">
+<name>Automatic Transaxle</name>
+<ttl id="1002B_S001H_74Y0X_T00H8" variety="T00H8">
+<name>Electronically Controlled Automatic Transaxle [ECT] (U660E)</name>
+<para id="RM000002BJJ007X" category="C" type-id="3031A" name-id="261IG-00" from="200708">
+<dtccode>P2769/64</dtccode>
+<dtcname>DSU/SL Solenoid Circuit (Low)</dtcname>
+<dtccode>P2770/64</dtccode>
+<dtcname>DSU/SL Solenoid Circuit (High)</dtcname>
+<subpara id="RM000002BJJ007X_01" type-id="33" category="03" proc-id="RM0550J___0000FS100000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>The transmission control computer controls the hydraulic pressure to the lock-up relay valve by turning the automatic transmission 3 way solenoid assembly (SL) ON or OFF, turning lock-up ON or OFF.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="0.93in"/>
+<colspec colname="COL2" colwidth="3.39in"/>
+<colspec colname="COL3" colwidth="2.76in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2769/64</ptxt>
+<ptxt>P2770/64</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Lock-up Operation Range</ptxt>
+</item>
+<item>
+<ptxt>Open or short in solenoid SL circuit</ptxt>
+</item>
+<item>
+<ptxt>-</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Transmission wire</ptxt>
+</item>
+<item>
+<ptxt>Automatic transmission 3 way solenoid assembly (SL)</ptxt>
+</item>
+<item>
+<ptxt>Transmission Control Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000002BJJ007X_02" type-id="32" category="03" proc-id="RM0550J___0000FS200000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C173978J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000002BJJ007X_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000002BJJ007X_05" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000002BJJ007X_05_0008" proc-id="RM0550J___0000FS300000">
+<testtitle>Inspect Transmission Wire (SL)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Remove the transmission control computer. (see <xref label="Seep01" href="RM0000024M9003X"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<figure>
+<graphic graphicname="C133212J19" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.01in"/>
+<colspec colname="COL2" colwidth="1.09in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>6 (SL) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 15Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000002BJJ007X_05_0011" fin="false">OK</down>
+<right ref="RM000002BJJ007X_05_0009" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002BJJ007X_05_0011" proc-id="RM0550J___0000HCN00000">
+<testtitle>Replace Transmission Control Computer Assembly</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>Replace the transmission control computer assembly. (see <xref label="Seep01" href="RM0000024M8003X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002BJJ007X_05_0013" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002BJJ007X_05_0013">
+<testtitle>A/T Unit Compensation<xref label="Seep01" href="RM000000OLY013X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002BJJ007X_05_0009" proc-id="RM0550J___0000FS400000">
+<testtitle>Inspect Transmission 3-way Solenoid Assembly (ATM) (SL)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the automatic transmission 3 way solenoid assembly (SL) connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), check the resistance between the terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.01in"/>
+<colspec colname="COL2" colwidth="1.09in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal 1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 15Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002BJJ007X_05_0010" fin="true">OK</down>
+<right ref="RM000002BJJ007X_05_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002BJJ007X_05_0010">
+<testtitle>Repair or Replace Transmission Wire<xref label="Seep01" href="RM000002BOQ004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002BJJ007X_05_0012">
+<testtitle>Replace transmission 3 way solenoid assembly (ATM) (SL)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

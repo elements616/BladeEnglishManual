@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002T_S000D" variety="S000D">
+<name>Other Electrical</name>
+<ttl id="1002T_S000D_742B1_T003C" variety="T003C">
+<name>ETC System</name>
+<para id="X394000010D00QD" category="D" type-id="3001B" name-id="73260-00" from="200612" to="200912">
+<name>How to Proceed with Troubleshooting</name>
+<subpara id="X394000010D00QD_z0" proc-id="RM0550J___0000B5K00000">
+<content5 releasenbr="1">
+<descript-diag>
+<descript-testgroup>
+<testtitle>Vehicle brought to workshop</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Customer Problem Analysis and Symptom Check</testtitle>
+<test1>
+<ptxt>Customer Problem Analysis Check Sheet (see <xref label="Seep01" href="X394000010E00PD"/>)</ptxt>
+<test2>
+<ptxt>When a customer complains of a problem with the ETC system, perform a customer problem analysis using the ETC check sheet.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>In the ETC system, toll payment is made by wireless communication. For this reason, it is necessary to carefully ask about the installation condition of the ETC on-board unit in the vehicle and the vehicle environment at that time.</ptxt>
+</item>
+<item>
+<ptxt>To find out the frequency of the problem, ask the customer how often they use ETC.</ptxt>
+</item>
+</list1>
+</atten4>
+</test2>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Check Toll Collection (ETC) Computer Assembly Startup</testtitle>
+<test1>
+<ptxt>Check Toll Collection (ETC) Computer Assembly Startup</ptxt>
+<test2>
+<ptxt>Turn ACC ON.</ptxt>
+</test2>
+<test2>
+<ptxt>Check that the green indicator and amber indicator illuminate for 5 seconds.</ptxt>
+</test2>
+<test2>
+<ptxt>Check that the startup check ends normally and the indicators go off.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If there is a malfunction in the toll collection (ETC) computer assembly, the amber indicator blinks, the multi-display voice gives the notification "Bong. A malfunction has occurred in the ETC. ETC cannot be used", and the JEITA standard error code is displayed on the multi-display.</ptxt>
+</item>
+<item>
+<ptxt>If the toll collection (ETC) computer assembly has not yet been set up, the toll collection (ETC) computer assembly announces by voice "Beep beep. Not set up.".</ptxt>
+</item>
+<item>
+<ptxt>When not set up, voice notifications from the toll collection (ETC) computer assembly cannot be given if it has been muted by the volume adjustment on the toll collection (ETC) computer assembly itself. Therefore, set the volume of the toll collection (ETC) computer assembly itself to "Volume 1" or higher before checking.</ptxt>
+</item>
+</list1>
+</atten4>
+</test2>
+</test1>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>No Abnormality</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Abnormal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>JEITA standard error code displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>Go to Symptom Chart: Start-up check cannot be performed even when ACC is turned ON (see <xref label="Seep02" href="RM000001USC001X"/>)</action-ci-right>
+<result>C</result>
+<action-ci-right>Go to DTC Chart (see <xref label="Seep03" href="RM000001US9001X"/>)</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Check Multi-display Screen Display</testtitle>
+<test1>
+<ptxt>Press the "Info G" button to display the information screen.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the ETC button is displayed on the multi-display.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ETC button displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ETC button not displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>Go to Symptom Chart: Cannot switch from HDD navigation system to ETC system setting screen (see <xref label="Seep14" href="RM000001USC001X"/>)</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Check ETC Card Insertion (Card Authentication)</testtitle>
+<test1>
+<ptxt>ETC Card Insertion Check</ptxt>
+<test2>
+<ptxt>Insert the ETC card.</ptxt>
+</test2>
+<test2>
+<ptxt>A "beep" is announced by the multi-vision voice, the green indicator starts blinking, and card authentication begins.</ptxt>
+</test2>
+<test2>
+<ptxt>Check that "Bong, ETC card has been inserted" is announced by the multi-vision voice and the green indicator illuminates.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If there is a problem with the ETC card, the orange indicator blinks, "Bong, card cannot be read, please check card" is announced by the multi-vision voice, and a JEITA unified error code is displayed on the multi-display.</ptxt>
+</item>
+<item>
+<ptxt>The warning sound of the toll collection (ETC) computer assembly continues until the card is removed.</ptxt>
+</item>
+</list1>
+</atten4>
+</test2>
+</test1>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>No code</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>JEITA standard error code displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>Go to DTC Chart (see <xref label="Seep04" href="RM000001US9001X"/>)</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Check Toll Collection (ETC) Computer Assembly Key Operation</testtitle>
+<test1>
+<ptxt>With the ETC card inserted, press the "History" key and check that "History 1, (usage history announced)" or "There is no usage history" is announced by voice.</ptxt>
+</test1>
+<test1>
+<ptxt>Press the volume key and check that the volume can be changed.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Key operation normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Cannot operate even when key is pressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>Replace the toll collection (ETC) computer assembly (see <xref label="Seep18" href="RM000002TPU001X"/>)</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Check ETC DTC</testtitle>
+<test1>
+<ptxt>Check ETC diagnosis mode 1 and mode 2 (see <xref label="Seep12" href="RM000000BY200NX"/>)</ptxt>
+<test2>
+<ptxt>Start diagnosis mode 1 and record the error log.</ptxt>
+</test2>
+<test2>
+<ptxt>Start diagnosis mode 2 and record the communication log.</ptxt>
+</test2>
+</test1>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>No code</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Cannot enter ETC diagnosis</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Diagnosis mode 1 code present</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Diagnosis mode 2 code present</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>D</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>Replace the toll collection (ETC) computer assembly (see <xref label="Seep19" href="RM000002TPU001X"/>)</action-ci-right>
+<result>C</result>
+<action-ci-right>Go to DTC Chart (see <xref label="Seep05" href="RM000001US9001X"/>)</action-ci-right>
+<result>D</result>
+<action-ci-right>Go to Diagnosis System (see <xref label="Seep08" href="RM000000BY200NX"/>)</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Service Inspection</testtitle>
+<atten4>
+<ptxt>For details of the procedure, refer to <xref label="Seep11" href="RM0000006XI02BX"/></ptxt>
+</atten4>
+<test1>
+<ptxt>AVC-LAN Connection Check</ptxt>
+<test2>
+<ptxt>Start diagnosis.</ptxt>
+</test2>
+<test2>
+<ptxt>On the service inspection screen, check that all connected devices are displayed.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL2" colwidth="3.01in"/>
+<colspec colname="COLSPEC0" align="center" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Part Name</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Device Name</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AVN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Toll Collection (ETC) Computer Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ETC</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Television camera controller (w/ intelligent parking assist system)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAMERA-C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+</test1>
+<test1>
+<ptxt>Check DTC</ptxt>
+<test2>
+<ptxt>Record the DTCs.</ptxt>
+</test2>
+<test2>
+<ptxt>Perform inspection and repair according to the instructions in the Diagnostic Trouble Code Chart.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL2" colwidth="3.01in"/>
+<colspec colname="COLSPEC0" align="center" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Device Name</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>AVN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep07" href="RM0000002RS03EX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ETC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep10" href="RM000001US9001X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CAMERA-C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep09" href="RM0000002O401AX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+</test1>
+<test1>
+<ptxt>Clear DTC</ptxt>
+</test1>
+<test1>
+<ptxt>Recheck DTC</ptxt>
+<test2>
+<ptxt>Based on the recorded DTCs, reproduce the problem symptom and check whether the DTCs are output again.</ptxt>
+</test2>
+</test1>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>No code, symptom can be confirmed and reproduced</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>All connected devices other than "AVN" are displayed as "Not connected"</ptxt>
+</item>
+<item>
+<ptxt>All connected devices other than "AVN" are not displayed</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Code output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No code, symptom cannot be confirmed and reproduced</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>D</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>Go to Troubleshooting Flowchart AVC-LAN Malfunction (see <xref label="Seep06" href="RM0000007EM02GX"/>)</action-ci-right>
+<result>C</result>
+<action-ci-right>Go to step 11</action-ci-right>
+<result>D</result>
+<action-ci-right>Go to Symptom Simulation (see <xref label="Seep15" href="RM000000ABY03DX"/>)</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>List by Symptom</testtitle>
+<test1>
+<ptxt>Problem Symptoms Table (see <xref label="Seep16" href="RM000001USC001X"/>)</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Not listed in List by Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Corresponds to List by Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>Go to step 11</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Perform troubleshooting using the following methods based on the problem symptom</testtitle>
+<test1>
+<ptxt>Terminals of ECU (see <xref label="Seep17" href="X394000010I00SD"/>)</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Adjust, Repair or Replace</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Work after Replacement</testtitle>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When replacing the navigation receiver assembly on a vehicle not subscribed to the G-BOOK service, perform the vehicle linking setting. (see <xref label="Seep13" href="RM000001C3S00RX"/>)</ptxt>
+</item>
+<item>
+<ptxt>When replacing the navigation receiver assembly on a vehicle subscribed to the G-BOOK service, perform the vehicle linking setting, then perform the G-BOOK use resumption operation and HELPNET service start operation.</ptxt>
+</item>
+<item>
+<ptxt>If the navigation receiver assembly is replaced while a purchased G-SOUND unlimited license exists, perform G-SOUND license recovery.</ptxt>
+</item>
+</list1>
+</atten4>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Confirmation Test</testtitle>
+<test1>
+<ptxt>Using an ETC on-board unit tester, check the connection condition of the ETC antenna.</ptxt>
+</test1>
+<test1>
+<ptxt>Perform a service inspection and check that no antenna system malfunction codes are output. (see <xref label="Seep20" href="RM0000002RV02BX"/>)</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>No Abnormality</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Abnormal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>Go to step 11</action-ci-right>
+<result-ci-down>A</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

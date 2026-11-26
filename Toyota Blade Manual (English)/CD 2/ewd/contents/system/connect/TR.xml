@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectionList>
+	<connector type="conn" code="L14">
+		<pin no="3">
+			<line id="1" color="W-B" spec="w/ Power Seat">
+				<connector type="conn" code="L19">
+					<pin no="8" spec="w/o Power Seat"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="L14">
+		<pin no="3">
+			<line id="1" color="W-B" spec="w/ Power Seat">
+				<connector type="conn" code="L19">
+					<pin no="8" spec="w/o Power Seat"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="L14">
+		<pin no="3">
+			<line id="1" color="W-B" spec="w/ Power Seat">
+				<connector type="conn" code="L20">
+					<pin no="11" spec="w/ Power Seat"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="L14">
+		<pin no="3">
+			<line id="1" color="W-B" spec="w/ Power Seat">
+				<connector type="conn" code="L20">
+					<pin no="11" spec="w/ Power Seat"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="L19">
+		<pin no="8" spec="w/o Power Seat">
+			<line id="1" color="W-B" spec="w/o Power Seat">
+				<connector type="w2w" code="LU1" sex="female">
+					<pin no="3"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="L19">
+		<pin no="8" spec="w/o Power Seat">
+			<line id="1" color="W-B" spec="w/o Power Seat">
+				<connector type="w2w" code="LU1" sex="female">
+					<pin no="3"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="L20">
+		<pin no="11" spec="w/ Power Seat">
+			<line id="1" color="W-B" spec="w/o Power Seat">
+				<connector type="w2w" code="LU1" sex="female">
+					<pin no="3"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="L20">
+		<pin no="11" spec="w/ Power Seat">
+			<line id="1" color="W-B" spec="w/o Power Seat">
+				<connector type="w2w" code="LU1" sex="female">
+					<pin no="3"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="L14">
+		<pin no="4">
+			<line id="2" color="V" spec="w/ Power Seat">
+				<connector type="conn" code="L17">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="LU1" sex="female">
+		<pin no="11">
+			<line id="2" color="V" spec="w/o Power Seat">
+				<connector type="conn" code="L17">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="gp" code="LQ">
+		<pin>
+			<line id="3" color="W-B">
+				<connector type="conn" code="L19">
+					<pin no="9"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="LU1" sex="male">
+		<pin no="3">
+			<line id="4" color="W-B" spec="w/o Power Seat">
+				<connector type="conn" code="U4">
+					<pin no="3"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="U4">
+		<pin no="4">
+			<line id="5" color="V" spec="w/o Power Seat">
+				<connector type="w2w" code="LU1" sex="male">
+					<pin no="11"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="L17">
+		<pin no="1">
+			<line id="6" color="L">
+				<connector type="w2w" code="FL3" sex="male">
+					<pin no="9"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="FL3" sex="female">
+		<pin no="9">
+			<line id="7" color="L">
+				<connector type="jbc" code="4S">
+					<pin no="6"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="M10">
+		<pin no="3">
+			<line id="8" color="W-B" spec="w/o Power Seat">
+				<connector type="gp" code="MU">
+					<pin/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="gp" code="MU">
+		<pin>
+			<line id="8" color="W-B" spec="w/ Power Seat">
+				<connector type="conn" code="M19">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="M10">
+		<pin no="4">
+			<line id="9" color="V" spec="w/o Power Seat">
+				<connector type="conn" code="M16">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="M16">
+		<pin no="2">
+			<line id="9" color="V" spec="w/ Power Seat">
+				<connector type="conn" code="M19">
+					<pin no="14"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="M16">
+		<pin no="1">
+			<line id="10" color="L">
+				<connector type="w2w" code="FM3" sex="male">
+					<pin no="9"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="FM3" sex="female">
+		<pin no="9">
+			<line id="11" color="L">
+				<connector type="jbc" code="4R">
+					<pin no="6"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="jbc" code="4E">
+		<pin no="6">
+			<line id="12" color="L">
+				<connector type="jbc" code="2S">
+					<pin no="7"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="T7">
+		<pin no="3">
+			<line id="13" color="W-B" spec="w/ Power Seat">
+				<connector type="conn" code="T6">
+					<pin no="3"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="T6">
+		<pin no="4">
+			<line id="14" color="V" spec="w/ Power Seat">
+				<connector type="conn" code="T7">
+					<pin no="13"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+</connectionList>

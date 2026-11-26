@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARA INFOID = "T030063A102R01" UPDATE = "ORIGINAL" LDUP = "9Jan2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Hydraulic Control Section</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The rigidity of the valve body has been increased to handle the higher pressure of the hydraulic circuit. In addition, all solenoid valves are mounted on the lower valve body side for easier servicing.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740118p" WIDTH = "6.917in" HEIGHT = "5.278in" />
+</FIGURE>
+<INDICATE ID = "T030063A102R01I01" INDSW = "OFF">
+<TITLE>Solenoid Names and Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "40%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "59%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT> Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.1 (DS1)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls the inflow of line pressure to the primary pulley according to the wheel speed and accelerator opening. (Controls the speed of upshifting)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.2 (DS2)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls the outflow of line pressure from the primary pulley according to the wheel speed and accelerator opening. (Controls the speed of downshifting)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Lock-up Solenoid (SL)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Switches the function of the linear solenoid (SLS).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Lock-up Engagement Pressure Control Duty Solenoid (DSU)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Controls the gradual increase and decrease of the lock-up engagement hydraulic pressure.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Belt Clamping Force Control Linear Solenoid (SLS)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls the secondary pulley pressure according to the input shaft torque to control the belt clamping force. In addition, it controls the forward/reverse clutch hydraulic pressure during forward/reverse clutch engagement and during neutral control.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T030063A102R01I02" INDSW = "OFF">
+<TITLE>Hydraulic Control Block Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740120p" WIDTH = "6.917in" HEIGHT = "8.889in" />
+</FIGURE>
+</INDICATE>
+&T030063A102A316R01;
+&T030063A102A317R02;
+</PARA>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740071e SYSTEM "grph_ent/a4740071e.png" NDATA png>
+<!ENTITY a4480081e SYSTEM "grph_ent/a4480081e.png" NDATA png>
+<!ENTITY a4740013e SYSTEM "grph_ent/a4740013e.png" NDATA png>
+<!ENTITY a4740114e SYSTEM "grph_ent/a4740114e.png" NDATA png>
+<!ENTITY a3810183e SYSTEM "grph_ent/a3810183e.png" NDATA png>
+<!ENTITY a4740014e SYSTEM "grph_ent/a4740014e.png" NDATA png>
+<!ENTITY a4740005e SYSTEM "grph_ent/a4740005e.png" NDATA png>
+<!ENTITY a4740031e SYSTEM "grph_ent/a4740031e.png" NDATA png>
+
+<!ENTITY T120027K080 SYSTEM "t285120027k080.xml">
+<!ENTITY T120027K080K850 SYSTEM "t285120027k080k850.xml">
+<!ENTITY T120027K080K082 SYSTEM "t285120027k080k082.xml">
+<!ENTITY T120027K080K341 SYSTEM "t285120027k080k341.xml">
+
+<!ENTITY T120027K309A045 SYSTEM "t285120027k309a045.xml">
+<!ENTITY T120027K309K035 SYSTEM "t285120027k309k035.xml">
+<!ENTITY T120027K331K392 SYSTEM "t285120027k331k392.xml">
+<!ENTITY T120027K331K392R01 SYSTEM "t285120027k331k392r01.xml">
+<!ENTITY T120027K331K340 SYSTEM "t285120027k331k340.xml">
+<!ENTITY T120027K331K271 SYSTEM "t285120027k331k271.xml">
+<!ENTITY T120027K309 SYSTEM "t285120027k309.xml">
+<!ENTITY T120027K331 SYSTEM "t285120027k331.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120027K080S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120027K080" UPDATE = "ORIGINAL" LDUP = "22Jan2004"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Auto Leveling System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>An auto leveling function (static control), which adjusts the beam axis while the vehicle is stopped, has been provided for the low beam headlights of models with discharge headlights to prevent glare to oncoming and preceding vehicles.</PTXT></ITEM>
+<ITEM><PTXT>The auto leveling system consists of the headlight leveling computer, height control sensor, headlight leveling actuators, etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740071e" WIDTH = "6.903in" HEIGHT = "4.139in" />
+</FIGURE>
+<INDICATE ID = "T120027K080I01" INDSW = "OFF">
+<TITLE>Auto Leveling System Configuration</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Functions</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Headlight Leveling Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls the auto leveling function. Determines the vehicle posture and driving condition based on signals from the height control sensor and combination meter, and controls the headlight leveling actuators. When a system malfunction is detected, outputs a headlight auto leveling warning indicator light illumination request signal to the combination meter.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Headlight Leveling Actuator</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Drives the low beam headlight up and down according to the control signal from the headlight leveling computer to control the direction of the beam axis.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Combination Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Illuminates the headlight auto leveling warning indicator light according to the signal from the headlight leveling computer. Outputs the vehicle speed signal to the headlight leveling computer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Height Control Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the vehicle height and outputs a vehicle height change signal to the headlight leveling computer.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T120027K080K850" UPDATE = "ORIGINAL" LDUP = "21Jul2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Auto Leveling Function</TITLE>
+<LIST1><ITEM><PTXT>Changes in vehicle posture due to loading of luggage, etc. are detected by the height control sensor installed on the right side of the rear suspension, and the headlight leveling actuators installed in the headlights are driven according to the change in vehicle posture to keep the headlight beam axis at a constant angle while the vehicle is stopped.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120027K080K082" UPDATE = "ORIGINAL" LDUP = "22Jan2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Auto Leveling Operation</TITLE>
+<LIST1><ITEM><PTXT>The headlight leveling computer, which controls the auto leveling system, receives the vehicle speed signal and the vehicle height change signal from the height control sensor. Based on these signals, it calculates the change in pitch angle of the vehicle posture and drives the headlight leveling actuators according to the posture of the stopped vehicle to control the headlight beam axis.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4480081e" WIDTH = "6.903in" HEIGHT = "3.681in" />
+</FIGURE>
+<INDICATE ID = "T120027K080K082I01" INDSW = "OFF">
+<TITLE>Auto Leveling Control List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "20%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "54%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Vehicle Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Control Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Control Content</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When Headlights ON</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Headlight ON Control</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>When the headlights are switched from OFF to ON, the headlight leveling actuators are driven according to the current pitch angle change while the vehicle is stopped.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Vehicle Stopped</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Stopped Control</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>With the headlights ON, the headlight leveling actuators are driven according to the pitch angle at which a change in vehicle posture is detected.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120027K080K341" UPDATE = "ORIGINAL" LDUP = "22Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Fail-safe Function of Auto Leveling System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the headlight leveling computer detects a system malfunction, it performs fail-safe as shown in the table and illuminates the headlight leveling warning indicator light in the combination meter.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740013e" WIDTH = "6.903in" HEIGHT = "2.931in" />
+</FIGURE>
+<INDICATE ID = "T120027K080K341I01" INDSW = "OFF">
+<TITLE>Fail-safe Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "34%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "14%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Malfunction Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Malfunction Detection Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Control Content</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Warning Indicator Light</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Power Supply Overvoltage</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Input terminal voltage of headlight leveling computer is 18.5V or more</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "5" CONSPIC = "0"><PTXT>Stops output of control signal to actuator</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Power Supply Low Voltage</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Input terminal voltage of headlight leveling computer is 9V or less</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Vehicle Speed Limit Exceeded</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Vehicle speed is 180km/h or more</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" CONSPIC = "0"><PTXT>Height Control Sensor Malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Signal Malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Open circuit, short circuit, voltage malfunction</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Reset While Driving</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When the driving condition determined immediately after IG ON is driving</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+</PARA>
+<PARA INFOID = "T120027K080P" UPDATE = "ORIGINAL" LDUP = "99XXX9999" INFOTYPE = "SYSTEM" INDSW = "ON" UNPRINT="OFF">
+<TITLE>Related Systems</TITLE>
+
+<MECA ID = "T120027K331K392R01" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Light Control Computer Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The light control computer achieves instant and stable illumination of the HID bulb through controls such as generating a high voltage of up to approximately 22,000V. Since this device generates high voltage, various fail-safe functions are incorporated, and consideration has also been given to ensuring reliability against heat, humidity, vibration, etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810183e" WIDTH = "6.931in" HEIGHT = "2.944in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>HID Bulb Illumination Control Flow</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>1. The battery voltage is converted into a high-voltage pulse (approximately 22,000V) by the light control computer in the lamp.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2. The high-voltage pulse is applied between both electrodes of the bulb, causing the xenon gas to emit light.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>3. Arc discharge occurs as the temperature inside the bulb rises.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>4. As the temperature rises further, the metal iodide vaporizes and separates, and the metal atoms emit light by discharge.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>5. The light control computer optimally controls the power supplied to the bulb.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+</PARA>
+<BIND ID = "T120027K080B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T120027K309" UPDATE = "ORIGINAL" LDUP = "5Sep2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Headlamp (Discharge Type)</TITLE>
+<LIST1><ITEM><PTXT>Projector-type discharge headlights have been adopted for the low beam headlights.</PTXT></ITEM>
+<ITEM><PTXT>Except for the low beam headlights, the construction is basically the same as the halogen headlights.</PTXT></ITEM>
+<ITEM><PTXT>A headlight leveling actuator for the automatic leveling function is installed at the rear of the low beam headlight in the headlight. Also, a light control computer that controls the lighting of the discharge headlight is built into the lower part of the headlight.</PTXT></ITEM>
+<ITEM><PTXT>The extension has been aluminum vapor-deposited. Also, smoke coating has been applied to some parts to create a sharp look.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740005e" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+<SPEC ID = "T120027K309X01" INDSW = "OFF">
+<TITLE>Headlight (Discharge) Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "57%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "42%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Light Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Bulb Specifications</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Low Beam Headlight</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 35W:D4S</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>High Beam Headlight</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 60W:HB3</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Clearance lights</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 5W</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Front Turn Signal Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 21W: Amber</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+
+<MECA ID = "T120027K309A045" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Discharge Headlight Features</TITLE>
+<LIST1><ITEM><PTXT>The discharge headlight is a headlight that uses an HID bulb (high intensity discharge lamp) as its light source.</PTXT></ITEM>
+<ITEM><PTXT>The light emitted from the HID bulb is a natural daylight color close to sunlight and illuminates a wider and more distant area ahead, helping to improve driver visibility; in addition, its low power consumption reduces the load on the battery and the bulb has a long service life.</PTXT></ITEM>
+<ITEM><PTXT>The discharge headlight achieves instant lighting of the HID bulb and a stable power supply, and has a compact, lightweight light control computer; it is also combined with an automatic leveling function that keeps the vertical beam axis constant as a device to prevent dazzling oncoming vehicles.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120027K309K035" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>HID Bulb Construction</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The arc tube of the HID bulb is filled with a rare gas (xenon gas) and metal iodides (zinc, sodium and scandium), and arc discharge occurs in the arc tube due to the voltage applied to the base side and lead wire side.</PTXT></ITEM>
+<ITEM><PTXT>UV-cut glass that absorbs ultraviolet rays is used for the outer tube of the arc tube, keeping ultraviolet radiation to a level equivalent to that of halogen bulbs.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740114e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</MECA>
+</PARA>
+
+<PARA INFOID = "T120027K331" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Light Control Computer</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The light control computer is a device that supplies the alternating current (AC) power required to illuminate the HID bulb.</PTXT></ITEM>
+<ITEM><PTXT>The frequency of the AC power is several hundred Hz or more so that no flicker is perceived during illumination, and electromagnetic shielding is provided so that electromagnetic waves do not affect the vehicle radio, etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740031e" WIDTH = "6.903in" HEIGHT = "4.722in" />
+</FIGURE>
+<SPEC ID = "T120027K331X01" INDSW = "OFF">
+<TITLE>Light Control Computer Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "42%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "57%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Specifications</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Rated Voltage [V]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>13.5</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Operating Voltage [V]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>10~16</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Maximum Generated Voltage [V]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>22000±3000</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Maximum Input Current [A]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>20 or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Maximum Output Current [A]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>3.0±0.3</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Maximum Output Power [W]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>75±6</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Steady-state Input Current [A]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>4.0 or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Steady-state Output Power [W]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>35±2</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Steady-state Lighting Frequency [Hz]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>320+70/-50</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+
+<MECA ID = "T120027K331K392" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Light Control Computer Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The light control computer achieves instant and stable illumination of the HID bulb through controls such as generating a high voltage of up to approximately 22,000V. Since this device generates high voltage, various fail-safe functions are incorporated, and consideration has also been given to ensuring reliability against heat, humidity, vibration, etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810183e" WIDTH = "6.931in" HEIGHT = "2.944in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>HID Bulb Illumination Control Flow</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>1. The battery voltage is converted into a high-voltage pulse (approximately 22,000V) by the light control computer in the lamp.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2. The high-voltage pulse is applied between both electrodes of the bulb, causing the xenon gas to emit light.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>3. Arc discharge occurs as the temperature inside the bulb rises.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>4. As the temperature rises further, the metal iodide vaporizes and separates, and the metal atoms emit light by discharge.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>5. The light control computer optimally controls the power supplied to the bulb.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T120027K331K340" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Fail-safe Function of Light Control Computer</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When a malfunction occurs in the output voltage, input voltage or lamp side voltage, the light control computer performs fail-safe as follows.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120027K331K340I01" INDSW = "OFF">
+<TITLE>Light Control Computer Fail-safe List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "68%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Malfunction Detection Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Fail-safe Content</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When an output malfunction is detected (short, open or leak detected) and when the bulb flickers</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>If a malfunction occurs in the output voltage or bulb flickering continues for 60 +/- 20 seconds or more, the headlight is turned off and remains in that state until the power is turned on again (headlight switch OFF → ON or power switch (IG) OFF → ON).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When Input Malfunction Detected</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>If the input voltage is outside the operating voltage (10 to 16V), the headlight is turned off, and it illuminates again as soon as the input returns to the operating range. However, if the input voltage drops after illumination, the headlight remains illuminated until the voltage reaches the illumination holding limit voltage (6V or less).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When Lamp Voltage Malfunction Detected</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>If a lamp voltage malfunction is detected, the headlight is turned off and remains in that state until the power is turned on again (headlight switch OFF → ON or power switch (IG) OFF → ON).</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120027K331K271" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Precautions for Handling Light Control Computer</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>To prevent danger, caution labels have been placed on the rear side of the headlight unit and on the light control computer.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740014e" WIDTH = "6.903in" HEIGHT = "4.042in" />
+</FIGURE>
+<CAUTION>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>High voltage is generated at the output terminals of the light control computer, which is dangerous, so handle it with great care.</PTXT></ITEM>
+<ITEM><PTXT>Always have discharge headlight bulbs replaced at a Toyota dealer.</PTXT></ITEM>
+<ITEM><PTXT>Do not touch the glass and electrode parts of the bulb, as high voltage is generated there and it is dangerous.</PTXT></ITEM>
+<ITEM><PTXT>Illuminate the bulb only after installation has been completely finished, and do not use any power source other than the vehicle.</PTXT></ITEM>
+<ITEM><PTXT>If the following damage (see List of Examples Requiring Replacement) is found on the light control computer or headlight after a vehicle collision, etc., replace the light control computer or headlight.</PTXT></ITEM></LIST1></CAUTION>
+<INDICATE ID = "T120027K331K271I01" INDSW = "OFF">
+<TITLE>List of Examples Requiring Replacement</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When the light control computer is clearly deformed (warped, twisted, dented, dinged, cracked, chipped, etc.).</PTXT></ITEM>
+<ITEM><PTXT>When the resin parts of the connectors or bulb socket are cracked or chipped, or the terminals are deformed.</PTXT></ITEM>
+<ITEM><PTXT>When contact with the ground part on the reflector side is unstable due to deformation of the socket cover, etc.</PTXT></ITEM>
+<ITEM><PTXT>When the high-voltage harness or power supply wire harness is damaged.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>Note that even if the light control computer operates normally temporarily, it is not necessarily normal.</PTXT></ITEM></LIST1></INDICATE></MECA>
+</PARA>
+</BIND>
+</SECTION>

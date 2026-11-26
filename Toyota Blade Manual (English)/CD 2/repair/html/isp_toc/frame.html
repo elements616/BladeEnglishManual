@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- $Id: frame.html,v 1.19 2003/10/06 02:06:58 takeo Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Inspection Illustrated Index</title>
+
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/dom.js"></script>
+<script language="javascript">
+//文書構成XMLファイル,グループ一覧XSLファイルを読み込みDOMオブジェクトを作成。
+var g_tocXml = initXml("toc_rpr.xml");
+var g_sctXsl = initXsl("../../xsl/isp/servcat.xsl");
+var g_runXsl = initXsl("../../xsl/isp/contents.xsl");
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="global.html" scrolling="no" noresize frameborder="no">
+	<frameset cols="222, *" frameborder="yes" border="1" framespacing="1" bordercolor="#cccccc">
+		<frame name="local" src="local.html" frameborder="no" >
+		<frameset rows="30, *, 31" frameborder="no" border="0" framespaceing="0">
+			<frame name="sts" src="status.html" frameborder="no" scrolling="auto">
+			<frame name="contents" src="contents.html" frameborder="no">
+			<frame name="button" src="button.html" frameborder="no" scrolling="auto" noresize>
+		</frameset>
+	</frameset>
+</frameset>
+<noframes>
+	<body>Please use a browser that supports frames</body>
+</noframes>
+</html>

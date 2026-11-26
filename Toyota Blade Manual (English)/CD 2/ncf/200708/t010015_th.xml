@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740050p SYSTEM "../xml/grph_ent/a4740050p.png" NDATA png>
+<!ENTITY a4740051p SYSTEM "../xml/grph_ent/a4740051p.png" NDATA png>
+<!ENTITY a4740052p SYSTEM "../xml/grph_ent/a4740052p.png" NDATA png>
+
+<!ENTITY T010042A149 SYSTEM "../xml/t478010042a149.xml">
+<!ENTITY T010042A101 SYSTEM "../xml/t478010042a101.xml">
+<!ENTITY T010042A151 SYSTEM "../xml/t478010042a151.xml">
+<!ENTITY T010042A407 SYSTEM "../xml/t478010042a407.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T010042A149S"><SCTITLE/>
+
+<PARA INFOID = "T010042A149" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Lubrication General</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A full-pressure, full-flow filtration lubrication system using a trochoid type oil pump has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>Oil pumped to the top of the cylinder head returns to the oil pan from the oil return holes provided in the cylinder head through the cylinder block, etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740050p" WIDTH = "6.903in" HEIGHT = "6.681in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010042A101S"><SCTITLE/>
+
+<PARA INFOID = "T010042A101" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Oil Pump</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A compact, highly efficient 4-lobe, 5-node trochoid type oil pump has been adopted, chain-driven by the crankshaft.</PTXT></ITEM>
+<ITEM><PTXT>A relief valve is built in and returns oil to the pump suction side, reducing pumping loss and suppressing oil scattering in the crankcase. Also, friction loss has been reduced by ensuring sufficient flow.</PTXT></ITEM>
+<ITEM><PTXT>A metal gasket has been adopted for the seal with the crankcase, ensuring sealing performance.</PTXT></ITEM>
+<ITEM><PTXT>In consideration of balance shaft serviceability, a split type oil strainer has been adopted.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740051p" WIDTH = "6.903in" HEIGHT = "3.278in" />
+</FIGURE>
+<SPEC ID = "T010042A101X01" INDSW = "OFF">
+<TITLE>Oil Pump Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "21%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Pump Speed</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>600r/min</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>2000r/min</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>6000r/min</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Discharge Volume [L/min]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>4.2 or more</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>53.4 or more</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Discharge Pressure [kPa { kgf/cm<SUP>2</SUP>}]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>100{1.0}</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>290{3.0}</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Relief Valve Opening Pressure [kPa { kgf/cm<SUP>2</SUP>}]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>456{4.9}</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010042A151S"><SCTITLE/>
+
+<PARA INFOID = "T010042A151" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Oil Filter</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A compact, lightweight oil filter with a built-in bypass valve has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>By installing the oil filter facing downward, serviceability during replacement has been ensured, and it serves as an oil reservoir, improving oil pressure build-up when the engine starts.</PTXT></ITEM></LIST1>
+<SPEC ID = "T010042A151X01" INDSW = "OFF">
+<TITLE>Oil Filter Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Throwaway (Cartridge) Type</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Filtration Method</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Full-flow Type</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Filtration Volume [cm<SUP></SUP><SUB></SUB><SUP>3</SUP> ]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Approx. 75</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Outer Diameter × Height [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>φ65×90</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Bypass Valve Opening Pressure [kPa { kgf/cm<SUP>2</SUP>}]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>100±20{1.0±0.2}</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010042A407S"><SCTITLE/>
+
+<PARA INFOID = "T010042A407" UPDATE = "ORIGINAL" LDUP = "20Jul2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Oil Jet</TITLE>
+<LIST1><ITEM><PTXT>Oil jets have been provided in the cylinder block. By injecting oil into the cylinders, friction is reduced, piston durability is ensured by suppressing temperature rise, and knocking is prevented.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740052p" WIDTH = "6.903in" HEIGHT = "3.667in" />
+</FIGURE>
+</PARA>
+</SECTION>
+</SCT>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1001Y_S000S" variety="S000S">
+<name>CVT</name>
+<ttl id="1001Y_S000S_744HD_T007Y" variety="T007Y">
+<name>CVT System [Super CVT-i] (K112/K112F)</name>
+<para id="RM000000FSM00TX" category="D" type-id="303F4" name-id="3225J-00" from="200612">
+<name>DTC Check/Clear</name>
+<subpara id="RM000000FSM00TX_z0" proc-id="RM0550J___000046Q00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DTC Check (Reading Using TaSCAN) </ptxt>
+<step2>
+<ptxt>Using SST (TaSCAN), following the screen display, display the [Diagnosis Menu/TCCS] screen and select [DTC Freeze Data].</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Check the diagnostic trouble codes.</ptxt>
+<atten4>
+<ptxt>If freeze frame data is recorded, [F] is displayed at the left end and the color of that row changes.  </ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Check Freeze Frame Data Using TaSCAN </ptxt>
+<step2>
+<ptxt>Using SST (TaSCAN), following the screen display, select the DTC recording freeze frame data (F displayed) from the [DTC Check] screen.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The engine condition (ECU data) at the time of DTC detection and before and after detection (before: 1.5 seconds, after: 0.5 seconds) can be checked at 0.5-second intervals. </ptxt>
+</item>
+<item>
+<ptxt>Check that the malfunction symptoms from the customer problem analysis are consistent with the Diagnostic Trouble Code Chart. </ptxt>
+</item>
+<item>
+<ptxt>After repair, perform a confirmation test referring to the driving conditions confirmed above. </ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Clearing DTC Memory (Clearing Using TaSCAN)</ptxt>
+<step2>
+<ptxt>Using SST (TaSCAN), following the screen display, display the [Diagnosis Menu/TCCS] screen and select [DTC].</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Select [Clear] on the screen to clear the data.</ptxt>
+<atten3>
+<ptxt>DTCs and freeze frame data are cleared at the same time.</ptxt>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC Check (Reading Using Check Engine Warning Light) </ptxt>
+<step2>
+<ptxt>Using SST (diagnosis check wire No.2), connect between terminals 13 (TC) ←→ 4 (CG) of the DLC3.</ptxt>
+<figure>
+<graphic graphicname="C140838J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<atten3>
+<ptxt>Never connect the wrong terminals as this will cause a malfunction.</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>Turn IG ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Read the DTC (number of blinks of the check engine warning light).</ptxt>
+<figure>
+<graphic graphicname="A035691J01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>When letters are used, as in TCCS code C1, the code is expressed as a 2-digit base 16 number. For C1, the light blinks 12 times and then blinks 1 times. (Blinking intervals are the same)</ptxt>
+<table>
+<title>Base-16 Conversion Table</title>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Base-16</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of Blinks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>12</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>13</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>14</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>F</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>15</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If normal, the light repeatedly comes on for 0.26 seconds and goes off for 0.26 seconds. </ptxt>
+</item>
+<item>
+<ptxt>If there is 1 DTC, the same code is output at intervals of 4.5 seconds. </ptxt>
+</item>
+<item>
+<ptxt>When multiple codes are output, the different codes are output at 2.5-second intervals. After one cycle is complete, the same output is repeated after 4.5 seconds. </ptxt>
+</item>
+<item>
+<ptxt>If 2 or more code numbers are output, they are displayed in order from the smallest code number. </ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Clearing DTC Memory (Clearing by Removing Fuse) </ptxt>
+<step2>
+<ptxt>After repairing the malfunctioning area, remove the EFI fuse (20A) and ETC-S fuse (10A) in the engine room for 60 seconds or more, then reconnect them.</ptxt>
+</step2>
+<step2>
+<ptxt>Using SST (diagnosis check wire No.2), connect between terminals 13 (TC) ←→ 4 (CG) of the DLC3.</ptxt>
+<figure>
+<graphic graphicname="C140838J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<atten3>
+<ptxt>Never connect the wrong terminals as this will cause a malfunction.</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>Turn IG ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Check that the normal code is output.</ptxt>
+<atten3>
+<ptxt>If a malfunction code is output, repair again according to the code.</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>Turn IG OFF.</ptxt>
+</step2>
+<step2>
+<ptxt>Disconnect terminals 13 (TC) ←→ 4 (CG) of the DLC3.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

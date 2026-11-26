@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY c5930044e SYSTEM "grph_ent/c5930044e.png" NDATA png>
+
+<!ENTITY T120027K310 SYSTEM "t478120027k310.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120027K310S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120027K310" UPDATE = "ORIGINAL" LDUP = "5Sep2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Headlamp (Halogen Type)</TITLE>
+<LIST1><ITEM><PTXT>Round 4-lamp type headlights have been adopted.</PTXT></ITEM></LIST1>
+<LIST1><ITEM><PTXT>A horizontally long clearance light has been provided within the same lens as the headlight, and LEDs are used as the light source.</PTXT></ITEM></LIST1>
+<LIST1><ITEM><PTXT>The extension has been aluminum vapor-deposited.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930044e" WIDTH = "6.903in" HEIGHT = "6.792in" />
+</FIGURE>
+<SPEC ID = "T120027K310X01" INDSW = "OFF">
+<TITLE>Headlight (Halogen) Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "57%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "42%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Light Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Bulb Specifications</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Low Beam Headlight</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 55W:H11</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>High Beam Headlight</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 60W:HB3</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Clearance lights</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 1.7W (LED2 pcs.)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Front Turn Signal Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 21W: Amber</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>

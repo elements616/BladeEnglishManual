@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001B_S000A" variety="S000A">
+<name>Wiper &amp; Washer</name>
+<ttl id="1001B_S000A_7421R_T0021" variety="T0021">
+<name>Windshield Wiper Motor Assembly</name>
+<para id="RM000001Z1T004X" category="G" type-id="3001K" name-id="611D5-00" from="200612">
+<name>Component Inspection</name>
+<subpara id="RM000001Z1T004X_01" type-id="01" category="01">
+<s-1 id="RM000001Z1T004X_01_0001" proc-id="RM0550J___00000VN00000">
+<ptxt>Inspect Windshield Wiper Motor Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>LO Operation Inspection</ptxt>
+<figure>
+<graphic graphicname="E132856" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Connect the battery positive (+) to terminal 1 (+1) and the battery negative (-) to terminal 5 (E) of the connector, and check that the windshield wiper motor assembly operates at low speed (LO).</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Battery connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive → 1 (+1)</ptxt>
+<ptxt>Battery negative → 5 (E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operates at low speed (LO)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>HI Operation Inspection</ptxt>
+<s3>
+<ptxt>Connect the battery positive (+) to terminal 4 (+2) and the battery negative (-) to terminal 5 (E) of the connector, and check that the windshield wiper motor assembly operates at high speed (HI).</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Battery connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive → 4 (+2)</ptxt>
+<ptxt>Battery negative → 5 (E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operates at high speed (HI)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

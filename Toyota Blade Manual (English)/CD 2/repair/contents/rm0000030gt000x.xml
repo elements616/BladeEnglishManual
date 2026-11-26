@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1002J_S000U" variety="S000U">
+<name>Brake Control</name>
+<ttl id="1002J_S000U_744TG_T0089" variety="T0089">
+<name>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</name>
+<para id="RM0000030GT000X" category="C" type-id="801GJ" name-id="442OC-00" from="200612">
+<dtccode>-/43</dtccode>
+<dtcname>ABS System Malfunction</dtcname>
+<subpara id="RM0000030GT000X_01" type-id="33" category="03" proc-id="RM0550J___00007NS00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when a malfunction code occurs in the ABS system.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000030GT000X_02" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM0000030GT000X_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000030GT000X_03_0001" proc-id="RM0550J___00007NT00000">
+<scantool type="1"/>
+<testtitle>Check DTC (ABS System)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the DTCs of the ABS system. (see <xref label="Seep01" href="RM00000060000PX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000030GT000X_03_0002" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000030GT000X_03_0002">
+<testtitle>Go to Relevant DTC<xref label="Seep01" href="RM0000005ZT00PX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

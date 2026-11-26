@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="04">
+<name>Driveline/Axle</name>
+<section id="1000K_S0015" variety="S0015">
+<name>Differential</name>
+<ttl id="1000K_S0015_744ZW_T00A7" variety="T00A7">
+<name>Active Torque Control 4WD System</name>
+<para id="RM00000200F005X" category="C" type-id="801QV" name-id="370EJ-00" from="200612">
+<dtccode>U0129/83</dtccode>
+<dtcname>Brake ECU Communication Malfunction</dtcname>
+<subpara id="RM00000200F005X_01" type-id="33" category="03" proc-id="RM0550J___00005JE00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>The 4WD computer assembly outputs a DTC when a communication error with the skid control computer occurs.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0129/83</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When communication with the skid control computer is not possible for 3 seconds or more with terminal IG1 voltage at 10V or more</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire harness and connector (CANH, CANL signal system)</ptxt>
+</item>
+<item>
+<ptxt>ABS &amp; Traction Actuator Assembly (Skid Control Computer)</ptxt>
+</item>
+<item>
+<ptxt>4WD Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000200F005X_02" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM00000200F005X_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000200F005X_03_0001" proc-id="RM0550J___00005JF00000">
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG ON and read the DTCs following the SST (TaSCAN) screen display. (see <xref label="Seep02" href="RM000000MJ9007X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000200F005X_03_0002" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000200F005X_03_0002">
+<testtitle>Go to CAN Communication System<xref label="Seep01" href="RM000001R4W009X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

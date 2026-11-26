@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T120025K125K144" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Operation / Warning Indicator Light Specifications</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740377b" WIDTH = "6.903in" HEIGHT = "3.000in" /><FIGCAPTION><L ja="23.Sモード">23. S Mode</L><L ja="14.プリクラッシュセーフティシステムウォーニング 22.Dモード">14. Pre-crash Safety System Warning / 22. D Mode</L><L ja="20.CRUISE作動／ウォーニング">20. CRUISE Operation/Warning</L></FIGCAPTION>
+</FIGURE>
+<INDICATE ID = "T120025K125K144I01" INDSW = "OFF">
+<TITLE>Operation/Warning Indicator Lamp Specifications {Additions}</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Displayed in yellow by LED (Light Emitting Diode)</TITLE>
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "5%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "50%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Design</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Name</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>14</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0">
+<GRAPHIC GRAPHICNAME = "a4740378b" WIDTH = "0.458in" HEIGHT = "0.194in" />
+</ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Pre-crash Safety System Warning<HINTREF REFID = "H403120025K125K14401"/></PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Illuminates under the control of the meter computer, which receives a CAN communication signal from the seat belt control computer, when a malfunction occurs in the pre-crash safety system.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H403120025K125K14401">Models w/ pre-crash safety system + radar cruise control system</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Displayed in green by LED (Light Emitting Diode)</TITLE>
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "5%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "50%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Design</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Name</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>20</PTXT></ENTRY>
+<ENTRY COLNAME = "2">
+<GRAPHIC GRAPHICNAME = "a4740250b" WIDTH = "0.417in" HEIGHT = "0.167in" />
+</ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>CRUISE Operation/Warning<HINTREF     REFID = "H403120025K125K14402"/></PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4"><LIST1><ITEM><PTXT>Illuminates under the control of the meter computer, which receives a CAN communication signal from the engine control computer, when the radar cruise control system is operating (main switch ON).</PTXT></ITEM>
+<ITEM><PTXT>Blinks under the control of the meter computer, which receives a CAN communication signal from the engine control computer, when a malfunction occurs in the radar cruise control system.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H403120025K125K14402">Models w/ pre-crash safety system + radar cruise control system</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Displayed on LCD (Liquid Crystal Display)</TITLE>
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "5%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "50%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Design</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Name</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>22</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0">
+<GRAPHIC GRAPHICNAME = "a4740379b" WIDTH = "0.403in" HEIGHT = "0.375in" />
+</ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>D (Temporary S) Mode<HINTREF REFID = "H403120025K125K14403"/></PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Illuminates when an UP/DOWN shift range operation is performed with the transmission shift switch while shift position "D" is selected.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>23</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0">
+<GRAPHIC GRAPHICNAME = "a4740380b" WIDTH = "0.403in" HEIGHT = "0.375in" />
+</ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>S (Sequential Shift) Mode<HINTREF REFID = "H403120025K125K14403"/></PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Illuminates when the shift position is set to "S".</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H403120025K125K14403">6 Super ECT models</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE></MECA>

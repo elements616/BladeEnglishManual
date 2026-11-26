@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1001Y_S000S" variety="S000S">
+<name>CVT</name>
+<ttl id="1001Y_S000S_744HD_T007Y" variety="T007Y">
+<name>CVT System [Super CVT-i] (K112/K112F)</name>
+<para id="RM000000FSF00TX" category="D" type-id="300BB" name-id="3225F-00" from="200612">
+<name>Function Description</name>
+<subpara id="RM000000FSF00TX_z0" proc-id="RM0550J___000045G00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Diagnosis Function </ptxt>
+<step2>
+<ptxt>When a malfunction occurs in the CVT system, the check engine warning light is illuminated.</ptxt>
+<atten3>
+<ptxt>When the malfunctioning item returns to normal, the check engine warning light goes off.</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>The diagnosis result when a malfunction occurs is stored in the engine control computer.</ptxt>
+<atten3>
+<ptxt>The data stored in the computer will be cleared, so do not remove the EFI fuse (20A), ETC-S fuse (10A) or battery terminal until the inspection is finished.</ptxt>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>Fail-safe Function </ptxt>
+<step2>
+<ptxt>If one of the solenoid valve circuits has an open or short circuit, the engine control computer turns the other solenoid valves ON or OFF. Also, if all the solenoid valves malfunction, only the mechanical hydraulic circuit operates.</ptxt>
+<atten4>
+<ptxt>In the case of an open or short circuit, the engine control computer stops energizing the malfunctioning solenoid valve.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Sequential Shiftmatic Function</ptxt>
+<step2>
+<ptxt>Only when the shift position is in the M position, each gear (1 ←→ 2 ←→ 3 ←→ 4 ←→ 5 ←→ 6 ←→ 7) can be selected by shifting to (+) or (-) in the sequential gate.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When the sequential shiftmatic system is operating, the sport sequential shiftmatic indicator light (M) in the combination meter is illuminated, and the gear selected by the shift lever is illuminated on the shift position indicator.</ptxt>
+</item>
+<item>
+<ptxt>While the system is operating, the system is canceled by moving the shift lever to a position other than M.</ptxt>
+</item>
+<item>
+<ptxt>When the sequential shiftmatic system is operating, it automatically switches to gear 1 when the vehicle stops.</ptxt>
+</item>
+<item>
+<ptxt>The transmission automatically upshifts 1 gear so that the engine speed does not become too high.</ptxt>
+</item>
+<item>
+<ptxt>The transmission automatically downshifts 1 gear so that the engine speed does not become too low.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>If a system malfunction occurs while the shift lever is in the M position, the sport sequential shiftmatic indicator light (M) and shift position indicator go off, and D position control is used.</ptxt>
+<atten4>
+<ptxt>When the malfunction returns to normal, the indicators and control are restored.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

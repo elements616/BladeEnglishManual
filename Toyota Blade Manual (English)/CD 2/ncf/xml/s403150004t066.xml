@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740048b SYSTEM "grph_ent/a4740048b.png" NDATA png>
+
+<!ENTITY T150004T066 SYSTEM "t403150004t066.xml">
+
+<!ENTITY T150003K791 SYSTEM "t478150003k791.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T150004T066S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T150004T066" UPDATE = "ORIGINAL" LDUP = "15Apr2005"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "Customize">
+<TITLE>Outline of Customize Function</TITLE>
+<LIST1><ITEM><PTXT>By rewriting the non-volatile memory IC built into each computer (ECU), various functions can be adjusted (setting values changed, etc.).</PTXT></ITEM>
+<ITEM><PTXT>Each function is selected from the menu screen by connecting the diagnostic tool "TaSCAN" to DLC3. Some functions can also be selected by the user by performing a prescribed operation under certain conditions.</PTXT></ITEM></LIST1>
+</PARA>
+<BIND ID = "T150004T066B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T150003K791" UPDATE = "ORIGINAL" LDUP = "21Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>DLC3 (Data Link Connector No.3)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By connecting the diagnostic tool "TaSCAN" to the vehicle side connector (DLC3: Data Link Connector No.3), each ECU can be accessed via the gateway computer and the various multiplex communication lines. This allows output of DTCs, data monitoring (checking ECU data, etc.), Active Test (driving actuators as desired), customization (setting control programs), etc. For details, refer to the Repair Manual.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740048b" WIDTH = "6.903in" HEIGHT = "3.389in" />
+</FIGURE>
+</PARA>
+</BIND>
+</SECTION>

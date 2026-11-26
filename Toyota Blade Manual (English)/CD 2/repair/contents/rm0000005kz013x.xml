@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="08">
+<name>Heater &amp; Air Conditioner/Ventilation</name>
+<section id="1002K_S000B" variety="S000B">
+<name>Air Conditioner</name>
+<ttl id="1002K_S000B_7421V_T0025" variety="T0025">
+<name>Heater &amp; Air Conditioner System</name>
+<para id="RM0000005KZ013X" category="C" type-id="3008Z" name-id="5227D-00" from="200612">
+<dtccode>B1412/12</dtccode>
+<dtcname>Ambient temperature sensor malfunction</dtcname>
+<subpara id="RM0000005KZ013X_05" type-id="31" category="03" proc-id="RM0550J___0000AIM00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The thermistor assembly (ambient temperature sensor) is installed at the front of the condenser, detects the outside air temperature and is used for "AUTO" control of the heater &amp; air conditioner. The resistance of the thermistor assembly (ambient temperature sensor) changes in accordance with changes in the outside air temperature: as the outside air temperature decreases, the resistance increases, and as the outside air temperature increases, the resistance decreases. The combination meter assembly outputs a voltage (5V) to the thermistor assembly (ambient temperature sensor), reads the voltage changes that accompany changes in its resistance, and sends a signal to the air conditioner amplifier assembly via the CAN communication line.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+<item>
+<ptxt>Malfunction Duration</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1412/12</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Open or short in thermistor assembly (ambient temperature sensor) circuit</ptxt>
+</item>
+<item>
+<ptxt>Current malfunction, or recorded as past malfunction if continuous for 8.5 minutes or more</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Thermistor assembly (ambient temperature sensor)</ptxt>
+</item>
+<item>
+<ptxt>Wire harness and connector (combination meter assembly - thermistor assembly (ambient temperature sensor))</ptxt>
+</item>
+<item>
+<ptxt>Combination Meter Assembly</ptxt>
+</item>
+<item>
+<ptxt>Air Conditioner Amplifier Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000005KZ013X_06" type-id="32" category="03" proc-id="RM0550J___0000AIN00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E144456J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000005KZ013X_07" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM0000005KZ013X_08" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000005KZ013X_08_0016" proc-id="RM0550J___0000AIO00000">
+<testtitle>Read TaSCAN Data (Ambient Temperature Sensor)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), follow the prompts on the screen to display the "ECU Data Monitor" screen and check the computer data.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → A/C → ECU Data Monitor]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.51in"/>
+<colspec colname="COL2" colwidth="2.50in"/>
+<colspec colname="COL3" colwidth="3.07in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Item Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Ambient Temperature Sensor</ptxt>
+<ptxt>[THO]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Displayed in range -23.3 to 65.95°C</ptxt>
+</item>
+<item>
+<ptxt>When open: (-23.3°C) displayed</ptxt>
+</item>
+<item>
+<ptxt>When shorted: (65.95°C) displayed</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<title>Result</title>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.90in"/>
+<colspec colname="COL2" colwidth="1.23in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Does not display same value as ambient temperature sensor surrounding temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Displays same value as ambient temperature sensor surrounding temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005KZ013X_08_0017" fin="false">A</down>
+<right ref="RM0000005KZ013X_08_0020" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005KZ013X_08_0017" proc-id="RM0550J___0000AIP00000">
+<testtitle>Inspect Thermistor Assembly (Ambient Temperature Sensor)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the thermistor assembly (ambient temperature sensor) connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the connector.</ptxt>
+<figure>
+<graphic graphicname="E136671J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+<ptxt>[Ambient Temperature]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="10" valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.00 to 3.73 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>15°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2.45 to 2.88 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.95 to 2.30 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>25°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.60 to 1.80 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>30°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.28 to 1.47 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>35°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.00 to 1.22 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>40°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.80 to 1.00 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>45°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.65 to 0.85 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>50°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.50 to 0.70 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>55°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.44 to 0.60 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>60°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.36 to 0.50 kΩ</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Touching the temperature sensor part will affect it with body heat and prevent a correct judgment, so hold the connector side when inspecting the sensor.</ptxt>
+</item>
+<item>
+<ptxt>Allow the sensor to adjust to the ambient temperature before inspecting.</ptxt>
+</item>
+</list1>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005KZ013X_08_0018" fin="false">OK</down>
+<right ref="RM0000005KZ013X_08_0021" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005KZ013X_08_0018" proc-id="RM0550J___0000AIQ00000">
+<testtitle>Inspect Wire Harness and Connector (Thermistor Assembly (Ambient Temperature Sensor) - Combination Meter Assembly)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the combination meter assembly connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals of the vehicle wire harness. (see <xref label="Seep02" href="RM0000005KW01EX"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="E144324J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (SO+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 (SO-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(SO+) - 23(TEMP)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(SO-) - 9(TX1+)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005KZ013X_08_0019" fin="false">OK</down>
+<right ref="RM0000005KZ013X_08_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005KZ013X_08_0019" proc-id="RM0550J___0000C0P00000">
+<testtitle>Replace Combination Meter Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the combination meter assembly. (see <xref label="Seep01" href="RM000002C0G001X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005KZ013X_08_0023" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000005KZ013X_08_0023" proc-id="RM0550J___0000C0O00000">
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Perform panel diagnosis (sensor check) and clear the diagnostic trouble codes. (see <xref label="Seep01" href="RM0000005LH016X"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Check the diagnostic trouble codes again.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC (12) is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No DTC is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005KZ013X_08_0020" fin="true">A</down>
+<right ref="RM0000005KZ013X_08_0024" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005KZ013X_08_0020">
+<testtitle>Replace Air Conditioner Amplifier Assembly<xref label="Seep01" href="RM000002140002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005KZ013X_08_0021">
+<testtitle>Replace Thermistor Assembly</testtitle>
+</testgrp>
+<testgrp id="RM0000005KZ013X_08_0022">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000005KZ013X_08_0024">
+<testtitle>Complete</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

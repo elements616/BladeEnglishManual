@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="RM000000CCX015X" category="D" type-id="303F4" name-id="0659I-00" from="200612">
+<name>DTC Check/Clear</name>
+<subpara id="RM000000CCX015X_z0" proc-id="RM0550J___00002UI00000">
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Using SST (TaSCAN), check mode as well as normal mode can be selected, which increases malfunction detection sensitivity compared to normal mode.</ptxt>
+</item>
+<item>
+<ptxt>Perform inspection in check mode when a malfunction is suspected in a sensor signal circuit but the normal code is output in normal mode.</ptxt>
+</item>
+</list1>
+</atten4>
+<step1>
+<ptxt>Pre-inspection Preparation</ptxt>
+<step2>
+<ptxt>Check that the throttle valve is fully closed.</ptxt>
+</step2>
+<step2>
+<ptxt>Move the shift lever to the N or P position.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the A/C OFF.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC Check (Reading Using TaSCAN)</ptxt>
+<step2>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Following the SST (TaSCAN) screen display, display the [Diagnosis Function Menu] - [Mode Change] screen, select normal mode or check mode, and check the DTCs.</ptxt>
+<atten4>
+<ptxt>If the SST (TaSCAN) display is abnormal, refer to <xref label="Seep01" href="RM0000005D5020X"/>.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC Check (Reading Using Check Engine Warning Light)</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before reading DTCs, turn the IG ON and check that the check engine warning light comes on.</ptxt>
+</item>
+<item>
+<ptxt>Inspection in check mode cannot be performed.</ptxt>
+</item>
+</list1>
+</atten3>
+<step2>
+<ptxt>Turn IG OFF.</ptxt>
+</step2>
+<step2>
+<ptxt>Using SST (diagnosis check wire No.2), connect between terminals 13 (TC) ←→ 4 (CG) of the DLC3.</ptxt>
+<figure>
+<graphic graphicname="C140838J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Connecting the connector to the wrong position will cause a malfunction, so never make a mistake.</ptxt>
+</item>
+<item>
+<ptxt>Use only the dedicated diagnosis check wire No.2.</ptxt>
+</item>
+</list1>
+</atten3>
+</step2>
+<step2>
+<ptxt>Turn the IG ON and read the number of blinks of the check engine warning light.</ptxt>
+<figure>
+<graphic graphicname="A065376J02" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If no code is displayed (the light does not blink), an open in the TC terminal circuit or a computer malfunction is suspected.</ptxt>
+</item>
+<item>
+<ptxt>If the check engine warning light remains on, a short in the wire harness (pinched, etc.) or a computer malfunction is suspected.</ptxt>
+</item>
+<item>
+<ptxt>If a meaningless code is output, a computer malfunction is suspected.</ptxt>
+</item>
+<item>
+<ptxt>If the check engine warning light comes on at 1000r/min or more and no code is output, turn the IG OFF once and then inspect again.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Remove the SST (diagnosis check wire No.2).</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Clearing DTC Memory (Clearing Using TaSCAN)</ptxt>
+<step2>
+<ptxt>Operate according to the SST (TaSCAN) screen display to display the [Diagnosis Function Menu] - [DTC Check] screen, and clear the DTCs.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If they cannot be cleared, turn the IG OFF once and then try again.</ptxt>
+</item>
+<item>
+<ptxt>Do not clear DTCs using TaSCAN until the cause has been identified.</ptxt>
+</item>
+</list1>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>Clearing DTCs (Clearing by Removing Fuse)</ptxt>
+<step2>
+<ptxt>Remove the EFI fuse (20A) and ETC-S fuse (10A), and reinstall the fuses after 60 seconds or more have elapsed.</ptxt>
+<figure>
+<graphic graphicname="A153641J02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>After inspecting and repairing the EFI system, always clear the DTC memory and then check that the normal code is output.</ptxt>
+</item>
+<item>
+<ptxt>Do not clear DTCs by battery clear (removing fuses) until the cause has been identified.</ptxt>
+</item>
+</list1>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>Check Diagnosis Judgment Results (Checking Using TaSCAN)</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>Perform a DTC output check after repairing a malfunctioning circuit indicated by DTC output, or during a reproduction test after clearing DTCs, etc.</ptxt>
+</atten4>
+<step2>
+<ptxt>Following the SST (TaSCAN) screen display, display the [Diagnosis Judgment Result Check] screen, and select [Check by DTC] from the menu.</ptxt>
+</step2>
+<step2>
+<ptxt>On the next screen, enter the DTC to be checked.</ptxt>
+</step2>
+<step2>
+<ptxt>After execution (check start), perform a reproduction test for the relevant DTC and check the DTC judgment result.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

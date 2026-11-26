@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740114p SYSTEM "grph_ent/a4740114p.png" NDATA png>
+
+<!ENTITY T030055A344 SYSTEM "t478030055a344.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T030055A344S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T030055A344" UPDATE = "ORIGINAL" LDUP = "2Oct2003"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Shift Lock Mechanism</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The shift lock computer prevents the shift lever from being moved out of the P position unless the brake pedal is depressed. For the shift lock mechanism, a shift lock unit integrating the shift lock solenoid, shift lock release switch, shift lock computer, etc. has been adopted, reducing the size of the shift lever assembly and simplifying its construction.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740114p" WIDTH = "6.903in" HEIGHT = "3.417in" />
+</FIGURE>
+</PARA>
+</SECTION>

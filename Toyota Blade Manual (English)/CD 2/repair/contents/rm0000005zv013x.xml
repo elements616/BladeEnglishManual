@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1002J_S000U" variety="S000U">
+<name>Brake Control</name>
+<ttl id="1002J_S000U_744TG_T0089" variety="T0089">
+<name>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</name>
+<para id="RM0000005ZV013X" category="U" type-id="3001G" name-id="442WR-00" from="200708">
+<name>Terminals of ECU</name>
+<subpara id="RM0000005ZV013X_z0" proc-id="RM0550J___0000GTW00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>ABS &amp; Traction Actuator Assembly (Built-in Skid Control Computer) Terminals</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The skid control computer is built into the actuator, and the actuator connector is a waterproof connector, so the voltage of each terminal cannot be inspected and oscilloscope waveforms cannot be checked with it installed on the vehicle.</ptxt>
+</item>
+<item>
+<ptxt>Check the actuator operation and communication establishment using the data monitor and Active Test with the SST (TaSCAN). (see <xref label="Seep01" href="RM000000602011X"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+<figure>
+<graphic graphicname="C146351J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<title>ABS &amp; Traction Actuator Assembly Terminals of ECU</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.64in"/>
+<colspec colname="COL2" colwidth="1.94in"/>
+<colspec colname="COL3" colwidth="3.50in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Symbol</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Name</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GND1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Body ground</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>STP</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stop light switch signal input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>RL-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear LH wheel speed sensor input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>RL+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear LH wheel speed sensor power source output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FR-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front RH wheel speed sensor input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FR+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front RH wheel speed sensor power source output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>11</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SP1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle speed signal output for meter</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>12</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>+BS</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Power source for solenoid drive</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GND2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Body ground</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>14</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN communication input/output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>16</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>RR-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear RH wheel speed sensor input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>RR+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear RH wheel speed sensor power source output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>18</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FL-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front LH wheel speed sensor input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>19</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FL+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front LH wheel speed sensor power source output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>21</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BZ</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Skid control buzzer output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>22</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>STP2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stop light relay input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>24</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>+BM</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Power source for motor drive</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>25</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN communication input/output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>26</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>EXI4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pre-crash system cancel switch input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>31</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>STPO</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stop light relay output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>33</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>TS</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Sensor test mode activation input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>34</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG power source</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>Inspect ABS &amp; Traction Actuator Assembly Wire Harness Side Connector</ptxt>
+<step2>
+<ptxt>Disconnect the connector from the actuator assembly.</ptxt>
+</step2>
+<step2>
+<ptxt>Using the SST (Toyota electrical tester), measure the voltage or resistance between each terminal of the wire harness side connector of the actuator assembly and body ground.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="C146352J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.76in"/>
+<colspec colname="COL2" colwidth="1.96in"/>
+<colspec colname="COL3" colwidth="2.21in"/>
+<colspec colname="COL4" colwidth="1.15in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No. (Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 (GND1) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>2 (STP) ←→ Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Stop light switch signal input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.5V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Stop light switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>11 (SP1) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed signal output for meter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>12 (+BS) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source input for solenoid drive</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>13 (GND2) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>24 (+BM) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source input for motor drive</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>26 (EXI4) ←→ Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Pre-crash system cancel switch input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pre-crash brake ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Pre-crash brake OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10K Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>34 (IG1) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG power source input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

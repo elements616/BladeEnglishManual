@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001I_S000I" variety="S000I">
+<name>Door Lock</name>
+<ttl id="1001I_S000I_744CR_T004N" variety="T004N">
+<name>Wireless Door Lock Control System</name>
+<para id="RM000000IU801GX" category="N" type-id="8009I" name-id="622HV-00" from="200612">
+<name>Function Inspection</name>
+<subpara id="RM000000IU801GX_01" type-id="01" category="01">
+<s-1 id="RM000000IU801GX_01_0001" proc-id="RM0550J___00002CW00000">
+<ptxt>Precautions for Inspection</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>The wireless door lock control operates only when the following conditions are met.</ptxt>
+<s3>
+<ptxt>All doors are closed.</ptxt>
+</s3>
+<s3>
+<ptxt>Power supply OFF.</ptxt>
+</s3>
+<s3>
+<ptxt>The power door lock operates normally.</ptxt>
+</s3>
+<s3>
+<ptxt>The electrical key transmitter is not inside the vehicle.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Wireless Door Lock Control Operating Range</ptxt>
+<s3>
+<ptxt>The operating range varies depending on the person operating it and how it is held.</ptxt>
+</s3>
+<s3>
+<ptxt>The operating range may become narrower or there may be places where it partly does not operate, due to the effects of the vehicle body shape, the surrounding environment, etc.</ptxt>
+</s3>
+<s3>
+<ptxt>Since weak radio waves are used, the operating range may become narrower or it may not operate if there are strong radio waves or noise at the frequency used.</ptxt>
+</s3>
+<s3>
+<ptxt>When the battery is depleted, the operating range becomes narrower or it does not operate.</ptxt>
+<atten4>
+<ptxt>Leaving the electrical key transmitter in a place exposed to direct sunlight, such as on the dashboard, may shorten battery life or cause a malfunction.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000IU801GX_01_0002" proc-id="RM0550J___00002CX00000">
+<ptxt>Vehicle Initial Condition (Conditions under which Wireless Operation is Possible are Met)</ptxt>
+<content1 releasenbr="1">
+<atten3>
+<ptxt>Indicates the initial condition in which customize functions using TaSCAN have not been selected.</ptxt>
+</atten3>
+<s2>
+<ptxt>IG OFF. </ptxt>
+</s2>
+<s2>
+<ptxt>The electrical key transmitter is not inside the vehicle.</ptxt>
+</s2>
+<s2>
+<ptxt>All doors are closed. (Door warning in meter is off)</ptxt>
+</s2>
+<s2>
+<ptxt>All doors are locked.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000IU801GX_01_0003" proc-id="RM0550J___00002CY00000">
+<ptxt>Inspect Wireless Door Lock Control Function</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Basic Function Inspection</ptxt>
+<atten4>
+<ptxt>The switches described in the text refer to the transmitting lock or unlock switches built into the electrical key transmitter.</ptxt>
+</atten4>
+<s3>
+<ptxt>Check that the LED of the electrical key transmitter comes on when each switch is pressed.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the LED does not come on when a switch is pressed, the battery may be depleted.</ptxt>
+</item>
+<item>
+<ptxt>If the switch is held down, the LED blinks repeatedly.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check that, within the remote control operating range, all doors unlock when the UNLOCK switch is pressed for approximately 1 seconds, and all doors lock when the LOCK switch is pressed for approximately 1 seconds. However, it does not operate when any door is open.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Chattering Prevention Function Inspection</ptxt>
+<s3>
+<ptxt>Check that even if a switch is held down, the corresponding operation is performed only 1 time and is not repeated continuously. However, check that if an interval of approximately 1 seconds or more is left between releasing the switch and pressing it again, the operation corresponding to the next switch pressed is performed.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Automatic Lock Function Inspection</ptxt>
+<s3>
+<ptxt>Check that, after all doors are unlocked by pressing the switch, all doors are automatically locked if no door is opened or all doors are not locked within approximately 30 seconds.</ptxt>
+</s3>
+<s3>
+<ptxt>Check that in the above condition, if any door is opened or all doors are locked within approximately 30 seconds, the doors are not automatically locked.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Switch Misoperation Prevention Function Inspection</ptxt>
+<s3>
+<ptxt>Check that the system does not operate when the switch of an unregistered electrical key transmitter is operated, and that lock and unlock operations are performed when a registered electrical key transmitter is operated.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Operation Stop Function Inspection with Door Open/Ajar</ptxt>
+<s3>
+<ptxt>Check that the doors do not lock even if the LOCK switch is operated while any door is ajar or open.</ptxt>
+<atten4>
+<ptxt>Unlock operation is possible even if any door is ajar or open.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Repeat Function Inspection</ptxt>
+<s3>
+<ptxt>Check that when the door control knob of the driver side door is forcibly held in the unlocked state and the switch is pressed, all doors are locked again after approximately 1 seconds.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Answer-back Function Inspection</ptxt>
+<s3>
+<ptxt>Check that when the LOCK switch is pressed, the hazard lights flash 1 time(s) and the buzzer sounds 1 time(s) at the same time as all doors lock.</ptxt>
+</s3>
+<s3>
+<ptxt>Check that when the UNLOCK switch is pressed, the hazard lights flash 2 time(s) and the buzzer sounds 2 time(s) at the same time as all doors unlock.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Illumination Function Inspection</ptxt>
+<s3>
+<ptxt>For the inspection procedure, refer to <xref label="Seep01" href="RM000000H0R00RX"/>.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1002J_S000U" variety="S000U">
+<name>Brake Control</name>
+<ttl id="1002J_S000U_744TG_T0089" variety="T0089">
+<name>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</name>
+<para id="RM00000060100QX" category="D" type-id="303F5" name-id="442O7-00" from="200612">
+<name>Test Mode</name>
+<subpara id="RM00000060100QX_z0" proc-id="RM0550J___00004IT00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Test Mode Inspection</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When test mode is entered, all test mode codes are stored once, and the codes that the computer determines to be normal during inspection are cleared from memory.</ptxt>
+</item>
+<item>
+<ptxt>During test mode, VSC does not operate regardless of whether the sensor check is normal or abnormal.</ptxt>
+</item>
+<item>
+<ptxt>When returning to normal mode, all test mode codes are cleared.</ptxt>
+</item>
+<item>
+<ptxt>If there is a malfunction in an ABS system sensor, the ABS warning light comes on and "ABS CHECK" is displayed on the multi-information display.</ptxt>
+</item>
+<item>
+<ptxt>If there is a malfunction in a VSC system sensor, "VSC CHECK" is displayed on the multi-information display.</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>Test Mode Activation Method (TaSCAN)</ptxt>
+<step3>
+<ptxt>Turn the IG OFF and connect the SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step3>
+<step3>
+<ptxt>Apply the parking brake.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn IG ON.</ptxt>
+</step3>
+<step3>
+<ptxt>Select "Diagnosis" → "System Diagnosis / Chassis" → "System Name / ABS/VSC" → "Mode Change Check" in that order on the SST (TaSCAN) screen to switch to test mode.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Test Mode Activation Method (DLC3 Short)</ptxt>
+<figure>
+<graphic graphicname="C146309J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Apply the parking brake.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the IG OFF and connect terminals 12 (TS) ←→ 4 (CG) of DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<atten3>
+<ptxt>Never connect the connector in the wrong position, as this will cause a malfunction.</ptxt>
+</atten3>
+</step3>
+<step3>
+<ptxt>Turn IG ON.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Test Mode Display Check</ptxt>
+<figure>
+<graphic graphicname="C146311J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>When test mode is activated, the ABS warning light comes on for approximately 3 seconds and then blinks in test mode, and "VSC TEST MODE" is displayed on the multi-information display and blinks at 4Hz intervals.</ptxt>
+<atten3>
+<table pgwide="1">
+<title>Conditions for Retaining Test Mode Codes</title>
+<tgroup cols="4" align="left">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DLC3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF→ON</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TS-CG terminals connected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Memory retained</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Memory retained</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Memory retained</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TS-CG terminals disconnected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Memory retained</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Memory retained</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Memory cleared</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten3>
+</step3>
+</step2>
+<step2>
+<ptxt>Yaw Rate Sensor &amp; G Sensor 0 Point Check</ptxt>
+<step3>
+<ptxt>Turn IG ON.</ptxt>
+</step3>
+<step3>
+<ptxt>Move the shift lever to P and keep the vehicle stopped on a level surface for 2 seconds or more.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The test mode display in the meter does not change.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If the sensor is normal and the above conditions are met when test mode is activated, the check has ended normally.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Yaw Rate Sensor Output Check</ptxt>
+<figure>
+<graphic graphicname="C146312J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>At a vehicle speed of 5km/h or more, without spinning the wheels, turn the steering wheel 90° or more and hold it for 1 seconds or more while driving in a 180° turn.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The vehicle direction at the start and end of the turn must be within 180 ±5°.</ptxt>
+</item>
+<item>
+<ptxt>Do not move the shift lever to P while turning. Also, do not turn the IG switch OFF.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The turning direction may be either way.</ptxt>
+</item>
+<item>
+<ptxt>The vehicle speed may be changed and the vehicle may be stopped or reversed while turning, but complete the turn within 20 seconds.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+<step3>
+<ptxt>Move the shift lever to P. At that time, the buzzer sounds for 3 seconds; check that the sensor check has ended.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If the buzzer does not sound, check the test mode codes.</ptxt>
+</item>
+<item>
+<ptxt>If there are no malfunctions in the test mode codes and the buzzer does not sound even after performing the sensor check several times, inspect the buzzer circuit.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Even if the VSC sensor check ends normally, the meter shows the test mode display.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Master Cylinder Pressure Sensor Check</ptxt>
+<step3>
+<ptxt>With the vehicle stopped (engine stopped), release the brake pedal for 1 seconds or more, then quickly depress the pedal with a force of 98N*m{999kgf*cm} or more, and check that the ABS warning light comes on for 3 seconds. </ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>While the ABS warning light is on, keep the brake pedal depressed with a force of 98N*m{999kgf*cm} or more.</ptxt>
+</item>
+<item>
+<ptxt>During test mode, the ABS warning light comes on for approximately 3 seconds each time the above pedal operation is performed.</ptxt>
+</item>
+<item>
+<ptxt>If the master cylinder pressure sensor check does not end, depressing the brake indiscriminately further reduces the vacuum, which may make it difficult to end the sensor check.</ptxt>
+</item>
+<item>
+<ptxt>When vacuum is insufficient, the master cylinder pressure sensor check may not end. In that case, idle the engine to ensure sufficient vacuum.</ptxt>
+</item>
+<item>
+<ptxt>If the brake is depressed firmly when vacuum is insufficient, the brake warning light may come on due to failure control. In that case, idle the engine to ensure sufficient vacuum.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Speed Sensor Check</ptxt>
+<step3>
+<ptxt>With the steering wheel in the straight-ahead position, start off without spinning the wheels, accelerate to 45km/h or more, and check that the ABS warning light goes off.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before performing the speed sensor check, complete the yaw rate sensor, deceleration sensor and master pressure sensor checks.</ptxt>
+</item>
+<item>
+<ptxt>If the sensor check is started with the steering wheel turned, or if the wheels are spun, the speed sensor check may not end.</ptxt>
+</item>
+<item>
+<ptxt>After the ABS warning light goes off, driving at 80Km/h or more causes the test mode codes to be stored again, so decelerate and stop before reaching 80Km/h.</ptxt>
+</item>
+<item>
+<ptxt>If the sensor check has not ended, the ABS warning light blinks even while driving and ABS does not operate.</ptxt>
+</item>
+<item>
+<ptxt>If the sensor check is started with the steering wheel turned, the ABS warning light may not go off after the speed sensor check ends.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>When the speed sensor check ends normally, the ABS warning light is off while driving and blinks in test mode while stopped.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="C146313J01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</step3>
+</step2>
+<step2>
+<ptxt>Sensor Check Completion</ptxt>
+<step3>
+<ptxt>When the sensor check ends normally, the ABS warning light blinks (test mode display) while the vehicle is stopped and is off while the vehicle is being driven.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The sensor check is completed when the yaw rate sensor, G sensor, speed sensor and master cylinder pressure sensor checks have ended normally.</ptxt>
+</item>
+<item>
+<ptxt>If the sensor check has not ended, the ABS warning light blinks even while driving and ABS does not operate.</ptxt>
+</item>
+<item>
+<ptxt>If a DTC is detected during test mode, the ABS warning light or VSC warning light comes on.</ptxt>
+</item>
+</list1>
+</atten3>
+</step3>
+</step2>
+<step2>
+<ptxt>Reading Test Mode Codes (TaSCAN)</ptxt>
+<step3>
+<ptxt>In test mode, check the DTCs using the SST (TaSCAN).</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step3>
+</step2>
+<step2>
+<ptxt>Reading Test Mode Codes (DLC3 Short)</ptxt>
+<figure>
+<graphic graphicname="C146309J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Turn IG OFF.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST, connect terminals 12 (TS) and 13 (TC) ←→ 4 (CG) of DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Do not connect the connector in the wrong position, as this will cause a malfunction.</ptxt>
+</item>
+<item>
+<ptxt>Perform this with the vehicle stopped.</ptxt>
+</item>
+</list1>
+</atten3>
+</step3>
+<step3>
+<ptxt>Turn IG ON.</ptxt>
+</step3>
+<step3>
+<ptxt>Read the ABS test mode codes and VSC test mode codes displayed on the multi-information display.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If only DTCs are displayed, repair the malfunctioning area and clear the DTCs.</ptxt>
+</item>
+<item>
+<ptxt>If only test mode codes are displayed, perform test mode again.</ptxt>
+</item>
+<item>
+<ptxt>If both DTCs and test mode codes are displayed, repair the malfunctioning area, clear the DTCs, and perform the test mode inspection again.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Test mode codes and DTCs are displayed.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Test Mode Ending Method (TaSCAN)</ptxt>
+<step3>
+<ptxt>Select "Diagnosis" → "System Diagnosis / Chassis" → "System Name / ABS/VSC" → "Mode Change" in that order on the SST (TaSCAN) screen to switch to normal mode.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn IG OFF and disconnect SST (TaSCAN).</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Test Mode Ending Method (DLC3 Short)</ptxt>
+<step3>
+<ptxt>Turn the IG OFF and disconnect terminals 13 (TC) and 12 (TS) ←→ 4 (CG) of DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn IG ON.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the TS ←→ CG terminals are disconnected with the IG ON, test mode continues.</ptxt>
+</item>
+<item>
+<ptxt>If the IG is turned ON with the TS ←→ CG terminals connected, test mode continues from the previous session.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Test Mode Code Chart</ptxt>
+<atten4>
+<ptxt>In the test mode codes, "SAE" indicates the output code when the TaSCAN diagnostic tool is used, and "MID" indicates the output code displayed on the multi-information display of the meter. (SAE: Society of Automotive Engineers)</ptxt>
+</atten4>
+</step1>
+<table pgwide="1">
+<title>ABS Test Mode Code Chart</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<colspec colname="COL3" colwidth="2.06in"/>
+<colspec colname="COL4" colwidth="2.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Code Number</ptxt>
+<ptxt>[SAE/MID]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+<ptxt>[Terminal Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Judgment Content</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Item</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1271/71</ptxt>
+<ptxt/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SPD FR Output Voltage Malfunction</ptxt>
+<ptxt>[FR+、FR-]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Judges foreign matter adhesion and the clearance between the sensor and rotor</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Speed sensor open or short</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor system wire harness open or short</ptxt>
+</item>
+<item>
+<ptxt>Poor connector contact pressure, wiring resistance</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor improperly installed</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor rotor system malfunction</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1272/72</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SPD FL Output Voltage Malfunction</ptxt>
+<ptxt>[FL+、FL-]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Judges foreign matter adhesion and the clearance between the sensor and rotor</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Speed sensor open or short</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor system wire harness open or short</ptxt>
+</item>
+<item>
+<ptxt>Poor connector contact pressure, wiring resistance</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor improperly installed</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor rotor system malfunction</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1273/73</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SPD RR Output Voltage Malfunction</ptxt>
+<ptxt>[RR+、RR-]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Judges foreign matter adhesion and the clearance between the sensor and rotor</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Speed sensor open or short</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor system wire harness open or short</ptxt>
+</item>
+<item>
+<ptxt>Poor connector contact pressure, wiring resistance</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor improperly installed</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor rotor system malfunction</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1274/74</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SPD RL Output Voltage Malfunction</ptxt>
+<ptxt>[RL+、RL-]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Judges foreign matter adhesion and the clearance between the sensor and rotor</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Speed sensor open or short</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor system wire harness open or short</ptxt>
+</item>
+<item>
+<ptxt>Poor connector contact pressure, wiring resistance</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor improperly installed</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor rotor system malfunction</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1275/75</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SPD FR Output Cycle Malfunction</ptxt>
+<ptxt>[FR+、FR-]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Judges the stability of the sensor input waveform</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Speed sensor rotor system malfunction</ptxt>
+</item>
+<item>
+<ptxt>Foreign matter adhering to speed sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1276/76</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SPD FL Output Cycle Malfunction</ptxt>
+<ptxt>[FL+、FL-]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Judges the stability of the sensor input waveform</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Speed sensor rotor system malfunction</ptxt>
+</item>
+<item>
+<ptxt>Foreign matter adhering to speed sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1277/77</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SPD RR Output Cycle Malfunction</ptxt>
+<ptxt>[RR+、RR-]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Judges the stability of the sensor input waveform</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Speed sensor rotor system malfunction</ptxt>
+</item>
+<item>
+<ptxt>Foreign matter adhering to speed sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1278/78</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SPD RL Output Cycle Malfunction</ptxt>
+<ptxt>[RL+、RL-]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Judges the stability of the sensor input waveform</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Speed sensor rotor system malfunction</ptxt>
+</item>
+<item>
+<ptxt>Foreign matter adhering to speed sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1279/79</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G Sensor Output Voltage Malfunction</ptxt>
+<ptxt>[-]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Judges the output voltage of the deceleration sensor in the yaw rate sensor</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Yaw rate sensor (G sensor) 0 point memory failure</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate sensor connector improperly engaged</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate sensor stuck</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate sensor improperly installed</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1281/81</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Master Pressure Sensor Output Malfunction</ptxt>
+<ptxt>[-]</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Judges the 0 point stored value of the master pressure sensor</ptxt>
+</item>
+<item>
+<ptxt>Judges that the master pressure sensor sensitivity is normal</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Master cylinder pressure sensor improperly engaged</ptxt>
+</item>
+<item>
+<ptxt>Stop light switch circuit connector improperly engaged</ptxt>
+</item>
+<item>
+<ptxt>Stop light switch stuck OFF</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>VSC Test Mode Code Chart</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<colspec colname="COL3" colwidth="2.04in"/>
+<colspec colname="COL4" colwidth="2.15in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Code Number</ptxt>
+<ptxt>[SAE/MID]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+<ptxt>[Terminal Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Judgment Content</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Item</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C0371/71</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Yaw Rate Sensor Malfunction</ptxt>
+<ptxt>[-]</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Judges the 0 point voltage value of the yaw rate sensor</ptxt>
+</item>
+<item>
+<ptxt>Judges the output voltage of the yaw rate sensor</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Yaw rate sensor system wire harness improperly engaged</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate sensor improperly installed</ptxt>
+</item>
+<item>
+<ptxt>P position signal line malfunction</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

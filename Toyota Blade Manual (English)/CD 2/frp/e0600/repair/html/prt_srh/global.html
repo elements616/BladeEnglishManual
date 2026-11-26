@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- $Id: global.html,v 1.7 2005/01/28 11:24:24 k-narumi Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Part Name Search</title>
+
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td class="top"></td></tr>
+	<tr>
+		<td width="28%" align="right">
+			<table cellpadding="1" cellspacing="0" border="0">
+				<tr>
+					<td>
+						<span class="text-white-prt-srh">Part Name:</span>
+						<input type="text" class="tinput-ime" size="45" name="keyname" id="keyname">&nbsp;
+						<span class="text-white-prt-srh"> Part Name Code:</span>
+						<input type="text" class="tinput" size="30" name="keyid" id="keyid">
+					</td>
+					<td width="5"></td>
+					<td>
+						<a id="srh" href="#" class="prt-srh-button" onClick="parent.callSearch();">Search</a>
+					</td>
+					<td width="130"></td>
+					<td>
+						<a class="prt-srh-button" href="javascript:parent.openNewWindow('../index.html')">Show in Separate Window</a>
+						<a class="prt-srh-button" href="javascript:parent.setTermValue('../index.html', parent.getParameterValue('term', parent.location))" target="_top">To Function Selection</a>
+					</td>
+					<td width="5"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

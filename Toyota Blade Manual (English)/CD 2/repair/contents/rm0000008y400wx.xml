@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="RM0000008Y400WX" category="C" type-id="3008K" name-id="0659W-00" from="200612">
+<dtccode>P0115/22</dtccode>
+<dtcname>Coolant Temperature Sensor Circuit</dtcname>
+<dtccode>P0117/22</dtccode>
+<dtcname>Coolant Temperature Sensor Open Circuit (Low)</dtcname>
+<dtccode>P0118/22</dtccode>
+<dtcname>Coolant Temperature Sensor Open Circuit (High)</dtcname>
+<subpara id="RM0000008Y400WX_02" type-id="31" category="03" proc-id="RM0550J___00002PP00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The resistance of the thermistor built into the E.F.I. water temperature sensor changes according to changes in the water temperature. The E.F.I. water temperature sensor is connected to the engine control computer in the same way as the intake air temperature sensor.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.17in"/>
+<colspec colname="COL2" colwidth="3.55in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0115/22</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Open or short in E.F.I. water temperature sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>0.5 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>E.F.I. Water Temperature Sensor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0117/22</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Short in E.F.I. water temperature sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>0.5 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>E.F.I. Water Temperature Sensor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0118/22</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Open in E.F.I. water temperature sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>0.5 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>E.F.I. Water Temperature Sensor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000008Y400WX_03" type-id="32" category="03" proc-id="RM0550J___00002PQ00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="G100102J26" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000008Y400WX_04" type-id="51" category="05" proc-id="RM0550J___00002PR00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Using SST (TaSCAN), read the Freeze Frame Data. Freeze Frame Data records part of the engine operating conditions when a malfunction occurs, and this information is useful for troubleshooting.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000008Y400WX_01" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000008Y400WX_01_0001" proc-id="RM0550J___00002PI00000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Engine Coolant Temperature)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and, with the engine stopped, read the engine coolant temperature displayed on the SST (TaSCAN).</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>-40°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>140°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Same as actual coolant temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008Y400WX_01_0002" fin="false">A</down>
+<right ref="RM0000008Y400WX_01_0016" fin="false">B</right>
+<right ref="RM0000008Y400WX_01_0018" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008Y400WX_01_0002" proc-id="RM0550J___00002PJ00000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Wire Harness Open Circuit Inspection)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+<figure>
+<graphic graphicname="A080124J10" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the E.F.I. water temperature sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (diagnosis check wire No.2), connect between terminals 2 (THW) ←→ 1 (E2) of the E.F.I. water temperature sensor.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the engine coolant temperature displayed on the SST (TaSCAN).</ptxt>
+<spec>
+<title>Displayed Temperature</title>
+<specitem>
+<ptxt>140°C</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008Y400WX_01_0019" fin="true">OK</down>
+<right ref="RM0000008Y400WX_01_0013" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008Y400WX_01_0013" proc-id="RM0550J___00002PK00000">
+<testtitle>Inspect Wire Harness and Connector (E.F.I. Water Temperature Sensor - Engine Control Computer)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the E.F.I. water temperature sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A080124J10" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage of the E.F.I. water temperature sensor terminal.</ptxt>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.53in"/>
+<colspec colname="COL2" colwidth="1.23in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2 (THW) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.5V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance of the E.F.I. water temperature sensor terminal.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.50in"/>
+<colspec colname="COL2" colwidth="1.26in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 (E2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.5V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>If THW voltage is outside the standard</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>If there is no continuity between terminal E2 and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008Y400WX_01_0014" fin="false">A</down>
+<right ref="RM0000008Y400WX_01_0015" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008Y400WX_01_0014" proc-id="RM0550J___00002PL00000">
+<testtitle>Inspect Wire Harness and Connector (THW Circuit Open Circuit Inspection)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the E.F.I. water temperature sensor connector and connector A of the engine control computer.</ptxt>
+<figure>
+<graphic graphicname="A105990J33" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the E.F.I. water temperature sensor and engine control computer vehicle side connector terminals. (see <xref label="Seep02" href="X39400000QV016D"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(THW) - A97(THW)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008Y400WX_01_0021" fin="true">OK</down>
+<right ref="RM0000008Y400WX_01_0020" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008Y400WX_01_0015" proc-id="RM0550J___00002PM00000">
+<testtitle>Inspect Wire Harness and Connector (ETHW Circuit Open Circuit Inspection)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the E.F.I. water temperature sensor connector and connector A of the engine control computer.</ptxt>
+<figure>
+<graphic graphicname="A105990J34" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the E.F.I. water temperature sensor and engine control computer vehicle side connector terminals. (see <xref label="Seep02" href="X39400000QV016D"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC1" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(E2) - A96(ETHW)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008Y400WX_01_0023" fin="true">OK</down>
+<right ref="RM0000008Y400WX_01_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008Y400WX_01_0016" proc-id="RM0550J___00002PN00000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Wire Harness Short Circuit Inspection)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the E.F.I. water temperature sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the coolant temperature displayed on the SST (TaSCAN).</ptxt>
+<spec>
+<title>Displayed Temperature</title>
+<specitem>
+<ptxt>-40°C</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008Y400WX_01_0024" fin="true">OK</down>
+<right ref="RM0000008Y400WX_01_0017" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008Y400WX_01_0017" proc-id="RM0550J___00002PO00000">
+<testtitle>Inspect Wire Harness and Connector (E.F.I. Water Temperature Sensor - Engine Control Computer)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the E.F.I. water temperature sensor connector and connector A of the engine control computer.</ptxt>
+<figure>
+<graphic graphicname="A105990J36" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance of the E.F.I. water temperature sensor and engine control computer vehicle side connector terminals. (see <xref label="Seep02" href="X39400000QV016D"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.69in"/>
+<colspec colname="COLSPEC2" colwidth="1.22in"/>
+<colspec colname="COL2" colwidth="1.22in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 (THW) and A97 (THW) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (E2) and A96 (ETHW) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008Y400WX_01_0026" fin="true">OK</down>
+<right ref="RM0000008Y400WX_01_0025" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008Y400WX_01_0018">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000CD101FX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000008Y400WX_01_0019">
+<testtitle>Replace E.F.I. Water Temperature Sensor<xref label="Seep01" href="RM0000030JX000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000008Y400WX_01_0020">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000008Y400WX_01_0021">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000008Y400WX_01_0022">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000008Y400WX_01_0023">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000008Y400WX_01_0024">
+<testtitle>Replace E.F.I. Water Temperature Sensor<xref label="Seep01" href="RM0000030JX000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000008Y400WX_01_0025">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000008Y400WX_01_0026">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

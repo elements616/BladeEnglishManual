@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="1001O_S001F" variety="S001F">
+<name>Cruise Control</name>
+<ttl id="1001O_S001F_74QXJ_T00FI" variety="T00FI">
+<name>Steering Pad Switch Assembly</name>
+<para id="RM000000FM000CX" category="G" type-id="3001K" name-id="59147-00" from="200708">
+<name>Component Inspection</name>
+<subpara id="RM000000FM000CX_01" type-id="01" category="01">
+<s-1 id="RM000000FM000CX_01_0001" proc-id="RM0550J___0000CCT00000">
+<ptxt>Inspect Steering Pad Switch Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="E155195J02" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COLSPEC0" colwidth="2.36in"/>
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4(DIST) - 6(ECC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Distance switch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4(DIST) - 6(ECC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Distance switch ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

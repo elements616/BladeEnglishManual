@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001H_S0001" variety="S0001">
+<name>Seat</name>
+<ttl id="1001H_S0001_76AU0_T00JH" variety="T00JH">
+<name>Front Power Seat Switch LH</name>
+<para id="RM000001IN1008X" category="G" type-id="3001K" name-id="791OU-02" from="200810">
+<name>Component Inspection</name>
+<subpara id="RM000001IN1008X_01" type-id="01" category="01">
+<s-1 id="RM000001IN1008X_01_0001" proc-id="RM0550J___0000HTG00000">
+<ptxt>Resistance Measurement</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals when each switch is operated.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="B182723J03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<title>Slide Switch</title>
+<tgroup cols="3">
+<colspec colname="COLSPEC1" colwidth="1.82in"/>
+<colspec colname="COLSPEC0" colwidth="1.47in"/>
+<colspec colname="COL3" colwidth="0.84in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(B) - 9(SLDF)</ptxt>
+<ptxt>4(E) - 6(SLDR)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4(E) - 6(SLDR) - 9(SLDF)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(B) - 6(SLDR)</ptxt>
+<ptxt>4(E) - 9(SLDF)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table>
+<title>Reclining Switch</title>
+<tgroup cols="3">
+<colspec colname="COLSPEC1" colwidth="1.82in"/>
+<colspec colname="COLSPEC0" colwidth="1.47in"/>
+<colspec colname="COL3" colwidth="0.84in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(B) - 3(RCLF)</ptxt>
+<ptxt>2(RCLR) - 4(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(RCLR) - 3(RCLF) - 4(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(B) - 2(RCLR)</ptxt>
+<ptxt>3(RCLF) - 4(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

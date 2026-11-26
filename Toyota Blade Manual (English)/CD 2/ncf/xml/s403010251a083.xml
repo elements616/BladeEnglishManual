@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4600017p SYSTEM "grph_ent/a4600017p.png" NDATA png>
+<!ENTITY a4600029p SYSTEM "grph_ent/a4600029p.png" NDATA png>
+
+<!ENTITY T010251A083 SYSTEM "t403010251a083.xml">
+<!ENTITY T010251A083A301 SYSTEM "t403010251a083a301.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010251A083S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010251A083" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Knock Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A flat knock sensor has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>Reliability is ensured by providing 1 sensors each on the left and right inside the V-bank.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4600017p" WIDTH = "6.903in" HEIGHT = "3.847in" />
+</FIGURE>
+
+<MECA ID = "T010251A083A301" UPDATE = "ORIGINAL" LDUP = "12Dec2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Knock Sensor Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the knock sensor receives vibration from the cylinder block, the movement of the weight lags due to inertia. As a result, pressure is applied to the piezoelectric ceramic provided between the cylinder block and the weight, generating voltage. The voltage is output almost constantly across all frequency bands, and the engine control computer detects the target frequency and determines that knocking is occurring.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4600029p" WIDTH = "6.903in" HEIGHT = "3.167in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

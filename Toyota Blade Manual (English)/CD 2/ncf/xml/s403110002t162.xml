@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740367b SYSTEM "grph_ent/a4740367b.png" NDATA png>
+<!ENTITY a4740365b SYSTEM "grph_ent/a4740365b.png" NDATA png>
+<!ENTITY a4740364b SYSTEM "grph_ent/a4740364b.png" NDATA png>
+<!ENTITY a4740370b SYSTEM "grph_ent/a4740370b.png" NDATA png>
+<!ENTITY a4740366b SYSTEM "grph_ent/a4740366b.png" NDATA png>
+
+<!ENTITY T110002T162 SYSTEM "t403110002t162.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T110002T162S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T110002T162" UPDATE = "ORIGINAL" LDUP = "2May2006"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Radar Cruise Control System Outline</TITLE>
+<LIST1><ITEM><PTXT>A "radar cruise control system" that allows driving with 2 types of control, constant speed control mode and vehicle-to-vehicle distance control mode, has been adopted and provided according to specification.</PTXT></ITEM>
+<ITEM><PTXT>Constant speed control mode is a mode in which the vehicle is driven while keeping the vehicle speed constant.</PTXT></ITEM>
+<ITEM><PTXT>Vehicle-to-vehicle distance control mode is a mode in which, in addition to the function of keeping the vehicle speed constant, the millimeter wave radar sensor assembly determines the presence of a preceding vehicle and the vehicle-to-vehicle distance, and the vehicle follows the preceding vehicle while maintaining an appropriate vehicle-to-vehicle distance according to vehicle speed.</PTXT></ITEM>
+<ITEM><PTXT>Switching between constant speed control mode and vehicle-to-vehicle distance control mode is done by operating the "cruise control main switch" mounted on the right side of the steering wheel.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The set vehicle-to-vehicle distance (time) when following a preceding vehicle can be set to 3 levels, "Long", "Middle" and "Short", using the vehicle-to-vehicle distance switch on the steering wheel.</PTXT></ITEM>
+<ITEM><PTXT>The operating status, control mode, etc. of the radar cruise control system are displayed on the "multi-information display" in the combination meter assembly.</PTXT></ITEM>
+<ITEM><PTXT>Brake control is performed automatically when the vehicle gets too close to the preceding vehicle, improving follow-up controllability in vehicle speed control mode. In addition, if the vehicle approaches the preceding vehicle when sufficient deceleration cannot be achieved, the skid control buzzer sounds to warn the driver that driver operation (braking, etc.) is required.</PTXT></ITEM>
+<ITEM><PTXT>In constant speed control mode, the engine control computer controls all system functions; in vehicle-to-vehicle distance control mode, the engine control computer and distance control computer assembly control all system functions.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T110002T162I01" INDSW = "OFF">
+<TITLE>Radar Cruise Control System Components Location1</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740367b" WIDTH = "6.917in" HEIGHT = "4.611in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>List of Main Functions of Radar Cruise Control System Components1</TITLE>
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "11%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "19%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "51%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Components</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "5"><PTXT>Cruise Control Main Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Switch</PTXT>
+<PTXT>(Push Type)</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" CONSPIC = "0"><LIST1><ITEM><PTXT>The main power ON/OFF switch for the radar cruise control system.</PTXT></ITEM>
+<ITEM><PTXT>Outputs the ON/OFF signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "4"><PTXT>Control Switch</PTXT>
+<PTXT>(4-direction Lever Type)</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4"><LIST1><ITEM><PTXT>When operated with the main switch ON, outputs each switch operation signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>-SET Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Deceleration control/vehicle speed set</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>+RES Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Acceleration control/resume control</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>CANCEL Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Control cancel</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>MODE Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Switching operation from vehicle-to-vehicle distance control mode to constant speed control mode</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Steering Sensor</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" CONSPIC = "0">
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Detects the steering angle and steering direction, and outputs a steering angle signal to the distance control computer assembly.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Windshield Wiper Switch Assembly</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" CONSPIC = "0">
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Detects operation of the windshield wiper switch to HI, and outputs a signal to the distance control computer assembly.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Transmission Shift Switch</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" CONSPIC = "0">
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Detects gear up/down operations and outputs a signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Vehicle-to-vehicle Distance Switch</PTXT>
+<PTXT>(In Steering Pad Switch Assembly)</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" CONSPIC = "0">
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Each time the switch is pressed, the set vehicle-to-vehicle distance for follow-up driving in vehicle-to-vehicle distance control mode changes among 3 levels: "Long", "Middle" and "Short".</PTXT></ITEM>
+<ITEM><PTXT>Immediately after the engine is started, the system starts at "Long".</PTXT></ITEM>
+<ITEM><PTXT>Outputs the switch operation signal to the distance control computer assembly.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>The approximate controlled vehicle-to-vehicle distance for each distance setting selected with the vehicle-to-vehicle distance switch is as shown in the table below. (When driving at a vehicle speed of 80km/h)</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "9%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "73%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Setting</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controlled Vehicle-to-vehicle Distance</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Remarks</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>"Long"</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Approx. 50m</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "2"><LIST1><ITEM><PTXT>Each controlled vehicle-to-vehicle distance changes in proportion to vehicle speed, becoming shorter as vehicle speed decreases.</PTXT></ITEM>
+<ITEM><PTXT>On long downhill slopes, etc., the controlled vehicle-to-vehicle distance may become shorter than the set distance.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>"Middle"</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Approx. 40m</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>"Short"</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Approx. 30m</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002T162I02" INDSW = "OFF">
+<TITLE>How to Switch Between Vehicle-to-vehicle Distance Control Mode and Constant Speed Control Mode</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Operating Procedure for Using Vehicle-to-vehicle Distance Control Mode</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "7%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "92%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Operation</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Turn ON the main switch of the cruise control main switch</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Operating Procedure for Using Constant Speed Control Mode</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "7%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "92%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Operation</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Turn ON the main switch of the cruise control main switch</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Turn ON the MODE switch of the cruise control main switch for approximately 1 seconds or more</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>Switching to constant speed control mode is not possible once any other operation has been performed after the main switch is turned ON, to prevent incorrect operation during control.</PTXT></ITEM>
+<ITEM><PTXT>It is not possible to switch from constant speed control mode to vehicle-to-vehicle distance control mode. Turn the main switch OFF once and operate it again.</PTXT></ITEM></LIST1></INDICATE>
+<INDICATE ID = "T110002T162I03" INDSW = "OFF">
+<TITLE>Radar Cruise Control System Configuration Diagram2</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740365b" WIDTH = "6.903in" HEIGHT = "8.181in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>List of Main Functions of Radar Cruise Control System Components2</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "68%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Distance Control Computer Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Based on data from the millimeter wave radar sensor assembly, determines the vehicle to follow and the acceleration/deceleration needed to achieve the target vehicle-to-vehicle distance, and outputs brake control request and skid control buzzer request signals.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Stop Light Switch Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects that the brake pedal is depressed and outputs a brake operation signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Accelerator Pedal Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects the accelerator pedal depression amount and outputs a signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Skid Control Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Based on a signal from the skid control computer, sounds the buzzer to warn that the distance to the preceding vehicle has become short. (Approach Warning)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Combination Meter Assembly</PTXT>
+<PTXT>(Built into Meter Computer)</PTXT>
+<PTXT>(Built-in Single Tone Buzzer)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Based on signals from the engine control computer, illuminates the CRUISE operation/warning indicator light when the main switch is ON and blinks it when the radar cruise control system malfunctions.</PTXT></ITEM>
+<ITEM><PTXT>Based on signals from the engine control computer, displays the system control status (detection of preceding vehicle, vehicle-to-vehicle distance, set vehicle speed) and warnings on the multi-information display.</PTXT></ITEM>
+<ITEM><PTXT>Illuminates the master warning indicator light when a warning is displayed on the multi-information display.</PTXT></ITEM>
+<ITEM><PTXT>Sounds the single tone buzzer when a radar cruise control system malfunction occurs or during auto cancel control.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Yaw Rate Sensor Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects the yaw rate and outputs a signal to the distance control computer assembly.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Network Gateway ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Mutually transmits and receives data within the CAN communication system.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Shift Lever Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects shifting to shift position "S" and gear up/down operations, and outputs a signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>DLC3</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>By connecting and operating TaSCAN, DTCs and computer data can be read.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002T162I04" INDSW = "OFF">
+<TITLE>Radar Cruise Control System Components Location3</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740364b" WIDTH = "6.903in" HEIGHT = "6.625in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>List of Main Functions of Radar Cruise Control System Components3</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Millimeter Wave Radar Sensor Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Radio waves in the millimeter wave<HINTREF REFID = "H403110002T16201"/> band are emitted forward, and if a preceding vehicle or other object is present, the radio waves reflected from the rear surface of that vehicle are received. Based on the frequency change of the received radio waves and electronic scanning, calculates the presence of a preceding vehicle in the own vehicle's lane, the distance to the preceding vehicle, the relative speed, etc., and outputs this data to the distance control computer assembly.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Controls the functions of the radar cruise control system based on signals from each computer and sensor.</PTXT></ITEM>
+<ITEM><PTXT>Drives the throttle control motor to accelerate/decelerate.</PTXT></ITEM>
+<ITEM><PTXT>Outputs the system control status to the meter computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Throttle Control Motor (Built into Throttle Body Assembly)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Adjusts the throttle control valve to the set opening angle according to signals from the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>ABS &amp; Traction Actuator Assembly (Skid Control Computer)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Drives the brake actuator based on signals from the distance control computer assembly to perform brake control.</PTXT></ITEM>
+<ITEM><PTXT>Outputs a stop light illumination request signal during the above brake control to illuminate the stop lights.</PTXT></ITEM>
+<ITEM><PTXT>Sounds the skid control buzzer based on signals from the distance control computer assembly.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Neutral Start Switch Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects the shift position and outputs a shift position signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Speed Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects the wheel speed and outputs a signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Clutch Control Solenoid</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Performs shifting according to signals from the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H403110002T16201">Millimeter waves are radio waves in a very high frequency band from 30GHz to 300GHz, with an extremely short wavelength in a vacuum of 1 to 10mm. Millimeter waves are not easily affected by conditions such as rain, fog or snow, and provide excellent object recognition performance. The millimeter wave radar sensor assembly uses radio waves in the 76GHz band.</PTXT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740370b" WIDTH = "6.903in" HEIGHT = "2.000in" />
+</FIGURE>
+</ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+<INDICATE ID = "T110002T162I05" INDSW = "OFF">
+<TITLE>Radar Cruise Control System Wiring Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740366b" WIDTH = "6.903in" HEIGHT = "8.458in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+</SECTION>

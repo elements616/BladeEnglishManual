@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+  <title>[Electronic Technical Manual]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000ITJ019X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EFI System (2AZ-FE) Function Inspection</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">Print</a></td></tr></table><h2>Preparation List<a href="#" onclick="openSeePage('ppr','RM000000ITJ019X');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all" class="beforePng"><a name="RM000000ITJ019X_01"></a><br clear="all" class="beforePng"><a name="RM000000ITJ019X_01_0001"></a><table width="100%" cellspacing="0" border="0" class="s1r"><tr><td class="s1r">1. Throttle Body Function Inspection</td></tr></table><font class="ptxt"></font><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">Be sure to perform a function inspection after assembling the throttle body or removing and installing its components.</dd></dl></p>
+<ol class="s2">
+<li><p><font class="ptxt">Remove the EFI fuse and ETC-S fuse at the same time, and connect the fuses after 60 seconds or more have elapsed.  </font><br></p></li>
+<li><p><font class="ptxt">After installing the throttle body to the vehicle, turn the IG ON without operating the accelerator pedal.</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">If the accelerator pedal is operated, start over from (1).</dd></dl></p></p></li>
+<li><p><font class="ptxt">Connect SST (TaSCAN) to DLC3.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">Start the engine, and check that the check engine warning light is not illuminated and that the idle speed is within the standard when the A/C is turned ON → OFF after warm-up.  </font><br><p><dl class="spec"><dt class="spec">Standard</dt><dd class="spec">A/C OFF 670-770r/min<br></dd></dl></p><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">Perform with no electrical load.<br></li><li class="atten3">Perform in the N or P position.<br></li></ol></p></p></li>
+<li><p><font class="ptxt">When the accelerator pedal is quickly depressed to near full open, check that the value of [ECU Data Monitor] - [Throttle Sensor No.1 Opening (THP1)] is 60% or more.  </font><br></p></li>
+<li><p><font class="ptxt">Perform a road test and check that there is nothing unusual.  </font><br></p></li></ol><br clear="all"><br clear="all" class="beforePng"><a name="RM000000ITJ019X_01_0004"></a><table width="100%" cellspacing="0" border="0" class="s1r"><tr><td class="s1r">2. Camshaft Oil Control Valve Assembly Operation Inspection</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">Warm up the engine.</font><br></p></li>
+<li><p><font class="ptxt">Connect SST (TaSCAN) to DLC3.  </font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">Following the SST (TaSCAN) screen display, select [Active Test] - [VVT Control].  </font><br></p></li>
+<li><p><font class="ptxt">Check the idle speed for [Not Performed/Performed]. </font><br><p><dl class="spec"><dt class="spec">Standard</dt><dd class="spec">Not performed (OCV OFF): Normal engine speed<br></dd><dd class="spec">Performed (OCV ON): Rough idle or engine stalls<br></dd></dl></p></p></li>
+<li><p><font class="ptxt">Following the SST (TaSCAN) screen display, select [Active Test] - [VVT Linear Drive Bank 1].</font><br></p></li>
+<li><p><font class="ptxt">Fully advance the valve timing (+100%) and check the idle speed.</font><br><p><dl class="spec"><dt class="spec">Standard</dt><dd class="spec">Valve timing not advanced: Normal engine speed<br></dd><dd class="spec">Valve timing fully advanced: Rough idle or engine stalls<br></dd></dl></p></p></li></ol><br clear="all"><br clear="all" class="beforePng"><a name="RM000000ITJ019X_01_0005"></a><table width="100%" cellspacing="0" border="0" class="s1r"><tr><td class="s1r">3. Intake Air Flow Meter Sub-assembly Function Inspection</td></tr></table><font class="ptxt"></font><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">Inspect the intake air flow meter sub-assembly according to the following procedure.<br></li><li class="atten3">If both [ECU Data Monitor] - [F/B Learned Value Bank 1] and [Intake Air Amount] are outside the standard, replace the intake air flow meter sub-assembly.<br></li></ol></p>
+<ol class="s2">
+<li><p><font class="ptxt">Road Test</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">With all accessory switches OFF, start the engine and warm it up until the coolant temperature reaches 75°C or more.</font><br></p></li>
+<li><p><font class="ptxt">Drive at 50km/h or more for 3-5 minutes. (*1)</font><br></p></li>
+<li><p><font class="ptxt">Idle the engine for 2 minutes. (*2)</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Repeat (*1) and (*2) 3 times.</font><br><br clear="all"><div class="full"><br clear="all"><img src="../../img/a135514j02.png" name="A135514J02" alt="A135514J02" border="1" class="full"></div><br clear="all"></p></li></ol></p></li>
+<li><p><font class="ptxt">Air-fuel Ratio F/B Learned Value Inspection</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Connect SST (TaSCAN) to DLC3.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">Following the SST (TaSCAN) screen display, select [ECU Data Monitor] - [F/B Learned Value Bank 1] and read the air-fuel ratio F/B learned value.</font><br><p><dl class="spec"><dt class="spec">Standard</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="37.8%
+						"><colgroup align="center" width="50%
+			"><col align=""></colgroup><colgroup align="center" width="50%
+			"><col align=""></colgroup><tr><th>Condition<br></th><th>Standard<br></th></tr><tr><td>At idle<br></td><td>-15-+15%<br></td></tr></table></dd></dl></p><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">If outside the standard, perform the following [Intake Air Amount Inspection].</dd></dl></p></p></li></ol></p></li>
+<li><p><font class="ptxt">Intake Air Amount Inspection</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">Inspect with the vehicle level and the engine stopped.<br></li></ol><ol style="list-style-type: disc"><li class="atten3">Do not extract exhaust from the exhaust tail pipe with an exhaust duct.<br></li></ol></p><br>
+<ol class="s3">
+<li><p><font class="ptxt">Turn the IG ON and wait for 30 seconds.</font><br></p></li>
+<li><p><font class="ptxt">Following the SST (TaSCAN) screen display, select [ECU Data Monitor] - [Intake Air Amount] and read the intake air amount.</font><br><p><dl class="spec"><dt class="spec">Standard</dt><dd class="spec">0.48g/s or less<br></dd></dl></p></p></li></ol></p></li></ol><br clear="all"><br clear="all" class="beforePng"><a name="RM000000ITJ019X_01_0002"></a><table width="100%" cellspacing="0" border="0" class="s1r"><tr><td class="s1r">4. Accelerator Pedal Sensor Assembly Function Inspection</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">Accelerator Sensor No.1 Voltage Inspection</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Connect SST (TaSCAN) to DLC3.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">Turn the IG ON with the engine stopped.</font><br></p></li>
+<li><p><font class="ptxt">Following the SST (TaSCAN) screen display, select [ECU Data Monitor] - [Accelerator Sensor No.1 Voltage (VPA1)] and check the voltage with the accelerator fully closed.</font><br><p><dl class="spec"><dt class="spec">Standard</dt><dd class="spec">0.5-1.1V<br></dd></dl></p></p></li></ol></p></li>
+<li><p><font class="ptxt">Throttle Sensor Opening No.1 Inspection</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Connect SST (TaSCAN) to DLC3.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">Turn the IG ON with the engine stopped.</font><br></p></li>
+<li><p><font class="ptxt">Following the SST (TaSCAN) screen display, select [ECU Data Monitor] - [Throttle Sensor No.1 Opening (THPS)] and check the opening.</font><br><p><dl class="spec"><dt class="spec">Standard</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="37.8%
+						"><colgroup align="center" width="50%
+			"><col align=""></colgroup><colgroup align="center" width="50%
+			"><col align=""></colgroup><tr><th>Condition<br></th><th>Throttle SensorNo.1 Opening<br></th></tr><tr><td>Accelerator pedal fully closed<br></td><td>10 to 20%<br></td></tr><tr><td>Accelerator pedal fully open<br></td><td>66 to 98%<br></td></tr><tr><td>Accelerator pedal fully closed → fully open<br></td><td>Changes continuously<br></td></tr></table></dd></dl></p></p></li></ol></p></li>
+<li><p><font class="ptxt">Accelerator Pedal Sensor Output Voltage Inspection</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Turn IG ON.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a115666j09.png" name="A115666J09" alt="A115666J09" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Using SST (Toyota electrical tester), measure the voltage between each terminal from the vehicle side connector.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="spec"><dt class="spec">Standard</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="37.8%
+						"><colgroup align="" width="33%
+			"><col align=""></colgroup><colgroup align="" width="33%
+			"><col align=""></colgroup><colgroup align="" width="33%
+			"><col align=""></colgroup><tr><th align="center">Pedal Condition<br></th><th align="center">VPA&larr;&rarr;EPA<br></th><th align="center">VPA2&larr;&rarr;EPA2<br></th></tr><tr><td align="center">Fully closed<br></td><td align="center">0.5 to 1.1V<br></td><td align="center">1.2 to 2.0V<br></td></tr><tr><td align="center">Fully open<br></td><td align="center">2.6 to 4.5V<br></td><td align="center">3.4 to 5.0V<br></td></tr><tr><td align="center">Fully open ←→ fully closed<br></td><td align="center">Changes continuously<br></td><td align="center">Changes continuously<br></td></tr></table></dd></dl></p></p></li></ol></p></li></ol><br clear="all"></body></html>

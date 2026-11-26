@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectionList>
+	<connector type="gp" code="FL">
+		<pin>
+			<line id="1" color="W-B">
+				<connector type="w2w" code="QF1" sex="male">
+					<pin no="1"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="QF1" sex="female">
+		<pin no="1">
+			<line id="2" color="W-B">
+				<connector type="conn" code="Q5">
+					<pin no="1"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="Q5">
+		<pin no="4">
+			<line id="3" color="L">
+				<connector type="w2w" code="QF1" sex="female">
+					<pin no="8"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="QF1" sex="male">
+		<pin no="8">
+			<line id="4" color="L">
+				<connector type="jbc" code="2P">
+					<pin no="1"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+</connectionList>

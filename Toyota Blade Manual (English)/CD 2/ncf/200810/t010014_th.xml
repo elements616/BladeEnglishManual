@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740185p SYSTEM "../xml/grph_ent/a4740185p.png" NDATA png>
+<!ENTITY c4210006p SYSTEM "../xml/grph_ent/c4210006p.png" NDATA png>
+<!ENTITY a3810052p SYSTEM "../xml/grph_ent/a3810052p.png" NDATA png>
+<!ENTITY a3810045p SYSTEM "../xml/grph_ent/a3810045p.png" NDATA png>
+
+<!ENTITY T010257A149 SYSTEM "../xml/t478010257a149.xml">
+<!ENTITY T010257A101 SYSTEM "../xml/t478010257a101.xml">
+<!ENTITY T010257A151 SYSTEM "../xml/t478010257a151.xml">
+<!ENTITY T010257A407 SYSTEM "../xml/t478010257a407.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T010257A149S"><SCTITLE/>
+
+<PARA INFOID = "T010257A149" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Lubrication General</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A fully pressurized, full-flow filtration lubrication system has been adopted.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740185p" WIDTH = "6.903in" HEIGHT = "7.528in" />
+</FIGURE>
+<INDICATE ID = "T010257A149I01" INDSW = "OFF">
+<TITLE>Oil Type</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>SAE Viscosity (Factory Fill Oil)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>5W-20<HINTREF     REFID = "H478010257A14901"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>API Grade (Factory Fill Oil)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>SL</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Total Oil Capacity (L)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Approx. 6.8</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478010257A14901">Toyota Genuine Motor Oil (SAE 0W-20) cannot be used on vehicles with the 2GR-FE engine.</PTXT></ITEM></LIST1></HINT>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010257A101S"><SCTITLE/>
+
+<PARA INFOID = "T010257A101" UPDATE = "ORIGINAL" LDUP = "12Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Oil Pump</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The oil pump is a compact, high-efficiency, multi-tooth cycloid rotor type driven directly by the crankshaft and is located on the timing chain cover. The discharge volume has been optimized, and the drive rotor has a spigotless construction, reducing the rotor diameter and friction loss.</PTXT></ITEM>
+<ITEM><PTXT>A relief valve is built in, and a bypass passage is provided so that relieved oil does not return directly to the oil pan, suppressing fluctuations in the oil level in the oil pan and reducing friction.</PTXT></ITEM>
+<ITEM><PTXT>FIPG (formed in place gasket) with excellent sealing performance is used on the mounting surfaces with the cylinder block and oil pan to ensure reliability.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c4210006p" WIDTH = "6.903in" HEIGHT = "2.958in" />
+</FIGURE>
+<SPEC ID = "T010257A101X01" INDSW = "OFF">
+<TITLE>Oil Pump Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "21%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Pump Speed</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>600r/min</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>2000r/min</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>6200r/min</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Discharge Volume [L/min]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>6.0 or more</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>86.8 or more</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Discharge Pressure [kPa { kgf/cm<SUP>2</SUP>}]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>100{1.0}</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>290{3.0}</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Relief Valve Opening Pressure [kPa { kgf/cm<SUP>2</SUP>}]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>490{5.0}</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010257A151S"><SCTITLE/>
+
+<PARA INFOID = "T010257A151" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Oil Filter</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A replaceable element type oil filter has been adopted. The element uses high-performance filter paper to ensure sufficient filtration performance and is fully combustible.</PTXT></ITEM>
+<ITEM><PTXT>The cap is made of aluminum alloy for longer life.</PTXT></ITEM>
+<ITEM><PTXT>A drain structure is provided to prevent oil from splashing when the oil filter element is replaced, improving serviceability.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810052p" WIDTH = "6.903in" HEIGHT = "5.042in" />
+</FIGURE>
+<SPEC ID = "T010257A151X01" INDSW = "OFF">
+<TITLE>Oil Filter Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Replaceable Element Type</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Filtration Method</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Full-flow Type</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Filtration Area [cm<SUP>2</SUP>] </PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>995</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Element Outer Diameter x Height [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>φ70.5×67</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Relief Valve Opening Pressure [kPa { kgf/cm<SUP>2</SUP>}]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>100{1.0}</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010257A407S"><SCTITLE/>
+
+<PARA INFOID = "T010257A407" UPDATE = "ORIGINAL" LDUP = "20Jul2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Oil Jet</TITLE>
+<LIST1><ITEM><PTXT>Oil jets have been provided in the cylinder block. By spraying oil into the cylinders, friction is reduced, piston durability is improved by suppressing temperature rise, and knocking is prevented.</PTXT></ITEM>
+<ITEM><PTXT>The oil jets have built-in check valves that stop the oil supply when the oil pressure is low, preventing a drop in oil pressure throughout the engine.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810045p" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</PARA>
+</SECTION>
+</SCT>

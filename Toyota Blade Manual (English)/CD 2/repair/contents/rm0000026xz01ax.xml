@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="RM0000026XZ01AX" category="C" type-id="8021M" name-id="068EV-01" from="200912">
+<dtccode>P0443/94</dtccode>
+<dtcname>EVAP Purge Control D-VSV Open Circuit</dtcname>
+<subpara id="RM0000026XZ01AX_05" type-id="31" category="03" proc-id="RM0550J___0000I2B00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>To prevent emissions, fuel vapor generated in the fuel tank assembly is sent through the charcoal canister assembly to the intake air surge tank assembly and burned in the cylinders. The canister purge volume changes according to the driving conditions as the engine control computer controls the opening and closing of vacuum switching valve assembly No.1.</ptxt>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C01" colwidth="0.85in"/>
+<colspec colnum="2" colname="C02" colwidth="3.04in"/>
+<colspec colnum="3" colname="COLSPEC0" colwidth="3.19in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0443/94</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>+B terminal voltage is 10 V or more and the duty ratio of the vacuum switching valve drive signal inside the engine control computer is 5 to 95% (purge VSV being driven)</ptxt>
+</item>
+<item>
+<ptxt>The vacuum switching valve drive output duty voltage (PRG terminal) is not generated in response to the vacuum switching valve drive signal inside the engine control computer</ptxt>
+</item>
+<item>
+<ptxt>10 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Vacuum Switching Valve Assembly No.1</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<figure>
+<graphic graphicname="A166614J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000026XZ01AX_02" type-id="32" category="03" proc-id="RM0550J___0000I2300000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A230444J02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000026XZ01AX_06" type-id="33" category="03" proc-id="RM0550J___0000I2C00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<topic>
+<title>Confirmation Driving</title>
+<ptxt>By performing confirmation driving, it is possible to check whether the DTC is reproduced.</ptxt>
+<figure>
+<graphic graphicname="A179391J02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</topic>
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<list1 type="ordered">
+<item>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</item>
+<item>
+<ptxt>Turn IG ON.</ptxt>
+</item>
+<item>
+<ptxt>Following the SST (TaSCAN) display screen, clear the DTCs. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+</item>
+<item>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes. (Engine coolant temperature 75°C or higher) (A)</ptxt>
+</item>
+<item>
+<ptxt>Idle the engine for 15 minutes or more. (B)</ptxt>
+<atten4>
+<ptxt>Check [ECU Data Monitor] - [Purge Rate] on SST (TaSCAN). DTC judgment is performed when this value is in the range of 5 to 95%.</ptxt>
+</atten4>
+</item>
+<item>
+<ptxt>Following the SST (TaSCAN) screen display, check the DTC judgment result. (see <xref label="Seep02" href="RM000000CCX015X"/>)</ptxt>
+<atten2>
+<ptxt>When performing this driving test, be sure to obey speed limits and other traffic laws.</ptxt>
+</atten2>
+<atten4>
+<ptxt>If the DTC judgment result is "judging" or "cannot judge", drive the vehicle at 40 to 60 km/h for 10 minutes or more (C), then check the DTC judgment result.</ptxt>
+</atten4>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM0000026XZ01AX_03" type-id="51" category="05" proc-id="RM0550J___0000I2400000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>Inspect the fuses for circuits related to this system before performing the following troubleshooting.</ptxt>
+</atten3>
+<atten4>
+<ptxt>Using SST (TaSCAN), read the Freeze Frame Data. The Freeze Frame Data records part of the engine operating condition when the malfunction occurred, and this information is useful when troubleshooting.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000026XZ01AX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000026XZ01AX_04_0001" proc-id="RM0550J___0000I2500000">
+<testtitle>Perform TaSCAN Active Test (Purge VSV)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, select [Active Test] - [Purge VSV].</ptxt>
+<table pgwide="1">
+<title>[System Selection Screen: Powertrain → TCCS → Active Test]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Restrictions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Purge VSV</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Energize/de-energize purge VSV (vacuum switching valve assembly No.1)</ptxt>
+<ptxt>(Duty ratio when energized 30%)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Disconnect the 2 vacuum hoses of vacuum switching valve assembly No.1.</ptxt>
+</test1>
+<test1>
+<ptxt>Operate vacuum switching valve assembly No.1.</ptxt>
+<figure>
+<graphic graphicname="A159587J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Apply positive pressure to port E and check whether air passes through.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.10in"/>
+<colspec colname="COL2" colwidth="3.03in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Active Test</ptxt>
+<ptxt>(Purge VSV)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Air passes from port E to port F</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Air does not pass from port E to port F</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026XZ01AX_04_0002" fin="false">A</down>
+<right ref="RM0000026XZ01AX_04_0005" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026XZ01AX_04_0002" proc-id="RM0550J___0000I2600000">
+<testtitle>Inspect Vacuum Switching Valve Assembly NO.1</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the vacuum switching valve assembly No.1 inspection procedure, refer to <xref label="Seep01" href="RM0000020W4008X"/>.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000026XZ01AX_04_0003" fin="false">OK</down>
+<right ref="RM0000026XZ01AX_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026XZ01AX_04_0003" proc-id="RM0550J___0000I2700000">
+<testtitle>Inspect Wire Harness and Connector (Vacuum Switching Valve Assembly NO.1 Power Source Voltage)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D705AX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect the vacuum switching valve assembly No.1 connector.</ptxt>
+<figure>
+<graphic graphicname="A194112J16" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals.</ptxt>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<colspec colname="COL3" colwidth="0.82in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>Vacuum switching valve assembly No.1 vehicle side connector - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<table>
+<title>Text in Illustrations</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="0.41in"/>
+<colspec colname="COL2" colwidth="3.72in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*a</ptxt>
+</entry>
+<entry>
+<ptxt>Front view of wire harness connector</ptxt>
+<ptxt>(to Vacuum Switching Valve Assembly No.1)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026XZ01AX_04_0004" fin="false">OK</down>
+<right ref="RM0000026XZ01AX_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026XZ01AX_04_0004" proc-id="RM0550J___0000I2800000">
+<testtitle>Inspect Wire Harness and Connector (Vacuum Switching Valve Assembly NO.1 - Engine Control Computer)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D705AX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the vacuum switching valve assembly No.1 connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals. (see <xref label="Seep02" href="X39400000QV016D"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance (Check for Open)</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>Engine control computer vehicle side connector - Vacuum switching valve assembly No.1 vehicle side connector</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A49(PRG) - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance (Check for Short)</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>Engine control computer vehicle side connector and vacuum switching valve assembly No.1 vehicle side connector - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A49 (PRG) and 2 - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026XZ01AX_04_0010" fin="false">OK</down>
+<right ref="RM0000026XZ01AX_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026XZ01AX_04_0010" proc-id="RM0550J___0000I2900000">
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, clear the DTCs. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026XZ01AX_04_0011" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000026XZ01AX_04_0011" proc-id="RM0550J___0000I2A00000">
+<testtitle>Perform Operation Check Drive</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes. (Engine coolant temperature 75°C or higher) (A)</ptxt>
+<figure>
+<graphic graphicname="A179391J02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Idle the engine for 15 minutes or more. (B)</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, select main menu [Diagnosis] - diagnosis menu [Powertrain] - [TCCS] - system diagnosis menu [DTC Judgment Result Check] - [Check by DTC].</ptxt>
+</test1>
+<test1>
+<ptxt>On the next screen, enter the DTC to be checked.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTC judgment result.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="0.62in"/>
+<colspec colname="COL2" colwidth="3.51in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment completed</ptxt>
+</item>
+<item>
+<ptxt>System Normal</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment completed</ptxt>
+</item>
+<item>
+<ptxt>System Malfunction</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Judging</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment not completed</ptxt>
+</item>
+<item>
+<ptxt>After checking the detection conditions, perform a road test</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Judgment not possible</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment cannot be performed</ptxt>
+</item>
+<item>
+<ptxt>The number of DTCs whose preconditions are not met has reached the upper limit that can be stored in the engine control computer</ptxt>
+</item>
+<item>
+<ptxt>After checking the detection conditions, perform a road test</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+<atten2>
+<ptxt>When performing this driving test, be sure to obey speed limits and other traffic laws.</ptxt>
+</atten2>
+<atten4>
+<ptxt>If the DTC judgment result is "judging" or "cannot judge", drive the vehicle at 40 to 60 km/h for 10 minutes or more (C), then check the DTC judgment result.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026XZ01AX_04_0008" fin="true">A</down>
+<right ref="RM0000026XZ01AX_04_0012" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026XZ01AX_04_0005">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000CD101FX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000026XZ01AX_04_0006">
+<testtitle>Replace Vacuum Switching Valve Assembly NO.1</testtitle>
+</testgrp>
+<testgrp id="RM0000026XZ01AX_04_0007">
+<testtitle>Repair or replace wire harness or connector (EFI MAIN relay - vacuum switching valve assembly NO.1)</testtitle>
+</testgrp>
+<testgrp id="RM0000026XZ01AX_04_0008">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000026XZ01AX_04_0009">
+<testtitle>Repair or replace wire harness or connector (vacuum switching valve assembly NO.1 - engine control computer)</testtitle>
+</testgrp>
+<testgrp id="RM0000026XZ01AX_04_0012">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000CD101FX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

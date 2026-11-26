@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1002J_S000U" variety="S000U">
+<name>Brake Control</name>
+<ttl id="1002J_S000U_744TG_T0089" variety="T0089">
+<name>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</name>
+<para id="RM00000060C00QX" category="C" type-id="300EZ" name-id="442OH-00" from="200612">
+<dtccode>C1201/51</dtccode>
+<dtcname>Engine System Malfunction</dtcname>
+<subpara id="RM00000060C00QX_01" type-id="33" category="03" proc-id="RM0550J___00004GG00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>When an EFI system malfunction (check engine warning light on) is input, this code is output and the VSC warning light comes on. (VSC system is normal)</ptxt>
+<ptxt>While the EFI system malfunction is present, TRC and VSC control are prohibited as a fail-safe.</ptxt>
+<ptxt>When the signal from the EFI system returns to normal, the warning light and fail-safe are cancelled and the DTC is not stored.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.44in"/>
+<colspec colname="COL2" colwidth="2.84in"/>
+<colspec colname="COL3" colwidth="2.80in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Output Related Items</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1201/51</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine malfunction signal condition continues for 1 seconds or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine Control Computer</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000060C00QX_02" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM00000060C00QX_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000060C00QX_03_0002" proc-id="RM0550J___00004GH00000">
+<scantool type="1"/>
+<testtitle>Check DTC Output (EFI System)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the DTCs of the EFI system. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000060C00QX_03_0007" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000060C00QX_03_0007">
+<testtitle>Go to EFI System<xref label="Seep01" href="X39400000QQ017D"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

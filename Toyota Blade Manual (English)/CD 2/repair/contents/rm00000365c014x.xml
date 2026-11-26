@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002T_S000D" variety="S000D">
+<name>Other Electrical</name>
+<ttl id="1002T_S000D_742B1_T003C" variety="T003C">
+<name>ETC System</name>
+<para id="RM00000365C014X" category="C" type-id="803NN" name-id="CM0PM-01" from="200912">
+<dtccode>B15E2</dtccode>
+<dtcname>ETC Card Error</dtcname>
+<subpara id="RM00000365C014X_01" type-id="33" category="03" proc-id="RM0550J___0000IAA00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when the toll collection (ETC) computer assembly cannot access the ETC card.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.29in"/>
+<colspec colname="COL2" colwidth="3.56in"/>
+<colspec colname="COL3" colwidth="2.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B15E2</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ETC card cannot be authenticated</ptxt>
+</item>
+<item>
+<ptxt>History cannot be read from ETC card</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ETC Card</ptxt>
+</item>
+<item>
+<ptxt>Toll Collection (ETC) Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>This DTC is recorded when there is a malfunction when the ETC card is inserted.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM00000365C014X_02" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM00000365C014X_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000365C014X_03_0006" proc-id="RM0550J___0000IAD00000">
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), read the DTCs following the screen. (For the procedure, refer to <xref label="Seep01" href="RM000000OCQ05PX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Select "Clear" on the screen display and clear the DTCs following the screen.    </ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG OFF.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000365C014X_03_0007" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000365C014X_03_0007" proc-id="RM0550J___0000IAE00000">
+<testtitle>Recheck DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn ACC ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Insert the ETC card.</ptxt>
+<atten4>
+<ptxt>This DTC is recorded when there is a malfunction when the ETC card is inserted.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Remove the ETC card.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs again and proceed to the destination below.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Code (B15E2) output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Code (B15E2) not output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000365C014X_03_0001" fin="false">A</down>
+<right ref="RM00000365C014X_03_0008" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000365C014X_03_0001" proc-id="RM0550J___0000IAB00000">
+<testtitle>Inspect Toll Collection (ETC) Computer Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check for Foreign Matter</ptxt>
+<test2>
+<ptxt>Check that there is no foreign matter in the card slot of the toll collection (ETC) computer assembly.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No foreign matter</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM00000365C014X_03_0002" fin="false">OK</down>
+<right ref="RM00000365C014X_03_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000365C014X_03_0002" proc-id="RM0550J___0000IAC00000">
+<testtitle>Check ETC Card (Read Check)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect by Replacing ETC Card</ptxt>
+<test2>
+<ptxt>Turn ACC ON.</ptxt>
+</test2>
+<test2>
+<ptxt>Repeatedly insert another genuine ETC card and check that the green light illuminates all 10 times.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.03in"/>
+<colspec colname="COL2" colwidth="1.10in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The orange light blinks even 1 time</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>The green light illuminates 10 times</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the customer's ETC card has dirt that cannot be cleaned or deformation, and the orange light blinks even when the ETC card is inserted, explain to the customer that the card is defective and ask them to contact the card company.</ptxt>
+</atten4>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM00000365C014X_03_0009" fin="false">A</down>
+<right ref="RM00000365C014X_03_0003" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000365C014X_03_0009" proc-id="RM0550J___0000IAF00000">
+<testtitle>Replace Toll Collection (ETC) Computer Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the toll collection (ETC) computer assembly with a new one. (see <xref label="Seep01" href="RM000002TPV001X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000365C014X_03_0013" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000365C014X_03_0013" proc-id="RM0550J___0000IA100000">
+<testtitle>Operation Check
+</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check Area Around Antenna</ptxt>
+<test2>
+<ptxt>Check for any obstructions around the navigation antenna assembly (top surface of the instrument panel), and remove them if present.</ptxt>
+</test2>
+<test2>
+<ptxt>Check for any film, stickers, etc. affixed to the windshield glass, and remove them if present.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Inspect with ETC On-board Unit Tester</ptxt>
+<figure>
+<graphic graphicname="E195388J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Using an ETC on-board unit tester, check that the toll collection (ETC) computer assembly is performing wireless communication normally.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Operate the ETC on-board unit tester at a position approximately 1m from the windshield glass, on a line extending upward and forward of the vehicle from the navigation antenna assembly at an elevation angle of 67±15°. ((The distance between the ETC on-board unit tester and the antenna is only a guide)</ptxt>
+</item>
+<item>
+<ptxt>Point the communication surface of the ETC on-board unit tester toward the navigation antenna assembly.</ptxt>
+</item>
+<item>
+<ptxt>Do not bring the ETC on-board unit tester too close to the navigation antenna assembly, as communication with the tester may be established even if the antenna is disconnected.</ptxt>
+</item>
+</list1>
+</atten4>
+</test2>
+</test1>
+<test1>
+<ptxt>Setup</ptxt>
+<test2>
+<ptxt>Perform setup.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Check Using ETC Card</ptxt>
+<test2>
+<ptxt>Insert an ETC card into the toll collection (ETC) computer assembly and check that the card is authenticated normally.</ptxt>
+</test2>
+</test1>
+<table>
+<title>Text in Illustrations</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="0.41in"/>
+<colspec colname="COL2" colwidth="3.72in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ETC On-board Unit Tester</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Navigation Antenna Assembly</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content6><res>
+<down ref="RM00000365C014X_03_0012" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000365C014X_03_0012">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM00000365C014X_03_0008">
+<testtitle>Perform Problem Reproduction Test<xref label="Seep01" href="RM000000ABY07EX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000365C014X_03_0004">
+<testtitle>Remove the foreign matter</testtitle>
+</testgrp>
+<testgrp id="RM00000365C014X_03_0003">
+<testtitle>ETC Card Error</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

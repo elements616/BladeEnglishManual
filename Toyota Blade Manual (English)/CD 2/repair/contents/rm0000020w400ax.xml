@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10008_S000M" variety="S000M">
+<name>Emission Control</name>
+<ttl id="10008_S000M_74XTC_T00GQ" variety="T00GQ">
+<name>Vacuum Switching Valve Assembly (2GR-FE)</name>
+<para id="RM0000020W400AX" category="G" type-id="3001K" name-id="09106-00" from="200708">
+<name>Component Inspection</name>
+<subpara id="RM0000020W400AX_01" type-id="01" category="01">
+<s-1 id="RM0000020W400AX_01_0002" proc-id="RM0550J___0000FB500000">
+<ptxt>Vacuum Switching Valve Assembly NO.1</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Resistance Inspection</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<figure>
+<graphic graphicname="A128942J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>23 to 26Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>Operation Check</ptxt>
+<s3>
+<ptxt>Apply battery voltage between the terminals of the vacuum switching valve assembly No.1, and check for air flow between each port when the coil is energized and not energized.</ptxt>
+<table>
+<title>Standard:</title>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Energized Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Energized</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air flows</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Not energized</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No air flow</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

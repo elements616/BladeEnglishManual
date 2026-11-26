@@ -1,0 +1,4601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="RM000000CCZ07KX" category="U" type-id="303FJ" name-id="067B1-07" from="200912">
+<name>ECU Data Monitor/Active Test</name>
+<subpara id="RM000000CCZ07KX_z0" proc-id="RM0550J___0000INL00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>ECU Data Monitor List</ptxt>
+<step2>
+<ptxt>Using SST (TaSCAN), display the [ECU Data Monitor] screen according to the screen display, and check the computer data.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>*1: The data monitor measured value is displayed only when [Active Test] - [VVT Linear Bank1] is performed.</ptxt>
+</item>
+<item>
+<ptxt>*1: Shows 0 on data monitors other than [Active Test].</ptxt>
+</item>
+<item>
+<ptxt>*2: The data monitor measured value is displayed only when [Active Test] - [Check the Cylinder Compression] is performed.</ptxt>
+</item>
+<item>
+<ptxt>*2: Shows the maximum value on data monitors other than [Active Test].</ptxt>
+</item>
+</list1>
+</atten4>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>[Diagnosis Menu → Powertrain → TCCS → ECU Data Monitor]</title>
+<tgroup cols="4" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C01" colwidth="1.20in"/>
+<colspec colnum="2" colname="C02" colwidth="1.84in"/>
+<colspec colnum="3" colname="C04" colwidth="2.48in"/>
+<colspec colnum="4" colname="C05" colwidth="1.56in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+<ptxt>(Main Inspection Items If Abnormal)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Vehicle Speed</ptxt>
+<ptxt>〔SPD1〕</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates vehicle speed</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 255km/h</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0km/h</ptxt>
+<ptxt>When stopped</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SPD signal</ptxt>
+<ptxt>(Speed Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No large fluctuation</ptxt>
+<ptxt>Driving at constant speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SPD signal</ptxt>
+<ptxt>(Speed Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" morerows="1" valign="middle" align="center">
+<ptxt>Engine Speed</ptxt>
+<ptxt>〔ESPD〕</ptxt>
+</entry>
+<entry colname="C02" morerows="1" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates engine speed</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 16383rpm</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>0rpm</ptxt>
+<ptxt>Engine stopped</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="left">
+<ptxt>NE Signal</ptxt>
+<ptxt>(NE Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>No large fluctuation</ptxt>
+<ptxt>Engine running at constant speed</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="left">
+<ptxt>NE Signal</ptxt>
+<ptxt>(NE Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" morerows="1" valign="middle" align="center">
+<ptxt>Engine Load Value</ptxt>
+<ptxt>〔CALO〕</ptxt>
+</entry>
+<entry colname="C02" morerows="1" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates the magnitude of engine load</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 100%</ptxt>
+</item>
+<item>
+<ptxt>The greater the value, the greater the load</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>28 to 34%</ptxt>
+<ptxt>Idling after warm-up (A/C OFF, N position)</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Air cleaner condition</ptxt>
+</item>
+<item>
+<ptxt>Throttle valve condition  </ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>24 to 30%</ptxt>
+<ptxt>After warm-up, at 2000r/min (A/C OFF, N position)</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Air cleaner condition</ptxt>
+</item>
+<item>
+<ptxt>Throttle valve condition  </ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Absolute Load Value</ptxt>
+<ptxt>〔AVL〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates vehicle load</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 25700%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Same as actual load</ptxt>
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>Intake Air Volume</ptxt>
+<ptxt>〔MAF〕</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates intake air volume</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 655.35g/s</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2.1 to 3.1g/s</ptxt>
+<ptxt>At idle after warm-up</ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VG Voltage</ptxt>
+<ptxt>(Air Flow Meter)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6.2 to 8.7g/s</ptxt>
+<ptxt>After warm-up, at 2000r/min</ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VG Voltage</ptxt>
+<ptxt>(Air Flow Meter)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>9.8 to 1.5g/s</ptxt>
+<ptxt>After warm-up, at 3000r/min</ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VG Voltage</ptxt>
+<ptxt>(Air Flow Meter)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Atmospheric Pressure</ptxt>
+<ptxt>〔ATM〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates atmospheric pressure</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 255kPa</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Same as atmospheric pressure</ptxt>
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine Control Computer</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="3" valign="middle" align="center">
+<ptxt>Engine Coolant Temperature</ptxt>
+<ptxt>〔THW〕</ptxt>
+</entry>
+<entry morerows="3" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates engine coolant temperature</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 215°C</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Gradually increases</ptxt>
+<ptxt>Cold start → fully warmed up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>THW Voltage</ptxt>
+<ptxt>(Water Temperature Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>80 to 105°C</ptxt>
+<ptxt>Fully warmed up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>THW Voltage</ptxt>
+<ptxt>(Water Temperature Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>140°C or higher</ptxt>
+<ptxt>Sensor short</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>THW Voltage</ptxt>
+<ptxt>(Water Temperature Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>-40°C</ptxt>
+<ptxt>Sensor open circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>THW Voltage</ptxt>
+<ptxt>(Water Temperature Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>Intake Air Temperature</ptxt>
+<ptxt>〔THA〕</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates intake air temperature</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 140°C</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Same as ambient temperature</ptxt>
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>THA Voltage</ptxt>
+<ptxt>(Intake Air Temperature Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>140°C</ptxt>
+<ptxt>Sensor short</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>THA Voltage</ptxt>
+<ptxt>(Intake Air Temperature Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>-40°C</ptxt>
+<ptxt>Sensor open circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>THA Voltage</ptxt>
+<ptxt>(Intake Air Temperature Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Time After Engine Start</ptxt>
+<ptxt>〔ERT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates time elapsed since engine start (between IG ON and OFF)</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 65535s</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Coolant Temperature at Start</ptxt>
+<ptxt>〔THWS〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates engine coolant temperature at engine start</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 120°C</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cold: Below 60°C</ptxt>
+<ptxt>After warm-up: 60°C or higher</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>THW Voltage</ptxt>
+<ptxt>(Water Temperature Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Intake Air Temperature at Start</ptxt>
+<ptxt>〔THAS〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates intake air temperature at engine start</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 120°C</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Same as ambient temperature</ptxt>
+<ptxt>After engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>THA Voltage</ptxt>
+<ptxt>(Intake Air Temperature Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Auxiliary Battery Voltage</ptxt>
+<ptxt>〔BATT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates battery voltage</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 65.5V</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+<ptxt>At idle</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BATT Voltage</ptxt>
+<ptxt>(Battery)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Accelerator Opening</ptxt>
+<ptxt>〔ACPO〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates accelerator position sensorNo.1 opening</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 399.9%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>Accelerator Sensor</ptxt>
+<ptxt>No.1 Voltage Ratio</ptxt>
+<ptxt>〔ACP1〕</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates accelerator position sensorNo.1 opening</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 100%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 25%</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VCPA, VPA Voltage</ptxt>
+<ptxt>(Accelerator Position Sensor No.1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>60 to 90%</ptxt>
+<ptxt>Accelerator pedal fully open</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VCPA, VPA Voltage</ptxt>
+<ptxt>(Accelerator Position Sensor No.1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Changes continuously</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+<ptxt>→ fully open</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VCPA, VPA Voltage</ptxt>
+<ptxt>(Accelerator Position Sensor No.1)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>Accelerator Sensor</ptxt>
+<ptxt>No.2 Voltage Ratio</ptxt>
+<ptxt>〔ACP2〕</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates accelerator position sensorNo.2 opening</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 100%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>20 to 45%</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VCP2, VPA2 Voltage</ptxt>
+<ptxt>(Accelerator Position Sensor No.2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>80 to 100%</ptxt>
+<ptxt>Accelerator pedal fully open</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VCP2, VPA2 Voltage</ptxt>
+<ptxt>(Accelerator Position Sensor No.2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Changes continuously</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+<ptxt>→ fully open</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VCP2, VPA2 Voltage</ptxt>
+<ptxt>(Accelerator Position Sensor No.2)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>Accelerator Sensor</ptxt>
+<ptxt>No.1 voltage</ptxt>
+<ptxt>〔VPA1〕</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates accelerator position sensorNo.1 output voltage</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 5V</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 1.1V</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VPA Voltage</ptxt>
+<ptxt>(Accelerator Position Sensor No.1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2.6 to 4.5V</ptxt>
+<ptxt>Accelerator pedal fully open</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VPA Voltage</ptxt>
+<ptxt>(Accelerator Position Sensor No.1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Changes continuously</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+<ptxt>→ fully open</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VPA Voltage</ptxt>
+<ptxt>(Accelerator Position Sensor No.1)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>Accelerator Sensor</ptxt>
+<ptxt>No.2 voltage</ptxt>
+<ptxt>〔VPA2〕</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates accelerator position sensorNo.2 output voltage</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 5V</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.2 to 2.0V</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VPA2 voltage</ptxt>
+<ptxt>(Accelerator Position Sensor No.2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3.4 to 5.0V</ptxt>
+<ptxt>Accelerator pedal fully open</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VPA2 voltage</ptxt>
+<ptxt>(Accelerator Position Sensor No.2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Changes continuously</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+<ptxt>→ fully open</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VPA2 voltage</ptxt>
+<ptxt>(Accelerator Position Sensor No.2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Accelerator Sensor</ptxt>
+<ptxt>Fully closed status</ptxt>
+<ptxt>〔AIDL〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates accelerator position sensor status</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON→OFF</ptxt>
+<ptxt>Accelerator pedal fully closed → fully open</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Accelerator Position Sensor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Throttle Sensor</ptxt>
+<ptxt>No.1 Voltage Ratio</ptxt>
+<ptxt>〔THP1〕</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates throttle position sensorNo.1 opening</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 100%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 22%</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VTA1 voltage</ptxt>
+<ptxt>(Throttle Position Sensor No.1)  </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>64 to 96%</ptxt>
+<ptxt>Accelerator pedal fully open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VTA1 voltage</ptxt>
+<ptxt>(Throttle Position Sensor No.1)  </ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Throttle Sensor</ptxt>
+<ptxt>No.2 Voltage Ratio</ptxt>
+<ptxt>〔THP2〕</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates throttle position sensorNo.2 opening</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 100%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>42 to 62%</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VTA2 voltage</ptxt>
+<ptxt>(Throttle Position Sensor No.2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>92 to 100%</ptxt>
+<ptxt>Accelerator pedal fully open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VTA2 voltage</ptxt>
+<ptxt>(Throttle Position Sensor No.2)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Throttle Sensor Fully Closed Status</ptxt>
+<ptxt>〔TIDL〕</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates throttle position sensor status</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle position sensor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+<ptxt>Accelerator pedal fully open</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle position sensor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Throttle Request</ptxt>
+<ptxt>Opening</ptxt>
+<ptxt>〔THRE〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates the requested throttle valve opening</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 5V</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 1.1V</ptxt>
+<ptxt>At idle</ptxt>
+<ptxt>(A/C OFF,</ptxt>
+<ptxt>N position)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Accelerator Position Sensor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Throttle Opening</ptxt>
+<ptxt>(ECU Recognized Value)</ptxt>
+<ptxt>〔THPO〕</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates the throttle opening recognized by the ECU</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 100%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0%</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>VC, VTA1 voltage</ptxt>
+<ptxt>(Throttle Position Sensor No.1)</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>50 to 80%</ptxt>
+<ptxt>Accelerator pedal fully open</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>VC, VTA1 voltage</ptxt>
+<ptxt>(Throttle Position Sensor No.1)</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>Throttle Sensor</ptxt>
+<ptxt>No.1 voltage</ptxt>
+<ptxt>〔VTA1〕</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates throttle position sensorNo.1 output voltage</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 5V</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 1.1V</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VTA1 voltage</ptxt>
+<ptxt>(Throttle Position Sensor No.1)  </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3.2 to 4.8V</ptxt>
+<ptxt>Accelerator pedal fully open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VTA1 voltage</ptxt>
+<ptxt>(Throttle Position Sensor No.1)  </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>0.6 to 1.4V</ptxt>
+<ptxt>During fail-safe</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VTA1 voltage</ptxt>
+<ptxt>(Throttle Position Sensor No.1)  </ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>Throttle Sensor</ptxt>
+<ptxt>No.2 voltage</ptxt>
+<ptxt>〔VTA2〕</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates throttle position sensorNo.2 output voltage</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 5V</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2.1 to 3.1V</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VTA2 voltage</ptxt>
+<ptxt>(Throttle Position Sensor No.2)  </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4.6 to 5.0V</ptxt>
+<ptxt>Accelerator pedal fully open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VTA2 voltage</ptxt>
+<ptxt>(Throttle Position Sensor No.2)  </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2.1 to 3.1V</ptxt>
+<ptxt>During fail-safe</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VTA2 voltage</ptxt>
+<ptxt>(Throttle Position Sensor No.2)  </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Throttle Motor Current</ptxt>
+<ptxt>〔THMC〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates throttle motor current</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 20A</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 3.0A</ptxt>
+<ptxt>At idle</ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle Motor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Throttle Motor Output</ptxt>
+<ptxt>〔THRM〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates throttle motor output</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 100%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 22%</ptxt>
+<ptxt>At idle</ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle Motor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Throttle Motor Open Side Duty Ratio</ptxt>
+<ptxt>〔MDO〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates throttle motor open side duty ratio</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 100%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 40%</ptxt>
+<ptxt>At idle</ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle Motor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Throttle Motor Close Side Duty Ratio</ptxt>
+<ptxt>〔MDC〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates throttle motor close side duty ratio</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 100%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 40%</ptxt>
+<ptxt>At idle</ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle Motor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Throttle Fully Closed</ptxt>
+<ptxt>Learned Value</ptxt>
+<ptxt>〔GPD〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates learned fully closed value of throttle sensor</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 5V</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.4 to 1.0V</ptxt>
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle position sensor</ptxt>
+</item>
+<item>
+<ptxt>Throttle Body Assembly (with Motor)</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>+BM Voltage</ptxt>
+<ptxt>〔+BM〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates electronic throttle voltage</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 79.9V</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>+BM Voltage</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Throttle Opening</ptxt>
+<ptxt>〔THOP〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates throttle opening</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 499.9°</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ISC Flow Rate</ptxt>
+<ptxt>〔ISCF〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates flow rate calculated from sensor information</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 79.99L/s</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ISC Opening</ptxt>
+<ptxt>〔ISCO〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates requested opening calculated by ISC control</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 499.9°</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ISC Feedback Amount</ptxt>
+<ptxt>〔ISCFB〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates ISC feedback correction amount</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 39.99L/s</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ISC Flow Rate Learned Value</ptxt>
+<ptxt>〔ISCLV〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates ISC feedback correction amount</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 39.99L/s</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ISC Electrical Load Correction Amount</ptxt>
+<ptxt>〔ELOCP〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates correction flow rate for electrical load</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 39.99L/s</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ISC A/C Correction Amount</ptxt>
+<ptxt>〔A/CCP〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates correction flow rate for A/C load</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 39.99L/s</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ISC Power Steering Correction Amount</ptxt>
+<ptxt>〔PSCP〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates correction amount for power steering load</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 39.99L/s</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>When Speed Drops</ptxt>
+<ptxt>Control Judgment Status</ptxt>
+<ptxt>〔RDCF〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates execution status of control during speed drop</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>N Range Control Status</ptxt>
+<ptxt>〔N〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates N range control execution status</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Neutral Judgment</ptxt>
+<ptxt>〔NJDG〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates N shift position judgment</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Stall Prevention Correction Air Volume</ptxt>
+<ptxt>〔ESCV〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates engine stall prevention correction air volume</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 39.99 L/s</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Deposit Loss Air Volume</ptxt>
+<ptxt>〔DLFV〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates deposit loss air volume</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 39.99 L/s</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 6.0 L/s</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Injection Time #1 (Port)</ptxt>
+<ptxt>〔INJO〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates injection time of cylinder No. 1</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 65.535ms</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.5 to 2.7ms</ptxt>
+<ptxt>At idle after warm-up</ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VG Voltage</ptxt>
+<ptxt>THW Voltage</ptxt>
+<ptxt>A1A+, A1A- Voltage</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Fuel Consumption for 10 Injections</ptxt>
+<ptxt>〔IJ10〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates fuel injection volume for 10 injections</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 2.047 ml</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.7 to 1.5 ml:</ptxt>
+<ptxt>At idle after warm-up</ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Circuit Opening Relay</ptxt>
+<ptxt>〔FPC〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates circuit opening relay in operation</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+<ptxt>IG ON → cranking</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine Control Computer</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Purge VSV Drive Duty Ratio</ptxt>
+<ptxt>〔EVAP〕</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates purge VSV drive duty ratio</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 100%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0%</ptxt>
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PRG Voltage</ptxt>
+<ptxt>(Engine Control Computer)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>0 to 50%</ptxt>
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PRG Voltage</ptxt>
+<ptxt>(Engine Control Computer)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Purge Rate</ptxt>
+<ptxt>〔PRF〕</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates purge rate</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 399.99%  </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0%</ptxt>
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PRG Voltage</ptxt>
+<ptxt>(Engine Control Computer)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>0 to 4%</ptxt>
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PRG Voltage</ptxt>
+<ptxt>(Engine Control Computer)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Purge Concentration Learned Value</ptxt>
+<ptxt>〔PRD〕</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates learned purge concentration value</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -200 to 199.993%/%  </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0%/%</ptxt>
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PRG Voltage</ptxt>
+<ptxt>(Engine Control Computer)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>-40 to 10%/%</ptxt>
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PRG Voltage</ptxt>
+<ptxt>(Engine Control Computer)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Purge VSV (30% or more)</ptxt>
+<ptxt>〔PRG〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates purge VSV operation ON/OFF</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+<ptxt>After warm-up, racing at 3000r/min or more</ptxt>
+<ptxt>→ accelerator fully closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PRG Voltage</ptxt>
+<ptxt>(Engine Control Computer)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Purge Cut VSV</ptxt>
+<ptxt>〔PCT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates purge cut VSV ON/OFF as duty ratio</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 399.9%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Target Air Fuel Ratio</ptxt>
+<ptxt>〔AFRT〕</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates target value of air-fuel ratio control</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 1.99</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Approximately 1 times</ptxt>
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Less than 1 times: Rich condition</ptxt>
+</item>
+<item>
+<ptxt>More than 1 times: Lean condition</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Approximately 1 times</ptxt>
+<ptxt>2500r/min</ptxt>
+<ptxt>Engine running at constant speed</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Less than 1 times: Rich condition</ptxt>
+</item>
+<item>
+<ptxt>More than 1 times: Lean condition</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Actual Air Fuel Ratio λB1S1</ptxt>
+<ptxt>〔FT11〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates A/F sensor air fuel ratio</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 1.99</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Approximately 1 times</ptxt>
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Less than 1 times: Rich condition</ptxt>
+</item>
+<item>
+<ptxt>More than 1 times: Lean condition</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/F Sensor Voltage B1S1</ptxt>
+<ptxt>〔AF11〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates A/F sensor output</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 7.99V</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3 to 3.5V</ptxt>
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A1A+, A1A- Voltage</ptxt>
+<ptxt>(Air Fuel Ratio Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/F Sensor CurrentB1S1</ptxt>
+<ptxt>〔AFI11〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates A/F sensor current</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -128 to 127.99mA</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A1A+, A1A- Voltage</ptxt>
+<ptxt>(Air Fuel Ratio Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/F Heater Duty Ratio #1</ptxt>
+<ptxt>〔AFH1〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates A/F sensor heater duty ratio</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 399.9%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 100%</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O2 sensor voltage</ptxt>
+<ptxt>B1S2</ptxt>
+<ptxt>〔Ox12〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates oxygen sensor output voltage</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 1.275V</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 1.0V</ptxt>
+<ptxt>2500r/min</ptxt>
+<ptxt>Engine running at constant speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OX Voltage</ptxt>
+<ptxt>(Oxygen Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O2 HeaterB1S2</ptxt>
+<ptxt>〔OH12〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates oxygen sensor heater</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O2 Heater Current ValueB1S2</ptxt>
+<ptxt>〔OC12〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates oxygen sensor current value</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 4.9A</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F/B Correction Value Bank1</ptxt>
+<ptxt>〔SFT1〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates air-fuel ratio F/B amount</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -100 to 99.2%</ptxt>
+</item>
+<item>
+<ptxt>-100 to 0% indicates the injection volume is decreased, and 0 to 99.2% indicates it is increased</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-20 to +20%</ptxt>
+<ptxt>2500r/min</ptxt>
+<ptxt>Engine running at constant speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A1A+, A1A- Voltage</ptxt>
+<ptxt>(Air Fuel Ratio Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F/B Learned Value Bank1</ptxt>
+<ptxt>〔LFT1〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates learned value correcting air-fuel ratio F/B control</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -100 to 99.2%</ptxt>
+</item>
+<item>
+<ptxt>0% indicates the stoichiometric air-fuel ratio, -100 to 0% indicates the rich side, and 0 to 99.2% indicates the lean side</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-30 to +30%</ptxt>
+<ptxt>2500r/min</ptxt>
+<ptxt>Engine running at constant speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A1A+, A1A- Voltage</ptxt>
+<ptxt>(Air Fuel Ratio Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Total F/B Correction Coefficient Bank1</ptxt>
+<ptxt>〔FKD1〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates correction coefficient of air fuel ratio F/B amount</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -0.5 to 0.496</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F/B Status Bank1</ptxt>
+<ptxt>〔F-S1〕</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates air-fuel ratio F/B (feedback) control execution status</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Executing 1 = F/B normal</ptxt>
+<ptxt>Executing 2 = Air fuel ratio sensor malfunction</ptxt>
+<ptxt>Not executing 1 = F/B conditions not met</ptxt>
+<ptxt>Not executing 2 = System normal</ptxt>
+<ptxt>Not executing 3 = System malfunction</ptxt>
+<ptxt>2500r/min</ptxt>
+<ptxt>Engine running at constant speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A1A+, A1A- Voltage</ptxt>
+<ptxt>(Air Fuel Ratio Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F/B Status Bank2</ptxt>
+<ptxt>〔F-S2〕</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates air-fuel ratio F/B (feedback) control execution status</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" morerows="2" valign="middle" align="center">
+<ptxt>Ignition Timing #1</ptxt>
+<ptxt>〔IGT〕</ptxt>
+</entry>
+<entry colname="C02" morerows="2" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates ignition timing of cylinder No. 1</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -64 to 63.5°</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>0 to 5°</ptxt>
+<ptxt>During cranking</ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="left">
+<ptxt>NE Signal</ptxt>
+<ptxt>(NE Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>5 to 22°</ptxt>
+<ptxt>At idle after warm-up</ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="left">
+<ptxt>NE Signal</ptxt>
+<ptxt>(NE Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>28 to 35°</ptxt>
+<ptxt>After warm-up, at 2000r/min</ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="left">
+<ptxt>NE Signal</ptxt>
+<ptxt>(NE Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Knock Control Value</ptxt>
+<ptxt>〔KNFB〕</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates knock control sensor control value</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -1024 to 1023.96°CA  </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-3°CA</ptxt>
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>KNK1, KNK2 Voltage</ptxt>
+<ptxt>(Knock Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>-3°CA</ptxt>
+<ptxt>After warm-up, idle speed</ptxt>
+<ptxt>Hold at 4000r/min</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>KNK1, KNK2 Voltage</ptxt>
+<ptxt>(Knock Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Knock Correction Learned Value</ptxt>
+<ptxt>〔KNCV〕</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates knock control sensor correction value</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -1024 to 1023.96°CA  </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5 to 23°CA</ptxt>
+<ptxt>At idle after warm-up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>KNK1, KNK2 Voltage</ptxt>
+<ptxt>(Knock Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5 to 23°CA</ptxt>
+<ptxt>After warm-up, hold at 4000r/min</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>KNK1, KNK2 Voltage</ptxt>
+<ptxt>(Knock Sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Idle Stabilization Advance</ptxt>
+<ptxt>(Cylinder 1)</ptxt>
+<ptxt>(IDA #1)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates individual cylinder advance correction amount (NO.1)</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 15.93°CA</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Idle Stabilization Advance</ptxt>
+<ptxt>(Cylinder 2)</ptxt>
+<ptxt>(IDA #2)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates individual cylinder advance correction amount (NO.2)</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 15.93°CA</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Idle Stabilization Advance</ptxt>
+<ptxt>(Cylinder 3)</ptxt>
+<ptxt>(IDA #3)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates individual cylinder advance correction amount (NO.3)</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 15.93°CA</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Idle Stabilization Advance</ptxt>
+<ptxt>(Cylinder 4)</ptxt>
+<ptxt>(IDA #4)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates individual cylinder advance correction amount (NO.4)</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 15.93°CA</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VVT Control Bank1</ptxt>
+<ptxt>〔VVT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates VVT operating</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OC1 voltage</ptxt>
+<ptxt>(Engine Control Computer)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VVT Advance Fail Status</ptxt>
+<ptxt>〔VTAF〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates VVT control fail status</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+<ptxt>VVT control failure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>VVT control system</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VVT Hold Duty</ptxt>
+<ptxt>Bank 1</ptxt>
+<ptxt>〔VTK1〕 *1</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates VVT hold duty</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 399.99%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 100%</ptxt>
+<ptxt>Idling after warm-up</ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OC1 voltage</ptxt>
+<ptxt>(Engine Control Computer)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VVT Displacement Angle Bank 1</ptxt>
+<ptxt>〔VT1〕 *1</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates actual VVT change angle</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 639.99°FR </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 45°FR </ptxt>
+<ptxt>VVT Linear Bank1</ptxt>
+<ptxt>During Active Test</ptxt>
+<ptxt>-100 to +100%</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OC1 voltage</ptxt>
+<ptxt>(Engine Control Computer)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OCV Drive Duty Ratio</ptxt>
+<ptxt>Bank 1</ptxt>
+<ptxt>〔DVT1〕 *1</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates duty ratio to VVT OCV</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 399.99%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 100%</ptxt>
+<ptxt>VVT Linear Bank1</ptxt>
+<ptxt>During Active Test</ptxt>
+<ptxt>-100 to +100%</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OC1 voltage</ptxt>
+<ptxt>(Engine Control Computer)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VN Turbo Type</ptxt>
+<ptxt>〔VNTS〕 </ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates variable nozzle turbocharger</ptxt>
+</item>
+<item>
+<ptxt>Display: None/Communication Type/Vacuum Type/CAN Type</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>No</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Catalyst TemperatureB1S1</ptxt>
+<ptxt>〔CT11〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates catalyst temperature</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 6513.5°C</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Catalyst TemperatureB1S2</ptxt>
+<ptxt>〔CT12〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates catalyst temperature</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 6513.5°C</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Starter Signal</ptxt>
+<ptxt>〔STA〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates engine starting</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+<ptxt>IG ON → cranking</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>STA Voltage</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Starter SW</ptxt>
+<ptxt>〔STSW〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates start SW contact signal during cranking</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+<ptxt>IG ON → cranking</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, an engine control computer malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Power Steering SW</ptxt>
+<ptxt>〔PSSW〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates power steering operation</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Steering not operated → turning</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power steering control system</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Starter Relay</ptxt>
+<ptxt>〔STAR〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates starter (STARTER) relay operation</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+<ptxt>IG ON → cranking</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a malfunction in the STARTER relay is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ACC Relay</ptxt>
+<ptxt>〔ACCR〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates ACC relay operation</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+<ptxt>IG ON → cranking</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a malfunction in the ACC relay is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Neutral</ptxt>
+<ptxt>Start SW</ptxt>
+<ptxt>〔NSW〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates shift lever position N (P)</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON→OFF</ptxt>
+<ptxt>Shift lever N or P → other position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Each switch voltage</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Stop Light SW</ptxt>
+<ptxt>〔STP〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates brake depressed</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON→OFF</ptxt>
+<ptxt>Brake pedal depressed → released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Each switch voltage</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/C Signal</ptxt>
+<ptxt>〔A/C〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates A/C in operation</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+<ptxt>A/C OFF → ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a malfunction in the A/C signal circuit is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Idle-up Signal</ptxt>
+<ptxt>〔IDLU〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates idle-up request signal</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Idle SW</ptxt>
+<ptxt>〔IDL〕</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates accelerator pedal fully closed</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>ON→OFF</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+<ptxt>→ depress accelerator pedal</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>VC, VTA1 voltage</ptxt>
+</item>
+<item>
+<ptxt>Throttle position sensor  </ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F/C Status</ptxt>
+<ptxt>〔FC〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates fuel cut operating</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: Fuel cut operating</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, an engine control computer malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Immobiliser Communication Line</ptxt>
+<ptxt>〔IMLN〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates immobiliser communication line status</ptxt>
+</item>
+<item>
+<ptxt>Display: Normal/Abnormal</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Mode Status</ptxt>
+<ptxt>〔TEST〕</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates normal/check mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Component Monitor</ptxt>
+<ptxt>〔CPM〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates component monitor status</ptxt>
+</item>
+<item>
+<ptxt>Display: Available/Not Available</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Fuel System Monitor</ptxt>
+<ptxt>〔FSM〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates fuel system monitor status</ptxt>
+</item>
+<item>
+<ptxt>Display: Available/Not Available</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Misfire Test</ptxt>
+<ptxt>〔MFT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates misfire test status</ptxt>
+</item>
+<item>
+<ptxt>Display: Available/Not Available</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>EGR System Test</ptxt>
+<ptxt>〔EGRT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates EGR system test status</ptxt>
+</item>
+<item>
+<ptxt>Display: Available/Not Available</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>EGR System Test Result</ptxt>
+<ptxt>〔EGRR〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates EGR system test result</ptxt>
+</item>
+<item>
+<ptxt>Display: Complete/Incomplete</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O2 Sensor Heater Test</ptxt>
+<ptxt>〔O2HT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates O2 sensor heater test status</ptxt>
+</item>
+<item>
+<ptxt>Display: Available/Not Available</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O2 Sensor Heater Test Result</ptxt>
+<ptxt>〔O2HR〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates O2 sensor heater test result</ptxt>
+</item>
+<item>
+<ptxt>Display: Complete/Incomplete</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O2 Sensor (A/F Sensor) Test</ptxt>
+<ptxt>〔O2T〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates O2 sensor (A/F sensor) test status</ptxt>
+</item>
+<item>
+<ptxt>Display: Available/Not Available</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O2 (A/F Sensor) Test Result</ptxt>
+<ptxt>〔O2R〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates O2 sensor (A/F sensor) test result</ptxt>
+</item>
+<item>
+<ptxt>Display: Complete/Incomplete</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/C System Refrigerant Test</ptxt>
+<ptxt>〔ACT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates A/C system refrigerant test status</ptxt>
+</item>
+<item>
+<ptxt>Display: Available/Not Available</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/C System Refrigerant Test Result</ptxt>
+<ptxt>〔ACR〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates A/C system refrigerant test result</ptxt>
+</item>
+<item>
+<ptxt>Display: Complete/Incomplete</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Secondary Air System Test 2</ptxt>
+<ptxt>〔2AIT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates secondary (2) air system test status</ptxt>
+</item>
+<item>
+<ptxt>Display: Available/Not Available</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Secondary Air System Test Result 2</ptxt>
+<ptxt>〔2AIR〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates secondary (2) air system test result</ptxt>
+</item>
+<item>
+<ptxt>Display: Complete/Incomplete</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>EVAP System Test</ptxt>
+<ptxt>〔EVPT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates EVAP system test status</ptxt>
+</item>
+<item>
+<ptxt>Display: Available/Not Available</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>EVAP System Test Result</ptxt>
+<ptxt>〔EVPR〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates EVAP system test result</ptxt>
+</item>
+<item>
+<ptxt>Display: Complete/Incomplete</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Heated Catalyst Test</ptxt>
+<ptxt>〔HCAT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates heated catalyst test status</ptxt>
+</item>
+<item>
+<ptxt>Display: Available/Not Available</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Heated Catalyst Test Result</ptxt>
+<ptxt>〔HCAR〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates heated catalyst test result</ptxt>
+</item>
+<item>
+<ptxt>Display: Complete/Incomplete</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Catalyst Test</ptxt>
+<ptxt>〔CATT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates catalyst test status</ptxt>
+</item>
+<item>
+<ptxt>Display: Available/Not Available</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Catalyst Test Result</ptxt>
+<ptxt>〔CATR〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates catalyst test result</ptxt>
+</item>
+<item>
+<ptxt>Display: Complete/Incomplete</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TC Terminal</ptxt>
+<ptxt>〔TCTA〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates TC terminal status</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Number of DTCs</ptxt>
+<ptxt>〔DTC〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates number of DTCs</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 255</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Distance Driven since Malfunction</ptxt>
+<ptxt>〔MORD〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates distance driven since check engine warning light illuminated</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 65535km</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Time from Start until CE Illuminated</ptxt>
+<ptxt>〔MORT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates time elapsed after start since check engine warning light illuminated</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 65535min</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Time Since DTC Cleared</ptxt>
+<ptxt>〔TDC〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates time elapsed since DTCs were cleared</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 65535min</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Distance Since DTC Cleared</ptxt>
+<ptxt>〔DDC〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates distance driven since DTCs were cleared</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 65535km</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Warm-up Cycles Since DTC Cleared</ptxt>
+<ptxt>〔WCD〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates number of warm-up cycles since DTCs were cleared</ptxt>
+</item>
+<item>
+<ptxt>Display range: 0 to 255 times</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Distance Since Battery Cleared</ptxt>
+<ptxt>〔BCRD〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates distance driven since battery was cleared</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 65535km</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Misfire Counter Population</ptxt>
+<ptxt>〔FCPP〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates number of ignitions</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 800</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Misfire Counter #1</ptxt>
+<ptxt>〔MFC1〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates misfire counter of cylinder NO.1</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 255</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Misfire Counter #2</ptxt>
+<ptxt>〔MFC2〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates misfire counter of cylinder NO.2</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 255</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Misfire Counter #3</ptxt>
+<ptxt>〔MFC3〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates misfire counter of cylinder NO.3</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 255</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Misfire Counter #4</ptxt>
+<ptxt>〔MFC4〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates misfire counter of cylinder NO.4</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 255</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Misfire Counter</ptxt>
+<ptxt>〔FCFA〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates misfire counter of all cylinders</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 255</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Average Engine Speed at Misfire</ptxt>
+<ptxt>〔MFAF〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates average load at misfire</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 6375rpm</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Average Load at Misfire</ptxt>
+<ptxt>〔MFAD〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates average load at misfire</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 3.98g/rev</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Misfire Counter Margin</ptxt>
+<ptxt>〔FCM〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates misfire margin monitor</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -100 to 99.22%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-100 to 99.22%</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Misfire margin</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>During current trip</ptxt>
+<ptxt>Number of Starter ON Times</ptxt>
+<ptxt>〔STON〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates number of times starter turned ON since IG OFF→ON</ptxt>
+</item>
+<item>
+<ptxt>Display range: 0 to 255 times</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Starting Time</ptxt>
+<ptxt>〔EST〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates engine starting time</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 655350ms</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Starter OFF</ptxt>
+<ptxt>Engine Speed</ptxt>
+<ptxt>〔STER〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates engine speed when starter turns OFF</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 51199.22rpm</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Previous Trip Distance</ptxt>
+<ptxt>〔PTRD〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates distance driven during previous trip</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 655.35km</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Coolant Temperature in Previous Trip</ptxt>
+<ptxt>〔RTHW〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates engine coolant temperature during previous trip</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 215°C</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Intake Air Temperature in Previous Trip</ptxt>
+<ptxt>〔RIAT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates intake air temperature during previous trip</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 215°C</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Oil Temperature</ptxt>
+<ptxt>〔EOT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates engine oil temperature (estimated)</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 215°C</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>During previous trip</ptxt>
+<ptxt>Engine Oil Temperature</ptxt>
+<ptxt>〔REOT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates engine oil temperature during previous trip</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 215°C</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Outside Temperature</ptxt>
+<ptxt>〔AMT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates ambient temperature</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 215°C</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Ambient Temperature in Previous Trip</ptxt>
+<ptxt>〔RAMT〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates ambient temperature during previous trip</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 215°C</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When engine stall, poor starting or unstable idling is detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Long Cranking History</ptxt>
+<ptxt>〔LTSH〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates long cranking history</ptxt>
+</item>
+<item>
+<ptxt>Display: Present/None</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Speed Drop After Start History</ptxt>
+<ptxt>〔IRLH〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates history of engine speed drop after start</ptxt>
+</item>
+<item>
+<ptxt>Display: Present/None</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Minimum Engine Speed</ptxt>
+<ptxt>〔FMIN〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates minimum engine speed</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 51199rpm</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Battery Current</ptxt>
+<ptxt>〔BTA〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates current calculated from current sensor output</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -125 to 124.9A</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driving after warm-up</ptxt>
+<ptxt>Changes according to alternator output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a malfunction in the IB voltage system is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Battery Fluid Temperature</ptxt>
+<ptxt>〔BTF〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates battery fluid temperature calculated from battery thermometer sensor output</ptxt>
+</item>
+<item>
+<ptxt>Display Range: -40 to 6513.5°C</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driving after warm-up</ptxt>
+<ptxt>Changes according to actual temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a malfunction in the THB voltage system is suspected THB</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Alternator Output Duty Ratio</ptxt>
+<ptxt>〔OLE〕</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates RLO terminal output (charge control signal)</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 100%</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>During charge control, vehicle accelerating</ptxt>
+<ptxt>0 to 20%</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>If abnormal, a malfunction in the alternator is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>During charge control, vehicle decelerating</ptxt>
+<ptxt>80 to 100%</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Alternator Voltage When Not Forced</ptxt>
+<ptxt>〔ANTV〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates requested voltage when regulator forced drive is not performed</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 20V</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>After engine start</ptxt>
+<ptxt>Changes according to driving conditions</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>If abnormal, an engine control computer malfunction is suspected</ptxt>
+</item>
+<item>
+<ptxt>0V during forced drive</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Alternator Voltage When Forced</ptxt>
+<ptxt>〔ATV〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates requested voltage when regulator forced drive is performed</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 20V</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine running</ptxt>
+<ptxt>Requested voltage value when Active Test [Generation Request Voltage] is performed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, an engine control computer malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Electric Fan</ptxt>
+<ptxt>〔FAN〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates electric fan operating</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+<ptxt>Electric fan operating</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Cooling Fan Relay</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F/C at Idle ON</ptxt>
+<ptxt>〔FCI〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates deceleration fuel cut operating</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Release the accelerator pedal at 3000r/min or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VTA1 voltage</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F/C at Light Load</ptxt>
+<ptxt>〔FCTM〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates light load fuel cut operating</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Driving down a long downhill slope</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC, VTA1 voltage</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>G Sensor F/C History</ptxt>
+<ptxt>〔FCGS〕</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates past fuel pump stop due to impact</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>None/Yes</ptxt>
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Airbag ECU</ptxt>
+<ptxt>(Engine Control Computer)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>G Sensor F/C</ptxt>
+<ptxt>Communication Status</ptxt>
+<ptxt>〔GFOK〕</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates airbag ECU connection status</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal = Normal</ptxt>
+<ptxt>Abnormal = No signal received from airbag ECU for 10 seconds or more  </ptxt>
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Airbag ECU</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Immobiliser Fuel Cut Status</ptxt>
+<ptxt>〔IMFC〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates immobiliser fuel cut status</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Electrical Load Signal1</ptxt>
+<ptxt>〔ELS1〕</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates electrical load present</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Tail</ptxt>
+<ptxt>OFF→ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Each switch voltage</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Electrical Load Signal3</ptxt>
+<ptxt>〔ELS3〕</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates electrical load present</ptxt>
+</item>
+<item>
+<ptxt>Display: ON/OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Defogger</ptxt>
+<ptxt>OFF→ON</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="left">
+<ptxt>Each switch voltage</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Speed of Cylinder Cut #1</ptxt>
+<ptxt>〔SES1〕 *2</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates engine speed of cylinder No. 1</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 51199rpm</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Refer to Active Test [Check the Cylinder Compression]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Displays engine speed when Active Test [Engine Speed Measurement by Cylinder] is performed</ptxt>
+<ptxt>Normally fixed at 51199rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Speed of Cylinder Cut #2</ptxt>
+<ptxt>〔SES2〕 *2</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates engine speed of cylinder No. 2</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 51199rpm</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Refer to Active Test [Check the Cylinder Compression]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Displays engine speed when Active Test [Engine Speed Measurement by Cylinder] is performed</ptxt>
+<ptxt>Normally fixed at 51199rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Speed of Cylinder Cut #3</ptxt>
+<ptxt>〔SES3〕 *2</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates engine speed of cylinder No. 3</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 51199rpm</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Refer to Active Test [Check the Cylinder Compression]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Displays engine speed when Active Test [Engine Speed Measurement by Cylinder] is performed</ptxt>
+<ptxt>Normally fixed at 51199rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Speed of Cylinder Cut #4</ptxt>
+<ptxt>〔SES4〕 *2</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates engine speed of cylinder No. 4</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 51199rpm</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Refer to Active Test [Check the Cylinder Compression]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Displays engine speed when Active Test [Engine Speed Measurement by Cylinder] is performed</ptxt>
+<ptxt>Normally fixed at 51199rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>All Cylinders Average Engine Speed</ptxt>
+<ptxt>〔AVES〕 *2</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates average engine speed of all cylinders</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 51199rpm</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Refer to Active Test [Check the Cylinder Compression]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Displays engine speed when Active Test [Engine Speed Measurement by Cylinder] is performed</ptxt>
+<ptxt>Normally fixed at 51199rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>Turbine Speed</ptxt>
+<ptxt>〔NT〕 </ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates turbine speed</ptxt>
+</item>
+<item>
+<ptxt>Display Range: 0 to 12750rpm</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine idling (vehicle stopped in P or N position)</ptxt>
+<ptxt>Approximately the same as engine speed</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>If abnormal, an NT signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stopped in P position</ptxt>
+<ptxt>0rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Lock-up ON</ptxt>
+<ptxt>Same as engine speed</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>Active Test</ptxt>
+<step2>
+<ptxt>Using SST (TaSCAN), display the [Active Test] screen according to the screen display, and perform the Active Test.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>[Diagnosis Menu → Powertrain → TCCS → Active Test]</title>
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C01" colwidth="1.49in"/>
+<colspec colnum="2" colname="C02" colwidth="2.83in"/>
+<colspec colnum="3" colname="C04" colwidth="2.76in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>Restrictions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Fuel Injection Volume</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Increase/decrease fuel injection volume</ptxt>
+<ptxt>With the injection volume at the start of the test as 0, the volume can be changed within the range of -12.5 to 24.8%</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test is stopped at 3000r/min or more or under high temperature/high load</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Power Balance</ptxt>
+<ptxt>(Injection Stop)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop fuel injection for each cylinder</ptxt>
+<ptxt>#1/#2/#3/#4 (Injection cannot be stopped for multiple cylinders)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stopped</ptxt>
+<ptxt>Vehicle speed system normal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Power Balance</ptxt>
+<ptxt>(Injection and Ignition Stop)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop fuel injection and ignition for each cylinder</ptxt>
+<ptxt>#1/#2/#3/#4 (Injection cannot be stopped for multiple cylinders)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stopped</ptxt>
+<ptxt>Vehicle speed system normal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>All Cylinders Injection Cut</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop fuel injection of all cylinders</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stopped</ptxt>
+<ptxt>Speed sensor system normal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Check the Cylinder Compression *</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop fuel injection and ignition for all cylinders</ptxt>
+<ptxt>Measures engine speed during cranking</ptxt>
+<ptxt>Performed/Not Performed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stopped</ptxt>
+<ptxt>Speed sensor system normal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Circuit Relay</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit opening relay ON/OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Fuel Cut Prohibit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel cut (fuel cut at idle ON) performed/not performed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Electronic Throttle Drive (Slow)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle valve drive (Slow) Throttle open/Throttle closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine stopped, 1 seconds after IG ON, neutral start SW OFF and accelerator pedal fully depressed (accelerator opening 58° or more)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Electronic Throttle Drive (Fast)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle valve drive (Fast) Throttle open/Throttle closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine stopped, 1 seconds after IG ON, neutral start SW OFF and accelerator pedal fully depressed (accelerator opening 58° or more)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VVT Control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Duty ratio 0%(not performed) ←→ 100%(performed) (OK if engine stalls or idles roughly at 100%)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>After engine start, accelerator pedal not depressed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VVT Linear Bank1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Can be changed within the range of -100 (retard side) to 0 to 100% (advance side)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>After engine start, accelerator pedal not depressed</ptxt>
+<ptxt>Vehicle speed system and crankshaft position sensor system normal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Purge VSV</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Purge VSV energized/not energized (duty ratio when energized 30%)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ACC Cut Relay</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACC cut relay ON/OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine stopped, vehicle stopped</ptxt>
+<ptxt>Vehicle speed system and crankshaft position sensor system normal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Starter Relay</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Starter relay ON/OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine stopped, vehicle stopped</ptxt>
+<ptxt>Vehicle speed system and crankshaft position sensor system normal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Electric Fan</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Electric fan ON/OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TC Terminal ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Combination meter warning diagnosis display all at once</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Requested Generating Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Forced command of alternator output voltage</ptxt>
+<ptxt>Selection Range: 12.5 to 14.8 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine running</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>*: In this Active Test, fuel injection and ignition of all cylinders are stopped, the engine is cranked for approximately 10 seconds, and the engine speed of each cylinder is measured.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Engine Speed Measurement by Cylinder</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the engine speed of any cylinder is higher than that of the other cylinders, the compression pressure of that cylinder may be abnormal.</ptxt>
+</item>
+<item>
+<ptxt>If a malfunction occurs, perform a compression inspection. (see <xref label="Seep01" href="RM0000027IL003X_01_0010"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>Warm up the engine.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn IG OFF.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Turn IG ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Following the SST (TaSCAN) screen display, select [Active Test] - [Check the Cylinder Compression].</ptxt>
+</step2>
+<step2>
+<ptxt>In the items to monitor, select [Engine Speed of Cylinder Cut #1 - #4] and [All Cylinders Average Engine Speed].</ptxt>
+</step2>
+<step2>
+<ptxt>With the engine stopped, switch [Check the Cylinder Compression] to [ON].</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>After the above procedure, [Active Test] - [Check the Cylinder Compression] can be performed.</ptxt>
+</item>
+<item>
+<ptxt>Fuel injection of all cylinders is prohibited, and the engine speed of each cylinder can be measured.</ptxt>
+</item>
+<item>
+<ptxt>The engine speed displayed first is the maximum value of the SST (TaSCAN). [Engine Speed of Cylinder Cut #1 - #4] displayed during cranking for approximately 10 seconds are the measured values. </ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Crank the engine for approximately 10 seconds.</ptxt>
+<atten4>
+<ptxt>Continue cranking until [Engine Speed of Cylinder Cut #1 - #4] and [All Cylinders Average Engine Speed] are displayed on the SST (TaSCAN).</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Read [Engine Speed of Cylinder Cut #1 - #4] and [All Cylinders Average Engine Speed] displayed on the SST (TaSCAN).</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If the engine is cranked with [Active Test] - [Check the Cylinder Compression] not performed, the engine will start.</ptxt>
+</item>
+<item>
+<ptxt>To perform the test again after performing the Active Test, return to the Active Test menu screen once, and then perform it again.</ptxt>
+</item>
+<item>
+<ptxt>Use a fully charged battery.</ptxt>
+</item>
+<item>
+<ptxt>When the Active Test is performed, DTC P1604 (starting malfunction) etc. may be detected.</ptxt>
+</item>
+<item>
+<ptxt>After performing the Active Test, be sure to check and clear the DTCs.</ptxt>
+</item>
+</list1>
+</atten3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

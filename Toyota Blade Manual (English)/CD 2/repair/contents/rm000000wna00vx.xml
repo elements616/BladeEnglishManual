@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1000O_S0019" variety="S0019">
+<name>Parking Brake</name>
+<ttl id="1000O_S0019_745H0_T00B3" variety="T00B3">
+<name>Parking Brake</name>
+<para id="RM000000WNA00VX" category="N" type-id="3000G" name-id="460PW-01" from="200912">
+<name>Adjustment</name>
+<subpara id="RM000000WNA00VX_03" type-id="11" category="10" proc-id="RM0550J___000064V00001">
+<content3 releasenbr="1">
+<atten3>
+<ptxt>Before adjusting the parking brake, complete bleeding of the brake fluid.</ptxt>
+</atten3>
+</content3>
+</subpara>
+<subpara id="RM000000WNA00VX_04" type-id="01" category="01">
+<s-1 id="RM000000WNA00VX_04_0051" proc-id="RM0550J___000064W00001">
+<ptxt>Inspect Parking Brake Pedal Travel</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Depress the parking brake pedal firmly once.</ptxt>
+</s2>
+<s2>
+<ptxt>Depress the parking brake pedal again to release the lock.</ptxt>
+</s2>
+<s2>
+<ptxt>Slowly depress the parking brake pedal and count the number of clicks.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>7 to 10 notches [Pedal effort 300N{31kgf}]</ptxt>
+</specitem>
+</spec>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000WNA00VX_04_0052" proc-id="RM0550J___000064X00001">
+<ptxt>Adjust Parking Brake Pedal Travel</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Release the parking brake.</ptxt>
+</s2>
+<s2>
+<ptxt>Remove the instrument panel airbag assembly LWR No.1 (see <xref label="Seep01" href="RM000000QFV007X"/>).</ptxt>
+</s2>
+<s2>
+<ptxt>Remove the lock nut and loosen wire adjusting nut No.1.</ptxt>
+<figure>
+<graphic graphicname="C221451J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Turn wire adjusting nut No.1 to adjust the parking brake pedal travel to the standard value.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>7 to 10 notches [Pedal effort 300N{31kgf}]</ptxt>
+</specitem>
+</spec>
+</s2>
+<s2>
+<ptxt>Using a wrench, hold wire adjusting nut No.1 and tighten the lock nut.</ptxt>
+<torque>
+<torqueitem>
+<t-value1>5.4</t-value1>
+<t-value2>55</t-value2>
+</torqueitem>
+</torque>
+</s2>
+<s2>
+<ptxt>After operating the parking brake pedal 3 to 4 times, check that the pedal travel is within the standard range.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>7 to 10 notches [Pedal effort 300N{31kgf}]</ptxt>
+</specitem>
+</spec>
+</s2>
+<s2>
+<ptxt>Check that the parking brake does not drag.</ptxt>
+</s2>
+<s2>
+<ptxt>When the parking brake pedal is released, check that the clearance between the operating lever and the stopper of the rear disc brake cylinder is within the standard range.</ptxt>
+<figure>
+<graphic graphicname="C155527J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>0.5mm or less</ptxt>
+</specitem>
+</spec>
+</s2>
+<s2>
+<ptxt>Install the instrument panel airbag assembly LWR No.1 (see <xref label="Seep02" href="RM000000QFT007X"/>).</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000WNA00VX_04_0066" proc-id="RM0550J___0000ISK00000">
+<ptxt>Inspect Brake Warning Light</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check that the brake warning light illuminates when the parking brake pedal is operated.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>The brake warning light must illuminate reliably at the 1 notch from the start of depression.</ptxt>
+</specitem>
+</spec>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

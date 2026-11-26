@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="1001O_S001F" variety="S001F">
+<name>Cruise Control</name>
+<ttl id="1001O_S001F_74QXD_T00FC" variety="T00FC">
+<name>Radar Cruise Control System</name>
+<para id="RM000000DDW011X" category="C" type-id="302FC" name-id="59150-00" from="200708">
+<dtccode>P0607/54</dtccode>
+<dtcname>ECU Internal Malfunction 2</dtcname>
+<subpara id="RM000000DDW011X_01" type-id="33" category="03" proc-id="RM0550J___0000CEH00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>When the engine control computer detects an internal malfunction in the engine control computer, it performs cruise control cancel control and outputs a DTC.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0607/54</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<title>STP input circuit</title>
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Stop light switch input circuit malfunction in ECU</ptxt>
+</item>
+</list1>
+<list1 type="ordered">
+<title>Cancel circuit malfunction</title>
+<item>
+<ptxt>During cruise control operation</ptxt>
+</item>
+<item>
+<ptxt>Cancel circuit malfunction in ECU</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Engine Control Computer</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000DDW011X_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000000DDW011X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000DDW011X_04_0003" proc-id="RM0550J___0000CEI00000">
+<testtitle>Replace Engine Control Computer</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>Replace the engine control computer. (see <xref label="Seep02" href="RM000002ADB004X"/>)</ptxt>
+</test1>
+<atten4>
+<ptxt>When the engine control computer is replaced with a new one, perform initialization. (see <xref label="Seep01" href="RM000002GO2003X"/>)</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000DDW011X_04_0004" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000DDW011X_04_0004">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

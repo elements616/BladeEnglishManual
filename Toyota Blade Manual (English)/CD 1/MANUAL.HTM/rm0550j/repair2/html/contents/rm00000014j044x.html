@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+  <title>[Electronic Technical Manual]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM00000014J044X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>HDD Navigation System Function Description</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">Print</a></td></tr></table><br clear="all" class="beforePng"><a name="RM00000014J044X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="RM0550J___0000IG30000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>System Normal Condition Check (Confirming Normal Condition)</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">If the symptom corresponds to any of the following, it is intended operation and not a malfunction.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">Symptom<br></th><th align="center">Answer<br></th></tr><tr><td>A longer route than expected is selected.<br></td><td>Depending on road conditions, the navigation ECU may determine that a longer route is faster.<br></td></tr><tr><td>The shortest route is not displayed even when distance is given priority.<br></td><td>For safety reasons, some roads may not be used.<br></td></tr><tr><td>Immediately after the engine is started, the navigation system deviates from the actual position while the vehicle is moving.<br></td><td>If the vehicle starts moving before the navigation system starts up, the system may not respond.<br></td></tr><tr><td>When driving on certain roads, especially new roads, the vehicle position deviates from the actual position.<br></td><td>When the vehicle is driving on a new road not covered by the map data, the system tries to match the position to another nearby road, causing the position mark to deviate.<br></td></tr><tr><td> Route guidance is provided along a road displayed as congested.<br></td><td>The system is designed not to avoid short congested sections.<br></td></tr><tr><td> Parts of the map display are missing in specific places.<br></td><td>Areas not included in the map data are not displayed on the city map.<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The following symptoms are not malfunctions, but are caused by errors inherent to the GPS, gyro sensor, speed sensor and navigation ECU.</font><br></p></li><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/i100066.png" name="I100066" alt="I100066" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">The current position mark may be displayed on a nearby parallel road.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/i100067.png" name="I100067" alt="I100067" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Immediately after a fork in the road, the current vehicle position mark may be displayed in a different position.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/i100068.png" name="I100068" alt="I100068" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">When the vehicle turns right or left at an intersection, the current vehicle position mark may be displayed on a nearby parallel road.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/i100069.png" name="I100069" alt="I100069" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">When the vehicle is being transported by ferry, etc. or the vehicle itself is not moving, the current vehicle position mark may be displayed at the position last measured by GPS.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/i100070.png" name="I100070" alt="I100070" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">When the vehicle is driving on a steep slope, the current vehicle position mark may deviate from the correct position.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/i100071.png" name="I100071" alt="I100071" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">When the vehicle makes continuous turns of 360°, 720° or 1080°, the current vehicle position mark may deviate from the correct position.  </font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/i100072.png" name="I100072" alt="I100072" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">When the vehicle moves irregularly, such as constantly changing lanes, the current vehicle position mark may deviate from the correct position.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/i038146j01.png" name="I038146J01" alt="I038146J01" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">When the IG is turned ON or ACC is turned ON while parked on a turntable, the current vehicle position mark may not indicate the correct position. The same thing occurs when leaving a parking lot.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/i100074.png" name="I100074" alt="I100074" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">When the vehicle is driving on snowy or mountain roads with tire chains installed or with a spare tire in use, the current vehicle position mark may deviate from the correct position.</font><br></p></li>
+<li><p><font class="ptxt">When a tire is replaced, the current vehicle position mark may deviate from the correct position.</font><br><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">Changing the tire diameter may cause a speed sensor error.<br></li><li class="atten4">Performing "Tire Change" in correction mode corrects the current vehicle position quickly.<br></li></ol></p></p></li></ol></ol><br clear="all"><br clear="all"><a name="RM0550J___0000IG30000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Radio Frequency Band</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The radio frequency bands used for radio broadcasting are as follows.</font><br><div class="full"><br clear="all"><img src="../../img/e141946.png" name="E141946" alt="E141946" border="1" class="full"></div><br clear="all"></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___0000IG30000013step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Service Area</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/e141945.png" name="E141945" alt="E141945" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">There is a considerable difference in the size of the service areas for AM and FM monaural, and even if AM can be received clearly, FM stereo broadcasts may not be receivable. In addition, FM stereo not only has the smallest service area, but is also susceptible to static and other interference ("fading noise", "multipath noise", "fade out").</font><br></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___0000IG30000014step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Reception Problems</li></ol>
+<ol class="ptxt"></ol><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">In addition to static problems, there are also problems called "fading noise", "multipath noise" and "fade out". These problems are not caused by electrical noise, but by the nature of the radio waves themselves.</dd></dl></p>
+<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/e141944.png" name="E141944" alt="E141944" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Fading Noise</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">In addition to electrical interference, AM broadcasts are susceptible to other interference, especially at night. This occurs because AM radio waves are reflected by the ionosphere at night, and the reflected waves interfere with the waves from the same station that reach the vehicle antenna directly. The noise generated by this interference is called "fading noise".</font><br></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/e141943.png" name="E141943" alt="E141943" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Multipath Noise</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">Interference caused by radio waves reflecting off obstacles is called "multipath". Multipath occurs when a signal sent from the broadcast station antenna is reflected by buildings or mountains and interferes with the signal that is received directly. The noise generated by this interference is called "multipath noise".</font><br></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/e141947.png" name="E141947" alt="E141947" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Fade Out</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">Because FM radio waves have a higher frequency than AM radio waves, they are reflected by obstacles such as buildings and mountains. For this reason, when the vehicle goes behind buildings or other obstacles, the FM signal gradually fades or weakens. This phenomenon is called "fade out".</font><br></p></li></ol></ol><br clear="all"><br clear="all"><a name="RM0550J___0000IG30000015step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Noise Problems</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">Questionnaire for Noise</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">When troubleshooting noise, it is very important to fully understand the customer's complaint. Therefore, use the questionnaire below to accurately diagnose the problem.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
+						"><colgroup align="" width="19%
+			"><col align=""></colgroup><colgroup align="" width="39%
+			"><col align=""></colgroup><colgroup align="" width="42%
+			"><col align=""></colgroup><tr><th align="center">Broadcast Method<br></th><th align="center">Inquiry Details<br></th><th align="center">Probable Cause<br></th></tr><tr><td align="center">AM<br></td><td>Noise occurs in specific places.<br></td><td>External noise is highly likely.<br></td></tr><tr><td align="center">AM<br></td><td>Noise occurs when listening to a broadcast that is difficult to hear.<br></td><td>The same program may be broadcast from different local stations, and if the program is the same, the customer may be listening to a different station. This mistake occurs often, especially with NHK.<br></td></tr><tr><td align="center">AM<br></td><td>Noise occurs at night.<br></td><td>Beating of radio waves from distant stations is highly likely.<br></td></tr><tr><td align="center">FM<br></td><td>Noise occurs at specific places while driving.<br></td><td>Multipath noise caused by changes in FM frequency is highly likely.<br></td></tr></table><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">If the conditions under which the noise occurs do not match any of the above questionnaire, check based on "Reception Problems". Refer to the previous explanation of multipath and fading.</dd></dl></p></p></li></ol>
+<li><p><font class="ptxt">Points to Note When Checking</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">Noise entering the radio is suppressed, so it is normally harmless in actual use, and very loud noise rarely occurs. If very loud noise enters the radio, check that the ground at the area where the antenna is installed is normal.</font><br></p></li>
+<li><p><font class="ptxt">Check that all genuine noise suppression parts are installed correctly, and that no non-genuine parts or non-standard wiring have been installed.</font><br></p></li>
+<li><p><font class="ptxt">If the radio is not tuned to a channel (not tuned to a broadcast), noise becomes prominent, making it easier to judge the symptom.</font><br></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/e122223.png" name="E122223" alt="E122223" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Antenna and Noise</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">The electrical signal received by the antenna is transmitted to the radio through the core wire of the coaxial cable. Noise waves other than radio waves enter this core wire and cause noise in the radio. To prevent noise from entering the radio, the core wire in the coaxial cable is covered with a mesh wire called a shield wire. This shield wire prevents noise from entering by sending the noise to ground.</font><br><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">If the ground of the shield wire is defective, noise will occur.</dd></dl></p></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Condenser and Noise</font><br></p></li><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/e122338.png" name="E122338" alt="E122338" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Condensers are connected to the rear window defogger circuit and high mounted stop light circuit. This connection sends the noise contained in the power supply for the rear window defogger and high mounted stop light to ground, preventing the noise from entering the navigation receiver assembly.</font><br></p></li></ol></ol><br clear="all"><br clear="all"><a name="RM0550J___0000IG30000016step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>CD and DVD</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Usable Discs</font><br></p></li><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">This player can only use music CDs, CD-Rs (CD-Recordable) and CD-RWs (CD-ReWritable) bearing the marks shown in the illustration.</font><br><div class="full"><br clear="all"><img src="../../img/e100925.png" name="E100925" alt="E100925" border="1" class="full"></div><br clear="all"></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">This player can only use DVDs bearing the mark shown in the illustration.</font><br><div class="full"><br clear="all"><img src="../../img/e100926.png" name="E100926" alt="E100926" border="1" class="full"></div><br clear="all"></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">This player can only use DVD-Rs (DVD-Recordable) and DVD-RWs (DVD-ReWritable) bearing the mark shown in the illustration that are recorded in video format or VR format (video recording format).</font><br><div class="full"><br clear="all"><img src="../../img/e170098.png" name="E170098" alt="E170098" border="1" class="full"></div><br clear="all"></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">This player can only use video CDs bearing the mark shown in the illustration.</font><br><div class="full"><br clear="all"><img src="../../img/e101256.png" name="E101256" alt="E101256" border="1" class="full"></div><br clear="all"></p></li></ol>
+<li><p><font class="ptxt">Precautions for Disc Use</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">Copy control CDs cannot be used.<br></li><li class="atten3">DualDiscs (CD and DVD bonded back to back) cannot be used.<br></li><li class="atten3">DTS-CDs cannot be used.<br></li><li class="atten3">CD-TEXT can be used.<br></li><li class="atten3">CD-Rs, CD-RWs, DVD-Rs and DVD-RWs may not be playable due to recording conditions, disc characteristics, scratches, dirt or deterioration from long exposure to the vehicle interior environment.<br></li><li class="atten3">CD-Rs and CD-RWs that have not been finalized cannot be played.<br></li><li class="atten3">Handle discs so as not to leave fingerprints, dirt or scratches on them.<br></li><li class="atten3">When handling a disc, hold it by the center hole and edge with the label side up.<br></li><li class="atten3">If the disc eject button is pressed and the disc is left ejected for a long time, the CD may deform and become unusable.<br></li><li class="atten3">If a disc with cellophane tape, stickers, labels, etc. attached, or with traces of their removal, is used, the disc may not eject or the device may malfunction.<br></li><li class="atten3">Store discs away from direct sunlight. (The disc may deform and become unusable)<br></li><li class="atten3">Discs that are not circular with a diameter of 12 cm or 8 cm cannot be played.<br></li><li class="atten3">Do not use specially shaped discs, as they may cause the device to malfunction.<br></li><li class="atten3">Do not use discs with transparent or translucent sections in the recording area, as they may not load, eject or play normally.<br></li><li class="atten3">When playing a single CD (8 cm), do not use a CD adapter, as it may cause a malfunction.<br></li></ol></p><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">In cold or rainy weather, condensation (water droplets) may form inside the player, just as the glass inside the vehicle fogs up. In this case, sound may skip or playback may stop, so ventilate or dehumidify for a while before use.<br></li><li class="atten4">If the player vibrates severely, such as when driving on rough roads, sound may skip.<br></li><li class="atten4">DVD videos have scenes with no recorded audio, such as menu screens. In such scenes, no audio is output continuously, so check the video once and perform playback, page advance, etc.<br></li><li class="atten4">Some DVD videos are recorded with the volume of ordinary conversation scenes lowered in order to obtain powerful sound effects. When playing such a disc, if the volume is adjusted during a conversation scene, the volume may be too loud during sound effect scenes or when switching to a mode other than DVD video, so be careful.<br></li></ol></p></p></li>
+<li><p><font class="ptxt">Cleaning</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">Do not use a lens cleaner, as it may cause the player's pickup section to malfunction.</dd></dl></p></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">Clean dirt off discs by wiping lightly in a radial direction from the center outward with a soft, dry cloth such as a cleaning cloth for plastic eyeglass lenses.</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">Pressing hard on a disc by hand or rubbing it with a hard cloth may scratch the surface.<br></li><li class="atten3">Using solvents such as record spray, antistatic agents, alcohol, benzine or thinner, or chemically treated cloths, may damage the disc and make it unusable.<br></li></ol></p></p></li></ol></ol><br clear="all"><br clear="all"><a name="RM0550J___0000IG30000017step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>MP3/WMA</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">Playable MP3 File Standards</font><br><table border="1" cellspacing="0" cellpadding="2" width="41.8%
+						"><colgroup align="" width="27%
+			"><col align=""></colgroup><colgroup align="" width="73%
+			"><col align=""></colgroup><tr><td>Supported Standards<br></td><td>MP3(MPEG1 LAYER3、MPEG2 LSF LAYER3)<br></td></tr><tr><td>Supported Sampling Frequencies<br></td><td><ol style="list-style-type: disc"><li>MPEG1 LAYER3:32、44.1、48(kHz)<br></li><li>MPEG2 LSF LAYER3:16、22.05、24(kHz)<br></li></ol></td></tr><tr><td>Supported Bit Rates<br></td><td><ol style="list-style-type: disc"><li>MPEG1 LAYER3:64、80、96、112、128、160、192、224、256、320(kbps)<br></li><li>MPEG2 LSF LAYER3:64、80、96、112、128、144、160(kbps)<br></li><li>VBR Supported<br></li></ol></td></tr><tr><td>Supported Channel Modes<br></td><td>Stereo, joint stereo, dual channel, monaural<br></td></tr></table></p></li>
+<li><p><font class="ptxt">Playable WMA File Standards</font><br><table border="1" cellspacing="0" cellpadding="2" width="41.8%
+						"><colgroup align="" width="28%
+			"><col align=""></colgroup><colgroup align="" width="72%
+			"><col align=""></colgroup><tr><td>Supported Standards<br></td><td>WMA Ver.7、8、9<br></td></tr><tr><td>Supported Sampling Frequencies<br></td><td>32、44.1、48(kHz)<br></td></tr><tr><td>Supported Bit Rates<br></td><td><ol style="list-style-type: disc"><li>Ver.7、8:CBR48、64、80、96、128、160、192(kbps)<br></li><li>Ver.9:CBR48、64、80、96、128、160、192、256、320(kbps)<br></li><li>Only 2ch playback supported<br></li></ol></td></tr></table></p></li>
+<li><p><font class="ptxt">ID3 Tags / WMA Tags</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">MP3 files can contain attached text information called ID3 tags, which can store the song title, artist name, etc.</font><br><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">ID3 Ver.1.0, 1.1, ID3 Ver.2.2, 2.3 ID3 tags supported (number of characters complies with ID3 Ver.1.0, 1.1)</dd></dl></p></p></li>
+<li><p><font class="ptxt">WMA files can contain attached text information called WMA tags, which can store the song title, artist name, etc.</font><br></p></li></ol>
+<li><p><font class="ptxt">Usable Media</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">The media that can be used for MP3/WMA playback are CD-ROM, CD-R (CD-Recordable) and CD-RW (CD-ReWritable) only.</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">CD-Rs and CD-RWs are more susceptible to high temperature and humidity than discs used for ordinary music CDs, and some CD-Rs and CD-RWs may not be playable.<br></li><li class="atten3">If a disc has fingerprints or scratches, it may not play or sound may skip.<br></li><li class="atten3">Some CD-Rs and CD-RWs deteriorate with long exposure to the vehicle interior environment.<br></li><li class="atten3">CD-Rs and CD-RWs are sensitive to ultraviolet light, so store them in a case that does not let light through.<br></li></ol></p></p></li></ol>
+<li><p><font class="ptxt">Usable Media Formats</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">Usable Media Formats</font><br><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="27%
+			"><col align=""></colgroup><colgroup align="" width="73%
+			"><col align=""></colgroup><tr><td>Disc Format<br></td><td>CD-ROM Mode1、CD-ROM XA Mode2 Form1<br></td></tr><tr><td>File Format<br></td><td>ISO9660 Level 1, Level 2 (Romeo, Joliet), UDF2.01<br></td></tr></table><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">MP3/WMA files written in formats other than the above may not play normally, or file names, folder names, etc. may not be displayed correctly.<br></li><li class="atten4">For discs containing a mix of music data and MP3 or WMA format data, only the music data is played.<br></li><li class="atten4">Multi-session is supported, and CD-Rs and CD-RWs with additional MP3/WMA files written can be played. However, only the first session is played.<br></li></ol></p></p></li>
+<li><p><font class="ptxt">Standards and Restrictions</font><br><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="27%
+			"><col align=""></colgroup><colgroup align="" width="73%
+			"><col align=""></colgroup><tr><td>Maximum Directory Levels<br></td><td>8 levels<br></td></tr><tr><td>Maximum Number of Characters in Folder Name / File Name<br></td><td>16 double-byte characters (32 characters when single-byte only)<br></td></tr><tr><td>Maximum Number of Folders<br></td><td>192<br> (including root folder, folders without MP3/WMA files and empty folders)<br></td></tr><tr><td>Maximum Number of Files on Disc<br></td><td>255<br> (including files other than MP3/WMA files)<br></td></tr></table></p></li></ol>
+<li><p><font class="ptxt">File Names</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">Only files with the MP3/WMA extension ".mp3" / ".wma" are recognized and played as MP3/WMA.</font><br></p></li>
+<li><p><font class="ptxt">Save MP3/WMA files with the extension ".mp3" / ".wma".</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">If a ".mp3" / ".wma" extension is given to a file other than MP3/WMA, it will be misrecognized as a MP3/WMA file and played, which may produce loud noise and damage the speakers.</dd></dl></p></p></li></ol></ol><br clear="all"><br clear="all"><a name="RM0550J___0000IG30000018step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Bluetooth Audio Function</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">About Bluetooth</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">Bluetooth is a registered trademark of Bluetooth SIG, Inc.</font><br></p></li></ol>
+<li><p><font class="ptxt">Usable Bluetooth Audio Devices</font><br><table border="1" cellspacing="0" cellpadding="2" width="41.8%
+						"><colgroup align="" width="27%
+			"><col align=""></colgroup><colgroup align="" width="73%
+			"><col align="left"></colgroup><tr><td align="center">Supported Bluetooth Specification<br></td><td>Bluetooth Specification Ver. 1.1 or later (Ver.2.0 +EDR or later recommended)<br></td></tr><tr><td align="center">Supported Profiles<br></td><td><ol style="list-style-type: disc"><li>A2DP (Advanced Audio Distribution Profile) Ver. 1.0 or later<br></li><li>AVRCP (Audio/Video Remote Control Profile) Ver. 1.0 or later (Ver.1.3 or later recommended)<br></li></ol></td></tr><tr><td align="center">Maximum Number of Registered Devices<br></td><td>2 devices<br></td></tr></table><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">Even if playback is possible on the portable device, playback may not be possible on the on-board unit.<br></li><li class="atten4">The remaining battery level displayed on the navigation receiver assembly may differ from that displayed on the portable device.<br></li></ol></p></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___0000IG30000019step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>USB Audio Function</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">Stereo jack adapter assembly NO.1 is equipped with a USB terminal. Music files can be played by connecting USB memory or an "iPod" to the USB terminal. Not only USB memory with audio functions, but any USB memory containing music data with WMA or MP3 extensions can be played. In addition, the multimedia interface computer is equipped with "iPod" control software, allowing song selection from lists, shuffle mode switching, etc. to be operated from the multi-display screen.</font><br><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">Video content in the "iPod" cannot be played.<br></li><li class="atten4">While connected, device operations cannot be performed on the USB memory or "iPod".<br></li></ol></p></p></li>
+<li><p><font class="ptxt">USB Memory</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">Usable USB Memory Formats</font><br><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="28%
+			"><col align=""></colgroup><colgroup align="" width="72%
+			"><col align=""></colgroup><tr><td>Supported USB Standard<br></td><td>USB 2.0 FS (12MBPS)<br></td></tr><tr><td>Supported File Formats<br></td><td>FAT16/32(Windows)<br></td></tr><tr><td>Supported Class<br></td><td>Mass Storage Class<br></td></tr></table><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">MP3/WMA files written in formats other than the above may not play normally, or file names, folder names, etc. may not be displayed correctly.</dd></dl></p></p></li>
+<li><p><font class="ptxt">Standards and Restrictions</font><br><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="27%
+			"><col align=""></colgroup><colgroup align="" width="73%
+			"><col align=""></colgroup><tr><td>Maximum Directory Levels<br></td><td>8 levels<br></td></tr><tr><td>Maximum Number of Folders<br></td><td>999<br> (including root folder)<br></td></tr><tr><td>Maximum Number of Files<br></td><td>65025<br></td></tr><tr><td>Maximum Number of Files in Folder<br></td><td>255<br></td></tr></table></p></li></ol>
+<li><p><font class="ptxt">"iPod"</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">"iPod" is a registered trademark of Apple Inc.</font><br></p></li>
+<li><p><font class="ptxt">Usable "iPod" Models and Firmware Versions</font><br><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="27%
+			"><col align=""></colgroup><colgroup align="" width="73%
+			"><col align=""></colgroup><tr><td>Supported Models<br></td><td>Supported Firmware Versions<br></td></tr><tr><td>&ldquo;iPod&rdquo; 5G<br></td><td>Ver. 1.2 or later<br></td></tr><tr><td>&ldquo;iPod Nano&rdquo; 1G<br></td><td>Ver. 1.3 or later<br></td></tr><tr><td>&ldquo;iPod Nano&rdquo; 2G<br></td><td>Ver. 1.1.2 or later<br></td></tr><tr><td>&ldquo;iPod Nano&rdquo; 3G<br></td><td>Ver. 1.0 or later<br></td></tr><tr><td>&ldquo;iPod touch&rdquo;<br></td><td>Ver. 1.1 or later<br></td></tr><tr><td>&ldquo;iPod classic&rdquo;<br></td><td>Ver. 1.0 or later<br></td></tr></table><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">Depending on the "iPod" generation, the response to operations on the device may be slow.<br></li><li class="atten4">Products not listed in the table may not be usable.<br></li></ol></p></p></li>
+<li><p><font class="ptxt">Unusable "iPod" Models</font><br><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="28%
+			"><col align=""></colgroup><colgroup align="" width="72%
+			"><col align=""></colgroup><tr><td rowspan="4" align="center">Unsupported Models<br></td><td>&ldquo;iPod shuffle&rdquo;<br></td></tr><tr><td>&ldquo;iPhone&rdquo;<br></td></tr><tr><td>&ldquo;iPod&rdquo; 1G, 2G, 3G, 4G<br></td></tr><tr><td>&ldquo;iPod mini&rdquo;<br></td></tr></table></p></li>
+<li><p><font class="ptxt">Standards and Restrictions</font><br><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="27%
+			"><col align=""></colgroup><colgroup align="" width="73%
+			"><col align=""></colgroup><tr><td>Maximum Number of Lists<br></td><td>9999<br></td></tr><tr><td>Maximum Number of Songs<br></td><td>65025<br></td></tr><tr><td>Maximum Number of Songs in List<br></td><td>No limit<br></td></tr></table></p></li></ol></ol><br clear="all"><br clear="all"><br clear="all"><a name="RM0550J___0000IG300000110step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>AVC-LAN Communication System</li></ol>
+<ol class="ptxt"></ol><div class="full"><br clear="all"><img src="../../img/e122562j11.png" name="E122562J11" alt="E122562J11" border="1" class="full"></div><br clear="all">
+<ol class="step2">
+<li><p><font class="ptxt">The HDD navigation system uses AVC-LAN for communication between devices.</font><br></p></li>
+<li><p><font class="ptxt">The master device of the AVC-LAN is the navigation receiver assembly.</font><br></p></li>
+<li><p><font class="ptxt">The navigation receiver assembly contains a resistor necessary for communication transmission (60 to 80 Ω between terminals TX+ and TX-).</font><br></p></li>
+<li><p><font class="ptxt">If a malfunction such as a short between communication lines, short to +B or short to GND occurs in the AVC-LAN circuit, communication is interrupted and the HDD navigation system does not operate normally.</font><br></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___0000IG300000111step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>CAN Communication System</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">The HDD navigation system uses CAN communication for data communication between the navigation receiver assembly and each ECU.</font><br></p></li>
+<li><p><font class="ptxt">If a CAN communication DTC is output, repair the communication line malfunction first, then troubleshoot the HDD navigation system with data communication in a normal condition. (see<a href="#" onclick="openSeePage('seepage','RM000001R4W019X');return false;"><img border="0" src="../../../../image/extxref.png"></a> )</font><br></p></li>
+<li><p><font class="ptxt">Each CAN communication line has a specified length and routing, and temporary measures or repairs using bypass wiring, etc. cannot be performed. (see<a href="#" onclick="openSeePage('seepage','RM0000005RE01SX');return false;"><img border="0" src="../../../../image/extxref.png"></a>)</font><br></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___0000IG300000112step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Diagnosis Function</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">The HDD navigation system has a diagnosis function that can check the connection of and diagnose connected devices. (Inspection results are shown on the display)</font><br></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___0000IG300000113step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Map Update Function</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">The HDD navigation system has a "Full Update" function that updates all nationwide map data, and a "Differential Update (Map On Demand)" function that partially updates map data via communication or using media (CD-R/DVD-R) on which update data is written, allowing the map data to be kept up to date with the latest map at the center.</font><br></p></li></ol><br clear="all"></body></html>

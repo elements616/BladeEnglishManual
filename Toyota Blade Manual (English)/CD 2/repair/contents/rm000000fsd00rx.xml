@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1001Y_S000S" variety="S000S">
+<name>CVT</name>
+<ttl id="1001Y_S000S_744HD_T007Y" variety="T007Y">
+<name>CVT System [Super CVT-i] (K112/K112F)</name>
+<para id="RM000000FSD00RX" category="U" type-id="3001G" name-id="3225O-00" from="200612">
+<name>Terminals of ECU</name>
+<subpara id="RM000000FSD00RX_z0" proc-id="RM0550J___000045800000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Engine Control Computer (CVT Control System)</ptxt>
+<figure>
+<graphic graphicname="A159951J01" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<atten4>
+<ptxt>The engine control computer uses waterproof connectors, so terminal voltage inspection and oscilloscope waveform checks cannot be performed with it installed on the vehicle.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="0.62in"/>
+<colspec colname="COL3" colwidth="0.65in"/>
+<colspec colname="COL4" colwidth="2.99in"/>
+<colspec colname="COL5" colwidth="1.40in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal Symbol</ptxt>
+<ptxt>[Terminal No.]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STAR←→E1</ptxt>
+<ptxt>[A52←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine stopped, IG ON</ptxt>
+<ptxt>(Other than P or N position)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STAR←→E1</ptxt>
+<ptxt>[A52←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>During cranking</ptxt>
+<ptxt>(P or N position)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+<ptxt>(Pulse)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>R←→E1</ptxt>
+<ptxt>[A53←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever R position → other than R position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V→0 to 1.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>N←→E1</ptxt>
+<ptxt>[A54←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever N position → other than N position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V→0 to 1.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D←→E1</ptxt>
+<ptxt>[A56←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever D position/M position → other than D position/M position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V→0 to 1.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL←→E1</ptxt>
+<ptxt>[A57←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever N position → D position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V→0 to 1.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VCPT←→EPTO</ptxt>
+<ptxt>[A70←→A94]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.75 to 5.75V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>PTO←→EPTO</ptxt>
+<ptxt>[A71←→A94]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine idling in P position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.8 to 1.2V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>THO1←→ETHO</ptxt>
+<ptxt>[A72←→A95]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CVT fluid temperature 60 to 120°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.2 to 1.0V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P←→E1</ptxt>
+<ptxt>[A73←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever P position → other than P position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V→0 to 1.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>S←→E1</ptxt>
+<ptxt>[A74←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever M position → other than M position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V→0 to 1.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SLS+←→SLS-</ptxt>
+<ptxt>[A76←→A75]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DS2←→E1</ptxt>
+<ptxt>[A78←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accelerator pedal ON from constant vehicle speed driving in D position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 2</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DS1←→E1</ptxt>
+<ptxt>[A79←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accelerator pedal ON → OFF while driving in D position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 3</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DSU←→E1</ptxt>
+<ptxt>[A80←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lock-up OFF → ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 4</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>NIN+←→NIN-</ptxt>
+<ptxt>[A101←→A102]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>In D range at vehicle speed of approximately 6km/h, engine speed 760rpm</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 5</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>NT+←→NT-</ptxt>
+<ptxt>[A126←→A103]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>At vehicle speed of approximately 12km/h, engine speed 1040rpm</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 6</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>NOT+←→NOT-</ptxt>
+<ptxt>[A125←→A124]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>In D position at vehicle speed of approximately 12km/h, engine speed 1043rpm</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 7</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E1 ←→ Body ground</ptxt>
+<ptxt>[A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>+B2←→E1</ptxt>
+<ptxt>[B1←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>+B←→E1</ptxt>
+<ptxt>[B2←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine stopped, IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>+BM←→E1</ptxt>
+<ptxt>[B3←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SFTU←→E1</ptxt>
+<ptxt>[B16←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever M position → shift to "+"</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V→0 to 1.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BATT←→E1</ptxt>
+<ptxt>[B20←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STP←→E1</ptxt>
+<ptxt>[B36←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch ON (brake pedal depressed) →</ptxt>
+<ptxt>OFF (brake pedal released)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V→0 to 1.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANH←→CANL</ptxt>
+<ptxt>[B41←→B49]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 67Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MREL←→E1</ptxt>
+<ptxt>[B44←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine stopped, IG ON →</ptxt>
+<ptxt>IG OFF (3 seconds or more elapsed after OFF)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V→0 to 1.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SFTD←→E1</ptxt>
+<ptxt>[B51←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever M position → shift to "-"</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V→0 to 1.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STA←→E1</ptxt>
+<ptxt>[B48←→A104]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>During cranking</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<step2>
+<ptxt>Waveform 1 (Solenoid [SLS])</ptxt>
+<figure>
+<graphic graphicname="C070240J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.26in"/>
+<colspec colname="COL2" colwidth="2.87in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SLS+←→SLS-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5V/DIV、1ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine idling</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Waveform 2 (Solenoid [DS2])</ptxt>
+<figure>
+<graphic graphicname="C070238J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.26in"/>
+<colspec colname="COL2" colwidth="2.87in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DS2←→E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10V/DIV、5ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accelerator pedal ON from constant vehicle speed driving in D range</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The duty ratio increases during downshift.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 3 (Solenoid [DS1])</ptxt>
+<figure>
+<graphic graphicname="C070239J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.26in"/>
+<colspec colname="COL2" colwidth="2.87in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DS1←→E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10V/DIV、5ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accelerator pedal ON → OFF while driving in D range</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The duty ratio increases during upshift.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 4 (Solenoid [DSU])</ptxt>
+<figure>
+<graphic graphicname="G031759J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.26in"/>
+<colspec colname="COL2" colwidth="2.87in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DSU←→E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10V/DIV、20ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lock-up OFF → ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>When lock-up turns ON, the duty ratio becomes 100%.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 5 (Revolution Sensor [NIN])</ptxt>
+<figure>
+<graphic graphicname="C070237J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.26in"/>
+<colspec colname="COL2" colwidth="2.87in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NIN+←→NIN-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1V/DIV、2ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>In D range at vehicle speed of approximately 6km/h, engine speed 760r/min</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The higher the primary pulley speed, the shorter the cycle and the higher the voltage.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 6 (Revolution Sensor [NT])</ptxt>
+<figure>
+<graphic graphicname="C070235J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.26in"/>
+<colspec colname="COL2" colwidth="2.87in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NT+←→NT-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2V/DIV、1ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>At vehicle speed of approximately 12km/h, engine speed 1040r/min</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The higher the turbine speed, the shorter the cycle and the higher the voltage.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Waveform 7 (Revolution Sensor [NOUT])</ptxt>
+<figure>
+<graphic graphicname="C070236J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.26in"/>
+<colspec colname="COL2" colwidth="2.87in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NOT+←→NOT-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1V/DIV、2ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>In D range at vehicle speed of approximately 12km/h, engine speed 1043r/min</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The higher the secondary pulley speed, the shorter the cycle and the higher the voltage.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

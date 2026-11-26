@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740039p SYSTEM "grph_ent/a4740039p.png" NDATA png>
+<!ENTITY a4740089p SYSTEM "grph_ent/a4740089p.png" NDATA png>
+<!ENTITY a4740090p SYSTEM "grph_ent/a4740090p.png" NDATA png>
+
+<!ENTITY T010039A330 SYSTEM "t403010039a330.xml">
+<!ENTITY T010039A330A233 SYSTEM "t403010039a330a233.xml">
+<!ENTITY T010039A330A234 SYSTEM "t403010039a330a234.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010039A330S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010039A330" UPDATE = "ORIGINAL" LDUP = "1Oct2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Balance Shaft</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Balance shafts have been adopted to cancel the 2-order inertia force that causes increased vibration and noise in large-displacement in-line 4-cylinder engines. Also, by optimizing the inertial mass of the balance shafts, low vibration and quietness (reduced vehicle booming noise) have been improved.</PTXT></ITEM>
+<ITEM><PTXT>The drive method is direct drive by a gear press-fitted onto the #3 counterweight of the crankshaft.</PTXT></ITEM>
+<ITEM><PTXT>Plastic gears have been adopted for driven gears No1 and No.3 to suppress gear noise. Also, friction loss has been reduced by making the bearings smaller in diameter, and the shaft length has been shortened, making the balance shafts among the lightest and most compact in the world.</PTXT></ITEM>
+<ITEM><PTXT>A vertical wall has been formed in the balance shaft housing to reduce the flow of oil into the balance shaft area, reducing friction.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740039p" WIDTH = "6.903in" HEIGHT = "4.986in" />
+</FIGURE>
+<SPEC ID = "T010039A330X01" INDSW = "OFF">
+<TITLE>Balance Shaft Drive Gear Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Tooth Profile</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Involute Helical Gear</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Number of Teeth</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>44</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Reference Pitch Circle Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>151.4</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+<SPEC ID = "T010039A330X02" INDSW = "OFF">
+<TITLE>Balance Shaft Driven Gear Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "24%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "26%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "24%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "24%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>No.1</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>No.2</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>No.3</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Tooth Profile</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Involute Helical Gear</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Number of Teeth</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>22</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>25</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Reference Pitch Circle Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>75.7</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>73.7</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+
+<MECA ID = "T010039A330A233" UPDATE = "ORIGINAL" LDUP = "1Oct2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>2-order Inertia Force</TITLE>
+<LIST1><ITEM><PTXT>Cylinders No. 1 and No. 4, and cylinders No. 2 and No. 3, are in the same phase as each other and are 180° opposite in phase, so if the piston motion were perfect simple harmonic motion<SUP></SUP> , the reciprocating inertia forces would cancel each other out. In an actual engine, due to the principle of the crank-piston mechanism, the piston speed is greatest on the top dead center side of the middle of the stroke even when the crankshaft rotation speed is constant, so higher-order (distortion) components are generated. These higher-order components occur 2 times per 1 crankshaft revolution, particularly in in-line 4-cylinder engines, and since they do not cancel but overlap each other, they cause increased vibration and noise. This component is the 2-order inertia force.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740089p" WIDTH = "6.903in" HEIGHT = "2.903in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T010039A330A234" UPDATE = "ORIGINAL" LDUP = "1Oct2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Effect of Balance Shafts</TITLE>
+<LIST1><ITEM><PTXT>2 balance shafts are rotated at 2 times the speed of the crankshaft to cancel the 2-order inertia force. Also, by rotating the 2 shafts in opposite directions, the vibration generated by the balance shafts is canceled out.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740090p" WIDTH = "6.903in" HEIGHT = "2.653in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

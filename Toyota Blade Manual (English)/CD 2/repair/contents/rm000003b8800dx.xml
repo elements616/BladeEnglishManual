@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="RM000003B8800DX" category="C" type-id="800K5" name-id="ESJK4-05" from="200912">
+<dtccode>U0129/A2</dtccode>
+<dtcname>Brake ECU Communication Malfunction</dtcname>
+<subpara id="RM000003B8800DX_01" type-id="31" category="03" proc-id="RM0550J___0000I4L00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>CAN (Controller Area Network) is a serial data communication system for real-time applications. It is a multiplex communication system for vehicles, with a high communication speed (500kbps) and a malfunction detection function. By combining the CANH bus line and the CANL bus line, CAN performs communication based on differential voltage.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC NO.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+<item>
+<ptxt>Malfunction Duration</ptxt>
+</item>
+<item>
+<ptxt>Others</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0129/A2</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Lost communication between engine control computer and skid control computer</ptxt>
+</item>
+<item>
+<ptxt>2.34 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire harness or connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>Brake Actuator Assembly</ptxt>
+</item>
+<item>
+<ptxt>CAN Communication System</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000003B8800DX_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000003B8800DX_02" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000003B8800DX_02_0004" proc-id="RM0550J___0000I4N00000">
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, clear the DTCs. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000003B8800DX_02_0001" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000003B8800DX_02_0001" proc-id="RM0550J___0000I4M00000">
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Perform a road test.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, check the DTCs. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0129/A2 is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0129/A2 is not displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000003B8800DX_02_0002" fin="true">A</down>
+<right ref="RM000003B8800DX_02_0003" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000003B8800DX_02_0002">
+<testtitle>Go to CAN communication system troubleshooting<xref label="Seep01" href="RM000001R4W019X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000003B8800DX_02_0003">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000CD101FX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

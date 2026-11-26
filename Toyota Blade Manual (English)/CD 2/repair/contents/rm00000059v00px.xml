@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1000Z_S001D" variety="S001D">
+<name>Seat Belt</name>
+<ttl id="1000Z_S001D_746PL_T00CK" variety="T00CK">
+<name>Seat Belt Warning System</name>
+<para id="RM00000059V00PX" category="U" type-id="3001G" name-id="560ZN-00" from="200612">
+<name>Terminals of ECU</name>
+<subpara id="RM00000059V00PX_z0" proc-id="RM0550J___0000AF500000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Combination Meter Assembly (Meter ECU)</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030/09083-00170</s-number>
+</sstitem>
+</sst>
+<step2>
+<ptxt>Inspect Combination Meter Assembly (Meter ECU)</ptxt>
+<figure>
+<graphic graphicname="B137156" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Disconnect the combination meter assembly (meter ECU) connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage and resistance between each terminal of the vehicle side wire harness connector.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table pgwide="1">
+<title>Connector A</title>
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.56in"/>
+<colspec colname="COL2" colwidth="0.84in"/>
+<colspec colname="COL3" colwidth="0.84in"/>
+<colspec colname="COL4" colwidth="2.29in"/>
+<colspec colname="COL5" colwidth="1.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>12 (PKBI) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sit in the front passenger seat; tongue plate not inserted → inserted into front passenger inner seat belt</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω → 10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>30 (ET) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>32 (B) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>33 (IG+) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+<step3>
+<ptxt>Connect the connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between each terminal of the connector.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table pgwide="1">
+<title>Connector A</title>
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.56in"/>
+<colspec colname="COL2" colwidth="0.84in"/>
+<colspec colname="COL3" colwidth="0.84in"/>
+<colspec colname="COL4" colwidth="2.29in"/>
+<colspec colname="COL5" colwidth="1.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(WRNP) ←→ 30(ET)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON, sit in the front passenger seat; tongue plate not inserted → inserted into front passenger inner seat belt</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Alternates between 11 to 14 V ←→ below 1 V → 11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Instrument Panel Junction Block Assembly (Main Body ECU)</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030/09083-00170</s-number>
+</sstitem>
+</sst>
+<step2>
+<ptxt>Inspect Instrument Panel Junction Block Assembly (Main Body ECU)</ptxt>
+<figure>
+<graphic graphicname="E139319J02" width="7.106578999in" height="7.795582503in"/>
+</figure>
+<figure>
+<graphic graphicname="E139320J07" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), with the vehicle side wire harness connectors connected to the instrument panel junction block assembly (main body ECU), measure the voltage and resistance between each terminal from the back side of the connectors.</ptxt>
+<spec>
+<title>Standard</title>
+<table pgwide="1">
+<title>Connector E</title>
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.56in"/>
+<colspec colname="COL2" colwidth="0.84in"/>
+<colspec colname="COL3" colwidth="0.84in"/>
+<colspec colname="COL4" colwidth="2.29in"/>
+<colspec colname="COL5" colwidth="1.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E-17 (E) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Connector F</title>
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.56in"/>
+<colspec colname="COL2" colwidth="0.84in"/>
+<colspec colname="COL3" colwidth="0.84in"/>
+<colspec colname="COL4" colwidth="2.29in"/>
+<colspec colname="COL5" colwidth="1.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F-3 (IG1) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F-5 (ACC) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACC ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Connector U</title>
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.56in"/>
+<colspec colname="COL2" colwidth="0.84in"/>
+<colspec colname="COL3" colwidth="0.84in"/>
+<colspec colname="COL4" colwidth="2.29in"/>
+<colspec colname="COL5" colwidth="1.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U-1 (AM1) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U-4 (GND2) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Connector V</title>
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.56in"/>
+<colspec colname="COL2" colwidth="0.84in"/>
+<colspec colname="COL3" colwidth="0.84in"/>
+<colspec colname="COL4" colwidth="2.29in"/>
+<colspec colname="COL5" colwidth="1.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>V-6 (AM2) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>V-26 (DBKL) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tongue plate not inserted → inserted into driver inner seat belt</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω → 10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

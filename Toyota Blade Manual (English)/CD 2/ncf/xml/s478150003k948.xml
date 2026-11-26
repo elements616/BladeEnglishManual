@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740048b SYSTEM "grph_ent/a4740048b.png" NDATA png>
+
+<!ENTITY T150003K948 SYSTEM "t478150003k948.xml">
+
+<!ENTITY T150003K791 SYSTEM "t478150003k791.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T150003K948S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T150003K948" UPDATE = "ORIGINAL" LDUP = "24Jul2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Outline of In-vehicle Multiplex Communication System</TITLE>
+<LIST1><ITEM><PTXT>As in-vehicle multiplex communication systems intended to simplify the vehicle wire harness and speed up communication, 3 types have been adopted: CAN (Controller Area Network) communication enabling high-speed communication, LIN (Local Interconnect Network) communication enabling low-cost multiplex communication, and AVC-LAN (Audio Visual Communication-Local Area Network) communication for the audio system.</PTXT></ITEM></LIST1>
+<SPEC ID = "T150003K948X01" INDSW = "OFF">
+<TITLE>Communication Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "5" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "26%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "26%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1"><PTXT>Item</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>CAN</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1"><PTXT>LIN</PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "5" MOREROWS = "1"><PTXT>AVC-LAN</PTXT>
+<PTXT></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>V Bus</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>MS Bus</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Communication Speed</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>500kbps</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>250kbps</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>9.6kbps or 20kbps</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>17.8kbps</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Communication Line</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Twisted Pair</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Single Wire</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Twisted Pair</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Electrical Signal Type</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Differential Voltage</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Single Wire Voltage</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Differential Voltage</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Data Length</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>1 to 8Byte (Variable)</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>2,4,8Byte (Variable)</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>0 to 32Byte (Variable)</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+<BIND ID = "T150003K948B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T150003K791" UPDATE = "ORIGINAL" LDUP = "21Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>DLC3 (Data Link Connector No.3)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By connecting the diagnostic tool "TaSCAN" to the vehicle side connector (DLC3: Data Link Connector No.3), each ECU can be accessed via the gateway computer and the various multiplex communication lines. This allows output of DTCs, data monitoring (checking ECU data, etc.), Active Test (driving actuators as desired), customization (setting control programs), etc. For details, refer to the Repair Manual.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740048b" WIDTH = "6.903in" HEIGHT = "3.389in" />
+</FIGURE>
+</PARA>
+</BIND>
+</SECTION>

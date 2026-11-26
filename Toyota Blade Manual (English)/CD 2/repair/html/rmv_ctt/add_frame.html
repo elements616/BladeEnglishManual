@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- $Id: add_frame.html,v 1.17 2004/12/07 12:32:47 k-narumi Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Related Work</title>
+
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/style.js"></script>
+<script src="../../js/memo.js"></script>
+<script language="javascript">
+var g_xmlCache      = new Hashtable();
+var args = window.dialogArguments;
+var g_localXml      = args[0];
+var g_localXsl      = initXsl("../../xsl/rmv/add_local.xsl");
+var g_contentsXsl   = initXsl("../../xsl/rmv/through.xsl");
+var g_topContentsId;
+var g_cttXml;
+
+var cotentsNode = g_localXml.selectNodes("//para[@category='M']");
+if(cotentsNode.item(0)!= null){
+	g_topContentsId = cotentsNode.item(0).getAttribute("id");
+	g_cttXml = initXml(g_topContentsId.toLowerCase()+".xml");//初期表示用XML
+	if (g_cttXml != null) {
+		g_xmlCache.put(g_topContentsId, g_cttXml);
+	}
+}
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="add_global.html" scrolling="no" noresize frameborder="no">
+	<frameset cols="250, *" frameborder="yes" border="1" framespacing="1" bordercolor="#cccccc">
+		<frame name="local" src="add_local.html" frameborder="no" >
+		<frameset rows="30, *" frameborder="no" border="0" framespaceing="0">
+			<frame name="sts" src="add_status.html" frameborder="no">
+			<frame name="contents" src="add_contents.html" frameborder="no">
+		</frameset>
+	</frameset>
+</frameset>
+<noframes>
+	<body>Please use a browser that supports frames</body>
+</noframes>
+</html>

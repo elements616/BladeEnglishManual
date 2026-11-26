@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+  <title>[Electronic Technical Manual]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000005ZS00RX"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>ABS with EBD &amp; TRC &amp; VSC &amp; BA System Customer Problem Analysis Check Sheet</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">Print</a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000005ZS00RX_z0"></a><br clear="all"><a name="1"></a><div class="full"><br clear="all"><img src="../../img/c146381.png" name="C146381" alt="C146381" border="1" class="full"></div><br clear="all"><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><caption class="tbl-title"><span>Check DTC 
+				</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">ABS/VSC System<br></th><th align="center">Output Code<br></th></tr><tr><td align="center">First Time<br></td><td align="center"><br></td></tr><tr><td align="center">Time 2<br></td><td align="center"><br></td></tr><tr><td align="center"> Time<br></td><td align="center"><br></td></tr><tr><td align="center">Malfunction DTCs Other than ABS/VSC System<br></td><td align="center"><br></td></tr></table><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><caption class="tbl-title"><span>Freeze Frame Data 
+				</span></caption><colgroup align="" width="26%
+			"><col align=""></colgroup><colgroup align="" width="65%
+			"><col align=""></colgroup><colgroup align="" width="9%
+			"><col align=""></colgroup><tr><th align="center">Item Name <br> (TaSCAN Display)<br></th><th align="center">Recorded Value<br></th><th align="center">Unit<br></th></tr><tr><td>Steering Angle Sensor<br></td><td align="center"><br></td><td align="center">&deg;<br></td></tr><tr><td>Operating System<br></td><td align="center">None / ABS / VSC / TRC / BA / Hill-start Assist / Prohibited<br></td><td align="center">-<br></td></tr><tr><td>Maintenance Mode<br></td><td align="center">Normal / Maintenance Mode<br></td><td align="center">-<br></td></tr><tr><td>Stop Switch<br></td><td align="center">ON / OFF<br></td><td align="center">-<br></td></tr><tr><td>Parking Brake<br></td><td align="center">ON / OFF<br></td><td align="center">-<br></td></tr><tr><td>Buzzer<br></td><td align="center">ON / OFF<br></td><td align="center">-<br></td></tr><tr><td>Shift Lever Position<br></td><td align="center">P, N / R / D/M / Unknown<br></td><td align="center">-<br></td></tr><tr><td>Gear Position<br></td><td align="center">P, N / R / Lo / 2 speed / 3 speed / 4 speed / 5 speed / 6 speed / Unknown<br></td><td align="center">-<br></td></tr><tr><td>Speed Sensor FR<br></td><td align="center"><br></td><td align="center">km/h<br></td></tr><tr><td>Speed Sensor FL<br></td><td align="center"><br></td><td align="center">km/h<br></td></tr><tr><td>Speed Sensor RR<br></td><td align="center"><br></td><td align="center">km/h<br></td></tr><tr><td>Speed Sensor RL<br></td><td align="center"><br></td><td align="center">km/h<br></td></tr><tr><td>Vehicle Speed<br></td><td align="center"><br></td><td align="center">km/h<br></td></tr><tr><td>Vehicle Speed Change Amount<br></td><td align="center"><br></td><td align="center">m/s<sup>2</sup>
+<br></td></tr><tr><td>Forward and Rearward G<br></td><td align="center"><br></td><td align="center">m/s<sup>2</sup>
+<br></td></tr><tr><td>Lateral G<br></td><td align="center"><br></td><td align="center">m/s<sup>2</sup>
+<br></td></tr><tr><td>Yaw Rate Sensor<br></td><td align="center"><br></td><td align="center">&deg;/s<br></td></tr><tr><td>Master Pressure Sensor<br></td><td align="center"><br></td><td align="center">V<br></td></tr><tr><td>Master Pressure Sensor Change Amount<br></td><td align="center"><br></td><td align="center">MPa/s<br></td></tr><tr><td>Actual Output Torque<br></td><td align="center"><br></td><td align="center">Nm<br></td></tr><tr><td>Accelerator Opening Rate<br></td><td align="center"><br></td><td align="center">%<br></td></tr><tr><td>Number of IG ON Times Since Freeze<br></td><td align="center"><br></td><td align="center">-<br></td></tr><tr><td>Elapsed Time Since Freeze<br></td><td align="center"><br></td><td align="center">msec<br></td></tr></table><br clear="all"><br clear="all"><a name="RM0550J___00004EJ0000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Checking Malfunction Occurrence Conditions Using Freeze Frame Data</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">Freeze Frame Data When Malfunction DTC Occurs</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">If freeze frame data from when a malfunction DTC occurred is stored, "F" is displayed for the relevant DTC on the DTC display screen.</font><br><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">When freeze frame data from when a malfunction code occurred is stored, the previously stored freeze frame data from system operation is cleared.<br></li><li class="atten4">Once freeze frame data from when a malfunction code occurred is stored, the data is not updated until the stored data is cleared (DTCs cleared).<br></li></ol></p></p></li></ol>
+<li><p><font class="ptxt">Freeze Frame Data During System Operation</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">Freeze frame data during system operation is updated with new data each time the system operates.</font><br></p></li>
+<li><p><font class="ptxt">The number of times the IG has been turned OFF → ON since the system last operated is stored and displayed up to 31 times.</font><br></p></li>
+<li><p><font class="ptxt">Using the number of IG ON times since the data freeze, you can check whether the displayed data is from when the malfunction pointed out by the customer occurred, using the following formula as a guide. ("Number of IG ON times per 1 day" × "Number of days since the malfunction occurred" = "Number of IG ON times since data freeze")</font><br><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">Turning the IG OFF → ON while the vehicle is stopped (vehicle speed 7km/h or less) is not counted.<br></li><li class="atten4">If the number of IG ON times since the data freeze exceeds 31, "31" is displayed.<br></li></ol></p></p></li></ol></ol><br clear="all"></body></html>

@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740004e SYSTEM "../xml/grph_ent/a4740004e.png" NDATA png>
+<!ENTITY a4740005e SYSTEM "../xml/grph_ent/a4740005e.png" NDATA png>
+<!ENTITY a4740114e SYSTEM "../xml/grph_ent/a4740114e.png" NDATA png>
+<!ENTITY a4740031e SYSTEM "../xml/grph_ent/a4740031e.png" NDATA png>
+<!ENTITY a3810183e SYSTEM "../xml/grph_ent/a3810183e.png" NDATA png>
+<!ENTITY a4740014e SYSTEM "../xml/grph_ent/a4740014e.png" NDATA png>
+<!ENTITY a4740115e SYSTEM "../xml/grph_ent/a4740115e.png" NDATA png>
+<!ENTITY a4740010e SYSTEM "../xml/grph_ent/a4740010e.png" NDATA png>
+<!ENTITY a4740011e SYSTEM "../xml/grph_ent/a4740011e.png" NDATA png>
+<!ENTITY a4740006e SYSTEM "../xml/grph_ent/a4740006e.png" NDATA png>
+<!ENTITY a4740007e SYSTEM "../xml/grph_ent/a4740007e.png" NDATA png>
+<!ENTITY a4740008e SYSTEM "../xml/grph_ent/a4740008e.png" NDATA png>
+<!ENTITY a4740009e SYSTEM "../xml/grph_ent/a4740009e.png" NDATA png>
+<!ENTITY a4740032e SYSTEM "../xml/grph_ent/a4740032e.png" NDATA png>
+<!ENTITY a4740071e SYSTEM "../xml/grph_ent/a4740071e.png" NDATA png>
+<!ENTITY a4480081e SYSTEM "../xml/grph_ent/a4480081e.png" NDATA png>
+<!ENTITY a4740013e SYSTEM "../xml/grph_ent/a4740013e.png" NDATA png>
+<!ENTITY a4740079e SYSTEM "../xml/grph_ent/a4740079e.png" NDATA png>
+<!ENTITY a4740078e SYSTEM "../xml/grph_ent/a4740078e.png" NDATA png>
+<!ENTITY a3810140e SYSTEM "../xml/grph_ent/a3810140e.png" NDATA png>
+<!ENTITY a4740080e SYSTEM "../xml/grph_ent/a4740080e.png" NDATA png>
+<!ENTITY a4740107e SYSTEM "../xml/grph_ent/a4740107e.png" NDATA png>
+<!ENTITY a4740037e SYSTEM "../xml/grph_ent/a4740037e.png" NDATA png>
+<!ENTITY a4740015e SYSTEM "../xml/grph_ent/a4740015e.png" NDATA png>
+<!ENTITY a4740105e SYSTEM "../xml/grph_ent/a4740105e.png" NDATA png>
+<!ENTITY a4740106e SYSTEM "../xml/grph_ent/a4740106e.png" NDATA png>
+
+<!ENTITY T120027K508 SYSTEM "../xml/t403120027k508.xml">
+<!ENTITY T120027K310 SYSTEM "../xml/t403120027k310.xml">
+<!ENTITY T120027K309 SYSTEM "../xml/t403120027k309.xml">
+<!ENTITY T120027K309A045 SYSTEM "../xml/t403120027k309a045.xml">
+<!ENTITY T120027K309K035 SYSTEM "../xml/t403120027k309k035.xml">
+<!ENTITY T120027K331 SYSTEM "../xml/t403120027k331.xml">
+<!ENTITY T120027K331K392 SYSTEM "../xml/t403120027k331k392.xml">
+<!ENTITY T120027K331K340 SYSTEM "../xml/t403120027k331k340.xml">
+<!ENTITY T120027K331K271 SYSTEM "../xml/t403120027k331k271.xml">
+<!ENTITY T120027K116 SYSTEM "../xml/t478120027k116.xml">
+<!ENTITY T120027K509 SYSTEM "../xml/t478120027k509.xml">
+<!ENTITY T120027K510 SYSTEM "../xml/t478120027k510.xml">
+<!ENTITY T120027K511 SYSTEM "../xml/t403120027k511.xml">
+<!ENTITY T120027K347 SYSTEM "../xml/t403120027k347.xml">
+<!ENTITY T120027K329 SYSTEM "../xml/t478120027k329.xml">
+<!ENTITY T120027K233 SYSTEM "../xml/t478120027k233.xml">
+<!ENTITY T120027K148 SYSTEM "../xml/t403120027k148.xml">
+<!ENTITY T120027K525 SYSTEM "../xml/t478120027k525.xml">
+<!ENTITY T120027K080 SYSTEM "../xml/t403120027k080.xml">
+<!ENTITY T120027K080K850 SYSTEM "../xml/t403120027k080k850.xml">
+<!ENTITY T120027K080K082 SYSTEM "../xml/t403120027k080k082.xml">
+<!ENTITY T120027K080K341 SYSTEM "../xml/t403120027k080k341.xml">
+<!ENTITY T120027K129 SYSTEM "../xml/t403120027k129.xml">
+<!ENTITY T120027K129K629 SYSTEM "../xml/t403120027k129k629.xml">
+<!ENTITY T120027K129K630 SYSTEM "../xml/t403120027k129k630.xml">
+<!ENTITY T120027K129K631 SYSTEM "../xml/t403120027k129k631.xml">
+<!ENTITY T120027K332 SYSTEM "../xml/t478120027k332.xml">
+<!ENTITY T120027K332 SYSTEM "../xml/t478120027k332.xml">
+<!ENTITY T120027K526 SYSTEM "../xml/t403120027k526.xml">
+<!ENTITY T120027K526K632 SYSTEM "../xml/t403120027k526k632.xml">
+<!ENTITY T120027K526K633 SYSTEM "../xml/t403120027k526k633.xml">
+<!ENTITY T120027K061 SYSTEM "../xml/t403120027k061.xml">
+<!ENTITY T120027K061K635 SYSTEM "../xml/t403120027k061k635.xml">
+<!ENTITY T120027K061Ab06 SYSTEM "../xml/t403120027k061ab06.xml">
+<!ENTITY T120027K061K637 SYSTEM "../xml/t403120027k061k637.xml">
+<!ENTITY T120027K124 SYSTEM "../xml/t478120027k124.xml">
+<!ENTITY T120027K309R01 SYSTEM "../xml/t403120027k309r01.xml">
+<!ENTITY T120027K309A045R01 SYSTEM "../xml/t403120027k309a045r01.xml">
+<!ENTITY T120027K309K035R02 SYSTEM "../xml/t403120027k309k035r02.xml">
+<!ENTITY T120027K331R02 SYSTEM "../xml/t403120027k331r02.xml">
+<!ENTITY T120027K331K392R03 SYSTEM "../xml/t403120027k331k392r03.xml">
+<!ENTITY T120027K331K340R04 SYSTEM "../xml/t403120027k331k340r04.xml">
+<!ENTITY T120027K331K271R05 SYSTEM "../xml/t403120027k331k271r05.xml">
+<!ENTITY T120027K148R03 SYSTEM "../xml/t403120027k148r03.xml">
+<!ENTITY T120027K332R04 SYSTEM "../xml/t478120027k332r04.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T120027K508S"><SCTITLE/>
+
+<PARA INFOID = "T120027K508" UPDATE = "ORIGINAL" LDUP = "22Sep2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Front Lamps Outline</TITLE>
+<LIST1><ITEM><PTXT>Discharge headlights have been provided on all models with the 2GR-FE engine. There is no change for models with the 2AZ-FE engine.</PTXT></ITEM></LIST1>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K310S"><SCTITLE/>
+
+<PARA INFOID = "T120027K310" UPDATE = "ORIGINAL" LDUP = "5Sep2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Headlamp (Halogen Type)</TITLE>
+<LIST1><ITEM><PTXT>The front turn signal light and clearance light are incorporated within the same lens as the headlight.</PTXT></ITEM></LIST1>
+<LIST1><ITEM><PTXT>By adopting projector-type headlights for the low beam headlights, excellent design and visibility have been achieved.</PTXT></ITEM>
+<ITEM><PTXT>The L-shaped light has been divided vertically and each light has been laid out functionally. The bullet-shaped low beam and turn signal light are arranged vertically on the outer side of the vehicle to express strength.</PTXT></ITEM>
+<ITEM><PTXT>The entire surface of the extension has been aluminum vapor-deposited.</PTXT></ITEM>
+<ITEM><PTXT>An actuator for manual leveling is installed on the back of the headlight body.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740004e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+<SPEC ID = "T120027K310X01" INDSW = "OFF">
+<TITLE>Headlight (Halogen) Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "57%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "42%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Light Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Bulb Specifications</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Low Beam Headlight</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 55W:H11</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>High Beam Headlight</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 60W:HB3</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Clearance lights</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 5W</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Front Turn Signal Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 21W: Amber</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K309S"><SCTITLE/>
+
+<PARA INFOID = "T120027K309" UPDATE = "ORIGINAL" LDUP = "5Sep2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Headlamp (Discharge Type)</TITLE>
+<LIST1><ITEM><PTXT>Projector-type discharge headlights have been adopted for the low beam headlights.</PTXT></ITEM>
+<ITEM><PTXT>Except for the low beam headlights, the construction is basically the same as the halogen headlights.</PTXT></ITEM>
+<ITEM><PTXT>A headlight leveling actuator for the automatic leveling function is installed at the rear of the low beam headlight in the headlight. Also, a light control computer that controls the lighting of the discharge headlight is built into the lower part of the headlight.</PTXT></ITEM>
+<ITEM><PTXT>The extension has been aluminum vapor-deposited. Also, smoke coating has been applied to some parts to create a sharp look.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740005e" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+<SPEC ID = "T120027K309X01" INDSW = "OFF">
+<TITLE>Headlight (Discharge) Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "57%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "42%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Light Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Bulb Specifications</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Low Beam Headlight</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 35W:D4S</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>High Beam Headlight</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 60W:HB3</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Clearance lights</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 5W</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Front Turn Signal Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 21W: Amber</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+
+<MECA ID = "T120027K309A045" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Discharge Headlight Features</TITLE>
+<LIST1><ITEM><PTXT>The discharge headlight is a headlight that uses an HID bulb (high intensity discharge lamp) as its light source.</PTXT></ITEM>
+<ITEM><PTXT>The light emitted from the HID bulb is a natural daylight color close to sunlight and illuminates a wider and more distant area ahead, helping to improve driver visibility; in addition, its low power consumption reduces the load on the battery and the bulb has a long service life.</PTXT></ITEM>
+<ITEM><PTXT>The discharge headlight achieves instant lighting of the HID bulb and a stable power supply, and has a compact, lightweight light control computer; it is also combined with an automatic leveling function that keeps the vertical beam axis constant as a device to prevent dazzling oncoming vehicles.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120027K309K035" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>HID Bulb Construction</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The arc tube of the HID bulb is filled with a rare gas (xenon gas) and metal iodides (zinc, sodium and scandium), and arc discharge occurs in the arc tube due to the voltage applied to the base side and lead wire side.</PTXT></ITEM>
+<ITEM><PTXT>UV-cut glass that absorbs ultraviolet rays is used for the outer tube of the arc tube, keeping ultraviolet radiation to a level equivalent to that of halogen bulbs.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740114e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K331S"><SCTITLE/>
+
+<PARA INFOID = "T120027K331" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Light Control Computer</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The light control computer is a device that supplies the alternating current (AC) power required to illuminate the HID bulb.</PTXT></ITEM>
+<ITEM><PTXT>The frequency of the AC power is several hundred Hz or more so that no flicker is perceived during illumination, and electromagnetic shielding is provided so that electromagnetic waves do not affect the vehicle radio, etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740031e" WIDTH = "6.903in" HEIGHT = "4.722in" />
+</FIGURE>
+<SPEC ID = "T120027K331X01" INDSW = "OFF">
+<TITLE>Light Control Computer Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "42%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "57%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Specifications</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Rated Voltage [V]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>13.5</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Operating Voltage [V]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>10~16</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Maximum Generated Voltage [V]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>22000±3000</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Maximum Input Current [A]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>20 or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Maximum Output Current [A]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>3.0±0.3</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Maximum Output Power [W]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>75±6</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Steady-state Input Current [A]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>4.0 or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Steady-state Output Power [W]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>35±2</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Steady-state Lighting Frequency [Hz]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>320+70/-50</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+
+<MECA ID = "T120027K331K392" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Light Control Computer Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The light control computer achieves instant and stable illumination of the HID bulb through controls such as generating a high voltage of up to approximately 22,000V. Since this device generates high voltage, various fail-safe functions are incorporated, and consideration has also been given to ensuring reliability against heat, humidity, vibration, etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810183e" WIDTH = "6.931in" HEIGHT = "2.944in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>HID Bulb Illumination Control Flow</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>1. The battery voltage is converted into a high-voltage pulse (approximately 22,000V) by the light control computer in the lamp.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2. The high-voltage pulse is applied between both electrodes of the bulb, causing the xenon gas to emit light.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>3. Arc discharge occurs as the temperature inside the bulb rises.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>4. As the temperature rises further, the metal iodide vaporizes and separates, and the metal atoms emit light by discharge.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>5. The light control computer optimally controls the power supplied to the bulb.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T120027K331K340" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Fail-safe Function of Light Control Computer</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When a malfunction occurs in the output voltage, input voltage or lamp side voltage, the light control computer performs fail-safe as follows.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120027K331K340I01" INDSW = "OFF">
+<TITLE>Light Control Computer Fail-safe List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "68%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Malfunction Detection Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Fail-safe Content</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When an output malfunction is detected (short, open or leak detected) and when the bulb flickers</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>If a malfunction occurs in the output voltage or bulb flickering continues for 60 +/- 20 seconds or more, the headlight is turned off and remains in that state until the power is turned on again (headlight switch OFF → ON or power switch (IG) OFF → ON).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When Input Malfunction Detected</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>If the input voltage is outside the operating voltage (10 to 16V), the headlight is turned off, and it illuminates again as soon as the input returns to the operating range. However, if the input voltage drops after illumination, the headlight remains illuminated until the voltage reaches the illumination holding limit voltage (6V or less).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When Lamp Voltage Malfunction Detected</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>If a lamp voltage malfunction is detected, the headlight is turned off and remains in that state until the power is turned on again (headlight switch OFF → ON or power switch (IG) OFF → ON).</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120027K331K271" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Precautions for Handling Light Control Computer</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>To prevent danger, caution labels have been placed on the rear side of the headlight unit and on the light control computer.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740014e" WIDTH = "6.903in" HEIGHT = "4.042in" />
+</FIGURE>
+<CAUTION>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>High voltage is generated at the output terminals of the light control computer, which is dangerous, so handle it with great care.</PTXT></ITEM>
+<ITEM><PTXT>Always have discharge headlight bulbs replaced at a Toyota dealer.</PTXT></ITEM>
+<ITEM><PTXT>Do not touch the glass and electrode parts of the bulb, as high voltage is generated there and it is dangerous.</PTXT></ITEM>
+<ITEM><PTXT>Illuminate the bulb only after installation has been completely finished, and do not use any power source other than the vehicle.</PTXT></ITEM>
+<ITEM><PTXT>If the following damage (see List of Examples Requiring Replacement) is found on the light control computer or headlight after a vehicle collision, etc., replace the light control computer or headlight.</PTXT></ITEM></LIST1></CAUTION>
+<INDICATE ID = "T120027K331K271I01" INDSW = "OFF">
+<TITLE>List of Examples Requiring Replacement</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When the light control computer is clearly deformed (warped, twisted, dented, dinged, cracked, chipped, etc.).</PTXT></ITEM>
+<ITEM><PTXT>When the resin parts of the connectors or bulb socket are cracked or chipped, or the terminals are deformed.</PTXT></ITEM>
+<ITEM><PTXT>When contact with the ground part on the reflector side is unstable due to deformation of the socket cover, etc.</PTXT></ITEM>
+<ITEM><PTXT>When the high-voltage harness or power supply wire harness is damaged.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>Note that even if the light control computer operates normally temporarily, it is not necessarily normal.</PTXT></ITEM></LIST1></INDICATE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K116S"><SCTITLE/>
+
+<PARA INFOID = "T120027K116" UPDATE = "ORIGINAL" LDUP = "5Sep2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Light Collision Compatible Headlight (Substitute Bracket)</TITLE>
+<LIST1><ITEM><PTXT>If only the headlight mounting part is damaged in a vehicle collision, etc., the headlight can be repaired without replacing the headlight body by installing a dedicated substitute bracket on the damaged mounting part as shown in the illustration, reducing repair costs.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740115e" WIDTH = "6.903in" HEIGHT = "2.875in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K509S"><SCTITLE/>
+
+<PARA INFOID = "T120027K509" UPDATE = "ORIGINAL" LDUP = "22Sep2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Side Turn Signal Light</TITLE>
+<LIST1><ITEM><PTXT>LED type side turn signal lights built into the outer rear view mirrors have been adopted as standard on all models to improve design and ensure visibility.</PTXT></ITEM></LIST1>
+<LIST1><ITEM><PTXT>Light guide control achieves both rearward light distribution performance and a crystal-like appearance.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740010e" WIDTH = "6.903in" HEIGHT = "2.167in" />
+</FIGURE>
+<SPEC ID = "T120027K509X01" INDSW = "OFF">
+<TITLE>Side Turn Signal Light Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Light Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Bulb Specifications</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Side Turn Signal Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>12V 0.4W:LED3 pcs.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K510S"><SCTITLE/>
+
+<PARA INFOID = "T120027K510" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Front Fog Light</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Round front fog lights have been provided on all models. The illumination color of the front fog lights is white.</PTXT></ITEM>
+<ITEM><PTXT>The outer lens has a see-through appearance, and a multi-reflector with an aluminum vapor-deposited finish has been adopted for the reflector.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740011e" WIDTH = "6.903in" HEIGHT = "3.153in" />
+</FIGURE>
+<SPEC ID = "T120027K510X01" INDSW = "OFF">
+<TITLE>Front Fog Light Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "45%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "54%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Light Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Bulb Name</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Front Fog Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 55W:H11</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K511S"><SCTITLE/>
+
+<PARA INFOID = "T120027K511" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Rear Lamps Outline</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A rear combination light extending from the quarter panel to the back door, with a sense of unity and high quality, has been adopted. Also, LEDs have been adopted as the light source for the stop &amp; taillight and taillight to improve fuel economy.</PTXT></ITEM>
+<ITEM><PTXT>The stop &amp; taillight, rear turn signal light and back-up light are located on the quarter panel side, and the taillight is located on the back door side.</PTXT></ITEM>
+<ITEM><PTXT>To improve visibility to others, an LED-type high mounted stop light installed on the rear spoiler has been provided as standard on all models.</PTXT></ITEM>
+<ITEM><PTXT>A downward-illuminating 1-light license plate light has been provided as standard on all models and installed in the rear bumper.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740006e" WIDTH = "6.903in" HEIGHT = "6.111in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K347S"><SCTITLE/>
+
+<PARA INFOID = "T120027K347" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Rear Combination Lamp</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The rear combination light incorporates the stop &amp; taillight, rear turn signal light and back-up light on the quarter panel side and the taillight on the back door side, and has an upper/lower two-piece shape based on clear lenses.</PTXT></ITEM>
+<ITEM><PTXT>Fuel economy has been improved by using LEDs for the stop &amp; taillight and taillight.</PTXT></ITEM>
+<ITEM><PTXT>Amber bulbs have been adopted for the rear turn signal light bulbs.</PTXT></ITEM>
+<ITEM><PTXT>Clear-type outer lenses have been adopted for the stop &amp; taillight and taillight, creating a clear appearance over the entire surface.</PTXT></ITEM>
+<ITEM><PTXT>By using the reflected light of 12 LEDs in the stop &amp; taillight and 6 LEDs in the taillight, the lights shine like crystal. Also, smoke coating has been applied to each inner lens, giving the appearance that the reflective surfaces shine in 2 horizontal bands.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740007e" WIDTH = "6.639in" HEIGHT = "3.958in" />
+</FIGURE>
+<SPEC ID = "T120027K347X01" INDSW = "OFF">
+<TITLE>Rear Combination Light Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "62%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "37%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Light Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Bulb Specifications</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Stop &amp; Taillight</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 0.2/3.4W:LED12 pcs.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Tail lights</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>12W 0.3W:LED6 pcs.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Rear Turn Signal Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 21W: Amber</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Back-up Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 16W</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K329S"><SCTITLE/>
+
+<PARA INFOID = "T120027K329" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>License plate lights</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A downward-illuminating 1-light license plate light has been provided as standard on all models and installed in the rear bumper.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740008e" WIDTH = "6.903in" HEIGHT = "5.125in" />
+</FIGURE>
+<SPEC ID = "T120027K329X01" INDSW = "OFF">
+<TITLE>License Plate Light Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "45%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "54%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Light Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Bulb Specifications</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>License plate lights</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 5W</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K233S"><SCTITLE/>
+
+<PARA INFOID = "T120027K233" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>High Mounted Stop Lamp</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>An LED type high mounted stop light installed in the rear spoiler has been adopted on all models to improve visibility.</PTXT></ITEM>
+<ITEM><PTXT>The outer lens of the high mounted stop light is a clear type.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740009e" WIDTH = "6.903in" HEIGHT = "2.569in" />
+</FIGURE>
+<SPEC ID = "T120027K233X01" INDSW = "OFF">
+<TITLE>High Mounted Stop Light Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "45%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "54%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Light Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Bulb Specifications</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>High Mounted Stop Lamp</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 2.2W:LED6 pcs.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K148S"><SCTITLE/>
+
+<PARA INFOID = "T120027K148" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Interior Lamps</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>An LED shift light has been provided on all models with the 2GR-FE engine. There is no change for models with the 2AZ-FE engine.</PTXT></ITEM></LIST1>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K332S"><SCTITLE/>
+
+<PARA INFOID = "T120027K332" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Light Control Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Detects the illuminance around the vehicle with the scanner section (integrated optical sensor) and outputs it as a frequency signal to the main body ECU (instrument panel junction block assembly). It is installed on the right side of the upper part of the instrument panel.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740078e" WIDTH = "6.903in" HEIGHT = "2.806in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K124S"><SCTITLE/>
+
+<PARA INFOID = "T120027K124" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Combination Switch</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A light control switch and wiper control switch with excellent operating feel and reduced operating noise have been adopted.</PTXT></ITEM>
+<ITEM><PTXT>The turn &amp; dimmer unit and wiper unit are arranged independently, and the wiper unit can be removed and installed without removing the steering wheel. Serviceability has been considered by using a structure in which the wiper unit is fixed directly to the steering column bracket with hooks.</PTXT></ITEM>
+<ITEM><PTXT>Each lever fulcrum has a pivot structure, and the turn cancel mechanism is built into the turn &amp; dimmer unit. In addition, the connectors of the turn &amp; dimmer unit and wiper unit are directly connected to simplify the wiring.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740106e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K525S"><SCTITLE/>
+
+<PARA INFOID = "T120027K525" UPDATE = "ORIGINAL" LDUP = "14Sep2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Manual Leveling Function</TITLE>
+<LIST1><ITEM><PTXT>To prevent glare to oncoming and preceding vehicles, a manual leveling function that allows the beam axis direction to be changed from inside the vehicle according to changes in vehicle posture due to loading, etc. has been adopted on models with halogen headlights.</PTXT></ITEM>
+<ITEM><PTXT>According to the status signal of the headlight leveling switch in the cabin (level 0 for the uppermost direction, level 5 for the lowermost direction), the headlight leveling actuators are driven to move the reflectors up and down and change the direction of the beam axis.</PTXT></ITEM>
+<ITEM><PTXT>The headlight leveling switch is installed on the right side of the steering column in the instrument panel, and the headlight leveling actuators are installed at the rear of the headlights.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740032e" WIDTH = "6.903in" HEIGHT = "5.514in" />
+</FIGURE>
+<CAUTION>
+<LIST1><ITEM><PTXT>Normally, use the headlight leveling switch in the level 0 position.</PTXT></ITEM>
+<ITEM><PTXT>If the headlight illumination range is higher than normal due to loading of luggage or passengers, operate the switch according to the luggage and passenger conditions to lower the headlight beam axis. After unloading luggage or passengers, always return the headlight leveling switch to the level 0 position.</PTXT></ITEM>
+<ITEM><PTXT>Perform beam axis adjustment with the headlight leveling switch at level 0.</PTXT></ITEM></LIST1></CAUTION>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K080S"><SCTITLE/>
+
+<PARA INFOID = "T120027K080" UPDATE = "ORIGINAL" LDUP = "22Jan2004"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Auto Leveling System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>An auto leveling function (static control), which adjusts the beam axis while the vehicle is stopped, has been provided for the low beam headlights of models with discharge headlights to prevent glare to oncoming and preceding vehicles.</PTXT></ITEM>
+<ITEM><PTXT>The auto leveling system consists of the headlight leveling computer, height control sensor, headlight leveling actuators, etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740071e" WIDTH = "6.903in" HEIGHT = "4.139in" />
+</FIGURE>
+<INDICATE ID = "T120027K080I01" INDSW = "OFF">
+<TITLE>Auto Leveling System Configuration</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Functions</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Headlight Leveling Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls the auto leveling function. Determines the vehicle posture and driving condition based on signals from the height control sensor and combination meter, and controls the headlight leveling actuators. When a system malfunction is detected, outputs a headlight auto leveling warning indicator light illumination request signal to the combination meter.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Headlight Leveling Actuator</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Drives the low beam headlight up and down according to the control signal from the headlight leveling computer to control the direction of the beam axis.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Combination Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Illuminates the headlight auto leveling warning indicator light according to the signal from the headlight leveling computer. Outputs the vehicle speed signal to the headlight leveling computer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Height Control Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the vehicle height and outputs a vehicle height change signal to the headlight leveling computer.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T120027K080K850" UPDATE = "ORIGINAL" LDUP = "21Jul2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Auto Leveling Function</TITLE>
+<LIST1><ITEM><PTXT>Changes in vehicle posture due to loading of luggage, etc. are detected by the height control sensor installed on the right side of the rear suspension, and the headlight leveling actuators installed in the headlights are driven according to the change in vehicle posture to keep the headlight beam axis at a constant angle while the vehicle is stopped.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120027K080K082" UPDATE = "ORIGINAL" LDUP = "22Jan2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Auto Leveling Operation</TITLE>
+<LIST1><ITEM><PTXT>The headlight leveling computer, which controls the auto leveling system, receives the vehicle speed signal and the vehicle height change signal from the height control sensor. Based on these signals, it calculates the change in pitch angle of the vehicle posture and drives the headlight leveling actuators according to the posture of the stopped vehicle to control the headlight beam axis.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4480081e" WIDTH = "6.903in" HEIGHT = "3.681in" />
+</FIGURE>
+<INDICATE ID = "T120027K080K082I01" INDSW = "OFF">
+<TITLE>Auto Leveling Control List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "20%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "54%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Vehicle Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Control Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Control Content</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When Headlights ON</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Headlight ON Control</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>When the headlights are switched from OFF to ON, the headlight leveling actuators are driven according to the current pitch angle change while the vehicle is stopped.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Vehicle Stopped</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Stopped Control</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>With the headlights ON, the headlight leveling actuators are driven according to the pitch angle at which a change in vehicle posture is detected.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120027K080K341" UPDATE = "ORIGINAL" LDUP = "22Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Fail-safe Function of Auto Leveling System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the headlight leveling computer detects a system malfunction, it performs fail-safe as shown in the table and illuminates the headlight leveling warning indicator light in the combination meter.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740013e" WIDTH = "6.903in" HEIGHT = "2.931in" />
+</FIGURE>
+<INDICATE ID = "T120027K080K341I01" INDSW = "OFF">
+<TITLE>Fail-safe Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "34%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "14%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Malfunction Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Malfunction Detection Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Control Content</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Warning Indicator Light</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Power Supply Overvoltage</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Input terminal voltage of headlight leveling computer is 18.5V or more</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "5" CONSPIC = "0"><PTXT>Stops output of control signal to actuator</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Power Supply Low Voltage</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Input terminal voltage of headlight leveling computer is 9V or less</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Vehicle Speed Limit Exceeded</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Vehicle speed is 180km/h or more</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" CONSPIC = "0"><PTXT>Height Control Sensor Malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Signal Malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Open circuit, short circuit, voltage malfunction</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Reset While Driving</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When the driving condition determined immediately after IG ON is driving</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+</PARA>
+<BIND ID = "T120027K080B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T120027K309R01" UPDATE = "ORIGINAL" LDUP = "5Sep2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Headlamp (Discharge Type)</TITLE>
+<LIST1><ITEM><PTXT>Projector-type discharge headlights have been adopted for the low beam headlights.</PTXT></ITEM>
+<ITEM><PTXT>Except for the low beam headlights, the construction is basically the same as the halogen headlights.</PTXT></ITEM>
+<ITEM><PTXT>A headlight leveling actuator for the automatic leveling function is installed at the rear of the low beam headlight in the headlight. Also, a light control computer that controls the lighting of the discharge headlight is built into the lower part of the headlight.</PTXT></ITEM>
+<ITEM><PTXT>The extension has been aluminum vapor-deposited. Also, smoke coating has been applied to some parts to create a sharp look.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740005e" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+<SPEC ID = "T120027K309R01X01" INDSW = "OFF">
+<TITLE>Headlight (Discharge) Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "57%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "42%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Light Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Bulb Specifications</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Low Beam Headlight</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 35W:D4S</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>High Beam Headlight</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 60W:HB3</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Clearance lights</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 5W</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Front Turn Signal Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 21W: Amber</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+
+<MECA ID = "T120027K309A045R01" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Discharge Headlight Features</TITLE>
+<LIST1><ITEM><PTXT>The discharge headlight is a headlight that uses an HID bulb (high intensity discharge lamp) as its light source.</PTXT></ITEM>
+<ITEM><PTXT>The light emitted from the HID bulb is a natural daylight color close to sunlight and illuminates a wider and more distant area ahead, helping to improve driver visibility; in addition, its low power consumption reduces the load on the battery and the bulb has a long service life.</PTXT></ITEM>
+<ITEM><PTXT>The discharge headlight achieves instant lighting of the HID bulb and a stable power supply, and has a compact, lightweight light control computer; it is also combined with an automatic leveling function that keeps the vertical beam axis constant as a device to prevent dazzling oncoming vehicles.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120027K309K035R02" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>HID Bulb Construction</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The arc tube of the HID bulb is filled with a rare gas (xenon gas) and metal iodides (zinc, sodium and scandium), and arc discharge occurs in the arc tube due to the voltage applied to the base side and lead wire side.</PTXT></ITEM>
+<ITEM><PTXT>UV-cut glass that absorbs ultraviolet rays is used for the outer tube of the arc tube, keeping ultraviolet radiation to a level equivalent to that of halogen bulbs.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740114e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</MECA>
+</PARA>
+
+<PARA INFOID = "T120027K331R02" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Light Control Computer</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The light control computer is a device that supplies the alternating current (AC) power required to illuminate the HID bulb.</PTXT></ITEM>
+<ITEM><PTXT>The frequency of the AC power is several hundred Hz or more so that no flicker is perceived during illumination, and electromagnetic shielding is provided so that electromagnetic waves do not affect the vehicle radio, etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740031e" WIDTH = "6.903in" HEIGHT = "4.722in" />
+</FIGURE>
+<SPEC ID = "T120027K331R02X01" INDSW = "OFF">
+<TITLE>Light Control Computer Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "42%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "57%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Specifications</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Rated Voltage [V]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>13.5</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Operating Voltage [V]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>10~16</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Maximum Generated Voltage [V]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>22000±3000</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Maximum Input Current [A]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>20 or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Maximum Output Current [A]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>3.0±0.3</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Maximum Output Power [W]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>75±6</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Steady-state Input Current [A]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>4.0 or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Steady-state Output Power [W]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>35±2</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Steady-state Lighting Frequency [Hz]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>320+70/-50</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+
+<MECA ID = "T120027K331K392R03" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Light Control Computer Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The light control computer achieves instant and stable illumination of the HID bulb through controls such as generating a high voltage of up to approximately 22,000V. Since this device generates high voltage, various fail-safe functions are incorporated, and consideration has also been given to ensuring reliability against heat, humidity, vibration, etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810183e" WIDTH = "6.931in" HEIGHT = "2.944in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>HID Bulb Illumination Control Flow</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>1. The battery voltage is converted into a high-voltage pulse (approximately 22,000V) by the light control computer in the lamp.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2. The high-voltage pulse is applied between both electrodes of the bulb, causing the xenon gas to emit light.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>3. Arc discharge occurs as the temperature inside the bulb rises.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>4. As the temperature rises further, the metal iodide vaporizes and separates, and the metal atoms emit light by discharge.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>5. The light control computer optimally controls the power supplied to the bulb.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T120027K331K340R04" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Fail-safe Function of Light Control Computer</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When a malfunction occurs in the output voltage, input voltage or lamp side voltage, the light control computer performs fail-safe as follows.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120027K331K340R04I01" INDSW = "OFF">
+<TITLE>Light Control Computer Fail-safe List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "68%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Malfunction Detection Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Fail-safe Content</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When an output malfunction is detected (short, open or leak detected) and when the bulb flickers</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>If a malfunction occurs in the output voltage or bulb flickering continues for 60 +/- 20 seconds or more, the headlight is turned off and remains in that state until the power is turned on again (headlight switch OFF → ON or power switch (IG) OFF → ON).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When Input Malfunction Detected</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>If the input voltage is outside the operating voltage (10 to 16V), the headlight is turned off, and it illuminates again as soon as the input returns to the operating range. However, if the input voltage drops after illumination, the headlight remains illuminated until the voltage reaches the illumination holding limit voltage (6V or less).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When Lamp Voltage Malfunction Detected</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>If a lamp voltage malfunction is detected, the headlight is turned off and remains in that state until the power is turned on again (headlight switch OFF → ON or power switch (IG) OFF → ON).</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120027K331K271R05" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Precautions for Handling Light Control Computer</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>To prevent danger, caution labels have been placed on the rear side of the headlight unit and on the light control computer.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740014e" WIDTH = "6.903in" HEIGHT = "4.042in" />
+</FIGURE>
+<CAUTION>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>High voltage is generated at the output terminals of the light control computer, which is dangerous, so handle it with great care.</PTXT></ITEM>
+<ITEM><PTXT>Always have discharge headlight bulbs replaced at a Toyota dealer.</PTXT></ITEM>
+<ITEM><PTXT>Do not touch the glass and electrode parts of the bulb, as high voltage is generated there and it is dangerous.</PTXT></ITEM>
+<ITEM><PTXT>Illuminate the bulb only after installation has been completely finished, and do not use any power source other than the vehicle.</PTXT></ITEM>
+<ITEM><PTXT>If the following damage (see List of Examples Requiring Replacement) is found on the light control computer or headlight after a vehicle collision, etc., replace the light control computer or headlight.</PTXT></ITEM></LIST1></CAUTION>
+<INDICATE ID = "T120027K331K271R05I01" INDSW = "OFF">
+<TITLE>List of Examples Requiring Replacement</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When the light control computer is clearly deformed (warped, twisted, dented, dinged, cracked, chipped, etc.).</PTXT></ITEM>
+<ITEM><PTXT>When the resin parts of the connectors or bulb socket are cracked or chipped, or the terminals are deformed.</PTXT></ITEM>
+<ITEM><PTXT>When contact with the ground part on the reflector side is unstable due to deformation of the socket cover, etc.</PTXT></ITEM>
+<ITEM><PTXT>When the high-voltage harness or power supply wire harness is damaged.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>Note that even if the light control computer operates normally temporarily, it is not necessarily normal.</PTXT></ITEM></LIST1></INDICATE></MECA>
+</PARA>
+</BIND>
+</SECTION>
+<SECTION SCID = "T120027K129S"><SCTITLE/>
+
+<PARA INFOID = "T120027K129" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Automatic Light Control System</TITLE>
+<LIST1><ITEM><PTXT>An automatic light control system has been adopted, which detects the ambient brightness and automatically turns on the taillights and headlights when the light control switch is moved to the AUTO position with the power switch (IG) ON.</PTXT></ITEM>
+<ITEM><PTXT>The circuit that controls the system is built into the main body ECU (instrument panel junction block assembly) installed on the front passenger side inside the instrument panel.</PTXT></ITEM>
+<ITEM><PTXT>A function has been adopted that, through control by the automatic light control system, extends the off delay time to prevent momentary headlight illumination when the headlights are repeatedly turned on again immediately after turning off.</PTXT></ITEM>
+<ITEM><PTXT>By adopting a customize function using the diagnostic tool (TaSCAN), the automatic light control sensitivity, automatic light control delay time, etc. can be set. For details of the customize function, refer to the control system. <XREF     REFID = "T403150004T073T096"/>
+</PTXT></ITEM></LIST1>
+
+<MECA ID = "T120027K129K629" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Automatic Light Control System Function</TITLE>
+<LIST1><ITEM><PTXT>The automatic light control system controls the taillights and headlights as shown in the table below according to conditions such as the light control switch position and ambient brightness.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120027K129K629I01" INDSW = "OFF">
+<TITLE>Light Operation List by Automatic Light Control System</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "7" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "5%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "15%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "15%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "7" COLNAME = "7" COLWIDTH = "14%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Light Control Switch Position</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Power Switch (IG)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Driver Side Door Courtesy Light Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Ambient Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Tail lights</PTXT></ENTRY>
+<ENTRY COLNAME = "7" CONSPIC = "0"><PTXT>Headlight</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>OFF</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "7" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>TAIL</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "7" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>HEAD</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "7" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>AUTO</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>ON</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>OFF</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Bright</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "7" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Momentarily Dark</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "7" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Dim</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "7" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Dark</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "7" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Momentarily Bright</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "7" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>9</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>OFF</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Dark</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "7" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>ON</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "7" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>11</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>OFF</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "7" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>12</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>ON</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "7" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>13</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>ON</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>↑</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "7" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120027K129K630" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Automatic Light Control System Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The automatic light control system controls turning on/off of the taillights and headlights as shown in the table. The following operations are explained using the No. in the Light Operation List by Automatic Light Control System.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120027K129K630I01" INDSW = "OFF">
+<TITLE>Automatic Light Control System Operation List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "34%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "65%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Operating Conditions</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Basic Operation</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When Ambient Condition Is Bright (No.4)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When the ambient condition is brighter than the taillight off illuminance and headlight off illuminance, both the taillights and headlights are turned off.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When It Momentarily Becomes Dark While the Ambient Condition Is Bright (No.5)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When the ambient condition changes from headlight off illuminance to on illuminance while it is bright, the taillights illuminate because the taillight on illuminance has already been reached, but the headlights do not illuminate. If it is still darker than the on illuminance after the delay time has elapsed, the headlights illuminate; if it is brighter than the on illuminance after the delay time has elapsed, the headlights remain off, which prevents momentary headlight illumination when it becomes momentarily dark while passing under an overpass or along a tree-lined road in bright conditions. However, if it becomes as dark as the headlight rapid-on illuminance, the headlights illuminate.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When Ambient Condition Is Dim, Dark or Momentarily Bright (No.6 to No.8)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When the ambient condition is dim and becomes darker than the taillight on illuminance, the taillights illuminate. (No.6)</PTXT></ITEM>
+<ITEM><PTXT>When it becomes even darker than the headlight on illuminance, the headlights also illuminate. (No.7)</PTXT></ITEM>
+<ITEM><PTXT>Even if the ambient condition momentarily becomes bright due to street lights, etc. while the headlights are illuminated, the headlights do not turn off. (No.8)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When Power Switch (IG) Is Turned OFF (No.9)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When the power switch (IG) is turned OFF from the above state (No.6 to No.8), both the taillights and headlights remain illuminated. If the light control switch is then turned OFF once and set to AUTO again from this state, both the taillights and headlights turn off.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When the Power Switch (IG) Is Turned OFF and the Driver Side Door Is Opened, and Then Closed (No.10, No.11)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When the driver side door is opened (driver side door courtesy light switch ON) from the above state (No.9), both the taillights and headlights turn off. (No.10)</PTXT></ITEM>
+<ITEM><PTXT>When the driver side door is closed (driver side door courtesy light switch OFF) from the above state, both the taillights and headlights remain off. (No.11)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When the Power Switch (IG) Is Turned ON Again with the Driver Side Door Closed (No.12)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When the power switch (IG) is turned ON again from the above state (No.10, No.11) and the ambient condition is dark, both the taillights and headlights illuminate.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When the Driver Side Door Is Opened Again from the Above State (No.12) (No.13)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Even if the driver side door is opened again (driver side door courtesy light switch ON) from the above state (No.12), both the taillights and headlights remain illuminated if the ambient condition is dark.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740079e" WIDTH = "6.917in" HEIGHT = "3.208in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T120027K129K631" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Fail-safe Function of Automatic Light Control System</TITLE>
+<LIST1><ITEM><PTXT>When the output frequency from the light control sensor falls below 30Hz, the main body ECU (instrument panel junction block assembly) determines that the light control sensor has failed or that there is an open or short in the wire harness, and performs fail-safe.</PTXT></ITEM>
+<ITEM><PTXT>If an input malfunction from the light control sensor is detected when the light control switch is in the AUTO position and the power switch (IG) is ON, and the headlights and taillights are illuminated, the main body ECU (instrument panel junction block assembly) keeps them illuminated until the headlights and taillights are turned OFF by the light auto turn off system or the light control switch is turned OFF. If the headlights and taillights are off, control by the automatic light control system is not performed and they remain off. If the output frequency from the light control sensor returns to normal during fail-safe, control by the automatic light control system automatically resumes.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+<BIND ID = "T120027K129B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T120027K332R04" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Light Control Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Detects the illuminance around the vehicle with the scanner section (integrated optical sensor) and outputs it as a frequency signal to the main body ECU (instrument panel junction block assembly). It is installed on the right side of the upper part of the instrument panel.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740078e" WIDTH = "6.903in" HEIGHT = "2.806in" />
+</FIGURE>
+</PARA>
+</BIND>
+</SECTION>
+<SECTION SCID = "T120027K526S"><SCTITLE/>
+
+<PARA INFOID = "T120027K526" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Light Auto Turn Off System</TITLE>
+<LIST1><ITEM><PTXT>A light auto turn off system, which prevents the headlights and taillights from being left on, is standard on all models.</PTXT></ITEM>
+<ITEM><PTXT>The circuit that controls the system is built into the main body ECU (instrument panel junction block assembly).</PTXT></ITEM></LIST1>
+
+<MECA ID = "T120027K526K632" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Light Auto Turn Off System Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the power switch is turned OFF and the driver side door is opened while the headlights or taillights (including front fog lights and rear fog light) are illuminated with the power switch (IG) ON and the light control switch (HEAD or TAIL) ON or in the AUTO position, the headlights and taillights are automatically turned off.</PTXT></ITEM>
+<ITEM><PTXT>Even if the driver side door is opened with the power switch (IG) ON and then the power switch is turned OFF, the headlights and taillights are automatically turned off.</PTXT></ITEM>
+<ITEM><PTXT>After automatic turn off, the light auto turn off system can be canceled by moving the light control switch from a position other than OFF to OFF, or by turning the power switch (IG) ON.<HINTREF     REFID = "H403120027K526K63201"/></PTXT></ITEM></LIST1>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H403120027K526K63201">If a flashing operation is performed during automatic turn off, the headlights illuminate but the light auto turn off system is not canceled.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810140e" WIDTH = "6.903in" HEIGHT = "3.347in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120027K526K633" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Light Auto Turn Off System Operation</TITLE>
+<LIST1><ITEM><PTXT>For the wiring diagram, refer to the operation of the automatic light control system.<XREF     REFID = "T403120027K129K630"/>
+</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120027K526K633I01" INDSW = "OFF">
+<TITLE>Light Auto Turn Off System Operation List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "67%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Operation Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Basic Operation</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Normal Illumination Operation</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When the light control switch is turned ON with the power switch (IG) ON.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>When the light control switch is turned ON (TAIL or HEAD) with the power switch (IG) ON, the light control switch ON signal is input to the main body ECU (instrument panel junction block assembly). As a result, the main body ECU (instrument panel junction block assembly) outputs the taillight ON signal and, when the headlight switch is ON, drives the headlight relay.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Automatic Turn Off Operation</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When the power switch (IG) is turned OFF and the driver side door is opened from the normal illumination operation state.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>When the power switch (IG) is turned OFF from the above normal illumination operation state, the main body ECU (instrument panel junction block assembly) keeps each light illuminated. When the driver side door is opened from this state (driver side door courtesy light switch ON signal input), the main body ECU (instrument panel junction block assembly) stops driving the headlight relay and stops the taillight ON signal.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120027K061S"><SCTITLE/>
+
+<PARA INFOID = "T120027K061" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Illuminated Entry System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Illuminated entry control, which keeps the engine switch illumination and the lights on for approximately 15 seconds even after the doors are closed when the front personal light switch and room light switch are in the "DOOR" position, has been adopted as standard on all models.</PTXT></ITEM>
+<ITEM><PTXT>If the driver door and front passenger door are locked during illuminated entry control, the lights that are on go off (fade out).</PTXT></ITEM>
+<ITEM><PTXT>Door lock light control, which turns on the engine switch illumination, front personal light and room light for approximately 15 seconds when the driver door or front passenger door is unlocked by key-linked operation or the transmitter, when the driver door or front passenger door is unlocked by the smart door lock system, or when the electronic key is recognized within the electronic key detection area of the driver door or front passenger door, has been adopted as standard on all models.</PTXT></ITEM>
+<ITEM><PTXT>A battery saver function has been adopted that automatically turns off the lights if they remain on for approximately 20 minutes or more with any door ajar or open.</PTXT></ITEM>
+<ITEM><PTXT>The circuits that control the illuminated entry system and interior illumination are built into the main body ECU (instrument panel junction block assembly).</PTXT></ITEM>
+<ITEM><PTXT>For the illuminated entry and interior illumination, a customize function has been adopted that allows the lighting time of each light by illuminated entry to be changed (approximately 7.5 seconds, approximately 15 seconds, approximately 30 seconds) and interior illumination lighting to be prohibited, by connecting the diagnostic tool (TaSCAN) to DLC3 and operating it. For details of the customize function, refer to Control System. <XREF     REFID = "T403150004T072T096"/>
+</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740080e" WIDTH = "6.917in" HEIGHT = "4.542in" />
+</FIGURE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The illuminated entry system is controlled by the main body ECU (instrument panel junction block assembly), to which each light is connected, based on input of the status of each switch, etc.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740107e" WIDTH = "6.903in" HEIGHT = "4.819in" />
+</FIGURE>
+
+<MECA ID = "T120027K061K635" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Illuminated Entry Control Function</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740037e" WIDTH = "6.903in" HEIGHT = "3.819in" />
+</FIGURE>
+<INDICATE ID = "T120027K061K635I01" INDSW = "OFF">
+<TITLE>Illuminated Entry Control Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "5%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "62%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "31%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Vehicle Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Condition of Each Light<HINTREF REFID = "H403120027K061K63501"/></PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When any door is unlocked with the power source mode (IG) OFF and all doors closed and locked.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Illuminates for 15 seconds (including fade-in), then turns off (fade-out)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When any door is closed from the open state with the power source mode (IG) ON.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Off (fade-out)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When the power source mode is changed from (IG) ON to (IG) OFF with all doors closed.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Illuminates for 15 seconds (including fade-in), then turns off (fade-out)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When any door is closed from the open state with the power source mode (IG) OFF.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Illuminates for 15 seconds (including fade-in), then turns off (fade-out)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When the electronic key is recognized outside the vehicle with the power source mode (IG) OFF and all doors closed and locked.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Illuminates for 15 seconds (including fade-in), then turns off (fade-out)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When the power source mode is changed to (IG) ON while the lamps are illuminated by the timer with the power source mode (IG) OFF.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Off (fade-out)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When all doors are closed and locked while the lamps are illuminated by the timer with the power source mode (IG) OFF.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Off (fade-out)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When any door is opened while the lamps are off.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>On (fade-in)</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H403120027K061K63501">The lights refer to the front personal light, room light and engine switch illumination.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120027K061Ab06" UPDATE = "ORIGINAL" LDUP = "9Jun2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Roof Illumination</TITLE>
+<LIST1><ITEM><PTXT>A large roof illumination integrating the front personal light, room light and 3-LED (indirect lighting) illumination light has been provided on the G grade.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740015e" WIDTH = "7.111in" HEIGHT = "3.583in" />
+</FIGURE>
+<INDICATE ID = "T120027K061Ab06I01" INDSW = "OFF">
+<TITLE>Roof Illumination Control Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "7%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "60%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "32%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Vehicle Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Light<HINTREF REFID = "H403120027K061Ab0601"/> Condition</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When any seat is unlocked from the state with the power source position (IG) OFF, all doors closed and all doors locked.<SUP></SUP></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Illuminates for approximately 15 seconds (including fade-in) and then goes off (fade-out)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When any door is opened from the state in No.1 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>On (fade-in)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When all doors are closed from the state in No.2 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Illuminates for approximately 15 seconds and then goes off (fade-out)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the power source position (IG) is turned ON with the shift position in "P".</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Illuminates dimmed at medium brightness (fade-in)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the shift position is moved from "P" to other than "P" with the taillights off, from the state in No.4 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Off (fade-out)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the shift position is moved from "P" to other than "P" with the taillights on, from the state in No.4 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Illuminates dimmed at low brightness</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the shift position is moved from other than "P" to "P", from the state in No.5,6 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Illuminates dimmed at medium brightness</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the power source position (IG) is changed from ON to OFF, from the state in No.7 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>On (fade-in)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>9</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When all doors are closed and all doors are locked with the power source position (IG) OFF.</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Off (fade-out)</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H403120027K061Ab0601">The light refers to the indirect lighting.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120027K061K637" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Battery Saver Control Function</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740105e" WIDTH = "6.903in" HEIGHT = "2.569in" />
+</FIGURE>
+<INDICATE ID = "T120027K061K637I01" INDSW = "OFF">
+<TITLE>Battery Saver Control List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "5%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "20%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Vehicle Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Condition of Each Light<HINTREF REFID = "H403120027K061K63701"/></PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When any door other than the back door is ajar or open and the electronic key is not recognized.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Turns off after illuminating for 20 minutes</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When the electronic key is recognized from state No.1 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When the electronic key is not recognized from state No.2 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Turns off after illuminating for 20 minutes</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When, after the lamps are turned off by battery saver control, the open door is closed once and any door other than the back door is opened again.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Turns off after illuminating for 20 minutes</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H403120027K061K63701">The lights refer to the front personal light, room light and engine switch illumination.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE></MECA>
+</PARA>
+<BIND ID = "T120027K061B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T120027K148R03" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Interior Lamps</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>An LED shift light has been provided on all models with the 2GR-FE engine. There is no change for models with the 2AZ-FE engine.</PTXT></ITEM></LIST1>
+</PARA>
+</BIND>
+</SECTION>
+</SCT>

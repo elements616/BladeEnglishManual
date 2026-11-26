@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="08">
+<name>Heater &amp; Air Conditioner/Ventilation</name>
+<section id="1002K_S000B" variety="S000B">
+<name>Air Conditioner</name>
+<ttl id="1002K_S000B_7421V_T0025" variety="T0025">
+<name>Heater &amp; Air Conditioner System</name>
+<para id="RM0000005L401DX" category="D" type-id="300BB" name-id="5222Y-00" from="200612">
+<name>Function Description</name>
+<subpara id="RM0000005L401DX_z0" proc-id="RM0550J___00000X000000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Communication System Function</ptxt>
+<step2>
+<ptxt>The heater &amp; air conditioner system sends and receives signals to and from the engine control computer and combination meter assembly via CAN communication. Also, signals are sent and received with the air conditioner control assembly via LIN communication. Also, the bus harness provides communication with the operating motors used for air conditioning control: the damper servo (air inlet control), air mix damper servo and mode damper servo.</ptxt>
+<figure>
+<graphic graphicname="E144446J01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>Diagnosis Function</ptxt>
+<step2>
+<ptxt>Functions of Diagnostic Tool SST (TaSCAN)</ptxt>
+<step3>
+<ptxt>By connecting the diagnostic tool SST (TaSCAN), the heater &amp; air conditioner system can perform the checks shown in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.50in"/>
+<colspec colname="COL2" colwidth="4.58in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Check Details</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Trouble Code (DTC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reading and clearing of DTCs is possible</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECU Data Monitor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ECU data can be checked, recorded and played back</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Active Test</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actuators can be driven as desired</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+<step2>
+<ptxt>Panel Diagnosis Functions</ptxt>
+<step3>
+<ptxt>By starting the panel diagnosis, the heater &amp; air conditioner system can perform the checks shown in the table.</ptxt>
+<figure>
+<graphic graphicname="E144253" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.50in"/>
+<colspec colname="COL2" colwidth="4.58in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Check Details</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Indicator Check</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation indicators of each switch and the setting display can be blinked</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Sensor Check</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Sensor malfunction status (past, current) can be checked</ptxt>
+</item>
+<item>
+<ptxt>Past malfunction data can be cleared</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Actuator Check</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actuator check patterns can be output</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

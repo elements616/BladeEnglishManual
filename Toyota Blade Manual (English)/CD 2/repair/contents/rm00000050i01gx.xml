@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1000Y_S0012" variety="S0012">
+<name>SRS Airbag</name>
+<ttl id="1000Y_S0012_745Q2_T00B8" variety="T00B8">
+<name>SRS Airbag System</name>
+<para id="RM00000050I01GX" category="D" type-id="303F3" name-id="554GI-00" from="200612">
+<name>Diagnosis System</name>
+<subpara id="RM00000050I01GX_z0" proc-id="RM0550J___000068B00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Primary Check </ptxt>
+<step2>
+<ptxt>Turn the ignition switch OFF, wait at least 2 seconds, then turn the ignition switch ON; the warning light comes on for approximately 6 seconds and the airbag and pretensioner system is diagnosed.</ptxt>
+<atten3>
+<ptxt>Keep the ignition switch OFF when connecting the battery.</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>If a malfunction is detected during the primary check, the warning light remains on even after approximately 6 seconds have elapsed since the ignition switch was turned ON.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Constant Check </ptxt>
+<step2>
+<ptxt>When the primary check is complete (the warning light goes off approximately 6 seconds after the ignition switch is turned ON), the airbag computer assembly puts the system into a deployable state and constantly monitors the system for malfunctions.</ptxt>
+<figure>
+<graphic graphicname="C064938J14" width="7.106578999in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>If a malfunction is detected during the constant check, the airbag computer assembly operates as follows.</ptxt>
+<step3>
+<ptxt>The warning light comes on.</ptxt>
+<atten4>
+<ptxt>If a malfunction code is detected, the warning light comes on.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>The warning light comes on and then goes off.</ptxt>
+<atten4>
+<ptxt>When the power source voltage drops, the warning light comes on; when the voltage then returns to normal, the warning light goes off 10 seconds later.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>The warning light stays on or does not come on.</ptxt>
+<atten4>
+<ptxt>If there is a malfunction in the combination meter assembly or communication system, the warning light stays on or does not come on.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Summary</ptxt>
+<step2>
+<ptxt>When the system is normal</ptxt>
+<step3>
+<ptxt>The warning light comes on only during the primary check period (approximately 6 seconds after the ignition switch is turned ON).</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>When a malfunction has occurred in the system</ptxt>
+<step3>
+<ptxt>The warning light remains on even after the primary check period.</ptxt>
+</step3>
+<step3>
+<ptxt>The warning light goes off once after the primary check period and then comes on again.</ptxt>
+</step3>
+<step3>
+<ptxt>The warning light stays on or does not come on due to a malfunction in the combination meter assembly or communication system, etc.</ptxt>
+</step3>
+<step3>
+<ptxt>For an airbag computer assembly that has already been activated by a vehicle collision, the warning light remains on even after the primary check period. (*1)</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The above (*1) is a function for identifying an airbag computer assembly that has been activated. </ptxt>
+</item>
+<item>
+<ptxt>The sensors of a vehicle in which the airbags have deployed (airbag computer assembly, front airbag sensors RH and LH, side airbag sensor assemblies RH and LH, airbag sensors rear right and left) may not operate properly, so be sure to replace them with new ones. </ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

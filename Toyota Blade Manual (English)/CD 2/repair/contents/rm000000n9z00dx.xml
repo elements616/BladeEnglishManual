@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="10033_S0007" variety="S0007">
+<name>CAN Communication</name>
+<ttl id="10033_S0007_741KB_T000K" variety="T000K">
+<name>CAN Communication System</name>
+<para id="RM000000N9Z00DX" category="J" type-id="304NY" name-id="950UW-00" from="200612">
+<dtccode/>
+<dtcname>EPS ECU Communication Stop Mode</dtcname>
+<subpara id="RM000000N9Z00DX_01" type-id="33" category="03" proc-id="RM0550J___00000C000000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.42in"/>
+<colspec colnum="02" colname="C02" colwidth="2.83in"/>
+<colspec colnum="03" colname="C03" colwidth="2.83in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Diagnosis Item</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Suspected Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>EPS ECU Communication Stop Mode</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>"Electric Power Steering" is not displayed on the "CAN Bus Connected ECU Check" screen of TaSCAN</ptxt>
+</item>
+<item>
+<ptxt>Corresponds to 'EPS ECU communication stop mode' in the DTC combination table</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Power steering computer assembly (EPS ECU) branch wire open circuit or connector</ptxt>
+</item>
+<item>
+<ptxt>Power steering computer assembly (EPS ECU) power source system malfunction</ptxt>
+</item>
+<item>
+<ptxt>Power steering computer assembly (EPS ECU) internal malfunction</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000N9Z00DX_02" type-id="32" category="03" proc-id="RM0550J___00000C100000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B162434J01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000N9Z00DX_03" type-id="51" category="05" proc-id="RM0550J___00000C200000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When measuring the resistance of the CAN bus, turn the IG OFF, confirm that warning functions such as the key reminder warning system are not operating, and leave the vehicle for 1 minutes or more without operating the key or switches or opening/closing the doors before starting measurement. If it is necessary to open a door during inspection, open it beforehand.</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When inspecting each connector, before disconnecting it, push the connector case in the connecting direction and check that the connector is not loose or disconnected.</ptxt>
+</item>
+<item>
+<ptxt>When disconnecting a connector, check that the connector terminals and connector case are free of damage, deformation, corrosion, etc.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000N9Z00DX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000N9Z00DX_04_0001" proc-id="RM0550J___00000C300000">
+<testtitle>CAN Bus Open Circuit Inspection (EPS ECU Branch Line)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the ignition switch OFF and disconnect vehicle harness connector C of the power steering computer assembly (EPS ECU) from the power steering computer assembly (EPS ECU).</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of vehicle harness connector C of the power steering computer assembly (EPS ECU).</ptxt>
+<figure>
+<graphic graphicname="C156134J03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.93in"/>
+<colspec colname="COL2" colwidth="1.11in"/>
+<colspec colname="COL3" colwidth="1.09in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C1(CANH) - C7(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>54 to 69Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000N9Z00DX_04_0002" fin="false">OK</down>
+<right ref="RM000000N9Z00DX_04_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000N9Z00DX_04_0002" proc-id="RM0550J___00000C400000">
+<testtitle>Inspect Wire Harness (EPS ECU Power Source Circuit)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the ignition switch OFF and disconnect vehicle harness connector D of the power steering computer assembly (EPS ECU) from the power steering computer assembly (EPS ECU).</ptxt>
+<figure>
+<graphic graphicname="C149382J03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.83in"/>
+<colspec colname="COL2" colwidth="1.16in"/>
+<colspec colname="COL3" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>D2 (PGND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.82in"/>
+<colspec colname="COL2" colwidth="1.15in"/>
+<colspec colname="COL3" colwidth="1.16in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C6 (IG) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000N9Z00DX_04_0005" fin="true">OK</down>
+<right ref="RM000000N9Z00DX_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000N9Z00DX_04_0005">
+<testtitle>Replace Power Steering Computer Assembly<xref label="Seep01" href="RM000000UNG00FX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000N9Z00DX_04_0003">
+<testtitle>Repair or Replace Branch Wire or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000000N9Z00DX_04_0004">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

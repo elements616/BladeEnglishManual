@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744EE_T0050" variety="T0050">
+<name>Camshaft Timing Oil Control Valve Assembly (2AZ-FE)</name>
+<para id="RM0000020UV009X" category="G" type-id="3001K" name-id="065AZ-00" from="200612">
+<name>Component Inspection</name>
+<subpara id="RM0000020UV009X_01" type-id="01" category="01">
+<s-1 id="RM0000020UV009X_01_0001" proc-id="RM0550J___00002Y800000">
+<ptxt>Inspect Camshaft Timing Oil Control Valve Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Resistance Inspection</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="A160189J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6.9 to 7.9Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>Operation Check</ptxt>
+<s3>
+<ptxt>Apply battery voltage between the terminals and check that the spool valve operates.</ptxt>
+<figure>
+<graphic graphicname="A094399" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Check that the spool valve is not stuck.</ptxt>
+</atten3>
+<atten4>
+<ptxt>Poor return of the spool valve caused by foreign matter such as sludge being caught in it results in a slight pressure leak to the advance side, which may cause a DTC to be detected.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

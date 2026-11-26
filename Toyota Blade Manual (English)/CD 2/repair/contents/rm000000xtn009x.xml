@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002U_S0003" variety="S0003">
+<name>Glass &amp; Window</name>
+<ttl id="1002U_S0003_741PR_T000U" variety="T000U">
+<name>Defogger Relay</name>
+<para id="RM000000XTN009X" category="G" type-id="3001K" name-id="7526Y-00" from="200612">
+<name>Component Inspection</name>
+<subpara id="RM000000XTN009X_01" type-id="01" category="01">
+<s-1 id="RM000000XTN009X_01_0001" proc-id="RM0550J___00000MA00000">
+<ptxt>Inspect Defogger Relay</ptxt>
+<content1 releasenbr="1">
+<figure>
+<graphic graphicname="B163250" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<s2>
+<ptxt>Disconnect connectors F, G and Q of the instrument panel junction block assembly.</ptxt>
+</s2>
+<s2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each pair of connector terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" align="center" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F2(DEF) - G1(ALTB)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF, rear defogger switch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>G1(ALTB) - Q12(DFSW)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+<s2>
+<ptxt>Connect each connector of the instrument panel junction block assembly.</ptxt>
+</s2>
+<s2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each pair of connector terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" align="center" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F2(DEF) - G1(ALTB)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON, rear defogger switch ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

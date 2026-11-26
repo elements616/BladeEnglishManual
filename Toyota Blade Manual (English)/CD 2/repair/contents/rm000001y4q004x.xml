@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001A_S0009" variety="S0009">
+<name>Lighting</name>
+<ttl id="1001A_S0009_7420Q_T0018" variety="T0018">
+<name>Map Light Assembly</name>
+<para id="RM000001Y4Q004X" category="G" type-id="3001K" name-id="603JQ-00" from="200612">
+<name>Component Inspection</name>
+<subpara id="RM000001Y4Q004X_01" type-id="01" category="01">
+<s-1 id="RM000001Y4Q004X_01_0001" proc-id="RM0550J___00000T700000">
+<ptxt>Inspect Map Light Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Inspect Light Illumination</ptxt>
+<figure>
+<graphic graphicname="E073293J07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Connect a battery between the connector terminals and inspect the illumination condition of the lights.</ptxt>
+<table>
+<title>Standard:</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="2" valign="middle" align="left">
+<ptxt>Battery positive → 6 (+B1)</ptxt>
+<ptxt>Battery negative → 7 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All switches OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Both lights go off</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RH side switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RH side light comes on</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LH side switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LH side light comes on</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

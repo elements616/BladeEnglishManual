@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002T_S000D" variety="S000D">
+<name>Other Electrical</name>
+<ttl id="1002T_S000D_742B1_T003C" variety="T003C">
+<name>ETC System</name>
+<para id="RM0000036CO014X" category="J" type-id="803Q9" name-id="CM0FC-02" from="200912">
+<dtccode/>
+<dtcname>ETC gate bar does not open</dtcname>
+<subpara id="RM0000036CO014X_01" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM0000036CO014X_02" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000036CO014X_02_0001" proc-id="RM0550J___0000IAT00000">
+<testtitle>Inspect Wire Harness and Connector (Toll Collection (ETC) Computer Assembly Power Source System)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Pre-inspection Preparation</ptxt>
+<test2>
+<ptxt>Disconnect connector A of the toll collection (ETC) computer assembly.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Inspect Resistance and Voltage</ptxt>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance and voltage between each terminal of the toll collection (ETC) computer assembly vehicle side wire harness connector and body ground.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A1 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A8 (+B) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A7 (ACC) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ACC ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000036CO014X_02_0003" fin="false">OK</down>
+<right ref="RM0000036CO014X_02_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000036CO014X_02_0003" proc-id="RM0550J___0000IAU00000">
+<testtitle>Inspect Toll Collection (ETC) Computer Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check for Foreign Matter</ptxt>
+<test2>
+<ptxt>Check that there is no foreign matter in the card slot of the toll collection (ETC) computer assembly.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No foreign matter</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000036CO014X_02_0005" fin="false">OK</down>
+<right ref="RM0000036CO014X_02_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000036CO014X_02_0005" proc-id="RM0550J___0000IAV00000">
+<testtitle>Check ETC Card</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect ETC Card</ptxt>
+<test2>
+<ptxt>Check that the ETC card has not expired.</ptxt>
+</test2>
+<test2>
+<ptxt>Check the ETC card for dirt or deformation.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ETC card is free of dirt and deformation and has not expired</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ETC card is dirty or deformed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ETC card has expired</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000036CO014X_02_0006" fin="false">A</down>
+<right ref="RM0000036CO014X_02_0012" fin="true">B</right>
+<right ref="RM0000036CO014X_02_0015" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000036CO014X_02_0006" proc-id="RM0550J___0000IAW00000">
+<testtitle>Inspect with ETC On-board Unit Tester</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect Area Around Antenna</ptxt>
+<test2>
+<ptxt>Check for any obstructions around the navigation antenna assembly (top surface of the instrument panel), and remove them if present.</ptxt>
+</test2>
+<test2>
+<ptxt>Check for any film, stickers, etc. affixed to the windshield glass, and remove them if present.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Inspect with ETC On-board Unit Tester</ptxt>
+<figure>
+<graphic graphicname="E195388J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Using an ETC on-board unit tester, check whether the toll collection (ETC) computer assembly is performing wireless communication normally.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.99in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Abnormal operation</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Normal operation</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Operate the ETC on-board unit tester at a position approximately 1 m from the windshield glass, on a line extending upward and forward of the vehicle from the navigation antenna assembly at an elevation angle of 67±15°. (The distance between the ETC on-board unit tester and the antenna is only a guide)</ptxt>
+</item>
+<item>
+<ptxt>Point the communication surface of the ETC on-board unit tester toward the navigation antenna assembly.</ptxt>
+</item>
+<item>
+<ptxt>Do not bring the ETC on-board unit tester too close to the navigation antenna assembly, as communication with the tester may be established even if the antenna is disconnected.</ptxt>
+</item>
+</list1>
+</atten4>
+</test2>
+</test1>
+<table>
+<title>Text in Illustrations</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="0.41in"/>
+<colspec colname="COL2" colwidth="3.72in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ETC On-board Unit Tester</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Navigation Antenna Assembly</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content6>
+<res>
+<down ref="RM0000036CO014X_02_0008" fin="false">A</down>
+<right ref="RM0000036CO014X_02_0014" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000036CO014X_02_0008" proc-id="RM0550J___0000IAX00000">
+<testtitle>Replace Toll Collection (ETC) Computer Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the toll collection (ETC) computer assembly with a new one. (see <xref label="Seep01" href="RM000002TPV001X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000036CO014X_02_0017" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000036CO014X_02_0017" proc-id="RM0550J___0000IAZ00000">
+<testtitle>Operation Check</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect with ETC On-board Unit Tester</ptxt>
+<figure>
+<graphic graphicname="E195388J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Using an ETC on-board unit tester, check that the toll collection (ETC) computer assembly is performing wireless communication normally.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Operate the ETC on-board unit tester at a position approximately 1 m from the windshield glass, on a line extending upward and forward of the vehicle from the navigation antenna assembly at an elevation angle of 67±15°. (The distance between the ETC on-board unit tester and the antenna is only a guide)</ptxt>
+</item>
+<item>
+<ptxt>Point the communication surface of the ETC on-board unit tester toward the navigation antenna assembly.</ptxt>
+</item>
+<item>
+<ptxt>Do not bring the ETC on-board unit tester too close to the navigation antenna assembly, as communication with the tester may be established even if the antenna is disconnected.</ptxt>
+</item>
+</list1>
+</atten4>
+</test2>
+</test1>
+<test1>
+<ptxt>Setup</ptxt>
+<test2>
+<ptxt>Perform setup.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Check Using ETC Card</ptxt>
+<test2>
+<ptxt>Insert an ETC card into the toll collection (ETC) computer assembly and check that the card is authenticated normally.</ptxt>
+</test2>
+</test1>
+<table>
+<title>Text in Illustrations</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="0.41in"/>
+<colspec colname="COL2" colwidth="3.72in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ETC On-board Unit Tester</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Navigation Antenna Assembly</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content6>
+<res>
+<down ref="RM0000036CO014X_02_0013" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000036CO014X_02_0013">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM0000036CO014X_02_0010">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000036CO014X_02_0011">
+<testtitle>Remove the foreign matter</testtitle>
+</testgrp>
+<testgrp id="RM0000036CO014X_02_0012">
+<testtitle>ETC Card Error</testtitle>
+</testgrp>
+<testgrp id="RM0000036CO014X_02_0015">
+<testtitle>Replace ETC Card</testtitle>
+</testgrp>
+<testgrp id="RM0000036CO014X_02_0014" proc-id="RM0550J___0000IAY00000">
+<testtitle>Customer Problem Analysis</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Perform a customer problem analysis using the check sheet to hear about the toll gate where the problem occurred, the route driven and the customer's usage conditions</ptxt>
+<test2>
+<ptxt>"ETC gate bar does not open" can have various causes, and an inquiry to the road operator is necessary</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.01in"/>
+<colspec colname="COL2" align="center" colwidth="5.07in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Driving condition factors</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Driving speed is high</ptxt>
+</item>
+<item>
+<ptxt>Driving at an angle</ptxt>
+</item>
+<item>
+<ptxt>Driving immediately behind a large vehicle</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Roadside radio equipment factors</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Improper radio wave characteristics (directivity, leakage from adjacent lanes)</ptxt>
+</item>
+<item>
+<ptxt>Multipath in the surrounding environment</ptxt>
+</item>
+<item>
+<ptxt>Roadside unit not operating or switching operation</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Customer's method of use</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>ETC Card Not Inserted</ptxt>
+</item>
+<item>
+<ptxt>Different cards used at entrance and exit for distance-based tolls</ptxt>
+</item>
+<item>
+<ptxt>Card removed immediately after passing entrance gate for distance-based tolls</ptxt>
+</item>
+<item>
+<ptxt>Setup not performed again after license plate number change</ptxt>
+</item>
+<item>
+<ptxt>Vehicle not set up for towing attempted to pass while towing</ptxt>
+</item>
+<item>
+<ptxt>Multiple ETC on-board units installed in vehicle</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>External disturbance factors</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Interference from illegal radio</ptxt>
+</item>
+<item>
+<ptxt>Multipath due to large vehicle passing simultaneously in adjacent lane</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000036CO014X_02_0016" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000036CO014X_02_0016">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10024_S000T" variety="S000T">
+<name>Starting</name>
+<ttl id="10024_S000T_744HN_T007Z" variety="T007Z">
+<name>Smart Entry &amp; Start System (Start System)</name>
+<para id="RM000000CG700SX" category="U" type-id="303FJ" name-id="161X3-00" from="200612">
+<name>ECU Data Monitor/Active Test</name>
+<subpara id="RM000000CG700SX_z0" proc-id="RM0550J___000049100000">
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When using the TaSCAN with the IG OFF, repeatedly turn any door courtesy light switch ON / OFF (at intervals of 1.5 seconds or less) until communication between the TaSCAN and the vehicle starts.</ptxt>
+</atten3>
+<step1>
+<ptxt>Inspection Using TaSCAN </ptxt>
+<step2>
+<ptxt>ECU Data Monitor</ptxt>
+<step3>
+<ptxt>Using SST (TaSCAN), use the ECU Data Monitor to judge whether the system is normal and narrow down the malfunctioning area.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200 </s-number>
+</sstitem>
+</sst>
+<table pgwide="1">
+<title>[System selection screen: Body → Main Body → ECU Data Monitor]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.01in"/>
+<colspec colname="COL2" colwidth="2.75in"/>
+<colspec colname="COL3" colwidth="2.32in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Stop Light SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Brake pedal depressed/not depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Push StartSW1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine switch pushed/released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Push StartSW2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine switch pushed/released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Steering Unlock SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Unlock/Lock</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Neutral SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P, N position / Other than P, N position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Shift P Signal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P position / Other than P position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ACC Relay Cut Signal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cranking/Stopped</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IG Backup Circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON / Other than IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ACC Relay</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ACC ON/IG OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IG1 Relay1(Drive Output Monitor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON / Other than IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IG2 Relay1(Drive Output Monitor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON / Other than IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IG1 Relay2(Coil Voltage Monitor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON / Other than IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IG2 Relay2(Coil Voltage Monitor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON / Other than IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Starter Request Signal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>With brake depressed, keep pushing engine switch / release engine switch after approximately 1 seconds</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Power Source Status</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>All OFF / ACC ON / IG 1 ON / IG 2 ON / ST</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Operating Status</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine idling/Stopped</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Operating/Stopped</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driving Status</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driving/Stopped</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driving/Stopped</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Starter Relay</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cranking/Stopped</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>[System Selection Screen: Body → Certification ECU → ECU Data Monitor]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.01in"/>
+<colspec colname="COL2" colwidth="2.75in"/>
+<colspec colname="COL3" colwidth="2.32in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Start Permission Request Received</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Received/Not received</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>S Code Verification Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal/Abnormal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>L Code Verification Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal/Abnormal</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+<step2>
+<ptxt>Active Test</ptxt>
+<step3>
+<ptxt>Using SST (TaSCAN), perform the Active Test to judge whether the system is normal and narrow down the malfunctioning area.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200 </s-number>
+</sstitem>
+</sst>
+<table pgwide="1">
+<title>[System selection screen: Body → Main Body → Active Test]</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Drive</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Indicator Display Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF/Amber/Green</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Illumination Indicator</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Steering Lock Power Supply Status</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Supplied/Stopped</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

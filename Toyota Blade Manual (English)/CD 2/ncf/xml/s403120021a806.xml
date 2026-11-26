@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740067e SYSTEM "grph_ent/a4740067e.png" NDATA png>
+
+<!ENTITY T120021A806 SYSTEM "t403120021a806.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120021A806S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120021A806" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>HDD Navigation System Control</TITLE>
+<LIST1><ITEM><PTXT>Overall system control is performed with the circuit configuration shown below, centered on the HDD navigation.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A806I01" INDSW = "OFF">
+<TITLE>System Wiring Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740067e" WIDTH = "6.903in" HEIGHT = "6.069in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+</SECTION>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY k3840112e SYSTEM "grph_ent/k3840112e.png" NDATA png>
+<!ENTITY k4600026e SYSTEM "grph_ent/k4600026e.png" NDATA png>
+<!ENTITY k4670030e SYSTEM "grph_ent/k4670030e.png" NDATA png>
+<!ENTITY k4600022e SYSTEM "grph_ent/k4600022e.png" NDATA png>
+<!ENTITY a4560007e SYSTEM "grph_ent/a4560007e.png" NDATA png>
+<!ENTITY k4670033e SYSTEM "grph_ent/k4670033e.png" NDATA png>
+<!ENTITY K4730073E SYSTEM "grph_ent/k4730073e.png" NDATA png>
+
+<!ENTITY T120021A814 SYSTEM "t285120021a814.xml">
+<!ENTITY T120021A814K440 SYSTEM "t285120021a814k440.xml">
+<!ENTITY T120021A814K464 SYSTEM "t285120021a814k464.xml">
+<!ENTITY T120021A814T050 SYSTEM "t285120021a814t050.xml">
+<!ENTITY T120021A814K034 SYSTEM "t285120021a814k034.xml">
+<!ENTITY T120021A814W016 SYSTEM "t285120021a814w016.xml">
+<!ENTITY T120021A814W017 SYSTEM "t285120021a814w017.xml">
+<!ENTITY T120021A814K444 SYSTEM "t285120021a814k444.xml">
+<!ENTITY T120021A814Ka74 SYSTEM "t285120021a814ka74.xml">
+<!ENTITY T120021A814K386 SYSTEM "t285120021a814k386.xml">
+<!ENTITY T120021A814K107 SYSTEM "t285120021a814k107.xml">
+<!ENTITY T120021A814K174 SYSTEM "t285120021a814k174.xml">
+<!ENTITY T120021A814K562 SYSTEM "t285120021a814k562.xml">
+<!ENTITY T120021A814K725 SYSTEM "t285120021a814k725.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120021A814S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120021A814" UPDATE = "ORIGINAL" LDUP = "20Jun2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>HDD Navigation Information Mode Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By pressing the "Information/G" panel switch, the screen changes to the information mode screen, where each information display can be selected. Also, by touching "Next Page" or "Previous Page" on the information mode screen, the next or previous page can be displayed.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A814I01" INDSW = "OFF">
+<TITLE>Information Mode Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k3840112e" WIDTH = "6.903in" HEIGHT = "2.486in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T120021A814I02" INDSW = "OFF">
+<TITLE>Information Mode Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "43%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "37%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Function Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Functions</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Optional Equipment Installed</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>FM Multiplex</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display of FM multiplex general text broadcasts</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "7"><PTXT>None</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>TEL (Phonebook Display)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display of telephone number list</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Surrounding Monitor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Settings related to the back guide monitor</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Operation Guide</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Displays the operating procedure for each application</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Maintenance</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Input and display of maintenance information</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Calendar</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display of calendar</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Facilities with Information</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display of detailed information on major facilities on the map</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Setting</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display settings for information screen, audio screen, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>HELPNET</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Reporting, settings and operation of the HELPNET system</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "3"><PTXT>Specified types of Bluetooth-compatible cellular phone</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>TEL (Hands-free Calling)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Hands-free Calling</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Amusement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display and operation of amusement applications of the G-BOOK online service</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Main Menu</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display and operation of the G-BOOK online service</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>ETC</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display of information related to ETC</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Factory-option ETC on-board unit with navigation link function</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T120021A814K440" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>HELPNET</TITLE>
+<LIST1><ITEM><PTXT>By touching "HELPNET" on the information mode screen, the emergency call system HELPNET can be used. For details, refer to HELPNET System.<XREF     REFID = "T285120021K922Ka79"/>
+</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A814K464" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Main Menu</TITLE>
+<LIST1><ITEM><PTXT>By touching "Main Menu" on the information mode screen, the total mobility service "G-BOOK" can be used. For details, refer to G-BOOK ALPHA System.<XREF     REFID = "T285120021K922K464"/>
+</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A814T050" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Amusement</TITLE>
+<LIST1><ITEM><PTXT>By touching "Amusement" on the information mode screen, amusement applications (AUTOLIVE, G-SOUND, etc.) can be used. For details, refer to Amusement.<XREF     REFID = "T285120021K922T050"/>
+</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A814K034" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>FM Multiplex</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By touching "FM Multiplex" on the screen while the information mode screen is displayed, the screen changes to the FM multiplex screen and the text information of FM multiplex general text broadcasts is displayed. Some information cannot be displayed while driving.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A814K034I01" INDSW = "OFF">
+<TITLE>FM Multiplex Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4600026e" WIDTH = "7.069in" HEIGHT = "2.542in" />
+</FIGURE>
+</INDICATE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>FM Multiplex Mode Function List</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "85%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Description</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Contents</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>The contents of FM multiplex general text broadcasts are displayed, up to a maximum of 6 items (information is selected from "1" to "6" on the screen). On screens other than the contents screen, the contents screen can be called up by touching "Contents" on the screen.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Record/Recall/Delete</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Touching "Record Memo" on the screen records the currently displayed text information in the navigation computer (up to 20 items). Touching "Recall Memo" on the screen recalls and displays the recorded text information. Also, touching "Delete" or "Delete All" on the screen deletes the recorded information. Touching "Delete" deletes the currently displayed text information, and touching "Delete All" deletes all text information stored in the HDD navigation.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Auto Advance/Stop</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When the text information of an FM multiplex general text broadcast has multiple pages, touching "Auto Advance" on the screen automatically advances and displays each page. Also, touching "Stop" on the screen stops the auto advance. Auto advance cannot be used while driving.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Auto Station Select</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Touching "Auto Station Select" on the screen tunes to a station broadcasting FM multiplex text information.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Emergency Broadcast Reception</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When FM multiplex emergency information is received while text information is displayed, the display switches automatically.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Program Link</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Touching "Program Link" on the screen switches to the linked information program.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T120021A814W016" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>TEL (Phonebook Display)</TITLE>
+<LIST1><ITEM><PTXT>By touching "TEL" on the screen while the information mode screen is displayed and then touching "Traffic/Navi" on the telephone screen, the screen changes to the phonebook screen, where a list of telephone numbers of facilities (such as JAF and the Japan Road Traffic Information Center) stored in the hard disk drive (HDD) can be displayed.</PTXT></ITEM>
+<ITEM><PTXT>If telephone numbers have been entered for the set destination or registered memory points and special memory points, the telephone numbers of those points can also be displayed.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A814W016I01" INDSW = "OFF">
+<TITLE>Phonebook Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670030e" WIDTH = "7.069in" HEIGHT = "2.542in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T120021A814W017" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>TEL (Hands-free Calling)</TITLE>
+<LIST1><ITEM><PTXT>By touching "TEL" on the screen while the information mode screen is displayed, the screen changes to the telephone screen, and hands-free calls can be made with a Bluetooth-compatible cellular phone. For details, refer to Hands-free Calling.<XREF     REFID = "S285120021K387"/>
+</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A814K444" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Surrounding Monitor</TITLE>
+<LIST1><ITEM><PTXT>By touching "Vehicle Surroundings Monitor" on the screen while the information mode screen is displayed, the screen changes to the vehicle surroundings monitor setting screen, where settings for the back guide monitor can be made.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A814Ka74" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Operation Guide</TITLE>
+<LIST1><ITEM><PTXT>By touching "Operation Guide" on the screen while the information mode screen is displayed, the screen changes to the operation guide screen, where operating instructions for the navigation functions, audio functions, G-BOOK ALPHA and voice recognition functions can be viewed.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A814K386" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Maintenance</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By touching "Maintenance" on the screen while the information mode screen is displayed, the screen changes to the maintenance menu screen, where various maintenance information such as oil change timing can be displayed and entered (timing, distance, dealer, etc.). Also, by touching "Personal Items" on the screen while the maintenance menu screen is displayed, the screen changes to the personal items screen, where personal information such as the license renewal date can be displayed and dates can be entered.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A814K386I01" INDSW = "OFF">
+<TITLE>Maintenance Menu Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4600022e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Maintenance Menu List</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Engine Oil Change</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Wiper Rubber Replacement</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Oil Filter Replacement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Engine Coolant Replacement</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Tire Rotation</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Brake Fluid Replacement</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Tire Replacement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Automatic Transmission Fluid (ATF) Replacement</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Battery Replacement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Personal Items (Go to Personal Items Menu)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Brake Pad Replacement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Personal Items Menu List</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>ProCare 10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Insurance Expiration</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>12-month Inspection</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>License Renewal</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Vehicle Inspection (Shaken)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Air Cleaner</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Glass Coating</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>V-belt</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>High Polymer Maintenance</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Personal Reminder (Set With Own Title)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Air Purifier Filter Replacement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T120021A814K107" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Calendar</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By touching "Calendar" on the information mode screen, the screen changes to the calendar screen and a calendar can be displayed.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A814K107I01" INDSW = "OFF">
+<TITLE>Calendar Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4560007e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T120021A814K174" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Facilities with Information</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By touching "Facilities with Information" on the screen while the information mode screen is displayed, the screen changes to the facility information search screen, where detailed information on major facilities on the map stored on the hard disk (facility overview, opening hours, fees, exterior photos, maps, etc.) can be searched and displayed.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A814K174I01" INDSW = "OFF">
+<TITLE>Facility Information Search Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670033e" WIDTH = "7.069in" HEIGHT = "2.542in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T120021A814K562" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>ETC</TITLE>
+<LIST1><ITEM><PTXT>Displayed when the factory-option ETC with navigation link function is installed; touching it changes the screen to the ETC screen, where ETC (Electronic Toll Collection) information (usage history, tolls, etc.) can be displayed.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A814K725" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Setting</TITLE>
+<LIST1><ITEM><PTXT>By touching "Settings" on the screen while the information mode screen is displayed, the screen changes to the settings screen, where continuous display settings for each operation screen, such as the audio operation screen and information screen, can be made. Also, the switch color of the settings screens (screens other than the map) can be selected from 2 types (green and orange).</PTXT></ITEM>
+<ITEM><PTXT>In addition to the above settings, when a Bluetooth-compatible cellular phone is connected, settings for using the communication functions (G-BOOK ALPHA, hands-free and HELPNET) can also be made.</PTXT></ITEM>
+<ITEM><PTXT>The personal information delete switch can delete information such as navigation memory point information, the hands-free phonebook and music recorded in the sound library.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A814K725I01" INDSW = "OFF">
+<TITLE>Settings Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "K4730073E" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE></MECA>
+</PARA>
+</SECTION>

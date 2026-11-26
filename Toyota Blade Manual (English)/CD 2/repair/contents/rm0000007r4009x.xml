@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="08">
+<name>Heater &amp; Air Conditioner/Ventilation</name>
+<section id="1002K_S000B" variety="S000B">
+<name>Air Conditioner</name>
+<ttl id="1002K_S000B_74225_T002F" variety="T002F">
+<name>Cooler Thermistor (Room Temperature Sensor)</name>
+<para id="RM0000007R4009X" category="G" type-id="3001K" name-id="52283-00" from="200612">
+<name>Component Inspection</name>
+<subpara id="RM0000007R4009X_01" type-id="01" category="01">
+<s-1 id="RM0000007R4009X_01_0001" proc-id="RM0550J___000016D00000">
+<ptxt>Inspect Cooler Thermistor (Room Temperature Sensor)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Inspect cooler thermistor (room temperature sensor)</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="E105412J02" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COLSPEC0" colwidth="1.35in"/>
+<colspec colname="COL1" colwidth="1.35in"/>
+<colspec colname="COL2" colwidth="1.43in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="10" valign="middle">
+<ptxt>1(+) - 2(-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3.00 to 3.73kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>15°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2.45 to 2.88kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.95 to 2.30kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>25°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.60 to 1.80kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>30°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.28 to 1.47kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>35°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.00 to 1.22kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>40°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.80 to 1.00kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>45°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.65 to 0.85kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>50°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.50 to 0.70kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>55°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.44 to 0.60kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>60°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.36 to 0.50kΩ</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Touching the temperature sensor may affect the reading due to body heat, so hold the connector side when inspecting the sensor.</ptxt>
+</item>
+<item>
+<ptxt>Allow the sensor to adjust to the ambient temperature before inspecting.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

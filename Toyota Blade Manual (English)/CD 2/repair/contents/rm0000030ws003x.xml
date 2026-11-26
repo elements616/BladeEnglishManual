@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1002M_S001G" variety="S001G">
+<name>Pre-crash Safety</name>
+<ttl id="1002M_S001G_74WT7_T00FP" variety="T00FP">
+<name>Pre-crash Safety System</name>
+<para id="RM0000030WS003X" category="U" type-id="303FP" name-id="540J6-00" from="200708">
+<name>Fail-safe List</name>
+<subpara id="RM0000030WS003X_z0" proc-id="RM0550J___0000CTG00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Fail-safe Function</ptxt>
+<step2>
+<ptxt>If a malfunction occurs in part of the pre-crash safety system, the "PCS" indicator light comes on, "PCS SYSTEM CHECK" is displayed on the multi-information display in the combination meter assembly, and control of the pre-crash safety system is stopped according to the malfunction.</ptxt>
+</step2>
+<step2>
+<ptxt>If dirt adheres to the grille cover or millimeter wave radar sensor assembly, or if the millimeter wave radar sensor assembly determines that it cannot recognize obstacles in adverse conditions such as snowfall, the "PCS" indicator light blinks, "PCS CURRENTLY UNAVAILABLE" is displayed on the multi-information display in the combination meter assembly, and all control except brake-linked seat belt control is stopped. Also, when obstacles can be recognized again, the display goes off and normal control resumes.</ptxt>
+</step2>
+<step2>
+<ptxt>If the overheat protection function of the seat belt control computer operates, the seat belt control computer displays "PCS CURRENTLY UNAVAILABLE" on the multi-information display in the combination meter assembly and stops pre-crash seat belt control. Also, when the temperature drops and pre-crash seat belt control becomes possible, the display goes off and normal control resumes.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

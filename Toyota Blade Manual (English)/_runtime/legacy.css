@@ -1,0 +1,25 @@
+/* Base styles approximating Internet Explorer 6 defaults on Japanese Windows.
+   Loaded before the manual's own stylesheets, so those still take priority. */
+html { font-family: Arial, Helvetica, sans-serif; }
+table { font-size: inherit; }
+img { border-style: none; }
+/* English labels are longer than the Japanese ones: keep navigation buttons on one line */
+td.button, a.button, .button, .other-rpr, .other-rpr-button, input[type=button], button { white-space: nowrap; }
+/* The original pages ran in IE quirks mode, where a box's width/height include its
+   padding and border. Restore that box model so "width:100%" items stay inside tables. */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Repair-manual drop-down lists (popup.css): in IE, width:100% made each a.list
+   its own box ("hasLayout"), so the 12px line-height did not squash the rows */
+.popup a.list { display: inline-block; box-sizing: border-box; width: calc(100% - 6px); }
+
+/* Disc 1 header tab buttons (div.other-rpr around a.other-rpr-button): the text sat on
+   the white border. Give it a little room inside the border, and let long labels widen
+   the button instead of touching its sides. */
+div.other-rpr { width: auto !important; min-width: 158px; padding: 2px 6px 2px !important;
+	line-height: 13px !important; height: auto !important; }
+div.other-rpr > a.other-rpr-button { width: auto !important; padding: 0 !important; line-height: 13px !important; }
+
+/* Repair-manual header tabs ("Procedure" / "Procedure Run-through"): the English labels did not
+   fit the 80px tab cells; keep each on one line and let the cell grow */
+td.tab-ac, td.tab-non { white-space: nowrap; width: auto !important; padding: 0 6px; }

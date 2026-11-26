@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1000Y_S0012" variety="S0012">
+<name>SRS Airbag</name>
+<ttl id="1000Y_S0012_744XP_T009A" variety="T009A">
+<name>SRS Airbag</name>
+<para id="RM000002ZPI000X" category="L" type-id="30021" name-id="554IU-00" from="200612">
+<name>Precautions</name>
+<subpara id="RM000002ZPI000X_z0" proc-id="RM0550J___00006KL00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Precautions for Handling and Work</ptxt>
+<step2>
+<ptxt>If work on the airbag and pretensioner system is not performed using the correct procedures and methods, the system may deploy during work and cause a serious, life-threatening accident. Also, incorrect repairs may prevent the system from operating when necessary. When servicing (removal/installation, inspection, replacement of parts, etc.), read the following items carefully and perform work according to the correct procedures and methods described in this manual.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Disconnect Battery Negative Terminal</ptxt>
+<step2>
+<ptxt>Before starting work, check the DTCs, then turn the IG OFF, disconnect the battery negative terminal and wait 90 seconds.</ptxt>
+<step3>
+<ptxt>The airbag and pretensioner system is equipped with a back-up power source, so if work is started within 90 seconds of disconnecting the battery negative terminal, the airbag may deploy.</ptxt>
+</step3>
+<step3>
+<ptxt>Since some systems' memory is cleared when the battery negative terminal is disconnected, record the memory contents of each system before work and reset them after work.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>General Precautions for Airbags and Pretensioners</ptxt>
+<step2>
+<ptxt>Use a Toyota electrical tester for electrical inspections.</ptxt>
+</step2>
+<step2>
+<ptxt>Follow the instructions on the caution labels attached around the system.</ptxt>
+</step2>
+<step2>
+<ptxt>Never disassemble.</ptxt>
+</step2>
+<step2>
+<ptxt>If a part has been dropped, or has cracks, dents, chips or other deformation, replace it with a new genuine part.</ptxt>
+</step2>
+<step2>
+<ptxt>Never use airbag and pretensioner parts from another vehicle; always install new parts when replacing.</ptxt>
+</step2>
+<step2>
+<ptxt>Do not expose directly to high heat or flames.</ptxt>
+</step2>
+<step2>
+<ptxt>Even if the airbag and pretensioner parts did not activate in a collision, perform an inspection using the diagnostic system.</ptxt>
+</step2>
+<step2>
+<ptxt>Do not allow grease, cleaning agents, oil, water, etc. to adhere. If any adheres, immediately wipe it off with a dry cloth or equivalent.</ptxt>
+</step2>
+<step2>
+<ptxt>Store and handle in a place free from high temperatures [ambient temperature of 93°C or higher for airbags (80°C or higher for pretensioners)] and high humidity, and not easily affected by electrical noise.</ptxt>
+</step2>
+<step2>
+<ptxt>When scrapping a vehicle or disposing of a single part, always deploy it using SST.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Dispose of the horn button assembly (see <xref label="Seep01" href="RM000000QFA00MX"/>)</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Dispose of the instrument panel passenger airbag assembly (see <xref label="Seep02" href="RM0000007T700MX"/>)</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Dispose of the curtain shield airbag (see <xref label="Seep03" href="RM0000007TB00PX"/>)</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Dispose of the front seat airbag assembly (see <xref label="Seep04" href="RM000000QFR007X"/>)</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Dispose of the instrument panel lower airbag No.1 (see <xref label="Seep05" href="RM0000007TG00HX"/>)</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Dispose of the front seat outer belt assembly RH (see <xref label="Seep07" href="RM000001ESC005X"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Never measure the resistance of airbag and pretensioner parts.</ptxt>
+<figure>
+<graphic graphicname="C163134" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<atten2>
+<ptxt>The tester current may cause the airbag or pretensioner to deploy, which is very dangerous.</ptxt>
+</atten2>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for Disposal of Airbags and Pretensioners (Before Deployment)</ptxt>
+<step2>
+<ptxt>Never dispose of the parts in an undeployed state.</ptxt>
+</step2>
+<step2>
+<ptxt>Deploy airbags and pretensioners outdoors in a flat place where safety can be ensured. Also, avoid deployment in residential areas as much as possible.</ptxt>
+</step2>
+<step2>
+<ptxt>Since the deployment of airbags and pretensioners is loud, notify everyone thoroughly in advance that deployment will be performed.</ptxt>
+</step2>
+<step2>
+<ptxt>When deploying airbags and pretensioners, use SST and stay at least 5m away from the airbag and pretensioner.</ptxt>
+</step2>
+<step2>
+<ptxt>Since static electricity may cause airbags and pretensioners to deploy, discharge static electricity beforehand by touching a water pipe, steel frame, etc. with bare hands.</ptxt>
+<atten3>
+<ptxt>Since static electricity may cause airbags and pretensioners to deploy, discharge static electricity beforehand by touching a water pipe, steel frame, etc. with bare hands.</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>When deploying an airbag, be careful not to let the deployment surface face downward.</ptxt>
+<figure>
+<graphic graphicname="G032277J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for Disposal of Airbags and Pretensioners (After Deployment)</ptxt>
+<step2>
+<ptxt>Some areas of deployed airbags and pretensioners reach high temperatures of several hundred °C or more, so leave them for at least 30 minutes after deployment.</ptxt>
+</step2>
+<step2>
+<ptxt>Do not apply water, etc. to deployed airbags and pretensioners.</ptxt>
+</step2>
+<step2>
+<ptxt>When handling deployed airbags and pretensioners, wear dustproof protective goggles and gloves.</ptxt>
+</step2>
+<step2>
+<ptxt>Place deployed airbags and pretensioners in a strong, transparent plastic bag, seal it and dispose of it.</ptxt>
+</step2>
+<step2>
+<ptxt>Always wash your hands with water after completing work.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for Horn Button Assembly (Driver Airbag), Instrument Panel Passenger Airbag Assembly (Front Passenger Airbag), Front Seat Airbag Assembly, Curtain Shield Airbag and Instrument Panel Lower Airbag No.1</ptxt>
+<step2>
+<ptxt>When removing even temporarily, such as during work, always store with the deployment surface facing upward.</ptxt>
+<atten2>
+<ptxt>If the airbag deploys for any reason with the deployment surface facing down, a serious accident resulting in death may occur.</ptxt>
+</atten2>
+</step2>
+<step2>
+<ptxt>When storing, do not place objects on top of the airbag or stack airbags.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for Front Seat Outer Belt Assembly (Pretensioner)</ptxt>
+<step2>
+<ptxt>When removing even temporarily, such as during work, do not touch the area around the belt retractor.</ptxt>
+<atten2>
+<ptxt>If the pretensioner is activated for some reason and the belt is retracted, a serious, life-threatening accident may result.</ptxt>
+</atten2>
+</step2>
+<step2>
+<ptxt>When storing, do not place objects on the pretensioner or stack pretensioners.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for Spiral Cable</ptxt>
+<step2>
+<ptxt>Always center the spiral cable when installing the spiral cable and when removing/installing the steering wheel. (see <xref label="Seep06" href="RM000000QFE009X_02_0046"/>)</ptxt>
+<atten3>
+<ptxt>If the steering wheel is operated without centering, the spiral cable may break.</ptxt>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for Airbag Computer Assembly, Front Airbag Sensor, Side Airbag Sensor Assembly and Airbag Sensor Rear</ptxt>
+<step2>
+<ptxt>If the airbags and pretensioners have deployed in a collision (including cases where only an airbag or only a pretensioner has deployed), always replace the sensor assemblies (airbag computer, front, side and rear sensors as a set).</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for Wire Harness and Connector</ptxt>
+<step2>
+<ptxt>Except for some parts in the engine room, the wire harnesses are all yellow.</ptxt>
+</step2>
+<step2>
+<ptxt>Special connectors are used, so handle them with sufficient care.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Handling of Vehicles Damaged in a Collision, etc.</ptxt>
+<step2>
+<ptxt>When using an electric welder, remove the airbags and pretensioners before starting work.</ptxt>
+</step2>
+<step2>
+<ptxt>If there is a possibility of impact being applied to the airbag computer assembly, front airbag sensor, side airbag sensor assembly and airbag sensor rear, remove them beforehand.</ptxt>
+</step2>
+<step2>
+<ptxt>Do not expose the airbag computer assembly, front airbag sensor, side airbag sensor assembly and airbag sensor rear to high temperatures.</ptxt>
+</step2>
+<step2>
+<ptxt>Some areas of airbags and pretensioners reach high temperatures of several hundred °C or more when deployed, so check that the surrounding wire harnesses and connectors are not damaged or melted.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Cases Requiring Inspection of Airbags and Pretensioners</ptxt>
+<step2>
+<ptxt>When the vehicle has been damaged in a collision, etc., including cases where the airbags and pretensioners have not deployed</ptxt>
+</step2>
+<step2>
+<ptxt>When a DTC of the SRS airbag system is output</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

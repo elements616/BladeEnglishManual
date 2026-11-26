@@ -1,0 +1,2347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="RM0000032YA01OX" category="C" type-id="3008X" name-id="068ES-02" from="200912">
+<dtccode>P0136/27</dtccode>
+<dtcname>O2 Sensor CircuitB1S2</dtcname>
+<dtccode>P0137/27</dtccode>
+<dtcname>O2 Sensor CircuitB1S2 (Low)</dtcname>
+<dtccode>P0138/27</dtccode>
+<dtcname>O2 Sensor CircuitB1S2 (High)</dtcname>
+<subpara id="RM0000032YA01OX_01" type-id="31" category="03" proc-id="RM0550J___0000HZ800000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>For the circuit description, refer to <xref label="Seep01" href="X387000015Q00MC_15"/>.</ptxt>
+<list1 type="ordered">
+<title>DTC Detection Condition</title>
+<item>
+<ptxt>Active Air-fuel Ratio Control</ptxt>
+<ptxt>While the vehicle is being driven after the engine has warmed up, the engine control computer performs active air-fuel ratio control for approximately 30 seconds or more. At this time, the engine control computer forcibly adjusts the air-fuel ratio to a lean or rich condition. During this time, deterioration of the three-way catalyst and malfunctions of the oxygen sensor are detected.</ptxt>
+</item>
+<item>
+<ptxt>Oxygen sensor voltage malfunction</ptxt>
+<ptxt>During active air-fuel ratio control, the engine control computer forcibly adjusts the air-fuel ratio to a lean or rich condition. If the oxygen sensor malfunctions, the amount of change in its output voltage becomes small.</ptxt>
+<ptxt>If the oxygen sensor outputs voltage only between 0.21 V and 0.59 V during active air-fuel ratio control, the engine control computer judges that the oxygen sensor voltage is abnormal and stores P0136/27. It then illuminates the check engine warning light.</ptxt>
+<figure>
+<graphic graphicname="A115540J08" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</item>
+<item>
+<ptxt>Open or short in oxygen sensor circuit</ptxt>
+<ptxt>During active air-fuel ratio control, the engine control computer forcibly adjusts the air-fuel ratio to a lean or rich condition.</ptxt>
+<ptxt>If the oxygen sensor output voltage is 0.21 V or less (lean) even though the active air-fuel ratio control target is rich, the engine control computer judges that there is a malfunction in the oxygen sensor circuit and stores P0137/27. It then illuminates the check engine warning light.</ptxt>
+<ptxt>If the oxygen sensor output voltage is 0.59 V or more (rich) even though the active air-fuel ratio control target is lean, the engine control computer judges that there is a malfunction in the oxygen sensor circuit and stores P0138/27. It then illuminates the check engine warning light.</ptxt>
+<figure>
+<graphic graphicname="A173067J06" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</item>
+</list1>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.06in"/>
+<colspec colname="COL4" colwidth="3.90in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL4" valign="middle">
+<ptxt>P0136/27</ptxt>
+<ptxt>P0137/27</ptxt>
+<ptxt>P0138/27</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="10" valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Diagnosis Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0136/27</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="nonmark">
+<item>
+<ptxt>Oxygen sensor voltage malfunction</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>When all of the following conditions are met</ptxt>
+</item>
+<list3 type="ordered">
+<item>
+<ptxt>Engine coolant temperature is 75°C or higher</ptxt>
+</item>
+<item>
+<ptxt>Throttle valve is not fully closed</ptxt>
+</item>
+<item>
+<ptxt>Engine speed is less than 4000 r/min</ptxt>
+</item>
+<item>
+<ptxt>Air fuel ratio sensor activated</ptxt>
+</item>
+<item>
+<ptxt>Air-fuel ratio feedback control in progress</ptxt>
+</item>
+<item>
+<ptxt>Fuel cut is not being performed</ptxt>
+</item>
+<item>
+<ptxt>Engine load is 10 to 80%</ptxt>
+</item>
+</list3>
+</list2>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0137/27</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="nonmark">
+<item>
+<ptxt>Oxygen sensor voltage malfunction</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>Same as P0136/27 (oxygen sensor voltage malfunction)</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0138/27</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="nonmark">
+<item>
+<ptxt>Oxygen sensor voltage malfunction</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>Same as P0136/27 (oxygen sensor voltage malfunction)</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle">
+<ptxt>Abnormal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0136/27</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="nonmark">
+<item>
+<ptxt>Oxygen sensor voltage malfunction</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>When either of the following conditions is met</ptxt>
+</item>
+<list3 type="ordered">
+<item>
+<ptxt>When the air-fuel ratio control target value is 14.3 or less (rich target), the oxygen sensor output voltage stays only between 0.21 V and 0.59 V.</ptxt>
+</item>
+<item>
+<ptxt>When the air-fuel ratio control target value is 14.9 or more (lean target), the oxygen sensor output voltage stays only between 0.21 V and 0.59 V.</ptxt>
+</item>
+</list3>
+</list2>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0137/27</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="nonmark">
+<item>
+<ptxt>Oxygen sensor voltage malfunction</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>When the air-fuel ratio control target value is 14.3 or less (rich target), the oxygen sensor output voltage is less than 0.21 V</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0138/27</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="nonmark">
+<item>
+<ptxt>Oxygen sensor voltage malfunction</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>When the air-fuel ratio control target value is 14.9 or more (lean target), the oxygen sensor output voltage is 0.59 V or more</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Malfunction Duration</ptxt>
+</entry>
+<entry namest="COL3" nameend="COL4" valign="middle">
+<ptxt>20 seconds or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Trip Count</ptxt>
+</entry>
+<entry namest="COL3" nameend="COL4" valign="middle">
+<ptxt>2 trip</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Detection Method</ptxt>
+</entry>
+<entry namest="COL3" nameend="COL4" valign="middle">
+<ptxt>Detected 1 time(s) during 1 trip(s). (No detection is performed after determination)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Sensors Used for Detection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Oxygen Sensor</ptxt>
+</item>
+<item>
+<ptxt>Air Fuel Ratio Sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sub</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Crankshaft Position Sensor</ptxt>
+</item>
+<item>
+<ptxt>E.F.I. water temperature sensor</ptxt>
+</item>
+<item>
+<ptxt>Intake Air Flow Meter Sub-assembly</ptxt>
+</item>
+<item>
+<ptxt>Throttle body assembly with motor (throttle position sensor)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Inspection Area</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL4" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Oxygen Sensor</ptxt>
+</item>
+<item>
+<ptxt>Air Fuel Ratio Sensor</ptxt>
+</item>
+<item>
+<ptxt>Exhaust Gas Leaks</ptxt>
+</item>
+<item>
+<ptxt>Fuel Pump</ptxt>
+</item>
+<item>
+<ptxt>Fuel Line</ptxt>
+</item>
+<item>
+<ptxt>Fuel Injector Assembly</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000032YA01OX_02" type-id="32" category="03" proc-id="RM0550J___0000HZ900000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="2">
+<ptxt>For the wiring diagram, refer to <xref label="Seep01" href="RM00000160F01TX_02"/>.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000032YA01OX_03" type-id="33" category="03" proc-id="RM0550J___0000HZA00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<topic>
+<title>Confirmation Driving</title>
+<ptxt>By performing confirmation driving, it is possible to check whether the DTC is reproduced.</ptxt>
+<figure>
+<graphic graphicname="A221866J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</topic>
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<list1 type="ordered">
+<item>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</item>
+<item>
+<ptxt>Turn IG ON.</ptxt>
+</item>
+<item>
+<ptxt>Following the SST (TaSCAN) display screen, clear the DTCs. (see <xref label="Seep01" href="RM000000CCX015X"/>) (A)</ptxt>
+</item>
+<item>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes. (Engine coolant temperature is 75°C or higher) (B)</ptxt>
+</item>
+<item>
+<ptxt>Drive the vehicle at 60 to 100 km/h for 10 minutes or more. (C)</ptxt>
+</item>
+<item>
+<ptxt>Following the SST (TaSCAN) screen display, check the DTC judgment result. (see <xref label="Seep02" href="RM000000CCX015X"/>)</ptxt>
+<atten2>
+<ptxt>When performing this driving test, be sure to obey speed limits and other traffic laws.</ptxt>
+</atten2>
+<atten4>
+<ptxt>If the DTC judgment result is "judging" or "cannot judge", drive the vehicle again at 60 to 100 km/h for 10 minutes or more (D), then check the DTC judgment result. If the result is still "judging" or "cannot judge", drive the vehicle again at 75 to 100 km/h for 10 minutes or more (E), then check the DTC judgment result.</ptxt>
+</atten4>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM0000032YA01OX_04" type-id="51" category="05" proc-id="RM0550J___0000HZB00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>The malfunctioning area can be identified by performing the [Injection Volume] active test. This active test can decrease the fuel injection volume by -12.5% or increase it by +24.8%.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<list1 type="ordered">
+<item>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</item>
+<item>
+<ptxt>Turn IG ON.</ptxt>
+</item>
+<item>
+<ptxt>Turn the main switch of SST (TaSCAN) ON.</ptxt>
+</item>
+<item>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes. (Engine coolant temperature is 75°C or higher)</ptxt>
+</item>
+<item>
+<ptxt>Maintain the engine speed at 2500 r/min for approximately 3 minutes to warm up each sensor.</ptxt>
+</item>
+<item>
+<ptxt>Following the SST (TaSCAN) screen display, select [Active Test] - [Fuel Injection Volume], and select [ECU Data Monitor] - [A/F Sensor Voltage B1S1] and [O2 Sensor Voltage B1S2].</ptxt>
+</item>
+<item>
+<ptxt>With the engine idling, read the output voltages of the air fuel ratio sensor and oxygen sensor when the fuel injection volume is increased and decreased using the Active Test [Fuel Injection Volume].</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt>The output voltages of the air fuel ratio sensor and oxygen sensor change according to the increase and decrease in fuel injection volume.</ptxt>
+</specitem>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.37in"/>
+<colspec colname="COL2" colwidth="2.37in"/>
+<colspec colname="COL3" colwidth="2.34in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel Injection Volume</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air fuel ratio sensor and oxygen sensor output voltage</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>[A/F Sensor Voltage B1S1]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>+24.8% increase</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 3.1 V (rich condition) </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>[A/F Sensor Voltage B1S1]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-12.5% decrease</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3.4 V or more (lean condition) </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>[O2 Sensor Voltage B1S2]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>+24.8% increase</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.55 V or more (rich condition) </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>[O2 Sensor Voltage B1S2]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-12.5% decrease</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.4 V (lean condition) </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The output voltage of the air fuel ratio sensor has a delay of a few seconds, and the output voltage of the oxygen sensor has a maximum delay of approximately 20 seconds.</ptxt>
+</item>
+<item>
+<ptxt>The sensors will cool down, so measure the voltage immediately after warming up the sensors.</ptxt>
+</item>
+</list1>
+</atten3>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" align="center" colwidth="0.50in"/>
+<colspec colname="COLSPEC0" colwidth="2.83in"/>
+<colspec colname="COLSPEC1" colwidth="2.83in"/>
+<colspec colname="COL4" align="center" colwidth="0.92in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Case</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Air fuel ratio sensor output voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Oxygen sensor output voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt> 1</ptxt>
+</entry>
+<entry align="center">
+<graphic graphicname="A168046J17" width="2.952755905511811in" height="1.968503937007874in"/>
+</entry>
+<entry align="center">
+<graphic graphicname="A222783J03" width="2.952755905511811in" height="1.968503937007874in"/>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt> 2</ptxt>
+</entry>
+<entry align="center">
+<graphic graphicname="A168047J09" width="2.952755905511811in" height="1.968503937007874in"/>
+</entry>
+<entry align="center">
+<graphic graphicname="A222783J03" width="2.952755905511811in" height="1.968503937007874in"/>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Air Fuel Ratio Sensor</ptxt>
+</item>
+<item>
+<ptxt>Air fuel ratio sensor heater</ptxt>
+</item>
+<item>
+<ptxt>Air fuel ratio sensor circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt> 3</ptxt>
+</entry>
+<entry align="center">
+<graphic graphicname="A168046J17" width="2.952755905511811in" height="1.968503937007874in"/>
+</entry>
+<entry align="center">
+<graphic graphicname="A168047J09" width="2.952755905511811in" height="1.968503937007874in"/>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Oxygen Sensor</ptxt>
+</item>
+<item>
+<ptxt>Oxygen sensor heater</ptxt>
+</item>
+<item>
+<ptxt>Oxygen sensor circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt> 4</ptxt>
+</entry>
+<entry align="center">
+<graphic graphicname="A168047J09" width="2.952755905511811in" height="1.968503937007874in"/>
+</entry>
+<entry align="center">
+<graphic graphicname="A168047J09" width="2.952755905511811in" height="1.968503937007874in"/>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Fuel Pressure</ptxt>
+</item>
+<item>
+<ptxt>Exhaust gas leak (air-fuel ratio extremely lean or rich)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+</list1>
+<atten3>
+<ptxt>Inspect the fuses for circuits related to this system before performing the following troubleshooting.</ptxt>
+</atten3>
+<atten4>
+<ptxt>Using SST (TaSCAN), read the Freeze Frame Data. The Freeze Frame Data records part of the engine operating condition when the malfunction occurred, and this information is useful when troubleshooting.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000032YA01OX_06" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000032YA01OX_06_0001" proc-id="RM0550J___0000HZC00000">
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs by following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Code P0138/27 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Code P0137/27 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Code P0136/27 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0002" fin="false">A</down>
+<right ref="RM0000032YA01OX_06_0011" fin="false">B</right>
+<right ref="RM0000032YA01OX_06_0006" fin="false">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0002" proc-id="RM0550J___0000HZD00000">
+<testtitle>Read TaSCAN Data (O2 Sensor Voltage B1S2)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, select [ECU Data Monitor] - [O2 Sensor Voltage B1S2].</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes. (Engine coolant temperature is 75°C or higher)</ptxt>
+</test1>
+<test1>
+<ptxt>Maintain 2500 r/min for approximately 3 minutes to warm up the oxygen sensor.</ptxt>
+</test1>
+<test1>
+<ptxt>Allow the engine to idle.</ptxt>
+</test1>
+<test1>
+<ptxt>Read [ECU Data Monitor] - [O2 Sensor Voltage B1S2] at idle.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>O2 Sensor VoltageB1S2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.0 V or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Below 1.0 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>The sensors will cool down, so measure the voltage immediately after warming up the sensors.</ptxt>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0032" fin="false">A</down>
+<right ref="RM0000032YA01OX_06_0005" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0032" proc-id="RM0550J___0000HZT00000">
+<testtitle>Inspect Oxygen Sensor</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the oxygen sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A162177J03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>Oxygen Sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2(+B) - 3(OX1B)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2(+B) - 4(E2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<table>
+<title>Text in Illustrations</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="0.41in"/>
+<colspec colname="COL2" colwidth="3.72in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*1</ptxt>
+</entry>
+<entry>
+<ptxt>FF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*2</ptxt>
+</entry>
+<entry>
+<ptxt>4WD</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*a</ptxt>
+</entry>
+<entry>
+<ptxt>Connector Disconnected</ptxt>
+<ptxt>(Oxygen Sensor)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0004" fin="false">OK</down>
+<right ref="RM0000032YA01OX_06_0033" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0004" proc-id="RM0550J___0000HZE00000">
+<testtitle>Inspect Wire Harness and Connector (Oxygen Sensor - Engine Control Computer)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D705AX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals. (see <xref label="Seep02" href="X39400000QV016D"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance (Check for Short)</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<colspec colname="COL3" colwidth="0.82in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>Engine control computer vehicle side connector</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A47(HT1B) - A64(OX1B)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0023" fin="true">OK</down>
+<right ref="RM0000032YA01OX_06_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0005" proc-id="RM0550J___0000HZF00000">
+<testtitle>Perform TaSCAN Active Test (Fuel Injection Volume)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the main switch of SST (TaSCAN) ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes. (Engine coolant temperature is 75°C or higher)</ptxt>
+</test1>
+<test1>
+<ptxt>Maintain 2500 r/min for approximately 3 minutes to warm up the air fuel ratio sensor and oxygen sensor.</ptxt>
+</test1>
+<test1>
+<ptxt>Allow the engine to idle.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, select [Active Test] - [Injection Volume].</ptxt>
+</test1>
+<test1>
+<ptxt>Read [ECU Data Monitor] - [A/F Sensor Voltage B1S1] and [O2 Sensor Voltage B1S2] when the fuel injection volume is increased and decreased.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.37in"/>
+<colspec colname="COL2" colwidth="2.37in"/>
+<colspec colname="COL3" colwidth="2.34in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel Injection Volume</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air fuel ratio sensor and oxygen sensor output voltage</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>[A/F Sensor Voltage B1S1]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>+24.8% increase</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 3.1 V (rich condition) </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>[A/F Sensor Voltage B1S1]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-12.5% decrease</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3.4 V or more (lean condition) </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>[O2 Sensor Voltage B1S2]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>+24.8% increase</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.55 V or more (rich condition) </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>[O2 Sensor Voltage B1S2]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-12.5% decrease</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.4 V (lean condition) </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The output voltage of the air fuel ratio sensor has a delay of a few seconds, and the output voltage of the oxygen sensor has a maximum delay of approximately 20 seconds.</ptxt>
+</item>
+<item>
+<ptxt>The sensors will cool down, so measure the voltage immediately after warming up the sensors.</ptxt>
+</item>
+</list1>
+</atten3>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.97in"/>
+<colspec colname="COL2" colwidth="2.97in"/>
+<colspec colname="COL3" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Air fuel ratio sensor output voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Oxygen sensor output voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<graphic graphicname="A168046J17" width="2.952755905511811in" height="1.968503937007874in"/>
+</entry>
+<entry align="center">
+<graphic graphicname="A168047J09" width="2.952755905511811in" height="1.968503937007874in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<graphic graphicname="A168047J09" width="2.952755905511811in" height="1.968503937007874in"/>
+</entry>
+<entry align="center">
+<graphic graphicname="A222783J03" width="2.952755905511811in" height="1.968503937007874in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<right ref="RM0000032YA01OX_06_0015" fin="false">A</right>
+<right ref="RM0000032YA01OX_06_0018" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0006" proc-id="RM0550J___0000HZG00000">
+<testtitle>Perform TaSCAN Active Test (Fuel Injection Volume)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes. (Engine coolant temperature is 75°C or higher)</ptxt>
+</test1>
+<test1>
+<ptxt>Maintain 2500 r/min for approximately 3 minutes to warm up the oxygen sensor.</ptxt>
+</test1>
+<test1>
+<ptxt>Allow the engine to idle.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, select [Active Test] - [Injection Volume].</ptxt>
+</test1>
+<test1>
+<ptxt>Read [ECU Data Monitor] - [O2 Sensor Voltage B1S2] when the fuel injection volume is increased and decreased.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Measure the voltage immediately after warming up the sensor, as the oxygen sensor will cool down.</ptxt>
+</item>
+<item>
+<ptxt>The output voltage of the oxygen sensor has a maximum delay of approximately 20 seconds.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Change the fuel injection volume from -12.5% to +24.8%.</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt>Voltages of less than 0.4 V and 0.55 V or more are output alternately.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0007" fin="false">OK</down>
+<right ref="RM0000032YA01OX_06_0052" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0007" proc-id="RM0550J___0000HZH00000">
+<testtitle>Perform TaSCAN Active Test (Fuel Injection Volume)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes. (Engine coolant temperature is 75°C or higher)</ptxt>
+</test1>
+<test1>
+<ptxt>Maintain 2500 r/min for approximately 3 minutes to warm up the air fuel ratio sensor.</ptxt>
+</test1>
+<test1>
+<ptxt>Allow the engine to idle.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, select [Active Test] - [Injection Volume].</ptxt>
+</test1>
+<test1>
+<ptxt>Read [ECU Data Monitor] - [A/F Sensor Voltage B1S1] when the fuel injection volume is increased and decreased.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Measure the voltage immediately after warming up the sensor, as the air fuel ratio sensor will cool down.</ptxt>
+</item>
+<item>
+<ptxt>The output voltage of the air fuel ratio sensor has a delay of a few seconds.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Change the fuel injection volume from -12.5 % to +24.8 %.</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/F Sensor Voltage B1S1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output voltage fluctuates around 3.3 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/F Sensor Voltage B1S1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output voltage is always 3.3 V or more</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NG</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/F Sensor Voltage B1S1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output voltage is always less than 3.3 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NG</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0008" fin="false">OK</down>
+<right ref="RM0000032YA01OX_06_0018" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0008" proc-id="RM0550J___0000HZI00000">
+<testtitle>Exhaust Gas Leak Inspection</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that there are no exhaust leaks from the exhaust pipe joints and sensor installation areas.</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt>No exhaust leaks</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0030" fin="false">OK</down>
+<right ref="RM0000032YA01OX_06_0024" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0030" proc-id="RM0550J___0000HZR00000">
+<testtitle>Fuel Pressure Inspection</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the procedure, refer to <xref label="Seep01" href="RM000002ABD003X"/>.</ptxt>
+</atten4>
+<table>
+<title>Result</title>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0031" fin="false">A</down>
+<right ref="RM0000032YA01OX_06_0038" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0031" proc-id="RM0550J___0000HZS00000">
+<testtitle>Inspect Fuel Injector Assembly</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the procedure, refer to <xref label="Seep01" href="RM000002ABF003X"/>.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0051" fin="false">OK</down>
+<right ref="RM0000032YA01OX_06_0026" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0051" proc-id="RM0550J___0000I0100000">
+<testtitle>Replace Engine Control Computer</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the procedure, refer to <xref label="Seep01" href="RM0000020V0005X"/>.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0052" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0052" proc-id="RM0550J___0000I0200000">
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, clear the DTCs. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0053" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0053" proc-id="RM0550J___0000I0300000">
+<testtitle>Perform Operation Check Drive</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes. (Engine coolant temperature 75°C or higher) (A)</ptxt>
+<figure>
+<graphic graphicname="A221866J02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at 60 to 100 km/h for 10 minutes or more. (B) </ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, select main menu [Diagnosis] - diagnosis menu [Powertrain] - [TCCS] - system diagnosis menu [DTC Judgment Result Check] - [Check by DTC].</ptxt>
+</test1>
+<test1>
+<ptxt>On the next screen, enter the DTC to be checked.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the DTC judgment result is normal.</ptxt>
+<atten4>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="0.62in"/>
+<colspec colname="COL2" colwidth="3.51in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment completed</ptxt>
+</item>
+<item>
+<ptxt>System Normal</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment completed</ptxt>
+</item>
+<item>
+<ptxt>System Malfunction</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Judging</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment not completed</ptxt>
+</item>
+<item>
+<ptxt>After checking the detection conditions, perform a road test</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Judgment not possible</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment cannot be performed</ptxt>
+</item>
+<item>
+<ptxt>The number of DTCs whose preconditions are not met has reached the upper limit that can be stored in the engine control computer</ptxt>
+</item>
+<item>
+<ptxt>After checking the detection conditions, perform a road test</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+<atten2>
+<ptxt>When performing this driving test, be sure to obey speed limits and other traffic laws.</ptxt>
+</atten2>
+<atten4>
+<ptxt>If the DTC judgment result is pending or incomplete, drive the vehicle again at 60 to 100 km/h for 10 minutes or more (C), then check the DTC judgment result. If it is still pending or incomplete, drive the vehicle again at 75 to 100 km/h for 10 minutes or more (D), then check the DTC judgment result.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0029" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0011" proc-id="RM0550J___0000HZJ00000">
+<testtitle>Exhaust Gas Leak Inspection</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that there are no exhaust leaks from the exhaust pipe joints and sensor installation areas.</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt>No exhaust leaks</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0035" fin="false">OK</down>
+<right ref="RM0000032YA01OX_06_0024" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0035" proc-id="RM0550J___0000HZU00000">
+<testtitle>Inspect Oxygen Sensor</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the oxygen sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A162177J03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>Oxygen Sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1(HT1B) - 2(+B)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 16 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1(HT1B) - 4(E2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<table>
+<title>Text in Illustrations</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="0.41in"/>
+<colspec colname="COL2" colwidth="3.72in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*1</ptxt>
+</entry>
+<entry>
+<ptxt>FF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*2</ptxt>
+</entry>
+<entry>
+<ptxt>4WD</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*a</ptxt>
+</entry>
+<entry>
+<ptxt>Connector Disconnected</ptxt>
+<ptxt>(Oxygen Sensor)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0014" fin="false">OK</down>
+<right ref="RM0000032YA01OX_06_0028" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0014" proc-id="RM0550J___0000HZK00000">
+<testtitle>Inspect Wire Harness and Connector (Engine Control Computer - Oxygen Sensor)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D705AX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect the oxygen sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals. (see <xref label="Seep02" href="X39400000QV016D"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance (Check for Open)</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.56in"/>
+<colspec colname="COL2" colwidth="0.74in"/>
+<colspec colname="COL3" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>Oxygen sensor vehicle side connector - Engine control computer vehicle side connector</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1(HT1B) - A47(HT1B)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3(OX1B) - A64(OX1B)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4(E2) - A87(EX1B)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance (Check for Short)</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.56in"/>
+<colspec colname="COL2" colwidth="0.74in"/>
+<colspec colname="COL3" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>Oxygen sensor vehicle side connector and engine control computer vehicle side connector - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 (HT1B) and A47 (HT1B) - other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 (OX1B) and A64 (OX1B) - other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4 (E2) and A87 (EX1B) - other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0015" fin="false">OK</down>
+<right ref="RM0000032YA01OX_06_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0015" proc-id="RM0550J___0000HZL00000">
+<testtitle>Replace Oxygen Sensor</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the oxygen sensor. (For the replacement procedure, refer to <xref label="Seep01" href="RM0000020VZ00AX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0016" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0016" proc-id="RM0550J___0000HZM00000">
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, clear the DTCs. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0017" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0017" proc-id="RM0550J___0000HZN00000">
+<testtitle>Perform Operation Check Drive</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes. (Engine coolant temperature 75°C or higher) (A)</ptxt>
+<figure>
+<graphic graphicname="A221866J02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at 60 to 100 km/h for 10 minutes or more. (B) </ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, select main menu [Diagnosis] - diagnosis menu [Powertrain] - [TCCS] - system diagnosis menu [DTC Judgment Result Check] - [Check by DTC].</ptxt>
+</test1>
+<test1>
+<ptxt>On the next screen, enter the DTC to be checked.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the DTC judgment result is normal.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="0.62in"/>
+<colspec colname="COL2" colwidth="3.51in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment completed</ptxt>
+</item>
+<item>
+<ptxt>System Normal</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment completed</ptxt>
+</item>
+<item>
+<ptxt>System Malfunction</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Judging</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment not completed</ptxt>
+</item>
+<item>
+<ptxt>After checking the detection conditions, perform a road test</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Judgment not possible</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment cannot be performed</ptxt>
+</item>
+<item>
+<ptxt>The number of DTCs whose preconditions are not met has reached the upper limit that can be stored in the engine control computer</ptxt>
+</item>
+<item>
+<ptxt>After checking the detection conditions, perform a road test</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+<atten2>
+<ptxt>When performing this driving test, be sure to obey speed limits and other traffic laws.</ptxt>
+</atten2>
+<atten4>
+<ptxt>If the DTC judgment result is pending or incomplete, drive the vehicle again at 60 to 100 km/h for 10 minutes or more (C), then check the DTC judgment result. If it is still pending or incomplete, drive the vehicle again at 75 to 100 km/h for 10 minutes or more (D), then check the DTC judgment result.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0047" fin="false">A</down>
+<right ref="RM0000032YA01OX_06_0060" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0047" proc-id="RM0550J___0000HZY00000">
+<testtitle>Replace Air Fuel Ratio Sensor</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the air fuel ratio sensor. (see <xref label="Seep01" href="RM0000020W300AX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0050" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0050" proc-id="RM0550J___0000I0000000">
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, clear the DTCs. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0048" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0048" proc-id="RM0550J___0000HZZ00000">
+<testtitle>Perform Operation Check Drive</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes. (Engine coolant temperature 75°C or higher) (A)</ptxt>
+<figure>
+<graphic graphicname="A221866J02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at 60 to 100 km/h for 10 minutes or more. (B) </ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, select main menu [Diagnosis] - diagnosis menu [Powertrain] - [TCCS] - system diagnosis menu [DTC Judgment Result Check] - [Check by DTC].</ptxt>
+</test1>
+<test1>
+<ptxt>On the next screen, enter the DTC to be checked.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the DTC judgment result is normal.</ptxt>
+<atten4>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="0.62in"/>
+<colspec colname="COL2" colwidth="3.51in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment completed</ptxt>
+</item>
+<item>
+<ptxt>System Normal</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment completed</ptxt>
+</item>
+<item>
+<ptxt>System Malfunction</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Judging</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment not completed</ptxt>
+</item>
+<item>
+<ptxt>After checking the detection conditions, perform a road test</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Judgment not possible</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment cannot be performed</ptxt>
+</item>
+<item>
+<ptxt>The number of DTCs whose preconditions are not met has reached the upper limit that can be stored in the engine control computer</ptxt>
+</item>
+<item>
+<ptxt>After checking the detection conditions, perform a road test</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+<atten2>
+<ptxt>When performing this driving test, be sure to obey speed limits and other traffic laws.</ptxt>
+</atten2>
+<atten4>
+<ptxt>If the DTC judgment result is pending or incomplete, drive the vehicle again at 60 to 100 km/h for 10 minutes or more (C), then check the DTC judgment result. If it is still pending or incomplete, drive the vehicle again at 75 to 100 km/h for 10 minutes or more (D), then check the DTC judgment result.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0029" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0018" proc-id="RM0550J___0000HZO00000">
+<testtitle>Replace Air Fuel Ratio Sensor</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the air fuel ratio sensor. (see <xref label="Seep01" href="RM0000020W300AX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0019" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0019" proc-id="RM0550J___0000HZP00000">
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, clear the DTCs. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0020" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0020" proc-id="RM0550J___0000HZQ00000">
+<testtitle>Perform Operation Check Drive</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes. (Engine coolant temperature 75°C or higher) (A)</ptxt>
+<figure>
+<graphic graphicname="A221866J02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at 60 to 100 km/h for 10 minutes or more. (B) </ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, select main menu [Diagnosis] - diagnosis menu [Powertrain] - [TCCS] - system diagnosis menu [DTC Judgment Result Check] - [Check by DTC].</ptxt>
+</test1>
+<test1>
+<ptxt>On the next screen, enter the DTC to be checked.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the DTC judgment result is normal.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="0.62in"/>
+<colspec colname="COL2" colwidth="3.51in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment completed</ptxt>
+</item>
+<item>
+<ptxt>System Normal</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment completed</ptxt>
+</item>
+<item>
+<ptxt>System Malfunction</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Judging</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment not completed</ptxt>
+</item>
+<item>
+<ptxt>After checking the detection conditions, perform a road test</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Judgment not possible</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>DTC judgment cannot be performed</ptxt>
+</item>
+<item>
+<ptxt>The number of DTCs whose preconditions are not met has reached the upper limit that can be stored in the engine control computer</ptxt>
+</item>
+<item>
+<ptxt>After checking the detection conditions, perform a road test</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+<atten2>
+<ptxt>When performing this driving test, be sure to obey speed limits and other traffic laws.</ptxt>
+</atten2>
+<atten4>
+<ptxt>If the DTC judgment result is pending or incomplete, drive the vehicle again at 60 to 100 km/h for 10 minutes or more (C), then check the DTC judgment result. If it is still pending or incomplete, drive the vehicle again at 75 to 100 km/h for 10 minutes or more (D), then check the DTC judgment result.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0033" fin="true">A</down>
+<right ref="RM0000032YA01OX_06_0060" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0038" proc-id="RM0550J___0000HZV00000">
+<testtitle>Inspect Fuel Pump</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the fuel pump inspection procedure, refer to <xref label="Seep01" href="RM000002ABJ003X"/>.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000032YA01OX_06_0025" fin="true">OK</down>
+<right ref="RM0000032YA01OX_06_0039" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0033">
+<testtitle>Replace Oxygen Sensor<xref label="Seep01" href="RM0000020VZ00AX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0022">
+<testtitle>Repair or Replace Wire Harness or Connector (Oxygen Sensor - Engine Control Computer)</testtitle>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0023">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0024">
+<testtitle>Repair exhaust gas leak</testtitle>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0026">
+<testtitle>Replace fuel injector assembly<xref label="Seep01" href="RM000002ABH003X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0029">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0028">
+<testtitle>Replace Oxygen Sensor<xref label="Seep01" href="RM0000020VZ00AX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0060">
+<testtitle>Complete</testtitle>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0039">
+<testtitle>Replace Fuel Pump<xref label="Seep01" href="RM000002ABL003X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000032YA01OX_06_0025">
+<testtitle>Repair or replace fuel line</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744EC_T004Y" variety="T004Y">
+<name>E.F.I. Water Temperature Sensor (2AZ-FE)</name>
+<para id="RM0000020V2009X" category="G" type-id="3001K" name-id="065BJ-00" from="200612">
+<name>Component Inspection</name>
+<subpara id="RM0000020V2009X_01" type-id="01" category="01">
+<s-1 id="RM0000020V2009X_01_0001" proc-id="RM0550J___00002XI00000">
+<ptxt>Inspect E.F.I. Water Temperature Sensor</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Resistance Inspection</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="A050330J03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approx. 20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2.30 to 2.60kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Approx. 80°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.310 to 0.326kΩ</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>When inspecting the sensor by immersing it in water, be careful not to allow water to enter the terminals. After the inspection, wipe off any water droplets on the sensor.</ptxt>
+</atten3>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

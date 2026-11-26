@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="04">
+<name>Driveline/Axle</name>
+<section id="1000K_S0015" variety="S0015">
+<name>Differential</name>
+<ttl id="1000K_S0015_744ZW_T00A7" variety="T00A7">
+<name>Active Torque Control 4WD System</name>
+<para id="RM000000MJ9007X" category="D" type-id="303F4" name-id="370CQ-00" from="200612">
+<name>DTC Check/Clear</name>
+<subpara id="RM000000MJ9007X_z0" proc-id="RM0550J___00005IY00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DTC Check (Reading Using TaSCAN)</ptxt>
+<step2>
+<ptxt>Using SST (TaSCAN), display the [Diagnosis Menu/4WD] screen and select [DTC Freeze Data].</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Check the diagnostic trouble codes.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Clear DTC (Clear Using TaSCAN)</ptxt>
+<step2>
+<ptxt>Using SST (TaSCAN), display the [Diagnosis Menu/4WD] screen and select [DTC].</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Select [Clear] on the screen to clear the data.</ptxt>
+<atten3>
+<ptxt>DTCs and freeze frame data are cleared at the same time.</ptxt>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>Check DTC (Read Using 4WD Warning Light)</ptxt>
+<step2>
+<ptxt>Turn the ignition switch OFF, and using SST (diagnosis check wire No.2), connect terminals 13 (TC) ←→ 4 (CG) of DLC3.</ptxt>
+<figure>
+<graphic graphicname="C146309J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<atten3>
+<ptxt>Never connect the wrong terminals as this will cause a malfunction.</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch ON, and read the DTCs from the number of blinks of the 4WD warning light.</ptxt>
+<figure>
+<graphic graphicname="C146310J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If normal, the light repeatedly comes on for 0.25 seconds and goes off for 0.25 seconds.</ptxt>
+</item>
+<item>
+<ptxt>If there is 1 DTC, the same code is output repeatedly at 4-second intervals; if multiple codes are output, the different codes are output at 2.5-second intervals. After one cycle is complete, the codes are output again after a 4-second interval.</ptxt>
+</item>
+<item>
+<ptxt>If multiple code numbers are output, they are displayed in ascending numerical order.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Turn IG OFF.</ptxt>
+</step2>
+<step2>
+<ptxt>Disconnect terminals 13 (TC) ←→ 4 (CG) of the DLC3.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Clear DTC (Clear Using Brake Pedal)</ptxt>
+<step2>
+<ptxt>Turn the ignition switch OFF, and using SST (diagnosis check wire No.2), connect terminals 13 (TC) ←→ 4 (CG) of DLC3.</ptxt>
+<figure>
+<graphic graphicname="C146309J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<atten3>
+<ptxt>Never connect the wrong terminals as this will cause a malfunction.</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch ON and depress the brake pedal 8 times or more within 5 seconds. (Turn the stop light switch OFF-ON 8 times or more.)</ptxt>
+</step2>
+<step2>
+<ptxt>Check that the normal code is output.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the DTCs cannot be cleared, repeat the above operation.</ptxt>
+</item>
+<item>
+<ptxt>If the malfunction persists, the DTCs may not be cleared.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Turn IG OFF.</ptxt>
+</step2>
+<step2>
+<ptxt>Disconnect terminals 13 (TC) ←→ 4 (CG) of DLC3.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

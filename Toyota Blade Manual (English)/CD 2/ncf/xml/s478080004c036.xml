@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740047e SYSTEM "grph_ent/a4740047e.png" NDATA png>
+
+<!ENTITY T080004C036 SYSTEM "t478080004c036.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T080004C036S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T080004C036" UPDATE = "ORIGINAL" LDUP = "26Aug2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Room Temperature Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Using the airflow in the air conditioning unit, cabin air is passed through the sensor, and the built-in thermistor detects the cabin temperature and outputs it to the air conditioning computer.</PTXT></ITEM>
+<ITEM><PTXT>It is mounted in the instrument finish lower panel on the left side of the steering column.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740047e" WIDTH = "6.903in" HEIGHT = "3.153in" />
+</FIGURE>
+</PARA>
+</SECTION>

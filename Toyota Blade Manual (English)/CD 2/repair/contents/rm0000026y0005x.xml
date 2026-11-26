@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_74WIJ_T00FO" variety="T00FO">
+<name>EFI System (2GR-FE)</name>
+<para id="RM0000026Y0005X" category="C" type-id="8021N" name-id="066O7-00" from="200708">
+<dtccode>P0660/96</dtccode>
+<dtcname>Variable Intake VSV (ACIS)</dtcname>
+<subpara id="RM0000026Y0005X_01" type-id="31" category="03" proc-id="RM0550J___0000D9O00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>This circuit commands the IACV (intake air control valve) to open and close so that intake efficiency increases according to engine load. When the engine speed is 0 to 4450r/min and the throttle valve opening angle is 60° or more, current flows and the IACV closes. In other conditions, the engine control computer does not energize it, so the IACV is open.</ptxt>
+<figure>
+<graphic graphicname="A177155J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.39in"/>
+<colspec colname="COL2" colwidth="3.03in"/>
+<colspec colname="COL3" colwidth="2.66in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTCNo. </ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+<item>
+<ptxt>Malfunction Duration</ptxt>
+</item>
+<item>
+<ptxt>Others</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0660/96</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Engine running</ptxt>
+</item>
+<item>
+<ptxt>Open or short in ACIS circuit</ptxt>
+</item>
+<item>
+<ptxt>0.5 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Intake Air Surge Tank Assembly</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000026Y0005X_02" type-id="32" category="03" proc-id="RM0550J___0000D9P00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A177154J02" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000026Y0005X_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM0000026Y0005X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000026Y0005X_04_0001" proc-id="RM0550J___0000D9Q00000">
+<scantool type="8"/>
+<testtitle>Perform TaSCAN Active Test (Intake Control VSV)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>With the engine stopped, turn the IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, select [Active Test] - [Intake Control VSV].</ptxt>
+</test1>
+<test1>
+<ptxt>Operate the IACV (intake air control valve) and check whether an operating sound can be heard.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Operating sound can be heard</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026Y0005X_04_0005" fin="true">OK</down>
+<right ref="RM0000026Y0005X_04_0002" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026Y0005X_04_0002" proc-id="RM0550J___0000D9R00000">
+<testtitle>Inspect Intake Air Surge Tank Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the intake air surge tank assembly connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Apply battery voltage between the terminals of the intake air surge tank assembly.</ptxt>
+<figure>
+<graphic graphicname="A093008J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Check that a "click" sound is heard inside the intake air surge tank assembly.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>A "click" sound is heard inside the intake air surge tank assembly</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026Y0005X_04_0003" fin="false">OK</down>
+<right ref="RM0000026Y0005X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026Y0005X_04_0003" proc-id="RM0550J___0000D9S00000">
+<testtitle>Inspect Wire Harness and Connector (Power Source Voltage)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/></ptxt>
+</atten4>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals.</ptxt>
+<figure>
+<graphic graphicname="A095664J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.03in"/>
+<colspec colname="COL2" colwidth="1.11in"/>
+<colspec colname="COL3" colwidth="0.99in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2 (+B) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026Y0005X_04_0004" fin="false">OK</down>
+<right ref="RM0000026Y0005X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026Y0005X_04_0004" proc-id="RM0550J___0000D9T00000">
+<testtitle>Inspect Wire Harness and Connector (Intake Air Surge Tank Assembly - Engine Control Computer)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+</test1>
+<figure>
+<graphic graphicname="A136322J02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals. (see <xref label="Seep02" href="X39400000QV01SD"/> for Terminals of ECU)</ptxt>
+</test1>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.11in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="0.99in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A107 (ACIS) - Terminal 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.11in"/>
+<colspec colname="COL2" colwidth="1.00in"/>
+<colspec colname="COL3" colwidth="1.02in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A107 (ACIS) and terminal 1 - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000026Y0005X_04_0008" fin="true">OK</down>
+<right ref="RM0000026Y0005X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026Y0005X_04_0005">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000CD101YX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000026Y0005X_04_0006">
+<testtitle>Replace Intake Air Surge Tank Assembly</testtitle>
+</testgrp>
+<testgrp id="RM0000026Y0005X_04_0007">
+<testtitle>Inspect Power Supply Circuit</testtitle>
+</testgrp>
+<testgrp id="RM0000026Y0005X_04_0008">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADB004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000026Y0005X_04_0009">
+<testtitle>Repair or Replace Wire Harness and Connector</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

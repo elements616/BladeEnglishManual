@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="1000E_S000Q" variety="S000Q">
+<name>Ignition</name>
+<ttl id="1000E_S000Q_744GU_T007F" variety="T007F">
+<name>Ignition System (2AZ-FE)</name>
+<para id="RM000002971007X" category="N" type-id="8009I" name-id="142F3-00" from="200612">
+<name>Function Inspection</name>
+<subpara id="RM000002971007X_01" type-id="01" category="01">
+<s-1 id="RM000002971007X_01_0001" proc-id="RM0550J___00003Y800000">
+<ptxt>Inspect Ignition Coil Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Input Voltage Inspection</ptxt>
+<figure>
+<graphic graphicname="A160140J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Disconnect the ignition coil assembly connector.</ptxt>
+</s3>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals of the vehicle side connector of the ignition coil assembly.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1(+B) - 4(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+<s3>
+<ptxt>Turn IG OFF.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000002971007X_01_0002" proc-id="RM0550J___00003Y900000">
+<ptxt>Inspect Ignition Coil and Spark</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check Diagnostic Trouble Code (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+<atten3>
+<ptxt>If a DTC is output, perform troubleshooting for the corresponding DTC.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>Inspect Spark</ptxt>
+<s3>
+<ptxt>Disconnect the 4 ignition coil assembly connectors.</ptxt>
+</s3>
+<s3>
+<ptxt>Remove the 4 bolts and the 4 ignition coil assemblies.</ptxt>
+<figure>
+<graphic graphicname="A165660" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Remove the 4 spark plugs.</ptxt>
+<figure>
+<graphic graphicname="A165950" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Disconnect the 4 injector connectors.</ptxt>
+<figure>
+<graphic graphicname="A165951" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Install the spark plug to the ignition coil assembly and connect the connector.</ptxt>
+</s3>
+<s3>
+<ptxt>Ground the spark plug.</ptxt>
+<figure>
+<graphic graphicname="A165952" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Check that a spark occurs when the engine is cranked.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When inspecting, be sure to ground the hexagon or threaded portion of the spark plug.</ptxt>
+</item>
+<item>
+<ptxt>If the ignition coil has been subjected to an impact such as being dropped, replace it with a new one.</ptxt>
+</item>
+<item>
+<ptxt>Do not crank the engine for 2 seconds or more.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+<s3>
+<ptxt>Connect the 4 injector connectors.</ptxt>
+<figure>
+<graphic graphicname="A165951" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Install the 4 spark plugs.</ptxt>
+<figure>
+<graphic graphicname="A165950" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<torque>
+<torqueitem>
+<t-value1>19</t-value1>
+<t-value2>195</t-value2>
+</torqueitem>
+</torque>
+</s3>
+<s3>
+<ptxt>Install the 4 ignition coil assemblies with the 4 bolts.</ptxt>
+<figure>
+<graphic graphicname="A165660" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<torque>
+<torqueitem>
+<t-value1>9.0</t-value1>
+<t-value2>92</t-value2>
+</torqueitem>
+</torque>
+</s3>
+<s3>
+<ptxt>Connect the 4 ignition coil assembly connectors.</ptxt>
+<atten3>
+<ptxt>After completing the work, be sure to clear the stored DTCs once and then check that the normal code is output.</ptxt>
+</atten3>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000002971007X_01_0003" proc-id="RM0550J___000036S00000">
+<ptxt>Inspect Spark Plug</ptxt>
+<content1 releasenbr="1">
+<spec>
+<title>Spark Plug Type</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Manufacturer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Type</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DENSO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SK20R11</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NGK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IFR6A11</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<figure>
+<graphic graphicname="A100633" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s2>
+<ptxt>Visual Inspection</ptxt>
+<s3>
+<ptxt>Inspect the spark plug for damaged threads and damaged insulator.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Do not damage the iridium or platinum tips.</ptxt>
+</item>
+<item>
+<ptxt>If it is significantly dirty due to carbon fouling or similar, replace it with a new spark plug.</ptxt>
+</item>
+<item>
+<ptxt>When replacing with a new spark plug, do not remove the cap covering the tip for protection until it is installed to the engine.</ptxt>
+</item>
+<item>
+<ptxt>If a spark plug is dropped, replace it with a new one.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+</s2>
+<s2>
+<ptxt>Spark Plug Gap</ptxt>
+<spec>
+<title>Limit</title>
+<specitem>
+<ptxt>1.4mm</ptxt>
+</specitem>
+</spec>
+<ptxt>If the gap exceeds the limit, replace it with a new spark plug.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>1.0 to 1.1mm (new)</ptxt>
+</specitem>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Because iridium is used, do not adjust the gap.</ptxt>
+</item>
+<item>
+<ptxt>Do not damage the iridium.</ptxt>
+</item>
+</list1>
+</atten3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T100001A500A746" UPDATE = "ORIGINAL" LDUP = "24Dec2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Door Lock Operation</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740050b" WIDTH = "6.903in" HEIGHT = "3.125in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "7%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "56%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>№</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Exit the vehicle carrying the electronic key, and with the power OFF (ACC and IG OFF) and all doors closed, press the lock switch of the front door/back door. <HINTREF     REFID = "H334100001A500A74601"/> → The certification ECU recognizes that the lock switch of the corresponding door is ON.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sends request signals to each antenna.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Outside antenna/luggage room outside antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>Transmits the request signal.</PTXT>
+<PTXT></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Indoor antenna (front/rear)/luggage room inside antenna</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Electronic Key</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>When it receives the request signal, it returns the ID code including the response code.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Door Control Receiver</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives the ID code from the electronic key and sends it to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Identifies and verifies the ID code, and if outside verification is OK, inside verification is NG and all doors are closed, sends the door lock control signal to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Performs door lock (door lock position switch OFF)/back door lock.<HINTREF     REFID = "H334100001A500A74602"/></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H334100001A500A74601">If the door lock switch is pressed with the electronic key left in the cabin, the warning function operates as "electronic key left behind" (the wireless answer-back buzzer sounds for 2 seconds). In addition, even if the electronic key is outside the cabin, the "electronic key left behind" warning function may operate if the door lock switch is pressed with the key held close to the door. Even if outside verification is OK and inside verification is NG, if any courtesy light switch is ON, the door is determined to be ajar and the warning function operates.</PTXT></ITEM>
+<ITEM><PTXT ID = "H334100001A500A74602">When the main body ECU confirms door lock, it performs answer-back output. Assuming that the user may pull the door outside handle after locking to confirm the lock, a standby period of approximately 3 seconds is provided after the driver door is locked before outside verification for door unlock is performed.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></MECA>

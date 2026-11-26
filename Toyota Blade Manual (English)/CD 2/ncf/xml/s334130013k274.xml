@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740267b SYSTEM "grph_ent/a4740267b.png" NDATA png>
+<!ENTITY a4740269b SYSTEM "grph_ent/a4740269b.png" NDATA png>
+<!ENTITY a4740090b SYSTEM "grph_ent/a4740090b.png" NDATA png>
+<!ENTITY a4740268b SYSTEM "grph_ent/a4740268b.png" NDATA png>
+
+<!ENTITY T130013K274 SYSTEM "t334130013k274.xml">
+<!ENTITY T130013K274K670 SYSTEM "t334130013k274k670.xml">
+<!ENTITY T130013K274K349 SYSTEM "t334130013k274k349.xml">
+<!ENTITY T130013K274K685 SYSTEM "t334130013k274k685.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T130013K274S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T130013K274" UPDATE = "ORIGINAL" LDUP = "10Mar2004"     INFOTYPE = "PARTS" INDSW = "ON"     SELECT = "Vehicle Outline: Comfort and Usability">
+<TITLE>Floor &amp; Rear Area</TITLE>
+<LIST1><ITEM><PTXT>Velour needle-punch has been adopted for the front floor carpet.</PTXT></ITEM>
+<ITEM><PTXT>Scuff inside plates / scuff outside plates are provided for the front and rear doors and a deck trim cover for the back door, to prevent body damage and improve appearance.</PTXT></ITEM>
+<ITEM><PTXT>A large jack cover is provided on the deck side trim board (RH) to facilitate removal of the jack. The jack cover also serves as the service hole cover for replacing the rear combination light.</PTXT></ITEM>
+<ITEM><PTXT>The luggage compartment capacity (VDA method<HINTREF REFID = "H334130013K27401"/>) is 281L with all seats occupied, providing excellent storage.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H334130013K27401">VDA method: The maximum capacity obtained by freely combining 1L (20cm x 10cm x 5cm) boxes in the luggage compartment.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740267b" WIDTH = "6.903in" HEIGHT = "4.653in" />
+</FIGURE>
+
+<MECA ID = "T130013K274K670" UPDATE = "ORIGINAL" LDUP = "23Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Deck Under Tray</TITLE>
+<LIST1><ITEM><PTXT>The deck under tray consists of fixed deck floor boxes (RH and LH).</PTXT></ITEM>
+<ITEM><PTXT>When the rear seats are stowed by tilting them down, a flat luggage space can be formed by unfolding the deck mat.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740269b" WIDTH = "6.903in" HEIGHT = "6.792in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130013K274K349" UPDATE = "ORIGINAL" LDUP = "23Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Hook</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A total of 4 deck hooks are provided on the deck sides and rear floor, allowing cargo to be secured with ropes, nets, etc.</PTXT></ITEM>
+<ITEM><PTXT>The hooks are plated for good appearance.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740090b" WIDTH = "6.903in" HEIGHT = "2.958in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130013K274K685" UPDATE = "ORIGINAL" LDUP = "16Feb2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Package Tray</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The package tray is secured by fitting the pins of the deck side trim boards into the grooves of the package tray, and then the suspenders at both ends of the package tray are hooked onto the hooks on the back door side garnishes, so that the tray moves up and down around the pins in conjunction with opening and closing of the back door, improving luggage usability.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740268b" WIDTH = "7.042in" HEIGHT = "3.292in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

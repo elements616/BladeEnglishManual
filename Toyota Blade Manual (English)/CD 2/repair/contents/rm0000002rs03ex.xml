@@ -1,0 +1,1095 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002Q_S000F" variety="S000F">
+<name>Navigation</name>
+<ttl id="1002Q_S000F_746OU_T00CJ" variety="T00CJ">
+<name>HDD Navigation System</name>
+<para id="RM0000002RS03EX" category="S" type-id="3001E" name-id="652MD-00" from="200612" to="200912">
+<name>Diagnostic Trouble Code Chart</name>
+<subpara id="RM0000002RS03EX_z0" proc-id="RM0550J___0000ACP00000">
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>This DTC is displayed on the service inspection screen. </ptxt>
+</item>
+<item>
+<ptxt>The display consists of the logical address (2-digit base 16 number) - DTC (2-digit base 16 number).</ptxt>
+</item>
+</list1>
+</atten4>
+<step1>
+<ptxt>AVN</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Logical address 01: Communication control</ptxt>
+</item>
+<item>
+<ptxt>Logical Address 34: Front Seat Monitor</ptxt>
+</item>
+<item>
+<ptxt>Logical Address 40:TV Tuner</ptxt>
+</item>
+<item>
+<ptxt>Logical Address 57: Telephone Drawing</ptxt>
+</item>
+<item>
+<ptxt>Logical Address 58: Navigation</ptxt>
+</item>
+<item>
+<ptxt>Logical Address 60: Radio Unit</ptxt>
+</item>
+<item>
+<ptxt>Logical Address 62:CD-P</ptxt>
+</item>
+<item>
+<ptxt>Logical Address 64:MD-P</ptxt>
+</item>
+</list1>
+</atten4>
+<table frame="all" pgwide="1">
+<title>Service inspection screen display name: AVN, part name: navigation receiver assembly, physical address: 140</title>
+<tgroup cols="5">
+<colspec colname="col2" colwidth="1.00in"/>
+<colspec colname="col3" colwidth="0.75in"/>
+<colspec colname="col4" colwidth="1.75in"/>
+<colspec colname="col5" colwidth="2.10in"/>
+<colspec colname="COLSPEC0" colwidth="1.48in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Trouble Code (DTC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-21</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ROM malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Checksum error detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-22</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RAM malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>READ/WRITE error detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-D5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Registered component lost</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>The component indicated by the sub-code is disconnected from the system when ACC is ON</ptxt>
+</item>
+<item>
+<ptxt>The component indicated by the sub-code has been disconnected from the system when ACC was ON</ptxt>
+</item>
+<item>
+<ptxt>Communication with the component indicated by the sub-code cannot be established when the engine is started</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the component indicated by the sub-code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored even when no malfunction is found, depending on the battery condition or the power source waveform at engine start</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-D6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Master Absent</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>The component that stored this code has been disconnected from the system when ACC was ON</ptxt>
+</item>
+<item>
+<ptxt>The master device was disconnected when this code was stored</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the navigation receiver assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored even if no malfunction is found, depending on the battery condition or the power supply waveform when the engine is started.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-D7</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Connection Check Malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>The component that stored this code has been disconnected from the system after the engine was started</ptxt>
+</item>
+<item>
+<ptxt>The master device was disconnected when this code was stored</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the navigation receiver assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code is stored when the navigation receiver assembly power turns OFF after the engine is started and 210 seconds elapse.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-D8</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No response to connection check</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>The component indicated by the sub-code is disconnected from the system after the engine is started</ptxt>
+</item>
+<item>
+<ptxt>The component indicated by the sub-code has been disconnected from the system after the engine was started</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the component indicated by the sub-code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code is stored when the power of the component indicated by the sub-code turns OFF after the engine is started and 180 seconds elapse</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-D9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Last mode error</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>The component that was operating (outputting sound or images) before the engine was stopped is disconnected from the system when ACC is ON</ptxt>
+</item>
+<item>
+<ptxt>The component that was operating (outputting sound or images) before the engine was stopped has been disconnected from the system when ACC was ON</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the component indicated by the sub-code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored even when no malfunction is found, depending on the battery condition or the power source waveform at engine start</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-DA</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No response to ON/OFF command</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The component indicated by the sub-code did not respond during sound/image mode switching (detected when the screen or sound does not switch with button operation, etc.)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the component indicated by the sub-code</ptxt>
+</item>
+<item>
+<ptxt>If the malfunction recurs, replace the component indicated by the sub-code</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-DB</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Mode status error</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2-fold sounding detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the component indicated by the sub-code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored even when no malfunction is found, depending on the battery condition or the power source waveform at engine start</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-DC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmission Failure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmission to the component indicated by the sub-code has failed (this code may not be directly related to a malfunction)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>If the component indicated by the sub-code is also stored in other components, inspect the power supply system and AVC-LAN communication system W/H of the component indicated by the sub-code</ptxt>
+</item>
+<item>
+<ptxt>If this code is not recorded in other components, clear the DTC and monitor for a while</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored if the engine is started again 60 seconds after the engine was started</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-DD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Master Reset (Momentary Interruption)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The master device was disconnected from the system after the engine was started</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the navigation receiver assembly</ptxt>
+</item>
+<item>
+<ptxt>If the malfunction occurs frequently, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored if the engine is restarted after it was started.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-DE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Slave reset (momentary interruption)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A slave component has been disconnected from the system after the engine was started</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the component indicated by the sub-code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored if the engine is started again after the engine was started</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-E0</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Registration Complete Notification Malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The "Registration Complete Notification" command cannot be received from the master device</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code is an engineering diagnosis and is detected even when not directly related to a malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored even when no malfunction is found, depending on the battery condition or the power source waveform at engine start</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-E1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio processing component ON error</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The amplifier component detected that the amplifier output stopped even though the source component was operating</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Inspect the power supply system and AVC-LAN communication system W/H of the navigation receiver assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored even when no malfunction is found, depending on the battery condition or the power source waveform at engine start</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-E2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON/OFF Instruction Parameter Malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>There was a malfunction in the command from the master device controlling ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace the navigation receiver assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>01-E4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiple frame transmission terminated midway</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiple frame transmission terminated midway</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code is an engineering diagnosis and is detected even when not directly related to a malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This code may be stored even when no malfunction is found, depending on the battery condition or the power source waveform at engine start</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>34-13</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Panel open/close mechanism operation malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Panel open/close mechanism operation malfunction detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>40-10</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TV tuner PLL not locked</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TV tuner PLL circuit malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Clear the DTC and inspect the TV antenna power supply wiring</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>57-47</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Bluetooth module initialization failure</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Bluetooth module not installed</ptxt>
+</item>
+<item>
+<ptxt>Bluetooth module failure</ptxt>
+</item>
+<item>
+<ptxt>Communication path failure with Bluetooth module</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Replace Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>57-48</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DCM initialization failure</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Communication path failure with DCM</ptxt>
+</item>
+<item>
+<ptxt>DCM failure</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not output on this model because no telematics transceiver is provided</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>58-10</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Gyro malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Gyro sensor malfunction detected (detected that the sensor output voltage showed an abnormal value for a certain time or longer)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Function check - vehicle signal &amp; sensor inspection (gyro sensor output status) inspection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>58-11</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GPS receiver malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Abnormal operating condition of GPS receiver detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>In an outdoor location with a clear view, display "GPS Information", and if the GPS mark is not displayed correctly after 15 minutes or more, replace the navigation receiver assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>58-40</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GPS antenna malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open in GPS antenna (open circuit, poor connector engagement, etc.) detected</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Navigation antenna cord inspection</ptxt>
+</item>
+<item>
+<ptxt>Navigation antenna assembly inspection</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>58-41</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GPS antenna power supply malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Abnormal voltage or short in GPS antenna signal line detected</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Navigation antenna cord inspection</ptxt>
+</item>
+<item>
+<ptxt>Navigation antenna assembly inspection</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>58-43</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed signal malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>There is a difference between the input conditions of the GPS signal and the vehicle speed signal</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Navigation inspection - vehicle signal &amp; sensor inspection (SPD signal status)</ptxt>
+</item>
+<item>
+<ptxt>If the SPD signal status and W/H are normal, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>60-10</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AM tuner PLL not locked</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AM tuner PLL circuit malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Clear the DTC and inspect the radio antenna power supply wiring</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>60-11</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FM tuner PLL not locked</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FM tuner PLL circuit malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Clear the DTC and inspect the radio antenna power supply wiring</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-10</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CD mechanism malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A CD mechanism malfunction was detected other than during insertion/ejection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-11</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Disc insertion/ejection malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Disc insertion/ejection malfunction detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-12</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Disc read malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Disc read malfunction detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-41</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wrong disc</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wrong disc</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Inspect the disc (operate again with a different disc)</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-42</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Disc cannot be read</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Disc signal cannot be read</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Inspect the disc (operate again with a different disc)</ptxt>
+</item>
+<item>
+<ptxt>Clean the CD player (pickup lens)</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again with another playable disc, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-44</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CD malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CD mechanism operation malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Inspect the disc (for cracks, etc.)</ptxt>
+</item>
+<item>
+<ptxt>Check for foreign matter</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-45</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EJECT malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Disc cannot be ejected</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Replace the disc</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-46</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Disc dirty, scratched or upside down</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Disc is dirty or scratched</ptxt>
+</item>
+<item>
+<ptxt>Disc is upside down</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Inspect the disc (operate again with a different disc)</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-47</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CD high temperature detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The CD mechanism became too hot or too cold</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Clear the DTC and leave the unit for a while with the power (ACC) OFF</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>62-48</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Overcurrent detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Internal power supply malfunction detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>64-10</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MD mechanism malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>An MD mechanism malfunction was detected other than during insertion/ejection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>64-11</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MD insertion/ejection malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MD insertion/ejection malfunction detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>64-12</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MD read malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MD read malfunction detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>64-41</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wrong disc</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wrong disc</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Inspect the disc (operate again with a different disc)</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>64-42</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MD disc cannot be read</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MD disc signal cannot be read</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Inspect the MD (for cracks, etc.)</ptxt>
+</item>
+<item>
+<ptxt>Clean the MD player (pickup lens)</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again with another playable disc, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>64-44</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MD malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MD mechanism operation malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Inspect the MD (for cracks, etc.)</ptxt>
+</item>
+<item>
+<ptxt>Check for foreign matter</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again with another playable disc, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>64-45</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EJECT malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MD cannot be ejected</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Replace the MD</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>64-46</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MD dirty or scratched</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MD is dirty or scratched</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Inspect the MD (operate again with a different MD)</ptxt>
+</item>
+<item>
+<ptxt>After clearing the DTC, check the symptom again, and if the same code is detected again, replace the navigation receiver assembly</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>64-48</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Overcurrent detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Internal power supply malfunction detected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_74WIJ_T00FO" variety="T00FO">
+<name>EFI System (2GR-FE)</name>
+<para id="X39400000RB01PC" category="C" type-id="3008U" name-id="066NV-00" from="200708">
+<dtccode>P0340/12</dtccode>
+<dtcname>Camshaft Position Sensor Circuit</dtcname>
+<dtccode>P0342/12</dtccode>
+<dtcname>VVT Sensor Circuit (Low)</dtcname>
+<dtccode>P0343/12</dtccode>
+<dtcname>VVT Sensor Circuit (High)</dtcname>
+<dtccode>P0345/18</dtccode>
+<dtcname>VVT Sensor 2 Circuit</dtcname>
+<dtccode>P0347/18</dtccode>
+<dtcname>VVT Sensor 2 Circuit (Low)</dtcname>
+<dtccode>P0348/18</dtccode>
+<dtcname>VVT Sensor 2 Circuit (High)</dtcname>
+<subpara id="X39400000RB01PC_10" type-id="31" category="03" proc-id="RM0550J___0000D7800000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>The crankshaft position sensor system consists of a crankshaft timing pulley and a pickup coil. The crankshaft timing pulley, which is installed on the crankshaft, has 34 teeth with 2 teeth missing for top dead center detection. The NE signal sensor outputs 34 signals for every 1 engine revolutions. Based on the VV1 and VV2 signals, the engine control computer detects cylinder identification and camshaft phase or angle, and from the NE signal it detects crankshaft angle and engine speed.</ptxt>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.9685897     in"/>
+<colspec colnum="02" colname="C02" colwidth="3.134191     in"/>
+<colspec colnum="03" colname="C03" colwidth="3.044139     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTCNo.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+<item>
+<ptxt>Malfunction Duration</ptxt>
+</item>
+<item>
+<ptxt>Others</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0340/12</ptxt>
+<ptxt>(RH Bank)</ptxt>
+<ptxt>P0345/18</ptxt>
+<ptxt>(LH Bank)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>During cranking</ptxt>
+</item>
+<item>
+<ptxt>No VV1 (RH bank) or VV2 (LH bank) signal is input</ptxt>
+</item>
+<item>
+<ptxt>4 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Crankshaft Position Sensor NO.2 (Intake Side)</ptxt>
+</item>
+<item>
+<ptxt>Camshaft Timing Gear (Intake Side)</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0340/12</ptxt>
+<ptxt>P0342/12</ptxt>
+<ptxt>P0343/12</ptxt>
+<ptxt>(RH Bank)</ptxt>
+<ptxt>P0345/18</ptxt>
+<ptxt>P0347/18</ptxt>
+<ptxt>P0348/18</ptxt>
+<ptxt>(LH Bank)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>After engine start (600r/min or more)</ptxt>
+</item>
+<item>
+<ptxt>No VV1 (RH bank) or VV2 (LH bank) signal is input</ptxt>
+</item>
+<item>
+<ptxt>4 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Crankshaft Position Sensor NO.2 (Intake Side)</ptxt>
+</item>
+<item>
+<ptxt>Camshaft Timing Gear (Intake Side)</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="X39400000RB01PC_11" type-id="32" category="03" proc-id="RM0550J___0000D7900000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt/>
+<figure>
+<graphic graphicname="A119233J06" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="X39400000RB01PC_12" type-id="51" category="05" proc-id="RM0550J___0000D7A00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Using SST (TaSCAN), read the freeze frame data. The freeze frame data records part of the engine operating condition when the malfunction occurred, and this information is useful when troubleshooting.</ptxt>
+</item>
+<item>
+<ptxt>First perform troubleshooting for DTCs P0340/12, P0342/12, P0343/12, P0345/18, P0347/18, P0348/18; if no malfunctioning area is found, a mechanical system malfunction is suspected.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="X39400000RB01PC_13" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="X39400000RB01PC_13_0015" proc-id="RM0550J___0000D7E00000">
+<scantool type="1"/>
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and read the DTCs following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM0000008YS014X"/>)</ptxt>
+<table pgwide="1">
+<title>Result</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="6.17in"/>
+<colspec colname="COL2" colwidth="0.91in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0340/12, P0342/12, P0343/12, P0345/18, P0347/18, P0348/18 output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Codes other than P0340/12, P0342/12, P0343/12, P0345/18, P0347/18, P0348/18 output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RB01PC_13_0020" fin="false">A</down>
+<right ref="X39400000RB01PC_13_0018" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RB01PC_13_0020" proc-id="RM0550J___0000D7H00000">
+<testtitle>Inspect Wire Harness and Connector (VCV1, VCV2 Voltage)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the crankshaft position sensor No.2 connector.</ptxt>
+<figure>
+<graphic graphicname="A137227J12" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals.</ptxt>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 (VC) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.0V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RB01PC_13_0021" fin="false">A</down>
+<right ref="X39400000RB01PC_13_0003" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RB01PC_13_0021" proc-id="RM0550J___0000D7I00000">
+<testtitle>Inspect Wire Harness and Connector (Engine Control Computer - Crankshaft Position Sensor NO.2)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals. (see <xref label="Seep02" href="X39400000QV01SD"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="A137228J07" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.87in"/>
+<colspec colname="COL2" colwidth="0.65in"/>
+<colspec colname="COL3" colwidth="0.61in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A115(VCV1) - 3(VC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A113(VCV2) - 3(VC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.87in"/>
+<colspec colname="COL2" colwidth="0.65in"/>
+<colspec colname="COL3" colwidth="0.61in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A115 (VCV1) and 3 (VC) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A113 (VCV2) and 3 (VC) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RB01PC_13_0006" fin="true">OK</down>
+<right ref="X39400000RB01PC_13_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RB01PC_13_0003" proc-id="RM0550J___0000D7B00000">
+<testtitle>Inspect Wire Harness or Connector (Engine Control Computer - Crankshaft Position Sensor NO.2)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep02" href="RM0000005D702RX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals. (see <xref href="X39400000QV01SD" label="Seep01"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="A137229J09" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.87in"/>
+<colspec colname="COL2" colwidth="0.63in"/>
+<colspec colname="COL3" colwidth="0.63in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A69(VV1+) - 1(VVR+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A92(VV1-) - 2(VVR-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A67(VV2+) - 1(VVL+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A90(VV2-) - 2(VVL-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.87in"/>
+<colspec colname="COL2" colwidth="0.63in"/>
+<colspec colname="COL3" colwidth="0.63in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A69 (VV1+) and 1 (VVR+) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A92 (VV1-) and 2 (VVR-) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A67 (VV2+) and 1 (VVL+) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A90 (VV2-) and 2 (VVL-) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RB01PC_13_0004" fin="false">OK</down>
+<right ref="X39400000RB01PC_13_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RB01PC_13_0004" proc-id="RM0550J___0000D7C00000">
+<testtitle>Inspect Sensor Installation Area</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the tightening and installation condition of the camshaft position sensor bolt.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RB01PC_13_0005" fin="false">OK</down>
+<right ref="X39400000RB01PC_13_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RB01PC_13_0005" proc-id="RM0550J___0000D7D00000">
+<testtitle>Inspect Camshaft Timing Gear Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the condition of the installation area and protrusions of the camshaft timing gear assembly (intake side).</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.22in"/>
+<colspec colname="COL2" colwidth="0.91in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OK (when P0340/12, P0342/12, P0343/12 are input)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OK (when P0345/18, P0347/18, P0348/18 are input)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RB01PC_13_0016" fin="false">A</down>
+<right ref="X39400000RB01PC_13_0017" fin="false">B</right>
+<right ref="X39400000RB01PC_13_0011" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RB01PC_13_0016" proc-id="RM0550J___0000D7F00000">
+<scantool type="8"/>
+<testtitle>Perform TaSCAN Active Test (VVT Linear Drive Bank 1)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>With the engine stopped, turn the IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, select [Active Test] - [VVT Linear Drive Bank 1].</ptxt>
+</test1>
+<test1>
+<ptxt>With the engine idling, perform the Active Test [VVT Linear Drive Bank 1] while monitoring the data [VVT Displacement Angle Bank 1].</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>VVT displacement angle changes continuously between 0 and 40%</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RB01PC_13_0006" fin="true">OK</down>
+<right ref="X39400000RB01PC_13_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RB01PC_13_0017" proc-id="RM0550J___0000D7G00000">
+<scantool type="8"/>
+<testtitle>Perform TaSCAN Active Test (VVT Linear Drive Bank 2)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>With the engine stopped, turn the IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, select [Active Test] - [VVT Linear Drive Bank 2].</ptxt>
+</test1>
+<test1>
+<ptxt>With the engine idling, perform the Active Test [VVT Linear Drive Bank 2] while monitoring the data [VVT Displacement Angle Bank 2].</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>VVT displacement angle changes continuously between 0 and 40%</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RB01PC_13_0006" fin="true">OK</down>
+<right ref="X39400000RB01PC_13_0019" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RB01PC_13_0018">
+<testtitle>Go to Related DTC Chart<xref label="Seep01" href="RM000001KT7004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000RB01PC_13_0009">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="X39400000RB01PC_13_0010">
+<testtitle>Repair or replace sensor installation area<xref label="Seep01" href="RM00000296U004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000RB01PC_13_0011">
+<testtitle>Replace Camshaft Timing Gear Assembly</testtitle>
+</testgrp>
+<testgrp id="X39400000RB01PC_13_0014">
+<testtitle>Replace Crankshaft Position Sensor NO.2 (RH Bank Intake Side)</testtitle>
+</testgrp>
+<testgrp id="X39400000RB01PC_13_0019">
+<testtitle>Replace Crankshaft Position Sensor NO.2 (LH Bank Intake Side)</testtitle>
+</testgrp>
+<testgrp id="X39400000RB01PC_13_0006">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADB004X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

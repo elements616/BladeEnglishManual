@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1001Y_S000S" variety="S000S">
+<name>CVT</name>
+<ttl id="1001Y_S000S_744HD_T007Y" variety="T007Y">
+<name>CVT System [Super CVT-i] (K112/K112F)</name>
+<para id="RM000001I3P00OX" category="C" type-id="801ED" name-id="3225Q-00" from="200612">
+<dtccode>P0705/C2</dtccode>
+<dtcname>T/M Control SW Malfunction</dtcname>
+<subpara id="RM000001I3P00OX_01" type-id="33" category="03" proc-id="RM0550J___000048I00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>The engine control computer detects the shift position using signals from the neutral start switch assembly. The engine can be started only when the shift lever is in the P or N range.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="3.56in"/>
+<colspec colname="COL3" colwidth="2.45in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0705/C2</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>IG ON, battery voltage 10.5V or more</ptxt>
+</item>
+<item>
+<ptxt>(a). 2 or more of the P, R, N and D position signals are ON simultaneously</ptxt>
+<ptxt>(b). 2 or more of the NSW (STAR), R and D position signals are ON simultaneously</ptxt>
+<ptxt>(c). With the M position signal input, any of the NSW (STAR), P, R or N position signals is ON simultaneously</ptxt>
+<ptxt>(d). All NSW (STAR), P, R, N and D position signals are OFF</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more [(a), (b) and (c)]</ptxt>
+<ptxt>60 seconds or more [(d)]</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness and Connector</ptxt>
+</item>
+<item>
+<ptxt>Neutral Start Switch Assembly</ptxt>
+</item>
+<item>
+<ptxt>Transmission Control Switch</ptxt>
+</item>
+<item>
+<ptxt>ST CUT Relay</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001I3P00OX_02" type-id="31" category="03" proc-id="RM0550J___000048J00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C136970J02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001I3P00OX_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000001I3P00OX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000001I3P00OX_04_0001" proc-id="RM0550J___000048K00000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Shift Position P, R, N, D Range)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), display the [ECU Data Monitor] screen according to the screen display, and check the computer data.</ptxt>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Powertrain → TCCS → ECU Data Monitor]</title>
+<tgroup cols="4" align="left">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.87in"/>
+<colspec colname="COL3" colwidth="1.67in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Neutral Start SW</ptxt>
+<ptxt>[NSW]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Indicates P or N range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever N → R → P</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON→OFF→ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Shift Position P Range</ptxt>
+<ptxt>[P]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Indicates P range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever P</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Shift Position R Range</ptxt>
+<ptxt>[R]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Indicates R range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever N → R</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Shift Position N Range</ptxt>
+<ptxt>[N]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Indicates N range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever N</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Shift Position D Range</ptxt>
+<ptxt>[D]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Indicates D range / M position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever N → D</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001I3P00OX_04_0002" fin="false">A</down>
+<right ref="RM000001I3P00OX_04_0010" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0002" proc-id="RM0550J___000048L00000">
+<testtitle>Inspect Wire Harness and Connector (Power Source System)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the neutral start switch assembly connector.</ptxt>
+<figure>
+<graphic graphicname="C125839J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage of the vehicle side connector terminals.</ptxt>
+<spec>
+<title>Voltage</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (RB) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001I3P00OX_04_0003" fin="false">OK</down>
+<right ref="RM000001I3P00OX_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0003" proc-id="RM0550J___000048M00000">
+<testtitle>Inspect Neutral Start Switch Assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the neutral start switch assembly.</ptxt>
+<figure>
+<graphic graphicname="C125840J08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COLSPEC1" colwidth="1.69in"/>
+<colspec colname="COLSPEC2" colwidth="1.65in"/>
+<colspec colname="COL3" colwidth="0.79in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(RB) - 3(PL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever in P position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4(B) - 9(L)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever in P position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(RB) - 2(RL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever in R</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(RB) - 8(NL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever in N position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4(B) - 9(L)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever in N position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(RB) - 7(DL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever in D position / M position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001I3P00OX_04_0004" fin="false">OK</down>
+<right ref="RM000001I3P00OX_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0004" proc-id="RM0550J___000048N00000">
+<testtitle>Inspect Wire Harness and Connector (Neutral Start Switch Assembly - Engine Control Computer)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep03" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+<sstitem>
+<s-number>09843-18020</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Remove the ST CUT relay from the holder.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (diagnosis check wire), connect terminals 3 (B) and 5 (L) of the ST CUT relay holder.</ptxt>
+<figure>
+<graphic graphicname="C154038J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect connector A and connector B of the engine control computer.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the engine control computer and the neutral start switch assembly vehicle side connector terminals. (see <xref label="Seep01" href="RM000000FSD00RX"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="C125744J03" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.61in"/>
+<colspec colname="COLSPEC3" colwidth="1.15in"/>
+<colspec colname="COL2" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A52(STAR) - 4(B)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B48(STA) - 9(L)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A52 (STAR) and 4 (B) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B48 (STA) and 9 (L) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect the neutral start switch assembly connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals. (see <xref label="Seep02" href="RM000000FSD00RX"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="C159285J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL2" colwidth="1.25in"/>
+<colspec colname="COLSPEC5" colwidth="1.90in"/>
+<colspec colname="COL3" colwidth="0.98in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A73(P) - A104(E1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever in P position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A73(P) - A104(E1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever not in P position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0 to 1.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A53(R) - A104(E1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever in R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A53(R) - A104(E1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever in any position other than R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0 to 1.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A54(N) - A104(E1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever in N position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A54(N) - A104(E1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever not in N position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0 to 1.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A56(D) - A104(E1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever in D position / M position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A56(D) - A104(E1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever not in D position / M position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0 to 1.5V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001I3P00OX_04_0016" fin="false">OK</down>
+<right ref="RM000001I3P00OX_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0016" proc-id="RM0550J___000048S00000">
+<testtitle>Inspect Starter Cut Relay</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<figure>
+<graphic graphicname="E034090J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), inspect the resistance between the relay terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COLSPEC6" colwidth="1.38in"/>
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.37in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry align="center">
+<ptxt>20°C</ptxt>
+</entry>
+<entry align="center">
+<ptxt>130.4 to 230.8Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry align="center">
+<ptxt>20°C</ptxt>
+</entry>
+<entry align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals when battery voltage is applied between terminals 1 and 2 of the ST CUT relay.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COLSPEC6" colwidth="1.38in"/>
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.37in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Battery Voltage</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000001I3P00OX_04_0017" fin="true">A</down>
+<right ref="RM000001I3P00OX_04_0009" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0010" proc-id="RM0550J___000048O00000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Sport Mode Select SW)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), display the [ECU Data Monitor] screen according to the screen display, and check the computer data.</ptxt>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Powertrain → TCCS → ECU Data Monitor]</title>
+<tgroup cols="4" align="left">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Sport Mode Select SW</ptxt>
+<ptxt>[SPRT]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Indicates shift lever in M position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever D position → M position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF→ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001I3P00OX_04_0011" fin="false">A</down>
+<right ref="RM000001I3P00OX_04_0009" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0011" proc-id="RM0550J___000048P00000">
+<testtitle>Inspect Shift Lock Control Unit Assembly (Transmission Control Switch)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the transmission control switch connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<figure>
+<graphic graphicname="C136968J08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL2" colwidth="1.57in"/>
+<colspec colname="COLSPEC7" colwidth="1.45in"/>
+<colspec colname="COL3" colwidth="1.11in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6(IG) - 13(S)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever in M position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6(IG) - 13(S)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever in any position other than M</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001I3P00OX_04_0012" fin="false">OK</down>
+<right ref="RM000001I3P00OX_04_0013" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0012" proc-id="RM0550J___000048Q00000">
+<testtitle>Inspect Wire Harness and Connector (Transmission Control Switch - Engine Control Computer)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep02" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals. (see <xref label="Seep01" href="RM000000FSD00RX"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="C159285J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL2" colwidth="1.65in"/>
+<colspec colname="COLSPEC8" colwidth="1.32in"/>
+<colspec colname="COL3" colwidth="1.16in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A74(S) - A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever in M position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A74(S) - A104(E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever in any position other than M</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 1.5V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001I3P00OX_04_0009" fin="false">OK</down>
+<right ref="RM000001I3P00OX_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0006">
+<testtitle>Inspect Power Source System</testtitle>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0007">
+<testtitle>Replace Neutral Start Switch Assembly</testtitle>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0013">
+<testtitle>Replace Shift Lock Control Unit Assembly (Transmission Control Switch)</testtitle>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0008">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0009">
+<scantool type="1"/>
+<testtitle>Replace Engine Control Computer</testtitle>
+<res>
+<down ref="RM000001I3P00OX_04_0014" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0014" proc-id="RM0550J___000048R00000">
+<testtitle>TaSCAN (A/T / CVT Learned Value Initialization, G Sensor 0-point Learning and CVT Hydraulic Pressure Learning)</testtitle>
+<content6 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Initializing the learned values clears both the G sensor 0-point learning values and the CVT hydraulic pressure learning values, so when replacing the parts in the table below, perform AT/CVT learned value initialization and be sure to perform both G sensor 0-point learning and CVT hydraulic pressure learning.</ptxt>
+<table>
+<tgroup cols="1">
+<colspec colname="COL1" colwidth="4.13in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Replacement Parts</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Continuously Variable Transaxle</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>Skid control computer</ptxt>
+</item>
+<item>
+<ptxt>Oil Pressure Sensor</ptxt>
+</item>
+<item>
+<ptxt>Yaw Rate Sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+<item>
+<ptxt>After performing AT/CVT learned value initialization, be sure to perform G sensor 0-point learning first, and then CVT hydraulic pressure learning.</ptxt>
+</item>
+<item>
+<ptxt>Be sure to place the vehicle on a level surface and perform 0 point learning.</ptxt>
+</item>
+<item>
+<ptxt>Do not subject the vehicle to vibration while 0 point learning is in progress.</ptxt>
+</item>
+</list1>
+</atten3>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), perform A/T/CVT learned value initialization, G sensor 0 point learning and CVT hydraulic pressure learning.</ptxt>
+<atten4>
+<ptxt>For the procedures for A/T/CVT learned value initialization, G sensor 0-point learning and CVT hydraulic pressure learning, refer to <xref label="Seep01" href="RM0000021F400AX"/>.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check the DTCs again. (see <xref label="Seep02" href="RM000000FSM00TX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001I3P00OX_04_0015" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0015">
+<testtitle>Complete</testtitle>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0017">
+<testtitle>Replace Starter Cut Relay</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

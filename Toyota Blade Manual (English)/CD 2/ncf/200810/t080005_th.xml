@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740044c SYSTEM "../xml/grph_ent/a4740044c.png" NDATA png>
+<!ENTITY a4740060c SYSTEM "../xml/grph_ent/a4740060c.png" NDATA png>
+
+<!ENTITY T090001K599 SYSTEM "../xml/t403090001k599.xml">
+<!ENTITY T090001K051 SYSTEM "../xml/t478090001k051.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T090001K599S"><SCTITLE/>
+
+<PARA INFOID = "T090001K599" UPDATE = "ORIGINAL" LDUP = "24Jan2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Seat Belt Outline</TITLE>
+<LIST1><ITEM><PTXT>3-point ELR seat belts have been adopted for all seats.</PTXT></ITEM>
+<ITEM><PTXT>For the front seats, seat belts with pretensioner and force limiter have been provided for both the driver and front passenger seats.</PTXT></ITEM>
+<ITEM><PTXT>Adjustable shoulder belt anchors with 4-step vertical adjustment have been adopted for the driver and front passenger seat belts to accommodate occupants of various builds. In addition, the slip joint is built into the center pillar upper garnish for improved appearance.</PTXT></ITEM>
+<ITEM><PTXT>A child seat fixing mechanism has been adopted for the rear 3-point ELR seat belts. The child seat fixing mechanism is activated by pulling the belt out fully; in this state the belt can be retracted but cannot be pulled out. When the belt is retracted beyond a certain amount, the child seat fixing mechanism is released and the belt returns to normal ELR state.</PTXT></ITEM>
+<ITEM><PTXT>The inner buckles of the rear outboard seats are a self-standing type that protrudes from the seat surface, while the contact feel when moving across the seat has been reduced, achieving both ease of seat belt fastening and comfort.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740044c" WIDTH = "6.903in" HEIGHT = "4.625in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T090001K051S"><SCTITLE/>
+
+<PARA INFOID = "T090001K051" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Adjustable Shoulder Belt Anchor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>To lower the adjustable shoulder belt anchor, pull it down while pressing in the upper part of the button. To raise it, it can be adjusted by pushing up the lower part of the button without pressing the upper part of the button.</PTXT></ITEM>
+<ITEM><PTXT>The slip joint is built into the center pillar upper garnish, and a shoulder belt cover that slides up and down together with the slip joint is provided.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740060c" WIDTH = "6.903in" HEIGHT = "2.958in" />
+</FIGURE>
+</PARA>
+</SECTION>
+</SCT>

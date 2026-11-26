@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001A_S0009" variety="S0009">
+<name>Lighting</name>
+<ttl id="1001A_S0009_7420N_T0015" variety="T0015">
+<name>Lighting System</name>
+<para id="RM000001Y4C009X" category="J" type-id="300ZN" name-id="603L3-00" from="200612">
+<dtccode/>
+<dtcname>Taillights Do Not Come On</dtcname>
+<subpara id="RM000001Y4C009X_04" type-id="32" category="03" proc-id="RM0550J___00006L800000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E144389J01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001Y4C009X_05" type-id="51" category="05" proc-id="RM0550J___00006L900000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Inspect the fuses and bulbs beforehand.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001Y4C009X_06" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000001Y4C009X_06_0011" proc-id="RM0550J___00006LA00000">
+<testtitle>Vehicle Check</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the vehicle specifications.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.90in"/>
+<colspec colname="COL2" colwidth="3.18in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>w/ Discharge Headlight</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Models w/ halogen headlamps</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001Y4C009X_06_0012" fin="false">A</down>
+<right ref="RM000001Y4C009X_06_0018" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001Y4C009X_06_0012" proc-id="RM0550J___00006LB00000">
+<testtitle>Read TaSCAN Data</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), follow the prompts on the screen to display the "ECU Data Monitor" screen and check the computer data.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>ECU Data Monitor reference values are normal</ptxt>
+</specitem>
+<table pgwide="1">
+<title>[System selection screen: Body → Main Body → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.49in"/>
+<colspec colname="COL2" colwidth="2.23in"/>
+<colspec colname="COL3" colwidth="2.52in"/>
+<colspec colname="COL4" colwidth="0.84in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name (Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tail Light SW</ptxt>
+<ptxt>(TAIL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch (TAIL) status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Light control switch OFF</ptxt>
+<ptxt>ON: Light control switch TAIL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001Y4C009X_06_0013" fin="false">OK</down>
+<right ref="RM000001Y4C009X_06_0015" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001Y4C009X_06_0013" proc-id="RM0550J___00006LC00000">
+<testtitle>Perform TaSCAN Active Test</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), display the "Active Test" screen by following the screen instructions, and inspect the computer data.</ptxt>
+</test1>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Active Test is performed normally </ptxt>
+</specitem>
+<table pgwide="1">
+<title>[System selection screen: Body → Main Body → Active Test]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Taillight Relay</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operates tail light relay</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF - ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<test1>
+<ptxt>Check the illumination condition of the tail lights, clearance lights and license plate lights.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="6.11in"/>
+<colspec colname="COL2" colwidth="0.97in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>None of the tail lights, clearance lights and license plate lights come on</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tail lights, clearance lights and license plate lights come on normally</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>One of the tail lights, clearance lights or license plate lights does not come on</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001Y4C009X_06_0014" fin="false">A</down>
+<right ref="RM000001Y4C009X_06_0019" fin="true">B</right>
+<right ref="RM000001Y4C009X_06_0018" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000001Y4C009X_06_0014" proc-id="RM0550J___00006LD00000">
+<testtitle>Inspect Wire Harness and Connector (Battery - Instrument Panel Junction Block Assembly (Main Body ECU))</testtitle>
+<content6 releasenbr="1">
+<ptxt/>
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminal and body ground from the back side of the connector.</ptxt>
+<figure>
+<graphic graphicname="E140394J02" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>G1 (ALTB) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001Y4C009X_06_0019" fin="true">OK</down>
+<right ref="RM000001Y4C009X_06_0021" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001Y4C009X_06_0015" proc-id="RM0550J___00006LE00000">
+<testtitle>Inspect Headlight Dimmer Switch Assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<test2>
+<ptxt>Disconnect the headlight dimmer switch assembly connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<figure>
+<graphic graphicname="E145590J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.92in"/>
+<colspec colname="COL3" colwidth="0.84in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13(T) - 19(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Light control switch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13(T) - 19(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Light control switch TAIL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000001Y4C009X_06_0016" fin="false">OK</down>
+<right ref="RM000001Y4C009X_06_0020" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001Y4C009X_06_0016" proc-id="RM0550J___00006LF00000">
+<testtitle>Inspect Wire Harness and Connector (Headlight Dimmer Switch Assembly - Instrument Panel Junction Block Assembly (Main Body ECU))</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector V of the instrument panel junction block assembly (main body ECU).</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the vehicle side wire harness connectors.</ptxt>
+<figure>
+<graphic graphicname="E141385J03" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</test1>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13(T) - V21(TAIL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle side wire harness connector and body ground.</ptxt>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13 (T) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001Y4C009X_06_0017" fin="false">OK</down>
+<right ref="RM000001Y4C009X_06_0021" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001Y4C009X_06_0017" proc-id="RM0550J___00006LG00000">
+<testtitle>Inspect Wire Harness and Connector (Headlight Dimmer Switch Assembly - Body Ground)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle side wire harness connector and body ground.</ptxt>
+<figure>
+<graphic graphicname="E141389J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.94in"/>
+<colspec colname="COL2" colwidth="1.19in"/>
+<colspec colname="COL3" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>19 (E) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001Y4C009X_06_0019" fin="true">OK</down>
+<right ref="RM000001Y4C009X_06_0021" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001Y4C009X_06_0018">
+<testtitle>Go to List by Symptom<xref label="Seep01" href="RM000001Y4B001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001Y4C009X_06_0019">
+<testtitle>Replace Instrument Panel Junction Block Assembly</testtitle>
+</testgrp>
+<testgrp id="RM000001Y4C009X_06_0020">
+<testtitle>Replace Headlight Dimmer Switch Assembly<xref label="Seep01" href="RM000001X8W001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001Y4C009X_06_0021">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

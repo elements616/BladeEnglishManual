@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740118p SYSTEM "grph_ent/a4740118p.png" NDATA png>
+<!ENTITY a4740120p SYSTEM "grph_ent/a4740120p.png" NDATA png>
+<!ENTITY a4740119p SYSTEM "grph_ent/a4740119p.png" NDATA png>
+<!ENTITY a3810146p SYSTEM "grph_ent/a3810146p.png" NDATA png>
+
+<!ENTITY T030063A102 SYSTEM "t285030063a102.xml">
+<!ENTITY T030063A102A316 SYSTEM "t285030063a102a316.xml">
+<!ENTITY T030063A102A317 SYSTEM "t285030063a102a317.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T030063A102S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T030063A102" UPDATE = "ORIGINAL" LDUP = "9Jan2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Hydraulic Control Section</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The rigidity of the valve body has been increased to handle the higher pressure of the hydraulic circuit. In addition, all solenoid valves are mounted on the lower valve body side for easier servicing.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740118p" WIDTH = "6.917in" HEIGHT = "5.278in" />
+</FIGURE>
+<INDICATE ID = "T030063A102I01" INDSW = "OFF">
+<TITLE>Solenoid Names and Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "40%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "59%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT> Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.1 (DS1)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls the inflow of line pressure to the primary pulley according to the wheel speed and accelerator opening. (Controls the speed of upshifting)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.2 (DS2)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls the outflow of line pressure from the primary pulley according to the wheel speed and accelerator opening. (Controls the speed of downshifting)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Lock-up Solenoid (SL)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Switches the function of the linear solenoid (SLS).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Lock-up Engagement Pressure Control Duty Solenoid (DSU)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Controls the gradual increase and decrease of the lock-up engagement hydraulic pressure.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Belt Clamping Force Control Linear Solenoid (SLS)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls the secondary pulley pressure according to the input shaft torque to control the belt clamping force. In addition, it controls the forward/reverse clutch hydraulic pressure during forward/reverse clutch engagement and during neutral control.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T030063A102I02" INDSW = "OFF">
+<TITLE>Hydraulic Control Block Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740120p" WIDTH = "6.917in" HEIGHT = "8.889in" />
+</FIGURE>
+</INDICATE>
+
+<MECA ID = "T030063A102A316" UPDATE = "ORIGINAL" LDUP = "10Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Belt Clamping Force Control Mechanism</TITLE>
+<LIST1><ITEM><PTXT>In the CVT belt mechanism, the CVT belt clamping force for transmitting torque is controlled by controlling the secondary pulley hydraulic pressure. In addition, by placing a pressure control valve and solenoid valve downstream of the line pressure, the belt clamping force can be controlled with the optimum hydraulic pressure, achieving excellent power transmission performance.                  
+         </PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740119p" WIDTH = "6.903in" HEIGHT = "4.833in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A102A317" UPDATE = "ORIGINAL" LDUP = "10Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Shift Control Mechanism</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Shift control is performed by controlling the inflow and outflow of hydraulic pressure to the primary pulley.
+                             </PTXT></ITEM>
+<ITEM><PTXT>Electronic control of this process increases the freedom of shift control, achieving driving that responds to the driver's intentions, as well as gear ratios and shift speeds that allow driving on the engine's optimum fuel economy line. In addition, by separating upshift and downshift control, fine control is achieved.
+                                 </PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810146p" WIDTH = "6.903in" HEIGHT = "5.222in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

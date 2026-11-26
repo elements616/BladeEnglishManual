@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740210c SYSTEM "../xml/grph_ent/a4740210c.png" NDATA png>
+<!ENTITY k4730075c SYSTEM "../xml/grph_ent/k4730075c.png" NDATA png>
+<!ENTITY k4730079c SYSTEM "../xml/grph_ent/k4730079c.png" NDATA png>
+<!ENTITY k4730084c SYSTEM "../xml/grph_ent/k4730084c.png" NDATA png>
+<!ENTITY k4730085c SYSTEM "../xml/grph_ent/k4730085c.png" NDATA png>
+<!ENTITY k4730081c SYSTEM "../xml/grph_ent/k4730081c.png" NDATA png>
+<!ENTITY k4730080c SYSTEM "../xml/grph_ent/k4730080c.png" NDATA png>
+<!ENTITY a3940129c SYSTEM "../xml/grph_ent/a3940129c.png" NDATA png>
+<!ENTITY a4740215c SYSTEM "../xml/grph_ent/a4740215c.png" NDATA png>
+<!ENTITY a4740222c SYSTEM "../xml/grph_ent/a4740222c.png" NDATA png>
+<!ENTITY a4740223c SYSTEM "../xml/grph_ent/a4740223c.png" NDATA png>
+<!ENTITY a4740224c SYSTEM "../xml/grph_ent/a4740224c.png" NDATA png>
+<!ENTITY a4740225c SYSTEM "../xml/grph_ent/a4740225c.png" NDATA png>
+<!ENTITY a4740227c SYSTEM "../xml/grph_ent/a4740227c.png" NDATA png>
+<!ENTITY a4740226c SYSTEM "../xml/grph_ent/a4740226c.png" NDATA png>
+<!ENTITY a4740044c SYSTEM "../xml/grph_ent/a4740044c.png" NDATA png>
+<!ENTITY a4740211c SYSTEM "../xml/grph_ent/a4740211c.png" NDATA png>
+<!ENTITY a4740213c SYSTEM "../xml/grph_ent/a4740213c.png" NDATA png>
+<!ENTITY k4730077c SYSTEM "../xml/grph_ent/k4730077c.png" NDATA png>
+
+<!ENTITY T090006A469 SYSTEM "../xml/t478090006a469.xml">
+<!ENTITY T090006A471A368 SYSTEM "../xml/t403090006a471a368.xml">
+<!ENTITY T090006A471A369 SYSTEM "../xml/t403090006a471a369.xml">
+<!ENTITY T090006A471A370 SYSTEM "../xml/t403090006a471a370.xml">
+<!ENTITY T090006A471A377 SYSTEM "../xml/t403090006a471a377.xml">
+<!ENTITY T090006A471A495 SYSTEM "../xml/t403090006a471a495.xml">
+<!ENTITY T090006A471A495R01 SYSTEM "../xml/t403090006a471a495r01.xml">
+<!ENTITY T090006A471A496 SYSTEM "../xml/t403090006a471a496.xml">
+<!ENTITY T090006A471A496R02 SYSTEM "../xml/t403090006a471a496r02.xml">
+<!ENTITY T090006Ab10A123 SYSTEM "../xml/t403090006ab10a123.xml">
+<!ENTITY T090006Ab10A367 SYSTEM "../xml/t403090006ab10a367.xml">
+<!ENTITY T090006A470 SYSTEM "../xml/t478090006a470.xml">
+<!ENTITY T090006A471 SYSTEM "../xml/t403090006a471.xml">
+<!ENTITY T090006A230 SYSTEM "../xml/t478090006a230.xml">
+<!ENTITY T090006Ab10 SYSTEM "../xml/t403090006ab10.xml">
+<!ENTITY T090001K599 SYSTEM "../xml/t403090001k599.xml">
+<!ENTITY T090006A552 SYSTEM "../xml/t478090006a552.xml">
+<!ENTITY T090006A470 SYSTEM "../xml/t478090006a470.xml">
+<!ENTITY T090006K724 SYSTEM "../xml/t403090006k724.xml">
+<!ENTITY T090006K724A372 SYSTEM "../xml/t403090006k724a372.xml">
+<!ENTITY T090006A230 SYSTEM "../xml/t478090006a230.xml">
+<!ENTITY T090006A470R01 SYSTEM "../xml/t478090006a470r01.xml">
+<!ENTITY T090006A471R02 SYSTEM "../xml/t403090006a471r02.xml">
+<!ENTITY T090006A471A368R03 SYSTEM "../xml/t403090006a471a368r03.xml">
+<!ENTITY T090006A471A369R04 SYSTEM "../xml/t403090006a471a369r04.xml">
+<!ENTITY T090006A471A370R05 SYSTEM "../xml/t403090006a471a370r05.xml">
+<!ENTITY T090006A471A377R06 SYSTEM "../xml/t403090006a471a377r06.xml">
+<!ENTITY T090006A471A495R07 SYSTEM "../xml/t403090006a471a495r07.xml">
+<!ENTITY T090006A471A496R08 SYSTEM "../xml/t403090006a471a496r08.xml">
+<!ENTITY T090006A230R03 SYSTEM "../xml/t478090006a230r03.xml">
+<!ENTITY T090006Ab10R04 SYSTEM "../xml/t403090006ab10r04.xml">
+<!ENTITY T090006Ab10A123R09 SYSTEM "../xml/t403090006ab10a123r09.xml">
+<!ENTITY T090006Ab10A367R10 SYSTEM "../xml/t403090006ab10a367r10.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T090006A470S"><SCTITLE/>
+
+<PARA INFOID = "T090006A470" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Millimeter Wave</TITLE>
+<LIST1><ITEM><PTXT>Millimeter waves are radio waves in a very high frequency band from 30GHz to 300GHz, with an extremely short wavelength in a vacuum of 1 to 10mm. Millimeter waves are not easily affected by conditions such as rain, fog or snow, and provide excellent object recognition performance. A 76GHz band radar is used in the pre-crash safety system.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730075c" WIDTH = "4.389in" HEIGHT = "1.931in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T090006A471S"><SCTITLE/>
+
+<PARA INFOID = "T090006A471" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Pre-crash Sensor</TITLE>
+<LIST1><ITEM><PTXT>Obstacles are recognized through the millimeter wave radar, the possibility of a collision is determined, and operation request signals are sent to each computer.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740215c" WIDTH = "6.903in" HEIGHT = "2.167in" />
+</FIGURE>
+
+<MECA ID = "T090006A471A368" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     INDSW = "OFF">
+<TITLE>Pre-crash Seat Belt Operation</TITLE>
+<LIST1><ITEM><PTXT>When the pre-crash sensor determines that a collision is unavoidable. (Radar linked)</PTXT></ITEM>
+<ITEM><PTXT>When the driver depresses the brake suddenly. Or when vehicle skidding is determined (brake linked)</PTXT></ITEM>
+<ITEM><PTXT>Under normal conditions, the shaft is free due to the clutch mechanism.</PTXT></ITEM>
+<ITEM><PTXT>When current is applied to the motor and rotation is transmitted through the reduction gear, the clutch engages and the webbing is retracted.</PTXT></ITEM>
+<ITEM><PTXT>In addition, after operation, a retraction operation is performed again to release the belt retraction.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730079c" WIDTH = "6.903in" HEIGHT = "3.153in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T090006A471A369" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     INDSW = "OFF">
+<TITLE>Pre-crash Brake Assist Control</TITLE>
+<LIST1><ITEM><PTXT>When the pre-crash sensor determines that the possibility of a collision is high, braking pressure is boosted when the driver depresses the brake pedal.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730084c" WIDTH = "6.903in" HEIGHT = "3.125in" />
+</FIGURE>
+<LIST1><ITEM><PTXT>If the brake pedal was depressed before the possibility of a collision was determined to be high, pressure is boosted immediately as soon as the possibility of a collision is determined to be high. However, the assist effect applies only to the additional brake pedal depression amount newly applied by the driver.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730085c" WIDTH = "5.431in" HEIGHT = "3.097in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T090006A471A370" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     INDSW = "OFF">
+<TITLE>Pre-crash Brake Control</TITLE>
+<LIST1><ITEM><PTXT>Operates when the pre-crash sensor detects a collision object such as a preceding vehicle or road structure and determines that a collision is unavoidable.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730081c" WIDTH = "5.722in" HEIGHT = "2.861in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T090006A471A377" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Operating Range of Each Control</TITLE>
+<LIST1><ITEM><PTXT>The operating range of each control of the pre-crash safety system is as follows.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730080c" WIDTH = "5.722in" HEIGHT = "3.806in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T090006A471A495" UPDATE = "ORIGINAL" LDUP = "18Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Non-operating Conditions</TITLE>
+<LIST1><ITEM><PTXT>The non-operating conditions are as follows.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T090006A471A495I01" INDSW = "OFF">
+<TITLE>Non-operating Conditions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_02">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "59%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "4" VALIGN = "MIDDLE">
+<PTXT>Pre-crash Safety System</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the vehicle speed is 5km/h or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When IG-OFF or IG-ACC</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When there is a system malfunction<HINTREF     REFID = "H403090006A471A49501"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the pre-crash sensor cannot detect an object as a collision object<HINTREF     REFID = "H403090006A471A49502"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When colliding with an object outside the pre-crash sensor detection area<HINTREF     REFID = "H403090006A471A49503"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "3" VALIGN = "MIDDLE"><PTXT></PTXT>
+<PTXT>Pre-crash Seat Belt</PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1" VALIGN = "MIDDLE"><PTXT>Common</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the pre-crash system is not operating</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the seat belt is not fastened</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Brake Linked</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the vehicle speed is 30km/h or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Radar Linked</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the relative speed with the collision object is 30km/h or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "2" VALIGN = "MIDDLE">
+<PTXT>Pre-crash Brake Assist</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the pre-crash system is not operating</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the vehicle speed is 30km/h or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the driver does not depress the brake</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "2" VALIGN = "MIDDLE">
+<PTXT>Pre-crash Brake</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the pre-crash system is not operating</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the vehicle speed is 15km/h or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the pre-crash brake OFF switch is ON</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403090006A471A49501">When the system cannot operate due to a system malfunction, "PCS system check" and "PCS currently unavailable" are displayed on the multi-information display.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403090006A471A49502">Plastic objects such as pylons cannot be detected. In addition, people, bicycles, motorcycles, standing trees, animals, snow walls, etc. may be difficult to detect.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403090006A471A49503">The millimeter wave radar detects collision objects within a range of ±10° vertically and horizontally from the front of the radar. Therefore, it does not operate in side or rear collisions.</PTXT></ITEM></LIST1></HINT></MECA>
+
+<MECA ID = "T090006A471A496" UPDATE = "ORIGINAL" LDUP = "18Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Other Operating Cases</TITLE>
+<LIST1><ITEM><PTXT>In cases such as the following, the pre-crash sensor may detect an object and the pre-crash safety system may operate even if there is no possibility of a collision; this does not indicate a malfunction.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3940129c" WIDTH = "6.514in" HEIGHT = "3.500in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T090006A230S"><SCTITLE/>
+
+<PARA INFOID = "T090006A230" UPDATE = "ORIGINAL" LDUP = "17Apr2007"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Warning Lamp &amp; Indicator</TITLE>
+<LIST1><ITEM><PTXT>Each indicator and warning light is provided in the combination meter assembly.</PTXT></ITEM>
+<ITEM><PTXT>When the power is turned ON (IG ON), the PCS indicator light illuminates for 3 seconds for a bulb check.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740222c" WIDTH = "6.903in" HEIGHT = "2.972in" />
+</FIGURE>
+<SPEC ID = "T090006A230X01" INDSW = "OFF">
+<TITLE>Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "5" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "28%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Description</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Multi-information Display</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>PCS Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Master Caution Warning Light</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Details</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Pre-crash Braking Advance Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<GRAPHIC GRAPHICNAME = "a4740223c" WIDTH = "1.208in" HEIGHT = "0.806in" />
+</ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Warns that a collision has been determined to be unavoidable and the pre-crash brake will operate.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Pre-crash Seat Belt Malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "3" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<GRAPHIC GRAPHICNAME = "a4740224c" WIDTH = "1.208in" HEIGHT = "0.806in" />
+</ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "3" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "3" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "5" MOREROWS = "3"><PTXT>Warns that control has been prohibited when there is a malfunction in a system or communication has been interrupted for 3 seconds or more. However, control continues for functions whose normal operation can be ensured.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Pre-crash Brake Assist Malfunction</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Pre-crash Brake Malfunction</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Communication Interruption</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Temporarily Unavailable</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<GRAPHIC GRAPHICNAME = "a4740225c" WIDTH = "1.208in" HEIGHT = "0.806in" />
+</ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Informs that the system is temporarily unavailable due to dirt on the millimeter wave radar, overheating of the seat belt control computer, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Pre-crash Brake OFF Switch "ON"</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Informs that the pre-crash system cancel switch assembly is "ON" and pre-crash brake control is OFF.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T090006Ab10S"><SCTITLE/>
+
+<PARA INFOID = "T090006Ab10" UPDATE = "ORIGINAL" LDUP = "18Apr2007"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Seat Belt Control Computer</TITLE>
+<LIST1><ITEM><PTXT>When the seat belt control computer receives a pre-crash seat belt operation request signal from the distance control computer assembly or the ABS &amp; traction actuator assembly (skid control computer), it operates the internal motor drive circuit to retract the seat belt.</PTXT></ITEM>
+<ITEM><PTXT>If a collision does not actually occur even though the pre-crash seat belt has operated, the motor is rotated in reverse to return the belt to its tension before operation.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740226c" WIDTH = "6.903in" HEIGHT = "4.736in" />
+</FIGURE>
+
+<MECA ID = "T090006Ab10A123" UPDATE = "ORIGINAL" LDUP = "18Apr2007"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Operation of Diagnosis Circuit</TITLE>
+<LIST1><ITEM><PTXT>The seat belt control computer detects system malfunctions in 2 ways: a primary check and a constant check.</PTXT></ITEM>
+<ITEM><PTXT>When a malfunction is detected in the system, a warning is displayed in the combination meter.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740227c" WIDTH = "6.903in" HEIGHT = "1.986in" />
+</FIGURE>
+<INDICATE ID = "T090006Ab10A123I01" INDSW = "OFF">
+<TITLE>Check Details</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Outline</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Primary Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Performed for 3 seconds when the power is turned ON (IG ON). During the check, the PCS indicator light in the combination meter illuminates. If there is no malfunction, the light turns off and the pre-crash seat belt becomes ready to operate.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Constant Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>After the primary check is completed, the diagnosis circuit in the seat belt control computer constantly checks the system for malfunctions.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T090006Ab10A367" UPDATE = "ORIGINAL" LDUP = "18Apr2007"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Diagnosis Function</TITLE>
+<LIST1><ITEM><PTXT>By switching to the diagnosis mode, the diagnosis result for the malfunction location can be displayed by the number of times the indicator light blinks. In addition, a new diagnosis function has been adopted, and the diagnostic trouble code for the malfunction location can be read by connecting a diagnostic tool to DLC3. For details on the diagnosis mode, refer to the Repair Manual.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T090006A469S"><SCTITLE/>
+
+<PARA INFOID = "T090006A469" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "Vehicle Outline: Safety">
+<TITLE>Pre-crash Safety System Outline</TITLE>
+<LIST1><ITEM><PTXT>A pre-crash safety system (radar type) with millimeter wave radar has been adopted and is provided depending on the vehicle specification.</PTXT></ITEM>
+<ITEM><PTXT>The pre-crash safety system predicts a collision with a vehicle or obstacle ahead and, before the collision, retracts the seat belts and performs brake assist control and brake control, reducing the impact in a collision.</PTXT></ITEM>
+<ITEM><PTXT>During sudden braking, or when the ABS &amp; traction actuator assembly (skid control computer) determines that vehicle control has been lost (spin condition, etc.), the seat belts are retracted to reduce the impact in a collision.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740210c" WIDTH = "6.903in" HEIGHT = "4.958in" />
+</FIGURE>
+<INDICATE ID = "T090006A469I01" INDSW = "OFF">
+<TITLE>Main Components and Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "38%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "61%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Millimeter Wave Radar Sensor Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Transmits and receives millimeter waves to recognize obstacles.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Distance Control Computer Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Determines whether a collision is unavoidable based on information from each sensor, and sends operation request signals to the ABS &amp; traction actuator assembly (skid control computer) and the seat belt control computer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>ABS &amp; Traction Actuator Assembly (Skid Control Computer)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Sends control signals to the brake actuator based on signals from the distance control computer assembly. In addition, sends the emergency brake operation signal to the seat belt control computer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Sends the vehicle speed signal to the distance control computer assembly.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Combination Meter Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Informs the driver of the system status.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Seat Belt Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Performs pre-crash seat belt control based on signals from the distance control computer assembly and the ABS &amp; traction actuator assembly (skid control computer).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Front Seat Outer Belt Assembly (Pre-crash Seat Belt)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Retracts the seat belt with a motor before a collision.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Front Seat Inner Belt Assembly (Buckle Switch)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Detects whether the seat belt is fastened or unfastened.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Skid Control Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Sounds before and during pre-crash brake operation.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Pre-crash System Cancel Switch Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>When the switch is "ON", pre-crash brake operation is stopped.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+</PARA>
+<PARA INFOID = "T090006A469P" UPDATE = "ORIGINAL" LDUP = "99XXX9999" INFOTYPE = "SYSTEM" INDSW = "ON" UNPRINT="OFF">
+<TITLE>Related Systems</TITLE>
+
+<MECA ID = "T090006A471A495R01" UPDATE = "ORIGINAL" LDUP = "18Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Non-operating Conditions</TITLE>
+<LIST1><ITEM><PTXT>The non-operating conditions are as follows.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T090006A471A495R01I01" INDSW = "OFF">
+<TITLE>Non-operating Conditions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_02">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "59%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "4" VALIGN = "MIDDLE">
+<PTXT>Pre-crash Safety System</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the vehicle speed is 5km/h or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When IG-OFF or IG-ACC</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When there is a system malfunction<HINTREF     REFID = "H403090006A471A495R0101"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the pre-crash sensor cannot detect an object as a collision object<HINTREF     REFID = "H403090006A471A495R0102"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When colliding with an object outside the pre-crash sensor detection area<HINTREF     REFID = "H403090006A471A495R0103"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "3" VALIGN = "MIDDLE"><PTXT></PTXT>
+<PTXT>Pre-crash Seat Belt</PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1" VALIGN = "MIDDLE"><PTXT>Common</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the pre-crash system is not operating</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the seat belt is not fastened</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Brake Linked</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the vehicle speed is 30km/h or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Radar Linked</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the relative speed with the collision object is 30km/h or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "2" VALIGN = "MIDDLE">
+<PTXT>Pre-crash Brake Assist</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the pre-crash system is not operating</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the vehicle speed is 30km/h or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the driver does not depress the brake</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "2" VALIGN = "MIDDLE">
+<PTXT>Pre-crash Brake</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the pre-crash system is not operating</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the vehicle speed is 15km/h or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the pre-crash brake OFF switch is ON</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403090006A471A495R0101">When the system cannot operate due to a system malfunction, "PCS system check" and "PCS currently unavailable" are displayed on the multi-information display.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403090006A471A495R0102">Plastic objects such as pylons cannot be detected. In addition, people, bicycles, motorcycles, standing trees, animals, snow walls, etc. may be difficult to detect.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403090006A471A495R0103">The millimeter wave radar detects collision objects within a range of ±10° vertically and horizontally from the front of the radar. Therefore, it does not operate in side or rear collisions.</PTXT></ITEM></LIST1></HINT></MECA>
+
+<MECA ID = "T090006A471A496R02" UPDATE = "ORIGINAL" LDUP = "18Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Other Operating Cases</TITLE>
+<LIST1><ITEM><PTXT>In cases such as the following, the pre-crash sensor may detect an object and the pre-crash safety system may operate even if there is no possibility of a collision; this does not indicate a malfunction.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3940129c" WIDTH = "6.514in" HEIGHT = "3.500in" />
+</FIGURE>
+</MECA>
+</PARA>
+<BIND ID = "T090006A469B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T090006A470R01" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Millimeter Wave</TITLE>
+<LIST1><ITEM><PTXT>Millimeter waves are radio waves in a very high frequency band from 30GHz to 300GHz, with an extremely short wavelength in a vacuum of 1 to 10mm. Millimeter waves are not easily affected by conditions such as rain, fog or snow, and provide excellent object recognition performance. A 76GHz band radar is used in the pre-crash safety system.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730075c" WIDTH = "4.389in" HEIGHT = "1.931in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T090006A471R02" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Pre-crash Sensor</TITLE>
+<LIST1><ITEM><PTXT>Obstacles are recognized through the millimeter wave radar, the possibility of a collision is determined, and operation request signals are sent to each computer.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740215c" WIDTH = "6.903in" HEIGHT = "2.167in" />
+</FIGURE>
+
+<MECA ID = "T090006A471A368R03" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     INDSW = "OFF">
+<TITLE>Pre-crash Seat Belt Operation</TITLE>
+<LIST1><ITEM><PTXT>When the pre-crash sensor determines that a collision is unavoidable. (Radar linked)</PTXT></ITEM>
+<ITEM><PTXT>When the driver depresses the brake suddenly. Or when vehicle skidding is determined (brake linked)</PTXT></ITEM>
+<ITEM><PTXT>Under normal conditions, the shaft is free due to the clutch mechanism.</PTXT></ITEM>
+<ITEM><PTXT>When current is applied to the motor and rotation is transmitted through the reduction gear, the clutch engages and the webbing is retracted.</PTXT></ITEM>
+<ITEM><PTXT>In addition, after operation, a retraction operation is performed again to release the belt retraction.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730079c" WIDTH = "6.903in" HEIGHT = "3.153in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T090006A471A369R04" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     INDSW = "OFF">
+<TITLE>Pre-crash Brake Assist Control</TITLE>
+<LIST1><ITEM><PTXT>When the pre-crash sensor determines that the possibility of a collision is high, braking pressure is boosted when the driver depresses the brake pedal.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730084c" WIDTH = "6.903in" HEIGHT = "3.125in" />
+</FIGURE>
+<LIST1><ITEM><PTXT>If the brake pedal was depressed before the possibility of a collision was determined to be high, pressure is boosted immediately as soon as the possibility of a collision is determined to be high. However, the assist effect applies only to the additional brake pedal depression amount newly applied by the driver.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730085c" WIDTH = "5.431in" HEIGHT = "3.097in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T090006A471A370R05" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     INDSW = "OFF">
+<TITLE>Pre-crash Brake Control</TITLE>
+<LIST1><ITEM><PTXT>Operates when the pre-crash sensor detects a collision object such as a preceding vehicle or road structure and determines that a collision is unavoidable.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730081c" WIDTH = "5.722in" HEIGHT = "2.861in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T090006A471A377R06" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Operating Range of Each Control</TITLE>
+<LIST1><ITEM><PTXT>The operating range of each control of the pre-crash safety system is as follows.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730080c" WIDTH = "5.722in" HEIGHT = "3.806in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T090006A471A495R07" UPDATE = "ORIGINAL" LDUP = "18Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Non-operating Conditions</TITLE>
+<LIST1><ITEM><PTXT>The non-operating conditions are as follows.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T090006A471A495R07I01" INDSW = "OFF">
+<TITLE>Non-operating Conditions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_02">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "59%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "4" VALIGN = "MIDDLE">
+<PTXT>Pre-crash Safety System</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the vehicle speed is 5km/h or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When IG-OFF or IG-ACC</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When there is a system malfunction<HINTREF     REFID = "H403090006A471A495R0701"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the pre-crash sensor cannot detect an object as a collision object<HINTREF     REFID = "H403090006A471A495R0702"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When colliding with an object outside the pre-crash sensor detection area<HINTREF     REFID = "H403090006A471A495R0703"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "3" VALIGN = "MIDDLE"><PTXT></PTXT>
+<PTXT>Pre-crash Seat Belt</PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1" VALIGN = "MIDDLE"><PTXT>Common</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the pre-crash system is not operating</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the seat belt is not fastened</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Brake Linked</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the vehicle speed is 30km/h or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Radar Linked</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the relative speed with the collision object is 30km/h or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "2" VALIGN = "MIDDLE">
+<PTXT>Pre-crash Brake Assist</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the pre-crash system is not operating</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the vehicle speed is 30km/h or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the driver does not depress the brake</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "2" VALIGN = "MIDDLE">
+<PTXT>Pre-crash Brake</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the pre-crash system is not operating</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the vehicle speed is 15km/h or less</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE"><PTXT>When the pre-crash brake OFF switch is ON</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403090006A471A495R0701">When the system cannot operate due to a system malfunction, "PCS system check" and "PCS currently unavailable" are displayed on the multi-information display.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403090006A471A495R0702">Plastic objects such as pylons cannot be detected. In addition, people, bicycles, motorcycles, standing trees, animals, snow walls, etc. may be difficult to detect.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403090006A471A495R0703">The millimeter wave radar detects collision objects within a range of ±10° vertically and horizontally from the front of the radar. Therefore, it does not operate in side or rear collisions.</PTXT></ITEM></LIST1></HINT></MECA>
+
+<MECA ID = "T090006A471A496R08" UPDATE = "ORIGINAL" LDUP = "18Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Other Operating Cases</TITLE>
+<LIST1><ITEM><PTXT>In cases such as the following, the pre-crash sensor may detect an object and the pre-crash safety system may operate even if there is no possibility of a collision; this does not indicate a malfunction.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3940129c" WIDTH = "6.514in" HEIGHT = "3.500in" />
+</FIGURE>
+</MECA>
+</PARA>
+
+<PARA INFOID = "T090006A230R03" UPDATE = "ORIGINAL" LDUP = "17Apr2007"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Warning Lamp &amp; Indicator</TITLE>
+<LIST1><ITEM><PTXT>Each indicator and warning light is provided in the combination meter assembly.</PTXT></ITEM>
+<ITEM><PTXT>When the power is turned ON (IG ON), the PCS indicator light illuminates for 3 seconds for a bulb check.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740222c" WIDTH = "6.903in" HEIGHT = "2.972in" />
+</FIGURE>
+<SPEC ID = "T090006A230R03X01" INDSW = "OFF">
+<TITLE>Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "5" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "28%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Description</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Multi-information Display</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>PCS Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Master Caution Warning Light</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Details</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Pre-crash Braking Advance Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<GRAPHIC GRAPHICNAME = "a4740223c" WIDTH = "1.208in" HEIGHT = "0.806in" />
+</ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Warns that a collision has been determined to be unavoidable and the pre-crash brake will operate.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Pre-crash Seat Belt Malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "3" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<GRAPHIC GRAPHICNAME = "a4740224c" WIDTH = "1.208in" HEIGHT = "0.806in" />
+</ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "3" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "3" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "5" MOREROWS = "3"><PTXT>Warns that control has been prohibited when there is a malfunction in a system or communication has been interrupted for 3 seconds or more. However, control continues for functions whose normal operation can be ensured.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Pre-crash Brake Assist Malfunction</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Pre-crash Brake Malfunction</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Communication Interruption</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Temporarily Unavailable</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<GRAPHIC GRAPHICNAME = "a4740225c" WIDTH = "1.208in" HEIGHT = "0.806in" />
+</ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Informs that the system is temporarily unavailable due to dirt on the millimeter wave radar, overheating of the seat belt control computer, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Pre-crash Brake OFF Switch "ON"</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Informs that the pre-crash system cancel switch assembly is "ON" and pre-crash brake control is OFF.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+
+<PARA INFOID = "T090006Ab10R04" UPDATE = "ORIGINAL" LDUP = "18Apr2007"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Seat Belt Control Computer</TITLE>
+<LIST1><ITEM><PTXT>When the seat belt control computer receives a pre-crash seat belt operation request signal from the distance control computer assembly or the ABS &amp; traction actuator assembly (skid control computer), it operates the internal motor drive circuit to retract the seat belt.</PTXT></ITEM>
+<ITEM><PTXT>If a collision does not actually occur even though the pre-crash seat belt has operated, the motor is rotated in reverse to return the belt to its tension before operation.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740226c" WIDTH = "6.903in" HEIGHT = "4.736in" />
+</FIGURE>
+
+<MECA ID = "T090006Ab10A123R09" UPDATE = "ORIGINAL" LDUP = "18Apr2007"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Operation of Diagnosis Circuit</TITLE>
+<LIST1><ITEM><PTXT>The seat belt control computer detects system malfunctions in 2 ways: a primary check and a constant check.</PTXT></ITEM>
+<ITEM><PTXT>When a malfunction is detected in the system, a warning is displayed in the combination meter.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740227c" WIDTH = "6.903in" HEIGHT = "1.986in" />
+</FIGURE>
+<INDICATE ID = "T090006Ab10A123R09I01" INDSW = "OFF">
+<TITLE>Check Details</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Outline</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Primary Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Performed for 3 seconds when the power is turned ON (IG ON). During the check, the PCS indicator light in the combination meter illuminates. If there is no malfunction, the light turns off and the pre-crash seat belt becomes ready to operate.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Constant Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>After the primary check is completed, the diagnosis circuit in the seat belt control computer constantly checks the system for malfunctions.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T090006Ab10A367R10" UPDATE = "ORIGINAL" LDUP = "18Apr2007"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Diagnosis Function</TITLE>
+<LIST1><ITEM><PTXT>By switching to the diagnosis mode, the diagnosis result for the malfunction location can be displayed by the number of times the indicator light blinks. In addition, a new diagnosis function has been adopted, and the diagnostic trouble code for the malfunction location can be read by connecting a diagnostic tool to DLC3. For details on the diagnosis mode, refer to the Repair Manual.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+
+<PARA INFOID = "T090001K599" UPDATE = "ORIGINAL" LDUP = "24Jan2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Seat Belt Outline</TITLE>
+<LIST1><ITEM><PTXT>3-point ELR seat belts have been adopted for all seats.</PTXT></ITEM>
+<ITEM><PTXT>For the front seats, seat belts with pretensioner and force limiter have been provided for both the driver and front passenger seats.</PTXT></ITEM>
+<ITEM><PTXT>Adjustable shoulder belt anchors with 4-step vertical adjustment have been adopted for the driver and front passenger seat belts to accommodate occupants of various builds. In addition, the slip joint is built into the center pillar upper garnish for improved appearance.</PTXT></ITEM>
+<ITEM><PTXT>A child seat fixing mechanism has been adopted for the rear 3-point ELR seat belts. The child seat fixing mechanism is activated by pulling the belt out fully; in this state the belt can be retracted but cannot be pulled out. When the belt is retracted beyond a certain amount, the child seat fixing mechanism is released and the belt returns to normal ELR state.</PTXT></ITEM>
+<ITEM><PTXT>The inner buckles of the rear outboard seats are a self-standing type that protrudes from the seat surface, while the contact feel when moving across the seat has been reduced, achieving both ease of seat belt fastening and comfort.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740044c" WIDTH = "6.903in" HEIGHT = "4.625in" />
+</FIGURE>
+</PARA>
+</BIND>
+</SECTION>
+<SECTION SCID = "T090006A552S"><SCTITLE/>
+
+<PARA INFOID = "T090006A552" UPDATE = "ORIGINAL" LDUP = "18Apr2004"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Pre-crash Safety System Control Outline</TITLE>
+<LIST1><ITEM><PTXT>The millimeter wave radar sensor assembly recognizes vehicles and obstacles in the vehicle's path, and the distance control computer assembly determines whether a collision is unavoidable from the position, speed and path of the object.</PTXT></ITEM>
+<ITEM><PTXT>The distance control computer assembly sends that information via CAN communication to the ABS &amp; traction actuator assembly (skid control computer) and the seat belt control computer, operating each control of the pre-crash safety system.</PTXT></ITEM>
+<ITEM><PTXT>When the ABS &amp; traction actuator assembly (skid control computer) recognizes emergency braking by the driver or determines that there is a high possibility that the vehicle will become uncontrollable (spinning, etc.), it sends that information to the seat belt control computer via CAN communication to operate the pre-crash seat belt.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740211c" WIDTH = "8.542in" HEIGHT = "6.778in" />
+</FIGURE>
+<INDICATE ID = "T090006A552I01" INDSW = "OFF">
+<TITLE>Control List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "66%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Description</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "LEFT">
+<PTXT>Pre-crash Seat Belt</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>When the distance control computer (pre-crash safety computer) determines that a collision is unavoidable, the belt is retracted by the motor to increase the pretensioner effect.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>When the skid control computer recognizes emergency braking by the driver or determines that there is a high possibility that the vehicle will become uncontrollable, the belt is retracted by the motor to increase the pretensioner effect.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Pre-crash Brake Assist Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>When the distance control computer (pre-crash safety computer) determines that the possibility of a collision is high, brake hydraulic pressure is boosted to increase the braking effect when the brake pedal is depressed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Pre-crash Brake Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>When the distance control computer (pre-crash safety computer) determines that there is a possibility of a collision, it warns the driver with a buzzer and display. Furthermore, when a collision is determined to be unavoidable, the brakes are applied to reduce speed even without brake operation by the driver.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T090006K724S"><SCTITLE/>
+
+<PARA INFOID = "T090006K724" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Millimeter Wave Radar Sensor</TITLE>
+<LIST1><ITEM><PTXT>The millimeter wave radar sensor assembly is mounted behind the radiator grille.</PTXT></ITEM>
+<ITEM><PTXT>By turning the radar axis adjustment bolts and gear section, the radar axis can be adjusted within a range of 3° up, down, left and right.</PTXT></ITEM>
+<ITEM><PTXT>Adjust the radar axis carefully using TaSCAN and a level.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740213c" WIDTH = "6.903in" HEIGHT = "3.903in" />
+</FIGURE>
+
+<MECA ID = "T090006K724A372" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Detection Method for Relative Distance and Relative Speed</TITLE>
+<LIST1><ITEM><PTXT>When an object exists within the range of the millimeter wave radar sensor assembly, the distance, relative speed and direction of the object are detected from the reflected waves, and based on that data the pre-crash safety computer determines whether a collision is unavoidable.</PTXT></ITEM>
+<ITEM><PTXT>The direction of the object is detected from the angle of the reflected waves, the distance from the time between emitting the radio waves and the return of the reflected waves, and the speed of the object from the frequency change of the reflected waves (Doppler effect).</PTXT></ITEM>
+<ITEM><PTXT>In addition, on curves, the radius of the curve is estimated based on information from the yaw rate sensor assembly and steering sensor, and the path is corrected.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730077c" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>
+</SCT>

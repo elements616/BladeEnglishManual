@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740208c SYSTEM "grph_ent/a4740208c.png" NDATA png>
+
+<!ENTITY T070001A238 SYSTEM "t403070001a238.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T070001A238S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T070001A238" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "Vehicle Outline: Design">
+<TITLE>Steering Wheel</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A leather-wrapped 3-spoke steering wheel with audio switches has been adopted on 2GR-FE engine models.</PTXT></ITEM>
+<ITEM><PTXT>A steering wheel with SRS airbag is adopted on all models out of consideration for safety.</PTXT></ITEM>
+<ITEM><PTXT>For detailed switch specifications, refer to the appendix at the end of the manual.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740208c" WIDTH = "6.903in" HEIGHT = "3.222in" />
+</FIGURE>
+</PARA>
+</SECTION>

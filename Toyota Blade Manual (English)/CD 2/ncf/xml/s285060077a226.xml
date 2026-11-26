@@ -1,0 +1,1714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a339m004c SYSTEM "../SWF/a339m004c.swf" NDATA swf>
+<!ENTITY k4250195c SYSTEM "grph_ent/k4250195c.png" NDATA png>
+<!ENTITY a4740179c SYSTEM "grph_ent/a4740179c.png" NDATA png>
+<!ENTITY k4250108c SYSTEM "grph_ent/k4250108c.png" NDATA png>
+<!ENTITY a4740191c SYSTEM "grph_ent/a4740191c.png" NDATA png>
+<!ENTITY k4250214c SYSTEM "grph_ent/k4250214c.png" NDATA png>
+<!ENTITY k4250215c SYSTEM "grph_ent/k4250215c.png" NDATA png>
+<!ENTITY k4250216c SYSTEM "grph_ent/k4250216c.png" NDATA png>
+<!ENTITY a4740160c SYSTEM "grph_ent/a4740160c.png" NDATA png>
+<!ENTITY k4250172c SYSTEM "grph_ent/k4250172c.png" NDATA png>
+<!ENTITY k4250173c SYSTEM "grph_ent/k4250173c.png" NDATA png>
+<!ENTITY a4740192c SYSTEM "grph_ent/a4740192c.png" NDATA png>
+<!ENTITY k4250217c SYSTEM "grph_ent/k4250217c.png" NDATA png>
+<!ENTITY k4250218c SYSTEM "grph_ent/k4250218c.png" NDATA png>
+<!ENTITY a4740164c SYSTEM "grph_ent/a4740164c.png" NDATA png>
+<!ENTITY a4740165c SYSTEM "grph_ent/a4740165c.png" NDATA png>
+<!ENTITY a4740010c SYSTEM "grph_ent/a4740010c.png" NDATA png>
+<!ENTITY k4250210c SYSTEM "grph_ent/k4250210c.png" NDATA png>
+<!ENTITY k4730035c SYSTEM "grph_ent/k4730035c.png" NDATA png>
+<!ENTITY k4730036c SYSTEM "grph_ent/k4730036c.png" NDATA png>
+<!ENTITY k4250212c SYSTEM "grph_ent/k4250212c.png" NDATA png>
+<!ENTITY a4740189c SYSTEM "grph_ent/a4740189c.png" NDATA png>
+
+<!ENTITY T060077A226 SYSTEM "t285060077a226.xml">
+<!ENTITY T060077A226A109 SYSTEM "t285060077a226a109.xml">
+<!ENTITY T060077A226A110 SYSTEM "t285060077a226a110.xml">
+<!ENTITY T060077A226A111 SYSTEM "t285060077a226a111.xml">
+
+<!ENTITY T060077A228A352 SYSTEM "t285060077a228a352.xml">
+<!ENTITY T060077A229A352 SYSTEM "t285060077a229a352.xml">
+<!ENTITY T060077A465A240 SYSTEM "t285060077a465a240.xml">
+<!ENTITY T060077A465A186 SYSTEM "t285060077a465a186.xml">
+<!ENTITY T060077A465A188 SYSTEM "t285060077a465a188.xml">
+<!ENTITY T060077A465A113 SYSTEM "t285060077a465a113.xml">
+<!ENTITY T060077A465A113R01 SYSTEM "t285060077a465a113r01.xml">
+<!ENTITY T060077A465A114 SYSTEM "t285060077a465a114.xml">
+<!ENTITY T060077A465A114R02 SYSTEM "t285060077a465a114r02.xml">
+<!ENTITY T060077A465A189 SYSTEM "t285060077a465a189.xml">
+<!ENTITY T060077A465A189R03 SYSTEM "t285060077a465a189r03.xml">
+<!ENTITY T060077A465A190 SYSTEM "t285060077a465a190.xml">
+<!ENTITY T060077A465A190R04 SYSTEM "t285060077a465a190r04.xml">
+<!ENTITY T060077A465A191 SYSTEM "t285060077a465a191.xml">
+<!ENTITY T060077A465A191R05 SYSTEM "t285060077a465a191r05.xml">
+<!ENTITY T060077A465A504 SYSTEM "t285060077a465a504.xml">
+<!ENTITY T060077A465A504R06 SYSTEM "t285060077a465a504r06.xml">
+<!ENTITY T060077A232A184 SYSTEM "t285060077a232a184.xml">
+<!ENTITY T060077A232A185 SYSTEM "t285060077a232a185.xml">
+<!ENTITY T060077A232K003 SYSTEM "t285060077a232k003.xml">
+<!ENTITY T060077A228 SYSTEM "t285060077a228.xml">
+<!ENTITY T060077A229 SYSTEM "t285060077a229.xml">
+<!ENTITY T060077A230 SYSTEM "t478060077a230.xml">
+<!ENTITY T060077A270 SYSTEM "t478060077a270.xml">
+<!ENTITY T060077A272 SYSTEM "t478060077a272.xml">
+<!ENTITY T060077A271 SYSTEM "t478060077a271.xml">
+<!ENTITY T060077A465 SYSTEM "t285060077a465.xml">
+<!ENTITY T060077A232 SYSTEM "t285060077a232.xml">
+<!ENTITY T060077K036 SYSTEM "t478060077k036.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T060077A226S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T060077A226" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "Vehicle Outline: Safety">
+<TITLE>ABS with EBD</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>For a vehicle to drive, turn and stop, it is fundamental that the tires grip the road surface and perform their function as tires. However, during sudden braking or braking on slippery road surfaces such as snowy roads or puddles, the wheels may lock while the vehicle is still moving, causing slipping between the tires and the road surface. Therefore, ABS (Anti-lock Brake System) detects the wheel speed during such braking and controls the brake fluid pressure of all 4 wheels under computer control. This control prevents the tires from locking and ensures sufficient braking performance, thus maintaining steerability and vehicle stability.</PTXT></ITEM>
+<ITEM><PTXT>In addition to conventional ABS functions, ABS with EBD appropriately controls the braking force of the front and rear wheels and of the left and right wheels regardless of load changes due to the vehicle being empty or loaded, ensuring excellent braking performance.</PTXT></ITEM></LIST1>
+<FIGURE FIGURETYPE = "MOVIE">
+<GRAPHIC GRAPHICNAME = "a339m004c" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+
+<MECA ID = "T060077A226A109" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Front/Rear Brake Force Distribution Control</TITLE>
+<LIST1><ITEM><PTXT>Front/rear brake force distribution control achieves an appropriate distribution of braking force to the front and rear wheels according to the vehicle driving conditions, with the aim of fully bringing out the "stopping" performance that is the basic function of the brakes.</PTXT></ITEM>
+<ITEM><PTXT>As a result, the braking force of the rear wheels can be effectively used according to load changes due to loading conditions and deceleration, reducing the brake pedal effort particularly when loaded and ensuring excellent braking effectiveness.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250195c" WIDTH = "6.917in" HEIGHT = "3.361in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T060077A226A110" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Left/Right Brake Force Distribution Control</TITLE>
+<LIST1><ITEM><PTXT>Left/right brake force distribution control controls the braking force of the left and right wheels to ensure vehicle stability when braking during cornering, ensuring excellent braking effectiveness while maintaining vehicle stability during braking.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740179c" WIDTH = "6.903in" HEIGHT = "3.153in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T060077A226A111" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Precautions for ABS with EBD</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>ABS is not a device that provides performance exceeding the capability of the tires; drive safely, paying sufficient attention to speed, following distance, etc.</PTXT></ITEM>
+<ITEM><PTXT>Installing parts other than those specified, such as tires of other than the specified size, will adversely affect ABS control.</PTXT></ITEM>
+<ITEM><PTXT>Motor noise may be heard due to the initial check immediately after the engine is started and the vehicle is driven for the first time; this is not a malfunction.</PTXT></ITEM>
+<ITEM><PTXT>If the brake pedal is lightly depressed during the initial check, it may feel heavy; this is not a malfunction.</PTXT></ITEM>
+<ITEM><PTXT>Under the following conditions, the braking distance when ABS operates may be longer than that of a vehicle without ABS.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Condition</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When driving on gravel roads or fresh snow</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When tire chains are installed</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When driving over bumps such as road joints</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When driving on rough roads such as uneven roads or cobblestones</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+</PARA>
+<PARA INFOID = "T060077A226P" UPDATE = "ORIGINAL" LDUP = "99XXX9999" INFOTYPE = "SYSTEM" INDSW = "ON" UNPRINT="OFF">
+<TITLE>Related Systems</TITLE>
+
+<MECA ID = "T060077A465A113R01" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>ABS with EBD Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Hydraulic pressure control of the 4 wheels is performed by operating the holding and pressure reduction solenoid valves, pump and reservoirs.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250215c" WIDTH = "6.917in" HEIGHT = "4.153in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Control Operation</TITLE>
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "25%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When Not Operating</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Normal Braking</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>-</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When Operating</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Pressure Increase Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Holding Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Pressure Reduction Mode</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>OFF</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>ON</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>OFF</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>ON</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Port 1</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Open</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>Closed</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Port 2</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Closed</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>Open</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Apply hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>Release hydraulic pressure</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T060077A465A114R02" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Brake Assist Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Brake assist control directs hydraulic pressure generated by the pump in the brake actuator to each wheel cylinder, generating hydraulic pressure higher than that of the master cylinder.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250216c" WIDTH = "6.917in" HEIGHT = "7.111in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Brake Assist Control Operation</TITLE>
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "33%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Input Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Not Under Control</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>During Brake Assist Control</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.1</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.2</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Same as master cylinder hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Increased above master cylinder hydraulic pressure</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T060077A465A189R03" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>TRC Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Hydraulic pressure generated by the pump in the brake actuator is directed to the wheel cylinders of each wheel, suppressing wheel slip caused by the driving force.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740160c" WIDTH = "6.917in" HEIGHT = "6.708in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>TRC Control Operation (2WD)</TITLE>
+<TGROUP COLS = "6" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "12%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "16%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "1" CONSPIC = "0"><PTXT>Input Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1" CONSPIC = "0"><PTXT>Not Under Control</PTXT></ENTRY>
+<ENTRY NAMEST = "4" NAMEEND = "6" CONSPIC = "0"><PTXT>During TRC Control</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Pressure Increase Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Holding Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Pressure Reduction Mode</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.1</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.2</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Front Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Open)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Apply hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Release hydraulic pressure</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Rear Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>TRC Control Operation (4WD)</TITLE>
+<TGROUP COLS = "6" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "12%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "16%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "1" CONSPIC = "0"><PTXT>Input Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1" CONSPIC = "0"><PTXT>Not Under Control</PTXT></ENTRY>
+<ENTRY NAMEST = "4" NAMEEND = "6" CONSPIC = "0"><PTXT>During TRC Control</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Pressure Increase Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Holding Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Pressure Reduction Mode</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.1</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.2</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Front Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Open)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Apply hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Release hydraulic pressure</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Rear Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Open)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Apply hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Release hydraulic pressure</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T060077A465A190R04" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Rear Wheel Skid Control</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Hydraulic pressure generated by the pump in the brake actuator is directed to the wheel cylinders of each wheel, and the brake hydraulic pressure is controlled to suppress rear wheel skid or front wheel skid.</PTXT></ITEM>
+<ITEM><PTXT>In rear wheel skid control, the front brake on the outer side of the turn is applied.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250172c" WIDTH = "6.917in" HEIGHT = "6.514in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>VSC Control Operation (Rear Wheel Skid Control)</TITLE>
+<TGROUP COLS = "6" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "12%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "16%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "1" CONSPIC = "0"><PTXT>Input Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1" CONSPIC = "0"><PTXT>Not Under Control</PTXT></ENTRY>
+<ENTRY NAMEST = "4" NAMEEND = "6" CONSPIC = "0"><PTXT>During VSC Control</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Pressure Increase Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Holding Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Pressure Reduction Mode</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.1</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.2</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Front Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←*1</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Open)*2</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Apply hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Release hydraulic pressure</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Rear Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT><?FM MARKER [■■■&#x074E;Q■■] 79387: List1 Hint text: *1： 非制御輪については，保持ソレノイドバルブをON（閉）にします。?>For the front wheel not under control, the holding solenoid valve is turned ON (closed).</PTXT></ITEM>
+<ITEM><PTXT><?FM MARKER [■■■&#x074E;Q■■] 85915: List1 Hint text: *2： 非制御輪については，保持ソレノイドバルブをON（閉）にします。?>For the front wheel not under control, the pressure reduction solenoid valve is turned OFF (closed).</PTXT></ITEM></LIST1></HINT></MECA>
+
+<MECA ID = "T060077A465A191R05" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Front Wheel Skid Control</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>VSC control directs hydraulic pressure generated by the pump in the brake actuator to each wheel cylinder and controls the brake hydraulic pressure to suppress rear wheel skid or front wheel skid.</PTXT></ITEM>
+<ITEM><PTXT>In front wheel skid control, the front wheel brakes and the rear wheel brake on the inner side of the turn are applied.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250173c" WIDTH = "6.917in" HEIGHT = "6.917in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>VSC Control Operation (Front Wheel Skid Control)</TITLE>
+<TGROUP COLS = "6" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "12%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "16%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "1" CONSPIC = "0"><PTXT>Input Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1" CONSPIC = "0"><PTXT>Not Under Control</PTXT></ENTRY>
+<ENTRY NAMEST = "4" NAMEEND = "6" CONSPIC = "0"><PTXT>During VSC Control</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Pressure Increase Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Holding Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Pressure Reduction Mode</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.1</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.2</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Front Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Open)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Apply hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Release hydraulic pressure</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Rear Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←<HINTREF REFID = "H285060077A465A191R0501"/></PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Open)<HINTREF REFID = "H285060077A465A191R0502"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Apply hydraulic pressure<HINTREF REFID = "H285060077A465A191R0503"/></PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Release hydraulic pressure<HINTREF REFID = "H285060077A465A191R0503"/></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H285060077A465A191R0501">For wheels not under control, the holding solenoid valve is turned ON (closed).</PTXT></ITEM>
+<ITEM><PTXT ID = "H285060077A465A191R0502">For wheels not under control, the pressure reduction solenoid valve is turned OFF (closed).</PTXT></ITEM>
+<ITEM><PTXT ID = "H285060077A465A191R0503">For wheels not under control, the hydraulic pressure is held.</PTXT></ITEM></LIST1></HINT></MECA>
+
+<MECA ID = "T060077A465A504R06" UPDATE = "ORIGINAL" LDUP = "22Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Hill-start Assist Control Brake Control</TITLE>
+<LIST1><ITEM><PTXT>While the brakes are held, the M/C cut solenoid valves (No.1 and No.2) are closed so that a certain portion of the hydraulic pressure generated by the master cylinder remains in the calipers, performing hill-start assist control.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740192c" WIDTH = "6.903in" HEIGHT = "6.333in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Hill-start Assist Control Brake Control</TITLE>
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "28%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Input Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Not Under Control</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>During Hill-start Assist Control</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT">
+<PTXT>M/C Cut Solenoid Valve No.1</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT">
+<PTXT>M/C Cut Solenoid Valve No.2</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT">
+<PTXT>Front Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT">
+<PTXT>Rear Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←<SUP></SUP></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+</PARA>
+<BIND ID = "T060077A226B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T060077A228" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Front Speed Sensor &amp; Rotor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A semiconductor type speed sensor is mounted to the steering knuckle, and a magnetic rotor is mounted to the inner race of the hub bearing.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740164c" WIDTH = "6.917in" HEIGHT = "2.778in" />
+</FIGURE>
+
+<MECA ID = "T060077A228A352" UPDATE = "ORIGINAL" LDUP = "28Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Detection Principle</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The magnetic rotor consists of rubber filled with magnetic powder, with N and S poles evenly arranged in the circumferential direction (48 poles each for S and N).</PTXT></ITEM>
+<ITEM><PTXT>When the magnetic rotor rotates, changes in the magnetic field are produced; these are detected by the active sensor and output as vehicle speed pulses.</PTXT></ITEM>
+<ITEM><PTXT>Compared with the commonly used passive sensor, detection is possible from a vehicle speed of approximately 0km/h.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250108c" WIDTH = "6.917in" HEIGHT = "5.139in" />
+</FIGURE>
+</MECA>
+</PARA>
+
+<PARA INFOID = "T060077A229" UPDATE = "ORIGINAL" LDUP = "1Oct2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Rear Speed Sensor &amp; Rotor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>On 2WD models, a semiconductor type speed sensor &amp; magnetic rotor integrated with the bearing unit is provided in the axle hub, with the magnetic rotor mounted to the inner race of the bearing unit and the sensor mounted on the cap side.</PTXT></ITEM>
+<ITEM><PTXT>On 4WD models, a semiconductor type speed sensor &amp; magnetic rotor are provided, with the magnetic rotor mounted to the inner race of the bearing unit and the sensor mounted to the rear axle.</PTXT></ITEM>
+<ITEM><PTXT>On both 2WD and 4WD models, the operating principle of wheel speed detection is basically the same as that of the front.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740165c" WIDTH = "6.903in" HEIGHT = "5.917in" />
+</FIGURE>
+
+<MECA ID = "T060077A229A352" UPDATE = "ORIGINAL" LDUP = "28Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF" UNPRINT = "ON">
+<TITLE>Detection Principle</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The magnetic rotor consists of rubber filled with magnetic powder, with N and S poles evenly arranged in the circumferential direction (48 poles each for S and N).</PTXT></ITEM>
+<ITEM><PTXT>When the magnetic rotor rotates, changes in the magnetic field are produced; these are detected by the active sensor and output as vehicle speed pulses.</PTXT></ITEM>
+<ITEM><PTXT>Compared with the commonly used passive sensor, detection is possible from a vehicle speed of approximately 0km/h.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250108c" WIDTH = "6.917in" HEIGHT = "5.139in" />
+</FIGURE>
+</MECA>
+</PARA>
+
+<PARA INFOID = "T060077A230" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Warning Lamp &amp; Indicator</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Each indicator and warning light is provided in the combination meter.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740010c" WIDTH = "6.903in" HEIGHT = "4.431in" />
+</FIGURE>
+<INDICATE ID = "T060077A230I01" INDSW = "OFF">
+<TITLE>Warning Lamp &amp; Indicator</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "27%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "72%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Brake warning light</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>In addition to the normal warnings when the parking brake is ON and when the brake fluid level is low, this light illuminates simultaneously with the ABS warning light to warn the driver that a malfunction has occurred in which not only ABS but also EBD cannot operate.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>ABS Warning Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>If a malfunction occurs in the ABS, the light illuminates to inform the driver. In diagnosis mode, the light blinks to output diagnostic trouble codes.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Slip Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Blinks to inform the driver that TRC, VSC or hill-start assist control is operating.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Multi-information Display</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Malfunctions in the brake, ABS and VSC systems, and driving with the parking brake not released, are communicated to the driver by illuminating the master warning indicator light and displaying a message on the multi-information display.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Master Warning Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Illuminates or blinks at the same time as the malfunction is displayed on the multi-information display to warn the driver.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+</PARA>
+
+<PARA INFOID = "T060077A270" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>VSC Buzzer</TITLE>
+<LIST1><ITEM><PTXT>Informs the driver that VSC is operating by sounding the buzzer intermittently.</PTXT></ITEM></LIST1>
+</PARA>
+
+<PARA INFOID = "T060077A272" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Steering Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A steering sensor is provided in the combination switch. Detects the steering amount and direction and inputs them to the skid control computer.</PTXT></ITEM>
+<ITEM><PTXT>The sensor section has 2 sets of magnetoresistive elements that detect the rotation of a magnet built into the detection gear, and detects steering rotation from the change in magnetic resistance as the detection gear rotates.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250210c" WIDTH = "6.917in" HEIGHT = "2.778in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T060077A271" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Yaw Rate Sensor &amp; Linear G Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The semiconductor type yaw rate sensor and G sensor are integrated for compactness and mounted under the front passenger seat. When acceleration acts on the vehicle, the movable electrode in the G sensor moves, changing its distance from the fixed electrode; the capacitance between the electrodes is measured and converted into an electrical signal. By combining 2 G sensors, each mounted at an angle of 45 degrees relative to the longitudinal direction of the vehicle, deceleration can be detected in all horizontal directions, and together with the linear output characteristics, this allows precise control on various road surfaces.</PTXT></ITEM>
+<ITEM><PTXT>The yaw rate sensor detects the angular velocity of the vehicle's rotation around its vertical axis (yaw rate) from the amount and direction of strain in a piezoelectric ceramic. Dedicated ICs are used for sensor body excitation and signal processing, reducing size and ensuring reliability.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730035c" WIDTH = "7.069in" HEIGHT = "2.931in" />
+</FIGURE>
+</PARA>
+
+<PARA INFOID = "T060077A465" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Brake Actuator</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Consists of master cylinder cut solenoid valves, holding solenoid valves, pressure reduction solenoid valves, a pump, reservoirs, etc., and regulates the brake hydraulic pressure to each wheel cylinder. In addition, the brake actuator and skid control computer are integrated to reduce size.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730036c" WIDTH = "6.903in" HEIGHT = "2.958in" />
+</FIGURE>
+<INDICATE ID = "T060077A465I01" INDSW = "OFF">
+<TITLE>Hydraulic Circuit Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250212c" WIDTH = "6.917in" HEIGHT = "7.306in" />
+</FIGURE>
+</INDICATE>
+
+<MECA ID = "T060077A465A240" UPDATE = "ORIGINAL" LDUP = "2Oct2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Holding and Pressure Reduction Solenoid Valves</TITLE>
+<LIST1><ITEM><PTXT>Two solenoid valves are operated by control signals from the skid control computer to switch the brake hydraulic circuit among 3 modes: pressure increase, holding and pressure reduction.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T060077A465A186" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Master Cylinder Cut Solenoid Valve</TITLE>
+<LIST1><ITEM><PTXT>Linear solenoid valves are used as the master cylinder cut solenoid valves, smoothing hydraulic pressure changes during brake assist control.</PTXT></ITEM>
+<ITEM><PTXT>By controlling the open and closed state of the valves, the hydraulic pressure generated by the pump is regulated, making it possible to generate control hydraulic pressure according to the operating condition.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740191c" WIDTH = "6.917in" HEIGHT = "3.167in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T060077A465A188" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Master Cylinder Pressure Sensor</TITLE>
+<LIST1><ITEM><PTXT>The master cylinder pressure sensor is built into the brake actuator. Outputs the master cylinder pressure signal to the skid control computer.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250214c" WIDTH = "6.917in" HEIGHT = "2.181in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T060077A465A113" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>ABS with EBD Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Hydraulic pressure control of the 4 wheels is performed by operating the holding and pressure reduction solenoid valves, pump and reservoirs.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250215c" WIDTH = "6.917in" HEIGHT = "4.153in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Control Operation</TITLE>
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "25%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When Not Operating</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Normal Braking</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>-</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When Operating</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Pressure Increase Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Holding Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Pressure Reduction Mode</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>OFF</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>ON</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>OFF</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>ON</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Port 1</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Open</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>Closed</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Port 2</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Closed</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>Open</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Apply hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>Release hydraulic pressure</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T060077A465A114" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Brake Assist Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Brake assist control directs hydraulic pressure generated by the pump in the brake actuator to each wheel cylinder, generating hydraulic pressure higher than that of the master cylinder.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250216c" WIDTH = "6.917in" HEIGHT = "7.111in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Brake Assist Control Operation</TITLE>
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "33%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Input Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Not Under Control</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>During Brake Assist Control</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.1</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.2</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Same as master cylinder hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Increased above master cylinder hydraulic pressure</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T060077A465A189" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>TRC Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Hydraulic pressure generated by the pump in the brake actuator is directed to the wheel cylinders of each wheel, suppressing wheel slip caused by the driving force.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740160c" WIDTH = "6.917in" HEIGHT = "6.708in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>TRC Control Operation (2WD)</TITLE>
+<TGROUP COLS = "6" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "12%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "16%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "1" CONSPIC = "0"><PTXT>Input Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1" CONSPIC = "0"><PTXT>Not Under Control</PTXT></ENTRY>
+<ENTRY NAMEST = "4" NAMEEND = "6" CONSPIC = "0"><PTXT>During TRC Control</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Pressure Increase Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Holding Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Pressure Reduction Mode</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.1</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.2</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Front Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Open)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Apply hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Release hydraulic pressure</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Rear Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>TRC Control Operation (4WD)</TITLE>
+<TGROUP COLS = "6" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "12%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "16%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "1" CONSPIC = "0"><PTXT>Input Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1" CONSPIC = "0"><PTXT>Not Under Control</PTXT></ENTRY>
+<ENTRY NAMEST = "4" NAMEEND = "6" CONSPIC = "0"><PTXT>During TRC Control</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Pressure Increase Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Holding Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Pressure Reduction Mode</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.1</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.2</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Front Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Open)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Apply hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Release hydraulic pressure</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Rear Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Open)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Apply hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Release hydraulic pressure</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T060077A465A190" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Rear Wheel Skid Control</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Hydraulic pressure generated by the pump in the brake actuator is directed to the wheel cylinders of each wheel, and the brake hydraulic pressure is controlled to suppress rear wheel skid or front wheel skid.</PTXT></ITEM>
+<ITEM><PTXT>In rear wheel skid control, the front brake on the outer side of the turn is applied.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250172c" WIDTH = "6.917in" HEIGHT = "6.514in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>VSC Control Operation (Rear Wheel Skid Control)</TITLE>
+<TGROUP COLS = "6" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "12%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "16%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "1" CONSPIC = "0"><PTXT>Input Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1" CONSPIC = "0"><PTXT>Not Under Control</PTXT></ENTRY>
+<ENTRY NAMEST = "4" NAMEEND = "6" CONSPIC = "0"><PTXT>During VSC Control</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Pressure Increase Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Holding Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Pressure Reduction Mode</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.1</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.2</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Front Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←*1</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Open)*2</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Apply hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Release hydraulic pressure</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Rear Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT><?FM MARKER [■■■&#x074E;Q■■] 79387: List1 Hint text: *1： 非制御輪については，保持ソレノイドバルブをON（閉）にします。?>For the front wheel not under control, the holding solenoid valve is turned ON (closed).</PTXT></ITEM>
+<ITEM><PTXT><?FM MARKER [■■■&#x074E;Q■■] 85915: List1 Hint text: *2： 非制御輪については，保持ソレノイドバルブをON（閉）にします。?>For the front wheel not under control, the pressure reduction solenoid valve is turned OFF (closed).</PTXT></ITEM></LIST1></HINT></MECA>
+
+<MECA ID = "T060077A465A191" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Front Wheel Skid Control</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>VSC control directs hydraulic pressure generated by the pump in the brake actuator to each wheel cylinder and controls the brake hydraulic pressure to suppress rear wheel skid or front wheel skid.</PTXT></ITEM>
+<ITEM><PTXT>In front wheel skid control, the front wheel brakes and the rear wheel brake on the inner side of the turn are applied.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250173c" WIDTH = "6.917in" HEIGHT = "6.917in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>VSC Control Operation (Front Wheel Skid Control)</TITLE>
+<TGROUP COLS = "6" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "12%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "16%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "1" CONSPIC = "0"><PTXT>Input Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1" CONSPIC = "0"><PTXT>Not Under Control</PTXT></ENTRY>
+<ENTRY NAMEST = "4" NAMEEND = "6" CONSPIC = "0"><PTXT>During VSC Control</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Pressure Increase Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Holding Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "6" CONSPIC = "0"><PTXT>Pressure Reduction Mode</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.1</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>M/C Cut Solenoid Valve No.2</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Front Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Open)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Apply hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Release hydraulic pressure</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"
+    CONSPIC = "0"><PTXT>Rear Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←<HINTREF REFID = "H285060077A465A19101"/></PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON (Open)<HINTREF REFID = "H285060077A465A19102"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Apply hydraulic pressure<HINTREF REFID = "H285060077A465A19103"/></PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "6" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Release hydraulic pressure<HINTREF REFID = "H285060077A465A19103"/></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H285060077A465A19101">For wheels not under control, the holding solenoid valve is turned ON (closed).</PTXT></ITEM>
+<ITEM><PTXT ID = "H285060077A465A19102">For wheels not under control, the pressure reduction solenoid valve is turned OFF (closed).</PTXT></ITEM>
+<ITEM><PTXT ID = "H285060077A465A19103">For wheels not under control, the hydraulic pressure is held.</PTXT></ITEM></LIST1></HINT></MECA>
+
+<MECA ID = "T060077A465A504" UPDATE = "ORIGINAL" LDUP = "22Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Hill-start Assist Control Brake Control</TITLE>
+<LIST1><ITEM><PTXT>While the brakes are held, the M/C cut solenoid valves (No.1 and No.2) are closed so that a certain portion of the hydraulic pressure generated by the master cylinder remains in the calipers, performing hill-start assist control.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740192c" WIDTH = "6.903in" HEIGHT = "6.333in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Hill-start Assist Control Brake Control</TITLE>
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "28%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Input Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Not Under Control</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>During Hill-start Assist Control</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT">
+<PTXT>M/C Cut Solenoid Valve No.1</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "LEFT">
+<PTXT>M/C Cut Solenoid Valve No.2</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>ON (Pressure Regulation)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT">
+<PTXT>Front Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "LEFT">
+<PTXT>Rear Wheel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Holding Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>OFF (Open)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←<SUP></SUP></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Pressure Reduction Solenoid Valve</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>OFF (Closed)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Wheel Cylinder Hydraulic Pressure</PTXT></ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Holds hydraulic pressure</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+</PARA>
+
+<PARA INFOID = "T060077A232" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Skid Control Computer</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The skid control computer processes the signals from each sensor and performs the brake control for ABS, TRC, VSC, hill-start assist control and brake assist. It also communicates with the engine control computer and outputs control signals.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740189c" WIDTH = "6.903in" HEIGHT = "6.306in" />
+</FIGURE>
+
+<MECA ID = "T060077A232A184" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>VSC Control</TITLE>
+<LIST1><ITEM><PTXT>The vehicle condition is determined from the information from the speed sensors, yaw rate sensor, linear G sensor and steering sensor, and when the vehicle is determined to have a tendency toward rear wheel skid or front wheel skid, brake hydraulic pressure control for each wheel, engine fuel cut control, etc. are performed according to the degree of that tendency.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250217c" WIDTH = "6.917in" HEIGHT = "3.361in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T060077A232A185" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>TRC Control</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the drive wheels start to slip on a slippery road surface, etc., the wheel speed of the drive wheels greatly exceeds the estimated vehicle speed calculated from the speeds of the wheels that are not slipping. TRC control performs independent brake control of both wheels and engine control according to the amount of slip.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4250218c" WIDTH = "6.917in" HEIGHT = "2.972in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T060077A232K003" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Initial Check Function</TITLE>
+<LIST1><ITEM><PTXT>When the vehicle speed first reaches approximately 6km/h or more after the engine is started, each solenoid valve and the motor in the brake actuator are operated in sequence to perform an electrical check. During the initial check, operating sounds of the solenoid valves and motor may be heard in the engine room; this does not indicate a malfunction.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+
+<PARA INFOID = "T060077K036" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>DLC3</TITLE>
+<LIST1><ITEM><PTXT>By connecting and operating a diagnostic tool, diagnostic trouble codes and computer data can be read.</PTXT></ITEM></LIST1>
+</PARA>
+</BIND>
+</SECTION>

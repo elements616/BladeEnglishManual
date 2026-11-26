@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="X39400000R103KC" category="C" type-id="302JA" name-id="0659U-01" from="200912">
+<dtccode>P0102/31</dtccode>
+<dtcname>Air Flow Meter Open Circuit (Low)</dtcname>
+<dtccode>P0103/31</dtccode>
+<dtcname>Air Flow Meter Open Circuit (High)</dtcname>
+<subpara id="X39400000R103KC_10" type-id="31" category="03" proc-id="RM0550J___00002SQ00001">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>The intake air flow meter sub-assembly uses a platinum filament. It consists of a heater made of platinum filament, a temperature sensor and a control circuit built into the housing. In operation, the heater in the bypass passage of the housing is cooled by the passing intake air, and the temperature sensor detects that temperature change. In the circuit, the heater and temperature sensor form a bridge circuit, and the action of the power transistor that controls the heater to maintain a set temperature (potential difference between A and B) is measured as the output voltage of the intake air flow meter sub-assembly.</ptxt>
+<figure>
+<graphic graphicname="A127143J05" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.96in"/>
+<colspec colnum="02" colname="C02" colwidth="3.29in"/>
+<colspec colnum="03" colname="C03" colwidth="2.83in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTCNo.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0102/31</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON, engine speed below 4000r/min</ptxt>
+</item>
+<item>
+<ptxt>Open in intake air flow meter sub-assembly circuit or short to GND</ptxt>
+</item>
+<item>
+<ptxt>3 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Intake Air Flow Meter Sub-assembly</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0103/31</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON, engine speed below 4000r/min</ptxt>
+</item>
+<item>
+<ptxt>Short in intake air flow meter sub-assembly circuit (+B circuit)</ptxt>
+</item>
+<item>
+<ptxt>3 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Intake Air Flow Meter Sub-assembly</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>After checking the DTC output, read the intake air volume in the ECU Data Monitor using SST (TaSCAN).</ptxt>
+</atten4>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="3.023697     in"/>
+<colspec colnum="02" colname="C02" colwidth="4.123223     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Intake air volume (g/sec)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Malfunction</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>0.0</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Open in intake air flow meter sub-assembly power supply circuit</ptxt>
+</item>
+<item>
+<ptxt>Open or short in VG circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>271.0 or more</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Open in E2G circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="X39400000R103KC_11" type-id="32" category="03" proc-id="RM0550J___00002SR00001">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A230635J02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="X39400000R103KC_12" type-id="51" category="05" proc-id="RM0550J___00002SS00001">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>Inspect the fuses for circuits related to this system before performing the following troubleshooting.</ptxt>
+</atten3>
+<atten4>
+<ptxt>Using SST (TaSCAN), read the freeze frame data. Freeze data records part of the engine operating condition when the malfunction occurred, and this information is useful when troubleshooting.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="X39400000R103KC_13" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="X39400000R103KC_13_0001" proc-id="RM0550J___00002ST00001">
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="2">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs by following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.68in"/>
+<colspec colname="COL2" colwidth="1.45in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0102/31 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0103/31 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000R103KC_13_0002" fin="false">A</down>
+<right ref="X39400000R103KC_13_0013" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="X39400000R103KC_13_0002" proc-id="RM0550J___00002SU00001">
+<testtitle>Inspect Wire Harness and Connector (Intake Air Flow Meter Sub-assembly Power Source Voltage Inspection)</testtitle>
+<content6 releasenbr="2">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D705AX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect the intake air flow meter sub-assembly connector.</ptxt>
+<figure>
+<graphic graphicname="A158107J12" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the intake air flow meter sub-assembly vehicle side connector terminals.</ptxt>
+<spec>
+<title>Voltage</title>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C01" colwidth="1.38in"/>
+<colspec colnum="2" colname="COLSPEC0" colwidth="1.38in"/>
+<colspec colnum="3" colname="C02" colwidth="1.37in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>Intake air flow meter sub-assembly vehicle side connector - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>3 (+B) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<table>
+<title>Text in Illustrations</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="0.41in"/>
+<colspec colname="COL2" colwidth="3.72in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*a</ptxt>
+</entry>
+<entry>
+<ptxt>Front view of wire harness connector</ptxt>
+<ptxt>(to Intake Air Flow Meter Sub-assembly)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+</content6>
+<res>
+<down ref="X39400000R103KC_13_0003" fin="false">OK</down>
+<right ref="X39400000R103KC_13_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000R103KC_13_0003" proc-id="RM0550J___00002SV00001">
+<testtitle>Inspect Intake Air Flow Meter Sub-assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Perform an on-vehicle inspection.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Inspect with the vehicle level, in a windless location, and with the engine stopped.</ptxt>
+</item>
+<item>
+<ptxt>Inspect with the air cleaner assembly installed.</ptxt>
+</item>
+<item>
+<ptxt>Do not extract exhaust from the exhaust tail pipe with an exhaust duct.</ptxt>
+</item>
+</list1>
+</atten3>
+<test2>
+<ptxt>Turn the IG ON and wait for 30 seconds.</ptxt>
+</test2>
+<test2>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test2>
+<test2>
+<ptxt>Following the SST (TaSCAN) screen display, select [ECU Data Monitor] - [Intake Air Volume] and read the intake air volume.</ptxt>
+<table pgwide="1">
+<title>System selection screen: Powertrain → TCCS → ECU Data Monitor</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Intake Air Volume</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Engine stopped</ptxt>
+</item>
+<item>
+<ptxt>30 seconds after turning IG ON</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Below 0.48 g/sec</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+</test1>
+<test1>
+<ptxt>Perform a component inspection.</ptxt>
+<test2>
+<ptxt>Remove the intake air flow meter sub-assembly.</ptxt>
+<figure>
+<graphic graphicname="A154164J11" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test2>
+<test2>
+<ptxt>Visually check that there is no foreign matter on the platinum filament (heater) in the passage.</ptxt>
+<table>
+<title>Text in Illustrations</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="0.41in"/>
+<colspec colname="COL2" colwidth="3.72in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*1</ptxt>
+</entry>
+<entry>
+<ptxt>Platinum filament (heater)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+</test1>
+<test1>
+<ptxt>Perform a function check of the intake air flow meter sub-assembly.</ptxt>
+<test2>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn IG ON.</ptxt>
+</test2>
+<test2>
+<ptxt>Following the SST (TaSCAN) display screen, select [ECU Data Monitor] - [Intake Air Volume].</ptxt>
+</test2>
+<test2>
+<ptxt>Start the engine.</ptxt>
+</test2>
+<test2>
+<ptxt>Check that the intake air volume value changes when racing the engine.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Value changes.</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="X39400000R103KC_13_0004" fin="false">OK</down>
+<right ref="X39400000R103KC_13_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000R103KC_13_0004" proc-id="RM0550J___00002SW00001">
+<testtitle>Inspect Wire Harness and Connector (Engine Control Computer - Intake Air Flow Meter Sub-assembly)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref href="RM0000005D705AX" label="Seep01"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect engine control computer connector A and the intake air flow meter sub-assembly connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the engine control computer and the intake air flow meter sub-assembly vehicle side connector terminals. (see <xref label="Seep02" href="X39400000QV016D"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance (Check for Open)</title>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C01" colwidth="1.46in"/>
+<colspec colnum="2" colname="COLSPEC2" colwidth="1.33in"/>
+<colspec colnum="3" colname="C02" colwidth="1.34in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>Engine control computer vehicle side connector - Intake air flow meter sub-assembly vehicle side connector</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A118(VG) - 5(VG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A116(E2G) - 4(E2G)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance (Check for Short)</title>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C01" colwidth="1.46in"/>
+<colspec colnum="2" colname="COLSPEC2" colwidth="1.33in"/>
+<colspec colnum="3" colname="C02" colwidth="1.34in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>Engine control computer vehicle side connector and intake air flow meter sub-assembly vehicle side connector - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>A118 (VG) and 5 (VG) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000R103KC_13_0008" fin="true">OK</down>
+<right ref="X39400000R103KC_13_0017" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000R103KC_13_0013" proc-id="RM0550J___00002SY00001">
+<testtitle>Inspect Wire Harness and Connector (Intake Air Flow Meter Sub-assembly - Body Ground)</testtitle>
+<content6 releasenbr="2">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D705AX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect the intake air flow meter sub-assembly connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance of the intake air flow meter sub-assembly vehicle side connector terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>Intake air flow meter sub-assembly vehicle side connector - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>4 (E2G) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000R103KC_13_0005" fin="true">OK</down>
+<right ref="X39400000R103KC_13_0014" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000R103KC_13_0014" proc-id="RM0550J___00002SZ00001">
+<testtitle>Inspect Wire Harness and Connector (Engine Control Computer - Intake Air Flow Meter Sub-assembly)</testtitle>
+<content6 releasenbr="2">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep02" href="RM0000005D705AX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect engine control computer connector A and the intake air flow meter sub-assembly connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the engine control computer and the intake air flow meter sub-assembly vehicle side connector terminals. (see <xref href="X39400000QV016D" label="Seep01"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance (Check for Open)</title>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C01" colwidth="1.46in"/>
+<colspec colnum="2" colname="COLSPEC2" colwidth="1.33in"/>
+<colspec colnum="3" colname="C02" colwidth="1.34in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>Engine control computer vehicle side connector - Intake air flow meter sub-assembly vehicle side connector</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A116(E2G) - 4(E2G)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000R103KC_13_0008" fin="true">OK</down>
+<right ref="X39400000R103KC_13_0017" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000R103KC_13_0009">
+<testtitle>Repair or Replace Wire Harness or Connector (EFI MAIN Relay - Intake Air Flow Meter Sub-assembly)</testtitle>
+</testgrp>
+<testgrp id="X39400000R103KC_13_0005">
+<testtitle>Replace Intake Air Flow Meter Sub-assembly<xref label="Seep01" href="RM0000030JU000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000R103KC_13_0017">
+<testtitle>Repair or Replace Wire Harness or Connector (Engine Control Computer - Intake Air Flow Meter Sub-assembly)</testtitle>
+</testgrp>
+<testgrp id="X39400000R103KC_13_0008">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

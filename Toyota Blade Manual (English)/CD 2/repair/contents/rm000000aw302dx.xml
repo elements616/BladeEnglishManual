@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1002B_S001H" variety="S001H">
+<name>Automatic Transaxle</name>
+<ttl id="1002B_S001H_74Y0X_T00H8" variety="T00H8">
+<name>Electronically Controlled Automatic Transaxle [ECT] (U660E)</name>
+<para id="RM000000AW302DX" category="U" type-id="303FJ" name-id="261HY-01" from="200912">
+<name>ECU Data Monitor/Active Test</name>
+<subpara id="RM000000AW302DX_z0" proc-id="RM0550J___0000FSZ00001">
+<content5 releasenbr="1">
+<step1>
+<ptxt>TaSCAN ECU Data Monitor </ptxt>
+<atten3>
+<ptxt>For subtle symptoms such as hesitation and rough idle, it is necessary to use a method of collecting data from a vehicle of the same model under the same conditions for comparison, and make an overall judgment from all items of the computer data. </ptxt>
+</atten3>
+<step2>
+<ptxt>Using SST (TaSCAN), display the [ECU Data Monitor] screen according to the screen display, and check the computer data.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70201 </s-number>
+</sstitem>
+</sst>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Powertrain → ECT → ECU Data Monitor]</title>
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.73in"/>
+<colspec colname="COL2" colwidth="1.82in"/>
+<colspec colname="COLSPEC0" colwidth="1.69in"/>
+<colspec colname="COL5" colwidth="1.84in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Vehicle Speed</ptxt>
+<ptxt>[SPD1]</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Indicates vehicle speed</ptxt>
+<ptxt>Display Range: 0 to 255km/h</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0km/h</ptxt>
+<ptxt>When stopped</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>If abnormal, an SPD signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No large fluctuation</ptxt>
+<ptxt>Driving at constant speed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine Speed</ptxt>
+<ptxt>[ESPD]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates engine speed</ptxt>
+<ptxt>Display range: 0 to 16383.75 [r/min]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Almost synchronized with engine speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, an NE signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle">
+<ptxt>Engine Load Value</ptxt>
+<ptxt>[CALO]</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Indicates the magnitude of engine load</ptxt>
+<ptxt>Display Range: 0 to 100%</ptxt>
+<ptxt>(The larger the value, the greater the load)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10.5 to 16.5%</ptxt>
+<ptxt>Idling after warm-up </ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+<entry morerows="2" valign="middle" align="left">
+<ptxt>If abnormal,</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Air cleaner condition</ptxt>
+</item>
+<item>
+<ptxt>Throttle valve condition </ptxt>
+</item>
+</list1>
+<ptxt>malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>9.5 to 15.5%</ptxt>
+<ptxt>After warm-up, at 2000r/min </ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>75 to 95%</ptxt>
+<ptxt>At stall speed after warm-up</ptxt>
+<ptxt>(A/C OFF, N position)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="3" valign="middle">
+<ptxt>Engine Coolant Temperature</ptxt>
+<ptxt>[THW]</ptxt>
+</entry>
+<entry morerows="3" valign="middle">
+<ptxt>Indicates engine coolant temperature</ptxt>
+<ptxt>Display range: -40 to 140°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Gradually increases</ptxt>
+<ptxt>Cold start → fully warmed up</ptxt>
+</entry>
+<entry morerows="3" valign="middle">
+<ptxt>If abnormal, a THW voltage malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>80 to 105°C</ptxt>
+<ptxt>Fully warmed up</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>-40°C</ptxt>
+<ptxt>Sensor open circuit</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>140°C or higher</ptxt>
+<ptxt>Sensor short circuit</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Time After Engine Start</ptxt>
+<ptxt>[ERT]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates time elapsed since engine start (between IG ON and OFF)</ptxt>
+<ptxt>Display Range: 0 to 65535sec</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Auxiliary Battery Voltage</ptxt>
+<ptxt>[BATT]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates battery voltage</ptxt>
+<ptxt>Display Range: 0 to 65.5V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+<ptxt>At idle</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a BATT voltage malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Throttle SensorNo.1 Voltage Ratio</ptxt>
+<ptxt>[THP1]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates throttle position sensor No.1 voltage ratio</ptxt>
+<ptxt>Display Range: 0 to 100%</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes continuously</ptxt>
+<ptxt>Accelerator pedal fully closed → fully open</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a VC, VTA1 voltage (throttle position sensor No.1) malfunction is suspected </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter Signal</ptxt>
+<ptxt>[STA]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates engine starting</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF→ON:</ptxt>
+<ptxt>IG ON → cranking</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, an STA voltage malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Neutral Start SW</ptxt>
+<ptxt>[NSW]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates shift lever position N (P)</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON→OFF→ON</ptxt>
+<ptxt>Shift lever P → R → N</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a malfunction in the neutral start switch signal circuit is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Stop Light SW</ptxt>
+<ptxt>[STP]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates brake pedal is depressed</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Brake pedal released → depressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a stop light switch signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Idle SW</ptxt>
+<ptxt>[IDL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates accelerator pedal fully closed</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON→OFF:</ptxt>
+<ptxt>Accelerator pedal fully closed → fully open</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>If abnormal,</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>VC, VTA1 voltage</ptxt>
+</item>
+<item>
+<ptxt>Throttle position sensor</ptxt>
+</item>
+</list1>
+<ptxt>malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Mode Status</ptxt>
+<ptxt>[TEST]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates normal/check mode</ptxt>
+<ptxt>Display: Check/Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Number of DTCs</ptxt>
+<ptxt>[DTC]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates number of DTCs</ptxt>
+<ptxt>Display range: 0 to 255 pieces</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Check Engine Light Illumination Request</ptxt>
+<ptxt>[MIL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates check engine warning light illumination status</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a check engine warning light (W) signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Distance Driven since Malfunction</ptxt>
+<ptxt>[MORD]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates distance driven since malfunction occurred</ptxt>
+<ptxt>Display Range: 0 to 65535km</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Time from Start until CE Illuminated</ptxt>
+<ptxt>[MORT]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates time from engine start until CE illuminated</ptxt>
+<ptxt>Display Range: 0 to 65535min</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Time Since DTC Cleared</ptxt>
+<ptxt>[TDC]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates time elapsed since DTCs were cleared</ptxt>
+<ptxt>Display Range: 0 to 65535min</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Distance Since DTC Cleared</ptxt>
+<ptxt>[DDC]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates distance driven since DTCs were cleared</ptxt>
+<ptxt>Display Range: 0 to 65535km</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Warm-up Cycles Since DTC Cleared</ptxt>
+<ptxt>[WCD]</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates number of engine warm-ups since DTCs were cleared</ptxt>
+</item>
+<item>
+<ptxt>Display range: 0 to 255 times</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>F/C at Idle ON</ptxt>
+<ptxt>[FCI]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates deceleration fuel cut operating</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Release the accelerator pedal at 3000-4000r/min </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a VC, VTA1 voltage malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>F/C at Light Load</ptxt>
+<ptxt>[FCTM]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates light load fuel cut operating</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Driving down a long downhill slope</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a VC, VTA1 voltage malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Engine Speed (EFI → ECT)</ptxt>
+<ptxt>[RESP]</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Indicates engine speed</ptxt>
+<ptxt>Display range: 0 to 16383.75 [r/min]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0r/min</ptxt>
+<ptxt>Engine stopped (IG ON)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>If abnormal, an NE signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No large fluctuation</ptxt>
+<ptxt>Engine running at constant speed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Intake Air Temperature (EFI → ECT)</ptxt>
+<ptxt>[RTHA]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates intake air temperature</ptxt>
+<ptxt>Display range: -40 to 215°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Same as ambient temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a THA voltage malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Engine Coolant Temperature (EFI → ECT)</ptxt>
+<ptxt>[RTHW]</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Indicates engine coolant temperature</ptxt>
+<ptxt>Display range: -40 to 215°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Gradually increases</ptxt>
+<ptxt>Cold start → fully warmed up</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>If abnormal, a THW voltage malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>80 to 105°C</ptxt>
+<ptxt>Fully warmed up</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Throttle Opening (EFI → ECT)</ptxt>
+<ptxt>[RTHP]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates throttle position sensor opening</ptxt>
+<ptxt>Display range: 0 to 100°</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes continuously</ptxt>
+<ptxt>Accelerator pedal fully closed → fully open (IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a VC, VTA1 voltage malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Accelerator Opening (EFI → ECT)</ptxt>
+<ptxt>[RACP]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates accelerator position sensor opening</ptxt>
+<ptxt>Display range: 0 to 100°</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes continuously</ptxt>
+<ptxt>Accelerator pedal fully closed → fully open (IG ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a VCPA, VPA voltage malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle">
+<ptxt>Turbine Speed</ptxt>
+<ptxt>[NT]</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Indicates input shaft speed</ptxt>
+<ptxt>0 to 12750[r/min]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Almost the same as the engine idle speed</ptxt>
+<ptxt>Vehicle stopped in P or N position</ptxt>
+<ptxt>(Engine idling)</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>If abnormal, an NT signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>0r/min</ptxt>
+<ptxt>Vehicle stopped in D position</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Approximately the same as engine speed</ptxt>
+<ptxt>Driving at constant speed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Counter Gear Speed</ptxt>
+<ptxt>[CGR]</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates counter gear speed</ptxt>
+</item>
+<item>
+<ptxt>Display range: 0 to 12750 rpm</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>0 rpm:</ptxt>
+<ptxt>Vehicle stopped in D position</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>If abnormal, an NC signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift Position P Range</ptxt>
+<ptxt>[P]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates P range</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+<ptxt>Shift lever P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a neutral start switch (P) signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift Position R Range</ptxt>
+<ptxt>[R]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates R range</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Shift lever N → R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a neutral start switch (R) signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift Position N Range</ptxt>
+<ptxt>[N]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates N range</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+<ptxt>Shift lever N</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a neutral start switch (N) signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sport Shift UP SW</ptxt>
+<ptxt>[UPS]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates transmission control switch (+)</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Shift lever M → "+"</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a transmission control switch (SFTU) signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sport Shift DOWN SW</ptxt>
+<ptxt>[DWNS]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates transmission control switch (-)</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Shift lever M → "-"</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a transmission control switch (SFTD) signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sport Mode Select SW</ptxt>
+<ptxt>[SPRT]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates M position</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Shift lever D → M</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a transmission control switch (S) signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift Position D Range</ptxt>
+<ptxt>[D]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates D range</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Shift lever N → D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a neutral start switch (D) signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="3" valign="middle">
+<ptxt>A/T Fluid Temperature1</ptxt>
+<ptxt>[THO1]</ptxt>
+</entry>
+<entry morerows="3" valign="middle">
+<ptxt>Indicates ATF temperature</ptxt>
+<ptxt>Display range: -40 to 215°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Same as ambient temperature</ptxt>
+<ptxt>IG ON when cold</ptxt>
+</entry>
+<entry morerows="3" valign="middle">
+<ptxt>If abnormal, an OIL voltage malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>50 to 100°C</ptxt>
+<ptxt>After stall test</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>-40°C</ptxt>
+<ptxt>Sensor open circuit</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>150°C or higher</ptxt>
+<ptxt>Sensor short circuit</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NT Sensor Voltage</ptxt>
+<ptxt>[NTS]</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates output voltage of transmission revolution sensor (NT)</ptxt>
+</item>
+<item>
+<ptxt>Display range: 0 to 5 V</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>0.1 to 1.9 V:</ptxt>
+<ptxt>Engine idling</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>If abnormal, an NT signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NC Sensor Voltage</ptxt>
+<ptxt>[NCSV]</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Indicates output voltage of transmission revolution sensor (NC)</ptxt>
+</item>
+<item>
+<ptxt>Display range: 0 to 5 V</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>0.1 to 1.9 V:</ptxt>
+<ptxt>Engine idling</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>If abnormal, an NC signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A/T Hydraulic Pressure SW3</ptxt>
+<ptxt>[TPS3]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates hydraulic pressure switch 3 output</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+<ptxt>During lock-up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a transmission hydraulic pressure switch malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Lock-up Status</ptxt>
+<ptxt>[L/U]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates lock-up in operation</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Lock-up OFF → ON</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>If abnormal,</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>VTA1 voltage</ptxt>
+</item>
+<item>
+<ptxt>VPA voltage</ptxt>
+</item>
+<item>
+<ptxt>NT signal</ptxt>
+</item>
+<item>
+<ptxt>SP2 signal</ptxt>
+</item>
+<item>
+<ptxt>SLU signal</ptxt>
+</item>
+</list1>
+<ptxt>malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Lock-up SOL</ptxt>
+<ptxt>[L/US]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates SL solenoid operating status</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Lock-up OFF → ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, an SL signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT Shift Position</ptxt>
+<ptxt>[ECT]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates gear position</ptxt>
+<ptxt>Display Range: Gear 1 to 6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift to each gear position</ptxt>
+<ptxt>While driving</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>If abnormal,</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>VTA1 voltage</ptxt>
+</item>
+<item>
+<ptxt>VPA voltage</ptxt>
+</item>
+<item>
+<ptxt>SPD signal</ptxt>
+</item>
+<item>
+<ptxt>Solenoid signal</ptxt>
+</item>
+</list1>
+<ptxt>malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Line Pressure SOL (SLT)</ptxt>
+<ptxt>[SLT]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates line pressure linear solenoid operating status</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Accelerator fully open → fully closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, an SLT signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Lock-up SOL (SLU)</ptxt>
+<ptxt>[SLU]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates lock-up linear solenoid operating status</ptxt>
+<ptxt>Display: ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF→ON</ptxt>
+<ptxt>Lock-up OFF → ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, an SLU signal malfunction is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A/T Oil</ptxt>
+<ptxt>[ATF]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates ATF condition</ptxt>
+<ptxt>Display: OK/NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, ATF contamination is suspected</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>TaSCAN Active Test </ptxt>
+<step2>
+<ptxt>Using SST (TaSCAN), display the [Active Test] screen according to the screen display, and perform the Active Test.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70201 </s-number>
+</sstitem>
+</sst>
+<table pgwide="1">
+<title>[Selection menu screen: Powertrain → ECT → Active Test]</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.08in"/>
+<colspec colname="COL2" colwidth="3.20in"/>
+<colspec colname="COL3" colwidth="2.80in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test Details</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Restrictions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TC Terminal ON</ptxt>
+<ptxt>*1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Used when changing to fluid temperature detection mode</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT Shift Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Can be set to any shift position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test possible after warm-up at vehicle speed of 50 km/h or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift Linear SOL1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Solenoid SL1 MIN current ←→ MAX current possible</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Possible in P or N position, with engine stopped and at vehicle speed of 0 km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift Linear SOL2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Solenoid SL2 MIN current ←→ MAX current possible</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Possible in P or N position, with engine stopped and at vehicle speed of 0 km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift Linear SOL3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Solenoid SL3 MIN current ←→ MAX current possible</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Possible in P or N position, with engine stopped and at vehicle speed of 0 km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift Linear SOL4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Solenoid SL4 MIN current ←→ MAX current possible</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Possible in P or N position, with engine stopped and at vehicle speed of 0 km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Lock-up SOL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lock-up ON ←→ OFF possible</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Possible at vehicle speed of 60 km/h or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Lock-up Control SOL (SL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmission 3-way solenoid (SL) MIN current ←→ MAX current possible</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Possible in P or N position, with engine stopped and at vehicle speed of 0 km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Slip Control SOL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Solenoid SLU MIN current ←→ MAX current possible</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Possible in P or N position, with engine stopped and at vehicle speed of 0 km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Line Pressure SOL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Solenoid SLT current can be switched MIN ←→ MAX </ptxt>
+<ptxt>(MAX current → duty ratio 100% (line pressure at idle))</ptxt>
+<ptxt>(MIN current → duty ratio 0% (line pressure at stall))</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Possible in P or N position, with throttle fully closed and at vehicle speed of 0 km/h</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>*1... Warning diagnosis is not displayed all at once</ptxt>
+</atten3>
+<atten4>
+<ptxt>Perform the Active Test of the line pressure SOL using an oil pressure gauge.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

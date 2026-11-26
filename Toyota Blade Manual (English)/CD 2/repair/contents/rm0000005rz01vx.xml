@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="10033_S0007" variety="S0007">
+<name>CAN Communication</name>
+<ttl id="10033_S0007_741KB_T000K" variety="T000K">
+<name>CAN Communication System</name>
+<para id="RM0000005RZ01VX" category="D" type-id="303F2" name-id="950ZX-00" from="200708">
+<name>System Description</name>
+<subpara id="RM0000005RZ01VX_z0" proc-id="RM0550J___0000CDB00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Outline</ptxt>
+<step2>
+<ptxt>CAN (Controller Area Network) is a serial communication for real-time applications; it is an in-vehicle multiplex communication system with excellent data communication speed and error detection capability.</ptxt>
+</step2>
+<step2>
+<ptxt>CAN uses 2 lines, CAN-H and CAN-L, as a pair, and communicates using differential voltage.</ptxt>
+</step2>
+<step2>
+<ptxt>Vehicles are equipped with many ECUs (sensors), but they do not operate independently; they operate in coordination by sharing information with other ECUs (sensors) using CAN communication.</ptxt>
+</step2>
+<step2>
+<ptxt>The CAN communication main line contains 2 resistors necessary for communication transmission.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Definition of Terms</ptxt>
+<step2>
+<ptxt>Main Line</ptxt>
+<step3>
+<ptxt>The harness between the 2 terminating circuits located on the bus (communication line) is defined as the main line. It is the trunk bus of the control system CAN.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Branch Line</ptxt>
+<step3>
+<ptxt>A line branching from the main line, which is the trunk bus of the CAN bus, to an ECU or sensor is defined as a branch line.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Terminating Circuit</ptxt>
+<step3>
+<ptxt>A circuit consisting of a resistor and a capacitor, provided to convert the communication current of the control system CAN to bus voltage, is called a terminating circuit. Terminating circuits must be provided at both ends of the bus main line, 1 at each end, for a total of 2.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Circuit Description</ptxt>
+<step2>
+<ptxt>The V bus, V bus No.2 and MS bus each use a 120 Ω resistor in the terminating circuit, enabling high-speed communication of 500kbps on the V bus and V bus No.2, and 250kbps on the MS bus.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

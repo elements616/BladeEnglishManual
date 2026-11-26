@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- $Id: add_status.html,v 1.9 2003/06/09 01:36:17 szg Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Related Work</title>
+
+
+<link href="../../css/status.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+//
+// 初期表示のみ行う。
+//
+function init() {
+	if( parent.g_topContentsId == null) return;
+	setStatus(parent.g_topContentsId, parent.g_cttXml);
+}
+
+
+//
+// ステータスフレームの内容を書き換える
+//
+function setStatus(paraId, objXml) {
+	var titleName = parent.getTitleName(paraId, objXml);
+	var paraName = parent.getParagraphName(paraId, "name", objXml);
+	disp.innerHTML = "<p class='location'>" + titleName  + " ／ " + paraName + "</p>";
+}
+</script>
+</head>
+<body onLoad="init()">
+<div id="disp"></div>
+</body>
+</html>

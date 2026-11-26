@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="07">
+<name>Steering</name>
+<section id="1000U_S0017" variety="S0017">
+<name>Steering Column</name>
+<ttl id="1000U_S0017_746I2_T00CG" variety="T00CG">
+<name>Steering Lock System</name>
+<para id="RM00000130700RX" category="C" type-id="800Y9" name-id="480YN-00" from="200612">
+<dtccode>B2788</dtccode>
+<dtcname>Steering lock ECU power source malfunction</dtcname>
+<subpara id="RM00000130700RX_01" type-id="31" category="03" proc-id="RM0550J___0000A1Y00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>A DTC is output when the IG2 power supply input to the steering lock ECU is judged to be abnormal.</ptxt>
+<ptxt>Since the steering lock ECU is not connected to CAN communication, responses to outside the steering lock system are made by the certification ECU via LIN communication.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="3.33in"/>
+<colspec colname="COL3" colwidth="2.35in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2788</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Malfunction in IG2 input circuit of steering lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness and Connector</ptxt>
+</item>
+<item>
+<ptxt>Steering Lock Actuator</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000130700RX_02" type-id="51" category="05" proc-id="RM0550J___0000A1Z00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>When using the tool with the IG OFF, connect the tool to the vehicle and repeatedly turn the courtesy switch of any door ON/OFF until communication between the tool and the vehicle starts (ON/OFF interval within 1.5 seconds).</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM00000130700RX_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000130700RX_03_0001" proc-id="RM0550J___0000A2000000">
+<testtitle>Inspect Steering Lock ECU</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="C104383J57" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), inspect the voltage between the terminals of the steering lock actuator.  </ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<table>
+<title>Voltage:</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6(IG2) - 2(SGND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6(IG2) - 2(SGND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1V or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content6>
+<res>
+<down ref="RM00000130700RX_03_0002" fin="true">OK</down>
+<right ref="RM00000130700RX_03_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000130700RX_03_0002">
+<testtitle>Replace Steering Lock Actuator Assembly</testtitle>
+</testgrp>
+<testgrp id="RM00000130700RX_03_0003">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

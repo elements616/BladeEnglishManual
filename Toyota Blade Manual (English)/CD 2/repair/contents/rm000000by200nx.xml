@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002T_S000D" variety="S000D">
+<name>Other Electrical</name>
+<ttl id="1002T_S000D_742B1_T003C" variety="T003C">
+<name>ETC System</name>
+<para id="RM000000BY200NX" category="D" type-id="303F3" name-id="73262-00" from="200612" to="200912">
+<name>Diagnosis System</name>
+<subpara id="RM000000BY200NX_z0" proc-id="RM0550J___0000B5M00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>ETC Diagnosis Inspection (Diagnosis Mode 1)</ptxt>
+<step2>
+<ptxt>How to Start Diagnosis Mode 1</ptxt>
+<figure>
+<graphic graphicname="E122061J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<title>In diagnosis mode 1, the following information of the toll collection (ETC) computer assembly is announced by voice.</title>
+<item>
+<ptxt>Software version</ptxt>
+</item>
+<item>
+<ptxt>On-board unit management number</ptxt>
+</item>
+<item>
+<ptxt>Model registration number</ptxt>
+</item>
+<item>
+<ptxt>Model (on-board unit part number)</ptxt>
+</item>
+<item>
+<ptxt>Error log</ptxt>
+</item>
+</list1>
+</atten4>
+<step3>
+<ptxt>If an ETC card is inserted, remove it to protect the card.</ptxt>
+<atten4>
+<ptxt>Diagnosis mode cannot be entered with a card inserted.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Turn ACC ON.</ptxt>
+</step3>
+<step3>
+<ptxt>Press the "History" switch.</ptxt>
+<figure>
+<graphic graphicname="E122084J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>While holding the "History" switch, press the "VOL UP" switch 5 times or more.</ptxt>
+</step3>
+<step3>
+<ptxt>While holding the "VOL UP" switch on the 5th press, press the "VOL DOWN" switch 5 times.</ptxt>
+</step3>
+<step3>
+<ptxt>Diagnosis mode is entered, the orange indicator comes on, and "Diagnosis 1" is announced by voice.</ptxt>
+<figure>
+<graphic graphicname="E122062J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>In diagnosis mode 1, the orange indicator remains on.</ptxt>
+</item>
+<item>
+<ptxt>During diagnosis mode, announcements are made from the toll collection (ETC) computer assembly at the default volume (volume 6), regardless of whether the HDD navigation system is connected.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Software Version Announcement Mode</ptxt>
+<figure>
+<graphic graphicname="E122063J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>When diagnosis mode 1 is entered, the software version is announced by voice following the "Diagnosis 1" announcement.</ptxt>
+<atten4>
+<ptxt>If the version is 1.102, it is announced as "Version, 1, 1, 0, 2".</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Check the announced content and record it on the customer problem analysis check sheet.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>On-board Unit Management Number Announcement Mode</ptxt>
+<figure>
+<graphic graphicname="E122064J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<step3>
+<ptxt>After the software version is announced, pressing the "VOL UP" or "VOL DOWN" switch announces the on-board unit management number by voice.</ptxt>
+<atten4>
+<ptxt>If the on-board unit management number is 00003-00104885-000043, it is announced as "Management number, 0, 0, 0, 0, 3, 0, 0, 1, 0, 4, 8, 8, 5, 0, 0, 0, 0, 4, 3".</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Check the announced content and record it on the customer problem analysis check sheet.</ptxt>
+<table frame="all" colsep="1" rowsep="1">
+<title>On-board Unit Management Number Announcement Content</title>
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="2.092902     in"/>
+<colspec colnum="02" colname="C02" colwidth="2.092901     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Digits</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Meaning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>XXXXX (5 digits)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<ptxt>SAM (encryption IC) manufacturer code</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>XXXXXXXX (8 digits)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<ptxt>SAM production lot No.</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>XXXXXX (6 digits)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<ptxt>SAM serial No.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The on-board unit management number is announced as "XXXXX-XXXXXXXX-XXXXXX" (X is a number from 0 to 9).</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Model Registration Number Announcement Mode</ptxt>
+<figure>
+<graphic graphicname="E122065J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>After the on-board unit management number is announced, pressing the "VOL UP" or "VOL DOWN" switch announces the model registration number by voice.</ptxt>
+<atten4>
+<ptxt>If the model registration number is 0045, it is announced as "Model registration number, 0, 0, 4, 5".</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Check the announced content and record it on the customer problem analysis check sheet.</ptxt>
+<table frame="all" colsep="1" rowsep="1">
+<title>Model Registration Number Announcement Content</title>
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="2.092902     in"/>
+<colspec colnum="02" colname="C02" colwidth="2.092901     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Digits</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Meaning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>XXXX (4 digits)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<ptxt>Model registration number</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The model registration number is announced as "XXXX" (X is a number from 0 to 9).</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Model (On-board Unit Part Number) Announcement Mode</ptxt>
+<figure>
+<graphic graphicname="E147230J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<step3>
+<ptxt>After the model registration number is announced, pressing the "VOL UP" or "VOL DOWN" switch announces the model (on-board unit part number) by voice.</ptxt>
+<atten4>
+<ptxt>If the model (on-board unit part number) is 86980-22010, it is announced as "Part number 8, 6, 9, 8, 0, 2, 2, 0, 1, 0".</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Check the announced content and record it on the customer problem analysis check sheet.</ptxt>
+<table frame="all" colsep="1" rowsep="1">
+<title>Model (on-board unit part number)</title>
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="2.092902     in"/>
+<colspec colnum="02" colname="C02" colwidth="2.092901     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Digits</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Meaning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>XXXXX-XXXXX (10 digits)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<ptxt>Model (on-board unit part number)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The model (on-board unit part number) is announced as "XXXXX-XXXXX" (X is a number from 0 to 9).</ptxt>
+</item>
+<item>
+<ptxt>It is not possible to go back to the content announced so far, so to check previously announced content again, turn the IG OFF once and start over from the beginning.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Error Log Announcement Mode</ptxt>
+<figure>
+<graphic graphicname="E122067J01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<step3>
+<ptxt>After the model (on-board unit part number) is announced, pressing the "VOL UP" or "VOL DOWN" switch announces the error codes of the recorded error log by voice.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>In error log announcement mode, the error log recorded by the self-diagnosis function of the toll collection (ETC) computer assembly during normal operation is announced.</ptxt>
+</item>
+<item>
+<ptxt>When error log announcement mode is entered, the error code of the most recently saved error log is announced. However, if a fatal error (error code 11, 12) is saved, that error code is announced first.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+<step3>
+<ptxt>Check the error log announcement content and record it on the customer problem analysis check sheet.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The error log consists of date information, time information (24-hour clock) and error code.</ptxt>
+</item>
+<item>
+<ptxt>The error log is announced in the order of error date information, time information (24-hour clock) and error code recorded in the error log.</ptxt>
+</item>
+<item>
+<ptxt>The date information recorded in the error log uses the date data obtained from the most recent toll processing held in the memory of the toll collection (ETC) computer assembly.</ptxt>
+</item>
+<item>
+<ptxt>Unless toll processing is performed in the ETC system, the value of the error log date information remains the same. For this reason, the error date information recorded in the error log may differ from the time when the error actually occurred.</ptxt>
+</item>
+<item>
+<ptxt>If no error log is recorded, "Error log, none" is announced.</ptxt>
+<figure>
+<graphic graphicname="E122068J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</item>
+</list1>
+</atten4>
+</step3>
+<step3>
+<ptxt>If there are error logs older than the error log being announced, pressing the "VOL DOWN" switch announces older logs 1 at a time in order. Also, if there are error logs newer than the error log being announced, pressing the "VOL UP" switch announces newer logs 1 at a time in order.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Up to 20 past error logs are saved and announced; if this is exceeded, the oldest are deleted first.</ptxt>
+</item>
+<item>
+<ptxt>The error log cannot be cleared manually.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>How to End Diagnosis Mode 1</ptxt>
+<step3>
+<ptxt>Turn the IG OFF or insert a card.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The type of card inserted is not limited to ETC cards. (Diagnosis mode 1 ends even if an incorrect card is inserted)</ptxt>
+</item>
+<item>
+<ptxt>When card insertion is detected, diagnosis mode 1 ends (reset is applied), and the green indicator and orange indicator come on for approximately 5 seconds.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>ETC Diagnosis Inspection (Diagnosis Mode 2)</ptxt>
+<step2>
+<ptxt>How to Start Diagnosis Mode 2</ptxt>
+<figure>
+<graphic graphicname="E122061J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<title>In diagnosis mode 2, the following information of the toll collection (ETC) computer assembly is announced by voice.</title>
+<item>
+<ptxt>Self-check Malfunction Detail Announcement (for manufacturer engineering use)</ptxt>
+</item>
+<item>
+<ptxt>On-board unit setup date</ptxt>
+</item>
+<item>
+<ptxt>Setup expiration date</ptxt>
+</item>
+<item>
+<ptxt>ETC communication log</ptxt>
+</item>
+</list1>
+</atten4>
+<step3>
+<ptxt>If an ETC card is inserted, remove it to protect the card.</ptxt>
+<atten4>
+<ptxt>Diagnosis mode cannot be entered with a card inserted.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Turn ACC ON.</ptxt>
+</step3>
+<step3>
+<ptxt>Press the "History" switch.</ptxt>
+<figure>
+<graphic graphicname="E122085J02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>While holding the "History" switch, press the "VOL DOWN" switch 4 times.</ptxt>
+</step3>
+<step3>
+<ptxt>While holding the "VOL DOWN" switch on the 4th press, press the "VOL UP" switch 4 times.</ptxt>
+</step3>
+<step3>
+<ptxt>While holding the "VOL UP" switch on the 4th press, press the "VOL DOWN" switch 4 times.</ptxt>
+</step3>
+<step3>
+<ptxt>Diagnosis mode is entered, the orange indicator comes on, and "Diagnosis 2" is announced by voice.</ptxt>
+<figure>
+<graphic graphicname="E122069J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>In diagnosis mode 2, the green indicator and orange indicator remain on. </ptxt>
+</item>
+<item>
+<ptxt>During diagnosis mode, announcements are made from the toll collection (ETC) computer assembly at the default volume (volume 6), regardless of whether the HDD navigation system is connected.</ptxt>
+</item>
+<item>
+<ptxt>Diagnosis mode 2 starts, and under normal conditions (when no self-diagnosis malfunction is detected) it changes to setup date announcement mode.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Self-check Malfunction Detail Announcement Function (when a self-diagnosis malfunction is detected)</ptxt>
+<figure>
+<graphic graphicname="E122070J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>If a malfunction has been detected by the self-check function at power-on, the detail code is announced before the setup date announcement.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The detail code (1-9) and the error code indicating the self-diagnosis malfunction (04) are announced in that order. </ptxt>
+</item>
+<item>
+<ptxt>The detail code is used by the manufacturer, so do not use it for diagnosis.</ptxt>
+</item>
+<item>
+<ptxt>When either the "VOL UP" or "VOL DOWN" switch is pressed during the "Self-check malfunction detail" announcement, the mode changes to setup date announcement mode, and operation thereafter is the same as normal.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Setup Date Announcement Mode</ptxt>
+<figure>
+<graphic graphicname="E122071J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<step3>
+<ptxt>When diagnosis mode 2 is entered, the setup date is announced by voice.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the setup date is 9/30/2005, it is announced as "Setup, 0, 5, 0, 9, 3, 0".</ptxt>
+</item>
+<item>
+<ptxt>If the on-board unit has not been set up, "Not set up" is announced.</ptxt>
+<figure>
+<graphic graphicname="E122072J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</item>
+<item>
+<ptxt>If valid data has not been written even after setup (data invalid), "Setup, unknown" is announced.</ptxt>
+<figure>
+<graphic graphicname="E122073J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Setup Expiration Date Announcement Mode</ptxt>
+<figure>
+<graphic graphicname="E122074J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<step3>
+<ptxt>After the setup date is announced, pressing the "VOL UP" or "VOL DOWN" switch announces the setup expiration date by voice.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the setup expiration date is 9/30/2006, it is announced as "Expiration date, 0, 6, 0, 9, 3, 0".</ptxt>
+</item>
+<item>
+<ptxt>If the on-board unit has not been set up, or if no expiration date has been set, "Not set up" is announced.</ptxt>
+<figure>
+<graphic graphicname="E122072J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</item>
+<item>
+<ptxt>If valid data has not been written even after setup (data invalid), "Expiration date, none" is announced.</ptxt>
+<figure>
+<graphic graphicname="E122075J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</item>
+<item>
+<ptxt>It is not possible to go back to the content announced so far, so to check previous content again, turn the IG OFF once and start over from the beginning.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Communication Log Announcement Mode</ptxt>
+<figure>
+<graphic graphicname="E122076J01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<step3>
+<ptxt>After the setup expiration date is announced, pressing the "VOL UP" or "VOL DOWN" switch announces the recorded communication log by voice.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>In communication log announcement mode, the log of communication with roadside units recorded in the toll collection (ETC) computer assembly is announced.</ptxt>
+</item>
+<item>
+<ptxt>When communication log announcement mode is entered, the most recently saved communication log is announced.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+<step3>
+<ptxt>Check the communication log announcement content.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The communication log consists of communication date, communication time (hour, minute, second), communication result, communication location and vehicle speed.</ptxt>
+</item>
+<item>
+<ptxt>The communication log is announced in the order of history number, communication date, communication time (hour, minute, second), communication result, communication location and vehicle speed.</ptxt>
+</item>
+<item>
+<ptxt>Pressing the history switch repeats the information currently being announced.</ptxt>
+</item>
+<item>
+<ptxt>If no communication log is recorded, "Communication log, none" is announced.</ptxt>
+<figure>
+<graphic graphicname="E122077J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</item>
+</list1>
+</atten4>
+</step3>
+<step3>
+<ptxt>If there are communication logs older than the communication log being announced, pressing the "VOL DOWN" switch announces older logs 1 at a time in order. Also, if there are communication logs newer than the communication log being announced, pressing the "VOL UP" switch announces newer logs 1 at a time in order.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the "VOL UP" switch is pressed when there is no communication log newer than the information currently being announced, the communication log currently being announced is repeated.</ptxt>
+</item>
+<item>
+<ptxt>Up to 25 past communication logs are announced, and older communication logs are deleted in sequence.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+<step3>
+<ptxt>Check the communication result content of the communication log announcement.</ptxt>
+<table frame="all" colsep="1" rowsep="1">
+<title>Communication Result Announcement Content</title>
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.5979663     in"/>
+<colspec colnum="02" colname="C02" colwidth="3.587837     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Digits</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Meaning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>1、6</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Passed through ETC gate during card authentication</ptxt>
+</item>
+<item>
+<ptxt>Passed through ETC gate in history mode</ptxt>
+</item>
+<item>
+<ptxt>On-board unit did not respond because no data came from the roadside antenna, or JEITA unified error code "01" was announced</ptxt>
+</item>
+<item>
+<ptxt>Abnormal radio waves received, such as data from an adjacent lane</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>4、7</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Communication not established due to poor radio wave environment</ptxt>
+</item>
+<item>
+<ptxt>Passed through ETC gate without setup</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>5</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<ptxt>Malfunction such as SAM error occurred during communication with roadside antenna</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>9</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<ptxt>Communication completed normally</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>If the communication result content is a malfunction other than "9", enter the "communication date", "communication time", "communication result", "communication location" and "vehicle speed" on the ETC customer problem analysis check sheet.</ptxt>
+</atten3>
+</step3>
+<step3>
+<ptxt>Check the on-board unit information content of the communication log announcement.</ptxt>
+<table frame="all" colsep="1" rowsep="1">
+<title>On-board Unit Information Announcement Content</title>
+<tgroup cols="4" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.597972     in"/>
+<colspec colnum="02" colname="C02" colwidth="1.195944     in"/>
+<colspec colnum="03" colname="C03" colwidth="1.195944     in"/>
+<colspec colnum="04" colname="C04" colwidth="1.195943     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Digits</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Card authentication</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Gate passage permission information</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>Toll charge information</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>0</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Card present</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>No on-board unit information</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>No on-board unit information</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>1</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Card present</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Passage permitted</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>No toll charged</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>2</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Card present</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Passage permitted</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>Toll charged</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>3</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Card present</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Passage not permitted</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>No toll charged</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>4</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Card present</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Passage not permitted</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>Toll charged</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>5</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>No card</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>No on-board unit information</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>No on-board unit information</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>6</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>No card</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Passage permitted</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>No toll charged</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>7</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>No card</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Passage permitted</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>Toll charged</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>8</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>No card</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Passage not permitted</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>No toll charged</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>9</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>No card</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Passage not permitted</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>Toll charged</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+<step2>
+<ptxt>How to End Diagnosis Mode 2</ptxt>
+<step3>
+<ptxt>Turn the IG OFF or insert a card.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The type of card inserted is not limited to ETC cards. (Diagnosis mode 2 ends even if an incorrect card is inserted)</ptxt>
+</item>
+<item>
+<ptxt>When card insertion is detected, diagnosis mode 2 ends (reset is applied), and the green indicator and orange indicator come on.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T120028K359K411" UPDATE = "ORIGINAL" LDUP = "28Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Rear Wiper Intermittent Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the rear wiper control switch is moved to the INT position, the capacitor in the intermittent control circuit discharges and turns Tr ON, so current flows through the relay coil → Tr → rear wiper relay terminal C1 → rear wiper switch terminal C1R → ground, and the relay contact turns ON. As a result, current flows from rear wiper relay terminal +B through the relay contact → rear wiper relay terminal LM → rear wiper motor terminal +1 → wiper motor → ground, and the rear wiper motor operates.</PTXT></ITEM>
+<ITEM><PTXT>Immediately after the rear wiper motor starts operating, the capacitor in the intermittent control circuit completes discharging, so Tr turns OFF and the relay contact turns OFF. Even when the relay contact is OFF, until the rear wiper motor stops at the automatic stop position, current flows through rear wiper motor terminal +B → rear wiper motor internal contact → rear wiper motor terminal S → rear wiper relay terminal SM → relay contact → rear wiper relay terminal LM → rear wiper motor terminal +1 → ground, so the rear wiper motor operates.</PTXT></ITEM>
+<ITEM><PTXT>When it reaches the automatic stop position, the rear wiper motor internal contact switches and the rear wiper motor stops. The capacitor in the intermittent control circuit is charged approximately 12 seconds after discharging is complete; after charging is complete, it discharges again and turns Tr ON, which turns the relay contact ON. The repetition of this discharging and charging is the intermittent operation.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k3960090e" WIDTH = "7.069in" HEIGHT = "3.514in" />
+</FIGURE>
+</MECA>

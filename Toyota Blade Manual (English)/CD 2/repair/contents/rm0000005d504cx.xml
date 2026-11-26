@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="S1">
+<name>Introduction</name>
+<section id="10002_S0013" variety="S0013">
+<name>Introduction</name>
+<ttl id="10002_S0013_744ZO_T009Z" variety="T009Z">
+<name>How to Troubleshoot ECU Controlled Systems</name>
+<para id="RM0000005D504CX" category="F" type-id="30023" name-id="012PO-02" from="200810" to="200912">
+<name>New Diagnosis System</name>
+<subpara id="RM0000005D504CX_z0" proc-id="RM0550J___0000HVS00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Outline</ptxt>
+<step2>
+<ptxt>The new diagnosis system is a new diagnostic system designed for increasingly advanced and complex on-board electronic systems. The functions of this diagnostic system can be used with the TaSCAN diagnostic tool.</ptxt>
+<figure>
+<graphic graphicname="D101407J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>Functions of Diagnostic Tool TaSCAN</ptxt>
+<step2>
+<ptxt>The TaSCAN diagnostic tool, which supports this new diagnosis system, has the functions shown in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.75in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<colspec colname="COLSPEC0" colwidth="4.20in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Function</ptxt>
+</entry>
+<entry namest="COL2" nameend="COLSPEC0" valign="middle" align="center">
+<ptxt>Outline</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="12" valign="middle" align="center">
+<ptxt>Diagnosis</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Vehicle Diagnosis</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ALL Diagnosis</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CAN Bus Diagnosis</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="10" valign="middle" align="center">
+<ptxt>System Diagnosis</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Freeze Data</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECU Data Monitor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Active Test</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Mode Change</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Check diagnosis judgment results</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Freeze data during operation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Test Mode Inspection</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Basic Inspection</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Special operation/control history</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Multi Data Monitor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Electronic key or wireless diagnosis mode</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Key Registration/Deletion</ptxt>
+</entry>
+<entry namest="COL2" nameend="COLSPEC0" valign="middle">
+<ptxt>Registration/deletion of wireless keys, etc.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Work Support</ptxt>
+</entry>
+<entry namest="COL2" nameend="COLSPEC0" valign="middle">
+<ptxt>Work support functions required when replacing ECUs or actuators</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Saved Data</ptxt>
+</entry>
+<entry namest="COL2" nameend="COLSPEC0" valign="middle">
+<ptxt>Playback/deletion of saved data</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Customize</ptxt>
+</entry>
+<entry namest="COL2" nameend="COLSPEC0" valign="middle">
+<ptxt>Function for checking and changing the settings of customize items according to user requests</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement</ptxt>
+</entry>
+<entry namest="COL2" nameend="COLSPEC0" valign="middle">
+<ptxt>Equipped with voltage measurement and oscilloscope functions</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>Diagnostic Communication Compatible Computers and Sensors</ptxt>
+<table pgwide="1">
+<tgroup cols="7">
+<colspec colname="COL1" align="center" colwidth="1.01in"/>
+<colspec colname="COL2" colwidth="1.01in"/>
+<colspec colname="COL3" colwidth="1.01in"/>
+<colspec colname="COL4" colwidth="1.01in"/>
+<colspec colname="COL5" colwidth="1.01in"/>
+<colspec colname="COL6" colwidth="1.01in"/>
+<colspec colname="COL7" colwidth="1.02in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Computer/Sensor Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Read DTC</ptxt>
+<ptxt>(Normal Mode)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Read DTC</ptxt>
+<ptxt>(Check Mode, Test Mode)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Read Freeze Frame Data</ptxt>
+<ptxt>(Computer data when malfunction occurred)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Data monitor reading and saving/display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Active Test</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Communication Line with TaSCAN</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Engine ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+<ptxt>(*)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Main Body ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Skid Control ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+<ptxt>(Note)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4WD ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Power steering ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Lock ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN (via LIN)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Air Conditioning ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Seat belt control ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SIL</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Airbag ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SIL</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Headlight Leveling ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SIL</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ID Code Box</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN (via LIN)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Meter ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Television camera ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Distance control ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P/W master SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN (via LIN)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D seat motor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN (via LIN)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P seat motor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN (via LIN)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR seat motor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN (via LIN)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL seat motor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN (via LIN)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CAN gateway ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>(*)</title>
+<specitem>
+<ptxt>Time-series freeze data can also be read</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Note</title>
+<specitem>
+<ptxt>Freeze data during system operation can also be read</ptxt>
+</specitem>
+</spec>
+</step1>
+<step1>
+<ptxt>How to Use Diagnostic Tool TaSCAN</ptxt>
+<step2>
+<ptxt>Connecting to the Vehicle</ptxt>
+<figure>
+<graphic graphicname="D101814J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<step3>
+<ptxt>Connect TaSCAN to the DLC3 (data link connector No.3) located near the driver side footwell.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>How to Use Diagnostic Tool TaSCAN</ptxt>
+<figure>
+<graphic graphicname="D031282" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>When the power switch of the TaSCAN diagnostic tool is turned ON, the menu screen is displayed.</ptxt>
+</step3>
+<step3>
+<ptxt>Select the desired item, then proceed according to the instructions on the screen.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Time-series Freeze Data (Using TaSCAN)</ptxt>
+<figure>
+<graphic graphicname="D031290J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Time-series freeze data freezes the data at the DTC detection point and before and after it. The frozen data allows the vehicle driving condition (acceleration, deceleration, steady driving, shifting) and the driver's operation status to be accurately checked, which is useful for troubleshooting. It can also be used as data when performing a reproduction test.</ptxt>
+</item>
+<item>
+<ptxt>By checking changes in input signals, abnormalities such as momentary interruptions can also be detected.</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>Connect TaSCAN to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn IG ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Display the [Diagnosis] → [Freeze Data] screen and select the data items.</ptxt>
+</step2>
+<step2>
+<ptxt>After selecting the items, check the data at each point.</ptxt>
+<figure>
+<graphic graphicname="D031291J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>About the Diagnosis Connector</ptxt>
+<step2>
+<ptxt>With the adoption of the new diagnosis system, functions have been consolidated into the DLC3 (located under the driver side instrument panel).</ptxt>
+<figure>
+<graphic graphicname="D100010J28" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>DLC3 Terminal Names and Functions</ptxt>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.67in"/>
+<colspec colname="COL2" colwidth="2.46in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal Name</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Function</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>BAT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery power source</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis CAN communication with each computer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC (light) output command</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test mode output command</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TAC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine speed output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LVL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>For headlight leveling servicing</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SIL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis communication with each computer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis CAN communication with each computer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine ground</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Body ground</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>Action when an Error Occurs</ptxt>
+<figure>
+<graphic graphicname="D101514J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>If the TaSCAN power indicator does not come on, or if not all of the system names that support diagnosis communication and diagnosis CAN communication are displayed on the menu, perform the following inspections and repair the malfunctioning area.</ptxt>
+</atten3>
+<step2>
+<ptxt>TaSCAN power indicator does not come on</ptxt>
+<figure>
+<graphic graphicname="D100010J29" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Connect TaSCAN to another vehicle and start TaSCAN.</ptxt>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.29in"/>
+<colspec colname="COL2" colwidth="1.02in"/>
+<colspec colname="COL3" colwidth="1.82in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Operating Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Malfunctioning Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Point</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>When the TaSCAN power indicator comes on in red or green</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle side</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>DLC3 BAT terminal voltage inspection</ptxt>
+</item>
+<item>
+<ptxt>DLC3 CG terminal ←→ body ground continuity inspection</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>When the TaSCAN power indicator does not come on</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>TaSCAN main unit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+<step2>
+<ptxt>Not all of the system names that support diagnosis communication and diagnosis CAN communication are displayed when System Diagnosis is pressed on the diagnosis menu.</ptxt>
+<figure>
+<graphic graphicname="D032336" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG switch and TaSCAN power switch OFF once, start TaSCAN again, press the [Back] key to display the diagnosis menu, and check the condition.</ptxt>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COL2" colwidth="1.01in"/>
+<colspec colname="COL3" colwidth="1.84in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Operating Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Malfunctioning Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Point</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No system names are displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>TaSCAN main unit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>System names that support diagnosis communication are not displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle side</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Continuity inspection between DLC3 communication line SIL terminal and junction</ptxt>
+</item>
+<item>
+<ptxt>Short to +B or ground between DLC3 communication line SIL terminal and junction</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>System names that support diagnosis CAN communication are not displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle side</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Repair the CAN communication by following the steps from step 5 [DLC3 inspection (CANH-CANL)] in How to Proceed with Troubleshooting for the control system CAN communication</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>One system name that supports diagnosis communication is not displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle side</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Continuity inspection between DLC3 communication line SIL terminal of non-displayed ECU and junction</ptxt>
+</item>
+<item>
+<ptxt>Short to +B or ground between DLC3 communication line SIL terminal of non-displayed ECU and junction</ptxt>
+</item>
+<item>
+<ptxt>Non-displayed ECU +B and ground inspection</ptxt>
+</item>
+<item>
+<ptxt>Replace non-displayed ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>One system name that supports diagnosis CAN communication is not displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle side</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Repair the CAN communication by following the steps from step 3 [DTC check] in How to Proceed with Troubleshooting for the control system CAN communication</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

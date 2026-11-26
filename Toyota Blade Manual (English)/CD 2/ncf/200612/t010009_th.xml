@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740093p SYSTEM "../xml/grph_ent/a4740093p.png" NDATA png>
+<!ENTITY a4740094p SYSTEM "../xml/grph_ent/a4740094p.png" NDATA png>
+<!ENTITY a4740095p SYSTEM "../xml/grph_ent/a4740095p.png" NDATA png>
+<!ENTITY a4740074p SYSTEM "../xml/grph_ent/a4740074p.png" NDATA png>
+<!ENTITY a4740075p SYSTEM "../xml/grph_ent/a4740075p.png" NDATA png>
+
+<!ENTITY T010043A300 SYSTEM "../xml/t478010043a300.xml">
+<!ENTITY T010043A122 SYSTEM "../xml/t478010054a122.xml">
+<!ENTITY T010043A123 SYSTEM "../xml/t478010043a123.xml">
+<!ENTITY T010043A077 SYSTEM "../xml/t478010054a077.xml">
+<!ENTITY T010043A078 SYSTEM "../xml/t478010054a078.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T010043A300S"><SCTITLE/>
+
+<PARA INFOID = "T010043A300" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Ignition System General</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The TDI (TOYOTA Direct Ignition System), with an ignition coil with built-in igniter for each cylinder, has been adopted, improving ignition timing control accuracy and making ignition timing completely adjustment-free.</PTXT></ITEM>
+<ITEM><PTXT>Knock control using a knock sensor, etc. has been adopted for highly accurate control.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740093p" WIDTH = "7.000in" HEIGHT = "3.014in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010043A122S"><SCTITLE/>
+
+<PARA INFOID = "T010054A122" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Ignition Coil with Igniter</TITLE>
+<LIST1><ITEM><PTXT>By placing a coil independently for each cylinder, the distributor and high-tension cords are eliminated, reducing losses in the high-voltage section, ensuring reliability and reducing radio noise.</PTXT></ITEM>
+<ITEM><PTXT>A compact, lightweight igniter is built in, and a high voltage is induced in the secondary (No. 2) coil by the signal from the engine control computer.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740094p" WIDTH = "6.917in" HEIGHT = "2.722in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010043A123S"><SCTITLE/>
+
+<PARA INFOID = "T010043A123" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Spark Plug</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Iridium alloy has been adopted for the center electrode. Since iridium alloy has excellent wear resistance, the center electrode can be made thinner, enabling more reliable ignition.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740095p" WIDTH = "6.917in" HEIGHT = "2.625in" />
+</FIGURE>
+<SPEC ID = "T010043A123X01" INDSW = "OFF">
+<TITLE>Spark Plug Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>DENSO</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>SK20R11</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>NGK</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>IFR6A11</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Plug Gap [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>1.0~1.1</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010043A077S"><SCTITLE/>
+
+<PARA INFOID = "T010054A077" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Camshaft Position Sensor (G2 Signal)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A highly accurate electromagnetic pickup type sensor has been adopted. Performs cylinder identification and detection of actual camshaft timing.</PTXT></ITEM>
+<ITEM><PTXT>The camshaft position sensor is installed at the rear end of the cylinder head and detects the protrusions of the camshaft timing rotor (360-180-180°CA) fixed to the intake camshaft. As the camshaft rotates, the air gap between the timing rotor protrusions and the camshaft position sensor changes, so the magnetic flux passing through the coil of the camshaft position sensor increases and decreases, generating an electromotive force in the coil. This generated voltage is reversed when the timing rotor protrusion approaches and when it moves away from the camshaft position sensor, so it appears as an AC voltage.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740074p" WIDTH = "6.903in" HEIGHT = "2.847in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010043A078S"><SCTITLE/>
+
+<PARA INFOID = "T010054A078" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Crankshaft Position Sensor (Ne Signal)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A highly accurate electromagnetic pickup type sensor has been adopted. Detects the crank position and crank angular velocity.</PTXT></ITEM>
+<ITEM><PTXT>The crankshaft timing rotor installed on the crankshaft has 34 signal teeth with 2 teeth missing for top dead center detection. </PTXT></ITEM>
+<ITEM><PTXT>The crankshaft position sensor detects the crank rotation signal every 10° and can accurately detect top dead center from the location of the missing teeth. A sensor similar to the camshaft position sensor has been adopted, detecting the signal as AC power.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740075p" WIDTH = "6.917in" HEIGHT = "2.208in" />
+</FIGURE>
+</PARA>
+</SECTION>
+</SCT>

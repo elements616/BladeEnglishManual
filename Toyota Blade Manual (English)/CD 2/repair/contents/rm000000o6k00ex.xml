@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002S_S000E" variety="S000E">
+<name>Vehicle Surroundings Monitor</name>
+<ttl id="1002S_S000E_742B9_T003J" variety="T003J">
+<name>Intelligent Parking Assist System</name>
+<para id="RM000000O6K00EX" category="J" type-id="304PY" name-id="672TB-00" from="200708" to="200912">
+<dtccode/>
+<dtcname>Vehicle is not guided to the set target parking position</dtcname>
+<subpara id="RM000000O6K00EX_04" type-id="51" category="05" proc-id="RM0550J___0000ER100000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If an alignment adjustment has been performed, disconnect the battery terminal for 2 seconds or more after the work.</ptxt>
+</item>
+<item>
+<ptxt>When the battery terminal is disconnected, perform steering sensor steering angle neutral point memorization. (see <xref label="Seep01" href="RM000001LYW011X"/>)</ptxt>
+</item>
+<item>
+<ptxt>Depending on the parts replaced or the work performed during inspection, registration settings for other systems may be necessary in addition to the intelligent parking assist system. (see <xref label="Seep02" href="RM00000304S000X"/>)</ptxt>
+</item>
+<item>
+<ptxt>If registration/setting becomes necessary while proceeding with the inspection, perform the registration/setting work before proceeding to the next step.</ptxt>
+</item>
+</list1>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000O6K00EX_05" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000O6K00EX_05_0038" proc-id="RM0550J___0000ER200000">
+<testtitle>Inspect Tire Size</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect Tire Size</ptxt>
+<test2>
+<ptxt>Confirm that the tire pressure is correct, and inspect that the installed tires are of the specified size and are not excessively worn. (see <xref label="Seep01" href="RM0000037ZZ000X_02_0001"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Specified Size</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+<test1>
+<ptxt>Check the inspection result and proceed to the destination below.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000O6K00EX_05_0039" fin="false">A</down>
+<right ref="RM000000O6K00EX_05_0041" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0039" proc-id="RM0550J___0000ER300000">
+<testtitle>Inspect Tire Dynamic Loaded Radius</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect Tire Dynamic Loaded Radius</ptxt>
+<figure>
+<graphic graphicname="E127424J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>On a level surface, stop the vehicle with the steering wheel in the straight-ahead position.</ptxt>
+<atten3>
+<ptxt>As this inspection involves moving the vehicle, secure a wide area where the surroundings can be safely monitored.</ptxt>
+</atten3>
+</test2>
+<test2>
+<ptxt>Make marks on the tire circumference and the road surface with chalk, etc.</ptxt>
+</test2>
+<test2>
+<ptxt>Drive the vehicle straight forward and stop when the tire has made 5 revolutions.</ptxt>
+</test2>
+<test2>
+<ptxt>Mark the vehicle stop position with chalk, etc., measure the travel distance A mm and inspect that it is within the standard.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>9466 to 9871mm</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000O6K00EX_05_0040" fin="false">OK</down>
+<right ref="RM000000O6K00EX_05_0054" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0040" proc-id="RM0550J___0000ER400000">
+<testtitle>TaSCAN ECU Data Monitor Inspection (RH and LH Wheel Travel Distance Information)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), inspect the wheel speed sensor travel distance information. (see <xref label="Seep01" href="RM000002A0Z004X_01_0002"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Check the inspection result and proceed to the destination below.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No Abnormality</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Right side differs from actual travel distance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Left side differs from actual travel distance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000O6K00EX_05_0041" fin="false">A</down>
+<right ref="RM000000O6K00EX_05_0075" fin="true">B</right>
+<right ref="RM000000O6K00EX_05_0076" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0075" proc-id="RM0550J___0000HAD00000">
+<testtitle>Replace Speed Sensor FR RH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the installation condition of the speed sensor (front side).</ptxt>
+<figure>
+<graphic graphicname="E156000J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Installed correctly</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0076" proc-id="RM0550J___0000HAE00000">
+<testtitle>Replace Speed Sensor FR LH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the speed sensor (front side) and check that there is no foreign matter on or damage to the tip. (see <xref label="Seep01" href="RM00000304Y000X"/>)</ptxt>
+</test1>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No foreign matter or damage</ptxt>
+</specitem>
+</spec>
+</content6>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0041" proc-id="RM0550J___0000ER500000">
+<testtitle>Symptom Check</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Garage Parking Operation</ptxt>
+<test2>
+<ptxt>Move the vehicle to a level place with a parking space.</ptxt>
+<atten3>
+<ptxt>As this inspection involves moving the vehicle, secure a wide area where the surroundings can be safely monitored.</ptxt>
+</atten3>
+</test2>
+<test2>
+<ptxt>Operate the intelligent parking assist system to perform a garage parking operation and check how the vehicle deviates from the set target parking position.</ptxt>
+<atten4>
+<ptxt>Perform garage parking on both the left and right from a position angled approximately 45° to the target parking space.</ptxt>
+</atten4>
+</test2>
+<test2>
+<ptxt>Select the applicable case from the following and proceed to the indicated destination.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Symptom Check</ptxt>
+<test2>
+<ptxt>Case 1</ptxt>
+<figure>
+<graphic graphicname="E141981" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<colspec colname="COL3" colwidth="2.54in"/>
+<colspec colname="COL4" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Case</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stops as shown in the illustration</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Actual turning radius is small </ptxt>
+</item>
+<item>
+<ptxt>Camera optical axis adjustment value deviation </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+<test2>
+<ptxt>Case 2</ptxt>
+<figure>
+<graphic graphicname="E141980" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<colspec colname="COL3" colwidth="2.54in"/>
+<colspec colname="COL4" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Case</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stops as shown in the illustration</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Actual turning radius is large</ptxt>
+</item>
+<item>
+<ptxt>Camera optical axis adjustment value deviation </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+<test2>
+<ptxt>Case 3</ptxt>
+<figure>
+<graphic graphicname="E141979" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<colspec colname="COL3" colwidth="2.54in"/>
+<colspec colname="COL4" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Case</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stops as shown in the illustration</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Steering angle adjustment memory value deviation</ptxt>
+</item>
+<item>
+<ptxt>Camera optical axis adjustment value deviation </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+<test2>
+<ptxt>Case 4</ptxt>
+<figure>
+<graphic graphicname="E141978" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<colspec colname="COL3" colwidth="2.54in"/>
+<colspec colname="COL4" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Case</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stops as shown in the illustration</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Steering angle adjustment memory value deviation</ptxt>
+</item>
+<item>
+<ptxt>Camera optical axis adjustment value deviation </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+<test2>
+<ptxt>Case 5</ptxt>
+<figure>
+<graphic graphicname="E141976" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<colspec colname="COL3" colwidth="2.54in"/>
+<colspec colname="COL4" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Case</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stops as shown in the illustration</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Steering angle adjustment memory value deviation</ptxt>
+</item>
+<item>
+<ptxt>Camera optical axis adjustment value deviation </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+<test2>
+<ptxt>Case 6</ptxt>
+<figure>
+<graphic graphicname="E141977" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<colspec colname="COL3" colwidth="2.54in"/>
+<colspec colname="COL4" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Case</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stops as shown in the illustration</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Steering angle adjustment memory value deviation</ptxt>
+</item>
+<item>
+<ptxt>Camera optical axis adjustment value deviation </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000O6K00EX_05_0042" fin="false">A</down>
+<right ref="RM000000O6K00EX_05_0046" fin="false">B</right>
+<right ref="RM000000O6K00EX_05_0050" fin="false">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0042" proc-id="RM0550J___0000ER600000">
+<testtitle>Height Control Sensor Vehicle Height Difference Setting, G Sensor 0-point Writing and Camera Optical Axis Adjustment</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Height control sensor vehicle height difference setting and G sensor 0-point writing (see <xref label="Seep01" href="RM00000304S000X_02_0001"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Camera optical axis adjustment (see <xref label="Seep02" href="RM00000304S000X_02_0003"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Operation Check</ptxt>
+<test2>
+<ptxt>Operate the intelligent parking assist system and inspect whether the malfunction recurs.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Return to Normal</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000O6K00EX_05_0043" fin="false">A</down>
+<right ref="RM000000O6K00EX_05_0057" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0043" proc-id="RM0550J___0000ER700000">
+<testtitle>Inspect Front Wheel Alignment</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect Front Wheel Alignment</ptxt>
+<atten4>
+<ptxt>Perform the alignment inspection for toe and camber.</ptxt>
+</atten4>
+<test2>
+<ptxt>Front wheel alignment inspection (see <xref label="Seep01" href="RM0000037ZZ000X"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>OK</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front wheel alignment normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front wheel alignment abnormal</ptxt>
+<ptxt>(Engine Type 2AZ-FE)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front wheel alignment abnormal</ptxt>
+<ptxt>(Engine Type 2GR-FE)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<atten4>
+<ptxt>When adjusting the alignment, adjust toe and camber.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000O6K00EX_05_0044" fin="false">A</down>
+<right ref="RM000000O6K00EX_05_0058" fin="true">B</right>
+<right ref="RM000000O6K00EX_05_0069" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0044" proc-id="RM0550J___0000ER800000">
+<testtitle>Inspect Rear Wheel Alignment</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect Rear Wheel Alignment</ptxt>
+<atten4>
+<ptxt>Perform the alignment inspection for toe and camber.</ptxt>
+</atten4>
+<test2>
+<ptxt>Inspect Rear Wheel Alignment</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Rear wheel alignment (engine type 2AZ-FE, FF drive type) inspection (see <xref label="Seep01" href="RM000003800000X"/>)</ptxt>
+</item>
+<item>
+<ptxt>Rear wheel alignment (engine type 2GR-FE, 4WD drive type) inspection (see <xref label="Seep02" href="RM000003800000X"/>)</ptxt>
+</item>
+<item>
+<ptxt>Rear wheel alignment (4WD drive type) inspection (see <xref label="Seep03" href="RM000003800000X"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>OK</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear wheel alignment normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear Wheel Alignment Abnormal</ptxt>
+<ptxt>(Engine Type 2AZ-FE, FF Drive Type)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear Wheel Alignment Abnormal</ptxt>
+<ptxt>(Engine Type 2GR-FE, FF Drive Type)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear Wheel Alignment Abnormal</ptxt>
+<ptxt>(4WD Drive Type)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>D</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<atten4>
+<ptxt>When adjusting the alignment, adjust toe and camber.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000O6K00EX_05_0045" fin="true">A</down>
+<right ref="RM000000O6K00EX_05_0059" fin="true">B</right>
+<right ref="RM000000O6K00EX_05_0070" fin="true">C</right>
+<right ref="RM000000O6K00EX_05_0060" fin="true">D</right>
+</res>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0045">
+<testtitle>Replace Television Camera Controller<xref label="Seep01" href="RM000000MZ5001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0046" proc-id="RM0550J___0000ER900000">
+<testtitle>Inspect Front Wheel Alignment</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect Front Wheel Alignment</ptxt>
+<atten4>
+<ptxt>Perform the alignment inspection for toe and camber.</ptxt>
+</atten4>
+<test2>
+<ptxt>Front wheel alignment inspection (see <xref label="Seep01" href="RM0000037ZZ000X"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>OK</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front wheel alignment normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front wheel alignment abnormal</ptxt>
+<ptxt>(Engine Type 2AZ-FE)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front wheel alignment abnormal</ptxt>
+<ptxt>(Engine Type 2GR-FE)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<atten4>
+<ptxt>When adjusting the alignment, adjust toe and camber.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000O6K00EX_05_0047" fin="false">A</down>
+<right ref="RM000000O6K00EX_05_0058" fin="true">B</right>
+<right ref="RM000000O6K00EX_05_0069" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0047" proc-id="RM0550J___0000ERA00000">
+<testtitle>Inspect Rear Wheel Alignment</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect Rear Wheel Alignment</ptxt>
+<atten4>
+<ptxt>Perform the alignment inspection for toe and camber.</ptxt>
+</atten4>
+<test2>
+<ptxt>Inspect Rear Wheel Alignment</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Rear wheel alignment (engine type 2AZ-FE, FF drive type) inspection (see <xref label="Seep01" href="RM000003800000X"/>)</ptxt>
+</item>
+<item>
+<ptxt>Rear wheel alignment (engine type 2GR-FE, 4WD drive type) inspection (see <xref label="Seep02" href="RM000003800000X"/>)</ptxt>
+</item>
+<item>
+<ptxt>Rear wheel alignment (4WD drive type) inspection (see <xref label="Seep03" href="RM000003800000X"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>OK</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear wheel alignment normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear Wheel Alignment Abnormal</ptxt>
+<ptxt>(Engine Type 2AZ-FE, FF Drive Type)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear Wheel Alignment Abnormal</ptxt>
+<ptxt>(Engine Type 2GR-FE, FF Drive Type)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear Wheel Alignment Abnormal</ptxt>
+<ptxt>(4WD Drive Type)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>D</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<atten4>
+<ptxt>When adjusting the alignment, adjust toe and camber.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000O6K00EX_05_0048" fin="false">A</down>
+<right ref="RM000000O6K00EX_05_0059" fin="true">B</right>
+<right ref="RM000000O6K00EX_05_0070" fin="true">C</right>
+<right ref="RM000000O6K00EX_05_0060" fin="true">D</right>
+</res>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0048" proc-id="RM0550J___0000ERB00000">
+<testtitle>Height Control Sensor Vehicle Height Difference Setting, G Sensor 0-point Writing and Camera Optical Axis Adjustment</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Height control sensor vehicle height difference setting and G sensor 0-point writing (see <xref label="Seep01" href="RM00000304S000X_02_0001"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Camera optical axis adjustment (see <xref label="Seep02" href="RM00000304S000X_02_0003"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Operation Check</ptxt>
+<test2>
+<ptxt>Operate the intelligent parking assist system and inspect whether the malfunction recurs.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Return to Normal</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000O6K00EX_05_0049" fin="true">A</down>
+<right ref="RM000000O6K00EX_05_0057" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0049">
+<testtitle>Replace Television Camera Controller<xref label="Seep01" href="RM000000MZ5001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0050" proc-id="RM0550J___0000ERC00000">
+<testtitle>Height Control Sensor Vehicle Height Difference Setting, G Sensor 0-point Writing, Camera Optical Axis Adjustment and Steering Angle Adjustment</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Height control sensor vehicle height difference setting and G sensor 0-point writing (see <xref label="Seep01" href="RM00000304S000X_02_0001"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Camera optical axis adjustment (see <xref label="Seep02" href="RM00000304S000X_02_0003"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Steering angle adjustment (see <xref label="Seep03" href="RM00000304S000X_02_0005"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Operation Check</ptxt>
+<test2>
+<ptxt>Operate the intelligent parking assist system and inspect whether the malfunction recurs.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Return to Normal</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000O6K00EX_05_0051" fin="false">A</down>
+<right ref="RM000000O6K00EX_05_0057" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0051" proc-id="RM0550J___0000ERD00000">
+<testtitle>Inspect Front Wheel Alignment</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect Front Wheel Alignment</ptxt>
+<atten4>
+<ptxt>Perform the alignment inspection for toe and camber.</ptxt>
+</atten4>
+<test2>
+<ptxt>Front wheel alignment inspection (see <xref label="Seep01" href="RM0000037ZZ000X"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>OK</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front wheel alignment normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front wheel alignment abnormal</ptxt>
+<ptxt>(Engine Type 2AZ-FE)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front wheel alignment abnormal</ptxt>
+<ptxt>(Engine Type 2GR-FE)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<atten4>
+<ptxt>When adjusting the alignment, adjust toe and camber.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000O6K00EX_05_0052" fin="false">A</down>
+<right ref="RM000000O6K00EX_05_0058" fin="true">B</right>
+<right ref="RM000000O6K00EX_05_0069" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0052" proc-id="RM0550J___0000ERE00000">
+<testtitle>Inspect Rear Wheel Alignment</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect Rear Wheel Alignment</ptxt>
+<atten4>
+<ptxt>Perform the alignment inspection for toe and camber.</ptxt>
+</atten4>
+<test2>
+<ptxt>Inspect Rear Wheel Alignment</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Rear wheel alignment (engine type 2AZ-FE, FF drive type) inspection (see <xref label="Seep01" href="RM000003800000X"/>)</ptxt>
+</item>
+<item>
+<ptxt>Rear wheel alignment (engine type 2GR-FE, 4WD drive type) inspection (see <xref label="Seep02" href="RM000003800000X"/>)</ptxt>
+</item>
+<item>
+<ptxt>Rear wheel alignment (4WD drive type) inspection (see <xref label="Seep03" href="RM000003800000X"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>OK</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear wheel alignment normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear Wheel Alignment Abnormal</ptxt>
+<ptxt>(Engine Type 2AZ-FE, FF Drive Type)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear Wheel Alignment Abnormal</ptxt>
+<ptxt>(Engine Type 2GR-FE, FF Drive Type)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear Wheel Alignment Abnormal</ptxt>
+<ptxt>(4WD Drive Type)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>D</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<atten4>
+<ptxt>When adjusting the alignment, adjust toe and camber.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000O6K00EX_05_0053" fin="true">A</down>
+<right ref="RM000000O6K00EX_05_0059" fin="true">B</right>
+<right ref="RM000000O6K00EX_05_0070" fin="true">C</right>
+<right ref="RM000000O6K00EX_05_0060" fin="true">D</right>
+</res>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0053">
+<testtitle>Replace Television Camera Controller<xref label="Seep01" href="RM000000MZ5001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0054">
+<testtitle>Tire Replacement</testtitle>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0057">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0058">
+<testtitle>Front Wheel Alignment Adjustment (Engine Type 2AZ-FE)<xref label="Seep01" href="RM0000037ZZ000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0069">
+<testtitle>Front Wheel Alignment Adjustment (Engine Type 2GR-FE)<xref label="Seep01" href="RM0000037ZZ000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0059">
+<testtitle>Rear Wheel Alignment Adjustment (Engine Type 2AZ-FE Drive Type FF)<xref label="Seep01" href="RM000003800000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0070">
+<testtitle>Rear Wheel Alignment Adjustment (Engine Type 2GR-FE Drive Type FF)<xref label="Seep01" href="RM000003800000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000O6K00EX_05_0060">
+<testtitle>Rear Wheel Alignment Adjustment (Drive Type 4WD)<xref label="Seep01" href="RM000003800000X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

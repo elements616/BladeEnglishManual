@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="X39400000QZ019C" category="C" type-id="302Z2" name-id="0659R-00" from="200612">
+<dtccode>P0016/18</dtccode>
+<dtcname>VVT Sensor (Out of Range)</dtcname>
+<subpara id="X39400000QZ019C_10" type-id="31" category="03" proc-id="RM0550J___00002TJ00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>This VVT system controls the intake camshaft to provide the optimal valve timing for each driving condition. This control is performed based on conditions such as intake air volume, throttle position and engine coolant temperature. Based on the signals from these sensors, the engine control computer adjusts the oil control valve; as a result, the relative position of the camshaft is optimized, improving engine torque and fuel economy and reducing exhaust emissions. The engine control computer also detects the actual valve timing using the signal from the camshaft position sensor and performs feedback control to achieve the target valve timing.</ptxt>
+<figure>
+<graphic graphicname="A145886J04" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.8675236     in"/>
+<colspec colnum="02" colname="C02" colwidth="3.015857     in"/>
+<colspec colnum="03" colname="C03" colwidth="3.263539     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTCNo.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0016/18</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>Engine running</ptxt>
+</item>
+<item>
+<ptxt>Valve timing deviation (valve timing cannot be controlled to target)</ptxt>
+</item>
+<item>
+<ptxt>5 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Mechanical system malfunction (timing chain jumped teeth, chain stretched)</ptxt>
+</item>
+<item>
+<ptxt>VVT signal (phase deviation)</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="X39400000QZ019C_11" type-id="32" category="03" proc-id="RM0550J___00002TK00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt/>
+<figure>
+<graphic graphicname="A145881J06" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="X39400000QZ019C_12" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="X39400000QZ019C_13" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="X39400000QZ019C_13_0001" proc-id="RM0550J___00002TL00000">
+<testtitle>Inspect Valve Timing</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Timing Inspection</ptxt>
+<test2>
+<ptxt>Remove the cylinder head cover.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn the crankshaft clockwise and align the notch of the crankshaft pulley with the 0° position.</ptxt>
+</test2>
+<test2>
+<ptxt>Check that the timing marks of the camshaft timing gear are aligned as shown in the illustration. If the marks are not aligned, turn the crankshaft clockwise 1 more revolution.</ptxt>
+<figure>
+<graphic graphicname="A160964J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Timing marks are aligned</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="X39400000QZ019C_13_0002" fin="true">OK</down>
+<right ref="X39400000QZ019C_13_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000QZ019C_13_0002">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000QZ019C_13_0003">
+<testtitle>Valve Timing Adjustment</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectionList>
+	<connector type="conn" code="F9">
+		<pin no="1">
+			<line id="1" color="R">
+				<connector type="conn" code="F52">
+					<pin no="12"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F9">
+		<pin no="3" spec="1">
+			<line id="2" color="L">
+				<connector type="jbc" code="2J">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F9">
+		<pin no="2" spec="3">
+			<line id="3" color="B">
+				<connector type="w2w" code="AF7" sex="male">
+					<pin no="7"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F9">
+		<pin no="4" spec="3">
+			<line id="4" color="G">
+				<connector type="w2w" code="AF7" sex="male">
+					<pin no="6"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F8">
+		<pin no="2">
+			<line id="5" color="W-B">
+				<connector type="jbc" code="2J">
+					<pin no="1"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F52">
+		<pin no="2">
+			<line id="6" color="W" spec="w/ Radar Cruise Control">
+				<connector type="w2w" code="AF7" sex="male">
+					<pin no="8"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F8">
+		<pin no="1">
+			<line id="6" color="W" spec="w/o Radar Cruise Control">
+				<connector type="w2w" code="AF7" sex="male">
+					<pin no="8"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F8">
+		<pin no="1">
+			<line id="6" color="W" spec="w/ Radar Cruise Control">
+				<connector type="conn" code="F52">
+					<pin no="1"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="F53">
+		<pin no="7">
+			<line id="7" color="R">
+				<connector type="w2w" code="AF7" sex="male">
+					<pin no="3"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="AF7" sex="female">
+		<pin no="8">
+			<line id="8" color="W">
+				<connector type="conn" code="A10">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="gp" code="AC">
+		<pin>
+			<line id="9" color="W-B">
+				<connector type="sp" code="">
+					<pin/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="sp" code="">
+		<pin>
+			<line id="9" color="W-B">
+				<connector type="conn" code="A5">
+					<pin no="5"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="A5">
+		<pin no="4">
+			<line id="10" color="R">
+				<connector type="w2w" code="AF7" sex="female">
+					<pin no="3"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="A5">
+		<pin no="1">
+			<line id="11" color="B">
+				<connector type="w2w" code="AF7" sex="female">
+					<pin no="7"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="A5">
+		<pin no="2">
+			<line id="12" color="L">
+				<connector type="jbc" code="2B">
+					<pin no="36"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="A5">
+		<pin no="3">
+			<line id="13" color="G">
+				<connector type="w2w" code="AF7" sex="female">
+					<pin no="6"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="A10">
+		<pin no="1">
+			<line id="14" color="L">
+				<connector type="conn" code="A40">
+					<pin no="10"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="gp" code="FL">
+		<pin>
+			<line id="15" color="W-B">
+				<connector type="jbc" code="2E">
+					<pin no="17"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="A41">
+		<pin no="7">
+			<line id="16" color="L">
+				<connector type="jbc" code="2B">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+</connectionList>

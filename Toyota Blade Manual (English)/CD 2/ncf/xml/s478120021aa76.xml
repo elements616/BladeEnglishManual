@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY c5480717e SYSTEM "grph_ent/c5480717e.png" NDATA png>
+<!ENTITY k5130069e SYSTEM "grph_ent/k5130069e.png" NDATA png>
+<!ENTITY c5480721e SYSTEM "grph_ent/c5480721e.png" NDATA png>
+<!ENTITY k1300298e SYSTEM "grph_ent/k1300298e.png" NDATA png>
+<!ENTITY k5130071e SYSTEM "grph_ent/k5130071e.png" NDATA png>
+<!ENTITY k5130072e SYSTEM "grph_ent/k5130072e.png" NDATA png>
+<!ENTITY k5130073e SYSTEM "grph_ent/k5130073e.png" NDATA png>
+<!ENTITY k5130256e SYSTEM "grph_ent/k5130256e.png" NDATA png>
+
+<!ENTITY T120021Aa76 SYSTEM "t478120021aa76.xml">
+<!ENTITY T120021Aa76K440 SYSTEM "t478120021aa76k440.xml">
+<!ENTITY T120021Aa76K464 SYSTEM "t478120021aa76k464.xml">
+<!ENTITY T120021Aa76A889 SYSTEM "t478120021aa76a889.xml">
+<!ENTITY T120021Aa76K471 SYSTEM "t478120021aa76k471.xml">
+<!ENTITY T120021Aa76W020 SYSTEM "t478120021aa76w020.xml">
+<!ENTITY T120021Aa76Ac00 SYSTEM "t478120021aa76ac00.xml">
+<!ENTITY T120021Aa76Ac01 SYSTEM "t478120021aa76ac01.xml">
+<!ENTITY T120021Aa76Ac02 SYSTEM "t478120021aa76ac02.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120021Aa76S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120021Aa76" UPDATE = "ORIGINAL" LDUP = "16Feb2007"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>G-BOOK Functions</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Pressing the "Information/G" panel switch changes to the Information/G screen, where each information display can be selected. In addition, the G-BOOK page can be displayed by touching the "G-BOOK" TAB on the Information/G screen.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021Aa76I01" INDSW = "OFF">
+<TITLE>G-BOOK Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5480717e" WIDTH = "6.903in" HEIGHT = "2.167in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T120021Aa76I02" INDSW = "OFF">
+<TITLE>G-BOOK Screen Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Item</PTXT>
+<PTXT>(Touch Switch)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Method</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>HELPNET<HINTREF REFID = "H478120021Aa7601"/></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Emergency call via HELPNET</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Main Menu</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display of main menu screen</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>G-SOUND</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display of G-SOUND screen</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>My Request</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display of My Request screen</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Operator</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Use operator service</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Information Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Check information obtained through operator service</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Drive Plan</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Download drive plans</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Map Update</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Obtain map update data from the G-BOOK center</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478120021Aa7601">Displayed after the service start operation has been performed. It may not be displayed depending on the contract status, etc. In that case, the display order moves up.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+
+<MECA ID = "T120021Aa76K440" UPDATE = "ORIGINAL" LDUP = "9May2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>HELPNET</TITLE>
+<LIST1><ITEM><PTXT>The emergency call system HELPNET can be used by touching "HELPNET" on the G-BOOK screen. For details, refer to HELPNET System.<XREF     REFID = "T478120021Aa87Ka79"/>
+</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k5130069e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120021Aa76K464" UPDATE = "ORIGINAL" LDUP = "9May2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Main Menu</TITLE>
+<LIST1><ITEM><PTXT>By touching "Main Menu" on the G-BOOK screen, the following items can be operated.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5480721e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+<INDICATE ID = "T120021Aa76K464I01" INDSW = "ON">
+<TITLE>Main Menu Item List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "64%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Description</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>G-BOOK.com</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>G-BOOK.com contents can be viewed and executed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>G Memory Point Information</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Facilities saved on G-BOOK.com can be searched and displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Browsing History</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The browsing history screen can be displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Bookmark</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The bookmark screen can be displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Maintenance Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A manual maintenance check of HELPNET can be performed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Disconnect</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Data communication with the G-BOOK center can be disconnected.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120021Aa76A889" UPDATE = "ORIGINAL" LDUP = "16Feb2007"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>G-SOUND</TITLE>
+<LIST1><ITEM><PTXT>G-SOUND is a service that makes songs stored on the on-board unit's hard disk (G-SOUND songs) playable by obtaining a license from the G-BOOK center through a usage procedure.</PTXT></ITEM></LIST1>
+<LIST1><ITEM><PTXT>Free capsules preinstalled in the on-board unit can be used free of charge.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k1300298e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120021Aa76K471" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>My Request</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>With My Request, news, weather forecasts, etc. can be requested with a simple operation and the information read aloud by voice.</PTXT></ITEM>
+<ITEM><PTXT>When requests are made by voice recognition, all registered content can be requested even while driving.</PTXT></ITEM>
+<ITEM><PTXT>When using G-BOOK mX without Web registration, the menu is fixed; with Web registration, the menu can be changed, so frequently used services can be registered in advance.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k5130071e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120021Aa76W020" UPDATE = "ORIGINAL" LDUP = "16Feb2007"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Operator</TITLE>
+<LIST1><ITEM><PTXT>The operator service<HINTREF REFID = "H478120021Aa76W02001"/> is a service that allows the user to talk directly with an operator at the G-BOOK center and request navigation destination setting, facility searches, etc.</PTXT></ITEM>
+<ITEM><PTXT>By touching "Operator" on the screen while the G-BOOK page is displayed, the user is connected to an operator and can talk.<HINTREF     REFID = "H478120021Aa76W02002"/></PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478120021Aa76W02001">Use requires Web registration with a paid option of 210 yen/month (tax included). The operator service cannot be used during a HELPNET emergency call or maintenance check.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478120021Aa76W02002">If ETC voice guidance is given while talking with an operator, the call with the operator is temporarily interrupted and the ETC voice guidance is given. The operator service resumes as soon as the voice guidance ends. If navigation voice guidance is given while talking with an operator, the navigation guidance voice is canceled.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k5130072e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120021Aa76Ac00" UPDATE = "ORIGINAL" LDUP = "16Feb2007"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Information Check</TITLE>
+<LIST1><ITEM><PTXT>When the operator service is used from a mobile phone or landline, a message notifying receipt of information is displayed on the on-board unit the next time ACC or IG is turned ON; if it is not displayed, the information can be obtained manually.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k5130073e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120021Aa76Ac01" UPDATE = "ORIGINAL" LDUP = "16Feb2007"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Drive Plan</TITLE>
+<LIST1><ITEM><PTXT>If a drive plan is created on the G-BOOK.com or GAZOO.com site from a PC or mobile phone, waypoints and destinations can be set simply by downloading it to the on-board unit. In addition, in cooperation with the map information service<HINTREF     REFID = "H478120021Aa76Ac0101"/>, spots searched for using a personal computer or cellular phone can be registered as G-memory points and set as destinations.<HINTREF     REFID = "H478120021Aa76Ac0102"/></PTXT></ITEM></LIST1>
+<LIST1><ITEM><PTXT>Touching "Drive Plan" on the G-BOOK screen and selecting the desired drive plan downloads the drive plan and starts the route search.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k5130256e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478120021Aa76Ac0101">For details, check the G-BOOK site (http://g-book.com/).</PTXT></ITEM>
+<ITEM><PTXT ID = "H478120021Aa76Ac0102">When using G-BOOK mX without Web registration, GAZOO membership registration is required.</PTXT></ITEM></LIST1></HINT></MECA>
+
+<MECA ID = "T120021Aa76Ac02" UPDATE = "ORIGINAL" LDUP = "16Feb2007"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Map Update</TITLE>
+<LIST1><ITEM><PTXT>Map data can be updated by two methods, "full update", which updates all nationwide map data, and "differential update (map on demand)", which partially updates map data using communication<HINTREF REFID = "H478120021Aa76Ac0201"/> or media (CD-R/DVD-R). For details, refer to Map Update Function.<XREF     REFID = "S478120021Aa69"/>
+</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478120021Aa76Ac0201">Bluetooth compatible mobile phone</PTXT></ITEM></LIST1></HINT></MECA>
+</PARA>
+</SECTION>

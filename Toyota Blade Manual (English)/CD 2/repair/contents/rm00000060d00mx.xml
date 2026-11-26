@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1002J_S000U" variety="S000U">
+<name>Brake Control</name>
+<ttl id="1002J_S000U_744TG_T0089" variety="T0089">
+<name>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</name>
+<para id="RM00000060D00MX" category="C" type-id="300F0" name-id="442OI-00" from="200612">
+<dtccode>C1203/53</dtccode>
+<dtcname>Engine ECU Communication Line Malfunction</dtcname>
+<subpara id="RM00000060D00MX_04" type-id="33" category="03" proc-id="RM0550J___00007N800000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="3.30in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Output Related Items</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1203/53</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine/drivetrain variation and destination information sent from the engine control computer does not match the actuator assembly (with built-in skid control computer)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>Incorrect part number engine control computer or actuator assembly (with built-in skid control computer) installed</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000060D00MX_05" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM00000060D00MX_06" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000060D00MX_06_0004" proc-id="RM0550J___00007N900000">
+<testtitle>Inspect Engine Control Computer</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check whether the correct engine control computer is installed.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Correct engine control computer is installed</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Check whether the engine control computer was replaced before the DTC was stored.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Has not been replaced</ptxt>
+</specitem>
+</spec>
+</test1>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.08in"/>
+<colspec colname="COL2" colwidth="1.05in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>NG (correct engine control computer not installed, or replacement history exists)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM00000060D00MX_06_0005" fin="false">A</down>
+<right ref="RM00000060D00MX_06_0008" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000060D00MX_06_0005" proc-id="RM0550J___00007NA00000">
+<testtitle>Inspect ABS &amp; Traction Actuator Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check whether the correct actuator assembly is installed.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Correct actuator assembly is installed</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Check whether the actuator assembly was replaced before the DTC was stored.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Has not been replaced</ptxt>
+</specitem>
+</spec>
+</test1>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.08in"/>
+<colspec colname="COL2" colwidth="1.05in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>NG (actuator assembly replacement history exists)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>NG (correct actuator assembly not installed)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM00000060D00MX_06_0006" fin="false">A</down>
+<right ref="RM00000060D00MX_06_0010" fin="false">B</right>
+<right ref="RM00000060D00MX_06_0009" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM00000060D00MX_06_0006" proc-id="RM0550J___00007NB00000">
+<scantool type="1"/>
+<testtitle>Recheck DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTCs. (see <xref label="Seep01" href="RM00000060000PX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG OFF.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and check the DTCs again. (see <xref label="Seep02" href="RM00000060000PX"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Malfunction Code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000060D00MX_06_0007" fin="true">A</down>
+<right ref="RM00000060D00MX_06_0009" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000060D00MX_06_0007">
+<testtitle>Perform Problem Reproduction Test<xref label="Seep01" href="RM000000ABY03DX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000060D00MX_06_0008">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000060D00MX_06_0009">
+<testtitle>Replace ABS &amp; Traction Actuator Assembly<xref label="Seep01" href="RM00000304V000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000060D00MX_06_0010" proc-id="RM0550J___00007NC00000">
+<testtitle>Check Initial Learning</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>After replacing the actuator assembly, check whether initial learning (yaw rate sensor &amp; G sensor 0 point acquisition) has been performed.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Initial learning has been performed</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>When a new actuator assembly is installed, C1203/53 is detected before initial learning (yaw rate sensor &amp; G sensor 0 point acquisition) is performed.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM00000060D00MX_06_0012" fin="true">OK</down>
+<right ref="RM00000060D00MX_06_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000060D00MX_06_0011">
+<testtitle>Perform initial learning<xref label="Seep01" href="RM000001A8300PX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000060D00MX_06_0012">
+<testtitle>Replace ABS &amp; Traction Actuator Assembly<xref label="Seep01" href="RM00000304V000X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="10033_S0007" variety="S0007">
+<name>CAN Communication</name>
+<ttl id="10033_S0007_741KB_T000K" variety="T000K">
+<name>CAN Communication System</name>
+<para id="RM0000023K800XX" category="J" type-id="801IU" name-id="950V1-01" from="200912">
+<dtccode/>
+<dtcname>Navigation ECU Communication Stop Mode</dtcname>
+<subpara id="RM0000023K800XX_01" type-id="33" category="03" proc-id="RM0550J___00000E700001">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<table frame="all" pgwide="1">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="1.42in"/>
+<colspec colname="col2" colwidth="2.83in"/>
+<colspec colname="col3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Navigation ECU Communication Stop Mode</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>'AVN1' is not detected on the TaSCAN 'CAN Bus Connected ECU Check' screen</ptxt>
+</item>
+<item>
+<ptxt>Applies to 'Navigation ECU Communication Stop Mode' in the DTC combination table</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Navigation Receiver Assembly branch line or connector</ptxt>
+</item>
+<item>
+<ptxt>Navigation Receiver Assembly power source system malfunction</ptxt>
+</item>
+<item>
+<ptxt>Navigation Receiver Assembly internal malfunction</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000023K800XX_02" type-id="32" category="03" proc-id="RM0550J___00000E800001">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B249597J01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000023K800XX_03" type-id="51" category="05" proc-id="RM0550J___00000E900001">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When measuring the resistance of the CAN bus, turn the ignition switch off, check that warning functions such as the key reminder warning system are not operating, and leave the vehicle for at least 1 minutes without operating the key or switches or opening and closing the doors before starting the measurement. If it is necessary to open a door during inspection, open it beforehand.</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When inspecting each connector, before disconnecting it, push the connector case in the connecting direction and check that the connector is not loose or disconnected.</ptxt>
+</item>
+<item>
+<ptxt>When disconnecting a connector, check that the connector terminals and connector case are free of damage, deformation, corrosion, etc.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000023K800XX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000023K800XX_04_0001" proc-id="RM0550J___00000EA00001">
+<testtitle>CAN Bus Open Circuit Inspection (Navigation ECU Branch Line)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>With the IG OFF, disconnect vehicle wire harness connector D of the navigation receiver assembly.</ptxt>
+<figure>
+<graphic graphicname="E150024J11" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), check the resistance between the terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.96in"/>
+<colspec colname="COL2" colwidth="1.10in"/>
+<colspec colname="COL3" colwidth="1.07in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>D19(CANH) - D20(CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG OFF</ptxt>
+<ptxt>(Communication Stopped)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>54 to 69Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000023K800XX_04_0002" fin="false">OK</down>
+<right ref="RM0000023K800XX_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000023K800XX_04_0002" proc-id="RM0550J___00000EB00001">
+<testtitle>Inspect Wire Harness and Connector (ECU Power Source Circuit)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>With the IG OFF, disconnect connectors A and F of the navigation receiver assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), check the resistance between the terminals.</ptxt>
+<figure>
+<graphic graphicname="C211284J02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.92in"/>
+<colspec colname="COL2" colwidth="1.05in"/>
+<colspec colname="COL3" colwidth="1.16in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A7 (GND1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<title>Voltage</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.90in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.17in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A3 (ACC) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACC ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>F2 (IG) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000023K800XX_04_0003" fin="true">OK</down>
+<right ref="RM0000023K800XX_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000023K800XX_04_0003">
+<testtitle>Replace Navigation Receiver Assembly<xref label="Seep01" href="RM000001XG4006X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000023K800XX_04_0004">
+<testtitle>Repair or Replace Branch Wire or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000023K800XX_04_0005">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!-- $Id: index.html,v 1.45 2004/12/07 12:31:18 k-narumi Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../_runtime/legacy.css">
+<script src="../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Function Selection</title>
+
+<link rel="stylesheet" href="../css/top.css">
+
+<script language="JavaScript" src="../js/xml.js"></script>
+<script language="JavaScript" src="../js/util.js"></script>
+<script language="JavaScript" src="../js/hashtable.js"></script>
+<script language="javascript">
+// XMLファイル名称
+var PUB_XML = "pub.xml";
+var EWD_XML = "../../ewd/toc_ewd.xml";
+var NCF_XML = "../../ncf/toc_ncf.xml";
+
+// プリロードするXMLファイル名称
+var PRELOAD_XML = new Array("toc_rpr.xml", "parts.xml");
+var TOC_XML = null;
+// g_imageArray配列内のINDEX
+var IDX_NORMAL     = 0;
+var IDX_MOUSE_OVER = 1;
+var IDX_MOUSE_DOWN = 2;
+
+// 画像を格納する配列
+var g_imageArray;
+
+// 適用期間選択セレクトボックスを表示する
+function getPublishDateList() {
+	var hash = new Hashtable();
+	var termList = new Array();
+	var objXml;
+
+	//三つファイルから日付データを取得する
+	objXml = initXml(EWD_XML, true, false);
+	if ( objXml != null) {
+	  termList = objXml.getElementsByTagName("term");
+	}
+	for (var i=0; i<termList.length; i++) {
+		var date = termList.item(i).getAttribute("date");
+		var code = termList.item(i).nodeTypedValue;
+		//取得したデータはHashTableに格納する
+		hash.put(date , code );
+	}
+	termList = new Array();
+	objXml = initXml(NCF_XML, true, false);
+	if ( objXml != null) {
+	  termList = objXml.getElementsByTagName("term");
+	}
+	for (var i=0; i<termList.length; i++) {
+		var date = termList.item(i).getAttribute("date");
+		var code = termList.item(i).nodeTypedValue;
+		//取得したデータはHashTableに格納する
+		hash.put(date , code );
+	}
+	termList = new Array();
+	objXml = initXml(PUB_XML);
+	if ( objXml != null) {
+	  termList = objXml.getElementsByTagName("term");
+	}
+	for (var i=0; i<termList.length; i++) {
+		var date = termList.item(i).getAttribute("date");
+		var code = termList.item(i).nodeTypedValue;
+		//取得したデータはHashTableに格納する
+		hash.put(date , code );
+	}
+	//データのソードキーを取る
+	var sortKey = hash.keys();
+	sortKey.sort();
+	var ret = "<span class='term'>Release Date<br></span>";
+	ret += "<select id='term' size='7'>";
+	if (sortKey.length>1) {
+		ret += "<option value=''>▼ Please select</option>"
+	}
+	for (var i=0; i<sortKey.length; i++) {
+		var date = sortKey[i];
+		var code = hash.get(date);
+		var year_month = date.substring(0,4)+"/"+date.substring(4,6);
+		ret += "<option value='" + date +"'>" + year_month + " " + code + "</option>";
+	}
+	ret += "</select>";
+	document.getElementById("opt").innerHTML = ret;
+	//alert(ret);
+}
+
+// 適用期間選択セレクトボックスの初期選択状態を設定する
+function presetPublishDateList() {
+//	// 適用時期が１つの場合、それをデフォルト選択状態にする
+	var selectObj  =  document.getElementById("term");
+//	if (selectObj.options.length == 2) {
+//	  selectObj.options[1].selected = true;
+//	  return;
+//	}
+	var termVal = getParameterValue("term");
+	if (termVal ==null || termVal =="null" ) {
+		termVal =="";
+	}
+	for(i=0;i<selectObj.options.length;i++){
+		if(selectObj.options[i].value == termVal ){
+			selectObj.options[i].selected = true;
+			return;
+		}
+	}
+	// 初期表示では先頭データを選択状態にする
+	selectObj.options[0].selected = true;
+	return;
+}
+
+// 適用時期の選択状態をチェックし、未選択の場合アラート表示、選択済みなら指定URLへ遷移する
+//  url:   適用時期を追加するURL
+function chkTermValue(url) {
+	var termElem = document.getElementById("term");
+	if (termElem==null) {
+		document.location.href=url;
+		return;
+	}
+	tv = termElem.value;
+	if (tv==null || !/^\d{6}$/.test(tv)) {
+		__modalNotice("Please select a release date first.");
+	} else {
+		setTermValue(url, tv);
+	}
+	return;
+}
+
+// 画像のpreloadを行う
+function preloadImage() {
+	var typeCount = preloadImage.arguments;
+	g_imageArray = new Array();
+	for (var i=0; i<typeCount.length; i++) {
+		g_imageArray[i] = _getImageArray(typeCount[i]);
+	}
+}
+function _getImageArray(imageName) {
+	var imgs = new Array();
+	for (i=0; i<=IDX_MOUSE_DOWN; i++) {
+		imgs[i] = new Image();
+		imgs[i].src = "../img/" + imageName + i + ".png";
+	}
+	return imgs;
+}
+function _setImage(event, idx, iname) {
+	if (g_imageArray==null) return;
+	var imgs = g_imageArray[idx]
+	document.images[iname].src=imgs[event].src;
+}
+function mouseOverImage(iname) {
+	var idx = iname.substring(1, iname.length);
+	_setImage(IDX_MOUSE_OVER, eval(idx), iname);
+}
+function mouseOutImage(iname) {
+	var idx = iname.substring(1, iname.length);
+	_setImage(IDX_NORMAL, eval(idx), iname);
+}
+function mouseDownImage(iname) {
+	var idx = iname.substring(1, iname.length);
+	_setImage(IDX_MOUSE_DOWN, eval(idx), iname);
+}
+
+// クライアント環境のチェック
+function checkSoftware() {
+	checkSvgViewer();
+	return     checkIEVersion()
+			&& checkActiveX("Msxml2.DOMDocument","Please install MSXML.");
+}
+
+// XMLファイルのプリロード
+function loadData() {
+	if( isHttpProtocol() ) {
+//var start = new Date();
+		for( i=0;i<PRELOAD_XML.length;i++){
+			if (i==0) TOC_XML = initXml(PRELOAD_XML[i],false,false);
+			else initXml(PRELOAD_XML[i], false, false);
+		}
+//var end = new Date();
+//alert("XMLファイルプリロード時間：["+(end-start)+"ms]");
+	} else {
+		TOC_XML = initXml(PRELOAD_XML[0], false, false);
+	}
+}
+
+// 初期化処理
+function init() {
+	//if(!checkSoftware()) return;
+	getPublishDateList();
+	presetPublishDateList();
+	preloadImage('t_rmv', 't_isp', 't_trb', 't_koz', 't_sob', 't_tok', 't_sys', 't_con', 't_eqp', 't_mnt', 't_toc', 't_prt');
+	loadData();
+}
+
+// ｢はじめにお読みください｣POPUP表示
+var CAUTION_PARANO = "30005";
+var CAUTION_SECID  = "10001";
+function openCaution() {
+/*
+	TOC_XML.setProperty("SelectionLanguage", "XPath");
+	var cautionPara = TOC_XML.selectSingleNode("//section[starts-with(@id, '"+CAUTION_SECID+"')]//para[@type-id='"+CAUTION_PARANO+"' and @category='0']");
+	if (cautionPara==null) {
+		alert("[警告]コンテンツは登録されていません");
+		return;
+	}
+	var cautionId = cautionPara.getAttribute("id");
+	var args = new Hashtable();
+	args.put("xml", initXml("../contents/"+cautionId.toLowerCase()+".xml", true, false));
+	args.put("xsl", initXsl("../xsl/toc/contents.xsl"));
+	showModalDialog("etc/caution_frame.html", args, "dialogWidth=950px; dialogHeight=600px; status=yes; resizable=yes; help=no;");
+*/
+	showModalDialog("etc/caution_frame.html", '', "dialogWidth=950px; dialogHeight=600px; status=yes; resizable=yes; help=no;");
+}
+</script>
+<style>
+/* Disc 2 main menu: text links drawn on the original button artwork */
+a.menu-btn { display:block; width:216px; height:25px; box-sizing:border-box;
+  padding:0 18px 0 24px; background:url(../img/menu_btn0.png) no-repeat; color:#ffffff;
+  font:bold 12px Arial, Helvetica, sans-serif; line-height:24px; text-align:center; text-decoration:none;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis; letter-spacing:.01em; }
+a.menu-btn:hover, a.menu-btn:focus-visible { background-image:url(../img/menu_btn1.png); outline:none; }
+a.menu-btn:active { background-image:url(../img/menu_btn2.png); }
+.menu-head { display:block; color:#ffffff; font:bold 12px Arial, Helvetica, sans-serif; line-height:17px;
+  text-align:center; white-space:nowrap; }
+</style>
+</head>
+<body onLoad="init();">
+<br>
+<table width="90%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="5"><br></td>
+		<td align="left">
+			<a class="readme" href="#" onClick="openCaution()">Read This First</a>
+		</td>
+	</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td height="40"><br></td></tr>
+	<tr align="center">
+		<td>
+			<form id="f1">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr align="right">
+					<td class="title" align="left" valign="top">
+						<div id="opt"></div>
+					</td>
+					<!-- <td width="250">は背景の画像をずらすため -->
+					<td width="250"></td>
+				</tr>
+			</table>
+			</form>
+		</td>
+	</tr>
+	<tr><td height="40"><br></td></tr>
+	<tr align="center"> 
+		<td>
+			<table width="813" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="gray">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr><td colspan="9" height="7"></td></tr>
+							<tr>
+								<td class="gray2" width="30"><br></td>
+								<td width="15"><br></td>
+								<td class="gray2" width="240" valign="top">
+									<table width="100%" border="0" cellspacing="4" cellpadding="0">
+										<tr align="center">
+											<td><span class="menu-head">Repair Manual</span></td>
+										</tr>
+										<tr align="center">
+											<td><a class="menu-btn" href="javascript:chkTermValue('rmv_toc/frame.html')">Removal / Installation</a></td>
+										</tr>
+										<tr align="center">
+											<td><a class="menu-btn" href="javascript:chkTermValue('isp_toc/frame.html')">Inspection</a></td>
+										</tr>
+										<tr align="center">
+											<td><a class="menu-btn" href="javascript:chkTermValue('trb_toc/frame.html')">Troubleshooting</a></td>
+										</tr>
+										<tr><td height="5"></td></tr>
+									</table>
+								</td>
+								<td width="15"><br></td>
+								<td class="gray2" width="240" valign="top">
+									<table width="100%" border="0" cellspacing="4" cellpadding="0">
+										<tr align="center">
+											<td><span class="menu-head">New Car Features</span></td>
+										</tr>
+										<tr align="center">
+											<td><a class="menu-btn" href="javascript:chkTermValue('../../ncf/html/ks_frame.html')">Construction &amp; Operation</a></td>
+										</tr>
+										<tr align="center">
+											<td><a class="menu-btn" href="javascript:chkTermValue('../../ncf/html/ss_frame.html')">Specifications</a></td>
+										</tr>
+										<tr align="center">
+											<td><a class="menu-btn" href="javascript:chkTermValue('../../ncf/html/ts_frame.html')">Identify / Search</a></td>
+										</tr>
+										<tr><td height="5"></td></tr>
+									</table>
+								</td>
+								<td width="15"><br></td>
+								<td class="gray2" width="240" valign="top">
+									<table width="100%" border="0" cellspacing="4" cellpadding="0">
+										<tr align="center">
+											<td><span class="menu-head">Wiring Diagrams</span></td>
+										</tr>
+										<tr align="center">
+											<td><a class="menu-btn" href="javascript:chkTermValue('../../ewd/index.html?mode=system')">System Circuits</a></td>
+										</tr>
+										<tr align="center">
+											<td><a class="menu-btn" href="javascript:chkTermValue('../../ewd/index.html?mode=cfe')">Connector / Fuse / Ground</a></td>
+										</tr>
+										<tr align="center">
+											<td><a class="menu-btn" href="javascript:chkTermValue('../../ewd/index.html?mode=routing')">Routing Diagrams</a></td>
+										</tr>
+										<tr><td height="5"></td></tr>
+									</table>
+								</td>
+								<td width="15"><br></td>
+								<td width="30" class="gray2"><br></td>
+							</tr>
+							<tr><td colspan="9" height="7"></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr><td height="20"></td></tr>
+				<tr>
+					<td class="gray">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr><td colspan="9" height="7"></td></tr>
+							<tr>
+								<td class="gray2" width="30"></td>
+								<td width="15"></td>
+								<td class="gray2" width="240" valign="top">
+									<table width="100%" border="0" cellspacing="4" cellpadding="0">
+										<tr><td height="17"></td></tr>
+										<tr align="center">
+											<td><a class="menu-btn" href="javascript:chkTermValue('mnt/frame.html')">Maintenance</a></td>
+										</tr>
+										<tr align="center"><td height="5"></td></tr>
+									</table>
+								</td>
+								<td width="15" class="gray2"></td>
+								<td class="gray2" width="240" valign="top">
+									<table width="100%" border="0" cellspacing="4" cellpadding="0">
+										<tr align="center">
+											<td><span class="menu-head">Other</span></td>
+										</tr>
+										<tr align="center">
+											<td><a class="menu-btn" href="javascript:chkTermValue('toc/frame.html')">Contents List</a></td>
+										</tr>
+										<tr align="center"><td height="5"></td></tr>
+									</table>
+								</td>
+								<td width="15" class="gray2"></td>
+								<td class="gray2" width="240" valign="top">
+									<table width="100%" border="0" cellspacing="4" cellpadding="0">
+										<tr><td height="17"></td></tr>
+										<tr align="center">
+											<td><a class="menu-btn" href="javascript:chkTermValue('prt_srh/frame.html')">Part Name Search</a></td>
+										</tr>
+										<tr align="center"><td height="5"></td></tr>
+									</table>
+								</td>
+								<td width="15"></td>
+								<td width="30" class="gray2"></td>
+							</tr>
+							<tr><td colspan="9" height="7"></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr><td><br></td></tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

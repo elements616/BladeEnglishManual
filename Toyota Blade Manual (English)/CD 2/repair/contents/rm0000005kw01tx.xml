@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="08">
+<name>Heater &amp; Air Conditioner/Ventilation</name>
+<section id="1002K_S000B" variety="S000B">
+<name>Air Conditioner</name>
+<ttl id="1002K_S000B_7421V_T0025" variety="T0025">
+<name>Heater &amp; Air Conditioner System</name>
+<para id="RM0000005KW01TX" category="U" type-id="3001G" name-id="522QB-00" from="200708">
+<name>Terminals of ECU</name>
+<subpara id="RM0000005KW01TX_z0" proc-id="RM0550J___0000EQJ00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Air Conditioner Amplifier Assembly</ptxt>
+<figure>
+<graphic graphicname="E144453J01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<title>Connector A</title>
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.51in"/>
+<colspec colname="COL2" colwidth="0.50in"/>
+<colspec colname="COL3" colwidth="0.50in"/>
+<colspec colname="COL4" colwidth="2.98in"/>
+<colspec colname="COL5" colwidth="1.59in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A1(IG+) - A14(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A2(SOL+) - A14(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine idling, blower switch LO, A/C switch ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A8(LOCK) - A14(GND)</ptxt>
+<ptxt>(*1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine idling, blower switch LO, A/C switch ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A9(PRE) - A13(SG-2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When refrigerant pressure is normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.76 to 4.74 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A9(PRE) - A13(SG-2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When Refrigerant Pressure Is Abnormal</ptxt>
+<ptxt>0.196MPa{2.0kgf/cm<sup>2</sup>} or less or refrigerant pressure3.14MPa{32kgf/cm<sup>2</sup>} or more</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.76 V or less or 4.74 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A10(S5-3) - A14(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A11(CANH) - A14(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A12(CANL) - A14(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A13 (SG-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A14 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A20(MGC) - A14(GND)</ptxt>
+<ptxt>(*1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine idling, blower switch LO, A/C switch OFF → ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V → 1V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A21(B) - A14(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A23(BLW) - A14(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, blower switch LO</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+<ptxt>(Waveform 3)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A29(TR) - A34(SG-1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, front cabin temperature 25°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.8 to 2.2 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A31 (S5-4) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A33(TS) - A31(S5-4)</ptxt>
+<ptxt>(*2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, front passenger side solar sensor, shade → sunlight or apply inspection light</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Approximately 0.8 V → 0.8 to 4.3V</ptxt>
+<ptxt>(Changes according to light intensity)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A32(TSP) - A31(S5-4)</ptxt>
+<ptxt>(*3)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, front passenger side solar sensor, shade → sunlight or apply inspection light</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Approximately 0.8 V → 0.8 to 4.3V</ptxt>
+<ptxt>(Changes according to light intensity)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A33(TSD) - A31(S5-4)</ptxt>
+<ptxt>(*3)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, front passenger side solar sensor, shade → sunlight or apply inspection light</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Approximately 0.8 V → 0.8 to 4.3V</ptxt>
+<ptxt>(Changes according to light intensity)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A34 (SG-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A37(LIN1) - A14(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF→ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A38(RDFG) - A14(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+<ptxt>Rear defogger switch OFF → ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V → 1V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A39(PCD1) - A14(GND)</ptxt>
+<ptxt>(*3)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, ion generator not controlled → controlled</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V → 1V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A40(PCD2) - A14(GND)</ptxt>
+<ptxt>(*3)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, negative ions not controlled → controlled</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V → 1V or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Connector B (Bus Connector)</title>
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.51in"/>
+<colspec colname="COL2" colwidth="0.50in"/>
+<colspec colname="COL3" colwidth="0.50in"/>
+<colspec colname="COL4" colwidth="2.98in"/>
+<colspec colname="COL5" colwidth="1.60in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>[Terminal Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2 (BUSG) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B3(BUS) - B2(BUSG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B4(BBUS) - B2(BUSG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B5 (SG-3) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B6(TE-fin) - B5(SG-3)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, evaporator ambient temperature 15°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.4 to 1.8 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>*1:2GR-FE models</ptxt>
+</item>
+<item>
+<ptxt>*2: Automatic air conditioner</ptxt>
+</item>
+<item>
+<ptxt>*3: Dual mode automatic air conditioner</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>Waveform 1</ptxt>
+<figure>
+<graphic graphicname="E145424J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.51in"/>
+<colspec colname="COL2" colwidth="2.62in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SOL+ - GND</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5V/DIV、500μs/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine idling, blower switch LO, A/C switch ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Waveform 2</ptxt>
+<figure>
+<graphic graphicname="E134277" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.51in"/>
+<colspec colname="COL2" colwidth="2.62in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOCK - GND</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>200mV/DIV、10ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine idling, blower switch LO, A/C switch ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Waveform 3</ptxt>
+<figure>
+<graphic graphicname="E103396J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.51in"/>
+<colspec colname="COL2" colwidth="2.62in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BLW - GND</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1V/DIV、500μs/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON, blower switch LO</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The duty ratio changes as the blower level increases (airflow increases).</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Air Conditioner Control Assembly</ptxt>
+<figure>
+<graphic graphicname="E156947" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="0.87in"/>
+<colspec colname="COL2" colwidth="0.78in"/>
+<colspec colname="COL3" colwidth="0.70in"/>
+<colspec colname="COL4" colwidth="0.95in"/>
+<colspec colname="COL5" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(IG+) - 5(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>10(LIN1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

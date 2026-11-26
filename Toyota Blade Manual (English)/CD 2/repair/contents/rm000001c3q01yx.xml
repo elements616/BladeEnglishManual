@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002R_S000G" variety="S000G">
+<name>G-BOOK</name>
+<ttl id="1002R_S000G_742BR_T003W" variety="T003W">
+<name>G-BOOK System</name>
+<para id="RM000001C3Q01YX" category="L" type-id="30021" name-id="661A3-01" from="200912">
+<name>Precautions</name>
+<subpara id="RM000001C3Q01YX_z0" proc-id="RM0550J___0000I4X00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Precautions when Replacing Parts</ptxt>
+<atten4>
+<ptxt>When the parts shown in the table below are replaced, the specified work must be performed.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Replacement Parts</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Required Work</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Reference</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Linking Setting</ptxt>
+</item>
+<item>
+<ptxt>G-BOOK use resumption operation and HELPNET service start operation (vehicles subscribed to G-BOOK service)</ptxt>
+</item>
+<item>
+<ptxt>License recovery (with purchased G-SOUND unlimited license)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep01" href="RM000001C3S022X"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+</step1>
+<step1>
+<ptxt>Manual Emergency Calls Using HELPNET are Strictly Prohibited</ptxt>
+<step2>
+<ptxt>Do not press the emergency call button unless there is an emergency. When inspecting, perform a "Manual Maintenance Check".</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Connecting to the center with an emergency call when there is no emergency such as an accident places an unnecessary burden on the center and may delay responses to other emergency calls.</ptxt>
+</item>
+<item>
+<ptxt>If an emergency vehicle such as an ambulance is dispatched due to a false call, the related costs may be charged or the caller may be penalized under relevant laws.</ptxt>
+</item>
+<item>
+<ptxt>If a false call is made, the customer will incur unnecessary telephone charges.</ptxt>
+</item>
+<item>
+<ptxt>Performing the HELPNET service start operation or manual maintenance check makes HELPNET available for use. If the customer does not wish to start using HELPNET, do not perform the HELPNET service start operation or manual maintenance check.</ptxt>
+</item>
+</list1>
+</atten3>
+</step2>
+<step2>
+<ptxt>If a False Call Is Made</ptxt>
+<step3>
+<ptxt>If a call is made by mistake, inform the center during the call that it is a "false call".</ptxt>
+</step3>
+<step3>
+<ptxt>The call can be ended only by instruction from the center; it cannot be interrupted or ended from the vehicle.</ptxt>
+</step3>
+<step3>
+<ptxt>If it is not communicated that it is a "false call", the fire department and police may be notified and emergency vehicles may be dispatched according to arrangements with the center.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for G-BOOK</ptxt>
+<step2>
+<ptxt>Depending on the troubleshooting content, G-BOOK.com may be accessed. Therefore, explain to the customer that communication charges may be incurred when checking the online service during repair work, and be sure to obtain their consent before starting work.</ptxt>
+</step2>
+<step2>
+<ptxt>When replacing the navigation receiver assembly, perform the vehicle association setting, and then perform the G-BOOK use resumption operation and HELPNET service start operation. (see <xref label="Seep04" href="RM000001C3S022X"/>)</ptxt>
+</step2>
+<step2>
+<ptxt>On this model, the navigation receiver assembly functions as the G-BOOK terminal and holds the G-BOOK terminal ID.</ptxt>
+</step2>
+<step2>
+<ptxt>If the navigation receiver assembly is replaced while a purchased G-SOUND unlimited license exists, perform G-SOUND license recovery. (see <xref label="Seep03" href="RM000001C3S022X"/>)</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for One-touch Type HELPNET</ptxt>
+<step2>
+<ptxt>Depending on the troubleshooting content, a manual maintenance check may be performed. Since a Bluetooth cellular phone is used for communication, explain to the customer that call charges may be incurred during repair work, and be sure to obtain their consent before starting work.</ptxt>
+</step2>
+<step2>
+<ptxt>On this model (one-touch type HELPNET system), the navigation receiver assembly functions as the HELPNET in-vehicle unit and holds the HELPNET in-vehicle unit ID.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>About HELPNET Service Automatic Maintenance Check</ptxt>
+<step2>
+<ptxt>The emergency call system performs communication tests with the center and automatic system checks so that it can always function correctly. No particular operation is necessary for this automatic maintenance check, but it is performed as follows.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The automatic maintenance check is performed at intervals specified by Japan Mayday Service Co., Ltd.</ptxt>
+</item>
+<item>
+<ptxt>The automatic maintenance check finishes 1 - 2 minutes after it starts.</ptxt>
+</item>
+<item>
+<ptxt>During the automatic maintenance check, calls and communication via hands-free, G-BOOK, etc. cannot be made. In this case, wait a few minutes and then operate again.</ptxt>
+</item>
+<item>
+<ptxt>If communication is interrupted for some reason after the automatic maintenance check starts, the automatic maintenance check starts again the next time ACC is turned ON.</ptxt>
+</item>
+<item>
+<ptxt>Since a Bluetooth cellular phone is used for communication, the telephone usage charges for all data communication performed during the device check by the automatic maintenance check are borne by the customer.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>When Emergency Calls cannot be Made</ptxt>
+<step2>
+<ptxt>In cases such as the following, the HELPNET service may not be provided, or the quality of the HELPNET service may deteriorate. (For details, refer to the terms of use and the owner's manual for the in-vehicle unit)</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="4.60in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Cause of Unavailability</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Details</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Communication not possible due to a malfunction of vehicle-related equipment</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the telephone does not operate normally, such as when it is damaged or malfunctions due to an impact from a vehicle collision</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>When function settings or telephone services that interfere with use of HELPNET are being used on the cellular phone</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>When the Bluetooth connection is interrupted</ptxt>
+</item>
+<item>
+<ptxt>When the Bluetooth connection setting has not been made</ptxt>
+</item>
+<item>
+<ptxt>When any service that restricts making and receiving calls, such as drive mode, dial lock, outgoing call restriction, answering machine or select call, is being used</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Communication not possible due to a center system malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>When the center system requires periodic or emergency maintenance</ptxt>
+</item>
+<item>
+<ptxt>When emergency calls are temporarily concentrated at the center due to a large-scale accident or fire</ptxt>
+</item>
+<item>
+<ptxt>Center system failure, malfunction, etc.</ptxt>
+</item>
+<item>
+<ptxt>Damage to the center system due to a fire at the center</ptxt>
+</item>
+<item>
+<ptxt>Interruption or suspension of service provision for reasons of the emergency call service provider</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Communication not possible due to the communication network used by the emergency call system (*1)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>When the "registered vehicle" is located outside the service area of the cellular phone network used for this service</ptxt>
+</item>
+<item>
+<ptxt>When overseas</ptxt>
+</item>
+<item>
+<ptxt>When communication is not possible as a result, even within the service area of the cellular phone network, such as indoors, in underground parking lots, in mountainous areas, in tunnels or behind buildings</ptxt>
+</item>
+<item>
+<ptxt>When call use or call time is restricted, such as when the cellular phone network or general public fixed network (including relay networks) is extremely congested, and as a result communication by the emergency call system is not possible</ptxt>
+</item>
+<item>
+<ptxt>When calls are restricted by the carrier due to a large-scale disaster, etc., and as a result calls by the emergency call system are not possible</ptxt>
+</item>
+<item>
+<ptxt>When the service of the cellular phone network or general public fixed network (including relay networks) used for this service is interrupted or suspended due to an accident, maintenance, construction, etc.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Center system positioning error</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>When in a location where GPS (Global Positioning System) radio waves cannot be received, or where radio waves have difficulty reaching, such as indoors, in underground parking lots, in mountainous areas, in tunnels or behind buildings</ptxt>
+</item>
+<item>
+<ptxt>When positioning is not performed normally or has a large error, such as in tunnels or densely built-up areas, after disembarking from a ferry, or where GPS position calculation has a large error, or where the map database is old and map matching has a large error</ptxt>
+</item>
+<item>
+<ptxt>GPS system malfunction</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Others</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>When the telephone cannot be used due to unpaid telephone charges, etc.</ptxt>
+</item>
+<item>
+<ptxt>When, for a call made by button operation, the caller does not respond to the center's questions and the center cannot grasp the situation</ptxt>
+</item>
+<item>
+<ptxt>When a G-BOOK contract has not been made or established, charges are unpaid, or membership has been canceled</ptxt>
+</item>
+<item>
+<ptxt>When the HELPNET service start operation has not been performed</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>*1: Even within the cellular phone service area, it may be difficult to make emergency calls or talk due to radio wave conditions or line congestion. In this case, even if the line is connected to the center when an accident occurs, communication is not possible and calls requesting assistance cannot be made. If an emergency call cannot be made, report using the nearest public telephone, etc.</ptxt>
+</atten3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

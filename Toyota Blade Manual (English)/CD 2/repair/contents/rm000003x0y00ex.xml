@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="07">
+<name>Steering</name>
+<section id="1000U_S0017" variety="S0017">
+<name>Steering Column</name>
+<ttl id="1000U_S0017_745FR_T00AZ" variety="T00AZ">
+<name>Electric Power Steering System</name>
+<para id="RM000003X0Y00EX" category="C" type-id="803WG" name-id="481BH-01" from="200912">
+<dtccode>C1582/26</dtccode>
+<dtcname>Assist Map Identification Malfunction</dtcname>
+<subpara id="RM000003X0Y00EX_01" type-id="33" category="03" proc-id="RM0550J___0000ILR00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>If an incorrect power steering computer assembly or engine control computer is installed, the data will not match the vehicle specifications, and DTC C1582/26 will be output.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.69in"/>
+<colspec colname="COL2" colwidth="2.95in"/>
+<colspec colname="COL3" colwidth="2.44in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Trouble Code (DTC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1582/26</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When data that does not match the vehicle specifications is received via CAN communication</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Assist map not written</ptxt>
+</item>
+<item>
+<ptxt>CAN Communication System</ptxt>
+</item>
+<item>
+<ptxt>Power Steering Computer Assembly</ptxt>
+</item>
+<item>
+<ptxt>Skid control computer (brake ECU)</ptxt>
+</item>
+<item>
+<ptxt>Engine control computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000003X0Y00EX_02" type-id="51" category="05" proc-id="RM0550J___0000ILS00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>If the power steering computer assembly is replaced, perform torque sensor 0 point calibration and rotation angle sensor output calibration. (see <xref label="Seep01" href="RM0000024YB004X"/>)</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000003X0Y00EX_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000003X0Y00EX_03_0001" proc-id="RM0550J___0000ILT00000">
+<testtitle>Inspect CAN Communication System</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check for CAN communication system DTCs. (For the procedure, refer to <xref label="Seep01" href="RM0000005S0030X"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No malfunction codes output</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000003X0Y00EX_03_0002" fin="false">OK</down>
+<right ref="RM000003X0Y00EX_03_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000003X0Y00EX_03_0002" proc-id="RM0550J___0000ILU00000">
+<testtitle>Inspect Engine Control Computer</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that a genuine engine control computer (matching the vehicle specifications) is installed.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Genuine engine control computer (matching the vehicle specifications)</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>OK</ptxt>
+</entry>
+<entry align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>NG (2AZ-FE models)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>NG (2GR-FE models)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000003X0Y00EX_03_0008" fin="false">A</down>
+<right ref="RM000003X0Y00EX_03_0005" fin="true">B</right>
+<right ref="RM000003X0Y00EX_03_0011" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000003X0Y00EX_03_0008" proc-id="RM0550J___0000ILV00000">
+<testtitle>Inspect Skid Control Computer Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that a genuine skid control computer (brake ECU) is installed.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Genuine skid control computer (brake ECU)</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000003X0Y00EX_03_0007" fin="true">OK</down>
+<right ref="RM000003X0Y00EX_03_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000003X0Y00EX_03_0007">
+<testtitle>Replace Power Steering Computer Assembly<xref label="Seep01" href="RM000000UNH021X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000003X0Y00EX_03_0004">
+<testtitle>Go to CAN Communication System<xref label="Seep01" href="RM000001R4W019X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000003X0Y00EX_03_0005">
+<testtitle>Replace Engine Control Computer (2AZ-FE models)<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000003X0Y00EX_03_0010">
+<testtitle>Replace ABS &amp; Traction Actuator Assembly<xref label="Seep01" href="RM00000304V000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000003X0Y00EX_03_0011">
+<testtitle>Replace Engine Control Computer (2GR-FE models)<xref label="Seep01" href="RM000002ADC004X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

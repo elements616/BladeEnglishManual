@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- $Id: seepage_global.html,v 1.10 2003/06/26 09:31:21 watanabe Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Reference</title>
+
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+//「準備品」リンク表示・非表示
+function init(){
+	var pprXml = parent.initXml("ppr_"+parent.g_paraId+".xml",false,false);
+	if(pprXml == null) ppr.style.visibility="hidden";
+}
+-->
+</script>
+</head>
+
+<body class="subwindow" onload="init()">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td></td></tr>
+	<tr>
+		<td align="center">
+			<table width="98%" cellpadding="2" cellspacing="0" border="0">
+				<tr>
+					<td width="2"><br></td>
+					<td align="left">
+						<a class="subwindow-button" href="javascript:parent.framePrint(parent.contents)">
+						  Execute Print
+						</a>
+					</td>
+					<td id="ppr" align="center" style="visibility:visivle">
+						<a class="subwindow-button" href="#" onclick="parent.switchPreparation()">
+						  Preparation
+						</a>
+					</td>
+					<td align="right">
+						<a class="subwindow-button" href="javascript:parent.window.close();">
+						  Close
+						</a>
+					</td>
+					<td width="2"><br></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

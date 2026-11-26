@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="S1">
+<name>Introduction</name>
+<section id="10002_S0013" variety="S0013">
+<name>Introduction</name>
+<ttl id="10002_S0013_744ZL_T009W" variety="T009W">
+<name>How to Use This Manual</name>
+<para id="RM0000005D901WX" category="F" type-id="3001Z" name-id="012CV-00" from="200612" to="200708">
+<name>General Information</name>
+<subpara id="RM0000005D901WX_z0" proc-id="RM0550J___00005HA00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Scope of Repair Work Explanations</ptxt>
+<step2>
+<ptxt>Repair work can be broadly divided into 3 processes: [diagnosis], [removal/installation, replacement, disassembly/reassembly and inspection/adjustment work] and [final inspection].</ptxt>
+</step2>
+<step2>
+<ptxt>This manual describes process 1 [diagnosis] and process 2 [removal/installation, replacement, disassembly/reassembly and inspection/adjustment work]; the description of process 3 [final inspection] has been omitted.</ptxt>
+</step2>
+<step2>
+<ptxt>The following basic operations are omitted from this manual, but must be performed in actual work.</ptxt>
+<step3>
+<ptxt>Jacking and lifting work</ptxt>
+</step3>
+<step3>
+<ptxt>Cleaning and washing of removed parts as necessary</ptxt>
+</step3>
+<step3>
+<ptxt>Visual inspection</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Preparation</ptxt>
+<step2>
+<ptxt>Items to be prepared before work include SST, tools, gauges, lubricants and others, support tools and stationary tools/measuring instruments; these are listed in the Preparation section. However, items of preparation that are thought to be standard equipment in general service shops, such as tool stands, jacks and rigid racks, have been omitted.</ptxt>
+</step2>
+<step2>
+<ptxt>Tools and equipment other than SST listed in the Preparation list are given as examples only, and do not specify a particular supplier or particular product name or part number.</ptxt>
+</step2>
+<step2>
+<ptxt>Work that uses SST (TaSCAN) in the text (diagnosis, measurement, etc.) can also be performed using the diagnostic tester DST-2 handled by Denso Service or Denso SS.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Work Procedure</ptxt>
+<step2>
+<ptxt>Component illustrations are provided for each section or title as necessary.</ptxt>
+</step2>
+<step2>
+<ptxt>The component illustrations indicate non-reusable parts, grease application points, precoated bolts and torque specifications.</ptxt>
+<figure>
+<graphic graphicname="D101666" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Torque specifications, lubrication points and non-reusable parts are described as key points of the procedure.</ptxt>
+<atten3>
+<ptxt>When the above items can be shown with illustrations alone, component illustrations including the procedure are provided. In such cases, all information such as torque and lubricants is included in the illustrations.</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>Only procedure items with key points are described; the work location and work content are shown in illustrations, and the descriptions give detailed work methods, standard values, notices, etc.</ptxt>
+</step2>
+<step2>
+<ptxt>Some illustrations are shared with similar models. For this reason, details may differ from the actual vehicle.</ptxt>
+<figure>
+<graphic graphicname="D101667J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>How to Read Service Specifications</ptxt>
+<step2>
+<ptxt>Standard values and limits are shown in bold in the text.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Definition of Terms</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="6.08in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates the allowable range for inspection and adjustment.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Limit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates the maximum or minimum value that must not be exceeded during inspection and adjustment.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the measurement method for determining the standard value is extremely difficult, indicates the standard value for a simplified measurement method when there is practically no risk of a malfunction.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>&lt;WARNING&gt;</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Describes items that may cause injury to the technician or other persons, and items that may lead to injury or accidents if not observed.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>&lt;NOTICE&gt;</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Describes items and procedures that must not be performed and that require particular attention, since failure to observe them will damage the vehicle or components.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>&lt;HINT&gt;</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Supplementary explanations to make work easier are given separately from the main text.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>About SI Units</ptxt>
+<step2>
+<ptxt>Units used in this manual are given first in SI units (International System of Units), then in metric units.</ptxt>
+<ptxt>(Example)</ptxt>
+<torque>
+<torqueitem>
+<t-value1>28</t-value1>
+<t-value2>286</t-value2>
+</torqueitem>
+</torque>
+<table pgwide="1">
+<title>SI Unit Conversion Factor Table</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SI Unit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Conventional Unit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Conversion Factor to SI Unit</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Acceleration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9.80665</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Torque, Moment</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N/m</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>kgf/cm</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.0980665</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Force</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>kgf</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9.80665</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Pressure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>MPa</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>kgf/cm<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.0980665</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>kPa</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>mmHg</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.133322</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Power</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>kW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PS</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.735499</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>kcal/h</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.16279</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Volume</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>cm<sup>3</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>cc</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Spring Constant</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N/mm</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>kgf/mm</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9.80665</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>SI Prefixes</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>M (mega)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10<sup>6</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>d (deci)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10<sup>-1</sup>=0.1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>k (kilo)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10<sup>3</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>c (centi)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10<sup>-2</sup>=0.01</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>h (hecto)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>m (milli)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10<sup>-3</sup>=0.001</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>da (deca)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10<sup>1</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>μ (micro)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10<sup>-6</sup>=0.000001</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

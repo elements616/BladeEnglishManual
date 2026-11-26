@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4600019p SYSTEM "grph_ent/a4600019p.png" NDATA png>
+
+<!ENTITY T010054T038 SYSTEM "t478010054t038.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010054T038S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010054T038" UPDATE = "ORIGINAL" LDUP = "11Apr2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>VSV for Canister Purge</TITLE>
+<LIST1><ITEM><PTXT>The canister purge volume is controlled by the signal (duty signal) from the engine control computer. The purge volume is determined by the ratio of the ON and OFF times of the signal (duty ratio).</PTXT></ITEM>
+<ITEM><PTXT>The piping of the canister purge VSV has been optimized to reduce evaporative pulsation noise.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4600019p" WIDTH = "6.903in" HEIGHT = "2.514in" />
+</FIGURE>
+</PARA>
+</SECTION>

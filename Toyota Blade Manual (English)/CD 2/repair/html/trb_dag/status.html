@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- $Id: status.html,v 1.14 2003/10/20 05:45:41 takeo Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Diagnosis Procedure</title>
+
+<link href="../../css/status.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	if (parent.g_cttXml == null) 
+		return;
+
+	if (parent.g_cttXml.selectNodes("//para").length<1)
+		return;
+
+	var ttlName  = parent.getTitleName(parent.getParameterValue("parag"), parent.g_cttXml);
+	var paraName ="";
+	var ctgy = (parent.g_cttXml).selectSingleNode("//para").getAttribute("category");
+	if(ctgy=="C") {
+	  var dtccodeNode = (parent.g_cttXml).selectNodes("//para/dtccode");
+	  for(i=0;i<dtccodeNode.length;i++){
+	    var para = dtccodeNode.item(i).nodeTypedValue;
+			paraName = paraName + para + "&#160;&#160;";
+	  }
+	}	else if(ctgy=="J") {
+		paraName = parent.getParagraphName(parent.getParameterValue("parag"), "dtcname", parent.g_cttXml);	
+	}
+	disp.innerHTML = "<p class=\"location\">" + ttlName + " ／ " + paraName + "</p>";
+}
+</script>
+</head>
+<body onLoad="init();">
+<div id="disp"></div>
+</body>
+</html>

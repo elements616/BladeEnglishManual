@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740048b SYSTEM "../xml/grph_ent/a4740048b.png" NDATA png>
+
+<!ENTITY T150004T066 SYSTEM "../xml/t403150004t066.xml">
+<!ENTITY T150003K791 SYSTEM "../xml/t478150003k791.xml">
+<!ENTITY T150004T074 SYSTEM "../xml/t285150004t074.xml">
+<!ENTITY T150004T074T096 SYSTEM "../xml/t285150004t074t096.xml">
+<!ENTITY T150004T073 SYSTEM "../xml/t285150004t073.xml">
+<!ENTITY T150004T073T096 SYSTEM "../xml/t285150004t073t096.xml">
+<!ENTITY T150004T072 SYSTEM "../xml/t285150004t072.xml">
+<!ENTITY T150004T072T096 SYSTEM "../xml/t285150004t072t096.xml">
+<!ENTITY T150004T094 SYSTEM "../xml/t285150004t094.xml">
+<!ENTITY T150004T094T096 SYSTEM "../xml/t285150004t094t096.xml">
+<!ENTITY T150004T067 SYSTEM "../xml/t285150004t067.xml">
+<!ENTITY T150004T067T096 SYSTEM "../xml/t285150004t067t096.xml">
+<!ENTITY T150004T079 SYSTEM "../xml/t285150004t079.xml">
+<!ENTITY T150004T079T096 SYSTEM "../xml/t285150004t079t096.xml">
+<!ENTITY T150004T079T097 SYSTEM "../xml/t285150004t079t097.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T150004T066S"><SCTITLE/>
+
+<PARA INFOID = "T150004T066" UPDATE = "ORIGINAL" LDUP = "15Apr2005"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "Customize">
+<TITLE>Outline of Customize Function</TITLE>
+<LIST1><ITEM><PTXT>By rewriting the non-volatile memory IC built into each computer (ECU), various functions can be adjusted (setting values changed, etc.).</PTXT></ITEM>
+<ITEM><PTXT>Each function is selected from the menu screen by connecting the diagnostic tool "TaSCAN" to DLC3. Some functions can also be selected by the user by performing a prescribed operation under certain conditions.</PTXT></ITEM></LIST1>
+</PARA>
+<BIND ID = "T150004T066B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T150003K791" UPDATE = "ORIGINAL" LDUP = "21Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>DLC3 (Data Link Connector No.3)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By connecting the diagnostic tool "TaSCAN" to the vehicle side connector (DLC3: Data Link Connector No.3), each ECU can be accessed via the gateway computer and the various multiplex communication lines. This allows output of DTCs, data monitoring (checking ECU data, etc.), Active Test (driving actuators as desired), customization (setting control programs), etc. For details, refer to the Repair Manual.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740048b" WIDTH = "6.903in" HEIGHT = "3.389in" />
+</FIGURE>
+</PARA>
+</BIND>
+</SECTION>
+<SECTION SCID = "T150004T074S"><SCTITLE/>
+
+<PARA INFOID = "T150004T074" UPDATE = "ORIGINAL" LDUP = "25Apr2005"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "Customize">
+<TITLE>Wireless Door Lock Customization</TITLE>
+<LIST1><ITEM><PTXT>For wireless door lock customization, set each function using the diagnostic tool.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T150004T074T096" UPDATE = "ORIGINAL" LDUP = "26May2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>List When Using Diagnostic Tool</TITLE>
+<LIST1><ITEM><PTXT>Connect the diagnostic tool "TaSCAN" to the DLC3 connector and select "Customize" → "Wireless Door Lock" on the screen.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "22%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "19%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "44%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "13%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Diagnostic Tool Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Setting</PTXT>
+<PTXT>(Initial settings are listed first)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Description</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Control ECU</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Keyless Answer-back</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>With Function/Without Function</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sets whether the function that flashes the hazard warning lights when the electronic key is operated (lock/unlock) is used</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "3"><PTXT>Main Body ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Wireless Main SW</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>With Function/Without Function</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sets whether the function that allows the door locks to be operated (lock/unlock) with the electronic key is used</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Operation Confirmation Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>With Function/Without Function</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1><ITEM><PTXT>Sets whether the function that sounds the buzzer when the electronic key is operated (lock/unlock) is used</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Auto Lock Time Variable</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>30 s / 60 s / 120 s</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sets the operation time of the function that automatically locks the doors if no door is opened after unlocking with the electronic key</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T150004T073S"><SCTITLE/>
+
+<PARA INFOID = "T150004T073" UPDATE = "ORIGINAL" LDUP = "25Apr2005"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "Customize">
+<TITLE>Automatic Light Control Customization</TITLE>
+<LIST1><ITEM><PTXT>For automatic light control customization, set each function using the diagnostic tool "TaSCAN".</PTXT></ITEM></LIST1>
+
+<MECA ID = "T150004T073T096" UPDATE = "ORIGINAL" LDUP = "26May2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>List When Using Diagnostic Tool</TITLE>
+<LIST1><ITEM><PTXT>Connect the diagnostic tool "TaSCAN" to the DLC3 connector and select "Customize" → "Automatic Light Control" on the screen.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "19%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "12%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Diagnostic Tool Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Setting</PTXT>
+<PTXT>(Initial settings are listed first)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Description</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Control ECU</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Automatic Light Control Sensitivity Adjustment</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>+-0%/-40%/-20%/+20%/+40%</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Setting of the automatic light control sensor sensitivity (illuminance detection) adjustment function</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1"><PTXT>Main Body ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Automatic Light Control Delay Time</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Normal / Longer</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sets the time from when the automatic light control sensor detects darkness until the lights turn on</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T150004T072S"><SCTITLE/>
+
+<PARA INFOID = "T150004T072" UPDATE = "ORIGINAL" LDUP = "25Apr2005"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "Customize">
+<TITLE>Illumination Customization</TITLE>
+<LIST1><ITEM><PTXT>For illumination customization, set each function using the diagnostic tool "TaSCAN".</PTXT></ITEM></LIST1>
+
+<MECA ID = "T150004T072T096" UPDATE = "ORIGINAL" LDUP = "26May2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>List When Using Diagnostic Tool</TITLE>
+<LIST1><ITEM><PTXT>Connect the diagnostic tool "TaSCAN" to the DLC3 connector and select "Customize" → "Illumination" on the screen.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "19%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "43%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "13%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Diagnostic Tool Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Setting</PTXT>
+<PTXT>(Initial settings are listed first)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Description</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Control ECU</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Dome Light On at Unlock</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>With Function/Without Function</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sets whether the function that automatically turns on the interior light in conjunction with door unlocking by the electronic key is used when the interior light setting is DOOR</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "4"><PTXT>Main Body ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Dome Light On Time</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>15 s / 7.5 s / 30 s</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sets the time until the interior light automatically turns off after all doors are closed when the interior light setting is DOOR</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Dome Light On at ACC OFF</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>With Function/Without Function</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sets whether the function that automatically turns on the interior light when the IG is turned from ACC to OFF is used when the interior light setting is DOOR</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Illumination On</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>With Function/Without Function</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Sets whether the function that turns on the interior light is used</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Lounge Illumination Dimmed Lighting</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>With Function/Without Function</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Sets whether the function that lights the interior light dimmed when the power switch is ON and the shift position is other than "P" is used</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T150004T094S"><SCTITLE/>
+
+<PARA INFOID = "T150004T094" UPDATE = "ORIGINAL" LDUP = "25May2005"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "Customize">
+<TITLE>Warning Customization</TITLE>
+<LIST1><ITEM><PTXT>Warning customization is performed by setting each function using the diagnostic tool "TaSCAN".</PTXT></ITEM></LIST1>
+
+<MECA ID = "T150004T094T096" UPDATE = "ORIGINAL" LDUP = "26May2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>List When Using Diagnostic Tool</TITLE>
+<LIST1><ITEM><PTXT>Connect the diagnostic tool "TaSCAN" to the DLC3 connector and select "Customize" → "Warning" on the screen.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "19%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "48%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "13%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Diagnostic Tool Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Setting </PTXT>
+<PTXT>(Initial setting value is listed first)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Description</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Control ECU</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Taillight Reminder Warning Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>With Function/Without Function</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Sets whether the function that sounds the buzzer when the driver door is opened after turning the power ON (ACC/IG ON) → power OFF (ACC/IG OFF) with the taillights ON is enabled</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Meter ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Door Ajar Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Warning/No warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sets whether the function that sounds the buzzer when locking with the electronic key or door outside handle lock switch/back door lock switch while any door is open is enabled</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Main Body ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Key Battery Low Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>With Function/Without Function</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Sets whether the function that sounds the buzzer when the power source mode is turned OFF after 20 minutes or more have elapsed since the power source mode was turned ON with an electronic key whose battery is low is enabled</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Certification ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Driver Seat Belt Warning Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>With Function/Without Function</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Sets whether the function that sounds the buzzer when the driver seat belt is unfastened is enabled</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1"><PTXT>Meter ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Front Passenger Seat Belt Warning Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>With Function/Without Function</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Sets whether the function that sounds the buzzer when the front passenger seat belt is unfastened is enabled</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T150004T067S"><SCTITLE/>
+
+<PARA INFOID = "T150004T067" UPDATE = "ORIGINAL" LDUP = "25Apr2005"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "Customize">
+<TITLE>Air Conditioning Customization</TITLE>
+<LIST1><ITEM><PTXT>For air conditioning customization, set each function using the diagnostic tool "TaSCAN".</PTXT></ITEM></LIST1>
+
+<MECA ID = "T150004T067T096" UPDATE = "ORIGINAL" LDUP = "26May2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>List When Using Diagnostic Tool</TITLE>
+<LIST1><ITEM><PTXT>Connect the diagnostic tool "TaSCAN" to the DLC3 connector and select "Customize" → "Air Conditioning" on the screen.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "22%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "19%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "45%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "13%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Diagnostic Tool Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Setting</PTXT>
+<PTXT>(Initial settings are listed first)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Description</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Control ECU</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>FOOT/DEF Linkage</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Linked / Not linked</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Setting of the function that automatically switches the air outlet to FOOT/DEF when the outlet is FOOT in AUTO mode</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "5"><PTXT>Air Conditioning ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Compressor DEF Linkage</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Linked / Not linked</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Setting of the function that automatically turns the A/C ON with the "FRONT DEF" switch</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Compressor Capacity Change</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>With Function/Without Function</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sets whether the evaporator automatic control function by the externally variable compressor is used</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Set Temperature Shift Value</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>0/+1/+2/-1/-2</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sets the value by which the display is increased or decreased relative to the set temperature display</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Blower Level Up during DEF</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>With Function/Without Function</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sets whether the function that automatically increases the blower level when DEF is selected as the air outlet is used</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Plasmacluster Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>With Function/Without Function</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Sets whether the function that periodically switches between clean mode and ion mode is used</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T150004T079S"><SCTITLE/>
+
+<PARA INFOID = "T150004T079" UPDATE = "ORIGINAL" LDUP = "25Apr2005"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "Customize">
+<TITLE>Smart Entry &amp; Start Customization</TITLE>
+<LIST1><ITEM><PTXT>There are 2 procedures for smart customization, as shown below. Set each function according to each operation procedure.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T150004T079T096" UPDATE = "ORIGINAL" LDUP = "26May2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>List When Using Diagnostic Tool</TITLE>
+<LIST1><ITEM><PTXT>Connect the diagnostic tool "TaSCAN" to the DLC3 connector and select "Customize" → "Smart Entry &amp; Start" on the screen.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "22%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "22%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "44%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "9%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Diagnostic Tool Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Setting</PTXT>
+<PTXT>(Initial settings are listed first)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Description</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Control ECU</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Smart Ignition</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>All Seats<HINTREF REFID = "H285150004T079T09601"/>/Front (+ Rear1) Seats<HINTREF     REFID = "H285150004T079T09602"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Setting of the engine start detection area for the Smart Entry &amp; Start System function</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "2" CONSPIC = "0"><PTXT>Certification ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Standby Time in Parked State</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>2.5 s / 0.5 s / 1.5 s / 5 s</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sets the time during which the doors do not unlock even if the door outside handle is operated after the doors are locked with the Smart Entry &amp; Start System function (door lock confirmation time)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Smart Back Door</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Press and hold / ON 2 times / No function</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Setting of the back door unlock method for the Smart Entry &amp; Start System function</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H285150004T079T09601">Means possible at front seats, rear seats and back door</PTXT></ITEM>
+<ITEM><PTXT ID = "H285150004T079T09602">Means possible at front seats and rear seats</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></MECA>
+
+<MECA ID = "T150004T079T097" UPDATE = "ORIGINAL" LDUP = "26May2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>List When Not Using Diagnostic Tool</TITLE>
+<LIST1><TITLE>Key Cancel Function</TITLE>
+<ITEM><PTXT>The Smart Entry &amp; Start System control below can be cancelled by performing certain operations.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Cancelable Items List</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Smart Entry &amp; Start System Control</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Warning Function</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Function to Prevent Locking the Electronic Key in the Cabin</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Smart Back Door Open Control</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>With the power OFF (ACC and IG OFF), driver door closed and driver door unlocked, the key cancel function can be set by performing the operations below.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Key Cancel Operation Procedure</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "9%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "90%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Procedure</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Prerequisites</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Driver door closed and unlocked, power OFF (IG and ACC OFF)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation 1</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Perform wireless unlock 1 times</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation 2</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Open the driver door within 5 seconds of operation 1</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation 3</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Perform wireless unlock 2 times within 5 seconds of performing operation 2<HINTREF     REFID = "H285150004T079T09701"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation 4</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Within 30 seconds of performing operation 3, repeat driver door "open" → "closed" 2 times and open it again (driver door "open" → "closed" → "open" → "closed" → "open")</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation 5</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Perform wireless unlock 2 times within 30 seconds of performing operation 4<HINTREF     REFID = "H285150004T079T09701"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation 6</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Within 30 seconds of performing operation 5, repeat driver door open → closed 1 times and open it again (driver door "open" → "closed" → "open")</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation 7</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Close the driver door within 5 seconds after performing operation 6<HINTREF     REFID = "H285150004T079T09702"/></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H285150004T079T09701">If a driver door "open" → "closed" operation occurs during operations 3 and 5, the cancel function is aborted.</PTXT></ITEM>
+<ITEM><PTXT ID = "H285150004T079T09702">To return from the key cancel state to a state in which the Smart Entry &amp; Start System can be used, perform the above "key cancel operation procedure" again.</PTXT></ITEM></LIST1></HINT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Key Cancel Operation Answer-back</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "53%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "46%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Status</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Answer-back</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When Key Cancelled</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Wireless answer-back buzzer sounds 2 times</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>When Returning from Key Cancel State</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Wireless answer-back buzzer sounds 1 times</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+</PARA>
+</SECTION>
+</SCT>

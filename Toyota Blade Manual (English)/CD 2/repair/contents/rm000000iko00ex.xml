@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="04">
+<name>Driveline/Axle</name>
+<section id="1000K_S0015" variety="S0015">
+<name>Differential</name>
+<ttl id="1000K_S0015_744ZW_T00A7" variety="T00A7">
+<name>Active Torque Control 4WD System</name>
+<para id="RM000000IKO00EX" category="C" type-id="800BE" name-id="370EH-00" from="200612">
+<dtccode>U0073/86</dtccode>
+<dtcname>CAN communication malfunction</dtcname>
+<subpara id="RM000000IKO00EX_01" type-id="33" category="03" proc-id="RM0550J___00005J800000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>A DTC is output when the signal from the 4WD computer assembly is not completely transmitted.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.03in"/>
+<colspec colname="COL2" colwidth="2.97in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0073/86</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>When the signal from the 4WD computer assembly is not completely transmitted for 5 seconds or more with the IG ON</ptxt>
+</item>
+<item>
+<ptxt>When a condition in which communication line malfunctions occur 1 times or more within 0.1 seconds occurs 10 times consecutively</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire harness and connector (CANH, CANL signal system)</ptxt>
+</item>
+<item>
+<ptxt>4WD Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000IKO00EX_02" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000000IKO00EX_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000IKO00EX_03_0002" proc-id="RM0550J___00005J900000">
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG ON and read the DTCs following the SST (TaSCAN) screen display. (see <xref label="Seep02" href="RM000000MJ9007X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000IKO00EX_03_0006" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000IKO00EX_03_0006">
+<testtitle>Go to CAN Communication System<xref label="Seep01" href="RM000001R4W009X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

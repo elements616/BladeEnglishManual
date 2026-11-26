@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1002M_S001G" variety="S001G">
+<name>Pre-crash Safety</name>
+<ttl id="1002M_S001G_74WT7_T00FP" variety="T00FP">
+<name>Pre-crash Safety System</name>
+<para id="RM000000DBD00JX" category="C" type-id="8007S" name-id="540JL-00" from="200708">
+<dtccode>B2065/81</dtccode>
+<dtcname>Distance Control ECU Malfunction</dtcname>
+<subpara id="RM000000DBD00JX_01" type-id="31" category="03" proc-id="RM0550J___0000CV000000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2065/81</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Distance control computer assembly malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Distance Control Computer Assembly</ptxt>
+</item>
+<item>
+<ptxt>Seat Belt Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000DBD00JX_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000000DBD00JX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000DBD00JX_04_0007" proc-id="RM0550J___0000CV200000">
+<testtitle>Replace Distance Control Computer Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the distance control computer assembly with a new one.</ptxt>
+<ptxt>(see <xref label="Seep01" href="RM0000028Z2003X"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Perform initialization of the distance control computer.</ptxt>
+<ptxt>(see <xref label="Seep02" href="RM000002GO2003X_01_0001"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000DBD00JX_04_0003" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000DBD00JX_04_0003" proc-id="RM0550J___0000CV100000">
+<scantool type="1"/>
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), follow the prompts on the screen to display the "System Diagnosis Menu/Pre-crash" screen, and select "DTC".</ptxt>
+</test1>
+<test1>
+<ptxt>Select "Clear" on the screen to clear the data.</ptxt>
+</test1>
+<test1>
+<ptxt>Follow the prompts on the SST (TaSCAN) screen to display the "System Diagnosis Menu/Pre-crash" screen, and select "DTC".</ptxt>
+</test1>
+<test1>
+<ptxt>Check for DTCs again.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC B2065/81 is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC B2065/81 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000DBD00JX_04_0008" fin="true">A</down>
+<right ref="RM000000DBD00JX_04_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000DBD00JX_04_0008">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000000DBD00JX_04_0006">
+<testtitle>Replace Seat Belt Control Computer<xref label="Seep01" href="RM000002SZU002X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

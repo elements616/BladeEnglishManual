@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="E0600">
+<servcat id="01">
+<name>Engine</name>
+<section id="10025_S0006" variety="S0006">
+<name>Charging</name>
+<ttl id="10025_S0006_733CB_T0008" variety="T0008">
+<name>Alternator Assembly (2GR-FE)</name>
+<para id="RM000002B3J000X" category="A" type-id="8000D" name-id="170VE-00" from="200601">
+<name>Inspection</name>
+<subpara id="RM000002B3J000X_01" type-id="01" category="01">
+<s-1 id="RM000002B3J000X_01_0001" proc-id="E0600_____000006E00000">
+<ptxt>Inspect Alternator Pulley with Clutch</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check that the pulley locks when turned clockwise and turns smoothly when turned counterclockwise.</ptxt>
+<figure>
+<graphic graphicname="A128078J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000002B3J000X_01_0002" proc-id="E0600_____000006F00000">
+<ptxt>Inspect Alternator Brush Holder Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using vernier calipers, measure the exposed length of the brushes.</ptxt>
+<figure>
+<graphic graphicname="A081151J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>10.5mm</ptxt>
+</specitem>
+<subtitle>Limit</subtitle>
+<specitem>
+<ptxt>4.5mm</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the exposed length of the brush is less than the minimum, replace the alternator brush holder assembly.</ptxt>
+</atten4>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000002B3J000X_01_0003" proc-id="E0600_____000006G00000">
+<ptxt>Inspect Alternator Rotor Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Bearing Inspection</ptxt>
+<s3>
+<ptxt>Turn the alternator rotor bearing and check that it is not noisy and does not bind.</ptxt>
+<figure>
+<graphic graphicname="A079306J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>If the bearing is noisy or binds, replace the alternator rotor assembly.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Resistance Inspection</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the slip rings.</ptxt>
+<figure>
+<graphic graphicname="A081152J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>1.5-1.9Ω (150A)</ptxt>
+</specitem>
+<specitem>
+<ptxt>2.3-2.7Ω (100A)</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, replace the alternator rotor assembly.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the slip ring and rotor core.</ptxt>
+<figure>
+<graphic graphicname="A081153J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>1M Ω or higher</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, replace the alternator rotor assembly.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Outer Diameter Inspection</ptxt>
+<s3>
+<ptxt>Using vernier calipers, measure the diameter of the slip rings.</ptxt>
+<figure>
+<graphic graphicname="A124293J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>14.2-14.4mm</ptxt>
+</specitem>
+<subtitle>Limit</subtitle>
+<specitem>
+<ptxt>14.0mm</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the result is not as specified, correct it with sandpaper (#400).</ptxt>
+</item>
+<item>
+<ptxt>If the diameter is less than the minimum, replace the alternator rotor assembly.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000002B3J000X_01_0004" proc-id="E0600_____000006H00000">
+<ptxt>Inspect Alternator Drive End Frame Bearing</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Turn the alternator drive end frame bearing and check that it is not noisy and does not bind.</ptxt>
+<figure>
+<graphic graphicname="A128080" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>If the bearing is noisy or binds, replace the alternator drive end frame bearing.</ptxt>
+</atten4>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

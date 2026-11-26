@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-db>
+<pub id="RM0550J">
+<servcat id="01">
+<section id="10006_S000J" variety="S000J">
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<para id="X387000016300PC" category="C" type-id="302Z4" name-id="065AF-00" from="200612">
+<subpara id="X387000016300PC_13">
+<testgrp id="X387000016300PC_13_0020">
+<scantool type="8">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">8</parameter>
+<active-test>
+<parameter key="did-id">51</parameter>
+<parameter key="key-invalid-flag">0</parameter>
+<parameter key="key-operation-pattern">M</parameter>
+<parameter key="continuance-time">0</parameter>
+<parameter key="continuance-flag">2</parameter>
+<parameter key="maintenance-time">30</parameter>
+<parameter key="pattern-disp-info-num">2</parameter>
+<pattern-data no="1">
+<parameter key="press-data">1</parameter>
+<parameter key="dispstring">Throttle open</parameter>
+<parameter key="relese-data">0</parameter>
+</pattern-data>
+<pattern-data no="2">
+<parameter key="press-data">2</parameter>
+<parameter key="dispstring">Throttle closed</parameter>
+<parameter key="relese-data">0</parameter>
+</pattern-data>
+<parameter key="lock-time">0</parameter>
+<parameter key="default-value-pid-id">0</parameter>
+<parameter key="de-value-user-specification">0</parameter>
+<parameter key="active-test-name">Electronic Throttle Drive (Slow)</parameter>
+<parameter key="dldriving-value-min">0</parameter>
+<parameter key="dldriving-value-max">4</parameter>
+<parameter key="prohibition-condition">The Active Test cannot be performed. After checking the prohibited conditions, press "OK". [Prohibited Conditions] • Vehicle speed &gt; 0km/h • Engine speed &gt; 0r/min • STA ON • Accelerator opening ≤ 58° • Shift in P range (ECT models only) • Vehicle speed, Ne or accelerator sensor malfunction • Electronic throttle system down</parameter>
+<parameter key="note-display">Precautions • Perform the electronic throttle drive with the accelerator pedal fully depressed. • Always perform the Active Test while monitoring "Throttle Sensor No1, No2" in the ECU data.</parameter>
+<parameter key="info">[Prohibited Conditions] • Vehicle speed &gt; 0km/h • Engine speed &gt; 0r/min • STA ON • Accelerator opening ≤ 58° • Shift in P range (ECT models only) • Vehicle speed, Ne or accelerator sensor malfunction • Electronic throttle system down</parameter>
+<parameter key="mul">1</parameter>
+<parameter key="div">1</parameter>
+<parameter key="unit-name"/>
+<parameter key="dloffset">0</parameter>
+<parameter key="complement">0</parameter>
+</active-test>
+<parameter key="pid-id-num">3</parameter>
+<datamonitor no="1">
+<parameter key="pid-id">66</parameter>
+<parameter key="datamonitor-name">Throttle SensorNo,1 Opening</parameter>
+</datamonitor>
+<datamonitor no="2">
+<parameter key="pid-id">82</parameter>
+<parameter key="datamonitor-name">Throttle SensorNo,2 Opening</parameter>
+</datamonitor>
+<datamonitor no="3">
+<parameter key="pid-id">151</parameter>
+<parameter key="datamonitor-name">Throttle Sensor No,2 Voltage</parameter>
+</datamonitor>
+</scantool>
+</testgrp>
+<testgrp id="X387000016300PC_13_0021">
+<scantool type="2">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">2</parameter>
+<parameter key="diag-freeze-flag">1</parameter>
+</scantool>
+</testgrp>
+<testgrp id="X387000016300PC_13_0017">
+<scantool type="1">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">1</parameter>
+</scantool>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-db>

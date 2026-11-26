@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY k4540049c SYSTEM "grph_ent/k4540049c.png" NDATA png>
+
+<!ENTITY T050004A207 SYSTEM "t478050004a207.xml">
+<!ENTITY T050004A207A147 SYSTEM "t478050004a207a147.xml">
+<!ENTITY T050004A207A148 SYSTEM "t478050004a207a148.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T050004A207S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T050004A207" UPDATE = "ORIGINAL" LDUP = "29Nov2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Shock Absorber</TITLE>
+<LIST1><ITEM><PTXT>Low-pressure gas (N<SUB>2</SUB>) filled shock absorbers with linear control valves have been adopted, achieving a high level of handling, stability and ride comfort.</PTXT></ITEM>
+<ITEM><PTXT>The piston valve used in the shock absorber has been enlarged, and a laminated construction has been adopted for the rear valve so that damping force can be generated even during the compression stroke. As a result, compared with a construction in which damping force is generated only by the base valve during the compression stroke, damping force is generated from a lower speed range, achieving a high-quality ride.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T050004A207A147" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Construction of Linear Control Valve</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The linear control valve uses laminated valves to create a choke construction (a construction that greatly changes the direction of oil flow through the orifice), achieving linear damping force in the low speed range. The rear valve, which conventionally served as a check valve, has also been redesigned into a laminated valve with a choke construction.</PTXT></ITEM>
+<ITEM><PTXT>Lower damping force in the medium to high speed range is achieved by reducing the valve rigidity of the leaf valve.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4540049c" WIDTH = "7.069in" HEIGHT = "6.861in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T050004A207A148" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Effects of Linear Control Valve</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Damping force changes are generated from the extremely low piston speed range, making vehicle behavior in response to steering operation, etc. gentle and achieving excellent handling and stability.</PTXT></ITEM>
+<ITEM><PTXT>Lowering the damping force in the medium to high speed range reduces vehicle vibration caused by road surface irregularities, ensuring a supple ride.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+</SECTION>

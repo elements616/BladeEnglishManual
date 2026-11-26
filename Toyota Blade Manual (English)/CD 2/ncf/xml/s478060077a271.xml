@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY k4730035c SYSTEM "grph_ent/k4730035c.png" NDATA png>
+
+<!ENTITY T060077A271 SYSTEM "t478060077a271.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T060077A271S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T060077A271" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Yaw Rate Sensor &amp; Linear G Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The semiconductor type yaw rate sensor and G sensor are integrated for compactness and mounted under the front passenger seat. When acceleration acts on the vehicle, the movable electrode in the G sensor moves, changing its distance from the fixed electrode; the capacitance between the electrodes is measured and converted into an electrical signal. By combining 2 G sensors, each mounted at an angle of 45 degrees relative to the longitudinal direction of the vehicle, deceleration can be detected in all horizontal directions, and together with the linear output characteristics, this allows precise control on various road surfaces.</PTXT></ITEM>
+<ITEM><PTXT>The yaw rate sensor detects the angular velocity of the vehicle's rotation around its vertical axis (yaw rate) from the amount and direction of strain in a piezoelectric ceramic. Dedicated ICs are used for sensor body excitation and signal processing, reducing size and ensuring reliability.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4730035c" WIDTH = "7.069in" HEIGHT = "2.931in" />
+</FIGURE>
+</PARA>
+</SECTION>

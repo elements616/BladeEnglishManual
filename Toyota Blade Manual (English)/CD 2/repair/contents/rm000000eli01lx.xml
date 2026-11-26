@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1000Y_S0012" variety="S0012">
+<name>SRS Airbag</name>
+<ttl id="1000Y_S0012_745Q2_T00B8" variety="T00B8">
+<name>SRS Airbag System</name>
+<para id="RM000000ELI01LX" category="C" type-id="305DM" name-id="555BL-01" from="200912">
+<dtccode>B1806</dtccode>
+<dtcname>Front passenger airbag ignition circuit (open)</dtcname>
+<subpara id="RM000000ELI01LX_01" type-id="31" category="03" proc-id="RM0550J___0000IO400000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The front passenger side squib circuit consists of the airbag computer assembly and instrument panel passenger airbag assembly. When the activation conditions are met, the instrument panel passenger airbag assembly (front passenger side airbag) is activated. </ptxt>
+<ptxt>When an open is detected in the front passenger side squib circuit (P+, P- lines), DTC B1806 is stored in the airbag computer assembly. </ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1806</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open in P+, P- lines of the wire harness between the airbag computer assembly and instrument panel passenger airbag assembly (front passenger side airbag)</ptxt>
+</item>
+<item>
+<ptxt>Instrument panel passenger airbag assembly (front passenger side airbag) malfunction</ptxt>
+</item>
+<item>
+<ptxt>Airbag Computer Assembly Malfunction</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Instrument panel wire (between airbag computer assembly and junction connector)</ptxt>
+</item>
+<item>
+<ptxt>Instrument panel wire assembly (between junction connector and instrument panel passenger airbag assembly)</ptxt>
+</item>
+<item>
+<ptxt>Instrument Panel Passenger Airbag Assembly</ptxt>
+</item>
+<item>
+<ptxt>Airbag Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000ELI01LX_02" type-id="32" category="03" proc-id="RM0550J___0000IO500000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C159577J08" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000ELI01LX_03" type-id="51" category="05" proc-id="RM0550J___0000IO600000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>When performing the simulation method, use TaSCAN to select check mode first. (see <xref label="Seep01" href="RM00000050J01GX"/>)</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000ELI01LX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000ELI01LX_04_0011" proc-id="RM0550J___0000IOC00000">
+<testtitle>Connector Inspection</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D705AX"/></ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect the battery negative terminal and wait for 90 seconds.</ptxt>
+<atten4>
+<ptxt>Make sure the ignition switch is OFF before disconnecting the cable from the negative (-) battery terminal.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check the connection condition of the connectors connected to the airbag computer assembly and instrument panel passenger airbag assembly, and of the junction connectors (instrument panel wire and instrument panel wire assembly).</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>The connector is connected properly</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Disconnect the connectors connected to the airbag computer assembly and instrument panel passenger airbag assembly, and the junction connectors (instrument panel wire and instrument panel wire assembly), and check the condition of the terminals of each connector.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>The terminals are not deformed or damaged</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Check the condition of the short pins of the connectors with a short mechanism on the instrument panel wire and instrument panel wire assembly.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>The short pins are not deformed or damaged</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000ELI01LX_04_0001" fin="false">OK</down>
+<right ref="RM000000ELI01LX_04_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000ELI01LX_04_0001" proc-id="RM0550J___0000IO700000">
+<testtitle>Inspect Front Passenger Side Airbag Squib Circuit (Airbag Computer Assembly - Instrument Panel Passenger Airbag Assembly)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D705AX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect junction connectors C and D.</ptxt>
+<figure>
+<graphic graphicname="C178696J10" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), apply the tester probes to the P+ and P- terminals of connector E, and check the resistance between connector B and connector E.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.15in"/>
+<colspec colname="COL2" colwidth="0.99in"/>
+<colspec colname="COL3" colwidth="0.99in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P+ - P-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000ELI01LX_04_0013" fin="false">OK</down>
+<right ref="RM000000ELI01LX_04_0004" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000ELI01LX_04_0013" proc-id="RM0550J___0000IOD00000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect the connector to the airbag computer assembly.</ptxt>
+<figure>
+<graphic graphicname="C178698J05" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using a wire harness (wire diameter 0.5mm), connect the P+ and P- terminals of connector E.</ptxt>
+<atten3>
+<ptxt>When connecting the terminals, do not forcibly insert the wire harness into the connector terminals.</ptxt>
+</atten3>
+</test1>
+<test1>
+<ptxt>Connect the battery negative terminal, turn IG ON and wait for 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), clear the DTCs. (see <xref label="Seep01" href="RM00000050J01GX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000ELI01LX_04_0002" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000ELI01LX_04_0002" proc-id="RM0550J___0000IO800000">
+<scantool type="1"/>
+<testtitle>Inspect Airbag Computer Assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs. (see <xref label="Seep01" href="RM00000050J01GX"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>DTC B1806 is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>DTC B1806 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000ELI01LX_04_0014" fin="false">OK</down>
+<right ref="RM000000ELI01LX_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000ELI01LX_04_0014" proc-id="RM0550J___0000IOE00000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn IG OFF.</ptxt>
+<figure>
+<graphic graphicname="C170989J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the battery negative terminal and wait for 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the wire between the P+ and P- terminals of connector E, and connect the connector to the instrument panel passenger airbag assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the battery negative terminal, turn IG ON and wait for 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), clear the DTCs. (see <xref label="Seep01" href="RM00000050J01GX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000ELI01LX_04_0003" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000ELI01LX_04_0003" proc-id="RM0550J___0000IO900000">
+<scantool type="1"/>
+<testtitle>Inspect Front Passenger Side Squib System (Instrument Panel Passenger Airbag Assembly)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs. (see <xref label="Seep01" href="RM00000050J01GX"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>DTC B1806 is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>DTC B1806 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000ELI01LX_04_0006" fin="true">OK</down>
+<right ref="RM000000ELI01LX_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000ELI01LX_04_0004" proc-id="RM0550J___0000IOA00000">
+<testtitle>Inspect Instrument Panel Wire (Airbag Computer Assembly - Junction Connector)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D705AX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connectors C and D.</ptxt>
+<figure>
+<graphic graphicname="C216579J03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), apply the tester probes to the P+ and P- terminals of connector C, and check the resistance between connector B and connector C.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.15in"/>
+<colspec colname="COL2" colwidth="0.99in"/>
+<colspec colname="COL3" colwidth="0.99in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P+ - P-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000ELI01LX_04_0005" fin="false">OK</down>
+<right ref="RM000000ELI01LX_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000ELI01LX_04_0005" proc-id="RM0550J___0000IOB00000">
+<testtitle>Inspect Instrument Panel Wire Assembly (Junction Connector - Instrument Panel Passenger Airbag Assembly)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D705AX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), apply the tester probes to the P+ and P- terminals of connector E, and check the resistance between connector D and connector E.</ptxt>
+<figure>
+<graphic graphicname="C178697J10" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.15in"/>
+<colspec colname="COL2" colwidth="0.99in"/>
+<colspec colname="COL3" colwidth="0.99in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P+ - P-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000ELI01LX_04_0006" fin="true">OK</down>
+<right ref="RM000000ELI01LX_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000ELI01LX_04_0006">
+<testtitle>Perform Simulation Method<xref label="Seep01" href="RM000000ABY07EX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000ELI01LX_04_0007">
+<testtitle>Replace Airbag Computer Assembly<xref label="Seep01" href="RM000002RR0002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000ELI01LX_04_0008">
+<testtitle>Replace Instrument Panel Passenger Airbag Assembly<xref label="Seep01" href="RM000000QFM007X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000ELI01LX_04_0009">
+<testtitle>Replace Instrument Panel Wire Assembly</testtitle>
+</testgrp>
+<testgrp id="RM000000ELI01LX_04_0010">
+<testtitle>Replace Instrument Panel Wire</testtitle>
+</testgrp>
+<testgrp id="RM000000ELI01LX_04_0012">
+<testtitle>Replace Wire Harness</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

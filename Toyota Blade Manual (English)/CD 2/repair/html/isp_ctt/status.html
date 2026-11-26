@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- $Id: status.html,v 1.10 2003/07/22 09:36:19 miya Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Inspection Procedure</title>
+
+<link href="../../css/status.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+<!--
+function initStatus(){
+	if(parent.g_nowTtlId == null) parent.g_nowTtlId = parent.g_firstTid;
+	var ttlNode = parent.g_hashParaIdArray.get(parent.g_nowTtlId);
+	var ttlName = parent.g_hash.get(parent.g_nowTtlId);
+	if ((ttlNode == null) || (ttlNode.length < 1)) return;
+	var sectionName = parent.getSectionName((parent.g_hashParaIdArray.get(parent.g_nowTtlId))[0]);
+	disp.innerHTML = "<p class='location'>"+ sectionName + "／" + ttlName + "</p>";
+}
+-->
+</script>
+</head>
+<body onload="initStatus()">
+	<div id="disp"></div>
+</body>
+</html>

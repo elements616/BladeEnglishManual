@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T120027K061K637" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF" UNPRINT = "ON">
+<TITLE>Battery Saver Control Function</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740105e" WIDTH = "6.903in" HEIGHT = "2.569in" />
+</FIGURE>
+<INDICATE ID = "T120027K061K637I01" INDSW = "OFF">
+<TITLE>Battery Saver Control List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "5%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "20%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Vehicle Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Condition of Each Light<HINTREF REFID = "H334120027K061K63701"/></PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When any door other than the back door is ajar or open and the electronic key is not recognized.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Turns off after illuminating for 20 minutes</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When the electronic key is recognized from state No.1 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When the electronic key is not recognized from state No.2 above.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Turns off after illuminating for 20 minutes</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When, after the lamps are turned off by battery saver control, the open door is closed once and any door other than the back door is opened again.</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Turns off after illuminating for 20 minutes</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H334120027K061K63701">The lights refer to the front personal light, room light and engine switch illumination.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE></MECA>

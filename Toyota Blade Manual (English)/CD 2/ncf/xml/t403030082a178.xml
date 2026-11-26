@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARA INFOID = "T030082A178" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>ECT Control (Computer)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The transmission control computer has been mounted directly on the transaxle.</PTXT></ITEM>
+<ITEM><PTXT>Various signals are communicated between the engine control computer and transmission computer via CAN communication, and a high-precision hydraulic control system, etc. achieves both smooth shift characteristics and excellent shift response at a high level.</PTXT></ITEM>
+<ITEM><PTXT>A diagnosis function and fail-safe function have been provided for serviceability and safety.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740240p" WIDTH = "6.917in" HEIGHT = "6.917in" />
+</FIGURE>
+<INDICATE ID = "T030082A178I01" INDSW = "OFF">
+<TITLE>Block Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740241p" WIDTH = "6.917in" HEIGHT = "7.069in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T030082A178I02" INDSW = "OFF">
+<TITLE>Components and Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "37%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "62%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Linear Solenoid Valve (SL1,SL2,SL3,SL4)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Performs shift control.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>ON/OFF Solenoid Valve (SL)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Performs clutch control for lock-up and flex lock-up.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Linear Solenoid Valve (SLU)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Performs clutch control for lock-up and flex lock-up.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Linear Solenoid Valve (SLT)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls the line pressure based on engine torque information.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Input Shaft Speed Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the transmission turbine speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Output Shaft Speed Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the counter gear speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Crankshaft Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the engine speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Water Temperature Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the engine coolant temperature.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Ignition Coil</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Performs ignition at the optimal timing.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Fuel Injector</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Performs optimal fuel injection.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Air Flow Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the intake air volume and intake air temperature.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Accelerator Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the accelerator pedal depression amount.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Throttle Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the throttle valve opening angle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Stop Light Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the ON/OFF state of the brake pedal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Neutral Start Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the shift position.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Lever</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Selects the shift position. In S mode, it also selects the shift range.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Paddle Shift</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Selects the shift range.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>"S" Indicator (Built into Combination Meter)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Informs the driver that S mode is selected by illuminating the light.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>"D" Indicator (Built into Combination Meter)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Informs the driver that temporary S mode is selected by illuminating the light.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Shift Position Indicator (Built into Combination Meter)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Informs the driver of the shift position. In S mode and temporary S mode, it also displays the shift range.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Cruise Indicator Light (Built into Combination Meter)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Informs the driver that cruise control is operating by illuminating the light.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Fluid Pressure Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the hydraulic pressure in the transmission hydraulic control circuit.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Fluid Temperature Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the fluid temperature in the transmission hydraulic control circuit.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Transmission Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Performs engine-transmission integrated control and transmission control based on signals from each sensor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Engine Control Computer </PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Performs engine-transmission integrated control and engine control based on signals from each sensor. A diagnosis mode and fail-safe function have been provided for serviceability in the event of a system malfunction.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>DLC3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>By connecting and operating a diagnostic tool, DTCs and computer data can be read.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+&T030082A178A090;
+&T030082A178A089;
+&T030082A178A929;
+&T030082A178A086;
+&T030082A178A930;
+&T030082A178A312;
+&T030082A178A334;
+&T030082A178A083;
+&T030082A178A327;
+&T030082A178A126;
+&T030082A178A053;
+</PARA>

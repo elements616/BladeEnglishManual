@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+  <title>[Electronic Technical Manual]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000XYT00DX"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>DTC U0129 ABS/VSC ECU Communication Stop</h3></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">Print</a></td></tr></table><h2>Preparation List<a href="#" onclick="openSeePage('ppr','RM000000XYT00DX');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all"><a name="RM000000XYT00DX_01"></a><h2>Function Description</h2><br clear="all"><a name="1"></a><font class="ptxt">The combination meter assembly (meter ECU) receives signals from the ABS &amp; traction actuator assembly (ABS/VSC ECU) via CAN communication.</font><br><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><colgroup align="left" width="20%
+			"><col align=""></colgroup><colgroup align="left" width="40%
+			"><col align=""></colgroup><colgroup align="left" width="40%
+			"><col align=""></colgroup><tr><th align="center">DTC No.<br></th><th align="center"><ol style="list-style-type: decimal"><li>DTC Detection Condition<br></li><li>Abnormal Condition<br></li><li>Malfunction Duration<br></li></ol></th><th align="center">Inspection Area<br></th></tr><tr><td align="center">U0129<br></td><td><ol style="list-style-type: decimal"><li>15 seconds have elapsed after engine start, IG voltage 10.5V or more.<br></li><li>Communication with ABS/VSC ECU interrupted.<br></li><li>3 seconds or more. (If communication with both ABS/VSC and EFI ECUs is interrupted, the no-reception state continues for 60 seconds)<br></li></ol></td><td><ol style="list-style-type: disc"><li>CAN Communication System<br></li><li>ABS &amp; traction actuator assembly (ABS/VSC ECU)<br></li></ol></td></tr></table><br clear="all"><br clear="all"><a name="RM000000XYT00DX_02"></a><h2>Inspection Procedure</h2><a name="RM000000XYT00DX_03_0001"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">Step 1</td><td width="90%" class="s1">Read DTC</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Using SST (TaSCAN), check and record the DTCs that are output. (see<a href="#" onclick="openSeePage('seepage','RM0000005KH00RX');return false;"><img border="0" src="../../../../image/extxref.png"></a>)</font><br><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">If a CAN communication system malfunction DTC (U0100) is output, refer to "How to Proceed with Troubleshooting" for the CAN communication system.<br></li><li class="atten4">If a CAN communication system malfunction DTC and other DTCs are output simultaneously, troubleshoot the other DTCs after the CAN communication malfunction has returned to normal.<br></li></ol></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">NEXT</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">Go to CAN Communication System<a href="#" onclick="openSeePage('seepage','RM000001R4W009X');return false;">
+			(see <img border="0" src="../../../../image/extxref.png"> for procedure)
+		</a>
+&nbsp;
+										</td></tr></table></td></tr></table><br></body></html>

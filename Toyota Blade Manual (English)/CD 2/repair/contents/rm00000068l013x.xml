@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="60001_S0006" variety="S0006">
+<name>Body Multiplex Communication [LIN]</name>
+<ttl id="60001_S0006_741KA_T000J" variety="T000J">
+<name>Large-scale Body Multiplex Communication System [LIN]</name>
+<para id="RM00000068L013X" category="U" type-id="3001G" name-id="940AE-00" from="200612">
+<name>Terminals of ECU</name>
+<subpara id="RM00000068L013X_z0" proc-id="RM0550J___000006P00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Instrument Panel Junction Block Assembly (Main Body ECU)</ptxt>
+<step2>
+<ptxt>Inspect Main Body ECU</ptxt>
+<figure>
+<graphic graphicname="E139319J05" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<figure>
+<graphic graphicname="E139320J17" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<step3>
+<ptxt>Disconnect the main body ECU connector to be inspected.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage and resistance between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.60in"/>
+<colspec colname="COL2" colwidth="2.72in"/>
+<colspec colname="COL3" colwidth="1.76in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A3 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A5 (E) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U4 (GND2) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>V6 (AM2) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U1 (AM1) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>S7 (E-IG) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF → IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1V or less → 11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>V4 (ACCD) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ACC OFF → ACC ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1V or less → 11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+<step3>
+<ptxt>Connect the connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (TaSCAN), check the pulses between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.61in"/>
+<colspec colname="COL3" colwidth="2.72in"/>
+<colspec colname="COL4" colwidth="1.75in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>V23(LIN2)←→P1(GND1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Smart Key Computer Assembly (Certification ECU)</ptxt>
+<step2>
+<ptxt>Inspect Certification ECU</ptxt>
+<figure>
+<graphic graphicname="B120801J31" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Disconnect the certification ECU connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage and resistance between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.60in"/>
+<colspec colname="COL4" colwidth="2.72in"/>
+<colspec colname="COL5" colwidth="1.76in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(+B1)←→17(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>17 (E) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>18(IG)←→17(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF→IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1V or less → 11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+<step3>
+<ptxt>Connect the certification ECU connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (TaSCAN), inspect the pulses between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.58in"/>
+<colspec colname="COL4" colwidth="2.73in"/>
+<colspec colname="COL5" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>10(LIN)←→17(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Steering Lock Actuator (Steering Lock ECU)</ptxt>
+<step2>
+<ptxt>Inspect Steering Lock ECU</ptxt>
+<figure>
+<graphic graphicname="B118684J05" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Disconnect the steering lock ECU connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage and resistance between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.57in"/>
+<colspec colname="COL4" colwidth="2.72in"/>
+<colspec colname="COL5" colwidth="1.79in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 (SGND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6(IG2)←→1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF→IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1V or less → 11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>7(B)←→1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+<step3>
+<ptxt>Connect the steering lock ECU connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (TaSCAN), inspect the pulses between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.56in"/>
+<colspec colname="COL4" colwidth="2.72in"/>
+<colspec colname="COL5" colwidth="1.80in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5(LIN)←→2(SGND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Immobiliser Code Computer (ID Code Box)</ptxt>
+<step2>
+<ptxt>Inspect ID Code Box</ptxt>
+<figure>
+<graphic graphicname="B113402J04" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Disconnect the ID code box connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage and resistance between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.54in"/>
+<colspec colname="COL3" colwidth="2.72in"/>
+<colspec colname="COL4" colwidth="1.82in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(+B)←→8(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>8 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+<step3>
+<ptxt>Connect the ID code box connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (TaSCAN), inspect the pulses between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.53in"/>
+<colspec colname="COL4" colwidth="2.72in"/>
+<colspec colname="COL5" colwidth="1.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3(LIN1)←→8(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Multiplex Network Master Switch Assembly (Driver Side Power Window Switch)</ptxt>
+<step2>
+<ptxt>Inspect Driver Side Power Window Switch</ptxt>
+<figure>
+<graphic graphicname="B131578J04" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Disconnect the driver side power window switch connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage and resistance between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.51in"/>
+<colspec colname="COL3" colwidth="2.73in"/>
+<colspec colname="COL4" colwidth="1.84in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>11(B)←→12(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>12 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+<step3>
+<ptxt>Connect the driver side power window switch connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (TaSCAN), inspect the pulses between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.50in"/>
+<colspec colname="COL4" colwidth="2.72in"/>
+<colspec colname="COL5" colwidth="1.86in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>17(LIN1)←→12(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Power Window Regulator Motor Assembly RH (Driver Side) [Power Window ECU]</ptxt>
+<step2>
+<ptxt>Inspect Driver Side Power Window ECU</ptxt>
+<figure>
+<graphic graphicname="B129357J17" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Disconnect the driver side power window ECU connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage and resistance between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.49in"/>
+<colspec colname="COL3" colwidth="2.72in"/>
+<colspec colname="COL4" colwidth="1.87in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(B)←→1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+<step3>
+<ptxt>Connect the driver side power window ECU connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (TaSCAN), inspect the pulses between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.47in"/>
+<colspec colname="COL4" colwidth="2.72in"/>
+<colspec colname="COL5" colwidth="1.89in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>9(LIN)←→1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Power Window Regulator Motor Assembly LH (Front Passenger Side) [Power Window ECU]</ptxt>
+<step2>
+<ptxt>Inspect Front Passenger Side Power Window ECU</ptxt>
+<figure>
+<graphic graphicname="B129357J18" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Disconnect the front passenger side power window ECU connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage and resistance between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.46in"/>
+<colspec colname="COL3" colwidth="2.72in"/>
+<colspec colname="COL4" colwidth="1.90in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(B)←→1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+<step3>
+<ptxt>Connect the front passenger side power window ECU connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (TaSCAN), inspect the pulses between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.44in"/>
+<colspec colname="COL4" colwidth="2.73in"/>
+<colspec colname="COL5" colwidth="1.91in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>9(LIN)←→1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Power Window Regulator Motor Assembly RH (Rear) [Power Window ECU]</ptxt>
+<step2>
+<ptxt>Inspect Rear RH Power Window ECU</ptxt>
+<figure>
+<graphic graphicname="B129357J19" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Disconnect the rear RH power window ECU connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage and resistance between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.43in"/>
+<colspec colname="COL3" colwidth="2.72in"/>
+<colspec colname="COL4" colwidth="1.93in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(B)←→1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+<step3>
+<ptxt>Connect the rear RH power window ECU connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (TaSCAN), inspect the pulses between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.42in"/>
+<colspec colname="COL4" colwidth="2.72in"/>
+<colspec colname="COL5" colwidth="1.94in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>9(LIN)←→1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Power Window Regulator Motor Assembly LH (Rear) [Power Window ECU]</ptxt>
+<step2>
+<ptxt>Inspect Rear LH Power Window ECU</ptxt>
+<figure>
+<graphic graphicname="B129357J20" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Disconnect the rear LH power window ECU connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage and resistance between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.40in"/>
+<colspec colname="COL3" colwidth="2.72in"/>
+<colspec colname="COL4" colwidth="1.96in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(B)←→1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+<step3>
+<ptxt>Connect the rear LH power window ECU connector.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (TaSCAN), inspect the pulses between the terminals of the vehicle side wire harness connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.39in"/>
+<colspec colname="COL4" colwidth="2.72in"/>
+<colspec colname="COL5" colwidth="1.97in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>9(LIN)←→1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse Generation</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

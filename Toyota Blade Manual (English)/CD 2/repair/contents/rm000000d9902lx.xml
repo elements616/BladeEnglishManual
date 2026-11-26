@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="S1">
+<name>Introduction</name>
+<section id="10002_S0013" variety="S0013">
+<name>Introduction</name>
+<ttl id="10002_S0013_744ZN_T009Y" variety="T009Y">
+<name>General Work Guidelines and Precautions</name>
+<para id="RM000000D9902LX" category="L" type-id="3001A" name-id="012PM-01" from="200708" to="200810">
+<name>Precautions</name>
+<subpara id="RM000000D9902LX_z0" proc-id="RM0550J___0000GT600000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>SRS Airbag and Seat Belt Pretensioner</ptxt>
+<step2>
+<ptxt>Precautions for Handling and Work</ptxt>
+<step3>
+<ptxt>If work on the airbag and pretensioner system is not performed using the correct procedures and methods, the system may be activated during work, which could lead to a serious accident resulting in death. Also, incorrect repairs may prevent the system from operating when needed. When performing servicing and inspection, follow the correct procedures and methods described in this manual.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Disconnecting the Power Source</ptxt>
+<step3>
+<ptxt>After checking the DTCs, turn the ignition switch off, disconnect the cable from the negative battery terminal, and wait at least 90 seconds before starting work.</ptxt>
+<atten2>
+<ptxt>The airbag and pretensioner system is equipped with a back-up power source, so if work is started before 90 seconds have elapsed after disconnecting the cable from the negative battery terminal, the airbag may be deployed.</ptxt>
+</atten2>
+</step3>
+</step2>
+<step2>
+<ptxt>General Precautions</ptxt>
+<step3>
+<ptxt>Use a Toyota electrical tester for electrical inspection. However, never measure resistance.</ptxt>
+<atten2>
+<ptxt>Measuring resistance is very dangerous, as the current from the tester may activate the airbag and pretensioner.</ptxt>
+</atten2>
+</step3>
+<step3>
+<ptxt>Follow the instructions on the caution labels attached around the system.</ptxt>
+</step3>
+<step3>
+<ptxt>Never disassemble.</ptxt>
+</step3>
+<step3>
+<ptxt>If a part has been dropped, or if there are cracks, dents, chips or other deformation, replace it with a new genuine Toyota part.</ptxt>
+</step3>
+<step3>
+<ptxt>Never use airbag and pretensioner parts from another vehicle; always install new parts when replacing.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not expose directly to high heat or flames.</ptxt>
+</step3>
+<step3>
+<ptxt>Even if the airbag and pretensioner parts did not activate in a collision, perform an inspection using the diagnostic system.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not allow grease, cleaning agents, oil, water, etc. to adhere. If any adheres, immediately wipe it off with a dry cloth or equivalent.</ptxt>
+</step3>
+<step3>
+<ptxt>Store and handle in a place free from high temperatures (ambient temperature of 93°C or higher [80°C or higher for pretensioners]) and high humidity, and not easily affected by electrical noise.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Precautions for Disposal of Airbags and Pretensioners (Before Deployment)</ptxt>
+<step3>
+<ptxt>Never dispose of the parts in an undeployed state. (Always use SST to activate them)</ptxt>
+</step3>
+<step3>
+<ptxt>Perform deployment outdoors on a flat surface where safety can be ensured. Also, avoid residential areas as much as possible.</ptxt>
+</step3>
+<step3>
+<ptxt>The activation noise is quite loud, so notify people in the surrounding area in advance.</ptxt>
+</step3>
+<step3>
+<ptxt>When activating the airbag and pretensioner using SST, stay at least 5m away from the airbag and pretensioner.</ptxt>
+</step3>
+<step3>
+<ptxt>Static electricity may activate the airbag and pretensioner, so take measures against static electricity beforehand.</ptxt>
+</step3>
+<step3>
+<ptxt>When deploying the airbag, do not place it with the deployment surface facing down.</ptxt>
+<atten2>
+<ptxt>If the airbag deploys with the deployment surface facing down, a serious accident resulting in death may occur.</ptxt>
+</atten2>
+</step3>
+</step2>
+<step2>
+<ptxt>Precautions for Disposal of Airbags and Pretensioners (After Deployment)</ptxt>
+<step3>
+<ptxt>Deployed airbags and pretensioners can reach several hundred °C in some areas, so leave them for at least 30 minutes after activation.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not apply water, etc. to deployed airbags and pretensioners.</ptxt>
+</step3>
+<step3>
+<ptxt>When handling deployed airbags and pretensioners, wear dust-proof protective glasses and gloves.</ptxt>
+</step3>
+<step3>
+<ptxt>Put deployed airbags and pretensioners in a strong, transparent plastic bag, seal it and dispose of it.</ptxt>
+</step3>
+<step3>
+<ptxt>Always wash your hands with water after completing work.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Precautions for Storing Airbags</ptxt>
+<step3>
+<ptxt>When removing an airbag, even temporarily during work, always store it with the deployment surface facing up.</ptxt>
+<atten2>
+<ptxt>If the airbag deploys for any reason with the deployment surface facing down, a serious accident resulting in death may occur.</ptxt>
+</atten2>
+</step3>
+<step3>
+<ptxt>When storing, do not place objects on top of the airbag or stack airbags.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Precautions for Wire Harnesses and Connectors</ptxt>
+<step3>
+<ptxt>Except for those not exposed in the engine room, they are all yellow and special connectors are used, so handle them with great care when disconnecting.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Handling of Vehicles that Have Been Subjected to an Impact Such as a Collision</ptxt>
+<step3>
+<ptxt>When using an electric welder, remove the airbags and pretensioners before starting work.</ptxt>
+</step3>
+<step3>
+<ptxt>If there is a possibility of impact to the airbag sensor assembly center, front airbag sensors, side airbag sensor assemblies, airbag sensor rear or seat position airbag sensor, remove them beforehand.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not expose the airbag sensor assembly center, front airbag sensors, side airbag sensor assemblies, airbag sensor rear or seat position airbag sensor to high temperatures.</ptxt>
+</step3>
+<step3>
+<ptxt>When the airbags and pretensioners are activated, some areas reach several hundred °C, so check that the surrounding wire harnesses and connectors are not damaged or melted.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Basic Items</ptxt>
+<step2>
+<ptxt>Work Guidelines</ptxt>
+<figure>
+<graphic graphicname="D101803J01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="0.79in"/>
+<colspec colname="COL2" colwidth="1.74in"/>
+<colspec colname="COL3" colwidth="4.55in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Appearance</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Always wear clean work clothes.</ptxt>
+</item>
+<item>
+<ptxt>Wear a hat and safety shoes.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Protection</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Before starting work, install a grille cover, fender covers, seat covers and floor mats.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Safe Work</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Secure the vehicle using wheel chocks.</ptxt>
+</item>
+<item>
+<ptxt>When working with 2 or more people, check each other's safety.</ptxt>
+</item>
+<item>
+<ptxt>When working with the engine running, pay attention to ventilation.</ptxt>
+</item>
+<item>
+<ptxt>When working on hot, rotating, sliding or vibrating parts, be careful not to get burned or injured.</ptxt>
+</item>
+<item>
+<ptxt>When jacking up the vehicle, support it at the specified locations with rigid racks.</ptxt>
+</item>
+<item>
+<ptxt>When lifting up the vehicle, apply the safety device.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Preparation of Tools and Gauges</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Before starting work, prepare a tool stand, SST, gauges, lubricants, shop rags, replacement parts, etc.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Removal/Installation, Disassembly and Reassembly Work</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Perform diagnosis after fully understanding the problem symptoms, and work efficiently.</ptxt>
+</item>
+<item>
+<ptxt>Before removing parts, check the assembled condition and any deformation or damage.</ptxt>
+</item>
+<item>
+<ptxt>If the structure is complex, take notes or put matchmarks so as not to affect function.</ptxt>
+</item>
+<item>
+<ptxt>Clean and wash removed parts as necessary, and inspect them before reassembly.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Removed Parts</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Arrange removed parts in order so that they are not mixed up or soiled.</ptxt>
+</item>
+<item>
+<ptxt>Replace non-reusable parts such as gaskets, O-rings and self-locking nuts with new ones as instructed in the text.</ptxt>
+</item>
+<item>
+<ptxt>Arrange replaced parts in a box, etc. and show them to the customer.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Precoated Bolts</ptxt>
+<figure>
+<graphic graphicname="D002613J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Precoated bolts are bolts with seal lock adhesive applied to the threads.</ptxt>
+</step3>
+<step3>
+<ptxt>When a precoated bolt is retightened, loosened or moved, recoat it with the specified adhesive.</ptxt>
+<atten3>
+<ptxt>Perform torque checks at the lower limit of the allowable torque range.</ptxt>
+</atten3>
+</step3>
+<step3>
+<ptxt>When reusing precoated parts, remove the old adhesive from the bolt and threaded hole, degrease with white gasoline or equivalent, dry with compressed air, then apply the specified seal lock adhesive to the bolt threads and tighten to the specified torque.</ptxt>
+</step3>
+<step3>
+<ptxt>Depending on the seal lock adhesive used, it may be necessary to leave it for a specified time until it hardens.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Gasket</ptxt>
+<step3>
+<ptxt>Gaskets are not reusable; always replace them with new ones.</ptxt>
+</step3>
+<step3>
+<ptxt>Use seal packing on gaskets as necessary to prevent leaks.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Bolts, Nuts and Screws</ptxt>
+<step3>
+<ptxt>Check the torque specifications of bolts, nuts and screws, and always use a torque wrench.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Replace Fuse</ptxt>
+<figure>
+<graphic graphicname="BE01367J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>When replacing a fuse, use a fuse of the same capacity. If a fuse of a different capacity must be used, use one with a lower capacity than the specified amperage.</ptxt>
+<figure>
+<graphic graphicname="D100151J02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</step3>
+</step2>
+<step2>
+<ptxt>Clip</ptxt>
+<figure>
+<graphic graphicname="D100768J04" width="7.106578999in" height="9.803535572in"/>
+</figure>
+<step3>
+<ptxt>When prying clips or claws to disengage them, always apply protective tape to prevent damage to the vehicle.</ptxt>
+</step3>
+<step3>
+<ptxt>General clip removal and installation for body parts is shown in the illustration.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If a clip is damaged during work, always replace it with a new clip.</ptxt>
+</item>
+<item>
+<ptxt>In the illustrations, ▲ marks indicate clips and ○ marks indicate claws.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Precautions for Fit Adjustment</ptxt>
+<figure>
+<graphic graphicname="D032152J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>If centering bolts are used for the hinges of the hood, doors, luggage compartment door, etc., replace them with service part bolts before adjusting the fit.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Jacking Up, Jacking Down and Supporting the Vehicle</ptxt>
+<step3>
+<ptxt>When jacking up, jacking down or supporting the vehicle, always observe the precautions. (See Jack, Rigid Rack and Lift Support Locations <xref label="Seep01" href="RM0000005D402IX"/>)</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Removal and Installation of Vacuum Hoses</ptxt>
+<figure>
+<graphic graphicname="D025063J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>When disconnecting a vacuum hose, hold the hose end and pull it off.</ptxt>
+</step3>
+<step3>
+<ptxt>When disconnecting vacuum hoses, use tags so that you know where they connect.</ptxt>
+<figure>
+<graphic graphicname="D025064J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When using a vacuum gauge, do not connect the hose if the connector is too large. Use a slightly smaller adapter for adjustment. Once a hose has been stretched, air leaks may occur.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Torque When Using Extension Tool with Torque Wrench</ptxt>
+<figure>
+<graphic graphicname="D100015" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<step3>
+<ptxt>When an SST or tool is combined with a torque wrench to extend its overall length, tightening until the torque wrench reading reaches the specified torque will result in excessive actual torque.</ptxt>
+</step3>
+<step3>
+<ptxt>The text gives the specified torque and the reading T´ calculated for use with a typical torque wrench and preparation items. If a torque wrench and preparation items of the same type are not available, calculate the torque wrench reading using the formula.</ptxt>
+</step3>
+<step3>
+<ptxt>Formula T'=T×L2/(L1+L2)</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T'</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Torque wrench reading [N*m{kgf*cm}]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified torque [N*m{kgf*cm}]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>L1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Length of SST or Tool [cm]</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>L2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Length of Torque Wrench [cm]</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Electrical System</ptxt>
+<step2>
+<ptxt>Disconnecting and Reconnecting Battery Terminal</ptxt>
+<figure>
+<graphic graphicname="D101403J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>When working on the electrical system, disconnect the battery negative terminal beforehand to prevent burnout due to short circuits.</ptxt>
+</step3>
+<step3>
+<ptxt>When disconnecting or reconnecting the battery terminal, turn the ignition switch and light control switch off, completely loosen the terminal nut and do not pry the terminal.</ptxt>
+</step3>
+<step3>
+<ptxt>Disconnecting the battery terminal will erase memories such as the clock and diagnostic memory, so check the contents beforehand.</ptxt>
+</step3>
+<step3>
+<ptxt>Some systems require setting procedures when the battery terminal is disconnected and reconnected, so be sure to perform them. (see <xref label="Seep05" href="RM000001LYW011X"/>)</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Handling of Electronic Parts</ptxt>
+<figure>
+<graphic graphicname="D001556J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Do not open the cover or case of the ECU. (Touching the IC terminals may damage the IC due to static electricity)</ptxt>
+</step3>
+<step3>
+<ptxt>Do not subject electronic parts such as computers, sensors and relays to impact. Replace them if they have been dropped.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not expose electronic parts to high temperature or humidity.</ptxt>
+</step3>
+<step3>
+<ptxt>When steam-cleaning the engine, be careful not to spray water directly on electronic parts, the air filter and emission-related parts.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not touch the connector terminals, as this may cause problems due to deformation and static electricity.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not use an impact wrench when removing or installing temperature switches, temperature sensors, etc.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Removal / Installation of Fuel System Parts</ptxt>
+<step2>
+<ptxt>Work Area for Removing/Installing Fuel System Parts</ptxt>
+<step3>
+<ptxt>Work in a well-ventilated area with no sources of fire such as welders, grinders, drills, electric motors and stoves nearby.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not work in or near pits where vaporized fuel may accumulate.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Removal / Installation of Fuel System Parts</ptxt>
+<step3>
+<ptxt>Prepare a fire extinguisher before starting work.</ptxt>
+</step3>
+<step3>
+<ptxt>To prevent static electricity, connect ground wires to the fuel changer, vehicle, fuel tank, etc., and sprinkle water on the floor just enough to keep it from becoming slippery.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not use electric pumps, work lights or other electrical equipment, as they may produce sparks or become hot.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not use steel hammers, etc., as they may produce sparks during work.</ptxt>
+</step3>
+<step3>
+<ptxt>Dispose of fuel-soaked shop rags separately.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Removal / Installation of Engine Intake System Parts</ptxt>
+<step2>
+<ptxt>If foreign matter such as metal particles enters the intake passage, it will adversely affect the engine, etc.</ptxt>
+<figure>
+<graphic graphicname="D100767" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>When removing or installing intake system parts, cover the openings of the removed intake system parts and the engine with a clean shop rag or gummed tape to prevent foreign matter from entering.</ptxt>
+</step2>
+<step2>
+<ptxt>When installing intake system parts, check that no foreign matter has entered.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Handling Hose Clamps</ptxt>
+<step2>
+<ptxt>Before removing a hose, check the hose insertion depth and clamp position so that they can be reliably restored.</ptxt>
+<figure>
+<graphic graphicname="D101404J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Replace any deformed or weakened clamp with a new one.</ptxt>
+</step2>
+<step2>
+<ptxt>When reusing a hose, install the clamp aligned with the clamp mark on the hose.</ptxt>
+</step2>
+<step2>
+<ptxt>After installing a plate spring type clamp, apply force in the direction of the arrow to seat it.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Installation of Radio Transmitters, etc.</ptxt>
+<step2>
+<ptxt>Install the antenna as far as possible from the vehicle's electronic systems such as computers and sensors.</ptxt>
+</step2>
+<step2>
+<ptxt>Route the antenna cord at least 20cm away from the vehicle's electronic systems such as computers and sensors.</ptxt>
+</step2>
+<step2>
+<ptxt>Do not bundle the antenna cord with other wiring. Also, keep the antenna cord as far away from other wiring as possible.</ptxt>
+</step2>
+<step2>
+<ptxt>For aftermarket accessories, install them securely according to their individual installation instructions.</ptxt>
+</step2>
+<step2>
+<ptxt>Do not install high-output mobile communication equipment.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Headlight Inspection and Maintenance</ptxt>
+<step2>
+<ptxt>Never touch the high-voltage socket while the discharge headlight is on.</ptxt>
+<figure>
+<graphic graphicname="D101804" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>When using a cover while the headlight is on, do not keep the headlight on for 3 minutes or more.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Strictly observe the discharge headlight handling precautions during inspection and maintenance. (See Lighting System - Precaution <xref label="Seep02" href="RM0000005JQ00JX"/>)</ptxt>
+</item>
+<item>
+<ptxt>The outer lens of the headlight is made of resin, so it may be deformed by heat if this is done for a long time.</ptxt>
+</item>
+</list1>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>Traction Control (TRC) and VSC (Vehicle Stability Control)</ptxt>
+<step2>
+<ptxt>Precautions when Using Drum Tester</ptxt>
+<figure>
+<graphic graphicname="D101805J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<step3>
+<ptxt>Free the rear wheels using free rollers or rigid racks. (4WD models only)</ptxt>
+</step3>
+<step3>
+<ptxt>When using a 2-wheel drum tester such as a speedometer tester, combination speedometer and brake tester, or chassis dynamometer, always switch to "maintenance mode" to prohibit TRC and VSC control.</ptxt>
+<atten2>
+<list1 type="unordered">
+<item>
+<ptxt>If a drum tester is used in normal mode, the vehicle may jump off the tester due to TRC and VSC control.</ptxt>
+</item>
+<item>
+<ptxt>Even in maintenance mode, secure the vehicle with lock chains for safe operation.</ptxt>
+</item>
+</list1>
+</atten2>
+<atten3>
+<ptxt>Confirm that TRC and VSC operation is prohibited by checking that the slip indicator light in the combination meter is illuminated.</ptxt>
+</atten3>
+<atten4>
+<ptxt>For how to enter "Maintenance Mode", refer to <xref label="Seep03" href="RM000001A8300PX"/>.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>When the inspection using the drum tester is finished, always cancel "maintenance mode".</ptxt>
+<atten2>
+<ptxt>After finishing the inspection, always cancel "maintenance mode". Never drive the vehicle in "maintenance mode".</ptxt>
+</atten2>
+</step3>
+</step2>
+<step2>
+<ptxt>Precautions for VSC-related Work</ptxt>
+<step3>
+<ptxt>Do not remove and install VSC-related parts unless necessary, as removal and installation may result in incomplete adjustment.</ptxt>
+</step3>
+<step3>
+<ptxt>When performing VSC-related work, follow the instructions in the text to properly perform pre-work preparation, work completion checks, etc.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for Inspection and Maintenance of Active Torque Control 4WD Models</ptxt>
+<step2>
+<ptxt>Speedometer Tester Measurement Procedure</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Testers with a load setting mechanism for 2 wheels only (models with a power absorption mechanism for 2 wheels only: 2-wheel chassis dynamometers, combination 2-wheel chassis dynamometer, speedometer tester and brake tester, etc.) cannot be used alone.</ptxt>
+</item>
+<item>
+<ptxt>Perform the inspection using the front wheels.</ptxt>
+</item>
+<item>
+<ptxt>Do not start off suddenly or accelerate suddenly.</ptxt>
+</item>
+<item>
+<ptxt>The maximum speed should be 60km/h or less. (50km/h or less when using free rollers)</ptxt>
+</item>
+<item>
+<ptxt>The operating time should be within 1 minutes.</ptxt>
+</item>
+</list1>
+</atten3>
+<step3>
+<ptxt>Turn the 4 wheel drive control switch OFF (FF mode). (Indicator off)</ptxt>
+<figure>
+<graphic graphicname="D101806J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Drive the front wheels onto the rollers.</ptxt>
+</step3>
+<step3>
+<ptxt>Free the rear wheels using free rollers or rigid racks.</ptxt>
+<figure>
+<graphic graphicname="D101807J01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Secure the vehicle with lock chains.</ptxt>
+</step3>
+<step3>
+<ptxt>Start the engine, gradually increase the vehicle speed in the D position and measure.</ptxt>
+</step3>
+<step3>
+<ptxt>After the measurement, gradually decelerate with the brakes and stop.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Brake Tester Measurement Procedure</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Testers with a load measurement mechanism cannot be used.</ptxt>
+</item>
+<item>
+<ptxt>High-speed brake testers cannot be used.</ptxt>
+</item>
+</list1>
+</atten3>
+<step3>
+<ptxt>Turn the 4 wheel drive control switch OFF (FF mode). (Indicator off)</ptxt>
+<figure>
+<graphic graphicname="D101806J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Drive the wheels to be measured (front or rear) onto the rollers.</ptxt>
+</step3>
+<step3>
+<ptxt>Move the shift lever to neutral.</ptxt>
+</step3>
+<step3>
+<ptxt>Drive the tester rollers to measure.</ptxt>
+<atten4>
+<ptxt>The operating time should be within 1 minutes.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for Towing FF Models</ptxt>
+<step2>
+<ptxt>Tow the vehicle with the front wheels or all 4 wheels lifted. When towing with 4 wheels on the ground, tow in the forward direction at a towing speed of 30km/h or less and a towing distance of 80km or less.</ptxt>
+<atten3>
+<ptxt>Towing beyond this speed or distance, or towing in the reverse direction, may adversely affect and damage the transaxle.</ptxt>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for Towing Active Torque Control 4WD Models</ptxt>
+<figure>
+<graphic graphicname="D101808" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step2>
+<ptxt>Tow the vehicle with 4 wheels on the ground or all 4 wheels lifted. When towing with 4 wheels on the ground, tow in the forward direction at a towing speed of 30km/h or less and a towing distance of 80km or less.</ptxt>
+<atten3>
+<ptxt>Towing beyond this speed or distance, or towing in the reverse direction, may adversely affect and damage the transmission.</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>Do not tow with only the front wheels or only the rear wheels lifted. Also, if there is a malfunction in the running gear or drive train, transport the vehicle with all 4 wheels lifted.</ptxt>
+<atten3>
+<ptxt>Towing with only the front or rear wheels lifted may cause the transmission to seize or the wheels to come off the tow truck.</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>Tow the vehicle using one of the 1 methods shown in the illustration.</ptxt>
+<figure>
+<graphic graphicname="D101809J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If there is a malfunction in the chassis or drive train of the vehicle, use a carrier truck.</ptxt>
+</item>
+<item>
+<ptxt>When towing, do not use any method other than those shown in the illustration.</ptxt>
+</item>
+</list1>
+</atten3>
+<table pgwide="1">
+<title>Parking Brake and Shift Lever Condition During Towing</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.14in"/>
+<colspec colname="COL2" colwidth="2.28in"/>
+<colspec colname="COL3" colwidth="2.66in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Towing Method</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Parking Brake</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmission</ptxt>
+<ptxt>Shift Lever Position</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Carrier Truck</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Applied</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Any Position OK</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tow Truck (4 Wheels Lifted)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Applied</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Any Position OK</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tow Truck (4 Wheels on Ground)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Neutral</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>HELPNET System (Vehicles Subscribed to G-BOOK Service)</ptxt>
+<step2>
+<ptxt>Do not press the emergency call button unless there is an emergency. When inspecting, perform using "Manual Maintenance Check" (see <xref label="Seep04" href="RM000001C3Y00PX_01_0002"/>).</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Connecting to the center with an emergency call when there is no emergency such as an accident places an unnecessary burden on the center and may delay responses to other emergency calls.</ptxt>
+</item>
+<item>
+<ptxt>If an emergency vehicle such as an ambulance is dispatched due to a false call, the related costs may be charged or the caller may be penalized under relevant laws.</ptxt>
+</item>
+</list1>
+</atten3>
+</step2>
+<step2>
+<ptxt>If a False Call Is Made</ptxt>
+<step3>
+<ptxt>If a false call is made, tell the center that it is a "false call" when talking with the center.</ptxt>
+</step3>
+<step3>
+<ptxt>The call can only be ended by instructions from the center; it cannot be interrupted or ended from the vehicle.</ptxt>
+</step3>
+<step3>
+<ptxt>If it is not communicated that it is a "false call", the fire department and police may be notified and emergency vehicles may be dispatched according to arrangements with the center.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Vehicles with Catalytic Converter</ptxt>
+<step2>
+<ptxt>If a large amount of unburned gasoline flows into the converter, the catalyst may be damaged. To prevent this, observe the following precautions.</ptxt>
+<step3>
+<ptxt>Use only unleaded gasoline.</ptxt>
+</step3>
+<step3>
+<ptxt>If it is necessary to perform a spark plug spark test, disconnect the injector connectors to stop fuel injection.</ptxt>
+</step3>
+<step3>
+<ptxt>When measuring engine compression, disconnect the injector connectors to stop fuel injection.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not run the engine when the fuel tank is nearly empty. Running the engine may cause misfires and place an excessive load on the converter.</ptxt>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

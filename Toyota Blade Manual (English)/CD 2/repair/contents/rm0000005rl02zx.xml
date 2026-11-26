@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="10033_S0007" variety="S0007">
+<name>CAN Communication</name>
+<ttl id="10033_S0007_741KB_T000K" variety="T000K">
+<name>CAN Communication System</name>
+<para id="RM0000005RL02ZX" category="T" type-id="3001H" name-id="950ZW-01" from="200912">
+<name>List by Symptom</name>
+<subpara id="RM0000005RL02ZX_z0" proc-id="RM0550J___0000I7I00000">
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>"How to Proceed with Troubleshooting" Result List</title>
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="1" colwidth="2.79in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="3.17in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.12in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="center">
+<ptxt>Inspection Point</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="center">
+<ptxt>Reference Page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" morerows="0" colsep="1" valign="middle" align="left">
+<ptxt>The result of "How to Proceed with Troubleshooting" is "Go to CAN Bus Main Line Open Circuit Inspection (DLC3 Branch Line / Main Line / Terminating Resistor)"</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>CAN Bus Main Line Open Circuit Inspection (DLC3 Branch Line / Main Line / Terminating Resistor)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>
+<xref href="RM0000005RT01MX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="0" colsep="1" valign="middle" align="left">
+<ptxt>The result of "How to Proceed with Troubleshooting" is "Go to CAN Bus Line Short Circuit Inspection"</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>CAN Bus Line Short Circuit Inspection</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>
+<xref href="RM0000005RU01NX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="0" colsep="1" valign="middle" align="left">
+<ptxt>The result of "How to Proceed with Troubleshooting" is "Go to CAN Bus Short to +B Inspection"</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>CAN Bus Short to +B Inspection</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>
+<xref href="RM000000EFR01NX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="0" colsep="1" valign="middle" align="left">
+<ptxt>The result of "How to Proceed with Troubleshooting" is "Go to CAN Bus Short to GND Inspection"</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>CAN Bus Short to GND Inspection</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>
+<xref href="RM000000EFS01KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="0" colsep="1" valign="middle" align="left">
+<ptxt>The result of "How to Proceed with Troubleshooting" is "Go to CAN Bus One-side Open Circuit Inspection"</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>CAN Bus One-side Open Circuit Inspection</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>
+<xref href="RM0000005S801OX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>Communication Stop Mode List (V Bus Branch Line Open Circuit, Communication Stop)</title>
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="1" colwidth="2.79in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="3.17in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.12in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="center">
+<ptxt>Inspection Point</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="center">
+<ptxt>Reference Page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" morerows="0" colsep="1" valign="middle" align="left">
+<ptxt>"ABS/VSC" is not displayed on the "CAN Bus Connected ECU Check" screen of TaSCAN</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>ABS/VSC ECU Communication Stop Mode</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>
+<xref href="RM000003089000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="0" colsep="1" valign="middle" align="left">
+<ptxt>"Steering Angle Sensor" is not displayed on the "CAN Bus Connected ECU Check" screen of TaSCAN</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Steering Angle Sensor Communication Stop Mode</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>
+<xref href="RM000000N9R00BX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="0" colsep="1" valign="middle" align="left">
+<ptxt>"Yaw Rate/G Sensor" is not displayed on the "CAN Bus Connected ECU Check" screen of TaSCAN</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Yaw/G Sensor Communication Stop Mode</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>
+<xref href="RM000000N9S00DX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="0" colsep="1" valign="middle" align="left">
+<ptxt>"Engine" is not displayed on the "CAN Bus Connected ECU Check" screen of TaSCAN</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>EFI ECU Communication Stop Mode</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>
+<xref href="RM0000005S3013X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry colsep="1" valign="middle">
+<ptxt>"Electric Power Steering" is not displayed on the "CAN Bus Connected ECU Check" screen of TaSCAN</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>EPS ECU Communication Stop Mode</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>
+<xref href="RM000000N9Z00DX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry colsep="1" valign="middle">
+<ptxt>"Meter" is not displayed on the "CAN Bus Connected ECU Check" screen of TaSCAN</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>Meter ECU Communication Stop Mode</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>
+<xref href="RM00000207U00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry colsep="1" valign="middle">
+<ptxt>"Airbag" is not displayed on the "CAN Bus Connected ECU Check" screen of TaSCAN</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>A/B ECU Communication Stop Mode</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>
+<xref href="RM000000OEI00PX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry colsep="1" valign="middle">
+<ptxt>"A/C" is not displayed on the "CAN Bus Connected ECU Check" screen of TaSCAN</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>Air Conditioning ECU Communication Stop Mode</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>
+<xref href="RM000000WZP00MX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry colsep="1" valign="middle">
+<ptxt>"AVN1" is not displayed on the "CAN Bus Connected ECU Check" screen of TaSCAN</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>Navigation ECU Communication Stop Mode</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>
+<xref href="RM0000023K800XX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry colsep="1" valign="middle">
+<ptxt>"CAN Gateway" is not displayed on the "CAN Bus Connected ECU Check" screen of TaSCAN</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>CAN Gateway ECU Communication Stop Mode</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>
+<xref href="RM000001LBY008X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry colsep="1" valign="middle">
+<ptxt>"Accessory Gateway" is not displayed on the "CAN Bus Connected ECU Check" screen of TaSCAN (models with dealer options using CAN communication)</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>Accessory Gateway ECU Communication Stop Mode</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>
+<xref href="RM000002087005X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry colsep="1" valign="middle">
+<ptxt>"Main Body" is not displayed on the "CAN Bus Connected ECU Check" screen of TaSCAN</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>Main Body ECU Communication Stop Mode</ptxt>
+</entry>
+<entry colsep="1">
+<ptxt>
+<xref href="RM00000207V004X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>If all ECUs are displayed during the connected ECU check but a CAN communication malfunction code is stored (past malfunction), refer to the list and combination table described in the diagnosis system.</ptxt>
+</atten4>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>MS Bus DTC (Main Body ECU Output Code) List</title>
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="1" colwidth="2.79in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="3.17in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.12in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="center">
+<ptxt>Inspection Point</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="center">
+<ptxt>Reference Page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" morerows="0" colsep="1" valign="middle" align="left">
+<ptxt>U0327</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Smart ECU Not Connected</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>
+<xref href="RM000002X34002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="0" colsep="1" valign="middle" align="left">
+<ptxt>U1002</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Sub-network Communication Malfunction (Main Body)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>
+<xref href="RM000002X34002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>The reference pages for when the above codes are output apply only when they are output by the main body ECU (MS bus monitoring ECU). If an ECU other than the main body ECU outputs the above codes, it is necessary to identify the malfunctioning area from "How to Proceed with Troubleshooting".</ptxt>
+</atten3>
+<atten4>
+<ptxt>If a communication stop or bus malfunction occurs in an ECU connected to the MS bus, the main body ECU detects the malfunction and outputs a DTC.</ptxt>
+</atten4>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>V Bus No.2 DTC (CAN Gateway ECU Output Code) List</title>
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="1" colwidth="2.79in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="3.17in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.12in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="center">
+<ptxt>Inspection Point</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="center">
+<ptxt>Reference Page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" morerows="0" colsep="1" valign="middle" align="left">
+<ptxt>U0114</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>4WD ECU Communication Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>
+<xref href="RM00000291I002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="0" colsep="1" valign="middle" align="left">
+<ptxt>U1002</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Sub-network Communication Malfunction (CAN Gateway)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>
+<xref href="RM000001LYP013X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="0" colsep="1" valign="middle" align="left">
+<ptxt>U1100</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Pre-crash ECU Communication Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>
+<xref href="RM000002CQT005X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="0" colsep="1" valign="middle" align="left">
+<ptxt>U1101</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Driving Support ECU Communication Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>
+<xref href="RM0000030KV001X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>The reference pages for when the above codes are output apply only when they are output by the CAN gateway ECU (V bus No.2 monitoring ECU). If an ECU other than the CAN gateway ECU outputs the above codes, it is necessary to identify the malfunctioning area from "How to Proceed with Troubleshooting".</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If a communication stop or bus malfunction occurs in an ECU connected to V bus No.2, the CAN gateway ECU detects the malfunction and outputs a DTC.</ptxt>
+</item>
+<item>
+<ptxt>2WD models equipped with neither pre-crash safety nor radar cruise control have no V bus No.2 configuration and no CAN gateway ECU wiring.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

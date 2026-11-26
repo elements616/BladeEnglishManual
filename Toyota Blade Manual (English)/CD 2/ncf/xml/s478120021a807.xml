@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY c5930029e SYSTEM "grph_ent/c5930029e.png" NDATA png>
+
+<!ENTITY T120021A807 SYSTEM "t478120021a807.xml">
+<!ENTITY T120021A807A865 SYSTEM "t478120021a807a865.xml">
+
+<!ENTITY T120021T586Ka69 SYSTEM "t478120021t586ka69.xml">
+<!ENTITY T120021T586 SYSTEM "t478120021t586.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120021A807S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120021A807" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>HDD Navigation System Function Outline</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The 09 model year HDD navigation system mainly has the following functions. Some functions may not be available depending on the presence of options or the content of the contract.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A807I01" INDSW = "OFF">
+<TITLE>HDD Navigation System Function Overview List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "53%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Main Functions</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Navigation</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Navigation screen display and operation</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "6" VALIGN = "MIDDLE"><PTXT>Settings/Edit</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Navigation</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Volume setting, guidance cancel, route change, memory point registration/editing, map update, navigation detailed settings</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Telephone</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Volume setting, telephone selection, phonebook editing, Bluetooth settings, telephone detailed settings</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Audio</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Audio player switching, Bluetooth audio settings, sound library editing, CD to HDD recording settings</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>G-BOOK</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Communication settings, My Request editing, G-SOUND deletion, privacy settings, G-BOOK detailed settings</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Driving Support</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Safe/comfortable driving settings</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Maintenance</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Item settings, dealer settings, maintenance detailed settings</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>ETC</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Notification settings</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "14" VALIGN = "MIDDLE"><PTXT>Information/G</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Telephone</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display of traffic/navigation related information and hands-free screen</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Congestion Prediction</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display of traffic congestion forecast information</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>VICS</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display of VICS graphic information and text information, selection of VICS broadcasting stations</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>FM Multiplex</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display of FM multiplex broadcasting</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>ETC</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display of ETC screen</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Calendar</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display of calendar</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Operation Guide</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display of application operating instructions</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>HELPNET</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Emergency call via HELPNET</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Main Menu</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display of main menu screen</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>G-SOUND</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display of G-SOUND screen</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>My Request</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display of My Request screen</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Operator</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Use of operator service</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Information Check</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Checking information obtained through operator service</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Drive Plan</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Downloading drive plans</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Map Update</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Map update operation</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Audio</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Audio operation screen display and operation</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE"><PTXT>Communication</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Hands-free Calling<HINTREF REFID = "H478120021A80701"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Hands-free call display and operation</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Data Communication</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display and operation of G-BOOK online services<HINTREF REFID = "H478120021A80702"/>, and notification, display and operation with the "HELPNET" emergency notification system<HINTREF     REFID = "H478120021A80703"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Image Quality Adjustment</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Adjustment of image quality</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H478120021A80701">When using a Bluetooth compatible mobile phone. When using a Bluetooth compatible mobile phone, check on the G-BOOK website that the model has been verified for operation.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478120021A80702">When a Bluetooth compatible mobile phone is connected. To use G-BOOK, a start-of-use operation must be performed from the on-board unit.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478120021A80703">When a Bluetooth compatible mobile phone is connected. To use HELPNET, the start of G-BOOK online service use on the on-board unit and the HELPNET service start-of-use operation must be completed. (For G-BOOK mX, Web registration is required.)</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+
+<MECA ID = "T120021A807A865" UPDATE = "ORIGINAL" LDUP = "3Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>HDD Navigation System Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Panel Switch Operation</TITLE>
+<ITEM><PTXT>The HDD navigation display screens consist of the "Navigation Mode Screen", "Information/G Screen", "Setup/Edit Screen", etc., and each mode screen can be selected by pressing the respective panel switch.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Touch Switch Operation</TITLE>
+<ITEM><PTXT>After calling up each mode screen (audio, Information/G, etc.), operations are performed with touch switches, which allow input by directly touching the switch frames shown on the display screen with a finger.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Voice Operation</TITLE>
+<ITEM><PTXT>Navigation and other operations can be performed by pressing the voice recognition switch on the steering wheel to display the voice recognition mark on the screen and then speaking voice commands into the voice recognition microphone, providing excellent operability.</PTXT></ITEM>
+<ITEM><PTXT>Voice operation is performed by speaking the commands shown on the voice operation screen exactly as displayed.</PTXT></ITEM>
+<ITEM><PTXT>The voice recognition switch needs to be pressed only at the start of voice operation, providing excellent operability.</PTXT></ITEM>
+<ITEM><PTXT>Voice operation can be canceled by pressing and holding the voice recognition switch, or by saying "Cancel" when "Cancel" is shown in the command list.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+<BIND ID = "T120021A807B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T120021T586" UPDATE = "ORIGINAL" LDUP = "12Feb2009"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>HDD Navigation Receiver</TITLE>
+<LIST1><ITEM><PTXT>The HDD navigation receiver consists of a retractable display panel section and the main unit.</PTXT></ITEM>
+<ITEM><PTXT>Map information, route information, voice guidance data, etc. are stored on the built-in hard disk to increase the amount of information and achieve faster response.</PTXT></ITEM>
+<ITEM><PTXT>The display panel section incorporates a color LCD panel that supports pressure-sensitive touch panel operation and displays the navigation screen, audio screen, etc. In addition, panel switches are arranged around the display.</PTXT></ITEM></LIST1>
+<LIST1><ITEM><PTXT>By adopting LEDs for the backlight that illuminates the LCD panel, a display with higher brightness than the conventional type has been achieved. In addition, startup performance (brightness recovery) at low temperatures, response and color reproduction have been improved. Furthermore, the display module is mercury-free, which is environmentally friendly.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021T586I01" INDSW = "OFF">
+<TITLE>HDD Navigation Receiver</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930029e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+
+<MECA ID = "T120021T586Ka69" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Color LCD Panel</TITLE>
+<LIST1><ITEM><PTXT>The display uses a TFT (Thin Film Transistor) type LCD panel with a 7-inch wide screen with an aspect ratio of 9:16 (height 91.44 x width 152.40mm). The liquid crystal cells are subdivided into pixels of 234 vertical x 1200 horizontal; each liquid crystal cell (pixel) corresponding to each color filter is controlled in an analog manner from fully closed to fully open by the RGB video signals, so that colors are mixed additively and all colors can be expressed.</PTXT></ITEM></LIST1>
+<SPEC ID = "T120021T586Ka69X01" INDSW = "OFF">
+<TITLE>Color LCD Panel Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Display Method</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>TN Liquid Crystal Transmissive Type</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Color Display</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>RGB color filter, additive color mixing<HINTREF     REFID = "H478120021T586Ka6901"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Drive Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>TFT, active matrix drive</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Display Screen Size [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>91.44 high × 152.40 wide</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Number of Display Pixels [dots]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>234 high × 1200 wide (RGB)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Pixel Size [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>0.3908 high × 0.1270 wide</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Color Filter Arrangement</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>RGB Stripe Arrangement</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478120021T586Ka6901">A method of expressing colors by adding the 3 primary colors of light: R (red), G (green) and B (blue).</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></SPEC></MECA>
+</PARA>
+</BIND>
+</SECTION>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="05">
+<name>Suspension</name>
+<section id="1002I_S0016" variety="S0016">
+<name>Suspension</name>
+<ttl id="1002I_S0016_74508_T00AJ" variety="T00AJ">
+<name>Stabilizer Bar Front</name>
+<para id="RM000000VL1008X" category="A" type-id="8000D" name-id="421G9-00" from="200612">
+<name>Inspection</name>
+<subpara id="RM000000VL1008X_02" type-id="01" category="01">
+<s-1 id="RM000000VL1008X_02_0002" proc-id="RM0550J___00007Z600000">
+<ptxt>Inspect Front Stabilizer Link Assembly LH</ptxt>
+<content1 releasenbr="1">
+<figure>
+<graphic graphicname="G021679J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s2>
+<ptxt>Inspect Ball Joint Rotation Condition</ptxt>
+<s3>
+<ptxt>Install the nut to the stud of the front stabilizer link assembly LH.</ptxt>
+</s3>
+<s3>
+<ptxt>Swing the stud back and forth 5 times, then turn it continuously at a rate of 3 to 5 seconds per turn, and measure the turning torque on the 5 turn.</ptxt>
+<torque>
+<torqueitem>
+<t-value1>0.05 to 1.96</t-value1>
+<t-value2>0.5 to 20</t-value2>
+</torqueitem>
+</torque>
+</s3>
+<s3>
+<ptxt>Turn the stud.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No abnormal catching or play during rotation</ptxt>
+</specitem>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>Dust Cover Inspection</ptxt>
+<s3>
+<ptxt>Check that the dust cover is not cracked and that there is no grease leakage.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

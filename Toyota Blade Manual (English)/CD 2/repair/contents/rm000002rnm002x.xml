@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1000Y_S0012" variety="S0012">
+<name>SRS Airbag</name>
+<ttl id="1000Y_S0012_744XQ_T009B" variety="T009B">
+<name>Horn Button Assembly</name>
+<para id="RM000002RNM002X" category="A" type-id="30014" name-id="554VF-00" from="200708" to="200912">
+<name>Installation</name>
+<subpara id="RM000002RNM002X_01" type-id="01" category="01">
+<s-1 id="RM000002RNM002X_01_0001" proc-id="RM0550J___0000CEU00000">
+<ptxt>Install Horn Button Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Connect the horn connector to the horn button assembly.</ptxt>
+<figure>
+<graphic graphicname="C148603" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Connect the airbag connector to the horn button assembly and lock it securely.</ptxt>
+<atten3>
+<ptxt>Securely lock the airbag connector.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>Using a torx socket wrench (T30), install the horn button assembly to the steering wheel assembly with the 2 torx bolts.</ptxt>
+<torque>
+<torqueitem>
+<t-value1>8.8</t-value1>
+<t-value2>90</t-value2>
+</torqueitem>
+</torque>
+<figure>
+<graphic graphicname="C172739J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000002RNM002X_01_0002" proc-id="RM0550J___0000CEV00000">
+<ptxt>Install Steering Wheel Cover Lower NO.3</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Engage the claws and install steering wheel cover lower NO.3.</ptxt>
+<figure>
+<graphic graphicname="C148600J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000002RNM002X_01_0003" proc-id="RM0550J___0000CEW00000">
+<ptxt>Install Steering Wheel Cover Lower NO.2</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Engage the claws and install steering wheel cover lower NO.2.</ptxt>
+<figure>
+<graphic graphicname="C148599J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000002RNM002X_01_0004" proc-id="RM0550J___0000F3E00000">
+<ptxt>Connect Battery Negative Terminal</ptxt>
+<content1 releasenbr="1">
+<torque>
+<torqueitem>
+<t-value1>5.4</t-value1>
+<t-value2>55</t-value2>
+</torqueitem>
+</torque>
+</content1>
+</s-1>
+<s-1 id="RM000002RNM002X_01_0006" proc-id="RM0550J___000068200000">
+<ptxt>Airbag Warning Light Inspection
+</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check that the warning light comes on when the IG is turned ON.</ptxt>
+<figure>
+<graphic graphicname="C129423" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Check that the warning light goes off approximately 6 seconds after the IG is turned ON.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the warning light remains on even after approximately 6 seconds have elapsed after the IG is turned ON, there is a malfunction in the airbag/pretensioner system.</ptxt>
+</item>
+<item>
+<ptxt>If the light comes on occasionally even after approximately 6 seconds have elapsed after the IG is turned ON, a short to +B, short to ground or open circuit in the airbag warning light circuit may be the cause.</ptxt>
+</item>
+<item>
+<ptxt>If the light comes on even with the IG OFF or ACC ON, a malfunction in the power supply system or combination meter assembly may be the cause.</ptxt>
+</item>
+</list1>
+</atten4>
+</s2>
+</content1></s-1>
+<s-1 id="RM000002RNM002X_01_0007" proc-id="RM0550J___0000CEY00000">
+<ptxt>Setting Procedure When Disconnecting/Reconnecting Battery Terminal</ptxt>
+<content1 releasenbr="1">
+<ptxt>(For the procedure, refer to <xref label="Seep01" href="RM000001LYW011X"/>)</ptxt>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

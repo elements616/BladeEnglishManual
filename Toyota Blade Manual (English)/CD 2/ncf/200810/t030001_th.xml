@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740201c SYSTEM "../xml/grph_ent/a4740201c.png" NDATA png>
+<!ENTITY a4740151c SYSTEM "../xml/grph_ent/a4740151c.png" NDATA png>
+<!ENTITY a4740177c SYSTEM "../xml/grph_ent/a4740177c.png" NDATA png>
+<!ENTITY a4740002c SYSTEM "../xml/grph_ent/a4740002c.png" NDATA png>
+<!ENTITY a4740003c SYSTEM "../xml/grph_ent/a4740003c.png" NDATA png>
+<!ENTITY a4740012c SYSTEM "../xml/grph_ent/a4740012c.png" NDATA png>
+<!ENTITY a4740013c SYSTEM "../xml/grph_ent/a4740013c.png" NDATA png>
+<!ENTITY k4480078p SYSTEM "../xml/grph_ent/k4480078p.png" NDATA png>
+<!ENTITY k4480079p SYSTEM "../xml/grph_ent/k4480079p.png" NDATA png>
+<!ENTITY k4480080p SYSTEM "../xml/grph_ent/k4480080p.png" NDATA png>
+<!ENTITY k4480081p SYSTEM "../xml/grph_ent/k4480081p.png" NDATA png>
+<!ENTITY a4740006c SYSTEM "../xml/grph_ent/a4740006c.png" NDATA png>
+<!ENTITY a4740005c SYSTEM "../xml/grph_ent/a4740005c.png" NDATA png>
+<!ENTITY a4740202c SYSTEM "../xml/grph_ent/a4740202c.png" NDATA png>
+<!ENTITY k4480084p SYSTEM "../xml/grph_ent/k4480084p.png" NDATA png>
+<!ENTITY k4480085p SYSTEM "../xml/grph_ent/k4480085p.png" NDATA png>
+<!ENTITY a4740203c SYSTEM "../xml/grph_ent/a4740203c.png" NDATA png>
+
+<!ENTITY T040005A196 SYSTEM "../xml/t478040005a196.xml">
+<!ENTITY T040005A202 SYSTEM "../xml/t478040005a202.xml">
+<!ENTITY T040005A200 SYSTEM "../xml/t478040005a200.xml">
+<!ENTITY T040005A571 SYSTEM "../xml/t403040005a571.xml">
+<!ENTITY T040005A571Aa08 SYSTEM "../xml/t403040005a571aa08.xml">
+<!ENTITY T040005A571Aa09 SYSTEM "../xml/t403040005a571aa09.xml">
+<!ENTITY T040005A571A053 SYSTEM "../xml/t403040005a571a053.xml">
+<!ENTITY T040005A570 SYSTEM "../xml/t403040005a570.xml">
+<!ENTITY T040005A570A514 SYSTEM "../xml/t403040005a570a514.xml">
+<!ENTITY T040005A572 SYSTEM "../xml/t478040005a572.xml">
+<!ENTITY T040005A230 SYSTEM "../xml/t478040005a230.xml">
+<!ENTITY T040005A197 SYSTEM "../xml/t478040005a197.xml">
+<!ENTITY T040005A198 SYSTEM "../xml/t478040005a198.xml">
+<!ENTITY T040005A257 SYSTEM "../xml/t478040005a257.xml">
+<!ENTITY T040005A203 SYSTEM "../xml/t403040005a203.xml">
+<!ENTITY T040005A259 SYSTEM "../xml/t478040005a259.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T040005A196S"><SCTITLE/>
+
+<PARA INFOID = "T040005A196" UPDATE = "ORIGINAL" LDUP = "8Aug2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Drive Shaft</TITLE>
+<LIST1><ITEM><PTXT>The front drive shafts of vehicles with the 2GR-FE engine use Rzeppa type constant velocity joints on the axle side and tripod type constant velocity joints on the transaxle side on both the left and right.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T040005A196I01" INDSW = "OFF">
+<TITLE>w/ 2GR-FE Engine</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740201c" WIDTH = "6.903in" HEIGHT = "2.194in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T040005A202S"><SCTITLE/>
+
+<PARA INFOID = "T040005A202" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Transfer</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A GF1A type transfer has been adopted on 4WD models.</PTXT></ITEM>
+<ITEM><PTXT>It is located on the right side of the drive shaft output section of the transaxle. It changes the direction of the driving force input to the differential case by 90 degrees and outputs it to the rear. The driven pinion gear is mounted with an upward offset relative to the ring gear.</PTXT></ITEM>
+<ITEM><PTXT>The driven pinion gear is hollow, and a unit ball bearing is used to support it, resulting in a compact, lightweight construction.</PTXT></ITEM>
+<ITEM><PTXT>A left/right split aluminum die-cast transfer case has been adopted, making the case compact and lightweight.</PTXT></ITEM>
+<ITEM><PTXT>A spline connection is used to secure the ring gear and ring gear mount, providing a compact, lightweight connection.</PTXT></ITEM>
+<ITEM><PTXT>A side lip contact type oil seal has been adopted for excellent resistance to muddy water.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740151c" WIDTH = "6.903in" HEIGHT = "6.111in" />
+</FIGURE>
+<SPEC ID = "T040005A202X01" INDSW = "OFF">
+<TITLE>Transfer Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "57%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" ALIGN = "CENTER"><PTXT>Transfer Type</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Type GF1A</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE"><PTXT>Reduction Mechanism</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Gear Type</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>Hypoid Gear</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Reduction Ratio</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>0.439</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Ring Size [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>143</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Number of Ring Gear Teeth</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>41</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Number of Driven Pinion Teeth</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>18</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T040005A200S"><SCTITLE/>
+
+<PARA INFOID = "T040005A200" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Propeller shaft</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A 2-shaft, 3-joint type using shell type and tripod type constant velocity joints has been adopted.</PTXT></ITEM></LIST1>
+<LIST1><ITEM><PTXT>Quietness is ensured by optimizing the center support position, adopting compact, lightweight tripod type constant velocity joints and improving balance accuracy.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740177c" WIDTH = "6.917in" HEIGHT = "2.583in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T040005A571S"><SCTITLE/>
+
+<PARA INFOID = "T040005A571" UPDATE = "ORIGINAL" LDUP = "6May2004"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Active Torque Control 4WD Outline</TITLE>
+<LIST1><ITEM><PTXT>Active Torque Control 4WD has been adopted. By controlling the transmitted torque of the electronically controlled coupling located at the front of the rear differential, the front/rear torque distribution is continuously varied between the front-wheel drive state and direct-coupled 4WD, achieving optimum driving force distribution under various driving conditions for stability and low fuel consumption.</PTXT></ITEM>
+<ITEM><PTXT>A differential limiting mechanism, as in a typical full-time 4WD, is not required, and the system has been simplified to reduce size and weight.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740002c" WIDTH = "6.903in" HEIGHT = "4.736in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Features of Active Torque Control 4WD</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "24%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "75%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Traction Performance</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Stable starting and acceleration on slippery roads such as snowy roads, equivalent to direct-coupled 4WD</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Stability</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Stable cornering performance</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Fuel Economy</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Low fuel consumption by distributing torque to the rear wheels only when needed and only as much as needed</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>The torque transmitted to the rear wheels is controlled by the Active Torque Control 4WD computer to achieve the optimum front/rear torque distribution based on input signals from various sensors.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T040005A571I01" INDSW = "OFF">
+<TITLE>Active Torque Control 4WD System Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740003c" WIDTH = "6.903in" HEIGHT = "7.875in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T040005A571I02" INDSW = "OFF">
+<TITLE>Main Components and Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "27%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "72%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Main Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4WD Auto Mode Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Switches between 4WD auto mode and FF (front-wheel drive) mode.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>4WD Auto Mode Indicator</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Informs the driver of the 4WD auto mode control status by illuminating the light. When 4WD auto mode is ON, the light blinks 2 times and then illuminates, and when 4WD auto mode is OFF, the light goes off. In addition, if excessive driving during 4WD control may damage the drive system, the light blinks.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Master Warning Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Warns the driver of a 4WD system malfunction by illuminating the light.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Multi-information Display</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Informs the driver of a 4WD system malfunction by illuminating the master warning indicator light and displaying it on the multi-information display.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Semiconductor Type Wheel Speed Sensor &amp; Rotor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the wheel speed of each of the 4 wheels and inputs it to the skid control computer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Stop Light Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the brake operation state and inputs it to the skid control computer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Parking Brake Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects parking brake operation and inputs it to the main body ECU (instrument panel junction block assembly).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the shift position and inputs it to the engine control computer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Throttle Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Inputs the throttle valve opening to the engine control computer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Crankshaft Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the engine speed and inputs it to the engine control computer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Electronically Controlled Coupling</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Distributes transmitted torque to the rear wheels according to the output signal from the Active Torque Control 4WD computer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Skid Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the signals from the semiconductor type wheel speed sensors, G sensor and stop light switch and outputs them to the Active Torque Control 4WD computer via CAN communication.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the signals from the shift position sensor, throttle position sensor and crank position sensor and outputs them to the Active Torque Control 4WD computer via CAN communication.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Main Body ECU (Instrument Panel Junction Block Assembly)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the parking brake switch signal and outputs it to the Active Torque Control 4WD computer via CAN communication.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Active Torque Control 4WD Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the driving condition from the signals from each ECU, sensor and switch, and outputs a control signal to the electronically controlled coupling to distribute the optimum torque to the rear wheels according to the driving situation.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T040005A571I03" INDSW = "OFF">
+<TITLE>Signals and Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "27%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "72%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>4WD Auto Mode Switch Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controls switching to 4WD auto mode or FF (front-wheel drive) mode according to the ON/OFF state of the 4WD auto mode switch.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Wheel Speed Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calculates the estimated vehicle body speed, front/rear differential rotation speed, etc. for use in each control.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Throttle Valve Opening Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "2" VALIGN = "MIDDLE"><PTXT>Calculates the torque output from the engine as driving torque.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Engine Speed Signal</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Position Signal</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Longitudinal G Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>In starting control, estimates the uphill angle from the longitudinal G while stopped and applies pre-torque.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Brake Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Performs control based on the brake signal to ensure braking and ABS performance.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Parking Brake Signal</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Control is basically stopped when the parking brake is applied.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T040005A571Aa08" UPDATE = "ORIGINAL" LDUP = "18Oct2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>4WD Auto Mode</TITLE>
+<LIST1><ITEM><PTXT>Turning the 4WD auto mode switch ON switches to 4WD auto mode, and control is performed to achieve both "traction performance" and "avoidance of the tight corner braking phenomenon".</PTXT></ITEM></LIST1>
+<INDICATE ID = "T040005A571Aa08I01" INDSW = "OFF">
+<TITLE>Normal Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>During normal driving, the engine driving torque is calculated from signals such as throttle opening, engine speed and shift position, and the torque transmitted to the rear wheels is optimally controlled to ensure maximum acceleration performance.</PTXT></ITEM>
+<ITEM><PTXT>When it is determined from the throttle opening signal and wheel speed signals that the driver's operation and the vehicle are stable, the torque transmitted to the rear wheels is lowered to a state close to front-wheel drive, contributing to improved fuel economy.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740012c" WIDTH = "6.903in" HEIGHT = "2.514in" />
+</FIGURE>
+<INDICATE ID = "T040005A571Aa08I02" INDSW = "OFF">
+<TITLE>Start-off Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>By optimally distributing the total driving torque estimated from the engine torque to the front and rear wheels, starting performance equivalent to direct-coupled 4WD is ensured. Also, torque transmission to the rear wheels is optimized to avoid the tight corner braking phenomenon<HINTREF     REFID = "H403040005A571Aa0801"/> that occurs during low-speed turns.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740013c" WIDTH = "6.917in" HEIGHT = "2.250in" />
+</FIGURE>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403040005A571Aa0801">The tight corner braking phenomenon is a condition in which, when a rotation difference between the front and rear wheels is required, such as during turning, a 4WD vehicle with directly coupled front and rear wheels cannot absorb this rotation difference when driving in 4-wheel drive, resulting in a state as if the brakes were applied.</PTXT></ITEM></LIST1></HINT>
+<INDICATE ID = "T040005A571Aa08I03" INDSW = "OFF">
+<TITLE>Deceleration Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>During braking deceleration, 4WD auto mode is canceled to increase the effectiveness of ABS and VSC control.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T040005A571Aa09" UPDATE = "ORIGINAL" LDUP = "18Oct2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>FF Mode</TITLE>
+<LIST1><ITEM><PTXT>When the 4WD auto mode switch is turned OFF, 4WD control is stopped and torque transmission to the rear wheels is cut, resulting in an FF (front-wheel drive) state. This enables driving aimed at improving fuel economy.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T040005A571A053" UPDATE = "ORIGINAL" LDUP = "28Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Fail-safe Function</TITLE>
+<LIST1><ITEM><PTXT>If there is a malfunction in the 4WD system, the master warning indicator light illuminates, "4WD Check" is displayed on the multi-information display, and 4WD control is stopped and the vehicle switches to front-wheel drive.</PTXT></ITEM>
+<ITEM><PTXT>If excessive driving may damage the drive system, the 4WD auto mode indicator blinks, and 4WD control is stopped and the vehicle switches to front-wheel drive. By cooling the drive system without turning off the engine, 4WD control becomes possible again.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T040005A570S"><SCTITLE/>
+
+<PARA INFOID = "T040005A570" UPDATE = "ORIGINAL" LDUP = "8Aug2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Electronically Controlled Coupling</TITLE>
+<LIST1><ITEM><PTXT>The electronically controlled coupling consists of a main clutch, control clutch, front housing, shaft, armature, cam, piston and electromagnetic solenoid.</PTXT></ITEM>
+<ITEM><PTXT>2 types of clutches are provided: the control clutch and the main clutch. The aim is to amplify the torque generated by the control clutch with the cam and generate even greater torque with the main clutch, producing sufficient torque while keeping the actuator (electromagnetic solenoid + control clutch + armature) compact and achieving a high level of torque generation response.</PTXT></ITEM>
+<ITEM><PTXT>The control clutch is a metal multi-plate clutch so that it can pass magnetic flux, and because the main clutch generates several times the torque of the control clutch and does a large amount of work, a wet multi-plate clutch has been adopted for it. The surface treatment and groove shape of the metal clutch have been refined to ensure high durability and driving force transmission efficiency.</PTXT></ITEM>
+<ITEM><PTXT>For both the main clutch and control clutch, the outer side is engaged with the front housing and the inner side with the shaft (the control clutch is engaged with the cam).</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4480078p" WIDTH = "6.903in" HEIGHT = "3.556in" />
+</FIGURE>
+
+<MECA ID = "T040005A570A514" UPDATE = "ORIGINAL" LDUP = "8Aug2005"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Operation of Electronically Controlled Coupling</TITLE>
+<LIST1><TITLE>When Not Operating</TITLE>
+<ITEM><PTXT>Driving force from the transfer is transmitted from the propeller shaft to the front housing. When the electromagnetic solenoid is not operating, the main clutch and control clutch are each free, so driving force is not transmitted from the front housing to the shaft, and driving force from the transfer is not transmitted to the rear wheels.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4480079p" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+<LIST1><TITLE>When Operating</TITLE>
+<ITEM><PTXT>When current flows through the electromagnetic solenoid, magnetic flux is generated around the electromagnetic solenoid. (A non-magnetic section is provided in the rear housing so that the magnetic flux does not converge only at the electromagnetic solenoid.) The attraction force of this electromagnet pulls the armature toward the control clutch, engaging the control clutch.</PTXT></ITEM>
+<ITEM><PTXT>When the control clutch is engaged while there is a rotation difference between the front and rear wheels, the balls push on the slope of the cam engaged with the shaft, and the cam rotates. The rotation of the cam causes the piston to press against the main clutch, engaging the main clutch.</PTXT></ITEM>
+<ITEM><PTXT>Driving force from the front housing is transmitted through the main clutch to the shaft and then to the rear differential, transmitting driving force to the rear wheels.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4480080p" WIDTH = "6.903in" HEIGHT = "2.958in" />
+</FIGURE>
+<LIST1><TITLE>Operation Control</TITLE>
+<ITEM><PTXT>When there is a rotation difference between the front and rear wheels, the amount of driving force transmitted to the rear wheels is steplessly controlled by controlling the current flowing through the electromagnetic solenoid.</PTXT></ITEM>
+<ITEM><PTXT>When the current is small, the force with which the armature restrains the control clutch is small, so the force with which the cam presses the piston is weak and the pressure applied to the main clutch is low. As a result, the driving force transmitted by the main clutch is small, and the driving force from the propeller shaft is transmitted to the rear wheels in a limited amount.</PTXT></ITEM>
+<ITEM><PTXT>When the current increases, the force with which the armature restrains the control clutch becomes stronger, the force with which the cam presses the piston also becomes stronger, and the pressure applied to the main clutch increases. As a result, the driving force transmitted by the main clutch increases, and power is transmitted in a state close to direct-coupled 4WD.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4480081p" WIDTH = "6.903in" HEIGHT = "5.514in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T040005A572S"><SCTITLE/>
+
+<PARA INFOID = "T040005A572" UPDATE = "ORIGINAL" LDUP = "6May2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>4WD Auto Mode Switch</TITLE>
+<LIST1><ITEM><PTXT>It is located to the right of the parking lever.</PTXT></ITEM>
+<ITEM><PTXT>With the switch ON, the vehicle is in 4WD auto mode; with it OFF, the vehicle is fixed in front-wheel drive.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740006c" WIDTH = "6.903in" HEIGHT = "3.583in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T040005A230S"><SCTITLE/>
+
+<PARA INFOID = "T040005A230" UPDATE = "ORIGINAL" LDUP = "8Aug2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Warning Lamp &amp; Indicator</TITLE>
+<LIST1><ITEM><PTXT>A warning light for 4WD control is provided in the combination meter. The light illuminating, blinking or going off, and the display on the multi-information display, inform the driver of the operating condition of the 4WD system and any system malfunction.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740005c" WIDTH = "6.903in" HEIGHT = "5.111in" />
+</FIGURE>
+<INDICATE ID = "T040005A230I01" INDSW = "OFF">
+<TITLE>Warning Lamp &amp; Indicator</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>4WD Auto Mode Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Informs the driver of the 4WD auto mode control status by illuminating the light. When 4WD auto mode is ON, the light blinks 2 times and then illuminates, and when 4WD auto mode is OFF, the light goes off. In addition, if excessive driving during 4WD control may damage the drive system, the light blinks and the vehicle switches to front-wheel drive.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Multi-information Display</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Informs the driver of a 4WD system malfunction by illuminating the master warning indicator light and displaying it on the multi-information display.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Master Warning Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Illuminates or blinks at the same time as the malfunction is displayed on the multi-information display to warn the driver.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T040005A197S"><SCTITLE/>
+
+<PARA INFOID = "T040005A197" UPDATE = "ORIGINAL" LDUP = "8Aug2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Front Differential</TITLE>
+<LIST1><ITEM><PTXT>A 2-pinion type front differential with helical gears for the reduction mechanism and straight bevel gears for the differential mechanism has been adopted.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740202c" WIDTH = "6.903in" HEIGHT = "3.958in" />
+</FIGURE>
+<SPEC ID = "T040005A197X01" INDSW = "OFF">
+<TITLE>Front Differential Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "5" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "20%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "20%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "20%"/>
+<THEAD VALIGN = "MIDDLE">
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Engine</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" ALIGN = "CENTER"><PTXT>2AZ-FE</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>2GR-FE</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Drive Type</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>2WD</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>4WD</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>2WD</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE"><PTXT>Reduction Mechanism</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Gear Type</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>Helical gear</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Reduction Ratio</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>5.182</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>5.470</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>3.685</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE"><PTXT>Differential Mechanism</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Gear Type</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>Straight bevel gear</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2"><PTXT>Number of Pinions</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T040005A198S"><SCTITLE/>
+
+<PARA INFOID = "T040005A198" UPDATE = "ORIGINAL" LDUP = "8Aug2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Rear Differential</TITLE>
+<LIST1><ITEM><PTXT>A compact, lightweight FD13B type differential with an integrated electronically controlled coupling has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>A left/right split type aluminum die-cast carrier case has been adopted, achieving a significant weight reduction.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4480084p" WIDTH = "6.569in" HEIGHT = "5.444in" />
+</FIGURE>
+<SPEC ID = "T040005A198X01" INDSW = "OFF">
+<TITLE>Rear Differential Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "40%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "59%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Ring Gear Size</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>φ135</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Reduction Ratio</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>2.277</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Number of Ring Gear Teeth</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>41</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Number of Drive Pinion Teeth</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>18</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Number of Pinions</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>2</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T040005A257S"><SCTITLE/>
+
+<PARA INFOID = "T040005A257" UPDATE = "ORIGINAL" LDUP = "8Aug2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Rear Differential Mount</TITLE>
+<LIST1><ITEM><PTXT>Vibration-isolating support at 2 front points and 1 rear points using rubber cushions via the differential support reduces vibration and noise.</PTXT></ITEM>
+<ITEM><PTXT>An aluminum mount bracket has been adopted to reduce weight.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4480085p" WIDTH = "6.903in" HEIGHT = "5.319in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T040005A203S"><SCTITLE/>
+
+<PARA INFOID = "T040005A203" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "Vehicle Outline: Design">
+<TITLE>Tire &amp; Disc Wheel</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>225/45R17 90W size tires &amp; 17× 7J size aluminum wheels have been adopted on 2GR-FE engine models.</PTXT></ITEM>
+<ITEM><PTXT>Center ornaments have been provided on the aluminum wheels.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740203c" WIDTH = "6.903in" HEIGHT = "3.319in" />
+</FIGURE>
+<SPEC ID = "T040005A203X01" INDSW = "OFF">
+<TITLE>Disc Wheel Dimensions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "7" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "11%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "11%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "11%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "11%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "7" COLNAME = "7" COLWIDTH = "16%"/>
+<THEAD VALIGN = "MIDDLE">
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A: Rim width</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>B: Rim diameter</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>C:P.C.D.</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>D: Hub diameter</PTXT></ENTRY>
+<ENTRY COLNAME = "6"><PTXT>E: Bolt hole diameter</PTXT></ENTRY>
+<ENTRY COLNAME = "7"><PTXT>F: Offset</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" ALIGN = "CENTER"><PTXT>17×7J Aluminum [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>178</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>436.6</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>114.3</PTXT></ENTRY>
+<ENTRY COLNAME = "5" ALIGN = "CENTER"><PTXT>63</PTXT></ENTRY>
+<ENTRY COLNAME = "6" ALIGN = "CENTER"><PTXT>19</PTXT></ENTRY>
+<ENTRY COLNAME = "7" ALIGN = "CENTER"><PTXT>50</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T040005A259S"><SCTITLE/>
+
+<PARA INFOID = "T040005A259" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Spare Tire</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A T125/70D17 98M size spare tire is provided on all models.</PTXT></ITEM></LIST1>
+</PARA>
+</SECTION>
+</SCT>

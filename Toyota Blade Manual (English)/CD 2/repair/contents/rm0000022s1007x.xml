@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="07">
+<name>Steering</name>
+<section id="1000U_S0017" variety="S0017">
+<name>Steering Column</name>
+<ttl id="1000U_S0017_745FR_T00AZ" variety="T00AZ">
+<name>Electric Power Steering System</name>
+<para id="RM0000022S1007X" category="C" type-id="3054N" name-id="480Y4-00" from="200612">
+<dtccode>C1528/12</dtccode>
+<dtcname>Motor Rotation Angle Sensor Malfunction</dtcname>
+<subpara id="RM0000022S1007X_01" type-id="33" category="03" proc-id="RM0550J___00005Y100000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>As a fail-safe function, power assist is stopped while a motor rotation angle sensor malfunction DTC is being output.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.72in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1528/12</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Motor Rotation Angle Sensor Malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Steering column assembly (with built-in motor rotation angle sensor)</ptxt>
+</item>
+<item>
+<ptxt>Power Steering Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000022S1007X_02" type-id="32" category="03" proc-id="RM0550J___00005Y200000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C149379J02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000022S1007X_03" type-id="51" category="05" proc-id="RM0550J___00005Y300000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When the steering column assembly or power steering computer assembly has been replaced, perform torque sensor 0 point calibration and rotation angle sensor output calibration. (see <xref label="Seep01" href="RM0000024YB004X"/>)</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM0000022S1007X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000022S1007X_04_0001" proc-id="RM0550J___00005Y400000">
+<testtitle>ECU Data Monitor Inspection (Motor Rotation Angle)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using SST (TaSCAN), check the data monitor item "Motor Rotation Angle". (see <xref label="Seep01" href="RM000000URV00GX"/>)</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.84in"/>
+<colspec colname="COL3" colwidth="1.56in"/>
+<colspec colname="COL4" colwidth="1.91in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Motor Rotation Angle</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates the motor rotation angle</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine running, steering wheel turned</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes between 0 to 360deg while steering</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000022S1007X_04_0002" fin="true">OK</down>
+<right ref="RM0000022S1007X_04_0004" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000022S1007X_04_0004" proc-id="RM0550J___00005Y500000">
+<testtitle>Inspect Steering Column Assembly (Motor Rotation Angle Sensor)</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="C149381J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test1>
+<ptxt>Disconnect connector B from the power steering computer assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the power steering computer assembly wire harness side connector.</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>[Power Steering Computer Assembly]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B1(RZV) - B3(RZG)</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>27.6 to 41.4Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B6(RZSN) - B3(RZG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>75.2 to 112.8Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B5(RZCS) - B3(RZG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>73.2 to 110.8Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000022S1007X_04_0002" fin="true">OK</down>
+<right ref="RM0000022S1007X_04_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000022S1007X_04_0002">
+<testtitle>Replace Power Steering Computer Assembly<xref label="Seep01" href="RM000000UNH00TX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000022S1007X_04_0003">
+<testtitle>Replace Steering Column Assembly<xref label="Seep01" href="RM000000UCZ00QX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

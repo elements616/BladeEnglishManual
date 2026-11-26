@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1002M_S001G" variety="S001G">
+<name>Pre-crash Safety</name>
+<ttl id="1002M_S001G_74WT7_T00FP" variety="T00FP">
+<name>Pre-crash Safety System</name>
+<para id="RM000002NJ6004X" category="C" type-id="8004P" name-id="540JQ-00" from="200708">
+<dtccode>U0122/51</dtccode>
+<dtcname>VSC → Distance Control ECU Communication Malfunction</dtcname>
+<dtccode>U0100/51</dtccode>
+<dtcname>Engine ECU Communication Malfunction</dtcname>
+<dtccode>U1101/51</dtccode>
+<dtcname>Distance Control ECU Communication Malfunction</dtcname>
+<subpara id="RM000002NJ6004X_01" type-id="31" category="03" proc-id="RM0550J___0000CTH00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The seat belt control computer communicates information with each ECU via CAN communication. A DTC is output when communication with an ECU cannot be established.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0122/51</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lost communication or communication failure from the ABS &amp; traction actuator assembly to the seat belt control computer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN Communication System</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0100/51</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lost communication or communication failure from the engine control computer to the distance control computer assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN Communication System</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U1101/51</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lost communication or communication failure from the distance control computer assembly to the seat belt control computer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN Communication System</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000002NJ6004X_02" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000002NJ6004X_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000002NJ6004X_03_0001" proc-id="RM0550J___0000CTI00000">
+<scantool type="1"/>
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and record the DTCs following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM0000006EM00JX"/>)</ptxt>
+<atten4>
+<ptxt>If CAN communication system DTCs and DTCs other than CAN communication system DTCs are output at the same time, troubleshoot the non-CAN communication DTCs after the CAN communication malfunction has returned to normal.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000002NJ6004X_03_0002" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002NJ6004X_03_0002">
+<testtitle>Go to CAN Communication System<xref label="Seep01" href="RM000001R4W00DX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

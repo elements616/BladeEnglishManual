@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- $Id: global.html,v 1.4 2003/07/23 09:38:05 miya Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Publication Selection</title>
+
+<link href="pub.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+body{
+	margin: 10px 10px 0px 10px;
+}
+-->
+</style>
+
+</head>
+<body onload="document.f1.pubno.focus();parent.setPubNo(document.f1.pubno);">
+<form name="f1" onsubmit="parent.selectPub(document.f1.pubno)">
+	<table width="100%" border="0" cellspacing="0" cellpadding="1">
+		<tr>
+			<td>Please select a publication.</td>
+			<td>Pub. No.
+				<input type="text" name="pubno" id="pubno" size="10">
+				<input type="submit" name="search" value=" Search ">
+			</td>
+		</tr>
+	</table>
+</form>
+<div>
+	<table width="100%" border="1" cellspacing="0" cellpadding="1">
+		<tr style="background-color:#999999;font-weight:bold">
+			<th nowrap width="100">Pub. No.</th>
+			<th nowrap width="250">Publication Name</th>
+			<th width="110">Completion Declaration<br>Scheduled Date</th>
+			<th width="110">Overall Check</th>
+			<th>Paragraph Check</th>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002O_S0008" variety="S0008">
+<name>Engine Immobiliser</name>
+<ttl id="1002O_S0008_741KM_T000P" variety="T000P">
+<name>Engine Immobiliser System</name>
+<para id="RM000001W5300GX" category="C" type-id="801NF" name-id="580M5-00" from="200612">
+<dtccode>B278A</dtccode>
+<dtcname>Immobiliser Amplifier Power Source Malfunction</dtcname>
+<subpara id="RM000001W5300GX_01" type-id="31" category="03" proc-id="RM0550J___0000A5200000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The certification ECU (smart key computer assembly) outputs this code when the power supply line to the immobiliser amplifier section of the engine switch has an open or short circuit.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="0.93in"/>
+<colspec colname="COL2" colwidth="2.90in"/>
+<colspec colname="COL3" colwidth="3.25in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.  </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B278A</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open or short circuit in engine switch power supply line</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness and Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Switch</ptxt>
+</item>
+<item>
+<ptxt>Certification ECU (Smart Key Computer Assembly)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001W5300GX_02" type-id="32" category="03" proc-id="RM0550J___0000A5300000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B159464J03" width="7.106578999in" height="1.771723296in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001W5300GX_03" type-id="51" category="05" proc-id="RM0550J___0000A5400000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When replacing the certification ECU (smart key computer assembly), check the precautions (see <xref label="Seep01" href="RM000000MGE00SX"/>) and the registration procedure in the reference section before proceeding.</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000001W5300GX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000001W5300GX_04_0001" proc-id="RM0550J___0000A5500000">
+<testtitle>Inspect Wire Harness or Connector (Engine Switch - Smart Key Computer Assembly)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Continuity Inspection</ptxt>
+<test2>
+<ptxt>Disconnect the certification ECU (smart key computer assembly) connector and the engine switch connector.</ptxt>
+<figure>
+<graphic graphicname="B162460J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance of the vehicle side wire harness connector terminal.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.24in"/>
+<colspec colname="COLSPEC1" colwidth="1.02in"/>
+<colspec colname="COLSPEC0" colwidth="0.87in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Certification ECU - Engine Switch)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>30(VC5)-14(VC5)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>40(AGND)-8(AGND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.22in"/>
+<colspec colname="COL2" colwidth="1.02in"/>
+<colspec colname="COL3" colwidth="0.89in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Certification ECU - Body Ground)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>40 (AGND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.21in"/>
+<colspec colname="COL2" colwidth="1.00in"/>
+<colspec colname="COL3" colwidth="0.92in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Engine Switch - Body Ground)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>8 (AGND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance of the vehicle side wire harness connector terminal.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.19in"/>
+<colspec colname="COLSPEC2" colwidth="0.99in"/>
+<colspec colname="COL2" colwidth="0.95in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Certification ECU - Body Ground)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>30 (VC5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.18in"/>
+<colspec colname="COL2" colwidth="1.00in"/>
+<colspec colname="COL3" colwidth="0.95in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Engine Switch - Body Ground)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>14 (VC5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000001W5300GX_04_0009" fin="false">OK</down>
+<right ref="RM000001W5300GX_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001W5300GX_04_0009" proc-id="RM0550J___0000A5800000">
+<testtitle>Inspect Smart Key Computer Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the certification ECU (smart key computer assembly) connector.</ptxt>
+</test1>
+<figure>
+<graphic graphicname="B162787J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test1>
+<ptxt>Voltage Inspection</ptxt>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage of the vehicle side wire harness connector terminal.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.46in"/>
+<colspec colname="COL3" colwidth="1.02in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Engine Switch - Body Ground)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>14 (VC5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When brake pedal is depressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.6 to 5.4V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000001W5300GX_04_0002" fin="false">OK</down>
+<right ref="RM000001W5300GX_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001W5300GX_04_0002" proc-id="RM0550J___0000A5600000">
+<testtitle>Replace with Known Good Engine Switch</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Replace the engine switch. (see <xref label="Seep01" href="RM0000020XG004X"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), clear the DTCs.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001W5300GX_04_0003" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001W5300GX_04_0003" proc-id="RM0550J___0000A5700000">
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs again.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.79in"/>
+<colspec colname="COL2" colwidth="1.34in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B278A is not output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B278A is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001W5300GX_04_0006" fin="true">A</down>
+<right ref="RM000001W5300GX_04_0005" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001W5300GX_04_0004">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000001W5300GX_04_0005">
+<testtitle>Replace Smart Key Computer Assembly</testtitle>
+</testgrp>
+<testgrp id="RM000001W5300GX_04_0006">
+<testtitle>End (Engine switch malfunction)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

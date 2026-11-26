@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001I_S000I" variety="S000I">
+<name>Door Lock</name>
+<ttl id="1001I_S000I_744CL_T004H" variety="T004H">
+<name>Smart Entry &amp; Start System (Smart Entry)</name>
+<para id="RM000000WUA00MX" category="N" type-id="8009I" name-id="622PV-00" from="200612">
+<name>Function Inspection</name>
+<subpara id="RM000000WUA00MX_01" type-id="01" category="01">
+<s-1 id="RM000000WUA00MX_01_0001" proc-id="RM0550J___000029100000">
+<ptxt>Inspect Smart Entry &amp; Start System (Smart Entry) Operation</ptxt>
+<content1 releasenbr="1">
+<atten3>
+<ptxt>This shows the initial state in which the smart entry system has not been cancelled with the customize function.</ptxt>
+</atten3>
+<s2>
+<ptxt>Smart Door Unlock Function Inspection (Driver Side, Front Passenger Side)</ptxt>
+<s3>
+<ptxt>With all doors locked by wireless operation and while carrying the electrical key transmitter, check that all doors unlock when the touch sensor built into the back side of the door outside handle of the driver or front passenger door is touched.</ptxt>
+</s3>
+<s3>
+<ptxt>For the smart door unlock detection area, when the electrical key transmitter is held at the same height as the door outside handle (approximately 80cm above the ground) as shown in the illustration, check that unlock mode [the electrical key transmitter LED (red) blinks] is entered at a position approximately 70cm away from the vehicle.</ptxt>
+<figure>
+<graphic graphicname="B152467J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Check that all doors unlock when the door outside handle is touched within 3 seconds from the unlock mode state.</ptxt>
+<atten3>
+<ptxt>Communication may not be possible within 20cm of the door handle.</ptxt>
+</atten3>
+</s3>
+<s3>
+<ptxt>Check the front passenger door in the same way.</ptxt>
+</s3>
+<s3>
+<ptxt>For the door electrical oscillator key (touch sensor) response sensitivity inspection, check that unlock operates when the area shown in the illustration is touched while wearing work gloves in unlock mode.</ptxt>
+<figure>
+<graphic graphicname="B155046J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>If the touching speed is too fast or too slow, the sensor may not react and unlock may not operate.</ptxt>
+</atten3>
+</s3>
+<s3>
+<ptxt>Check the front passenger door in the same way.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Smart Door Lock Function Inspection (Driver Side, Front Passenger Side)</ptxt>
+<atten3>
+<ptxt>If a door lock operation is performed when the electrical transmitter is inside the cabin but outside the detection area (on the instrument panel, on the rear tray, in the glove box or on the floor), the lock-in prevention function does not operate and the electrical key transmitter is locked inside the cabin.</ptxt>
+</atten3>
+<s3>
+<ptxt>With all doors closed and unlocked, and while carrying the electrical key transmitter outside the vehicle, check that all doors lock when the lock switch (trigger switch) on the door outside handle of the driver or front passenger door is pressed.</ptxt>
+</s3>
+<s3>
+<ptxt>To inspect the smart door lock operating range, hold the electrical key transmitter 10cm below the lower edge of the door glass (approximately 1m above the ground) as shown in the illustration, and check that all doors lock when the trigger switch is pressed at approximately 30cm away from the vehicle.</ptxt>
+<figure>
+<graphic graphicname="B152467J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>As the area near the door handle (within 20cm) is a range where communication is not possible, the system may not operate if the lock switch (trigger switch) is pressed with the hand holding the electrical key transmitter.</ptxt>
+</item>
+<item>
+<ptxt>If the key lock-in buzzer operates, radio wave leakage from the inside transmitter is a possible cause.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check the front passenger door in the same way.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Smart Ignition Function Inspection</ptxt>
+<s3>
+<ptxt>With the IG OFF, enter the vehicle carrying the electrical key transmitter. With the shift lever in P, check that the engine switch indicator illuminates green when the brake pedal is depressed, and that the engine starts when the engine switch is pressed while the indicator is illuminated green.</ptxt>
+</s3>
+<s3>
+<ptxt>While carrying the electrical key transmitter, with the shift lever in P, check that each press of the engine switch without depressing the brake pedal changes the mode "IG OFF" → "ACC ON" → "IG ON" → "IG OFF". However, if the engine switch is pressed from IG ON with the shift lever in any position other than P, the mode changes to ACC ON instead of IG OFF.  </ptxt>
+</s3>
+<s3>
+<ptxt>When the engine switch is pressed after the vehicle stops, the mode changes to IG OFF (engine stopped, all power OFF). However, if the shift lever is in any position other than P, pressing the engine switch with the vehicle stopped changes the power to ACC ON, not IG OFF.</ptxt>
+</s3>
+<s3>
+<ptxt>For the smart ignition operating range inspection (front side), check that the engine can be started when the electrical key transmitter is placed at the inspection position on the front seat cushion. </ptxt>
+<figure>
+<graphic graphicname="B152470J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Even within the key detection area inside the cabin, the electrical key transmitter may not be detected normally if it is on the instrument panel, on the rear tray, in the glove box, on the floor, etc.</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Communication may not be possible within 20cm of the shift lever.</ptxt>
+</item>
+<item>
+<ptxt>Perform the inspection at the 2 inspection positions on the driver seat and front passenger seat.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+<s3>
+<ptxt>For the smart ignition operating range inspection (rear side), check that the engine can be started when the electrical key transmitter is placed at the inspection position on the rear seat cushion. </ptxt>
+<figure>
+<graphic graphicname="B152487J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Even within the key detection area inside the cabin, the electrical key transmitter may not be detected normally if it is on the instrument panel, on the rear tray, in the glove box, on the floor, etc.</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Communication may not be possible within 20cm of the center of the rear seat cushion.</ptxt>
+</item>
+<item>
+<ptxt>Perform the inspection at the 2 inspection positions on the rear seat.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Key Lock-in Prevention Function Inspection (Inside Cabin)</ptxt>
+<atten3>
+<ptxt>To prevent locking the key in, perform the inspection with one of the door windows open.</ptxt>
+</atten3>
+<s3>
+<ptxt>Place the electrical key transmitter on the driver seat, front passenger seat or rear seat cushion.</ptxt>
+</s3>
+<s3>
+<ptxt>Close all doors. (All doors unlocked)</ptxt>
+</s3>
+<s3>
+<ptxt>Check that the doors do not lock when the lock switch of the driver or front passenger door is pressed, and that the key lock-in prevention buzzer (outside) sounds for 2 seconds.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Smart Cancel Function Inspection</ptxt>
+<s3>
+<ptxt>Check that none of the Smart Entry &amp; Start System (smart entry) functions can be operated when the smart entry cancel setting has been made.</ptxt>
+<atten4>
+<ptxt>When cancelled, door lock and unlock can be operated by wireless operation, and the start system can be operated by holding the electrical key transmitter near the engine switch.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Answer-back (Wireless Buzzer Sounding, Hazard Flashing) Function Inspection</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Smart Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wireless Buzzer Sounds</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Hazard Flashing</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Door Lock</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 time(s)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 time(s)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Door Unlock</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 time(s)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 time(s)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<s3>
+<ptxt>Check the answer-back when each operation of the Smart Entry &amp; Start System (smart entry) is performed.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000WUA00MX_01_0002" proc-id="RM0550J___000029200000">
+<ptxt>TaSCAN Electronic Key Diagnosis Mode</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>In electronic key diagnosis mode, normal operation of the electrical key transmitter within the detection area of the selected transmitter and tuner can be confirmed by the sounding of the wireless door lock buzzer (inside the RH front fender).</ptxt>
+</atten4>
+<s2>
+<ptxt>Using SST (TaSCAN), select "Diagnosis" → "Body" → "Certification" → "Electronic Key Diagnosis Mode".</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</s2>
+<s2>
+<ptxt>Select the transmitter to be inspected from the following items.</ptxt>
+<table pgwide="1">
+<title>Electronic Key Diagnosis Mode</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.58in"/>
+<colspec colname="COL2" colwidth="4.50in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspectable Range</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D seat transmission → Inside tuner [*1]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Door Electrical Key Oscillator (Driver Side Outside Antenna)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P seat transmission → Inside tuner [*2]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Door Electrical Key Oscillator (Front Passenger Side Outside Antenna)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Fr seat transmission → Inside tuner [*3]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Indoor electrical oscillator key (front inside antenna)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rr seat transmission → Inside tuner [*4]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Indoor electrical oscillator key (rear inside antenna)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Back door inside transmission → Inside tuner [*5]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Indoor electrical oscillator key (luggage room inside antenna)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Back door outside transmission → Inside tuner [*6]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Electrical key antenna (luggage room outside antenna)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s2>
+<s2>
+<ptxt>Check that the wireless door lock buzzer sounds when the electrical key transmitter is brought close to the selected transmitter.</ptxt>
+<atten4>
+<ptxt>The buzzer sounds intermittently (beep, beep, beep...) except for "Rr seat transmission → Inside tuner [*4]". For "Rr seat transmission → Inside tuner [*4]", the buzzer sounds continuously (beeeep...).</ptxt>
+</atten4>
+<s3>
+<ptxt>[*1]: Door electrical oscillator key (driver side outside antenna)</ptxt>
+<figure>
+<graphic graphicname="B152467J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Hold the electrical key transmitter at the same height as the outside handle (approximately 80cm above the ground) at the position shown in the illustration.</ptxt>
+</item>
+<item>
+<ptxt>[*2]: Inspect the front passenger side in the same way.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+<s3>
+<ptxt>[*3]: Indoor electrical oscillator key (front inside antenna)</ptxt>
+<figure>
+<graphic graphicname="B152470J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>Place the electrical key transmitter on the driver or front passenger front seat cushion.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>[*4]: Indoor electrical oscillator key (rear inside antenna)</ptxt>
+<figure>
+<graphic graphicname="B152487J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>Place the electrical key transmitter on the rear seat cushion.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>[*5]: Indoor electrical oscillator key (luggage room antenna)</ptxt>
+<atten4>
+<ptxt>Place the electrical key transmitter in the luggage room.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>[*6]: Electrical key antenna (luggage room outside antenna)</ptxt>
+<atten4>
+<ptxt>Hold the electrical key transmitter at the center of the rear end of the vehicle, at the same height as the upper edge of the rear bumper, at the position shown in the illustration.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

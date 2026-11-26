@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+  <title>[Electronic Technical Manual]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000005RZ01MX"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>CAN Communication System System Description</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">Print</a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000005RZ01MX_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="RM0550J___00000BF0000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Outline</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">CAN (Controller Area Network) is a serial communication for real-time applications; it is an in-vehicle multiplex communication system with excellent data communication speed and error detection capability.</font><br></p></li>
+<li><p><font class="ptxt">CAN uses 2 lines, CAN-H and CAN-L, as a pair, and communicates using differential voltage.</font><br></p></li>
+<li><p><font class="ptxt">Vehicles are equipped with many ECUs (sensors), but they do not operate independently; they operate in coordination by sharing information with other ECUs (sensors) using CAN communication.</font><br></p></li>
+<li><p><font class="ptxt">The CAN communication main line contains 2 resistors necessary for communication transmission.</font><br></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___00000BF0000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Definition of Terms</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">Main Line</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">The harness between the 2 terminating circuits located on the bus (communication line) is defined as the main line. It is the trunk bus of the control system CAN.</font><br></p></li></ol>
+<li><p><font class="ptxt">Branch Line</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">A line branching from the main line, which is the trunk bus of the CAN bus, to an ECU or sensor is defined as a branch line.</font><br></p></li></ol>
+<li><p><font class="ptxt">Terminating Circuit</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">A circuit consisting of a resistor and a capacitor, provided to convert the communication current of the control system CAN to bus voltage, is called a terminating circuit. Terminating circuits must be provided at both ends of the bus main line, 1 at each end, for a total of 2.</font><br></p></li></ol></ol><br clear="all"><br clear="all"><a name="RM0550J___00000BF0000013step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Circuit Description</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">Except for some vehicle models, the system consists of 3 bus circuits: V bus, V bus No.2 and MS bus. (For the connection circuit,<a href="#" onclick="openSeePage('seepage','RM0000005S101LX');return false;"><img border="0" src="../../../../image/extxref.png"></a>)</font><br><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">E grade 2WD models not equipped with Intelligent Parking Assist (combined with HDD navigation) do not have V bus No.2.</dd></dl></p></p></li>
+<li><p><font class="ptxt">The V bus, V bus No.2 and MS bus each use a 120 Ω resistor in the terminating circuit, enabling high-speed communication of 500kbps on the V bus and V bus No.2, and 250kbps on the MS bus.</font><br></p></li></ol><br clear="all"></body></html>

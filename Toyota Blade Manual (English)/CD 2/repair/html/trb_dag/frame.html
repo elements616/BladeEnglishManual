@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- $Id: frame.html,v 1.35 2003/11/28 13:23:07 kato Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Diagnosis Procedure</title>
+
+<script src="../../js/util.js"></script>
+<script src="../../js/xml.js"></script>
+<script src="../../js/style.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/memo.js"></script>
+<script src="../../js/scantool.js"></script>
+<script language="javascript">
+var g_tocXml = initXml("toc_rpr.xml");
+var g_paraId = getParameterValue("parag");
+var g_cttXml = initXml(g_paraId.toLowerCase()+".xml", false, false);
+var g_lclXsl = initXsl("../../xsl/trb_dag/local.xsl");
+var g_tclXsl = initXsl("../../xsl/trb_dag/through_local.xsl");
+var g_cttXsl = initXsl("../../xsl/trb_dag/contents.xsl");
+var g_tctXsl = initXsl("../../xsl/trb_dag/through_contents.xsl");
+var g_fsid   = null;
+var g_lsid   = null;
+var g_bp     = getParameterValue("bp");
+var g_bd     = getParameterValue("bd");
+var g_args = new Hashtable();
+
+// 手順IDにより要領表示を切り替える
+function displayContents(testid, readSToolResult) {
+	// scantoolフレーム表示処理
+	try {
+		scantool.closeTest();
+	} catch (e) {
+		// Do Nothing
+	}
+
+	if( (g_cttXml.selectNodes("//testgrp[@id='"+testid+"']/scantool").length>0) &&
+	    (parent.checkActiveX("AxPlug.ToolCopera.1","Please install the TaSCAN link object",false))
+	) {
+		Frame.rows="30, 280, *";
+		scantool.setTestId(testid);
+	} else {
+		Frame.rows="30, 0, *";
+	}
+	g_args.put("testid", testid);
+	display(g_cttXml, g_cttXsl, contents.disp, g_args);
+	contents.location.hash="ctop";
+	loadMemoData (contents.document,REPAIR);
+	// ScanToolの結果ファイル読込み表示
+	if( readSToolResult ){
+		scantool.dispResult(readResultFile(testid), g_lsid);
+	}
+}
+
+// ローカルナビ手順選択
+var idPath = new Array();
+var rsPath = new Array();
+var stPath = new Array();	// scanTool 実行有り or なし
+function result(from, to, str) {
+	stPath.push(isPlayTest(from));
+	idPath.push(from);
+	rsPath.push(str);
+	var h = new Hashtable();
+	for (var i = 0; i < idPath.length; i++) {
+		h.put("testid", idPath[i]);
+		h.put("testrs", rsPath[i]);
+		h.put("scan", stPath[i]);
+		iterateDisplay(g_cttXml, g_lclXsl, local.disp, h, i==0?true:false);
+	}
+	h.clear();
+	h.put("testid", to);
+	iterateDisplay(g_cttXml, g_lclXsl, local.disp, h, false);
+	displayContents(to, false);
+	g_lsid = to;
+}
+
+//
+// ローカルナビ以前選択した結果をクリック
+// 表示内容をキャッシュから取り出し表示する
+//
+function getCache(histKey) {
+	var h = new Hashtable();
+	var reverseIndex = 0;
+	local.disp.innerHTML="";
+	// scanTool 実行IDリストをクリア
+	clearTestId();
+	for (; reverseIndex < idPath.length; reverseIndex++) {
+		if (histKey==idPath[reverseIndex]) break;
+		h.put("testid", idPath[reverseIndex]);
+		h.put("testrs", rsPath[reverseIndex]);
+		h.put("scan", stPath[reverseIndex]);
+		// scanTool 実行していれば、IDを保持
+		if(stPath[reverseIndex]) addPlayTestId(idPath[reverseIndex]);
+		iterateDisplay(g_cttXml, g_lclXsl, local.disp, h, reverseIndex==0?true:false);
+	}
+	h.clear();
+	h.put("testid", idPath[reverseIndex]);
+	iterateDisplay(g_cttXml, g_lclXsl, local.disp, h, false);
+	displayContents(idPath[reverseIndex], false);
+	g_lsid = idPath[reverseIndex];
+
+	var delIds = new Array();
+	for (var i=idPath.length-1; i>=reverseIndex; i--) {
+		if( stPath[i] ){ delIds.push(idPath[i]); }
+		idPath.pop();
+		rsPath.pop();
+		stPath.pop();
+	}
+	// 履歴削除されたscanTool結果ファイルを削除
+	deleteFiles(delIds);
+}
+
+function printHistoryFrame(){
+	if(g_fsid==null) return;
+	if(g_lsid == null) g_lsid = g_fsid.nodeTypedValue;
+	var args = new Array(sts.disp.innerHTML, g_cttXml, idPath, rsPath, g_lsid);
+	setDisplayArgs(args);
+	openDialog("pdisplay", "prt_frame.html");
+}
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="global.html" scrolling="no" noresize frameborder="no">
+	<frameset cols="290, *" frameborder="yes" border="1" framespacing="1" bordercolor="#cccccc">
+		<frame name="local" src="local.html" frameborder="no" >
+		<frameset rows="30, 0, *" frameborder="no" border="0" framespaceing="0" name="Frame">
+			<frame name="sts" src="status.html" frameborder="no" scrolling="auto">
+			<frame name="scantool" src="scantool.html" frameborder="no">
+			<frame name="contents" src="contents.html" frameborder="no">
+		</frameset>
+	</frameset>
+</frameset>
+<noframes>
+	<body>Please use a browser that supports frames</body>
+</noframes>
+</html>

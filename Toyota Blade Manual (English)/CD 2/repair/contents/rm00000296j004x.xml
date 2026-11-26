@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="1000E_S000Q" variety="S000Q">
+<name>Ignition</name>
+<ttl id="1000E_S000Q_74XTQ_T00H0" variety="T00H0">
+<name>Ignition System (2GR-FE)</name>
+<para id="RM00000296J004X" category="N" type-id="8009I" name-id="142FP-00" from="200708">
+<name>Function Inspection</name>
+<subpara id="RM00000296J004X_01" type-id="01" category="01">
+<s-1 id="RM00000296J004X_01_0001" proc-id="RM0550J___0000FII00000">
+<ptxt>Inspect Ignition Coil Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Input Voltage Inspection</ptxt>
+<figure>
+<graphic graphicname="A178683J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Disconnect the ignition coil assembly connector.</ptxt>
+</s3>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), check the voltage between the terminals of the vehicle side connector of the ignition coil assembly.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1(+B) - 4(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+<s3>
+<ptxt>Turn IG OFF.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM00000296J004X_01_0002" proc-id="RM0550J___0000FIJ00000">
+<ptxt>Inspect Ignition Coil and Spark</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check DTC (see <xref label="Seep01" href="RM000001KT7004X"/>)</ptxt>
+<atten3>
+<ptxt>If a DTC is output, perform troubleshooting for the corresponding DTC.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>Inspect Spark</ptxt>
+<s3>
+<ptxt>Remove the V-bank cover. (see <xref label="Seep02" href="RM000002AY7005X_02_0089"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Remove the windshield wiper motor &amp; link assembly. (see <xref label="Seep03" href="RM000001XEQ003X_01_0014"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Remove the air cleaner cap w/ air cleaner hose. (see <xref label="Seep04" href="RM0000020UP00EX_02_0020"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Remove the intake air surge tank. (see <xref label="Seep05" href="RM000002ADF007X_01_0078"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Disconnect the 6 ignition coil assembly connectors.</ptxt>
+<figure>
+<graphic graphicname="A137059" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Remove the 6 bolts and the 6 ignition coil assemblies.</ptxt>
+<figure>
+<graphic graphicname="A136997" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Remove the 6 spark plugs.</ptxt>
+<figure>
+<graphic graphicname="A137058" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Install the spark plug to the ignition coil assembly and connect the connector.</ptxt>
+</s3>
+<s3>
+<ptxt>Ground the spark plug.</ptxt>
+<figure>
+<graphic graphicname="A137060" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Check that a spark occurs when the engine is cranked.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When inspecting, be sure to ground the hexagon or threaded portion of the spark plug.</ptxt>
+</item>
+<item>
+<ptxt>If the ignition coil has been subjected to an impact such as being dropped, replace it with a new one.</ptxt>
+</item>
+<item>
+<ptxt>Do not crank the engine for 2 seconds or more.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+<s3>
+<ptxt>Install the 6 spark plugs.</ptxt>
+<figure>
+<graphic graphicname="A137058" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<torque>
+<torqueitem>
+<t-value1>18</t-value1>
+<t-value2>184</t-value2>
+</torqueitem>
+</torque>
+</s3>
+<s3>
+<ptxt>Install the 6 ignition coil assemblies with the 6 bolts.</ptxt>
+<figure>
+<graphic graphicname="A136997" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<torque>
+<torqueitem>
+<t-value1>10</t-value1>
+<t-value2>102</t-value2>
+</torqueitem>
+</torque>
+</s3>
+<s3>
+<ptxt>Connect the 6 ignition coil assembly connectors.</ptxt>
+<figure>
+<graphic graphicname="A137059" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Install the intake air surge tank. (see <xref label="Seep08" href="RM0000020UQ00GX_01_0088"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Install the air cleaner cap w/ air cleaner hose. (see <xref label="Seep09" href="RM0000020UM00FX_01_0011"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Remove the windshield wiper motor &amp; link assembly. (see <xref label="Seep06" href="RM000002AY5004X_01_0240"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Remove the V-bank cover. (see <xref label="Seep07" href="RM000002AY5004X_01_0114"/>)</ptxt>
+<atten3>
+<ptxt>After completing the work, be sure to clear the stored DTCs once and then check that the normal code is output.</ptxt>
+</atten3>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM00000296J004X_01_0004" proc-id="RM0550J___0000HIS00000">
+<ptxt>Inspect Spark Plug</ptxt>
+<content1 releasenbr="1">
+<table>
+<title>Spark Plug Type</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Manufacturer</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Type</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DENSO</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SK20HR11</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<figure>
+<graphic graphicname="A090917J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s2>
+<ptxt>Visual Inspection</ptxt>
+<s3>
+<ptxt>Inspect the spark plug for damaged threads and damaged insulator.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Do not damage the iridium.</ptxt>
+</item>
+<item>
+<ptxt>If it is significantly dirty due to carbon fouling or similar, replace it with a new spark plug.</ptxt>
+</item>
+<item>
+<ptxt>When replacing with a new spark plug, do not remove the cap covering the tip for protection until it is installed to the engine.</ptxt>
+</item>
+<item>
+<ptxt>If a spark plug is dropped, replace it with a new one.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+</s2>
+<s2>
+<ptxt>Spark Plug Gap</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>1.1mm</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Limit</title>
+<specitem>
+<ptxt>1.3mm</ptxt>
+</specitem>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Because iridium is used, do not adjust the gap.</ptxt>
+</item>
+<item>
+<ptxt>Do not damage the iridium.</ptxt>
+</item>
+<item>
+<ptxt>If it is more than the limit, the iridium is worn, so replace the spark plug.</ptxt>
+</item>
+</list1>
+</atten3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

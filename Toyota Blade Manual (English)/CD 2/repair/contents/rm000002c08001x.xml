@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001C_S000C" variety="S000C">
+<name>Audio &amp; Visual</name>
+<ttl id="1001C_S000C_742AJ_T002U" variety="T002U">
+<name>Steering Pad Switch Assembly (4-spoke Steering Wheel)</name>
+<para id="RM000002C08001X" category="G" type-id="3001K" name-id="641K7-00" from="200612" to="200912">
+<name>Component Inspection</name>
+<subpara id="RM000002C08001X_01" type-id="01" category="01">
+<s-1 id="RM000002C08001X_01_0001" proc-id="RM0550J___00001E600000">
+<ptxt>Inspect Steering Pad Switch Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Resistance Inspection</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), inspect the resistance between each terminal of the steering pad switch assembly connector when the audio switches are operated.</ptxt>
+<figure>
+<graphic graphicname="E146629J04" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" align="center" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="4" valign="middle">
+<ptxt>10(AU1) - 8(EAU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No switch pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approximately 100K Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SEEK+ switch pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2.5 Ω or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SEEK- switch pressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approximately 0.3K Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VOL+ switch pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approximately 1K Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VOL- switch pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approximately 3.1K Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="4" valign="middle">
+<ptxt>9(AU2) - 8(EAU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No switch pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approximately 100K Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MODE switch pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2.5 Ω or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>On-hook switch pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approximately 0.3K Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Off-hook switch pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approximately 1K Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VOICE switch pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approximately 3.1K Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>Illumination Inspection (Night Illumination)</ptxt>
+<s3>
+<ptxt>Check that the illumination in the steering pad switch assembly comes on when battery positive is connected to terminal 5 (IL+2) and battery negative to terminal 8 (EAU).</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Comes on</ptxt>
+</specitem>
+</spec>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

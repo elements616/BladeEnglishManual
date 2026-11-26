@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740072p SYSTEM "grph_ent/a4740072p.png" NDATA png>
+<!ENTITY a4740073p SYSTEM "grph_ent/a4740073p.png" NDATA png>
+
+<!ENTITY T010054A076 SYSTEM "t478010054a076.xml">
+<!ENTITY T010054A076A223 SYSTEM "t478010054a076a223.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010054A076S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010054A076" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Hot-wire Type Air Flow Meter</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A compact, lightweight plastic hot-wire type plug-in air flow meter has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>The hot-wire type plug-in air flow meter passes part of the intake air through the detection section and directly measures the mass flow rate, improving detection accuracy and reducing intake resistance.</PTXT></ITEM>
+<ITEM><PTXT>It uses bypass flow measurement, which is less affected by intake pulsation from the air cleaner. Also, low loss is achieved by a flow passage structure with low fluid resistance, allowing air volumes from small to large to be measured reliably.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T010054A076A223" UPDATE = "ORIGINAL" LDUP = "29Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Hot-wire Type Air Flow Meter Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Part of the intake air is bypassed and the intake air volume is measured at the hot wire measuring section. The hot wire measuring section uses a platinum filament (platinum hot wire), and a bridge circuit is formed by the hot wires of the intake air temperature measuring resistor and the heating resistor (heater) to measure the engine intake air volume. Due to the characteristics of the hot-wire type air flow meter, the mass flow rate can in principle be measured directly, so density correction for changes in intake air temperature is not necessary; however, intake air temperature information is required for engine controls such as EFI. Therefore, a compact thermistor type intake air temperature sensor is built into the air flow meter to detect the intake air temperature.</PTXT></ITEM>
+<ITEM><PTXT>A bridge circuit is a circuit connected as shown in the illustration below, in which, when R1 × R4 = R2 × R3 holds, V1 = V2 and the value indicated by ammeter G is 0.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740072p" WIDTH = "6.903in" HEIGHT = "2.986in" />
+</FIGURE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the intake air volume changes, the bridge circuit of the hot wire measuring section feedback-controls the power supplied to the heating resistor so that the temperature difference between the intake air temperature measuring resistor and the heating resistor (heater) is always kept constant. This supplied power is converted into a voltage and output to the engine control computer. The engine control computer calculates the engine intake air volume from the predetermined relationship between the air flow meter output voltage and flow rate.</PTXT></ITEM>
+<ITEM><PTXT>The bridge circuit of the hot-wire type air flow meter is constructed as shown in the illustration below. For example, when the intake air volume increases, the heating resistor is cooled and the value of RH decreases, resulting in RH (R1) × R4 &lt; RK (R2) × R3,VM ≠ VK. When the control section detects this condition, it increases the current flowing from the power supply to VB (heating RH) and controls so that RH (R1) × R4 = RK (R2) × R3,VM = VK.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740073p" WIDTH = "6.903in" HEIGHT = "6.250in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

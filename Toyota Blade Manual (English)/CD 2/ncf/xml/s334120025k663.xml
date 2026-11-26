@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740387b SYSTEM "grph_ent/a4740387b.png" NDATA png>
+<!ENTITY a4740196b SYSTEM "grph_ent/a4740196b.png" NDATA png>
+<!ENTITY a4740195b SYSTEM "grph_ent/a4740195b.png" NDATA png>
+<!ENTITY a4740191b SYSTEM "grph_ent/a4740191b.png" NDATA png>
+<!ENTITY a4740193b SYSTEM "grph_ent/a4740193b.png" NDATA png>
+<!ENTITY a4740192b SYSTEM "grph_ent/a4740192b.png" NDATA png>
+
+<!ENTITY T120025K663 SYSTEM "t334120025k663.xml">
+<!ENTITY T120025K663K869 SYSTEM "t334120025k663k869.xml">
+<!ENTITY T120025K663K872 SYSTEM "t334120025k663k872.xml">
+<!ENTITY T120025K663Kc24 SYSTEM "t334120025k663kc24.xml">
+<!ENTITY T120025K663K871 SYSTEM "t334120025k663k871.xml">
+<!ENTITY T120025K663T028 SYSTEM "t334120025k663t028.xml">
+<!ENTITY T120025K663Kc26 SYSTEM "t334120025k663kc26.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120025K663S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120025K663" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Multi-information Display Cruise Information Display Mode</TITLE>
+
+<MECA ID = "T120025K663K869" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF" UNPRINT = "ON">
+<TITLE>Display Flow in Cruise Information Display Mode</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>With the power source mode ON, the cruise information mode is displayed.</PTXT></ITEM>
+<ITEM><PTXT>Each time the DISP switch is turned ON, the display item changes in the following order.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740387b" WIDTH = "6.903in" HEIGHT = "3.556in" /><FIGCAPTION><L ja="平均燃費 12.8km/ℓ">Average fuel economy 12.8 km/L</L><L ja="DISPスイッチON">DISP switch ON</L><L ja="外気温">Outside temperature</L><L ja="通算平均燃費">Cumulative average fuel economy</L><L ja="瞬間燃費">Instant fuel economy</L><L ja="航続可能距離">Cruising range</L><L ja="日付/時計">Date/clock</L><L ja="平均車速 30km/h">Average speed 30 km/h</L><L ja="走行時間 10:58">Driving time 10:58</L><L ja="設定">Settings</L><L ja="通算平均車速">Cumulative average speed</L><L ja="設定案内">Settings guide</L><L ja="通算平均時間">Cumulative average time</L><L ja="クルーズインフォメー">Cruise information</L><L ja="ション表示モード">display mode</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K663K872" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Current Fuel Consumption Display Mode</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740196b" WIDTH = "6.903in" HEIGHT = "1.250in" />
+</FIGURE>
+<SPEC ID = "T120025K663K872X01" INDSW = "OFF">
+<TITLE>Current Fuel Consumption Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "83%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Display Range</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>0.0~30.0km/L</PTXT></ITEM>
+<ITEM><PTXT>Bar Graph Display</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The meter computer calculates and displays the current fuel consumption from the driving distance and fuel consumption for every 20 engine revolutions.</PTXT></ITEM>
+<ITEM><PTXT>If a communication malfunction or input signal malfunction occurs, the display is blank (no display).</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC></MECA>
+
+<MECA ID = "T120025K663Kc24" UPDATE = "ORIGINAL" LDUP = "26Jun2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Cumulative Average Fuel Consumption Display Mode</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740195b" WIDTH = "6.903in" HEIGHT = "1.250in" />
+</FIGURE>
+<SPEC ID = "T120025K663Kc24X01" INDSW = "OFF">
+<TITLE>Cumulative Average Fuel Consumption Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "83%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Display Range</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>0.0~99.9km/L</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The meter computer calculates and displays the average fuel consumption from the accumulated driving distance and accumulated fuel injection volume since +B connection or reset.</PTXT></ITEM>
+<ITEM><PTXT>With the power source mode ON, the previous data is displayed. (After +B reconnection, 0.0km/L is displayed.)</PTXT></ITEM>
+<ITEM><PTXT>If a communication malfunction or input signal malfunction occurs, the display is blank (no display).</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Reset Operation</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Pressing the DISP switch for approximately 0.8 seconds or more resets the cumulative average fuel consumption data.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC></MECA>
+
+<MECA ID = "T120025K663K871" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Cruising Range Display Mode</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740191b" WIDTH = "6.903in" HEIGHT = "1.250in" />
+</FIGURE>
+<SPEC ID = "T120025K663K871X01" INDSW = "OFF">
+<TITLE>Cruising Range Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "83%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Display Range</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>0~999km</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The meter computer calculates the fuel consumption from the engine speed, fuel injection volume, etc., and calculates and displays the cruising range from the current fuel level signal.</PTXT></ITEM>
+<ITEM><PTXT>With the power source mode ON, the previous data is displayed.</PTXT></ITEM>
+<ITEM><PTXT>If a communication malfunction or input signal malfunction occurs, the display is blank (no display).</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC></MECA>
+
+<MECA ID = "T120025K663T028" UPDATE = "ORIGINAL" LDUP = "16Nov2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Average Vehicle Speed Display Mode</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740193b" WIDTH = "6.903in" HEIGHT = "1.250in" />
+</FIGURE>
+<SPEC ID = "T120025K663T028X01" INDSW = "OFF">
+<TITLE>Cumulative Average Vehicle Speed Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "83%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Display Range</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>0~300km/h</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The meter computer calculates and displays the cumulative average vehicle speed from the accumulated engine running time and accumulated driving distance since +B connection or reset.</PTXT></ITEM>
+<ITEM><PTXT>With the power source mode ON, the previous data is displayed. (After +B reconnection, 0km/h is displayed.)</PTXT></ITEM>
+<ITEM><PTXT>If a communication malfunction or input signal malfunction occurs, the display is blank (no display).</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Reset Operation</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Pressing the DISP switch for approximately 0.8 seconds or more resets the cumulative average vehicle speed data.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC></MECA>
+
+<MECA ID = "T120025K663Kc26" UPDATE = "ORIGINAL" LDUP = "29Jun2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Cumulative Driving Time Display Mode</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740192b" WIDTH = "6.903in" HEIGHT = "1.250in" />
+</FIGURE>
+<SPEC ID = "T120025K663Kc26X01" INDSW = "OFF">
+<TITLE>Cumulative Driving Time Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "83%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Display Range</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>0:00~99:59</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The clock in the combination meter accumulates and displays the time during which the engine is running.</PTXT></ITEM>
+<ITEM><PTXT>When 99:59 is reached, the display continues from 0:00.</PTXT></ITEM>
+<ITEM><PTXT>With the power source mode ON, the previous data is displayed. (After +B reconnection, 0:00 is displayed.)</PTXT></ITEM>
+<ITEM><PTXT>If a communication malfunction or input signal malfunction occurs, the display is blank (no display).</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Reset Operation</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Pressing the DISP switch for approximately 0.8 seconds or more resets the cumulative driving time data.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC></MECA>
+</PARA>
+</SECTION>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_74WIJ_T00FO" variety="T00FO">
+<name>EFI System (2GR-FE)</name>
+<para id="X3870000163010C" category="C" type-id="302Z4" name-id="066OG-00" from="200708">
+<dtccode>P2102/41</dtccode>
+<dtcname>Throttle Motor Open Circuit</dtcname>
+<dtccode>P2103/41</dtccode>
+<dtcname>Throttle Motor Short</dtcname>
+<subpara id="X3870000163010C_10" type-id="31" category="03" proc-id="RM0550J___0000DB200000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>The accelerator pedal opening angle is transmitted to the engine control computer by the accelerator pedal position sensor mounted on the accelerator pedal. The engine control computer determines the throttle opening angle appropriate to the driving conditions and drives the throttle motor. The throttle valve opening angle is fed back to the engine control computer by the throttle position sensor. When this DTC is stored, the engine control computer cuts off the current to the throttle motor, and the throttle valve is returned to a predetermined opening angle (6°) by the return spring. Also, fuel injection cut and ignition retard adjust the engine output according to the accelerator opening angle, enabling fail-safe driving.</ptxt>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.498008     in"/>
+<colspec colnum="02" colname="C02" colwidth="3.154628     in"/>
+<colspec colnum="03" colname="C03" colwidth="2.494272     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+<item>
+<ptxt>Malfunction Duration</ptxt>
+</item>
+<item>
+<ptxt>Others</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P2102/41</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>Throttle motor energized</ptxt>
+</item>
+<item>
+<ptxt>Throttle motor output duty 80% or more and throttle motor current less than 0.5A (throttle motor circuit open)</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Throttle Body Assembly (with Motor)</ptxt>
+<ptxt>(Throttle Motor)</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P2103/41</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>Throttle motor energized</ptxt>
+</item>
+<item>
+<ptxt>Throttle motor current 7A or more (throttle motor circuit short)</ptxt>
+</item>
+<item>
+<ptxt>0.6 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Throttle Body Assembly (with Motor)</ptxt>
+<ptxt>(Throttle Motor)</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="X3870000163010C_11" type-id="32" category="03" proc-id="RM0550J___0000DB300000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A160632J09" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="X3870000163010C_12" type-id="51" category="05" proc-id="RM0550J___0000DB400000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Using SST (TaSCAN), read the freeze frame data. Freeze frame data records part of the engine operating condition when the malfunction occurred, and this information is useful when troubleshooting.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="X3870000163010C_13" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="X3870000163010C_13_0020" proc-id="RM0550J___0000DB800000">
+<scantool type="8"/>
+<testtitle>Perform TaSCAN Active Test (Electronic Throttle Drive)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and, following the SST (TaSCAN) screen display, select the Active Test item [Electronic Throttle Drive (Slow)] or [Electronic Throttle Drive (Fast)] from [Diagnosis Function Menu] → [Active Test].</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Active Test Command</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Throttle valve condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Throttle open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Throttle valve opens</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Throttle closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Throttle valve closes</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>The throttle valve can also be driven by operating the accelerator pedal with the IG ON, but perform the Active Test, read the data monitor items [Throttle Sensor Opening Angle] and [Throttle Sensor Voltage], and also check them as values recognized by the ECU.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="X3870000163010C_13_0018" fin="true">OK</down>
+<right ref="X3870000163010C_13_0002" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="X3870000163010C_13_0002" proc-id="RM0550J___0000DB500000">
+<testtitle>Inspect Throttle Body Assembly (w/ Motor)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the throttle body assembly (with motor) connector.</ptxt>
+<figure>
+<graphic graphicname="A059778J13" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.69in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1(M-) - 2(M+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.3 to 100Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X3870000163010C_13_0003" fin="false">OK</down>
+<right ref="X3870000163010C_13_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X3870000163010C_13_0003" proc-id="RM0550J___0000DB600000">
+<testtitle>Inspect Wire Harness and Connector (Engine Control Computer - Throttle Body Assembly (w/ Motor))</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+<figure>
+<graphic graphicname="A162189J04" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals. (see <xref label="Seep02" href="X39400000QV01SD"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.18in"/>
+<colspec colname="COL2" colwidth="0.99in"/>
+<colspec colname="COL3" colwidth="0.96in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A19(M+) - 2(M+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A18(M-) - 1(M-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.18in"/>
+<colspec colname="COL2" colwidth="0.99in"/>
+<colspec colname="COL3" colwidth="0.96in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A19 (M+) and 2 (M+) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A18 (M-) and 1 (M-) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X3870000163010C_13_0021" fin="false">OK</down>
+<right ref="X3870000163010C_13_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X3870000163010C_13_0021" proc-id="RM0550J___0000DB900000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG ON and clear the DTCs following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM0000008YS014X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="X3870000163010C_13_0017" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="X3870000163010C_13_0017" proc-id="RM0550J___0000DB700000">
+<scantool type="1"/>
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Perform a road test.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and check for DTCs following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM0000008YS014X"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.06in"/>
+<colspec colname="COL2" colwidth="1.07in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2102/41, P2103/41 displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Normal code displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X3870000163010C_13_0008" fin="true">A</down>
+<right ref="X3870000163010C_13_0019" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="X3870000163010C_13_0008">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADB004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X3870000163010C_13_0018">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000CD101YX"/>
+</testtitle>
+</testgrp>
+<testgrp id="X3870000163010C_13_0005">
+<testtitle>Replace Throttle Body Assembly (w/ Motor)<xref label="Seep01" href="RM0000020UO00AX"/>
+</testtitle>
+</testgrp>
+<testgrp id="X3870000163010C_13_0006">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="X3870000163010C_13_0019">
+<testtitle>System Normal</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

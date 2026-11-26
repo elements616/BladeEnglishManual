@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10024_S000T" variety="S000T">
+<name>Starting</name>
+<ttl id="10024_S000T_744HN_T007Z" variety="T007Z">
+<name>Smart Entry &amp; Start System (Start System)</name>
+<para id="X39400000IF00QC" category="C" type-id="304N4" name-id="161XF-00" from="200612">
+<dtccode>B2284</dtccode>
+<dtcname>Brake Signal Malfunction</dtcname>
+<subpara id="X39400000IF00QC_10" type-id="31" category="03" proc-id="RM0550J___00008AV00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>This DTC is output when there is a mismatch between the signal on the direct line in the circuit between the instrument panel J/B (main body ECU) and the stop light switch assembly, and the signal on the multiplex communication line (CAN) between the instrument panel J/B (main body ECU) and the engine control computer (engine ECU).</ptxt>
+</item>
+</list1>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When using the TaSCAN with the IG OFF, repeatedly turn any door courtesy light switch ON and OFF (at intervals of 1.5 seconds or less) until communication between the TaSCAN and the vehicle starts.</ptxt>
+</item>
+<item>
+<ptxt>The Smart Entry &amp; Start System (start system) has functions that use multiplex communication. First, follow "How to Proceed with Troubleshooting" and confirm that there is no malfunction in the communication system before proceeding with troubleshooting.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>When the instrument panel J/B (main body ECU) is replaced with a new ECU and the battery negative terminal is connected, it enters the IG ON state. Also, when the battery is removed and reinstalled, the power source returns to the state it was in when the battery was removed.</ptxt>
+</atten4>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.01in"/>
+<colspec colnum="02" colname="C02" colwidth="3.07in"/>
+<colspec colnum="03" colname="C03" colwidth="3.00in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC NO.</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>B2284</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Mismatch between the direct line between the instrument panel J/B (main body ECU) and stop light switch assembly, and the multiplex communication signal between the instrument panel J/B (main body ECU) and engine control computer (engine ECU)</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Instrument Panel J/B Assembly (Main Body ECU)</ptxt>
+</item>
+<item>
+<ptxt>STOP 10A fuse</ptxt>
+</item>
+<item>
+<ptxt>Stop Light Switch Assembly</ptxt>
+</item>
+<item>
+<ptxt>EFI System</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="X39400000IF00QC_11" type-id="32" category="03" proc-id="RM0550J___00008AW00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A152494J03" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="X39400000IF00QC_12" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="X39400000IF00QC_13" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="X39400000IF00QC_13_0001" proc-id="RM0550J___00008AX00000">
+<testtitle>Read TaSCAN Data</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>ECU Data Monitor</ptxt>
+<test2>
+<ptxt>Using SST (TaSCAN), perform data monitoring of the instrument panel J/B (main body ECU).</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<title>[System selection screen: Body → Main Body → ECU Data Monitor]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.25in"/>
+<colspec colname="COL2" colwidth="1.88in"/>
+<colspec colname="COL3" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Stop Light SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Brake pedal depressed/not depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="X39400000IF00QC_13_0009" fin="true">OK</down>
+<right ref="X39400000IF00QC_13_0013" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000IF00QC_13_0013" proc-id="RM0550J___00008B100000">
+<testtitle>Inspect Fuse</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the STOP 10A fuse.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="X39400000IF00QC_13_0002" fin="false">OK</down>
+<right ref="X39400000IF00QC_13_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000IF00QC_13_0002" proc-id="RM0550J___00008AY00000">
+<testtitle>Inspect Stop Light Switch Assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<figure>
+<graphic graphicname="A161615J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test2>
+<ptxt>Disconnect the stop light switch assembly connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), inspect the resistance between the connector terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COLSPEC0" colwidth="1.00in"/>
+<colspec colname="COL1" colwidth="2.06in"/>
+<colspec colname="COL3" colwidth="1.07in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Switch Operation</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shaft not pushed in</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shaft pushed in</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="X39400000IF00QC_13_0003" fin="false">OK</down>
+<right ref="X39400000IF00QC_13_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000IF00QC_13_0003" proc-id="RM0550J___00008AZ00000">
+<testtitle>Inspect Wire Harness (Stop Light Switch Assembly - Instrument Panel J/B (Main Body ECU))</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Resistance/Voltage Inspection</ptxt>
+<figure>
+<graphic graphicname="A152983J03" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Disconnect the instrument panel J/B (main body ECU) connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), inspect the resistance between the terminals of the vehicle side wire harness connector.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.23in"/>
+<colspec colname="COLSPEC0" align="left" colwidth="0.95in"/>
+<colspec colname="COL2" colwidth="0.95in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Main Body ECU - Switch)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>V14(STP) - 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), inspect the resistance between each terminal of the vehicle side wire harness connector and body ground.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.24in"/>
+<colspec colname="COLSPEC1" colwidth="0.94in"/>
+<colspec colname="COL2" colwidth="0.95in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Main Body ECU or Switch - Body Ground)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>V14 (STP) or 1 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Connect the stop light switch assembly connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), inspect the voltage between the vehicle side wire harness connector terminal and body ground.</ptxt>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.18in"/>
+<colspec colname="COL3" colwidth="1.31in"/>
+<colspec colname="COL4" colwidth="1.64in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>K14 (STP) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake pedal not depressed → depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1V or less → { (AM1 or AM2) - 2V} or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="X39400000IF00QC_13_0004" fin="true">OK</down>
+<right ref="X39400000IF00QC_13_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000IF00QC_13_0004">
+<testtitle>Replace Instrument Panel Junction Block Assembly</testtitle>
+</testgrp>
+<testgrp id="X39400000IF00QC_13_0009">
+<testtitle>Go to EFI System<xref label="Seep01" href="X39400000QQ017D"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000IF00QC_13_0014">
+<testtitle>Replace Fuse</testtitle>
+</testgrp>
+<testgrp id="X39400000IF00QC_13_0006">
+<testtitle>Replace Stop Light Switch Assembly</testtitle>
+</testgrp>
+<testgrp id="X39400000IF00QC_13_0007">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

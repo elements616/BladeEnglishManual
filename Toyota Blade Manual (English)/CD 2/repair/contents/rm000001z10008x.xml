@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="60001_S0006" variety="S0006">
+<name>Body Multiplex Communication [LIN]</name>
+<ttl id="60001_S0006_741KA_T000J" variety="T000J">
+<name>Large-scale Body Multiplex Communication System [LIN]</name>
+<para id="RM000001Z10008X" category="C" type-id="801Q1" name-id="940AK-00" from="200612">
+<dtccode>B2323</dtccode>
+<dtcname>Rear RH motor ECU not connected</dtcname>
+<subpara id="RM000001Z10008X_01" type-id="31" category="03" proc-id="RM0550J___000009100000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The instrument panel junction block assembly (main body ECU) outputs this code when communication with the power window regulator motor assembly RH (rear) [power window ECU] is interrupted for 10 seconds or more. </ptxt>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.01in"/>
+<colspec colnum="02" colname="C02" colwidth="2.77in"/>
+<colspec colnum="03" colname="C03" colwidth="3.30in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>B2323</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>When there is a communication error or a communication line malfunction between the power window regulator motor assembly RH (rear) [power window ECU] and the instrument panel junction block assembly (main body ECU)</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Fuse (RR DOOR 20A)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Instrument Panel Junction Block Assembly (Main Body ECU)</ptxt>
+</item>
+<item>
+<ptxt>Power Window Regulator Motor Assembly RH (Rear) [Power Window ECU]</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001Z10008X_02" type-id="32" category="03" proc-id="RM0550J___000009200000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B162408J03" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001Z10008X_03" type-id="51" category="05" proc-id="RM0550J___000009300000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When using SST (TaSCAN) with the ignition switch OFF, repeatedly turn any door courtesy light switch ON/OFF (at intervals of 1.5 seconds or less) until communication between SST (TaSCAN) and the vehicle starts.</ptxt>
+</item>
+<item>
+<ptxt>When the main body ECU is replaced with a new one and the battery negative terminal is reconnected, it enters the IG ON state. Also, when the battery is removed and reinstalled, it returns to the state it was in when the battery was removed.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001Z10008X_06" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000001Z10008X_06_0020" proc-id="RM0550J___000009400000">
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), clear the DTCs. (see <xref label="Seep01" href="RM000000693012X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001Z10008X_06_0021" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001Z10008X_06_0021" proc-id="RM0550J___000009500000">
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs. (see <xref label="Seep01" href="RM000000693012X"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.60in"/>
+<colspec colname="COL2" colwidth="1.53in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC B2323 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC B2323 is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001Z10008X_06_0022" fin="false">A</down>
+<right ref="RM000001Z10008X_06_0027" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001Z10008X_06_0022" proc-id="RM0550J___000009600000">
+<testtitle>Inspect Fuse</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance of the fuse.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Inspection Fuse</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>RR DOOR fuse</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001Z10008X_06_0023" fin="false">OK</down>
+<right ref="RM000001Z10008X_06_0028" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001Z10008X_06_0023" proc-id="RM0550J___000009700000">
+<testtitle>Inspect Wire Harness or Connector (Power Source and Ground)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="B133286J06" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test1>
+<ptxt>Disconnect the connector of the power window regulator motor assembly RH (rear) [power window ECU].</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage of the vehicle side wire harness connector terminal.</ptxt>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.85in"/>
+<colspec colname="COL2" colwidth="1.15in"/>
+<colspec colname="COL3" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2 (B) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance of the vehicle side wire harness connector terminal.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.83in"/>
+<colspec colname="COL2" colwidth="1.16in"/>
+<colspec colname="COL3" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001Z10008X_06_0024" fin="false">OK</down>
+<right ref="RM000001Z10008X_06_0029" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001Z10008X_06_0024" proc-id="RM0550J___000009800000">
+<testtitle>Inspect Wire Harness or Connector (Instrument Panel Junction Block Assembly - Power Window Regulator Motor Assembly RH)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="B162412J03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<test1>
+<ptxt>Disconnect connector V of the instrument panel junction block assembly (main body ECU) and the connector of the power window regulator motor assembly RH (rear) [power window ECU].</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the vehicle side wire harness connector.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.99in"/>
+<colspec colname="COL2" colwidth="1.11in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+<ptxt>(Main Body ECU - Power Window ECU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>V23(LIN2) - 9(LIN)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.00in"/>
+<colspec colname="COL2" colwidth="1.10in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+<ptxt>(Power Window ECU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>9 (LIN) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001Z10008X_06_0025" fin="false">OK</down>
+<right ref="RM000001Z10008X_06_0029" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001Z10008X_06_0025" proc-id="RM0550J___000009900000">
+<testtitle>Replace with Known Good Rear RH Power Window ECU</testtitle>
+<content6 releasenbr="2">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Replace the power window regulator motor assembly RH (rear) [power window ECU] with a known good one. (see <xref label="Seep02" href="RM000000ABY03DX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), clear the DTCs. (see <xref label="Seep01" href="RM000000693012X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001Z10008X_06_0026" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001Z10008X_06_0026" proc-id="RM0550J___000009A00000">
+<testtitle>Recheck DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs again. (see <xref label="Seep01" href="RM000000693012X"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.74in"/>
+<colspec colname="COL2" colwidth="1.39in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC B2323 is not output again</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC B2323 is output again</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001Z10008X_06_0031" fin="true">A</down>
+<right ref="RM000001Z10008X_06_0030" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001Z10008X_06_0027">
+<testtitle>Go to Problem Symptom Simulation Method<xref label="Seep01" href="RM000000ABY03DX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001Z10008X_06_0028">
+<testtitle>Replace Fuse</testtitle>
+</testgrp>
+<testgrp id="RM000001Z10008X_06_0029">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000001Z10008X_06_0030">
+<testtitle>Replace Instrument Panel Junction Block Assembly (Main Body ECU)</testtitle>
+</testgrp>
+<testgrp id="RM000001Z10008X_06_0031">
+<testtitle>End (rear RH power window ECU malfunction)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

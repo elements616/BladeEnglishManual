@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1002B_S001H" variety="S001H">
+<name>Automatic Transaxle</name>
+<ttl id="1002B_S001H_74Y1E_T00HP" variety="T00HP">
+<name>Shift Lock Control Unit Assembly (U660E)</name>
+<para id="RM0000024M2004X" category="G" type-id="3001K" name-id="261JS-00" from="200708">
+<name>Component Inspection</name>
+<subpara id="RM0000024M2004X_02" type-id="01" category="01">
+<s-1 id="RM0000024M2004X_02_0002" proc-id="RM0550J___0000HEV00000">
+<ptxt>Inspect Shift Lock Control Unit Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Shift Lock Control Computer Inspection</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before measuring, inspect the power supply (11 to 14V with ignition switch ON) and ground (5 Ω or less between each ground terminal and the engine/body with ignition switch OFF).</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>With the connector connected to the computer, inspect from the wire harness side of the connector.</ptxt>
+</item>
+</list1>
+</atten3>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance or voltage between each terminal.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="C117246J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.38in"/>
+<colspec colname="COL4" colwidth="2.38in"/>
+<colspec colname="COL5" colwidth="2.32in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>12(IG) - 3(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> 11 to14V</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>12(IG) - 3(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0V</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>6(STP) - 3(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Brake pedal depressed (switch ON)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>6(STP) - 3(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Brake pedal released (switch OFF)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COLSPEC0" colwidth="2.36in"/>
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 (E) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>Transmission Control Switch Inspection</ptxt>
+<s3>
+<ptxt>Disconnect the transmission control switch connector.</ptxt>
+</s3>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.  </ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="C136968J07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>5(SFTU) - 11(E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sequential gate shifted to "+"</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>5(SFTU) - 11(E) </ptxt>
+<ptxt>4(SFTD) - 11(E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sequential gate in neutral position (M position)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4(SFTD) - 11(E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sequential gate shifted to "-"</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>Shift Lock Solenoid Inspection</ptxt>
+<s3>
+<ptxt>Disconnect the shift lock solenoid connector.</ptxt>
+</s3>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="C097709J04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COLSPEC1" colwidth="1.37in"/>
+<colspec colname="COL1" colwidth="1.37in"/>
+<colspec colname="COLSPEC0" colwidth="1.39in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>4(P) - 3(E2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift position in P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4(P) - 3(E2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift position in any position other than P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC2" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1(SLS+) - 2(SLS-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>112 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="RM00000211600GX" category="C" type-id="800K4" name-id="065AD-00" from="200612">
+<dtccode>P1605</dtccode>
+<dtcname>Unstable Idling</dtcname>
+<subpara id="RM00000211600GX_01" type-id="31" category="03" proc-id="RM0550J___00002W900000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The DTC is output when the idle speed drops or becomes unstable from a state in which the engine load is small and the engine is idling stably. The freeze frame data, which stores the conditions when the DTC was output, can be checked using TaSCAN. Serviceability is improved by making it possible to check the engine operating condition at the time of unstable idling using the freeze frame data. Also, since unstable idling caused by running out of fuel is also detected, it is necessary to check whether the vehicle has run out of fuel before starting work.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="5.66in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction duration 3. Malfunction status 4. Other</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P1605</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>5 seconds after ISC learning is completed after engine start</ptxt>
+</item>
+<item>
+<ptxt>Engine speed drops to 400r/min or less</ptxt>
+</item>
+<item>
+<ptxt>-</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000211600GX_02" type-id="51" category="05" proc-id="RM0550J___00002WA00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If other DTCs are displayed, troubleshoot the corresponding DTCs first.</ptxt>
+</item>
+<item>
+<ptxt>Since DTC P1605 differs from conventional diagnostic trouble codes, the diagnostic procedure below is described as 1 possible method.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM00000211600GX_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000211600GX_03_0001" proc-id="RM0550J___00002WB00000">
+<scantool type="1"/>
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs by following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.65in"/>
+<colspec colname="COL2" colwidth="1.48in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Only P1605 is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Other DTCs are displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000211600GX_03_0002" fin="false">A</down>
+<right ref="RM00000211600GX_03_0003" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000211600GX_03_0002" proc-id="RM0550J___00002WC00000">
+<testtitle>Check Freeze Frame Data</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>Use the time-series freeze frame data to check the data at and after DTC detection, to assist with troubleshooting.</ptxt>
+</atten4>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the screen display of SST (TaSCAN), check the time-series freeze frame data, and check the vehicle condition at the time of unstable idling. (see <xref label="Seep02" href="RM000000CD201DX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Check the freeze frame data for when the engine is cold / warmed up.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Abbreviation</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Coolant Temperature</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>THW</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Coolant Temperature at Start</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>THWS</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Check the freeze frame data for the idling condition.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Abbreviation</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ESPD</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Idle SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IDL</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Neutral Start SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NSW</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Check the freeze frame data for purge VSV operation.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Abbreviation</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Purge VSV Drive Duty Ratio</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>EVAP</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Purge Rate</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PRF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Purge Concentration Learned Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PRD</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Purge VSV</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PRG</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Check the freeze frame data for the idle control condition.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Abbreviation</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Throttle Opening (ECU Recognized Value)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>THP0</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ISC Flow Rate</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ISCF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ISC Opening</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ISCO</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Idle Stabilization Advance (1 Cylinder)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IDA#1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Idle Stabilization Advance (2 Cylinder)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IDA#2</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Idle Stabilization Advance (3 Cylinder)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IDA#3</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Idle Stabilization Advance (4 Cylinder)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IDA#4</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ISC Feedback Amount</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ISCFB</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ISC learned value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ISCLV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Electrical Load Correction Amount</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ELOCP</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/C Correction Amount</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A/CCP</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Speed Drop Control Judgment Status</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>RDCF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>N Range Control Status</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Neutral Judgment</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NJDG</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Check the freeze frame data for engine load / electrical load.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Abbreviation</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Load Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CALO</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Electrical Load Signal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ELS</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/C Signal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A/C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Power Steering SW </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PSSW</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Check the items above and perform a reproduction test.</ptxt>
+</test1>
+<test1>
+<ptxt>Based on each freeze data and reproduction test, compare with the reference values in the ECU Data Monitor list (<xref label="Seep01" href="RM000000CCZ02NX"/>) to check the vehicle condition and identify the areas to be inspected.</ptxt>
+<spec>
+<title>Inspection Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.96in"/>
+<colspec colname="COL2" colwidth="1.17in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Malfunctioning part can be identified</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Malfunctioning part cannot be identified</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000211600GX_03_0005" fin="true">A</down>
+<right ref="RM00000211600GX_03_0004" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000211600GX_03_0003">
+<testtitle>Go to Related DTC Chart<xref label="Seep01" href="X39400000QT013D"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000211600GX_03_0004">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000CD101FX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000211600GX_03_0005">
+<testtitle>Inspect and Repair Malfunctioning Area</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

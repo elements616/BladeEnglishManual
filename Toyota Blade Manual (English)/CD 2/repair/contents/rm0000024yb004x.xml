@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="07">
+<name>Steering</name>
+<section id="1000U_S0017" variety="S0017">
+<name>Steering Column</name>
+<ttl id="1000U_S0017_745FR_T00AZ" variety="T00AZ">
+<name>Electric Power Steering System</name>
+<para id="RM0000024YB004X" category="D" type-id="8003K" name-id="480XU-00" from="200612">
+<name>Work Support</name>
+<subpara id="RM0000024YB004X_z0" proc-id="RM0550J___00005YK00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Torque Sensor 0-point Calibration and Rotation Angle Sensor Output Calibration (Using TaSCAN)</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When the steering column assembly or power steering computer assembly has been replaced, or when there is a difference in steering effort between left and right, clear the sensor calibration values in the computer, then perform torque sensor 0 point calibration and rotation angle sensor output calibration.</ptxt>
+</item>
+<item>
+<ptxt>If C1516/16 (torque sensor 0 point calibration incomplete) is stored, torque sensor 0 point calibration cannot be performed, so clear the DTC beforehand.</ptxt>
+</item>
+<item>
+<ptxt>If C1526/18 (rotation angle sensor output calibration incomplete) is stored, rotation angle sensor output calibration cannot be performed, so clear the DTC beforehand.</ptxt>
+</item>
+</list1>
+</atten3>
+<step2>
+<ptxt>Pre-calibration Inspection</ptxt>
+<step3>
+<ptxt>Using SST (TaSCAN), check 'IG Power Supply Voltage' in the ECU Data Monitor. (see <xref label="Seep01" href="RM000000URV00GX"/>)</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>10V or more</ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>Calibration cannot be performed if the IG voltage is 9V or less. If it is not within the standard, replace or charge the battery and then perform calibration.</ptxt>
+</atten3>
+</step3>
+</step2>
+<step2>
+<ptxt>Sensor Correction Value Clearing, Torque Sensor 0 Point Calibration and Rotation Angle Sensor Output Calibration</ptxt>
+<step3>
+<ptxt>Turn IG OFF.</ptxt>
+</step3>
+<step3>
+<ptxt>Set SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step3>
+<step3>
+<ptxt>Turn IG ON.</ptxt>
+</step3>
+<step3>
+<ptxt>Select 'Utility' → 'Electric PS' → 'Rotation Angle Sensor Output Calibration' on the SST (TaSCAN) screen and, following the display, perform sensor calibration value initialization → torque sensor 0 point calibration → rotation angle sensor output calibration.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Keep the steering and front tires in the straight-ahead position.</ptxt>
+</item>
+<item>
+<ptxt>Never touch the steering wheel during torque sensor 0 point calibration (3 seconds).</ptxt>
+</item>
+<item>
+<ptxt>Do not turn the steering wheel suddenly during rotation angle sensor output calibration.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Rotation angle sensor output calibration calibrates the outputs of the motor rotation angle sensor and the torque sensor.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Torque Sensor 0-point Calibration and Rotation Angle Sensor Output Calibration (DLC3 Short)</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When the steering column assembly or power steering computer assembly has been replaced, or when there is a difference in steering effort between left and right, clear the sensor calibration values in the computer, then perform torque sensor 0 point calibration and rotation angle sensor output calibration.</ptxt>
+</item>
+<item>
+<ptxt>If C1516/16 (torque sensor 0 point calibration incomplete) is stored, torque sensor 0 point calibration cannot be performed, so clear the DTC beforehand.</ptxt>
+</item>
+<item>
+<ptxt>If C1526/18 (rotation angle sensor output calibration incomplete) is stored, rotation angle sensor output calibration cannot be performed, so clear the DTC beforehand.</ptxt>
+</item>
+</list1>
+</atten3>
+<step2>
+<ptxt>Pre-calibration Inspection</ptxt>
+<figure>
+<graphic graphicname="C149377J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the IG OFF and disconnect connector C of the power steering computer assembly.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn IG ON.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST (Toyota electrical tester), check the voltage between terminal C6 (IG) of the power steering computer assembly wire harness side connector and body ground.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>10V or more</ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>Calibration cannot be performed if the IG voltage is 9V or less. If it is not within the standard, replace or charge the battery and then perform calibration.</ptxt>
+</atten3>
+</step3>
+<step3>
+<ptxt>Turn the IG OFF and connect connector C of the power steering computer assembly.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Sensor Calibration Value Clearing</ptxt>
+<figure>
+<graphic graphicname="C146309J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Set the steering wheel and front tires in the straight-ahead position.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn IG OFF.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST, with terminals 12 (TS) and 4 (CG) of the DLC3 connector shorted, turn the IG ON and short and open terminals 13 (TC) and 4 (CG) 20 times or more within 20 seconds.</ptxt>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<atten3>
+<ptxt>Connecting the connector to the wrong position will cause a malfunction, so never make a mistake.</ptxt>
+</atten3>
+</step3>
+<step3>
+<ptxt>Check that the P/S warning light comes on and DTCs C1515/15 and C1525/17 are stored.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn IG OFF.</ptxt>
+<atten3>
+<ptxt>If the IG is left ON after clearing the sensor calibration values, torque sensor 0 point calibration and rotation angle sensor output calibration cannot be performed.</ptxt>
+</atten3>
+</step3>
+</step2>
+<step2>
+<ptxt>Torque Sensor 0 Point Calibration</ptxt>
+<figure>
+<graphic graphicname="C146309J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>If DTC C1515/15 (torque sensor 0 point calibration not performed) is not stored, torque sensor 0 point calibration cannot be performed, so be sure to clear the sensor calibration values before performing torque sensor 0 point calibration.</ptxt>
+</atten3>
+<step3>
+<ptxt>Set the steering and front tires to the straight-ahead position.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn IG OFF.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST, with terminals 12 (TS) and 4 (CG) of the DLC3 connector shorted, turn the IG ON, short terminals 13 (TC) and 4 (CG) to start torque sensor 0 point calibration, and wait 3 seconds or more.</ptxt>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<atten3>
+<ptxt>Never touch the steering wheel during torque sensor 0 point calibration (3 seconds).</ptxt>
+</atten3>
+<atten4>
+<ptxt>The P/S warning light remains on even after torque sensor 0 point calibration is complete.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Rotation Angle Sensor Output Calibration</ptxt>
+<figure>
+<graphic graphicname="C146309J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>If DTC C1525/17 (rotation angle sensor output calibration not performed) is not stored, rotation angle sensor output calibration cannot be performed, so be sure to clear the sensor calibration values and start again from torque sensor 0 point calibration.</ptxt>
+</atten3>
+<step3>
+<ptxt>With terminals 12 (TS) and 4 (CG) and terminals 13 (TC) and 4 (CG) of the DLC3 connector shorted, open and then short terminals 13 (TC) and 4 (CG) once only. (Shifts to rotation angle sensor output calibration mode)</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the steering wheel 45° or more to the left and right. Then turn the steering wheel 90° or more in either direction.</ptxt>
+<atten3>
+<ptxt>Do not turn the steering wheel abruptly.</ptxt>
+</atten3>
+<atten4>
+<ptxt>When rotation angle sensor output calibration ends normally, the P/S warning light changes from on to blinking (4Hz).</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>With terminals 12 (TS) and 4 (CG) and terminals 13 (TC) and 4 (CG) of the DLC3 connector open, turn the IG OFF to change from test mode to normal mode.</ptxt>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

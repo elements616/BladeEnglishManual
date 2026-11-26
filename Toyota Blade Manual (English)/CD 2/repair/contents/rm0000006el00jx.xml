@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1002M_S001G" variety="S001G">
+<name>Pre-crash Safety</name>
+<ttl id="1002M_S001G_74WT7_T00FP" variety="T00FP">
+<name>Pre-crash Safety System</name>
+<para id="RM0000006EL00JX" category="D" type-id="303F3" name-id="540J2-00" from="200708">
+<name>Diagnosis System</name>
+<subpara id="RM0000006EL00JX_z0" proc-id="RM0550J___0000CTC00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Initial Check</ptxt>
+<step2>
+<ptxt>Turn the ignition switch OFF, wait for 2 seconds or more, then turn the ignition switch ON; the pre-crash safety system is diagnosed for approximately 3 seconds.</ptxt>
+</step2>
+<step2>
+<ptxt>If a malfunction is found during the initial check, "PCS System Check" is shown on the multi-information display in the combination meter assembly after the initial check is completed (3 seconds elapsed).</ptxt>
+<atten4>
+<ptxt>"PCS System Check" is displayed when a pre-crash safety system malfunction is detected and a DTC is output, or when the seat belt control computer is not connected.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Constant Check</ptxt>
+<step2>
+<ptxt>When the initial check is completed (3 seconds elapsed), the seat belt control computer enters system control mode and constantly monitors the system for malfunctions.</ptxt>
+</step2>
+<step2>
+<ptxt>If a malfunction is detected during the constant check, "PCS System Check" or "PCS Currently Unavailable" is shown on the multi-information display in the combination meter assembly.</ptxt>
+<atten4>
+<ptxt>"PCS Currently Unavailable" is displayed when the overheat protection function of the seat belt control computer and front seat outer belt (motor) operates. It is also displayed when the grille cover or millimeter wave radar sensor assembly is dirty.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="E130098J01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

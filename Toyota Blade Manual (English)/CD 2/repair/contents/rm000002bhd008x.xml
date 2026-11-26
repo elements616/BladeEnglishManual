@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1002B_S001H" variety="S001H">
+<name>Automatic Transaxle</name>
+<ttl id="1002B_S001H_74Y0X_T00H8" variety="T00H8">
+<name>Electronically Controlled Automatic Transaxle [ECT] (U660E)</name>
+<para id="RM000002BHD008X" category="C" type-id="80206" name-id="261I9-00" from="200708">
+<dtccode>P0791/67</dtccode>
+<dtcname>Counter Gear Speed Sensor Circuit (Voltage Malfunction)</dtcname>
+<dtccode>P0793/67</dtccode>
+<dtcname>Counter Gear Speed Sensor Circuit</dtcname>
+<subpara id="RM000002BHD008X_01" type-id="33" category="03" proc-id="RM0550J___0000FUQ00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>The transmission revolution sensor (NT) inputs the input shaft speed signal, and the transmission revolution sensor (NC) inputs the output shaft speed signal, to the transmission control computer. (The NT and NC sensors are integrated)</ptxt>
+<ptxt>The engine control computer and transmission control computer perform engine torque control and shift timing control based on the transmission revolution sensor (NT) and (NC) signals. Lock-up control is also performed based on the input shaft speed signal and engine speed signal.</ptxt>
+<figure>
+<graphic graphicname="C141928J03" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="3.40in"/>
+<colspec colname="COL3" colwidth="2.62in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0791/67</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Sensor input voltage is 1.9 V or more or 0.1 V or less</ptxt>
+</item>
+<item>
+<ptxt>Continuously for 2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Transmission wire</ptxt>
+</item>
+<item>
+<ptxt>Transmission revolution sensor (NT and NC integrated)</ptxt>
+</item>
+<item>
+<ptxt>Transmission Control Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0793/67</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Vehicle speed 25 km/h or more</ptxt>
+</item>
+<item>
+<ptxt>Transmission revolution sensor (NC) less than 300 r/min</ptxt>
+</item>
+<item>
+<ptxt>Continuously for 2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Transmission wire</ptxt>
+</item>
+<item>
+<ptxt>Transmission revolution sensor (NT and NC integrated)</ptxt>
+</item>
+<item>
+<ptxt>Transmission Control Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000002BHD008X_02" type-id="32" category="03" proc-id="RM0550J___0000FUR00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C173975J02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000002BHD008X_03" type-id="51" category="05" proc-id="RM0550J___0000FUS00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Using SST (TaSCAN), read the Freeze Frame Data. Freeze frame data records the engine and vehicle conditions when a malfunction occurs, and this information is useful for troubleshooting and malfunction reproduction tests.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000002BHD008X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000002BHD008X_04_0001" proc-id="RM0550J___0000FUT00000">
+<testtitle>Inspect Sensor Installation Condition</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the installation condition of the transmission revolution sensor.</ptxt>
+<figure>
+<graphic graphicname="C133219" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Specified Condition </title>
+<specitem>
+<ptxt>The installation bolts are not loose, and the sensor is not raised or tilted</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002BHD008X_04_0002" fin="false">OK</down>
+<right ref="RM000002BHD008X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002BHD008X_04_0002" proc-id="RM0550J___0000FUU00000">
+<testtitle>Inspect Transmission Wire</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Remove the transmission control computer. (see <xref label="Seep01" href="RM0000024M9003X"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the transmission wire from the transmission revolution sensor.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<figure>
+<graphic graphicname="C139035J06" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.27in"/>
+<colspec colname="COL2" colwidth="0.91in"/>
+<colspec colname="COL3" colwidth="0.95in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4(NCB) - 4(NCB)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3(NCO) - 3(NCO)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.27in"/>
+<colspec colname="COL2" colwidth="0.91in"/>
+<colspec colname="COL3" colwidth="0.95in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4 (NCB) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3 (NCO) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002BHD008X_04_0003" fin="false">OK</down>
+<right ref="RM000002BHD008X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002BHD008X_04_0003" proc-id="RM0550J___0000FUV00000">
+<testtitle>Replace Transmission Revolution Sensor</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the transmission revolution sensor. (see <xref label="Seep01" href="RM000002BNI003X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002BHD008X_04_0004" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002BHD008X_04_0004" proc-id="RM0550J___0000FUW00000">
+<scantool type="2"/>
+<testtitle>Clear DTCs and Perform Road Test</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Clear the DTCs. (see <xref label="Seep01" href="RM000000AW201LX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Perform a road test based on the customer problem analysis and freeze frame data. (see <xref label="Seep02" href="RM000000ITK01FX_01_0008"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002BHD008X_04_0005" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002BHD008X_04_0005" proc-id="RM0550J___0000FUX00000">
+<scantool type="1"/>
+<testtitle>Recheck DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Recheck the DTCs. (see <xref label="Seep01" href="RM000000AW201LX"/>)</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.10in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Inspection Result</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>P0791 or P0793 is output again</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>DTC normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+</content6>
+<res>
+<down ref="RM000002BHD008X_04_0008" fin="false">A</down>
+<right ref="RM000002BHD008X_04_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000002BHD008X_04_0006">
+<testtitle>Complete</testtitle>
+</testgrp>
+<testgrp id="RM000002BHD008X_04_0007">
+<testtitle>Repair or Replace Transmission Wire<xref label="Seep01" href="RM000002BOQ004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002BHD008X_04_0008" proc-id="RM0550J___0000HCF00000">
+<testtitle>Replace Transmission Control Computer Assembly</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>Replace the transmission control computer assembly. (see <xref label="Seep01" href="RM0000024M8003X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002BHD008X_04_0010" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002BHD008X_04_0010">
+<testtitle>A/T Unit Compensation<xref label="Seep01" href="RM000000OLY013X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002BHD008X_04_0009">
+<testtitle>Repair sensor installation condition</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

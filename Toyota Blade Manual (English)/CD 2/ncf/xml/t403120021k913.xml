@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARA INFOID = "T120021K913" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>HDD Navigation System Outline</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The 05 model year HDD navigation has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>The HDD navigation has a variety of multimedia functions made possible by the adoption of a large-capacity HDD (30GB) to improve convenience, and achieves a clearer display by rendering the screen in 32000 colors.</PTXT></ITEM>
+<ITEM><PTXT>A Bluetooth<HINTREF REFID = "H403120021K91301"/> compatible antenna is built into the multi-display, enabling hands-free calls without connecting a cable or cradle when using a Bluetooth compatible cellular phone, for excellent usability.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H403120021K91301"></PTXT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "22%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "77%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1">
+<GRAPHIC GRAPHICNAME = "a4270238e" WIDTH = "1.167in" HEIGHT = "0.278in" />
+</ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Bluetooth is a registered trademark of Bluetooth SIG, Inc.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></ITEM></LIST1></HINT>
+<LIST1><ITEM><PTXT>The HDD navigation links with the network using a Bluetooth-compatible cellular phone, allowing use of the next-generation telematics service "G-BOOK ALPHA" and hands-free calling. Also, a variety of functions have been adopted for the navigation, information mode, etc., realizing a highly convenient audio &amp; visual system.</PTXT></ITEM>
+<ITEM><PTXT>By installing a G sensor in the HDD navigation, more precise position correction is possible.</PTXT></ITEM>
+<ITEM><PTXT>A sound library function that can store up to 13.9GB minutes of music data on the built-in HDD has been installed to improve marketability.</PTXT></ITEM>
+<ITEM><PTXT>By adopting a IEEE1394-standard HDD update connector, map data and other updates can be performed without removing the map hard disk drive (HDD) from the vehicle, for excellent convenience.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740060e" WIDTH = "6.903in" HEIGHT = "5.514in" />
+</FIGURE>
+<INDICATE ID = "T120021K913I01" INDSW = "ON">
+<TITLE>HDD Navigation System Main Components</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "5%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "72%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Main Functions</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>HDD Navigation</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Integrated with the navigation computer; controls the HDD navigation system and displays various screens on the multi-display.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "7" CONSPIC = "0"><PTXT>Built-in Parts</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Display Panel</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Displays the map screen and operation screens using video signals from the main computer, and the TV broadcast screen using video signals from the TV tuner.</PTXT></ITEM>
+<ITEM><PTXT>Outputs input operation signals to the main computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Adjusts the color balance of the display screen.</PTXT></ITEM>
+<ITEM><PTXT>Controls each display and function of the HDD navigation system according to the input operation signals.</PTXT></ITEM>
+<ITEM><PTXT>Calculates the vehicle position, direction of travel and distance traveled using the "position signal" from the GPS receiver, the "vehicle acceleration/deceleration data" from the G sensor, the "vehicle angular velocity data" from the gyro sensor and the "vehicle speed signal" from the combination meter.</PTXT></ITEM>
+<ITEM><PTXT>Converts FM multiplex broadcast signals (DGPS signals) and VICS road traffic information with the built-in FM multiplex decoder and then performs calculation processing.</PTXT></ITEM>
+<ITEM><PTXT>Outputs the map information data in the HDD and the calculated vehicle position, etc. to the display panel as video signals.</PTXT></ITEM>
+<ITEM><PTXT>Outputs navigation voice guidance signals to the front speaker RH.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>TV Tuner</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Receives and tunes the TV broadcast signals output from the TV antenna amplifier with selector, and outputs video signals to the main computer and audio signals to the speakers via the built-in amplifier.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>GPS Receiver</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Demodulates signals from the GPS antenna and outputs them to the main computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>G Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects vehicle acceleration/deceleration and outputs it to the main computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Gyro Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects vehicle angular velocity and outputs it to the main computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>HDD (Hard Disk) Unit</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Reads the data stored on the map HDD (hard disk) and outputs it to the main computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>HDD Update Connector</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Map data updates, etc. can be performed by connecting an update tool to the connector.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Integrated Antenna<HINTREF     REFID = "H403120021K91301"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Receives the orbit signals and signal transmission time signals continuously transmitted from GPS satellites placed in orbits surrounding the earth at an altitude of approximately 2 × 10,000 km, and outputs them to the GPS receiver.</PTXT></ITEM>
+<ITEM><PTXT>Transmits and receives ETC system radio waves.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>TV Antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>TV broadcast signals are received by 4 pattern antennas, with 2 systems each located in the back window glass and in the rear spoiler.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>TV Antenna Amplifier with Selector</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Switches to the 4 TV antenna signals with good reception, amplifies the 1 TV antenna signals with good reception sensitivity and outputs them to the TV tuner.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>Speaker</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Outputs navigation voice guidance and audio/TV sound.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>Combination Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Outputs the vehicle speed signal (pulse signal) to the multi-display.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>Taillight Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Outputs the taillight ON signal to the multi-display.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Parking Brake Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Outputs the parking brake ON signal to the multi-display.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<HINT>
+<LIST1><ITEM><PTXT>Factory option on all models. GPS antenna (GPS function only) as standard equipment.</PTXT></ITEM></LIST1></HINT>
+</PARA>

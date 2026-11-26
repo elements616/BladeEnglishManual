@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002T_S000D" variety="S000D">
+<name>Other Electrical</name>
+<ttl id="1002T_S000D_746SZ_T00DB" variety="T00DB">
+<name>Hands-free System</name>
+<para id="RM0000016A3012X" category="J" type-id="8010X" name-id="73276-00" from="200612" to="200912">
+<dtccode/>
+<dtcname>Cannot transmit during hands-free call (other party cannot hear own voice)/noise in transmitted voice</dtcname>
+<subpara id="RM0000016A3012X_01" type-id="32" category="03" proc-id="RM0550J___0000B6600000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E147223J01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000016A3012X_02" type-id="51" category="05" proc-id="RM0550J___0000B6700000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When replacing the navigation receiver assembly on a vehicle not subscribed to the G-BOOK service, perform the vehicle linking setting. (see <xref label="Seep01" href="RM000001C3S00RX"/>)</ptxt>
+</item>
+<item>
+<ptxt>When replacing the navigation receiver assembly on a vehicle subscribed to the G-BOOK service, perform the vehicle linking setting, then perform the G-BOOK use resumption operation and HELPNET service start operation. (see <xref label="Seep02" href="RM000001C3S00RX"/>)</ptxt>
+</item>
+<item>
+<ptxt>If the navigation receiver assembly is replaced while a purchased G-SOUND unlimited license exists, perform G-SOUND license recovery. (see <xref label="Seep03" href="RM000001C3S00RX"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000016A3012X_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000016A3012X_03_0001" proc-id="RM0550J___0000B6800000">
+<testtitle>Start Diagnosis</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>(see <xref label="Seep01" href="RM0000002RV02BX"/>)</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000016A3012X_03_0002" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0002" proc-id="RM0550J___0000B6900000">
+<testtitle>Microphone Check (Microphone Input Level)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Microphone Check (Microphone Input Level)</ptxt>
+<figure>
+<graphic graphicname="E122002" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Select "Navigation Check" on the diagnosis check menu screen to display the navigation check menu screen.</ptxt>
+</test2>
+<test2>
+<ptxt>Select "Microphone &amp; Voice Recognition Check" on the Navigation &amp; Check Menu screen to display the microphone voice recognition check screen.</ptxt>
+</test2>
+<test2>
+<ptxt>Speak into the microphone and inspect the display of the microphone input level gauge.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Microphone input level gauge moves</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000016A3012X_03_0003" fin="false">OK</down>
+<right ref="RM0000016A3012X_03_0004" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0003" proc-id="RM0550J___0000B6A00000">
+<testtitle>Microphone Check (Recording and Playback of Spoken Voice)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Microphone Check (Recording and Playback of Spoken Voice)</ptxt>
+<figure>
+<graphic graphicname="E122002" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>After pressing the record switch, speak into the microphone and record the voice.</ptxt>
+</test2>
+<test2>
+<ptxt>Press the playback switch and check the recorded voice.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>The spoken voice is played back normally without noise, distortion, etc.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>During playback of the recorded voice, the microphone input level gauge does not respond to the playback sound.</ptxt>
+</item>
+<item>
+<ptxt>The content spoken during recording is optional.</ptxt>
+</item>
+<item>
+<ptxt>Recording stops after 5 seconds elapse or when the stop switch is pressed.</ptxt>
+</item>
+<item>
+<ptxt>During recording and playback, all switch operations except the stop switch are disabled.</ptxt>
+</item>
+<item>
+<ptxt>When nothing has been recorded, the playback switch is grayed out.</ptxt>
+</item>
+<item>
+<ptxt>Playback ends when playback of the recorded content is finished.</ptxt>
+</item>
+</list1>
+</atten4>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000016A3012X_03_0030" fin="false">OK</down>
+<right ref="RM0000016A3012X_03_0004" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0030" proc-id="RM0550J___0000B6K00000">
+<testtitle>Replace Cellular Phone</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>With the customer's permission, connect a staff member's Bluetooth compatible cellular phone.</ptxt>
+<atten4>
+<ptxt>Following the owner's manual, register and connect the Bluetooth cellular phone.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check that a call can be made.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Calls cannot be made normally</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Calls can be made normally</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If there is a problem with the cellular phone, contact the customer and ask them to have the cellular phone checked.</ptxt>
+</item>
+<item>
+<ptxt>After the inspection is complete, delete the registered cellular phone and the history of telephone numbers used for the inspection.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000016A3012X_03_0010" fin="true">A</down>
+<right ref="RM0000016A3012X_03_0031" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0010">
+<testtitle>Replace Navigation Receiver Assembly<xref label="Seep01" href="RM000001XG4006X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0004" proc-id="RM0550J___0000B6B00000">
+<testtitle>Inspect Navigation Receiver Assembly (Microphone Power Source, Ground)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Pre-inspection Preparation</ptxt>
+<figure>
+<graphic graphicname="E147224J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Disconnect the map light or interior illumination light assembly No.1 connector.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Voltage Inspection</ptxt>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the navigation receiver assembly side connector terminal and body ground.</ptxt>
+<atten4>
+<ptxt>Measure from the back side of the connector with navigation receiver assembly connector H connected.</ptxt>
+</atten4>
+<spec>
+<title>Voltage</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.99in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<colspec colname="COL3" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Terminal (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H17 (MACC) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ACC ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the navigation receiver assembly connector and body ground.</ptxt>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.99in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<colspec colname="COL3" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Terminal (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H12 (TSW-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H20 (MIC-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000016A3012X_03_0024" fin="false">OK</down>
+<right ref="RM0000016A3012X_03_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0024" proc-id="RM0550J___0000B6H00000">
+<testtitle>Check Specifications</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the vehicle specifications.</ptxt>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.18in"/>
+<colspec colname="COL2" colwidth="0.95in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Specifications</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>w/o Interior Illumination Light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>w/ Interior Illumination Light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+</content6>
+<res>
+<down ref="RM0000016A3012X_03_0016" fin="false">A</down>
+<right ref="RM0000016A3012X_03_0025" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0016" proc-id="RM0550J___0000B6D00000">
+<testtitle>Inspect Wire Harness and Connector (Navigation Receiver Assembly - Map Light Assembly)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Pre-inspection Preparation</ptxt>
+<test2>
+<ptxt>Disconnect navigation receiver assembly connector H.</ptxt>
+<figure>
+<graphic graphicname="E122004J02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test2>
+<test2>
+<ptxt>Disconnect the map light assembly connector.</ptxt>
+<figure>
+<graphic graphicname="E111482J12" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test2>
+</test1>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the navigation receiver assembly side wire harness connector.</ptxt>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="2.01in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Terminal (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H18(SGND) - H12(TSW-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance of the vehicle wire harness between the navigation receiver assembly and map light assembly.</ptxt>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.99in"/>
+<colspec colname="COL2" colwidth="1.05in"/>
+<colspec colname="COL3" colwidth="1.09in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Terminal (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H17(MACC) - 12(ACC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H19(MIC+) - 11(MI1+)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H20(MIC-) - 10(MIC-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the wire harness connector on the navigation receiver assembly side and body ground.</ptxt>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.96in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Terminal (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H17 (MACC) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H19 (MIC+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H20 (MIC-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000016A3012X_03_0017" fin="false">OK</down>
+<right ref="RM0000016A3012X_03_0020" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0017" proc-id="RM0550J___0000B6E00000">
+<testtitle>Inspect Map Light Assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Waveform Inspection</ptxt>
+<figure>
+<graphic graphicname="E111483J07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test2>
+<ptxt>Turn ACC ON.</ptxt>
+</test2>
+<test2>
+<ptxt>Using SST (TaSCAN), measure the waveform between terminals 11 (MI1+) and 10 (MIC-) with the map light assembly connector connected.</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Waveform synchronized with the voice spoken into the telephone microphone assembly is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Waveform synchronized with the voice spoken into the telephone microphone assembly is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000016A3012X_03_0018" fin="false">A</down>
+<right ref="RM0000016A3012X_03_0019" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0018" proc-id="RM0550J___0000B6F00000">
+<testtitle>Replace Telephone Microphone Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace with a known good telephone microphone assembly.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Does not return to normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Returns to normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000016A3012X_03_0019" fin="true">A</down>
+<right ref="RM0000016A3012X_03_0028" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0019">
+<testtitle>Replace Map Light Assembly</testtitle>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0015">
+<testtitle>Replace Navigation Receiver Assembly<xref label="Seep01" href="RM000001XG4006X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0020">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0025" proc-id="RM0550J___0000B6I00000">
+<testtitle>Inspect Wire Harness and Connector (Navigation Receiver Assembly - Interior Illumination Light Assembly No.1)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Pre-inspection Preparation</ptxt>
+<test2>
+<ptxt>Disconnect navigation receiver assembly connector H.</ptxt>
+<figure>
+<graphic graphicname="E122004J02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test2>
+<test2>
+<ptxt>Disconnect the interior illumination light No.1 connector.</ptxt>
+<figure>
+<graphic graphicname="E147227J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test2>
+</test1>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the navigation receiver assembly side wire harness connector.</ptxt>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Terminal (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H18(SGND) - H12(TSW-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance of the vehicle wire harness between the navigation receiver assembly and map light assembly.</ptxt>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Terminal (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H17(MACC) - 6(MCVD)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H19(MIC+) - 7(MCO+)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H20(MIC-) - 8(MCO-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the navigation receiver assembly side wire harness connector terminal and body ground.</ptxt>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Terminal (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H17 (MACC) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H19 (MIC+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H20 (MIC-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000016A3012X_03_0026" fin="false">OK</down>
+<right ref="RM0000016A3012X_03_0020" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0026" proc-id="RM0550J___0000B6J00000">
+<testtitle>Inspect Interior Illumination Light Assembly NO.1</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Waveform Inspection</ptxt>
+<figure>
+<graphic graphicname="E147228J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test2>
+<ptxt>Turn ACC ON.</ptxt>
+</test2>
+<test2>
+<ptxt>Using SST (TaSCAN), measure the waveform between terminals 7 (MCO+) and 8 (MCO-) with the interior illumination light assembly No.1 connector connected.</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Waveform synchronized with the voice spoken into the amplifier microphone assembly is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Waveform synchronized with the voice spoken into the amplifier microphone assembly is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000016A3012X_03_0023" fin="false">A</down>
+<right ref="RM0000016A3012X_03_0027" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0023" proc-id="RM0550J___0000B6G00000">
+<testtitle>Replace Amplifier Microphone Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace with a known good amplifier microphone assembly.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Does not return to normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Returns to normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000016A3012X_03_0027" fin="true">A</down>
+<right ref="RM0000016A3012X_03_0029" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0027">
+<testtitle>Replace Interior Illumination Light Assembly NO.1</testtitle>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0028">
+<testtitle>End (Replace Telephone Microphone)</testtitle>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0029">
+<testtitle>End (Replace Amplifier Microphone)</testtitle>
+</testgrp>
+<testgrp id="RM0000016A3012X_03_0031">
+<testtitle>Replace Cellular Phone</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

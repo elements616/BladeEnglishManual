@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740256b SYSTEM "grph_ent/a4740256b.png" NDATA png>
+
+<!ENTITY T130003K004 SYSTEM "t478130003k004.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T130003K004S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T130003K004" UPDATE = "ORIGINAL" LDUP = "10May2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Anti-chipping Coating</TITLE>
+<LIST1><ITEM><PTXT>Interlayer anti-chipping paint has been applied to the rocker area of standard grades, and rocker protectors have been provided at the bottom of the rockers to prevent damage to the body due to chipping<HINTREF     REFID = "H478130003K00401"/> while driving.</PTXT></ITEM>
+<ITEM><PTXT>Anti-chipping tape has been provided on the rear of the rear doors, the quarter panels, etc. of cold area specification models for excellent paint film protection and rust prevention against gravel and frozen snow thrown up by the tires. The anti-chipping painted area has a different finish texture (orange peel<HINTREF     REFID = "H478130003K00402"/>) from normal painted areas.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478130003K00401">Small stones, sand, etc. thrown up mainly by the front wheels hitting the vehicle body while driving.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478130003K00402">The painted surface becoming grainy and rough.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740256b" WIDTH = "6.903in" HEIGHT = "6.153in" />
+</FIGURE>
+</PARA>
+</SECTION>

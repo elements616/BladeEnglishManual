@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740074e SYSTEM "grph_ent/a4740074e.png" NDATA png>
+<!ENTITY a4740075e SYSTEM "grph_ent/a4740075e.png" NDATA png>
+<!ENTITY k4670046e SYSTEM "grph_ent/k4670046e.png" NDATA png>
+<!ENTITY k4670047e SYSTEM "grph_ent/k4670047e.png" NDATA png>
+<!ENTITY k4670048e SYSTEM "grph_ent/k4670048e.png" NDATA png>
+<!ENTITY k4670049e SYSTEM "grph_ent/k4670049e.png" NDATA png>
+<!ENTITY k4670050e SYSTEM "grph_ent/k4670050e.png" NDATA png>
+
+<!ENTITY T120021K922 SYSTEM "t285120021k922.xml">
+<!ENTITY T120021K922K460 SYSTEM "t285120021k922k460.xml">
+<!ENTITY T120021K922K461 SYSTEM "t285120021k922k461.xml">
+<!ENTITY T120021K922K462 SYSTEM "t285120021k922k462.xml">
+<!ENTITY T120021K922K464 SYSTEM "t285120021k922k464.xml">
+<!ENTITY T120021K922K465 SYSTEM "t285120021k922k465.xml">
+<!ENTITY T120021K922K466 SYSTEM "t285120021k922k466.xml">
+<!ENTITY T120021K922K467 SYSTEM "t285120021k922k467.xml">
+<!ENTITY T120021K922Ka76 SYSTEM "t285120021k922ka76.xml">
+<!ENTITY T120021K922Ka77 SYSTEM "t285120021k922ka77.xml">
+<!ENTITY T120021K922Ka78 SYSTEM "t285120021k922ka78.xml">
+<!ENTITY T120021K922K471 SYSTEM "t285120021k922k471.xml">
+<!ENTITY T120021K922Ka79 SYSTEM "t285120021k922ka79.xml">
+<!ENTITY T120021K922Ka81 SYSTEM "t285120021k922ka81.xml">
+<!ENTITY T120021K922T050 SYSTEM "t285120021k922t050.xml">
+<!ENTITY T120021K922Ab05 SYSTEM "t285120021k922ab05.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120021K922S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120021K922" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>G-BOOK ALPHA System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By using the factory-option voice recognition microphone/telephone switch and the customer's Bluetooth-compatible cellular phone, the next-generation telematics service "G-BOOK ALPHA", which combines the G-BOOK network with the latest technology, can be used.</PTXT></ITEM>
+<ITEM><PTXT>HELPNET, an emergency call system, is provided as standard with G-BOOK ALPHA.</PTXT></ITEM>
+<ITEM><PTXT>By combining the adoption of a digital rights management system (G-DRM: G-Digital Rights Management) that stores and manages encrypted music data on the hard disk with the G-BOOK ALPHA communication system, new music services can be enjoyed in the vehicle.</PTXT></ITEM>
+<ITEM><PTXT>G-route search has been adopted, which predicts road conditions using traffic information such as VICS and provides guidance on the optimum route avoiding congestion.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922I01" INDSW = "OFF">
+<TITLE>System Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740074e" WIDTH = "6.903in" HEIGHT = "3.347in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T120021K922I02" INDSW = "OFF">
+<TITLE>Main Services Provided by G-BOOK ALPHA</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Typical Examples</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Security/Safety</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Arranging emergency vehicles, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Driving Intelligence</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Operator service, congestion prediction, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Amusement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>On-demand car audio, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Live Navigation</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Town information, gourmet information, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Information</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>News, traffic information, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Entertainment</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Fortune telling, hit rankings, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Communication</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>E-mail, location information exchange, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Safety &amp; Security</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Vehicle maintenance guidance, vehicle position confirmation, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>E-commerce</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Online shopping, etc.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<HINT>
+<PTXT>To use the G-BOOK online service, a service contract and various registrations are required (except for the G-BOOK ALPHA free service). Also, some services require separate fees.</PTXT></HINT>
+
+<MECA ID = "T120021K922K460" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Obtaining Information (Contents) in the Vehicle</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>G-BOOK ALPHA information (contents) in the vehicle is obtained through data communication using a Bluetooth-compatible cellular phone from the G-BOOK network centered on the G-BOOK center.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922K460I01" INDSW = "OFF">
+<TITLE>Image Diagram of Content Acquisition in Vehicle</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740075e" WIDTH = "6.903in" HEIGHT = "3.556in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T120021K922K461" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>G-BOOK Settings</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>To use the G-BOOK service, various settings matching the customer's Bluetooth-compatible cellular phone are required.</PTXT></ITEM>
+<ITEM><PTXT>Settings for using the G-BOOK service are made on the G-BOOK communication setting screen, which is displayed by touching "Settings" on the main menu screen.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922K462" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>About the Browser</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The browser is an application that displays the various contents of the G-BOOK online service provided by G-BOOK.com.</PTXT></ITEM>
+<ITEM><PTXT>On the browser screen, operations such as switching the displayed page, registering bookmarks and requesting content read-out can be performed. Also, during content read-out, operations such as adjusting the read-out volume and stopping can be performed.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922K462I01" INDSW = "OFF">
+<TITLE>Browser Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670046e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T120021K922K464" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Main Menu</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Each G-BOOK function is selected by touching the touch switch frame of each item on the G-BOOK main menu screen, which is reached from "Main Menu" on the information mode screen.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922K464I01" INDSW = "OFF">
+<TITLE>Main Menu Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670047e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T120021K922K464I02" INDSW = "OFF">
+<TITLE>Main Menu Item List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "64%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Description</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>G-BOOK.com</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>G-BOOK.com contents can be viewed and executed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>G-memory Points</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Facilities saved on G-BOOK.com can be searched and displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>History Top</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The page last viewed in the browser can be displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Browsing History</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The browsing history screen can be displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Bookmark</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The bookmark list screen can be displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Settings</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The settings screen can be displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Disconnect</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Data communication with the G-BOOK center can be disconnected.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120021K922K465" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>G-BOOK.com</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>G-BOOK.com is the user's own menu folder, in which convenient preset contents, etc. can be viewed and executed.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922K466" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>G Menu</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>In the G menu, menus that match the user's purpose or interests can be searched for and executed from an extensive range of menus divided into categories.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922K466I01" INDSW = "OFF">
+<TITLE>G Menu Setting Items List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "20%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "80%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Category</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Contents</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Security/Safety</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The emergency call system "HELPNET" service can be used.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Driving Intelligence</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Road conditions can be predicted and the optimum route avoiding congestion can be searched.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Amusement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Music data of various genres can be easily enjoyed in the vehicle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Live Navigation</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Trend spots such as town information, travel information and gourmet information can be searched.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Information</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Currently needed information such as sports, economy, news and weather can be searched.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Entertainment</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Information for enjoying every day, such as games and music hit rankings, can be searched.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Communication</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Communication contents such as e-mail and location information exchange can be used.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Safety &amp; Security</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Contents such as confirming the current position of the vehicle can be used.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>E-commerce</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Online shopping can be enjoyed.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<HINT>
+<PTXT>Menu configuration and contents may be changed without notice to improve operability.</PTXT></HINT></MECA>
+
+<MECA ID = "T120021K922K467" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>G-memory Points</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Facilities, etc. saved on G-BOOK.com can be displayed in a list.</PTXT></ITEM>
+<ITEM><PTXT>Registered G-memory points can also be called up from the memory points in navigation mode and set as a destination.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922Ka76" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Browsing History</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The titles of contents viewed in the browser are saved in order from newest date, making it easy to search when you want to view previously used contents again.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922Ka77" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Bookmark</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By registering the page displayed in the browser as a bookmark, a page you want to view again can be easily displayed from the bookmark screen.</PTXT></ITEM>
+<ITEM><PTXT>The titles of registered bookmarks can also be edited (changed) as desired.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922Ka78" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Voice Recognition Commands</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Some commands, such as My Request and G-BOOK.com, can be operated by voice.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922K471" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>My Request</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By registering frequently used services in advance and requesting contents with a simple operation, the information can be read out by voice.</PTXT></ITEM>
+<ITEM><PTXT>Contents requested from My Request are read out by voice even while the current position is displayed in navigation mode.</PTXT></ITEM>
+<ITEM><PTXT>When a request is made by voice recognition, a list screen of contents that can be requested even while driving can be displayed from the map screen in navigation mode.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922Ka79" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>HELPNET System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>HELPNET, an emergency call system, is provided as standard.</PTXT></ITEM>
+<ITEM><PTXT>The HELPNET system is a service in which, when trouble such as an accident or sudden illness occurs while driving, the customer's location information is sent together with voice to the HELPNET operation center over the public network from a Bluetooth-compatible cellular phone, and the HELPNET operation center connects the line to the appropriate emergency agency (police or fire department) as necessary, shortening the time until lifesaving measures are taken.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922Ka79I01" INDSW = "ON">
+<TITLE>System Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670048e" WIDTH = "6.903in" HEIGHT = "3.389in" />
+</FIGURE>
+</INDICATE>
+<LIST1><TITLE>Preparation for First Use</TITLE>
+<ITEM><PTXT>To use the HELPNET system for the first time, an application for the G-BOOK online service and option usage procedures are required in advance.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Service Start Operation (Manual Maintenance Check)</TITLE>
+<ITEM><PTXT>A communication test with the HELPNET center, confirmation of whether membership is registered with the HELPNET center, and an equipment check of the system can be performed manually.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922Ka79I02" INDSW = "ON">
+<TITLE>Manual Maintenance Check Procedure List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "8%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "91%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Step</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Description</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>On the navigation screen, confirm GPS reception, press the "Information/G" panel switch, and then touch "Settings" on the information screen.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Keep touching "Maintenance Check" on the settings screen for approximately 10 seconds.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Connection to the HELPNET center starts.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When connected to the HELPNET center, the current position of the vehicle, the fact that this is a manual maintenance check, and whether membership is registered with the HELPNET center are first confirmed by data communication.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>After data communication is completed, the system enters call mode, and if membership is registered, a conversation with the HELPNET center can be held through the microphone.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>All checks are completed when the conversation ends. The "HELPNET" switch is displayed on the information screen.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<LIST1><TITLE>Means of Notification</TITLE>
+<ITEM><PTXT>A report is made by pressing the "Information/G" panel switch and touching "HELPNET" on the displayed information mode screen.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922Ka79I03" INDSW = "ON">
+<TITLE>Information Mode Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670049e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<LIST1><TITLE>Reporting Procedure</TITLE>
+<ITEM><PTXT>The reporting procedure is as follows.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922Ka79I04" INDSW = "ON">
+<TITLE>Emergency Call Procedure Overview</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "8%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "36%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "23%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Step</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>System Status (Announcements in "")</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Customer Status</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>HELPNET Center/Rescue Agency</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Emergency call available state</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Start Report</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>-</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calling HELPNET center: "Emergency call started. Connecting to HELPNET. 」</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>-</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Sending report data: "Sending data. Please wait. 」</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Emergency call occurrence and data such as vehicle position are sent to the HELPNET center</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Data from customer received</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>After "Starting conversation with the HELPNET operator. ", converse with the HELPNET center operator</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Report the situation to the HELPNET center operator</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Operator confirms the situation</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Emergency call completed: "Emergency call ended. Any incoming calls from now on will be answered automatically. 」</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Operator requests dispatch from rescue agency</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Waiting for automatic answer state</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Standby</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Rescue agency dispatched</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Rescue agency arrives at the reported site and provides aid</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<LIST1><TITLE>In the following cases, the emergency notification service may not be available or its quality may be reduced.</TITLE>
+<ITEM><PTXT>When the G-BOOK service contract is not concluded or has expired, or when the service start operation has not been performed after enrollment.</PTXT></ITEM>
+<ITEM><PTXT>When communication is not possible due to a malfunction of HELPNET compatible equipment or vehicle-related equipment.</PTXT></ITEM>
+<ITEM><PTXT>When a center position determination error occurs.</PTXT></ITEM>
+<ITEM><PTXT>When communication is not possible due to a malfunction of the center system.</PTXT></ITEM>
+<ITEM><PTXT>When communication is not possible due to the communication network used by the emergency notification system.</PTXT></ITEM>
+<ITEM><PTXT>When service is interrupted or suspended for reasons of the emergency notification provider.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Precautions</TITLE>
+<ITEM><PTXT>Depending on radio wave conditions, emergency calls and conversations may not be possible.</PTXT></ITEM>
+<ITEM><PTXT>Outside the cellular phone service area, emergency notification is not possible even if the emergency notification operation starts. If emergency notification is not possible, make the report from the nearest public telephone, etc.</PTXT></ITEM>
+<ITEM><PTXT>In a vehicle collision, if equipment necessary for communication malfunctions or is damaged, emergency notification and calls may not be possible.</PTXT></ITEM>
+<ITEM><PTXT>Emergency notification may not be possible if the battery voltage drops or the connection to the battery is cut.</PTXT></ITEM>
+<ITEM><PTXT>While waiting for rescue after emergency notification, move to a safe place where conversation with the center is possible.</PTXT></ITEM>
+<ITEM><PTXT>Perform emergency notification by button operation after stopping the vehicle in a safe place.</PTXT></ITEM>
+<ITEM><PTXT>All communication charges are borne by the customer. (When using a cellular phone)</PTXT></ITEM>
+<ITEM><PTXT>Do not use functions that restrict outgoing or incoming calls (dial lock, etc.) as they will interfere with emergency notification. The functions that interfere with emergency notification differ depending on the telephone or communication carrier used. (When using a cellular phone)</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922Ka81" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>G-BOOK and Navigation Linked Functions</TITLE>
+<LIST1><TITLE>Function Outline</TITLE>
+<ITEM><PTXT>By linking the navigation with the G-BOOK online service, road conditions such as congestion are provided in real time. Main functions include G-route search and congestion prediction.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>G Route Search</TITLE>
+<ITEM><PTXT>Future road conditions are comprehensively predicted from the latest road traffic information from VICS and past statistical data, and the optimum route avoiding congestion is searched and guided.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Congestion Prediction</TITLE>
+<ITEM><PTXT>Displays predicted congestion time, predicted congestion increase/decrease, etc. based on congestion prediction information from the G-BOOK Center.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922Ka81I01" INDSW = "OFF">
+<TITLE>Congestion Prediction Service</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Service Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Service Contents</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Area Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Predicts the latest road traffic information for expressways around the current location and road conditions up to 90 minutes ahead, displays future congestion on an easy-to-understand simplified map on the navigation screen and provides voice guidance.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Route Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The latest road traffic information for expressways on the route to the destination and road conditions predicted up to 90 minutes ahead are displayed on an easy-to-understand simplified map on the navigation screen, and voice guidance is provided.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Time Required Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Simulates, based on congestion prediction, the time required to the next expressway exit when taking a break (30 or 60 minutes) at an expressway service area, and clearly displays the difference in driving time for each break time.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120021K922T050" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Amusement</TITLE>
+<LIST1><TITLE>Function Outline</TITLE>
+<ITEM><PTXT>At vehicle shipment, 10000 or more songs of music data of various genres are encrypted and preinstalled in the HDD navigation system. By selecting the desired songs or course and purchasing online from the G-BOOK center a license key that removes the encryption, music can be easily enjoyed in the vehicle.</PTXT></ITEM>
+<ITEM><PTXT>With the adoption of a hard disk for the navigation system, a digital rights management system (G-DRM: Digital Rights Management) that stores and manages encrypted music data on the hard disk has been incorporated, ensuring thorough copyright management and protection.</PTXT></ITEM>
+<ITEM><PTXT>G-SOUND and AUTOLIVE have been adopted as amusement that can be enjoyed in the vehicle.</PTXT></ITEM>
+<ITEM><PTXT>The amusement menu screen is displayed by pressing the "Information/G" panel switch and touching "Amusement" on the displayed information mode screen.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922T050I01" INDSW = "OFF">
+<TITLE>Amusement Menu Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670050e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<LIST1><TITLE>G-SOUND</TITLE>
+<ITEM><PTXT>A wide range of music, from J-POP and enka to jazz and classical, can be purchased. In addition, music data can be added and updated using a maintenance CD (G-Library disc<HINTREF     REFID = "H285120021K922T05001"/>).</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H285120021K922T05001">A CD-ROM containing encrypted music data of approximately 100 songs each, selected by genre and theme, including the latest J-POP, kayokyoku, Jazz/Classic, Pops/Rock, etc.</PTXT></ITEM></LIST1></HINT>
+<LIST1><TITLE>AUTOLIVE</TITLE>
+<ITEM><PTXT>Karaoke and BGM can be used with unlimited singing and listening for a fixed monthly payment. There is also a download course in which songs or channels are purchased individually using tickets<HINTREF     REFID = "H285120021K922T05002"/>.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H285120021K922T05002">For the download course, tickets must be purchased first.</PTXT></ITEM></LIST1></HINT></MECA>
+
+<MECA ID = "T120021K922Ab05" UPDATE = "ORIGINAL" LDUP = "7Jun2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>G-BOOK ALPHA Free Service</TITLE>
+<LIST1><TITLE>Outline</TITLE>
+<ITEM><PTXT>The G-BOOK ALPHA free service can be used without application and free of charge<HINTREF     REFID = "H285120021K922Ab0501"/> by using a Bluetooth compatible cellular phone or a Bluetooth adapter.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H285120021K922Ab0501">Communication costs are borne by the customer.</PTXT></ITEM></LIST1></HINT>
+<LIST1><TITLE>G Route Search</TITLE>
+<ITEM><PTXT>Future road conditions are comprehensively predicted from the latest road traffic information from VICS and past statistical data, and the optimum route avoiding congestion is searched and guided.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Congestion Prediction</TITLE>
+<ITEM><PTXT>Displays predicted congestion time, predicted congestion increase/decrease, etc. based on congestion prediction information from the G-BOOK Center.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Road Traffic Information</TITLE>
+<ITEM><PTXT>Congestion information, regulation information, etc. for expressways and ordinary roads nationwide are provided by voice and on the display screen.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>CD Title Information Acquisition</TITLE>
+<ITEM><PTXT>When recording a CD, if song titles, etc. are not displayed because the data is not in the navigation hard disk, CD-related information can be obtained through G-BOOK ALPHA and the song title, artist name, etc. can be displayed.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Drive Plan</TITLE>
+<ITEM><PTXT>Drive routes can be set through the website from a personal computer or cellular phone.</PTXT></ITEM>
+<ITEM><PTXT>By setting the destination and departure time, the route, driving distance and required time are displayed. (Only the required time is displayed on cellular phones)</PTXT></ITEM>
+<ITEM><PTXT>Up to 15 routes can be registered, and for each route up to 4 waypoints can be registered in addition to the final destination.</PTXT></ITEM>
+<ITEM><PTXT>There is also a service that notifies road traffic information on a preset route by e-mail at a specified date and time.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>G-memory</TITLE>
+<ITEM><PTXT>Facilities, etc. saved on the website can be downloaded to the navigation and set as a destination.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>G-BOOK ALPHA Free Service List</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "37%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "62%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Description</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Driving Intelligence</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>G Route Search</PTXT></ITEM>
+<ITEM><PTXT>Congestion Prediction</PTXT></ITEM>
+<ITEM><PTXT>Road Traffic Information</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Amusement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>CD Title Information Acquisition</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Live Navigation</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Drive Plan<HINTREF     REFID = "H285120021K922Ab0502"/></PTXT></ITEM>
+<ITEM><PTXT>G-memory<HINTREF REFID = "H285120021K922Ab0502"/></PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H285120021K922Ab0502">GAZOO membership registration is required (free of charge). GAZOO is a comprehensive information network provided by Toyota Motor Corporation.</PTXT></ITEM></LIST1></HINT></MECA>
+</PARA>
+</SECTION>

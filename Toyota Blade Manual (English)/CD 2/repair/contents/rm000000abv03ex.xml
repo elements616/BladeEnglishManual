@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="S1">
+<name>Introduction</name>
+<section id="10002_S0013" variety="S0013">
+<name>Introduction</name>
+<ttl id="10002_S0013_744ZO_T009Z" variety="T009Z">
+<name>How to Troubleshoot ECU Controlled Systems</name>
+<para id="RM000000ABV03EX" category="F" type-id="80042" name-id="012CX-00" from="200612" to="200708">
+<name>Explanation of Basic Diagnosis Procedure</name>
+<subpara id="RM000000ABV03EX_z0" proc-id="RM0550J___00005HG00000">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Perform troubleshooting in accordance with the diagnostic procedure below. Only the basic procedure is shown here. For details, the most effective method for each circuit is described in the section for each system. Before starting troubleshooting of the relevant circuit, check the troubleshooting procedure first.</ptxt>
+</atten4>
+<descript-diag>
+<descript-testgroup>
+<testtitle>Malfunctioning Vehicle Brought to Workshop</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle> Customer Problem Analysis and Malfunction Analysis</testtitle>
+<test1>
+<ptxt>Confirm with the customer the conditions and circumstances when the problem occurred, and fill out the customer problem analysis check sheet.</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Confirm Problem Symptom and Check DTCs (Including Freeze Frame Data)</testtitle>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), inspect the battery voltage.</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>11 to14V (Engine Stopped)</ptxt>
+</specitem>
+</spec>
+<test1>
+<ptxt>Inspect areas that can be checked visually, such as blown fuses, open or short circuits in the wire harness and poor connector connections.</ptxt>
+</test1>
+<test1>
+<ptxt>Confirm the problem location, symptom and conditions, and check the DTCs according to the relevant chart.</ptxt>
+<spec>
+<title>DTC present</title>
+<specitem>
+<ptxt>To each Diagnostic Trouble Code Chart</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>No DTC</title>
+<specitem>
+<ptxt>Go to List by Symptom</ptxt>
+</specitem>
+</spec>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Understand Vehicle Condition</testtitle>
+<test1>
+<ptxt>Some systems lose their memory when the battery negative terminal is disconnected, and some systems return to the initial state when parts are replaced, so record the vehicle's settings before repair.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Initialization when disconnecting/reconnecting the battery terminal (see <xref label="Seep01" href="RM000001LYW00PX"/>)</ptxt>
+</item>
+<item>
+<ptxt>Initialization when removing/installing parts (see <xref label="Seep02" href="RM000001LYX00OX"/>)</ptxt>
+</item>
+<item>
+<ptxt>Customize (see <xref label="Seep03" href="RM000001LYY00QX"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Circuit Inspection or Parts Inspection</testtitle>
+<test1>
+<ptxt>Using the Diagnostic Trouble Code Chart or the Problem Symptoms Table, determine which system circuit or part should be inspected.</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Repair Malfunctioning Area</testtitle>
+<test1>
+<ptxt>Following the instructions in step 5, repair the malfunctioning system or part.</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Confirmation Test</testtitle>
+<test1>
+<ptxt>After repairs are completed, check that the problem has been eliminated. (If the problem recurs, perform a confirmation test under the same environment and conditions as when the problem first occurred.)</ptxt>
+</test1>
+<test1>
+<ptxt>If the problem was one for which a DTC was stored, perform the diagnosis judgment result check.</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Restore Vehicle</testtitle>
+<test1>
+<ptxt>Restore each setting to the vehicle condition confirmed in step 4.</ptxt>
+<atten4>
+<ptxt>If there are any items whose settings cannot be restored, be sure to explain to the customer.</ptxt>
+</atten4>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

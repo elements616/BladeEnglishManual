@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T030063A875A331" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>NAVI AI-SHIFT Non-operating Conditions, Restrictions, etc.</TITLE>
+<LIST1><ITEM><PTXT>Control is not performed under the following conditions.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T030063A875A331I01" INDSW = "OFF">
+<TITLE>When NAVI AI-SHIFT Is Not Performed</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>"Off" selected with the "NAVI AI-SHIFT On/Off" switch on the navigation screen</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Shift lever in a position other than D</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the vehicle speed is outside the range of approximately 15 to approximately 100km/h</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the transmission control computer, automatic transmission parts (shift solenoids, vehicle speed sensor, etc.) or electronic throttle malfunctions</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When driving through an intersection while the navigation system is not providing route guidance</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>When the factory-option navigation system is not installed</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T030063A875A331I02" INDSW = "OFF">
+<TITLE>NAVI AI-SHIFT may not operate correctly under the following conditions.</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When a tire is punctured</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the tire size differs from the specified size</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the spare tire is installed</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>When the road information in the navigation system differs from the actual road shape</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T030063A875A331I03" INDSW = "OFF">
+<TITLE>Under the following conditions, control is performed using only road gradient information, and control using corner information is not performed.</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the navigation system malfunctions</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When there is a communication malfunction between the navigation ECU and engine ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the navigation system has no map information</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the positioning accuracy of the navigation system decreases</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When GPS signals cannot be received</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When there is a road adjacent to the road being driven on</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When the road is narrow (excluding national and prefectural roads)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>When the road information in the navigation system differs from the actual road shape</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<HINT>
+<PTXT>It may not operate correctly depending on the situation, so do not rely too heavily on NAVI AI-SHIFT; always pay attention to road conditions and drive at a safe speed.</PTXT></HINT></MECA>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002S_S000E" variety="S000E">
+<name>Vehicle Surroundings Monitor</name>
+<ttl id="1002S_S000E_742B9_T003J" variety="T003J">
+<name>Intelligent Parking Assist System</name>
+<para id="RM0000002PB016X" category="D" type-id="300BB" name-id="672DT-00" from="200612" to="200912">
+<name>Function Description</name>
+<subpara id="RM0000002PB016X_z0" proc-id="RM0550J___00001J600000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Communication System</ptxt>
+<step2>
+<ptxt>CAN Communication System</ptxt>
+<step3>
+<ptxt>The intelligent parking assist system uses CAN communication for data communication between the television camera controller and each ECU.</ptxt>
+</step3>
+<step3>
+<ptxt>If there is a problem in the CAN communication line, the television camera controller outputs a CAN communication malfunction DTC. (Check using the TaSCAN diagnostic tool screen and the diagnosis screen of the navigation receiver assembly) (For the procedure, refer to <xref label="Seep01" href="RM000000OCQ007X"/> and <xref label="Seep02" href="RM0000002O8017X"/>)</ptxt>
+</step3>
+<step3>
+<ptxt>If a CAN communication malfunction code is output, repair the communication line malfunction, and troubleshoot the intelligent parking assist system with data communication in a normal condition. (see <xref label="Seep03" href="RM0000005S001MX"/>) </ptxt>
+</step3>
+<step3>
+<ptxt>Each CAN communication line has a specified length and routing, and temporary measures or repairs using bypass wiring, etc. cannot be performed. (see <xref label="Seep04" href="RM000000OAS007X"/>)</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>AVC - LAN Communication System</ptxt>
+<figure>
+<graphic graphicname="E146250J02" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<step3>
+<ptxt>The intelligent parking assist system uses AVC - LAN for communication between components.</ptxt>
+</step3>
+<step3>
+<ptxt>The master component of the AVC - LAN is the navigation receiver assembly.</ptxt>
+</step3>
+<step3>
+<ptxt>The navigation receiver assembly contains a resistor necessary for communication transmission (60 to 80 Ω between terminals TX+ and TX-).</ptxt>
+</step3>
+<step3>
+<ptxt>If a malfunction such as a short in the communication line, short to +B or short to GND occurs in the AVC - LAN circuit, communication is interrupted, and the intelligent parking assist system and HDD navigation system do not operate normally.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Diagnosis Function</ptxt>
+<step2>
+<ptxt>AVC - LAN Diagnosis (Service Inspection)</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>For the service inspection procedure, refer to <xref label="Seep05" href="RM0000006XI02BX"/></ptxt>
+</item>
+</list1>
+</atten4>
+<figure>
+<graphic graphicname="E144403J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Using the diagnosis function of the HDD navigation system, the intelligent parking assist system can perform connection checks and diagnosis (reading and clearing of AVC - LAN diagnostic trouble codes is possible) for the components connected via AVC - LAN. (Inspection results are displayed on the multi-display)</ptxt>
+</step3>
+<step3>
+<ptxt>Each component that makes up the AVC - LAN is assigned a 3-digit number (expressed in base 16) called a component code (physical address).</ptxt>
+</step3>
+<step3>
+<ptxt>Each function (unit) within an AVC - LAN component is assigned a 2-digit number (expressed in base 16) called a logical address.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Intelligent Parking Assist System Diagnosis (see <xref label="Seep06" href="RM0000002O8017X"/>)</ptxt>
+<figure>
+<graphic graphicname="E144404" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>The intelligent parking assist system has a diagnosis function that allows registration settings, adjustment and checks of the intelligent parking assist system.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>TaSCAN Diagnostic Tool</ptxt>
+<step3>
+<ptxt>By connecting the TaSCAN diagnostic tool, the intelligent parking assist system can be checked for the items shown in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.19in"/>
+<colspec colname="COL2" colwidth="4.74in"/>
+<colspec colname="COLSPEC1" colwidth="1.15in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Check Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Trouble Code (DTC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reading and clearing of DTCs is possible</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep07" href="RM000000OCQ007X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECU Data Monitor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ECU data can be checked</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep08" href="RM000000OAS007X"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Adjustment</ptxt>
+<step2>
+<ptxt>Adjustment and checks of the intelligent parking assist system are performed on the diagnosis screen of the navigation receiver assembly. (see <xref label="Seep09" href="RM0000002O8017X"/>)</ptxt>
+<atten3>
+<ptxt> Depending on the parts replaced or the work performed during vehicle inspection and maintenance, registration and setting operations for other systems as well as the intelligent parking assist system may be necessary. (see <xref label="Seep10" href="RM00000304S000X"/>)</ptxt>
+</atten3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

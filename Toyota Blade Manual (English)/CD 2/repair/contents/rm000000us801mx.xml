@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="07">
+<name>Steering</name>
+<section id="1000U_S0017" variety="S0017">
+<name>Steering Column</name>
+<ttl id="1000U_S0017_745FR_T00AZ" variety="T00AZ">
+<name>Electric Power Steering System</name>
+<para id="RM000000US801MX" category="J" type-id="304QZ" name-id="480YA-00" from="200912">
+<dtccode/>
+<dtcname>P/S warning light remains on</dtcname>
+<subpara id="RM000000US801MX_06" type-id="33" category="03" proc-id="RM0550J___0000AEU00001">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>This describes troubleshooting when DTC output is normal and the P/S warning light remains on.</ptxt>
+<ptxt>If the power supply voltage input (IG) circuit to the power steering computer assembly is open, the P/S warning light remains on.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000US801MX_07" type-id="32" category="03" proc-id="RM0550J___0000AEV00001">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C149385J18" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000US801MX_08" type-id="51" category="05" proc-id="RM0550J___0000AEW00001">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>If the power steering computer assembly is replaced, perform the torque sensor 0 point calibration and rotation angle sensor output calibration. (see <xref label="Seep01" href="RM0000024YB004X"/>)</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000US801MX_09" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000US801MX_09_0023" proc-id="RM0550J___0000AEX00001">
+<testtitle>Inspect Connection Condition of Each Part</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Lightly shake the connectors and wire harness of the power steering computer assembly up and down and left and right, and check the condition of the P/S warning light.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>P/S warning light illumination condition does not change</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000US801MX_09_0024" fin="false">OK</down>
+<right ref="RM000000US801MX_09_0029" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000US801MX_09_0024" proc-id="RM0550J___0000AEY00001">
+<testtitle>Inspect Control System CAN Communication System</testtitle>
+<content6 releasenbr="2">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs of the CAN communication system. (see <xref label="Seep01" href="RM0000005S0030X"/>)</ptxt>
+</test1>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Normal DTC</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM000000US801MX_09_0026" fin="false">OK</down>
+<right ref="RM000000US801MX_09_0030" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000US801MX_09_0026" proc-id="RM0550J___0000AEZ00001">
+<testtitle>Inspect Power Steering Computer Assembly (IG, PGND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect connectors C and D of the power steering computer assembly.</ptxt>
+<figure>
+<graphic graphicname="C149382J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), inspect the voltage and resistance between the wire harness side connector of the power steering computer assembly and body ground.</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.23in"/>
+<colspec colname="COL2" colwidth="0.95in"/>
+<colspec colname="COL3" colwidth="0.95in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C6 (IG) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table frame="all">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="2.23in"/>
+<colspec colname="col2" colwidth="0.95in"/>
+<colspec colname="col3" colwidth="0.95in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D2 (PGND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000US801MX_09_0027" fin="false">OK</down>
+<right ref="RM000000US801MX_09_0032" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000US801MX_09_0027" proc-id="RM0550J___0000AF000001">
+<testtitle>Replace Power Steering Computer Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>After replacing the power steering computer assembly, check the illumination condition of the P/S warning light on the combination meter assembly. (see <xref label="Seep01" href="RM000000UNH021X"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Goes off after the engine is started</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000US801MX_09_0033" fin="true">OK</down>
+<right ref="RM000000US801MX_09_0028" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000US801MX_09_0028">
+<testtitle>Replace Combination Meter Assembly<xref label="Seep01" href="RM000002C0G001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000US801MX_09_0029">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000000US801MX_09_0030">
+<testtitle>Go to Control System CAN Communication System<xref label="Seep01" href="RM000001R4W019X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000US801MX_09_0032">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000000US801MX_09_0033">
+<testtitle>Complete</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

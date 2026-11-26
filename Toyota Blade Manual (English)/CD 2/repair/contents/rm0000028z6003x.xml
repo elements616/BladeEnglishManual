@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="1001O_S001F" variety="S001F">
+<name>Cruise Control</name>
+<ttl id="1001O_S001F_74QXG_T00FF" variety="T00FF">
+<name>Millimeter Wave Radar Sensor Assembly</name>
+<para id="RM0000028Z6003X" category="N" type-id="3000G" name-id="5914G-00" from="200708">
+<name>Adjustment</name>
+<subpara id="RM0000028Z6003X_01" type-id="01" category="01">
+<s-1 id="RM0000028Z6003X_01_0001" proc-id="RM0550J___0000CC500000">
+<ptxt>Adjust Millimeter Wave Radar Sensor Assembly</ptxt>
+<content1 releasenbr="1">
+<atten3>
+<figure>
+<graphic graphicname="B180361J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<list1 type="unordered">
+<item>
+<ptxt>Perform the measurement on a level floor. </ptxt>
+</item>
+<item>
+<ptxt>Check that there are no metal objects in the surrounding area or on the floor surface. (The area approximately 10m ahead and approximately 14m wide is a prohibited area for objects. It is preferable that there are no large metal objects around it either.) </ptxt>
+</item>
+</list1>
+</atten3>
+<s2>
+<ptxt>Pre-adjustment Work</ptxt>
+<s3>
+<ptxt>Unload all luggage from the vehicle.</ptxt>
+</s3>
+<s3>
+<ptxt>Leave only the standard tools and spare tire in the trunk.</ptxt>
+</s3>
+<s3>
+<ptxt>Adjust the tire pressure to the specified value.</ptxt>
+</s3>
+<s3>
+<ptxt>Reduce the remaining fuel to less than 15L.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Vertical Adjustment</ptxt>
+<s3>
+<ptxt>Remove dust and oil from the level shelf of the millimeter wave radar sensor assembly.</ptxt>
+</s3>
+<s3>
+<ptxt>Place the dedicated level in the center of the level shelf of the millimeter wave radar sensor assembly.</ptxt>
+<figure>
+<graphic graphicname="B180362J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Using a screwdriver, turn vertical adjusting bolt A of the millimeter wave radar sensor assembly to adjust so that the bubble is on the red line of the level.</ptxt>
+<figure>
+<graphic graphicname="B180363J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Upward 0.2°</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Adjustment range within red frame of level ±0.2°</ptxt>
+</atten4>
+<table frame="all">
+<tgroup cols="3">
+<colspec colname="col1" align="center" colwidth="1.38in"/>
+<colspec colname="col2" align="left" colwidth="1.38in"/>
+<colspec colname="col3" align="center" colwidth="1.37in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Vertical Adjustment</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Upward: Turn bolt A to the minus side </ptxt>
+</item>
+<item>
+<ptxt>Downward: Turn bolt A to the plus side</ptxt>
+</item>
+</list1>
+</entry>
+<entry>
+<ptxt>1 turn of the screwdriver moves it approximately 0.12°</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+</s2>
+<s2>
+<ptxt>SST (Reflector) Height Adjustment</ptxt>
+<figure>
+<graphic graphicname="B180364J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Set SST (reflector) at a height of 70cm from the ground.</ptxt>
+<sst>
+<sstitem>
+<s-number>09870-60000</s-number>
+<s-subnumber>09870-60010</s-subnumber>
+<s-subnumber>09870-60040</s-subnumber>
+</sstitem>
+</sst>
+</s3>
+</s2>
+<s2>
+<ptxt>SST (Reflector) Setting</ptxt>
+<s3>
+<ptxt>Hang a pointed weight from the center (emblem center) of the front and rear bumpers of the vehicle, and accurately mark the center positions on the floor surface.</ptxt>
+</s3>
+<s3>
+<ptxt>Make a mark 5m ahead of the vehicle on the line connecting the 2 front and rear points.</ptxt>
+<atten4>
+<ptxt>Fix one end of a string to the rear mark, and from 5m ahead of the vehicle, move the other end of the string left and right to align it with the front mark and establish a straight line.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="B180365J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Set SST (reflector) at a position shifted 12mm to the right of the vehicle from the marking position.</ptxt>
+<atten3>
+<ptxt>Perform as accurately as possible.</ptxt>
+</atten3>
+<figure>
+<graphic graphicname="B180366J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</s3>
+</s2>
+<s2>
+<ptxt>Beam Axis Adjustment</ptxt>
+<s3>
+<ptxt>Connect SST (TaSCAN) to the vehicle.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</s3>
+<s3>
+<ptxt>Turn IG ON.</ptxt>
+</s3>
+<s3>
+<ptxt>Turn the cruise control main switch ON.</ptxt>
+</s3>
+<s3>
+<ptxt>On the screen, select "Work Support" → "Radar Cruise" → "Millimeter Wave Radar Beam Axis Adjustment" in that order.</ptxt>
+<figure>
+<graphic graphicname="E102761" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Follow the screen instructions and press the "Start" button.</ptxt>
+<atten3>
+<ptxt>Check that the beam axis distance is approximately 5m.</ptxt>
+</atten3>
+</s3>
+</s2>
+<s2>
+<ptxt>Horizontal Adjustment</ptxt>
+<s3>
+<ptxt>Read the current angle deviation.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>0° for both left and right</ptxt>
+</specitem>
+</spec>
+<figure>
+<graphic graphicname="E137472J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Based on the beam axis deviation measurement result, use a screwdriver to turn horizontal adjusting bolt B of the millimeter wave radar sensor assembly to adjust it.</ptxt>
+<figure>
+<graphic graphicname="B180367J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table frame="all">
+<tgroup cols="3">
+<colspec colname="col1" align="center" colwidth="1.38in"/>
+<colspec colname="col2" align="left" colwidth="1.38in"/>
+<colspec colname="col3" align="center" colwidth="1.37in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Horizontal Adjustment</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Upward: Turn bolt B to the plus side </ptxt>
+</item>
+<item>
+<ptxt>Downward: Turn bolt B to the minus side </ptxt>
+</item>
+</list1>
+</entry>
+<entry>
+<ptxt>1 turn of the screwdriver moves it approximately 0.05°</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>If it is difficult to reach 0°, the sensor may be targeting an object other than SST (reflector), so check again that there are no highly reflective objects in the surrounding area.</ptxt>
+</atten3>
+</s3>
+<s3>
+<ptxt>To reset the driving learned value, cover the left half of the sensor with aluminum foil, etc. (a metal object that blocks radio waves). (For approximately 10 seconds)</ptxt>
+<figure>
+<graphic graphicname="B180368J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>At this time, leave SST (reflector) installed, and make sure there are no objects between the right half of the sensor and the reflector.</ptxt>
+</atten3>
+<atten4>
+<ptxt>When reset, the buzzer sounds for 10 seconds and the screen displays "Beam Axis Deviation 6.3°" and "Beam Axis Distance 6.3m".</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Press the "Complete" button to end the beam axis adjustment mode.</ptxt>
+<figure>
+<graphic graphicname="E116328" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Disconnect SST (TaSCAN) from the vehicle.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Recheck Vertical Adjustment</ptxt>
+<s3>
+<ptxt>Place the dedicated level in the center of the level shelf of the millimeter wave radar sensor assembly.</ptxt>
+<figure>
+<graphic graphicname="B180362J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Using a screwdriver, turn vertical adjusting bolt A of the millimeter wave radar sensor assembly to readjust so that the bubble is on the red line of the level.</ptxt>
+<figure>
+<graphic graphicname="B180363J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Upward 0.2°</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Adjustment range within red frame of level ±0.2°</ptxt>
+</atten4>
+<table frame="all">
+<tgroup cols="3">
+<colspec colname="col1" align="left" colwidth="1.38in"/>
+<colspec colname="col2" align="left" colwidth="1.38in"/>
+<colspec colname="col3" align="left" colwidth="1.37in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Vertical Adjustment</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Upward: Turn bolt A to the minus side </ptxt>
+</item>
+<item>
+<ptxt>Downward: Turn bolt A to the plus side </ptxt>
+</item>
+</list1>
+</entry>
+<entry>
+<ptxt>1 turn of the screwdriver moves it approximately 0.12°</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000028Z6003X_01_0002" proc-id="RM0550J___0000CC600000">
+<ptxt>Road Test</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Road Test</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Always perform a road test after adjusting the millimeter wave radar sensor assembly.</ptxt>
+</item>
+<item>
+<ptxt>Drive with sufficient care.</ptxt>
+</item>
+</list1>
+</atten3>
+<s3>
+<ptxt>On a straight road with 1 or more lanes in each direction where safety can be confirmed and visibility is good, drive at a vehicle speed of 30km/h or more near the center of the lane, parallel to the lane.</ptxt>
+<atten3>
+<ptxt>Since the pre-crash safety may operate under the following conditions, avoid such conditions when performing the road test.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>When there are roadside objects at the entrance to a curve.</ptxt>
+</item>
+<item>
+<ptxt>When passing oncoming vehicles on a curve.</ptxt>
+</item>
+<item>
+<ptxt>When passing through a narrow steel bridge.</ptxt>
+</item>
+<item>
+<ptxt>When there are metal objects on the road surface.</ptxt>
+</item>
+<item>
+<ptxt>When there is an oncoming vehicle while turning right.</ptxt>
+</item>
+<item>
+<ptxt>When rapidly approaching a vehicle ahead.</ptxt>
+</item>
+<item>
+<ptxt>When passing through an ETC gate.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+<s3>
+<ptxt>On a straight road, when passing an oncoming vehicle with no danger of collision, check that the master warning does not illuminate, the buzzer does not sound, and "BRAKE!" is not displayed on the combination meter display.</ptxt>
+</s3>
+<s3>
+<ptxt>If it is displayed, adjust the millimeter wave radar sensor assembly again.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Check the installation condition of the millimeter wave radar sensor assembly.</ptxt>
+</item>
+<item>
+<ptxt>Check that the pre-crash brake switch is not pushed in.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

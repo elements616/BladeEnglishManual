@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-db>
+<pub id="RM0550J">
+<servcat id="03">
+<section id="1002B_S001H" variety="S001H">
+<ttl id="1002B_S001H_74Y0X_T00H8" variety="T00H8">
+<para id="RM000000AVG00ZX" category="C" type-id="3007P" name-id="261HZ-00" from="200708">
+<subpara id="RM000000AVG00ZX_08">
+<testgrp id="RM000000AVG00ZX_08_0007">
+<scantool type="4">
+<parameter key="ecu-id">64</parameter>
+<parameter key="ecu-category-name">ECT</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">4</parameter>
+<parameter key="pid-id-num">1</parameter>
+<datamonitor no="1">
+<parameter key="pid-id">11</parameter>
+<parameter key="datamonitor-name">Vehicle Speed</parameter>
+</datamonitor>
+</scantool>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-db>

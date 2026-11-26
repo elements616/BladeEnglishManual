@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740035e SYSTEM "grph_ent/a4740035e.png" NDATA png>
+<!ENTITY a4740036e SYSTEM "grph_ent/a4740036e.png" NDATA png>
+<!ENTITY a4480090e SYSTEM "grph_ent/a4480090e.png" NDATA png>
+
+<!ENTITY T080004K500 SYSTEM "t334080004k500.xml">
+<!ENTITY T080004K500K145 SYSTEM "t334080004k500k145.xml">
+<!ENTITY T080004K500K148 SYSTEM "t334080004k500k148.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T080004K500S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T080004K500" UPDATE = "ORIGINAL" LDUP = "13Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Condenser</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A sub-cool condenser, which integrates a multi-flow condenser and a gas-liquid separator (modulator) to form a sub-cool cycle, is used for excellent heat exchange efficiency.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740035e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+
+<MECA ID = "T080004K500K145" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Sub-cool Condenser Construction</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>In the sub-cool cycle, a single condenser is divided into a condensing section and a supercooling section with a gas-liquid separator between them; the liquid refrigerant that has been separated from gas is further cooled to increase its energy (enthalpy), improving cooling efficiency.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740036e" WIDTH = "6.903in" HEIGHT = "4.333in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T080004K500K148" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Refrigerant Gas Charging in the Sub-cool Cycle</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>In a receiver cycle, the point at which bubbles disappear is at the entrance to the stable cooling capacity range (plateau), but in a sub-cool cycle the point at which bubbles disappear is before the stable cooling range (plateau), so it is necessary to add 100 ± 50g to reach the proper charge amount. (If refrigerant gas charging is stopped at the point at which bubbles disappear, cooling capacity will tend to be insufficient.) Overcharging also causes poor fuel economy and insufficient cooling capacity, so charge the proper amount of refrigerant gas.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4480090e" WIDTH = "6.903in" HEIGHT = "2.528in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

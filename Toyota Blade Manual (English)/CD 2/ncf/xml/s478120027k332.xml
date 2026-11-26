@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740078e SYSTEM "grph_ent/a4740078e.png" NDATA png>
+
+<!ENTITY T120027K332 SYSTEM "t478120027k332.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120027K332S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120027K332" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Light Control Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Detects the illuminance around the vehicle with the scanner section (integrated optical sensor) and outputs it as a frequency signal to the main body ECU (instrument panel junction block assembly). It is installed on the right side of the upper part of the instrument panel.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740078e" WIDTH = "6.903in" HEIGHT = "2.806in" />
+</FIGURE>
+</PARA>
+</SECTION>

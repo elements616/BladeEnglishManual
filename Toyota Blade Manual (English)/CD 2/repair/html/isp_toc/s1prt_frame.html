@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- $Id: s1prt_frame.html,v 1.14 2005/03/23 01:14:36 k-narumi Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Print Individual View</title>
+
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/style.js"></script>
+<script language="javascript">
+//
+//  Contents画面の初期表示
+//  初期化
+//
+function initContents() {
+	var args = window.dialogArguments;
+	if (args == null || args.length != 3) {
+		alert("The parameter is invalid.");
+		return;
+	}
+	var illustId = args[0];
+	if (illustId == null) {
+		alert("No illustration ID is specified.");
+		return;
+	}
+	var dispPage = args[1];
+	if (dispPage == null) {
+		alert("No display source is specified.");
+		return;
+	}
+	contents.png.innerHTML="<img src='../../png/"+illustId.toLowerCase() +".png'  width='100%' alt='" + illustId + "'></img>"
+		//+ "<BUTTON ONCLICK='window.alert(document.body.innerHTML);'>View</BUTTON>"
+		;
+	contents.disp.innerHTML = dispPage;
+	contents.svgTitle.innerHTML = illustId;
+	disableSeepage(contents.document);
+	contents.ttl.innerHTML = args[2];
+}
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="s1prt_global.html" scrolling="no" noresize frameborder="no">
+	<frame name="contents" src="s1prt_contents.html" frameborder="no">
+</frameset>
+<noframes>
+	<body>Please use a browser that supports frames</body>
+</noframes>
+</html>

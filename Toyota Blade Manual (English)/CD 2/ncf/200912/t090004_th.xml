@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740321b SYSTEM "../xml/grph_ent/a4740321b.png" NDATA png>
+<!ENTITY A4740308B SYSTEM "../xml/grph_ent/a4740308b.png" NDATA png>
+<!ENTITY a4740287b SYSTEM "../xml/grph_ent/a4740287b.png" NDATA png>
+<!ENTITY a4740288b SYSTEM "../xml/grph_ent/a4740288b.png" NDATA png>
+<!ENTITY a4740289b SYSTEM "../xml/grph_ent/a4740289b.png" NDATA png>
+<!ENTITY a4740290b SYSTEM "../xml/grph_ent/a4740290b.png" NDATA png>
+<!ENTITY a4740291b SYSTEM "../xml/grph_ent/a4740291b.png" NDATA png>
+<!ENTITY a4740296b SYSTEM "../xml/grph_ent/a4740296b.png" NDATA png>
+<!ENTITY a4740298b SYSTEM "../xml/grph_ent/a4740298b.png" NDATA png>
+<!ENTITY a4740299b SYSTEM "../xml/grph_ent/a4740299b.png" NDATA png>
+<!ENTITY a4740300b SYSTEM "../xml/grph_ent/a4740300b.png" NDATA png>
+<!ENTITY a4740297b SYSTEM "../xml/grph_ent/a4740297b.png" NDATA png>
+<!ENTITY a4740301b SYSTEM "../xml/grph_ent/a4740301b.png" NDATA png>
+<!ENTITY a4740302b SYSTEM "../xml/grph_ent/a4740302b.png" NDATA png>
+<!ENTITY a4740322b SYSTEM "../xml/grph_ent/a4740322b.png" NDATA png>
+<!ENTITY a4740303b SYSTEM "../xml/grph_ent/a4740303b.png" NDATA png>
+<!ENTITY a4740323b SYSTEM "../xml/grph_ent/a4740323b.png" NDATA png>
+<!ENTITY a4740304b SYSTEM "../xml/grph_ent/a4740304b.png" NDATA png>
+
+<!ENTITY T130004K064 SYSTEM "../xml/t478130004k064.xml">
+<!ENTITY T130004K064Ab01 SYSTEM "../xml/t478130004k064ab01.xml">
+<!ENTITY T130004K064K511 SYSTEM "../xml/t478130004k064k511.xml">
+<!ENTITY T130004K047 SYSTEM "../xml/t478130004k047.xml">
+<!ENTITY T130004K047K512 SYSTEM "../xml/t478130004k047k512.xml">
+<!ENTITY T130004K047K513 SYSTEM "../xml/t478130004k047k513.xml">
+<!ENTITY T130004K047K514 SYSTEM "../xml/t478130004k047k514.xml">
+<!ENTITY T130004K047Aa18 SYSTEM "../xml/t478130004k047aa18.xml">
+<!ENTITY T130004K047K272 SYSTEM "../xml/t478130004k047k272.xml">
+<!ENTITY T130004K063 SYSTEM "../xml/t478130004k063.xml">
+<!ENTITY T130004K215 SYSTEM "../xml/t478130004k215.xml">
+<!ENTITY T130004K215K260 SYSTEM "../xml/t478130004k215k260.xml">
+<!ENTITY T130004K215K258 SYSTEM "../xml/t478130004k215k258.xml">
+<!ENTITY T130004K215K259 SYSTEM "../xml/t478130004k215k259.xml">
+<!ENTITY T130004K215T075 SYSTEM "../xml/t478130004k215t075.xml">
+<!ENTITY T130004K326 SYSTEM "../xml/t478130004k326.xml">
+<!ENTITY T130004K326K383 SYSTEM "../xml/t478130004k326k383.xml">
+<!ENTITY T130004K340 SYSTEM "../xml/t478130004k340.xml">
+<!ENTITY T130004K340K403 SYSTEM "../xml/t478130004k340k403.xml">
+<!ENTITY T130004K005 SYSTEM "../xml/t478130004k005.xml">
+<!ENTITY T130004K005K002 SYSTEM "../xml/t478130004k005k002.xml">
+<!ENTITY T130004K047R01 SYSTEM "../xml/t478130004k047r01.xml">
+<!ENTITY T130004K047K512R01 SYSTEM "../xml/t478130004k047k512r01.xml">
+<!ENTITY T130004K047K513R02 SYSTEM "../xml/t478130004k047k513r02.xml">
+<!ENTITY T130004K047K514R03 SYSTEM "../xml/t478130004k047k514r03.xml">
+<!ENTITY T130004K047Aa18R04 SYSTEM "../xml/t478130004k047aa18r04.xml">
+<!ENTITY T130004K047K272R05 SYSTEM "../xml/t478130004k047k272r05.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T130004K064S"><SCTITLE/>
+
+<PARA INFOID = "T130004K064" UPDATE = "ORIGINAL" LDUP = "29Jun2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Window Glass</TITLE>
+<LIST1><ITEM><PTXT>For the windshield glass, high sound insulation glass has been adopted, which has a sound insulation layer of special resin between the interlayers and suppresses the coincidence phenomenon<HINTREF     REFID = "H478130004K06401"/>, reducing the noise entering the cabin and ensuring excellent sound insulation performance.</PTXT></ITEM>
+<ITEM><PTXT>"Green tempered UV-cut glass<HINTREF     REFID = "H478130004K06402"/>", which is heat-absorbing glass with an added ultraviolet-cutting component, has been provided for the front door glass, front fixed window glass, rear door glass and rear door quarter window glass depending on the specification. The front door glass has a water-repellent function to ensure visibility when driving in rain, etc.</PTXT></ITEM>
+<ITEM><PTXT>"Privacy glass (dark gray)<HINTREF     REFID = "H478130004K06403"/>", which makes the cabin difficult to see from behind the vehicle to protect privacy, has been adopted for the rear door glass, rear door quarter window glass and back door glass, and provided depending on the specification.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478130004K06401">A phenomenon in which sound waves of a certain frequency entering the glass cause a kind of resonance, reducing sound insulation performance.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478130004K06402">Heat-absorbing glass with an infrared-cutting function, with an added ultraviolet-cutting component.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478130004K06403">Glass that makes the cabin difficult to see from outside to protect privacy, blocks infrared rays (near-infrared rays) with a large heating effect, and also cuts ultraviolet rays.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740321b" WIDTH = "6.903in" HEIGHT = "3.764in" />
+</FIGURE>
+
+<MECA ID = "T130004K064Ab01" UPDATE = "ORIGINAL" LDUP = "10Jan2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Water-repellent Front Door Glass</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A water-repellent film is coated on the glass surface. This reduces the adhesion of raindrops when driving in rain, ensuring visibility of the outer rear view mirrors and to the sides. It also has the effect of reducing condensation, icing and adhesion of muddy water, etc., and making them easier to remove.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "A4740308B" WIDTH = "6.903in" HEIGHT = "2.958in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130004K064K511" UPDATE = "ORIGINAL" LDUP = "11Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Water-repellent Glass: Handling Precautions</TITLE>
+<LIST1><ITEM><PTXT>The water-repellent effect lasts for a limited period. To maintain the water-repellent performance for a long time, clean the door glass with a soft, damp cloth as soon as possible when it becomes dirty.</PTXT></ITEM>
+<ITEM><PTXT>When cleaning the door glass, do not use detergents or wax containing compound. (If the glass becomes cloudy white when using glass cleaner, wipe it off with a damp cloth.) In addition, do not use an automatic car wash or repeatedly raise and lower the door glass when it is heavily soiled with mud, etc. This may cause loss of the water-repellent effect or scratch the glass.</PTXT></ITEM>
+<ITEM><PTXT>If the glass is frozen, do not scrape it off with a metal plate, etc. This may cause loss of the water-repellent effect or scratch the glass.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T130004K047S"><SCTITLE/>
+
+<PARA INFOID = "T130004K047" UPDATE = "ORIGINAL" LDUP = "31Mar2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Outer Rear View Mirror</TITLE>
+<LIST1><ITEM><PTXT>"Retractable remote control outer mirrors with turn signal lights" are standard on all models. For details, refer to the Power Mirror System.<XREF     REFID = "S478130004K215"/>
+</PTXT></ITEM>
+<ITEM><PTXT>A rain clearing blue mirror, which combines a rain clearing mirror layer with functions such as a self-cleaning effect and a blue mirror layer with low reflectance in the daytime and high reflectance at night, has been adopted on the mirror surface to ensure stable rear visibility.</PTXT></ITEM>
+<ITEM><PTXT>Cold area specification models have a heater inside the mirror.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740287b" WIDTH = "6.903in" HEIGHT = "1.972in" />
+</FIGURE>
+
+<MECA ID = "T130004K047K512" UPDATE = "ORIGINAL" LDUP = "21Oct2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Rain Clearing Blue Mirror</TITLE>
+<LIST1><ITEM><PTXT>The rain clearing blue mirror is a front-surface mirror with a Cr reflective layer coated on the glass surface, and its structure prevents double images through surface reflection.</PTXT></ITEM>
+<ITEM><PTXT>Through the interference effect of the 2 layers, with a titania layer coated on the surface of the Cr reflective layer, and a reflectance adjustment layer sandwiched in between, the reflected light is made blue without tinting the glass. This enhances the effect of reducing glare from reflected light and the effect of cutting ultraviolet and infrared rays.</PTXT></ITEM>
+<ITEM><PTXT>The silica layer has a hydrophilic effect that spreads water droplets adhering to the surface into a thin film. In addition, the hydrophilic effect is enhanced by giving the silica layer surface an uneven texture.</PTXT></ITEM>
+<ITEM><PTXT>The titania layer has a self-cleaning effect that chemically decomposes and removes dirt adhering to the silica layer surface through photocatalytic action that reacts with sunlight (ultraviolet rays).</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740288b" WIDTH = "6.903in" HEIGHT = "3.708in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130004K047K513" UPDATE = "ORIGINAL" LDUP = "21Oct2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Hydrophilic Effect</TITLE>
+<LIST1><ITEM><PTXT>Material surfaces in the atmosphere are broadly divided into hydrophilic surfaces, which bond easily with water, and hydrophobic surfaces, which do not bond easily (tend to repel water). Ordinary mirror surfaces are covered with hydrophobic substances (dirt, etc.), so when water adheres, it forms hemispherical droplets due to surface tension.</PTXT></ITEM>
+<ITEM><PTXT>The rain clearing blue mirror has a hydrophilic silica layer on its surface that bonds easily with water, and the outermost surface of the silica has an uneven structure to hold a large amount of water. As a result, when water adheres, it is spread into a thin film to ensure visibility. If dirt adheres directly to the outermost surface of the silica layer, the hydrophilic effect may decrease, but when exposed to sunlight (ultraviolet rays), the hydrophilic effect can be restored by the self-cleaning effect.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740289b" WIDTH = "6.903in" HEIGHT = "2.958in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130004K047K514" UPDATE = "ORIGINAL" LDUP = "21Oct2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Self-cleaning Effect (Photocatalytic Action)</TITLE>
+<LIST1><ITEM><PTXT>When exposed to sunlight (ultraviolet rays), electrons (e-) are generated inside the titania layer, and the electrons pass through the silica layer and are adsorbed by and excite the surrounding oxygen (O2), changing it into active oxygen (O2-). (Fig. A) This active oxygen chemically reacts with dirt (organic matter) adhering to the silica layer surface, decomposing the dirt into carbon dioxide (CO2) and water (H2O) and removing it. (Fig. B)</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740290b" WIDTH = "6.903in" HEIGHT = "3.014in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130004K047Aa18" UPDATE = "ORIGINAL" LDUP = "21Oct2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Variable Reflection Effect</TITLE>
+<LIST1><ITEM><PTXT>The reflected color is blue, and by lowering the reflectance of yellow and red light (long wavelength range), which feels particularly glaring in the bright "daytime", glare from sunlight and headlights is reduced.</PTXT></ITEM>
+<ITEM><PTXT>In the dark "nighttime", reflectance equivalent to that of an untinted mirror is ensured to maintain visibility. In addition, the effect of cutting infrared and ultraviolet rays is also enhanced.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740291b" WIDTH = "6.903in" HEIGHT = "3.389in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130004K047K272" UPDATE = "ORIGINAL" LDUP = "21Oct2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Handling Precautions</TITLE>
+<LIST1><ITEM><PTXT>Washing with water alone is sufficient when cleaning the mirror surface. Rubbing the mirror surface with an oil film remover (compound, etc.) or a cloth with sand on it, or applying wax, water repellent, etc., may damage or attack the silica/titania layers coated on the mirror surface and cause loss of the hydrophilic effect.</PTXT></ITEM>
+<ITEM><PTXT>If the mirror surface is frozen, do not scrape it off with a plastic plate, etc.; thaw it with running water or warm water.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Temporary Decrease in Hydrophilic Effect</TITLE>
+<ITEM><PTXT>Under the following conditions, the hydrophilic effect temporarily decreases, but this is not a malfunction. The hydrophilic effect recovers with several days of sunlight; to restore the effect quickly, clean the mirror according to the procedure described in the Repair Manual.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Conditions Causing Temporary Decrease in Hydrophilic Effect</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When the mirror surface is touched with bare hands, or dirt on the mirror surface is wiped off with an oily cloth, etc.</PTXT></ITEM>
+<ITEM><PTXT>When the vehicle is parked for a long period in a place not exposed to sunlight, such as an underground parking lot.</PTXT></ITEM>
+<ITEM><PTXT>When wax remover used to remove vehicle wax adheres.</PTXT></ITEM>
+<ITEM><PTXT>When wax adheres from an automatic car wash.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T130004K063S"><SCTITLE/>
+
+<PARA INFOID = "T130004K063" UPDATE = "ORIGINAL" LDUP = "6Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Inner Rear View Mirror</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The automatic anti-glare EC (electrochromic) mirror has been discontinued, and a manual anti-glare mirror has been adopted on all models.</PTXT></ITEM></LIST1>
+</PARA>
+</SECTION>
+<SECTION SCID = "T130004K215S"><SCTITLE/>
+
+<PARA INFOID = "T130004K215" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Power Mirror System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A lock current detection type has been adopted for the power retract/return circuit built into the mirror.</PTXT></ITEM>
+<ITEM><PTXT>A push-lock type mirror retract switch has been adopted and located on the right side of the instrument panel on the driver side.</PTXT></ITEM>
+<ITEM><PTXT>"Retractable remote control outer mirrors", which have a power retract/return remote control function in addition to remote control of the mirror surface from inside the cabin, have been provided.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740296b" WIDTH = "6.903in" HEIGHT = "3.153in" />
+</FIGURE>
+
+<MECA ID = "T130004K215K260" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Outer Mirror Return</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the retract/return switch is pressed with both mirrors in the retracted position, both the left and right mirrors return.</PTXT></ITEM>
+<ITEM><PTXT>If one mirror is manually moved from the retracted position to the return position, the mirror holds that position. If the retract/return switch is pressed at this time, only that one mirror returns.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740298b" WIDTH = "6.903in" HEIGHT = "2.903in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130004K215K258" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Outer Mirror Retraction</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the retract/return switch is pressed with both mirrors in the return position, both the left and right mirrors retract.</PTXT></ITEM>
+<ITEM><PTXT>If one mirror is manually moved from the return position to the forward-folded position, the mirror holds that position. If the retract/return switch is pressed at this time, both the left and right mirrors retract.</PTXT></ITEM>
+<ITEM><PTXT>If one mirror is manually moved from the return position to the retracted position, the mirror holds that position. If the retract/return switch is pressed at this time, only that one mirror retracts.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740299b" WIDTH = "6.806in" HEIGHT = "3.569in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130004K215K259" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Outer Mirror Fail-safe</TITLE>
+<LIST1><ITEM><PTXT>If the mirror hits an obstacle during retraction/return operation, a fail-safe function stops the mirror in the position where its movement is blocked by the obstacle, preventing damage.</PTXT></ITEM>
+<ITEM><PTXT>If the mirror stops at an intermediate position due to the fail-safe function, it can be moved to the retracted or return position by operating the switch after removing the obstacle.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740300b" WIDTH = "6.903in" HEIGHT = "2.903in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130004K215T075" UPDATE = "ORIGINAL" LDUP = "22Apr2005"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Power Retract/Return Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>With ACC ON or IG ON, when the outer mirror switch is locked in the pushed-in position &lt;protruding position&gt;, the retract side switch &lt;return side switch&gt; turns ON, and current flows to the retract/return motor via the retract/return circuit (motor lock current detection circuit), operating the motor.</PTXT></ITEM>
+<ITEM><PTXT>When the mirror moves to the retracted position &lt;return position&gt; and the retract/return circuit detects motor lock, the circuit cuts off the current and the retract/return motor stops.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740297b" WIDTH = "6.903in" HEIGHT = "4.333in" />
+</FIGURE>
+</MECA>
+</PARA>
+<BIND ID = "T130004K215B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T130004K047R01" UPDATE = "ORIGINAL" LDUP = "31Mar2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Outer Rear View Mirror</TITLE>
+<LIST1><ITEM><PTXT>"Retractable remote control outer mirrors with turn signal lights" are standard on all models. For details, refer to the Power Mirror System.<XREF     REFID = "S478130004K215"/>
+</PTXT></ITEM>
+<ITEM><PTXT>A rain clearing blue mirror, which combines a rain clearing mirror layer with functions such as a self-cleaning effect and a blue mirror layer with low reflectance in the daytime and high reflectance at night, has been adopted on the mirror surface to ensure stable rear visibility.</PTXT></ITEM>
+<ITEM><PTXT>Cold area specification models have a heater inside the mirror.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740287b" WIDTH = "6.903in" HEIGHT = "1.972in" />
+</FIGURE>
+
+<MECA ID = "T130004K047K512R01" UPDATE = "ORIGINAL" LDUP = "21Oct2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Rain Clearing Blue Mirror</TITLE>
+<LIST1><ITEM><PTXT>The rain clearing blue mirror is a front-surface mirror with a Cr reflective layer coated on the glass surface, and its structure prevents double images through surface reflection.</PTXT></ITEM>
+<ITEM><PTXT>Through the interference effect of the 2 layers, with a titania layer coated on the surface of the Cr reflective layer, and a reflectance adjustment layer sandwiched in between, the reflected light is made blue without tinting the glass. This enhances the effect of reducing glare from reflected light and the effect of cutting ultraviolet and infrared rays.</PTXT></ITEM>
+<ITEM><PTXT>The silica layer has a hydrophilic effect that spreads water droplets adhering to the surface into a thin film. In addition, the hydrophilic effect is enhanced by giving the silica layer surface an uneven texture.</PTXT></ITEM>
+<ITEM><PTXT>The titania layer has a self-cleaning effect that chemically decomposes and removes dirt adhering to the silica layer surface through photocatalytic action that reacts with sunlight (ultraviolet rays).</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740288b" WIDTH = "6.903in" HEIGHT = "3.708in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130004K047K513R02" UPDATE = "ORIGINAL" LDUP = "21Oct2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Hydrophilic Effect</TITLE>
+<LIST1><ITEM><PTXT>Material surfaces in the atmosphere are broadly divided into hydrophilic surfaces, which bond easily with water, and hydrophobic surfaces, which do not bond easily (tend to repel water). Ordinary mirror surfaces are covered with hydrophobic substances (dirt, etc.), so when water adheres, it forms hemispherical droplets due to surface tension.</PTXT></ITEM>
+<ITEM><PTXT>The rain clearing blue mirror has a hydrophilic silica layer on its surface that bonds easily with water, and the outermost surface of the silica has an uneven structure to hold a large amount of water. As a result, when water adheres, it is spread into a thin film to ensure visibility. If dirt adheres directly to the outermost surface of the silica layer, the hydrophilic effect may decrease, but when exposed to sunlight (ultraviolet rays), the hydrophilic effect can be restored by the self-cleaning effect.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740289b" WIDTH = "6.903in" HEIGHT = "2.958in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130004K047K514R03" UPDATE = "ORIGINAL" LDUP = "21Oct2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Self-cleaning Effect (Photocatalytic Action)</TITLE>
+<LIST1><ITEM><PTXT>When exposed to sunlight (ultraviolet rays), electrons (e-) are generated inside the titania layer, and the electrons pass through the silica layer and are adsorbed by and excite the surrounding oxygen (O2), changing it into active oxygen (O2-). (Fig. A) This active oxygen chemically reacts with dirt (organic matter) adhering to the silica layer surface, decomposing the dirt into carbon dioxide (CO2) and water (H2O) and removing it. (Fig. B)</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740290b" WIDTH = "6.903in" HEIGHT = "3.014in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130004K047Aa18R04" UPDATE = "ORIGINAL" LDUP = "21Oct2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Variable Reflection Effect</TITLE>
+<LIST1><ITEM><PTXT>The reflected color is blue, and by lowering the reflectance of yellow and red light (long wavelength range), which feels particularly glaring in the bright "daytime", glare from sunlight and headlights is reduced.</PTXT></ITEM>
+<ITEM><PTXT>In the dark "nighttime", reflectance equivalent to that of an untinted mirror is ensured to maintain visibility. In addition, the effect of cutting infrared and ultraviolet rays is also enhanced.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740291b" WIDTH = "6.903in" HEIGHT = "3.389in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130004K047K272R05" UPDATE = "ORIGINAL" LDUP = "21Oct2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Handling Precautions</TITLE>
+<LIST1><ITEM><PTXT>Washing with water alone is sufficient when cleaning the mirror surface. Rubbing the mirror surface with an oil film remover (compound, etc.) or a cloth with sand on it, or applying wax, water repellent, etc., may damage or attack the silica/titania layers coated on the mirror surface and cause loss of the hydrophilic effect.</PTXT></ITEM>
+<ITEM><PTXT>If the mirror surface is frozen, do not scrape it off with a plastic plate, etc.; thaw it with running water or warm water.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Temporary Decrease in Hydrophilic Effect</TITLE>
+<ITEM><PTXT>Under the following conditions, the hydrophilic effect temporarily decreases, but this is not a malfunction. The hydrophilic effect recovers with several days of sunlight; to restore the effect quickly, clean the mirror according to the procedure described in the Repair Manual.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Conditions Causing Temporary Decrease in Hydrophilic Effect</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When the mirror surface is touched with bare hands, or dirt on the mirror surface is wiped off with an oily cloth, etc.</PTXT></ITEM>
+<ITEM><PTXT>When the vehicle is parked for a long period in a place not exposed to sunlight, such as an underground parking lot.</PTXT></ITEM>
+<ITEM><PTXT>When wax remover used to remove vehicle wax adheres.</PTXT></ITEM>
+<ITEM><PTXT>When wax adheres from an automatic car wash.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+</PARA>
+</BIND>
+</SECTION>
+<SECTION SCID = "T130004K326S"><SCTITLE/>
+
+<PARA INFOID = "T130004K326" UPDATE = "ORIGINAL" LDUP = "29Mar2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Mirror Heater System</TITLE>
+<LIST1><ITEM><PTXT>"Retractable remote control outer mirrors with mirror heaters" with a timer function (approximately 15 minutes) have been provided depending on the specifications.</PTXT></ITEM>
+<ITEM><PTXT>A push type switch has been adopted and located in the air conditioning control panel. The switch is shared by the mirror heaters and rear window defogger.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T130004K326I01" INDSW = "OFF">
+<TITLE>Mirror Heater System Components</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740301b" WIDTH = "6.903in" HEIGHT = "4.042in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T130004K326I02" INDSW = "OFF">
+<TITLE>Mirror Heater System Components Main Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "37%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "62%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Component [Abbreviation]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Retractable Remote Control Outer Mirror with Mirror Heater Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1><ITEM><PTXT>The built-in panel type heater heats up when the rear window defogger relay turns ON.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Air Conditioner Control Panel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sends the mirror heater operation request signal to the air conditioning ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Air Conditioning Computer [Air Conditioning ECU]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When the operation request signal is received from the air conditioning control panel, turns the rear window defogger relay ON and drives the mirror heaters.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T130004K326K383" UPDATE = "ORIGINAL" LDUP = "29Mar2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Mirror Heater Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the rear window defogger switch (also used as the mirror heater switch) in the air conditioning control panel is turned ON with IG ON, the rear window defogger (mirror heater) operation request signal is sent to the air conditioning ECU via LIN communication. The air conditioning ECU that receives this signal turns the rear window defogger relay ON, and the mirror heaters heat up.</PTXT></ITEM></LIST1>
+<FIGURE>
+<TITLE>Mirror Heater System Wiring Diagram</TITLE>
+<GRAPHIC GRAPHICNAME = "a4740302b" WIDTH = "6.903in" HEIGHT = "3.153in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T130004K340S"><SCTITLE/>
+
+<PARA INFOID = "T130004K340" UPDATE = "ORIGINAL" LDUP = "29Aug2003"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Rear Window Defogger System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A rear window defogger has been adopted on cold area specification models. In addition, a rear window defogger with a timer function (approximately 15 minutes) has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>The rear window defogger switch is located in the air conditioning control panel.</PTXT></ITEM></LIST1>
+<SPEC ID = "T130004K340X01" INDSW = "OFF">
+<TITLE>Rear Window Defogger Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Specifications</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Number of Heating Wires [pcs.]</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Power Consumption [W]</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>111(±10%)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Timer Time <HINTREF REFID = "H478130004K34001"/> [min]</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>15</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478130004K34001">With timer function only</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></SPEC>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740322b" WIDTH = "6.903in" HEIGHT = "5.194in" />
+</FIGURE>
+
+<MECA ID = "T130004K340K403" UPDATE = "ORIGINAL" LDUP = "29Aug2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Rear Window Defogger Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the rear window defogger switch is turned ON with IG ON, the operation request signal is sent to the air conditioning computer via LIN communication. When the air conditioning computer that receives this signal turns the rear window defogger relay ON, the rear window defogger heats up.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740303b" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T130004K005S"><SCTITLE/>
+
+<PARA INFOID = "T130004K005" UPDATE = "ORIGINAL" LDUP = "29Mar2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Windshield Deicer System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A windshield deicer with a timer function (approximately 15 minutes) has been adopted on cold area specification models.</PTXT></ITEM>
+<ITEM><PTXT>The heating elements of the windshield deicer are provided at the front wiper stop position (upper part of the cowl panel) and reversing position (right front pillar), to prevent the front wipers from locking or being damaged by snow and ice accumulated on the windshield glass.</PTXT></ITEM>
+<ITEM><PTXT>The windshield deicer switch has a built-in operation indicator light and timer circuit, and is located on the right side of the instrument panel on the driver side.</PTXT></ITEM></LIST1>
+<SPEC ID = "T130004K005X01" INDSW = "OFF">
+<TITLE>Windshield Deicer Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Specifications</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Power Consumption (W)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>88.2±10</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Timer Time (min.)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>15±3</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740323b" WIDTH = "6.903in" HEIGHT = "4.889in" />
+</FIGURE>
+
+<MECA ID = "T130004K005K002" UPDATE = "ORIGINAL" LDUP = "29Mar2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Windshield Deicer Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the windshield deicer switch is turned ON with IG ON, the windshield deicer relay turns ON and the windshield deicer heats up.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740304b" WIDTH = "6.903in" HEIGHT = "3.153in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>
+</SCT>

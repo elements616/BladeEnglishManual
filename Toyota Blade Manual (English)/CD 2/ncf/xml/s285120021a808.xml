@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4560061e SYSTEM "grph_ent/a4560061e.png" NDATA png>
+<!ENTITY a4560052e SYSTEM "grph_ent/a4560052e.png" NDATA png>
+<!ENTITY k4670024e SYSTEM "grph_ent/k4670024e.png" NDATA png>
+<!ENTITY k4600029e SYSTEM "grph_ent/k4600029e.png" NDATA png>
+<!ENTITY a4560064e SYSTEM "grph_ent/a4560064e.png" NDATA png>
+<!ENTITY k4670027e SYSTEM "grph_ent/k4670027e.png" NDATA png>
+<!ENTITY k4670026e SYSTEM "grph_ent/k4670026e.png" NDATA png>
+
+<!ENTITY T120021A808 SYSTEM "t285120021a808.xml">
+<!ENTITY T120021A808K125 SYSTEM "t285120021a808k125.xml">
+<!ENTITY T120021A808Ka72 SYSTEM "t285120021a808ka72.xml">
+<!ENTITY T120021A808K106 SYSTEM "t285120021a808k106.xml">
+<!ENTITY T120021A808K126 SYSTEM "t285120021a808k126.xml">
+<!ENTITY T120021A808K263 SYSTEM "t285120021a808k263.xml">
+<!ENTITY T120021A808Ka73 SYSTEM "t285120021a808ka73.xml">
+<!ENTITY T120021A808K385 SYSTEM "t285120021a808k385.xml">
+<!ENTITY T120021A808K219 SYSTEM "t285120021a808k219.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120021A808S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120021A808" UPDATE = "ORIGINAL" LDUP = "16May2006"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>HDD Navigation Functions</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>GPS (Global Positioning System) voice navigation determines the vehicle's position and displays it on the map, and provides route guidance information to the destination by screen display and voice guidance.</PTXT></ITEM>
+<ITEM><PTXT>The navigation of the 05 model year HDD navigation system has high marketability through improved map screen appearance, shorter processing time for searches, etc., and the adoption of new functions.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T120021A808K125" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Current Position Display Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The vehicle position detected by GPS navigation is combined with the vehicle speed signal from the combination meter and road map data from the navigation computer, etc., and is displayed as a mark on the map screen.</PTXT></ITEM>
+<ITEM><PTXT>When position information from GPS satellites is being used, a "GPS" mark is displayed below the direction mark at the upper left of the screen.</PTXT></ITEM>
+<ITEM><PTXT>When VICS information to be displayed on the map is received, the information provision time can be displayed below the "VICS" mark as a VICS time stamp.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4560061e" WIDTH = "6.903in" HEIGHT = "1.861in" />
+</FIGURE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>An "inclination angle sensor" has been adopted, enabling determination of entering/exiting elevated roads and entering/exiting multi-level or underground parking garages, for which accurate map matching was difficult with conventional navigation systems. In addition, urban expressway entrance gradient data and underground parking garage road data have been newly added to the HDD (hard disk) map data, improving current position display accuracy.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4560052e" WIDTH = "6.903in" HEIGHT = "2.514in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120021A808Ka72" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Main Map Display Functions</TITLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Map Scale</TITLE>
+<ITEM><PTXT>Maps from 1/20480,000 to 1/5000 scale can be displayed, and in areas with city maps, city maps at 1/2500 scale can be displayed.</PTXT></ITEM>
+<ITEM><PTXT>The scale is changed by touching the "Detail" or "Wide" switch displayed on the screen. In addition, the scale can be selected directly by touching the 13-step scale gauge that appears when the "Detail" or "Wide" switch is touched.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Map Movement (Scrolling)</TITLE>
+<ITEM><PTXT>On the current position display screen, touching an area where no touch switch is displayed displays the cursor keys; touching the cursor key in the direction in which the map is to be viewed scrolls the map. The name of the place near the center of the screen can be displayed while the map is scrolling.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Map Orientation</TITLE>
+<ITEM><PTXT>The map orientation can be switched between north-up display (north is always at the top regardless of the direction of travel) and heading-up display (the direction of travel is always at the top). The display is switched by touching the direction mark displayed on the map screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Front Wide Display</TITLE>
+<ITEM><PTXT>The map in the direction of vehicle travel can be displayed over a wider area. The display can be switched in "Settings" on the menu screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Map Color Change</TITLE>
+<ITEM><PTXT>The map color can be selected from 5 types (Normal, Fresh, Cool, Chic and Warm).</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>3D Display</TITLE>
+<ITEM><PTXT>The map can be displayed three-dimensionally. The viewing angle in 3D display can also be adjusted. Switching to 3D display can be done with "Change Display" on the map display screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>2 Screen Display</TITLE>
+<ITEM><PTXT>The screen can be split into 2 parts, left and right, and the left and right screens can show maps of different scales, or 3D display and north-up display, etc. In addition, settings such as map orientation and facility display can be switched independently on the left and right screens. The display can be switched with "Change Display" on the map display screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>City Map Display</TITLE>
+<ITEM><PTXT>When the current position is within a city map display area and the 1/5000 scale screen is displayed, touching "City Map" on the screen displays a detailed city map (1/5000 scale or 1/2500 scale). When the display is switched to the 1/2500 scale city map during 3D display, a real city map display showing buildings three-dimensionally can be shown in addition to the city map display.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Visual Map</TITLE>
+<ITEM><PTXT>In the map display, the width of roads on the map changes according to the actual road width, and landmarks on the map are displayed three-dimensionally in multiple colors. The display can be turned ON/OFF from "Settings" on the menu screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>3D Landmark Display</TITLE>
+<ITEM><PTXT>Three-dimensional facility marks can be displayed while a map screen at 1/80,000 scale or more detailed is displayed.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Prefecture Border Guidance Display</TITLE>
+<ITEM><PTXT>When a prefectural border is crossed, the prefecture mark can be displayed on the map screen with voice guidance.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Parking Lot Map Display</TITLE>
+<ITEM><PTXT>If parking lot map information exists in the road map data, it can be displayed when entering that parking lot.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Facility Display</TITLE>
+<ITEM><PTXT>				Facilities selected while a map screen at 1/80,000 scale or more detailed is displayed can be shown on the map screen as marks and text. Touching "All Genres" on the screen allows up to 5 facility genres to be displayed at the same time.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Urban Expressway Highway Map</TITLE>
+<ITEM><PTXT>When a map at 1/20,000 scale or wider and 1/160,000 scale or more detailed is displayed, the roads shown can be limited to urban expressways (Metropolitan Expressway, Hanshin Expressway, Nagoya Expressway), and interchanges, junctions and route numbers can be displayed.</PTXT></ITEM>
+<ITEM><PTXT>The display is turned ON/OFF with "Change Display" on the map display screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Seasonal Leisure Landmarks</TITLE>
+<ITEM><PTXT>While a map screen at 1/80,000 scale or more detailed is displayed, seasonal leisure landmarks (e.g. famous cherry blossom spots from 2 to 4, famous autumn foliage spots from 9 to 11) can be displayed on the map screen.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Expressway Route Map</TITLE>
+<ITEM><PTXT>When driving on an expressway, a simplified route map of the road can be displayed. It is also displayed for entry/exit IC designation and traffic congestion prediction.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A808K106" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Screen Display Settings</TITLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Switch Display Settings</TITLE>
+<ITEM><PTXT>The touch switches displayed on the map screen can be shown or hidden by touching the "ON" and "OFF" switches. Touch switches not to be displayed can be selected individually.</PTXT></ITEM>
+<ITEM><PTXT>The display is switched from "Settings" on the menu screen.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A808K106I01" INDSW = "OFF">
+<TITLE>Switch Display Setting Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670024e" WIDTH = "7.069in" HEIGHT = "2.542in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T120021A808K126" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Search</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The following methods are available for calling up maps when making various settings, such as setting a destination and registering memory points.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A808K126I01" INDSW = "OFF">
+<TITLE>List of Map Call-up Methods</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "81%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Method</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map by entering the facility name in kanji, 50-sound kana, alphanumeric characters or symbols.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Grouping List</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>During name search, searched facilities are displayed grouped, such as by chain store.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Facility</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map by selecting a facility genre such as station, hotel or dealer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Address</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map by selecting the prefecture and city/ward/town/village name.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Telephone Number</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map by entering a telephone number.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Postal Code</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map by entering a 7-digit postal code.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Genre</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Subdivides genre items and calls up a map of the location of the facility.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Memory Point</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map of a memory point. (Only when memory points are registered)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>History</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map of a destination previously set. (Up to 100 entries)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Map Code</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map by entering coded position data.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Previous Map</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up the map displayed before the menu screen was displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Around Current Position</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map of the area around the current position.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Go Home</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "4"><PTXT>Starts a route search with the registered point as the destination. (Only when memory points are registered)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Around Home</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Around Current Position</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Go to Special Memory</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Around Special Memory</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Set with G</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Displays a destination set using the G-BOOK online service. (Only when subscribed to the G-BOOK online service)</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120021A808K263" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Registration</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>500 memory entries (400 memory points and 100 G memories) and 10 detour memory points can be registered, modified and deleted. In addition, names and telephone numbers can be entered and the mark display can be selected.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A808Ka73" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Main Route Guidance Functions</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When a destination is set, the guidance route from the current position to the destination is displayed and route guidance is provided by voice.</PTXT></ITEM>
+<ITEM><PTXT>To start route guidance, touch "Start Guidance" on the screen after the route search is completed. Alternatively, if the vehicle is driven for approximately 3 seconds without any operation after the entire route display screen ends, route guidance to the destination starts.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Destination Setting</TITLE>
+<ITEM><PTXT>Pressing the "Destination" panel switch changes to the destination setting screen, and the destination can be set by searching for it using the methods in the "List of Map Call-up Methods" above. In addition, multiple destinations (up to 5) can be set, and the order of the multiple destinations can be changed.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A808Ka73I01" INDSW = "OFF">
+<TITLE>Destination Setting Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4600029e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<LIST1 TYPE = "UNORDERED"><TITLE>5-route Simultaneous Search</TITLE>
+<ITEM><PTXT>5 routes are searched at the same time, and the guidance route can be selected from recommended route, toll road priority, ordinary road priority, distance priority and alternative route. The 5 searched routes are each color-coded and displayed together on the screen, and touching "Entire Route List" on the screen displays the toll (approximate minimum toll), total distance (km) and required time (approximate) when each of the 5 routes is selected.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Route Learning</TITLE>
+<ITEM><PTXT>If the driver always takes a road other than the route being guided to the destination (other than narrow streets: roads 5.5m or wider), after passing along the same other road 3 times, that route is learned and guidance can be given using the learned route in the next route search.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Waypoint Setting</TITLE>
+<ITEM><PTXT>Waypoints for route guidance can be set, added, modified and deleted; toll road/ordinary road priority can be set, the departure point can be specified, and the entry/exit interchanges can be specified.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Traffic Congestion Prediction Display Function</TITLE>
+<ITEM><PTXT>Displays traffic congestion prediction information obtained by communication from the G-BOOK center.</PTXT></ITEM>
+<ITEM><PTXT>Displays traffic congestion prediction information from now to 90 minutes later on the expressway route map, shows increasing or decreasing congestion trends with icons, and reads out the required travel time, etc.</PTXT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4560064e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Detour Area Search</TITLE>
+<ITEM><PTXT>By setting areas to be avoided in advance, a route search that avoids those areas can be performed. Up to 10 detour memory points can be registered.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Congestion Bypass Search</TITLE>
+<ITEM><PTXT>Searches taking detour roads into account during a surrounding area detour search. The road traffic center database is used for the search.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Surrounding Detour Search</TITLE>
+<ITEM><PTXT>When congestion, restrictions, etc. occur ahead and are to be avoided, the route can be changed to one that detours around the 2km ahead of the current position. In addition to roads for which VICS provides congestion information, routes estimated to be more comfortable based on actual vehicle driving data from the road traffic center, etc. are guided.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Intersection Guidance</TITLE>
+<ITEM><PTXT>Determines when the vehicle is approaching an intersection during route guidance and displays an enlarged view of the area around the intersection for guidance. Narrow-angle branches such as grade-separated intersections and interchange entrances are shown in 3D for easy understanding.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Real Intersection Enlarged View</TITLE>
+<ITEM><PTXT>Displays three-dimensional illustrations for intersections in government-designated cities with narrow-angle branches that are difficult to understand from voice guidance alone.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Turn List</TITLE>
+<ITEM><PTXT>The branch points and intersections for which voice guidance is given on the route from the current position to the destination can be displayed as a list.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Frontage Road Guidance</TITLE>
+<ITEM><PTXT>Dedicated guidance can be displayed when entering a frontage road from the main lane of an ordinary road. Dedicated guidance can also be displayed when returning from the frontage road to the main lane.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Seasonal Restriction Section Guidance</TITLE>
+<ITEM><PTXT>When a route including a section with long-term traffic restrictions (such as winter closures) is searched, the corresponding part of the guidance route is displayed in a different color and a message can be displayed on the screen. The message ON/OFF setting is made in "Settings" on the menu screen.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Highway Treatment of Ordinary Roads</TITLE>
+<ITEM><PTXT>For motorways on ordinary roads that lie between expressways or toll roads, guidance such as the expressway schematic, direction guidance and exit guidance is provided in the same way as for expressways.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Highway Mode</TITLE>
+<ITEM><PTXT>During route guidance on an expressway, the screen switches to the highway mode screen, on which information on service areas, parking areas and interchanges can be viewed. Also, before an expressway exit interchange or junction (approximately 1km before on intercity expressways and on metropolitan/urban expressways), a junction diagram is displayed for guidance.</PTXT></ITEM>
+<ITEM><PTXT>Even when route guidance is not being performed, the highway mode screen can be displayed on intercity expressways only.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Entry/Exit IC Designation</TITLE>
+<ITEM><PTXT>After setting a destination, the exit ICs and entrance ICs displayed on the entire route map screen can be designated one at a time. Also, if an IC with time restrictions on entry/exit is designated, a notification screen is displayed.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Illustration Guidance</TITLE>
+<ITEM><PTXT>At the entrances and exits of urban expressways (Shuto Expressway, Nagoya Expressway and Hanshin Expressway), a three-dimensional guidance screen (illustration) is displayed to provide easy-to-understand guidance.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Voice Repeat</TITLE>
+<ITEM><PTXT>During route guidance, voice guidance is provided according to the distance to the next junction. Also, by pressing the "Current Position/Voice Guidance" panel switch, the previous voice guidance can be heard again.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>VICS Consideration for Estimated Arrival Time</TITLE>
+<ITEM><PTXT>For the average vehicle speed used to calculate the estimated arrival time, an estimated arrival time that takes traffic congestion and traffic regulations into account can be displayed, based on the VICS congestion information on the map, the link travel times of beacon information and the predicted information on expressways during G-route guidance (predicted link travel times).</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Destination Arrival Guidance</TITLE>
+<ITEM><PTXT>When the vehicle approaches the vicinity of the destination, destination arrival guidance is provided by voice.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Continuous Lane Guidance</TITLE>
+<ITEM><PTXT>During route guidance, the lanes that can be driven at every intersection on roads with 2 or more lanes can be displayed continuously.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Lane Warning</TITLE>
+<ITEM><PTXT>Lane warning provides voice guidance on ordinary roads and urban expressways as follows.</PTXT></ITEM>
+<ITEM><PTXT>Ordinary roads: Voice guidance is provided when the lanes before the intersection ahead include a right-turn-only or left-turn-only lane. However, during destination guidance, voice guidance is provided only when going straight through the intersection.</PTXT></ITEM>
+<ITEM><PTXT>Urban expressways: Voice guidance is provided when there is a lane reduction ahead. (Because lane data is available only for urban expressways.)</PTXT></ITEM></LIST1>
+<LIST1><TITLE>G-route Guidance</TITLE>
+<ITEM><PTXT>"Traffic information around the current position" and "expressway congestion prediction information" are obtained from the G-BOOK center as wide-area congestion prediction information. Based on this information, the optimum route to the destination is searched.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>JUST Guidance</TITLE>
+<ITEM><PTXT>During destination guidance, a "♪ding-dong" sound is given just before the intersection at which junction guidance is provided.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Destination Direction Arrow Display</TITLE>
+<ITEM><PTXT>During route guidance, if the vehicle position deviates from the guidance route, the direction of the destination is displayed with an arrow.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Frequent Accident Location Warning</TITLE>
+<ITEM><PTXT>During route guidance, when the vehicle approaches a location where traffic accidents occur frequently, a frequent accident location mark is displayed on the map screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Road Shape Warning</TITLE>
+<ITEM><PTXT>During route guidance, when the vehicle approaches a merge, sharp curve or railroad crossing, a road shape warning is given by voice and a road shape mark is displayed on the map screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Roundabout Guidance</TITLE>
+<ITEM><PTXT>If there is a roundabout on the guidance route, guidance is provided treating the entrance and exit of the roundabout as junctions.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Toll Guidance</TITLE>
+<ITEM><PTXT>By setting the vehicle number category (1/3/5/7) in advance, the toll for toll roads is displayed and payment guidance is provided before the tollgate or ticket checkpoint.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>On-route Scroll</TITLE>
+<ITEM><PTXT>By touching the cursor keys displayed on the screen, the map can be scrolled automatically along the guidance route to the next destination or the next facility (selectable from categories such as gas stations, convenience stores, restaurants, parking lots, banks and post offices). The entire route display is selected with "Change Display" on the map display screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Entire Route</TITLE>
+<ITEM><PTXT>The entire set guidance route can be displayed together with information on the guidance route such as the total distance and tolls. The entire route display is selected with "Change Display" on the map display screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Route Re-search</TITLE>
+<ITEM><PTXT>Re-search of the guidance route from around the current position, re-search of the entire guidance route, search condition setting (recommended, toll road, ordinary road, distance priority, alternative route) and alternative road re-search (only when on the guidance route) can be performed.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Automatic Route Re-search</TITLE>
+<ITEM><PTXT>During route guidance, if the vehicle position deviates from the guidance route, the guidance route is automatically re-searched and a new guidance route from the current position can be displayed.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Driving Track Display</TITLE>
+<ITEM><PTXT>The driving track is displayed on the map as a series of dots. Up to 1000km can be saved at 50m intervals.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A808K385" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Menu</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By pressing the "Menu" panel switch, the screen changes to the menu screen, where each function can be selected. Note that some functions cannot be operated while driving.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A808K385I01" INDSW = "OFF">
+<TITLE>Menu Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670027e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Menu List</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Stop Guidance/Resume Guidance, Volume Settings, VICS, Congestion Prediction, Memory Points, User Customize, Settings, Disconnect, Data in Use</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Stop Guidance/Resume Guidance</TITLE>
+<ITEM><PTXT>The route being guided can be deleted to stop route guidance. Also, after guidance is stopped, the display changes to "Resume Guidance", and guidance can be resumed by touching it.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Volume Settings</TITLE>
+<ITEM><PTXT>Voice guidance ON/OFF, volume adjustment and automatic volume switching at high speed can be set.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>VICS</TITLE>
+<ITEM><PTXT>The screen changes to the VICS menu screen, where VICS information display settings can be made.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Congestion Prediction</TITLE>
+<ITEM><PTXT>Based on congestion prediction information obtained from the G-BOOK center, congestion prediction marks are displayed on the route.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Memory Point</TITLE>
+<ITEM><PTXT>Memory points (including home and special memory points) and detour memory points can be registered, modified and deleted, and the destination history can be deleted.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Memory Point/Detour Memory Point Settings</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "22%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "77%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Menu</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Description</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Registration of Memory Points (Including Home and Special Memory Points)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Points specified on the map screen can be registered as 400 memory points (including 1 home and 5 special memory points), 100 G-memory points and 10 detour memory points. The registered home is displayed with a mark. Also, when memory points are displayed, the name can be changed and a symbol can be set.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Modification of Memory Points (Including Home and Special Memory Points)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>The position, telephone number, name and symbol of registered memory points (including 1 home and 5 special memory points) and detour memory points can be modified.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Deletion of Memory Points (Including Home and Special Memory Points)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Registered memory points (including 1 home and 5 special memory points) and detour memory points can be deleted.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>User Customize</TITLE>
+<ITEM><PTXT>Up to 3 patterns of navigation settings, such as display settings, can be stored. By recalling these navigation settings, the system can be smoothly adapted when the purpose of use or the user changes.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A808K385I02" INDSW = "OFF">
+<TITLE>User Customize Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670026e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Setting Items That Can Be Stored (Example)</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Map orientation setting, map display mode setting, map display scale setting, right screen setting for 2 screen, volume setting, automatic maintenance notification setting, menu screen setting items, VICS map display setting, VICS road display content setting, VICS interrupt setting, ETC setting<HINTREF     REFID = "H285120021A808K38501"/></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H285120021A808K38501">Vehicles with factory-option ETC system with navigation link function.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Settings</TITLE>
+<ITEM><PTXT>Settings for each item can be made on the navigation screen.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>List of Setting Items</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Map Display Settings</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Automatic Display Switching Settings</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Guidance Display Settings</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Voice Settings</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Route Settings</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Others</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><TITLE>Disconnect</TITLE>
+<ITEM><PTXT>Data communication with the G-BOOK center is disconnected.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Data in Use</TITLE>
+<ITEM><PTXT>Information such as the database stored on the hard disk in use is displayed.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>NAVI/AI-SHIFT</TITLE>
+<ITEM><PTXT>NAVI AI-SHIFT has been adopted, which selects the appropriate gear according to the road shape and road gradient, obtained by combining road corner information from the navigation computer with road gradient information calculated by the engine control computer, and according to vehicle information from the vehicle. For details, refer to the Chassis section.<XREF     REFID = "S285030063A875"/>
+</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A808K219" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Other Functions</TITLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Heartful Voice</TITLE>
+<ITEM><PTXT>Voice messages such as "Thank you for driving. ", "Today is ○ month × day, △ day of the week. " can be given when arriving home or getting into the vehicle. The heartful voice ON/OFF setting is made in "Settings" on the menu screen.</PTXT></ITEM>
+<ITEM><PTXT>Voice guidance can be given even while a screen other than the navigation mode is displayed, as long as route guidance is in progress.</PTXT></ITEM>
+<ITEM><PTXT>Under the following conditions, voice guidance may not be given even if the heartful voice is turned ON in the settings.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT>When arriving home, if the heartful voice has already been output once, voice guidance is not given unless ACC is turned OFF and then ON.</PTXT></ITEM>
+<ITEM><PTXT>If ACC is turned ON within a 500m radius of home, voice guidance is not given.</PTXT></ITEM>
+<ITEM><PTXT>If home is set as an intermediate destination, voice guidance is not given.</PTXT></ITEM></LIST1></HINT></MECA>
+</PARA>
+</SECTION>

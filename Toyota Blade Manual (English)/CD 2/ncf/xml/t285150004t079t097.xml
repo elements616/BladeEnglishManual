@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T150004T079T097" UPDATE = "ORIGINAL" LDUP = "26May2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>List When Not Using Diagnostic Tool</TITLE>
+<LIST1><TITLE>Key Cancel Function</TITLE>
+<ITEM><PTXT>The Smart Entry &amp; Start System control below can be cancelled by performing certain operations.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Cancelable Items List</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Smart Entry &amp; Start System Control</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Warning Function</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Function to Prevent Locking the Electronic Key in the Cabin</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Smart Back Door Open Control</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>With the power OFF (ACC and IG OFF), driver door closed and driver door unlocked, the key cancel function can be set by performing the operations below.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Key Cancel Operation Procedure</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "9%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "90%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Procedure</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Prerequisites</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Driver door closed and unlocked, power OFF (IG and ACC OFF)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation 1</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Perform wireless unlock 1 times</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation 2</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Open the driver door within 5 seconds of operation 1</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation 3</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Perform wireless unlock 2 times within 5 seconds of performing operation 2<HINTREF     REFID = "H285150004T079T09701"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation 4</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Within 30 seconds of performing operation 3, repeat driver door "open" → "closed" 2 times and open it again (driver door "open" → "closed" → "open" → "closed" → "open")</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation 5</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Perform wireless unlock 2 times within 30 seconds of performing operation 4<HINTREF     REFID = "H285150004T079T09701"/></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation 6</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Within 30 seconds of performing operation 5, repeat driver door open → closed 1 times and open it again (driver door "open" → "closed" → "open")</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Operation 7</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "LEFT"><PTXT>Close the driver door within 5 seconds after performing operation 6<HINTREF     REFID = "H285150004T079T09702"/></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H285150004T079T09701">If a driver door "open" → "closed" operation occurs during operations 3 and 5, the cancel function is aborted.</PTXT></ITEM>
+<ITEM><PTXT ID = "H285150004T079T09702">To return from the key cancel state to a state in which the Smart Entry &amp; Start System can be used, perform the above "key cancel operation procedure" again.</PTXT></ITEM></LIST1></HINT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Key Cancel Operation Answer-back</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "53%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "46%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Status</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Answer-back</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>When Key Cancelled</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Wireless answer-back buzzer sounds 2 times</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>When Returning from Key Cancel State</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Wireless answer-back buzzer sounds 1 times</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>

@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="X39400000QY01GC" category="C" type-id="302Z1" name-id="0659Q-00" from="200612">
+<dtccode>P0011/59</dtccode>
+<dtcname>VVT Control (Advance Malfunction)</dtcname>
+<dtccode>P0012/59</dtccode>
+<dtcname>VVT Control (Retard Malfunction)</dtcname>
+<subpara id="X39400000QY01GC_10" type-id="31" category="03" proc-id="RM0550J___00002T600000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>This VVT system controls the intake camshaft to provide the optimal valve timing for each driving condition. This control is performed based on conditions such as intake air volume, throttle position and engine coolant temperature. Based on the signals from these sensors, the engine control computer adjusts the oil control valve; as a result, the relative position of the camshaft is optimized, improving engine torque and fuel economy and reducing exhaust emissions. The engine control computer also detects the actual valve timing using the signal from the camshaft position sensor and performs feedback control to achieve the target valve timing.</ptxt>
+<figure>
+<graphic graphicname="A145886J04" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<ptxt/>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.86in"/>
+<colspec colnum="02" colname="C02" colwidth="3.25in"/>
+<colspec colnum="03" colname="C03" colwidth="2.97in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTCNo.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0011/59</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>After engine warm-up, engine speed 4000r/min or less</ptxt>
+</item>
+<item>
+<ptxt>Valve timing stuck, cannot be retarded to the target value</ptxt>
+</item>
+<item>
+<ptxt>5 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Valve Timing</ptxt>
+</item>
+<item>
+<ptxt>Camshaft Timing Oil Control Valve Assembly</ptxt>
+</item>
+<item>
+<ptxt>Camshaft Timing Gear Assembly</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0012/59</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>After engine warm-up, engine speed 4000r/min or less</ptxt>
+</item>
+<item>
+<ptxt>Valve timing stuck, cannot be advanced to the target value</ptxt>
+</item>
+<item>
+<ptxt>5 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>2 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Valve Timing</ptxt>
+</item>
+<item>
+<ptxt>Camshaft Timing Oil Control Valve Assembly</ptxt>
+</item>
+<item>
+<ptxt>Camshaft Timing Gear Assembly</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="X39400000QY01GC_11" type-id="32" category="03" proc-id="RM0550J___00002T700000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt/>
+<figure>
+<graphic graphicname="A145881J06" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="X39400000QY01GC_12" type-id="51" category="05" proc-id="RM0550J___00002T800000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read the freeze frame data using SST (TaSCAN). The freeze frame data records part of the engine operating condition when the malfunction occurred, and this information is useful when troubleshooting.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="X39400000QY01GC_13" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="X39400000QY01GC_13_0018" proc-id="RM0550J___00002TH00000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and clear the DTCs following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="X39400000QY01GC_13_0001" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="X39400000QY01GC_13_0001" proc-id="RM0550J___00002T900000">
+<scantool type="1"/>
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Perform a road test.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs by following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.33in"/>
+<colspec colname="COL2" colwidth="0.80in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Either P0011 or P0012 is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Codes other than P0011 and P0012 are also output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000QY01GC_13_0002" fin="false">A</down>
+<right ref="X39400000QY01GC_13_0011" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="X39400000QY01GC_13_0002" proc-id="RM0550J___00002TA00000">
+<testtitle>Check for Rough Idle or Engine Stall</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the engine idle condition.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.31in"/>
+<colspec colname="COL2" colwidth="0.82in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine stalls or idles roughly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Normal idle speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000QY01GC_13_0003" fin="false">A</down>
+<right ref="X39400000QY01GC_13_0004" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="X39400000QY01GC_13_0003" proc-id="RM0550J___00002TB00000">
+<testtitle>Inspect Valve Timing</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Timing Inspection</ptxt>
+<test2>
+<ptxt>Remove the cylinder head cover.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn the crankshaft clockwise and align the notch of the crankshaft pulley with the 0° position.</ptxt>
+</test2>
+<test2>
+<ptxt>As shown in the illustration, check that the timing marks of the camshaft timing gears are aligned. If the marks are not aligned, turn the crankshaft clockwise 1 more revolution.</ptxt>
+<figure>
+<graphic graphicname="A160964J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Timing marks are aligned</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Timing marks are not aligned</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Timing marks are aligned</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="X39400000QY01GC_13_0012" fin="true">A</down>
+<right ref="X39400000QY01GC_13_0005" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="X39400000QY01GC_13_0004" proc-id="RM0550J___00002TC00000">
+<scantool type="8"/>
+<testtitle>Perform TaSCAN Active Test (VVT Control)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>With the engine stopped, turn the IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, select [Active Test] - [VVT Control].</ptxt>
+</test1>
+<test1>
+<ptxt>With the engine idling, perform [OFF/ON].</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="2.07in"/>
+<colspec colnum="02" colname="C02" colwidth="2.06in"/>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Performed (OCV operates)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Engine stalls or idles roughly</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Not performed (OCV does not operate)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Normal idle speed</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000QY01GC_13_0010" fin="true">OK</down>
+<right ref="X39400000QY01GC_13_0005" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000QY01GC_13_0005" proc-id="RM0550J___00002TD00000">
+<testtitle>Inspect Camshaft Timing Oil Control Valve Assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<figure>
+<graphic graphicname="A166780J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approx. 20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6.9 to 7.9Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<test1>
+<ptxt>Operation Check</ptxt>
+<test2>
+<ptxt>Apply battery voltage between the terminals and inspect the spool valve condition.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Valve operates</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>Check that the spool valve is not stuck.</ptxt>
+</atten3>
+<atten4>
+<ptxt>A spool valve that does not return properly due to foreign matter such as sludge being caught may cause a slight pressure leak to the advance side, which may cause a DTC to be detected.</ptxt>
+</atten4>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="X39400000QY01GC_13_0006" fin="false">OK</down>
+<right ref="X39400000QY01GC_13_0013" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000QY01GC_13_0006" proc-id="RM0550J___00002TE00000">
+<testtitle>Inspect Valve Timing</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>If the valve timing inspection has already been performed, go to the next step</ptxt>
+</atten4>
+<test1>
+<ptxt>Timing Inspection</ptxt>
+<test2>
+<ptxt>Remove the cylinder head cover.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn the crankshaft clockwise and align the notch of the crankshaft pulley with the 0° position.</ptxt>
+</test2>
+<test2>
+<ptxt>As shown in the illustration, check that the timing marks of the camshaft timing gears are aligned. If the marks are not aligned, turn the crankshaft clockwise 1 more revolution.</ptxt>
+<figure>
+<graphic graphicname="A160964J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Timing marks are aligned</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="X39400000QY01GC_13_0008" fin="false">OK</down>
+<right ref="X39400000QY01GC_13_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000QY01GC_13_0008" proc-id="RM0550J___00002TF00000">
+<testtitle>Inspect Oil Control Valve Filter</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using a socket hexagon wrench, remove the plug at the position shown in the illustration, and remove the oil control valve filter.</ptxt>
+<figure>
+<graphic graphicname="A128210J07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Check the oil control valve filter for clogging.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>There is no clogging or adhering foreign matter</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000QY01GC_13_0019" fin="false">OK</down>
+<right ref="X39400000QY01GC_13_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000QY01GC_13_0019" proc-id="RM0550J___00002TI00000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and clear the DTCs following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="X39400000QY01GC_13_0009" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="X39400000QY01GC_13_0009" proc-id="RM0550J___00002TG00000">
+<scantool type="1"/>
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Perform a road test.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs by following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.33in"/>
+<colspec colname="COL2" colwidth="0.80in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Either P0011 or P0012 is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>The DTC judgment can be confirmed using the [Diagnosis Judgment Result Check] function of SST (TaSCAN). (see <xref label="Seep02" href="RM000000CCX015X"/>)</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="X39400000QY01GC_13_0010" fin="true">A</down>
+<right ref="X39400000QY01GC_13_0020" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="X39400000QY01GC_13_0010">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000QY01GC_13_0011">
+<testtitle>Go to Related DTC Chart<xref label="Seep01" href="X39400000QT013D"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000QY01GC_13_0012">
+<testtitle>Valve Timing Adjustment</testtitle>
+</testgrp>
+<testgrp id="X39400000QY01GC_13_0013">
+<testtitle>Replace Camshaft Timing Oil Control Valve Assembly<xref label="Seep01" href="RM0000020UX009X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000QY01GC_13_0015">
+<testtitle>Replace Oil Control Valve Filter</testtitle>
+</testgrp>
+<testgrp id="X39400000QY01GC_13_0020">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

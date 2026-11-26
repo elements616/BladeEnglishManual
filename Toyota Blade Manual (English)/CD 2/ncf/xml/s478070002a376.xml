@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a3810011c SYSTEM "grph_ent/a3810011c.png" NDATA png>
+
+<!ENTITY T070002A376 SYSTEM "t478070002a376.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T070002A376S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T070002A376" UPDATE = "ORIGINAL" LDUP = "9Aug2006"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Torque Sensor</TITLE>
+<LIST1><ITEM><PTXT>A Hall IC type torque sensor is used.</PTXT></ITEM>
+<ITEM><PTXT>The torque sensor is built into the steering column and converts the torque input during steering into an electrical signal. A multi-pole magnet is located on the input shaft (steering wheel side) and a yoke is located on the output shaft (steering gear side), and the input shaft and output shaft are connected via a torsion bar.</PTXT></ITEM>
+<ITEM><PTXT>Coaxially outside the yoke are a flux collecting ring and Hall ICs, which are resin-molded and integrated with the circuit board. When steering torque is applied to the steering wheel, the torsion bar twists, causing relative displacement between the multi-pole magnet and the yoke; the resulting change in magnetic flux density is detected by the Hall ICs and output as a torque signal to the electric power steering computer.</PTXT></ITEM>
+<ITEM><PTXT>The sensing section is a 2-fold redundant system consisting of 2 mutually independent Hall ICs, and diagnosis is performed by monitoring the torque signal values of Hall ICs 1,2.</PTXT></ITEM>
+<ITEM><PTXT>The use of the Hall IC type made it possible to shorten the axial length of the torque sensor, ensuring sufficient steering column contraction for the collision safety mechanism.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810011c" WIDTH = "6.903in" HEIGHT = "5.722in" />
+</FIGURE>
+</PARA>
+</SECTION>

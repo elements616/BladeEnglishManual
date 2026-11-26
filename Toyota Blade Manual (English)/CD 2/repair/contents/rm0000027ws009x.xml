@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1002M_S001G" variety="S001G">
+<name>Pre-crash Safety</name>
+<ttl id="1002M_S001G_74WT7_T00FP" variety="T00FP">
+<name>Pre-crash Safety System</name>
+<para id="RM0000027WS009X" category="C" type-id="8024H" name-id="540JP-00" from="200708">
+<dtccode>B2075/24</dtccode>
+<dtcname>Front Passenger Side Buckle Switch Malfunction</dtcname>
+<subpara id="RM0000027WS009X_01" type-id="31" category="03" proc-id="RM0550J___0000CW000000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="unordered">
+<item>
+<ptxt>This DTC is output when an open circuit or short to GND in the driver side buckle switch circuit is detected continuously for 1 seconds.</ptxt>
+</item>
+<item>
+<ptxt>When this DTC is output, seat belt retraction control is stopped.</ptxt>
+</item>
+<item>
+<ptxt>This circuit consists of the front seat inner belt assembly LH, seat belt control computer and wire harness, and detects the fastened condition of the seat belt.</ptxt>
+</item>
+</list1>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.13in"/>
+<colspec colname="COL2" colwidth="2.97in"/>
+<colspec colname="COL3" colwidth="2.98in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2075/24</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>An open or short in the front seat inner belt assembly LH (buckle switch) circuit continues for 1 seconds</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire harness and connector (front seat inner belt assembly LH - seat belt control computer)</ptxt>
+</item>
+<item>
+<ptxt>Front Seat Inner Belt Assembly LH</ptxt>
+</item>
+<item>
+<ptxt>Seat Belt Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000027WS009X_02" type-id="32" category="03" proc-id="RM0550J___0000CW100000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E143538J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000027WS009X_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM0000027WS009X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000027WS009X_04_0001" proc-id="RM0550J___0000CW200000">
+<testtitle>Inspect Wire Harness and Connector (Front Seat Inner Belt Assembly LH - Seat Belt Control Computer)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the front seat inner belt assembly LH and seat belt control computer connectors.</ptxt>
+<figure>
+<graphic graphicname="E157136J02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the front seat inner belt assembly LH vehicle wire harness side connector and seat belt control computer vehicle wire harness side connector B. (see <xref label="Seep02" href="RM0000006E900JX"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.97in"/>
+<colspec colname="COLSPEC0" colwidth="1.11in"/>
+<colspec colname="COL2" colwidth="1.05in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(LBE-) - B6(PBK-)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(LBE+) - B5(PBK+)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the front seat inner belt assembly LH vehicle wire harness side connector and body ground.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.99in"/>
+<colspec colname="COLSPEC1" colwidth="1.07in"/>
+<colspec colname="COL2" colwidth="1.07in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (LBE-) - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 (LBE+) - Body ground</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027WS009X_04_0002" fin="false">OK</down>
+<right ref="RM0000027WS009X_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027WS009X_04_0002" proc-id="RM0550J___0000CW300000">
+<testtitle>Inspect Seat Belt Control Computer (PBK+ Terminal, PBK- Terminal)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect the seat belt control computer connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the front seat inner belt assembly LH connector is disconnected.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), measure the waveform between the terminals of the seat belt control computer connector. (see <xref label="Seep01" href="RM0000006E900JX"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="E143537J05" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>Approx. 5V</ptxt>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B5(PBK+) - B6(PBK-)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2V/DIV、20ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>Voltage is output only for 20ms of each 100ms cycle.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027WS009X_04_0003" fin="true">OK</down>
+<right ref="RM0000027WS009X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027WS009X_04_0003">
+<testtitle>Replace Front Seat Inner Belt Assembly LH<xref label="Seep01" href="RM000001ESH005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000027WS009X_04_0004">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000027WS009X_04_0005">
+<testtitle>Replace Seat Belt Control Computer<xref label="Seep01" href="RM000002SZU002X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

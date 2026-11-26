@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002R_S000G" variety="S000G">
+<name>G-BOOK</name>
+<ttl id="1002R_S000G_742BR_T003W" variety="T003W">
+<name>G-BOOK System</name>
+<para id="RM000001C3Y021X" category="N" type-id="8009I" name-id="GB0B4-02" from="200912">
+<name>Function Inspection</name>
+<subpara id="RM000001C3Y021X_01" type-id="01" category="01">
+<s-1 id="RM000001C3Y021X_01_0001" proc-id="RM0550J___0000I5200000">
+<ptxt>Fill in G-BOOK Support Center Inquiry Check Sheet</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check DTCs (service check) (see <xref label="Seep01" href="RM000000OCQ05TX"/>)</ptxt>
+</s2>
+<s2>
+<ptxt>Flag Information (see <xref label="Seep06" href="RM000001C3T024X"/>)</ptxt>
+</s2>
+<s2>
+<ptxt>Fill in G-BOOK Support Center Inquiry Check Sheet</ptxt>
+<figure>
+<graphic graphicname="E122340" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<s3>
+<ptxt>Fill in each item and send it by FAX to the G-BOOK Support Center.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL2" colwidth="1.58in"/>
+<colspec colname="COL3" colwidth="3.93in"/>
+<colspec colname="COL4" colwidth="1.57in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>How to Fill In</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Dealer Name</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter the dealer name of the person requesting the check</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Customer Information</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Branch Name</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter the branch name of the person requesting the check</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Customer Information</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Dealer Person in Charge</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter the name of the person requesting the check</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Customer Information</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Branch TEL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter the telephone number of the branch of the person requesting the check</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Customer Information</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GAZOO/ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter the customer's GAZOO ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Information on Requested Vehicle</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Details - Model Code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter the model code of the applicable vehicle</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Information on Requested Vehicle</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Details - Frame No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter the frame number of the applicable vehicle</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Information on Requested Vehicle</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Details - Registration No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter the registration number of the applicable vehicle</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Information on Requested Vehicle</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Details - Mileage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter the mileage of the applicable vehicle</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Information on Requested Vehicle</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Details - Registration Date</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter the registration date of the applicable vehicle</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Information on Requested Vehicle</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Details - Malfunction Reception Date</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter the date the applicable vehicle was brought to the workshop</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Information on Requested Vehicle</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Communication Malfunction with Center Server</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Check the box if a communication malfunction occurred</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Occurrence</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter the frequency of occurrence of the communication malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Error Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter whether an error was displayed during the communication malfunction and the content of the error display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Date and Time of Occurrence</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter the date and time when the communication malfunction occurred</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Address of Occurrence</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter the address where the communication malfunction occurred</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Check the box for the vehicle condition when the communication malfunction occurred</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Location of Occurrence</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Check the box for the location where the communication malfunction occurred</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Communication Device/Condition - Communication Device</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Check the box for the installed device being used (cellular phone))</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Communication Device/Condition - DCM/Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Communication Device/Condition - Cellular Phone Use by Itself</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Check the box for whether the cellular phone can be used by itself</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Communication Device/Condition - Cellular Phone/Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Check the box for the in-range/out-of-range display of the cellular phone when the communication malfunction occurred</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Communication Device/Condition - Cellular Phone Carrier</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Check the box for the cellular phone carrier</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Communication Device/Condition - Battery Level</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Check the box for the battery level of the cellular phone</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Communication Device/Condition - Model Name</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enter the model name of the cellular phone</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Dealer Diagnosis - Reproducibility of Symptom</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Check the box for the reproducibility of the symptom</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Dealer Diagnosis - DTC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Record whether DTCs are output and the DTC contents (see <xref label="Seep03" href="RM000000OCQ05TX"/>)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Dealer Diagnosis - Communication Module Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Dealer Diagnosis - Flag Information</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Record G terminal link information - flag information (see <xref label="Seep05" href="RM000001C3T024X"/>)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Information from Dealer</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>When data communication is performed using the customer's own cellular phone, the communication status cannot be checked.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001C3Y021X_01_0002" proc-id="RM0550J___0000I5300000">
+<ptxt>Manual Maintenance Check</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The manual maintenance check performs a maintenance check of the in-vehicle unit (in-vehicle unit repair check and maintenance check after vehicle repair) and checks whether the member is registered with the center (at subscription, cancellation and contract change), and can switch from the emergency call disabled state to the enabled state.</ptxt>
+</item>
+<item>
+<ptxt>The screen is an example display and may differ from the actual screen.</ptxt>
+</item>
+</list1>
+</atten4>
+<s2>
+<ptxt>Check GPS Reception</ptxt>
+<s3>
+<ptxt>Check that the GPS mark is displayed on the current position screen.</ptxt>
+<atten4>
+<ptxt>The manual maintenance check confirms that position information can be sent accurately. Therefore, avoid locations between buildings and indoors such as in a factory, and perform it in an open location where GPS can be received.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Manual Maintenance Check</ptxt>
+<s3>
+<ptxt>Press the "Info G" switch to display the information screen.</ptxt>
+</s3>
+<s3>
+<ptxt>Select the "G-BOOK" tab on the information screen and press "Main Menu".</ptxt>
+<figure>
+<graphic graphicname="E153592" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>On the main menu screen, press and hold "(HELPNET) Maintenance Check" for 10 seconds or more.</ptxt>
+<figure>
+<graphic graphicname="E207363" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<title>When using a Bluetooth cellular phone, refer to the owner's manual and make the following settings.</title>
+<item>
+<ptxt>Register and connect the cellular phone.</ptxt>
+</item>
+<item>
+<ptxt>Select the manufacturer type that matches the cellular phone being used.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+<s3>
+<ptxt>Connection to the center starts.</ptxt>
+<figure>
+<graphic graphicname="E153587" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>When connected to the center, data communication is performed first, and the current position of the vehicle, the fact that a manual maintenance check is being performed, and member registration with the center are checked.</ptxt>
+<figure>
+<graphic graphicname="E169728" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>After data communication is completed, the system enters call mode.</ptxt>
+<figure>
+<graphic graphicname="E169729" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Talk with the center through the microphone, and check that the call can be made normally and that the reported position is correct.</ptxt>
+<figure>
+<graphic graphicname="E153590" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>If the screen shown in the illustration is displayed, perform the following operations.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>If the call was made normally and the reported position was confirmed to be correct, select "Yes" after the call ends.</ptxt>
+</item>
+<item>
+<ptxt>If the call was not made normally or the reported position was not correct, select "No" to fail the manual maintenance check, and contact the G-BOOK Support Center.</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>The screen shown in the illustration is displayed only if the HELPNET service start operation or the first manual maintenance check has not been completed normally.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="E153591" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Finish the check.</ptxt>
+<figure>
+<graphic graphicname="E207362" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Then, display the current position screen.</ptxt>
+</s3>
+<s3>
+<ptxt>Press the "Info G" switch.</ptxt>
+</s3>
+<s3>
+<ptxt>Select the "G-BOOK" tab on the information screen and check that the "HELPNET" switch is displayed.</ptxt>
+<figure>
+<graphic graphicname="E153592" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001C3Y021X_01_0003" proc-id="RM0550J___0000I5400000">
+<ptxt>Check HELPNET Call Result</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>For diagnosis screen transitions and how to start diagnosis, refer to HDD Navigation System - Diagnosis System (<xref label="Seep01" href="RM000001C3T024X"/>).</ptxt>
+</atten4>
+<s2>
+<ptxt>Diagnosis Startup</ptxt>
+<s3>
+<ptxt>Start diagnosis and display the service check screen. 。 (see <xref label="Seep02" href="RM000001C3T024X"/>) </ptxt>
+</s3>
+<s3>
+<ptxt>Select "Service Information" on the service check screen to display the service information screen.</ptxt>
+</s3>
+<s3>
+<ptxt>Select "HELPNET Call History" on the service information screen to display the HELPNET call history screen.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>HELPNET Report History</ptxt>
+<figure>
+<graphic graphicname="E170019J02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<s3>
+<ptxt>Check the call result.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Display Content</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Call Type</ptxt>
+<ptxt>(*a)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Type of call</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Date/Time of Call</ptxt>
+<ptxt>(*b)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the date and time of the call as year/month/day hour:minute</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Call Result</ptxt>
+<ptxt>(*c)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<title>Displays the result of communication with the HELPNET operation center as follows</title>
+<item>
+<ptxt>"OK": When communication with the center finished normally</ptxt>
+</item>
+<item>
+<ptxt>"Failed": When communication with the center did not finish normally</ptxt>
+</item>
+<item>
+<ptxt>"Interrupted": When communication with the center was interrupted</ptxt>
+</item>
+<item>
+<ptxt>"Member Not Registered": When member registration has not been performed</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>"OK" displayed</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If "Member Not Registered" is displayed, contact the customer and ask them to perform the service start operation.</ptxt>
+</item>
+<item>
+<ptxt>If "Failed" or "Interrupted" is displayed, perform a manual maintenance check and check whether the call can be made normally.</ptxt>
+</item>
+<item>
+<ptxt>If the manual maintenance check does not finish normally, inspect according to the instructions in the Problem Symptoms Table [Cannot connect to the center even when a manual maintenance check is performed]. (see <xref label="Seep03" href="RM000001C3T024X"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

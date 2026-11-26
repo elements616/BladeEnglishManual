@@ -1,0 +1,1108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002Q_S000F" variety="S000F">
+<name>Navigation</name>
+<ttl id="1002Q_S000F_746OU_T00CJ" variety="T00CJ">
+<name>HDD Navigation System</name>
+<para id="RM0000002RV02BX" category="D" type-id="303F3" name-id="652MF-00" from="200612" to="200912">
+<name>Diagnosis System</name>
+<subpara id="RM0000002RV02BX_z0" proc-id="RM0550J___0000AD500000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Diagnosis Screen Transitions</ptxt>
+<figure>
+<graphic graphicname="E146253" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<ptxt/>
+<figure>
+<graphic graphicname="E121784" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<ptxt/>
+<figure>
+<graphic graphicname="E121785" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<ptxt/>
+<figure>
+<graphic graphicname="E147156" width="7.106578999in" height="9.803535572in"/>
+</figure>
+<ptxt/>
+<figure>
+<graphic graphicname="E141900" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<ptxt/>
+<figure>
+<graphic graphicname="E141901" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</step1>
+<step1>
+<ptxt>Starting and Ending Diagnosis</ptxt>
+<atten3>
+<ptxt>Some items cannot be inspected unless the diagnosis mode is started after turning the ignition ON and confirming that the map screen is displayed.</ptxt>
+</atten3>
+<atten4>
+<ptxt>There are 2 methods for starting diagnosis.</ptxt>
+</atten4>
+<step2>
+<ptxt>Start Method 1</ptxt>
+<step3>
+<ptxt>Stop the vehicle.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn ACC ON, turn the ignition ON or start the engine.</ptxt>
+</step3>
+<step3>
+<ptxt>While pressing the "INFO/G" key on the navigation receiver assembly, operate the headlight dimmer switch OFF → TAIL → OFF → TAIL → OFF → TAIL → OFF.</ptxt>
+<figure>
+<graphic graphicname="E141829J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When diagnosis starts, the "Service Inspection" screen is displayed and the service inspection is performed.</ptxt>
+<figure>
+<graphic graphicname="E146254" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Select "Inspection Menu" on the "Service Inspection" screen to display the diagnosis inspection menu screen.</ptxt>
+<figure>
+<graphic graphicname="E141835" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Diagnosis Inspection Menu Screen Display Contents</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.50in"/>
+<colspec colname="COL2" colwidth="2.63in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Service Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Performs system inspection and diagnosis memory collection, and displays the current and past inspection results of each connected component based on both results</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the screen for performing inspections specific to the display section</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Navigation Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the screen for performing inspections and settings specific to the navigation ECU section</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Camera Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the screen for adjusting the back guide monitor system (*1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BT Hands-free Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the screen for performing inspections and settings of the Bluetooth hands-free function</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HELPNET Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the screen for performing inspections and settings of the HELPNET system</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>G Terminal Information Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the screen showing G-BOOK terminal information</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Program Update</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This switch can be pressed but is not used</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>*1: When adjusting the back guide monitor system, start diagnosis after turning the ignition ON or starting the engine. (see <xref label="Seep01" href="RM0000002O8019X"/>)</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Start Method 2</ptxt>
+<step3>
+<ptxt>Stop the vehicle.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn ACC ON, turn the ignition ON or start the engine.</ptxt>
+</step3>
+<step3>
+<ptxt>On a screen other than TV, press the "PICTURE/OFF" key on the navigation receiver assembly to display the picture quality adjustment screen.</ptxt>
+<figure>
+<graphic graphicname="E141830J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>On the picture quality adjustment screen, slowly touch the upper left and lower left areas in the order upper left → lower left → upper left → lower left → upper left → lower left.</ptxt>
+<figure>
+<graphic graphicname="E121981" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>Touch inside the four corners of the picture quality adjustment screen, not the corners of the display.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>When diagnosis starts, the "Service Inspection" screen is displayed and the service inspection is performed.</ptxt>
+<figure>
+<graphic graphicname="E146254" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Select "Inspection Menu" on the "Service Inspection" screen to display the diagnosis inspection menu screen.</ptxt>
+<figure>
+<graphic graphicname="E141835" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Diagnosis Inspection Menu Screen Display Contents</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.50in"/>
+<colspec colname="COL2" colwidth="2.63in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Service Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Performs system inspection and diagnosis memory collection, and displays the current and past inspection results of each connected component based on both results</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the screen for performing inspections specific to the display section</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Navigation Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the screen for performing inspections and settings specific to the navigation ECU section</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Camera Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the screen for adjusting the back guide monitor system (*1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BT Hands-free Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the screen for performing inspections and settings of the Bluetooth hands-free function</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HELPNET Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the screen for performing inspections and settings of the HELPNET system</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>G Terminal Information Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the screen showing G-BOOK terminal information</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Program Update</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This switch can be pressed but is not used</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>*1: When adjusting the back guide monitor system, start diagnosis after turning the ignition ON or starting the engine. (see <xref label="Seep02" href="RM0000002O8019X"/>)</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Cancel Method</ptxt>
+<step3>
+<ptxt>To cancel, turn the IG OFF. Or press the "PICTURE/OFF" key for 3 seconds or more.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Service Inspection</ptxt>
+<figure>
+<graphic graphicname="E146254" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Service Inspection</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>For the inspection procedure, refer to <xref label="Seep03" href="RM0000006XI02BX"/>.</ptxt>
+</item>
+<item>
+<ptxt>The service inspection displays the inspection results on the screen based on information such as each component's response to the "system inspection command" and "diagnosis memory presentation request" and the "normal diagnosis notification".</ptxt>
+</item>
+<item>
+<ptxt>The "Service Inspection Communication Monitor" screen displays the communication diagnosis input of each component via AVC-LAN.</ptxt>
+</item>
+<item>
+<ptxt>Each service inspection screen is drawn by the navigation receiver assembly.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Display Inspection</ptxt>
+<figure>
+<graphic graphicname="E101012" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Display Inspection Menu Screen Display Contents</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.51in"/>
+<colspec colname="COL2" colwidth="2.62in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Color Bar Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Inspection of display color display</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Touch Switch Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Inspection of display touch switch operating condition</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Panel Switch Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Inspection of operating condition of each switch around the display</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Signal Check</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Inspection of the condition of vehicle signals input to the display</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CAN Connection Check</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Inspection of the condition of CAN communication connected to the display</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MM Diagnosis Recorder</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This switch can be pressed but is not used</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>For the inspection procedure, refer to <xref label="Seep04" href="RM000000JE901LX"/>.</ptxt>
+</item>
+<item>
+<ptxt>Each display inspection screen is drawn by the navigation receiver assembly.</ptxt>
+</item>
+</list1>
+</atten4>
+</step1>
+<step1>
+<ptxt>Navigation Inspection</ptxt>
+<figure>
+<graphic graphicname="E100905" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Navigation Inspection Menu Screen Display Contents</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.49in"/>
+<colspec colname="COL2" colwidth="2.64in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>GPS Information</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Displays GPS related information</ptxt>
+</item>
+<item>
+<ptxt>GPS date and time setting</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Signal &amp; Sensor Check</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays vehicle signal information input to the navigation receiver assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Color Bar Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Checks the color display of the navigation receiver assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VICS Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Calls up VICS receiver inspection and display screens for each beacon information, etc.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Memory Save/Load</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Navigation memory information can be saved and loaded</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Product Information</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the version and manufacturer name of the navigation receiver assembly and map disc</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Music Server Information</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays various music server information</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Microphone/Voice Recognition Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the inspection screen for the microphone connected to the navigation receiver assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HDD Information</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays information on the hard disk drive built into the navigation receiver assembly</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>Each navigation inspection screen is drawn by the navigation receiver assembly.</ptxt>
+</atten4>
+<step2>
+<ptxt>GPS Information</ptxt>
+<figure>
+<graphic graphicname="E121984" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Start diagnosis and display the diagnosis inspection menu screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Select "Navigation Inspection" on the diagnosis inspection menu screen to display the navigation inspection menu screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Select "GPS Information" on the navigation inspection menu screen to display the GPS information screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Check the GPS related information.</ptxt>
+<table>
+<title>GPS Information Screen Display Contents</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.49in"/>
+<colspec colname="COL2" colwidth="2.64in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Meaning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Satellite Information</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays "satellite number", "elevation", "azimuth", "signal level" and "reception status" of satellites captured by the antenna (up to 12 satellites)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Date and Time</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays date and time information obtained from the GPS receiver as "year", "month", "day", "hour", "minute" and "second"</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays latitude and longitude of the current position as "degrees", "minutes" and "seconds"</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<title>Reception Status</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.49in"/>
+<colspec colname="COL2" colwidth="2.64in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>In use</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the satellite is being used for positioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Receiving</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the satellite is captured but not used for positioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the satellite cannot be captured</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<title>Positioning Status</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.49in"/>
+<colspec colname="COL2" colwidth="2.64in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>During 2-dimensional positioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>During 3-dimensional positioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D-2D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>During differential-enabled 2-dimensional positioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D-3D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>During differential-enabled 3-dimensional positioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When positioning data cannot be used</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>error</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When a reception error occurs</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Other than above</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The vehicle signals are updated every 1 seconds.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Select the "Date/Time Setting" switch and set the GPS date and time.</ptxt>
+<figure>
+<graphic graphicname="E100877J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>G-BOOK cannot be used in locations where GPS signals cannot be received. Therefore, when performing a G-BOOK demonstration in a location where GPS signals cannot be received, such as indoors, use this function to set the GPS time.</ptxt>
+</item>
+<item>
+<ptxt>While GPS signals are being received, the GPS time takes priority.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Navigation Vehicle Signal &amp; Sensor Inspection</ptxt>
+<figure>
+<graphic graphicname="E122211" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>For the inspection procedure, refer to <xref label="Seep05" href="RM000000JE901LX_01_0013"/>.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Navigation Color Bar Check</ptxt>
+<figure>
+<graphic graphicname="E122213" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>For the inspection procedure, refer to <xref label="Seep06" href="RM000000JE901LX_01_0014"/>.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>VICS Inspection</ptxt>
+<figure>
+<graphic graphicname="E100805" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Start diagnosis and display the diagnosis inspection menu screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Select "Navigation Inspection" on the diagnosis inspection menu screen to display the navigation inspection menu screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Select "VICS Inspection" on the navigation inspection menu screen to display the VICS inspection.</ptxt>
+<table>
+<title>VICS Inspection Screen Display Contents</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.49in"/>
+<colspec colname="COL2" colwidth="2.64in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 Media Receiver Inspection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays diagnosis information of the VICS receiver (vehicles with VICS receiver)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Radio Wave Beacon Information</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays radio wave beacon information held by the navigation receiver assembly (vehicles with VICS receiver)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Optical Beacon Information</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays optical beacon information held by the navigation receiver assembly (vehicles with VICS receiver)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FM Multiplex Information</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays FM multiplex information held by the navigation receiver assembly</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>Each VICS inspection screen is drawn by the navigation receiver assembly.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Select "FM Multiplex Information".</ptxt>
+<figure>
+<graphic graphicname="E071702" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>FM Multiplex Information Screen Display Contents</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.49in"/>
+<colspec colname="COL2" colwidth="2.64in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Meaning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Frequency</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the reception frequency</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Provided Time</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the time at which the FM multiplex broadcast data being received was provided</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The FM multiplex information displays the FM multiplex information held by the navigation receiver assembly at the time of inspection.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Product Information</ptxt>
+<figure>
+<graphic graphicname="E121985" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Start diagnosis and display the diagnosis inspection menu screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Select "Navigation Inspection" on the diagnosis inspection menu screen to display the navigation inspection menu screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Select "Product Information" on the navigation inspection menu screen to display the product information screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Check the product information.</ptxt>
+<table>
+<title>Product Information Screen Display Contents</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.49in"/>
+<colspec colname="COL2" colwidth="2.64in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Navigation Manufacturer Name</ptxt>
+<ptxt>(*1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the manufacturer name of the navigation receiver assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Navigation Version Number</ptxt>
+<ptxt>(*2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the version of the navigation receiver assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Disc Manufacturer Information</ptxt>
+<ptxt>(*3)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the disc manufacturer name of the map data</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Media Version Number</ptxt>
+<ptxt>(*4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the data version of the map data</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+<step2>
+<ptxt>Music Server Information</ptxt>
+<figure>
+<graphic graphicname="E100880" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Start diagnosis and display the diagnosis inspection menu screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Select "Navigation Inspection" on the diagnosis inspection menu screen to display the navigation inspection menu screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Select "Music Server Information" on the navigation inspection menu screen to display the music server information screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Check the music server information.</ptxt>
+<table>
+<title>Music Server Information Screen Display Contents</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.49in"/>
+<colspec colname="COL2" colwidth="2.64in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HDD Recording Function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sets the music server HDD recording function to "Enable"/"Stop"</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CDDBVer.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the version of the CDDB stored on the HDD</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Number of Albums</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Displays the number of albums stored on the HDD in base 10</ptxt>
+</item>
+<item>
+<ptxt>The count is displayed separately for ripping and UDAC</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Number of Recorded Songs</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Displays the number of songs stored on the HDD in base 10</ptxt>
+</item>
+<item>
+<ptxt>The count is displayed separately for ripping and UDAC</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Number of My Selections</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the number of songs stored on the HDD in base 10</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HDD Free Space</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays the free space of the music server area on the HDD (unit: KB)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+<step3>
+<ptxt>To set the HDD recording function, select "Enable"/"Stop".</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If the vehicle is used by a corporate user, select HDD recording function "Stop" to disable the sound library function.</ptxt>
+</item>
+<item>
+<ptxt>For uses other than the above, do not select HDD recording function "Stop".</ptxt>
+</item>
+</list1>
+</atten3>
+</step3>
+</step2>
+<step2>
+<ptxt>Microphone/Voice Recognition Inspection</ptxt>
+<figure>
+<graphic graphicname="E115049" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>For the inspection procedure, refer to <xref label="Seep07" href="RM0000016A3010X"/>.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>HDD Information</ptxt>
+<figure>
+<graphic graphicname="E100881" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>For the inspection procedure, refer to <xref label="Seep08" href="RM000000JE901LX_01_0008"/>.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Camera Inspection</ptxt>
+<figure>
+<graphic graphicname="E138322" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>For the inspection procedure, refer to <xref label="Seep10" href="RM0000002O8019X"/>.</ptxt>
+</item>
+<item>
+<ptxt>The camera inspection screen is drawn by the television camera controller.</ptxt>
+</item>
+</list1>
+</atten4>
+</step1>
+<step1>
+<ptxt>BT Hands-free Inspection</ptxt>
+<figure>
+<graphic graphicname="E100883" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>For the inspection procedure, refer to <xref label="Seep11" href="RM000001C4800HX"/>.</ptxt>
+</item>
+<item>
+<ptxt>Each BT hands-free inspection screen is drawn by the navigation receiver assembly.</ptxt>
+</item>
+</list1>
+</atten4>
+</step1>
+<step1>
+<ptxt>HELPNET Inspection Menu</ptxt>
+<figure>
+<graphic graphicname="E100922" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>For the inspection procedure, refer to <xref label="Seep19" href="RM000001C3T00TX"/>.</ptxt>
+</item>
+<item>
+<ptxt>Each HELPNET inspection menu screen is drawn by the navigation receiver assembly.</ptxt>
+</item>
+</list1>
+</atten4>
+</step1>
+<step1>
+<ptxt>G Terminal Information</ptxt>
+<figure>
+<graphic graphicname="E121788" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>For the inspection procedure, refer to <xref label="Seep20" href="RM000001C3T00TX"/>.</ptxt>
+</item>
+<item>
+<ptxt>Each G terminal information screen is drawn by the navigation receiver assembly.</ptxt>
+</item>
+</list1>
+</atten4>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

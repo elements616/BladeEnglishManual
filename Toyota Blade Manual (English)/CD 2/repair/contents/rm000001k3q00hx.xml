@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="07">
+<name>Steering</name>
+<section id="1000U_S0017" variety="S0017">
+<name>Steering Column</name>
+<ttl id="1000U_S0017_745FR_T00AZ" variety="T00AZ">
+<name>Electric Power Steering System</name>
+<para id="RM000001K3Q00HX" category="D" type-id="304CR" name-id="480XT-00" from="200612" to="200912">
+<name>Special operation/control history</name>
+<subpara id="RM000001K3Q00HX_z0" proc-id="RM0550J___00005XS00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Special Control History</ptxt>
+<step2>
+<ptxt>Turn IG OFF.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Turn the ignition ON, select "Diagnosis" → "Chassis" → "Electric Power Steering" → "Special Control History" on the SST (TaSCAN) display screen, and check the history.</ptxt>
+<table pgwide="1">
+<title>Special Control History</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.26in"/>
+<colspec colname="COL2" colwidth="3.82in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+<ptxt>(TaSCAN Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Overheat Prevention Control History</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Indicates whether there is overheat prevention control history</ptxt>
+<ptxt>Display: None/Yes</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>PIG Power Supply Voltage Drop History</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Indicates whether there is PIG power supply voltage drop history</ptxt>
+<ptxt>Display: None/Yes</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Speed Signal Loss History</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Indicates whether there is engine speed signal interruption history</ptxt>
+<ptxt>Display: None/Yes</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Steering Angle Sensor Signal Loss History</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Indicates whether there is steering angle sensor signal interruption history</ptxt>
+<ptxt>Display: None/Yes</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Speed Signal Invalid History</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Indicates whether there is vehicle speed signal invalid history</ptxt>
+<ptxt>Display: None/Yes</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

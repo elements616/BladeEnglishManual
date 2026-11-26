@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002S_S000E" variety="S000E">
+<name>Vehicle Surroundings Monitor</name>
+<ttl id="1002S_S000E_746W2_T00DG" variety="T00DG">
+<name>Back Guide Monitor System</name>
+<para id="RM000000OCQ05NX" category="D" type-id="303F4" name-id="672R7-16" from="200912">
+<name>DTC Check/Clear</name>
+<subpara id="RM000000OCQ05NX_z0" proc-id="RM0550J___0000HXU00000">
+<content5 releasenbr="2">
+<step1>
+<ptxt>Read DTC (Read Using TaSCAN)</ptxt>
+<step2>
+<ptxt>Turn IG OFF.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Start the engine, select "Diagnosis" → "Vehicle Diagnosis/All DTCs" or "System Diagnosis/Body" → "System Name/Navigation System" → "DTC" on the SST (TaSCAN) screen to display the DTC check screen.</ptxt>
+</step2>
+<step2>
+<ptxt>Check the diagnostic trouble codes.</ptxt>
+<atten3>
+<ptxt>Always check DTCs with the engine running.</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If a malfunction code is displayed, refer to the DTC Chart (<xref label="Seep01" href="RM0000002O403WX"/>).</ptxt>
+</item>
+<item>
+<ptxt>The navigation receiver assembly outputs DTCs for the following systems. If a DTC not listed in Back Guide Monitor System - Diagnostic Trouble Code Chart is output, refer to the other systems.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>System Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>HDD Navigation System</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep02" href="RM0000002RS05SX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ETC System</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep04" href="RM000001US9017X"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+<item>
+<ptxt>After repair, check the DTCs again and confirm that no malfunction code is output.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Clear DTC Memory (Clear Using TaSCAN)</ptxt>
+<step2>
+<ptxt>Turn IG OFF.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Start the engine, select "Diagnosis" → "Vehicle Diagnosis/All DTCs" or "System Diagnosis/Body" → "System Name/Navigation System" → "DTC" on the SST (TaSCAN) screen to display the DTC check screen.</ptxt>
+</step2>
+<step2>
+<ptxt>Select "Clear" and clear the DTCs following the screen instructions.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

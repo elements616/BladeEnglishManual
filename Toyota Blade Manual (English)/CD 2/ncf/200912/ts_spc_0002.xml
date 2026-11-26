@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY ts_spc_050004 SYSTEM "ts_spc_050004.xml">
+<!ENTITY ts_spc_050005 SYSTEM "ts_spc_050005.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/ts_spec_style.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "9"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "SCID">
+<SCTITLE>Specifications/Suspension</SCTITLE>
+<PARA INFOID = "INFOID" UPDATE = "ORIGINAL" LDUP = "26Oct2009" INFOTYPE = "SYSTEM" INDSW = "ON" UNPRINT="OFF">
+<TITLE>Specifications/Suspension</TITLE>
+</PARA>
+</SECTION>
+
+<SECTION SCID = "T050004">
+<SCTITLE>Front Suspension</SCTITLE>
+<PARA INFOID = "T050004001" UPDATE = "ORIGINAL" LDUP = "26Oct2009" INFOTYPE = "PARTS" INDSW = "OFF">
+<TITLE>Alignment Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "44%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "55%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Engine</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>2AZ-FE</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Drive Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>2WD</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Grade/Package</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Version S</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Camber [Degrees]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>-0°15′</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Caster [Degrees]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>6°00′</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Steering Axis Inclination [Degrees]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>12°20′</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Toe-in [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>2</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+</PARA>
+</SECTION>
+
+<SECTION SCID = "T050005">
+<SCTITLE>Rear suspension</SCTITLE>
+<PARA INFOID = "T050005001" UPDATE = "ORIGINAL" LDUP = "26Oct2009" INFOTYPE = "PARTS" INDSW = "OFF">
+<TITLE>Alignment Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "44%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "55%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Engine</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>2AZ-FE</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Drive Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>2WD</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Grade/Package</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Version S</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Camber [Degrees]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>-1°10'</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Toe-in [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>2</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+</PARA>
+</SECTION>
+</SCT>

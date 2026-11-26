@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001I_S000I" variety="S000I">
+<name>Door Lock</name>
+<ttl id="1001I_S000I_744CL_T004H" variety="T004H">
+<name>Smart Entry &amp; Start System (Smart Entry)</name>
+<para id="RM000002QX7001X" category="J" type-id="802XP" name-id="622PE-00" from="200612">
+<dtccode/>
+<dtcname>Smart Unlock Does Not Operate from Back Door Only (Lock Operates)</dtcname>
+<subpara id="RM000002QX7001X_02" type-id="33" category="03" proc-id="RM0550J___00002B800000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>If only the door unlock function by smart operation from the back door does not operate, the lock function is normal, so the request code is being transmitted normally from the back door. The opener switch circuit (main body ECU -&gt; back door opener switch) is suspected as the malfunctioning area.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The Smart Entry &amp; Start System (smart entry) has functions that use multiplex communication. First, follow "How to Proceed with Troubleshooting" and confirm that there is no malfunction in the communication system before proceeding with troubleshooting.</ptxt>
+</item>
+<item>
+<ptxt>When using TaSCAN with the ignition switch OFF, repeatedly turn any door courtesy light switch ON←→OFF until communication between TaSCAN and the vehicle starts. (ON←→OFF interval within 1.5 seconds)</ptxt>
+</item>
+<item>
+<ptxt>When the electrical key transmitter (electronic key) or smart key computer assembly (certification ECU) is replaced, refer to the immobiliser registration procedure in the reference section.</ptxt>
+</item>
+<item>
+<ptxt>Check that there are no other electrical key transmitters in the vehicle interior.</ptxt>
+</item>
+</list1>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000002QX7001X_03" type-id="32" category="03" proc-id="RM0550J___00002B900000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B167604J01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000002QX7001X_04" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000002QX7001X_01" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000002QX7001X_01_0001" proc-id="RM0550J___00002B400000">
+<testtitle>Inspect Power Door Lock System</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that the door locks operate lock &lt;-&gt; unlock when the door control switch of the power window regulator master switch assembly is operated.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.46in"/>
+<colspec colname="COL2" colwidth="1.67in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Operates normally</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Does not operate normally</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002QX7001X_01_0002" fin="false">A</down>
+<right ref="RM000002QX7001X_01_0007" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000002QX7001X_01_0002" proc-id="RM0550J___00002B500000">
+<testtitle>Read TaSCAN Data (Back Door Handle Switch)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>ECU Data Monitor</ptxt>
+<test2>
+<ptxt>Using SST (TaSCAN), perform the data monitor of the certification ECU.</ptxt>
+</test2>
+</test1>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table pgwide="1">
+<title>[System selection screen: Body → Main Body → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="2.12in"/>
+<colspec colname="COLSPEC1" colwidth="2.12in"/>
+<colspec colname="COL3" colwidth="1.07in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Back Door Handle SW</ptxt>
+<ptxt>[BHSW]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Back door opener switch status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF: Back door opener switch released</ptxt>
+<ptxt>ON: Back door opener switch pushed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000002QX7001X_01_0003" fin="true">OK</down>
+<right ref="RM000002QX7001X_01_0004" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002QX7001X_01_0003">
+<testtitle>Replace Smart Key Computer Assembly (Certification ECU)</testtitle>
+</testgrp>
+<testgrp id="RM000002QX7001X_01_0004" proc-id="RM0550J___00002B600000">
+<testtitle>Inspect Back Door Opener Switch Assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance.</ptxt>
+<figure>
+<graphic graphicname="B142645J05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.13in"/>
+<colspec colname="COL2" colwidth="1.88in"/>
+<colspec colname="COL3" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3(UL) - 2(E)</ptxt>
+<ptxt>1(L) - 2(E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Switch not operated</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3(UL) - 2(E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When opener switch is pressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1(L) - 2(E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When lock switch is pressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002QX7001X_01_0005" fin="false">OK</down>
+<right ref="RM000002QX7001X_01_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002QX7001X_01_0005" proc-id="RM0550J___00002B700000">
+<testtitle>Inspect Wire Harness and Connector (Main Body ECU - Back Door Opener Switch)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector V of the instrument panel junction block (main body ECU) and the back door opener switch connector.</ptxt>
+<figure>
+<graphic graphicname="B154889J03" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance.</ptxt>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C01" colwidth="2.07in"/>
+<colspec colnum="2" colname="COLSPEC0" colwidth="1.03in"/>
+<colspec colnum="3" colname="C02" colwidth="1.03in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Main Body ECU - Back Door Opener Switch)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>V12(BDSU) - 3(UL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002QX7001X_01_0006" fin="true">OK</down>
+<right ref="RM000002QX7001X_01_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002QX7001X_01_0006">
+<testtitle>Replace Smart Key Computer Assembly (Certification ECU)</testtitle>
+</testgrp>
+<testgrp id="RM000002QX7001X_01_0007">
+<testtitle>Go to Power Door Lock System</testtitle>
+</testgrp>
+<testgrp id="RM000002QX7001X_01_0008">
+<testtitle>Replace back door opener switch assembly<xref label="Seep01" href="RM00000312G000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002QX7001X_01_0009">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

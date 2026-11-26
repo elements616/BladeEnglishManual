@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- $Id: frame.html,v 1.3 2003/05/12 01:07:06 miya Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Publication Selection</title>
+
+<script language="javascript">
+<!--
+// 前回入力されたパブNoの値
+var g_pubNo = "";
+
+//=============================================================================
+//  selectPub  --  パブNo選択
+//=============================================================================
+//【引数】
+//    ctxt		: PubNo入力テキストコンポーネント
+//【戻り値】
+//    なし
+//【処理内容】
+//    1. 入力された値を取得し、g_pubNo に保持する。
+//    2. 入力されたPubNoが先頭に表示されるよう、contents をスクロールする。
+//=============================================================================
+function selectPub( ctxt )
+{
+	g_pubNo = ctxt.value;
+	contents.location.hash = "#" + g_pubNo;
+}
+
+//=============================================================================
+//  setPubNo  --  パブNo表示
+//=============================================================================
+//【引数】
+//    ctxt		: PubNo入力テキストコンポーネント
+//【戻り値】
+//    なし
+//【処理内容】
+//    1. 前回入力された値 (g_pubNo) を、ctxt に表示する。
+//=============================================================================
+function setPubNo( ctxt )
+{
+	ctxt.innerText = g_pubNo;
+}
+-->
+</script>
+</head>
+<frameset rows="100, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="global.html" scrolling="auto" noresize frameborder="no">
+	<frame name="contents" src="contents.html" scrolling="auto" frameborder="no">
+<noframes>
+	<body>Please use a browser that supports frames</body>
+</noframes>
+</frameset>
+</html>

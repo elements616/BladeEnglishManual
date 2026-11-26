@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="04">
+<name>Driveline/Axle</name>
+<section id="1000K_S0015" variety="S0015">
+<name>Differential</name>
+<ttl id="1000K_S0015_744ZW_T00A7" variety="T00A7">
+<name>Active Torque Control 4WD System</name>
+<para id="RM000001XLV005X" category="D" type-id="3001B" name-id="370CO-00" from="200612">
+<name>How to Proceed with Troubleshooting</name>
+<subpara id="RM000001XLV005X_z0" proc-id="RM0550J___00005I200000">
+<content5 releasenbr="1">
+<descript-diag>
+<descript-testgroup>
+<testtitle>Vehicle brought to workshop</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Customer Problem Analysis and Symptom Check</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Control System CAN Communication Function Inspection</testtitle>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs via [Diagnosis] → [Vehicle Diagnosis/CAN Bus Diagnosis] → [Diagnostic Function/Communication Error DTC Check].</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>No DTC output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If DTCs are output, refer to CAN Communication Section (<xref label="Seep01" href="RM0000005S001MX"/>).</ptxt>
+</atten4>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>Go to CAN Communication Section</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Check DTC</testtitle>
+<test1>
+<ptxt>Check DTC (see <xref label="Seep02" href="RM000000MJ9007X"/>)</ptxt>
+<test2>
+<ptxt>Record the DTCs.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Clear DTC</ptxt>
+</test1>
+<test1>
+<ptxt>Recheck DTC</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>No DTC output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Based on the recorded DTCs, reproduce the problem symptom and check whether the DTCs are output again.</ptxt>
+</item>
+<item>
+<ptxt>If DTCs are output, refer to the DTC Chart (<xref label="Seep03" href="X36100000HW008D"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>Go to step 8</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Symptom Check and Reproduction Check</testtitle>
+<test1>
+<ptxt>If the symptom cannot be confirmed or reproduced, go to A</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Symptom can be confirmed and reproduced</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Symptom cannot be confirmed or reproduced</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>For problem simulation, refer to <xref label="Seep04" href="RM000000ABY03DX"/>.</ptxt>
+</atten4>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>Go to Problem Simulation</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>List by Symptom</testtitle>
+<atten4>
+<ptxt>For the symptom chart, refer to <xref label="Seep05" href="X36100000HZ008D"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Identify the malfunctioning part.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Result</ptxt>
+</entry>
+<entry>
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Malfunctioning part not identified</ptxt>
+</entry>
+<entry>
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Malfunctioning part identified</ptxt>
+</entry>
+<entry>
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>Go to step 8</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Perform troubleshooting using the following methods based on the problem symptom</testtitle>
+<test1>
+<ptxt>ECU Data Monitor (see <xref label="Seep06" href="RM00000068G00EX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Terminals of ECU (see <xref label="Seep07" href="RM00000068800EX"/>)</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Adjust, Repair or Replace</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Confirmation Test</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

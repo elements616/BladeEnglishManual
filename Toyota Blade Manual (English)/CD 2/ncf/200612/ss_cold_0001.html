@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../_runtime/legacy.css">
+<script src="../../../_runtime/compat.js"></script>
+
+
+<link rel="stylesheet" href="../css/main2.css" type="text/css"/>
+<link rel="stylesheet" href="../css/style.css" type="text/css"/>
+<title>Major Equipment List</title>
+<xml id="ss_cold" src="ss_cold_0001.xml"></xml>
+<xml id="ss_cold_style1" src="../xsl/ss_cold_style1.xsl"></xml>
+<xml id="ss_cold_style2" src="../xsl/ss_cold_style2.xsl"></xml>
+<script language="JavaScript" src="../js/hidden.js"></script>
+<script language="JavaScript">
+<!--
+function changeCold1(){
+here.innerHTML = ss_cold.transformNode(ss_cold_style1.documentElement);
+}
+function changeCold2(){
+here.innerHTML = ss_cold.transformNode(ss_cold_style2.documentElement);
+}
+-->
+</script>
+</head>
+<body onLoad="boVis(5);changeCold1();printAndClose()">
+  <table width="100%" cellspacing="0" cellpadding="2" style="display:none" id="print">
+    <tr> 
+      <td align="left"> 
+        <input type="submit" name="submit" value="Print" onClick="printCheck()"/>
+      </td>
+      <td align="center"> </td>
+      <td align="right"> 
+        <input type="submit" name="submit2" value="Close" onClick="closeWindow()"/>
+      </td>
+    </tr>
+  </table>
+<div id="here" align="center">
+</div>
+</body>
+</html>

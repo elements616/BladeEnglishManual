@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002T_S000D" variety="S000D">
+<name>Other Electrical</name>
+<ttl id="1002T_S000D_746T0_T00DC" variety="T00DC">
+<name>Horn System</name>
+<para id="RM0000005AI00CX" category="D" type-id="3001B" name-id="7326I-00" from="200612">
+<name>How to Proceed with Troubleshooting</name>
+<subpara id="RM0000005AI00CX_z0" proc-id="RM0550J___0000B5400000">
+<content5 releasenbr="1">
+<descript-diag>
+<descript-testgroup>
+<testtitle>Vehicle brought to workshop</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Customer Problem Analysis and Symptom Check</testtitle>
+<test1>
+<ptxt>Customer Problem Analysis and Symptom Check (see <xref label="Seep01" href="RM0000005AJ00CX"/>)</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>List by Symptom</testtitle>
+<test1>
+<ptxt>Problem Symptoms Table (see <xref label="Seep02" href="RM0000005AM00HX"/>)</ptxt>
+</test1>
+<table>
+<title>Result</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.99in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Not applicable to symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Applicable to symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<results>
+<result>B</result>
+<action-ci-right>Go to Inspection Procedure 5</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Perform troubleshooting using the methods below based on the problem symptom</testtitle>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Inspection Using SST (TaSCAN) (Active Test) (see <xref label="Seep03" href="RM0000005AN00DX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Terminals of ECU (see <xref label="Seep04" href="RM0000005AL00FX"/>)</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Adjust, Repair or Replace</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

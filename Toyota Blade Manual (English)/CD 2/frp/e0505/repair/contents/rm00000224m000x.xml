@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="E0505">
+<servcat id="01">
+<name>Engine</name>
+<section id="10024_S0005" variety="S0005">
+<name>Starting</name>
+<ttl id="10024_S0005_72UWZ_T000B" variety="T000B">
+<name>Starter Assembly (2AZ-FE)</name>
+<para id="RM00000224M000X" category="A" type-id="8000D" name-id="161G0-00" from="200511">
+<name>Inspection</name>
+<subpara id="RM00000224M000X_01" type-id="01" category="01">
+<s-1 id="RM00000224M000X_01_0001" proc-id="E0505_____000005C00000">
+<ptxt>Inspect Repair Service Starter Kit</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Operation Check</ptxt>
+<s3>
+<ptxt>Push in the plunger and release it, and check that it quickly returns to its original position.</ptxt>
+<figure>
+<graphic graphicname="A058586J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Do not drop the plunger and return spring.</ptxt>
+</atten3>
+<atten4>
+<ptxt>If it does not return, replace the repair service starter kit.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Continuity Inspection</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between terminals 50 and C.</ptxt>
+<figure>
+<graphic graphicname="A081547J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00150</s-number>
+</sstitem>
+</sst>
+<spec>
+<subtitle>Standard</subtitle>
+<specitem>
+<ptxt>1 Ω or less</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, replace the repair service starter kit.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between terminal 50 and the repair service starter kit body.</ptxt>
+<figure>
+<graphic graphicname="A081548J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00150</s-number>
+</sstitem>
+</sst>
+<spec>
+<subtitle>Standard</subtitle>
+<specitem>
+<ptxt>2 Ω or less</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, replace the repair service starter kit.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM00000224M000X_01_0002" proc-id="E0505_____000005D00000">
+<ptxt>Inspect Starter Commutator End Frame Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Brush Inspection</ptxt>
+<s3>
+<ptxt>Using vernier calipers, measure the brush length at the center.</ptxt>
+<figure>
+<graphic graphicname="A092966J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<subtitle>Standard</subtitle>
+<specitem>
+<ptxt>9.0mm</ptxt>
+</specitem>
+<subtitle>Limit</subtitle>
+<specitem>
+<ptxt>4.0mm</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the length is less than the minimum, replace the starter commutator end frame.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Resistance Inspection</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the positive (+) and negative (-) brush holders.</ptxt>
+<figure>
+<graphic graphicname="A062921J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00150</s-number>
+</sstitem>
+</sst>
+<spec>
+<subtitle>Standard</subtitle>
+<specitem>
+<ptxt>10M Ω or higher</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the result is not as specified, replace the starter commutator end frame assembly.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM00000224M000X_01_0003" proc-id="E0505_____000005E00000">
+<ptxt>Inspect Starter Armature Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Continuity Inspection</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the segments.</ptxt>
+<figure>
+<graphic graphicname="A092967J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00150</s-number>
+</sstitem>
+</sst>
+<spec>
+<subtitle>Standard</subtitle>
+<specitem>
+<ptxt>1 Ω or less</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, replace the starter armature assembly.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Resistance Inspection</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the commutator and armature coil core.</ptxt>
+<figure>
+<graphic graphicname="A092968J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00150</s-number>
+</sstitem>
+</sst>
+<spec>
+<subtitle>Standard</subtitle>
+<specitem>
+<ptxt>10M Ω or higher</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, replace the starter armature assembly.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Height Inspection</ptxt>
+<s3>
+<ptxt>Using vernier calipers, measure the height of the armature at the position shown in the illustration.</ptxt>
+<figure>
+<graphic graphicname="A081173J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<subtitle>Standard</subtitle>
+<specitem>
+<ptxt>3.1mm</ptxt>
+</specitem>
+<subtitle>Limit</subtitle>
+<specitem>
+<ptxt>3.8mm</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the value is more than the maximum, replace the starter armature assembly.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM00000224M000X_01_0004" proc-id="E0505_____000005F00000">
+<ptxt>Inspect Motor Terminal Starter Kit</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Operation Check</ptxt>
+<s3>
+<ptxt>While holding the drive shaft, check that the pinion gear locks when turned clockwise and turns smoothly when turned counterclockwise.</ptxt>
+<figure>
+<graphic graphicname="A075583J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>If it does not operate normally, replace the starter motor terminal kit.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

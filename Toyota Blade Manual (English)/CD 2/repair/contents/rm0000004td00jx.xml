@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="07">
+<name>Steering</name>
+<section id="1000U_S0017" variety="S0017">
+<name>Steering Column</name>
+<ttl id="1000U_S0017_745FR_T00AZ" variety="T00AZ">
+<name>Electric Power Steering System</name>
+<para id="RM0000004TD00JX" category="C" type-id="300E5" name-id="480Y0-00" from="200612">
+<dtccode>C1515/15</dtccode>
+<dtcname>Torque Sensor 0 Point Calibration Not Performed</dtcname>
+<dtccode>C1525/17</dtccode>
+<dtcname>Rotation Angle Sensor Output Calibration Not Performed</dtcname>
+<subpara id="RM0000004TD00JX_01" type-id="33" category="03" proc-id="RM0550J___00005XA00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when the sensor calibration values are cleared or the power steering computer is replaced (when the power steering computer determines that the torque sensor 0 point calibration or the rotation angle sensor output calibration has not been performed).</ptxt>
+<ptxt>Calibration cannot be performed when the IG voltage is 9V or less.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.56in"/>
+<colspec colname="COL2" colwidth="2.52in"/>
+<colspec colname="COL3" colwidth="3.00in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1515/15</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Torque sensor 0 point calibration has not been performed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Perform the torque sensor 0 point calibration; if no DTC is output, there is no malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1525/17</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rotation angle sensor output calibration has not been performed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Perform the rotation angle sensor output calibration; if no DTC is output, there is no malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000004TD00JX_02" type-id="51" category="05" proc-id="RM0550J___00005XB00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When replacing the steering column assembly, perform the torque sensor 0 point calibration and rotation angle sensor output calibration. (see <xref label="Seep01" href="RM0000024YB004X"/>)</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM0000004TD00JX_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000004TD00JX_03_0001" proc-id="RM0550J___00005XC00000">
+<testtitle>Torque Sensor 0 Point Calibration and Rotation Angle Sensor Output Calibration</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the procedure, see <xref label="Seep01" href="RM0000024YB004X"/></ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000004TD00JX_03_0002" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000004TD00JX_03_0002" proc-id="RM0550J___00005XD00000">
+<testtitle>Recheck DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Recheck the DTC. (see <xref label="Seep01" href="RM000000URU00GX"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="5.58in"/>
+<colspec colname="COL2" colwidth="1.50in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Malfunction code is output even after performing the torque sensor 0 point calibration and rotation angle sensor output calibration 3 times</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Malfunction code is output even after performing the torque sensor 0 point calibration and rotation angle sensor output calibration 1 or 2 times</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Normal code output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If a DTC is still output after performing the torque sensor 0 point calibration and rotation angle sensor output calibration 3 times, replace the power steering computer assembly.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000004TD00JX_03_0003" fin="false">A</down>
+<right ref="RM0000004TD00JX_03_0001" fin="false">B</right>
+<right ref="RM0000004TD00JX_03_0007" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000004TD00JX_03_0003" proc-id="RM0550J___0000A3G00000">
+<testtitle>Replace Power Steering Computer Assembly</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the procedure, see <xref label="Seep01" href="RM000000UNH00TX"/></ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000004TD00JX_03_0004" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000004TD00JX_03_0004" proc-id="RM0550J___00005XE00000">
+<testtitle>Torque Sensor 0 Point Calibration and Rotation Angle Sensor Output Calibration</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the procedure, see <xref label="Seep01" href="RM0000024YB004X"/></ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000004TD00JX_03_0005" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000004TD00JX_03_0005" proc-id="RM0550J___00005XF00000">
+<testtitle>Recheck DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Recheck the DTC. (see <xref label="Seep01" href="RM000000URU00GX"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="5.88in"/>
+<colspec colname="COL2" colwidth="1.20in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Malfunction code is output even after performing the torque sensor 0 point calibration and rotation angle sensor output calibration 3 times</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Malfunction code is output even after performing the torque sensor 0 point calibration and rotation angle sensor output calibration 1 or 2 times</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Normal code output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If a DTC is still output after performing the torque sensor 0 point calibration and rotation angle sensor output calibration 3 times, replace the steering column assembly.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000004TD00JX_03_0006" fin="true">A</down>
+<right ref="RM0000004TD00JX_03_0004" fin="false">B</right>
+<right ref="RM0000004TD00JX_03_0008" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000004TD00JX_03_0006">
+<testtitle>Replace Steering Column Assembly</testtitle>
+</testgrp>
+<testgrp id="RM0000004TD00JX_03_0007">
+<testtitle>No problem (returned to normal after calibration completed)</testtitle>
+</testgrp>
+<testgrp id="RM0000004TD00JX_03_0008">
+<testtitle>Complete</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

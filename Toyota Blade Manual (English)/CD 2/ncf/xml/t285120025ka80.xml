@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARA INFOID = "T120025Ka80" UPDATE = "ORIGINAL" LDUP = "4Jul2006"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Multi-information Display Outside Temperature Display Mode</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740190b" WIDTH = "6.903in" HEIGHT = "1.250in" /><FIGCAPTION><L ja="外気温 -23°C">Outside temperature -23°C</L></FIGCAPTION>
+</FIGURE>
+<SPEC ID = "T120025Ka80X01" INDSW = "OFF">
+<TITLE>Outside Temperature Display Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "83%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Display Range</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>-40~50℃</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>The outside temperature data input from the ambient temperature sensor is corrected using the vehicle speed signal data input from the skid control computer, and a more accurate outside temperature is calculated and displayed.</PTXT></ITEM>
+<ITEM><PTXT>When the outside temperature is below -40°C, -40°C is displayed.</PTXT></ITEM>
+<ITEM><PTXT>When the outside temperature is 50°C or higher, 50°C is displayed.</PTXT></ITEM>
+<ITEM><PTXT>If a communication malfunction or input signal malfunction occurs, bars (--) are displayed.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>

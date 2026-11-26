@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- $Id: prt_frame.html,v 1.11 2003/07/22 09:39:31 miya Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Print Removal/Installation Illustrated Index</title>
+
+<script src="../../js/util.js"></script>
+<script language="javascript">
+//
+//  Contents画面の初期表示
+//  初期化
+//
+function initContents() {
+	var args = window.dialogArguments;
+	if (args == null || args.length != 2) {
+		alert("The parameter is invalid.");
+		return;
+	}
+
+	var illustId = args[0];
+	if (illustId == null) {
+		alert("No illustration ID is specified.");
+		return;
+	}
+
+	contents.png.innerHTML="<img src='../../png/"+illustId.toLowerCase() +".png'  width='100%' alt='" + illustId + "'></img>"
+		//+ "<BUTTON ONCLICK='window.alert(document.body.innerHTML);'>View</BUTTON>"
+		;
+	contents.svgTitle.innerHTML = illustId;
+	contents.ttl.innerHTML = args[1];
+}
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="prt_global.html" scrolling="no" noresize frameborder="no">
+	<frame name="contents" src="prt_contents.html" frameborder="no">
+</frameset>
+<noframes>
+	<body>Please use a browser that supports frames</body>
+</noframes>
+</html>

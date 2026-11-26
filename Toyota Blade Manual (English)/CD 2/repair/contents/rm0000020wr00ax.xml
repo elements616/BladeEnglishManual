@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="1000C_S000O" variety="S000O">
+<name>Cooling</name>
+<ttl id="1000C_S000O_74XTF_T00GT" variety="T00GT">
+<name>Coolant (2GR-FE)</name>
+<para id="RM0000020WR00AX" category="A" type-id="30019" name-id="121KJ-00" from="200708">
+<name>Replacement</name>
+<subpara id="RM0000020WR00AX_01" type-id="01" category="01">
+<s-1 id="RM0000020WR00AX_01_0006" proc-id="RM0550J___0000GWI00000">
+<ptxt>Drain Coolant (Toyota Genuine Super Long Life Coolant)</ptxt>
+<content1 releasenbr="1">
+<atten2>
+<ptxt>To avoid the danger of being burned, do not remove the reservoir tank cap while the engine and radiator are still hot. Liquid and steam will spray out under pressure.</ptxt>
+</atten2>
+<s2>
+<ptxt>Loosen the radiator drain cock plug.</ptxt>
+</s2>
+<s2>
+<ptxt>Remove the reserve tank cap and drain the coolant.</ptxt>
+</s2>
+<s2>
+<ptxt>Loosen the cylinder block drain cock plug and drain the coolant from the engine.</ptxt>
+<figure>
+<graphic graphicname="A179447J01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000020WR00AX_01_0007" proc-id="RM0550J___0000GWJ00000">
+<ptxt>Add Coolant (Toyota Genuine Super Long Life Coolant)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Close the radiator drain cock plug.</ptxt>
+</s2>
+<s2>
+<ptxt>Close the cylinder block drain cock plug.</ptxt>
+<torque>
+<torqueitem>
+<t-value1>13</t-value1>
+<t-value2>133</t-value2>
+</torqueitem>
+</torque>
+</s2>
+<s2>
+<ptxt>Fill coolant of the specified concentration up to the B line of the radiator reserve tank. </ptxt>
+<figure>
+<graphic graphicname="A163276J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Do not add water as coolant</ptxt>
+</atten3>
+<atten4>
+<ptxt>Squeeze radiator hose NO.1 and radiator hose NO.2 by hand several times, and if the coolant level in the filler drops, add more coolant.</ptxt>
+</atten4>
+</s2>
+<s2>
+<ptxt>After installing the reservoir tank cap, warm up the engine until the thermostat opens. (A)</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Squeeze radiator hose NO.1 and radiator hose NO.2 several times while warming up the engine.</ptxt>
+</item>
+<item>
+<ptxt>The valve opening timing can be checked by gripping radiator hose NO.2 by hand.</ptxt>
+</item>
+</list1>
+</atten4>
+<atten2>
+<list1 type="unordered">
+<item>
+<ptxt>Wear protective gloves when working </ptxt>
+</item>
+<item>
+<ptxt>Be careful of cooling fan operation</ptxt>
+</item>
+<item>
+<ptxt>The engine and radiator become hot, so avoid the risk of burns.</ptxt>
+</item>
+</list1>
+</atten2>
+</s2>
+<s2>
+<ptxt>After warm-up, repeat the cycle of 3000rpm engine speed for 5 seconds ←→ idling for 45 seconds 8 times or more (7 minutes or more). (B)</ptxt>
+</s2>
+<s2>
+<ptxt>Stop the engine and wait until the coolant cools down, and if the level is below LOW, add coolant of the specified concentration through the filler again and adjust it to between FULL and LOW. (C)</ptxt>
+</s2>
+<s2>
+<ptxt>Repeat steps (A) to (C) until the coolant level in the radiator reservoir tank stops dropping. </ptxt>
+</s2>
+<s2>
+<ptxt>When the level stops dropping, add coolant of the specified concentration through the filler again to adjust the coolant level in the radiator reservoir tank to between FULL and LOW.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000020WR00AX_01_0011" proc-id="RM0550J___0000GX700000">
+<ptxt>Coolant Leak Inspection
+</ptxt>
+<content1 releasenbr="1">
+<atten2>
+<ptxt>To avoid the danger of being burned, do not remove the reservoir tank cap while the engine and radiator are still hot. Liquid and steam will spray out under pressure.</ptxt>
+</atten2>
+<s2>
+<ptxt>Fill the radiator with coolant and install a radiator cap tester.</ptxt>
+<figure>
+<graphic graphicname="A162961J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Warm up the engine.</ptxt>
+</s2>
+<s2>
+<ptxt>118kPa{1.2kgf/cm<sup>2</sup>Pump it to } and check that the pressure does not drop.</ptxt>
+<atten4>
+<ptxt>If the pressure drops, check the hoses, radiator and water pump for leaks. If there are no external leaks, check the heater core, cylinder block and cylinder head.</ptxt>
+</atten4>
+</s2>
+</content1></s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

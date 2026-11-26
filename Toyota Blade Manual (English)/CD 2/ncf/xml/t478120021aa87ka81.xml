@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T120021Aa87Ka81" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>G-BOOK and Navigation Linked Functions</TITLE>
+<LIST1><TITLE>Function Outline</TITLE>
+<ITEM><PTXT>By linking the navigation with the G-BOOK online service, road conditions such as congestion are provided in real time. Main functions include G Route Search (with probe information) and congestion prediction information.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>G Route Search (with Probe Information)</TITLE>
+<ITEM><PTXT>Comprehensively predicts future road conditions from the latest road traffic information by VICS information and probe communication traffic information and from past statistical data, and searches for and guides an optimal route that avoids congestion.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Congestion Prediction Information</TITLE>
+<ITEM><PTXT>Displays predicted congestion time, predicted congestion increase/decrease, etc. based on congestion prediction information from the G-BOOK Center.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021Aa87Ka81I01" INDSW = "OFF">
+<TITLE>Congestion Prediction Information</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Service Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Service Contents</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Area Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Predicts the latest road traffic information for expressways around the current location and road conditions up to 90 minutes ahead, displays future congestion on an easy-to-understand simplified map on the navigation screen and provides voice guidance.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Route Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Predicts the latest road traffic information for expressways, main toll roads and some general roads on the route to the destination and road conditions up to 90 minutes ahead, displays it on an easy-to-understand simplified map on the navigation screen and provides voice guidance.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Time Required Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Simulates, based on congestion prediction, the time required to the next expressway exit when taking a break (30 or 60 minutes) at an expressway service area, and clearly displays the difference in driving time for each break time.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>

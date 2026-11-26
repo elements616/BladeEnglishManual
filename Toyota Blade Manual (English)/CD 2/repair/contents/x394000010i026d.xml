@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002T_S000D" variety="S000D">
+<name>Other Electrical</name>
+<ttl id="1002T_S000D_742B1_T003C" variety="T003C">
+<name>ETC System</name>
+<para id="X394000010I026D" category="U" type-id="3001G" name-id="CM0CC-15" from="200912">
+<name>Terminals of ECU</name>
+<subpara id="X394000010I026D_z0" proc-id="RM0550J___0000I9N00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Toll Collection (ETC) Computer Assembly</ptxt>
+<figure>
+<graphic graphicname="E101214J05" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<title>Connector A</title>
+<tgroup cols="6">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="0.57in"/>
+<colspec colname="COL3" colwidth="0.57in"/>
+<colspec colname="COL4" colwidth="1.56in"/>
+<colspec colname="COL5" colwidth="1.06in"/>
+<colspec colname="COL6" colwidth="2.26in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Problem Symptoms when Out of Standard</ptxt>
+<ptxt>O: When open</ptxt>
+<ptxt>S: When shorted to body</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A1 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O: ETC system does not operate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A4(TX-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Service Inspection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O: ETC cannot be operated on multi-display, no interrupt display, no voice guidance</ptxt>
+<ptxt>S: HDD navigation system does not operate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A5(TX+)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Service Inspection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O: ETC cannot be operated on multi-display, no interrupt display, no voice guidance</ptxt>
+<ptxt>S: HDD navigation system does not operate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A7(ACC) ←→ A1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ACC ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O: ETC system does not operate</ptxt>
+<ptxt>S: Fuse blown</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A8(+B) ←→ A1(GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O: ETC system does not operate</ptxt>
+<ptxt>S: Fuse blown</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>Navigation Receiver Assembly</ptxt>
+<atten4>
+<ptxt>For the terminals of ECU, refer to <xref label="Seep01" href="RM0000002RT04XX"/></ptxt>
+</atten4>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

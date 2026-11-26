@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740187p SYSTEM "grph_ent/a4740187p.png" NDATA png>
+<!ENTITY c4210132p SYSTEM "grph_ent/c4210132p.png" NDATA png>
+<!ENTITY c4210133p SYSTEM "grph_ent/c4210133p.png" NDATA png>
+<!ENTITY c4210134p SYSTEM "grph_ent/c4210134p.png" NDATA png>
+
+<!ENTITY T010254A087 SYSTEM "t478010254a087.xml">
+<!ENTITY T010254A087A210 SYSTEM "t478010254a087a210.xml">
+<!ENTITY T010254A087A211 SYSTEM "t478010254a087a211.xml">
+<!ENTITY T010254A087A212 SYSTEM "t478010254a087a212.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010254A087S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010254A087" UPDATE = "ORIGINAL" LDUP = "24Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>OCV for VVT-i</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The position of the spool valve is controlled by the duty signal from the engine control computer so that the valve timing is always optimum. When the engine is stopped, the spool valve is held by spring force in the most retarded position on the intake side and in the most advanced position on the exhaust side, in preparation for the next start.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740187p" WIDTH = "6.903in" HEIGHT = "7.875in" />
+</FIGURE>
+
+<MECA ID = "T010254A087A210" UPDATE = "ORIGINAL" LDUP = "29Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>When Advancing</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the spool valve of the OCV moves to the position shown in the illustration according to the signal from the engine control computer, hydraulic pressure is applied to the advance side and the camshaft rotates toward the advance side.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c4210132p" WIDTH = "6.903in" HEIGHT = "5.319in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T010254A087A211" UPDATE = "ORIGINAL" LDUP = "29Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>When Retarding</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the spool valve of the OCV moves to the position shown in the illustration according to the signal from the engine control computer, hydraulic pressure is applied to the retard side hydraulic chamber and the camshaft rotates toward the retard side.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c4210133p" WIDTH = "6.903in" HEIGHT = "5.319in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T010254A087A212" UPDATE = "ORIGINAL" LDUP = "29Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>When Holding</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The engine control computer calculates the target advance angle according to the driving conditions and performs control. After the target timing is set, the timing is held by keeping the OCV in the neutral position unless the driving conditions change. This adjusts the valve timing to any target position while preventing unnecessary outflow of engine oil.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c4210134p" WIDTH = "6.903in" HEIGHT = "4.931in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_74WIJ_T00FO" variety="T00FO">
+<name>EFI System (2GR-FE)</name>
+<para id="RM0000026WU004X" category="C" type-id="302J5" name-id="066NR-00" from="200708">
+<dtccode>P0230/78</dtccode>
+<dtcname>Fuel Pump Relay Circuit</dtcname>
+<subpara id="RM0000026WU004X_01" type-id="31" category="03" proc-id="RM0550J___0000D5M00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>When the engine is cranked, a signal is input from the instrument panel J/B (main body ECU) to the STSW terminal of the engine control computer, and current flows from the NSW terminal through the neutral switch to the coil of the ST relay. The signal from the NSW terminal (STA signal) is also input to the STA terminal. When the STA signal and NE signal are input to the engine control computer, current flows to the coil of the C/OPN relay. This turns on the switch of the C/OPN relay, and the fuel pump operates via the F/PMP relay. While the NE signal is being output (while the engine is running), the engine control computer keeps the circuit opening relay ON, so the fuel pump continues to operate. The fuel pump speed is controlled in 2 steps (high speed and low speed) according to the engine condition (starting, light load, heavy load). The switch of the F/PMP relay is changed by the FPR signal from the engine control computer. During idling or under light load, current flows to the fuel pump through the fuel pump resistor, and the fuel pump operates at low speed.</ptxt>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.9583659     in"/>
+<colspec colnum="02" colname="C02" colwidth="3.154635     in"/>
+<colspec colnum="03" colname="C03" colwidth="3.033921     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTCNo.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+<item>
+<ptxt>Malfunction Duration</ptxt>
+</item>
+<item>
+<ptxt>Others</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0230/78</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Open or short in fuel pump relay circuit</ptxt>
+</item>
+<item>
+<ptxt>1 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Fuel Pump Relay Assembly</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000026WU004X_02" type-id="32" category="03" proc-id="RM0550J___0000D5N00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>This diagnostic chart is based on the premise that the engine is cranking. If the engine does not start, proceed to the troubleshooting table in the Symptom Chart (<xref href="X39400000QW01PD" label="Seep01"/>).</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="A177150J01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000026WU004X_03" type-id="51" category="05" proc-id="RM0550J___0000D5O00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Using SST (TaSCAN), read the freeze frame data. The freeze frame data records part of the engine operating condition when the malfunction occurred, and this information is useful when troubleshooting.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000026WU004X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000026WU004X_04_0001" proc-id="RM0550J___0000D5P00000">
+<scantool type="8"/>
+<testtitle>Perform TaSCAN Active Test (F/PMP Relay)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn the IG ON with the engine stopped.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, perform [Active Test] - [FP Relay ON].</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.03in"/>
+<colspec colname="COL2" colwidth="1.10in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>F/PMP relay does not operate</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>F/PMP relay operates</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026WU004X_04_0002" fin="false">A</down>
+<right ref="RM0000026WU004X_04_0004" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026WU004X_04_0002" proc-id="RM0550J___0000D5Q00000">
+<testtitle>Inspect Fuel Pump Relay (F/PMP Relay)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<figure>
+<graphic graphicname="A030519J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals when battery voltage is applied between terminals 1 and 2.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery voltage applied between terminals 1 and 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery voltage applied between terminals 1 and 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026WU004X_04_0003" fin="true">OK</down>
+<right ref="RM0000026WU004X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026WU004X_04_0003">
+<testtitle>Inspect Fuel Pump Control System<xref label="Seep01" href="X39400000RS01BJ"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000026WU004X_04_0004">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADB004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000026WU004X_04_0005">
+<testtitle>Replace Fuel Pump Relay</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740156c SYSTEM "../xml/grph_ent/a4740156c.png" NDATA png>
+<!ENTITY a4740170c SYSTEM "../xml/grph_ent/a4740170c.png" NDATA png>
+<!ENTITY a4740171c SYSTEM "../xml/grph_ent/a4740171c.png" NDATA png>
+<!ENTITY a4740172c SYSTEM "../xml/grph_ent/a4740172c.png" NDATA png>
+<!ENTITY a4740173c SYSTEM "../xml/grph_ent/a4740173c.png" NDATA png>
+
+<!ENTITY T050005A525 SYSTEM "../xml/t478050005a525.xml">
+<!ENTITY T050005A206 SYSTEM "../xml/t478050005a206.xml">
+<!ENTITY T050005A207 SYSTEM "../xml/t478050005a207.xml">
+<!ENTITY T050005A542 SYSTEM "../xml/t478050005a542.xml">
+<!ENTITY T050005A208 SYSTEM "../xml/t478050005a208.xml">
+<!ENTITY T050005A209 SYSTEM "../xml/t478050005a209.xml">
+<!ENTITY T050005A443 SYSTEM "../xml/t478050005a443.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T050005A525S"><SCTITLE/>
+
+<PARA INFOID = "T050005A525" UPDATE = "ORIGINAL" LDUP = "27Feb2004"     INFOTYPE = "PARTS" INDSW = "ON"     SELECT = "Vehicle Outline: Driving Performance">
+<TITLE>Rear Suspension Outline</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>225/45R17 tires adopted on Version S of 2AZ-FE engine models. Exclusive suspension tuning has been performed, achieving a high level of both excellent handling stability and ride comfort.</PTXT></ITEM>
+<LIST2><ITEM><PTXT>The damping force characteristics of the shock absorbers and the spring rate characteristics of the coil springs have been optimized.</PTXT></ITEM>
+<ITEM><PTXT>Vehicle height has been optimized by changing the installed load characteristics.</PTXT></ITEM></LIST2></LIST1>
+<SPEC ID = "T050005A525X01" INDSW = "OFF">
+<TITLE>Alignment Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "44%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "55%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Engine</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>2AZ-FE</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Drive Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>2WD</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Grade/Package</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Version S</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Camber [Degrees]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>-1°10'</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Toe-in [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>2</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T050005A206S"><SCTITLE/>
+
+<PARA INFOID = "T050005A206" UPDATE = "ORIGINAL" LDUP = "29Nov2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Upper Support &amp; Coil Spring</TITLE>
+<LIST1><ITEM><PTXT>The coil spring is separate from the shock absorber and is mounted lower, and a pigtail coil shape is used to reduce size and weight, accommodating the low floor package. In addition, spring insulators are provided at both the upper and lower ends of the spring, and their thickness is optimized to provide excellent vibration isolation and ride comfort.</PTXT></ITEM>
+<ITEM><PTXT>The bound stopper is made of urethane to optimize the stopper characteristics.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740156c" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T050005A207S"><SCTITLE/>
+
+<PARA INFOID = "T050005A207" UPDATE = "ORIGINAL" LDUP = "29Nov2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Shock Absorber</TITLE>
+<LIST1><ITEM><PTXT>Low-pressure gas (N<SUB>2</SUB>) sealed type shock absorbers are used to achieve stable damping force characteristics, achieving a high level of both steering stability and ride comfort. For details, refer to the shock absorber section of the front suspension.<XREF     REFID = "S478050004A207"/>
+</PTXT></ITEM></LIST1>
+</PARA>
+</SECTION>
+<SECTION SCID = "T050005A542S"><SCTITLE/>
+
+<PARA INFOID = "T050005A542" UPDATE = "ORIGINAL" LDUP = "29Nov2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Upper Arm &amp; Bushing</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The V-shaped design avoids the side members, achieving a low floor while ensuring wheel stroke.</PTXT></ITEM>
+<ITEM><PTXT>Outer-tube bonded type bushings are used for mounting to the suspension member.</PTXT></ITEM>
+<ITEM><PTXT>A ball bushing is used for mounting to the axle, ensuring high support rigidity.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740170c" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T050005A208S"><SCTITLE/>
+
+<PARA INFOID = "T050005A208" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Lower Arm &amp; Bushings</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A lower arm consisting of a combination of an arm with a toe adjustment mechanism (lower arm No.1) and a pressed steel plate arm (lower arm No.2), and a pressed steel plate trailing arm are used.</PTXT></ITEM>
+<ITEM><PTXT>For mounting the lower arms to the axle, lower arm No.1 uses a ball joint and lower arm No.2 uses a ball bushing, ensuring high support rigidity.</PTXT></ITEM>
+<ITEM><PTXT>An outer-tube bonded type bushing is used for the front bushing of the trailing arm, ensuring longitudinal compliance for excellent ride comfort.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740171c" WIDTH = "6.069in" HEIGHT = "3.444in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T050005A209S"><SCTITLE/>
+
+<PARA INFOID = "T050005A209" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Stabilizer</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A solid type is used. The stabilizer bar is mounted to lower arm No.2 via ball joint type stabilizer links.</PTXT></ITEM>
+<ITEM><PTXT>Rubber bushings are used at the suspension member side mounting points.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740172c" WIDTH = "6.903in" HEIGHT = "6.903in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T050005A443S"><SCTITLE/>
+
+<PARA INFOID = "T050005A443" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Suspension Member</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A parallel cross frame made of hollow pipes and pressed steel plates is used.</PTXT></ITEM>
+<ITEM><PTXT>High rigidity is provided at the mounting points of each suspension arm, ensuring excellent steering stability.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740173c" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+</PARA>
+</SECTION>
+</SCT>

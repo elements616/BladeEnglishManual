@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="1000D_S000P" variety="S000P">
+<name>Lubrication</name>
+<ttl id="1000D_S000P_74Y1H_T00HS" variety="T00HS">
+<name>Lubrication System (2GR-FE)</name>
+<para id="RM000002960004X" category="N" type-id="8009I" name-id="130VS-00" from="200708">
+<name>Function Inspection</name>
+<subpara id="RM000002960004X_01" type-id="01" category="01">
+<s-1 id="RM000002960004X_01_0001" proc-id="RM0550J___0000G8B00000">
+<ptxt>Inspect Engine Oil Level</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Warm up and stop the engine; after 5 minutes, check that the oil level is between the L and F marks on the oil level gauge. If the oil level is low, check for leaks and add oil up to the F mark.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000002960004X_01_0002" proc-id="RM0550J___0000G8C00000">
+<ptxt>Inspect Engine Oil Quality</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Inspect the oil for deterioration, water entry, discoloration or thinning, and replace the oil if the quality is visibly poor.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000002960004X_01_0003" proc-id="RM0550J___0000G8D00000">
+<ptxt>Inspect Oil Pressure</ptxt>
+<content1 releasenbr="2">
+<atten3>
+<ptxt>Before and after measurement, clean the gauges and hoses with white gasoline or equivalent.</ptxt>
+</atten3>
+<s2>
+<ptxt>Remove the oil pressure switch assembly (see <xref label="Seep01" href="RM000002V92004X"/>)</ptxt>
+</s2>
+<s2>
+<ptxt>Install Oil Pressure Gauge</ptxt>
+<s3>
+<ptxt>Install the pressure gauge via an adapter.</ptxt>
+<figure>
+<graphic graphicname="A136989" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+</s2>
+<s2>
+<ptxt>Engine Warm-up</ptxt>
+</s2>
+<s2>
+<ptxt>Measure Oil Pressure</ptxt>
+<spec>
+<title>Standard</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Engine Speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Oil pressure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>At idle</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>80kPa{0.8kgf/cm<sup>2</sup>} or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>At 6000r/min</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>380kPa{3.9kgf/cm<sup>2</sup>} or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+<s2>
+<ptxt>Remove Oil Pressure Gauge</ptxt>
+</s2>
+<s2>
+<ptxt>Install the oil pressure switch assembly (see <xref label="Seep02" href="RM000002V90005X"/>)</ptxt>
+<atten3>
+<ptxt>After installation, do not start the engine for 1 hours.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>Engine Oil Leak Inspection</ptxt>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

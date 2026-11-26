@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002T_S000D" variety="S000D">
+<name>Other Electrical</name>
+<ttl id="1002T_S000D_742B1_T003C" variety="T003C">
+<name>ETC System</name>
+<para id="RM00000365F014X" category="C" type-id="803NQ" name-id="732LP-04" from="200912">
+<dtccode>B15F3</dtccode>
+<dtcname>ETC setup malfunction</dtcname>
+<subpara id="RM00000365F014X_01" type-id="33" category="03" proc-id="RM0550J___0000IAO00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when the toll collection (ETC) computer detects an error during setup processing.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="3.43in"/>
+<colspec colname="COL3" colwidth="2.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B15F3</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ETC card insertion detected in non-setup state</ptxt>
+</item>
+<item>
+<ptxt>Setup card soft lock detected</ptxt>
+</item>
+<item>
+<ptxt>Setup card on-board unit management number mismatch detected</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Setup Card</ptxt>
+</item>
+<item>
+<ptxt>Toll Collection (ETC) Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000365F014X_02" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM00000365F014X_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000365F014X_03_0001" proc-id="RM0550J___0000IAP00000">
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check Error Code</ptxt>
+<test2>
+<ptxt>Start diagnosis mode 1. (see <xref label="Seep01" href="RM000000BY201ZX"/>)</ptxt>
+</test2>
+<test2>
+<ptxt>Check the error code and take the following action.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="0.86in"/>
+<colspec colname="COLSPEC1" colwidth="1.42in"/>
+<colspec colname="COL2" align="left" colwidth="2.16in"/>
+<colspec colname="COLSPEC2" colwidth="1.91in"/>
+<colspec colname="COLSPEC0" colwidth="0.73in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Error Code</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+</entry>
+<entry namest="COL2" nameend="COLSPEC2" valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>93</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>An ETC card was inserted into an ETC on-board unit that has not been set up</ptxt>
+</entry>
+<entry namest="COL2" nameend="COLSPEC2" valign="middle">
+<ptxt>Perform setup using a setup card properly issued for the vehicle</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>94</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A setup card that has already been used for setup and whose internal data is locked was inserted</ptxt>
+</entry>
+<entry namest="COL2" nameend="COLSPEC2" valign="middle">
+<ptxt>Perform setup using a setup card properly issued for the vehicle</ptxt>
+<atten4>
+<ptxt>This error code is output if even a setup card properly issued for the vehicle is inserted 2 times</ptxt>
+</atten4>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>95</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>A setup card with a different on-board unit management number was inserted</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Check that the on-board unit management number on the setup application form matches that of the ETC on-board unit</ptxt>
+<atten3>
+<ptxt>At dealers capable of online setup, also check the on-board unit management number on the setup terminal</ptxt>
+</atten3>
+</entry>
+<entry valign="middle">
+<ptxt>Numbers match</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Not matched</ptxt>
+<ptxt>Issue the correct on-board unit management number and proceed with issuing a setup card</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>After setup, perform an operation check using the tester and a card.</ptxt>
+</atten3>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM00000365F014X_03_0002" fin="false">A</down>
+<right ref="RM00000365F014X_03_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000365F014X_03_0002" proc-id="RM0550J___0000IAQ00000">
+<testtitle>Replace Toll Collection (ETC) Computer Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the toll collection (ETC) computer assembly with a new one. (see <xref label="Seep01" href="RM000002TPV001X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000365F014X_03_0008" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000365F014X_03_0008" proc-id="RM0550J___0000IA100000">
+<testtitle>Operation Check
+</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check Area Around Antenna</ptxt>
+<test2>
+<ptxt>Check for any obstructions around the navigation antenna assembly (top surface of the instrument panel), and remove them if present.</ptxt>
+</test2>
+<test2>
+<ptxt>Check for any film, stickers, etc. affixed to the windshield glass, and remove them if present.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Inspect with ETC On-board Unit Tester</ptxt>
+<figure>
+<graphic graphicname="E195388J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Using an ETC on-board unit tester, check that the toll collection (ETC) computer assembly is performing wireless communication normally.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Operate the ETC on-board unit tester at a position approximately 1m from the windshield glass, on a line extending upward and forward of the vehicle from the navigation antenna assembly at an elevation angle of 67±15°. ((The distance between the ETC on-board unit tester and the antenna is only a guide)</ptxt>
+</item>
+<item>
+<ptxt>Point the communication surface of the ETC on-board unit tester toward the navigation antenna assembly.</ptxt>
+</item>
+<item>
+<ptxt>Do not bring the ETC on-board unit tester too close to the navigation antenna assembly, as communication with the tester may be established even if the antenna is disconnected.</ptxt>
+</item>
+</list1>
+</atten4>
+</test2>
+</test1>
+<test1>
+<ptxt>Setup</ptxt>
+<test2>
+<ptxt>Perform setup.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Check Using ETC Card</ptxt>
+<test2>
+<ptxt>Insert an ETC card into the toll collection (ETC) computer assembly and check that the card is authenticated normally.</ptxt>
+</test2>
+</test1>
+<table>
+<title>Text in Illustrations</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="0.41in"/>
+<colspec colname="COL2" colwidth="3.72in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ETC On-board Unit Tester</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Navigation Antenna Assembly</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content6><res>
+<down ref="RM00000365F014X_03_0004" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000365F014X_03_0004">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM00000365F014X_03_0006">
+<testtitle>End (setup performed)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

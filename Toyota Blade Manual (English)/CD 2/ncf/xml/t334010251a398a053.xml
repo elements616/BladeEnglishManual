@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T010251A398A053" UPDATE = "ORIGINAL" LDUP = "24Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Fail-safe Function</TITLE>
+<LIST1><ITEM><PTXT>When a sensor malfunctions, or when the engine control computer judges it necessary based on battery condition, electrical load operating status, etc., alternator charging control is stopped and the system switches to constant voltage generation mode.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Conditions for Switching to Constant Voltage Generation Mode</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "51%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "48%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Concept</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When Battery Capacity Is Low</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>The state of charge is judged from the battery capacity and fluid temperature, and charging control is stopped during overcharge or overdischarge to protect the battery and prevent capacity reduction.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When Battery Fluid Temperature Is Low or High</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When Wipers Are Operating or Blower Motor Is Operating Under High Load</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the power supply voltage changes due to the operation of electrical equipment, the alternator generated voltage changes due to charging control. To prevent an unnatural feeling while driving due to the resulting change in engine load, charging control is temporarily stopped.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When a malfunction is detected in the current sensor, temperature sensor, vehicle speed sensor, throttle position sensor, crank angle sensor, stop light switch or neutral position switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>When a sensor system malfunctions, charging control is stopped to prevent a decrease in battery capacity.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When Engine Is Started</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Prevents a decrease in battery capacity due to the vehicle being left unused, protecting the battery.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When 2 Hours Have Elapsed During Charging Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The charge capacity is checked periodically and errors in the integrated current value caused by long periods of charging and discharging are corrected, preventing a decrease in battery capacity.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>When Cumulative Operating Time Reaches 20 Hours</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Sufficient charging is performed periodically to prevent a reduction in battery life caused by repeated charging and discharging.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>

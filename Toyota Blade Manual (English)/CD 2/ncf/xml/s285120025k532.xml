@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740197b SYSTEM "grph_ent/a4740197b.png" NDATA png>
+<!ENTITY a4740161b SYSTEM "grph_ent/a4740161b.png" NDATA png>
+<!ENTITY a4740162b SYSTEM "grph_ent/a4740162b.png" NDATA png>
+<!ENTITY a4740163b SYSTEM "grph_ent/a4740163b.png" NDATA png>
+
+<!ENTITY T120025K532 SYSTEM "t285120025k532.xml">
+<!ENTITY T120025K532K866 SYSTEM "t285120025k532k866.xml">
+<!ENTITY T120025K532K867 SYSTEM "t285120025k532k867.xml">
+<!ENTITY T120025K532K868 SYSTEM "t285120025k532k868.xml">
+<!ENTITY T120025K532K654 SYSTEM "t285120025k532k654.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120025K532S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120025K532" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "Vehicle Outline: Comfort and Usability">
+<TITLE>Multi-information Display</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The multi-information display uses a liquid crystal dot matrix display to show various modes using numbers, characters, vehicle symbols, etc.</PTXT></ITEM>
+<ITEM><PTXT>A master warning indicator light that illuminates or blinks in conjunction with the warning mode display of the multi-information display is provided in the combination meter.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740197b" WIDTH = "6.903in" HEIGHT = "4.375in" /><FIGCAPTION><L ja="クルーズインフォメーション表示モード 瞬間燃費 10">Cruise information display mode / Instant fuel economy 10</L><L ja="クロック・日付設定モード 時計 日付 終わり">Clock/date setting mode / Clock / Date / End</L><L ja="ウォーニングモード">Warning mode</L><L ja="注）イラストは代表例で表現しています。">Note) The illustration is a representative example.</L><L ja="マスターウォーニングインジケーターランプ">Master Warning Indicator Light</L></FIGCAPTION>
+</FIGURE>
+
+<MECA ID = "T120025K532K866" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Multi-information Display Indications and Functions</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Taking advantage of the dot matrix characteristic of having no restrictions on display patterns, the multi-information display switches between and displays a wide variety of information according to various situations.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "24%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "12%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "63%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Display Function Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Power Source Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Main Functions</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Display Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1><ITEM><PTXT>Displays the name of the malfunctioning system when a malfunction signal is input from each system.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Diagnostic Trouble Code Display Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Displays the diagnostic trouble code when a request to display a diagnostic trouble code occurs due to a malfunction in certain systems.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Cruise Information Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "6" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>ON</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1><ITEM><PTXT>Pressing the DISP switch switches between display of current fuel consumption / cumulative average fuel consumption / driving range / cumulative average vehicle speed / cumulative driving time.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Outside Temperature Display Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Displays the current outside temperature.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Rheostat Display Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Meter brightness can be adjusted.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Clock Setting Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Hours and minutes can be adjusted.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Date Setting Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Year, month and day can be adjusted.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Clock</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Displays the current time.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Odometer / Trip Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Displays the distance driven.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T120025K532K867" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Display Switching Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>If a warning mode, etc. interrupts the display while cruise information is displayed, the display can be switched between that mode and cruise information mode by pressing the DISP (display item selection) switch.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740161b" WIDTH = "6.903in" HEIGHT = "2.153in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K532K868" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Multi-information Display Flow</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The multi-information display shows each mode according to the following flow. For details of the display contents in each mode, refer to the descriptions of each mode shown below.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740162b" WIDTH = "6.903in" HEIGHT = "9.042in" /><FIGCAPTION><L ja="キーが見つかりません 始動時はブレーキを踏んで下さい">Key not found / Depress the brake when starting</L><L ja="消灯">OFF</L><L ja="電源ポジションOFF">Power mode OFF</L><L ja="ウォーニング発生">Warning occurs</L><L ja="Pレンジに入れて下さい">Shift to P</L><L ja="ウォーニングなし">No warning</L><L ja="ステアリングロック未解除">Steering lock not released</L><L ja="半ドア/バックドア">Door ajar / back door</L><L ja="電源ポジションON">Power mode ON</L><L ja="ステアリングロック確認">Check steering lock</L><L ja="オープニング表示">Opening display</L><L ja="キーバッテリ残りわずか">Key battery low</L><L ja="チェック中">Checking</L><L ja="イニシャルチェック表示">Initial check display</L><L ja="ウォーニング表示解除">Warning display cleared</L><L ja="ウォーニング表示 ダイアグコード表示">Warning display / DTC display</L><L ja="日付／時計">Date/clock</L><L ja="時計正時合わせ">Clock hour adjustment</L><L ja="ウォーニング表示要求発生 ダイアグコード表示要求発生">Warning display request occurs / DTC display request occurs</L><L ja="外気温">Outside temperature</L><L ja="瞬間燃費 通算平均燃費">Instant fuel economy / Cumulative average fuel economy</L><L ja="リセット">Reset</L><L ja="航続可能距離">Cruising range</L><L ja="通算平均車速">Cumulative average speed</L><L ja="終わり">End</L><L ja="通算走行時間">Total driving time</L><L ja="日付設定">Date setting</L><L ja="時計設定">Clock setting</L><L ja="設定案内">Settings guide</L><L ja="車速＞1.75km/h">Vehicle speed &gt; 1.75 km/h</L><L ja="キーが見つかりません 始動時はブレーキを踏んで下さい Pレンジに入れて下さい">Key not found / Depress the brake when starting / Shift to P</L><L ja="ウォーニング解除">Warning cleared</L><L ja="•DISPスイッチON：短押し（約0.8秒未満）→DISPスイッチON：長押し（約0.8秒以上）">• DISP switch ON: Short press (less than approx. 0.8 s) / → DISP switch ON: Long press (approx. 0.8 s or more)</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K532K654" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Multi-information Display Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Signals from each vehicle system are input to the meter computer in the combination meter; based on these signals, the meter computer calculates each value displayed in cruise information mode, displays information via the multi-information display, and controls illumination and blinking of the master warning indicator light. In addition, the signal from the DISP (display item selection) switch is input to switch between each display item and display mode.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740163b" WIDTH = "9.264in" HEIGHT = "7.958in" /><FIGCAPTION><L ja="コンビネーションメーター">Combination Meter</L><L ja="フューエルセンダーゲージ">Fuel Sender Gauge</L><L ja="外気センサー">Outside Temperature Sensor</L><L ja="オイルプレッシャースイッチ">Oil Pressure Switch</L><L ja="オルタネーター（L端子）">Alternator (L Terminal)</L><L ja="CAN通信">CAN communication</L><L ja="DISPスイッチ">DISP Switch</L><L ja="メインボデーECU（インストルメントパネルジャンクションブロックASSY）">Main Body ECU (Instrument Panel Junction Block Assembly)</L><L ja="LED点灯用ドライバー">LED Lighting Driver</L><L ja="エンジンコントロールコンピューター">Engine Control Computer</L><L ja="スキッドコントロールコンピューター">Skid Control Computer</L><L ja="センターエアバッグセンサーASSY">Center Airbag Sensor Assembly</L><L ja="照合ECU">Certification ECU</L><L ja="CANゲートウェイECU">CAN Gateway ECU</L><L ja="アクティブトルクコントロール4WDコンピューター">Active Torque Control 4WD Computer</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

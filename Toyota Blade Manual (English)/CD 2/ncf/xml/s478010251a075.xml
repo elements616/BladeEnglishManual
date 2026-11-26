@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740163p SYSTEM "grph_ent/a4740163p.png" NDATA png>
+<!ENTITY a4600029p SYSTEM "grph_ent/a4600029p.png" NDATA png>
+<!ENTITY a4740167p SYSTEM "grph_ent/a4740167p.png" NDATA png>
+<!ENTITY a4770166p SYSTEM "grph_ent/a4770166p.png" NDATA png>
+<!ENTITY a4600017p SYSTEM "grph_ent/a4600017p.png" NDATA png>
+<!ENTITY s4270046p SYSTEM "grph_ent/s4270046p.png" NDATA png>
+
+<!ENTITY T010251A075 SYSTEM "t478010251a075.xml">
+
+<!ENTITY T010251A083A301 SYSTEM "t478010251a083a301.xml">
+<!ENTITY T010251A083A301R01 SYSTEM "t478010251a083a301r01.xml">
+<!ENTITY T010251A410 SYSTEM "t478010251a410.xml">
+<!ENTITY T010251A083 SYSTEM "t478010251a083.xml">
+<!ENTITY T010251A079 SYSTEM "t478010251a079.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010251A075S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010251A075" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Canister Purge Control</TITLE>
+<LIST1><ITEM><PTXT>A 1-way purge passage is provided, and the fuel vapor from the charcoal canister flowing to the purge port is controlled according to the engine condition. Fuel vapor absorbed in the canister is drawn into the engine to prevent the release of fuel vapor.</PTXT></ITEM></LIST1>
+<LIST1><ITEM><PTXT>The purge port is located downstream of the throttle valve, and fuel vapor is drawn into the intake manifold according to the driving conditions. The purge volume is controlled by a VSV provided in the purge line.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740163p" WIDTH = "7.069in" HEIGHT = "3.361in" />
+</FIGURE>
+</PARA>
+<PARA INFOID = "T010251A075P" UPDATE = "ORIGINAL" LDUP = "99XXX9999" INFOTYPE = "SYSTEM" INDSW = "ON" UNPRINT="OFF">
+<TITLE>Related Systems</TITLE>
+
+<MECA ID = "T010251A083A301R01" UPDATE = "ORIGINAL" LDUP = "12Dec2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Knock Sensor Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the knock sensor receives vibration from the cylinder block, the movement of the weight lags due to inertia. As a result, pressure is applied to the piezoelectric ceramic provided between the cylinder block and the weight, generating voltage. The voltage is output almost constantly across all frequency bands, and the engine control computer detects the target frequency and determines that knocking is occurring.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4600029p" WIDTH = "6.903in" HEIGHT = "3.167in" />
+</FIGURE>
+</MECA>
+</PARA>
+<BIND ID = "T010251A075B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T010251A410" UPDATE = "ORIGINAL" LDUP = "20Jul2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>A/F Sensor (Air-Fuel Ratio Sensor)</TITLE>
+<LIST1><ITEM><PTXT>An A/F sensor has been adopted to reliably feed back the air-fuel ratio condition from the exhaust gas. A laminated sensor structure has been adopted to promote early activation of the sensor, achieving air-fuel ratio feedback control from immediately after engine start.</PTXT></ITEM>
+<ITEM><PTXT>The A/F sensor detects and outputs whether the air-fuel ratio is richer or leaner than the stoichiometric air-fuel ratio, O<SUB>2</SUB>sensor, the A/F sensor has output characteristics proportional to the air-fuel ratio, enabling the engine control computer to perform more precise air-fuel ratio control.</PTXT></ITEM>
+<ITEM><PTXT>To activate the A/F sensor, the sensor (zirconia element) must be heated. While a cup type sensor requires time to activate because it is heated indirectly through an atmospheric layer, a laminated type sensor heats the zirconia element directly, shortening the sensor activation time. In addition, the heat mass has been reduced by downsizing the zirconia element.</PTXT></ITEM>
+<ITEM><PTXT>The sensor is mounted on the exhaust manifold upstream of the three-way catalyst.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740167p" WIDTH = "6.903in" HEIGHT = "2.500in" />
+</FIGURE>
+<INDICATE ID = "T010251A410I01" INDSW = "OFF">
+<TITLE>A/F Sensor and O<SUB>2</SUB>Sensor Characteristics</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4770166p" WIDTH = "6.903in" HEIGHT = "3.347in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+
+<PARA INFOID = "T010251A083" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Knock Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A flat knock sensor has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>Reliability is ensured by providing 1 sensors each on the left and right inside the V-bank.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4600017p" WIDTH = "6.903in" HEIGHT = "3.847in" />
+</FIGURE>
+
+<MECA ID = "T010251A083A301" UPDATE = "ORIGINAL" LDUP = "12Dec2003"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Knock Sensor Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the knock sensor receives vibration from the cylinder block, the movement of the weight lags due to inertia. As a result, pressure is applied to the piezoelectric ceramic provided between the cylinder block and the weight, generating voltage. The voltage is output almost constantly across all frequency bands, and the engine control computer detects the target frequency and determines that knocking is occurring.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4600029p" WIDTH = "6.903in" HEIGHT = "3.167in" />
+</FIGURE>
+</MECA>
+</PARA>
+
+<PARA INFOID = "T010251A079" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Water Temperature Sensor</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Detects the engine coolant temperature and sends a signal to the engine control computer.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "s4270046p" WIDTH = "6.903in" HEIGHT = "1.903in" />
+</FIGURE>
+</PARA>
+</BIND>
+</SECTION>

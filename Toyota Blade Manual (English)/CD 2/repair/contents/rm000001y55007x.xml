@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001A_S0009" variety="S0009">
+<name>Lighting</name>
+<ttl id="1001A_S0009_7420Y_T001G" variety="T001G">
+<name>Front Door Courtesy Light Switch Assembly</name>
+<para id="RM000001Y55007X" category="G" type-id="3001K" name-id="603JZ-00" from="200612">
+<name>Component Inspection</name>
+<subpara id="RM000001Y55007X_01" type-id="01" category="01">
+<s-1 id="RM000001Y55007X_01_0003" proc-id="RM0550J___00009HH00000">
+<ptxt>Inspect Front Door Courtesy Light Switch Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Resistance Measurement</ptxt>
+<figure>
+<graphic graphicname="E125019J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminal and body ground.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.56in"/>
+<colspec colname="COL3" colwidth="1.19in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shaft not pushed in</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shaft pushed in</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>Use the same procedure to inspect the rear door courtesy light switch assembly as a single unit.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

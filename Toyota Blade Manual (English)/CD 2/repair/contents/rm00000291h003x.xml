@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="10033_S0007" variety="S0007">
+<name>CAN Communication</name>
+<ttl id="10033_S0007_741KB_T000K" variety="T000K">
+<name>CAN Communication System</name>
+<para id="RM00000291H003X" category="C" type-id="801YU" name-id="950UP-00" from="200612" to="200912">
+<dtccode>U0243</dtccode>
+<dtcname>IPA (DSS2) ECU Communication Malfunction</dtcname>
+<subpara id="RM00000291H003X_01" type-id="33" category="03" proc-id="RM0550J___00000FE00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.9656429     in"/>
+<colspec colnum="02" colname="C02" colwidth="2.635132     in"/>
+<colspec colnum="03" colname="C03" colwidth="3.546147     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>DTC Output Related Items</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>U0243</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<ptxt>With the IG ON, the CAN gateway ECU cannot receive data from the IPA ECU</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>(1) open circuit, poor connector contact or poor contact pressure</ptxt>
+</item>
+<item>
+<ptxt>Television camera controller (IPA ECU) power source malfunction</ptxt>
+</item>
+<item>
+<ptxt>Television camera controller (IPA ECU) internal malfunction</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000291H003X_02" type-id="32" category="03" proc-id="RM0550J___0000BGA00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B162455J02" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM00000291H003X_03" type-id="51" category="05" proc-id="RM0550J___00000FG00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The following flowchart applies only when output by the CAN gateway ECU (V bus No.2 monitoring ECU). If an ECU other than the CAN gateway ECU outputs this code, it is necessary to identify the malfunctioning area using 'How to Proceed with Troubleshooting'.</ptxt>
+</item>
+<item>
+<ptxt>When measuring the resistance of the CAN bus, turn the ignition switch off, check that warning functions such as the key reminder warning system are not operating, and leave the vehicle for at least 1 minutes without operating the key or switches or opening and closing the doors before starting the measurement. If it is necessary to open a door during inspection, open it beforehand.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When inspecting each connector, before disconnecting it, push the connector case in the connecting direction and check that the connector is not loose or disconnected.</ptxt>
+</item>
+<item>
+<ptxt>When disconnecting a connector, check that the connector terminals and connector case are free of damage, deformation, corrosion, etc.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM00000291H003X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000291H003X_04_0006" proc-id="RM0550J___00000FJ00000">
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>U1002 is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>U1002 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000291H003X_04_0001" fin="false">A</down>
+<right ref="RM00000291H003X_04_0007" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000291H003X_04_0001" proc-id="RM0550J___00000FH00000">
+<testtitle>CAN Bus Open Circuit Inspection (IPA ECU Branch Line)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the television camera controller (IPA ECU).</ptxt>
+<figure>
+<graphic graphicname="C148540J05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the vehicle side wire harness connectors.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.14in"/>
+<colspec colname="COL3" colwidth="1.07in"/>
+<colspec colname="COL4" colwidth="0.92in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A9(CANH) - A10(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000291H003X_04_0002" fin="false">OK</down>
+<right ref="RM00000291H003X_04_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000291H003X_04_0002" proc-id="RM0550J___00000FI00000">
+<testtitle>Inspect Wire Harness (ECU Power Source System)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the television camera controller (IPA ECU).</ptxt>
+<figure>
+<graphic graphicname="C148540J06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage and resistance between each terminal of the vehicle wire harness side connector and body ground.</ptxt>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.85in"/>
+<colspec colname="COL2" colwidth="1.21in"/>
+<colspec colname="COL3" colwidth="1.07in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A1 (IG) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A14 (ACC) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACC ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<title>Resistance</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.83in"/>
+<colspec colname="COL2" colwidth="1.21in"/>
+<colspec colname="COL3" colwidth="1.09in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A4 (GND1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000291H003X_04_0005" fin="true">OK</down>
+<right ref="RM00000291H003X_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000291H003X_04_0005">
+<testtitle>Replace Television Camera Controller<xref label="Seep01" href="RM000000MZ4001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000291H003X_04_0003">
+<testtitle>Repair or Replace Branch Wire or Connector</testtitle>
+</testgrp>
+<testgrp id="RM00000291H003X_04_0004">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM00000291H003X_04_0007">
+<testtitle>Go to the relevant flowchart<xref label="Seep01" href="RM000001LYP008X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

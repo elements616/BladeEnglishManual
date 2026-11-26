@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<!-- $Id: frame.html,v 1.34 2005/01/28 11:24:24 k-narumi Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Part Name Search</title>
+
+<script src="../../js/util.js"></script>
+<script src="../../js/xml.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/psearch.js"></script>
+<script language="javascript">
+var g_tocXml     = initXml("toc_rpr.xml");
+var g_ewdXml     = initXml("../../../ewd/toc_ewd.xml",true,false);
+var g_ncfXml     = initXml("../../../ncf/toc_ncf.xml",true,false);
+var g_tocXsl     = initXsl("../../xsl/prt/servcat.xsl");
+var g_listXsl    = initXsl("../../xsl/prt/list.xsl");
+var g_listewdXsl = initXsl("../../xsl/prt/listewd.xsl");
+var g_listncfXsl = initXsl("../../xsl/prt/listncf.xsl");
+var g_listfrpXsl = initXsl("../../xsl/prt/listfrp.xsl");
+var g_frpXml     = initXml("../../../frp/frp.xml", true, false);
+var g_searchRpr  = initXsl("../../xsl/prt/searchretrpr.xsl");
+var g_searchNcf  = initXsl("../../xsl/prt/searchretncf.xsl");
+var g_searchEwd  = initXsl("../../xsl/prt/searchretewd.xsl");
+var g_searchFrp  = initXsl("../../xsl/prt/searchretfrp.xsl");
+var g_partsXml;				// 現在選択されているサービスカテゴリの部品検索XML
+var g_selectPartsId;		// 現在選択されている部品のID
+var g_selectServcatId;		// 現在選択されているサービスID
+var g_selectServcatName;	// 現在選択されているサービス名称
+var g_partsHash;				// 現在選択されているサービスカテゴリの部品検索データ
+var g_partsXmlCache  = new Hashtable();	// 既に読み込んだ部品検索XMLのキャッシュ
+var g_partsHashCache = new Hashtable();	// 既に読み込んだ部品検索XMLのデータ
+var g_term           = getParameterValue("term");
+var g_searchFlg = 0; 		// 0:リストボックス検索/1:key入力
+var g_partsXmlFrp;			// 機能別修理書の部品検索XML
+var g_catcd = 0;			// 0:ALL/1:修理書/2:解説書/3:配線図集/4:機能別修理書
+var g_div_keyname;			// 検索キー(部品名)
+var g_div_keyid;			// 検索キー(部品ID)
+//
+//サービスカテゴリ毎のリストを表示
+//
+function listParts(servcatId) {
+	g_selectPartsId = null;
+	var servcatNode  = g_tocXml.selectSingleNode("//servcat[@id='"+ servcatId+"']");
+	g_selectServcatId  = servcatId;
+	g_selectServcatName= servcatNode.getElementsByTagName("name").item(0).nodeTypedValue;
+	
+	if (g_partsXmlCache.containsKey(servcatId)) {
+		g_partsXml  = g_partsXmlCache.get(servcatId);
+		g_partsHash = g_partsHashCache.get(servcatId);
+
+		//機能別修理書(サービスカテゴリによって有無が変わるため毎回処理)
+		var frpPartsPath1 = "../../../frp/"
+		var frpPartsPath2 = "/repair/term/";
+		var frpPartsList = new Array();
+		var frpPubNameList = new Array();
+		if (g_frpXml != null) {
+			var pubList = g_frpXml.selectNodes("//pub");
+			for (var i = 0; i < pubList.length; i++) {
+				var pubNode = pubList.item(i);
+				var pubNo = pubNode.getAttribute("id").toLowerCase();
+				var pubSName = pubNode.getElementsByTagName("shortname").item(0).nodeTypedValue;
+				var frpPartsXml = initXml(frpPartsPath1 + pubNo + frpPartsPath2 + "psearch_" + servcatId + ".xml",true,false);
+				frpPartsList[i] = frpPartsXml;
+				frpPubNameList[i] = pubSName;
+			}
+		}
+		g_partsXmlFrp = combineFrpPartsList(frpPartsList,frpPubNameList);
+		initFrpXmlData(g_partsHash , g_partsXmlFrp , g_selectServcatName);
+	} else {
+		g_partsXml = initXml("psearch_" + servcatId + ".xml");
+		if (g_partsXml==null){
+			displayPartsList(new Hashtable() , local.parts);
+			return;
+		}
+		g_partsXmlCache.put(servcatId, g_partsXml);
+		g_partsHash = new Hashtable();
+		initXmlData(g_partsHash , g_ewdXml   , g_selectServcatName);
+		initXmlData(g_partsHash , g_ncfXml   , g_selectServcatName);
+		initXmlData(g_partsHash , g_partsXml , g_selectServcatName);
+
+		//機能別修理書
+		var frpPartsPath1 = "../../../frp/"
+		var frpPartsPath2 = "/repair/term/";
+		var frpPartsList = new Array();
+		var frpPubNameList = new Array();
+		if (g_frpXml != null) {
+			var pubList = g_frpXml.selectNodes("//pub");
+			for (var i = 0; i < pubList.length; i++) {
+				var pubNode = pubList.item(i);
+				var pubNo = pubNode.getAttribute("id").toLowerCase();
+				var pubSName = pubNode.getElementsByTagName("shortname").item(0).nodeTypedValue;
+				var frpPartsXml = initXml(frpPartsPath1 + pubNo + frpPartsPath2 + "psearch_" + servcatId + ".xml",true,false);
+				frpPartsList[i] = frpPartsXml;
+				frpPubNameList[i] = pubSName;
+			}
+		}
+		g_partsXmlFrp = combineFrpPartsList(frpPartsList,frpPubNameList);
+		initFrpXmlData(g_partsHash , g_partsXmlFrp , g_selectServcatName);
+
+		g_partsHashCache.put(servcatId, g_partsHash );
+	}
+	displayPartsList(g_partsHash , local.parts);
+}
+
+//
+//機能別修理所用(適連を無視)
+//
+function initFrpXmlData(hash , objXml , servcatName) {
+	if ( objXml == null ) return;
+	// partsNodeListの取得
+	objXml.setProperty("SelectionLanguage", "XPath");
+	var partsList = objXml.selectNodes("//servcat[name='"+servcatName+"']//para/descendant::parts");
+	var tpartsList = objXml.selectNodes("//servcat[name='"+servcatName+"']//ttl/descendant::parts");
+	// partsListの内容をマージしてHashtableに代入
+	for (var i=0; i<partsList.length; i++) {
+		var partsId = partsList.item(i).getAttribute("id");
+		var partsName = partsList.item(i).getElementsByTagName("name").item(0).nodeTypedValue;
+		hash.put(partsId , partsName);
+	}
+	for (var i=0; i<tpartsList.length; i++) {
+		var partsId = tpartsList.item(i).getAttribute("id");
+		var partsName = tpartsList.item(i).getElementsByTagName("name").item(0).nodeTypedValue;
+		hash.put(partsId , partsName);
+	}
+}
+
+//
+//修理書、解説書、配線図集用(適連を考慮)
+//
+function initXmlData(hash , objXml , servcatName) {
+	queryFromTo   = "(@from <= "+g_term+" and "+g_term+" < @to)";
+	queryFromOnly = "(@from <= "+g_term+" and (@to='' or not(@to)))";
+	queryToOnly   = "((@from='' or not(@from)) and "+g_term+" < @to)";
+	queryNone      = "((@from='' or not(@from)) and (@to='' or not(@to)))";
+
+	if ( objXml == null ) return;
+	// partsNodeListの取得
+	objXml.setProperty("SelectionLanguage", "XPath");
+	var partsList = objXml.selectNodes("//servcat[name='"+servcatName+"']//para["+queryFromTo+" or "+queryFromOnly+" or "+queryToOnly+" or "+queryNone+"]/descendant::parts");
+	var tpartsList = objXml.selectNodes("//servcat[name='"+servcatName+"']//ttl/descendant::parts");
+	// partsListの内容をマージしてHashtableに代入
+	for (var i=0; i<partsList.length; i++) {
+		var partsId = partsList.item(i).getAttribute("id");
+		var partsName = partsList.item(i).getElementsByTagName("name").item(0).nodeTypedValue;
+		hash.put(partsId , partsName);
+	}
+	for (var i=0; i<tpartsList.length; i++) {
+		var partsId = tpartsList.item(i).getAttribute("id");
+		var partsName = tpartsList.item(i).getElementsByTagName("name").item(0).nodeTypedValue;
+		hash.put(partsId , partsName);
+	}
+}
+
+//
+//機能別修理書のpsearch_@@.xmlを1個にまとめる
+//
+function combineFrpPartsList(frpPartsList, frpPubNameList) {
+	var retXML = null;
+	for (var i=0; i<frpPartsList.length; i++) {
+		var tmpXML = frpPartsList[i];
+		if (tmpXML == null) {
+			continue;
+		}
+		if (retXML == null) {
+			retXML = tmpXML;
+			var pubNode = retXML.selectSingleNode("//pub");
+			pubNode.setAttribute("shortname", frpPubNameList[i]);
+			continue;
+		}
+		var tmcNode = retXML.selectSingleNode("//tmc-service-db");
+		var pubNode = tmpXML.selectSingleNode("//pub");
+		var newPubNode = pubNode.cloneNode(true);
+		newPubNode.setAttribute("shortname", frpPubNameList[i]);
+		tmcNode.appendChild(newPubNode);
+	}
+	return retXML;
+}
+
+function getPartsId(obj) {
+	g_selectPartsId = fullname(obj);
+}
+
+function initContents() {
+	g_searchFlg = 0;
+	if (g_selectPartsId==null) {
+		alert("Please select a part name");
+		return;
+	}
+	termId = getParameterValue("term");
+	var ph = new Hashtable();
+	ph.put("partsId", g_selectPartsId);
+	ph.put("servcatId", g_selectServcatId);
+	ph.put("servcatName", g_selectServcatName);
+	ph.put("term", termId );
+	display(g_partsXml, g_listXsl, contents.disp, ph);
+	display(g_ewdXml, g_listewdXsl, contents.dispewd, ph);
+	display(g_ncfXml, g_listncfXsl, contents.dispncf, ph);
+	display(g_partsXmlFrp, g_listfrpXsl, contents.dispfrp, ph);
+
+	if (g_ewdXml == null) {
+		contents.dispewd.innerHTML="";
+	}
+	if (g_ncfXml == null) {
+		contents.dispncf.innerHTML="";
+	}
+	if (g_partsXmlFrp == null) {
+		contents.dispfrp.innerHTML="";
+	}
+
+	initStatus();
+
+	g_catcd = 0;
+	global.keyname.value="";
+	global.keyid.value="";
+	parent.contents.changeTabColorAndText();
+	parent.contents.location.hash = "contents_top";
+}
+
+function initStatus() {
+	var sctName = g_partsXml.selectNodes("//servcat/name").item(0).nodeTypedValue;
+	sts.disp.innerHTML = "<p class='location'>" + sctName + "</p>";
+}
+
+//
+//サービスカテゴリ内の部品選択セレクトリストを表示 
+//
+function displayPartsList(hash, objHtml) {
+	var partsId   = hash.keys();
+	var partsName = new Array();
+	for (var i=0; i<partsId.length; i++) {
+		partsName.push( hash.get(partsId[i]) );
+	}
+	// Hashtableの内容をソートして表示
+	sortOrder(partsName , partsId);
+	var but    = "<input type='button' value=' Search ' class='parts-select' onClick='parent.initContents()'>";
+	var parts  = "<select name='p1' class='parts-list' size='20' onChange='parent.getPartsId(this)' onMouseOut='parent.clearFullName()'>";
+	for (var i=0; i<partsId.length; i++) {
+		parts += "<option value='" + partsId[i]+ "'>" + partsName[i] + "</option>";
+	}
+	parts += "</select>";
+	objHtml.innerHTML = but + parts;
+}
+
+//
+//部品名検索で選択部品のフルネームを表示する
+//
+var g_oPopupParts = window.createPopup();
+function fullname(obj) {
+	var name=obj.options[obj.selectedIndex].text;
+	with(g_oPopupParts.document.body) {
+		bgColor           = "#cccccc";
+		style.margin      = "2px 1px 1px 10px";
+		style.borderWidth = "0px 1px 1px 0px";
+		style.borderStyle = "solid";
+		style.borderColor = "#666666";
+		style.fontFamily  = "Courier";
+		innerHTML = "<div style='font-size:10pt;'>"+name+"</div>";
+	}
+	// ASCII文字であれば +9 それ以外は +18
+	var len = 0;
+	for (var i=0; i<name.length; i++) {
+		var ch = name.charAt(i);
+		len += (ch<' '||ch>'~') ? 18 : 9;
+	}
+	if (len<180) len=180;
+	g_oPopupParts.show(70, -20, len, 20, obj);
+	return obj.options[obj.selectedIndex].value;
+}
+
+//
+//フルネーム表示をクリアする
+//
+function clearFullName() {
+	g_oPopupParts.hide();
+}
+
+//
+//検索キー入力での検索
+//
+function callSearch() {
+	g_searchFlg = 1;
+	var keyname = global.keyname.value;
+	var keyid = global.keyid.value;
+	g_div_keyname = keynameDivide(keyname);
+	g_div_keyid = keyidDivide(keyid);
+
+	if (g_div_keyname == null || g_div_keyid == null) {
+		return;
+	}
+	if (g_div_keyname.length == 0 && g_div_keyid.length == 0) {
+		alert("Please enter a part name or part name code.");
+		return;
+	}
+	parent.contents.dispMessage();
+	parent.contents.location.hash = "contents_top";
+	sts.disp.innerHTML = "";
+	setTimeout("searchParts()", 1);
+}
+
+//
+//検索キー入力での検索
+//
+function searchParts() {
+	parent.setSearchKey(g_div_keyname, g_div_keyid);
+
+	//修理書検索
+	var searchXml = initXml("psearch_all.xml");
+	parent.search(searchXml, 1);
+
+	//解説書検索
+	var searchXmlNcf = extractXmlData(g_ncfXml);
+	parent.search(searchXmlNcf, 2);
+
+	//配線図集検索
+	var searchXmlEwd = extractXmlData(g_ewdXml);
+	parent.search(searchXmlEwd, 3);
+
+	//機能別修理書検索
+	var frpPartsPath1 = "../../../frp/"
+	var frpPartsPath2 = "/repair/term/";
+	var frpPartsList = new Array();
+	var frpPubNameList = new Array();
+
+	if (g_frpXml != null) {
+		var pubList = g_frpXml.selectNodes("//pub");
+		for (var i = 0; i < pubList.length; i++) {
+			var pubNode = pubList.item(i);
+			var pubNo = pubNode.getAttribute("id").toLowerCase();
+			var pubSName = pubNode.getElementsByTagName("shortname").item(0).nodeTypedValue;
+			var frpPartsXml = initXml(frpPartsPath1 + pubNo + frpPartsPath2 + "psearch_all.xml",true,false);
+			frpPartsList[i] = frpPartsXml;
+			frpPubNameList[i] = pubSName;
+		}
+	}
+	var searchXmlFrp = combineFrpPartsList(frpPartsList,frpPubNameList);
+	// ルート要素だけのXMLを返却
+	if (searchXmlFrp == null) {
+		searchXmlFrp = new ActiveXObject("Msxml2.DOMDocument");
+		searchXmlFrp.async = false;
+		searchXmlFrp.resolveExternals = false;
+		searchXmlFrp.setProperty("SelectionLanguage", "XPath");
+		var tmcNode = searchXmlFrp.createElement("tmc-service-db");
+		searchXmlFrp.appendChild(tmcNode);
+	}
+	parent.search(searchXmlFrp, 4);
+
+	local.parts.innerHTML = "";
+	parent.contents.changeTab(g_catcd);
+	parent.contents.location.hash = "contents_top";
+	parent.contents.hideMessage();
+	return;
+}
+
+//
+//必要な適連のみを抽出
+//
+function extractXmlData(objXml) {
+	var retXml = new ActiveXObject("Msxml2.DOMDocument");
+	retXml.async = false;
+	retXml.resolveExternals = false;
+	retXml.setProperty("SelectionLanguage", "XPath");
+	var tmcNode = retXml.createElement("tmc-service-ncfewd");
+	retXml.appendChild(tmcNode);
+	// ルート要素だけのXMLを返却
+	if (objXml == null) {
+		return retXml
+	}
+	var pubNode = objXml.selectSingleNode("//pub");
+	var newPubNode = pubNode.cloneNode(true);
+	tmcNode.appendChild(newPubNode);
+
+	pubNode = tmcNode.selectSingleNode("//pub");
+	var servcatList = pubNode.selectNodes("servcat");
+	for (var i = 0; i < servcatList.length; i++) {
+		var servcatNode = servcatList.item(i);
+		var secList = servcatNode.selectNodes("section");
+		for (var j = 0; j < secList.length; j++) {
+			var secNode = secList.item(j);
+			var ttlList = secNode.selectNodes("title");
+			for (var k = 0; k < ttlList.length; k++) {
+				var ttlNode = ttlList.item(k);
+				var paraList = ttlNode.selectNodes("para");
+				for (var l = 0; l < paraList.length; l++) {
+					var paraNode = paraList.item(l);
+					var from = paraNode.getAttribute("from");
+					var to = paraNode.getAttribute("to");
+					if (((from == null || from == "") && (to == null || to =="")) ||
+						((from == null || from == "") && g_term < to) ||
+						(from <= g_term && (to == null || to =="")) ||
+						(from <= g_term && g_term < to)) {
+						continue;
+					} else {
+						ttlNode.removeChild(paraNode);
+					}
+				}
+				// paraが全て消えていたらttlを消す
+				if (ttlNode.selectNodes("para").length == 0) {
+					secNode.removeChild(ttlNode);
+				}
+			}
+			// ttlが全て消えていたらsectionを消す
+			if (secNode.selectNodes("title").length == 0) {
+				servcatNode.removeChild(secNode);
+			}
+		}
+		// sectionが全て消えていたらservcatを消す
+		if (servcatNode.selectNodes("section").length == 0) {
+			pubNode.removeChild(servcatNode);
+		}
+	}
+	return retXml;
+}
+
+//
+//検索キーをスペースで分割(部品名)
+//
+function keynameDivide(str) {
+	var div1 = str.split("　");
+	var ret = new Array();
+	for (var i=0; i < div1.length; i++) {
+		var div2 = div1[i].split(" ");
+		for (var j=0; j < div2.length; j++) {
+			var div3 = trim(div2[j]);
+			if (div3 != "") {
+				if (div3.length < 3) {
+					alert("Enter at least 3 characters for the part name key.");
+					return null;
+				}
+				ret.push(div3);
+			}
+		}
+	}
+	return ret;
+}
+
+//
+//検索キーをスペースで分割(部品ID)
+//
+function keyidDivide(str) {
+	var div1 = str.split("　");
+	var ret = new Array();
+	for (var i=0; i < div1.length; i++) {
+		var div2 = div1[i].split(" ");
+		for (var j=0; j < div2.length; j++) {
+			var div3 = trim(div2[j]);
+			if (div3 != "") {
+				if (div3.length < 3) {
+					alert("Enter at least 3 characters for the part name code key.");
+					return null;
+				}
+				ret.push(div3);
+			}
+		}
+	}
+	return ret;
+}
+
+//
+//検索キーのトリム
+//
+function trim(str) {
+	var cnt = 0;
+	var strReturn = str;
+	while (cnt < str.length) {
+		if ((strReturn.substring(strReturn.length - 1, strReturn.length) == " ") ||
+			(strReturn.substring(strReturn.length - 1, strReturn.length) == "　")) {
+			strReturn = str.substring(0, str.length - (cnt + 1));
+		} else {
+			break;
+		}
+		cnt++;
+	}
+	return strReturn;
+}
+
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="global.html" scrolling="no" noresize frameborder="no">
+	<frameset cols="250, *" frameborder="yes" border="1" framespacing="1" bordercolor="#cccccc">
+		<frame name="local" src="local.html" frameborder="no" >
+		<frameset rows="30, *" frameborder="no" border="0" framespaceing="0">
+			<frame name="sts" src="status.html" frameborder="no" scrolling="auto">
+			<frame name="contents" src="contents.html" frameborder="no">
+		</frameset>
+	</frameset>
+</frameset>
+<noframes>
+	<body>Please use a browser that supports frames</body>
+</noframes>
+</html>

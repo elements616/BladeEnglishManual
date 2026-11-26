@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-db>
+<pub id="RM0550J">
+<servcat id="01">
+<section id="10006_S000J" variety="S000J">
+<ttl id="10006_S000J_74WIJ_T00FO" variety="T00FO">
+<para id="X39400000R702AC" category="C" type-id="3008S" name-id="066NQ-00" from="200708">
+<subpara id="X39400000R702AC_14">
+<testgrp id="X39400000R702AC_14_0048">
+<scantool type="1">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">1</parameter>
+</scantool>
+</testgrp>
+<testgrp id="X39400000R702AC_14_0089">
+<scantool type="8">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">8</parameter>
+<active-test>
+<parameter key="did-id">1</parameter>
+<parameter key="key-invalid-flag">0</parameter>
+<parameter key="key-operation-pattern">I</parameter>
+<parameter key="continuance-time">3000</parameter>
+<parameter key="continuance-flag">1</parameter>
+<parameter key="maintenance-time">0</parameter>
+<parameter key="pattern-disp-info-num">0</parameter>
+<parameter key="lock-time">0</parameter>
+<parameter key="default-value-pid-id">0</parameter>
+<parameter key="de-value-user-specification">0</parameter>
+<parameter key="active-test-name">Fuel Injection Volume</parameter>
+<parameter key="dldriving-value-min">-12.5</parameter>
+<parameter key="dldriving-value-max">24.7</parameter>
+<parameter key="prohibition-condition">The Active Test cannot be performed. After checking the prohibited conditions, press "OK". [Prohibited Conditions] • Engine speed ≥ 3000r/min</parameter>
+<parameter key="note-display"/>
+<parameter key="info">[Prohibited Conditions] • Engine speed ≥ 3000r/min</parameter>
+<parameter key="mul">50</parameter>
+<parameter key="div">256</parameter>
+<parameter key="unit-name">%</parameter>
+<parameter key="dloffset">-25</parameter>
+<parameter key="complement">0</parameter>
+</active-test>
+<parameter key="pid-id-num">2</parameter>
+<datamonitor no="1">
+<parameter key="pid-id">74</parameter>
+<parameter key="datamonitor-name">A/F Sensor Voltage B1S1</parameter>
+</datamonitor>
+<datamonitor no="2">
+<parameter key="pid-id">68</parameter>
+<parameter key="datamonitor-name">O2 sensor voltage B1S2</parameter>
+</datamonitor>
+</scantool>
+</testgrp>
+<testgrp id="X39400000R702AC_14_0091">
+<scantool type="8">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">8</parameter>
+<active-test>
+<parameter key="did-id">1</parameter>
+<parameter key="key-invalid-flag">0</parameter>
+<parameter key="key-operation-pattern">I</parameter>
+<parameter key="continuance-time">3000</parameter>
+<parameter key="continuance-flag">1</parameter>
+<parameter key="maintenance-time">0</parameter>
+<parameter key="pattern-disp-info-num">0</parameter>
+<parameter key="lock-time">0</parameter>
+<parameter key="default-value-pid-id">0</parameter>
+<parameter key="de-value-user-specification">0</parameter>
+<parameter key="active-test-name">Fuel Injection Volume</parameter>
+<parameter key="dldriving-value-min">-12.5</parameter>
+<parameter key="dldriving-value-max">24.7</parameter>
+<parameter key="prohibition-condition">The Active Test cannot be performed. After checking the prohibited conditions, press "OK". [Prohibited Conditions] • Engine speed ≥ 3000r/min</parameter>
+<parameter key="note-display"/>
+<parameter key="info">[Prohibited Conditions] • Engine speed ≥ 3000r/min</parameter>
+<parameter key="mul">50</parameter>
+<parameter key="div">256</parameter>
+<parameter key="unit-name">%</parameter>
+<parameter key="dloffset">-25</parameter>
+<parameter key="complement">0</parameter>
+</active-test>
+<parameter key="pid-id-num">0</parameter>
+</scantool>
+</testgrp>
+<testgrp id="X39400000R702AC_14_0092">
+<scantool type="4">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">4</parameter>
+<parameter key="pid-id-num">2</parameter>
+<datamonitor no="1">
+<parameter key="pid-id">57</parameter>
+<parameter key="datamonitor-name">F/B Correction Value Bank 1</parameter>
+</datamonitor>
+<datamonitor no="2">
+<parameter key="pid-id">58</parameter>
+<parameter key="datamonitor-name">F/B Learned Value Bank 1</parameter>
+</datamonitor>
+</scantool>
+</testgrp>
+<testgrp id="X39400000R702AC_14_0056">
+<scantool type="4">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">4</parameter>
+<parameter key="pid-id-num">1</parameter>
+<datamonitor no="1">
+<parameter key="pid-id">65</parameter>
+<parameter key="datamonitor-name">Intake Air Volume</parameter>
+</datamonitor>
+</scantool>
+</testgrp>
+<testgrp id="X39400000R702AC_14_0094">
+<scantool type="4">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">4</parameter>
+<parameter key="pid-id-num">2</parameter>
+<datamonitor no="1">
+<parameter key="pid-id">57</parameter>
+<parameter key="datamonitor-name">F/B Correction Value Bank 1</parameter>
+</datamonitor>
+<datamonitor no="2">
+<parameter key="pid-id">58</parameter>
+<parameter key="datamonitor-name">F/B Learned Value Bank 1</parameter>
+</datamonitor>
+</scantool>
+</testgrp>
+<testgrp id="X39400000R702AC_14_0096">
+<scantool type="4">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">4</parameter>
+<parameter key="pid-id-num">2</parameter>
+<datamonitor no="1">
+<parameter key="pid-id">57</parameter>
+<parameter key="datamonitor-name">F/B Correction Value Bank 1</parameter>
+</datamonitor>
+<datamonitor no="2">
+<parameter key="pid-id">58</parameter>
+<parameter key="datamonitor-name">F/B Learned Value Bank 1</parameter>
+</datamonitor>
+</scantool>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-db>

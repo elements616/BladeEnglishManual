@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="08">
+<name>Heater &amp; Air Conditioner/Ventilation</name>
+<section id="1002K_S000B" variety="S000B">
+<name>Air Conditioner</name>
+<ttl id="1002K_S000B_7421V_T0025" variety="T0025">
+<name>Heater &amp; Air Conditioner System</name>
+<para id="RM000000IVP01BX" category="N" type-id="8009I" name-id="5228E-00" from="200612">
+<name>Function Inspection</name>
+<subpara id="RM000000IVP01BX_02" type-id="01" category="01">
+<s-1 id="RM000000IVP01BX_02_0019" proc-id="RM0550J___0000ABG00000">
+<ptxt>Inspect Cooling Performance</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Install the air conditioner tool set to the vehicle.</ptxt>
+</s2>
+<s2>
+<ptxt>Set the vehicle to the following conditions. [*1]</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Body</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stopped in the shade</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Door</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Fully open</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/C Switch</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1500r/min</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Air Inlet Damper Position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Recirculation position</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Outlet Damper Position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FACE</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Set Temperature</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>MAX COLD</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Blower Speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HI</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/C Inlet Temperature *2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>30 to 35°C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condenser Pressure (Gauge High Pressure Side) *3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.37 to 1.57MPa(14 to 16kgf/cm<sup>2</sup>)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>*2...An accurate judgment cannot be made unless the inlet air temperature is within the range of 30 to 35°C, so postpone the test if the temperature is low.</ptxt>
+<ptxt>*3...If the condenser pressure (gauge high pressure side) is high, pour water on the condenser to lower it; conversely, if it is too low, cover the front of the condenser to raise it.</ptxt>
+</atten4>
+</s2>
+<s2>
+<ptxt>Place a psychrometer (necessary to determine humidity) at the air inlet, insert the bulb of a dry bulb thermometer into the center of the outlet, and measure.</ptxt>
+</s2>
+<s2>
+<ptxt>Operate the A/C under the conditions in [*1] and allow the outlet temperature to stabilize. (Approx. 5-6 minutes)</ptxt>
+</s2>
+<s2>
+<ptxt>Measure the dry bulb and wet bulb temperatures at the inlet and the outlet temperature.</ptxt>
+</s2>
+<s2>
+<ptxt>Apply the measured dry and wet bulb temperatures at the inlet to the psychrometric chart to determine the relative humidity.</ptxt>
+<figure>
+<graphic graphicname="E103335" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<s3>
+<ptxt>As an example of determining relative humidity, if the dry bulb temperature of the psychrometer set at the air inlet is 25°C and the wet bulb temperature is 19.5°C, the intersection of the dotted lines in the illustration is the relative humidity, which in this case is 60%.</ptxt>
+<figure>
+<graphic graphicname="E103336" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</s3>
+</s2>
+<s2>
+<ptxt>Apply the difference between the measured inlet and outlet temperatures and the relative humidity to the standard performance chart to check the cooling performance.</ptxt>
+<figure>
+<graphic graphicname="E103337" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Must be within the shaded range in the illustration</ptxt>
+</specitem>
+</spec>
+<s3>
+<ptxt>As an example of determining cooling performance using the standard performance chart, the case where the difference between the dry bulb temperature at the air inlet and the dry bulb temperature at the outlet is 17°C and the relative humidity is 60% is shown.</ptxt>
+<figure>
+<graphic graphicname="E103338" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000IVP01BX_02_0020" proc-id="RM0550J___0000ABH00000">
+<ptxt>Inspect Refrigerant Pressure</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Refrigerant Amount Inspection</ptxt>
+<figure>
+<graphic graphicname="E144441" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<s3>
+<ptxt>Check the sight glass of the air conditioner tube and accessory assembly.</ptxt>
+</s3>
+<s3>
+<ptxt>Set the vehicle to the following conditions. [*1]</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Door</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Fully open</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Set Temperature Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>MAX COOL COLD</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1500r/min</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Blower Speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HI</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+<s3>
+<ptxt>Check the sight glass under the conditions in [*1].</ptxt>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.53in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Refrigerant Amount</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Bubbles in the sight glass</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Insufficient</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Check for gas leaks and repair if necessary</ptxt>
+</item>
+<item>
+<ptxt>Add refrigerant gas until the bubbles disappear</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No bubbles in the sight glass</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>None, insufficient or excessive</ptxt>
+</entry>
+<entry>
+<ptxt>Check symptoms (*2) and (*3)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No temperature difference between compressor inlet and outlet (*2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Empty or nearly empty</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Check for gas leaks and repair if necessary</ptxt>
+</item>
+<item>
+<ptxt>Add refrigerant until the bubbles disappear</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Significant temperature difference between compressor inlet and outlet (*3)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proper or excessive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Check symptoms (*4) and (*5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Immediately after the A/C is turned off, the refrigerant gas in the sight glass remains clear (*4)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Excessive</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Discharge refrigerant gas</ptxt>
+</item>
+<item>
+<ptxt>Evacuate air and charge the proper amount of new refrigerant gas</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Immediately after the A/C is turned off, the refrigerant gas foams and then becomes clear (*5)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proper</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>When the room temperature is higher than normal, bubbles in the sight glass are considered normal if cooling is sufficient.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Refrigerant Pressure Inspection with Gauge</ptxt>
+<figure>
+<graphic graphicname="E100247J05" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<s3>
+<ptxt>Install the air conditioner tool set.</ptxt>
+</s3>
+<s3>
+<ptxt>Set the vehicle to the following conditions. [*2]</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>After warm-up</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Door</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Fully open</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1500r/min</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Recirculation Switch</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>RECIRC</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Set Temperature Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>MAX COOL COLD</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Blower Speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HI</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/C Inlet Temperature</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>30 to 35°C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+<s3>
+<ptxt>Check the gauge readings under the conditions in [*2].</ptxt>
+<figure>
+<graphic graphicname="E100248" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>0.15 to 0.25MPa (1.5 to 2.5kgf*cm2) (Low pressure side)</ptxt>
+</specitem>
+<specitem>
+<ptxt>1.37 to 1.57MPa (14 to 16kgf*cm2) (High pressure side)</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>The standard values indicate a normal refrigerant gas charge.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check the gauge readings under the conditions in [*2].</ptxt>
+<figure>
+<graphic graphicname="E100249J02" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<title>Measurement Result</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>During operation, the pressure on the low pressure side alternates between vacuum and normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Moisture that has entered the cooling system freezes at the expansion valve orifice, temporarily stopping refrigerant circulation, but normal condition is restored after the ice melts</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Cooler dryer is oversaturated</ptxt>
+</item>
+<item>
+<ptxt>Moisture in the cooling system freezes at the expansion valve orifice and blocks the circulation of refrigerant gas </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Replace the cooler dryer</ptxt>
+</item>
+<item>
+<ptxt>Remove moisture in the cycle by repeatedly evacuating air</ptxt>
+</item>
+<item>
+<ptxt>Charge an appropriate amount of new refrigerant gas</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The gauge readings indicate a case where moisture has entered the cooling system.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check the gauge readings under the conditions in [*2].</ptxt>
+<figure>
+<graphic graphicname="E100250J02" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<title>Measurement Result</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Pressure is low on both the low and high pressure sides</ptxt>
+</item>
+<item>
+<ptxt>Bubbles are seen continuously in the sight glass</ptxt>
+</item>
+<item>
+<ptxt>Cooling performance is insufficient</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>There is a gas leak somewhere in the cooling system</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Refrigerant gas is low </ptxt>
+</item>
+<item>
+<ptxt>Refrigerant gas leak</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Check for refrigerant gas leaks and repair if necessary</ptxt>
+</item>
+<item>
+<ptxt>Charge an appropriate amount of new refrigerant gas</ptxt>
+</item>
+<item>
+<ptxt>If the pressure reading when connected to the gauge is close to 0, inspect and repair the leak, then evacuate the system</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The gauge readings indicate a case where cooling performance is poor.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check the gauge readings under the conditions in [*2].</ptxt>
+<figure>
+<graphic graphicname="E100251J01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<title>Measurement Result</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Pressure is low on both the low and high pressure sides</ptxt>
+</item>
+<item>
+<ptxt>Frost forms on the piping from the cooler condenser to the A/C unit</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Refrigerant flow is obstructed by dirt in the cooler condenser core</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cooler condenser core clogged</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace the cooler condenser core</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The gauge readings indicate a case where refrigerant gas performance is poor.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check the gauge readings under the conditions in [*2].</ptxt>
+<figure>
+<graphic graphicname="E100252J01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<title>Measurement Result</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Low pressure side indicates vacuum, high pressure side indicates extremely low pressure</ptxt>
+</item>
+<item>
+<ptxt>Frost or dew is seen on the piping before and after the cooler condenser core or cooler expansion valve</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Refrigerant gas flow is obstructed by moisture or dirt in the cooling system</ptxt>
+</item>
+<item>
+<ptxt>Refrigerant gas flow is obstructed by refrigerant gas leaking from the cooler expansion valve </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Refrigerant gas does not circulate</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Check the cooler expansion valve</ptxt>
+</item>
+<item>
+<ptxt>Remove dirt in the cooler expansion valve with an air gun</ptxt>
+</item>
+<item>
+<ptxt>Replace the cooler condenser core</ptxt>
+</item>
+<item>
+<ptxt>After evacuating, charge an appropriate amount of new refrigerant gas</ptxt>
+</item>
+<item>
+<ptxt>If refrigerant gas is leaking from the cooler expansion valve, replace the cooler expansion valve</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The gauge readings indicate a case where refrigerant gas does not circulate.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check the gauge readings under the conditions in [*2].</ptxt>
+<figure>
+<graphic graphicname="E100253J01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<title>Measurement Result</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Pressure is too high on both the high and low pressure sides</ptxt>
+</item>
+<item>
+<ptxt>No bubbles are seen in the sight glass even when the engine speed is decreased</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Excessive refrigerant</ptxt>
+</item>
+<item>
+<ptxt>Insufficient cooling of the cooler condenser core</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Excessive refrigerant</ptxt>
+</item>
+<item>
+<ptxt>Poor cooling of the cooler condenser core</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Clean the cooler condenser core fins</ptxt>
+</item>
+<item>
+<ptxt>Check the condenser fan motor operation</ptxt>
+</item>
+<item>
+<ptxt>If 1 and 2 are normal, check the refrigerant amount and charge the proper amount of refrigerant</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The gauge readings indicate a case where there is too much refrigerant gas or the cooler condenser core is not cooled sufficiently.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check the gauge readings under the conditions in [*2].</ptxt>
+<figure>
+<graphic graphicname="E100254J01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<title>Measurement Result</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Pressure is too high on both the low and high pressure sides</ptxt>
+</item>
+<item>
+<ptxt>Low pressure piping is too hot to touch</ptxt>
+</item>
+<item>
+<ptxt>Bubbles in the sight glass</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Air in the cooling system</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Air has entered the cooling system</ptxt>
+</item>
+<item>
+<ptxt>Insufficient evacuation</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Check whether the compressor oil is dirty or insufficient</ptxt>
+</item>
+<item>
+<ptxt>After evacuating, charge new refrigerant gas</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The gauge readings indicate a case where air has entered the refrigerant system.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check the gauge readings under the conditions in [*2].</ptxt>
+<figure>
+<graphic graphicname="E100255J01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<title>Measurement Result</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Pressure is too high on both the high and low pressure sides</ptxt>
+</item>
+<item>
+<ptxt>Frost or dew forms on the low pressure side</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Cooler expansion valve trouble</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Excessive refrigerant in low pressure piping</ptxt>
+</item>
+<item>
+<ptxt>Cooler expansion valve opened too wide</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Replace the cooler expansion valve</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The gauge readings indicate a case where the cooler expansion valve is faulty.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Check the gauge readings under the conditions in [*2].</ptxt>
+<figure>
+<graphic graphicname="E100256J01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<title>Measurement Result</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cause</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Pressure is too high on both the low and high pressure sides</ptxt>
+</item>
+<item>
+<ptxt>Pressure on the high pressure side is too low</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Leak inside the cooler compressor</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Poor compression </ptxt>
+</item>
+<item>
+<ptxt>Valve leak or broken sliding parts</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Repair or replace the cooler compressor</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The gauge readings indicate a case of poor compression in the cooler compressor.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000IVP01BX_02_0021" proc-id="RM0550J___0000ABI00000">
+<ptxt>Inspect Compressor Assembly (w/ Pulley) Operation (Engine Type 2AZ-FE)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Put a mark on the compressor assembly (with pulley) at the position shown in the illustration.</ptxt>
+<figure>
+<graphic graphicname="E144442J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Start the engine and check that the mark on the compressor assembly (with pulley) rotates together with the pulley.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000IVP01BX_02_0023" proc-id="RM0550J___0000ABK00000">
+<ptxt>Inspect Cooler Condenser Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>If the fins of the cooler condenser assembly are dirty, clean them with water and dry them with compressed air.</ptxt>
+<atten3>
+<ptxt>Do not damage the fins of the cooler condenser assembly.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>If the fins of the cooler condenser assembly are bent, straighten them with a screwdriver or pliers.  </ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000IVP01BX_02_0024" proc-id="RM0550J___0000ABL00000">
+<ptxt>Inspect for Refrigerant Leaks</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using a halogen leak detector, check the piping joints for gas leaks.</ptxt>
+</s2>
+<s2>
+<ptxt>If there is a gas leak at a piping joint, check the torque of the joint. </ptxt>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

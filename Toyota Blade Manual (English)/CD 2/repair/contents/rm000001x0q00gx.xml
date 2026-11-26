@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="RM000001X0Q00GX" category="C" type-id="800K2" name-id="065A9-00" from="200612">
+<dtccode>P0617/43</dtccode>
+<dtcname>Starter Circuit (High)</dtcname>
+<subpara id="RM000001X0Q00GX_01" type-id="31" category="03" proc-id="RM0550J___00002VV00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The cranking hold control system energizes the starter until the engine control computer, which has detected the starter signal (STSW) from the main body ECU, determines that the engine has started. The engine control computer that receives the starter signal (STSW) outputs the ACC cut relay signal (ACCR) to the main body ECU to turn ON the ST CUT relay, preventing flickering of the meter, clock, audio, etc., and the engine control computer also outputs a signal to the STAR terminal. The STAR output signal turns ON the starter relay via the neutral start switch assembly to operate the starter. Also, while the engine is being cranked, the starter operation signal is also sent to the STA terminal of the engine control computer. The main body ECU monitors the terminal voltage on the output side of the ST CUT relay, and protects or drives the starter circuit if there is a malfunction.</ptxt>
+<figure>
+<graphic graphicname="A153079J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<ptxt>The DTC is detected when the starter operation signal (STA) is input to the engine control computer while the vehicle is being driven.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="0.85in"/>
+<colspec colname="COL2" colwidth="2.97in"/>
+<colspec colname="COL3" colwidth="3.26in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0617/43</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Vehicle being driven (1000r/min or more, 20km/h or more)</ptxt>
+</item>
+<item>
+<ptxt>STA signal input</ptxt>
+</item>
+<item>
+<ptxt>20 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Neutral Start Switch Assembly</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>ST CUT Relay</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001X0Q00GX_02" type-id="32" category="03" proc-id="RM0550J___00002VW00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A161870J01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001X0Q00GX_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000001X0Q00GX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000001X0Q00GX_04_0001" proc-id="RM0550J___00002VX00000">
+<scantool type="8"/>
+<testtitle>Perform TaSCAN Active Test (Starter Relay)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), follow the on-screen instructions and select [Active Test] - [Starter Relay].</ptxt>
+</test1>
+<test1>
+<ptxt>Read [ECU Data Monitor] - [Starter Signal] while performing the Active Test.</ptxt>
+<atten4>
+<ptxt>When the starter relay is OFF, inspect the starter signal status after the engine starts and while driving.</ptxt>
+</atten4>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Starter Relay</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Starter Signal</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001X0Q00GX_04_0014" fin="true">OK</down>
+<right ref="RM000001X0Q00GX_04_0002" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001X0Q00GX_04_0002" proc-id="RM0550J___00002VY00000">
+<testtitle>Inspect Neutral Start Switch Assembly (Short Circuit Inspection)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the neutral start switch assembly connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the connector.</ptxt>
+<figure>
+<graphic graphicname="A133880J05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>4(B) - 9(L)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P, N position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Other than P, N position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001X0Q00GX_04_0003" fin="false">OK</down>
+<right ref="RM000001X0Q00GX_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001X0Q00GX_04_0003" proc-id="RM0550J___00002VZ00000">
+<testtitle>Inspect ST CUT Relay</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal.</ptxt>
+<figure>
+<graphic graphicname="E034090J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC2" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Between terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between terminals 3 - 5 when battery voltage is applied between terminals 1 - 2.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC2" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Between terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Battery Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001X0Q00GX_04_0004" fin="false">OK</down>
+<right ref="RM000001X0Q00GX_04_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001X0Q00GX_04_0004" proc-id="RM0550J___00002W000000">
+<testtitle>Inspect Wire Harness and Connector (Engine Control Computer - ST CUT Relay)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect the neutral start switch assembly connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect connector B of the engine control computer.</ptxt>
+<figure>
+<graphic graphicname="A154424J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Move the shift lever to P or N position.</ptxt>
+</test1>
+<test1>
+<ptxt>Remove the ST CUT relay.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the engine control computer vehicle side connector and the ST CUT relay block holder. (see <xref label="Seep02" href="X39400000QV016D"/> for Terminals of ECU)</ptxt>
+</test1>
+<atten3>
+<ptxt>When measuring by touching the holder with a tester probe, be careful not to press too hard as this may damage the holder.</ptxt>
+</atten3>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.33in"/>
+<colspec colname="COLSPEC3" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="1.4in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B48 (STA) or terminal 5 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000001X0Q00GX_04_0015" fin="false">OK</down>
+<right ref="RM000001X0Q00GX_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001X0Q00GX_04_0015" proc-id="RM0550J___00002W200000">
+<testtitle>Inspect Wire Harness and Connector (Main Body ECU - Engine Control Computer)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+<figure>
+<graphic graphicname="A160910J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect connector T of the main body ECU.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the engine control computer and main body ECU vehicle side connectors. (see <xref label="Seep02" href="X39400000QV016D"/> for Terminals of ECU)</ptxt>
+</test1>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.37in"/>
+<colspec colname="COLSPEC4" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A52 (STAR) or T14 (STR2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000001X0Q00GX_04_0005" fin="false">OK</down>
+<right ref="RM000001X0Q00GX_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001X0Q00GX_04_0005" proc-id="RM0550J___00002W100000">
+<testtitle>Inspect Wire Harness and Connector (Engine Control Computer - ST CUT Relay)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+<figure>
+<graphic graphicname="A154421J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Remove the ST CUT relay.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the engine control computer vehicle side connector and the ST CUT relay holder. (see <xref label="Seep02" href="X39400000QV016D"/> for Terminals of ECU)</ptxt>
+</test1>
+<atten3>
+<ptxt>When measuring by touching the holder with a tester probe, be careful not to press too hard as this may damage the holder.</ptxt>
+</atten3>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.37in"/>
+<colspec colname="COLSPEC5" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A52 (STAR) or terminal 3 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000001X0Q00GX_04_0016" fin="false">OK</down>
+<right ref="RM000001X0Q00GX_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001X0Q00GX_04_0016" proc-id="RM0550J___00002W300000">
+<testtitle>Inspect Wire Harness and Connector (ST CUT Relay - Integration Relay (IG2 Relay))</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Remove the ST CUT relay.</ptxt>
+<figure>
+<graphic graphicname="A154422J02" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Remove the integration relay from the engine room R/B.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+</test1>
+<atten3>
+<ptxt>When measuring by touching the holder with a tester probe, be careful not to press too hard as this may damage the holder.</ptxt>
+</atten3>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.28in"/>
+<colspec colname="COLSPEC6" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.43in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal 2 or C4 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000001X0Q00GX_04_0008" fin="true">OK</down>
+<right ref="RM000001X0Q00GX_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001X0Q00GX_04_0014">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000CD101FX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001X0Q00GX_04_0009">
+<testtitle>Replace Neutral Start Switch Assembly<xref label="Seep01" href="RM000000E1100DX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001X0Q00GX_04_0011">
+<testtitle>Replace ST CUT Relay</testtitle>
+</testgrp>
+<testgrp id="RM000001X0Q00GX_04_0010">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM000001X0Q00GX_04_0008">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

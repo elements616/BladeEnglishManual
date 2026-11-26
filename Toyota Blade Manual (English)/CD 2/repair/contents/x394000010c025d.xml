@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002T_S000D" variety="S000D">
+<name>Other Electrical</name>
+<ttl id="1002T_S000D_742B1_T003C" variety="T003C">
+<name>ETC System</name>
+<para id="X394000010C025D" category="D" type-id="300BB" name-id="CM0EN-02" from="200912">
+<name>Function Description</name>
+<subpara id="X394000010C025D_z0" proc-id="RM0550J___0000I9Q00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>ETC System Diagnosis Function (Self-diagnosis)</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The ETC system has a diagnosis function that performs self-diagnosis.</ptxt>
+</item>
+<item>
+<ptxt>The ETC system diagnosis function has the following 2 types.</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>JEITA Standard Error Codes</ptxt>
+<step3>
+<ptxt>To facilitate handling and processing when the toll collection (ETC) computer assembly malfunctions, for ETC users and expressway claim counters (toll gates, etc.), JEITA (Japan Electronics and Information Technology Industries Association) has established JEITA unified error codes that immediately indicate the malfunction. The toll collection (ETC) computer assembly supports this JEITA unified error code notification.</ptxt>
+<figure>
+<graphic graphicname="E122078" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>When a JEITA standard error code occurs, it is notified by an interrupt display on the multi-display.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>The toll collection (ETC) computer assembly stores the latest 1 detected JEITA unified error codes in non-volatile memory. These can be checked by voice from the toll collection (ETC) computer assembly or on the multi-display. (see <xref label="Seep01" href="RM0000021TU016X_01_0002"/>)</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Diagnosis Mode 1 (Error Log)</ptxt>
+<step3>
+<ptxt>Up to 20 previously input DTCs are stored as an error log, and these can be checked by voice from the toll collection (ETC) computer assembly. (see <xref label="Seep02" href="RM000000BY201ZX"/>)</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Communication System</ptxt>
+<step2>
+<ptxt>AVC-LAN</ptxt>
+<figure>
+<graphic graphicname="E122562J11" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<step3>
+<ptxt>The ETC system communicates with the navigation receiver assembly via AVC-LAN, allowing the usage history list to be displayed and ETC settings to be changed on the display screen.</ptxt>
+</step3>
+<step3>
+<ptxt>The master device of the AVC-LAN is the navigation receiver assembly.</ptxt>
+</step3>
+<step3>
+<ptxt>The navigation receiver assembly contains a resistor necessary for communication transmission (60 to 80 Ω between terminals TX+ - TX-).</ptxt>
+</step3>
+<step3>
+<ptxt>Information related to the ETC system shown on the navigation receiver assembly display is drawn by the navigation receiver assembly according to notifications from the toll collection (ETC) computer assembly.</ptxt>
+</step3>
+<step3>
+<ptxt>If a malfunction such as an open, communication line short, +B short or GND short occurs in the AVC-LAN circuit, communication is interrupted and the system does not operate normally. (The toll collection (ETC) computer assembly can operate on its own)</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>HDD Navigation System Diagnosis Function (AVC-LAN)</ptxt>
+<step2>
+<ptxt>The HDD navigation system has a diagnosis function that can check the connection of and diagnose devices connected via AVC-LAN. (Displayed on the navigation receiver assembly display)</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

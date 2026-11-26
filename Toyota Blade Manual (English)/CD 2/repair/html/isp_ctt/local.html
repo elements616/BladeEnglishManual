@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- $Id: local.html,v 1.16 2003/12/05 07:06:07 takeo Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Inspection Procedure</title>
+
+
+<link href="../../css/local.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+<!--
+function initLocal(){
+	var kTtlId = parent.g_hash.keys();
+	var vTname = parent.g_hash.values();
+	if(kTtlId.length == 0) alert("The title does not exist!");
+	var ttlMenu = "<br/><ol class='ttlmenu'>";
+	for(i=0;i<vTname.length;i++){
+		var ttl = "<li class='ttlmenu'><a onClick='parent.changeMode(this);selectId(\""+kTtlId[i]+"\");' onMouseover='JavaScript:parent.over(this)' onMouseout='JavaScript:parent.out(this)' href='#"+kTtlId[i]+"' name='"+kTtlId[i]+"'>"+ vTname[i] +"</a></li>";
+		ttlMenu = ttlMenu + ttl;
+	}
+	ttldisp.innerHTML = ttlMenu + "</ol>";
+	parent.changeMode(document.all(parent.g_firstTid));
+	var paraIdArray = parent.g_hashParaIdArray.get(parent.g_firstTid);
+	if ((paraIdArray != null)  && (paraIdArray.length > 0)) {
+		parent.setGlobalNaviLinks(paraIdArray[0]);
+	}
+	parent.global.enabledPreparation();
+	location.hash = parent.g_firstTid;
+}
+
+//
+//local.html「要領」で手順変更リンクclick時
+//
+function selectId(ttlid){
+	parent.g_nowTtlId = ttlid;
+	parent.contents.initContents();
+	parent.sts.initStatus();
+	var paraIdArray = parent.g_hashParaIdArray.get(parent.g_nowTtlId);
+	parent.setGlobalNaviLinks(paraIdArray[0]);
+	parent.global.enabledPreparation();
+	parent.contents.focus();
+}
+-->
+</script>
+</head>
+<body onload="initLocal()">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td class="text">Inspection Procedure</td>
+	</tr>
+	<tr>
+		<td><div id="ttldisp"></div></td>
+	</tr>
+</table>
+</body>
+</html>

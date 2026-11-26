@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10024_S000T" variety="S000T">
+<name>Starting</name>
+<ttl id="10024_S000T_744HN_T007Z" variety="T007Z">
+<name>Smart Entry &amp; Start System (Start System)</name>
+<para id="X394000014B00QC" category="C" type-id="3052Y" name-id="161X6-00" from="200612">
+<dtccode>B2276</dtccode>
+<dtcname>ACCR Signal Malfunction</dtcname>
+<subpara id="X394000014B00QC_10" type-id="31" category="03" proc-id="RM0550J___00004AO00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>This DTC is output when a malfunction such as an open or short in the ACCR input circuit of the instrument panel J/B assembly (main body ECU) is detected.</ptxt>
+</item>
+</list1>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When using the TaSCAN with the IG OFF, repeatedly turn any door courtesy light switch ON and OFF (at intervals of 1.5 seconds or less) until communication between the TaSCAN and the vehicle starts.</ptxt>
+</item>
+<item>
+<ptxt>The Smart Entry &amp; Start System (start system) has functions that use multiplex communication. First, follow "How to Proceed with Troubleshooting" and confirm that there is no malfunction in the communication system before proceeding with troubleshooting.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>When the instrument panel J/B assembly (main body ECU) is replaced with a new ECU and the battery negative terminal is connected, it enters the IG ON state. Also, when the battery is removed and reinstalled, the power source returns to the state it was in when the battery was removed.</ptxt>
+</atten4>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.01in"/>
+<colspec colnum="02" colname="C02" colwidth="2.07in"/>
+<colspec colnum="03" colname="C03" colwidth="4.00in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>B2276</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>ACCR input signal malfunction of the instrument panel J/B assembly (main body ECU)</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Instrument Panel J/B Assembly (Main Body ECU)</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer (Engine ECU)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="X394000014B00QC_11" type-id="32" category="03" proc-id="RM0550J___00004AP00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A161587J11" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="X394000014B00QC_12" type-id="51" category="05" proc-id="RM0550J___00004AQ00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>When the engine control computer (engine ECU) has been replaced, refer to the immobiliser registration procedure in the reference section.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="X394000014B00QC_13" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="X394000014B00QC_13_0001" proc-id="RM0550J___00004AR00000">
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Clear the DTCs.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs again 50 seconds or more after turning the IG ON, and check that no DTC is output.</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.30in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC is output again</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X394000014B00QC_13_0002" fin="false">A</down>
+<right ref="X394000014B00QC_13_0005" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="X394000014B00QC_13_0002" proc-id="RM0550J___00004AS00000">
+<testtitle>Inspect Wire Harness (Instrument Panel J/B Assembly (Main Body ECU) - Engine Control Computer (Engine ECU))</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<figure>
+<graphic graphicname="A161588J02" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Disconnect instrument panel J/B assembly (main body ECU) connector T and engine control computer (engine ECU) connector B.</ptxt>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), inspect the resistance between the terminals of the vehicle side wire harness connector.</ptxt>
+<spec>
+<title>Resistance</title>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C01" colwidth="2.50in"/>
+<colspec colnum="2" colname="COLSPEC1" colwidth="0.78in"/>
+<colspec colnum="3" colname="C02" colwidth="0.85in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Main Body ECU - Engine ECU)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>T11(ACCR) - B13(ACCR)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), inspect the resistance between each terminal of the vehicle side wire harness connector and body ground.</ptxt>
+<spec>
+<title>Resistance</title>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C01" colwidth="2.53in"/>
+<colspec colnum="2" colname="COLSPEC2" colwidth="0.78in"/>
+<colspec colnum="3" colname="C02" colwidth="0.82in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Main Body ECU or Engine ECU - Body Ground)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>T11 (ACCR) or B13 (ACCR) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="X394000014B00QC_13_0003" fin="false">OK</down>
+<right ref="X394000014B00QC_13_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X394000014B00QC_13_0003" proc-id="RM0550J___00004AT00000">
+<testtitle>Inspect Instrument Panel J/B Assembly (Main Body ECU)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Voltage Inspection</ptxt>
+<figure>
+<graphic graphicname="A161589J02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<test2>
+<ptxt>Connect the instrument panel J/B assembly (main body ECU) and engine control computer (engine ECU) connectors.</ptxt>
+</test2>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), inspect the voltage between the instrument panel J/B assembly (main body ECU) connector terminal and body ground.</ptxt>
+<atten4>
+<ptxt>The ACCR output voltage when not cranking is { (AM1 or AM2) - 2V} or more.</ptxt>
+</atten4>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL3" colwidth="2.01in"/>
+<colspec colname="COL4" colwidth="0.67in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T11 (ACCR) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever in P, brake pedal depressed, engine switch pushed (cranking)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1V or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="X394000014B00QC_13_0004" fin="true">OK</down>
+<right ref="X394000014B00QC_13_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X394000014B00QC_13_0004">
+<testtitle>Replace instrument panel J/B assembly (main body ECU)</testtitle>
+</testgrp>
+<testgrp id="X394000014B00QC_13_0005">
+<testtitle>Perform Simulation Method<xref label="Seep01" href="RM0000005D701ZX"/>
+</testtitle>
+</testgrp>
+<testgrp id="X394000014B00QC_13_0006">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="X394000014B00QC_13_0007">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X_02_0041"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

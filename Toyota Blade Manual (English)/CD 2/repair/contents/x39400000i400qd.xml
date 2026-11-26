@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10024_S000T" variety="S000T">
+<name>Starting</name>
+<ttl id="10024_S000T_744HN_T007Z" variety="T007Z">
+<name>Smart Entry &amp; Start System (Start System)</name>
+<para id="X39400000I400QD" category="U" type-id="3001G" name-id="161X2-00" from="200612">
+<name>Terminals of ECU</name>
+<subpara id="X39400000I400QD_z0" proc-id="RM0550J___000048X00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Instrument Panel J/B Assembly (Main Body ECU)</ptxt>
+<figure>
+<graphic graphicname="A166042" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<figure>
+<graphic graphicname="B108612J33" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<step2>
+<ptxt>Disconnect the instrument panel J/B assembly (main body ECU) connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Using SST (Toyota electrical tester), inspect the voltage and resistance between each terminal of the vehicle side wire harness connector and body ground.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.93in"/>
+<colspec colname="COL2" colwidth="0.58in"/>
+<colspec colname="COL3" colwidth="2.77in"/>
+<colspec colname="COL4" colwidth="1.80in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U1 (AM1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>V6 (AM2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U10 (SSW1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine switch pushed → released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω → 10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U9 (SSW2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine switch pushed → released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω → 10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>V14 (STP) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Brake pedal depressed → released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>{ (AM1 or AM2) - 2V} or more → 1V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U4 (GND2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C12 (LIN) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T15 (CANH) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T16 (CANL) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U11 (CANP) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U12 (CANN) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step2>
+<step2>
+<ptxt>Connect the connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Using SST (Toyota electrical tester) or SST (TaSCAN), inspect the resistance, voltage and waveform between each terminal of the connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+<s-number>09083-00170</s-number>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.93in"/>
+<colspec colname="COL2" colwidth="0.58in"/>
+<colspec colname="COL3" colwidth="3.13in"/>
+<colspec colname="COL4" colwidth="1.44in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>V4(ACCD) - U4(GND2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF→ACC ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1V or less → { (AM1 or AM2) - 2V} or more </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U6(IG1D) - U4(GND2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ACC ON→IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1V or less → { (AM1 or AM2) - 2V} or more </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U5(IG2D) - U4(GND2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ACC ON→IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1V or less → { (AM1 or AM2) - 2V} or more </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>V7(SLR+) - U4(GND2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Steering lock actuator operating → not operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1V or less → { (AM1 or AM2) - 2V} or more </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>V18(SLP) - U4(GND2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Steering lock → steering unlock</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>{ (AM1 or AM2) - 2V} or more → 1V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D8 (SPD) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driving at approx. 5km/h</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation (waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T2 (TACH) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation (waveform 2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>V15(P) - U4(GND2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever P position → other than P position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>{ (AM1 or AM2) - 2V} or more → 1V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T11(ACCR) - U4(GND2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever in P, brake pedal depressed, engine switch pushed (cranking) → other than cranking</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1V or less → { (AM1 or AM2) - 2V} or more </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T4(STSW) - U4(GND2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Brake pedal depressed, engine switch held pushed → engine switch released after approx. 1 seconds</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>{ (AM1 or AM2) - 2V} or more → 1V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T3(STR) - U4(GND2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever in P, N → other than P, N</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1V or less → { (AM1 or AM2) - 2V} or more </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T14(STR2) - U4(GND2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine control computer connector B disconnected, shift lever in P or N, brake pedal depressed, engine switch pushed (cranking) → other than cranking</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>{ (AM1 or AM2) - 2V} or more → 1V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T1(INDS) - U4(GND2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever in P or N, brake pedal depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>{ (AM1 or AM2) - 2V} or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T8(INDW) - U4(GND2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ACC ON or IG ON, brake pedal not depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>{ (AM1 or AM2) - 2V} or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U8(SWIL) - U4(GND2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Headlight dimmer switch TAIL or HEAD</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>{ (AM1 or AM2) - 2V} or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<step3>
+<ptxt>Waveform 1</ptxt>
+<figure>
+<graphic graphicname="E108997J05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5V / DIV、100ms / DIV</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+<step3>
+<ptxt>Waveform 2</ptxt>
+<figure>
+<graphic graphicname="A159801J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5V / DIV、10ms / DIV</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

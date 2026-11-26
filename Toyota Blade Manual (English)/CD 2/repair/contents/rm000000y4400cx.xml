@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002U_S0003" variety="S0003">
+<name>Glass &amp; Window</name>
+<ttl id="1002U_S0003_744CF_T004B" variety="T004B">
+<name>Power Window System</name>
+<para id="RM000000Y4400CX" category="L" type-id="30021" name-id="7527C-00" from="200612">
+<name>Precautions</name>
+<subpara id="RM000000Y4400CX_z0" proc-id="RM0550J___000024300000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Precautions for Power Window System</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The power window system uses the Body Electronics Area Network. First, perform the "Communication Function Inspection" according to "How to Proceed with Troubleshooting", and confirm that there is no malfunction in the communication system before proceeding with troubleshooting.</ptxt>
+</item>
+<item>
+<ptxt>If there is a malfunction in the jam protection function, operating the power window system in AUTO could cause something to be caught, so AUTO operation is prohibited. For this reason, confirm that no DTCs are output before proceeding with troubleshooting.</ptxt>
+</item>
+<item>
+<ptxt>When the power window regulator motor assembly RH (driver side, rear RH) is replaced with a new one, perform power window system registration (see <xref label="Seep01" href="RM000002FNJ005X"/>).</ptxt>
+</item>
+<item>
+<ptxt>When the front door window regulator RH has been replaced, or the power window regulator motor assembly RH (driver side) has been removed from the front door window regulator RH, it is necessary to return the power window regulator motor assembly RH (driver side) to the uninitialized state (clear the current memory of the pulse sensor in the motor) and then reset the glass position (initialize the pulse sensor). If the reset is not performed, the jam protection function may operate at times other than its operating conditions.</ptxt>
+</item>
+<item>
+<ptxt>When the front door window regulator LH has been replaced, or the power window regulator motor assembly LH (front passenger side) has been removed from the front door window regulator LH, it is necessary to return the power window regulator motor assembly LH (front passenger side) to the uninitialized state (clear the current memory of the pulse sensor in the motor) and then reset the glass position (initialize the pulse sensor). If the reset is not performed, the jam protection function may operate at times other than its operating conditions.</ptxt>
+</item>
+<item>
+<ptxt>When the rear door window regulator RH has been replaced, or the power window regulator motor assembly RH (rear RH) has been removed from the rear door window regulator RH, it is necessary to return the power window regulator motor assembly RH (rear RH) to the uninitialized state (clear the current memory of the pulse sensor in the motor) and then reset the glass position (initialize the pulse sensor). If the reset is not performed, the jam protection function may operate at times other than its operating conditions.</ptxt>
+</item>
+<item>
+<ptxt>When the rear door window regulator LH has been replaced, or the power window regulator motor assembly LH (rear LH) has been removed from the rear door window regulator LH, it is necessary to return the power window regulator motor assembly RH (rear LH) to the uninitialized state (clear the current memory of the pulse sensor in the motor) and then reset the glass position (initialize the pulse sensor). If the reset is not performed, the jam protection function may operate at times other than its operating conditions.</ptxt>
+</item>
+<item>
+<ptxt>If AUTO UP operation is performed after replacing the glass, glass run, etc., the jam protection function may operate. In that case, repeat the AUTO UP hold → AUTO DOWN operation 5 times or more and the system will operate normally.</ptxt>
+</item>
+<item>
+<ptxt>Even if the power window system is normal, if the window movement speed changes suddenly under conditions such as the following, a window movement speed different from the normal learned operating value may be detected and the jam protection function may operate.</ptxt>
+</item>
+<list2 type="ordered">
+<item>
+<ptxt>When the window is opened or closed while driving on rough roads.</ptxt>
+</item>
+<item>
+<ptxt>When the window is opened or closed while the door is being opened or closed.</ptxt>
+</item>
+<item>
+<ptxt>When a sudden voltage fluctuation occurs.</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>Do not disconnect the battery while the IG is ON. If the battery is disconnected while the IG is ON, DTC B2311 is output. (see <xref label="Seep03" href="RM000000TYJ00CX"/>)</ptxt>
+</item>
+</list1>
+</atten3>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

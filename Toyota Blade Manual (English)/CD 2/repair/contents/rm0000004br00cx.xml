@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="04">
+<name>Driveline/Axle</name>
+<section id="1000K_S0015" variety="S0015">
+<name>Differential</name>
+<ttl id="1000K_S0015_74501_T00AC" variety="T00AC">
+<name>Differential Carrier Assembly Rear (4WD)</name>
+<para id="RM0000004BR00CX" category="A" type-id="80002" name-id="370ET-00" from="200612">
+<name>Disassembly</name>
+<subpara id="RM0000004BR00CX_04" type-id="01" category="01">
+<s-1 id="RM0000004BR00CX_04_0122" proc-id="RM0550J___00008RB00000">
+<ptxt>Secure Differential Carrier Assembly Rear</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Fix the rear differential carrier assembly to the overhaul attachment.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0123" proc-id="RM0550J___00008RC00000">
+<ptxt>Remove Stud Bolt</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the 4 stud bolts from the transmission coupling assembly.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0124" proc-id="RM0550J___00008RD00000">
+<ptxt>Remove Rear Differential Drain Plug</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using a socket hexagon wrench 10mm, remove the rear differential drain plug and gasket.</ptxt>
+<figure>
+<graphic graphicname="C110127" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0125" proc-id="RM0550J___00008RE00000">
+<ptxt>Remove Rear Differential Filler Plug</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using a socket hexagon wrench 10mm, remove the rear differential filler plug and gasket.</ptxt>
+<figure>
+<graphic graphicname="C110128" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0126" proc-id="RM0550J___00008RF00000">
+<ptxt>Remove Rear Differential Carrier Cover Plug</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using a socket hexagon wrench 8mm, remove the rear differential carrier cover plug.</ptxt>
+<figure>
+<graphic graphicname="C110129" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0127" proc-id="RM0550J___00008RG00000">
+<ptxt>Remove Rear Differential Carrier Cover Breather Plug</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using a chisel and hammer, raise the rear differential carrier cover breather plug slightly.</ptxt>
+</s2>
+<s2>
+<ptxt>Lightly pry with a screwdriver to remove the rear differential carrier cover breather plug.</ptxt>
+<figure>
+<graphic graphicname="C110130" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0128" proc-id="RM0550J___00008RH00000">
+<ptxt>Inspect Transmission Coupling Assembly Runout</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Install a dial indicator and lever type stylus at a right angle to the inside surface of the transmission coupling assembly.</ptxt>
+<figure>
+<graphic graphicname="C162359J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Using SST, turn the transmission coupling assembly forward and in reverse to measure its vertical runout.</ptxt>
+<sst>
+<sstitem>
+<s-number>09564-52010</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Limit</title>
+<specitem>
+<ptxt>0.06mm</ptxt>
+</specitem>
+</spec>
+</s2>
+<s2>
+<ptxt>Install a dial indicator at a right angle to the transmission coupling assembly at the position shown in the illustration.</ptxt>
+</s2>
+<s2>
+<ptxt>Using SST, turn the transmission coupling assembly forward and in reverse to measure its lateral runout.</ptxt>
+<sst>
+<sstitem>
+<s-number>09564-52010</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Limit</title>
+<specitem>
+<ptxt>0.07mm</ptxt>
+</specitem>
+</spec>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0129" proc-id="RM0550J___00008RI00000">
+<ptxt>Remove Transmission Coupling Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the 4 bolts, and using a plastic hammer, lightly tap the rear differential carrier cover to remove it from the rear differential carrier assembly.</ptxt>
+<figure>
+<graphic graphicname="C110132" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Apply the brass bar to the rib of the rear differential carrier cover.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>Using SST, remove the snap ring.</ptxt>
+<figure>
+<graphic graphicname="C130574J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09905-00012</s-number>
+</sstitem>
+</sst>
+</s2>
+<s2>
+<ptxt>Remove the solenoid from the yoke.</ptxt>
+<figure>
+<graphic graphicname="C130597" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Remove the O-ring from the solenoid.</ptxt>
+<figure>
+<graphic graphicname="C130359" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Using a socket hexagon wrench 5mm, remove the 3 bolts and remove the yoke from the differential carrier assembly.</ptxt>
+<figure>
+<graphic graphicname="C130598" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0130" proc-id="RM0550J___00008RJ00000">
+<ptxt>Remove Transmission Coupling Conical Spring Washer</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the transmission coupling conical spring washer from the rear differential carrier assembly.</ptxt>
+<figure>
+<graphic graphicname="C155108J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0131" proc-id="RM0550J___00008RK00000">
+<ptxt>Remove Transmission Coupling Shim</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the transmission coupling shim from the rear differential carrier assembly.</ptxt>
+<figure>
+<graphic graphicname="C155109J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0132" proc-id="RM0550J___00008RL00000">
+<ptxt>Inspect Differential Ring Gear Backlash</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Insert a dial indicator through the rear differential carrier cover plug hole, and place it at a right angle to the tip of the ring gear tooth surface.</ptxt>
+<figure>
+<graphic graphicname="C162361J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Using SST, hold the drive pinion.</ptxt>
+<sst>
+<sstitem>
+<s-number>09556-52010</s-number>
+</sstitem>
+</sst>
+</s2>
+<s2>
+<ptxt>Using SST, turn the rear differential case forward and in reverse to check the backlash.</ptxt>
+<sst>
+<sstitem>
+<s-number>09564-52010</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>0.088 to 0.162mm </ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>Measure at 3 or more locations around the ring gear circumference.</ptxt>
+</atten3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0133" proc-id="RM0550J___00008RM00000">
+<ptxt>Inspect Differential Drive Pinion Preload</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST and a torque wrench, measure the preload (starting torque) within the backlash range between the differential drive pinion and differential ring gear.</ptxt>
+<figure>
+<graphic graphicname="C162088J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09556-52010</s-number>
+</sstitem>
+</sst>
+<torque>
+<torqueitem>
+<t-value1>0.24 to 0.37</t-value1>
+<t-value2>2 to 4</t-value2>
+</torqueitem>
+</torque>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0134" proc-id="RM0550J___00008RN00000">
+<ptxt>Inspect Total Preload</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST and a torque wrench, check the preload (starting torque) with the differential drive pinion and differential ring gear tooth surfaces in contact.</ptxt>
+<figure>
+<graphic graphicname="C162088J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09556-52010</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>Total preload = drive pinion preload + 0.99 to 1.63N*m{10 to 17kgf*cm}</ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>To seat the case bearings, turn forward and in reverse several times before measuring.</ptxt>
+</atten3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0135" proc-id="RM0550J___00008RO00000">
+<ptxt>Remove Rear Differential Side Gear Shaft Oil Seal</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST, remove the 2 rear differential side gear shaft oil seals from the rear differential carrier assembly.</ptxt>
+<figure>
+<graphic graphicname="C155112J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09308-00010</s-number>
+</sstitem>
+</sst>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0136" proc-id="RM0550J___00008RP00000">
+<ptxt>Remove Diaphragm Oil Seal</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST, remove the diaphragm oil seal from the rear differential carrier assembly.</ptxt>
+<figure>
+<graphic graphicname="C155113J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09308-10010</s-number>
+</sstitem>
+</sst>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0137" proc-id="RM0550J___00008RQ00000">
+<ptxt>Remove Rear Drive Pinion Nut</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST and a hammer, unstake the rear drive pinion nut.</ptxt>
+<figure>
+<graphic graphicname="C162362J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09930-00010</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Use the SST with the tapered surface toward the shaft.</ptxt>
+</item>
+<item>
+<ptxt>Do not grind the tip of the SST with a grinder or equivalent.</ptxt>
+</item>
+<item>
+<ptxt>Completely unstake the rear drive pinion nut.</ptxt>
+</item>
+</list1>
+</atten3>
+</s2>
+<s2>
+<ptxt>Using SST, hold the differential drive pinion and remove the rear drive pinion nut from the differential drive pinion.</ptxt>
+<figure>
+<graphic graphicname="C162363J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09556-52010</s-number>
+</sstitem>
+<sstitem>
+<s-number>09564-16020</s-number>
+</sstitem>
+</sst>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0138" proc-id="RM0550J___00008RR00000">
+<ptxt>Remove Rear Drive Pinion Tapered Roller Bearing Front</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST, remove the rear drive pinion tapered roller bearing front (inner race) from the rear differential carrier assembly.</ptxt>
+<figure>
+<graphic graphicname="C162364J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09556-30010</s-number>
+</sstitem>
+</sst>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0139" proc-id="RM0550J___00008RS00000">
+<ptxt>Remove Differential Side Bearing Retainer</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the 8 bolts.</ptxt>
+<figure>
+<graphic graphicname="C110142" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Using a brass bar and hammer, lightly tap the differential side bearing retainer to remove it.</ptxt>
+<figure>
+<graphic graphicname="C110143" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Apply the brass bar to the rib of the differential side bearing retainer.</ptxt>
+</atten3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0140" proc-id="RM0550J___00008RT00000">
+<ptxt>Remove Rear Differential Case Sub-assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the rear differential case from the rear differential carrier.</ptxt>
+<figure>
+<graphic graphicname="C110144" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0141" proc-id="RM0550J___00008RU00000">
+<ptxt>Remove Differential Drive Pinion</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the differential drive pinion from the rear differential carrier.</ptxt>
+<figure>
+<graphic graphicname="C110145" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0142" proc-id="RM0550J___00008RV00000">
+<ptxt>Remove Rear Differential Drive Pinion Bearing Spacer</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the rear differential drive pinion bearing spacer from the differential drive pinion.</ptxt>
+<figure>
+<graphic graphicname="C110146" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0143" proc-id="RM0550J___00008RW00000">
+<ptxt>Remove Rear Drive Pinion Tapered Roller Bearing Rear</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST and a press, remove the rear drive pinion tapered roller bearing rear (inner race) from the differential drive pinion.</ptxt>
+<figure>
+<graphic graphicname="C162365J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09950-00020</s-number>
+</sstitem>
+</sst>
+<atten3>
+<ptxt>If the rear differential drive pinion or differential ring gear is damaged, replace them with a rear differential final gear kit.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>Remove the rear differential drive pinion washer.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0144" proc-id="RM0550J___00008RX00000">
+<ptxt>Remove Rear Drive Pinion Tapered Roller Bearing Front</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Hook the claws of the SST onto the rear drive pinion tapered roller bearing front (outer race) through the cutouts in the differential carrier assembly.</ptxt>
+<figure>
+<graphic graphicname="C162366J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09612-65014</s-number>
+<s-subnumber>09612-01020</s-subnumber>
+<s-subnumber>09612-01050</s-subnumber>
+</sstitem>
+</sst>
+</s2>
+<s2>
+<ptxt>Using SST, remove the rear drive pinion tapered roller bearing front (outer race) from the rear differential carrier.</ptxt>
+<sst>
+<sstitem>
+<s-number>09612-65014</s-number>
+<s-subnumber>09612-01020</s-subnumber>
+<s-subnumber>09612-01050</s-subnumber>
+</sstitem>
+</sst>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0145" proc-id="RM0550J___00008RY00000">
+<ptxt>Remove Rear Drive Pinion Tapered Roller Bearing Rear</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using a brass bar and hammer, remove the rear drive pinion tapered roller bearing rear (outer race) while tapping it lightly and evenly.</ptxt>
+<figure>
+<graphic graphicname="C110149" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Apply the brass bar to the cutouts.</ptxt>
+</atten3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0146" proc-id="RM0550J___00008RZ00000">
+<ptxt>Remove Rear Differential Case Bearing</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST and a press, remove the rear differential case bearing RH (outer race) and rear differential side gear shaft plate washer from the rear differential carrier.</ptxt>
+<figure>
+<graphic graphicname="C155114J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09950-60010</s-number>
+<s-subnumber>09951-00510</s-subnumber>
+</sstitem>
+<sstitem>
+<s-number>09950-70010</s-number>
+<s-subnumber>09951-07100</s-subnumber>
+</sstitem>
+</sst>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0147" proc-id="RM0550J___00008S000000">
+<ptxt>Remove Rear Differential Case Bearing</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST and a press, remove the rear differential case bearing LH (outer race) and rear differential side gear shaft plate washer from the differential side bearing retainer.</ptxt>
+<figure>
+<graphic graphicname="C155115J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09950-60010</s-number>
+<s-subnumber>09951-00460</s-subnumber>
+</sstitem>
+<sstitem>
+<s-number>09950-70010</s-number>
+<s-subnumber>09951-07100</s-subnumber>
+</sstitem>
+<sstitem>
+<s-number>09649-17010</s-number>
+</sstitem>
+</sst>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0148" proc-id="RM0550J___00008S100000">
+<ptxt>Remove Rear Differential Case Bearing</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST, remove the rear differential case bearing RH (inner race) from the rear differential case.</ptxt>
+<figure>
+<graphic graphicname="C130602J02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09950-40011</s-number>
+<s-subnumber>09951-04010</s-subnumber>
+<s-subnumber>09952-04010</s-subnumber>
+<s-subnumber>09953-04020</s-subnumber>
+<s-subnumber>09954-04010</s-subnumber>
+<s-subnumber>09955-04061</s-subnumber>
+<s-subnumber>09957-04010</s-subnumber>
+<s-subnumber>09958-04011</s-subnumber>
+</sstitem>
+<sstitem>
+<s-number>09950-60010</s-number>
+<s-subnumber>09951-00320</s-subnumber>
+</sstitem>
+</sst>
+<atten3>
+<ptxt>Apply grease or oil to the threads and tip of the SST center bolt 09953-04020 before use.</ptxt>
+</atten3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0149" proc-id="RM0550J___00008S200000">
+<ptxt>Remove Rear Differential Case Bearing</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using SST, remove the rear differential case bearing LH (inner race) from the rear differential case.</ptxt>
+<figure>
+<graphic graphicname="C130603J02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09950-40011</s-number>
+<s-subnumber>09951-04010</s-subnumber>
+<s-subnumber>09952-04010</s-subnumber>
+<s-subnumber>09953-04020</s-subnumber>
+<s-subnumber>09954-04010</s-subnumber>
+<s-subnumber>09955-04071</s-subnumber>
+<s-subnumber>09957-04010</s-subnumber>
+<s-subnumber>09958-04011</s-subnumber>
+</sstitem>
+<sstitem>
+<s-number>09950-60010</s-number>
+<s-subnumber>09951-00320</s-subnumber>
+</sstitem>
+</sst>
+<atten3>
+<ptxt>Apply grease or oil to the threads and tip of the SST center bolt 09953-04020 before use.</ptxt>
+</atten3>
+<atten4>
+<ptxt>If part of the race remains on the rear differential case, remove the race again using the same procedure.</ptxt>
+</atten4>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0150" proc-id="RM0550J___00008S300000">
+<ptxt>Remove Differential Ring Gear</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using aluminum plates, secure the rear differential case in a vise.</ptxt>
+<figure>
+<graphic graphicname="C130563J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Do not overtighten the vise.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>Put matchmarks on the rear differential case and differential ring gear.</ptxt>
+</s2>
+<s2>
+<ptxt>Remove the 10 bolts.</ptxt>
+</s2>
+<s2>
+<ptxt>Using a plastic hammer, lightly tap the outer circumference of the differential ring gear to remove it from the rear differential case.</ptxt>
+<atten4>
+<ptxt>Place a shop rag against the tooth surface side of the ring gear to prevent damage.</ptxt>
+</atten4>
+<atten3>
+<ptxt>If the rear differential drive pinion or differential ring gear is damaged, replace them with a rear differential final gear kit.</ptxt>
+</atten3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0151" proc-id="RM0550J___00008S400000">
+<ptxt>Remove Rear Differential Breather Plug Oil Deflector</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using a socket hexagon wrench 5, remove the 2 bolts and the rear differential breather plug oil deflector.</ptxt>
+<figure>
+<graphic graphicname="C110156" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000004BR00CX_04_0152" proc-id="RM0550J___00008S500000">
+<ptxt>Remove Straight Pin</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the 4 straight pins from the rear differential carrier.</ptxt>
+<figure>
+<graphic graphicname="C161562" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

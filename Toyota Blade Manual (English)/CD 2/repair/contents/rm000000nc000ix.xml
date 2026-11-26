@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1002J_S000U" variety="S000U">
+<name>Brake Control</name>
+<ttl id="1002J_S000U_744TG_T0089" variety="T0089">
+<name>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</name>
+<para id="RM000000NC000IX" category="C" type-id="300F5" name-id="442OL-00" from="200612">
+<dtccode>C1232/32</dtccode>
+<dtcname>G Sensor Stuck Malfunction</dtcname>
+<dtccode>C1234/34</dtccode>
+<dtcname>Yaw Rate Sensor Malfunction</dtcname>
+<dtccode>C1243/43</dtccode>
+<dtcname>G Sensor Stuck Malfunction</dtcname>
+<dtccode>C1244/44</dtccode>
+<dtcname>G Sensor Open or Short</dtcname>
+<dtccode>C1245/45</dtccode>
+<dtcname>G Sensor Output Malfunction</dtcname>
+<subpara id="RM000000NC000IX_05" type-id="33" category="03" proc-id="RM0550J___00007O400000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>The skid control computer (built into the actuator) receives the yaw rate sensor signals via CAN communication.</ptxt>
+<ptxt>The yaw rate sensor has a built-in G sensor.</ptxt>
+<ptxt>If there is a malfunction in the communication line with the yaw rate sensor, DTCs "U0123/62 (yaw rate sensor communication malfunction)" and "U0124/95 (G sensor communication malfunction)" are output.</ptxt>
+<ptxt>If a CAN communication line malfunction code is output, perform troubleshooting for the CAN communication line malfunction first.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.50in"/>
+<colspec colname="COL2" colwidth="2.81in"/>
+<colspec colname="COL3" colwidth="2.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Output Related Items</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1232/32</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>At a vehicle speed of 10km/h or more, a condition in which either GL1 or GL2 does not change continues for 30 seconds or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Yaw rate sensor (G sensor internally stuck)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1234/34</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A sensor malfunction signal is received from the yaw rate sensor when the IG1 terminal voltage is 9.5to17.4V</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Yaw rate sensor improperly installed</ptxt>
+</item>
+<item>
+<ptxt>Yaw Rate Sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1243/43</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A condition in which the values of GL1 and GL2 both do not change by 0.0294G or more while the vehicle speed goes from 30km/h to 0km/h occurs 16 times or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Yaw rate sensor (G sensor internally stuck)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1244/44</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>A data malfunction signal is received from the G sensor when the IG1 terminal voltage is 9.5to17.4V</ptxt>
+</item>
+<item>
+<ptxt>With the vehicle stopped, after the difference between GL1 and GL2 becomes 0.6G or more, it does not become less than 0.4G for 60 seconds or more</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Yaw rate sensor (G sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1245/45</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>At a vehicle speed of 30km/h or more, the difference between the longitudinal G calculated from the G sensor value and the longitudinal G calculated from the vehicle speed exceeds 0.35G for 60 seconds or more</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Yaw rate sensor improperly installed</ptxt>
+</item>
+<item>
+<ptxt>Yaw Rate Sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Code Display List</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SAE DTC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ABS Light Display Code</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>VSC Light Display Code</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1232</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>32</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1234</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>34</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1243</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>43</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>43</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1244</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>44</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>43</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1245</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>45</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>43</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000NC000IX_06" type-id="32" category="03" proc-id="RM0550J___00007O500000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C146386J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000NC000IX_07" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000000NC000IX_08" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000NC000IX_08_0005" proc-id="RM0550J___00007O600000">
+<testtitle>Inspect Yaw Rate Sensor (Installation Condition)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the yaw rate sensor installation condition and check that the sensor is not tilted, the bracket is not deformed, and the installation is not loose.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Installed correctly</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000NC000IX_08_0006" fin="false">OK</down>
+<right ref="RM000000NC000IX_08_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000NC000IX_08_0006" proc-id="RM0550J___00007O700000">
+<testtitle>Replace Yaw Rate Sensor</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the yaw rate sensor. (see <xref label="Seep01" href="RM000003054000X"/>)</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If the yaw rate sensor is replaced, perform "Yaw Rate &amp; G Sensor 0-point Memory Clear and 0-point Acquisition" for the VSC system. (see <xref label="Seep02" href="RM000001A8300PX"/>)</ptxt>
+</item>
+<item>
+<ptxt>If the yaw rate sensor is replaced, perform "AT/CVT Learned Value Initialization" for the CVT system, and always perform both "G Sensor 0-point Learning" and "CVT Hydraulic Pressure Learning". (see <xref label="Seep03" href="RM0000021F400AX"/>)</ptxt>
+</item>
+<item>
+<ptxt>If the yaw rate sensor is replaced, perform "G Sensor 0-point Writing" for the intelligent parking assist system. (see <xref label="Seep04" href="RM0000002O8017X"/>)</ptxt>
+</item>
+</list1>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM000000NC000IX_08_0007" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000NC000IX_08_0007">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000000NC000IX_08_0008">
+<testtitle>Install the yaw rate sensor correctly<xref label="Seep01" href="RM000003054000X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

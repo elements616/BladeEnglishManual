@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="07">
+<name>Steering</name>
+<section id="1000U_S0017" variety="S0017">
+<name>Steering Column</name>
+<ttl id="1000U_S0017_745FR_T00AZ" variety="T00AZ">
+<name>Electric Power Steering System</name>
+<para id="RM000000URS00GX" category="L" type-id="30021" name-id="480VD-00" from="200612">
+<name>Precautions</name>
+<subpara id="RM000000URS00GX_z0" proc-id="RM0550J___00005X300000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Handling and Work Precautions</ptxt>
+<step2>
+<ptxt>Handling Electronic Parts</ptxt>
+<step3>
+<ptxt>Do not subject electronic parts such as computers to impacts. If it has been subjected to a severe impact (such as being struck or dropped on the floor), replace it with a new part.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not expose electronic parts to high temperature or humidity.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not touch the connector terminals, as deformation and static electricity may cause malfunctions.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Handling the Power Steering Computer Assembly</ptxt>
+<step3>
+<ptxt>When replacing the power steering computer assembly, always install a new one.</ptxt>
+<atten3>
+<ptxt>Do not use a power steering computer assembly from another vehicle (display vehicle, etc.).</ptxt>
+</atten3>
+</step3>
+<step3>
+<ptxt>When the power steering computer assembly has been replaced with a new one, perform torque sensor 0 point calibration and rotation angle sensor output calibration. (see <xref label="Seep01" href="RM0000024YB004X"/>)</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Handling the Steering Column Assembly</ptxt>
+<step3>
+<ptxt>Do not subject the steering column assembly (especially the motor and torque sensor) to impacts. If it has been subjected to a severe impact (such as being struck or dropped on the floor), replace it with a new part.</ptxt>
+</step3>
+<step3>
+<ptxt>When carrying the steering column assembly, do not pull on the wire harness.</ptxt>
+</step3>
+<step3>
+<ptxt>When the steering column assembly has been replaced, clear the sensor calibration values, and then perform torque sensor 0 point calibration and rotation angle sensor output calibration. (see <xref label="Seep02" href="RM0000024YB004X"/>)</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions Regarding CAN Communication</ptxt>
+<step2>
+<ptxt>CAN communication is used for sending and receiving information from each ECU, sending warnings to the meter and communicating with the TC and TS terminals of DLC3. If there is a problem in the CAN communication lines, a communication line malfunction code is output.</ptxt>
+</step2>
+<step2>
+<ptxt>If a CAN communication malfunction code is output, repair the communication line malfunction, and then troubleshoot the electric power steering system with data communication operating normally.</ptxt>
+</step2>
+<step2>
+<ptxt>For precautions when repairing the CAN communication lines, refer to <xref label="Seep03" href="RM0000005RE01SX"/>.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

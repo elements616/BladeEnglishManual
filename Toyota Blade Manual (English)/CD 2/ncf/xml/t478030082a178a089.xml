@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T030082A178A089" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Flex Lock-up Control</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Transmission efficiency has been greatly improved by finely controlling the power transmission distribution between the lock-up clutch (mechanical power transmission) and the torque converter (fluid power transmission) according to driving conditions. In the flex lock-up system, an intermediate mode (giving slight slip to the lock-up clutch) has been set in the low vehicle speed range, further expanding the lock-up operating range. In addition, by performing lock-up operation during deceleration as well, the fuel cut range can be expanded, achieving a significant improvement in fuel economy. </PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740251p" WIDTH = "6.917in" HEIGHT = "7.972in" />
+</FIGURE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Flex lock-up control during acceleration operates in all gears in the D position (2 or higher during range selection control in the D position), and during deceleration it operates in 4, 5 and 6 in the D position. This flex lock-up control uses state-of-the-art H∞ (H-infinity) control theory, achieving both system stability and responsiveness against various characteristic changes at a high level.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T030082A178A089I01" INDSW = "OFF">
+<TITLE>Flex Lock-up Operation Pattern</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "7" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "7" COLNAME = "7" COLWIDTH = "14%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Shift Range</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>1st</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>2nd</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>3rd</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>4th</PTXT></ENTRY>
+<ENTRY COLNAME = "6"><PTXT>5th</PTXT></ENTRY>
+<ENTRY COLNAME = "7"><PTXT>6th</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>D</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "5" ALIGN = "CENTER"><PTXT>〈○〉</PTXT></ENTRY>
+<ENTRY COLNAME = "6" ALIGN = "CENTER"><PTXT>〈○〉</PTXT></ENTRY>
+<ENTRY COLNAME = "7" ALIGN = "CENTER"><PTXT>〈○〉</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>D-6</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>×</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "5" ALIGN = "CENTER"><PTXT>〈○〉</PTXT></ENTRY>
+<ENTRY COLNAME = "6" ALIGN = "CENTER"><PTXT>〈○〉</PTXT></ENTRY>
+<ENTRY COLNAME = "7" ALIGN = "CENTER"><PTXT>〈○〉</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>D-5</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>×</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "5" ALIGN = "CENTER"><PTXT>〈○〉</PTXT></ENTRY>
+<ENTRY COLNAME = "6" ALIGN = "CENTER"><PTXT>〈○〉</PTXT></ENTRY>
+<ENTRY COLNAME = "7" ALIGN = "CENTER"><PTXT></PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>D-4</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>×</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "4" ALIGN = "CENTER"><PTXT>○</PTXT></ENTRY>
+<ENTRY COLNAME = "5" ALIGN = "CENTER"><PTXT>〈○〉</PTXT></ENTRY>
+<ENTRY COLNAME = "6" ALIGN = "CENTER"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "7" ALIGN = "CENTER"><PTXT></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<HINT>
+<PTXT>○: Operates, ×: Does not operate, 〈〉 Deceleration flex lock-up operates</PTXT></HINT></MECA>

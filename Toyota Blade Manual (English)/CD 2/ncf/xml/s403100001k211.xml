@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740001b SYSTEM "grph_ent/a4740001b.png" NDATA png>
+<!ENTITY a4740002b SYSTEM "grph_ent/a4740002b.png" NDATA png>
+<!ENTITY a4740013b SYSTEM "grph_ent/a4740013b.png" NDATA png>
+
+<!ENTITY T100001K211 SYSTEM "t403100001k211.xml">
+<!ENTITY T100001K211K595 SYSTEM "t403100001k211k595.xml">
+<!ENTITY T100001K211K596 SYSTEM "t403100001k211k596.xml">
+<!ENTITY T100001K211K597 SYSTEM "t403100001k211k597.xml">
+
+<!ENTITY T100001K633 SYSTEM "t478100001k633.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T100001K211S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T100001K211" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Power Door Lock System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A power door lock system with a driver door key-linked door lock function, key lock-in prevention function, etc. is used.</PTXT></ITEM>
+<ITEM><PTXT>The door lock assembly reduces the number of parts while also giving consideration to theft prevention, by using a housing integrated with the protector, a cable connection with the door inside handle, direct connection between the door key cylinder and door lock, and integration of the actuator housing and protector.</PTXT></ITEM>
+<ITEM><PTXT>Grip type door outside handles are used for all doors, providing excellent operability.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T100001K211I01" INDSW = "OFF">
+<TITLE>Power Door Lock System Components</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740001b" WIDTH = "6.903in" HEIGHT = "6.250in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T100001K211I02" INDSW = "OFF">
+<TITLE>Power Door Lock System Main Component Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Main Body ECU (Instrument Panel Junction Block Assembly)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Receives signals from various switches and controls the entire power door lock system.</PTXT></ITEM>
+<ITEM><PTXT>Outputs lock/unlock signals to the door lock assemblies to drive the door lock control motors.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Door Lock Control Switch (for Manual Operation)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Outputs door lock/unlock request signals to the main body ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Door Courtesy Light Switches (All Doors)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Detects the opening and closing of each door.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Driver Door Lock Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Locks/unlocks the driver door by rotating the built-in driver door lock control motor forward/in reverse.</PTXT></ITEM>
+<ITEM><PTXT>Outputs door lock/unlock request signals to the main body ECU through the built-in door lock control switch (for key-linked operation).</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Door Lock Assemblies (Front Passenger/Rear RH/Rear LH)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Locks/unlocks each door by rotating the built-in door lock control motor forward/in reverse.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Back Door Lock Assembly (with Built-in Courtesy Light Switch)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1><ITEM><PTXT>Locks/unlocks the back door by driving the built-in back door lock control motor.</PTXT></ITEM>
+<ITEM><PTXT>Detects the opening and closing of the back door.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001K211I03" INDSW = "OFF">
+<TITLE>Power Door Lock System Wiring Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740002b" WIDTH = "6.903in" HEIGHT = "4.472in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T100001K211I04" INDSW = "OFF">
+<TITLE>Main Functions List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "37%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "62%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Main Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Outline</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Manual Lock &lt;Unlock&gt; Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Lock/unlock using the door lock control switch (for manual operation).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Door Key-linked Lock &lt;Unlock&gt; Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Lock/unlock by inserting the mechanical key into the driver door key cylinder.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Key Lock-in Prevention Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that does not lock the doors while the key is left in the cabin.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Door Lock Security Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that prevents unlocking with the door lock control switch (for manual operation) on the cabin side when the doors have been locked with the wireless function/smart function.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T100001K211K595" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Manual Lock &lt;Unlock&gt; Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the door lock control switch (for manual operation) in the master switch is operated to the lock &lt;unlock&gt; side, the driver side manual lock &lt;unlock&gt; switch signal is input to the main body ECU.</PTXT></ITEM>
+<ITEM><PTXT>On receiving this signal, the main body ECU applies current to all door lock control motors, rotating them to the lock &lt;unlock&gt; side.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T100001K211K596" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Door Key-linked Lock &lt;Unlock&gt; Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the mechanical key is inserted into the driver door key cylinder and turned to the lock &lt;unlock&gt; side, the door lock control switch (for key-linked operation) turns ON to the lock &lt;unlock&gt; side.</PTXT></ITEM>
+<ITEM><PTXT>As a result, the driver door key-linked lock &lt;unlock&gt; switch signal is sent to the main body ECU, and all doors are locked &lt;unlocked&gt; in the same way as with manual lock &lt;unlock&gt; operation.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T100001K211K597" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Key Lock-in Prevention Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the electronic key is in the cabin and a situation such as the following occurs, the main body ECU sends a door unlock request signal to the door lock control motor of each door.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Key Lock-in Prevention Function Operating Conditions</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When the driver (front passenger) manual switch is operated to the lock side with ACC ON or IG ON and the driver (front passenger) door open.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When the driver (front passenger) lock position changes from unlock to lock with ACC ON or IG ON and the driver (front passenger) door open.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>When the above operating conditions are met, the main body ECU drives each door lock control motor to the unlock side to unlock the doors.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+<BIND ID = "T100001K211B" INDSW = "OFF">
+<TITLE>Related Parts</TITLE>
+
+<PARA INFOID = "T100001K633" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Engine Switch</TITLE>
+<LIST1><ITEM><PTXT>The switch has a built-in indicator light, and the current power mode can be checked by its illumination state and color.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740013b" WIDTH = "6.917in" HEIGHT = "2.181in" />
+</FIGURE>
+<INDICATE ID = "T100001K633I01" INDSW = "OFF">
+<TITLE>Indicator Light Status List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "67%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Status</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Any of the following conditions is met</PTXT>
+<LIST1><ITEM><PTXT>Engine start completed</PTXT></ITEM>
+<ITEM><PTXT>Power (ACC and IG) OFF<HINTREF REFID = "H478100001K63301"/></PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Green</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Engine start standby<HINTREF     REFID = "H478100001K63302"/></PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Blinking (1-second interval)<HINTREF     REFID = "H478100001K63303"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Steering Lock Not Released</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Amber</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Power (ACC or IG) ON<HINTREF     REFID = "H478100001K63301"/></PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Blinking (2-second interval)<HINTREF     REFID = "H478100001K63304"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>System Malfunction</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478100001K63301">Brake OFF (stop light switch OFF)</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K63302">Shift position "P" or "N", key verification OK and brake ON (stop light switch ON)</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K63303">Blinking ends when 15 seconds have elapsed since blinking started, or when the power (ACC or IG) ON or engine start operation is performed again</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K63304">Blinking ends when the system recovers from the malfunction</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+</PARA>
+</BIND>
+</SECTION>

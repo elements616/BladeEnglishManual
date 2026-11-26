@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002T_S000D" variety="S000D">
+<name>Other Electrical</name>
+<ttl id="1002T_S000D_746T0_T00DC" variety="T00DC">
+<name>Horn System</name>
+<para id="RM0000005AN00DX" category="U" type-id="303FJ" name-id="7326L-00" from="200612">
+<name>ECU Data Monitor/Active Test</name>
+<subpara id="RM0000005AN00DX_z0" proc-id="RM0550J___0000B5A00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Inspection Using TaSCAN (Active Test)</ptxt>
+<step2>
+<ptxt>Using SST (TaSCAN), perform the Active Test to judge whether the system is normal and narrow down the malfunctioning area.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → Main Body → Active Test]</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Drive</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Vehicle horn</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

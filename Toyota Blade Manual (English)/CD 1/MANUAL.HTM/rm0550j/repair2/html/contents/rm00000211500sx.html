@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+  <title>[Electronic Technical Manual]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM00000211500SX"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>DTC P1604 Poor Starting</h3></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">Print</a></td></tr></table><h2>Preparation List<a href="#" onclick="openSeePage('ppr','RM00000211500SX');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all"><a name="RM00000211500SX_01"></a><h2>Circuit Description</h2><br clear="all"><a name="1"></a><font class="ptxt">The DTC is output when the engine does not start or takes a long time to start even though the STA signal is input. The freeze frame data, which stores the conditions when the DTC was output, can be checked using TaSCAN. Serviceability is improved by making it possible to check the engine operating condition at the time of poor starting using the freeze frame data. Also, since poor starting caused by running out of fuel is also detected, it is necessary to check whether the vehicle has run out of fuel before starting work.</font><br><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><colgroup align="" width="29%
+			"><col align=""></colgroup><colgroup align="" width="71%
+			"><col align=""></colgroup><tr><th align="center">DTC No.<br>SAE<br></th><th align="center">DTC Detection Conditions<br>1. Diagnosis conditions 2. Malfunction status 3. Malfunction duration 4. Other<br></th></tr><tr><td align="center">P1604<br></td><td><ol style="list-style-type: decimal"><li>STA signal ON<br></li><li>Engine speed less than 500r/min<br></li><li>7 seconds or more (at engine coolant temperature of 20°C)<br></li><li>1 trip<br></li></ol></td></tr></table><br clear="all"><br clear="all"><a name="RM00000211500SX_02"></a><h2>Inspection Procedure</h2><br clear="all"><a name="1"></a><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">If other DTCs are displayed, troubleshoot the corresponding DTCs first.<br></li><li class="atten4">Since DTC P1604 differs from conventional diagnostic trouble codes, the diagnostic procedure below is described as 1 possible method.<br></li></ol></p><br clear="all"><a name="RM00000211500SX_03_0001"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">Step 1</td><td width="90%" class="s1">Check Whether Engine Cranks</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Check whether the engine cranks.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">Go to the related circuit inspection shown in the List by Symptom<a href="#" onclick="openSeePage('seepage','X39400000QW01PD');return false;">
+			(see <img border="0" src="../../../../image/extxref.png"> for procedure)
+		</a>
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM00000211500SX_03_0002"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">Step 2</td><td width="90%" class="s1">Read DTC</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Connect SST (TaSCAN) to DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn IG ON.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Following the screen display of SST (TaSCAN), check the DTCs. (see<a href="#" onclick="openSeePage('seepage','RM0000008YS014X');return false;"><img border="0" src="../../../../image/extxref.png"></a>)</font><br><p><dl class="spec"><dt class="spec">Result</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="73%
+			"><col align=""></colgroup><colgroup align="" width="27%
+			"><col align=""></colgroup><tr><th align="center">Result<br></th><th align="center">Proceed to<br></th></tr><tr><td align="center">Only P1604 is displayed<br></td><td align="center">A<br></td></tr><tr><td align="center">Other DTCs are displayed<br></td><td align="center">B<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">Go to Related DTC Chart<a href="#" onclick="openSeePage('seepage','RM000001KT7004X');return false;">
+			(see <img border="0" src="../../../../image/extxref.png"> for procedure)
+		</a>
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM00000211500SX_03_0003"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">Step 3</td><td width="90%" class="s1">Check Freeze Frame Data</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Use the time-series freeze frame data to check the data at and after DTC detection, to assist with troubleshooting.</dd></dl></p>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Connect SST (TaSCAN) to DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn IG ON.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Following the screen display of SST (TaSCAN), check the time-series freeze frame data, and check the vehicle condition at the time of poor starting. (see<a href="#" onclick="openSeePage('seepage','RM000000CD2022X');return false;"><img border="0" src="../../../../image/extxref.png"></a>)</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Check the freeze frame data for the battery condition.</font><br><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">Item Name<br></th><th align="center">Short Circuit Name<br></th></tr><tr><td align="center">Auxiliary Battery Voltage<br></td><td align="center">BATT<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Check the freeze frame data for the cranking condition.</font><br><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">Item Name<br></th><th align="center">Short Circuit Name<br></th></tr><tr><td align="center">Engine Speed<br></td><td align="center">ESPD<br></td></tr><tr><td align="center">Engine Speed at Starter OFF<br></td><td align="center">STER<br></td></tr><tr><td align="center">Starter ON Count in Current Trip<br></td><td align="center">STON<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Compare the freeze frame data for each temperature at the time of poor starting.</font><br><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">Item Name<br></th><th align="center">Short Circuit Name<br></th></tr><tr><td align="center">Engine Coolant Temperature<br></td><td align="center">THW<br></td></tr><tr><td align="center">Intake Air Temperature<br></td><td align="center">THA<br></td></tr><tr><td align="center">Engine Oil Temperature<br></td><td align="center">EOT<br></td></tr><tr><td align="center">Outside Temperature<br></td><td align="center">AMT<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Check the freeze frame data for engine control at the time of starting.</font><br><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">Item Name<br></th><th align="center">Short Circuit Name<br></th></tr><tr><td align="center">Intake Air Volume<br></td><td align="center">MAF<br></td></tr><tr><td align="center">Throttle Opening<br></td><td align="center">THPO<br></td></tr><tr><td align="center">ISC Flow Rate<br></td><td align="center">ISCF<br></td></tr><tr><td align="center">ISC Opening<br></td><td align="center">ISCO<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="8"><p><font class="ptxt">Check the freeze frame data before poor starting occurred.</font><br><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">Item Name<br></th><th align="center">Short Circuit Name<br></th></tr><tr><td align="center">Previous Trip Distance<br></td><td align="center">PTRD<br></td></tr><tr><td align="center">Intake air temperature during previous trip<br></td><td align="center">RIAT<br></td></tr><tr><td align="center">Engine Oil Temperature in Previous Trip<br></td><td align="center">REOT<br></td></tr><tr><td align="center">Ambient Temperature in Previous Trip<br></td><td align="center">RAMT<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="9"><p><font class="ptxt">Check the items above and perform the test again.</font><br></p></li></ol>
+<ol class="s2">
+<li value="10"><p><font class="ptxt">Based on the freeze frame data and the reproduction test, compare with the reference values in the ECU data monitor list (<a href="#" onclick="openSeePage('seepage','RM000000CCZ03QX');return false;"><img border="0" src="../../../../image/extxref.png"></a>) and identify the malfunctioning part.</font><br><p><dl class="spec"><dt class="spec">Result</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="72%
+			"><col align=""></colgroup><colgroup align="" width="28%
+			"><col align=""></colgroup><tr><th align="center">Result<br></th><th align="center">Proceed to<br></th></tr><tr><td align="center">Malfunctioning part can be identified<br></td><td align="center">A<br></td></tr><tr><td align="center">Malfunctioning part cannot be identified<br></td><td align="center">B<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">Inspection for Intermittent Problems<a href="#" onclick="openSeePage('seepage','RM000000CD101YX');return false;">
+			(see <img border="0" src="../../../../image/extxref.png"> for procedure)
+		</a>
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">Inspect and Repair Malfunctioning Area 
+										</td></tr></table></td></tr></table><br></body></html>

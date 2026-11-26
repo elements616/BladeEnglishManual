@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740102p SYSTEM "grph_ent/a4740102p.png" NDATA png>
+<!ENTITY a4740103p SYSTEM "grph_ent/a4740103p.png" NDATA png>
+<!ENTITY a3810132p SYSTEM "grph_ent/a3810132p.png" NDATA png>
+<!ENTITY a3810133p SYSTEM "grph_ent/a3810133p.png" NDATA png>
+<!ENTITY a3730073p SYSTEM "grph_ent/a3730073p.png" NDATA png>
+<!ENTITY a4740116p SYSTEM "grph_ent/a4740116p.png" NDATA png>
+<!ENTITY a3730037p SYSTEM "grph_ent/a3730037p.png" NDATA png>
+<!ENTITY a4740117p SYSTEM "grph_ent/a4740117p.png" NDATA png>
+<!ENTITY a3730032p SYSTEM "grph_ent/a3730032p.png" NDATA png>
+<!ENTITY a3730035p SYSTEM "grph_ent/a3730035p.png" NDATA png>
+<!ENTITY a3730036p SYSTEM "grph_ent/a3730036p.png" NDATA png>
+
+<!ENTITY T030063A431 SYSTEM "t478030063a431.xml">
+<!ENTITY T030063A431A475 SYSTEM "t478030063a431a475.xml">
+<!ENTITY T030063A431A596 SYSTEM "t478030063a431a596.xml">
+<!ENTITY T030063A431A312 SYSTEM "t478030063a431a312.xml">
+<!ENTITY T030063A431A088 SYSTEM "t478030063a431a088.xml">
+<!ENTITY T030063A431A315 SYSTEM "t478030063a431a315.xml">
+<!ENTITY T030063A431A090 SYSTEM "t478030063a431a090.xml">
+<!ENTITY T030063A431A126 SYSTEM "t478030063a431a126.xml">
+<!ENTITY T030063A431A053 SYSTEM "t478030063a431a053.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T030063A431S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T030063A431" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "ECU List">
+<TITLE>CVT Control (Computer)</TITLE>
+<LIST1><ITEM><PTXT>A transmission control computer integrated with the engine control computer has been adopted. Various signals are communicated between the engine and transmission control computers to perform integrated engine control, achieving both smooth shift characteristics and excellent shift response at a high level.</PTXT></ITEM>
+<ITEM><PTXT>Acceleration control (linear feel improvement control), NAVI AI-SHIFT and uphill/downhill shift control have been adopted to achieve smooth shift characteristics and excellent shift response, and neutral control has been adopted to improve fuel economy while the vehicle is stopped.</PTXT></ITEM>
+<ITEM><PTXT>Diagnosis and fail-safe functions are provided for serviceability in the event of a system malfunction.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740102p" WIDTH = "6.903in" HEIGHT = "6.361in" />
+</FIGURE>
+<INDICATE ID = "T030063A431I01" INDSW = "OFF">
+<TITLE>Block Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740103p" WIDTH = "6.903in" HEIGHT = "6.431in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T030063A431I02" INDSW = "OFF">
+<TITLE>Components and Functions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "41%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "58%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.1 (DS1)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Controls the inflow of line pressure to the primary pulley according to the wheel speed and accelerator opening. (Controls the speed of upshifting)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.2 (DS2)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Controls the line pressure and outflow from the primary pulley according to the wheel speed and accelerator opening. (Controls the speed of downshifting)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Lock-up Solenoid (SL)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Switches the function of the linear solenoid (SLS).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Lock-up Engagement Pressure Control Duty Solenoid (DSU)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Controls the gradual increase and decrease of the lock-up engagement hydraulic pressure.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Belt Clamping Force Control Linear Solenoid (SLS)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Controls the secondary pulley pressure according to the input shaft torque to control the belt clamping force. In addition, it controls the forward/reverse clutch hydraulic pressure during forward/reverse clutch engagement and during neutral control.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Primary Pulley Speed Sensor (NIN)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the input shaft speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Secondary Pulley Speed Sensor (N0UT)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the output shaft speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Turbine Speed Sensor (NT)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the turbine speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Hydraulic Pressure Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the belt clamping force.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Fluid Temperature Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the fluid temperature.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Water Temperature Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the engine coolant temperature.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Accelerator Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the accelerator opening.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Throttle Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the throttle valve opening angle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Crankshaft Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the engine speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Stop Light Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the ON/OFF state of the brake pedal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Neutral Start Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the shift position of the automatic transaxle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>G Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects the inclination angle of the vehicle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Position Indicator (Built into Combination Meter)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Informs the driver of the shift position in use through the LCD display.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Sport Sequential Shiftmatic Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Detects whether sport sequential mode is selected.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Engine Control Computer (Integrated with Transmission Control Computer)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Performs integrated control of the engine and transaxle and transaxle control based on the signals from each sensor. A diagnosis mode and fail-safe functions are provided for serviceability in the event of a system malfunction.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>DLC3</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>By connecting and operating a diagnostic tool, DTCs and computer data can be read. </PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T030063A431A475" UPDATE = "ORIGINAL" LDUP = "6May2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Engine Integrated Control</TITLE>
+<LIST1><ITEM><PTXT>By integrating the control of CVT speed and engine torque, fine control is performed so that the engine operates on its optimum fuel economy line.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810132p" WIDTH = "6.917in" HEIGHT = "5.528in" />
+</FIGURE>
+<INDICATE ID = "T030063A431A475I01" INDSW = "OFF">
+<TITLE>Basic Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "82%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Determination of Target Driving Force</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The target engine output is determined from the target driving force requested by the driver, based on the accelerator opening and wheel speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Determination of Target Speed</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The target primary pulley speed is determined so that the target engine output can be achieved on the engine's optimum fuel economy line, and shift control is performed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Determination of Target Torque</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The target engine torque is determined from the target engine output and the primary pulley speed, and throttle opening control is performed.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T030063A431A596" UPDATE = "ORIGINAL" LDUP = "2Jul2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Acceleration Control (Linear Feel Improvement Control)</TITLE>
+<LIST1><ITEM><PTXT>The driver's acceleration request is determined from changes in vehicle speed and accelerator opening, and control shifts to driving force control that provides a good acceleration feel. In this case, the acceleration generated for a constant accelerator opening is kept constant, and the engine speed increases as the vehicle speed increases. This improves the linear acceleration feel and the feel of increasing vehicle speed in response to the driver's accelerator operation.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810133p" WIDTH = "6.917in" HEIGHT = "3.167in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A431A312" UPDATE = "ORIGINAL" LDUP = "23Dec2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Neutral Control</TITLE>
+<LIST1><ITEM><PTXT>Neutral control reduces engine load and improves fuel economy while the vehicle is stopped (in the D position) by disconnecting the engine from the transmission (partially releasing the starting clutch inside the automatic transmission using linear solenoid SLS). In addition, the gradient is detected by the G sensor, and neutral control is not performed on gradients above a certain level.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730073p" WIDTH = "6.917in" HEIGHT = "3.694in" />
+</FIGURE>
+<INDICATE ID = "T030063A431A312I01" INDSW = "OFF">
+<TITLE>Control System</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740116p" WIDTH = "6.903in" HEIGHT = "3.361in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T030063A431A088" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Uphill / Downhill Shift Control</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When driving on winding roads with ups and downs, uphill/downhill shift control restricts upshifting when it determines that the vehicle is going uphill, achieving smooth driving.</PTXT></ITEM>
+<ITEM><PTXT>In addition, when driving downhill, if a downhill is determined from the throttle opening and vehicle acceleration and brake operation is detected, the transmission downshifts to generate an appropriate engine braking force. The system consists of the throttle position sensor and vehicle speed sensor.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730037p" WIDTH = "6.917in" HEIGHT = "3.750in" />
+</FIGURE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Slope determination is made by comparing the reference acceleration stored in the computer with the actual acceleration calculated from the speed sensor signal. When the actual acceleration is less than the reference acceleration, an uphill road is determined, and when the actual acceleration is greater than the reference acceleration, a downhill road is determined.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740117p" WIDTH = "6.917in" HEIGHT = "2.028in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A431A315" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>CVT Shift Control</TITLE>
+<LIST1><ITEM><PTXT>Shift control sets the target input shaft speed based on information such as accelerator opening, vehicle speed and brake signal so that the optimum gear ratio and shift speed are obtained. Furthermore, a signal is output to the shift control duty solenoid (DS1,DS2) so that the speed obtained from the primary pulley speed sensor matches the target input shaft speed, optimizing the gear ratio.</PTXT></ITEM>
+<ITEM><PTXT>In the D position, control is performed through integrated engine control to maximize fuel economy and driving performance.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730032p" WIDTH = "6.917in" HEIGHT = "2.306in" />
+</FIGURE>
+<LIST1><ITEM><PTXT>In the M position of sport sequential Shiftmatic mode, M1 to M7 indicate the respective gears as shown in the illustration below. When the set vehicle speed is reached during acceleration, the transmission automatically upshifts.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730035p" WIDTH = "6.917in" HEIGHT = "2.583in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A431A090" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Shift and Lock-up Control</TITLE>
+<LIST1><ITEM><PTXT>Lock-up operation is performed based on a determination from the throttle opening and vehicle speed.</PTXT></ITEM>
+<ITEM><PTXT>The lock-up operating range has been expanded compared to conventional A/T models, enabling lock-up from the low speed range. In addition, by expanding the lock-up operating range down to the low speed range during deceleration as well, the fuel cut range has been expanded, achieving excellent fuel economy. </PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730036p" WIDTH = "6.903in" HEIGHT = "2.778in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T030063A431A126" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Diagnosis Function</TITLE>
+<LIST1><ITEM><PTXT>If a malfunction is detected in the speed sensors, solenoids, etc., the check engine warning light in the combination meter assembly illuminates to warn the driver. A new diagnosis system has been adopted for serviceability. By connecting TaSCAN to DLC3, diagnosis results for malfunctioning areas can be displayed. For the list of diagnosis items, refer to the Repair Manual.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T030063A431A053" UPDATE = "ORIGINAL" LDUP = "9Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Fail-safe Function</TITLE>
+<LIST1><ITEM><PTXT>This function prevents a significant loss of drivability even if a malfunction occurs in the sensors or solenoids. For details, refer to the Repair Manual.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T030063A431A053I01" INDSW = "OFF">
+<TITLE>Fail-safe Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "68%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Primary Pulley Speed Sensor (NIN)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>The input shaft speed is calculated from the signal from the turbine speed sensor and normal control is performed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Secondary Pulley Speed Sensor (NOUT)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>The output shaft speed is calculated from the signal from the speed sensor and normal control is performed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Turbine Speed Sensor (NT)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>The turbine speed is calculated from the signal from the primary pulley speed sensor and normal control is performed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.1 (DS1)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Stops current to the solenoid. The gear ratio is shifted further toward the reduction side than normal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Shift Control Duty Solenoid No.2 (DS2)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Stops current to the solenoid. The gear ratio is at the highest overdrive side.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Lock-up Solenoid (SL)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Stops current to the solenoid and releases lock-up.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Lock-up Engagement Pressure Control Duty Solenoid (DSU)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>Stops current to the solenoid and fully releases lock-up.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Belt Clamping Force Control Linear Solenoid (SLS)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>After the control current to the solenoid is stopped, the belt clamping force is set to the maximum hydraulic pressure and the gear ratio is fixed at a predetermined value.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Fluid Temperature Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>The engine control computer fixes the fluid temperature at a predetermined value and performs normal control.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>G Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE"><PTXT>When a malfunction is detected, neutral control is stopped.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+</PARA>
+</SECTION>

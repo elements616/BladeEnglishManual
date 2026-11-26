@@ -1,0 +1,1860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4270238e SYSTEM "../xml/grph_ent/a4270238e.png" NDATA png>
+<!ENTITY a4740060e SYSTEM "../xml/grph_ent/a4740060e.png" NDATA png>
+<!ENTITY a4740073e SYSTEM "../xml/grph_ent/a4740073e.png" NDATA png>
+<!ENTITY K4540019E SYSTEM "../xml/grph_ent/k4540019e.png" NDATA png>
+<!ENTITY a4740117e SYSTEM "../xml/grph_ent/a4740117e.png" NDATA png>
+<!ENTITY a4740067e SYSTEM "../xml/grph_ent/a4740067e.png" NDATA png>
+<!ENTITY a4740063e SYSTEM "../xml/grph_ent/a4740063e.png" NDATA png>
+<!ENTITY a4560061e SYSTEM "../xml/grph_ent/a4560061e.png" NDATA png>
+<!ENTITY a4560052e SYSTEM "../xml/grph_ent/a4560052e.png" NDATA png>
+<!ENTITY k4670024e SYSTEM "../xml/grph_ent/k4670024e.png" NDATA png>
+<!ENTITY k4600029e SYSTEM "../xml/grph_ent/k4600029e.png" NDATA png>
+<!ENTITY a4560064e SYSTEM "../xml/grph_ent/a4560064e.png" NDATA png>
+<!ENTITY k4670027e SYSTEM "../xml/grph_ent/k4670027e.png" NDATA png>
+<!ENTITY k4670026e SYSTEM "../xml/grph_ent/k4670026e.png" NDATA png>
+<!ENTITY k3840112e SYSTEM "../xml/grph_ent/k3840112e.png" NDATA png>
+<!ENTITY k4600026e SYSTEM "../xml/grph_ent/k4600026e.png" NDATA png>
+<!ENTITY k4670030e SYSTEM "../xml/grph_ent/k4670030e.png" NDATA png>
+<!ENTITY k4600022e SYSTEM "../xml/grph_ent/k4600022e.png" NDATA png>
+<!ENTITY a4560007e SYSTEM "../xml/grph_ent/a4560007e.png" NDATA png>
+<!ENTITY k4670033e SYSTEM "../xml/grph_ent/k4670033e.png" NDATA png>
+<!ENTITY K4730073E SYSTEM "../xml/grph_ent/k4730073e.png" NDATA png>
+<!ENTITY k4670035e SYSTEM "../xml/grph_ent/k4670035e.png" NDATA png>
+<!ENTITY k3840114e SYSTEM "../xml/grph_ent/k3840114e.png" NDATA png>
+<!ENTITY K3840115E SYSTEM "../xml/grph_ent/k3840115e.png" NDATA png>
+<!ENTITY a4960039e SYSTEM "../xml/grph_ent/a4960039e.png" NDATA png>
+<!ENTITY a4740061e SYSTEM "../xml/grph_ent/a4740061e.png" NDATA png>
+<!ENTITY k4670093e SYSTEM "../xml/grph_ent/k4670093e.png" NDATA png>
+<!ENTITY k4670092e SYSTEM "../xml/grph_ent/k4670092e.png" NDATA png>
+<!ENTITY a4740074e SYSTEM "../xml/grph_ent/a4740074e.png" NDATA png>
+<!ENTITY a4740075e SYSTEM "../xml/grph_ent/a4740075e.png" NDATA png>
+<!ENTITY k4670046e SYSTEM "../xml/grph_ent/k4670046e.png" NDATA png>
+<!ENTITY k4670047e SYSTEM "../xml/grph_ent/k4670047e.png" NDATA png>
+<!ENTITY k4670048e SYSTEM "../xml/grph_ent/k4670048e.png" NDATA png>
+<!ENTITY k4670049e SYSTEM "../xml/grph_ent/k4670049e.png" NDATA png>
+<!ENTITY k4670050e SYSTEM "../xml/grph_ent/k4670050e.png" NDATA png>
+
+<!ENTITY T120021K913 SYSTEM "../xml/t403120021k913.xml">
+<!ENTITY T120021K740 SYSTEM "../xml/t334120021k740.xml">
+<!ENTITY T120021K740Ka70 SYSTEM "../xml/t334120021k740ka70.xml">
+<!ENTITY T120021K741 SYSTEM "../xml/t403120021k741.xml">
+<!ENTITY T120021A806 SYSTEM "../xml/t403120021a806.xml">
+<!ENTITY T120021A807 SYSTEM "../xml/t334120021a807.xml">
+<!ENTITY T120021A807A865 SYSTEM "../xml/t334120021a807a865.xml">
+<!ENTITY T120021A808 SYSTEM "../xml/t334120021a808.xml">
+<!ENTITY T120021A808K125 SYSTEM "../xml/t334120021a808k125.xml">
+<!ENTITY T120021A808Ka72 SYSTEM "../xml/t334120021a808ka72.xml">
+<!ENTITY T120021A808K106 SYSTEM "../xml/t334120021a808k106.xml">
+<!ENTITY T120021A808K126 SYSTEM "../xml/t334120021a808k126.xml">
+<!ENTITY T120021A808K263 SYSTEM "../xml/t334120021a808k263.xml">
+<!ENTITY T120021A808Ka73 SYSTEM "../xml/t334120021a808ka73.xml">
+<!ENTITY T120021A808K385 SYSTEM "../xml/t334120021a808k385.xml">
+<!ENTITY T120021A808K219 SYSTEM "../xml/t334120021a808k219.xml">
+<!ENTITY T120021A814 SYSTEM "../xml/t334120021a814.xml">
+<!ENTITY T120021A814K440 SYSTEM "../xml/t334120021a814k440.xml">
+<!ENTITY T120021A814K464 SYSTEM "../xml/t334120021a814k464.xml">
+<!ENTITY T120021A814T050 SYSTEM "../xml/t334120021a814t050.xml">
+<!ENTITY T120021A814K034 SYSTEM "../xml/t334120021a814k034.xml">
+<!ENTITY T120021A814W016 SYSTEM "../xml/t334120021a814w016.xml">
+<!ENTITY T120021A814W017 SYSTEM "../xml/t334120021a814w017.xml">
+<!ENTITY T120021A814K444 SYSTEM "../xml/t334120021a814k444.xml">
+<!ENTITY T120021A814Ka74 SYSTEM "../xml/t334120021a814ka74.xml">
+<!ENTITY T120021A814K386 SYSTEM "../xml/t334120021a814k386.xml">
+<!ENTITY T120021A814K107 SYSTEM "../xml/t334120021a814k107.xml">
+<!ENTITY T120021A814K174 SYSTEM "../xml/t334120021a814k174.xml">
+<!ENTITY T120021A814K562 SYSTEM "../xml/t334120021a814k562.xml">
+<!ENTITY T120021A814K725 SYSTEM "../xml/t334120021a814k725.xml">
+<!ENTITY T120021A809 SYSTEM "../xml/t403120021a809.xml">
+<!ENTITY T120021A811 SYSTEM "../xml/t403120021a811.xml">
+<!ENTITY T120021A813 SYSTEM "../xml/t403120021a813.xml">
+<!ENTITY T120021K387 SYSTEM "../xml/t334120021k387.xml">
+<!ENTITY T120021K387Ka75 SYSTEM "../xml/t334120021k387ka75.xml">
+<!ENTITY T120021K387K448 SYSTEM "../xml/t334120021k387k448.xml">
+<!ENTITY T120021K387K449 SYSTEM "../xml/t334120021k387k449.xml">
+<!ENTITY T120021K387K725 SYSTEM "../xml/t334120021k387k725.xml">
+<!ENTITY T120021K922 SYSTEM "../xml/t334120021k922.xml">
+<!ENTITY T120021K922K460 SYSTEM "../xml/t334120021k922k460.xml">
+<!ENTITY T120021K922K461 SYSTEM "../xml/t334120021k922k461.xml">
+<!ENTITY T120021K922K462 SYSTEM "../xml/t334120021k922k462.xml">
+<!ENTITY T120021K922K464 SYSTEM "../xml/t334120021k922k464.xml">
+<!ENTITY T120021K922K465 SYSTEM "../xml/t334120021k922k465.xml">
+<!ENTITY T120021K922K466 SYSTEM "../xml/t334120021k922k466.xml">
+<!ENTITY T120021K922K467 SYSTEM "../xml/t334120021k922k467.xml">
+<!ENTITY T120021K922Ka76 SYSTEM "../xml/t334120021k922ka76.xml">
+<!ENTITY T120021K922Ka77 SYSTEM "../xml/t334120021k922ka77.xml">
+<!ENTITY T120021K922Ka78 SYSTEM "../xml/t334120021k922ka78.xml">
+<!ENTITY T120021K922K471 SYSTEM "../xml/t334120021k922k471.xml">
+<!ENTITY T120021K922Ka79 SYSTEM "../xml/t334120021k922ka79.xml">
+<!ENTITY T120021K922Ka81 SYSTEM "../xml/t334120021k922ka81.xml">
+<!ENTITY T120021K922T050 SYSTEM "../xml/t334120021k922t050.xml">
+<!ENTITY T120021K922Ab05 SYSTEM "../xml/t334120021k922ab05.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T120021K740S"><SCTITLE/>
+
+<PARA INFOID = "T120021K740" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Multi-display</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The multi-display has a structure that integrates a modular display section and navigation section. The display section contains the display panel that shows the screen, the main computer that controls the display, and the TV tuner that receives TV broadcast signals and outputs TV video signals to the display panel. Also, the navigation section consists of the main computer that controls the navigation system, the GPS receiver that demodulates signals from the GPS antenna and outputs them to the main computer, and the gyro sensor that detects the yaw rate and outputs it to the main computer.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740073e" WIDTH = "6.903in" HEIGHT = "2.778in" />
+</FIGURE>
+<INDICATE ID = "T120021K740I01" INDSW = "OFF">
+<TITLE>Display Section</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>The display uses a TFT (Thin Film Transistor) liquid crystal panel, with a display screen of 79.8 high × 143.8mm wide and an aspect ratio of 9:16 (wide screen). The liquid crystal cells are subdivided into 234 vertical × 1200 horizontal pixels, and all colors can be expressed by additive color mixing, with each liquid crystal cell (pixel) corresponding to each color filter controlled in analog fashion from fully closed to fully open by the RGB video signals. </PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<SPEC ID = "T120021K740X02" INDSW = "OFF">
+<TITLE>Display Panel Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Display Method</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>TN Liquid Crystal Transmissive Type</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Color Display</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>RGB color filter, additive color mixing</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Drive Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>TFT, active matrix drive</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Display Screen Size [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>79.8 high × 143.8 wide</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Number of Display Pixels [dots]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>234 high × 1200 wide (RGB)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Pixel Size [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>0.3410 high × 0.1198 wide</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Color Filter Arrangement</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>RGB Stripe Arrangement</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+
+<MECA ID = "T120021K740Ka70" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>HDD Update Connector</TITLE>
+<LIST1><ITEM><PTXT>A IEEE1394-standard HDD update connector has been adopted, allowing map updates, etc. to be performed by connecting a dedicated HDD map update tool to the connector. This allows work such as map information updates to be performed without removing the map HDD (hard disk) from the vehicle.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "K4540019E" WIDTH = "7.069in" HEIGHT = "2.333in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120021K741S"><SCTITLE/>
+
+<PARA INFOID = "T120021K741" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Integrated Antenna</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>An integrated antenna is available as a factory option on all models. The integrated antenna combines the "GPS antenna" and "ETC antenna", saving installation space and improving reception performance. The antenna is installed behind the center of the instrument panel.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740117e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120021K913S"><SCTITLE/>
+
+<PARA INFOID = "T120021K913" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>HDD Navigation System Outline</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The 05 model year HDD navigation has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>The HDD navigation has a variety of multimedia functions made possible by the adoption of a large-capacity HDD (30GB) to improve convenience, and achieves a clearer display by rendering the screen in 32000 colors.</PTXT></ITEM>
+<ITEM><PTXT>A Bluetooth<HINTREF REFID = "H403120021K91301"/> compatible antenna is built into the multi-display, enabling hands-free calls without connecting a cable or cradle when using a Bluetooth compatible cellular phone, for excellent usability.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H403120021K91301"></PTXT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "22%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "77%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1">
+<GRAPHIC GRAPHICNAME = "a4270238e" WIDTH = "1.167in" HEIGHT = "0.278in" />
+</ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Bluetooth is a registered trademark of Bluetooth SIG, Inc.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></ITEM></LIST1></HINT>
+<LIST1><ITEM><PTXT>The HDD navigation links with the network using a Bluetooth-compatible cellular phone, allowing use of the next-generation telematics service "G-BOOK ALPHA" and hands-free calling. Also, a variety of functions have been adopted for the navigation, information mode, etc., realizing a highly convenient audio &amp; visual system.</PTXT></ITEM>
+<ITEM><PTXT>By installing a G sensor in the HDD navigation, more precise position correction is possible.</PTXT></ITEM>
+<ITEM><PTXT>A sound library function that can store up to 13.9GB minutes of music data on the built-in HDD has been installed to improve marketability.</PTXT></ITEM>
+<ITEM><PTXT>By adopting a IEEE1394-standard HDD update connector, map data and other updates can be performed without removing the map hard disk drive (HDD) from the vehicle, for excellent convenience.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740060e" WIDTH = "6.903in" HEIGHT = "5.514in" />
+</FIGURE>
+<INDICATE ID = "T120021K913I01" INDSW = "ON">
+<TITLE>HDD Navigation System Main Components</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "5%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "72%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Main Functions</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>HDD Navigation</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Integrated with the navigation computer; controls the HDD navigation system and displays various screens on the multi-display.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "7" CONSPIC = "0"><PTXT>Built-in Parts</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Display Panel</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Displays the map screen and operation screens using video signals from the main computer, and the TV broadcast screen using video signals from the TV tuner.</PTXT></ITEM>
+<ITEM><PTXT>Outputs input operation signals to the main computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Adjusts the color balance of the display screen.</PTXT></ITEM>
+<ITEM><PTXT>Controls each display and function of the HDD navigation system according to the input operation signals.</PTXT></ITEM>
+<ITEM><PTXT>Calculates the vehicle position, direction of travel and distance traveled using the "position signal" from the GPS receiver, the "vehicle acceleration/deceleration data" from the G sensor, the "vehicle angular velocity data" from the gyro sensor and the "vehicle speed signal" from the combination meter.</PTXT></ITEM>
+<ITEM><PTXT>Converts FM multiplex broadcast signals (DGPS signals) and VICS road traffic information with the built-in FM multiplex decoder and then performs calculation processing.</PTXT></ITEM>
+<ITEM><PTXT>Outputs the map information data in the HDD and the calculated vehicle position, etc. to the display panel as video signals.</PTXT></ITEM>
+<ITEM><PTXT>Outputs navigation voice guidance signals to the front speaker RH.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>TV Tuner</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Receives and tunes the TV broadcast signals output from the TV antenna amplifier with selector, and outputs video signals to the main computer and audio signals to the speakers via the built-in amplifier.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>GPS Receiver</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Demodulates signals from the GPS antenna and outputs them to the main computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>G Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects vehicle acceleration/deceleration and outputs it to the main computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Gyro Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects vehicle angular velocity and outputs it to the main computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>HDD (Hard Disk) Unit</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Reads the data stored on the map HDD (hard disk) and outputs it to the main computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>HDD Update Connector</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Map data updates, etc. can be performed by connecting an update tool to the connector.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Integrated Antenna<HINTREF     REFID = "H403120021K91301"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Receives the orbit signals and signal transmission time signals continuously transmitted from GPS satellites placed in orbits surrounding the earth at an altitude of approximately 2 × 10,000 km, and outputs them to the GPS receiver.</PTXT></ITEM>
+<ITEM><PTXT>Transmits and receives ETC system radio waves.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>TV Antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>TV broadcast signals are received by 4 pattern antennas, with 2 systems each located in the back window glass and in the rear spoiler.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>TV Antenna Amplifier with Selector</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Switches to the 4 TV antenna signals with good reception, amplifies the 1 TV antenna signals with good reception sensitivity and outputs them to the TV tuner.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>Speaker</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Outputs navigation voice guidance and audio/TV sound.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>Combination Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Outputs the vehicle speed signal (pulse signal) to the multi-display.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>Taillight Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Outputs the taillight ON signal to the multi-display.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Parking Brake Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Outputs the parking brake ON signal to the multi-display.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<HINT>
+<LIST1><ITEM><PTXT>Factory option on all models. GPS antenna (GPS function only) as standard equipment.</PTXT></ITEM></LIST1></HINT>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120021A806S"><SCTITLE/>
+
+<PARA INFOID = "T120021A806" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>HDD Navigation System Control</TITLE>
+<LIST1><ITEM><PTXT>Overall system control is performed with the circuit configuration shown below, centered on the HDD navigation.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A806I01" INDSW = "OFF">
+<TITLE>System Wiring Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740067e" WIDTH = "6.903in" HEIGHT = "6.069in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120021A807S"><SCTITLE/>
+
+<PARA INFOID = "T120021A807" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>HDD Navigation System Function Outline</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The 05 model year HDD navigation mainly has the following functions.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A807I01" INDSW = "OFF">
+<TITLE>HDD Navigation Function Outline List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "53%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Main Functions</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Navigation</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Navigation screen display and operation</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "7"><PTXT>Information</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>FM Multiplex</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display of FM multiplex general text information</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>TEL</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display of telephone number list</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Maintenance</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display and input of maintenance information</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Calendar</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display of calendar</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Facilities with Information</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Search and display of detailed information about major facilities on the map</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Surrounding Monitor</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Settings related to the back guide monitor</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>ETC<HINTREF REFID = "H334120021A80701"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Display of ETC information</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Setting</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Settings such as continuous display of information screen and audio operation screen</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>TV</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>TV broadcast display and operation</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Audio</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Audio operation screen display and operation</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2"><PTXT>Communication</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Hands-free<HINTREF REFID = "H334120021A80702"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Hands-free call display and operation</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>HELPNET<HINTREF REFID = "H334120021A80703"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Notification, display and operation for the "HELPNET" emergency notification system</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>G-BOOK ALPHA<HINTREF REFID = "H334120021A80704"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>G-BOOK ALPHA online service display and operation</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Image Quality Adjustment</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Adjustment of image quality</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H334120021A80701">Models with ETC system with navigation link function.</PTXT></ITEM>
+<ITEM><PTXT ID = "H334120021A80702">When using a Bluetooth-compatible mobile phone.</PTXT></ITEM>
+<ITEM><PTXT ID = "H334120021A80703">When using a Bluetooth-compatible mobile phone. Membership registration, maintenance inspection, etc. are required to use HELPNET.</PTXT></ITEM>
+<ITEM><PTXT ID = "H334120021A80704">When using a Bluetooth-compatible mobile phone. A service contract, various registrations, etc. are required to use G-BOOK ALPHA.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+
+<MECA ID = "T120021A807A865" UPDATE = "ORIGINAL" LDUP = "20Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>HDD Navigation System Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Panel Switch Operation</TITLE>
+<ITEM><PTXT>The display screens of the HDD navigation system consist of the TV mode screen, information mode screen, navigation mode screen, etc., and each mode screen can be called up using the panel switches located around the multi-display.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Touch Switch Operation</TITLE>
+<ITEM><PTXT>After each mode screen (TV, information, etc.) is called up, operations are performed with touch switches, which allow input by directly touching the switch frames displayed on the display screen with a finger.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Steering Switch Operation</TITLE>
+<ITEM><PTXT>TV/audio volume adjustment, etc. can be performed with the steering switches located on the steering wheel.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Voice Operation</TITLE>
+<ITEM><PTXT>By pressing the talk switch to display the voice recognition mark on the screen and then speaking a voice command toward the voice recognition microphone, navigation and other operations can be performed, providing excellent operability.</PTXT></ITEM>
+<ITEM><PTXT>Voice operation has a "Standard Mode" and an "Extended Mode", which can be switched as desired according to purpose.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740063e" WIDTH = "6.903in" HEIGHT = "4.736in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Voice Operation Modes</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "85%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Description</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Standard Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Only navigation operations are possible</PTXT></ITEM>
+<ITEM><PTXT>Basic voice commands for navigation and G-BOOK ALPHA<HINTREF REFID = "H334120021A807A86501"/> operation can be used</PTXT></ITEM>
+<ITEM><PTXT>The command list is displayed by pressing the talk switch or pressing the "Help" touch switch</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Extended Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Navigation, audio and G-BOOK ALPHA<HINTREF REFID = "H334120021A807A86501"/> can be operated</PTXT></ITEM>
+<ITEM><PTXT>All voice commands can be used</PTXT></ITEM>
+<ITEM><PTXT>The command list is displayed by touching the "Help" touch switch</PTXT></ITEM>
+<ITEM><PTXT>Map search is also possible by speaking a genre, telephone number, postal code, map code or memory point name</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H334120021A807A86501">G-BOOK ALPHA voice commands are valid only when a service contract and various registrations have been completed.</PTXT></ITEM></LIST1></HINT></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120021A808S"><SCTITLE/>
+
+<PARA INFOID = "T120021A808" UPDATE = "ORIGINAL" LDUP = "16May2006"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>HDD Navigation Functions</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>GPS (Global Positioning System) voice navigation determines the vehicle's position and displays it on the map, and provides route guidance information to the destination by screen display and voice guidance.</PTXT></ITEM>
+<ITEM><PTXT>The navigation of the 05 model year HDD navigation system has high marketability through improved map screen appearance, shorter processing time for searches, etc., and the adoption of new functions.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T120021A808K125" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Current Position Display Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The vehicle position detected by GPS navigation is combined with the vehicle speed signal from the combination meter and road map data from the navigation computer, etc., and is displayed as a mark on the map screen.</PTXT></ITEM>
+<ITEM><PTXT>When position information from GPS satellites is being used, a "GPS" mark is displayed below the direction mark at the upper left of the screen.</PTXT></ITEM>
+<ITEM><PTXT>When VICS information to be displayed on the map is received, the information provision time can be displayed below the "VICS" mark as a VICS time stamp.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4560061e" WIDTH = "6.903in" HEIGHT = "1.861in" />
+</FIGURE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>An "inclination angle sensor" has been adopted, enabling determination of entering/exiting elevated roads and entering/exiting multi-level or underground parking garages, for which accurate map matching was difficult with conventional navigation systems. In addition, urban expressway entrance gradient data and underground parking garage road data have been newly added to the HDD (hard disk) map data, improving current position display accuracy.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4560052e" WIDTH = "6.903in" HEIGHT = "2.514in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120021A808Ka72" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Main Map Display Functions</TITLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Map Scale</TITLE>
+<ITEM><PTXT>Maps from 1/20480,000 to 1/5000 scale can be displayed, and in areas with city maps, city maps at 1/2500 scale can be displayed.</PTXT></ITEM>
+<ITEM><PTXT>The scale is changed by touching the "Detail" or "Wide" switch displayed on the screen. In addition, the scale can be selected directly by touching the 13-step scale gauge that appears when the "Detail" or "Wide" switch is touched.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Map Movement (Scrolling)</TITLE>
+<ITEM><PTXT>On the current position display screen, touching an area where no touch switch is displayed displays the cursor keys; touching the cursor key in the direction in which the map is to be viewed scrolls the map. The name of the place near the center of the screen can be displayed while the map is scrolling.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Map Orientation</TITLE>
+<ITEM><PTXT>The map orientation can be switched between north-up display (north is always at the top regardless of the direction of travel) and heading-up display (the direction of travel is always at the top). The display is switched by touching the direction mark displayed on the map screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Front Wide Display</TITLE>
+<ITEM><PTXT>The map in the direction of vehicle travel can be displayed over a wider area. The display can be switched in "Settings" on the menu screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Map Color Change</TITLE>
+<ITEM><PTXT>The map color can be selected from 5 types (Normal, Fresh, Cool, Chic and Warm).</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>3D Display</TITLE>
+<ITEM><PTXT>The map can be displayed three-dimensionally. The viewing angle in 3D display can also be adjusted. Switching to 3D display can be done with "Change Display" on the map display screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>2 Screen Display</TITLE>
+<ITEM><PTXT>The screen can be split into 2 parts, left and right, and the left and right screens can show maps of different scales, or 3D display and north-up display, etc. In addition, settings such as map orientation and facility display can be switched independently on the left and right screens. The display can be switched with "Change Display" on the map display screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>City Map Display</TITLE>
+<ITEM><PTXT>When the current position is within a city map display area and the 1/5000 scale screen is displayed, touching "City Map" on the screen displays a detailed city map (1/5000 scale or 1/2500 scale). When the display is switched to the 1/2500 scale city map during 3D display, a real city map display showing buildings three-dimensionally can be shown in addition to the city map display.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Visual Map</TITLE>
+<ITEM><PTXT>In the map display, the width of roads on the map changes according to the actual road width, and landmarks on the map are displayed three-dimensionally in multiple colors. The display can be turned ON/OFF from "Settings" on the menu screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>3D Landmark Display</TITLE>
+<ITEM><PTXT>Three-dimensional facility marks can be displayed while a map screen at 1/80,000 scale or more detailed is displayed.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Prefecture Border Guidance Display</TITLE>
+<ITEM><PTXT>When a prefectural border is crossed, the prefecture mark can be displayed on the map screen with voice guidance.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Parking Lot Map Display</TITLE>
+<ITEM><PTXT>If parking lot map information exists in the road map data, it can be displayed when entering that parking lot.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Facility Display</TITLE>
+<ITEM><PTXT>				Facilities selected while a map screen at 1/80,000 scale or more detailed is displayed can be shown on the map screen as marks and text. Touching "All Genres" on the screen allows up to 5 facility genres to be displayed at the same time.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Urban Expressway Highway Map</TITLE>
+<ITEM><PTXT>When a map at 1/20,000 scale or wider and 1/160,000 scale or more detailed is displayed, the roads shown can be limited to urban expressways (Metropolitan Expressway, Hanshin Expressway, Nagoya Expressway), and interchanges, junctions and route numbers can be displayed.</PTXT></ITEM>
+<ITEM><PTXT>The display is turned ON/OFF with "Change Display" on the map display screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Seasonal Leisure Landmarks</TITLE>
+<ITEM><PTXT>While a map screen at 1/80,000 scale or more detailed is displayed, seasonal leisure landmarks (e.g. famous cherry blossom spots from 2 to 4, famous autumn foliage spots from 9 to 11) can be displayed on the map screen.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Expressway Route Map</TITLE>
+<ITEM><PTXT>When driving on an expressway, a simplified route map of the road can be displayed. It is also displayed for entry/exit IC designation and traffic congestion prediction.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A808K106" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Screen Display Settings</TITLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Switch Display Settings</TITLE>
+<ITEM><PTXT>The touch switches displayed on the map screen can be shown or hidden by touching the "ON" and "OFF" switches. Touch switches not to be displayed can be selected individually.</PTXT></ITEM>
+<ITEM><PTXT>The display is switched from "Settings" on the menu screen.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A808K106I01" INDSW = "OFF">
+<TITLE>Switch Display Setting Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670024e" WIDTH = "7.069in" HEIGHT = "2.542in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T120021A808K126" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Search</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The following methods are available for calling up maps when making various settings, such as setting a destination and registering memory points.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A808K126I01" INDSW = "OFF">
+<TITLE>List of Map Call-up Methods</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "81%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Method</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map by entering the facility name in kanji, 50-sound kana, alphanumeric characters or symbols.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Grouping List</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>During name search, searched facilities are displayed grouped, such as by chain store.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Facility</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map by selecting a facility genre such as station, hotel or dealer.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Address</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map by selecting the prefecture and city/ward/town/village name.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Telephone Number</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map by entering a telephone number.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Postal Code</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map by entering a 7-digit postal code.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Genre</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Subdivides genre items and calls up a map of the location of the facility.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Memory Point</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map of a memory point. (Only when memory points are registered)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>History</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map of a destination previously set. (Up to 100 entries)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Map Code</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map by entering coded position data.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Previous Map</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up the map displayed before the menu screen was displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Around Current Position</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calls up a map of the area around the current position.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Go Home</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "4"><PTXT>Starts a route search with the registered point as the destination. (Only when memory points are registered)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Around Home</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Around Current Position</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Go to Special Memory</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Around Special Memory</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Set with G</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Displays a destination set using the G-BOOK online service. (Only when subscribed to the G-BOOK online service)</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120021A808K263" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Registration</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>500 memory entries (400 memory points and 100 G memories) and 10 detour memory points can be registered, modified and deleted. In addition, names and telephone numbers can be entered and the mark display can be selected.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A808Ka73" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Main Route Guidance Functions</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When a destination is set, the guidance route from the current position to the destination is displayed and route guidance is provided by voice.</PTXT></ITEM>
+<ITEM><PTXT>To start route guidance, touch "Start Guidance" on the screen after the route search is completed. Alternatively, if the vehicle is driven for approximately 3 seconds without any operation after the entire route display screen ends, route guidance to the destination starts.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Destination Setting</TITLE>
+<ITEM><PTXT>Pressing the "Destination" panel switch changes to the destination setting screen, and the destination can be set by searching for it using the methods in the "List of Map Call-up Methods" above. In addition, multiple destinations (up to 5) can be set, and the order of the multiple destinations can be changed.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A808Ka73I01" INDSW = "OFF">
+<TITLE>Destination Setting Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4600029e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<LIST1 TYPE = "UNORDERED"><TITLE>5-route Simultaneous Search</TITLE>
+<ITEM><PTXT>5 routes are searched at the same time, and the guidance route can be selected from recommended route, toll road priority, ordinary road priority, distance priority and alternative route. The 5 searched routes are each color-coded and displayed together on the screen, and touching "Entire Route List" on the screen displays the toll (approximate minimum toll), total distance (km) and required time (approximate) when each of the 5 routes is selected.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Route Learning</TITLE>
+<ITEM><PTXT>If the driver always takes a road other than the route being guided to the destination (other than narrow streets: roads 5.5m or wider), after passing along the same other road 3 times, that route is learned and guidance can be given using the learned route in the next route search.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Waypoint Setting</TITLE>
+<ITEM><PTXT>Waypoints for route guidance can be set, added, modified and deleted; toll road/ordinary road priority can be set, the departure point can be specified, and the entry/exit interchanges can be specified.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Traffic Congestion Prediction Display Function</TITLE>
+<ITEM><PTXT>Displays traffic congestion prediction information obtained by communication from the G-BOOK center.</PTXT></ITEM>
+<ITEM><PTXT>Displays traffic congestion prediction information from now to 90 minutes later on the expressway route map, shows increasing or decreasing congestion trends with icons, and reads out the required travel time, etc.</PTXT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4560064e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Detour Area Search</TITLE>
+<ITEM><PTXT>By setting areas to be avoided in advance, a route search that avoids those areas can be performed. Up to 10 detour memory points can be registered.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Congestion Bypass Search</TITLE>
+<ITEM><PTXT>Searches taking detour roads into account during a surrounding area detour search. The road traffic center database is used for the search.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Surrounding Detour Search</TITLE>
+<ITEM><PTXT>When congestion, restrictions, etc. occur ahead and are to be avoided, the route can be changed to one that detours around the 2km ahead of the current position. In addition to roads for which VICS provides congestion information, routes estimated to be more comfortable based on actual vehicle driving data from the road traffic center, etc. are guided.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Intersection Guidance</TITLE>
+<ITEM><PTXT>Determines when the vehicle is approaching an intersection during route guidance and displays an enlarged view of the area around the intersection for guidance. Narrow-angle branches such as grade-separated intersections and interchange entrances are shown in 3D for easy understanding.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Real Intersection Enlarged View</TITLE>
+<ITEM><PTXT>Displays three-dimensional illustrations for intersections in government-designated cities with narrow-angle branches that are difficult to understand from voice guidance alone.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Turn List</TITLE>
+<ITEM><PTXT>The branch points and intersections for which voice guidance is given on the route from the current position to the destination can be displayed as a list.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Frontage Road Guidance</TITLE>
+<ITEM><PTXT>Dedicated guidance can be displayed when entering a frontage road from the main lane of an ordinary road. Dedicated guidance can also be displayed when returning from the frontage road to the main lane.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Seasonal Restriction Section Guidance</TITLE>
+<ITEM><PTXT>When a route including a section with long-term traffic restrictions (such as winter closures) is searched, the corresponding part of the guidance route is displayed in a different color and a message can be displayed on the screen. The message ON/OFF setting is made in "Settings" on the menu screen.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Highway Treatment of Ordinary Roads</TITLE>
+<ITEM><PTXT>For motorways on ordinary roads that lie between expressways or toll roads, guidance such as the expressway schematic, direction guidance and exit guidance is provided in the same way as for expressways.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Highway Mode</TITLE>
+<ITEM><PTXT>During route guidance on an expressway, the screen switches to the highway mode screen, on which information on service areas, parking areas and interchanges can be viewed. Also, before an expressway exit interchange or junction (approximately 1km before on intercity expressways and on metropolitan/urban expressways), a junction diagram is displayed for guidance.</PTXT></ITEM>
+<ITEM><PTXT>Even when route guidance is not being performed, the highway mode screen can be displayed on intercity expressways only.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Entry/Exit IC Designation</TITLE>
+<ITEM><PTXT>After setting a destination, the exit ICs and entrance ICs displayed on the entire route map screen can be designated one at a time. Also, if an IC with time restrictions on entry/exit is designated, a notification screen is displayed.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Illustration Guidance</TITLE>
+<ITEM><PTXT>At the entrances and exits of urban expressways (Shuto Expressway, Nagoya Expressway and Hanshin Expressway), a three-dimensional guidance screen (illustration) is displayed to provide easy-to-understand guidance.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Voice Repeat</TITLE>
+<ITEM><PTXT>During route guidance, voice guidance is provided according to the distance to the next junction. Also, by pressing the "Current Position/Voice Guidance" panel switch, the previous voice guidance can be heard again.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>VICS Consideration for Estimated Arrival Time</TITLE>
+<ITEM><PTXT>For the average vehicle speed used to calculate the estimated arrival time, an estimated arrival time that takes traffic congestion and traffic regulations into account can be displayed, based on the VICS congestion information on the map, the link travel times of beacon information and the predicted information on expressways during G-route guidance (predicted link travel times).</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Destination Arrival Guidance</TITLE>
+<ITEM><PTXT>When the vehicle approaches the vicinity of the destination, destination arrival guidance is provided by voice.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Continuous Lane Guidance</TITLE>
+<ITEM><PTXT>During route guidance, the lanes that can be driven at every intersection on roads with 2 or more lanes can be displayed continuously.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Lane Warning</TITLE>
+<ITEM><PTXT>Lane warning provides voice guidance on ordinary roads and urban expressways as follows.</PTXT></ITEM>
+<ITEM><PTXT>Ordinary roads: Voice guidance is provided when the lanes before the intersection ahead include a right-turn-only or left-turn-only lane. However, during destination guidance, voice guidance is provided only when going straight through the intersection.</PTXT></ITEM>
+<ITEM><PTXT>Urban expressways: Voice guidance is provided when there is a lane reduction ahead. (Because lane data is available only for urban expressways.)</PTXT></ITEM></LIST1>
+<LIST1><TITLE>G-route Guidance</TITLE>
+<ITEM><PTXT>"Traffic information around the current position" and "expressway congestion prediction information" are obtained from the G-BOOK center as wide-area congestion prediction information. Based on this information, the optimum route to the destination is searched.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>JUST Guidance</TITLE>
+<ITEM><PTXT>During destination guidance, a "♪ding-dong" sound is given just before the intersection at which junction guidance is provided.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Destination Direction Arrow Display</TITLE>
+<ITEM><PTXT>During route guidance, if the vehicle position deviates from the guidance route, the direction of the destination is displayed with an arrow.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Frequent Accident Location Warning</TITLE>
+<ITEM><PTXT>During route guidance, when the vehicle approaches a location where traffic accidents occur frequently, a frequent accident location mark is displayed on the map screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Road Shape Warning</TITLE>
+<ITEM><PTXT>During route guidance, when the vehicle approaches a merge, sharp curve or railroad crossing, a road shape warning is given by voice and a road shape mark is displayed on the map screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Roundabout Guidance</TITLE>
+<ITEM><PTXT>If there is a roundabout on the guidance route, guidance is provided treating the entrance and exit of the roundabout as junctions.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Toll Guidance</TITLE>
+<ITEM><PTXT>By setting the vehicle number category (1/3/5/7) in advance, the toll for toll roads is displayed and payment guidance is provided before the tollgate or ticket checkpoint.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>On-route Scroll</TITLE>
+<ITEM><PTXT>By touching the cursor keys displayed on the screen, the map can be scrolled automatically along the guidance route to the next destination or the next facility (selectable from categories such as gas stations, convenience stores, restaurants, parking lots, banks and post offices). The entire route display is selected with "Change Display" on the map display screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Entire Route</TITLE>
+<ITEM><PTXT>The entire set guidance route can be displayed together with information on the guidance route such as the total distance and tolls. The entire route display is selected with "Change Display" on the map display screen.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Route Re-search</TITLE>
+<ITEM><PTXT>Re-search of the guidance route from around the current position, re-search of the entire guidance route, search condition setting (recommended, toll road, ordinary road, distance priority, alternative route) and alternative road re-search (only when on the guidance route) can be performed.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Automatic Route Re-search</TITLE>
+<ITEM><PTXT>During route guidance, if the vehicle position deviates from the guidance route, the guidance route is automatically re-searched and a new guidance route from the current position can be displayed.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Driving Track Display</TITLE>
+<ITEM><PTXT>The driving track is displayed on the map as a series of dots. Up to 1000km can be saved at 50m intervals.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A808K385" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Menu</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By pressing the "Menu" panel switch, the screen changes to the menu screen, where each function can be selected. Note that some functions cannot be operated while driving.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A808K385I01" INDSW = "OFF">
+<TITLE>Menu Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670027e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Menu List</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Stop Guidance/Resume Guidance, Volume Settings, VICS, Congestion Prediction, Memory Points, User Customize, Settings, Disconnect, Data in Use</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Stop Guidance/Resume Guidance</TITLE>
+<ITEM><PTXT>The route being guided can be deleted to stop route guidance. Also, after guidance is stopped, the display changes to "Resume Guidance", and guidance can be resumed by touching it.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Volume Settings</TITLE>
+<ITEM><PTXT>Voice guidance ON/OFF, volume adjustment and automatic volume switching at high speed can be set.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>VICS</TITLE>
+<ITEM><PTXT>The screen changes to the VICS menu screen, where VICS information display settings can be made.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Congestion Prediction</TITLE>
+<ITEM><PTXT>Based on congestion prediction information obtained from the G-BOOK center, congestion prediction marks are displayed on the route.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Memory Point</TITLE>
+<ITEM><PTXT>Memory points (including home and special memory points) and detour memory points can be registered, modified and deleted, and the destination history can be deleted.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Memory Point/Detour Memory Point Settings</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "22%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "77%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Menu</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Description</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Registration of Memory Points (Including Home and Special Memory Points)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Points specified on the map screen can be registered as 400 memory points (including 1 home and 5 special memory points), 100 G-memory points and 10 detour memory points. The registered home is displayed with a mark. Also, when memory points are displayed, the name can be changed and a symbol can be set.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Modification of Memory Points (Including Home and Special Memory Points)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>The position, telephone number, name and symbol of registered memory points (including 1 home and 5 special memory points) and detour memory points can be modified.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Deletion of Memory Points (Including Home and Special Memory Points)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Registered memory points (including 1 home and 5 special memory points) and detour memory points can be deleted.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>User Customize</TITLE>
+<ITEM><PTXT>Up to 3 patterns of navigation settings, such as display settings, can be stored. By recalling these navigation settings, the system can be smoothly adapted when the purpose of use or the user changes.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A808K385I02" INDSW = "OFF">
+<TITLE>User Customize Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670026e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Setting Items That Can Be Stored (Example)</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Map orientation setting, map display mode setting, map display scale setting, right screen setting for 2 screen, volume setting, automatic maintenance notification setting, menu screen setting items, VICS map display setting, VICS road display content setting, VICS interrupt setting, ETC setting<HINTREF     REFID = "H334120021A808K38501"/></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H334120021A808K38501">Vehicles with factory-option ETC system with navigation link function.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Settings</TITLE>
+<ITEM><PTXT>Settings for each item can be made on the navigation screen.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>List of Setting Items</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Map Display Settings</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Automatic Display Switching Settings</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Guidance Display Settings</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Voice Settings</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Route Settings</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Others</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><TITLE>Disconnect</TITLE>
+<ITEM><PTXT>Data communication with the G-BOOK center is disconnected.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Data in Use</TITLE>
+<ITEM><PTXT>Information such as the database stored on the hard disk in use is displayed.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>NAVI/AI-SHIFT</TITLE>
+<ITEM><PTXT>NAVI AI-SHIFT has been adopted, which selects the appropriate gear according to the road shape and road gradient, obtained by combining road corner information from the navigation computer with road gradient information calculated by the engine control computer, and according to vehicle information from the vehicle. For details, refer to the Chassis section.<XREF     REFID = "S334030063A875"/>
+</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A808K219" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Other Functions</TITLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Heartful Voice</TITLE>
+<ITEM><PTXT>Voice messages such as "Thank you for driving. ", "Today is ○ month × day, △ day of the week. " can be given when arriving home or getting into the vehicle. The heartful voice ON/OFF setting is made in "Settings" on the menu screen.</PTXT></ITEM>
+<ITEM><PTXT>Voice guidance can be given even while a screen other than the navigation mode is displayed, as long as route guidance is in progress.</PTXT></ITEM>
+<ITEM><PTXT>Under the following conditions, voice guidance may not be given even if the heartful voice is turned ON in the settings.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT>When arriving home, if the heartful voice has already been output once, voice guidance is not given unless ACC is turned OFF and then ON.</PTXT></ITEM>
+<ITEM><PTXT>If ACC is turned ON within a 500m radius of home, voice guidance is not given.</PTXT></ITEM>
+<ITEM><PTXT>If home is set as an intermediate destination, voice guidance is not given.</PTXT></ITEM></LIST1></HINT></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120021A814S"><SCTITLE/>
+
+<PARA INFOID = "T120021A814" UPDATE = "ORIGINAL" LDUP = "20Jun2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>HDD Navigation Information Mode Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By pressing the "Information/G" panel switch, the screen changes to the information mode screen, where each information display can be selected. Also, by touching "Next Page" or "Previous Page" on the information mode screen, the next or previous page can be displayed.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A814I01" INDSW = "OFF">
+<TITLE>Information Mode Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k3840112e" WIDTH = "6.903in" HEIGHT = "2.486in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T120021A814I02" INDSW = "OFF">
+<TITLE>Information Mode Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "43%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "37%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Function Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Functions</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Optional Equipment Installed</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>FM Multiplex</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display of FM multiplex general text broadcasts</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "7"><PTXT>None</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>TEL (Phonebook Display)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display of telephone number list</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Surrounding Monitor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Settings related to the back guide monitor</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Operation Guide</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Displays the operating procedure for each application</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Maintenance</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Input and display of maintenance information</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Calendar</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display of calendar</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Facilities with Information</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display of detailed information on major facilities on the map</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Setting</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display settings for information screen, audio screen, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>HELPNET</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Reporting, settings and operation of the HELPNET system</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "3"><PTXT>Specified types of Bluetooth-compatible cellular phone</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>TEL (Hands-free Calling)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Hands-free Calling</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Amusement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display and operation of amusement applications of the G-BOOK online service</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Main Menu</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display and operation of the G-BOOK online service</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>ETC</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display of information related to ETC</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Factory-option ETC on-board unit with navigation link function</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T120021A814K440" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>HELPNET</TITLE>
+<LIST1><ITEM><PTXT>By touching "HELPNET" on the information mode screen, the emergency call system HELPNET can be used. For details, refer to HELPNET System.<XREF     REFID = "T334120021K922Ka79"/>
+</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A814K464" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Main Menu</TITLE>
+<LIST1><ITEM><PTXT>By touching "Main Menu" on the information mode screen, the total mobility service "G-BOOK" can be used. For details, refer to G-BOOK ALPHA System.<XREF     REFID = "T334120021K922K464"/>
+</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A814T050" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Amusement</TITLE>
+<LIST1><ITEM><PTXT>By touching "Amusement" on the information mode screen, amusement applications (AUTOLIVE, G-SOUND, etc.) can be used. For details, refer to Amusement.<XREF     REFID = "T334120021K922T050"/>
+</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A814K034" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>FM Multiplex</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By touching "FM Multiplex" on the screen while the information mode screen is displayed, the screen changes to the FM multiplex screen and the text information of FM multiplex general text broadcasts is displayed. Some information cannot be displayed while driving.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A814K034I01" INDSW = "OFF">
+<TITLE>FM Multiplex Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4600026e" WIDTH = "7.069in" HEIGHT = "2.542in" />
+</FIGURE>
+</INDICATE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>FM Multiplex Mode Function List</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "85%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Description</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Contents</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>The contents of FM multiplex general text broadcasts are displayed, up to a maximum of 6 items (information is selected from "1" to "6" on the screen). On screens other than the contents screen, the contents screen can be called up by touching "Contents" on the screen.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Record/Recall/Delete</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Touching "Record Memo" on the screen records the currently displayed text information in the navigation computer (up to 20 items). Touching "Recall Memo" on the screen recalls and displays the recorded text information. Also, touching "Delete" or "Delete All" on the screen deletes the recorded information. Touching "Delete" deletes the currently displayed text information, and touching "Delete All" deletes all text information stored in the HDD navigation.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Auto Advance/Stop</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When the text information of an FM multiplex general text broadcast has multiple pages, touching "Auto Advance" on the screen automatically advances and displays each page. Also, touching "Stop" on the screen stops the auto advance. Auto advance cannot be used while driving.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Auto Station Select</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Touching "Auto Station Select" on the screen tunes to a station broadcasting FM multiplex text information.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Emergency Broadcast Reception</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When FM multiplex emergency information is received while text information is displayed, the display switches automatically.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Program Link</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Touching "Program Link" on the screen switches to the linked information program.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T120021A814W016" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>TEL (Phonebook Display)</TITLE>
+<LIST1><ITEM><PTXT>By touching "TEL" on the screen while the information mode screen is displayed and then touching "Traffic/Navi" on the telephone screen, the screen changes to the phonebook screen, where a list of telephone numbers of facilities (such as JAF and the Japan Road Traffic Information Center) stored in the hard disk drive (HDD) can be displayed.</PTXT></ITEM>
+<ITEM><PTXT>If telephone numbers have been entered for the set destination or registered memory points and special memory points, the telephone numbers of those points can also be displayed.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A814W016I01" INDSW = "OFF">
+<TITLE>Phonebook Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670030e" WIDTH = "7.069in" HEIGHT = "2.542in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T120021A814W017" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>TEL (Hands-free Calling)</TITLE>
+<LIST1><ITEM><PTXT>By touching "TEL" on the screen while the information mode screen is displayed, the screen changes to the telephone screen, and hands-free calls can be made with a Bluetooth-compatible cellular phone. For details, refer to Hands-free Calling.<XREF     REFID = "S334120021K387"/>
+</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A814K444" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Surrounding Monitor</TITLE>
+<LIST1><ITEM><PTXT>By touching "Vehicle Surroundings Monitor" on the screen while the information mode screen is displayed, the screen changes to the vehicle surroundings monitor setting screen, where settings for the back guide monitor can be made.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A814Ka74" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Operation Guide</TITLE>
+<LIST1><ITEM><PTXT>By touching "Operation Guide" on the screen while the information mode screen is displayed, the screen changes to the operation guide screen, where operating instructions for the navigation functions, audio functions, G-BOOK ALPHA and voice recognition functions can be viewed.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A814K386" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Maintenance</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By touching "Maintenance" on the screen while the information mode screen is displayed, the screen changes to the maintenance menu screen, where various maintenance information such as oil change timing can be displayed and entered (timing, distance, dealer, etc.). Also, by touching "Personal Items" on the screen while the maintenance menu screen is displayed, the screen changes to the personal items screen, where personal information such as the license renewal date can be displayed and dates can be entered.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A814K386I01" INDSW = "OFF">
+<TITLE>Maintenance Menu Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4600022e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Maintenance Menu List</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Engine Oil Change</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Wiper Rubber Replacement</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Oil Filter Replacement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Engine Coolant Replacement</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Tire Rotation</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Brake Fluid Replacement</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Tire Replacement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Automatic Transmission Fluid (ATF) Replacement</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Battery Replacement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Personal Items (Go to Personal Items Menu)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Brake Pad Replacement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Personal Items Menu List</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>ProCare 10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Insurance Expiration</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>12-month Inspection</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>License Renewal</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Vehicle Inspection (Shaken)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Air Cleaner</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Glass Coating</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>V-belt</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>High Polymer Maintenance</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Personal Reminder (Set With Own Title)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Air Purifier Filter Replacement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T120021A814K107" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Calendar</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By touching "Calendar" on the information mode screen, the screen changes to the calendar screen and a calendar can be displayed.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A814K107I01" INDSW = "OFF">
+<TITLE>Calendar Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4560007e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T120021A814K174" UPDATE = "ORIGINAL" LDUP = "27Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Facilities with Information</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By touching "Facilities with Information" on the screen while the information mode screen is displayed, the screen changes to the facility information search screen, where detailed information on major facilities on the map stored on the hard disk (facility overview, opening hours, fees, exterior photos, maps, etc.) can be searched and displayed.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A814K174I01" INDSW = "OFF">
+<TITLE>Facility Information Search Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670033e" WIDTH = "7.069in" HEIGHT = "2.542in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T120021A814K562" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>ETC</TITLE>
+<LIST1><ITEM><PTXT>Displayed when the factory-option ETC with navigation link function is installed; touching it changes the screen to the ETC screen, where ETC (Electronic Toll Collection) information (usage history, tolls, etc.) can be displayed.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021A814K725" UPDATE = "ORIGINAL" LDUP = "9Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Setting</TITLE>
+<LIST1><ITEM><PTXT>By touching "Settings" on the screen while the information mode screen is displayed, the screen changes to the settings screen, where continuous display settings for each operation screen, such as the audio operation screen and information screen, can be made. Also, the switch color of the settings screens (screens other than the map) can be selected from 2 types (green and orange).</PTXT></ITEM>
+<ITEM><PTXT>In addition to the above settings, when a Bluetooth-compatible cellular phone is connected, settings for using the communication functions (G-BOOK ALPHA, hands-free and HELPNET) can also be made.</PTXT></ITEM>
+<ITEM><PTXT>The personal information delete switch can delete information such as navigation memory point information, the hands-free phonebook and music recorded in the sound library.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A814K725I01" INDSW = "OFF">
+<TITLE>Settings Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "K4730073E" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120021A809S"><SCTITLE/>
+
+<PARA INFOID = "T120021A809" UPDATE = "ORIGINAL" LDUP = "16May2006"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>HDD Navigation TV Mode Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>TV Mode Screen</TITLE>
+<ITEM><PTXT>By pressing the "TV" panel switch, the screen changes to the TV mode screen and the TV broadcast screen is displayed.</PTXT></ITEM>
+<ITEM><PTXT>By pressing the "Audio" panel switch while the TV broadcast screen is displayed, the screen changes to the TV mode operation screen, where on-screen displays such as TV broadcast reception and received channel No. are shown, and TV channel switching, auto preset, etc. can be performed.</PTXT></ITEM>
+<ITEM><PTXT>The TV broadcast screen can be displayed only when the vehicle is stopped with the IG ON or ACC ON and the parking brake applied. In all other cases, only the TV sound can be heard.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A809I01" INDSW = "OFF">
+<TITLE>TV Mode Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670035e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<LIST1 TYPE = "UNORDERED"><TITLE>TV Mode Setting Screen</TITLE>
+<ITEM><PTXT>By touching "Settings" on the screen while the TV mode screen is displayed, the screen changes to the TV mode setting screen.</PTXT></ITEM>
+<ITEM><PTXT>On the TV mode setting screen, display of the received channel No. and station name, display of the preset channel No. and station name, wide mode switching, multiplex sound switching, sound quality adjustment, etc. can be performed.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A809I02" INDSW = "OFF">
+<TITLE>TV Mode Setting Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k3840114e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120021A811S"><SCTITLE/>
+
+<PARA INFOID = "T120021A811" UPDATE = "ORIGINAL" LDUP = "16May2006"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>HDD Navigation Audio Mode Functions</TITLE>
+<LIST1><ITEM><PTXT>By pressing the "Audio" panel switch while the audio is being used, the screen changes to the audio mode screen, where the operating status and operation of music sources (AM/FM radio, MD, CD, etc.) and audio adjustments such as sound quality and volume balance can be performed.</PTXT></ITEM>
+<ITEM><PTXT>Music sources have been enhanced by supporting MP3 (MPEG Audio Layer3)/WMA (Windows Media Audio) and by newly adopting a sound library that allows music CDs to be recorded onto the built-in hard disk.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A811I01" INDSW = "OFF">
+<TITLE>Audio Mode Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "K3840115E" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120021A813S"><SCTITLE/>
+
+<PARA INFOID = "T120021A813" UPDATE = "ORIGINAL" LDUP = "20Jun2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>HDD Navigation Picture Quality Adjustment Mode Functions</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By pressing the "Picture Quality/Off" panel switch, the screen changes to the picture quality adjustment mode screen, where picture quality can be adjusted.</PTXT></ITEM>
+<ITEM><PTXT>On NTSC video display screens such as TV, 4 items (tint, color depth, contrast and brightness) can be adjusted; on RGB video display screens such as the navigation screen, contrast and brightness can be adjusted.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021A813I01" INDSW = "OFF">
+<TITLE>Picture Quality Adjustment Mode Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4960039e" WIDTH = "6.903in" HEIGHT = "2.847in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120021K387S"><SCTITLE/>
+
+<PARA INFOID = "T120021K387" UPDATE = "ORIGINAL" LDUP = "16May2006"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Hands-free Calling Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>G-BOOK ALPHA, a further evolution of the G-BOOK function, has been adopted to provide excellent functionality.</PTXT></ITEM>
+<ITEM><PTXT>By using the voice recognition microphone, telephone switch and a Bluetooth-compatible cellular phone, convenient functions such as "Hands-free Calling", "HELPNET" and "G-BOOK ALPHA" can be used.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T120021K387Ka75" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Hands-free Calling</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Wireless hands-free calling is possible using a Bluetooth-compatible cellular phone.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740061e" WIDTH = "6.903in" HEIGHT = "4.736in" />
+</FIGURE>
+<HINT>
+<PTXT>Only specified models of cellular phone can be used.</PTXT></HINT>
+<LIST1><ITEM><PTXT>After a call is made or received, the conversation takes place through the voice recognition microphone and a vehicle speaker (front speaker RH).</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Voice Recognition Microphone</TITLE>
+<ITEM><PTXT>The voice recognition microphone is a unidirectional box-type microphone and is installed at the rear of the front personal lamp.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Talk Switch/Telephone Switch</TITLE>
+<ITEM><PTXT>The talk switch and telephone switch are located on the right side of the steering pad, allowing switch operation without taking the hands off the steering wheel.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K387K448" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Outgoing Calls</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the vehicle is stopped, pressing the off-hook switch of the telephone switch, or touching "TEL" on the information mode screen displayed by pressing the "Information/G" panel switch, changes the screen to the telephone number input screen, from which calls can be made by the following methods.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K387K448I01" INDSW = "OFF">
+<TITLE>Telephone Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670093e" WIDTH = "2.847in" HEIGHT = "1.639in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T120021K387K448I02" INDSW = "OFF">
+<TITLE>Dialing Methods</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Method</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY VALIGN = "MIDDLE">
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" ALIGN = "CENTER" CONSPIC = "0"><PTXT>Dial Call</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Enter a telephone number to make a call.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" ALIGN = "CENTER" CONSPIC = "0"><PTXT>Phonebook Call</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Call up a telephone number from the phonebook to make a call.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" ALIGN = "CENTER" CONSPIC = "0"><PTXT>One-touch Dial Call</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Select a pre-registered telephone number (one-touch dial) to make a call.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" ALIGN = "CENTER" CONSPIC = "0"><PTXT>History Call</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Call up a number previously called or a number from which a call was previously received to make a call.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<PTXT>In addition to the above basic calling functions, calls can be made from the navigation screen (when telephone number data is available) and by voice recognition, allowing calls to be made in various situations.</PTXT></HINT></LEGEND></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120021K387K449" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Incoming Calls</TITLE>
+<LIST1><ITEM><PTXT>When a call is received, a ringtone sounds<HINTREF REFID = "H334120021K387K44901"/> and the incoming call screen is displayed. When the ringtone is output, the audio sound and navigation voice guidance are muted.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H334120021K387K44901">With some cellular phones, the ringtone does not sound.</PTXT></ITEM></LIST1></HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A call can be answered by touching "Talk (telephone mark)" on the incoming call screen or by pressing the off-hook switch of the telephone switch.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K387K725" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Setting</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By touching "Settings" on the telephone number input screen, the screen changes to the telephone setting screen, where various hands-free settings can be made.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K387K725I01" INDSW = "OFF">
+<TITLE>Telephone Setting Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670092e" WIDTH = "2.875in" HEIGHT = "1.681in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T120021K387K725I02" INDSW = "OFF">
+<TITLE>Telephone Setting Item List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "22%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "42%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2"><PTXT>One-touch Dial Settings</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Registration</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Registration to one-touch dial</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Delete</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Deletion of one-touch dial</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Delete All</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Delete all one-touch dial contents</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "3"><PTXT>Volume Settings</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Receiver Volume</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Volume setting during calls</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Ringtone Volume</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Ringtone volume setting</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Automatic Volume Switching at High Speed ON/OFF</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>ON/OFF of function that automatically raises volume at high speed</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Initialize Settings</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Return each setting to the initial setting state</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "3"><PTXT>Screen Settings</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Screen display setting for incoming calls (full screen/simple)</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Switching of incoming call screen display</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Automatic Answer (On/Off)</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Automatic answer function ON/OFF and time setting when ON</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Connection Confirmation Display at ACC ON (On/Off)</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Bluetooth link connection confirmation display</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Initialize Settings</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Return each setting to the initial setting state</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "7"><PTXT>Phonebook Settings</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "4"><PTXT>Phonebook</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Phonebook Transfer</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Transfer phonebook contents from the phone to the HDD navigation system</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Add New</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Register a new telephone number in the HDD navigation system</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Correction</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Modify an existing telephone number</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Delete</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Delete phonebook contents</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Delete All</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Delete all phonebook contents</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "2"><PTXT>Group</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Registration</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Register a group name</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Delete</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Delete a group name</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Delete All</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Delete all group names</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2"><PTXT>Security</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Change Lock No.</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Change of lock No. for security</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Phonebook/Call History Dialing Restriction (On/Off)</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Restricts calls using the phonebook or call history</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Initialize Settings</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Return each setting to the initial setting state</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1"><PTXT>Phone Selection</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Selection</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Select the communication device to be used</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Detailed Information Display</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Display of information and settings for the cellular phone</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "3"><PTXT>Bluetooth</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Registration</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Cellular phone registration (Bluetooth connectable state)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Change</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Display of setting information and change of settings</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Delete</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Delete the registration of a Bluetooth phone</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "2" NAMEEND = "3"><PTXT>Initialize Settings</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Return each setting to the initial setting state</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T120021K922S"><SCTITLE/>
+
+<PARA INFOID = "T120021K922" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>G-BOOK ALPHA System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By using the factory-option voice recognition microphone/telephone switch and the customer's Bluetooth-compatible cellular phone, the next-generation telematics service "G-BOOK ALPHA", which combines the G-BOOK network with the latest technology, can be used.</PTXT></ITEM>
+<ITEM><PTXT>HELPNET, an emergency call system, is provided as standard with G-BOOK ALPHA.</PTXT></ITEM>
+<ITEM><PTXT>By combining the adoption of a digital rights management system (G-DRM: G-Digital Rights Management) that stores and manages encrypted music data on the hard disk with the G-BOOK ALPHA communication system, new music services can be enjoyed in the vehicle.</PTXT></ITEM>
+<ITEM><PTXT>G-route search has been adopted, which predicts road conditions using traffic information such as VICS and provides guidance on the optimum route avoiding congestion.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922I01" INDSW = "OFF">
+<TITLE>System Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740074e" WIDTH = "6.903in" HEIGHT = "3.347in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T120021K922I02" INDSW = "OFF">
+<TITLE>Main Services Provided by G-BOOK ALPHA</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Typical Examples</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Security/Safety</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Arranging emergency vehicles, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Driving Intelligence</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Operator service, congestion prediction, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Amusement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>On-demand car audio, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Live Navigation</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Town information, gourmet information, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Information</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>News, traffic information, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Entertainment</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Fortune telling, hit rankings, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Communication</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>E-mail, location information exchange, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Safety &amp; Security</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Vehicle maintenance guidance, vehicle position confirmation, etc.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>E-commerce</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Online shopping, etc.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<HINT>
+<PTXT>To use the G-BOOK online service, a service contract and various registrations are required (except for the G-BOOK ALPHA free service). Also, some services require separate fees.</PTXT></HINT>
+
+<MECA ID = "T120021K922K460" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Obtaining Information (Contents) in the Vehicle</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>G-BOOK ALPHA information (contents) in the vehicle is obtained through data communication using a Bluetooth-compatible cellular phone from the G-BOOK network centered on the G-BOOK center.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922K460I01" INDSW = "OFF">
+<TITLE>Image Diagram of Content Acquisition in Vehicle</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740075e" WIDTH = "6.903in" HEIGHT = "3.556in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T120021K922K461" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>G-BOOK Settings</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>To use the G-BOOK service, various settings matching the customer's Bluetooth-compatible cellular phone are required.</PTXT></ITEM>
+<ITEM><PTXT>Settings for using the G-BOOK service are made on the G-BOOK communication setting screen, which is displayed by touching "Settings" on the main menu screen.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922K462" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>About the Browser</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The browser is an application that displays the various contents of the G-BOOK online service provided by G-BOOK.com.</PTXT></ITEM>
+<ITEM><PTXT>On the browser screen, operations such as switching the displayed page, registering bookmarks and requesting content read-out can be performed. Also, during content read-out, operations such as adjusting the read-out volume and stopping can be performed.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922K462I01" INDSW = "OFF">
+<TITLE>Browser Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670046e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE></MECA>
+
+<MECA ID = "T120021K922K464" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Main Menu</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Each G-BOOK function is selected by touching the touch switch frame of each item on the G-BOOK main menu screen, which is reached from "Main Menu" on the information mode screen.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922K464I01" INDSW = "OFF">
+<TITLE>Main Menu Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670047e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T120021K922K464I02" INDSW = "OFF">
+<TITLE>Main Menu Item List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "64%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Description</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>G-BOOK.com</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>G-BOOK.com contents can be viewed and executed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>G-memory Points</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Facilities saved on G-BOOK.com can be searched and displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>History Top</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The page last viewed in the browser can be displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Browsing History</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The browsing history screen can be displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Bookmark</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The bookmark list screen can be displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Settings</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The settings screen can be displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Disconnect</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Data communication with the G-BOOK center can be disconnected.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120021K922K465" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>G-BOOK.com</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>G-BOOK.com is the user's own menu folder, in which convenient preset contents, etc. can be viewed and executed.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922K466" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>G Menu</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>In the G menu, menus that match the user's purpose or interests can be searched for and executed from an extensive range of menus divided into categories.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922K466I01" INDSW = "OFF">
+<TITLE>G Menu Setting Items List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "20%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "80%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Category</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Contents</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Security/Safety</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The emergency call system "HELPNET" service can be used.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Driving Intelligence</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Road conditions can be predicted and the optimum route avoiding congestion can be searched.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Amusement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Music data of various genres can be easily enjoyed in the vehicle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Live Navigation</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Trend spots such as town information, travel information and gourmet information can be searched.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Information</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Currently needed information such as sports, economy, news and weather can be searched.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Entertainment</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Information for enjoying every day, such as games and music hit rankings, can be searched.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Communication</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Communication contents such as e-mail and location information exchange can be used.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Safety &amp; Security</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Contents such as confirming the current position of the vehicle can be used.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>E-commerce</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Online shopping can be enjoyed.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<HINT>
+<PTXT>Menu configuration and contents may be changed without notice to improve operability.</PTXT></HINT></MECA>
+
+<MECA ID = "T120021K922K467" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>G-memory Points</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Facilities, etc. saved on G-BOOK.com can be displayed in a list.</PTXT></ITEM>
+<ITEM><PTXT>Registered G-memory points can also be called up from the memory points in navigation mode and set as a destination.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922Ka76" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Browsing History</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The titles of contents viewed in the browser are saved in order from newest date, making it easy to search when you want to view previously used contents again.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922Ka77" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Bookmark</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By registering the page displayed in the browser as a bookmark, a page you want to view again can be easily displayed from the bookmark screen.</PTXT></ITEM>
+<ITEM><PTXT>The titles of registered bookmarks can also be edited (changed) as desired.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922Ka78" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Voice Recognition Commands</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Some commands, such as My Request and G-BOOK.com, can be operated by voice.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922K471" UPDATE = "ORIGINAL" LDUP = "28Aug2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>My Request</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By registering frequently used services in advance and requesting contents with a simple operation, the information can be read out by voice.</PTXT></ITEM>
+<ITEM><PTXT>Contents requested from My Request are read out by voice even while the current position is displayed in navigation mode.</PTXT></ITEM>
+<ITEM><PTXT>When a request is made by voice recognition, a list screen of contents that can be requested even while driving can be displayed from the map screen in navigation mode.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922Ka79" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>HELPNET System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>HELPNET, an emergency call system, is provided as standard.</PTXT></ITEM>
+<ITEM><PTXT>The HELPNET system is a service in which, when trouble such as an accident or sudden illness occurs while driving, the customer's location information is sent together with voice to the HELPNET operation center over the public network from a Bluetooth-compatible cellular phone, and the HELPNET operation center connects the line to the appropriate emergency agency (police or fire department) as necessary, shortening the time until lifesaving measures are taken.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922Ka79I01" INDSW = "ON">
+<TITLE>System Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670048e" WIDTH = "6.903in" HEIGHT = "3.389in" />
+</FIGURE>
+</INDICATE>
+<LIST1><TITLE>Preparation for First Use</TITLE>
+<ITEM><PTXT>To use the HELPNET system for the first time, an application for the G-BOOK online service and option usage procedures are required in advance.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Service Start Operation (Manual Maintenance Check)</TITLE>
+<ITEM><PTXT>A communication test with the HELPNET center, confirmation of whether membership is registered with the HELPNET center, and an equipment check of the system can be performed manually.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922Ka79I02" INDSW = "ON">
+<TITLE>Manual Maintenance Check Procedure List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "8%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "91%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Step</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Description</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>On the navigation screen, confirm GPS reception, press the "Information/G" panel switch, and then touch "Settings" on the information screen.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Keep touching "Maintenance Check" on the settings screen for approximately 10 seconds.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Connection to the HELPNET center starts.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When connected to the HELPNET center, the current position of the vehicle, the fact that this is a manual maintenance check, and whether membership is registered with the HELPNET center are first confirmed by data communication.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>After data communication is completed, the system enters call mode, and if membership is registered, a conversation with the HELPNET center can be held through the microphone.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>All checks are completed when the conversation ends. The "HELPNET" switch is displayed on the information screen.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<LIST1><TITLE>Means of Notification</TITLE>
+<ITEM><PTXT>A report is made by pressing the "Information/G" panel switch and touching "HELPNET" on the displayed information mode screen.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922Ka79I03" INDSW = "ON">
+<TITLE>Information Mode Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670049e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<LIST1><TITLE>Reporting Procedure</TITLE>
+<ITEM><PTXT>The reporting procedure is as follows.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922Ka79I04" INDSW = "ON">
+<TITLE>Emergency Call Procedure Overview</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "8%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "36%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "23%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Step</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>System Status (Announcements in "")</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Customer Status</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>HELPNET Center/Rescue Agency</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Emergency call available state</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Start Report</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>-</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Calling HELPNET center: "Emergency call started. Connecting to HELPNET. 」</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>-</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Sending report data: "Sending data. Please wait. 」</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Emergency call occurrence and data such as vehicle position are sent to the HELPNET center</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Data from customer received</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>After "Starting conversation with the HELPNET operator. ", converse with the HELPNET center operator</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Report the situation to the HELPNET center operator</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Operator confirms the situation</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Emergency call completed: "Emergency call ended. Any incoming calls from now on will be answered automatically. 」</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Operator requests dispatch from rescue agency</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Waiting for automatic answer state</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Standby</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Rescue agency dispatched</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>-</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Rescue agency arrives at the reported site and provides aid</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<LIST1><TITLE>In the following cases, the emergency notification service may not be available or its quality may be reduced.</TITLE>
+<ITEM><PTXT>When the G-BOOK service contract is not concluded or has expired, or when the service start operation has not been performed after enrollment.</PTXT></ITEM>
+<ITEM><PTXT>When communication is not possible due to a malfunction of HELPNET compatible equipment or vehicle-related equipment.</PTXT></ITEM>
+<ITEM><PTXT>When a center position determination error occurs.</PTXT></ITEM>
+<ITEM><PTXT>When communication is not possible due to a malfunction of the center system.</PTXT></ITEM>
+<ITEM><PTXT>When communication is not possible due to the communication network used by the emergency notification system.</PTXT></ITEM>
+<ITEM><PTXT>When service is interrupted or suspended for reasons of the emergency notification provider.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Precautions</TITLE>
+<ITEM><PTXT>Depending on radio wave conditions, emergency calls and conversations may not be possible.</PTXT></ITEM>
+<ITEM><PTXT>Outside the cellular phone service area, emergency notification is not possible even if the emergency notification operation starts. If emergency notification is not possible, make the report from the nearest public telephone, etc.</PTXT></ITEM>
+<ITEM><PTXT>In a vehicle collision, if equipment necessary for communication malfunctions or is damaged, emergency notification and calls may not be possible.</PTXT></ITEM>
+<ITEM><PTXT>Emergency notification may not be possible if the battery voltage drops or the connection to the battery is cut.</PTXT></ITEM>
+<ITEM><PTXT>While waiting for rescue after emergency notification, move to a safe place where conversation with the center is possible.</PTXT></ITEM>
+<ITEM><PTXT>Perform emergency notification by button operation after stopping the vehicle in a safe place.</PTXT></ITEM>
+<ITEM><PTXT>All communication charges are borne by the customer. (When using a cellular phone)</PTXT></ITEM>
+<ITEM><PTXT>Do not use functions that restrict outgoing or incoming calls (dial lock, etc.) as they will interfere with emergency notification. The functions that interfere with emergency notification differ depending on the telephone or communication carrier used. (When using a cellular phone)</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120021K922Ka81" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>G-BOOK and Navigation Linked Functions</TITLE>
+<LIST1><TITLE>Function Outline</TITLE>
+<ITEM><PTXT>By linking the navigation with the G-BOOK online service, road conditions such as congestion are provided in real time. Main functions include G-route search and congestion prediction.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>G Route Search</TITLE>
+<ITEM><PTXT>Future road conditions are comprehensively predicted from the latest road traffic information from VICS and past statistical data, and the optimum route avoiding congestion is searched and guided.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Congestion Prediction</TITLE>
+<ITEM><PTXT>Displays predicted congestion time, predicted congestion increase/decrease, etc. based on congestion prediction information from the G-BOOK Center.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922Ka81I01" INDSW = "OFF">
+<TITLE>Congestion Prediction Service</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Service Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Service Contents</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Area Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Predicts the latest road traffic information for expressways around the current location and road conditions up to 90 minutes ahead, displays future congestion on an easy-to-understand simplified map on the navigation screen and provides voice guidance.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Route Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The latest road traffic information for expressways on the route to the destination and road conditions predicted up to 90 minutes ahead are displayed on an easy-to-understand simplified map on the navigation screen, and voice guidance is provided.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Time Required Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Simulates, based on congestion prediction, the time required to the next expressway exit when taking a break (30 or 60 minutes) at an expressway service area, and clearly displays the difference in driving time for each break time.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T120021K922T050" UPDATE = "ORIGINAL" LDUP = "10Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Amusement</TITLE>
+<LIST1><TITLE>Function Outline</TITLE>
+<ITEM><PTXT>At vehicle shipment, 10000 or more songs of music data of various genres are encrypted and preinstalled in the HDD navigation system. By selecting the desired songs or course and purchasing online from the G-BOOK center a license key that removes the encryption, music can be easily enjoyed in the vehicle.</PTXT></ITEM>
+<ITEM><PTXT>With the adoption of a hard disk for the navigation system, a digital rights management system (G-DRM: Digital Rights Management) that stores and manages encrypted music data on the hard disk has been incorporated, ensuring thorough copyright management and protection.</PTXT></ITEM>
+<ITEM><PTXT>G-SOUND and AUTOLIVE have been adopted as amusement that can be enjoyed in the vehicle.</PTXT></ITEM>
+<ITEM><PTXT>The amusement menu screen is displayed by pressing the "Information/G" panel switch and touching "Amusement" on the displayed information mode screen.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120021K922T050I01" INDSW = "OFF">
+<TITLE>Amusement Menu Screen</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670050e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</INDICATE>
+<LIST1><TITLE>G-SOUND</TITLE>
+<ITEM><PTXT>A wide range of music, from J-POP and enka to jazz and classical, can be purchased. In addition, music data can be added and updated using a maintenance CD (G-Library disc<HINTREF     REFID = "H334120021K922T05001"/>).</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H334120021K922T05001">A CD-ROM containing encrypted music data of approximately 100 songs each, selected by genre and theme, including the latest J-POP, kayokyoku, Jazz/Classic, Pops/Rock, etc.</PTXT></ITEM></LIST1></HINT>
+<LIST1><TITLE>AUTOLIVE</TITLE>
+<ITEM><PTXT>Karaoke and BGM can be used with unlimited singing and listening for a fixed monthly payment. There is also a download course in which songs or channels are purchased individually using tickets<HINTREF     REFID = "H334120021K922T05002"/>.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H334120021K922T05002">For the download course, tickets must be purchased first.</PTXT></ITEM></LIST1></HINT></MECA>
+
+<MECA ID = "T120021K922Ab05" UPDATE = "ORIGINAL" LDUP = "7Jun2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>G-BOOK ALPHA Free Service</TITLE>
+<LIST1><TITLE>Outline</TITLE>
+<ITEM><PTXT>The G-BOOK ALPHA free service can be used without application and free of charge<HINTREF     REFID = "H334120021K922Ab0501"/> by using a Bluetooth compatible cellular phone or a Bluetooth adapter.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H334120021K922Ab0501">Communication costs are borne by the customer.</PTXT></ITEM></LIST1></HINT>
+<LIST1><TITLE>G Route Search</TITLE>
+<ITEM><PTXT>Future road conditions are comprehensively predicted from the latest road traffic information from VICS and past statistical data, and the optimum route avoiding congestion is searched and guided.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Congestion Prediction</TITLE>
+<ITEM><PTXT>Displays predicted congestion time, predicted congestion increase/decrease, etc. based on congestion prediction information from the G-BOOK Center.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Road Traffic Information</TITLE>
+<ITEM><PTXT>Congestion information, regulation information, etc. for expressways and ordinary roads nationwide are provided by voice and on the display screen.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>CD Title Information Acquisition</TITLE>
+<ITEM><PTXT>When recording a CD, if song titles, etc. are not displayed because the data is not in the navigation hard disk, CD-related information can be obtained through G-BOOK ALPHA and the song title, artist name, etc. can be displayed.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>Drive Plan</TITLE>
+<ITEM><PTXT>Drive routes can be set through the website from a personal computer or cellular phone.</PTXT></ITEM>
+<ITEM><PTXT>By setting the destination and departure time, the route, driving distance and required time are displayed. (Only the required time is displayed on cellular phones)</PTXT></ITEM>
+<ITEM><PTXT>Up to 15 routes can be registered, and for each route up to 4 waypoints can be registered in addition to the final destination.</PTXT></ITEM>
+<ITEM><PTXT>There is also a service that notifies road traffic information on a preset route by e-mail at a specified date and time.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>G-memory</TITLE>
+<ITEM><PTXT>Facilities, etc. saved on the website can be downloaded to the navigation and set as a destination.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>G-BOOK ALPHA Free Service List</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "37%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "62%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Description</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Driving Intelligence</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>G Route Search</PTXT></ITEM>
+<ITEM><PTXT>Congestion Prediction</PTXT></ITEM>
+<ITEM><PTXT>Road Traffic Information</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Amusement</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>CD Title Information Acquisition</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Live Navigation</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Drive Plan<HINTREF     REFID = "H334120021K922Ab0502"/></PTXT></ITEM>
+<ITEM><PTXT>G-memory<HINTREF REFID = "H334120021K922Ab0502"/></PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H334120021K922Ab0502">GAZOO membership registration is required (free of charge). GAZOO is a comprehensive information network provided by Toyota Motor Corporation.</PTXT></ITEM></LIST1></HINT></MECA>
+</PARA>
+</SECTION>
+</SCT>

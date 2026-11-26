@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- $Id: local.html,v 1.37 2004/12/07 12:34:02 k-narumi Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Removal/Installation Procedure</title>
+
+
+<link href="../../css/local.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+<!--
+var g_locXsl = null;
+
+//
+//
+function initLocal() {
+	var kParaId = parent.g_hashPara.keys();
+	var vPname = parent.g_hashPara.values();
+	var paragraphMenu = "<br/>";
+	for(i=0;i< vPname.length;i++){
+		paragraph = "<li><a class='paramenu' onClick='parent.paragChangeMode(this);changeParagraph(\""+ kParaId[i] +"\");' onMouseover='JavaScript:parent.paragOver(this)' onMouseout='JavaScript:parent.paragOut(this)'  href='#' name='"+ kParaId[i] +"'>"+ vPname[i] +"</a></li>";
+		paragraphMenu = paragraphMenu + paragraph;
+	}
+	paradisp.innerHTML = paragraphMenu;
+	if (parent.g_category=="A") {
+		g_locXsl = parent.initXsl("../../xsl/rmv/local.xsl");
+	} else if (parent.g_category=="F"||parent.g_category=="L"||parent.g_category=="D"||parent.g_category=="U") {
+		g_locXsl = parent.initXsl("../../xsl/rmv/gen_local.xsl");
+	} else if (parent.g_category=="M"||parent.g_category=="N") {
+		g_locXsl = parent.initXsl("../../xsl/rmv/local.xsl");
+	} else if (parent.g_category=="G") {
+		g_locXsl = parent.initXsl("../../xsl/rmv/isp_local.xsl");
+	}
+	localDisplay();
+	//if (parent.g_s1Id != null) {
+	//	window.location.hash = parent.g_s1Id;
+	//}	
+}
+
+//
+//
+function localDisplay(){
+	if (parent.g_nowParagraphId==null && parent.g_nowObjXml==null) {
+		parent.g_nowObjXml = parent.g_hashXml.get(parent.g_firstParagraphId);
+	}
+	if (parent.g_nowParagraphId!=null && parent.g_nowObjXml==null) {
+		parent.g_nowObjXml = parent.g_hashXml.get(parent.g_nowParagraphId);
+	}
+	parent.display(parent.g_nowObjXml, g_locXsl,disp,null);
+	if (parent.g_nowParagraphId == null) {
+		parent.paragChangeMode(document.all(parent.g_firstParagraphId));
+	}
+	// XMLファイルが存在しなければローカルナビを空にする
+	if (parent.g_nowObjXml==null) {
+		disp.innerHTML="";
+		return;
+	}
+	var firstSId = getFirstId(parent.g_nowObjXml);
+	parent.g_nowTitleId = firstSId;//構成図のため。
+	if (parent.g_category=="A") {
+		parent.changeMode(document.all(firstSId));
+	} else if (parent.g_category=="F"||parent.g_category=="L"||parent.g_category=="D"||parent.g_category=="U") {
+		var firstItem = getFirstItem();
+		if (firstItem != null) {
+			parent.changeMode(firstItem);
+		}
+	} else if (parent.g_category=="M"||parent.g_category=="N") {
+		parent.changeMode(document.all(firstSId));
+	} else if (parent.g_category=="G") {
+		var firstTtlId = getFirstTtlId(parent.g_nowObjXml);
+		parent.changeMode(document.all(firstTtlId));
+	}
+	parent.global.init();//使用可能ボタン変更のため
+}
+
+//local.htmlでパラグラフ変更リンクclick時
+function changeParagraph(paragraphId){
+	parent.g_nowObjXml = null ;//※パラグラフを切り替えるたびにg_nowObjXml=nullにする。
+	parent.g_s1Id = null;
+	parent.g_category = parent.g_tocXml.selectSingleNode("//para[@id='"+paragraphId+"']").getAttribute("category");
+	if (parent.g_category=="A") {
+		g_locXsl = parent.initXsl("../../xsl/rmv/local.xsl");
+	} else if (parent.g_category=="F"||parent.g_category=="L"||parent.g_category=="D"||parent.g_category=="U") {
+		g_locXsl = parent.initXsl("../../xsl/rmv/gen_local.xsl");
+	} else if (parent.g_category=="M"||parent.g_category=="N") {
+		g_locXsl = parent.initXsl("../../xsl/rmv/local.xsl");
+	} else if (parent.g_category=="G") {
+		g_locXsl = parent.initXsl("../../xsl/rmv/isp_local.xsl");
+	}
+
+	//(initContents()での場合わけの為：localDisplayで作られているか、前のパラグラフで作られたg_nowObjXmlか判別）
+	parent.g_nowParagraphId = paragraphId;
+	parent.local.localDisplay();
+	parent.sts.initStatus();
+	parent.contents.initContents();
+	parent.global.enabledPreparation();
+}
+
+//local.html「要領」で手順変更リンクclick時
+var g_hash = new parent.Hashtable();
+function selectId(id){
+	parent.g_nowTitleId = id;//構成図のために必要。
+	g_hash.put("No", id);
+	if(parent.g_flag==0 && parent.g_category=="A") {
+		parent.display(parent.g_nowObjXml,parent.g_nowContXsl,parent.contents.disp,g_hash);
+		parent.contents.location.hash = "TOP";
+	} else if(parent.g_flag==1 || parent.g_category=="M" || parent.g_category=="N") {
+		parent.contents.location.hash = id;//through表示のアンカー指定。
+	}
+	parent.loadMemoData (parent.contents.document,parent.REPAIR);
+	// クリック後の点々の残りカス対策
+	parent.contents.focus();
+	parent.g_s1Id = id;	
+}
+//local.html「点検」でタイトルclick時
+function selectTop(){
+	parent.contents.location.hash = "TOP";
+	// クリック後の点々の残りカス対策
+	parent.contents.focus();
+}
+//初期表示時に利用：第1<s-1>id値を取得
+function getFirstId(objXml){
+	if (parent.g_s1Id != null) {
+		return parent.g_s1Id;
+	}
+	if (objXml == null) return null;
+	var nodes = objXml.selectNodes("//s-1");
+	if ((nodes != null) && (nodes.length > 0)) {
+		return nodes.item(0).getAttribute("id");
+	} else {
+		return null;
+	}
+}
+//初期表示時に利用：第1<ttl>id値を取得(カテゴリG)
+function getFirstTtlId(objXml){
+	var nodes = objXml.selectNodes("//ttl");
+	if ((nodes != null) && (nodes.length > 0)) {
+		return nodes.item(0).getAttribute("id");
+	} else {
+		return null;
+	}
+}
+//初期表示時に利用：第1リスト(<a>)を取得(カテゴリF,L,D,U)
+function getFirstItem(){
+	var olList = this.document.getElementsByTagName("ol");
+	if (olList.length > 0) {
+		return olList.item(0).getElementsByTagName("a").item(0);
+	} else {
+		return null;
+	}
+}
+-->
+</script>
+</head>
+<body onload="initLocal()">
+<a name="TOP"></a>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><br></td></tr>
+	<tr>
+		<td class="text">Removal/Installation Procedure</td>
+	</tr>
+	<tr>
+		<td>
+			<ul class="paramenu">
+				<div id="paradisp"></div>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+	 <td><div id="disp"></div></td>
+	</tr>
+</table>
+</body>
+</html>

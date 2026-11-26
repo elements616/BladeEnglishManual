@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+
+<!ENTITY T120041K251 SYSTEM "t403120041k251.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120041K251S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120041K251" UPDATE = "ORIGINAL" LDUP = "21Jul2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Rear View Monitor Camera</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The rear view monitor camera consists of an image input section using an ultra-wide-angle lens and an image signal output section consisting of a compact (1/4 inch) color CCD camera.</PTXT></ITEM></LIST1>
+<LIST1><ITEM><PTXT>The image signal output section uses a CCD (Charge Coupled Device) image sensor to convert the image captured (input) by the lens into electrical signals according to light intensity, and outputs them to the intelligent parking assist computer.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The output image from the rear view monitor camera is itself reversed to match the view when looking rearward in the inner rear view mirror. Therefore, care is required because the image on the screen is shown laterally reversed compared with looking directly rearward (objects on the left side of the vehicle are displayed on the left side of the screen, and objects on the right side of the vehicle on the right side of the screen).</PTXT></ITEM></LIST1>
+</PARA>
+</SECTION>

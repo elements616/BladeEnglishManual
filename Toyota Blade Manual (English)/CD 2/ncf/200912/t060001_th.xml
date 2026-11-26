@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740020c SYSTEM "../xml/grph_ent/a4740020c.png" NDATA png>
+<!ENTITY a4740021c SYSTEM "../xml/grph_ent/a4740021c.png" NDATA png>
+<!ENTITY a4740022c SYSTEM "../xml/grph_ent/a4740022c.png" NDATA png>
+<!ENTITY a4740169c SYSTEM "../xml/grph_ent/a4740169c.png" NDATA png>
+<!ENTITY c5930008c SYSTEM "../xml/grph_ent/c5930008c.png" NDATA png>
+
+<!ENTITY T070001A235 SYSTEM "../xml/t478070001a235.xml">
+<!ENTITY T070001A235A364 SYSTEM "../xml/t478070001a235a364.xml">
+<!ENTITY T070001A235A115 SYSTEM "../xml/t478070001a235a115.xml">
+<!ENTITY T070001A237 SYSTEM "../xml/t478070001a237.xml">
+<!ENTITY T070001A238 SYSTEM "../xml/t478070001a238.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T070001A235S"><SCTITLE/>
+
+<PARA INFOID = "T070001A235" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Steering Column Outline</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A manual tilt &amp; telescopic steering column is used on all models, allowing the driver to set any desired operating position.</PTXT></ITEM>
+<ITEM><PTXT>An energy absorbing mechanism and an intermediate shaft contraction mechanism are used to ensure excellent driver safety in a collision.</PTXT></ITEM>
+<ITEM><PTXT>To ensure safety in a collision, a separation mechanism is provided on the break-away bracket. Separation of the break-away bracket is controlled by the break-away capsules at the vehicle mounting points.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740020c" WIDTH = "6.903in" HEIGHT = "6.694in" />
+</FIGURE>
+
+<MECA ID = "T070001A235A364" UPDATE = "ORIGINAL" LDUP = "29Jan2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Construction and Operation of Tilt &amp; Telescopic Mechanism</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The tilt mechanism has an adjustment range of 15mm up and down from the neutral position for a total of 30mm, and the telescopic mechanism has an adjustment range of 20mm forward and rearward from the neutral position for a total of 40mm.</PTXT></ITEM>
+<ITEM><PTXT>The tilt &amp; telescopic operation lever is provided at 1 location, improving operability for the driver.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740021c" WIDTH = "6.903in" HEIGHT = "2.917in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T070001A235A115" UPDATE = "ORIGINAL" LDUP = "25Aug2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Energy Absorbing Mechanism</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A tube contraction type energy absorbing mechanism is used. The tube contraction type utilizes the sliding resistance between the inner tube and outer tube.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740022c" WIDTH = "6.903in" HEIGHT = "2.569in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T070001A237S"><SCTITLE/>
+
+<PARA INFOID = "T070001A237" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Intermediate Shaft</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A shaft contraction mechanism is used in the intermediate shaft.</PTXT></ITEM>
+<ITEM><PTXT>In a collision, the slide mechanism of the intermediate shaft contracts due to the input from the steering gear box direction, absorbing the impact and restraining the steering column and steering wheel from being pushed into the cabin.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740169c" WIDTH = "6.903in" HEIGHT = "1.972in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T070001A238S"><SCTITLE/>
+
+<PARA INFOID = "T070001A238" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON"     SELECT = "Vehicle Outline: Design">
+<TITLE>Steering Wheel</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The grip portion of the steering wheel has been made thicker than before, improving the feel when gripping the steering wheel.</PTXT></ITEM>
+<ITEM><PTXT>A multi-information display switching switch (DISP switch) has been added to the steering switches, and the layout of each switch has been changed to improve operability.</PTXT></ITEM>
+<ITEM><PTXT>The bezel of the steering switches has been changed to high-brightness silver.</PTXT></ITEM>
+<ITEM><PTXT>The paddle shift switch shape on 2GR-FE engine models has been changed to a sportier design.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930008c" WIDTH = "6.903in" HEIGHT = "3.556in" />
+</FIGURE>
+</PARA>
+</SECTION>
+</SCT>

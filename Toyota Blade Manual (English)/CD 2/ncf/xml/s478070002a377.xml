@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY c5930009c SYSTEM "grph_ent/c5930009c.png" NDATA png>
+
+<!ENTITY T070002A377 SYSTEM "t478070002a377.xml">
+<!ENTITY T070002A377A250 SYSTEM "t478070002a377a250.xml">
+<!ENTITY T070002A377A053 SYSTEM "t478070002a377a053.xml">
+<!ENTITY T070002A377A126 SYSTEM "t478070002a377a126.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T070002A377S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T070002A377" UPDATE = "ORIGINAL" LDUP = "29Nov2003"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Electric Power Steering Computer</TITLE>
+<LIST1><ITEM><PTXT>A function that sounds a buzzer when a system malfunction occurs has been added. When a system malfunction occurs, the multi-buzzer in the combination meter sounds and the electric power steering warning light illuminates to inform the driver of the malfunction.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930009c" WIDTH = "6.917in" HEIGHT = "3.569in" />
+</FIGURE>
+
+<MECA ID = "T070002A377A250" UPDATE = "ORIGINAL" LDUP = "29Nov2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Assist Control Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Power assist control has the following functions.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Basic Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Calculates the assist current and assist direction from the torque sensor signal and drives the drive circuit to output drive current to the motor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Inertia Compensation Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Increases the responsiveness of the assist force during steering to improve steering feel.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Friction Compensation Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Eliminates the feeling of friction during steering to improve steering feel.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Return Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Optimizes the return characteristics during steering.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>System Overheat Protection Control</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Provides overheat protection for the motor and electric power steering computer.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T070002A377A053" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Fail-safe Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>If a malfunction occurs in the system, the fail-safe function operates. The electric power steering warning light in the combination meter illuminates and the buzzer sounds, and the output current is cut off or gradually reduced to switch to manual steering, or the amount of power assist is limited.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T070002A377A053I01" INDSW = "OFF">
+<TITLE>Fail-safe List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "40%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "59%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Fail-safe Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Torque Sensor System Malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Assist is prohibited.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Motor Overheat</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Assist force is limited until the motor temperature drops.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Motor Short (Including Drive System Malfunction)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1" VALIGN = "MIDDLE" CONSPIC = "0">
+<PTXT>Assist is prohibited.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" ALIGN = "LEFT" CONSPIC = "0">
+<PTXT>Motor Overcurrent</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Electric Power Steering Computer Overheat</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1" VALIGN = "MIDDLE" CONSPIC = "0">
+<PTXT>Assist force is limited.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Temperature Sensor System Malfunction in Electric Power Steering Computer</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Electric Power Steering Computer System Malfunction (Including Booster Circuit System Malfunction)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Assist is prohibited.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Vehicle Speed System Malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Assist force is temporarily limited. (Normal assist after returning to normal)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE" CONSPIC = "0"><PTXT>Power Supply Voltage Malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Assist is temporarily limited. (Normal assist after voltage recovers)</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T070002A377A126" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Diagnosis Function</TITLE>
+<LIST1><ITEM><PTXT>A diagnosis function has been adopted for serviceability. For details, refer to the Repair Manual.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+</SECTION>

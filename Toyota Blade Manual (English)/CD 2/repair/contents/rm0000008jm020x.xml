@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001C_S000C" variety="S000C">
+<name>Audio &amp; Visual</name>
+<ttl id="1001C_S000C_742AC_T002N" variety="T002N">
+<name>Audio System</name>
+<para id="RM0000008JM020X" category="J" type-id="300X3" name-id="641GU-00" from="200612" to="200912">
+<dtccode/>
+<dtcname>Radio cannot receive</dtcname>
+<subpara id="RM0000008JM020X_05" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM0000008JM020X_06" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000008JM020X_06_0029" proc-id="RM0550J___00005H200000">
+<testtitle>Inspect Malfunction Occurrence Conditions</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect Malfunction Occurrence Conditions</ptxt>
+<test2>
+<ptxt>Check under what conditions (locations) noise occurs.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.99in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Occurs regardless of location</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Occurs in specific locations</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008JM020X_06_0030" fin="false">A</down>
+<right ref="RM0000008JM020X_06_0031" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0030" proc-id="RM0550J___00005H300000">
+<testtitle>Inspect Aftermarket Parts (Sunshade Film, Telephone Antenna, etc.)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect aftermarket parts</ptxt>
+<test2>
+<ptxt>Check whether aftermarket parts such as sunshade film or a telephone antenna are installed.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No aftermarket parts (including non-genuine wiring)</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Noise entering the radio is suppressed to a level that causes no practical problems, so extremely loud noise is not expected. If loud noise occurs, check that the ground at the antenna installation area is normal, that all genuine noise suppression parts are installed, and that there is no non-genuine wiring.</ptxt>
+</atten4>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008JM020X_06_0033" fin="false">OK</down>
+<right ref="RM0000008JM020X_06_0032" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0031">
+<testtitle>Radio wave disturbance (external factors such as reception conditions)</testtitle>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0032">
+<testtitle>Effect of aftermarket parts</testtitle>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0033" proc-id="RM0550J___00005GW00000">
+<testtitle>Inspect for Antenna Noise</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect for Antenna Noise</ptxt>
+<test2>
+<ptxt>With ACC ON, turn on the radio and set it to AM mode.</ptxt>
+</test2>
+<test2>
+<ptxt>Remove the roof antenna pole.</ptxt>
+</test2>
+<test2>
+<ptxt>Check that noise is produced from the speakers when a screwdriver touches the antenna pole mounting thread of the amplifier antenna assembly.</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No noise (scratching sound) produced</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Noise (scratching sound) produced</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008JM020X_06_0034" fin="false">A</down>
+<right ref="RM0000008JM020X_06_0037" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0034" proc-id="RM0550J___00005H400000">
+<testtitle>Inspect Antenna Ground Installation Condition</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect ground installation condition</ptxt>
+<test2>
+<ptxt>Check that the ground section of the amplifier antenna assembly is securely attached to the body.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Installation normal</ptxt>
+</specitem>
+</spec>
+</test2>
+<test2>
+<ptxt>Check that the ground section of antenna cord NO.2 is securely attached to the body.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Installation normal</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008JM020X_06_0035" fin="false">OK</down>
+<right ref="RM0000008JM020X_06_0038" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0035" proc-id="RM0550J___00005GY00000">
+<testtitle>Inspect Antenna Cord Sub-assembly NO.2</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Pre-inspection Preparation</ptxt>
+<figure>
+<graphic graphicname="E141955" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Make the connection between the amplifier antenna assembly and antenna cord No.2 accessible.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the connector at the connection between the amplifier antenna assembly and antenna cord No.2.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Noise generation check</ptxt>
+<test2>
+<ptxt>With the radio receiver assembly connector connected, turn the ignition switch to ACC.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn on the radio and set it to AM mode.</ptxt>
+</test2>
+<test2>
+<ptxt>Check that noise is produced from the speakers when a metal object such as a thin flat-tip screwdriver or thin wire touches the antenna jack of antenna cord No.2.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Noise (scratching sound) produced</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+<test1>
+<ptxt>Voltage Inspection</ptxt>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between terminal 1 (ANT) of the antenna cord No.2 connector and body ground.</ptxt>
+<spec>
+<title>Voltage</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Terminal (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (ANT) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Receiving radio (AM/FM)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008JM020X_06_0036" fin="false">A</down>
+<right ref="RM0000008JM020X_06_0039" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0036" proc-id="RM0550J___00005GZ00000">
+<testtitle>Inspect Antenna Cord Sub-assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Pre-inspection Preparation</ptxt>
+<figure>
+<graphic graphicname="E141954J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Make the connection between the antenna cord and antenna cord No.2 accessible.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the connector at the connection between the antenna cord and antenna cord No.2.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Noise generation check</ptxt>
+<test2>
+<ptxt>With the radio receiver assembly connector connected, turn the ignition switch to ACC.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn on the radio and set it to AM mode.</ptxt>
+</test2>
+<test2>
+<ptxt>Check that noise is produced from the speakers when a metal object such as a thin flat-tip screwdriver or thin wire touches the antenna jack of the antenna cord.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Noise (scratching sound) produced</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+<test1>
+<ptxt>Voltage Inspection</ptxt>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between terminal 1 (ANT) of the antenna cord connector and body ground.</ptxt>
+<spec>
+<title>Voltage</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Terminal (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (ANT) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Receiving radio (AM/FM)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008JM020X_06_0041" fin="false">A</down>
+<right ref="RM0000008JM020X_06_0040" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0037">
+<testtitle>Replace Radio Receiver Assembly<xref label="Seep01" href="RM000002BZJ001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0038">
+<testtitle>Install properly</testtitle>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0039">
+<testtitle>Replace Amplifier Antenna Assembly<xref label="Seep01" href="RM000002BZY001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0040">
+<testtitle>Replace Antenna Cord Sub-assembly NO.2<xref label="Seep01" href="RM000002C04001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0041" proc-id="RM0550J___00005H000000">
+<testtitle>Inspect Radio Receiver Assembly (Antenna)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Pre-inspection Preparation</ptxt>
+<figure>
+<graphic graphicname="E101041" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test2>
+<ptxt>Disconnect the antenna plug.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Noise generation check</ptxt>
+<test2>
+<ptxt>With the radio receiver assembly connector connected, turn the ignition switch to ACC.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn on the radio and set it to AM mode.</ptxt>
+</test2>
+<test2>
+<ptxt>Check that noise is produced from the speakers when a metal object such as a thin flat-tip screwdriver or thin wire touches the antenna jack of the radio receiver assembly.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Noise (scratching sound) produced</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+<test1>
+<ptxt>Voltage Inspection</ptxt>
+<figure>
+<graphic graphicname="E141956J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), with the vehicle side wire harness connector connected, measure the voltage between each terminal from the back side of the connector.</ptxt>
+<spec>
+<title>Voltage</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Terminal (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A8(ANT) - A7(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Receiving radio (AM/FM)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008JM020X_06_0042" fin="false">OK</down>
+<right ref="RM0000008JM020X_06_0044" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0042" proc-id="RM0550J___00005H100000">
+<testtitle>Inspect Wire Harness or Connector (Radio Receiver Assembly - Antenna Cord)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Pre-inspection Preparation</ptxt>
+<figure>
+<graphic graphicname="E122009J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Make the connection between the antenna cord and vehicle wire harness accessible.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the connector at the connection between the antenna cord and vehicle wire harness.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Voltage Inspection</ptxt>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between terminal 1 (ANT) and body ground from the back side of the vehicle side wire harness connector.</ptxt>
+<spec>
+<title>Voltage</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Terminal (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (ANT) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Receiving radio (AM/FM)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000008JM020X_06_0043" fin="true">OK</down>
+<right ref="RM0000008JM020X_06_0045" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0043">
+<testtitle>Replace Antenna Cord Sub-assembly<xref label="Seep01" href="RM000002C04001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0044">
+<testtitle>Replace Radio Receiver Assembly<xref label="Seep01" href="RM000002BZJ001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000008JM020X_06_0045">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

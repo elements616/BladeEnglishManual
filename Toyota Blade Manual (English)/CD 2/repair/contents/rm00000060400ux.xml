@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1002J_S000U" variety="S000U">
+<name>Brake Control</name>
+<ttl id="1002J_S000U_744TG_T0089" variety="T0089">
+<name>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</name>
+<para id="RM00000060400UX" category="D" type-id="304CS" name-id="442O6-00" from="200612">
+<name>Freeze Frame Data/Detailed Diagnostic Information</name>
+<subpara id="RM00000060400UX_z0" proc-id="RM0550J___00004J000000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>About Freeze Frame Data Output</ptxt>
+<step2>
+<ptxt>The skid control computer (built into the actuator) stores the vehicle (sensor) conditions when the system operates or when a malfunction DTC is output, and these can be displayed using the SST (TaSCAN).</ptxt>
+</step2>
+<step2>
+<ptxt>Freeze Frame Data During System Operation</ptxt>
+<step3>
+<ptxt>Data is stored when the system operates and is updated each time the system operates.</ptxt>
+</step3>
+<step3>
+<ptxt>The number of times the IG has been turned OFF → ON since the system last operated is stored and displayed up to 31 times.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The IG ON count is incremented only when the vehicle is driven at 7km/h or more after the IG is turned OFF → ON.</ptxt>
+</item>
+<item>
+<ptxt>If "Number of IG ON Times Since Freeze" exceeds 31, "31" is displayed.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+<step3>
+<ptxt>When freeze frame data from when a malfunction DTC occurred is stored, the freeze frame data from system operation is cleared.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Freeze Frame Data When Malfunction DTC Occurs</ptxt>
+<step3>
+<ptxt>When a malfunction DTC is output, the freeze frame data from when the malfunction code occurred is stored.</ptxt>
+</step3>
+<step3>
+<ptxt>Once freeze frame data from when a malfunction DTC occurred is stored, the freeze frame data is not updated until the DTCs are cleared.</ptxt>
+</step3>
+<step3>
+<ptxt>In freeze frame data from when a malfunction DTC occurred, "Number of IG ON Times Since Freeze" is not stored.</ptxt>
+<table pgwide="1">
+<title>Freeze Frame Data List</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.75in"/>
+<colspec colname="COL4" colwidth="1.79in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>(TaSCAN Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output Item</ptxt>
+<ptxt>(Unit)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Steering Angle Sensor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Steering Angle Data (°)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Steering operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Increases when turned left, decreases when turned right</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Operating System</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Operating System</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Each system operating</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>None</ptxt>
+</item>
+<item>
+<ptxt>ABS</ptxt>
+</item>
+<item>
+<ptxt>VSC</ptxt>
+</item>
+<item>
+<ptxt>TRC</ptxt>
+</item>
+<item>
+<ptxt>BA</ptxt>
+</item>
+<item>
+<ptxt>Hill-start Assist</ptxt>
+</item>
+<item>
+<ptxt>Prohibited</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Maintenance Mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Maintenance Mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal ←→ In maintenance mode</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal ←→ Maintenance mode</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Stop Switch</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stop Switch</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pedal operated ←→ released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON←→OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Parking Brake</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Parking Brake Switch</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Parking brake applied ←→ released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON←→OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Buzzer</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Skid Control Buzzer (VSC Buzzer)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Buzzer sounding ←→ not sounding</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON←→OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Shift Lever Position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift Lever Position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Each shift lever position</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>P、N</ptxt>
+</item>
+<item>
+<ptxt>R</ptxt>
+</item>
+<item>
+<ptxt>D/M</ptxt>
+</item>
+<item>
+<ptxt>Unknown</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Gear Position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Transmission Gear Position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Each gear position</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Lo</ptxt>
+</item>
+<item>
+<ptxt>2-speed</ptxt>
+</item>
+<item>
+<ptxt>3-speed</ptxt>
+</item>
+<item>
+<ptxt>4-speed</ptxt>
+</item>
+<item>
+<ptxt>5-speed</ptxt>
+</item>
+<item>
+<ptxt>6-speed</ptxt>
+</item>
+<item>
+<ptxt>P、N</ptxt>
+</item>
+<item>
+<ptxt>R</ptxt>
+</item>
+<item>
+<ptxt>Unknown</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Speed Sensor FR</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>FR Wheel Speed (km/h)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stopped</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>While driving</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proportional to wheel speed</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Speed Sensor FL</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>FL Wheel Speed (km/h)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stopped</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>While driving</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proportional to wheel speed</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Speed Sensor RR</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>RR Wheel Speed (km/h)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stopped</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>While driving</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proportional to wheel speed</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Speed Sensor RL</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>RL Wheel Speed (km/h)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stopped</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>While driving</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proportional to wheel speed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Body Speed (km/h)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle stopped or driving</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0to326.4km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Vehicle Speed Change Amount</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Vehicle Body Acceleration/Deceleration (m/s<sup>2</sup>)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When stopped</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0m/s<sup>2</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>While driving</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proportional to vehicle body acceleration/deceleration</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Forward and Rearward G</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Vehicle Body Acceleration/Deceleration (m/s<sup>2</sup>)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When stopped</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0m/s<sup>2</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>While driving</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proportional to forward/rearward acceleration/deceleration</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Lateral G</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Vehicle Body Acceleration/Deceleration (m/s<sup>2</sup>)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When stopped</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0m/s<sup>2</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>While driving</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proportional to lateral acceleration/deceleration</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Yaw Rate Sensor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output Value (°/s)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>While turning</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proportional to yaw rate (left turn is positive)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Master Pressure Sensor</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Output Value (V)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pedal released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approx. 0.3V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Pedal being operated</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proportional to pedal force</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Master Pressure Sensor Change Amount</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Sensor Gradient (MPa/s)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pedal being operated</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proportional to pedal operation speed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Pedal released and pedal position held</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0Mpa/s</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Actual Output Torque</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Engine Output Torque (Nm)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Accelerator pedal operated</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proportional to pedal depression amount</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Accelerator pedal released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine idling torque</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Accelerator Opening Rate</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Accelerator Opening Rate (%)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pedal released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0%</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Pedal depressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proportional to pedal depression amount</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Number of IG ON Times Since Data Freeze</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Number of IG ON times</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0to31</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Elapsed Time Since Data Freeze</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Elapsed Time (msec)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0to510</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

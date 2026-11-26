@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../_runtime/legacy.css">
+<script src="../../../_runtime/compat.js"></script>
+	
+	<script type="text/javascript" src="../scripts/category.js"></script>
+	<script type="text/javascript" src="../scripts/lib/ServiceCategory.js"></script>
+	<script type="text/javascript" src="../scripts/lib/TitleList.js"></script>
+	<script type="text/javascript" src="../scripts/lib/domparser.js"></script>
+	<script type="text/javascript" src="../scripts/lib/url.js"></script>
+	<script type="text/javascript" src="../scripts/lib/hashtable.js"></script>
+	<link rel="stylesheet" href="../styles/basic.css" />
+	<style>
+	/* converter: lay this sidebar out like the New Car Features sidebar (ncf/xsl/menu.xsl + ncf/css/left.css) */
+	body { margin: 8px; }
+	#head.lblIndex { width: 195px; box-sizing: border-box; margin: 0; padding: 0 0 2px 0; font: bold 10pt sans-serif;
+		color: #666666; border-bottom: 1px solid #999999; }
+	#info { position: relative; box-sizing: border-box; width: 175px; min-height: 22px; margin: 5px 0 0 15px !important;
+		padding: 2px 3px !important; border: 1px solid #cccccc; font: 10pt sans-serif; cursor: pointer; }
+	#info::before { content: ""; position: absolute; left: -11px; top: -1px; width: 10px; height: 100%; min-height: 22px;
+		background: #b7c4ca url(../../ncf/images/b_icon0.gif) no-repeat left top; }
+	#info + div { padding: 0 !important; height: 11px; }
+	#category.categorylist { padding: 0 0 0 5px; }
+	#category table.list { width: 185px; margin: 0 0 11px 0; table-layout: fixed; }
+	#category table.list td:first-child { width: 10px; background: #b7c4ca url(../../ncf/images/b_icon0.gif) no-repeat left top;
+		vertical-align: top; }
+	#category table.list td:first-child img { content: url(../../ncf/images/b_icon0.gif); width: 10px; height: 20px; display: block; }
+	#category p.space { margin: 0; padding: 0; height: 11px; }
+	#category div.menu, #category div.menu_hover, #category div.menu_active {
+		box-sizing: border-box; width: 100%; min-height: 22px; padding: 2px 3px; border: 1px solid #cccccc;
+		font: 10pt sans-serif; cursor: pointer; }
+	#category div.menu, #info.category { background: #ffffff; color: #000000; }
+	#category div.menu_hover, #info.category_hover { background: #c6cfd3; color: #ffffff; }
+	#category div.menu_active, #info.category_active { background: #a9b2b7; color: #ffffff; }
+	</style>
+</HEAD>
+
+<BODY onLoad="call_runOnLoadProc();" background="../icon/bg2.png">
+</BODY>
+</HTML>

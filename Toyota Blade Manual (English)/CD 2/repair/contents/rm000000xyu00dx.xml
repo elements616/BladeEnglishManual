@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002P_S0005" variety="S0005">
+<name>Meter</name>
+<ttl id="1002P_S0005_741K5_T000E" variety="T000E">
+<name>Meter &amp; Gauge System</name>
+<para id="RM000000XYU00DX" category="C" type-id="800QU" name-id="630WQ-00" from="200612">
+<dtccode>U0100</dtccode>
+<dtcname>EFI ECU Communication Stop</dtcname>
+<subpara id="RM000000XYU00DX_01" type-id="33" category="03" proc-id="RM0550J___000006400000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>The combination meter assembly (meter ECU) receives signals from the engine control computer via CAN communication.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1. DTC detection condition</ptxt>
+<ptxt>2. Malfunction status</ptxt>
+<ptxt>2. Malfunction duration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0100</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Vehicle speed 5km/h or more, IG voltage 10.5V or more.</ptxt>
+</item>
+<item>
+<ptxt>Communication with engine control computer interrupted.</ptxt>
+</item>
+<item>
+<ptxt>3 seconds or more. (If communication with both EFI and ABS/VSC ECUs is interrupted, the no-reception state continues for 60 seconds)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>CAN Communication System</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XYU00DX_02" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM000000XYU00DX_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000XYU00DX_03_0001" proc-id="RM0550J___000006500000">
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs that are output. (see <xref label="Seep01" href="RM0000005KH00RX"/>)</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If a CAN communication system malfunction DTC (U0100) is output, refer to "How to Proceed with Troubleshooting" for the CAN communication system.</ptxt>
+</item>
+<item>
+<ptxt>If a CAN communication system malfunction DTC and other DTCs are output simultaneously, troubleshoot the other DTCs after the CAN communication malfunction has returned to normal.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XYU00DX_03_0002" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000XYU00DX_03_0002">
+<testtitle>Go to CAN Communication System<xref label="Seep01" href="RM000001R4W009X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

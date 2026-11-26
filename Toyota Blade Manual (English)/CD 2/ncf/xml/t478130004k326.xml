@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARA INFOID = "T130004K326" UPDATE = "ORIGINAL" LDUP = "29Mar2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Mirror Heater System</TITLE>
+<LIST1><ITEM><PTXT>"Retractable remote control outer mirrors with mirror heaters" with a timer function (approximately 15 minutes) have been provided depending on the specifications.</PTXT></ITEM>
+<ITEM><PTXT>A push type switch has been adopted and located in the air conditioning control panel. The switch is shared by the mirror heaters and rear window defogger.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T130004K326I01" INDSW = "OFF">
+<TITLE>Mirror Heater System Components</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740301b" WIDTH = "6.903in" HEIGHT = "4.042in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T130004K326I02" INDSW = "OFF">
+<TITLE>Mirror Heater System Components Main Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "37%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "62%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Component [Abbreviation]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Retractable Remote Control Outer Mirror with Mirror Heater Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1><ITEM><PTXT>The built-in panel type heater heats up when the rear window defogger relay turns ON.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Air Conditioner Control Panel</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sends the mirror heater operation request signal to the air conditioning ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Air Conditioning Computer [Air Conditioning ECU]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When the operation request signal is received from the air conditioning control panel, turns the rear window defogger relay ON and drives the mirror heaters.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+&T130004K326K383;
+</PARA>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T100001A500A745" UPDATE = "ORIGINAL" LDUP = "24Dec2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Door Unlock Operation</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740049b" WIDTH = "6.903in" HEIGHT = "2.389in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Driver/Front Passenger Door Unlock</TITLE>
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "7%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "56%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>№</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sends request signals to the outside antennas.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Front door outside handle (with built-in outside antenna/touch sensor)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Transmits the request signal. → Forms the outside detection area.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Electronic Key</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>When the electronic key (or key holder) enters the outside detection area and receives the request signal, it returns the ID code including the response code.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Door Control Receiver</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives the ID code from the electronic key and sends it to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Identifies and verifies the ID code. The touch sensor in the door outside handle for which verification was OK is activated, and the system enters door unlock standby mode<HINTREF     REFID = "H478100001A500A74501"/>.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Door outside handle (with built-in outside antenna/touch sensor)</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>When the touch sensor detects that the door outside handle has been gripped in door unlock standby mode<HINTREF REFID = "H478100001A500A74501"/>, it sends a touch sensor ON signal to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sends the door unlock control signal to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Performs door unlock (door lock position switch ON).<HINTREF     REFID = "H478100001A500A74502"/></PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478100001A500A74501">From the door unlock standby state until there is input to the touch sensor, outside verification is performed every 3 seconds, and if verification is OK, the system again waits for touch sensor input. If there is no input for approximately 10 minutes or more, verification stops and the system enters standby; door unlock operation becomes possible again (standby canceled) by the signals from lock operation with the wireless remote control function or door lock control switch (for manual operation), or from door key-linked lock/unlock.</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001A500A74502">When the main body ECU confirms door unlock, it performs answer-back output. In addition, if no door is opened (courtesy light switch ON) for approximately 30 seconds, a door lock signal is output to all doors to lock them.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE>
+<INDICATE ID = "T100001A500A745I01" INDSW = "OFF">
+<TITLE>Back Door Unlock</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "7%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "35%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "56%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>№</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Operation / Action</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>8,9</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>With the power OFF (ACC and IG OFF), all doors locked and all doors closed, press the back door opener switch while carrying the electronic key. → The main body ECU recognizes back door opener switch ON and sends the back door opener switch ON signal to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sends the request signal to the luggage room outside antenna.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>11</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Luggage Room Outside Antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Transmits the request signal. → Forms the luggage room outside detection area.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Electronic Key</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>When it receives the request signal, it returns the ID code including the response code.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Door Control Receiver</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Receives the ID code from the electronic key and sends it to the certification ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Identifies and verifies the ID code, and if it matches, sends a back door unlock command to the main body ECU.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>12</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>After back door unlock is performed, the back door opens.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>

@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../_runtime/legacy.css">
+<script src="../../../../../_runtime/compat.js"></script>
+
+<title>ETCS-i Control</title>
+<link type="text/css" href="../css/main2.css" rel="stylesheet">
+<link type="text/css" href="../css/style.css" rel="stylesheet">
+<script src="../js/hidden.js" language="JavaScript"></script>
+</head>
+<body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
+<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td align="left"><input onClick="printCheck()" value="Print" name="submit" type="submit"></td><td align="center"> </td><td align="right"><input onClick="closeWindow()" value="Close" name="submit2" type="submit"></td>
+</tr>
+</table>
+<div align="left">
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="blue" width="5%"> </td><td align="center" class="blue" width="80%">ETCS-i Control</td><td width="15%" class="blue" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">Through centralized control by the engine control computer, engine output relative to the accelerator opening is optimally controlled, achieving good accelerator controllability and vehicle stability over the entire driving range.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">The functions of normal throttle opening control (non-linear control), idle speed control (ISC), traction control (including VSC) and cruise control have been integrated into the 1-valve type electronically controlled throttle body.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">Through integrated control with the powertrain system, excellent handling stability and comfort are achieved, ensuring vehicle stability.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">To allow driving in the unlikely event of a malfunction, the system has a 2-system redundant configuration to ensure reliability.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A387I01');chgImg('imT010251A387I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A387I01" align="absmiddle"><a name="t010251a387i01">ETCS-i Control List</a></span>
+<br>
+<div id="tmT010251A387I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark" rowspan="2" valign="MIDDLE">
+<div class="text">Throttle Valve Control</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Normal Control</div>
+</td><td class="color1">
+<div class="text">Controls the throttle valve opening to generate engine output according to the driving conditions and accelerator pedal opening.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Radar Cruise Control<a href="#H478010251A38701"><sup>*</sup></a>
+</div>
+</td><td class="color1">
+<div class="text">Enables constant speed driving, including vehicle-to-vehicle distance control, based on the signal from the distance control computer.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2" valign="MIDDLE">
+<div class="text">ECT + EFI + ETCS-i Integrated Control (Shift Shock Reduction Control)</div>
+</td><td class="color1">
+<div class="text">Controls the throttle valve opening during ECT shifting to reduce shift shock during upshifts and downshifts and shorten shift time.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2" valign="MIDDLE">
+<div class="text">Maximum Speed Control</div>
+</td><td class="color1">
+<div class="text">When the vehicle speed reaches 180km/h, the throttle valve is closed to restrict any increase in vehicle speed.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2" valign="MIDDLE">
+<div class="text">TRC (VSC) + ETCS-i Cooperative Control</div>
+</td><td class="color1">
+<div class="text">Stabilizes the vehicle through communication with the skid control computer when TRC and VSC are operating.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2" valign="MIDDLE">
+<div class="text">Idle Speed Control (ISC)</div>
+</td><td class="color1">
+<div class="text">Controls the fast idle speed according to the engine coolant temperature and the idle speed after engine warm-up. In addition, the idle speed is controlled through the fuel injection volume and throttle opening.</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">HINT</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="27">*</td><td class="text"><a name="H478010251A38701"></a>
+<div class="text">w/ Radar Cruise Control System</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A387I02');chgImg('imT010251A387I02');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A387I02" align="absmiddle"><a name="t010251a387i02">ETCS-i Control Block Diagram</a></span>
+<br>
+<div id="tmT010251A387I02" style="display:none">
+<br>
+
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740157p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A387I03');chgImg('imT010251A387I03');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A387I03" align="absmiddle"><a name="t010251a387i03">Function List</a></span>
+<br>
+<div id="tmT010251A387I03" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark" colspan="2">
+<div class="text">Name</div>
+</td><td class="gray3_dark">
+<div class="text">Function</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2" valign="MIDDLE">
+<div class="text">Air Flow Meter</div>
+</td><td class="color1">
+<div class="text">Detects the intake air temperature and intake air volume.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2" valign="MIDDLE">
+<div class="text">1-valve Electronically Controlled Throttle Body</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Throttle Position Sensor</div>
+</td><td class="color1">
+<div class="text">Detects the throttle valve opening angle.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE">
+<div class="text">Electronic Throttle Motor</div>
+</td><td class="color1">
+<div class="text">Controls the throttle valve opening angle according to driving conditions.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2" valign="MIDDLE">
+<div class="text">Accelerator Position Sensor</div>
+</td><td class="color1">
+<div class="text">Detects the accelerator opening.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2" valign="MIDDLE">
+<div class="text">Intake and Exhaust Cam Position Sensors</div>
+</td><td class="color1">
+<div class="text">Detects the actual camshaft angle.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2" valign="MIDDLE">
+<div class="text">Crankshaft Position Sensor</div>
+</td><td class="color1">
+<div class="text">Detects the crank angle (engine speed).</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2" valign="MIDDLE">
+<div class="text">Water Temperature Sensor</div>
+</td><td class="color1">
+<div class="text">Detects the engine coolant temperature.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2" valign="MIDDLE">
+<div class="text">Starter Relay</div>
+</td><td class="color1">
+<div class="text">Sends the starter voltage during engine starting as the starter signal.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2" valign="MIDDLE">
+<div class="text">Neutral Start Switch</div>
+</td><td class="color1">
+<div class="text">Detects the P, N and D positions of the A/T.</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2" valign="MIDDLE">
+<div class="text">Combination Meter</div>
+</td><td class="color1">
+<div class="text">Receives the vehicle speed signal (SP1) and sends the vehicle speed signal (SPD).</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A387A239');chgImg('imT010251A387A239');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT010251A387A239" align="absmiddle"><a name="t010251a387a239">Idle Speed Control</a></span>
+<br>
+<div id="tmT010251A387A239" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The engine control computer controls the throttle valve opening to the optimum position to maintain the target idle speed under various conditions.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A387A239I01');chgImg('imT010251A387A239I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A387A239I01" align="absmiddle"><a name="t010251a387a239i01">Idle Speed Control List</a></span>
+<br>
+<div id="tmT010251A387A239I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">Starting Control</div>
+</td><td class="color1">
+<div class="text">When the engine is started, the throttle valve is opened to increase the intake air volume and improve engine startability.</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" rowspan="5" valign="MIDDLE">
+<div class="text">Predictive Control</div>
+</td><td class="color1">
+<div class="text">When the signals below are detected, the throttle valve opening is controlled to suppress speed fluctuations.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When a change in idle speed is predicted.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the electrical load changes.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the A/C switch is operated.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the shift position is changed.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">Deceleration Control</div>
+</td><td class="color1">
+<div class="text">During deceleration, the throttle valve is opened to increase the intake air flow, lowering the vacuum in the intake manifold, which reduces the consumption of oil drawn into the combustion chamber, prevents engine stall due to a sudden drop in engine speed and improves driveability.</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">Feedback Control</div>
+</td><td class="color1">
+<div class="text">The engine speed is measured for a certain period, and if there is a difference from the target speed, the throttle valve opening is controlled to bring the idle speed to the target value.</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A387A239X02');chgImg('imT010251A387A239X02');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A387A239X02" align="absmiddle"><a name="t010251a387a239x02">Target Speed</a></span>
+<br>
+<div id="tmT010251A387A239X02" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark" colspan="2">&nbsp;</td><td class="gray3_dark">
+<div class="text">P, N Position</div>
+</td><td class="gray3_dark">
+<div class="text">D Position</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2">
+<div class="text">No-load Speed [r/min]</div>
+</td><td class="color1" align="CENTER">
+<div class="text">730</div>
+</td><td class="color1" align="CENTER">
+<div class="text">700</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2">
+<div class="text">With Electrical Load [r/min]</div>
+</td><td class="color1" align="CENTER">
+<div class="text">730</div>
+</td><td class="color1" align="CENTER">
+<div class="text">700</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" rowspan="2" valign="MIDDLE">
+<div class="text">A/C ON [r/min]</div>
+</td><td class="color1">
+<div class="text">Low Load</div>
+</td><td class="color1" align="CENTER">
+<div class="text">730</div>
+</td><td class="color1" align="CENTER">
+<div class="text">730</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">High Load</div>
+</td><td class="color1" align="CENTER">
+<div class="text">800</div>
+</td><td class="color1" align="CENTER">
+<div class="text">750</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="blue" width="5%"> </td><td align="center" class="blue" width="80%">Related Systems</td><td width="15%" class="blue" align="right"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A077A874R01');chgImg('imT010251A077A874R01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A077A874R01" align="absmiddle"><a name="t010251a077a874r01">MRE Type Cam Position Sensor Operation</a></span>
+<br>
+<div id="tmT010251A077A874R01" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The MRE type cam position sensor consists of a magnet and a sensor circuit (IC) with a built-in MRE.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">In the MRE type cam position sensor, the rotation of the timing rotor changes the magnetic vector (direction of the magnetic field) applied to the MRE in the cam position sensor, which changes the internal resistance of the MRE. This resistance change is converted to voltage, and the output waveform is compared with a threshold value and shaped into a rectangular wave of Hi (approximately 4V) and Lo (approximately 1V), which is output to the engine control computer. This output signal is compared with the Ne signal to detect the actual camshaft angle and identify cylinders.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">By identifying the position of the timing rotor from the voltage output as Hi/Lo digital signals from when the engine is stopped and from pattern recognition of the peak and valley widths of the timing rotor, the crank position at starting can be detected earlier than with the conventional pickup coil type cam position sensor, improving engine startability.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4560013p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A148K732R02');chgImg('imT010251A148K732R02');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A148K732R02" align="absmiddle"><a name="t010251a148k732r02">Fail-safe Operation</a></span>
+<br>
+<div id="tmT010251A148K732R02" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The throttle position sensor detects the opening angle with 2 systems: a main circuit and a sub circuit. If a malfunction occurs in the signal, the engine control computer switches to limp mode.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A148K732R02I01');chgImg('imT010251A148K732R02I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A148K732R02I01" align="absmiddle"><a name="t010251a148k732r02i01">When Malfunction Is Detected</a></span>
+<br>
+<div id="tmT010251A148K732R02I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="color1">
+<div class="text">If a malfunction occurs in either or both circuits, the engine control computer detects the malfunction from the voltage difference between the main circuit and sub circuit. At this time, power to the throttle motor is cut and the throttle valve is returned to a predetermined opening angle by the return spring. Limp mode driving is made possible by controlling engine output using fuel injection control and ignition timing control. Also, even if the engine control computer detects another malfunction such as in the throttle motor, limp mode driving is made possible by performing the above control.</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3940038p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A326K732R03');chgImg('imT010251A326K732R03');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A326K732R03" align="absmiddle"><a name="t010251a326k732r03">Fail-safe Operation</a></span>
+<br>
+<div id="tmT010251A326K732R03" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The accelerator position sensor detects the opening angle with 2 systems: a main circuit and a sub circuit. If a malfunction occurs in the signal, the engine control computer switches to limp mode.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A326K732R03I01');chgImg('imT010251A326K732R03I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A326K732R03I01" align="absmiddle"><a name="t010251a326k732r03i01">When 1 System Malfunctions</a></span>
+<br>
+<div id="tmT010251A326K732R03I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="color1">
+<div class="text">If a malfunction occurs in either circuit, the engine control computer detects the malfunction from the voltage difference between the main circuit and sub circuit. At this time, a limited accelerator opening angle is calculated from the sensor value of 2 circuit, and throttle control is continued, enabling limp mode driving.</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3940036p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A326K732R03I02');chgImg('imT010251A326K732R03I02');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A326K732R03I02" align="absmiddle"><a name="t010251a326k732r03i02">When 2 System Malfunctions</a></span>
+<br>
+<div id="tmT010251A326K732R03I02" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="color1">
+<div class="text">The engine control computer detects the malfunction from the voltages of the main circuit and sub circuit and controls the throttle valve opening angle only within the idling range.</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3940037p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A387B');chgImg('imT010251A387B');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_a0.gif" border="0" id="imT010251A387B" align="absmiddle"><a name="t010251a387b">Related Parts</a></span>
+<br>
+<div id="tmT010251A387B" style="display:none">
+<br>
+
+<br>
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Hot-wire Type Air Flow Meter</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">A compact, lightweight plastic hot-wire type plug-in air flow meter has been adopted. Accordingly, the air cleaner is mounted above the transmission and has been downsized, reducing weight and making it more compact.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">The hot-wire type plug-in air flow meter passes part of the intake air through the detection section and directly measures the mass flow rate, improving detection accuracy and reducing intake resistance.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">A bypass flow measurement method, which is less affected by intake pulsation from the engine, has been adopted. Also, low loss is achieved by a flow passage structure with low fluid resistance, allowing air volumes from small to large to be measured reliably.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A076A223');chgImg('imT010251A076A223');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT010251A076A223" align="absmiddle"><a name="t010251a076a223">Hot-wire Type Air Flow Meter Operation</a></span>
+<br>
+<div id="tmT010251A076A223" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Part of the intake air is bypassed and the intake air volume is measured at the hot wire measuring section. The hot wire measuring section uses a platinum filament (platinum hot wire), and a bridge circuit is formed by the hot wires of the intake air temperature measuring resistor and the heating resistor (heater) to measure the engine intake air volume. Due to the characteristics of the hot-wire type air flow meter, the mass flow rate can in principle be measured directly, so density correction for changes in intake air temperature is not necessary; however, intake air temperature information is required for engine controls such as EFI. Therefore, a compact thermistor type intake air temperature sensor is built into the air flow meter to detect the intake air temperature.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">A bridge circuit is a circuit connected as shown in the illustration below, in which, when R1 × R4 = R2 × R3 holds, V1 = V2 and the value indicated by ammeter G is 0.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/k4480006p.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the intake air volume changes, the bridge circuit of the hot wire measuring section feedback-controls the power supplied to the heating resistor so that the temperature difference between the intake air temperature measuring resistor and the heating resistor (heater) is always kept constant. This supplied power is converted into a voltage and output to the engine control computer. The engine control computer calculates the engine intake air volume from the predetermined relationship between the air flow meter output voltage and flow rate.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The bridge circuit of the hot-wire type air flow meter is constructed as shown in the illustration below. For example, when the intake air volume increases, the heating resistor is cooled and the value of RH decreases, resulting in RH (R1) × R4 &lt; RK (R2) × R3,VM ≠ VK. When the control section detects this condition, it increases the current flowing from the power supply to VB (heating RH) and controls so that RH (R1) × R4 = RK (R2) × R3,VM = VK.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/k4480003p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Crankshaft Position Sensor (Ne Signal)</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">A highly accurate electromagnetic pickup type sensor has been adopted. Detects the crank position and crank angular velocity.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">The timing rotor on the crankshaft has 34 signal teeth with 2 teeth missing for top dead center detection. The crank position sensor detects the crank rotation signal every 10° and can accurately detect top dead center from the missing teeth area.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">As the crankshaft rotates, the air gap between the timing rotor protrusions and the crank position sensor changes, so the magnetic flux passing through the coil of the crank position sensor increases and decreases, generating an electromotive force in the coil. Because this generated voltage is reversed when the timing rotor protrusion approaches and moves away from the cam position sensor, it appears as an AC voltage.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/s4270044p.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Camshaft Position Sensor (G2 Signal)</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">An MRE (Magneto Resistance Element) type sensor has been adopted.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4460014p.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A077I01');chgImg('imT010251A077I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A077I01" align="absmiddle"><a name="t010251a077i01">Features of MRE Type Sensor</a></span>
+<br>
+<div id="tmT010251A077I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">&nbsp;</td><td class="gray3_dark">
+<div class="text">MRE Type</div>
+</td><td class="gray3_dark">
+<div class="text">Pickup Coil Type (Reference)</div>
+</td>
+</tr>
+<tr>
+<td class="color1" valign="MIDDLE" align="CENTER">
+<div class="text">Signal Output</div>
+</td><td class="color1">
+<div class="text">Constant digital output from zero engine speed.</div>
+</td><td class="color1">
+<div class="text">Analog output in which the output voltage changes with engine speed.</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A077A874');chgImg('imT010251A077A874');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A077A874" align="absmiddle"><a name="t010251a077a874">MRE Type Cam Position Sensor Operation</a></span>
+<br>
+<div id="tmT010251A077A874" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The MRE type cam position sensor consists of a magnet and a sensor circuit (IC) with a built-in MRE.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">In the MRE type cam position sensor, the rotation of the timing rotor changes the magnetic vector (direction of the magnetic field) applied to the MRE in the cam position sensor, which changes the internal resistance of the MRE. This resistance change is converted to voltage, and the output waveform is compared with a threshold value and shaped into a rectangular wave of Hi (approximately 4V) and Lo (approximately 1V), which is output to the engine control computer. This output signal is compared with the Ne signal to detect the actual camshaft angle and identify cylinders.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">By identifying the position of the timing rotor from the voltage output as Hi/Lo digital signals from when the engine is stopped and from pattern recognition of the peak and valley widths of the timing rotor, the crank position at starting can be detected earlier than with the conventional pickup coil type cam position sensor, improving engine startability.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4560013p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Water Temperature Sensor</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">Detects the engine coolant temperature and sends a signal to the engine control computer.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/s4270046p.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Neutral Start Switch</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">Detects the shift position.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740255p.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">1-valve Electronically Controlled Throttle Body</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">A 1-valve type electronically controlled throttle body, in which the throttle valve is driven by a motor, has been adopted, and the bore diameter has been increased and optimized to handle the high output of the engine.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">The accelerator position sensor is located on the accelerator pedal, making the system linkless.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">The driver's operation (accelerator pedal depression amount) is transmitted to the engine control computer by the accelerator position sensor located on the accelerator pedal. The engine control computer determines the throttle opening appropriate to the driving conditions and drives the electronic throttle motor. The throttle valve opening is fed back to the engine control computer by the throttle position sensor.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">A DC motor with good response and low power consumption is used for the throttle valve drive motor, and a non-contact type throttle sensor has been adopted, achieving a lightweight and compact construction.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">The insides of both the accelerator position sensor and the throttle position sensor have a 2-system (main and sub) configuration, and the system is constantly monitored for malfunctions.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">If a malfunction is detected, the warning light in the meter alerts the driver and current to the motor is cut. The throttle valve is returned to a predetermined opening by the throttle valve return spring. Engine output is adjusted according to the accelerator opening through fuel injection cut and ignition retard, enabling the vehicle to be driven.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740186p.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Throttle Position Sensor</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">A non-contact type throttle position sensor has been adopted, using the Hall effect<a href="#H478010251A14801"><sup>*
+					1</sup></a>, which provides an output voltage linear to the throttle valve opening angle, and a Hall element<a href="#H478010251A14802"><sup>*
+					2</sup></a>that can extract magnetic field strength as an electrical signal. When the throttle valve opening angle changes, the angle of the magnetic field relative to the flow of the applied current in the Hall element changes, so the strength of the magnetic field perpendicular to the applied current changes. As a result, the change in voltage generated perpendicular to both the applied current and the magnetic field is sent to the engine control computer as the throttle valve opening angle signal. In addition, reliability is ensured by adopting a 2-system (main and sub) sensor with different output characteristics.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">HINT</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="27">*1</td><td class="text"><a name="H478010251A14801"></a>
+<div class="text">This is a phenomenon in which, when a current flows through a rod- or plate-shaped conductor or semiconductor and a magnetic field is applied perpendicular to it, a potential difference is generated in the direction perpendicular to both the current and the magnetic field.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="27">*2</td><td class="text"><a name="H478010251A14802"></a>
+<div class="text">This is an electronic component that uses the electromotive force generated by the potential difference in a magnetic field.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/s4270010p.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A148K732');chgImg('imT010251A148K732');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A148K732" align="absmiddle"><a name="t010251a148k732">Fail-safe Operation</a></span>
+<br>
+<div id="tmT010251A148K732" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The throttle position sensor detects the opening angle with 2 systems: a main circuit and a sub circuit. If a malfunction occurs in the signal, the engine control computer switches to limp mode.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A148K732I01');chgImg('imT010251A148K732I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A148K732I01" align="absmiddle"><a name="t010251a148k732i01">When Malfunction Is Detected</a></span>
+<br>
+<div id="tmT010251A148K732I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="color1">
+<div class="text">If a malfunction occurs in either or both circuits, the engine control computer detects the malfunction from the voltage difference between the main circuit and sub circuit. At this time, power to the throttle motor is cut and the throttle valve is returned to a predetermined opening angle by the return spring. Limp mode driving is made possible by controlling engine output using fuel injection control and ignition timing control. Also, even if the engine control computer detects another malfunction such as in the throttle motor, limp mode driving is made possible by performing the above control.</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3940038p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Accelerator Pedal</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">A 1-shaft type electronic accelerator pedal with a built-in accelerator position sensor has been adopted, reducing size and weight.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">Reliability is ensured by adopting a 2-system (main and sub) sensor with different output characteristics.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740183p.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%"> </td><td align="center" class="gray" width="80%">Accelerator Position Sensor</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">A non-contact type accelerator position sensor that uses the Hall effect<a href="#H478010251A32601"><sup>*
+					1</sup></a>, which provides an output voltage linear to the throttle valve opening angle, and a Hall element<a href="#H478010251A32602"><sup>*
+					2</sup></a>, which provides an output voltage that is linear with respect to the accelerator pedal depression amount, has been adopted. When the accelerator pedal depression amount changes, the angle of the magnetic field relative to the flow of the applied current in the Hall element changes, so the strength of the magnetic field perpendicular to the applied current changes. The resulting change in voltage, generated perpendicular to both the applied current and the magnetic field, is sent to the engine control computer as the accelerator pedal depression amount signal. In addition, reliability is ensured by adopting a 2-system (main and sub) sensor with different output characteristics.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">HINT</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="27">*1</td><td class="text"><a name="H478010251A32601"></a>
+<div class="text">This is a phenomenon in which, when a current flows through a rod- or plate-shaped conductor or semiconductor and a magnetic field is applied perpendicular to it, a potential difference is generated in the direction perpendicular to both the current and the magnetic field.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="27">*2</td><td class="text"><a name="H478010251A32602"></a>
+<div class="text">This is an electronic component that uses the electromotive force generated by the potential difference in a magnetic field.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/s4270009p.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A326K732');chgImg('imT010251A326K732');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A326K732" align="absmiddle"><a name="t010251a326k732">Fail-safe Operation</a></span>
+<br>
+<div id="tmT010251A326K732" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The accelerator position sensor detects the opening angle with 2 systems: a main circuit and a sub circuit. If a malfunction occurs in the signal, the engine control computer switches to limp mode.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A326K732I01');chgImg('imT010251A326K732I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A326K732I01" align="absmiddle"><a name="t010251a326k732i01">When 1 System Malfunctions</a></span>
+<br>
+<div id="tmT010251A326K732I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="color1">
+<div class="text">If a malfunction occurs in either circuit, the engine control computer detects the malfunction from the voltage difference between the main circuit and sub circuit. At this time, a limited accelerator opening angle is calculated from the sensor value of 2 circuit, and throttle control is continued, enabling limp mode driving.</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3940036p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010251A326K732I02');chgImg('imT010251A326K732I02');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010251A326K732I02" align="absmiddle"><a name="t010251a326k732i02">When 2 System Malfunctions</a></span>
+<br>
+<div id="tmT010251A326K732I02" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="color1">
+<div class="text">The engine control computer detects the malfunction from the voltages of the main circuit and sub circuit and controls the throttle valve opening angle only within the idling range.</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3940037p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+</div>
+</body>
+</html>

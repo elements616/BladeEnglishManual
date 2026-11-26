@@ -1,0 +1,1753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1002J_S000U" variety="S000U">
+<name>Brake Control</name>
+<ttl id="1002J_S000U_744TG_T0089" variety="T0089">
+<name>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</name>
+<para id="RM000000602011X" category="U" type-id="303FJ" name-id="442OB-00" from="200612">
+<name>ECU Data Monitor/Active Test</name>
+<subpara id="RM000000602011X_z0" proc-id="RM0550J___00004IU00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>ECU Data Monitor (Excluding Momentary Interruption Items)</ptxt>
+<step2>
+<ptxt>Turn the IG OFF and connect the SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Turn the IG ON and check the ECU data following the screen display of the SST (TaSCAN).</ptxt>
+<atten3>
+<ptxt>Computer data values vary greatly due to slight measurement errors, differences in measurement environment, changes in the vehicle over time, etc., making it difficult to specify clear standard (judgment) values. Therefore, a malfunction may exist even if values are within the reference range.</ptxt>
+</atten3>
+</step2>
+</step1>
+<table frame="all" pgwide="1">
+<title>ECU Data Monitor (Excluding Momentary Interruption Items)</title>
+<tgroup cols="4">
+<colspec colname="col1" colwidth="1.04in"/>
+<colspec colname="col2" colwidth="2.49in"/>
+<colspec colname="col3" colwidth="2.51in"/>
+<colspec colname="col4" colwidth="1.04in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description / Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Solenoid SFRH</ptxt>
+<ptxt>[SFRH]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates front right hold solenoid status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: ABS not operating</ptxt>
+<ptxt>ON: ABS operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Solenoid SFRR</ptxt>
+<ptxt>[SFRR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates front right pressure reduction solenoid status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: ABS not operating</ptxt>
+<ptxt>ON: ABS operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Solenoid SFLH</ptxt>
+<ptxt>[SFLH]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates front left hold solenoid status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: ABS not operating</ptxt>
+<ptxt>ON: ABS operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Solenoid SFLR</ptxt>
+<ptxt>[SFLR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates front left pressure reduction solenoid status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: ABS not operating</ptxt>
+<ptxt>ON: ABS operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Solenoid SRRH</ptxt>
+<ptxt>[SRRH]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates rear right hold solenoid status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: ABS not operating</ptxt>
+<ptxt>ON: ABS operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Solenoid SRRR</ptxt>
+<ptxt>[SRRR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates rear right pressure reduction solenoid status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: ABS not operating</ptxt>
+<ptxt>ON: ABS operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Solenoid SRLH</ptxt>
+<ptxt>[SRLH]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates rear left hold solenoid status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: ABS not operating</ptxt>
+<ptxt>ON: ABS operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Solenoid SRLR</ptxt>
+<ptxt>[SRLR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates rear left pressure reduction solenoid status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: ABS not operating</ptxt>
+<ptxt>ON: ABS operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Solenoid SM2</ptxt>
+<ptxt>[SM2]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates rear master pressure solenoid status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Brake assist not operating</ptxt>
+<ptxt>ON: Brake assist operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Solenoid SM1</ptxt>
+<ptxt>[SM1]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates front master pressure solenoid status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Brake assist not operating</ptxt>
+<ptxt>ON: Brake assist operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Solenoid Relay</ptxt>
+<ptxt>[SOL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates solenoid relay operation</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Fail-safe Motor Relay</ptxt>
+<ptxt>[FSMR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates fail-safe motor relay operation</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: In fail-safe ←→ Not in fail-safe</ptxt>
+<ptxt>ON: Not in fail-safe</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Motor Relay 1</ptxt>
+<ptxt>[MRL1]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates motor relay operation</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Motor not operating</ptxt>
+<ptxt>ON: Motor operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Stop Switch</ptxt>
+<ptxt>[STP]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates stop light switch operation</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Brake pedal released</ptxt>
+<ptxt>ON: Brake pedal depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Parking Brake</ptxt>
+<ptxt>[PKB]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates parking brake operation</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Parking brake released</ptxt>
+<ptxt>ON: Parking brake applied</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Shift Lever Position</ptxt>
+<ptxt>[SIFT]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates shift lever position</ptxt>
+<ptxt>Display range: Unknown-Lo-2st-3nd-4rd-5th-6th-D/M-P, N-R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P, N: Shift lever position "P" or "N"</ptxt>
+<ptxt>R: Shift lever position "R"</ptxt>
+<ptxt>D/M: Shift lever position "D" or "M"</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Gear Position</ptxt>
+<ptxt>[GPOS]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates transmission gear position</ptxt>
+<ptxt>Display range: Unknown-Lo-2st-3nd-4rd-5th-6th-D/M-P, N-R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P, N: Shift lever position "P" or "N"</ptxt>
+<ptxt>R: Shift lever position "R"</ptxt>
+<ptxt>Changes between Lo, 2st, 3nd, 4rd, 5th and 6th according to transmission status</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Shift Status</ptxt>
+<ptxt>[CHGP]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates transmission shift status</ptxt>
+<ptxt>Display range: Shifting-Not shifting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shifting: Transmission shifting</ptxt>
+<ptxt>Not shifting: Transmission not shifting</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Idle Switch</ptxt>
+<ptxt>[IDL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates throttle valve fully closed</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Accelerator pedal depressed</ptxt>
+<ptxt>ON: Accelerator pedal released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Buzzer</ptxt>
+<ptxt>[BUZZ]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates skid control buzzer status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Skid control buzzer not sounding</ptxt>
+<ptxt>ON: Skid control buzzer sounding</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ABS Light</ptxt>
+<ptxt>[ABSL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates ABS warning light status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: ABS warning light off</ptxt>
+<ptxt>ON: ABS warning light on</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Brake warning light</ptxt>
+<ptxt>[BKWL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates brake warning light status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Brake warning light off</ptxt>
+<ptxt>ON: Brake warning light on</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SLIP Light</ptxt>
+<ptxt>[SLIP]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates slip indicator light status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Slip indicator light off</ptxt>
+<ptxt>ON: Slip indicator light on</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSC Warning Light</ptxt>
+<ptxt>[VSCL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates VSC warning light status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: VSC warning light off</ptxt>
+<ptxt>ON: VSC warning light on</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ABS Control (FR)</ptxt>
+<ptxt>[ASFR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates ABS control status of front right wheel</ptxt>
+<ptxt>Display range: Controlling-Not controlling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Controlling: Front right wheel under ABS control</ptxt>
+<ptxt>Not controlling: Front right wheel not under ABS control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ABS Control (FL)</ptxt>
+<ptxt>[ASFL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates ABS control status of front left wheel</ptxt>
+<ptxt>Display range: Controlling-Not controlling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Controlling: Front left wheel under ABS control</ptxt>
+<ptxt>Not controlling: Front left wheel not under ABS control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ABS Control (RR)</ptxt>
+<ptxt>[ASRR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates ABS control status of rear right wheel</ptxt>
+<ptxt>Display range: Controlling-Not controlling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Controlling: Rear right wheel under ABS control</ptxt>
+<ptxt>Not controlling: Rear right wheel not under ABS control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ABS Control (RL)</ptxt>
+<ptxt>[ASRL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates ABS control status of rear left wheel</ptxt>
+<ptxt>Display range: Controlling-Not controlling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Controlling: Rear left wheel under ABS control</ptxt>
+<ptxt>Not controlling: Rear left wheel not under ABS control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>EBD Control (RR)</ptxt>
+<ptxt>[EDRR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates EBD control status of rear right wheel</ptxt>
+<ptxt>Display range: Controlling-Not controlling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Controlling: Rear right wheel under EBD control</ptxt>
+<ptxt>Not controlling: Rear right wheel not under EBD control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>EBD Control (RL)</ptxt>
+<ptxt>[EDRL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates EBD control status of rear left wheel</ptxt>
+<ptxt>Display range: Controlling-Not controlling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Controlling: Rear left wheel under EBD control</ptxt>
+<ptxt>Not controlling: Rear left wheel not under EBD control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSC Control (FR)</ptxt>
+<ptxt>[VCFR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates VSC control status of front right wheel</ptxt>
+<ptxt>Display range: Controlling-Not controlling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Controlling: Front right wheel under VSC control</ptxt>
+<ptxt>Not controlling: Front right wheel not under VSC control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSC Control (FL)</ptxt>
+<ptxt>[VCFL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates VSC control status of front left wheel</ptxt>
+<ptxt>Display range: Controlling-Not controlling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Controlling: Front left wheel under VSC control</ptxt>
+<ptxt>Not controlling: Front left wheel not under VSC control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSC Control (RR)</ptxt>
+<ptxt>[VCRR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates VSC control status of rear right wheel</ptxt>
+<ptxt>Display range: Controlling-Not controlling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Controlling: Rear right wheel under VSC control</ptxt>
+<ptxt>Not controlling: Rear right wheel not under VSC control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSC Control (RL)</ptxt>
+<ptxt>[VCRL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates VSC control status of rear left wheel</ptxt>
+<ptxt>Display range: Controlling-Not controlling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Controlling: Rear left wheel under VSC control</ptxt>
+<ptxt>Not controlling: Rear left wheel not under VSC control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BA Control</ptxt>
+<ptxt>[BAC]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates brake assist control status</ptxt>
+<ptxt>Display range: Controlling-Not controlling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Controlling: Brake assist under control</ptxt>
+<ptxt>Not controlling: Brake assist not under control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Throttle Close Request</ptxt>
+<ptxt>[REQC]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates throttle close request status from skid control computer (built into actuator assembly)</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Throttle close not requested</ptxt>
+<ptxt>ON: Throttle close requested</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Throttle Open Request</ptxt>
+<ptxt>[REQO]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates throttle open request status from skid control computer (built into actuator assembly)</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Throttle open not requested</ptxt>
+<ptxt>ON: Throttle open requested</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TRC Control</ptxt>
+<ptxt>[TRCC]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates traction control status</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Traction control not operating</ptxt>
+<ptxt>ON: Traction control operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TRC Control (Engine)</ptxt>
+<ptxt>[TRCE]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates whether traction control by engine control is operating</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Traction control by engine control not operating</ptxt>
+<ptxt>ON: Traction control by engine control operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TRC Control (Brake)</ptxt>
+<ptxt>[TRCB]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates whether traction control by brake control is operating</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Traction control by brake control not operating</ptxt>
+<ptxt>ON: Traction control by brake control operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Idle ON</ptxt>
+<ptxt>[IDLJ]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates throttle valve fully closed</ptxt>
+<ptxt>Display range: OFF-ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Accelerator pedal depressed</ptxt>
+<ptxt>ON: Accelerator pedal released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Speed Sensor FR</ptxt>
+<ptxt>[SPFR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates front right wheel speed</ptxt>
+<ptxt>Display range: 0to326.4km/h</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0km/h: Vehicle stopped</ptxt>
+<ptxt>No large fluctuations: Driving at constant speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Speed Sensor FL</ptxt>
+<ptxt>[SPFL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates front left wheel speed</ptxt>
+<ptxt>Display range: 0to326.4km/h</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0km/h: Vehicle stopped</ptxt>
+<ptxt>No large fluctuations: Driving at constant speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Speed Sensor RR</ptxt>
+<ptxt>[SPRR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates rear right wheel speed</ptxt>
+<ptxt>Display range: 0to326.4km/h</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0km/h: Vehicle stopped</ptxt>
+<ptxt>No large fluctuations: Driving at constant speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Speed Sensor RL</ptxt>
+<ptxt>[SPRL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates rear left wheel speed</ptxt>
+<ptxt>Display range: 0to326.4km/h</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0km/h: Vehicle stopped</ptxt>
+<ptxt>No large fluctuations: Driving at constant speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Speed</ptxt>
+<ptxt>[SPD1]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates vehicle speed</ptxt>
+<ptxt>Display range: 0to326.4km/h</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0km/h: Vehicle stopped</ptxt>
+<ptxt>No large fluctuations: Driving at constant speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Speed</ptxt>
+<ptxt>[ERPM]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates engine speed</ptxt>
+<ptxt>Display range: 0to65535r/min</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0km/h: Engine stopped</ptxt>
+<ptxt>No large fluctuations: Constant engine speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>G Sensor (GL1)</ptxt>
+<ptxt>[GGL1]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates G sensor 1 value (acceleration/deceleration)</ptxt>
+<ptxt>Display range: -18.327to18.184m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes continuously: During deceleration and acceleration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>G Sensor (GL2)</ptxt>
+<ptxt>[GGL2]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates G sensor 2 value (acceleration/deceleration)</ptxt>
+<ptxt>Display range: -18.327to18.184m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes continuously: During deceleration and acceleration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Accelerator Opening Rate</ptxt>
+<ptxt>[ACLR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates accelerator pedal opening percentage</ptxt>
+<ptxt>Display range: 0to128%</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes in proportion to pedal depression amount: Accelerator pedal operated</ptxt>
+<ptxt>0%: Accelerator pedal released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Actual Output Torque</ptxt>
+<ptxt>[JSRT]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates engine output torque</ptxt>
+<ptxt>Display range: -1024to1023N*m</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>In proportion to pedal depression amount: Accelerator pedal operated</ptxt>
+<ptxt>Engine idling torque: Accelerator pedal released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Master Pressure Sensor 1</ptxt>
+<ptxt>[PMC1]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates master pressure sensor output value (voltage)</ptxt>
+<ptxt>Display range: 0to5V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes in proportion to pedal force: Pedal operated</ptxt>
+<ptxt>Approximately 0.5V: Pedal released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Yaw Rate Sensor 1</ptxt>
+<ptxt>[YAW1]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates yaw rate 1 value</ptxt>
+<ptxt>Display range: -128to127°/s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0°/s: Vehicle stopped</ptxt>
+<ptxt>-128to0°/s: Turning right</ptxt>
+<ptxt>0to127°/s: Turning left</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Yaw Rate Sensor 2</ptxt>
+<ptxt>[YAW2]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates yaw rate 2 value</ptxt>
+<ptxt>Display range: -128to127°/s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0°/s: Vehicle stopped</ptxt>
+<ptxt>-128to0°/s: Turning right</ptxt>
+<ptxt>0to127°/s: Turning left</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Steering Angle Sensor</ptxt>
+<ptxt>[SS]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates steering angle (counterclockwise is positive)</ptxt>
+<ptxt>Display range: -3276.8to3276.7°</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes continuously: When steering</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Lateral G</ptxt>
+<ptxt>[LRG]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates lateral G</ptxt>
+<ptxt>Display range: -25.105024to24.908891m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes in proportion to generated G: While turning</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Forward and Rearward G</ptxt>
+<ptxt>[FRG]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates longitudinal G</ptxt>
+<ptxt>Display range: -25.105024to24.908891m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes in proportion to generated G: During acceleration/deceleration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Yaw Rate Value</ptxt>
+<ptxt>[YAWV]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates yaw angular velocity</ptxt>
+<ptxt>Display range: -128to127°/s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes in proportion to generated yaw: While turning</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Steering Angle Value</ptxt>
+<ptxt>[SSV]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates steering angle</ptxt>
+<ptxt>Display range: -3276.8to3276.7°</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes in proportion to steering rotation: While steering</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>G Sensor Correction Value</ptxt>
+<ptxt>[GL10]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates G sensor correction value</ptxt>
+<ptxt>Display range: -25.105024to24.908891m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>G Sensor 0 Point Correction Value</ptxt>
+<ptxt>[GL20]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates G sensor 0 point correction value</ptxt>
+<ptxt>Display range: -25.105024to24.908891m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Yaw Rate 0 Point Memory Value</ptxt>
+<ptxt>[YAW0]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates yaw rate value when yaw rate sensor 0 point was obtained</ptxt>
+<ptxt>-128to127°/s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0°/s: After yaw rate sensor 0 point acquisition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Yaw Rate 0 Point Memory Value 2</ptxt>
+<ptxt>[YAW20]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates yaw rate value when yaw rate sensor 0 point was obtained</ptxt>
+<ptxt>Display range: -128to127°/s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0°/s: After yaw rate sensor 0 point acquisition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Steering Angle Sensor 0 Point Correction Value</ptxt>
+<ptxt>[SS0]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates steering angle sensor 0 point correction value</ptxt>
+<ptxt>Display range: -3276.8to3276.7°</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0°: After steering angle sensor 0 point correction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TRC/VSC OFF Mode</ptxt>
+<ptxt>[TRCM]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates whether TRC/VSC OFF mode is active</ptxt>
+<ptxt>Display range: Yes - No - Undetermined</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Wheel Acceleration (FR)</ptxt>
+<ptxt>[ACFR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates front right wheel acceleration</ptxt>
+<ptxt>Display range: -200.84to199.27m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes continuously: During deceleration and acceleration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Wheel Acceleration (FL)</ptxt>
+<ptxt>[ACFL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates front left wheel acceleration</ptxt>
+<ptxt>Display range: -200.84to199.27m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes continuously: During deceleration and acceleration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Wheel Acceleration (RR)</ptxt>
+<ptxt>[ACRR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates rear right wheel acceleration</ptxt>
+<ptxt>Display range: -200.84to199.27m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes continuously: During deceleration and acceleration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Wheel Acceleration (RL)</ptxt>
+<ptxt>[ACRL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates rear left wheel acceleration</ptxt>
+<ptxt>Display range: -200.84to199.27m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes continuously: During deceleration and acceleration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Master Pressure Sensor 1 (0 Point Value)</ptxt>
+<ptxt>[MP10]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates master pressure sensor 0 point value</ptxt>
+<ptxt>Display range: -12.5to12.4Mpa</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2.45 ±1Mpa: After master pressure sensor 0 point correction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Master Pressure Sensor 1 (ECU)</ptxt>
+<ptxt>[PMC1]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates master pressure sensor value</ptxt>
+<ptxt>Display range: -1to23.99Mpa</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes in proportion to pedal force: Brake pedal operated</ptxt>
+<ptxt>Approximately -1-0Mpa: Brake pedal released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Master Pressure Sensor Change Amount (ECU)</ptxt>
+<ptxt>[DPMC]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates master pressure sensor change amount</ptxt>
+<ptxt>Display range: -30to225Mpa/s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Changes in proportion to pedal operation speed: Pedal operated</ptxt>
+<ptxt>0Mpa/s: Pedal released and pedal position held</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Maintenance Mode</ptxt>
+<ptxt>[ADJM]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates maintenance mode</ptxt>
+<ptxt>Display range: Normal - Maintenance mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal: Normal</ptxt>
+<ptxt>Maintenance mode: In maintenance mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Number of IG ON since Maintenance Mode</ptxt>
+<ptxt>[ADJC]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates number of IG ON operations after entering maintenance mode</ptxt>
+<ptxt>Display range: 0to255 times</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Number of DTCs</ptxt>
+<ptxt>[DIAG]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates number of DTCs</ptxt>
+<ptxt>Display Range: 0to255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<step1>
+<ptxt>ECU Data Monitor (Momentary Interruption Items)</ptxt>
+<atten4>
+<ptxt>Using the SST (TaSCAN), momentary interruptions (open circuits) in the connectors and wire harnesses between the skid control computer (built into actuator assembly) ←→ each sensor or between the skid control computer (built into actuator assembly) ←→ engine control computer can be detected with the ECU data monitor.</ptxt>
+</atten4>
+<step2>
+<ptxt>Turn the IG OFF and connect the SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Turn the IG ON, display the ECU data monitor following the screen display of the SST (TaSCAN), and select the item for the area to be monitored for momentary interruption.</ptxt>
+<atten4>
+<ptxt>Momentary interruptions (open circuits) cannot be detected for 3 seconds after the IG is turned ON (during the initial check).</ptxt>
+</atten4>
+<table pgwide="1">
+<title>ECU Data Monitor (Momentary Interruption Items)</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.68in"/>
+<colspec colname="COL2" colwidth="2.24in"/>
+<colspec colname="COL3" colwidth="1.78in"/>
+<colspec colname="COL4" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description / Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Momentary Interruption (Speed Sensor FR)</ptxt>
+<ptxt>[MSFR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates momentary interruption (open) status of wire harness between actuator assembly and speed sensor front RH</ptxt>
+<ptxt>Display range: Momentary interruption - Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Momentary interruption: Momentary interruption (open) occurring</ptxt>
+<ptxt>Normal: Normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Related DTC</ptxt>
+<ptxt>C0200/31</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Momentary Interruption (Speed Sensor FL)</ptxt>
+<ptxt>[MSFL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates momentary interruption (open) status of wire harness between actuator assembly and speed sensor front LH</ptxt>
+<ptxt>Display range: Momentary interruption - Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Momentary interruption: Momentary interruption (open) occurring</ptxt>
+<ptxt>Normal: Normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Related DTC</ptxt>
+<ptxt>C0205/32</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Momentary Interruption (Speed Sensor RR)</ptxt>
+<ptxt>[MSRR]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates momentary interruption (open) status of wire harness between actuator assembly and speed sensor rear RH</ptxt>
+<ptxt>Display range: Momentary interruption - Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Momentary interruption: Momentary interruption (open) occurring</ptxt>
+<ptxt>Normal: Normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Related DTC</ptxt>
+<ptxt>C0210/33</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Momentary Interruption (Speed Sensor RL)</ptxt>
+<ptxt>[MSRL]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates momentary interruption (open) status of wire harness between actuator assembly and speed sensor rear LH</ptxt>
+<ptxt>Display range: Momentary interruption - Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Momentary interruption: Momentary interruption (open) occurring</ptxt>
+<ptxt>Normal: Normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Related DTC</ptxt>
+<ptxt>C0215/34</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Momentary Interruption (EFI Communication)</ptxt>
+<ptxt>[MECM]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates momentary interruption (open) status of wire harness between actuator assembly and engine control computer</ptxt>
+<ptxt>Display range: Momentary interruption - Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Momentary interruption: Momentary interruption (open) occurring</ptxt>
+<ptxt>Normal: Normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Related DTC</ptxt>
+<ptxt>U0100/65</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Momentary Interruption (Yaw Rate Sensor)</ptxt>
+<ptxt>[MYRS]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates momentary interruption (open) status of wire harness between actuator assembly and yaw rate sensor</ptxt>
+<ptxt>Display range: Momentary interruption - Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Momentary interruption: Momentary interruption (open) occurring</ptxt>
+<ptxt>Normal: Normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Related DTC</ptxt>
+<ptxt>U0123/62</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Momentary Interruption (G Sensor)</ptxt>
+<ptxt>[MGS]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates momentary interruption (open) status of wire harness between actuator assembly and yaw rate sensor (with built-in G sensor)</ptxt>
+<ptxt>Display range: Momentary interruption - Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Momentary interruption: Momentary interruption (open) occurring</ptxt>
+<ptxt>Normal: Normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Related DTC</ptxt>
+<ptxt>U0124/95</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Momentary Interruption (Steering Angle Sensor)</ptxt>
+<ptxt>[MSTS]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates momentary interruption (open) status of wire harness between actuator assembly and steering sensor</ptxt>
+<ptxt>Display range: Momentary interruption - Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Momentary interruption: Momentary interruption (open) occurring</ptxt>
+<ptxt>Normal: Normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Related DTC</ptxt>
+<ptxt>U0126/63</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Momentary Interruption (M/C Pressure Sensor)</ptxt>
+<ptxt>[MMCS]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates momentary interruption (open) status between master cylinder pressure sensor and skid control computer inside actuator assembly</ptxt>
+<ptxt>Display range: Momentary interruption - Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Momentary interruption: Momentary interruption (open) occurring</ptxt>
+<ptxt>Normal: Normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Related DTC</ptxt>
+<ptxt>C1246/46</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Switch to the "Line Graph" display using display switching.</ptxt>
+</step2>
+<step2>
+<ptxt>Inspect the 0 (normal) / 1 (interrupted) status on the line graph.</ptxt>
+<figure>
+<graphic graphicname="C146320J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>0 (Normal)</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If it remains 1 (interrupted), inspect the resistance between the skid control computer (built into actuator assembly) ←→ sensor or between the skid control computer (built into actuator assembly) ←→ engine control computer.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>While watching the line graph display, lightly shake the connectors, CAN junction block and wire harness between the skid control computer (built into actuator assembly) ←→ sensor or between the skid control computer (built into actuator assembly) ←→ engine control computer.</ptxt>
+<figure>
+<graphic graphicname="C146321J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No change in graph</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Even if the harness signal changes from momentary interruption (open circuit) to normal, the ON display on TaSCAN continues for 1 seconds.</ptxt>
+</item>
+<item>
+<ptxt>If the graph changes, there is a momentary interruption in the connector or wire harness, so repair or replace the wire harness and connector.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Active Test Inspection</ptxt>
+<step2>
+<ptxt>Turn the IG OFF and connect the SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Turn the IG ON and select "ABS/VSC" → "Active Test".</ptxt>
+</step2>
+<step2>
+<ptxt>Select the data monitor items to check during the Active Test and press the execute key.</ptxt>
+</step2>
+<step2>
+<ptxt>Select the Active Test item to perform, press the execute key, and operate the keys specified on the screen to switch each test ON ←→ OFF.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The motor drive stops automatically after approximately 5 seconds to protect the motor, but do not intermittently drive it for several seconds.</ptxt>
+</item>
+<item>
+<ptxt>Driving of each solenoid is automatically prohibited after approximately 2 seconds to protect the solenoid, and is permitted again after a certain interval.</ptxt>
+</item>
+<item>
+<ptxt>Do not depress the brake with only a pressure reduction valve turned ON by itself.</ptxt>
+</item>
+<item>
+<ptxt>Do not drive 2 or more solenoids at the same time, except when operating the hold valve and pressure reduction valve of each wheel.</ptxt>
+</item>
+</list1>
+</atten3>
+</step2>
+</step1>
+<table frame="all">
+<title>Active Test</title>
+<tgroup cols="3">
+<colspec colname="col1" colwidth="1.83in"/>
+<colspec colname="col2" colwidth="3.42in"/>
+<colspec colname="col3" colwidth="1.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Details</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Restrictions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ABS Solenoid</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Hold solenoids (SFRH, SFLH, SRRH, SRLH) and pressure reduction solenoids (SFRR, SFLR, SRRR, SRLR) of each wheel can be turned ON ←→ OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Possible at SPD = 0km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSC Solenoid</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Master pressure solenoids (SMF [SM1], SMR [SM2]) can be turned ON ←→ OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Possible at SPD = 0km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Solenoid Relay</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Solenoid relay can be turned ON ←→ OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Possible at SPD = 0km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ABS Motor Relay</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor relay can be turned ON ←→ OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Possible at SPD = 0km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Stop Light Relay</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light relay can be turned ON ←→ OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Possible at SPD = 0km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSC/HB Buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Skid control buzzer can be turned ON ←→ OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Possible at SPD = 0km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ABS Light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS warning light can be turned ON ←→ OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Possible at SPD = 0km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSC Light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VSC warning light can be turned ON ←→ OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Possible at SPD = 0km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SLIP Light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Slip indicator light can be turned ON ←→ OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Possible at SPD = 0km/h</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Brake warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake warning light can be turned ON ←→ OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Possible at SPD = 0km/h</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

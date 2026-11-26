@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740147p SYSTEM "grph_ent/a4740147p.png" NDATA png>
+<!ENTITY a4600032p SYSTEM "grph_ent/a4600032p.png" NDATA png>
+
+<!ENTITY T010255A111 SYSTEM "t478010255a111.xml">
+<!ENTITY T010255A111A297 SYSTEM "t478010255a111a297.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010255A111S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010255A111" UPDATE = "ORIGINAL" LDUP = "24Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Exhaust Pipe </TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Stainless steel exhaust pipes with excellent heat resistance have been adopted.</PTXT></ITEM>
+<ITEM><PTXT>Ball joint mechanisms have been adopted between center pipe No.1 and center pipe No.2, and between center pipe No.2 and the tail pipe, reducing booming noise in the cabin, weight and vibration.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740147p" WIDTH = "6.903in" HEIGHT = "3.111in" />
+</FIGURE>
+
+<MECA ID = "T010255A111A297" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Ball Joint Mechanism</TITLE>
+<LIST1><ITEM><PTXT>The ball joint mechanism consists of a flange with a spherical surface, and bolts and springs that support the seal portion of the gasket. It can be made more compact than a flexible pipe.</PTXT></ITEM>
+<ITEM><PTXT>Vibration and noise are reduced by absorbing vibration from the engine and resonance vibration of the exhaust pipe with the ball joint (spherical portion of the flange and gasket).</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4600032p" WIDTH = "6.903in" HEIGHT = "3.528in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740034e SYSTEM "grph_ent/a4740034e.png" NDATA png>
+<!ENTITY a4740109e SYSTEM "grph_ent/a4740109e.png" NDATA png>
+<!ENTITY a4740111e SYSTEM "grph_ent/a4740111e.png" NDATA png>
+<!ENTITY a4740112e SYSTEM "grph_ent/a4740112e.png" NDATA png>
+<!ENTITY k4670075e SYSTEM "grph_ent/k4670075e.png" NDATA png>
+<!ENTITY a4740091e SYSTEM "grph_ent/a4740091e.png" NDATA png>
+<!ENTITY a4740092e SYSTEM "grph_ent/a4740092e.png" NDATA png>
+<!ENTITY a4740093e SYSTEM "grph_ent/a4740093e.png" NDATA png>
+
+<!ENTITY T120007K675 SYSTEM "t403120007k675.xml">
+<!ENTITY T120007K675K902 SYSTEM "t403120007k675k902.xml">
+<!ENTITY T120007K675K456 SYSTEM "t403120007k675k456.xml">
+<!ENTITY T120007K675K903 SYSTEM "t403120007k675k903.xml">
+<!ENTITY T120007K675K904 SYSTEM "t403120007k675k904.xml">
+<!ENTITY T120007K675K905 SYSTEM "t403120007k675k905.xml">
+<!ENTITY T120007K675K906 SYSTEM "t403120007k675k906.xml">
+<!ENTITY T120007K675K907 SYSTEM "t403120007k675k907.xml">
+<!ENTITY T120007K675K908 SYSTEM "t403120007k675k908.xml">
+<!ENTITY T120007K675K909 SYSTEM "t403120007k675k909.xml">
+<!ENTITY T120007K675K910 SYSTEM "t403120007k675k910.xml">
+<!ENTITY T120007K675K911 SYSTEM "t403120007k675k911.xml">
+<!ENTITY T120007K675K097 SYSTEM "t403120007k675k097.xml">
+<!ENTITY T120007K675K075 SYSTEM "t403120007k675k075.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120007K675S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120007K675" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "ECU List">
+<TITLE>ETC On-board Unit</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The ETC on-board unit consists of the ETC unit, integrated antenna (with built-in ETC antenna function), etc. In addition, to use the ETC system, a setup card<HINTREF     REFID = "H403120007K67501"/> and an ETC card<HINTREF REFID = "H403120007K67502"/> must be prepared.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403120007K67501">The setup card must be applied for at a registered setup store and created separately.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403120007K67502">The ETC card is issued upon application to an ETC card issuer such as a credit card company.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740034e" WIDTH = "6.903in" HEIGHT = "1.583in" />
+</FIGURE>
+<INDICATE ID = "T120007K675I01" INDSW = "OFF">
+<TITLE>List of ETC On-board Unit Components</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "26%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "73%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Functions</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>ETC Unit</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sounds the buzzer when a malfunction occurs and provides voice guidance when the ETC unit is operated.</PTXT></ITEM>
+<ITEM><PTXT>Contains a card holder and processes the inserted ETC card.</PTXT></ITEM>
+<ITEM><PTXT>Indicates the system operating status with indicator lights. (System operating: green light ON, system malfunction: orange light blinking, not set up: orange light ON)</PTXT></ITEM>
+<ITEM><PTXT>Performs processing related to toll collection.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Integrated Antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Transmits and receives ETC system radio waves.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>ETC Card</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>An IC is built into the card; when the ETC unit recognizes the ETC card, the system enters the ETC card authentication completed state.</PTXT></ITEM>
+<ITEM><PTXT>Information required for toll collection, toll history information, registration information, etc. are stored in the IC in the card.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Setup Card</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Performs registration processing of the ETC system and puts the system in the set-up state (information registered).</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>HDD Navigation System</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Displays toll-related information on screen and provides voice guidance through the front door speakers.</PTXT></ITEM>
+<ITEM><PTXT>If there is guidance information when passing an advance notice antenna<HINTREF REFID = "H403120007K67503"/>, the guidance information is displayed on screen.</PTXT></ITEM>
+<ITEM><PTXT>If an ETC card is not inserted when passing an ETC card non-insertion notification antenna<HINTREF REFID = "H403120007K67504"/>, guidance is given via on-screen display.</PTXT></ITEM>
+<ITEM><PTXT>Displays history information, ETC settings and registration information.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H403120007K67503">An advance notice antenna may be installed before a tollgate, and provides guidance information through wireless communication with the ETC on-board unit.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403120007K67504">An ETC card not inserted notification antenna may be installed before a tollgate, and notifies the driver that the ETC card has not been inserted or is not inserted properly.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+
+<MECA ID = "T120007K675K902" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Initial Processing Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>As initial processing, the ETC unit indicator lights (green light and orange light) illuminate for approximately 5 seconds when ACC is turned ON.</PTXT></ITEM>
+<ITEM><PTXT>By checking that the indicator lights illuminate during initial processing, they can be checked for open circuits.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740109e" WIDTH = "6.903in" HEIGHT = "1.236in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120007K675K456" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Preparation for First Use</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Before using the ETC system for the first time, registration processing of the ETC unit must be performed.</PTXT></ITEM>
+<ITEM><PTXT>When ACC is turned ON before setup, the orange light illuminates together with the voice guidance "Beep beep, not set up". Setting the volume to "0" mutes the voice guidance when not set up.</PTXT></ITEM>
+<ITEM><PTXT>With the power (ACC or IG) ON (after initial processing is completed), insert the "setup card" into the ETC unit. When the setup card is inserted, the green light in the ETC unit blinks together with the guidance sound "Beep", and registration processing starts automatically. When registration processing is completed, the green light goes off together with the voice guidance "Bong, setup completed".</PTXT></ITEM>
+<ITEM><PTXT>If registration processing cannot be performed due to improper card insertion, etc., the green light goes off and the orange light blinks along with the voice guidance "Beep beep, cannot read card, error **<HINTREF     REFID = "H403120007K675K45601"/>". (In this case, remove the setup card, check the card type and insertion direction, and then insert the setup card into the ETC unit again)</PTXT></ITEM>
+<ITEM><PTXT>If the on-board unit management numbers of the setup card and ETC unit differ and initialization cannot be performed, the green light goes off and the orange light blinks together with the voice guidance "Beep beep, management number error, check the card, error 05". (In this case, remove the setup card and check the on-board unit management number of the setup card.)</PTXT></ITEM>
+<ITEM><PTXT>If a blocked setup card (a setup card that has already been used for setup processing) is inserted and initialization cannot be performed, the green light goes off and the orange light blinks together with the voice guidance "Beep beep, card error, check the card, error 05". (In this case, remove the setup card and check the setup card information.)</PTXT></ITEM>
+<ITEM><PTXT>After registration processing is completed, press the card eject button and remove the setup card.</PTXT></ITEM>
+<ITEM><PTXT>When the ETC menu is displayed on the HDD navigation system display, "Not Set Up" → "Setup Completed" is displayed in the ETC card message display area.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H403120007K675K45601">One of error 02, error 03 or error 05 is announced as a unified error code.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740111e" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120007K675K903" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Setting the ETC Card</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>To use the ETC system, the ETC card must be set (authenticated).</PTXT></ITEM>
+<ITEM><PTXT>With the power source mode ON (IG) (after initial processing is completed), insert the "ETC card" into the ETC unit. When the ETC card is inserted, the green light of the ETC unit blinks together with the guidance sound "Beep", and the ETC card is authenticated. When ETC card authentication is completed, the green light illuminates together with the voice guidance "Bong, ETC card inserted".</PTXT></ITEM>
+<ITEM><PTXT>If authentication cannot be performed due to improper card insertion, etc., the green light does not come on and the orange light blinks along with the voice guidance "Beep beep, cannot read card, error **<HINTREF     REFID = "H403120007K675K90301"/>". (In this case, remove the ETC card, check the insertion direction of the ETC card, and then insert the ETC card into the ETC unit again.)</PTXT></ITEM>
+<ITEM><PTXT>If the ETC unit has not been initialized (setup processing), the green light does not illuminate and the orange light blinks together with the voice guidance "Beep beep, not set up". (In this case, remove the ETC card, perform registration processing of the ETC unit, and then insert the ETC card into the ETC unit again.)</PTXT></ITEM>
+<ITEM><PTXT>When using the ETC system, leave the ETC card inserted in the ETC unit.</PTXT></ITEM>
+<ITEM><PTXT>When the ETC menu is displayed on the HDD navigation system display, "Authenticating" → "ETC Card Authentication Completed" is displayed in the ETC card message display area.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403120007K675K90301">One of error 02, error 03 or error 05 is announced as a unified error code.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740112e" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120007K675K904" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>ETC On-board Unit When Passing Entrance Gate</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the vehicle passes through a toll road entrance gate (ETC system compatible gate) with the ETC card set in the ETC unit and the green light illuminated, entrance information (gate, date and time, etc.) is written to the ETC card.</PTXT></ITEM>
+<ITEM><PTXT>If a communication error occurs for some reason, the orange light of the ETC unit blinks and at the same time the voice guidance "Beep, ETC cannot be used, error **<HINTREF     REFID = "H403120007K675K90401"/>" is given, indicating that the ETC system cannot be used.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H403120007K675K90401">One of error 01, error 06 or error 07 is announced as a unified error code.</PTXT></ITEM></LIST1></HINT></MECA>
+
+<MECA ID = "T120007K675K905" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Toll Charging</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The toll is charged when the vehicle passes through an exit gate or an entrance gate with a flat-rate toll. At the same time, the voice guidance "Bong, the toll is XX yen<HINTREF     REFID = "H403120007K675K90501"/>" is given.</PTXT></ITEM>
+<ITEM><PTXT>If the toll cannot be charged by the ETC system for some reason, as with an error when passing the entrance gate, the orange light of the ETC unit blinks and at the same time the voice guidance "Beep, ETC cannot be used, error **<HINTREF     REFID = "H403120007K675K90502"/>" is given, indicating that the ETC system cannot be used.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H403120007K675K90501">If the toll exceeds 10 × 10,000 yen, the guidance "10 × 10,000 yen or more" is given.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403120007K675K90502">** is a unified error code; one of error 01, error 06 or error 07 is announced.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670075e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120007K675K906" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>ETC System Status Display Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the ETC menu is displayed on the HDD navigation system display, the operating status of the ETC system is displayed in the ETC card message display area as shown in the table (System Status Display List).</PTXT></ITEM>
+<ITEM><PTXT>The operating status of the ETC system can also be checked by the illumination/extinguishing or blinking of the ETC unit lights (green and orange).</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740091e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>System Status Display List</TITLE>
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "12%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "12%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "53%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" CONSPIC = "0"><PTXT>ETC Card Message Display Area</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "3" CONSPIC = "0"><PTXT>ETC Unit Light</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1" CONSPIC = "0"><PTXT>ETC On-board Unit Operating Status</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Green</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Orange</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No Display</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>ETC system OFF (power source mode (IG) OFF)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>ETC Card Not Inserted</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When the ETC card is not inserted (power source mode (IG) ON)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Authenticating</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When an ETC card or setup card is inserted</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Not Set Up</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When the ETC on-board unit registration information is not registered (registration processing has not been performed)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>ETC Card Error</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When a card other than an ETC card is inserted</PTXT></ITEM>
+<ITEM><PTXT>When reading of the ETC card fails</PTXT></ITEM>
+<ITEM><PTXT>When writing to the ETC card fails</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>System Malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When a malfunction occurs in the ETC unit</PTXT></ITEM>
+<ITEM><PTXT>When communication with the roadside radio unit fails</PTXT></ITEM>
+<ITEM><PTXT>When charging processing fails</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>ETC Card Authentication Completed</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When the ETC unit has finished reading the ETC card</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>No Display</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>During initial processing (power source mode (IG) OFF → ON)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Setup Completed</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>When registration processing is completed</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T120007K675K907" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>ETC System Usage History Display Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>If there is an ETC system usage history, touching<HINTREF     REFID = "H403120007K675K90701"/> the "History Information Display" button on the ETC menu screen of the display allows the usage history to be shown on the display<HINTREF     REFID = "H403120007K675K90702"/>. Touching the details button displays information such as usage time and usage section.</PTXT></ITEM>
+<ITEM><PTXT>On the ETC unit, pressing the usage history check button while the vehicle is stopped gives voice guidance of the date of use and toll. Each time the usage history check button is pressed, the history moves from the most recent to older entries in order. If there is no usage history, the voice guidance "No usage history" is given.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H403120007K675K90701">Do not perform operations near ETC gates, as communication with the roadside radio unit may become impossible.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403120007K675K90702">Up to 100 entries can be displayed.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740092e" WIDTH = "6.903in" HEIGHT = "4.292in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120007K675K908" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>ETC System Registration Information Display Function</TITLE>
+<LIST1><ITEM><PTXT>By touching the "Registration Information Display" button on the ETC menu screen of the HDD navigation system display, registration information related to the on-board ETC unit (on-board unit management number, on-board unit registration number, setup card issue date, setup card information expiration date and unified error code<HINTREF     REFID = "H403120007K675K90801"/>) can be displayed.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403120007K675K90801">If there are error codes, the last 1 error(s) that occurred are displayed. Even if the system is normal, the last recorded error code may be displayed, so the display does not necessarily indicate the current status.</PTXT></ITEM></LIST1></HINT></MECA>
+
+<MECA ID = "T120007K675K909" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>ETC Setting Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Various settings related to the ETC system can be made on the HDD navigation system display.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740093e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>List of ETC Setting Items</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "68%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>ETC Setting Item</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Description</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>ETC Interrupt Display</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Switches the interrupt display during ETC system use while the navigation mode screen is displayed between "On" and "Off".</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>ETC Voice Guidance</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Switches the voice guidance during ETC system use between "On" and "Off".</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Display at ACC ON</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Switches the warning for a forgotten ETC card, etc. approximately 20 seconds after the power (ACC or IG) is turned ON between "On" and "Off".</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Warning Voice Guidance at ACC ON</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Switches the warning voice guidance for a forgotten ETC card, etc. approximately 20 seconds after the power (ACC or IG) is turned ON between "On" and "Off".</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Card Left Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Switches the warning for a card left in the unit when the power (ACC or IG) is turned OFF between "On" and "Off".</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T120007K675K910" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Card Left Prevention Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>If ACC is turned OFF with the ETC card left inserted in the ETC unit, the ETC unit gives the voice guidance "Beep, the card is still inserted"<HINTREF     REFID = "H403120007K675K91001"/> to remind the user to remove the card.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403120007K675K91001">If "Mute" is selected with the volume adjustment function, only the buzzer ("Beeeep") sounds.</PTXT></ITEM></LIST1></HINT></MECA>
+
+<MECA ID = "T120007K675K911" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Card Left Prevention Buzzer ON/OFF Setting Function</TITLE>
+<LIST1><ITEM><PTXT>While the vehicle is stopped (with ACC or IG ON and the ETC card inserted), each time the usage history check button and the volume switch "Up" are pressed simultaneously for 2 seconds or more, the card left warning is switched between enabled and disabled. The card left warning can also be enabled/disabled in the ETC settings using the HDD navigation system.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120007K675K097" UPDATE = "ORIGINAL" LDUP = "15Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Volume Adjustment Function</TITLE>
+<LIST1><ITEM><PTXT>With the power (ACC or IG) ON, operating the volume adjustment buttons ("Up" or "Down" buttons) allows the volume of the voice guidance from the ETC unit to be adjusted (8 levels) or muted. If no voice guidance is in progress, the voice guidance "Volume *<HINTREF     REFID = "H403120007K675K09701"/>" or "Voice guidance will be stopped" is given; if some voice guidance is in progress, the current voice guidance is repeated at the adjusted volume so that the volume can be checked.</PTXT></ITEM>
+<ITEM><PTXT>Even when voice guidance is stopped, guidance is given at volume 1 when an error occurs.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403120007K675K09701">1 (minimum) to 8 (maximum) is announced.</PTXT></ITEM></LIST1></HINT></MECA>
+
+<MECA ID = "T120007K675K075" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Error Code Display Function</TITLE>
+<LIST1><ITEM><PTXT>If there is a malfunction in the ETC unit or ETC card, a unified error code as shown in the table (Unified Error Code List) is displayed on the display (registration information screen or interrupt display) to notify the user of the malfunction.</PTXT></ITEM>
+<ITEM><PTXT>The ETC unit stores the last unified error code that occurred (1 only); with the power (ACC or IG) ON, the unified error code can be announced by displaying the registration information on the display, or by pressing the usage history check button on the ETC unit for 2 seconds or more with no ETC card inserted.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Unified Error Code List</TITLE>
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "12%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "24%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "62%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Unified Error Code</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Abnormal Condition</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Possible Cause</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>01</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>ETC Card Insertion Error</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1><ITEM><PTXT>When no ETC card is inserted during communication between the ETC unit and roadside radio unit</PTXT></ITEM>
+<ITEM><PTXT>When the ETC card is not inserted properly</PTXT></ITEM>
+<ITEM><PTXT>When non-ETC communication, such as with a parking lot system, is performed without an ETC card</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>02</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Data Processing Error</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1><ITEM><PTXT>When reading from or writing to the ETC card fails</PTXT></ITEM>
+<ITEM><PTXT>When there is poor contact between the ETC card and ETC unit</PTXT></ITEM>
+<ITEM><PTXT>When the ETC card is pulled out while it is being written to</PTXT></ITEM>
+<ITEM><PTXT>When an IC card other than an ETC card is inserted</PTXT></ITEM>
+<ITEM><PTXT>When the ETC card is pulled out while it is being read</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>03</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>ETC Card Error</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1><ITEM><PTXT>When the ETC card is faulty</PTXT></ITEM>
+<ITEM><PTXT>When a card other than an IC card is inserted</PTXT></ITEM>
+<ITEM><PTXT>When the ETC card is inserted upside down or in the wrong direction</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>04</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>ETC Unit Error</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1><ITEM><PTXT>When a malfunction in the ETC unit is detected by the ETC unit self-diagnosis function</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>05</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>ETC Card Information Error</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1><ITEM><PTXT>When the ETC unit cannot recognize the information recorded on the ETC card</PTXT></ITEM>
+<ITEM><PTXT>When an IC card other than an ETC card is inserted</PTXT></ITEM>
+<ITEM><PTXT>When the ETC card is pulled out while it is being read</PTXT></ITEM>
+<ITEM><PTXT>When an ETC card is inserted into an ETC unit that has not been set up</PTXT></ITEM>
+<ITEM><PTXT>When the setup card is reinserted</PTXT></ITEM>
+<ITEM><PTXT>When a setup card with a different on-board unit management number is inserted</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>06</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>ETC Unit Information Error</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1><ITEM><PTXT>When the roadside radio unit cannot recognize the ETC unit information during communication between the ETC unit and roadside radio unit</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>07</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Communication Error</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1><ITEM><PTXT>When a malfunction occurs, such as communication between the ETC unit and roadside radio unit ending prematurely</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+</PARA>
+</SECTION>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARA INFOID = "T150003K792" UPDATE = "ORIGINAL" LDUP = "21Apr2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>CAN Communication System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A CAN<HINTREF     REFID = "H334150003K79201"/> [ISO11898] communication system has been adopted, which transmits multiple items of information and data converted into digital signals by the communication circuit over a pair of communication lines (twisted pair wiring). This reduces the wire harness and streamlines the electronic control systems connecting the input systems (sensors, switches, etc.), control units and output systems (motors, etc.).</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H334150003K79201">CAN is an abbreviation for Controller Area Network, a serial communication conforming to ISO (International Organization for Standardization) standards.</PTXT></ITEM></LIST1></HINT>
+<LIST1><ITEM><PTXT>The CAN communication system uses 2 communication lines (bus), CAN High and CAN Low, as a pair, determines the bus level<HINTREF     REFID = "H334150003K79202"/> from their differential voltage, and transmits it as a digital signal conforming to a dedicated communication protocol (communication rules) at a speed of 500kbps<HINTREF     REFID = "H334150003K79203"/> (V bus) or 250kbps (MS bus).</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H334150003K79202">There are dominant and recessive bus levels; in the CAN communication system, dominant is logically judged as "0" and recessive as "1".</PTXT></ITEM>
+<ITEM><PTXT ID = "H334150003K79203">A unit expressing signal transmission speed. "500kbps" indicates that 500000 bits of data are transmitted in 1 second(s).</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740041b" WIDTH = "6.903in" HEIGHT = "4.736in" />
+</FIGURE>
+&T150003K792W080;
+&T150003K792W081;
+&T150003K792W082;
+&T150003K792T031;
+</PARA>

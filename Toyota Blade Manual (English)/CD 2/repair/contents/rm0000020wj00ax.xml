@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="1000C_S000O" variety="S000O">
+<name>Cooling</name>
+<ttl id="1000C_S000O_744GF_T0071" variety="T0071">
+<name>Cooling Fan Motor (2AZ-FE)</name>
+<para id="RM0000020WJ00AX" category="G" type-id="3001K" name-id="121DZ-00" from="200612">
+<name>Component Inspection</name>
+<subpara id="RM0000020WJ00AX_01" type-id="01" category="01">
+<s-1 id="RM0000020WJ00AX_01_0001" proc-id="RM0550J___00003VW00000">
+<ptxt>Cooling Fan Motor</ptxt>
+<content1 releasenbr="2">
+<s2>
+<ptxt>Check that the fan motor (5 fan blades) rotates smoothly when the battery is connected to its connector.</ptxt>
+<figure>
+<graphic graphicname="A163498J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Using SST (Toyota electrical tester), measure the current while the motor is rotating.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>7.4. to 10.9A(20°C、12V)</ptxt>
+</specitem>
+</spec>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

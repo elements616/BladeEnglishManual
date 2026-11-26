@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740321b SYSTEM "grph_ent/a4740321b.png" NDATA png>
+<!ENTITY A4740308B SYSTEM "grph_ent/a4740308b.png" NDATA png>
+
+<!ENTITY T130004K064 SYSTEM "t403130004k064.xml">
+<!ENTITY T130004K064Ab01 SYSTEM "t403130004k064ab01.xml">
+<!ENTITY T130004K064K511 SYSTEM "t403130004k064k511.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T130004K064S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T130004K064" UPDATE = "ORIGINAL" LDUP = "29Jun2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Window Glass</TITLE>
+<LIST1><ITEM><PTXT>For the windshield glass, high sound insulation glass has been adopted, which has a sound insulation layer of special resin between the interlayers and suppresses the coincidence phenomenon<HINTREF     REFID = "H403130004K06401"/>, reducing the noise entering the cabin and ensuring excellent sound insulation performance.</PTXT></ITEM>
+<ITEM><PTXT>"Green tempered UV-cut glass<HINTREF     REFID = "H403130004K06402"/>", which is heat-absorbing glass with an added ultraviolet-cutting component, has been provided for the front door glass, front fixed window glass, rear door glass and rear door quarter window glass depending on the specification. The front door glass has a water-repellent function to ensure visibility when driving in rain, etc.</PTXT></ITEM>
+<ITEM><PTXT>"Privacy glass (dark gray)<HINTREF     REFID = "H403130004K06403"/>", which makes the cabin difficult to see from behind the vehicle to protect privacy, has been adopted for the rear door glass, rear door quarter window glass and back door glass, and provided depending on the specification.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403130004K06401">A phenomenon in which sound waves of a certain frequency entering the glass cause a kind of resonance, reducing sound insulation performance.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403130004K06402">Heat-absorbing glass with an infrared-cutting function, with an added ultraviolet-cutting component.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403130004K06403">Glass that makes the cabin difficult to see from outside to protect privacy, blocks infrared rays (near-infrared rays) with a large heating effect, and also cuts ultraviolet rays.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740321b" WIDTH = "6.903in" HEIGHT = "3.764in" />
+</FIGURE>
+
+<MECA ID = "T130004K064Ab01" UPDATE = "ORIGINAL" LDUP = "10Jan2006"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Water-repellent Front Door Glass</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A water-repellent film is coated on the glass surface. This reduces the adhesion of raindrops when driving in rain, ensuring visibility of the outer rear view mirrors and to the sides. It also has the effect of reducing condensation, icing and adhesion of muddy water, etc., and making them easier to remove.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "A4740308B" WIDTH = "6.903in" HEIGHT = "2.958in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130004K064K511" UPDATE = "ORIGINAL" LDUP = "11Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Water-repellent Glass: Handling Precautions</TITLE>
+<LIST1><ITEM><PTXT>The water-repellent effect lasts for a limited period. To maintain the water-repellent performance for a long time, clean the door glass with a soft, damp cloth as soon as possible when it becomes dirty.</PTXT></ITEM>
+<ITEM><PTXT>When cleaning the door glass, do not use detergents or wax containing compound. (If the glass becomes cloudy white when using glass cleaner, wipe it off with a damp cloth.) In addition, do not use an automatic car wash or repeatedly raise and lower the door glass when it is heavily soiled with mud, etc. This may cause loss of the water-repellent effect or scratch the glass.</PTXT></ITEM>
+<ITEM><PTXT>If the glass is frozen, do not scrape it off with a metal plate, etc. This may cause loss of the water-repellent effect or scratch the glass.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+</SECTION>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1002M_S001G" variety="S001G">
+<name>Pre-crash Safety</name>
+<ttl id="1002M_S001G_74WT7_T00FP" variety="T00FP">
+<name>Pre-crash Safety System</name>
+<para id="RM0000006EO00LX" category="U" type-id="303FJ" name-id="540J5-00" from="200708">
+<name>ECU Data Monitor/Active Test</name>
+<subpara id="RM0000006EO00LX_z0" proc-id="RM0550J___0000CTF00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>ECU Data Monitor (TaSCAN)</ptxt>
+<step2>
+<ptxt>With the IG OFF, connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Turn IG ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Following the SST (TaSCAN) screen display, display the "ECU Data Monitor" screen and check the computer data.</ptxt>
+<table pgwide="1">
+<title>[System Selection Screen: Body → Pre-crash → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>(Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side Buckle Switch</ptxt>
+<ptxt>(RBSW)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates driver side seat belt fastening status</ptxt>
+<ptxt>Display Range: Unbuckled/Buckled/Undetermined</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side seat belt buckled: Buckled</ptxt>
+<ptxt>Driver side seat belt unbuckled: Unbuckled</ptxt>
+<ptxt>Driver side seat belt buckle status cannot be detected: Undetermined</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a malfunction in the driver side buckle switch circuit is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P Seat Buckle Switch</ptxt>
+<ptxt>(LBSW)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates front passenger side seat belt buckle status</ptxt>
+<ptxt>Display Range: Unbuckled/Buckled/Undetermined</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front passenger side seat belt buckled: Buckled</ptxt>
+<ptxt>Front passenger side seat belt unbuckled: Unbuckled</ptxt>
+<ptxt>Front passenger side seat belt buckle status cannot be detected: Undetermined</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If abnormal, a malfunction in the front passenger side buckle switch circuit is suspected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D Seat Belt Control</ptxt>
+<ptxt>(RBCS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates driver side seat belt control status</ptxt>
+<ptxt>Display Range: Control Stopped/Controlling/Undetermined</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side seat belt controlled: Controlling</ptxt>
+<ptxt>Driver side seat belt not controlled: Control Stopped</ptxt>
+<ptxt>Driver side seat belt control status cannot be detected: Undetermined</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation stops when the overheat protection function is active</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D Seat Belt Control</ptxt>
+<ptxt>(LBCS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates front passenger side seat belt control status</ptxt>
+<ptxt>Display Range: Control Stopped/Controlling/Undetermined</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front passenger side seat belt controlled: Controlling</ptxt>
+<ptxt>Front passenger side seat belt not controlled: Control Stopped</ptxt>
+<ptxt>Front passenger side seat belt control status cannot be detected: Undetermined</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation stops when the overheat protection function is active</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Number of DTCs</ptxt>
+<ptxt>(PCO#)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates number of DTCs</ptxt>
+<ptxt>Display Range: (0) when normal, other than (0) when abnormal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal: 0</ptxt>
+<ptxt>Abnormal: Other than 0</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>Active Test (TaSCAN)</ptxt>
+<step2>
+<ptxt>With the IG OFF, connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Turn IG ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Following the SST (TaSCAN) screen display, display the "Active Test" screen and perform the active test.</ptxt>
+<atten3>
+<ptxt>If the active test is performed many times in succession, the overheat protection function of the motor in the seat belt operates, "PCS Currently Unavailable" is shown on the multi-display in the combination meter assembly, and control stops. When the temperature drops and pre-crash seat belt control becomes possible again, the display disappears and the system returns to the controllable state.</ptxt>
+</atten3>
+<table pgwide="1">
+<title>[System Selection Screen: Body → Pre-crash → Active Test]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="2.84in"/>
+<colspec colname="COL3" colwidth="3.18in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Details</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Restrictions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side Belt Motor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operates driver side seat belt motor (Operate/Stop)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Does not operate even if requested when the seat belt is not fastened</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front Passenger Side Belt Motor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operates front passenger side seat belt motor (Operate/Stop)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Does not operate even if requested when the seat belt is not fastened</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

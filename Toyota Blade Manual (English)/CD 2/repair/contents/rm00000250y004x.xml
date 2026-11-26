@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="07">
+<name>Steering</name>
+<section id="1000U_S0017" variety="S0017">
+<name>Steering Column</name>
+<ttl id="1000U_S0017_745FR_T00AZ" variety="T00AZ">
+<name>Electric Power Steering System</name>
+<para id="RM00000250Y004X" category="C" type-id="801Y2" name-id="480Y3-00" from="200612">
+<dtccode>C1522/25</dtccode>
+<dtcname>Motor Power Supply Sensor Malfunction</dtcname>
+<dtccode>C1523/24</dtccode>
+<dtcname>Motor Current Deviation Excessive</dtcname>
+<dtccode>C1524/24</dtccode>
+<dtcname>Motor Terminal Voltage Malfunction</dtcname>
+<dtccode>C1555/25</dtccode>
+<dtcname>Motor Relay Malfunction</dtcname>
+<subpara id="RM00000250Y004X_01" type-id="33" category="03" proc-id="RM0550J___00005YX00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>As a fail-safe function, power assist is stopped while a motor malfunction DTC is output.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="3.32in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1522/25</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply current sensor malfunction</ptxt>
+</entry>
+<entry morerows="3" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Steering Column Assembly (with built-in power steering motor)</ptxt>
+</item>
+<item>
+<ptxt>Power Steering Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1523/24</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor current deviation (difference between command value and feedback value) is excessive</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1524/24</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor terminal voltage malfunction or open circuit</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1555/25</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor Relay Malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000250Y004X_02" type-id="32" category="03" proc-id="RM0550J___00005YY00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C149380J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM00000250Y004X_03" type-id="51" category="05" proc-id="RM0550J___00005YZ00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When the steering column assembly or power steering computer assembly has been replaced, perform torque sensor 0 point calibration and rotation angle sensor output calibration. (see <xref label="Seep01" href="RM0000024YB004X"/>)</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM00000250Y004X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000250Y004X_04_0001" proc-id="RM0550J___00005Z000000">
+<testtitle>ECU Data Monitor Inspection (Motor Terminal Voltage (U, V, W Phase))</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), check the Data Monitor item "Motor Terminal Voltage (U, V, W Phase)". (see <xref label="Seep01" href="RM000000URV00GX"/>)</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Voltage</title>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.84in"/>
+<colspec colname="COL3" colwidth="1.56in"/>
+<colspec colname="COL4" colwidth="1.91in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Motor Terminal Voltage (U Phase)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates motor U terminal voltage</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Engine running, steering wheel turned</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Changes within 4 to 46V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Motor Terminal Voltage (V Phase)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates motor V terminal voltage</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Motor Terminal Voltage (W Phase)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates motor W terminal voltage</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM00000250Y004X_04_0002" fin="true">OK</down>
+<right ref="RM00000250Y004X_04_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000250Y004X_04_0002">
+<testtitle>Replace Power Steering Computer Assembly<xref label="Seep01" href="RM000000UNH00TX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000250Y004X_04_0003">
+<testtitle>Replace Steering Column Assembly<xref label="Seep01" href="RM000000UCZ00QX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002S_S000E" variety="S000E">
+<name>Vehicle Surroundings Monitor</name>
+<ttl id="1002S_S000E_746W2_T00DG" variety="T00DG">
+<name>Back Guide Monitor System</name>
+<para id="RM0000002O601AX" category="U" type-id="3001G" name-id="672EG-00" from="200612" to="200912">
+<name>Terminals of ECU</name>
+<subpara id="RM0000002O601AX_z0" proc-id="RM0550J___0000BCH00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Navigation Receiver Assembly</ptxt>
+<figure>
+<graphic graphicname="E144426J01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<spec>
+<title>Connector A</title>
+<table pgwide="1">
+<tgroup cols="6">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="0.71in"/>
+<colspec colname="COL3" colwidth="0.71in"/>
+<colspec colname="COL4" colwidth="1.49in"/>
+<colspec colname="COL5" colwidth="0.99in"/>
+<colspec colname="COL6" align="left" colwidth="1.76in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Problem Symptoms when Out of Standard</ptxt>
+<ptxt>O: When open</ptxt>
+<ptxt>S: When shorted to body</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A3(ACC) - A7(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ACC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O: System does not operate</ptxt>
+<ptxt>S: Fuse blown</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A4(B) - A7(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O: System does not operate</ptxt>
+<ptxt>S: Fuse blown</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A7 (E) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O: System does not operate</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Connector F</title>
+<table pgwide="1">
+<tgroup cols="6">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="0.71in"/>
+<colspec colname="COL3" colwidth="0.71in"/>
+<colspec colname="COL4" colwidth="1.49in"/>
+<colspec colname="COL5" colwidth="0.99in"/>
+<colspec colname="COL6" colwidth="1.76in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Problem Symptoms when Out of Standard</ptxt>
+<ptxt>O: When open</ptxt>
+<ptxt>S: When shorted to body</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F2(IG) - A7(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O: System does not operate</ptxt>
+<ptxt>S: Fuse blown</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F3(SPD) - A7(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Drive at 5 km/h or more</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 V or more → 1 V or less repeatedly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Back guide does not operate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F5(REV) - A7(E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift lever in R</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Own vehicle position mark moves forward even when reversing</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Connector H</title>
+<table pgwide="1">
+<tgroup cols="6">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="0.71in"/>
+<colspec colname="COL3" colwidth="0.71in"/>
+<colspec colname="COL4" colwidth="1.49in"/>
+<colspec colname="COL5" colwidth="0.99in"/>
+<colspec colname="COL6" colwidth="1.76in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Problem Symptoms when Out of Standard</ptxt>
+<ptxt>O: When open</ptxt>
+<ptxt>S: When shorted to body</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H2(CANH)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Back guide monitor does not operate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H3(CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Back guide monitor does not operate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H21 (CGND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Back guide monitor does not operate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H22(V+) - H21(CGND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, shift lever in R</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No screen display</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H23 (V-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No screen display</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>H24(CA+) - H21(CGND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, shift lever in R</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5.7 to 6.5 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O: Back guide monitor is not displayed</ptxt>
+<ptxt>S: Fuse blown</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<step2>
+<ptxt>Waveform 1</ptxt>
+<figure>
+<graphic graphicname="E104875J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>The GND level varies depending on the image captured by the camera.</ptxt>
+</atten3>
+<table>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="1.50in"/>
+<colspec colname="COL2" colwidth="2.63in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>H22(V+) - H21(CGND)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.2 V/DIV、10 μS/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, shift lever in R</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>Television Camera Assembly</ptxt>
+<figure>
+<graphic graphicname="E124886" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="6">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="0.71in"/>
+<colspec colname="COL3" colwidth="0.71in"/>
+<colspec colname="COL4" colwidth="1.49in"/>
+<colspec colname="COL5" colwidth="0.99in"/>
+<colspec colname="COL6" colwidth="1.76in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Problem Symptoms when Out of Standard</ptxt>
+<ptxt>O: When open</ptxt>
+<ptxt>S: When shorted to body</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(CV-) - 3(CGND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+<entry>
+<ptxt>Back guide monitor screen not displayed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(CV+) - 1(CV-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, shift lever in R</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 1</ptxt>
+<ptxt>(Approximately 0.65 V)</ptxt>
+</entry>
+<entry>
+<ptxt>Back guide monitor screen not displayed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3 (CGND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+<entry>
+<ptxt>Back guide monitor not displayed (black screen)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4 (CB+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, shift lever in R</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5.7 to 6.5 V</ptxt>
+</entry>
+<entry>
+<ptxt>O: Back guide monitor is not displayed (black screen)</ptxt>
+<ptxt>S: Fuse blown</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<step2>
+<ptxt>Waveform 1</ptxt>
+<figure>
+<graphic graphicname="E104875J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>The GND level varies depending on the image captured by the camera.</ptxt>
+</atten3>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.46in"/>
+<colspec colname="COL2" colwidth="2.67in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2(CV+) - 1(CV-)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.2 V/DIV、0.2 μS/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON, shift lever in R</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

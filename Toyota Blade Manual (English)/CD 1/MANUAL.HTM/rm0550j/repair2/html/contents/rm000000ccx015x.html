@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+  <title>[Electronic Technical Manual]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000CCX015X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EFI System (2AZ-FE) DTC Check / Clear</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">Print</a></td></tr></table><br clear="all" class="beforePng"><a name="RM000000CCX015X_z0"></a><br clear="all"><a name="1"></a><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">Using SST (TaSCAN), check mode as well as normal mode can be selected, which increases malfunction detection sensitivity compared to normal mode.<br></li><li class="atten4">Perform inspection in check mode when a malfunction is suspected in a sensor signal circuit but the normal code is output in normal mode.<br></li></ol></p><br clear="all"><br clear="all"><a name="RM0550J___00002UI0000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Pre-inspection Preparation</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">Check that the throttle valve is fully closed.</font><br></p></li>
+<li><p><font class="ptxt">Move the shift lever to the N or P position.</font><br></p></li>
+<li><p><font class="ptxt">Turn the A/C OFF.</font><br></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___00002UI0000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>DTC Check (Reading Using TaSCAN)</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">Connect SST (TaSCAN) to DLC3.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">Following the SST (TaSCAN) screen display, display the [Diagnosis Function Menu] - [Mode Change] screen, select normal mode or check mode, and check the DTCs.</font><br><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">If the SST (TaSCAN) display is abnormal,<a href="#" onclick="openSeePage('seepage','RM0000005D5020X');return false;"><img border="0" src="../../../../image/extxref.png"></a>.</dd></dl></p></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___00002UI0000013step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>DTC Check (Reading Using Check Engine Warning Light)</li></ol>
+<ol class="ptxt"></ol><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">Before reading DTCs, turn the IG ON and check that the check engine warning light comes on.<br></li><li class="atten3">Inspection in check mode cannot be performed.<br></li></ol></p>
+<ol class="step2">
+<li><p><font class="ptxt">Turn IG OFF.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c140838j03.png" name="C140838J03" alt="C140838J03" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Using SST (diagnosis check wire No.2), connect between terminals 13 (TC) ←→ 4 (CG) of the DLC3.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">Connecting the connector to the wrong position will cause a malfunction, so never make a mistake.<br></li><li class="atten3">Use only the dedicated diagnosis check wire No.2.<br></li></ol></p></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Turn the IG ON and read the number of blinks of the check engine warning light.</font><br><div class="full"><br clear="all"><img src="../../img/a065376j02.png" name="A065376J02" alt="A065376J02" border="1" class="full"></div><br clear="all"><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">If no code is displayed (the light does not blink), an open in the TC terminal circuit or a computer malfunction is suspected.<br></li><li class="atten4">If the check engine warning light remains on, a short in the wire harness (pinched, etc.) or a computer malfunction is suspected.<br></li><li class="atten4">If a meaningless code is output, a computer malfunction is suspected.<br></li><li class="atten4">If the check engine warning light comes on at 1000r/min or more and no code is output, turn the IG OFF once and then inspect again.<br></li></ol></p></p></li>
+<li><p><font class="ptxt">Remove the SST (diagnosis check wire No.2).</font><br></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___00002UI0000014step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Clearing DTC Memory (Clearing Using TaSCAN)</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">Operate according to the SST (TaSCAN) screen display to display the [Diagnosis Function Menu] - [DTC Check] screen, and clear the DTCs.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">If they cannot be cleared, turn the IG OFF once and then try again.<br></li><li class="atten3">Do not clear DTCs using TaSCAN until the cause has been identified.<br></li></ol></p></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___00002UI0000015step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Clearing DTCs (Clearing by Removing Fuse)</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a153641j02.png" name="A153641J02" alt="A153641J02" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Remove the EFI fuse (20A) and ETC-S fuse (10A), and reinstall the fuses after 60 seconds or more have elapsed.</font><br><p><dl class="caution"><dt class="caution">■ NOTICE ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">After inspecting and repairing the EFI system, always clear the DTC memory and then check that the normal code is output.<br></li><li class="atten3">Do not clear DTCs by battery clear (removing fuses) until the cause has been identified.<br></li></ol></p></p></li></ol><br clear="all"><br clear="all"><a name="RM0550J___00002UI0000016step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>Check Diagnosis Judgment Results (Checking Using TaSCAN)</li></ol>
+<ol class="ptxt"></ol><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□ HINT □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Perform a DTC output check after repairing a malfunctioning circuit indicated by DTC output, or during a reproduction test after clearing DTCs, etc.</dd></dl></p>
+<ol class="step2">
+<li><p><font class="ptxt">Following the SST (TaSCAN) screen display, display the [Diagnosis Judgment Result Check] screen, and select [Check by DTC] from the menu.</font><br></p></li>
+<li><p><font class="ptxt">On the next screen, enter the DTC to be checked.</font><br></p></li>
+<li><p><font class="ptxt">After execution (check start), perform a reproduction test for the relevant DTC and check the DTC judgment result.</font><br></p></li></ol><br clear="all"></body></html>

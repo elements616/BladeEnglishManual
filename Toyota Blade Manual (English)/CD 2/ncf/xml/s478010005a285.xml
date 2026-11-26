@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+
+<!ENTITY T010005A285 SYSTEM "t478010005a285.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010005A285S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010005A285" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON"     SELECT = "Vehicle Outline: Power Performance">
+<TITLE>Engine Outline</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The engine lineup consists of 2 types: the 2GR-FE (3.5L gasoline) engine and the 2AZ-FE (2.4L gasoline) engine.</PTXT></ITEM>
+<ITEM><PTXT>With this improvement, the 2AZ-FE engine complies with the change in emission test mode and the mandatory advanced on-board diagnostic system<HINTREF     REFID = "H478010005A28501"/> announced by the Ministry of Land, Infrastructure, Transport and Tourism in month 11 of 2006 (Arial 18), based on the Central Environment Council report on strengthening vehicle emission regulations, further improving environmental performance.</PTXT></ITEM>
+<ITEM><PTXT>To comply with the new cold test mode (JC08 mode), the engine control computer software of the 2AZ-FE engine was changed and the catalyst specifications were optimized.</PTXT></ITEM>
+<ITEM><PTXT>The 2AZ-FE engine has an enhanced OBD (On-Board Diagnostic System) function that self-diagnoses malfunctions in the emission control system, and a function has been added that automatically detects performance degradation of emission devices such as the catalyst and informs the driver, out of consideration for environmental protection. For details, refer to the Repair Manual.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H478010005A28501">Mandatory for new models from 10 2008 (Arial 20) and for continued-production and imported vehicles from 9 2010 (Arial 22).</PTXT></ITEM></LIST1></HINT>
+</PARA>
+</SECTION>

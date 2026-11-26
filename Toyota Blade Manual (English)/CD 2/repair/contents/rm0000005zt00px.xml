@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1002J_S000U" variety="S000U">
+<name>Brake Control</name>
+<ttl id="1002J_S000U_744TG_T0089" variety="T0089">
+<name>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</name>
+<para id="RM0000005ZT00PX" category="S" type-id="3001E" name-id="442O1-00" from="200612">
+<name>Diagnostic Trouble Code Chart</name>
+<subpara id="RM0000005ZT00PX_z0" proc-id="RM0550J___00004EK00000">
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>ABS Diagnostic Trouble Code Chart</title>
+<tgroup cols="4" colsep="1" rowsep="1">
+<colspec colnum="1" colname="1" colwidth="1.77in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="1.77in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.77in" colsep="0"/>
+<colspec colnum="4" colname="4" colwidth="1.77in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>Diagnostic Trouble Code (DTC)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="center">
+<ptxt>Diagnosis Item</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>Code Memory</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>Reference Page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C0200/31</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Speed Sensor FR System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060900ZX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C0205/32</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Speed Sensor FL System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060900ZX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C0210/33</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Speed Sensor RR System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060900ZX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C0215/34</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Speed Sensor RL System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060900ZX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C0226/21</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>ABS Solenoid FR System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060800VX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C0236/22</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>ABS Solenoid FL System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060800VX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C0246/23</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>ABS Solenoid RR System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060800VX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C0256/24</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>ABS Solenoid RL System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060800VX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C0273/13</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>ABS Motor Relay Circuit Open</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060A00UX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C0274/14</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>ABS Motor Relay Circuit Short</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060A00UX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C0278/11</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>ABS Solenoid Relay Circuit Open</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060700VX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C0279/12</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>ABS Solenoid Relay Circuit Short</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060700VX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1225/25</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>BA/TRC Solenoid Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060800VX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1235/35</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Speed Sensor FR Iron Chip Adhesion Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060B00QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1236/36</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Speed Sensor FL Iron Chip Adhesion Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060B00QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1238/38</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Speed Sensor RR Iron Chip Adhesion Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060B00QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1239/39</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Speed Sensor RL Iron Chip Adhesion Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060B00QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1241/41</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Low or High Voltage Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060G00MX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1243/43</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>G Sensor Stuck Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000000NC000IX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1244/44</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>G Sensor Open or Short</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000000NC000IX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1245/45</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>G Sensor Output Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000000NC000IX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1246/46</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Master Pressure Sensor Signal System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060R00QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1249/49</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Stop Switch Open Detection</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060P014X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1251/51</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Motor System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060Q00MX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1361/91</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Motor Fail-safe Relay Short</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060A00UX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1381/97</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>G Sensor Power Source Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000000NC100QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>U0073/94</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>CAN communication malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000061100WX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>U0124/95</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>G Sensor Communication Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000061100WX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>VSC Diagnostic Trouble Code Chart</title>
+<tgroup cols="4" colsep="1" rowsep="1">
+<colspec colnum="1" colname="1" colwidth="1.77in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="1.77in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.77in" colsep="0"/>
+<colspec colnum="4" colname="4" colwidth="1.77in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>Diagnostic Trouble Code (DTC)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="center">
+<ptxt>Diagnosis Item</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>Code Memory</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>Reference Page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>-/43</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>ABS System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM0000030GT000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1201/51</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Engine System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060C00QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1203/53</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Engine ECU Communication Line Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060D00MX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1210/36</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Yaw Rate Sensor 0 Point Not Calibrated</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060E00VX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1231/31</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Steering Angle Sensor System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060F00PX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1232/32</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>G Sensor Stuck Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000000NC000IX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1234/34</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Yaw Rate Sensor Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000000NC000IX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1290/66</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Steering Angle Sensor 0 Point Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000000T8I00PX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1336/39</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>G Sensor 0 Point Not Calibrated</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000060E00VX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>C1380/64</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Stop Light Drive Relay System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000000NEP00FX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>U0100/65</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Engine ECU Communication Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000061100WX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>U0123/62</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Yaw Rate Sensor Communication Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000061100WX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>U0126/63</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Steering Angle Sensor Communication Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000061100WX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

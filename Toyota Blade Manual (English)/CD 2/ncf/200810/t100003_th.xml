@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740367b SYSTEM "../xml/grph_ent/a4740367b.png" NDATA png>
+<!ENTITY a4740365b SYSTEM "../xml/grph_ent/a4740365b.png" NDATA png>
+<!ENTITY a4740364b SYSTEM "../xml/grph_ent/a4740364b.png" NDATA png>
+<!ENTITY a4740370b SYSTEM "../xml/grph_ent/a4740370b.png" NDATA png>
+<!ENTITY a4740366b SYSTEM "../xml/grph_ent/a4740366b.png" NDATA png>
+<!ENTITY a4740369b SYSTEM "../xml/grph_ent/a4740369b.png" NDATA png>
+<!ENTITY a4740250b SYSTEM "../xml/grph_ent/a4740250b.png" NDATA png>
+<!ENTITY a4740353b SYSTEM "../xml/grph_ent/a4740353b.png" NDATA png>
+<!ENTITY a4740354b SYSTEM "../xml/grph_ent/a4740354b.png" NDATA png>
+<!ENTITY a4740355b SYSTEM "../xml/grph_ent/a4740355b.png" NDATA png>
+<!ENTITY a4740356b SYSTEM "../xml/grph_ent/a4740356b.png" NDATA png>
+<!ENTITY a4740357b SYSTEM "../xml/grph_ent/a4740357b.png" NDATA png>
+<!ENTITY a4740358b SYSTEM "../xml/grph_ent/a4740358b.png" NDATA png>
+<!ENTITY a4740359b SYSTEM "../xml/grph_ent/a4740359b.png" NDATA png>
+<!ENTITY a4740360b SYSTEM "../xml/grph_ent/a4740360b.png" NDATA png>
+<!ENTITY a4740361b SYSTEM "../xml/grph_ent/a4740361b.png" NDATA png>
+<!ENTITY a4740362b SYSTEM "../xml/grph_ent/a4740362b.png" NDATA png>
+<!ENTITY a4740363b SYSTEM "../xml/grph_ent/a4740363b.png" NDATA png>
+<!ENTITY a4740371b SYSTEM "../xml/grph_ent/a4740371b.png" NDATA png>
+<!ENTITY a4740372b SYSTEM "../xml/grph_ent/a4740372b.png" NDATA png>
+<!ENTITY a4740373b SYSTEM "../xml/grph_ent/a4740373b.png" NDATA png>
+<!ENTITY a4740374b SYSTEM "../xml/grph_ent/a4740374b.png" NDATA png>
+<!ENTITY a4740183b SYSTEM "../xml/grph_ent/a4740183b.png" NDATA png>
+
+<!ENTITY T110002T162 SYSTEM "../xml/t403110002t162.xml">
+<!ENTITY T110002K772 SYSTEM "../xml/t403110002k772.xml">
+<!ENTITY T110002K775 SYSTEM "../xml/t403110002k775.xml">
+<!ENTITY T110002K775K066 SYSTEM "../xml/t403110002k775k066.xml">
+<!ENTITY T110002K775K483 SYSTEM "../xml/t403110002k775k483.xml">
+<!ENTITY T110002K775K067 SYSTEM "../xml/t403110002k775k067.xml">
+<!ENTITY T110002K776 SYSTEM "../xml/t403110002k776.xml">
+<!ENTITY T110002K776W003 SYSTEM "../xml/t403110002k776w003.xml">
+<!ENTITY T110002K776W004 SYSTEM "../xml/t403110002k776w004.xml">
+<!ENTITY T110002K776W078 SYSTEM "../xml/t403110002k776w078.xml">
+<!ENTITY T110002K785 SYSTEM "../xml/t478110002k785.xml">
+<!ENTITY T110002K786 SYSTEM "../xml/t478110002k786.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T110002T162S"><SCTITLE/>
+
+<PARA INFOID = "T110002T162" UPDATE = "ORIGINAL" LDUP = "2May2006"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Radar Cruise Control System Outline</TITLE>
+<LIST1><ITEM><PTXT>A "radar cruise control system" that allows driving with 2 types of control, constant speed control mode and vehicle-to-vehicle distance control mode, has been adopted and provided according to specification.</PTXT></ITEM>
+<ITEM><PTXT>Constant speed control mode is a mode in which the vehicle is driven while keeping the vehicle speed constant.</PTXT></ITEM>
+<ITEM><PTXT>Vehicle-to-vehicle distance control mode is a mode in which, in addition to the function of keeping the vehicle speed constant, the millimeter wave radar sensor assembly determines the presence of a preceding vehicle and the vehicle-to-vehicle distance, and the vehicle follows the preceding vehicle while maintaining an appropriate vehicle-to-vehicle distance according to vehicle speed.</PTXT></ITEM>
+<ITEM><PTXT>Switching between constant speed control mode and vehicle-to-vehicle distance control mode is done by operating the "cruise control main switch" mounted on the right side of the steering wheel.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The set vehicle-to-vehicle distance (time) when following a preceding vehicle can be set to 3 levels, "Long", "Middle" and "Short", using the vehicle-to-vehicle distance switch on the steering wheel.</PTXT></ITEM>
+<ITEM><PTXT>The operating status, control mode, etc. of the radar cruise control system are displayed on the "multi-information display" in the combination meter assembly.</PTXT></ITEM>
+<ITEM><PTXT>Brake control is performed automatically when the vehicle gets too close to the preceding vehicle, improving follow-up controllability in vehicle speed control mode. In addition, if the vehicle approaches the preceding vehicle when sufficient deceleration cannot be achieved, the skid control buzzer sounds to warn the driver that driver operation (braking, etc.) is required.</PTXT></ITEM>
+<ITEM><PTXT>In constant speed control mode, the engine control computer controls all system functions; in vehicle-to-vehicle distance control mode, the engine control computer and distance control computer assembly control all system functions.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T110002T162I01" INDSW = "OFF">
+<TITLE>Radar Cruise Control System Components Location1</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740367b" WIDTH = "6.917in" HEIGHT = "4.611in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>List of Main Functions of Radar Cruise Control System Components1</TITLE>
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "11%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "19%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "51%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Components</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "5"><PTXT>Cruise Control Main Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Switch</PTXT>
+<PTXT>(Push Type)</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" CONSPIC = "0"><LIST1><ITEM><PTXT>The main power ON/OFF switch for the radar cruise control system.</PTXT></ITEM>
+<ITEM><PTXT>Outputs the ON/OFF signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "4"><PTXT>Control Switch</PTXT>
+<PTXT>(4-direction Lever Type)</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4"><LIST1><ITEM><PTXT>When operated with the main switch ON, outputs each switch operation signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>-SET Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Deceleration control/vehicle speed set</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>+RES Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Acceleration control/resume control</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>CANCEL Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Control cancel</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>MODE Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Switching operation from vehicle-to-vehicle distance control mode to constant speed control mode</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Steering Sensor</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" CONSPIC = "0">
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Detects the steering angle and steering direction, and outputs a steering angle signal to the distance control computer assembly.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Windshield Wiper Switch Assembly</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" CONSPIC = "0">
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Detects operation of the windshield wiper switch to HI, and outputs a signal to the distance control computer assembly.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Transmission Shift Switch</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" CONSPIC = "0">
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Detects gear up/down operations and outputs a signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Vehicle-to-vehicle Distance Switch</PTXT>
+<PTXT>(In Steering Pad Switch Assembly)</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" CONSPIC = "0">
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Each time the switch is pressed, the set vehicle-to-vehicle distance for follow-up driving in vehicle-to-vehicle distance control mode changes among 3 levels: "Long", "Middle" and "Short".</PTXT></ITEM>
+<ITEM><PTXT>Immediately after the engine is started, the system starts at "Long".</PTXT></ITEM>
+<ITEM><PTXT>Outputs the switch operation signal to the distance control computer assembly.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>The approximate controlled vehicle-to-vehicle distance for each distance setting selected with the vehicle-to-vehicle distance switch is as shown in the table below. (When driving at a vehicle speed of 80km/h)</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "9%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "73%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Setting</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Controlled Vehicle-to-vehicle Distance</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Remarks</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>"Long"</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Approx. 50m</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "2"><LIST1><ITEM><PTXT>Each controlled vehicle-to-vehicle distance changes in proportion to vehicle speed, becoming shorter as vehicle speed decreases.</PTXT></ITEM>
+<ITEM><PTXT>On long downhill slopes, etc., the controlled vehicle-to-vehicle distance may become shorter than the set distance.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>"Middle"</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Approx. 40m</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>"Short"</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Approx. 30m</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002T162I02" INDSW = "OFF">
+<TITLE>How to Switch Between Vehicle-to-vehicle Distance Control Mode and Constant Speed Control Mode</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Operating Procedure for Using Vehicle-to-vehicle Distance Control Mode</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "7%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "92%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Operation</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Turn ON the main switch of the cruise control main switch</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Operating Procedure for Using Constant Speed Control Mode</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "7%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "92%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Operation</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Turn ON the main switch of the cruise control main switch</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Turn ON the MODE switch of the cruise control main switch for approximately 1 seconds or more</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>Switching to constant speed control mode is not possible once any other operation has been performed after the main switch is turned ON, to prevent incorrect operation during control.</PTXT></ITEM>
+<ITEM><PTXT>It is not possible to switch from constant speed control mode to vehicle-to-vehicle distance control mode. Turn the main switch OFF once and operate it again.</PTXT></ITEM></LIST1></INDICATE>
+<INDICATE ID = "T110002T162I03" INDSW = "OFF">
+<TITLE>Radar Cruise Control System Configuration Diagram2</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740365b" WIDTH = "6.903in" HEIGHT = "8.181in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>List of Main Functions of Radar Cruise Control System Components2</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "68%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Distance Control Computer Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Based on data from the millimeter wave radar sensor assembly, determines the vehicle to follow and the acceleration/deceleration needed to achieve the target vehicle-to-vehicle distance, and outputs brake control request and skid control buzzer request signals.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Stop Light Switch Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects that the brake pedal is depressed and outputs a brake operation signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Accelerator Pedal Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects the accelerator pedal depression amount and outputs a signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Skid Control Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Based on a signal from the skid control computer, sounds the buzzer to warn that the distance to the preceding vehicle has become short. (Approach Warning)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Combination Meter Assembly</PTXT>
+<PTXT>(Built into Meter Computer)</PTXT>
+<PTXT>(Built-in Single Tone Buzzer)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Based on signals from the engine control computer, illuminates the CRUISE operation/warning indicator light when the main switch is ON and blinks it when the radar cruise control system malfunctions.</PTXT></ITEM>
+<ITEM><PTXT>Based on signals from the engine control computer, displays the system control status (detection of preceding vehicle, vehicle-to-vehicle distance, set vehicle speed) and warnings on the multi-information display.</PTXT></ITEM>
+<ITEM><PTXT>Illuminates the master warning indicator light when a warning is displayed on the multi-information display.</PTXT></ITEM>
+<ITEM><PTXT>Sounds the single tone buzzer when a radar cruise control system malfunction occurs or during auto cancel control.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Yaw Rate Sensor Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects the yaw rate and outputs a signal to the distance control computer assembly.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Network Gateway ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Mutually transmits and receives data within the CAN communication system.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Shift Lever Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects shifting to shift position "S" and gear up/down operations, and outputs a signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>DLC3</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>By connecting and operating TaSCAN, DTCs and computer data can be read.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002T162I04" INDSW = "OFF">
+<TITLE>Radar Cruise Control System Components Location3</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740364b" WIDTH = "6.903in" HEIGHT = "6.625in" />
+</FIGURE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>List of Main Functions of Radar Cruise Control System Components3</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "28%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "71%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Millimeter Wave Radar Sensor Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Radio waves in the millimeter wave<HINTREF REFID = "H403110002T16201"/> band are emitted forward, and if a preceding vehicle or other object is present, the radio waves reflected from the rear surface of that vehicle are received. Based on the frequency change of the received radio waves and electronic scanning, calculates the presence of a preceding vehicle in the own vehicle's lane, the distance to the preceding vehicle, the relative speed, etc., and outputs this data to the distance control computer assembly.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Controls the functions of the radar cruise control system based on signals from each computer and sensor.</PTXT></ITEM>
+<ITEM><PTXT>Drives the throttle control motor to accelerate/decelerate.</PTXT></ITEM>
+<ITEM><PTXT>Outputs the system control status to the meter computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Throttle Control Motor (Built into Throttle Body Assembly)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Adjusts the throttle control valve to the set opening angle according to signals from the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>ABS &amp; Traction Actuator Assembly (Skid Control Computer)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Drives the brake actuator based on signals from the distance control computer assembly to perform brake control.</PTXT></ITEM>
+<ITEM><PTXT>Outputs a stop light illumination request signal during the above brake control to illuminate the stop lights.</PTXT></ITEM>
+<ITEM><PTXT>Sounds the skid control buzzer based on signals from the distance control computer assembly.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Neutral Start Switch Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects the shift position and outputs a shift position signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Speed Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects the wheel speed and outputs a signal to the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Clutch Control Solenoid</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Performs shifting according to signals from the engine control computer.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H403110002T16201">Millimeter waves are radio waves in a very high frequency band from 30GHz to 300GHz, with an extremely short wavelength in a vacuum of 1 to 10mm. Millimeter waves are not easily affected by conditions such as rain, fog or snow, and provide excellent object recognition performance. The millimeter wave radar sensor assembly uses radio waves in the 76GHz band.</PTXT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740370b" WIDTH = "6.903in" HEIGHT = "2.000in" />
+</FIGURE>
+</ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+<INDICATE ID = "T110002T162I05" INDSW = "OFF">
+<TITLE>Radar Cruise Control System Wiring Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740366b" WIDTH = "6.903in" HEIGHT = "8.458in" />
+</FIGURE>
+</INDICATE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T110002K772S"><SCTITLE/>
+
+<PARA INFOID = "T110002K772" UPDATE = "ORIGINAL" LDUP = "19Apr2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Radar Cruise Control Cancel Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When any of the following operations is performed, controlled driving by the radar cruise control system is cancelled and, except when the main switch is pressed, the radar cruise control system is put in standby.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T110002K772I01" INDSW = "OFF">
+<TITLE>List of Cancel Operations</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Cancel Operation</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Pull the cruise control main switch toward you. (CANCEL switch ON)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Press the main switch of the cruise control main switch. (Main switch OFF)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Depress the brake pedal. (Stop light switch assembly ON)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Shift the shift position from "D" to "N".</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>With the shift position in "D", shift to 3, 2 or 1 by operating the transmission shift switch.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>With the shift position in "S", shift to 3, 2 or 1 by operating the shift lever assembly or transmission shift switch.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T110002K775S"><SCTITLE/>
+
+<PARA INFOID = "T110002K775" UPDATE = "ORIGINAL" LDUP = "19Apr2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Radar Cruise Control System Control Status Display</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>In vehicle-to-vehicle distance control mode, the CRUISE operation/warning indicator light illuminates and the set vehicle speed, presence of a preceding vehicle and set vehicle-to-vehicle distance are displayed on the multi-information display.</PTXT></ITEM>
+<ITEM><PTXT>In constant speed control mode, the CRUISE operation/warning indicator light illuminates and "Constant speed" and the set vehicle speed are displayed on the multi-information display.</PTXT></ITEM>
+<ITEM><PTXT>When a malfunction occurs in the radar cruise control system, the driver is informed of the system malfunction by the CRUISE operation/warning indicator light blinking, the master warning indicator light illuminating, the single-tone buzzer sounding and a warning displayed on the multi-information display.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740369b" WIDTH = "6.903in" HEIGHT = "3.375in" />
+</FIGURE>
+<INDICATE ID = "T110002K775I01" INDSW = "OFF">
+<TITLE>Radar Cruise Control System Control Status Display List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "5" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "16%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "26%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "7%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>Control Status</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" MOREROWS = "1"><PTXT>Multi-information Display</PTXT></ENTRY>
+<ENTRY COLNAME = "5" MOREROWS = "1" CONSPIC = "0"><PTXT><HINTREF     REFID = "H403110002K77501"/>
+</PTXT>
+<GRAPHIC GRAPHICNAME = "a4740250b" WIDTH = "0.417in" HEIGHT = "0.167in" />
+</ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Control Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Switch Status</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Non-control Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>OFF / Not under control</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4"><PTXT>No Display</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Off</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "4" CONSPIC = "0"><PTXT>Vehicle-to-vehicle Distance Control Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>ON / Not under control</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Set vehicle-to-vehicle distance not input</PTXT></ITEM>
+<ITEM><PTXT>Set vehicle speed not input</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0">
+<GRAPHIC GRAPHICNAME = "a4740353b" WIDTH = "1.056in" HEIGHT = "0.569in" />
+</ENTRY>
+<ENTRY COLNAME = "5" MOREROWS = "6" VALIGN = "MIDDLE" CONSPIC = "0">
+<PTXT>Illuminated</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>ON / Not under control</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Set vehicle-to-vehicle distance "Long"<HINTREF     REFID = "H403110002K77502"/></PTXT></ITEM>
+<ITEM><PTXT>Set vehicle speed not input</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0">
+<GRAPHIC GRAPHICNAME = "a4740354b" WIDTH = "1.056in" HEIGHT = "0.569in" />
+</ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>ON / Under constant speed control</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>No preceding vehicle</PTXT></ITEM>
+<ITEM><PTXT>Set vehicle-to-vehicle distance "Middle"<HINTREF REFID = "H403110002K77502"/></PTXT></ITEM>
+<ITEM><PTXT>Set Vehicle Speed<HINTREF REFID = "H403110002K77503"/></PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0">
+<GRAPHIC GRAPHICNAME = "a4740355b" WIDTH = "1.056in" HEIGHT = "0.569in" />
+</ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>ON / Under follow-up control</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Preceding vehicle present</PTXT></ITEM>
+<ITEM><PTXT>Set vehicle-to-vehicle distance "Short"<HINTREF REFID = "H403110002K77502"/></PTXT></ITEM>
+<ITEM><PTXT>Set Vehicle Speed<HINTREF REFID = "H403110002K77503"/></PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0">
+<GRAPHIC GRAPHICNAME = "a4740356b" WIDTH = "1.056in" HEIGHT = "0.569in" />
+</ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>ON / Under follow-up control, approach warning<HINTREF     REFID = "H403110002K77504"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Preceding vehicle present</PTXT></ITEM>
+<ITEM><PTXT>Set vehicle-to-vehicle distance "Long"<HINTREF REFID = "H403110002K77502"/></PTXT></ITEM>
+<ITEM><PTXT>Items other than the set vehicle speed are displayed in reverse every 0.5 seconds</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0">
+<GRAPHIC GRAPHICNAME = "a4740357b" WIDTH = "1.056in" HEIGHT = "0.569in" />
+</ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" CONSPIC = "0"><PTXT>Constant Speed Control Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>ON / Not under control</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Set vehicle speed not input</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0">
+<GRAPHIC GRAPHICNAME = "a4740358b" WIDTH = "1.056in" HEIGHT = "0.569in" />
+</ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>ON / Under constant speed control</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Set Vehicle Speed<HINTREF REFID = "H403110002K77503"/></PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0">
+<GRAPHIC GRAPHICNAME = "a4740359b" WIDTH = "1.056in" HEIGHT = "0.569in" />
+</ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Non-control Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>ON → OFF / Not under control</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Control cancel</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0">
+<GRAPHIC GRAPHICNAME = "a4740360b" WIDTH = "1.056in" HEIGHT = "0.569in" />
+</ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Illuminated → Off</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H403110002K77501">CRUISE Operation/Warning Indicator Light</PTXT></ITEM>
+<ITEM><PTXT ID = "H403110002K77502">"Long", "Middle" or "Short" is displayed according to the set vehicle-to-vehicle distance.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403110002K77503">The set vehicle speed in the table is a display example for 100km/h.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403110002K77504">Sounds the skid control buzzer intermittently. (Sounds at 10Hz [ON 10 times in 1 seconds])</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+
+<MECA ID = "T110002K775K066" UPDATE = "ORIGINAL" LDUP = "22Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Warning Display (Vehicle-to-vehicle Distance Control Mode Unavailable)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the self-check function of the millimeter wave radar sensor assembly detects dirt on the front of the sensor or on the radar-transmissive grille cover, the single-tone buzzer sounds, the CRUISE operation/warning indicator light blinks, the master warning indicator light illuminates, and "Radar dirty, cleaning required" is displayed on the multi-information display.</PTXT></ITEM>
+<ITEM><PTXT>When there is a possibility that the detection performance of the millimeter wave radar sensor assembly may be reduced due to bad weather<HINTREF REFID = "H403110002K775K06601"/>, etc., a single buzzer sounds, the CRUISE operation/warning indicator light blinks, the master warning indicator light comes on, and "Bad weather, cruise unavailable" is shown on the multi-information display.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H403110002K775K06601">When the wipers are operating at HI.</PTXT></ITEM></LIST1></HINT>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Radar Cruise Control System Warning Display List</TITLE>
+<TGROUP COLS = "5" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "29%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "22%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "8%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1"><PTXT>Warning Item</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "5"><PTXT>In Combination Meter Assembly</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Multi-information Display Indication</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>CRUISE Operation/Warning Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Master Warning</PTXT>
+<PTXT>Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Single Tone</PTXT>
+<PTXT>Buzzer</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When dirt adheres to the front of the millimeter wave radar sensor assembly or the radar-transmissive grille cover</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0">
+<GRAPHIC GRAPHICNAME = "a4740361b" WIDTH = "1.056in" HEIGHT = "0.569in" />
+</ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"
+    CONSPIC = "0"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"
+    CONSPIC = "0"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "5" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"
+    CONSPIC = "0"><PTXT>Sounds 1 time</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>In bad weather (when the wipers are operating at HI)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0">
+<GRAPHIC GRAPHICNAME = "a4740362b" WIDTH = "1.056in" HEIGHT = "0.569in" />
+</ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T110002K775K483" UPDATE = "ORIGINAL" LDUP = "22Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Warning Display (Cruise Control Driving Unavailable)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the system self-check function detects any malfunction in the system, the single-tone buzzer sounds, the CRUISE operation/warning indicator light blinks, the master warning indicator light illuminates, and "Check cruise system" is displayed on the multi-information display.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Radar Cruise Control System Warning Display List</TITLE>
+<TGROUP COLS = "5" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "29%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "21%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "22%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "8%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1"><PTXT>Warning Item</PTXT></ENTRY>
+<ENTRY NAMEST = "2" NAMEEND = "5"><PTXT>In Combination Meter Assembly</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Multi-information Display Indication</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>CRUISE Operation/Warning Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Master Warning Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "5" CONSPIC = "0"><PTXT>Single Tone</PTXT>
+<PTXT>Buzzer</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>When a system malfunction occurs</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0">
+<GRAPHIC GRAPHICNAME = "a4740363b" WIDTH = "1.056in" HEIGHT = "0.569in" />
+</ENTRY>
+<ENTRY COLNAME = "3" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "5" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Sounds 1 time</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></MECA>
+
+<MECA ID = "T110002K775K067" UPDATE = "ORIGINAL" LDUP = "22Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Return from Warning Display</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The multi-information display, master warning indicator light illumination and CRUISE operation/warning indicator light blinking return to the system control status display when the conditions in the table below are met according to the display content.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T110002K775K067I01" INDSW = "OFF">
+<TITLE>Radar Cruise Control System Warning Display Return Conditions</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "26%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "73%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Multi-information</PTXT>
+<PTXT>Display</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Return Conditions</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Radar Dirty Clean Radar</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When it is determined that there is no longer dirt on the front of the millimeter wave radar sensor assembly or the radar-transmissive grille cover</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Bad weather, cruise unavailable</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When the windshield wiper switch assembly is operated from HI to INT, LO or OFF after the weather improves</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Check Cruise System</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>When no malfunction is detected after the engine switch (IG) is turned OFF, the engine is restarted and the set operation is performed again (radar cruise control system ON)</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T110002K776S"><SCTITLE/>
+
+<PARA INFOID = "T110002K776" UPDATE = "ORIGINAL" LDUP = "19Apr2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Radar Cruise Control System Control</TITLE>
+<LIST1><ITEM><PTXT>The control performed by the radar cruise control system differs depending on the selected control mode (vehicle-to-vehicle distance control mode or constant speed control mode).</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "20%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "79%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Vehicle-to-vehicle Distance Control Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A mode in which the system recognizes and judges the driving lanes of the preceding vehicle and own vehicle, and follows the preceding vehicle while maintaining an appropriate vehicle-to-vehicle distance according to vehicle speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Constant Speed Control Mode</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A mode in which the vehicle speed is kept constant according to the set vehicle speed.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Glossary</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "20%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "79%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Low Speed Limit</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The lower limit speed of the controllable range. It is set to approximately 40km/h.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Minimum Set Vehicle Speed</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The lower limit speed of the settable range. It is distinguished from the low speed limit. It is set to approximately 45km/h.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>High Speed Limit</PTXT>
+<PTXT>(Constant speed control mode only)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The upper limit speed of the controllable range. It is set to approximately 100km/h.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Maximum Set Vehicle Speed</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The upper limit speed of the settable range. It is set to approximately 100km/h.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+
+<MECA ID = "T110002K776W003" UPDATE = "ORIGINAL" LDUP = "19Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Vehicle-to-vehicle Distance Control Mode</TITLE>
+<LIST1><ITEM><PTXT>The radar cruise control system performs the following controls in vehicle-to-vehicle distance control mode.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T110002K776W003I01" INDSW = "OFF">
+<TITLE>Set Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When the - SET switch is turned ON while driving at or above the minimum set vehicle speed (approximately 45km/h) with the main switch ON, the vehicle speed when the switch is turned OFF is stored as the set vehicle speed and control starts.</PTXT></ITEM>
+<ITEM><PTXT>If the - SET switch is turned ON while driving at or above the maximum set vehicle speed (approximately 100km/h), the maximum set vehicle speed (approximately 100km/h) is stored as the set vehicle speed and control is performed.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W003I02" INDSW = "OFF">
+<TITLE>Constant Speed Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "62%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "37%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>[Reference scenario] When there is no preceding vehicle</PTXT>
+<LIST1><ITEM><PTXT>The vehicle travels at the constant speed set by the driver.</PTXT></ITEM>
+<ITEM><PTXT>The current vehicle speed is compared with the set vehicle speed, and the throttle control motor is driven to adjust the throttle control valve opening so that the vehicle speed approaches the set vehicle speed.</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "2">
+<GRAPHIC GRAPHICNAME = "a4740371b" WIDTH = "2.194in" HEIGHT = "1.000in" />
+</ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W003I03" INDSW = "OFF">
+<TITLE>Deceleration Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "62%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "37%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>[Reference scenario] When a slower preceding vehicle (e.g. 80km/h) appears while driving at a constant set vehicle speed (e.g. 100km/h)</PTXT>
+<LIST1><ITEM><PTXT>The vehicle decelerates to the target following speed (e.g. 80km/h) by driving the throttle control motor in the direction that closes the throttle control valve.</PTXT></ITEM>
+<ITEM><PTXT>If greater deceleration is required, brake control is performed. If the vehicle approaches the preceding vehicle when sufficient deceleration cannot be achieved, the skid control buzzer sounds to warn the driver that driver operation (braking, etc.) is required.</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "2">
+<GRAPHIC GRAPHICNAME = "a4740372b" WIDTH = "2.375in" HEIGHT = "1.250in" />
+</ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><LIST1><ITEM><PTXT>If the - SET switch is held ON while driving in vehicle-to-vehicle distance control mode, the vehicle speed is reduced by driving the throttle control motor in the direction that closes the throttle control valve, and the vehicle speed at the moment the switch is turned OFF is stored as the new, lower set vehicle speed.</PTXT></ITEM>
+<ITEM><PTXT>If the updated set vehicle speed is lower than the speed of the preceding vehicle, the system changes directly to constant speed control; if it is higher than the speed of the preceding vehicle, follow-up control continues.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2"><LIST1><ITEM><PTXT>If the vehicle speed reaches the high speed limit (approximately 100km/h) or more on a downhill slope, etc. while the - SET switch is being operated and the switch is then turned OFF, the high speed limit (approximately 100km/h) is stored as the set vehicle speed and the system changes to constant speed control.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W003I04" INDSW = "OFF">
+<TITLE>Follow-up Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "62%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "37%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>[Reference scenario] When following a preceding vehicle (e.g. 80km/h) slower than the set vehicle speed (e.g. 100km/h)</PTXT>
+<LIST1><ITEM><PTXT>The current vehicle speed is compared with the target follow-up acceleration data, and the throttle control motor is driven to adjust the throttle control valve opening so that an appropriate vehicle-to-vehicle distance is maintained in accordance with changes in the preceding vehicle's speed.</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "2">
+<GRAPHIC GRAPHICNAME = "a4740373b" WIDTH = "2.194in" HEIGHT = "1.139in" />
+</ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W003I05" INDSW = "OFF">
+<TITLE>Acceleration Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "62%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "37%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>[Reference scenario] When the preceding vehicle (e.g. 80km/h) slower than the set vehicle speed (e.g. 100km/h) is no longer present</PTXT>
+<LIST1><ITEM><PTXT>The vehicle accelerates slowly to the set vehicle speed (e.g. 100km/h) by driving the throttle control motor in the direction that opens the throttle control valve.</PTXT></ITEM>
+<ITEM><PTXT>To accelerate quickly, turn ON the + RES switch or depress the accelerator pedal. (When the accelerator pedal is released, the previous control state resumes.)</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "2">
+<GRAPHIC GRAPHICNAME = "a4740374b" WIDTH = "2.264in" HEIGHT = "1.458in" />
+</ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2"><LIST1><ITEM><PTXT>If the + RES switch is held ON while driving in vehicle-to-vehicle distance control mode, the vehicle speed is increased by driving the throttle control motor in the direction that opens the throttle control valve, and the set vehicle speed is updated to a higher value.</PTXT></ITEM>
+<ITEM><PTXT>If the + RES switch is held ON during follow-up control while there is a preceding vehicle, follow-up control takes priority, so the vehicle speed is not increased and follow-up control continues. However, the set vehicle speed is updated to a higher value.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W003I06" INDSW = "OFF">
+<TITLE>Auto Cancel Control</TITLE>
+<LIST1><ITEM><PTXT>When any of the following conditions (No.1 to 11) occurs while driving in vehicle-to-vehicle distance control mode, control is cancelled.</PTXT></ITEM>
+<ITEM><PTXT>In conditions No.1, 2 and 4, control is prohibited until the main switch is turned ON again.</PTXT></ITEM>
+<ITEM><PTXT>In conditions No.5 to 7, control is prohibited until the engine switch is turned ON (IG) again.</PTXT></ITEM>
+<ITEM><PTXT>In the No.8 and 9 conditions, control is prohibited until the system recovers<HINTREF REFID = "H403110002K776W00301"/> from the No.8 and 9 conditions or the main switch is turned ON again.</PTXT>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403110002K776W00301">After recovery, control can be resumed by operating the +RES switch.</PTXT></ITEM></LIST1></HINT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "7" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "4%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "48%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "7%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "9%"/>
+<COLSPEC COLNUM = "7" COLNAME = "7" COLWIDTH = "4%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "6"><PTXT>In Combination Meter Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "7" MOREROWS = "1"><PTXT>Set Vehicle Speed</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Multi-information Display Indication</PTXT></ENTRY>
+<ENTRY COLNAME = "4">
+<PTXT>
+<HINTREF REFID = "H403110002K776W00302"/>
+</PTXT>
+<GRAPHIC GRAPHICNAME = "a4740183b" WIDTH = "0.403in" HEIGHT = "0.361in" />
+</ENTRY>
+<ENTRY COLNAME = "5">
+<PTXT>
+<HINTREF REFID = "H403110002K776W00303"/>
+</PTXT>
+<GRAPHIC GRAPHICNAME = "a4740250b" WIDTH = "0.417in" HEIGHT = "0.167in" />
+</ENTRY>
+<ENTRY COLNAME = "6"><PTXT>Single Tone</PTXT>
+<PTXT>Buzzer</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Vehicle Speed Signal Malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Check Cruise System</PTXT></ENTRY>
+<ENTRY COLNAME = "4"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "6"><PTXT>Sounds once</PTXT></ENTRY>
+<ENTRY COLNAME = "7" MOREROWS = "1"><PTXT>Cleared</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Throttle Control Motor Malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>CRUISE OFF</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>ON →</PTXT>
+<PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "6" MOREROWS = "1"><PTXT>Does not sound</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>During VSC operation or brake operation by the pre-crash safety system</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>(No display)</PTXT></ENTRY>
+<ENTRY COLNAME = "5"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "7"><PTXT>Retained in memory</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the stop light switch assembly has an open or short circuit</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "3"><PTXT>Check Cruise System</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "5"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "5" MOREROWS = "5"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "6" MOREROWS = "5"><PTXT>Sounds once</PTXT></ENTRY>
+<ENTRY COLNAME = "7" MOREROWS = "3"><PTXT>Cleared</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the millimeter wave radar sensor assembly malfunctions</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the optical axis of the millimeter wave radar sensor assembly is misaligned</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>7</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When a radar cruise control system malfunction other than 5.6 above occurs</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>8</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When dirt adheres to the millimeter wave radar sensor assembly, or when the millimeter wave radar sensor assembly judges that recognition of the preceding vehicle is difficult due to bad weather</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Radar Dirty Clean Radar</PTXT></ENTRY>
+<ENTRY COLNAME = "7" MOREROWS = "3"><PTXT>Retained in memory</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>9</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the wipers operate at HI</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Cruise Not Available in Bad Weather</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>10</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the vehicle speed drops to or below the low speed limit (approximately 40km/h)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "1"><PTXT>(No display)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "5" MOREROWS = "1"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "6" MOREROWS = "1"><PTXT>Sounds 2 times in succession</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>11</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the vehicle speed drops to or below the minimum set vehicle speed (approximately 45km/h) while the - SET switch is ON</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H403110002K776W00302">Master Warning Indicator Light</PTXT></ITEM>
+<ITEM><PTXT ID = "H403110002K776W00303">CRUISE Operation/Warning Indicator Light</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W003I07" INDSW = "OFF">
+<TITLE>Manual Cancel Control</TITLE>
+<LIST1><ITEM><PTXT>When any of the following conditions (No.1 to 5) occurs while driving in vehicle-to-vehicle distance control mode, control is cancelled while the set vehicle speed is retained in memory.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "93%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Condition</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Stop light switch assembly ON (brake pedal depressed)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Shift from shift position "D" to "N"</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>With the shift position in "S", shift to 3, 2 or 1 by operating the shift lever assembly or transmission shift switch</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Cruise control main switch CANCEL switch ON</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Cruise control main switch main switch OFF (the set vehicle speed is cleared)</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W003I08" INDSW = "OFF">
+<TITLE>Resume Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>If control is cancelled by the above manual cancel control (except when the main switch is OFF) or auto cancel control (No.3 and No.8 to 11) while driving in vehicle-to-vehicle distance control mode, and the vehicle speed is at or above the low speed limit (approximately 40km/h), turning ON the + RES switch resumes control at the set vehicle speed at the time control was cancelled.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W003I09" INDSW = "OFF">
+<TITLE>Downshift Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>The distance control computer assembly sends a shift control request to the engine control computer to suppress excessive speed increase when driving downhill and to reduce the frequency of brake control.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W003I10" INDSW = "OFF">
+<TITLE>Brake Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When greater deceleration is required while driving in vehicle-to-vehicle distance control mode, the distance control computer assembly sends a brake control request signal to the skid control computer, which applies the brakes by driving the brake actuator. At this time, the stop lights are illuminated.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T110002K776W004" UPDATE = "ORIGINAL" LDUP = "19Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Constant Speed Control Mode</TITLE>
+<LIST1><ITEM><PTXT>The radar cruise control system performs the following controls in constant speed control mode.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T110002K776W004I01" INDSW = "OFF">
+<TITLE>Set Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When the - SET switch is turned ON while driving at or above the minimum set vehicle speed (approximately 45km/h) and at or below the high speed limit (approximately 100km/h) with the main switch ON, the vehicle speed when the switch is turned OFF is stored as the set vehicle speed and control starts.</PTXT></ITEM>
+<ITEM><PTXT>If the vehicle speed is below the minimum set vehicle speed or above the high speed limit, the set operation cannot be performed.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W004I02" INDSW = "OFF">
+<TITLE>Constant Speed Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>The current vehicle speed is compared with the set vehicle speed, and the throttle control motor is driven to adjust the throttle control valve opening so that the vehicle speed approaches the set vehicle speed.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W004I03" INDSW = "OFF">
+<TITLE>Acceleration Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>If the + RES switch is held ON, the vehicle speed is increased by driving the throttle control motor in the direction that opens the throttle control valve, and the vehicle speed at the moment the switch is turned OFF is stored as the set vehicle speed and the system changes to constant speed control.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>If the vehicle speed reaches the high speed limit (approximately 100km/h) or more while the + RES switch is being operated, control is performed with the high speed limit as the set vehicle speed.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When the + RES switch is turned ON momentarily (approximately 0.6 seconds or less), the set vehicle speed increases by 1.6km/h for every 1 switch operation(s). (Tap-up function) However, if the difference between the set vehicle speed and the actual vehicle speed is 5km/h or more, the set vehicle speed is not changed by the tap-up function.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W004I04" INDSW = "OFF">
+<TITLE>Deceleration Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>If the - SET switch is held ON, the vehicle speed is reduced by driving the throttle control motor in the direction that closes the throttle control valve, and control is performed with the vehicle speed at the moment the switch is turned OFF as the set vehicle speed.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>If the vehicle speed reaches the high speed limit or more on a downhill slope, etc. while the - SET switch is being operated and the switch is then turned OFF, control is performed with the high speed limit as the set vehicle speed.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When the - SET switch is turned ON momentarily (approximately 0.6 seconds or less), the set vehicle speed decreases by 1.6km/h for every 1 switch operation(s). (Tap-down function) However, if the difference between the set vehicle speed and the current vehicle speed is 5km/h or more, control is performed with the vehicle speed at the moment the switch is turned OFF as the set vehicle speed.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W004I05" INDSW = "OFF">
+<TITLE>Auto Cancel Control</TITLE>
+<LIST1><ITEM><PTXT>When any of the following conditions (No.1 to 6) occurs while driving in constant speed control mode, control is cancelled.</PTXT></ITEM>
+<ITEM><PTXT>In conditions No.1 to 3, control is prohibited until the main switch is turned ON again.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "7" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "4%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "48%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "5" COLNAME = "5" COLWIDTH = "7%"/>
+<COLSPEC COLNUM = "6" COLNAME = "6" COLWIDTH = "9%"/>
+<COLSPEC COLNUM = "7" COLNAME = "7" COLWIDTH = "4%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Condition</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "6"><PTXT>In Combination Meter Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "7" MOREROWS = "1"><PTXT>Set Vehicle Speed</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Multi-information Display Indication</PTXT></ENTRY>
+<ENTRY COLNAME = "4">
+<PTXT>
+<HINTREF REFID = "H403110002K776W00401"/>
+</PTXT>
+<GRAPHIC GRAPHICNAME = "a4740183b" WIDTH = "0.403in" HEIGHT = "0.361in" />
+</ENTRY>
+<ENTRY COLNAME = "5">
+<PTXT>
+<HINTREF REFID = "H403110002K776W00402"/>
+</PTXT>
+<GRAPHIC GRAPHICNAME = "a4740250b" WIDTH = "0.417in" HEIGHT = "0.167in" />
+</ENTRY>
+<ENTRY COLNAME = "6"><PTXT>Single Tone</PTXT>
+<PTXT>Buzzer</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Vehicle Speed Signal Malfunction</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "2"><PTXT>Check Cruise System</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "2"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "5" MOREROWS = "2"><PTXT>Blinking</PTXT></ENTRY>
+<ENTRY COLNAME = "6" MOREROWS = "2"><PTXT>Sounds once</PTXT></ENTRY>
+<ENTRY COLNAME = "7" MOREROWS = "4"><PTXT>Cleared</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Throttle Control Motor Malfunction</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the stop light switch assembly has an open or short circuit</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the vehicle speed drops to or below the low speed limit (approximately 40km/h)</PTXT></ENTRY>
+<ENTRY COLNAME = "3" MOREROWS = "2"><PTXT>(No display)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "2"><PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "5" MOREROWS = "2"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "6" MOREROWS = "1"><PTXT>Sounds 2 times in succession</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the vehicle speed drops approximately 16km/h or more below the set vehicle speed</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>6</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>During VSC operation or brake operation by the pre-crash safety system</PTXT></ENTRY>
+<ENTRY COLNAME = "6"><PTXT>Does not sound</PTXT></ENTRY>
+<ENTRY COLNAME = "7"><PTXT>Retained in memory</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H403110002K776W00401">Master Warning Indicator Light</PTXT></ITEM>
+<ITEM><PTXT ID = "H403110002K776W00402">CRUISE Operation/Warning Indicator Light</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W004I06" INDSW = "OFF">
+<TITLE>Manual Cancel Control</TITLE>
+<LIST1><ITEM><PTXT>When any of the following conditions (No.1 to 5) occurs while driving in constant speed control mode, control is cancelled while the set vehicle speed is retained in memory.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "6%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "93%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>No.</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Condition</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>1</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Stop light switch assembly ON (brake pedal depressed)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>2</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Shift from shift position "D" to "N"</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>3</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>With the shift position in "S", shift to 3, 2 or 1 by operating the shift lever assembly or transmission shift switch</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>4</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Cruise control main switch CANCEL switch ON</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Cruise control main switch main switch OFF (the set vehicle speed is cleared)</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W004I07" INDSW = "OFF">
+<TITLE>Resume Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>If, while driving in constant speed control mode, control is cancelled by No.6 of the above auto cancel control or by manual cancel control (except when the main switch is OFF), and the vehicle speed is still at or above the low speed limit (approximately 40km/h), turning ON the + RES switch performs resume control at the set vehicle speed at the time control was cancelled. If the vehicle speed drops to or below the low speed limit (approximately 40km/h) even once after cancellation, control cannot be resumed even if the speed is increased to the low speed limit (approximately 40km/h) or more again.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T110002K776W004I08" INDSW = "OFF">
+<TITLE>Downshift Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>The distance control computer assembly sends a shift control request to the engine control computer to suppress excessive speed increase when driving downhill and to reduce the frequency of brake control.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>
+
+<MECA ID = "T110002K776W078" UPDATE = "ORIGINAL" LDUP = "19Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Display of Diagnosis Results for System Malfunction Areas</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When a system malfunction warning is displayed, etc., starting the diagnosis allows the system malfunction areas stored in the engine control computer to be displayed.</PTXT></ITEM>
+<ITEM><PTXT>System malfunction areas are displayed on the multi-information display or by using the check mode of the diagnostic tool (TaSCAN). For details, refer to the Repair Manual.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+</SECTION>
+<SECTION SCID = "T110002K785S"><SCTITLE/>
+
+<PARA INFOID = "T110002K785" UPDATE = "ORIGINAL" LDUP = "19Apr2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Radar Cruise Control System (Vehicle-to-vehicle Distance Control Mode) Handling Precautions</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Use the system on expressways and motorways where it is easy to maintain the vehicle-to-vehicle distance from the preceding vehicle.</PTXT></ITEM>
+<ITEM><PTXT>Because there are limits to vehicle-to-vehicle distance control, do not rely too much on radar cruise control system control (vehicle-to-vehicle distance control mode).</PTXT></ITEM>
+<ITEM><PTXT>When driving, always pay attention to the distance to the preceding vehicle and the surrounding conditions, and depending on the situation, depress the brake pedal to decelerate or depress the accelerator pedal to accelerate, maintaining a safe distance from the preceding and following vehicles and driving safely.</PTXT></ITEM>
+<ITEM><PTXT>This is not a system that automatically operates the brakes until the vehicle stops.</PTXT></ITEM>
+<ITEM><PTXT>Although the brakes are operated automatically, there are limits to deceleration control, and if the preceding vehicle decelerates sharply or another vehicle cuts in front of the vehicle, the vehicle may not decelerate sufficiently and may approach the preceding vehicle. In this case, a warning is given by the multi-information display and the skid control buzzer.</PTXT></ITEM>
+<ITEM><PTXT>This system does not compensate for inattention to the road ahead, such as looking aside or absent-minded driving.</PTXT></ITEM>
+<ITEM><PTXT>Do not use the radar cruise control system in situations such as the following. Doing so may lead to an unexpected accident. In addition, when the system determines that the weather is bad, radar cruise control system control may be canceled automatically.</PTXT></ITEM>
+<ITEM><PTXT>In bad weather (rain, fog, snow, sandstorms, etc.)</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>• The distance to the preceding vehicle may not be measured accurately. When the wipers are operated at HI, the radar cruise control system is canceled automatically and enters set standby.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>When a large amount of raindrops, snow, etc. adheres to the front grille and millimeter wave radar sensor assembly</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>• The distance to the preceding vehicle may not be measured accurately.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>Roads with heavy traffic or sharp curves</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>• The vehicle cannot be driven at a speed suited to the road conditions, which may lead to an unexpected accident</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>Slippery road surfaces such as icy or snow-covered roads</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>• The tires may spin and control of the vehicle may be lost.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>Steep downhill slopes</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>• When there is no preceding vehicle, engine braking is insufficient and the set speed may be exceeded, which may lead to an unexpected accident. (Brake control is not performed in such cases.) In addition, even when there is a preceding vehicle and follow-up control is being performed, deceleration may be delayed, which may lead to an unexpected accident.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>In traffic conditions with frequent acceleration and deceleration</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>• The vehicle cannot be driven at a speed suited to the traffic conditions, which may lead to an unexpected accident.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>When entering an interchange, parking area, service area, etc. on an expressway (leaving the main lane)</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>• If the vehicle was following a vehicle slower than the set speed on the main lane using the radar cruise control system, the preceding vehicle disappears when the vehicle leaves the main lane and the vehicle accelerates to the set speed, which may lead to an unexpected accident.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>Roads with repeated steep uphill and downhill slopes</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>• The preceding vehicle may not be detected and the vehicle may come too close to it, which may lead to an unexpected accident.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>Because this system performs control mainly by detecting radio waves reflected from the rear end of vehicles, in the following cases it may not detect accurately and may not maintain an appropriate vehicle-to-vehicle distance.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When the preceding vehicle or vehicles in other lanes are kicking up water or snow from the road.</PTXT></ITEM>
+<ITEM><PTXT>When the rear end area of the preceding vehicle is extremely small, such as an empty trailer.</PTXT></ITEM>
+<ITEM><PTXT>When extremely heavy cargo is loaded in the trunk room or rear seat and the vehicle is tilted significantly.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>The millimeter wave radar sensor assembly has a function that automatically determines dirt on its front surface and informs the driver, but it is not infallible. Depending on the situation, dirt on the front of the sensor may not be detected. In addition, it may not be detected when a snack bag with aluminum foil sticks to it or when ice, icicles, ice and snow, etc. adhere to it.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>• In such situations, an appropriate vehicle-to-vehicle distance may not be maintained, so always pay attention to the road ahead. When dirt is detected, the radar cruise control system is canceled automatically. Always keep the front of the sensor and the radar-transmissive grille cover clean.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Depending on the road shape (curves, roads with consecutive left and right curves, curve entrances and exits, roads with narrow lanes due to construction or lane restrictions, etc.) and the condition of the vehicle (steering operation, position in the lane, unstable driving due to an accident or malfunction, etc.), vehicles in the adjacent lane or surrounding objects may be detected temporarily, causing control or the approach warning to operate, or the preceding vehicle may temporarily not be detected and the vehicle may approach it.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Neither radar cruise control system control nor the approach warning operates for stopped vehicles or vehicles that are extremely slower than the vehicle. Pay close attention to vehicles stopped at toll gates or at the end of traffic jams, extremely slow vehicles, etc.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Because the detection range of the millimeter wave radar sensor assembly is narrow at short distances, detection of a preceding vehicle cutting in at close range may be delayed, or a motorcycle traveling at the edge of the lane may not be detected, and an appropriate vehicle-to-vehicle distance may not be maintained.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When not using the radar cruise control system, keep the main switch OFF. The radar cruise control system may be operated accidentally, which may lead to an unexpected accident.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When following a vehicle, the vehicle speed is controlled to match the preceding vehicle, so the vehicle does not accelerate even if the set speed is increased with the + RES switch. However, because the set speed has been increased at this time, the vehicle will continue to accelerate after the preceding vehicle is no longer present. Check the set vehicle speed with the set vehicle speed display in the multi-information display.</PTXT></ITEM></LIST1>
+<LIST1><ITEM><PTXT>Select a vehicle-to-vehicle distance suited to the traffic conditions. The approximate controlled vehicle-to-vehicle distances are as follows.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>• When driving at a vehicle speed of approximately 80km/h, the approximate set vehicle-to-vehicle distances are: "Long" approximately 50m, "Middle" approximately 40m, "Short" approximately 30m. The lower the vehicle speed, the shorter the vehicle-to-vehicle distance becomes compared with the above.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>On long downhill slopes, etc., the controlled vehicle-to-vehicle distance may become shorter than the set distance.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Do not use the radar cruise control system in situations in which the skid control buzzer sounds frequently.</PTXT></ITEM>
+<ITEM><PTXT>Even when the vehicle-to-vehicle distance is short, the skid control buzzer may not sound in cases such as the following.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When the relative speed with the preceding vehicle is small (when traveling at almost the same speed)</PTXT></ITEM>
+<ITEM><PTXT>When the preceding vehicle is faster than the vehicle (when the vehicle-to-vehicle distance gradually increases)</PTXT></ITEM>
+<ITEM><PTXT>Immediately after the set operation</PTXT></ITEM>
+<ITEM><PTXT>When the accelerator pedal is depressed and immediately after the accelerator pedal is released</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Normally, during follow-up driving under radar cruise control system control (vehicle-to-vehicle distance control mode), the vehicle automatically accelerates and decelerates to match the speed of the preceding vehicle, but when acceleration is necessary for a lane change, etc., or when the vehicle is likely to approach the preceding vehicle because the preceding vehicle decelerates suddenly or another vehicle cuts in, depress the accelerator pedal or brake pedal to accelerate or decelerate.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>If, while driving with the radar cruise control system, a chime sounds and the CRUISE operation/warning indicator light in the combination meter assembly blinks, the master warning indicator light illuminates and a warning item is displayed on the multi-information display, turn the main switch OFF once and then set the system again.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>• If the system cannot be set even after performing the above operation, or is canceled immediately after being set, a system malfunction is suspected. There is no problem with normal driving, but have the vehicle inspected at a dealer.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>For correct operation of the radar cruise control system, observe the following.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>Always keep the front of the millimeter wave radar sensor assembly clean.</PTXT></ITEM>
+<ITEM><PTXT>When cleaning, use a soft cloth, etc. so as not to scratch the window.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>Do not apply strong impacts to the millimeter wave radar sensor assembly or the surrounding area. Do not disassemble it. Doing so may cause a malfunction or incorrect operation. In addition, it may no longer comply with the standards of the Radio Law.</PTXT></ITEM>
+<ITEM><PTXT>Because special equipment is required for beam axis adjustment, always have the beam axis adjusted at a dealer.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>If the front grille is damaged, the system may not operate properly due to a sensor malfunction, etc.</PTXT></ITEM>
+<ITEM><PTXT>Do not attach stickers or accessories around the front grille (radar-transmissive grille cover). In addition, do not modify or paint the front grille (radar-transmissive grille cover) or replace it with anything other than genuine parts. Doing so will cause the radar to malfunction.</PTXT></ITEM>
+<ITEM><PTXT>The control methods differ between vehicle-to-vehicle distance control mode and constant speed control mode. When using the radar cruise control system, always check which mode is selected.</PTXT></ITEM>
+<ITEM><PTXT>When driving in places where strong external radio waves (illegal radio waves, etc.) are received, the millimeter wave radar sensor assembly may malfunction and the warning may illuminate temporarily.</PTXT></ITEM></LIST1>
+</PARA>
+</SECTION>
+<SECTION SCID = "T110002K786S"><SCTITLE/>
+
+<PARA INFOID = "T110002K786" UPDATE = "ORIGINAL" LDUP = "19Apr2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Radar Cruise Control System (Constant Speed Control Mode) Handling Precautions</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When radar cruise control system control (constant speed control mode) is selected, the presence of a preceding vehicle and the distance to it are not determined as they are when vehicle-to-vehicle distance control mode is selected, so the skid control buzzer does not sound. Pay close attention to the distance to the preceding vehicle.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>• If necessary, perform the cancel operation and then decelerate using engine braking or the foot brake.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1><ITEM><PTXT>When not using cruise control system control (constant speed control mode), keep the main switch OFF.</PTXT></ITEM></LIST1>
+<LIST1><ITEM><PTXT>When driving under cruise control system control (constant speed control mode) on a downhill slope, pay close attention to increases in vehicle speed. (If the vehicle speed becomes too high, perform the cancel operation and then decelerate using engine braking or the foot brake.)</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Operating the + RES switch after cruise control system control (constant speed control mode) has been canceled performs resume control, and operating it during constant speed driving performs acceleration control.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>If the CRUISE operation/warning indicator light blinks while driving under cruise control system control (constant speed control mode), turn the main switch OFF and then perform the set operation again.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>• If the vehicle speed cannot be set, or is canceled immediately after being set, a malfunction in the cruise control system is suspected. There is no problem with normal driving, but have the vehicle inspected at a dealer.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Do not drive under cruise control system control (constant speed control mode) in situations such as the following. The vehicle cannot be driven at a speed suited to the road conditions, or control of the vehicle may be lost due to tire spin, etc., which may lead to an unexpected accident.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY NAMEST = "1" NAMEEND = "2"><LIST1><ITEM><PTXT>Roads with heavy traffic</PTXT></ITEM>
+<ITEM><PTXT>Steep downhill slopes</PTXT></ITEM>
+<ITEM><PTXT>Sharp curves</PTXT></ITEM>
+<ITEM><PTXT>Icy or snow-covered roads</PTXT></ITEM>
+<ITEM><PTXT>Other slippery road surfaces</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+</PARA>
+</SECTION>
+</SCT>

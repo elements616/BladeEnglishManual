@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T010054A071A216" UPDATE = "ORIGINAL" LDUP = "27Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Calculation of Ignition Timing</TITLE>
+<LIST1><ITEM><PTXT>Ne/G<SUB>2</SUB>Based on the signal, air flow meter signal, accelerator opening signal, coolant temperature signal, etc., the engine control computer calculates the optimum ignition timing for the driving conditions and sends an ignition signal to the ignition coil with igniter.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740058p" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+<INDICATE ID = "T010054A071A216I01" INDSW = "OFF">
+<TITLE>Calculation of Ignition Timing</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><HINT>
+<PTXT>Ignition timing = A. Initial set ignition timing or B. Basic advance angle + C. Corrective advance angle</PTXT></HINT>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "29%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "70%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>A. Fixed Advance Characteristics</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the engine is started, the timing is fixed at BTDC5°. In addition, when the service terminals are shorted and the throttle is off, the timing is fixed at BTDC10°.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>B. Basic Advance Characteristics</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>The optimum ignition timing is selected from a map based on the signals from each sensor.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>C. Corrective Advance Characteristics</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Based on the signals from each sensor, appropriate advance and retard corrections are made according to the engine condition at that time.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>C-1 Warm-up Advance Characteristics</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the coolant temperature is low, the ignition timing is advanced according to the driving conditions to improve driveability.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>C-2 Idle Stabilization Advance Characteristics</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When the idle speed decreases, the ignition timing is advanced, and when it increases, the timing is retarded, to stabilize the idle speed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>C-3 Retard at Fuel Cut Recovery</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>At fuel cut recovery, the ignition timing is retarded to reduce shock.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>C-4 Retard During Acceleration</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Driveability is improved by temporarily retarding the ignition timing during acceleration.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>C-5 Knock Correction Retard</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When knocking occurs, the ignition timing is corrected based on the signal from the knock sensor.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>

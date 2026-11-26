@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740381b SYSTEM "grph_ent/a4740381b.png" NDATA png>
+<!ENTITY a4740382b SYSTEM "grph_ent/a4740382b.png" NDATA png>
+
+<!ENTITY T120025K530 SYSTEM "t478120025k530.xml">
+<!ENTITY T120025K530K865 SYSTEM "t478120025k530k865.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120025K530S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120025K530" UPDATE = "ORIGINAL" LDUP = "22Jan2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Shift Position Indicator Lamp</TITLE>
+<LIST1><TITLE>6 Super ECT models</TITLE>
+<ITEM><PTXT>A D (temporary S) mode indicator light and an S (sequential shift) mode indicator light have been provided.</PTXT></ITEM>
+<ITEM><PTXT>When the shift position is moved to "S", the S mode indicator light "S" illuminates and the current shift range is displayed.</PTXT></ITEM>
+<ITEM><PTXT>When an UP/DOWN shift range operation is performed with the transmission shift switch while shift position "D" is selected, the D mode indicator light "D" illuminates and the current shift range is displayed.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740381b" WIDTH = "6.903in" HEIGHT = "2.306in" />
+</FIGURE>
+
+<MECA ID = "T120025K530K865" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Shift Position Indicator Operation</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>S (Sequential Shift) Mode {6Super ECT Models}</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the shift position "S" signal is input, the engine control computer also receives the shift switch operation (UP/DOWN) signal from the shift lever or transmission shift switch, and sends the "shift range signal" and "'S' illumination signal" to the meter computer as CAN communication signals.</PTXT></ITEM>
+<ITEM><PTXT>Upon receiving these signals, the meter computer illuminates the S mode indicator light "S" and displays the currently selected shift range on the display LCD.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>D (Temporary S) Mode {6Super ECT Models}</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the shift switch operation (UP/DOWN) signal from the transmission shift switch is input while the shift position "D" signal is input, the engine control computer sends the "shift range signal" and "'D' illumination signal" to the meter computer as CAN communication signals.</PTXT></ITEM>
+<ITEM><PTXT>Upon receiving these signals, the meter computer illuminates the D mode indicator light "D" and displays the currently selected shift range on the display LCD.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740382b" WIDTH = "6.903in" HEIGHT = "3.750in" /><FIGCAPTION><L ja="コンビネーションメーターASSY">Combination Meter Assembly</L><L ja="ニュートラルスタートスイッチ">Neutral Start Switch</L><L ja="電源回路">Power Circuit</L><L ja="シフトレバー Sスイッチ シフトスイッチ（UP）">Shift Lever / S Switch / Shift Switch (UP)</L><L ja="・シフトポジション・シフトレンジ・「S」「D」インジケーター表示用LCD">• Shift position / • Shift range / • &quot;S&quot; &quot;D&quot; indicator display LCD</L><L ja="CAN通信">CAN communication</L><L ja="シフトスイッチ（DOWN）">Shift Switch (DOWN)</L><L ja="シフトポジション シフトレンジ「D」点灯">Shift position / Shift range &quot;D&quot; ON</L><L ja="トランスミッションシフトスイッチ シフトスイッチ（UP） シフトスイッチ（DOWN）">Transmission Shift Switch / Shift Switch (UP) / Shift Switch (DOWN)</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1002J_S000U" variety="S000U">
+<name>Brake Control</name>
+<ttl id="1002J_S000U_744TG_T0089" variety="T0089">
+<name>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</name>
+<para id="RM00000060F00PX" category="C" type-id="300F4" name-id="442OK-00" from="200612">
+<dtccode>C1231/31</dtccode>
+<dtcname>Steering Angle Sensor System Malfunction</dtcname>
+<subpara id="RM00000060F00PX_05" type-id="33" category="03" proc-id="RM0550J___00007NU00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>The skid control computer (built into the actuator) receives the steering sensor signal via CAN communication.</ptxt>
+<ptxt>If there is a malfunction in the communication line to the steering sensor, DTC "U0126/63 (Steering Angle Sensor Communication Malfunction)" is output.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.53in"/>
+<colspec colname="COL2" colwidth="2.86in"/>
+<colspec colname="COL3" colwidth="2.69in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Output Related Items</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1231/31</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When an abnormal signal from the steering sensor is received with IG1 terminal voltage at 9.5to17.4V</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in steering sensor power source circuit</ptxt>
+</item>
+<item>
+<ptxt>Steering Sensor</ptxt>
+</item>
+<item>
+<ptxt>Actuator assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000060F00PX_06" type-id="32" category="03" proc-id="RM0550J___00007NV00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C129614J06" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM00000060F00PX_07" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM00000060F00PX_08" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000060F00PX_08_0011" proc-id="RM0550J___00007NW00000">
+<scantool type="1"/>
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTCs. (see <xref label="Seep01" href="RM00000060000PX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG OFF.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON again and check that no CAN communication malfunction DTC is output. (see <xref label="Seep02" href="RM00000060000PX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Drive at 35km/h or more and turn the steering wheel, and check that no speed sensor malfunction or yaw rate sensor malfunction DTC is output. (see <xref label="Seep03" href="RM00000060000PX"/>)</ptxt>
+<spec>
+<title/>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.28in"/>
+<colspec colname="COL2" colwidth="0.85in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>No CAN communication malfunction, speed sensor malfunction or yaw rate sensor malfunction code is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>CAN communication malfunction code is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Speed sensor or yaw rate sensor malfunction code is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If there is a malfunction in the speed sensor or yaw rate sensor, an abnormal value may be output even if the steering sensor is normal.</ptxt>
+</item>
+<item>
+<ptxt>If speed sensor or yaw rate sensor malfunction codes are output at the same time, repair them and then inspect the steering sensor.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM00000060F00PX_08_0012" fin="false">A</down>
+<right ref="RM00000060F00PX_08_0014" fin="true">B</right>
+<right ref="RM00000060F00PX_08_0015" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM00000060F00PX_08_0012" proc-id="RM0550J___00007NX00000">
+<testtitle>Inspect Wire Harness and Connector (Steering Sensor Power Source System)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Check that the steering sensor connector is free of malfunctions such as loose engagement or disconnection.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the steering sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the connector case and terminals are free of deformation and corrosion.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No deformation or corrosion</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If there is a malfunction in the steering sensor connector, replace the sensor.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the voltage and resistance between the wire harness side connector of the steering sensor and body ground.</ptxt>
+<figure>
+<graphic graphicname="C146385J07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.90in"/>
+<colspec colname="COL2" colwidth="1.09in"/>
+<colspec colname="COL3" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4 (IG) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5 (BAT) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.89in"/>
+<colspec colname="COL2" colwidth="1.08in"/>
+<colspec colname="COL3" colwidth="1.16in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 (ESS) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000060F00PX_08_0013" fin="true">OK</down>
+<right ref="RM00000060F00PX_08_0016" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000060F00PX_08_0013">
+<testtitle>Replace Steering Sensor<xref label="Seep01" href="RM00000305A000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000060F00PX_08_0014">
+<testtitle>Go to CAN communication system troubleshooting</testtitle>
+</testgrp>
+<testgrp id="RM00000060F00PX_08_0015">
+<testtitle>Go to Relevant DTC</testtitle>
+</testgrp>
+<testgrp id="RM00000060F00PX_08_0016">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,2557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_74WIJ_T00FO" variety="T00FO">
+<name>EFI System (2GR-FE)</name>
+<para id="RM0000031X5004X" category="C" type-id="8021D" name-id="066NS-00" from="200708">
+<dtccode>P0300/93</dtccode>
+<dtcname>Misfire Detected</dtcname>
+<dtccode>P0301/93</dtccode>
+<dtcname>Misfire Detected (Cylinder #1)</dtcname>
+<dtccode>P0302/93</dtccode>
+<dtcname>Misfire Detected (Cylinder #2)</dtcname>
+<dtccode>P0303/93</dtccode>
+<dtcname>Misfire Detected (Cylinder #3)</dtcname>
+<dtccode>P0304/93</dtccode>
+<dtcname>Misfire Detected (Cylinder #4)</dtcname>
+<dtccode>P0305/93</dtccode>
+<dtcname>Misfire Detected (Cylinder #5)</dtcname>
+<dtccode>P0306/93</dtccode>
+<dtcname>Misfire Detected (Cylinder #6)</dtcname>
+<subpara id="RM0000031X5004X_01" type-id="31" category="03" proc-id="RM0550J___0000D5R00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A083872J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<ptxt>When a misfire occurs in the engine, hydrocarbons (HC) are emitted in the exhaust gas. When the HC concentration rises, exhaust emission levels deteriorate. At the same time, a rise in HC concentration raises the catalyst temperature, which may impair the purification ability of the catalyst. To prevent increased exhaust emissions and thermal deterioration of the catalyst, the engine control computer monitors the misfire rate (number of misfires divided by number of ignitions). The engine control computer uses the camshaft position sensor and crankshaft position sensor to monitor misfires. The crankshaft position sensor is used to measure the crankshaft rotation speed. When the variation in crankshaft rotation speed exceeds the judgment value, the engine control computer determines that a misfire is occurring and increments the misfire counter (cumulative number of misfires). </ptxt>
+<ptxt>The camshaft position sensor is used to identify the misfiring cylinder.</ptxt>
+<figure>
+<graphic graphicname="A164705J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<ptxt>When the misfire rate exceeds the judgment value, the engine control computer illuminates or blinks the check engine warning light.</ptxt>
+<ptxt>When catalyst overtemperature level misfire is detected</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The misfire rate is judged every 200 engine revolutions, and when a misfire rate that causes thermal deterioration of the catalyst (several tens of percent or more) occurs 3 times, the engine control computer immediately blinks the check engine warning light.</ptxt>
+</item>
+</list1>
+<ptxt>When emission deterioration level misfire is detected</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The misfire rate is judged every 1000 engine revolutions, and when a misfire rate at which emissions exceed the judgment value (several percent or more) occurs 4 times (on the 2 trip), the engine control computer illuminates the check engine warning light.</ptxt>
+</item>
+</list1>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" align="center" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.06in"/>
+<colspec colname="COL4" colwidth="3.90in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL4">
+<ptxt>P0300/93</ptxt>
+<ptxt>P0301/93</ptxt>
+<ptxt>P0302/93</ptxt>
+<ptxt>P0303/93</ptxt>
+<ptxt>P0304/93</ptxt>
+<ptxt>P0305/93</ptxt>
+<ptxt>P0306/93</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="7" valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis Condition</ptxt>
+</entry>
+<entry namest="COL3" nameend="COL4">
+<ptxt>Engine speed is 450 to 4500r/min and engine coolant temperature is -10°C or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Abnormal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0300/93</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Misfire exceeding the judgment value occurs in multiple cylinders</ptxt>
+<ptxt>(When catalyst overtemperature level misfire is detected, the check engine warning light blinks. When emission deterioration level misfire is detected, the check engine warning light illuminates)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>P0301/93</ptxt>
+<ptxt>P0302/93</ptxt>
+<ptxt>P0303/93</ptxt>
+<ptxt>P0304/93</ptxt>
+<ptxt>P0305/93</ptxt>
+<ptxt>P0306/93</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Misfire exceeding the judgment value occurs in a single cylinder</ptxt>
+<ptxt>(When catalyst overtemperature level misfire is detected, the check engine warning light blinks. When emission deterioration level misfire is detected, the check engine warning light illuminates)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Malfunction Duration</ptxt>
+</entry>
+<entry namest="COL3" nameend="COL4" valign="middle">
+<list1 type="nonmark">
+<item>
+<ptxt>When catalyst overtemperature level misfire is detected</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>200 engine revolutions 3 times</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type="nonmark">
+<item>
+<ptxt>When emission deterioration level misfire is detected</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>1000 engine revolutions 4 times</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Trip Count</ptxt>
+</entry>
+<entry namest="COL3" nameend="COL4" valign="middle">
+<ptxt>2 trip</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Detection Method</ptxt>
+</entry>
+<entry namest="COL3" nameend="COL4" valign="middle">
+<ptxt>Continuous monitoring (while diagnosis conditions are met)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Sensors Used for Detection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Crankshaft Position Sensor</ptxt>
+</item>
+<item>
+<ptxt>Camshaft Position Sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sub</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Intake Air Flow Meter Sub-assembly</ptxt>
+</item>
+<item>
+<ptxt>E.F.I. Water Temperature Sensor</ptxt>
+</item>
+<item>
+<ptxt>Intake air temperature sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Inspection Area</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL4">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness and Connector</ptxt>
+</item>
+<item>
+<ptxt>Connector connection condition</ptxt>
+</item>
+<item>
+<ptxt>Vacuum hose connection condition</ptxt>
+</item>
+<item>
+<ptxt>Ignition system</ptxt>
+</item>
+<item>
+<ptxt>Fuel Injector Assembly</ptxt>
+</item>
+<item>
+<ptxt>Fuel pressure</ptxt>
+</item>
+<item>
+<ptxt>Intake Air Flow Meter Sub-assembly</ptxt>
+</item>
+<item>
+<ptxt>E.F.I. Water Temperature Sensor</ptxt>
+</item>
+<item>
+<ptxt>Compression</ptxt>
+</item>
+<item>
+<ptxt>Valve clearance</ptxt>
+</item>
+<item>
+<ptxt>Valve Timing</ptxt>
+</item>
+<item>
+<ptxt>PCV hose connection condition</ptxt>
+</item>
+<item>
+<ptxt>PCV hose</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>If multiple cylinder-specific DTCs (P0301/93, P0302/93, P0303/93, P0304/93, P0305/93, P0306/93) are recorded but the random cylinder misfire DTC (P0300/93) is not, this indicates that misfires in each cylinder were detected and recorded at different times.</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Using an oscilloscope, check the fuel injector signal waveform while idling.</ptxt>
+</item>
+</list1>
+</atten4>
+<figure>
+<graphic graphicname="A078423J02" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000031X5004X_02" type-id="33" category="03" proc-id="RM0550J___0000D5S00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<list1 type="ordered">
+<item>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</item>
+<item>
+<ptxt>Record the DTCs and freeze frame data.</ptxt>
+</item>
+<item>
+<ptxt>Following the SST (TaSCAN) display screen, switch from normal mode to check mode.</ptxt>
+</item>
+<item>
+<ptxt>Following the SST (TaSCAN) display screen, read the misfire counter value of each cylinder while idling.</ptxt>
+</item>
+<item>
+<ptxt>If the misfire counter values cannot be read in 4., drive the vehicle several times under the conditions recorded in the freeze frame data, such as engine speed and engine load.</ptxt>
+<atten3>
+<ptxt>To detect a misfire DTC, drive the vehicle for the time shown in the table below under the conditions recorded in the freeze frame data, such as engine speed and engine load. Do not turn the ignition OFF at this time. Turning the ignition OFF changes the mode from check mode to normal mode and clears all DTCs, freeze frame data, etc.</ptxt>
+</atten3>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Speed (Maintenance Mode)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3 minutes 30 seconds or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1000r/min</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3 minutes or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2000r/min</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 minutes 30 seconds or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3000r/min</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 minutes or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+<item>
+<ptxt>Following the SST (TaSCAN) display screen, check and record the DTCs, freeze frame data and misfire counter.</ptxt>
+</item>
+<item>
+<ptxt>Turn the IG OFF and wait for 5 seconds or more.</ptxt>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM0000031X5004X_03" type-id="32" category="03" proc-id="RM0550J___0000D5T00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A177151J01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000031X5004X_04" type-id="51" category="05" proc-id="RM0550J___0000D5U00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If DTCs other than misfire DTCs are stored at the same time, repair those DTCs first.</ptxt>
+</item>
+<item>
+<ptxt>Using SST (TaSCAN), read the freeze data. Freeze frame data records part of the engine operating condition when the malfunction occurred, and this information is useful when troubleshooting.</ptxt>
+</item>
+<item>
+<ptxt>If the symptom cannot be confirmed, reproduce the conditions recorded in the freeze frame data.</ptxt>
+</item>
+<item>
+<ptxt>If either the F/B correction value bank 1 or the F/B learned value bank 1 in the freeze frame data is outside the range of ±20 %, the air-fuel ratio may be rich (-20 % or less) or lean (+20 % or more).</ptxt>
+</item>
+<item>
+<ptxt>If the engine coolant temperature in the freeze frame data is less than 80 degrees, the misfire may occur only while the engine is warming up.</ptxt>
+</item>
+<item>
+<ptxt>Possible reasons why a misfire cannot be reproduced include running out of fuel, use of improper fuel and fouled spark plugs.</ptxt>
+</item>
+<item>
+<ptxt>After repair, check the misfire counter value.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000031X5004X_07" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000031X5004X_07_0049" proc-id="RM0550J___0000D5V00000">
+<scantool type="1"/>
+<testtitle>Read DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the main switch of SST (TaSCAN) ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs by following the SST (TaSCAN) screen display.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="5.66in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Only P0300/93, P0301/93, P0302/93, P0303/93, P0304/93, P0305/93 or P0306/93 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTCs other than P0300/93, P0301/93, P0302/93, P0303/93, P0304/93, P0305/93 and P0306/93 are also output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0050" fin="false">A</down>
+<right ref="RM0000031X5004X_07_0081" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0050" proc-id="RM0550J___0000D5W00000">
+<testtitle>Read TaSCAN Data (Average Engine Speed at Misfire, Average Load at Misfire)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the main switch of SST (TaSCAN) ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, record the values of [ECU Data Monitor] - [Average Engine Speed at Misfire] and [Average Load at Misfire].</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0051" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0051" proc-id="RM0550J___0000D5X00000">
+<testtitle>Inspect PCV Hose</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the PCV hose connections and check for damage.</ptxt>
+</test1>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>The PCV hose is connected correctly and is not damaged.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0052" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0082" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0052" proc-id="RM0550J___0000D5Y00000">
+<testtitle>Read TaSCAN Data (Misfire Counter #1, #2, #3, #4, #5, #6)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the main switch of SST (TaSCAN) ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, check [ECU Data Monitor] - [Misfire Counter #1], [Misfire Counter #2], [Misfire Counter #3], [Misfire Counter #4], [Misfire Counter #5] and [Misfire Counter #6].</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.10in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Misfires concentrated in 1 or 2 cylinders</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Misfires spread over 3 or more cylinders</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If this cannot be checked with the ECU Data Monitor, refer to the DTCs obtained in step 1 to determine whether a single cylinder or multiple cylinders are misfiring.</ptxt>
+</item>
+<item>
+<ptxt>If a single cylinder, go to A; if multiple cylinders, go to B.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0053" fin="false">A</down>
+<right ref="RM0000031X5004X_07_0066" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0053" proc-id="RM0550J___0000D5Z00000">
+<testtitle>Inspect Spark Plug</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the ignition coil of the misfiring cylinder.</ptxt>
+</test1>
+<test1>
+<ptxt>Remove the spark plug of the misfiring cylinder.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the spark plug.</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt>FK20HR11 (DENSO made)</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Check the spark plug for thread damage and insulator damage.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Do not adjust the spark plug gap.</ptxt>
+</item>
+<item>
+<ptxt>Do not touch the tip.</ptxt>
+</item>
+<item>
+<ptxt>There should be no carbon deposits on the electrodes.</ptxt>
+</item>
+<item>
+<ptxt>Do not damage the iridium or platinum tips.</ptxt>
+</item>
+<item>
+<ptxt>If it is significantly dirty due to carbon fouling or similar, replace it with a new spark plug.</ptxt>
+</item>
+<item>
+<ptxt>When replacing with a new spark plug, do not remove the cap covering the tip for protection until it is installed to the engine.</ptxt>
+</item>
+<item>
+<ptxt>If a spark plug is dropped, replace it with a new one.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Plug Gap</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.0 to 1.1mm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Maximum Plug Gap</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.4 mm</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0054" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0083" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0054" proc-id="RM0550J___0000D6000000">
+<testtitle>Inspect Spark</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before performing the spark test, be sure to check that all fuel injector assembly connectors are disconnected.</ptxt>
+</item>
+<item>
+<ptxt>If the ignition coil assembly connector is disconnected, a DTC will be detected during the inspection, so leave it connected.</ptxt>
+</item>
+</list1>
+</atten3>
+<test1>
+<ptxt>Disconnect all fuel injector assembly connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the removed spark plug to the ignition coil and connect the ignition coil connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Ground the ground electrode of the spark plug and check that a spark occurs while cranking the engine.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Be sure to ground the ground electrode of the spark plug when performing the inspection.</ptxt>
+</item>
+<item>
+<ptxt>If the ignition coil has been subjected to an impact, such as by being dropped, replace it with a new one.</ptxt>
+</item>
+<item>
+<ptxt>Do not crank the engine for 2 seconds or more</ptxt>
+</item>
+</list1>
+</atten3>
+</test1>
+<test1>
+<ptxt>Connect the fuel injector assembly connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the spark plug.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the ignition coil.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0055" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0079" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0055" proc-id="RM0550J___0000D6100000">
+<testtitle>Inspect Compression</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before performing the compression check, be sure to check that all fuel injector assembly connectors are disconnected.</ptxt>
+</item>
+<item>
+<ptxt>If the ignition coil assembly connector is disconnected, a DTC will be detected during the inspection, so leave it connected.</ptxt>
+</item>
+</list1>
+</atten3>
+<test1>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes.</ptxt>
+</test1>
+<test1>
+<ptxt>Remove all the ignition coils.</ptxt>
+</test1>
+<test1>
+<ptxt>Remove all the spark plugs.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect all fuel injector assembly connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Set the compression gauge.</ptxt>
+</test1>
+<test1>
+<ptxt>Crank the engine and measure the compression of each cylinder.</ptxt>
+<spec>
+<title>Standard</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Compression</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.3M Pa {13.3 kgf/cm<sup>2</sup>} </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Limit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.0M Pa {10.2 kgf/cm<sup>2</sup>} </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Difference Between Cylinders</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.1M Pa {1.0 kgf/cm<sup>2</sup>} </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>Perform the compression inspection in as short a time as possible.</ptxt>
+</atten3>
+</test1>
+<test1>
+<ptxt>Connect the fuel injector assembly connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the spark plug.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the ignition coil.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0056" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0084" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0056" proc-id="RM0550J___0000D6200000">
+<testtitle>Inspect Wire Harness and Connector (Fuel Injector Voltage)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect the fuel injector connector.</ptxt>
+<figure>
+<graphic graphicname="A105992J07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals.</ptxt>
+</test1>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<colspec colname="COL3" colwidth="0.82in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (+B) - Engine ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0057" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0116" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0057" proc-id="RM0550J___0000D6300000">
+<testtitle>Inspect Wire Harness and Connector (Fuel Injector Assembly - Engine Control Computer)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect the fuel injector assembly connector.</ptxt>
+<figure>
+<graphic graphicname="A106388J24" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal. (see <xref label="Seep02" href="X39400000QV01SD"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COLSPEC0" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A45(#10) - 1(#10)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A85(#20) - 1(#20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A44(#30) - 1(#30)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A84(#40) - 1(#40)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A43(#50) - 1(#50)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A83(#60) - 1(#60)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COLSPEC0" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A45 (#10) and 1 (#10) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A85 (#20) and 1 (#20) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A44 (#30) and 1 (#30) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A43 (#50) and 1 (#40) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A83 (#60) and 1 (#50) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A84 (#40) and 1 (#60) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect connector A of the engine control computer.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the fuel injector assembly connectors.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0122" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0085" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0122" proc-id="RM0550J___0000D6S00000">
+<testtitle>Inspect and Replace Wire Harness and Connector (Engine Control Computer Voltage)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/></ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+</test1>
+<figure>
+<graphic graphicname="A107892J12" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals. (see <xref label="Seep02" href="X39400000QV01SD"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COLSPEC0" colwidth="0.83in"/>
+<colspec colname="COL2" colwidth="0.82in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A45(#10) - A22(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A85(#20) - A22(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A44(#30) - A22(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A84(#40) - A22(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A43(#50) - A22(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A83(#60) - A22(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0058" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0114" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0058" proc-id="RM0550J___0000D6400000">
+<testtitle>Inspect Fuel Injector Assembly</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the procedure, see <xref label="Seep01" href="RM000002AAX004X"/></ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0060" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0087" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0060" proc-id="RM0550J___0000D6500000">
+<testtitle>Inspect Valve Timing</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect Valve Timing</ptxt>
+<test2>
+<ptxt>Remove the cylinder head cover and cylinder head cover LH.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn the crankshaft clockwise and align the notch of the crankshaft pulley with the 0° position.</ptxt>
+</test2>
+<test2>
+<ptxt>As shown in the illustration, check that the timing marks of the camshaft timing gears are aligned. If the marks are not aligned, turn the crankshaft clockwise 1 more revolution.</ptxt>
+<figure>
+<graphic graphicname="A095456J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Timing marks are aligned</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0061" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0089" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0061" proc-id="RM0550J___0000D6600000">
+<testtitle>Inspect Intake System</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that there is no air leakage from any part of the intake system (disconnected vacuum hoses, air leaking from gaskets).</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt>No air leakage.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0062" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0090" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0062" proc-id="RM0550J___0000D6700000">
+<testtitle>Fuel Pressure Inspection</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the procedure, see <xref label="Seep01" href="RM000002ABD006X_01_0001"/></ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0063" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0115" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0063" proc-id="RM0550J___0000D6800000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Engine Coolant Temperature)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the main switch of SST (TaSCAN) ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, read [ECU Data Monitor] - [Engine Coolant Temperature].</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Same as actual coolant temperature</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>After warming up the engine: 75°C to 95°C</ptxt>
+</item>
+<item>
+<ptxt>After leaving the vehicle overnight: same as the ambient temperature.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0064" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0092" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0064" proc-id="RM0550J___0000D6900000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Intake Air Temperature)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the main switch of SST (TaSCAN) ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, read [ECU Data Monitor] - [Intake Air Temperature].</ptxt>
+<spec>
+<title>Measurement Result</title>
+<specitem>
+<ptxt>Same as ambient temperature</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0065" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0093" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0065" proc-id="RM0550J___0000D6A00000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Intake Air Volume)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the main switch of SST (TaSCAN) ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, check [ECU Data Monitor] - [Intake Air Volume].</ptxt>
+<spec>
+<title>Standard</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine Intake Air Volume</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>30 seconds after IG ON</ptxt>
+<ptxt>(Engine Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Less than 0.55 g/sec.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>Do not extract exhaust from the exhaust tail pipe with an exhaust duct.</ptxt>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0095" fin="true">OK</down>
+<right ref="RM0000031X5004X_07_0094" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0066" proc-id="RM0550J___0000D6B00000">
+<testtitle>Inspect Valve Timing</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect Valve Timing</ptxt>
+<test2>
+<ptxt>Remove the cylinder head cover and cylinder head cover LH.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn the crankshaft clockwise and align the notch of the crankshaft pulley with the 0° position.</ptxt>
+</test2>
+<test2>
+<ptxt>As shown in the illustration, check that the timing marks of the camshaft timing gears are aligned. If the marks are not aligned, turn the crankshaft clockwise 1 more revolution.</ptxt>
+<figure>
+<graphic graphicname="A095456J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Timing marks are aligned</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0067" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0096" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0067" proc-id="RM0550J___0000D6C00000">
+<testtitle>Inspect Intake System</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that there is no air leakage from any part of the intake system (disconnected vacuum hoses, air leaking from gaskets).</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt>No air leakage.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0068" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0097" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0068" proc-id="RM0550J___0000D6D00000">
+<testtitle>Fuel Pressure Inspection</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the procedure, see <xref label="Seep01" href="RM000002ABD006X_01_0001"/></ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0069" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0115" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0069" proc-id="RM0550J___0000D6E00000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Engine Coolant Temperature)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the main switch of SST (TaSCAN) ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, read [ECU Data Monitor] - [Engine Coolant Temperature].</ptxt>
+<spec>
+<title>Measurement Result</title>
+<specitem>
+<ptxt>Same as actual coolant temperature</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>After warming up the engine: 75°C to 95°C</ptxt>
+</item>
+<item>
+<ptxt>After leaving the vehicle overnight: same as the ambient temperature.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0070" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0099" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0070" proc-id="RM0550J___0000D6F00000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Intake Air Temperature)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the main switch of SST (TaSCAN) ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, read [ECU Data Monitor] - [Intake Air Temperature].</ptxt>
+<spec>
+<title>Measurement Result</title>
+<specitem>
+<ptxt>Same as ambient temperature</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0071" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0100" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0071" proc-id="RM0550J___0000D6G00000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Intake Air Volume)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the main switch of SST (TaSCAN) ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, check [ECU Data Monitor] - [Intake Air Volume].</ptxt>
+<spec>
+<title>Standard</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine Intake Air Volume</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>30 seconds after IG ON</ptxt>
+<ptxt>(Engine Stopped)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Less than 0.55 g/sec.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>Do not extract exhaust from the exhaust tail pipe with an exhaust duct.</ptxt>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0072" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0101" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0072" proc-id="RM0550J___0000D6H00000">
+<testtitle>Inspect Spark Plug</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the ignition coil of the misfiring cylinder.</ptxt>
+</test1>
+<test1>
+<ptxt>Remove the spark plug of the misfiring cylinder.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the spark plug.</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt>FK20HBR11 (DENSO made)</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Check the spark plug for thread damage and insulator damage.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Do not adjust the spark plug gap.</ptxt>
+</item>
+<item>
+<ptxt>Do not touch the tip.</ptxt>
+</item>
+<item>
+<ptxt>There should be no carbon deposits on the electrodes.</ptxt>
+</item>
+<item>
+<ptxt>Do not damage the iridium or platinum tips.</ptxt>
+</item>
+<item>
+<ptxt>If it is significantly dirty due to carbon fouling or similar, replace it with a new spark plug.</ptxt>
+</item>
+<item>
+<ptxt>When replacing with a new spark plug, do not remove the cap covering the tip for protection until it is installed to the engine.</ptxt>
+</item>
+<item>
+<ptxt>If a spark plug is dropped, replace it with a new one.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Plug Gap</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.0 to 1.1mm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Maximum Plug Gap</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.4 mm</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0073" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0102" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0073" proc-id="RM0550J___0000D6I00000">
+<testtitle>Inspect Spark</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before performing the spark test, be sure to check that all fuel injector assembly connectors are disconnected.</ptxt>
+</item>
+<item>
+<ptxt>If the ignition coil assembly connector is disconnected, a DTC will be detected during the inspection, so leave it connected.</ptxt>
+</item>
+</list1>
+</atten3>
+<test1>
+<ptxt>Disconnect all fuel injector assembly connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the removed spark plug to the ignition coil and connect the ignition coil connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Ground the ground electrode of the spark plug and check that a spark occurs while cranking the engine.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Be sure to ground the ground electrode of the spark plug when performing the inspection.</ptxt>
+</item>
+<item>
+<ptxt>If the ignition coil has been subjected to an impact, such as by being dropped, replace it with a new one.</ptxt>
+</item>
+<item>
+<ptxt>Do not crank the engine for 2 seconds or more</ptxt>
+</item>
+</list1>
+</atten3>
+</test1>
+<test1>
+<ptxt>Connect the fuel injector assembly connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the spark plug.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the ignition coil.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0074" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0079" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0074" proc-id="RM0550J___0000D6J00000">
+<testtitle>Inspect Compression</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before performing the compression check, be sure to check that all fuel injector assembly connectors are disconnected.</ptxt>
+</item>
+<item>
+<ptxt>If the ignition coil assembly connector is disconnected, a DTC will be detected during the inspection, so leave it connected.</ptxt>
+</item>
+</list1>
+</atten3>
+<test1>
+<ptxt>Start the engine, turn all accessory switches OFF, and warm up the engine until the engine coolant temperature stabilizes.</ptxt>
+</test1>
+<test1>
+<ptxt>Remove all the ignition coils.</ptxt>
+</test1>
+<test1>
+<ptxt>Remove all the spark plugs.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect all fuel injector assembly connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Set the compression gauge.</ptxt>
+</test1>
+<test1>
+<ptxt>Crank the engine and measure the compression of each cylinder.</ptxt>
+<spec>
+<title>Standard</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Compression</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.3M Pa {13.3 kgf/cm<sup>2</sup>} </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Limit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.0M Pa {10.2 kgf/cm<sup>2</sup>} </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Difference Between Cylinders</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.1M Pa {1.0 kgf/cm<sup>2</sup>} </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>Perform the compression inspection in as short a time as possible.</ptxt>
+</atten3>
+</test1>
+<test1>
+<ptxt>Connect the fuel injector assembly connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the spark plug.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the ignition coil.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0113" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0103" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0113" proc-id="RM0550J___0000D6P00000">
+<testtitle>Inspect Wire Harness and Connector (Injector Voltage)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/></ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect the fuel injector connector.</ptxt>
+<figure>
+<graphic graphicname="A105992J07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals.</ptxt>
+</test1>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<colspec colname="COL3" colwidth="0.82in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 (+B) - Engine ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0075" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0117" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0075" proc-id="RM0550J___0000D6K00000">
+<testtitle>Inspect Wire Harness and Connector (Fuel Injector Assembly - Engine Control Computer)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect the fuel injector assembly connector.</ptxt>
+<figure>
+<graphic graphicname="A106388J26" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal. (see <xref label="Seep02" href="X39400000QV01SD"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COLSPEC0" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A45(#10) - 1(#10)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A85(#20) - 1(#20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A44(#30) - 1(#30)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A84(#40) - 1(#40)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A43(#50) - 1(#50)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A83(#60) - 1(#60)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COLSPEC0" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A45 (#10) and 1 (#10) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A85 (#20) and 1 (#20) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A44 (#30) and 1 (#30) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A43 (#50) and 1 (#40) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A83 (#60) and 1 (#50) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A84 (#40) and 1 (#60) - Other terminals and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect connector A of the engine control computer.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the fuel injector assembly connectors.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0076" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0104" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0076" proc-id="RM0550J___0000D6L00000">
+<testtitle>Inspect Wire Harness and Connector (Engine Control Computer Voltage)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+</test1>
+<figure>
+<graphic graphicname="A107892J13" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals. (see <xref label="Seep02" href="X39400000QV01SD"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Voltage</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COLSPEC0" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A45(#10) - A22(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A85(#20) - A22(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A44(#30) - A22(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A84(#40) - A22(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A43(#50) - A22(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A83(#60) - A22(E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0077" fin="false">OK</down>
+<right ref="RM0000031X5004X_07_0114" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0077" proc-id="RM0550J___0000D6M00000">
+<testtitle>Inspect Fuel Injector Assembly</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the procedure, see <xref label="Seep01" href="RM000002AAX004X"/></ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0108" fin="true">OK</down>
+<right ref="RM0000031X5004X_07_0106" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0079" proc-id="RM0550J___0000D6N00000">
+<testtitle>Inspect Spark</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before performing the spark test, be sure to check that all fuel injector assembly connectors are disconnected.</ptxt>
+</item>
+<item>
+<ptxt>If the ignition coil assembly connector is disconnected, a DTC will be detected during the inspection, so leave it connected.</ptxt>
+</item>
+</list1>
+</atten3>
+<test1>
+<ptxt>Disconnect all fuel injector assembly connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the removed spark plug to the ignition coil and connect the ignition coil connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Ground the ground electrode of the spark plug and check that a spark occurs while cranking the engine.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Be sure to ground the ground electrode of the spark plug when performing the inspection.</ptxt>
+</item>
+<item>
+<ptxt>If the ignition coil has been subjected to an impact, such as by being dropped, replace it with a new one.</ptxt>
+</item>
+<item>
+<ptxt>Do not crank the engine for 2 seconds or more</ptxt>
+</item>
+</list1>
+</atten3>
+</test1>
+<test1>
+<ptxt>Connect the fuel injector assembly connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the spark plug.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the ignition coil.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0109" fin="true">OK</down>
+<right ref="RM0000031X5004X_07_0080" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0080" proc-id="RM0550J___0000D6O00000">
+<testtitle>Inspect Ignition Coil Assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before performing the spark test, be sure to check that all fuel injector assembly connectors are disconnected.</ptxt>
+</item>
+<item>
+<ptxt>If the ignition coil assembly connector is disconnected, a DTC will be detected during ignition, so leave it connected.</ptxt>
+</item>
+</list1>
+</atten3>
+<test1>
+<ptxt>Disconnect all fuel injector assembly connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Swap the ignition coil of the misfiring cylinder with a normal ignition coil, and install the spark plug.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the ignition coil connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Ground the ground electrode of the spark plug and check that a spark occurs while cranking the engine.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Be sure to ground the ground electrode of the spark plug when performing the inspection.</ptxt>
+</item>
+<item>
+<ptxt>If the ignition coil has been subjected to an impact, such as by being dropped, replace it with a new one.</ptxt>
+</item>
+<item>
+<ptxt>Do not crank the engine for 2 seconds or more.</ptxt>
+</item>
+</list1>
+</atten3>
+</test1>
+<test1>
+<ptxt>Connect the fuel injector assembly connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the spark plug.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the ignition coil.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0111" fin="true">OK</down>
+<right ref="RM0000031X5004X_07_0110" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0114" proc-id="RM0550J___0000D6Q00000">
+<testtitle>Inspect Wire Harness and Connector (Engine Control Computer - Body Ground)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/></ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+</test1>
+<figure>
+<graphic graphicname="A107892J14" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), measure the resistance between each terminal. (see <xref label="Seep02" href="X39400000QV01SD"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COLSPEC0" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A22 (E01) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A21 (E02) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0119" fin="true">OK</down>
+<right ref="RM0000031X5004X_07_0118" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0115" proc-id="RM0550J___0000D6R00000">
+<testtitle>Inspect Fuel Line</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the fuel line.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000031X5004X_07_0121" fin="true">OK</down>
+<right ref="RM0000031X5004X_07_0120" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0081">
+<testtitle>Go to Related DTC Chart<xref label="Seep01" href="RM000001KT7004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0082">
+<testtitle>Repair or replace PCV hose</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0083">
+<testtitle>Replace Spark Plug</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0084">
+<testtitle>Inspect Cause of Low Compression Pressure</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0116">
+<testtitle>Inspect and Repair Power Source Circuit</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0085">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0087">
+<testtitle>Replace fuel injector assembly<xref label="Seep01" href="RM000002AAY004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0089">
+<testtitle>Valve Timing Adjustment</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0090">
+<testtitle>Repair or replace intake system</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0092">
+<testtitle>Replace E.F.I. Water Temperature Sensor<xref label="Seep01" href="RM0000030JW003X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0093">
+<testtitle>Replace Intake Air Flow Meter Sub-assembly<xref label="Seep01" href="RM0000030JT003X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0094">
+<testtitle>Replace Intake Air Flow Meter Sub-assembly<xref label="Seep01" href="RM0000030JT003X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0095">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADB004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0096">
+<testtitle>Valve Timing Adjustment</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0097">
+<testtitle>Repair or replace intake system</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0099">
+<testtitle>Replace E.F.I. Water Temperature Sensor<xref label="Seep01" href="RM0000030JW003X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0100">
+<testtitle>Replace Intake Air Flow Meter Sub-assembly<xref label="Seep01" href="RM0000030JT003X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0101">
+<testtitle>Replace Intake Air Flow Meter Sub-assembly<xref label="Seep01" href="RM0000030JT003X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0102">
+<testtitle>Replace Spark Plug</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0103">
+<testtitle>Inspect Cause of Low Compression Pressure</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0117">
+<testtitle>Inspect and Repair Power Source Circuit</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0104">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0106">
+<testtitle>Replace fuel injector assembly<xref label="Seep01" href="RM000002AAY004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0108">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADB004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0109">
+<testtitle>Replace Spark Plug</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0110">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADB004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0111">
+<testtitle>Replace Ignition Coil Assembly</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0118">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0119">
+<testtitle>Replace fuel injector assembly<xref label="Seep01" href="RM000002AAY004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0120">
+<testtitle>Repair or replace fuel line</testtitle>
+</testgrp>
+<testgrp id="RM0000031X5004X_07_0121">
+<testtitle>Replace Fuel Pump</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

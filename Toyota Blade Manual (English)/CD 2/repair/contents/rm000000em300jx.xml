@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1000Y_S0012" variety="S0012">
+<name>SRS Airbag</name>
+<ttl id="1000Y_S0012_745Q2_T00B8" variety="T00B8">
+<name>SRS Airbag System</name>
+<para id="RM000000EM300JX" category="C" type-id="305EJ" name-id="554HO-00" from="200612" to="200912">
+<dtccode>B1902</dtccode>
+<dtcname>Front pretensioner RH ignition circuit (short to ground)</dtcname>
+<subpara id="RM000000EM300JX_05" type-id="31" category="03" proc-id="RM0550J___00006HV00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>The front pretensioner RH squib circuit consists of the airbag computer assembly and front seat outer belt assembly RH (driver side pretensioner). When the activation conditions are met, the front pretensioner RH is activated.</ptxt>
+</item>
+<item>
+<ptxt>When a short to ground is detected in the front pretensioner RH squib circuit (PR+, PR- lines), DTC B1902 is stored in the airbag computer assembly.</ptxt>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.020989     in"/>
+<colspec colnum="02" colname="C02" colwidth="2.9949     in"/>
+<colspec colnum="03" colname="C03" colwidth="3.131031     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Item</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>B1902</ptxt>
+</entry>
+<entry colname="C02" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Short to ground in PR+, PR- lines of the wire harness between the airbag computer assembly and front seat outer belt assembly RH (driver side pretensioner)</ptxt>
+</item>
+<item>
+<ptxt>Front seat outer belt assembly RH (driver side pretensioner) malfunction</ptxt>
+</item>
+<item>
+<ptxt>Airbag Computer Assembly Malfunction</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Floor wire No.2 [between airbag computer assembly and front seat outer belt assembly RH (driver side pretensioner)]</ptxt>
+</item>
+<item>
+<ptxt>Front Seat Outer Belt Assembly RH (Driver Side Pretensioner)</ptxt>
+</item>
+<item>
+<ptxt>Airbag Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000EM300JX_06" type-id="32" category="03" proc-id="RM0550J___00006HW00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C159578J07" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000EM300JX_07" type-id="51" category="05" proc-id="RM0550J___00006HX00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>When performing the simulation method, use TaSCAN to select check mode first. (see <xref href="RM00000050J01GX" label="Seep01"/>)</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000EM300JX_08" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000000EM300JX_08_0010" proc-id="RM0550J___00006HY00000">
+<testtitle>Connector Inspection</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/></ptxt>
+</atten4>
+<test1>
+<ptxt>Disconnect the cable from the negative battery terminal and wait for 90 seconds.</ptxt>
+<atten4>
+<ptxt>Before disconnecting the cable from the negative battery terminal, check that the ignition switch is off.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check the connection condition of the connectors connected to the airbag computer assembly and front seat outer belt assembly RH (front pretensioner RH).</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>The connector is connected properly</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Disconnect the connectors connected to the airbag computer assembly and front seat outer belt assembly RH (front pretensioner RH), and check the condition of the terminals of each connector.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>The terminals are not deformed or damaged</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Check the condition of the short pins of the connectors with a short mechanism on floor wire No.2.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>The short pins are not deformed or damaged</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000EM300JX_08_0011" fin="false">OK</down>
+<right ref="RM000000EM300JX_08_0017" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000EM300JX_08_0011" proc-id="RM0550J___00006HZ00000">
+<testtitle>Inspect Front Pretensioner RH Squib Circuit (Airbag Computer Assembly - Front Seat Outer Belt Assembly RH)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref href="RM0000005D701ZX" label="Seep01"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of connector C and body ground.</ptxt>
+<figure>
+<graphic graphicname="C146203J07" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<title>Resistance:</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.19in"/>
+<colspec colname="COL2" colwidth="0.96in"/>
+<colspec colname="COL3" colwidth="0.98in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (R+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 (R-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1M Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+</content6>
+<res>
+<down ref="RM000000EM300JX_08_0012" fin="false">OK</down>
+<right ref="RM000000EM300JX_08_0017" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000EM300JX_08_0012" proc-id="RM0550J___00006I000000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect the connector to the airbag computer assembly.</ptxt>
+<figure>
+<graphic graphicname="C146207J03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using a wire harness (wire diameter 0.5mm), connect the terminals of connector C.</ptxt>
+<atten3>
+<ptxt>When connecting the terminals, do not forcibly insert the wire harness into the connector terminals.</ptxt>
+</atten3>
+</test1>
+<test1>
+<ptxt>Connect the battery negative terminal, turn IG ON and wait for 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), clear the DTCs. (see <xref label="Seep01" href="RM00000050J01GX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000EM300JX_08_0013" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000EM300JX_08_0013" proc-id="RM0550J___00006I100000">
+<scantool type="1"/>
+<testtitle>Inspect Airbag Computer Assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs. (see <xref href="RM00000050J01GX" label="Seep01"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.03in"/>
+<colspec colname="COL2" colwidth="1.10in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>DTC B1902 is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>DTC B1902 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000EM300JX_08_0014" fin="false">A</down>
+<right ref="RM000000EM300JX_08_0018" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000EM300JX_08_0014" proc-id="RM0550J___00006I200000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn IG OFF.</ptxt>
+<figure>
+<graphic graphicname="C146188J09" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the battery negative terminal and wait for 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the wire between the terminals of connector C, and connect the connector to the front seat outer belt assembly RH (front pretensioner RH).</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the battery negative terminal, turn IG ON and wait for 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), clear the DTCs. (see <xref label="Seep01" href="RM00000050J01GX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000EM300JX_08_0015" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000EM300JX_08_0015" proc-id="RM0550J___00006I300000">
+<scantool type="1"/>
+<testtitle>Inspect Front Pretensioner RH Squib System</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs. (see <xref href="RM00000050J01GX" label="Seep01"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.03in"/>
+<colspec colname="COL2" colwidth="1.10in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>DTC B1902 is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>DTC B1902 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000EM300JX_08_0016" fin="true">A</down>
+<right ref="RM000000EM300JX_08_0019" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000EM300JX_08_0016">
+<testtitle>Perform Simulation Method<xref label="Seep01" href="RM000000ABY03DX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000EM300JX_08_0017">
+<testtitle>Replace Floor Wire NO.2</testtitle>
+</testgrp>
+<testgrp id="RM000000EM300JX_08_0018">
+<testtitle>Replace Airbag Computer Assembly<xref label="Seep01" href="RM000002RR0002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000EM300JX_08_0019">
+<testtitle>Replace Front Seat Outer Belt Assembly RH<xref label="Seep01" href="RM000001ESF005X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

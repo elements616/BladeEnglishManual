@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T120041C025C031" UPDATE = "ORIGINAL" LDUP = "10Jul2006"     MECATYPE = "GENERAL" INDSW = "OFF" UNPRINT = "ON">
+<TITLE>Garage Parking Assist Mode</TITLE>
+<LIST1><ITEM><PTXT>In intelligent parking assist mode, touching "Garage Parking" on the screen while the course display mode screen is displayed switches to garage parking assist mode, in which the image behind the vehicle and the lines needed for garage parking are synthesized and displayed on the screen, and voice guidance and steering operation assistance are provided to support garage parking.</PTXT></ITEM></LIST1>
+<LIST1><TITLE>When Setting Target Parking Position</TITLE>
+<ITEM><PTXT>After garage parking assist mode is selected, the screen changes to the target parking position setting screen, and the parking position is set by operating the arrow switches on the screen, referring to the image behind the vehicle and the displayed guide lines.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740113e" WIDTH = "6.903in" HEIGHT = "3.347in" />
+</FIGURE>
+<INDICATE ID = "T120041C025C031I01" INDSW = "OFF">
+<TITLE>Garage Parking Assist Mode (When Setting Target Parking Position) Screen Display Contents</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "5%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "34%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "59%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Display</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Description</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>①</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Image Behind Vehicle</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Image of the area behind the vehicle from the rear view monitor camera</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>②</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Help Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Touching this switches to the help screen, which displays "How to stop the vehicle" and "How to align the parking frame".</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>③</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Left/Right Selector Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Touching this switches the target parking position between left and right.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>④</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Arrow Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Touching this moves the target parking position in the touched direction.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>⑤</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Confirm Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Touching this confirms the target parking position.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>⑥</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Back Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Touching this returns to the course display mode screen.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>⑦</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Avoidance Pole</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>This is a guide to the position of contact with obstacles when setting the target parking position; set the target parking position at a position where it does not overlap obstacles.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>⑧</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Target Parking Frame</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>The current target parking position is displayed. (A green frame is displayed when the target parking position can be confirmed, and a red frame is displayed when the target parking position cannot be confirmed.)</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>⑨</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Non-parkable Range</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>The range in which the target parking position cannot be set is displayed based on the steering angle. If, after the target parking position is confirmed, "Change Target" is selected during intelligent parking assist operation to reset the target parking position, the non-parkable range is not displayed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>⑩</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Caution Message</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Displayed after switching to the target parking position setting screen to alert the driver. Also, if the "Confirm" switch is touched in a situation where the target parking position cannot be confirmed, "Target cannot be set" blinks to inform the driver that the target parking position cannot be confirmed.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<LIST1><TITLE>During System Operation</TITLE>
+<ITEM><PTXT>The basic operation and screen display contents after the target parking position is confirmed are the same as in parallel parking assist mode.</PTXT></ITEM></LIST1></MECA>

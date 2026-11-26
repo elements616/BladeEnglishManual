@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001I_S000I" variety="S000I">
+<name>Door Lock</name>
+<ttl id="1001I_S000I_744CR_T004N" variety="T004N">
+<name>Wireless Door Lock Control System</name>
+<para id="RM000000XH100GX" category="D" type-id="303F4" name-id="622HS-00" from="200612">
+<name>DTC Check/Clear</name>
+<subpara id="RM000000XH100GX_z0" proc-id="RM0550J___00002CU00000">
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When using SST (TaSCAN) with the ignition switch OFF, repeatedly turn any door courtesy light switch ON/OFF (at intervals of 1.5 seconds or less) until communication between SST (TaSCAN) and the vehicle starts.</ptxt>
+</atten3>
+<step1>
+<ptxt>DTC Check (Reading Using TaSCAN)</ptxt>
+<step2>
+<ptxt>With the IG OFF, connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Following the SST (TaSCAN) screen display, display the [TOP Menu: Diagnosis] → [System Diagnosis: Body] → [System Name: Certification ECU] → [Diagnosis Function: DTC] screen and check the DTCs.</ptxt>
+<atten4>
+<ptxt>DTCs are output even with the IG OFF.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Clearing DTC Memory (Clearing Using TaSCAN)</ptxt>
+<step2>
+<ptxt>With the IG OFF, connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Following the SST (TaSCAN) screen display, display the [TOP Menu: Diagnosis] → [System Diagnosis: Body] → [System Name: Certification ECU] → [Diagnosis Function: DTC] screen and clear the DTCs.</ptxt>
+</step2>
+<step2>
+<ptxt>Check the DTCs again, and confirm that the malfunction codes have been cleared and the normal code is displayed.</ptxt>
+<atten3>
+<ptxt>If a malfunction code is output, repair again according to the code.</ptxt>
+</atten3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

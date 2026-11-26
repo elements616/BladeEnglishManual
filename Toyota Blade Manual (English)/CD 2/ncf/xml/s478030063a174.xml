@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a3730026p SYSTEM "grph_ent/a3730026p.png" NDATA png>
+
+<!ENTITY T030063A174 SYSTEM "t478030063a174.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T030063A174S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T030063A174" UPDATE = "ORIGINAL" LDUP = "10Jan2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Parking Lock Mechanism</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A parking lock gear is located at the secondary pulley. The parking lock pawl engages with the parking lock gear to lock the rotation of the transmission.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730026p" WIDTH = "4.875in" HEIGHT = "3.319in" />
+</FIGURE>
+</PARA>
+</SECTION>

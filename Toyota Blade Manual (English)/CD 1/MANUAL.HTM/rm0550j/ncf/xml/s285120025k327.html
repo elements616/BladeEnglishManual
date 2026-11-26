@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../_runtime/legacy.css">
+<script src="../../../../../_runtime/compat.js"></script>
+
+<title>Meter &amp; Gauge System</title>
+<link type="text/css" href="../css/main2.css" rel="stylesheet">
+<link type="text/css" href="../css/style.css" rel="stylesheet">
+<script src="../js/hidden.js" language="JavaScript"></script>
+</head>
+<body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
+<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td align="left"><input onClick="printCheck()" value="Print" name="submit" type="submit"></td><td align="center"> </td><td align="right"><input onClick="closeWindow()" value="Close" name="submit2" type="submit"></td>
+</tr>
+</table>
+<div align="left">
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="blue" width="5%"> </td><td align="center" class="blue" width="80%">Meter &amp; Gauge System</td><td width="15%" class="blue" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">The combination meter displays various information about the current vehicle condition, based on signals from computers, sensors, switches, etc. input to the built-in meter computer.</div>
+</td>
+</tr>
+</table>
+
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">Components1</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740151b.png"><br><div class="figcap" style="display:inline-block;text-align:left;margin:4px auto 10px;padding:5px 10px;font:9pt Arial,Helvetica,sans-serif;color:#222;background:#f3f6f8;border:1px solid #c8d0d5;"><span style="color:#556">Labels in this picture:</span><br><b>Dimmer Switch</b> &nbsp;<span style="color:#667">ディマスイッチ</span><br><b>Combination Meter (Built-in Meter Computer)</b> &nbsp;<span style="color:#667">コンビネーションメーター（メーターコンピューター内蔵）</span><br><b>Main Body ECU (Instrument Panel Junction Block Assembly)</b> &nbsp;<span style="color:#667">メインボデーECU（インストルメントパネルジャンクションブロックASSY）</span><br><b>Active Torque Control 4WD Computer</b> &nbsp;<span style="color:#667">アクティブトルクコントロール4WDコンピューター</span><br><b>Headlight Leveling ECU</b> &nbsp;<span style="color:#667">ヘッドランプレベリングECU</span><br><b>Center Airbag Sensor Assembly</b> &nbsp;<span style="color:#667">センターエアバッグセンサーASSY</span><br><b>Seat Belt Buckle Switch</b> &nbsp;<span style="color:#667">シートベルトバックルスイッチ</span><br><b>Occupant Detection Sensor</b> &nbsp;<span style="color:#667">乗員検知センサー</span><br><b>Parking Brake Switch</b> &nbsp;<span style="color:#667">パーキングブレーキスイッチ</span></div></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120025K327I01');chgImg('imT120025K327I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120025K327I01" align="absmiddle"><a name="t120025k327i01">Components2</a></span>
+<br>
+<div id="tmT120025K327I01" style="display:none">
+<br>
+
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740152b.png"><br><div class="figcap" style="display:inline-block;text-align:left;margin:4px auto 10px;padding:5px 10px;font:9pt Arial,Helvetica,sans-serif;color:#222;background:#f3f6f8;border:1px solid #c8d0d5;"><span style="color:#556">Labels in this picture:</span><br><b>Brake Fluid Level Switch</b> &nbsp;<span style="color:#667">ブレーキ液レベルスイッチ</span><br><b>Certification ECU</b> &nbsp;<span style="color:#667">照合ECU</span><br><b>Engine Control Computer</b> &nbsp;<span style="color:#667">エンジンコントロールコンピューター</span><br><b>Speed Sensor (2WD models)</b> &nbsp;<span style="color:#667">スピードセンサー（2WD車）</span><br><b>Fuel Sender Gauge</b> &nbsp;<span style="color:#667">フューエルセンダーゲージ</span><br><b>Outside Temperature Sensor</b> &nbsp;<span style="color:#667">外気センサー</span><br><b>Speed Sensor</b> &nbsp;<span style="color:#667">スピードセンサー</span><br><b>Skid Control Computer (Built into Brake Actuator)</b> &nbsp;<span style="color:#667">スキッドコントロールコンピューター（ブレーキアクチュエーターに内蔵）</span><br><b>Speed Sensor (4WD models)</b> &nbsp;<span style="color:#667">スピードセンサー（4WD車）</span></div></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120025K327K137');chgImg('imT120025K327K137');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120025K327K137" align="absmiddle"><a name="t120025k327k137">List of Combination Meter Connections</a></span>
+<br>
+<div id="tmT120025K327K137" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark" colspan="2">
+<div class="text">Display Part Name</div>
+</td><td class="gray3_dark">
+<div class="text">Connected Part Name</div>
+</td><td class="gray3_dark">
+<div class="text">Input Signal</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2">
+<div class="text">Speedometer</div>
+</td><td class="color1">
+<div class="text">Skid Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2">
+<div class="text">Tachometer</div>
+</td><td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2">
+<div class="text">Water Temperature Gauge</div>
+</td><td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2" rowspan="4">
+<div class="text">Fuel Gauge</div>
+</td><td class="color1">
+<div class="text">Fuel Sender Gauge</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1" rowspan="3" valign="MIDDLE">
+
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Skid Control Computer</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Main Body ECU</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2" rowspan="2">
+<div class="text">Odometer/Trip Meter</div>
+</td><td class="color1">
+<div class="text">Main Body ECU</div>
+</td><td class="color1" rowspan="2" valign="MIDDLE">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Skid Control Computer</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2">
+<div class="text">Shift Position Indicator</div>
+</td><td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1" colspan="2">
+<div class="text">M (Manual Shift) Mode Indicator</div>
+</td><td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="23">
+<div class="text">Operation/Warning Indicator Lights</div>
+</td><td class="color1">
+<div class="text">High Beam</div>
+</td><td class="color1">
+<div class="text">Dimmer Switch</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Airbag</div>
+</td><td class="color1">
+<div class="text">Center Airbag Sensor Assembly</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Driver Seat Belt Unfastened</div>
+</td><td class="color1">
+<div class="text">Main Body ECU</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="3">
+<div class="text">Brake Fluid Level/</div>
+
+<div class="text">Parking Brake Applied/</div>
+
+<div class="text">EBD System</div>
+</td><td class="color1">
+<div class="text">Brake Fluid Level Switch</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Main Body ECU</div>
+</td><td class="color1" rowspan="2" valign="MIDDLE">
+
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Skid Control Computer</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">Charge</div>
+</td><td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Alternator (L Terminal)</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Electric Power Steering</div>
+</td><td class="color1">
+<div class="text">Electric Power Steering Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Master</div>
+</td><td class="color1" colspan="2">
+<div class="text">Refer to each section, as there are many connected parts</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">ABS</div>
+</td><td class="color1">
+<div class="text">Skid Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Check Engine</div>
+</td><td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Low Fuel Level</div>
+</td><td class="color1">
+<div class="text">Fuel Sender Gauge</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Headlight Auto Leveling</div>
+</td><td class="color1">
+<div class="text">Headlight Leveling ECU</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Rear Fog Light<a href="#H285120025K327K13701"><sup>*1</sup></a>
+</div>
+</td><td class="color1">
+<div class="text">Rear Fog Light Relay</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Slip</div>
+</td><td class="color1">
+<div class="text">Skid Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">Eco Drive Indicator</div>
+</td><td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1" rowspan="2" valign="MIDDLE">
+
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Skid Control Computer</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Front Fog Light</div>
+</td><td class="color1">
+<div class="text">Front Fog Light Relay</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Tail lights</div>
+</td><td class="color1">
+<div class="text">Taillight Relay</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Turn</div>
+</td><td class="color1">
+<div class="text">Flasher Relay</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">4WD AUTO<a href="#H285120025K327K13702"><sup>*2</sup></a>
+</div>
+</td><td class="color1">
+<div class="text">Active Torque Control 4WD Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Front Passenger Seat Belt Unfastened</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Front Passenger Seat Belt Buckle Switch</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Occupant Detection Sensor</div>
+</td>
+</tr>
+</table>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="12">
+<div class="text">Single-tone Buzzer</div>
+</td><td class="color1">
+<div class="text">Reverse</div>
+</td><td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Key Reminder</div>
+</td><td class="color1">
+<div class="text">Certification ECU</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">Smart Entry &amp; Start System Warning</div>
+</td><td class="color1">
+<div class="text">Main Body ECU</div>
+</td><td class="color1" rowspan="2" valign="MIDDLE">
+
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Certification ECU</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Warning Mode Display-linked</div>
+</td><td class="color1" colspan="2">
+<div class="text">Refer to each section, as there are many connected parts</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="4">
+<div class="text">Seat Belt Warning</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Front Passenger Seat Belt Buckle Switch</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Occupant Detection Sensor</div>
+</td>
+</tr>
+</table>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Main Body ECU</div>
+</td><td class="color1" rowspan="3" valign="MIDDLE">
+
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Engine Control Computer</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Skid Control Computer</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Sport Shift Reject</div>
+</td><td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">Light Reminder</div>
+</td><td class="color1">
+<div class="text">Taillight Relay</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Main Body ECU</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="30">
+<div class="text">Multi-information Display</div>
+
+<div class="text"></div>
+</td><td class="color1" rowspan="3">
+<div class="text">Current Fuel Consumption</div>
+</td><td class="color1">
+<div class="text">Main Body ECU</div>
+</td><td class="color1" rowspan="3" valign="MIDDLE">
+
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Engine Control Computer</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Skid Control Computer</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">Cumulative Average Fuel Consumption</div>
+</td><td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1" rowspan="2" valign="MIDDLE">
+
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Skid Control Computer</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">Cumulative Average Vehicle Speed</div>
+</td><td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1" rowspan="2" valign="MIDDLE">
+
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Skid Control Computer</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Cumulative Driving Time</div>
+</td><td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">Cruising Range</div>
+</td><td class="color1">
+<div class="text">Fuel Sender Gauge</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">Outside Temperature</div>
+</td><td class="color1">
+<div class="text">Ambient Temperature Sensor</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Skid Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Brake Warning</div>
+</td><td class="color1">
+<div class="text">Skid Control Computer</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">ABS Warning</div>
+</td><td class="color1">
+<div class="text">Skid Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">VSC Warning</div>
+</td><td class="color1">
+<div class="text">Skid Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Airbag Warning</div>
+</td><td class="color1">
+<div class="text">Center Airbag Sensor Assembly</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Oil Pressure Warning</div>
+</td><td class="color1">
+<div class="text">Oil Pressure Switch</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Check Engine Warning</div>
+</td><td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">Charge Warning</div>
+</td><td class="color1">
+<div class="text">Alternator (L Terminal)</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Engine Control Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">4WD Warning<a href="#H285120025K327K13702"><sup>*2</sup></a>
+</div>
+</td><td class="color1">
+<div class="text">Active Torque Control 4WD Computer</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="4">
+<div class="text">Low Fuel Level Warning</div>
+</td><td class="color1">
+<div class="text">Fuel Sender Gauge</div>
+</td><td class="color1">
+<div class="text">Straight Line</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Skid Control Computer</div>
+</td><td class="color1" rowspan="3" valign="MIDDLE">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Engine Control Computer</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Main Body ECU</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Door Ajar Warning</div>
+</td><td class="color1">
+<div class="text">Main Body ECU</div>
+</td><td class="color1">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">Smart Entry &amp; Start System Warning</div>
+</td><td class="color1">
+<div class="text">Certification ECU</div>
+</td><td class="color1" rowspan="2" valign="MIDDLE">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Main Body ECU</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">Driving with Parking Brake Applied Warning</div>
+</td><td class="color1">
+<div class="text">Skid Control Computer</div>
+</td><td class="color1" rowspan="2" valign="MIDDLE">
+<div class="text">Communication</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Main Body ECU</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">HINT</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="27">*1</td><td class="text"><a name="H285120025K327K13701"></a>
+<div class="text">w/ Rear Fog Light</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="27">*2</td><td class="text"><a name="H285120025K327K13702"></a>
+<div class="text">4WD Models</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120025K327K384');chgImg('imT120025K327K384');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120025K327K384" align="absmiddle"><a name="t120025k327k384">Meter &amp; Gauge System Operation Block Diagram</a></span>
+<br>
+<div id="tmT120025K327K384" style="display:none">
+<br>
+
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740153b.png"><br><div class="figcap" style="display:inline-block;text-align:left;margin:4px auto 10px;padding:5px 10px;font:9pt Arial,Helvetica,sans-serif;color:#222;background:#f3f6f8;border:1px solid #c8d0d5;"><span style="color:#556">Labels in this picture:</span><br><b>A/C Control Panel (Front Passenger Seat Belt Warning Indicator Light)</b> &nbsp;<span style="color:#667">エアコンコントロールパネル（助手席シートベルト着用ウォーニングインジケーターランプ）</span><br><b>Dimmer Switch</b> &nbsp;<span style="color:#667">ディマスイッチ</span><br><b>Oil Pressure Switch</b> &nbsp;<span style="color:#667">オイルプレッシャースイッチ</span><br><b>Brake Fluid Level Switch</b> &nbsp;<span style="color:#667">ブレーキ液レベルスイッチ</span><br><b>Fuel Sender Gauge</b> &nbsp;<span style="color:#667">フューエルセンダーゲージ</span><br><b>Alternator (L Terminal)</b> &nbsp;<span style="color:#667">オルタネーター（L端子）</span><br><b>Flasher Relay</b> &nbsp;<span style="color:#667">フラッシャリレー</span><br><b>Tail Light Relay</b> &nbsp;<span style="color:#667">テールランプリレー</span><br><b>Front Fog Light Relay</b> &nbsp;<span style="color:#667">フロントフォグランプリレー</span><br><b>Rear Fog Light Relay</b> &nbsp;<span style="color:#667">リヤフォグランプリレー</span><br><b>Outside Temperature Sensor</b> &nbsp;<span style="color:#667">外気センサー</span><br><b>Occupant Detection Sensor</b> &nbsp;<span style="color:#667">乗員検知センサー</span><br><b>Front Passenger Seat Belt Buckle Switch</b> &nbsp;<span style="color:#667">助手席シートベルトバックルスイッチ</span><br><b>Headlight Leveling Computer</b> &nbsp;<span style="color:#667">ヘッドランプレベリングコンピューター</span><br><b>Each Speed Sensor</b> &nbsp;<span style="color:#667">各スピードセンサー</span><br><b>Skid Control Computer</b> &nbsp;<span style="color:#667">スキッドコントロールコンピューター</span><br><b>Shift Lever Assembly</b> &nbsp;<span style="color:#667">シフトレバーASSY</span><br><b>Crankshaft Position Sensor</b> &nbsp;<span style="color:#667">クランクポジションセンサー</span><br><b>Accelerator Pedal Position Sensor</b> &nbsp;<span style="color:#667">アクセルポジションセンサー</span><br><b>Engine Control Computer</b> &nbsp;<span style="color:#667">エンジンコントロールコンピューター</span><br><b>Neutral Start Switch</b> &nbsp;<span style="color:#667">ニュートラルスタートスイッチ</span><br><b>Engine Coolant Temperature Sensor</b> &nbsp;<span style="color:#667">水温センサー</span><br><b>Parking Brake Switch</b> &nbsp;<span style="color:#667">パーキングブレーキスイッチ</span><br><b>Main Body ECU (Instrument Panel Junction Block Assembly)</b> &nbsp;<span style="color:#667">メインボデーECU（インストルメントパネルジャンクションブロックASSY）</span><br><b>Driver Seat Belt Buckle Switch</b> &nbsp;<span style="color:#667">運転席シートベルトバックルスイッチ</span><br><b>Courtesy Light Switch for Each Door</b> &nbsp;<span style="color:#667">各席ドアカーテシランプスイッチ</span><br><b>Engine Switch</b> &nbsp;<span style="color:#667">エンジンスイッチ</span><br><b>Center Airbag Sensor Assembly</b> &nbsp;<span style="color:#667">センターエアバッグセンサーASSY</span><br><b>Electric Power Steering Computer</b> &nbsp;<span style="color:#667">電動パワーステアリングコンピューター</span><br><b>Active Torque Control 4WD Computer</b> &nbsp;<span style="color:#667">アクティブトルクコントロール4WDコンピューター</span><br><b>▶ Straight line: CAN communication</b> &nbsp;<span style="color:#667">▶直線 CAN通信</span><br><b>Certification ECU</b> &nbsp;<span style="color:#667">照合ECU</span></div></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</body>
+</html>

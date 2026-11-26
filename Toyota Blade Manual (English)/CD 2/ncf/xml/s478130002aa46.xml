@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740101b SYSTEM "grph_ent/a4740101b.png" NDATA png>
+<!ENTITY a4740102b SYSTEM "grph_ent/a4740102b.png" NDATA png>
+<!ENTITY a4740103b SYSTEM "grph_ent/a4740103b.png" NDATA png>
+<!ENTITY a4740104b SYSTEM "grph_ent/a4740104b.png" NDATA png>
+
+<!ENTITY T130002Aa46 SYSTEM "t478130002aa46.xml">
+<!ENTITY T130002Aa46K567 SYSTEM "t478130002aa46k567.xml">
+<!ENTITY T130002Aa46K568 SYSTEM "t478130002aa46k568.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T130002Aa46S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T130002Aa46" UPDATE = "ORIGINAL" LDUP = "30Oct2006"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "Vehicle Outline: Safety">
+<TITLE>Impact Safety Body (GOA)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>An impact safety body (GOA) has been adopted that effectively absorbs and disperses collision energy through crushable front and rear body sections and highly rigid cabin sections, minimizing cabin deformation.</PTXT></ITEM>
+<ITEM><PTXT>An all-direction compatibility body structure has been adopted. By using a structure that minimizes cabin deformation in frontal and side collisions, collision safety performance simulating real-world accidents is pursued.</PTXT></ITEM>
+<ITEM><PTXT>Based on computer collision simulations and numerous actual vehicle tests, a rational body structure has been adopted that effectively absorbs and disperses collision energy not only in frontal and side collisions but also in offset frontal collisions in which only one side of the vehicle receives the impact.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740101b" WIDTH = "6.903in" HEIGHT = "8.778in" />
+</FIGURE>
+
+<MECA ID = "T130002Aa46K567" UPDATE = "ORIGINAL" LDUP = "26Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Front Energy Absorbing Structure</TITLE>
+<LIST1><ITEM><PTXT>A rational body structure has been adopted that minimizes cabin deformation while reducing the impact on occupants, by means of a framework from the front to the underbody that effectively absorbs and disperses the energy of a frontal collision and a strong cabin framework.</PTXT></ITEM>
+<ITEM><PTXT>The front door inner reinforcement has been strengthened, creating a structure that efficiently disperses the collision load by effectively transmitting energy from the front side members to the roof, door belt line and rocker sections.</PTXT></ITEM>
+<ITEM><PTXT>The front side members and crash boxes use high-tensile steel sheet, creating a structure that efficiently disperses the energy of a collision from the front.</PTXT></ITEM>
+<ITEM><PTXT>An under member has been provided, creating a structure that efficiently disperses the energy from the radiator support.</PTXT></ITEM>
+<ITEM><PTXT>A moment cancel member has been provided, creating a structure that efficiently disperses the collision load from the front side members.</PTXT></ITEM>
+<ITEM><PTXT>A dash cross member has been provided, creating a structure that effectively disperses the collision load from the front side members to the belt line and roof sections.</PTXT></ITEM>
+<ITEM><PTXT>A front side member rear No.1 reinforcement has been provided, ensuring the strength of the tunnel section and creating a structure that efficiently disperses the collision load from the front side members.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740102b" WIDTH = "6.903in" HEIGHT = "7.111in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T130002Aa46K568" UPDATE = "ORIGINAL" LDUP = "26Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Side Energy Absorbing Structure</TITLE>
+<LIST1><ITEM><PTXT>Around the door openings, high-strength framework members including reinforcements have been optimally arranged, creating a rational body structure that effectively absorbs and disperses the energy of a side collision.</PTXT></ITEM>
+<ITEM><PTXT>High-tensile steel sheet with optimized strength distribution is used for the center body pillar outer reinforcement, rocker outer reinforcement and rocker inner panel, creating a structure that minimizes cabin deformation.</PTXT></ITEM>
+<ITEM><PTXT>The roof section has a roof reinforcement, creating a structure that effectively transmits collision energy to the side opposite the collision.</PTXT></ITEM>
+<ITEM><PTXT>The rocker section has bulkheads provided in the rocker cross section, creating a structure that efficiently transmits and disperses collision energy input from the lower part of the center pillar, etc. to each cross member.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740103b" WIDTH = "6.903in" HEIGHT = "6.792in" />
+</FIGURE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>In the doors, the door side impact protection beams are arranged so that their lower ends overlap each pillar, creating a structure that efficiently absorbs and disperses collision energy. In addition, door strength has been ensured by optimally arranging the reinforcements at the belt line.</PTXT></ITEM>
+<ITEM><PTXT>Energy absorbers for impact absorption have been provided inside the front door trim, creating a structure that reduces the impact on occupants in a collision.</PTXT></ITEM>
+<ITEM><PTXT>A rear seatback hinge bracket and wheel house reinforcement have been provided on the interior side of the rear end of the rocker section, creating a structure that efficiently absorbs and disperses collision energy from the rear door side impact protection beam via the wheel house to the cross member and rear seatback frame.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740104b" WIDTH = "6.903in" HEIGHT = "5.250in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

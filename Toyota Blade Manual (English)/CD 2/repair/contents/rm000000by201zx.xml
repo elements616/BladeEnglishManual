@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002T_S000D" variety="S000D">
+<name>Other Electrical</name>
+<ttl id="1002T_S000D_742B1_T003C" variety="T003C">
+<name>ETC System</name>
+<para id="RM000000BY201ZX" category="D" type-id="303F3" name-id="CM0PJ-01" from="200912">
+<name>Diagnosis System</name>
+<subpara id="RM000000BY201ZX_z0" proc-id="RM0550J___0000I9R00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>ETC Diagnosis Inspection (Diagnosis Mode 1)</ptxt>
+<step2>
+<ptxt>How to Start Diagnosis Mode 1</ptxt>
+<figure>
+<graphic graphicname="E122061J08" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<title>Text in Illustrations</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="0.41in"/>
+<colspec colname="COL2" colwidth="3.72in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*a</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>History switch</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*b</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Card eject switch</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*c</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VOL UP switch</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*d</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VOL DOWN switch</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*e</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Green indicator</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*f</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Orange indicator</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<title>In diagnosis mode 1, the following information of the toll collection (ETC) computer assembly is announced by voice.</title>
+<item>
+<ptxt>Software version</ptxt>
+</item>
+<item>
+<ptxt>On-board unit management number</ptxt>
+</item>
+<item>
+<ptxt>Model registration number</ptxt>
+</item>
+<item>
+<ptxt>Model (on-board unit part number)</ptxt>
+</item>
+<item>
+<ptxt>Error log</ptxt>
+</item>
+</list1>
+</atten4>
+<step3>
+<ptxt>If an ETC card is inserted, remove the card.</ptxt>
+<atten4>
+<ptxt>Diagnosis mode cannot be entered with a card inserted.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Turn ACC ON.</ptxt>
+</step3>
+<step3>
+<ptxt>Press and hold the "History" switch.</ptxt>
+<figure>
+<graphic graphicname="E158509J02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>While holding the "History" switch, press the "VOL UP" switch 5 times. Hold it down on the 5th press.</ptxt>
+</step3>
+<step3>
+<ptxt>While holding the "VOL UP" switch, press the "VOL DOWN" switch 5 times.</ptxt>
+</step3>
+<step3>
+<ptxt>Diagnosis mode is entered, the orange indicator comes on, and "Diagnosis 1" is announced by voice.</ptxt>
+<figure>
+<graphic graphicname="E122062J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>In diagnosis mode 1, the orange indicator remains on.</ptxt>
+</item>
+<item>
+<ptxt>During diagnosis mode, voice announcements are made from the toll collection (ETC) computer assembly at the default volume (volume 6), regardless of whether the HDD navigation system is connected.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Software Version Announcement Mode</ptxt>
+<figure>
+<graphic graphicname="E122063J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>When diagnosis mode 1 is entered, the software version is announced by voice following the "Diagnosis 1" announcement.</ptxt>
+<atten4>
+<ptxt>If the version is 1.102, it is announced as "Version, 1, 1, 0, 2".</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Check the announced content.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>On-board Unit Management Number Announcement Mode</ptxt>
+<figure>
+<graphic graphicname="E122064J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<step3>
+<ptxt>After the software version is announced, pressing the "VOL UP" or "VOL DOWN" switch announces the on-board unit management number by voice.</ptxt>
+<atten4>
+<ptxt>If the on-board unit management number is 00003 - 00104885 - 000043, it is announced as "Management number, 0, 0, 0, 0, 3, 0, 0, 1, 0, 4, 8, 8, 5, 0, 0, 0, 0, 4, 3".</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Check the announced content.</ptxt>
+<table frame="all" colsep="1" rowsep="1">
+<title>On-board Unit Management Number Announcement Content</title>
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="2.092902     in"/>
+<colspec colnum="02" colname="C02" colwidth="2.092901     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Digits</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Meaning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>XXXXX (5 digits)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<ptxt>SAM (encryption IC) manufacturer code</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>XXXXXXXX (8 digits)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<ptxt>SAM production lot No.</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>XXXXXX (6 digits)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<ptxt>SAM serial No.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The on-board unit management number is announced as "XXXXX - XXXXXXXX - XXXXXX" (X is a number from 0 to 9).</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Model Registration Number Announcement Mode</ptxt>
+<figure>
+<graphic graphicname="E122065J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>After the on-board unit management number is announced, pressing the "VOL UP" or "VOL DOWN" switch announces the model registration number by voice.</ptxt>
+<atten4>
+<ptxt>If the model registration number is 0045, it is announced as "Model registration number, 0, 0, 4, 5".</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Check the announced content.</ptxt>
+<table frame="all" colsep="1" rowsep="1">
+<title>Model Registration Number Announcement Content</title>
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="2.092902     in"/>
+<colspec colnum="02" colname="C02" colwidth="2.092901     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Digits</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Meaning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>XXXX (4 digits)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<ptxt>Model registration number</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The model registration number is announced as "XXXX" (X is a number from 0 to 9).</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Model (On-board Unit Part Number) Announcement Mode</ptxt>
+<figure>
+<graphic graphicname="E147230J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<step3>
+<ptxt>After the model registration number is announced, pressing the "VOL UP" or "VOL DOWN" switch announces the model (on-board unit part number) by voice.</ptxt>
+<atten4>
+<ptxt>If the model (on-board unit part number) is 86980 - 22010, it is announced as "Part number 8, 6, 9, 8, 0, 2, 2, 0, 1, 0".</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Check the announced content.</ptxt>
+<table frame="all" colsep="1" rowsep="1">
+<title>Model (on-board unit part number)</title>
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="2.092902     in"/>
+<colspec colnum="02" colname="C02" colwidth="2.092901     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Digits</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Meaning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>XXXXX - XXXXX (10 digits)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<ptxt>Model (on-board unit part number)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The model (on-board unit part number) is announced as "XXXXX - XXXXX" (X is a number from 0 to 9).</ptxt>
+</item>
+<item>
+<ptxt>It is not possible to go back to the content announced so far, so to check previously announced content again, turn the IG OFF once and start over from the beginning.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Error Log Announcement Mode</ptxt>
+<figure>
+<graphic graphicname="E122067J01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<step3>
+<ptxt>After the model (on-board unit part number) is announced, pressing the "VOL UP" or "VOL DOWN" switch announces the error codes of the recorded error log by voice.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>In error log announcement mode, the error log recorded by the self-diagnosis function of the toll collection (ETC) computer assembly during normal operation is announced.</ptxt>
+</item>
+<item>
+<ptxt>When error log announcement mode is entered, the error code of the most recently saved error log is announced. However, if a fatal error (error code 11, 12) is saved, that error log is announced first.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+<step3>
+<ptxt>Check the error log announcement content.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The error log consists of date information, time information (24-hour clock) and error code.</ptxt>
+</item>
+<item>
+<ptxt>The error log is announced in the order of error date information, time information (24-hour clock) and error code recorded in the error log.</ptxt>
+</item>
+<item>
+<ptxt>The toll collection (ETC) computer assembly sets and corrects its internal clock using the date and time information obtained when toll processing is performed. Therefore, if toll processing has not been performed, the error date and time information recorded in the error log may differ from the date and time when the error actually occurred.</ptxt>
+</item>
+<item>
+<ptxt>If no error log is recorded, "Error log, none" is announced.</ptxt>
+<figure>
+<graphic graphicname="E122068J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</item>
+</list1>
+</atten4>
+</step3>
+<step3>
+<ptxt>If there are error logs older than the error log being announced, pressing the "VOL DOWN" switch announces older logs 1 at a time in order. Also, if there are error logs newer than the error log being announced, pressing the "VOL UP" switch announces newer logs 1 at a time in order.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Up to 20 error logs are saved; if more errors occur, the logs are deleted in sequence starting from the oldest.</ptxt>
+</item>
+<item>
+<ptxt>The error log cannot be cleared manually.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>How to End Diagnosis Mode 1</ptxt>
+<step3>
+<ptxt>Turn the IG OFF or insert a card.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The type of card inserted is not limited to ETC cards. (Diagnosis mode 1 ends even if an incorrect card is inserted)</ptxt>
+</item>
+<item>
+<ptxt>When card insertion is detected, diagnosis mode 1 ends (reset is applied), and the green indicator and orange indicator come on for approximately 5 seconds.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="1001O_S001F" variety="S001F">
+<name>Cruise Control</name>
+<ttl id="1001O_S001F_74QXD_T00FC" variety="T00FC">
+<name>Radar Cruise Control System</name>
+<para id="RM00000064N00DX" category="C" type-id="302A2" name-id="5915A-00" from="200708">
+<dtccode>U0235/71</dtccode>
+<dtcname>Radar Sensor Communication Malfunction</dtcname>
+<subpara id="RM00000064N00DX_01" type-id="31" category="03" proc-id="RM0550J___0000CAK00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The distance control computer assembly sends vehicle speed, steering angle and steering direction information to the millimeter wave radar sensor assembly. The radar sensor sends information such as the presence of a preceding vehicle, vehicle-to-vehicle distance and relative speed to the distance control computer assembly. The distance control computer assembly sends this information to the engine control computer to perform cruise control.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Diagnosis Condition</ptxt>
+</item>
+<item>
+<ptxt>Abnormal Condition</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0235/71</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Control vehicle speed (40 - 100 km/h), cruise control main switch ON (vehicle-to-vehicle distance control mode)</ptxt>
+</item>
+<item>
+<ptxt>Communication data from the millimeter wave radar sensor assembly to the distance control computer assembly is abnormal</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Millimeter Wave Radar Sensor Assembly</ptxt>
+</item>
+<item>
+<ptxt>Wire harness and connector (millimeter wave radar sensor assembly - distance control computer assembly)</ptxt>
+</item>
+<item>
+<ptxt>Distance Control Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000064N00DX_02" type-id="32" category="03" proc-id="RM0550J___0000CAL00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B179588J02" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM00000064N00DX_03" type-id="51" category="05" proc-id="RM0550J___0000CAM00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When the distance control computer assembly is replaced with a new one, be sure to perform initialization. (see <xref label="Seep01" href="RM000002GO2003X"/>)</ptxt>
+</item>
+<item>
+<ptxt>When the millimeter wave radar sensor assembly is replaced with a new one, be sure to perform radar axis adjustment. (see <xref label="Seep02" href="RM0000028Z6003X"/>)</ptxt>
+</item>
+<item>
+<ptxt>A poor connector connection is a possible cause of this DTC, so make sure that each connector is securely connected.</ptxt>
+</item>
+</list1>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM00000064N00DX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000064N00DX_04_0022" proc-id="RM0550J___0000CAN00000">
+<testtitle>Inspect Wire Harness and Connector (Millimeter Wave Radar Sensor Assembly - Distance Control Computer Assembly)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the millimeter wave radar sensor assembly and distance control computer assembly connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals of the vehicle wire harness. (see <xref label="Seep02" href="RM00000064800HX"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="E143514J03" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.11in"/>
+<colspec colname="COLSPEC0" colwidth="0.95in"/>
+<colspec colname="COL2" colwidth="1.07in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3(LRDD) - 22(LRDD) </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5(IGB) - 13(IGB) </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.13in"/>
+<colspec colname="COLSPEC1" colwidth="0.95in"/>
+<colspec colname="COL2" colwidth="1.05in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>22 (LRDD) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13 (IGB) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the vehicle side wire harness connector of the millimeter wave radar sensor assembly. (see <xref label="Seep03" href="RM00000064800HX"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.11in"/>
+<colspec colname="COLSPEC2" colwidth="0.96in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 (SGND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the vehicle side wire harness connector of the distance control computer assembly. (see <xref label="Seep04" href="RM00000064800HX"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.10in"/>
+<colspec colname="COLSPEC3" colwidth="0.96in"/>
+<colspec colname="COL2" colwidth="1.07in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>10 (SGND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000064N00DX_04_0023" fin="false">OK</down>
+<right ref="RM00000064N00DX_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000064N00DX_04_0023" proc-id="RM0550J___0000CAO00000">
+<testtitle>Inspect Distance Control Computer Assembly (IGB Terminal, SGND Terminal, LRDD Terminal)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect the distance control computer assembly connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Make sure that the millimeter wave radar sensor assembly connector is disconnected.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals of the distance control computer assembly connector. (see <xref label="Seep02" href="RM00000064800HX"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="E104768J19" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>13(IGB) - 10(SGND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals of the distance control computer assembly connector. (see <xref label="Seep03" href="RM00000064800HX"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="E104768J20" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>22(LRDD) - 10(SGND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>DTCs may be detected when connectors are disconnected for inspection. Therefore, be sure to clear the DTCs using TaSCAN after completing the inspection.</ptxt>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM00000064N00DX_04_0031" fin="false">OK</down>
+<right ref="RM00000064N00DX_04_0028" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000064N00DX_04_0031" proc-id="RM0550J___0000CAQ00000">
+<testtitle>Replace Millimeter Wave Radar Sensor Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the millimeter wave radar sensor assembly with a new one.</ptxt>
+</test1>
+<test1>
+<ptxt>Perform radar axis adjustment of the millimeter wave radar sensor assembly. (see <xref label="Seep01" href="RM0000028Z6003X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000064N00DX_04_0033" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000064N00DX_04_0033" proc-id="RM0550J___0000CHZ00000">
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), clear the DTCs. (see <xref label="Seep01" href="RM00000064C00EX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000064N00DX_04_0024" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000064N00DX_04_0024" proc-id="RM0550J___0000CAP00000">
+<testtitle>Check DTCs (Radar Cruise Control System)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Put the vehicle in the conditions under which the DTC is detected.</ptxt>
+<atten4>
+<ptxt>The system cannot detect the malfunction unless the detection conditions are met.</ptxt>
+</atten4>
+<test2>
+<ptxt>Drive within the cruise control set vehicle speed range.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn the cruise control main switch ON and put the system in vehicle-to-vehicle distance control mode standby.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs. (see <xref label="Seep01" href="RM00000064C00EX"/>)</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0235 is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0235 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000064N00DX_04_0032" fin="true">A</down>
+<right ref="RM00000064N00DX_04_0008" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000064N00DX_04_0032">
+<testtitle>Complete</testtitle>
+</testgrp>
+<testgrp id="RM00000064N00DX_04_0008">
+<testtitle>Replace Distance Control Computer Assembly<xref label="Seep01" href="RM0000028Z2003X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000064N00DX_04_0010">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM00000064N00DX_04_0028">
+<testtitle>Replace Distance Control Computer Assembly<xref label="Seep01" href="RM0000028Z2003X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

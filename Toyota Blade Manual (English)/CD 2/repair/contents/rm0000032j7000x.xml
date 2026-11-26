@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002O_S0008" variety="S0008">
+<name>Engine Immobiliser</name>
+<ttl id="1002O_S0008_741KM_T000P" variety="T000P">
+<name>Engine Immobiliser System</name>
+<para id="RM0000032J7000X" category="C" type-id="802WG" name-id="580M8-00" from="200612">
+<dtccode>B279A</dtccode>
+<dtcname>Immobiliser Communication Line (Stuck High)</dtcname>
+<subpara id="RM0000032J7000X_01" type-id="31" category="03" proc-id="RM0550J___0000C2700000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The engine ECU (engine control computer) outputs this code when the communication line (EFIO - IMI) with the ID code box (immobiliser code computer) is stuck at Hi output.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.72in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B279A</ptxt>
+</entry>
+<entry>
+<ptxt>The communication line (EFIO - IMI) between the engine ECU (engine control computer) and the ID code box (immobiliser code computer) is stuck at Hi output</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness</ptxt>
+</item>
+<item>
+<ptxt>ID Code Box (Immobiliser Code Computer)</ptxt>
+</item>
+<item>
+<ptxt>Engine ECU (Engine Control Computer)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000032J7000X_02" type-id="32" category="03" proc-id="RM0550J___0000C7Z00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B160072J02" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000032J7000X_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM0000032J7000X_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000032J7000X_04_0001" proc-id="RM0550J___0000C6O00000">
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), clear the DTCs. (see <xref label="Seep01" href="RM000000MGS00TX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032J7000X_04_0002" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000032J7000X_04_0002" proc-id="RM0550J___0000C6P00000">
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs. (see <xref label="Seep01" href="RM000000MGS00TX"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Only DTC B279A is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC B279A and other DTCs are output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032J7000X_04_0003" fin="false">A</down>
+<right ref="RM0000032J7000X_04_0008" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032J7000X_04_0003" proc-id="RM0550J___0000C6Q00000">
+<testtitle>Inspect Wire Harness and Connector (ID Code Box (Immobiliser Code Computer) - Engine ECU (Engine Control Computer))</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the connectors of the ID code box (immobiliser code computer) and the engine ECU (engine control computer).</ptxt>
+</test1>
+<figure>
+<graphic graphicname="B157949J04" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the vehicle side wire harness connectors.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.72in"/>
+<colspec colname="COL2" colwidth="1.43in"/>
+<colspec colname="COL3" colwidth="0.98in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>6(EFIO) - B11(IMI)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.71in"/>
+<colspec colname="COL2" colwidth="1.43in"/>
+<colspec colname="COL3" colwidth="0.99in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>6 (EFIO) or B11 (IMI) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals of the vehicle side wire harness connector.</ptxt>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.69in"/>
+<colspec colname="COL2" colwidth="1.44in"/>
+<colspec colname="COL3" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B11 (IMI) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>6 (EFIO) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032J7000X_04_0004" fin="false">OK</down>
+<right ref="RM0000032J7000X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032J7000X_04_0004" proc-id="RM0550J___0000C6R00000">
+<testtitle>Inspect Engine Control Computer (Input)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="B162466J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<test1>
+<ptxt>Using SST (TaSCAN), measure the waveform of the engine ECU (engine control computer) terminals.</ptxt>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.67in"/>
+<colspec colname="COL2" colwidth="2.46in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B11(IMI) - A104(E1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10V/DIV、100ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON with a registered electrical key transmitter (electronic key)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>The waveform is displayed correctly. (See illustration)</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032J7000X_04_0005" fin="true">OK</down>
+<right ref="RM0000032J7000X_04_0006" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032J7000X_04_0005">
+<testtitle>Replace Immobiliser Code Computer (for the procedure, see Registration Method in the Reference section)</testtitle>
+</testgrp>
+<testgrp id="RM0000032J7000X_04_0006" proc-id="RM0550J___0000C6S00000">
+<testtitle>Inspect Immobiliser Code Computer (Power Source and Ground)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<figure>
+<graphic graphicname="B164101J02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals of the vehicle side wire harness connector.</ptxt>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1(+B) - 8(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000032J7000X_04_0007" fin="true">OK</down>
+<right ref="RM0000032J7000X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000032J7000X_04_0007">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM000002ADG003X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000032J7000X_04_0008">
+<testtitle>Go to Diagnostic Trouble Code Chart<xref label="Seep01" href="RM000000MGS00TX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000032J7000X_04_0009">
+<testtitle>Repair or Replace Wire Harness and Connector</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

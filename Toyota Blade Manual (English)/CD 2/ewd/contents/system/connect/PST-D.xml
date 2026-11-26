@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectionList>
+	<connector type="gp" code="MU">
+		<pin>
+			<line id="1" color="W-B">
+				<connector type="conn" code="M19">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="T7">
+		<pin no="4">
+			<line id="2" color="W-B">
+				<connector type="conn" code="T5">
+					<pin no="4"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="T5">
+		<pin no="1">
+			<line id="3" color="L">
+				<connector type="conn" code="T7">
+					<pin no="6"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="M19">
+		<pin no="9">
+			<line id="4" color="L">
+				<connector type="w2w" code="FM3" sex="male">
+					<pin no="13"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="FM3" sex="female">
+		<pin no="13">
+			<line id="5" color="L">
+				<connector type="jbc" code="2Q">
+					<pin no="13"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="T5">
+		<pin no="9">
+			<line id="6" color="B">
+				<connector type="conn" code="T1">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="T1">
+		<pin no="1">
+			<line id="7" color="G">
+				<connector type="conn" code="T5">
+					<pin no="6"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="T5">
+		<pin no="5">
+			<line id="8" color="R">
+				<connector type="conn" code="T3">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="T3">
+		<pin no="1">
+			<line id="9" color="W">
+				<connector type="conn" code="T5">
+					<pin no="10"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="T5">
+		<pin no="3">
+			<line id="10" color="O" spec="~’09.12">
+				<connector type="conn" code="T4">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="T5">
+		<pin no="3">
+			<line id="10" color="BE" spec="’09.12~">
+				<connector type="conn" code="T4">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="T4">
+		<pin no="1">
+			<line id="11" color="GR">
+				<connector type="conn" code="T5">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="T5">
+		<pin no="8">
+			<line id="12" color="LG">
+				<connector type="conn" code="T2">
+					<pin no="1"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="T2">
+		<pin no="2">
+			<line id="13" color="SB" spec="’09.12~">
+				<connector type="conn" code="T5">
+					<pin no="7"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="T2">
+		<pin no="2">
+			<line id="13" color="BR" spec="~’09.12">
+				<connector type="conn" code="T5">
+					<pin no="7"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+</connectionList>

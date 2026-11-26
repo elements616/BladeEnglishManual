@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARA INFOID = "T010054A071" UPDATE = "ORIGINAL" LDUP = "25Sep2003"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Ignition Timing Control (ESA)</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The optimum ignition timing is selected based on the signals from each sensor, and an ignition signal (IGt) is sent to the igniter. Ignition timing can be expressed by the following formula. The initial set ignition timing is BTDC5°.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740056p" WIDTH = "6.903in" HEIGHT = "2.778in" />
+</FIGURE>
+<INDICATE ID = "T010054A071I01" INDSW = "OFF">
+<TITLE>ESA Control</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "66%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Knock Control System (KCS)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Determines whether knocking is occurring based on the knock sensor signal.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T010054A071I02" INDSW = "OFF">
+<TITLE>Function List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "37%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "62%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Air Flow Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the intake air volume and intake air temperature.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Camshaft Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>G<SUB>2</SUB>Sends the signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Crankshaft Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Sends the Ne signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Throttle Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the throttle valve opening angle.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Accelerator Position Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the accelerator opening.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Water Temperature Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the engine coolant temperature.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Knock Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Converts the pressure applied to the piezoelectric element into a voltage signal to detect knocking.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Starter Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Transmits the starter voltage during engine starting as the starter signal.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Neutral Start Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Detects the CVT P, N and D positions.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Combination Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Receives the vehicle speed signal (SP1) and transmits the vehicle speed signal (SPD).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Ignition Coil with Igniter</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Fires at the optimum timing and sends the ignition confirmation signal.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+&T010054A071A205;
+&T010054A071A206;
+&T010054A071A216;
+</PARA>

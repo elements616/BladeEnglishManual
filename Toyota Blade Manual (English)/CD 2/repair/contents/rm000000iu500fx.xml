@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001H_S0001" variety="S0001">
+<name>Seat</name>
+<ttl id="1001H_S0001_741BJ_T0005" variety="T0005">
+<name>Front Power Seat System</name>
+<para id="RM000000IU500FX" category="N" type-id="8009I" name-id="79198-00" from="200612">
+<name>Function Inspection</name>
+<subpara id="RM000000IU500FX_01" type-id="01" category="01">
+<s-1 id="RM000000IU500FX_01_0001" proc-id="RM0550J___000001H00000">
+<ptxt>Basic Operation Inspection</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check that the front seat assembly RH slides forward and backward when the front power seat switch (slide) is operated.</ptxt>
+</s2>
+<s2>
+<ptxt>Check that the front part of the front seat cushion moves up and down when the front power seat switch (front vertical) is operated.</ptxt>
+</s2>
+<s2>
+<ptxt>Check that the entire front seat cushion moves up and down when the front power seat switch (rear lifter) is operated.</ptxt>
+</s2>
+<s2>
+<ptxt>Check that the front seatback moves forward and backward when the front power seat switch (reclining) is operated.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000IU500FX_01_0003" proc-id="RM0550J___000001I00000">
+<ptxt>Inspect Front Seat Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Power Seat Motor Internal PTC Operation Inspection</ptxt>
+<atten3>
+<ptxt>Inspect with the seat installed on the vehicle.</ptxt>
+</atten3>
+<s3>
+<ptxt>Move the seat fully to the front or rear, or fully up or down, and wait for approximately 60 seconds.</ptxt>
+</s3>
+<s3>
+<ptxt>Check the time until the current is cut off (motor operating sound stops) when the front power seat switch is operated further in the same direction.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Cut off in approximately 4 to 90 seconds</ptxt>
+</specitem>
+</spec>
+</s3>
+<s3>
+<ptxt>After the cutoff inspection, turn the switch OFF, wait for approximately 60 seconds, and check that the motor operates when the power seat switch assembly is operated in the opposite direction.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

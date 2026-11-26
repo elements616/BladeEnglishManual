@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-db>
+<pub id="RM0550J">
+<servcat id="11">
+<section id="1001O_S001F" variety="S001F">
+<ttl id="1001O_S001F_74QXD_T00FC" variety="T00FC">
+<para id="RM00000064G00IX" category="J" type-id="300WK" name-id="5915C-00" from="200708">
+<subpara id="RM00000064G00IX_04">
+<testgrp id="RM00000064G00IX_04_0001">
+<scantool type="4">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">4</parameter>
+<parameter key="pid-id-num">3</parameter>
+<datamonitor no="1">
+<parameter key="pid-id">126</parameter>
+<parameter key="datamonitor-name">C/C CANCEL</parameter>
+</datamonitor>
+<datamonitor no="2">
+<parameter key="pid-id">127</parameter>
+<parameter key="datamonitor-name">C/C SET/COAST</parameter>
+</datamonitor>
+<datamonitor no="3">
+<parameter key="pid-id">128</parameter>
+<parameter key="datamonitor-name">C/C RES/ACC</parameter>
+</datamonitor>
+</scantool>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-db>

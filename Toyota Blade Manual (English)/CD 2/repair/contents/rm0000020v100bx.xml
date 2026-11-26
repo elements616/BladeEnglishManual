@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_74XSP_T00GH" variety="T00GH">
+<name>Intake Air Flow Meter Sub-assembly (2GR-FE)</name>
+<para id="RM0000020V100BX" category="G" type-id="3001K" name-id="066Q5-00" from="200708">
+<name>Component Inspection</name>
+<subpara id="RM0000020V100BX_02" type-id="01" category="01">
+<s-1 id="RM0000020V100BX_02_0002" proc-id="RM0550J___0000H2X00000">
+<ptxt>Inspect Intake Air Flow Meter Sub-assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Sensor Foreign Matter Inspection</ptxt>
+<s3>
+<ptxt>Visually check the platinum filament (heater) in the flow passage.</ptxt>
+<figure>
+<graphic graphicname="A154164J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Criteria</title>
+<specitem>
+<ptxt>There must be no visible foreign matter.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If there is no foreign matter, reinstall the air flow meter to the vehicle after checking.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Intake Air Temperature Sensor Resistance Inspection</ptxt>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<figure>
+<graphic graphicname="A127786J11" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COLSPEC0" colwidth="1.38in"/>
+<colspec colname="COLSPEC2" colwidth="1.37in"/>
+<colspec colname="COLSPEC1" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>1(THA) - 2(E2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-20°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>13.6 to 18.4 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2.21 to 2.69 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>60°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.49 to 0.67 kΩ</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

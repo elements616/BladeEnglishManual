@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-db>
+<pub id="RM0550J">
+<servcat id="03">
+<section id="1001Y_S000S" variety="S000S">
+<ttl id="1001Y_S000S_744HD_T007Y" variety="T007Y">
+<para id="RM000001I3P00OX" category="C" type-id="801ED" name-id="3225Q-00" from="200612">
+<subpara id="RM000001I3P00OX_04">
+<testgrp id="RM000001I3P00OX_04_0001">
+<scantool type="4">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">4</parameter>
+<parameter key="pid-id-num">3</parameter>
+<datamonitor no="1">
+<parameter key="pid-id">179</parameter>
+<parameter key="datamonitor-name">Neutral Start SW</parameter>
+</datamonitor>
+<datamonitor no="2">
+<parameter key="pid-id">253</parameter>
+<parameter key="datamonitor-name">Shift Position R Range</parameter>
+</datamonitor>
+<datamonitor no="3">
+<parameter key="pid-id">260</parameter>
+<parameter key="datamonitor-name">Shift Position D Range</parameter>
+</datamonitor>
+</scantool>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0010">
+<scantool type="4">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">4</parameter>
+<parameter key="pid-id-num">1</parameter>
+<datamonitor no="1">
+<parameter key="pid-id">258</parameter>
+<parameter key="datamonitor-name">Sport Mode Select SW</parameter>
+</datamonitor>
+</scantool>
+</testgrp>
+<testgrp id="RM000001I3P00OX_04_0009">
+<scantool type="1">
+<parameter key="ecu-id">61</parameter>
+<parameter key="ecu-category-name">TCCS</parameter>
+<parameter key="bus-id">18</parameter>
+<parameter key="shori-type">1</parameter>
+</scantool>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-db>

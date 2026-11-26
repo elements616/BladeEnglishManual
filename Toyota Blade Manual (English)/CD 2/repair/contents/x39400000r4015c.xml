@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="X39400000R4015C" category="C" type-id="3008L" name-id="0659X-00" from="200612">
+<dtccode>P0120/41</dtccode>
+<dtcname>Throttle Sensor Circuit</dtcname>
+<dtccode>P0121/41</dtccode>
+<dtcname>Throttle Sensor Out of Range</dtcname>
+<dtccode>P0122/41</dtccode>
+<dtcname>Throttle Sensor Open Circuit (Low)</dtcname>
+<dtccode>P0123/41</dtccode>
+<dtcname>Throttle Sensor Open Circuit (High)</dtcname>
+<dtccode>P0220/41</dtccode>
+<dtcname>Throttle Sensor No.2 Open Circuit</dtcname>
+<dtccode>P0222/41</dtccode>
+<dtcname>Throttle Sensor No.2 Open Circuit (Low)</dtcname>
+<dtccode>P0223/41</dtccode>
+<dtcname>Throttle Sensor No.2 Open Circuit (High)</dtcname>
+<dtccode>P2135/41</dtccode>
+<dtcname>Throttle Sensor Circuit</dtcname>
+<subpara id="X39400000R4015C_10" type-id="31" category="03" proc-id="RM0550J___00002PS00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>The throttle position sensor is mounted on the throttle body, and converts the throttle valve opening angle into a linear voltage signal of approximately 0 to 5V, which it outputs to the engine control computer. The output system is 2-fold redundant to improve the reliability of the detection section.</ptxt>
+<figure>
+<graphic graphicname="A084577J04" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.9583643     in"/>
+<colspec colnum="02" colname="C02" colwidth="3.154628     in"/>
+<colspec colnum="03" colname="C03" colwidth="3.033927     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTCNo.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0120/41</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>VTA1 voltage 0.2V or less or VTA1 voltage 4.535V or more (VTA1 circuit malfunction)</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle Body Assembly (Throttle Position Sensor)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0121/41</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Characteristic malfunction of VTA1 sensor and VTA2 sensor</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle Body Assembly (Throttle Position Sensor)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0122/41</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>VTA1 voltage 0.2V or less (short in VTA1 circuit, open in VC circuit)</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle Body Assembly (Throttle Position Sensor)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0123/41</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>VTA1 voltage 4.535V or more (open in VTA1 circuit or short to +B circuit, open in E2 circuit)</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle Body Assembly (Throttle Position Sensor)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0220/41</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>VTA2 voltage 1.75V or less or VTA2 voltage 4.8V or more, and VTA1 voltage 0.2V or more and 2.02V or less (VTA2 circuit malfunction)</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle Body Assembly (Throttle Position Sensor)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0222/41</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>VTA2 voltage 1.75V or less (short in VTA2 circuit or short to GND, short in VC circuit)</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle Body Assembly (Throttle Position Sensor)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0223/41</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>VTA2 voltage 4.8V or more, VTA1 voltage 0.2V or more and 2.02V or less (open in VTA2 circuit, open in E2 circuit, short to +B circuit)</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle Body Assembly (Throttle Position Sensor)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" morerows="1" valign="middle" align="center">
+<ptxt>P2135/41</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Difference between VTA1 voltage and VTA2 voltage 0.02V or less (open in E2 circuit, short between VTA1-VTA2 circuits)</ptxt>
+</item>
+<item>
+<ptxt>0.5 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle Body Assembly (Throttle Position Sensor)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>VTA1 voltage 0.2V or less and VTA2 voltage 1.75V or less (open in VC circuit)</ptxt>
+</item>
+<item>
+<ptxt>0.4 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle Body Assembly (Throttle Position Sensor)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="X39400000R4015C_11" type-id="32" category="03" proc-id="RM0550J___00002PT00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A152914J04" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="X39400000R4015C_12" type-id="51" category="05" proc-id="RM0550J___00002PU00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Using SST (TaSCAN), read the freeze data. Freeze data records part of the engine operating condition when the malfunction occurred, and this information is useful when troubleshooting.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="X39400000R4015C_13" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="X39400000R4015C_13_0018" proc-id="RM0550J___00002Q000000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Throttle Sensor No.1 Opening Angle / Throttle Sensor No.2 Voltage)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Apply the parking brake and chock the wheels.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), select [ECU Data Monitor] following the screen display.</ptxt>
+</test1>
+<test1>
+<ptxt>Read [Throttle Sensor No.1 Opening Angle] and [Throttle Sensor No.2 Voltage] with the accelerator pedal fully closed.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Firmly depress the brake pedal with your left foot and shift to the D position.</ptxt>
+</test1>
+<test1>
+<ptxt>Read [Throttle Sensor No.1 Opening Angle] and [Throttle Sensor No.2 Voltage] with the accelerator pedal fully open.</ptxt>
+<spec>
+<title>Display Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<tgroup cols="6" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.28in"/>
+<colspec colnum="02" colname="C02" colwidth="1.28in"/>
+<colspec colnum="03" colname="C03" colwidth="1.27in"/>
+<colspec colnum="04" colname="C04" colwidth="1.27in"/>
+<colspec colnum="05" colname="C05" colwidth="1.08in"/>
+<colspec colnum="06" colname="C06" colwidth="0.90in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Throttle SensorNo.1 Opening</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Throttle Sensor No.2 Voltage</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Throttle SensorNo.1 Opening</ptxt>
+<ptxt>Accelerator pedal fully open</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>Throttle Sensor No.2 Voltage</ptxt>
+<ptxt>Accelerator pedal fully open</ptxt>
+<ptxt>(IG ON)</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry colname="C06" valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>0%</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>0 to 0.2V</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>0%</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>0 to 0.2V</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="center">
+<ptxt>VC circuit open</ptxt>
+</entry>
+<entry colname="C06" valign="middle" align="center">
+<ptxt>Go to A</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>100%</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>4.6 to 5.0V</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>100%</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>4.6 to 5.0V</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="center">
+<ptxt>E2 circuit open</ptxt>
+</entry>
+<entry colname="C06" valign="middle" align="center">
+<ptxt>Go to A</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>0% or 100%</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>2.1 to 3.1V</ptxt>
+<ptxt>(During Fail-safe)</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>0% or 100%</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>2.1 to 3.1V</ptxt>
+<ptxt>(During Fail-safe)</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="center">
+<ptxt>VTA circuit open or short</ptxt>
+</entry>
+<entry colname="C06" valign="middle" align="center">
+<ptxt>Go to A</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>10 to 24%</ptxt>
+<ptxt>(During Fail-safe)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>0 to 0.2V or</ptxt>
+<ptxt>4.6 to 5.0V</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>10 to 24%</ptxt>
+<ptxt>(During Fail-safe)</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>0 to 0.2V or</ptxt>
+<ptxt>4.6 to 5.0V</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="center">
+<ptxt>VTA2 circuit open or short</ptxt>
+</entry>
+<entry colname="C06" valign="middle" align="center">
+<ptxt>Go to A</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>10 to 22%</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>2.1 to 3.1V</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>64 to 96%</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>4.6 to 5.0V</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="center">
+<ptxt>System Normal</ptxt>
+</entry>
+<entry colname="C06" valign="middle" align="center">
+<ptxt>Go to B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000R4015C_13_0001" fin="false">A</down>
+<right ref="X39400000R4015C_13_0016" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="X39400000R4015C_13_0001" proc-id="RM0550J___00002PV00000">
+<testtitle>Inspect Wire Harness or Connector (Throttle Position Sensor - Engine Control Computer)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep02" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect engine control computer connector A and the throttle position sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance of the terminals between the engine control computer and the throttle position sensor vehicle side connector. (see <xref href="X39400000QV016D" label="Seep01"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="A157897J01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C01" colwidth="1.52in"/>
+<colspec colnum="2" colname="COLSPEC0" colwidth="1.31in"/>
+<colspec colnum="3" colname="C02" colwidth="1.3in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A67(VCTA) - 5(VC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A115(VTA1) - 6(VTA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A114(VTA2) - 4(VTA2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A91(ETA) - 3(E2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>A67 (VCTA) and 5 (VC) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>A115 (VTA1) and 6 (VTA) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>A114 (VTA2) and 4 (VTA2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>A91 (ETA) and 3 (E2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000R4015C_13_0003" fin="false">OK</down>
+<right ref="X39400000R4015C_13_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000R4015C_13_0003" proc-id="RM0550J___00002PW00000">
+<testtitle>Inspect Wire Harness and Connector (VC Voltage)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the throttle position sensor (throttle body assembly) connector.</ptxt>
+<figure>
+<graphic graphicname="A157898J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the vehicle side connector terminals. (see <xref href="X39400000QV016D" label="Seep01"/> for Terminals of ECU)</ptxt>
+<spec>
+<title>Voltage</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C01" colwidth="1.38in"/>
+<colspec colnum="2" colname="COLSPEC1" colwidth="1.38in"/>
+<colspec colnum="3" colname="C02" colwidth="1.37in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>5(VC) - 3(E2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>4.5 to 5.5V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000R4015C_13_0009" fin="false">OK</down>
+<right ref="X39400000R4015C_13_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000R4015C_13_0009" proc-id="RM0550J___00002PX00000">
+<testtitle>Replace Throttle Body Assembly</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the throttle body assembly replacement procedure, refer to <xref label="Seep01" href="RM0000020UP00CX"/></ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="X39400000R4015C_13_0016" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="X39400000R4015C_13_0016" proc-id="RM0550J___00002PZ00000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and clear the DTCs following the TaSCAN screen display. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="X39400000R4015C_13_0011" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="X39400000R4015C_13_0011" proc-id="RM0550J___00002PY00000">
+<scantool type="1"/>
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Perform a road test.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs by following the SST (TaSCAN) screen display. (see <xref href="RM000000CCX015X" label="Seep02"/>)</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2" colsep="1" rowsep="1" align="center">
+<colspec colnum="01" colname="C01" colwidth="3.13in"/>
+<colspec colnum="02" colname="C02" colwidth="1.00in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry colname="C02" valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTCs are output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle">
+<ptxt>No DTC is output</ptxt>
+</entry>
+<entry colname="C02" valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>The DTC judgment can be confirmed using the [Diagnosis Judgment Result Check] function of SST (TaSCAN). (see <xref href="RM000000CCX015X" label="Seep03"/>)</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="X39400000R4015C_13_0013" fin="true">A</down>
+<right ref="X39400000R4015C_13_0005" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="X39400000R4015C_13_0012">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000R4015C_13_0013">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000R4015C_13_0004">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="X39400000R4015C_13_0005">
+<testtitle>System Normal</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

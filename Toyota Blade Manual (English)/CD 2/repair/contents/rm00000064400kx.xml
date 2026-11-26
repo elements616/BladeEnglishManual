@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="1001O_S001F" variety="S001F">
+<name>Cruise Control</name>
+<ttl id="1001O_S001F_74QXD_T00FC" variety="T00FC">
+<name>Radar Cruise Control System</name>
+<para id="RM00000064400KX" category="D" type-id="3001B" name-id="5914Q-00" from="200708" to="200912">
+<name>How to Proceed with Troubleshooting</name>
+<subpara id="RM00000064400KX_z0" proc-id="RM0550J___0000C9100000">
+<content5 releasenbr="2">
+<descript-diag>
+<descript-testgroup>
+<testtitle>Vehicle brought to workshop</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Customer Problem Analysis and Symptom Check</testtitle>
+<atten4>
+<ptxt>For the procedure, refer to <xref label="Seep01" href="RM00000064500EX"/>.</ptxt>
+</atten4>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Preliminary Inspection</testtitle>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (Toyota electrical tester), inspect the battery voltage.</ptxt>
+<spec>
+<title>Voltage</title>
+<specitem>
+<ptxt>11 to 14 V</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Referring to the parts location diagram, wiring diagram, etc., inspect the areas that can be visually checked for blown fuses, open circuits and short circuits in the wire harness, poor connector connections, etc. in the system.</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CAN Communication System Check</testtitle>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using the SST (TaSCAN), display the "CAN Bus Diagnosis / CAN Bus Connected ECU Check" screen and check all ECUs and sensors connected to CAN communication. (see <xref label="Seep02" href="RM0000005S001VX"/>) </ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No Abnormality</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Abnormal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>Go to CAN Communication System Section (<xref label="Seep03" href="RM000001R4W00DX"/>)</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Check DTC</testtitle>
+<test1>
+<ptxt>Check DTC and Freeze Frame Data (see <xref label="Seep04" href="RM00000064C00EX"/>) </ptxt>
+<test2>
+<ptxt>Record the DTCs and freeze frame data.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Clear DTCs and Freeze Frame Data</ptxt>
+</test1>
+<test1>
+<ptxt>Recheck DTC</ptxt>
+<test2>
+<ptxt>Based on the recorded DTCs, reproduce the problem symptom and check whether the DTCs are output again.</ptxt>
+<atten4>
+<ptxt>When DTCs are output, refer to "Diagnostic Trouble Code Chart" (<xref label="Seep05" href="RM00000064600EX"/>).</ptxt>
+</atten4>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No code, symptom can be confirmed and reproduced</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No code, symptom cannot be confirmed and reproduced</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Code output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>Go to Symptom Simulation (<xref label="Seep06" href="RM000000ABY04BX"/>)</action-ci-right>
+<result>C</result>
+<action-ci-right>Go to step 8</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>List by Symptom</testtitle>
+<atten4>
+<ptxt>(see <xref label="Seep07" href="RM00000064900EX"/>)</ptxt>
+</atten4>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Not listed in List by Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Corresponds to List by Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<results>
+<result>B</result>
+<action-ci-right>Go to step 8</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Perform troubleshooting using the following methods based on the problem symptom</testtitle>
+<test1>
+<ptxt>ECU Data Monitor/Active Test (see <xref label="Seep08" href="RM00000064E00IX"/>) </ptxt>
+<test2>
+<ptxt>ECU Data Monitor (TaSCAN) </ptxt>
+</test2>
+<test2>
+<ptxt>Active Test (TaSCAN) </ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Function Inspection (see <xref label="Seep09" href="RM000000JFP00FX"/>)</ptxt>
+<test2>
+<ptxt>Inspect Cruise Control Main Switch</ptxt>
+</test2>
+<test2>
+<ptxt>Cruise Control Road Test (Constant Speed Control Mode) </ptxt>
+</test2>
+<test2>
+<ptxt>Cruise Control Road Test (Vehicle-to-vehicle Distance Control Mode) </ptxt>
+</test2>
+<test2>
+<ptxt>Steering Pad Switch Assembly (Distance Switch) Inspection</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Terminals of ECU (see <xref label="Seep10" href="RM00000064800HX"/>) </ptxt>
+</test1>
+<test1>
+<ptxt>Millimeter Wave Radar Sensor Assembly Axis Adjustment (see <xref label="Seep11" href="RM0000028Z6003X"/>) </ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Adjust, Repair or Replace</testtitle>
+<atten4>
+<ptxt>If the ECU is replaced, perform the initial setting. (see <xref label="Seep12" href="RM000002GO2003X"/>)</ptxt>
+</atten4>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Confirmation Test</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

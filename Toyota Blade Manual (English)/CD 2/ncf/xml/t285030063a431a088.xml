@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T030063A431A088" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Uphill / Downhill Shift Control</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When driving on winding roads with ups and downs, uphill/downhill shift control restricts upshifting when it determines that the vehicle is going uphill, achieving smooth driving.</PTXT></ITEM>
+<ITEM><PTXT>In addition, when driving downhill, if a downhill is determined from the throttle opening and vehicle acceleration and brake operation is detected, the transmission downshifts to generate an appropriate engine braking force. The system consists of the throttle position sensor and vehicle speed sensor.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3730037p" WIDTH = "6.917in" HEIGHT = "3.750in" />
+</FIGURE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Slope determination is made by comparing the reference acceleration stored in the computer with the actual acceleration calculated from the speed sensor signal. When the actual acceleration is less than the reference acceleration, an uphill road is determined, and when the actual acceleration is greater than the reference acceleration, a downhill road is determined.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740117p" WIDTH = "6.917in" HEIGHT = "2.028in" />
+</FIGURE>
+</MECA>

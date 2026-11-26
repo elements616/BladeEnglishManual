@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001A_S0009" variety="S0009">
+<name>Lighting</name>
+<ttl id="1001A_S0009_7420N_T0015" variety="T0015">
+<name>Lighting System</name>
+<para id="RM0000005KH00SX" category="D" type-id="303F4" name-id="603CQ-00" from="200612">
+<name>DTC Check/Clear</name>
+<subpara id="RM0000005KH00SX_z0" proc-id="RM0550J___00000RN00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Check DTCs Using TaSCAN</ptxt>
+<step2>
+<ptxt>Using SST (TaSCAN), display the "Body → Main Body" screen by following the screen instructions, and select "Check DTC" to check them.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step2>
+</step1>
+<step1>
+<ptxt>Clear DTC Memory Using TaSCAN</ptxt>
+<step2>
+<ptxt>Using SST (TaSCAN), display the "Body → Main Body" screen by following the screen instructions, and select "Clear DTC" to clear them.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

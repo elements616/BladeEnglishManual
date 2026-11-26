@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4270208e SYSTEM "grph_ent/a4270208e.png" NDATA png>
+
+<!ENTITY T080008K710 SYSTEM "t478080008k710.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T080008K710S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T080008K710" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Neural Network Flow</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The neural network consists of neurons in the input layer, intermediate layer and output layer; the input layer (neurons) processes information such as outside air temperature, solar radiation and room temperature from the switches and sensor outputs and outputs it to the intermediate layer (neurons), the intermediate layer (neurons) adjusts the strength of the connections (weighting) between neurons based on this, and the output layer (neurons) calculates the sum as control values for the required outlet temperature, solar correction, target airflow and outlet mode. Accordingly, the air conditioning computer controls each servo motor and the blower motor according to the control values calculated by the neural network.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4270208e" WIDTH = "6.903in" HEIGHT = "6.458in" />
+</FIGURE>
+</PARA>
+</SECTION>

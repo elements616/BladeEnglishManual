@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T120025K065K063" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Water Temperature Gauge Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The engine control computer receives the resistance change detected by the water temperature sensor and sends the water temperature signal to the meter computer as a CAN communication signal.</PTXT></ITEM>
+<ITEM><PTXT>The meter computer receives the water temperature signal as a CAN communication signal and drives the stepper motor driver circuit according to the data to control the rotation angle, direction and speed of the pointer (stepper motor rotor), thereby indicating the engine coolant temperature.</PTXT></ITEM>
+<ITEM><PTXT>The meter computer performs initialization control that returns the pointer to the zero position each time power is supplied to the combination meter.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740242b" WIDTH = "6.903in" HEIGHT = "3.222in" /><FIGCAPTION><L ja="コンビネーションメーター">Combination Meter</L><L ja="+B">+B</L><L ja="メーターコンピューター">Meter Computer</L><L ja="電源回路">Power Circuit</L><L ja="水温センサー">Engine Coolant Temperature Sensor</L><L ja="CAN通信">CAN communication</L><L ja="水温信号">Coolant temperature signal</L><L ja="ウォーターテンペラチャーゲージ駆動用ステッパーモーター">Water Temperature Gauge Drive Stepper Motor</L></FIGCAPTION>
+</FIGURE>
+</MECA>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="07">
+<name>Steering</name>
+<section id="1000U_S0017" variety="S0017">
+<name>Steering Column</name>
+<ttl id="1000U_S0017_746I2_T00CG" variety="T00CG">
+<name>Steering Lock System</name>
+<para id="RM0000005GJ00VX" category="U" type-id="3001G" name-id="480YJ-00" from="200612">
+<name>Terminals of ECU</name>
+<subpara id="RM0000005GJ00VX_z0" proc-id="RM0550J___0000A0W00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Inspect Steering Lock Actuator (Steering Lock ECU)</ptxt>
+<step2>
+<ptxt>Using SST (Toyota electrical tester), inspect the battery voltage with the IG ON.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Using SST (Toyota electrical tester), inspect the voltage and resistance between the terminals of the steering lock ECU, or between the terminals and body ground.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030、09083-00170</s-number>
+</sstitem>
+</sst>
+<atten3>
+<ptxt>With the connector connected, inspect from the back side of the connector.</ptxt>
+<figure>
+<graphic graphicname="C104383J55" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</atten3>
+</step2>
+</step1>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table pgwide="1">
+<tgroup cols="5" align="center">
+<colspec colname="COL2" colwidth="1.82in"/>
+<colspec colname="COL3" colwidth="0.93in"/>
+<colspec colname="COL4" align="center" colwidth="1.16in"/>
+<colspec colname="COL5" colwidth="1.71in"/>
+<colspec colname="COL6" align="center" colwidth="1.46in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No. (Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 (GND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2 (SGND) ←→ Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Resistance</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3(IGE)←→1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor not operating → operating</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V → 1V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4(SLP1)←→2(SGND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lock → Unlock</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V ←→ 1V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>5(LIN)</ptxt>
+<ptxt>(Immobiliser ECU Communication Line)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Input/Output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>6(IG2)←→1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>7(B)←→1(GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<step1>
+<ptxt>Inspect Main Body ECU</ptxt>
+<figure>
+<graphic graphicname="E139320J20" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<step2>
+<ptxt>Using SST (Toyota electrical tester), inspect the battery voltage with the IG ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Using SST (Toyota electrical tester), inspect the voltage between the terminals of the steering lock ECU, or between the terminals and body ground.</ptxt>
+<table pgwide="1">
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>V7(SLR+)←→U4(GND2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering motor driven → not driven</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1V or less → 11to14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

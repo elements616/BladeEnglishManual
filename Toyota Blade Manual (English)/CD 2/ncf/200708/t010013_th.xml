@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SCT SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740046p SYSTEM "../xml/grph_ent/a4740046p.png" NDATA png>
+<!ENTITY a4740047p SYSTEM "../xml/grph_ent/a4740047p.png" NDATA png>
+<!ENTITY a4740048p SYSTEM "../xml/grph_ent/a4740048p.png" NDATA png>
+<!ENTITY a4740049p SYSTEM "../xml/grph_ent/a4740049p.png" NDATA png>
+
+<!ENTITY T010041A143 SYSTEM "../xml/t478010041a143.xml">
+<!ENTITY T010041A144 SYSTEM "../xml/t478010041a144.xml">
+<!ENTITY T010041A145 SYSTEM "../xml/t478010041a145.xml">
+<!ENTITY T010041A266 SYSTEM "../xml/t478010041a266.xml">
+<!ENTITY T010041A146 SYSTEM "../xml/t478010041a146.xml">
+<!ENTITY T010041A147 SYSTEM "../xml/t478010041a147.xml">
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf_t.xsl"?>
+<SCT SCTNBR = "99" CHAPNBR = "99"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script>
+<SECTION SCID = "T010041A143S"><SCTITLE/>
+
+<PARA INFOID = "T010041A143" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Cooling General</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The cooling system is a pressurized, forced-circulation, water-cooled type, and is a bottom bypass type with a bypass valve type thermostat located in the water inlet.</PTXT></ITEM>
+<ITEM><PTXT>A concentrated longitudinal flow system has been adopted for the cylinder head, improving cooling around the combustion chambers and spark plugs. Also, cooling of the cylinder block is a U-turn type.</PTXT></ITEM>
+<ITEM><PTXT>A CVT fluid (CVTF) warmer has been provided to increase the warm-up speed of the CVT fluid when cold and to reduce CVT friction. Also, when the CVT fluid temperature is high, it functions as an oil cooler.</PTXT></ITEM>
+<ITEM><PTXT>By adopting a fully sealed reservoir tank, high gas-liquid separation performance and improved cooling system pressure stability have been achieved, and by optimizing its installation position, the air bleed valve used when filling coolant has been eliminated to improve serviceability.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740046p" WIDTH = "6.903in" HEIGHT = "6.722in" />
+</FIGURE>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010041A144S"><SCTITLE/>
+
+<PARA INFOID = "T010041A144" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Radiator</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A cross-flow type aluminum core radiator with excellent heat dissipation has been adopted, achieving heat dissipation performance appropriate to the higher performance of the engine.</PTXT></ITEM></LIST1>
+<SPEC ID = "T010041A144X01" INDSW = "OFF">
+<TITLE>Radiator Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Core Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Corrugated Fin</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Fin Pitch [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>2.5 / 2</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Core Dimensions &lt;Width × Height × Thickness&gt; [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>600 × 370 × 27</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Dry Weight [kg]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>3.3</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010041A145S"><SCTITLE/>
+
+<PARA INFOID = "T010041A145" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Cooling Fan and Fan Shroud</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The cooling fan rotates the main fan in the reverse direction to optimize the air flow in the engine room, suppressing the rise in intake air temperature and improving engine performance, especially at low speeds.</PTXT></ITEM>
+<ITEM><PTXT>The fan shroud is made of resin and is integrated RH and LH, reducing weight and size.</PTXT></ITEM>
+<ITEM><PTXT>A 2-stage controlled electric fan system has been adopted. Cooling performance is adjusted by switching the 2 cooling motors in 2 stages according to the coolant temperature and air conditioner operating status.<XREF     REFID = "S478010054A074"/>
+</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740047p" WIDTH = "6.903in" HEIGHT = "4.333in" />
+</FIGURE>
+<SPEC ID = "T010041A145X01" INDSW = "OFF">
+<TITLE>Cooling Fan Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "33%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Fan</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sub Fan</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Outer Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>280</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>280</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Number of Blades</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>5</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>7</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+<SPEC ID = "T010041A145X02" INDSW = "OFF">
+<TITLE>Cooling Fan Motor Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "33%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "33%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Main Fan</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Sub Fan</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Rated Voltage [V]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>12</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>←</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Rated Power [W]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>120</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>80</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010041A266S"><SCTITLE/>
+
+<PARA INFOID = "T010041A266" UPDATE = "ORIGINAL" LDUP = "10Oct2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Reservoir Tank</TITLE>
+<LIST1><ITEM><PTXT>A fully sealed type with both gas-liquid separation performance and cooling system pressure stabilization performance has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>The radiator reservoir tank cap performs the role of a conventional radiator cap, regulating the radiator internal pressure.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740048p" WIDTH = "6.903in" HEIGHT = "3.833in" />
+</FIGURE>
+<SPEC ID = "T010041A266X01" INDSW = "OFF">
+<TITLE>Reservoir Tank Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_00">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "17%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "34%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "48%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Cap Valve Opening Pressure [kPa]</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>108</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "2" VALIGN = "MIDDLE"><PTXT>Coolant Capacity</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Filling Line [L]</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>1.3</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>FULL Line [L]</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>0.7</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2"><PTXT>LOW Line [L]</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>0.5</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010041A146S"><SCTITLE/>
+
+<PARA INFOID = "T010041A146" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Water Pump</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The water pump has been made more compact and lighter by forming the volute chamber in the cylinder block.</PTXT></ITEM>
+<ITEM><PTXT>The water pump is driven by the back side of the V-ribbed belt. Also, by setting the belt center at the bearing center, compactness has been achieved and reliability ensured.</PTXT></ITEM>
+<ITEM><PTXT>A stainless steel rotor has been adopted and the vane shape has been optimized, improving efficiency and ensuring reliability.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740049p" WIDTH = "6.917in" HEIGHT = "3.153in" />
+</FIGURE>
+<SPEC ID = "T010041A146X01" INDSW = "OFF">
+<TITLE>Water Pump Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Drive Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>V-ribbed Belt Back Side Drive</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Rotor Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>φ56</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Bearing Diameter [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>φ30</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Number of Blades</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>7</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Discharge Performance [L/min] (80 ± 2°C)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>23.0 (at 1250r/min), 108.0 (at 5000r/min)</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+<SECTION SCID = "T010041A147S"><SCTITLE/>
+
+<PARA INFOID = "T010041A147" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Thermostat</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The thermostat is installed in the water inlet.</PTXT></ITEM>
+<ITEM><PTXT>The water outlet is provided at the rear of the cylinder head and is a press-fit pipe type.</PTXT></ITEM>
+<ITEM><PTXT>The thermostat is a wax type with a bypass valve, and the flange diameter has been increased (56mm) to ensure sufficient coolant circulation.</PTXT></ITEM></LIST1>
+<SPEC ID = "T010041A147X01" INDSW = "OFF">
+<TITLE>Thermostat Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>Bottom Bypass Type</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Valve Opening Temperature [°C]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>82</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Full Open Lift [mm]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>10 or more (10 to 13.3)</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+</PARA>
+</SECTION>
+</SCT>

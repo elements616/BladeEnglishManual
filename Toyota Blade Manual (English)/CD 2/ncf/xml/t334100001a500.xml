@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARA INFOID = "T100001A500" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Smart Entry &amp; Start System</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The Smart Entry &amp; Start System is used to dramatically improve convenience and to showcase advanced technology.</PTXT></ITEM>
+<ITEM><PTXT>The Smart Entry &amp; Start System allows various controls to be performed without handling the electronic key, based on the result of electronic ID code verification by wireless communication between the electronic key and the vehicle.</PTXT></ITEM>
+<ITEM><PTXT>A warning function is provided to warn in advance of several problems that can occur when the user becomes less conscious of carrying the electronic key, providing excellent usability.</PTXT></ITEM>
+<ITEM><PTXT>A key cancel function is provided so that the user can stop the Smart Entry &amp; Start System control as desired. When canceled, Smart Entry &amp; Start System control stops, but door lock/unlock by the wireless door lock/unlock function does not stop.</PTXT></ITEM>
+<ITEM><PTXT>An identification code registration function is used, allowing multiple electronic keys to be used.</PTXT></ITEM></LIST1>
+<CAUTION>
+<LIST1><ITEM><PTXT>The electronic key emits weak radio waves. Persons using a pacemaker should check the instruction manual of the pacemaker before use.</PTXT></ITEM>
+<ITEM><PTXT>Persons using an implanted cardiac pacemaker or implanted defibrillator should not come within approximately 22cm of the outside antennas or inside antennas. The radio waves may affect the operation of implanted cardiac pacemakers and implanted defibrillators.</PTXT></ITEM>
+<ITEM><PTXT>The smart function does not operate under the following conditions.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1><ITEM><PTXT>When smart control has been canceled with the key cancel function</PTXT></ITEM>
+<ITEM><PTXT>When the electronic key battery is depleted (the indicator light does not blink/illuminate when any button on the key is pressed)</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></CAUTION>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Door Lock Functions of the Smart Entry &amp; Start System</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Main Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Function Outline</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Door Unlock Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that unlocks the doors (back door) when the front door outside handle is gripped (the back door opener switch is pressed) and outside verification is OK.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Door Lock Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that locks the doors (back door) when the lock switch (back door lock switch) is pressed and outside verification is OK.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Ignition Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that changes the power mode and starts the engine through a combined operation of the engine switch and brake pedal when inside verification is OK (when the key battery is depleted, hold the electronic key in front of the engine switch).</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Illumination Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that illuminates each illumination light when outside verification is OK.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Warning Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that sounds warnings to prevent situations in which the user becomes unaware of the electronic key.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Function to Prevent Locking the Electronic Key in the Cabin</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that prevents the key from being locked in by sounding the wireless answer-back buzzer when an attempt is made to lock the doors with the Smart Entry &amp; Start System door lock function while the electronic key is in the cabin.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Power Saving Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that extends the interval of or stops the periodic transmission of request signals when the vehicle is not used for a long period, preventing battery discharge.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Key Cancel Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that stops Smart Entry &amp; Start System control when a certain operation is performed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Immobiliser Function</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>A function that permits the engine to be started only with pre-registered electronic keys, preventing unauthorized engine starting.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<INDICATE ID = "T100001A500I01" INDSW = "OFF">
+<TITLE>Smart Entry &amp; Start System Components 1</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740005b" WIDTH = "6.903in" HEIGHT = "4.278in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T100001A500I02" INDSW = "OFF">
+<TITLE>Smart Entry &amp; Start System Main Component Functions 1</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "23%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "76%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Identifies and verifies the ID code from the door control receiver and sends signals to each ECU according to the function to be performed. (Controls the entire system)</PTXT></ITEM>
+<ITEM><PTXT>Sends request codes to each oscillator.</PTXT></ITEM>
+<ITEM><PTXT>Performs encrypted code communication with the ID code box during ignition operation.</PTXT></ITEM>
+<ITEM><PTXT>Sounds the wireless answer-back buzzer during answer-back. [Answer-back Function]</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Engine ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Receives the engine start request signal from the main body ECU and starts the engine.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Indoor Antenna (Front/Rear)</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Transmits the request code from the certification ECU, forming a detection area in the cabin.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Door Control Receiver</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Receives the Smart Entry &amp; Start System transmission code/wireless transmission code from the electronic key and sends it to the certification ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Front Door Outside Handle</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Transmits the request signal from the outside oscillator via the built-in antenna, forming a detection area.</PTXT></ITEM>
+<ITEM><PTXT>Outputs the lock switch condition (ON/OFF) to the certification ECU. [Door Lock Function]</PTXT></ITEM>
+<ITEM><PTXT>Has a built-in touch sensor. [Door Unlock Function]</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Luggage Room Inside/Outside Antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Transmits the request code from the certification ECU, forming detection areas inside/outside the luggage room.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Back Door Lock/Opener Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sends the back door lock switch ON signal to the certification ECU.</PTXT></ITEM>
+<ITEM><PTXT>Sends the back door opener switch ON signal to the certification ECU via the main body ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Wireless Answer-back Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sounds during answer-back or warnings under the control of the certification ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+<INDICATE ID = "T100001A500I03" INDSW = "OFF">
+<TITLE>Smart Entry &amp; Start System Components 2</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740006b" WIDTH = "6.903in" HEIGHT = "3.778in" />
+</FIGURE>
+</INDICATE>
+<INDICATE ID = "T100001A500I04" INDSW = "OFF">
+<TITLE>Smart Entry &amp; Start System Main Component Functions 2</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "24%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "75%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Function</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Main Body ECU (Instrument Panel Junction Block Assembly)</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Drives the power source (ACC,IG1,IG2) relays.</PTXT></ITEM>
+<ITEM><PTXT>Sends the engine start request signal to the engine ECU.</PTXT></ITEM>
+<ITEM><PTXT>Sends the ON/OFF signals of each door courtesy light switch to the certification ECU, etc. via LIN communication.</PTXT></ITEM>
+<ITEM><PTXT>Confirms completion of all-door lock/unlock operation and drives the flasher relay. [Answer-back Function]</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Flasher Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Blinks the hazard warning lights during answer-back under the control of the main body ECU. [Answer-back Function]</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>IG1,IG2,ACC Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Turns ON/OFF under the control of the main body ECU, supplying power to each system.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Engine Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Sends the engine start, IG ON and ACC ON signals to the main body ECU.</PTXT></ITEM>
+<ITEM><PTXT>Receives the ID code when the electronic key battery is depleted and sends it to the certification ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>ID Code Box</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Receives commands from the certification ECU and sends immobiliser set/unset commands to the engine ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Shift Lock ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects the shift position "P" condition.</PTXT></ITEM>
+<ITEM><PTXT>Sends the shift position signal to the main body ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Steering Lock ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Receives the "steering unlock" signal from the certification ECU and releases the steering lock.</PTXT></ITEM>
+<ITEM><PTXT>Receives the "steering lock" signal from the certification ECU and locks the steering.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Combination Meter [Built-in Meter ECU]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Provides warnings (meter information display and single-tone buzzer in the meter) according to operation command signals from the certification ECU.</PTXT></ITEM>
+<ITEM><PTXT>Displays information when a malfunction occurs in the Smart Entry &amp; Start System.</PTXT></ITEM>
+<ITEM><PTXT>Sends the vehicle speed signal to the main body ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Stop Light Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Detects that the brake is depressed (ON) and outputs it to the main body ECU.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+&T100001A500A384;
+&T100001A500K786;
+&T100001A500A742;
+&T100001A500A748;
+&T100001A500A743;
+&T100001A500C088;
+&T100001A500A402;
+&T100001A500A745;
+&T100001A500A746;
+&T100001A500A747;
+</PARA>

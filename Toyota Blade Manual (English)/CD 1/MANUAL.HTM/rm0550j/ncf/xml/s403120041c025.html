@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../_runtime/legacy.css">
+<script src="../../../../../_runtime/compat.js"></script>
+
+<title>Intelligent Parking Assist System Function Outline</title>
+<link type="text/css" href="../css/main2.css" rel="stylesheet">
+<link type="text/css" href="../css/style.css" rel="stylesheet">
+<script src="../js/hidden.js" language="JavaScript"></script>
+</head>
+<body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
+<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td align="left"><input onClick="printCheck()" value="Print" name="submit" type="submit"></td><td align="center"> </td><td align="right"><input onClick="closeWindow()" value="Close" name="submit2" type="submit"></td>
+</tr>
+</table>
+<div align="left">
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="blue" width="5%"> </td><td align="center" class="blue" width="80%">Intelligent Parking Assist System Function Outline</td><td width="15%" class="blue" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">Intelligent parking assist is a system that assists reversing by synthesizing guide lines such as distance guide lines, vehicle width extension lines and estimated course lines onto the image from the rear view monitor camera installed at the rear of the vehicle and displaying it on the display screen of the HDD navigation system, while outputting voice guidance and controlling the steering.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">When the shift position is moved to "R" (reverse) with the power source position (IG) ON, the screen changes to the intelligent parking assist screen (when intelligent parking assist is selected with the touch switch on the display screen), and the image behind the vehicle from the rear view monitor camera is displayed on the display screen.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">By pressing the touch switch on the HDD navigation display, intelligent parking assist mode and back guide monitor mode can be switched.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td valign="top" align="center" width="22"> </td><td class="text_red">■ NOTICE ■</td>
+</tr>
+<tr>
+<td valign="top" align="center" width="22"> </td><td class="text_red">
+
+<div class="text">Intelligent parking assist is not an automatic parking device but a device that assists steering operation when reverse parking, so always drive while directly visually checking the safety behind and around the vehicle.</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120041C025C028');chgImg('imT120041C025C028');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120041C025C028" align="absmiddle"><a name="t120041c025c028">Intelligent Parking Assist Display Range</a></span>
+<br>
+<div id="tmT120041C025C028" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The area behind the vehicle is displayed within the range shown in the illustration. The displayed range may differ depending on the vehicle and road surface conditions.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Note that the range displayed on the screen by the rear view monitor camera is limited, and objects near either corner of the bumper or under the bumper are not displayed. </div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740018e.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120041C025C029');chgImg('imT120041C025C029');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120041C025C029" align="absmiddle"><a name="t120041c025c029">Intelligent Parking Assist Operation</a></span>
+<br>
+<div id="tmT120041C025C029" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">By pressing the assist mode ON/OFF switch located at the upper left of the display screen of the HDD navigation system, switching between the intelligent parking assist function and the back guide monitor function<a href="#H403120041C025C02901"><sup>*
+					</sup></a>can be performed.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">HINT</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="27">*</td><td class="text"><a name="H403120041C025C02901"></a>
+<div class="text">When the intelligent parking assist function is active, the indicator light in the assist mode ON/OFF switch illuminates yellow.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740095e.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120041C025C051');chgImg('imT120041C025C051');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120041C025C051" align="absmiddle"><a name="t120041c025c051">Modes and Selection Operations</a></span>
+<br>
+<div id="tmT120041C025C051" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Intelligent parking assist has 3 types: "course display mode", which displays the reversing course and guide lines on the display screen of the HDD navigation system, and "parallel parking assist mode" and "garage parking assist mode", which display the reversing course and guide lines and assist steering operation according to the display on the screen; the function can be selected according to the purpose. </div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120041C025K178');chgImg('imT120041C025K178');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120041C025K178" align="absmiddle"><a name="t120041c025k178">Course Display Mode</a></span>
+<br>
+<div id="tmT120041C025K178" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">When the shift position is moved to "R" (reverse) with the power source position (IG) ON, the image behind the vehicle and each mode switch are displayed on the display screen of the HDD navigation system, and the lines needed for guidance are synthesized and displayed on the screen.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740096e.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120041C025K178I01');chgImg('imT120041C025K178I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120041C025K178I01" align="absmiddle"><a name="t120041c025k178i01">Course Display Mode Screen Display Contents</a></span>
+<br>
+<div id="tmT120041C025K178I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">&nbsp;</td><td class="gray3_dark">
+<div class="text">Display</div>
+</td><td class="gray3_dark">
+<div class="text">Description</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">①</div>
+</td><td class="color1">
+<div class="text">Image Behind Vehicle</div>
+</td><td class="color1">
+<div class="text">Image of the area behind the vehicle from the rear view monitor camera</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">②</div>
+</td><td class="color1">
+<div class="text">Distance Guide Lines (Linked to Steering: Red and Yellow)</div>
+</td><td class="color1">
+<div class="text">Guide lines indicating distance from the rear end of the bumper (approx. 1m - yellow, approx. 50cm - red)</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">③</div>
+</td><td class="color1">
+<div class="text">Distance Guide Line (Fixed: Green)</div>
+</td><td class="color1">
+<div class="text">Guide line indicating distance from the rear end of the bumper (approx. 50cm)</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">④</div>
+</td><td class="color1">
+<div class="text">Vehicle Width Extension Lines<a href="#H403120041C025K17801"><sup>*1</sup></a>(Green)</div>
+</td><td class="color1">
+<div class="text">Extension lines of the vehicle</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑤</div>
+</td><td class="color1">
+<div class="text">Estimated Course Line (Yellow)</div>
+</td><td class="color1">
+<div class="text">Estimated course of the vehicle calculated from the steering angle</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑥</div>
+</td><td class="color1">
+<div class="text">Parallel Parking Switch<a href="#H403120041C025K17802"><sup>*2</sup></a>
+</div>
+</td><td class="color1">
+<div class="text">Touching this switches to parallel parking assist mode.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑦</div>
+</td><td class="color1">
+<div class="text">Garage Parking Switch<a href="#H403120041C025K17802"><sup>*2</sup></a>
+</div>
+</td><td class="color1">
+<div class="text">Touching this switches to garage parking assist mode.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑧</div>
+</td><td class="color1">
+<div class="text">Assist Mode ON/OFF Switch</div>
+</td><td class="color1">
+<div class="text">Touching this switches between intelligent parking assist mode and back guide monitor mode.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑨</div>
+</td><td class="color1">
+<div class="text">Bumper Edge Line<a href="#H403120041C025K17803"><sup>*3</sup></a>
+</div>
+</td><td class="color1">
+<div class="text">A line for checking the camera orientation, set to coincide with the bumper edge.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑩</div>
+</td><td class="color1">
+<div class="text">Caution Message</div>
+</td><td class="color1">
+<div class="text">Blinks for several seconds after switching to the course display mode screen to alert the driver.</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">HINT</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="27">*1</td><td class="text"><a name="H403120041C025K17801"></a>
+<div class="text">Not displayed when the steering wheel is nearly straight.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="27">*2</td><td class="text"><a name="H403120041C025K17802"></a>
+<div class="text">Displayed in intelligent parking assist mode.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="27">*3</td><td class="text"><a name="H403120041C025K17803"></a>
+<div class="text">If it does not coincide with the bumper edge, the camera orientation is misaligned, so consult a dealer.</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120041C025C030');chgImg('imT120041C025C030');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120041C025C030" align="absmiddle"><a name="t120041c025c030">Parallel Parking Assist Mode</a></span>
+<br>
+<div id="tmT120041C025C030" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">In intelligent parking assist mode, touching "Parallel Parking" on the screen while the course display mode screen is displayed switches to parallel parking assist mode, in which the image behind the vehicle and the lines needed for parallel parking are synthesized and displayed on the screen, and steering operation is assisted to support parallel parking. </div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">When Setting Target Parking Position</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">After parallel parking assist mode is selected, the screen changes to the target position setting screen, and the parking position is set by operating the arrow switches on the screen, referring to the image behind the vehicle and the displayed guide lines.</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">If the confirm switch is touched when the target parking position is (too far/too close), the message "Please start a little (closer to/farther from) the parking space" is displayed. When the vehicle is moved to a position where the target parking position can be set, a beep sounds to prompt the driver to stop the vehicle. Check the target parking frame and, if there is no problem, touch the reconfirm switch.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740099e.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120041C025C030I01');chgImg('imT120041C025C030I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120041C025C030I01" align="absmiddle"><a name="t120041c025c030i01">Parallel Parking Assist Mode (When Setting Target Parking Position) Screen Display Contents</a></span>
+<br>
+<div id="tmT120041C025C030I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">&nbsp;</td><td class="gray3_dark">
+<div class="text">Display</div>
+</td><td class="gray3_dark">
+<div class="text">Description</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">①</div>
+</td><td class="color1">
+<div class="text">Image Behind Vehicle</div>
+</td><td class="color1">
+<div class="text">Image of the area behind the vehicle from the rear view monitor camera</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">②</div>
+</td><td class="color1">
+<div class="text">Help Switch</div>
+</td><td class="color1">
+<div class="text">Touching this switches to the help screen, which displays "How to stop the vehicle" and "How to align the parking frame".</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">③</div>
+</td><td class="color1">
+<div class="text">Left/Right Selector Switch</div>
+</td><td class="color1">
+<div class="text">Touching this switches the target parking position between left and right.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">④</div>
+</td><td class="color1">
+<div class="text">Arrow Switch</div>
+</td><td class="color1">
+<div class="text">Touching this moves the target parking position in the touched direction.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑤</div>
+</td><td class="color1">
+<div class="text">Confirm Switch</div>
+</td><td class="color1">
+<div class="text">Touching this confirms the target parking position.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑥</div>
+</td><td class="color1">
+<div class="text">Back Switch</div>
+</td><td class="color1">
+<div class="text">Touching this returns to the course display mode screen.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑦</div>
+</td><td class="color1">
+<div class="text">Avoidance Pole</div>
+</td><td class="color1">
+<div class="text">This is a guide to the position of contact with obstacles when setting the target parking position; set the target parking position at a position where it does not overlap obstacles.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑧</div>
+</td><td class="color1">
+<div class="text">Target Parking Frame</div>
+</td><td class="color1">
+<div class="text">The current target parking position is displayed. (A green frame is displayed when the target parking position can be confirmed, and a red frame is displayed when the target parking position cannot be confirmed.)</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑨</div>
+</td><td class="color1">
+<div class="text">Caution Message</div>
+</td><td class="color1">
+<div class="text">Displayed after switching to the target parking position setting screen to alert the driver. Also, if the "Confirm" switch is touched in a situation where the target parking position cannot be confirmed, "Target cannot be set" blinks to inform the driver that the target parking position cannot be confirmed.</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">During System Operation</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">After the target parking position is confirmed, touching "OK" on the displayed precautions screen switches to the system operation screen, and parking assist by intelligent parking assist is performed. During system operation, keep your hands on the steering wheel, directly check the safety behind and around the vehicle, and reverse slowly while adjusting the speed by depressing the brake pedal. Also, when the vehicle enters the target parking position, voice guidance is output and system operation ends. For safety, the voice guidance is output before the target parking position is reached. Since system operation also ends at that time, firmly grip the steering wheel and reverse slowly while adjusting the speed by depressing the brake pedal to park in the desired position.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740100e.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120041C025C030I02');chgImg('imT120041C025C030I02');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120041C025C030I02" align="absmiddle"><a name="t120041c025c030i02">Parallel Parking Assist Mode (During System Operation) Screen Display Contents</a></span>
+<br>
+<div id="tmT120041C025C030I02" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">&nbsp;</td><td class="gray3_dark">
+<div class="text">Display</div>
+</td><td class="gray3_dark">
+<div class="text">Description</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">①</div>
+</td><td class="color1">
+<div class="text">Image Behind Vehicle</div>
+</td><td class="color1">
+<div class="text">Image of the area behind the vehicle from the rear view monitor camera</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">②</div>
+</td><td class="color1">
+<div class="text">Operating Mark</div>
+</td><td class="color1">
+<div class="text">Displayed when intelligent parking assist is operating.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">③</div>
+</td><td class="color1">
+<div class="text">Cancel Switch</div>
+</td><td class="color1">
+<div class="text">Touching this cancels parallel parking assist mode.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">④</div>
+</td><td class="color1">
+<div class="text">Target Change Switch</div>
+</td><td class="color1">
+<div class="text">Touching this while the vehicle is stopped allows the target parking position to be changed between left and right.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑤</div>
+</td><td class="color1">
+<div class="text">Distance Guide Line</div>
+</td><td class="color1">
+<div class="text">Guide lines indicating distance from the rear end of the bumper (approx. 1m - yellow, approx. 50cm - red)</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑥</div>
+</td><td class="color1">
+<div class="text">Target Parking Frame</div>
+</td><td class="color1">
+<div class="text">The current target parking position is displayed.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑦</div>
+</td><td class="color1">
+<div class="text">Caution Message</div>
+</td><td class="color1">
+<div class="text">After switching to the course display mode screen, this blinks for several seconds, alternating with "Depress the brake and stop the vehicle", to alert the driver.</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120041C025C031');chgImg('imT120041C025C031');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120041C025C031" align="absmiddle"><a name="t120041c025c031">Garage Parking Assist Mode</a></span>
+<br>
+<div id="tmT120041C025C031" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">In intelligent parking assist mode, touching "Garage Parking" on the screen while the course display mode screen is displayed switches to garage parking assist mode, in which the image behind the vehicle and the lines needed for garage parking are synthesized and displayed on the screen, and voice guidance and steering operation assistance are provided to support garage parking.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">When Setting Target Parking Position</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">After garage parking assist mode is selected, the screen changes to the target parking position setting screen, and the parking position is set by operating the arrow switches on the screen, referring to the image behind the vehicle and the displayed guide lines.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a4740113e.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120041C025C031I01');chgImg('imT120041C025C031I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120041C025C031I01" align="absmiddle"><a name="t120041c025c031i01">Garage Parking Assist Mode (When Setting Target Parking Position) Screen Display Contents</a></span>
+<br>
+<div id="tmT120041C025C031I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">&nbsp;</td><td class="gray3_dark">
+<div class="text">Display</div>
+</td><td class="gray3_dark">
+<div class="text">Description</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">①</div>
+</td><td class="color1">
+<div class="text">Image Behind Vehicle</div>
+</td><td class="color1">
+<div class="text">Image of the area behind the vehicle from the rear view monitor camera</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">②</div>
+</td><td class="color1">
+<div class="text">Help Switch</div>
+</td><td class="color1">
+<div class="text">Touching this switches to the help screen, which displays "How to stop the vehicle" and "How to align the parking frame".</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">③</div>
+</td><td class="color1">
+<div class="text">Left/Right Selector Switch</div>
+</td><td class="color1">
+<div class="text">Touching this switches the target parking position between left and right.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">④</div>
+</td><td class="color1">
+<div class="text">Arrow Switch</div>
+</td><td class="color1">
+<div class="text">Touching this moves the target parking position in the touched direction.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑤</div>
+</td><td class="color1">
+<div class="text">Confirm Switch</div>
+</td><td class="color1">
+<div class="text">Touching this confirms the target parking position.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑥</div>
+</td><td class="color1">
+<div class="text">Back Switch</div>
+</td><td class="color1">
+<div class="text">Touching this returns to the course display mode screen.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑦</div>
+</td><td class="color1">
+<div class="text">Avoidance Pole</div>
+</td><td class="color1">
+<div class="text">This is a guide to the position of contact with obstacles when setting the target parking position; set the target parking position at a position where it does not overlap obstacles.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑧</div>
+</td><td class="color1">
+<div class="text">Target Parking Frame</div>
+</td><td class="color1">
+<div class="text">The current target parking position is displayed. (A green frame is displayed when the target parking position can be confirmed, and a red frame is displayed when the target parking position cannot be confirmed.)</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑨</div>
+</td><td class="color1">
+<div class="text">Non-parkable Range</div>
+</td><td class="color1">
+<div class="text">The range in which the target parking position cannot be set is displayed based on the steering angle. If, after the target parking position is confirmed, "Change Target" is selected during intelligent parking assist operation to reset the target parking position, the non-parkable range is not displayed.</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">⑩</div>
+</td><td class="color1">
+<div class="text">Caution Message</div>
+</td><td class="color1">
+<div class="text">Displayed after switching to the target parking position setting screen to alert the driver. Also, if the "Confirm" switch is touched in a situation where the target parking position cannot be confirmed, "Target cannot be set" blinks to inform the driver that the target parking position cannot be confirmed.</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">During System Operation</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">The basic operation and screen display contents after the target parking position is confirmed are the same as in parallel parking assist mode.</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120041C025C033');chgImg('imT120041C025C033');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120041C025C033" align="absmiddle"><a name="t120041c025c033">Help Function</a></span>
+<br>
+<div id="tmT120041C025C033" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">In intelligent parking assist mode, touching "Help" on the screen while the parallel parking mode screen or garage parking mode screen is displayed switches to help mode, where explanation screens for "How to stop the vehicle" and "How to align the parking frame" for each parking mode can be displayed.</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120041C025C034');chgImg('imT120041C025C034');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120041C025C034" align="absmiddle"><a name="t120041c025c034">Intelligent Parking Assist Setting Screen</a></span>
+<br>
+<div id="tmT120041C025C034" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">Touching "Vehicle Surroundings Monitor" on the information mode screen of the HDD navigation system switches to the intelligent parking assist setting screen, where settings related to intelligent parking assist can be made.</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3810129e.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120041C025C034I01');chgImg('imT120041C025C034I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120041C025C034I01" align="absmiddle"><a name="t120041c025c034i01">Intelligent Parking Assist Setting Item List</a></span>
+<br>
+<div id="tmT120041C025C034I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">Item</div>
+</td><td class="gray3_dark">
+<div class="text">Description</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Volume Settings</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Voice guidance volume adjustment (5 steps)</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Initial Tips Display</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Show/hide the first tips screen in each mode</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">Course Display</div>
+</td><td class="color1" valign="MIDDLE">
+<div class="text">Switching of guide line display in course display mode</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120041C025C035');chgImg('imT120041C025C035');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120041C025C035" align="absmiddle"><a name="t120041c025c035">Message Display Function</a></span>
+<br>
+<div id="tmT120041C025C035" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">In situations where intelligent parking assist cannot be used, a message such as "IPA currently unavailable" is displayed in the center of the screen to inform the driver that the system cannot be used.</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">In situations where the target parking position cannot be set, a help message for setting it properly is displayed in the center of the screen to inform the driver.</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120041C025A126');chgImg('imT120041C025A126');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120041C025A126" align="absmiddle"><a name="t120041c025a126">Diagnosis Function</a></span>
+<br>
+<div id="tmT120041C025A126" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">•</td><td class="text">
+<div class="text">A diagnosis function is provided to make system inspection easier. Diagnosis results are output as diagnostic codes using a service tool.</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</body>
+</html>

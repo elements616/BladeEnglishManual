@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740245b SYSTEM "grph_ent/a4740245b.png" NDATA png>
+<!ENTITY a4740246b SYSTEM "grph_ent/a4740246b.png" NDATA png>
+
+<!ENTITY T120025K147 SYSTEM "t334120025k147.xml">
+<!ENTITY T120025K147K152 SYSTEM "t334120025k147k152.xml">
+<!ENTITY T120025K147K153 SYSTEM "t334120025k147k153.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120025K147S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120025K147" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "SYSTEM" INDSW = "ON">
+<TITLE>Seat Belt Warning System</TITLE>
+<LIST1><ITEM><PTXT>A seat belt warning system, which reminds the driver and front passenger to fasten their seat belts, has been adopted. The warning indicator light for the driver seat is located in the combination meter, and that for the front passenger seat is located in the air conditioning control panel.</PTXT></ITEM>
+<ITEM><PTXT>An occupant detection sensor, which detects the presence of an occupant, has been provided under the front passenger seat cushion cover.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T120025K147K152" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Seat Belt Warning Function</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Driver Side Seat Belt Warning</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the power switch is turned ON, the driver side seat belt warning indicator light starts blinking to remind the driver to fasten the seat belt.</PTXT></ITEM>
+<ITEM><PTXT>When it is detected that the driver side seat belt has been fastened (tongue plate locked into the driver side seat belt inner buckle), the warning indicator light goes off.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Front Passenger Side Seat Belt Warning</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the occupant detection sensor detects a front passenger when the power switch is turned ON, the front passenger side seat belt warning indicator light starts blinking to remind the front passenger to fasten the seat belt.</PTXT></ITEM>
+<ITEM><PTXT>When it is detected that the front passenger side seat belt has been fastened (tongue plate locked into the front passenger side seat belt inner buckle), the warning indicator light goes off.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740245b" WIDTH = "6.903in" HEIGHT = "5.500in" /><FIGCAPTION><L ja="コンビネーションメーター">Combination Meter</L><L ja="エアコンコントロールパネル">A/C Control Panel</L><L ja="助手席シートベルト非着用ウォーニングインジケーターランプ 注）イラストは代表例で表現しています。">Front Passenger Seat Belt Unfastened Warning Indicator Light / Note) The illustration is a representative example.</L><L ja="運転席シートベルト非着用ウォーニングインジケーターランプ">Driver Seat Belt Unfastened Warning Indicator Light</L><L ja="メインボデーECU（インストルメントパネルジャンクションブロックASSY）">Main Body ECU (Instrument Panel Junction Block Assembly)</L><L ja="シートベルトインナーバックル（シートベルトバックルスイッチ内蔵）">Seat Belt Inner Buckle (Built-in Seat Belt Buckle Switch)</L><L ja="乗員検知センサー">Occupant Detection Sensor</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+
+<MECA ID = "T120025K147K153" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Seat Belt Warning Operation</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Driver Side Seat Belt Warning</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the power switch is ON and the driver side seat belt is not fastened (tongue plate not locked into the buckle), the main body ECU receives driver side seat belt buckle switch ON.</PTXT></ITEM>
+<ITEM><PTXT>When the meter computer receives the driver side seat belt buckle switch ON signal from the main body ECU as a CAN communication signal, it drives the LED driver to blink the LED for the driver side seat belt warning indicator.</PTXT></ITEM>
+<ITEM><PTXT>When the driver side seat belt is fastened (tongue plate locked into the buckle) and driver side seat belt buckle switch OFF is received, the meter computer turns off the LED for the driver side seat belt warning indicator.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Front Passenger Side Seat Belt Warning</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the power switch is ON, a front passenger is seated and the front passenger side seat belt is not fastened (tongue plate not locked into the buckle), the meter computer receives occupant detection sensor ON and front passenger side seat belt buckle switch ON. As a result, the meter computer blinks the LED for the front passenger side seat belt warning indicator.</PTXT></ITEM>
+<ITEM><PTXT>When the occupant detection sensor turns OFF, or the front passenger side seat belt is fastened (tongue plate locked into the buckle) and front passenger side seat belt buckle switch OFF is received, the meter computer turns off the LED for the front passenger side seat belt warning indicator.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740246b" WIDTH = "6.903in" HEIGHT = "4.111in" /><FIGCAPTION><L ja="助手席シートベルト非着用ウォーニングインジケーターランプ">Front Passenger Seat Belt Unfastened Warning Indicator Light</L><L ja="コンビネーションメーター">Combination Meter</L><L ja="P席ベルト出力">Passenger seat belt output</L><L ja="PASSENGER">PASSENGER</L><L ja="運転席シートベルト非着用ウォーニングインジケーターランプ">Driver Seat Belt Unfastened Warning Indicator Light</L><L ja="エアコンコントロールパネル内">Inside A/C control panel</L><L ja="CAN通信">CAN communication</L><L ja="メインボデーECU（インストルメントパネルジャンクションブロックASSY）">Main Body ECU (Instrument Panel Junction Block Assembly)</L><L ja="運転席シートベルトバックルスイッチ">Driver Seat Belt Buckle Switch</L><L ja="乗員検知センサー">Occupant Detection Sensor</L><L ja="助手席シートベルトバックルスイッチ">Front Passenger Seat Belt Buckle Switch</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

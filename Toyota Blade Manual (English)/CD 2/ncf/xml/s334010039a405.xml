@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740027p SYSTEM "grph_ent/a4740027p.png" NDATA png>
+
+<!ENTITY T010039A405 SYSTEM "t334010039a405.xml">
+<!ENTITY T010039A405C062 SYSTEM "t334010039a405c062.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010039A405S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010039A405" UPDATE = "ORIGINAL" LDUP = "20Jul2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Water Jacket Spacer</TITLE>
+<LIST1><ITEM><PTXT>By providing a water jacket spacer, made of a resin material with excellent heat resistance and molding accuracy, in the water jacket of the cylinder block, the temperature distribution of the cylinder bore walls has been optimized, reducing friction.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740027p" WIDTH = "6.903in" HEIGHT = "3.500in" />
+</FIGURE>
+
+<MECA ID = "T010039A405C062" UPDATE = "ORIGINAL" LDUP = "20Aug2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Function of Water Jacket Spacer</TITLE>
+<LIST1><ITEM><PTXT>The water jacket spacer suppresses the coolant flow velocity in the center of the water jacket. As a result, the coolant flow velocity at the top of the cylinder bores increases, enhancing the cooling effect at the top of the cylinder block and between the cylinder bores. Furthermore, the area near the center of the cylinder bores is less affected by the coolant, so the wall temperature rises. These reduce the temperature difference on the cylinder bore walls for uniform thermal expansion and lower the viscosity of the engine oil adhering to the bore walls, reducing friction.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+</SECTION>

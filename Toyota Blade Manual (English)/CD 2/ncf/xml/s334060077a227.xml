@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a3390407c SYSTEM "grph_ent/a3390407c.png" NDATA png>
+
+<!ENTITY T060077A227 SYSTEM "t334060077a227.xml">
+<!ENTITY T060077A227A171 SYSTEM "t334060077a227a171.xml">
+<!ENTITY T060077A227A112 SYSTEM "t334060077a227a112.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T060077A227S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T060077A227" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "Vehicle Outline: Safety">
+<TITLE>Brake Assist System</TITLE>
+<LIST1><ITEM><PTXT>Emergency braking is determined from the speed and amount of brake pedal depression, and a strong braking force is generated accordingly.</PTXT></ITEM></LIST1>
+
+<MECA ID = "T060077A227A171" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Brake Assist Concept</TITLE>
+<LIST1><ITEM><PTXT>During emergency braking, a panicked driver may operate the brake quickly but be unable to depress it firmly, producing only a small braking force. (a in the illustration)</PTXT></ITEM>
+<ITEM><PTXT>Also, such drivers may be unable to keep depressing the brake pedal for long in the latter half of braking, causing the braking force to decrease. (b in the illustration)</PTXT></ITEM>
+<ITEM><PTXT>When the brake is depressed quickly, "Brake Assist" infers the driver's intention to brake in an emergency and ensures braking force even if the driver cannot depress the pedal very firmly. (c in the illustration)</PTXT></ITEM>
+<ITEM><PTXT>After it operates, when the driver intentionally releases the brake, "Brake Assist" reduces the amount of braking force assist to reduce any feeling of discomfort. (d in the illustration)</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3390407c" WIDTH = "2.792in" HEIGHT = "2.069in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T060077A227A112" UPDATE = "ORIGINAL" LDUP = "16Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Precautions for Brake Assist</TITLE>
+<LIST1><ITEM><PTXT>Brake assist is not a device that provides performance exceeding the actual capability of the brakes. Drive safely, paying sufficient attention to vehicle speed, following distance, etc.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+</SECTION>

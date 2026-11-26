@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY c4210046p SYSTEM "grph_ent/c4210046p.png" NDATA png>
+<!ENTITY s4270078p SYSTEM "grph_ent/s4270078p.png" NDATA png>
+
+<!ENTITY T010254A406 SYSTEM "t478010254a406.xml">
+<!ENTITY T010254A406A289 SYSTEM "t478010254a406a289.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010254A406S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010254A406" UPDATE = "ORIGINAL" LDUP = "29Jun2005"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Dual VVT-i Controller</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A highly efficient vane type VVT-i controller with low friction during operation has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>The intake side is a 3-vane type and the exhaust side is a 4-vane type. When the engine is stopped, the intake side vanes are locked by a lock pin in the most retarded position, and the exhaust side vanes in the most advanced position.</PTXT></ITEM>
+<ITEM><PTXT>An advance assist spring is provided in the exhaust side VVT-i to assist torque in the advance direction so that the lock pin engages securely when the engine is stopped.</PTXT></ITEM>
+<ITEM><PTXT>Based on the signals from each sensor, the engine control computer controls the hydraulic pressure applied to the advance and retard chambers inside the VVT-i controller through the OCVs (oil control valves) mounted on the cylinder head covers, continuously varying the phase of the intake and exhaust camshafts.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c4210046p" WIDTH = "6.903in" HEIGHT = "5.722in" />
+</FIGURE>
+
+<MECA ID = "T010254A406A289" UPDATE = "ORIGINAL" LDUP = "29Jun2005"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Effects of Dual VVT-i</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Advancing and retarding the intake and exhaust valves provides the following effects.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "s4270078p" WIDTH = "6.903in" HEIGHT = "8.167in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

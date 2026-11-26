@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740249b SYSTEM "grph_ent/a4740249b.png" NDATA png>
+
+<!ENTITY T120025K066 SYSTEM "t478120025k066.xml">
+<!ENTITY T120025K066K065 SYSTEM "t478120025k066k065.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120025K066S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120025K066" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Warning Indicator Active Circuit</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>An "active circuit" has been adopted, which illuminates the operation/warning light of the relevant system under the control of the meter if a wiring malfunction or communication malfunction occurs in the connection between the combination meter and some computers.</PTXT></ITEM>
+<ITEM><PTXT>If a wiring malfunction, such as a partially engaged connector, pinched wire harness or open circuit, or a communication malfunction occurs between the combination meter and each system, the active circuit indicates the malfunction by illuminating the operation/warning light of the relevant system under the control of the meter.</PTXT></ITEM></LIST1>
+<INDICATE ID = "T120025K066I01" INDSW = "OFF">
+<TITLE>Active Drive Compatible Computers and Indicator Lights List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "44%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "55%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Active Drive Compatible Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Indicator Light That Illuminates</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Center Airbag Sensor Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>SRS Airbag Warning</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Skid Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>ABS Warning</PTXT></ITEM>
+<ITEM><PTXT>Parking Brake Operation / Brake Fluid Level Warning / EBD Warning</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Electric Power Steering Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><LIST1><ITEM><PTXT>Electric Power Steering Warning</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE>
+
+<MECA ID = "T120025K066K065" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Warning Indicator Active Circuit Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Normally, each computer detects the operating state of or a malfunction in its own system and sends an operation/warning light illumination request signal to the meter computer via CAN communication to illuminate the warning light of the relevant system.</PTXT></ITEM>
+<ITEM><PTXT>If a communication malfunction is detected in the transmission path of the operation/warning light illumination request signal, the meter computer itself illuminates each operation/warning light according to the malfunction detection state.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740249b" WIDTH = "6.903in" HEIGHT = "3.542in" /><FIGCAPTION><L ja="コンビネーションメーター">Combination Meter</L><L ja="電源回路">Power Circuit</L><L ja="センターエアバッグセンサーASSY">Center Airbag Sensor Assembly</L><L ja="SRSエアバッグウォーニング">SRS Airbag Warning</L><L ja="スキッドコントロールコンピューター">Skid Control Computer</L><L ja="ABSウォーニング">ABS Warning</L><L ja="パーキングブレーキ作動／ブレーキ液レベルウォーニング／EBDウォーニング">Parking Brake Operation / Brake Fluid Level Warning / EBD Warning</L><L ja="CAN通信">CAN communication</L><L ja="電動パワーステアリングコンピューター">Electric Power Steering Computer</L><L ja="電動パワーステアリングウォーニング">Electric Power Steering Warning</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

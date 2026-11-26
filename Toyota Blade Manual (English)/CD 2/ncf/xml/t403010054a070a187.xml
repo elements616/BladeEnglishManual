@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T010054A070A187" UPDATE = "ORIGINAL" LDUP = "30Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Fuel Cut</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Fuel injection is temporarily stopped to protect the engine and improve fuel economy.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Fuel Cut</TITLE>
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Deceleration Fuel Cut</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>During deceleration (when the engine control computer judges the throttle to be OFF), if the engine speed is at or above the specified value, fuel injection is stopped to prevent catalyst overheating due to misfire and to improve fuel economy. When the coolant temperature is low, the fuel cut speed and recovery speed are higher.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Fuel Cut by Engine Speed</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>If the engine speed is at or above the specified value, fuel injection is stopped to prevent overspeed.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Fuel Cut When Shifting from N to D Position</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>If the engine speed is at or above the specified value, fuel injection is stopped when the shift lever is operated, reducing shift shock and protecting the CVT.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<SPEC ID = "T010054A070A187X01" INDSW = "OFF">
+<TITLE>Deceleration Fuel Cut Speed</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_02">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "31%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "42%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE"><PTXT>Fuel Cut Speed [r/min]</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>When Lock-up Control Is Operating</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>900</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2"><PTXT>When Lock-up Control Is Not Operating</PTXT></ENTRY>
+<ENTRY COLNAME = "3" ALIGN = "CENTER"><PTXT>1300</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+<SPEC ID = "T010054A070A187X02" INDSW = "OFF">
+<TITLE>High Engine Speed Fuel Cut Speed</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_11">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Engine Speed [r/min] </PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>6600</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC></MECA>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="04">
+<name>Driveline/Axle</name>
+<section id="1000K_S0015" variety="S0015">
+<name>Differential</name>
+<ttl id="1000K_S0015_744ZW_T00A7" variety="T00A7">
+<name>Active Torque Control 4WD System</name>
+<para id="X36100000I4008C" category="C" type-id="300UX" name-id="370EF-00" from="200612">
+<dtccode>C1298/98</dtccode>
+<dtcname>Linear Solenoid Malfunction</dtcname>
+<subpara id="X36100000I4008C_10" type-id="33" category="03" proc-id="RM0550J___00005IL00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>Based on the signals from each sensor, the 4WD computer assembly controls the transmitted torque of the electronically controlled coupling. This provides the optimum drive force distribution for the vehicle driving conditions.</ptxt>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.27in"/>
+<colspec colnum="02" colname="C02" colwidth="3.89in"/>
+<colspec colnum="03" colname="C03" colwidth="1.92in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC No</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>C1298/98</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<ptxt>With IG1 voltage 9.5V or more and linear solenoid SLC command current 0A or 0.8A or more, an open or short circuit in the linear solenoid continues for 1 seconds or more</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Transmission Coupling Assembly (Linear Solenoid SLC)</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness and Connector (Linear Solenoid SLC Circuit)</ptxt>
+</item>
+<item>
+<ptxt>4WD Computer Assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="X36100000I4008C_11" type-id="32" category="03" proc-id="RM0550J___00005IM00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="G024538J03" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="X36100000I4008C_12" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="X36100000I4008C_13" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="X36100000I4008C_13_0007" proc-id="RM0550J___00005IO00000">
+<testtitle>Inspect Transmission Coupling Assembly</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the IG OFF and disconnect the transmission coupling assembly connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the transmission coupling assembly.</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00150</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.57in"/>
+<colspec colname="COL2" colwidth="1.19in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1(SLC+) - 2(SLC-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2.2 - 2.6Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="X36100000I4008C_13_0001" fin="false">OK</down>
+<right ref="X36100000I4008C_13_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X36100000I4008C_13_0001" proc-id="RM0550J___00005IN00000">
+<testtitle>Inspect Wire Harness and Connector (4WD Computer Assembly - Transmission Coupling Assembly [Linear Solenoid SLC])</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep02" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<test1>
+<ptxt>Connect the transmission coupling assembly connector and disconnect the 4WD computer assembly connector.</ptxt>
+<figure>
+<graphic graphicname="C117072J12" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the vehicle side connector terminals of the 4WD computer assembly, and between the vehicle side connector terminals and body ground. (see <xref label="Seep01" href="RM00000068800EX"/> for Terminals of ECU)</ptxt>
+</test1>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Resistance</title>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C01" colwidth="1.93in"/>
+<colspec colnum="2" colname="C02" colwidth="1.10in"/>
+<colspec colnum="3" colname="COLSPEC0" colwidth="1.1in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>13(SLC+) - 32(SLC-)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2.2 to 2.6Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>13 (SLC+) - Body ground</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>32 (SLC-) - Body ground</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="X36100000I4008C_13_0005" fin="true">OK</down>
+<right ref="X36100000I4008C_13_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X36100000I4008C_13_0004">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="X36100000I4008C_13_0005">
+<testtitle>Replace 4WD computer assembly<xref label="Seep01" href="RM000002WLE001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X36100000I4008C_13_0003">
+<testtitle>Replace Transmission Coupling Assembly</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

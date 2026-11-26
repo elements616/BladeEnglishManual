@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="RM000003PBJ00MX" category="C" type-id="8046G" name-id="068EX-01" from="200912">
+<dtccode>P2109/B9</dtccode>
+<dtcname>Throttle Flow Rate Malfunction</dtcname>
+<subpara id="RM000003PBJ00MX_01" type-id="31" category="03" proc-id="RM0550J___0000I2U00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The engine control computer controls the throttle valve opening (ISC flow rate) during idling. If deposits adhere to the throttle valve, the ISC flow rate decreases, which may lead to engine stalling or unstable idling, so the ISC flow rate required for idling is ensured by ISC learning and feedback.</ptxt>
+<ptxt>When the ISC learned amount approaches the control limit, the engine control computer outputs a DTC.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.12in"/>
+<colspec colname="COL3" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" valign="middle">
+<ptxt>P2109/B9</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="5" valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When all of the following conditions are met, 1 trip is established.</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>The engine is started with the coolant temperature at 45°C or less, then warmed up and the ISC learning conditions are met, or 1 hours or more have elapsed with IG ON, the engine is warmed up and the ISC learning conditions are met</ptxt>
+</item>
+<item>
+<ptxt>There is a driving history of 30 km/h or more.</ptxt>
+</item>
+<item>
+<ptxt>Intake air flow meter sub-assembly is normal</ptxt>
+</item>
+<item>
+<ptxt>Atmospheric pressure is 85 kPa or more (altitude 1400 m or less)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Abnormal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ISC learned amount is approximately 3 times normal and intake air volume during idling is normal (within 1.5 times normal)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Malfunction Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 seconds or more continuously</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Trip Count</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 trip</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Detection Method</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Detected 1 time(s) during 1 trip(s). (No detection after judgment.)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sensors Used for Detection</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle body assembly with motor (throttle position sensor)</ptxt>
+</item>
+<item>
+<ptxt>Intake Air Flow Meter Sub-assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Inspection Area</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" valign="middle">
+<ptxt>Throttle Body Assembly (with Motor)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000003PBJ00MX_02" type-id="51" category="05" proc-id="RM0550J___0000I2V00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Using SST (TaSCAN), read the Freeze Frame Data. Freeze frame data records part of the engine operating condition when the malfunction occurred, and this information is useful when troubleshooting.</ptxt>
+</item>
+<item>
+<ptxt>Since no pending code is stored for this DTC, confirming the repair by whether the DTC is output takes a long time. When confirming the repair, it can be done in a short time by comparing the ISC flow learned value stored in the freeze frame data with the ISC flow learned value after repair.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000003PBJ00MX_03" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000003PBJ00MX_03_0001" proc-id="RM0550J___0000I2W00000">
+<testtitle>Check Freeze Frame Data (ISC Flow Rate Learned Value)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, check the ISC flow learned value at the time the DTC was detected using the freeze frame data. (see <xref label="Seep01" href="RM000000CD2055X"/>)</ptxt>
+</test1>
+<atten4>
+<ptxt>Be sure to check this, as the ISC flow learned value stored in the freeze frame data is required when confirming the repair.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000003PBJ00MX_03_0002" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000003PBJ00MX_03_0002" proc-id="RM0550J___0000I2X00000">
+<testtitle>Inspect Throttle Body Assembly (w/ Motor)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check whether deposits have adhered to the inside of the throttle body assembly with motor.</ptxt>
+<figure>
+<graphic graphicname="A196233J05" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<table pgwide="1">
+<title>Text in Illustrations</title>
+<tgroup cols="4">
+<colspec colname="COL1" align="left" colwidth="0.71in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" align="left" colwidth="0.71in"/>
+<colspec colname="COL4" colwidth="2.83in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle Body Assembly (with Motor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The illustration above is common to all models and may not match the actual part.</ptxt>
+</atten4>
+</test1>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Deposits have adhered.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No deposits have adhered.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000003PBJ00MX_03_0003" fin="false">A</down>
+<right ref="RM000003PBJ00MX_03_0005" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000003PBJ00MX_03_0003" proc-id="RM0550J___0000I2Y00000">
+<testtitle>Throttle Body Assembly (w/ Motor) (Cleaning)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clean Throttle Body Assembly with Motor</ptxt>
+<test2>
+<ptxt>Push the throttle valve open by hand and wipe the carbon off the valve and bore using a cloth or equivalent soaked in engine conditioner (for EFI vehicles).</ptxt>
+<figure>
+<graphic graphicname="A196234J05" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<table pgwide="1">
+<title>Text in Illustrations</title>
+<tgroup cols="4">
+<colspec colname="COL1" align="left" colwidth="0.71in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" align="left" colwidth="0.71in"/>
+<colspec colname="COL4" colwidth="2.83in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle Body Assembly (with Motor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Be careful not to catch fingers, cloth, etc. in the valve.</ptxt>
+</item>
+<item>
+<ptxt>Be careful not to let foreign matter enter.</ptxt>
+</item>
+<item>
+<ptxt>Do not wash the throttle body assembly with motor in its entirety or spray engine conditioner (for EFI vehicles) directly onto it. Cleaning fluid may enter from the valve shaft and cause problems such as poor sliding or rust.</ptxt>
+</item>
+<item>
+<ptxt>If a coating has been applied, be careful not to peel it off.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>The illustration above is common to all models and may not match the actual part.</ptxt>
+</atten4>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000003PBJ00MX_03_0004" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000003PBJ00MX_03_0004" proc-id="RM0550J___0000I2Z00000">
+<testtitle>Perform Operation Check Drive</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Remove the EFI MAIN fuse and ETCS fuse from the engine room R/B for 60 seconds or more to reset the ISC flow learned value.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine and warm it up until the engine coolant temperature stabilizes.</ptxt>
+</test1>
+<test1>
+<ptxt>Leave the engine idling for 3 minutes or more and check that the engine speed is at the standard value.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the SST (TaSCAN) screen display, read [ECU Data Monitor] - [ISC Flow Learned Value].</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Lower than the ISC flow learned value stored in the freeze frame data.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000003PBJ00MX_03_0006" fin="true">OK</down>
+<right ref="RM000003PBJ00MX_03_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000003PBJ00MX_03_0005">
+<testtitle>Replace Throttle Body Assembly (w/ Motor)<xref label="Seep01" href="RM0000020UP00NX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000003PBJ00MX_03_0006">
+<testtitle>Complete</testtitle>
+</testgrp>
+<testgrp id="RM000003PBJ00MX_03_0007">
+<testtitle>Replace Throttle Body Assembly (w/ Motor)<xref label="Seep01" href="RM0000020UP00NX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

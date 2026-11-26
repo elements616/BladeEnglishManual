@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="1000A_S000K" variety="S000K">
+<name>Engine Mechanical</name>
+<ttl id="1000A_S000K_744ES_T005E" variety="T005E">
+<name>Engine Mechanical (2AZ-FE)</name>
+<para id="RM0000027IL003X" category="N" type-id="8009I" name-id="071SV-00" from="200612">
+<name>Function Inspection</name>
+<subpara id="RM0000027IL003X_01" type-id="01" category="01">
+<s-1 id="RM0000027IL003X_01_0001" proc-id="RM0550J___000036O00000">
+<ptxt>Inspect Coolant (Toyota Genuine Super Long Life Coolant)
+</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the reserve tank cap.</ptxt>
+<atten2>
+<ptxt>To avoid the danger of being burned, do not remove the reservoir tank cap while the engine and radiator are still hot. Liquid and steam will spray out under pressure.</ptxt>
+</atten2>
+</s2>
+<s2>
+<ptxt>Check that there are no excessive deposits of rust or scale around the reserve tank cap and water inlet.</ptxt>
+<atten4>
+<ptxt>If it is excessively dirty, replace the coolant.</ptxt>
+</atten4>
+</s2>
+<s2>
+<ptxt>Install the reserve tank cap.</ptxt>
+</s2>
+</content1></s-1>
+<s-1 id="RM0000027IL003X_01_0002" proc-id="RM0550J___000036P00000">
+<ptxt>Inspect Engine Oil
+</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Inspect the oil for deterioration, water entry, discoloration or thinning, and replace the oil if the quality is visibly poor.</ptxt>
+</s2>
+</content1></s-1>
+<s-1 id="RM0000027IL003X_01_0003" proc-id="RM0550J___000036Q00000">
+<ptxt>Inspect Battery Specific Gravity
+</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Inspect the battery specific gravity of each cell.</ptxt>
+<figure>
+<graphic graphicname="A001259" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>1.25 to 1.29 (fluid temperature 20°C) </ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If it is not within the standard, charge the battery.</ptxt>
+</atten4>
+</s2>
+</content1></s-1>
+<s-1 id="RM0000027IL003X_01_0004" proc-id="RM0550J___000036R00000">
+<ptxt>Inspect Air Cleaner Filter Element Sub-assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Inspect the air cleaner filter element for dirt and clogging.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000027IL003X_01_0005" proc-id="RM0550J___000036S00000">
+<ptxt>Inspect Spark Plug
+</ptxt>
+<content1 releasenbr="1">
+<spec>
+<title>Spark Plug Type</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Manufacturer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Type</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DENSO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SK20R11</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NGK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IFR6A11</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<figure>
+<graphic graphicname="A100633" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s2>
+<ptxt>Visual Inspection</ptxt>
+<s3>
+<ptxt>Inspect the spark plug for damaged threads and damaged insulator.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Do not damage the iridium or platinum tips.</ptxt>
+</item>
+<item>
+<ptxt>If it is significantly dirty due to carbon fouling or similar, replace it with a new spark plug.</ptxt>
+</item>
+<item>
+<ptxt>When replacing with a new spark plug, do not remove the cap covering the tip for protection until it is installed to the engine.</ptxt>
+</item>
+<item>
+<ptxt>If a spark plug is dropped, replace it with a new one.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+</s2>
+<s2>
+<ptxt>Spark Plug Gap</ptxt>
+<spec>
+<title>Limit</title>
+<specitem>
+<ptxt>1.4mm</ptxt>
+</specitem>
+</spec>
+<ptxt>If the gap exceeds the limit, replace it with a new spark plug.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>1.0 to 1.1mm (new)</ptxt>
+</specitem>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Because iridium is used, do not adjust the gap.</ptxt>
+</item>
+<item>
+<ptxt>Do not damage the iridium.</ptxt>
+</item>
+</list1>
+</atten3>
+</s2>
+</content1></s-1>
+<s-1 id="RM0000027IL003X_01_0006" proc-id="RM0550J___000036T00000">
+<ptxt>Inspect Fan &amp; Alternator V-belt</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Inspect the entire circumference of the belt ribs and back for wear and cracks.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Replace the belt if it is worn to the extent that the core wire is visible.</ptxt>
+</item>
+<item>
+<ptxt>Replace the belt if cracks have reached the core wire (1 or more locations).</ptxt>
+</item>
+<item>
+<ptxt>Replace the belt if rib rubber is chipped (1 or more locations).</ptxt>
+</item>
+<item>
+<ptxt>Replace the fan &amp; alternator V-belt every 100,000 km even if it is not damaged.</ptxt>
+</item>
+<item>
+<ptxt>Because an automatic tensioner is used, measuring the tension and deflection is not necessary.</ptxt>
+</item>
+</list1>
+</atten4>
+</s2>
+<s2>
+<ptxt>Check that the belt is correctly set on each pulley.</ptxt>
+<figure>
+<graphic graphicname="A088652" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000027IL003X_01_0007" proc-id="RM0550J___000036U00000">
+<ptxt>Inspect V-ribbed Belt Tensioner Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Stop the engine from idle speed and check that the belt does not protrude beyond the width of the tensioner pulley.</ptxt>
+</s2>
+<s2>
+<ptxt>Attach a torque wrench to SST and turn the V-belt tensioner clockwise.</ptxt>
+<figure>
+<graphic graphicname="A164287J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09961-01270</s-number>
+</sstitem>
+</sst>
+<torque>
+<torqueitem>
+<t-value1>60</t-value1>
+<t-value2>612</t-value2>
+</torqueitem>
+</torque>
+<atten3>
+<ptxt>The above torque value is for when SST is not used. Calculate the torque wrench reading using the formula according to the lengths of the SST and torque wrench. (see <xref label="Seep03" href="RM000000D99020X"/>)</ptxt>
+</atten3>
+<atten4>
+<ptxt>If the V-belt tensioner starts to move at 60N*m{612kgf*cm} or less, the damping force has been lost, so replace the V-belt tensioner.</ptxt>
+</atten4>
+</s2>
+<s2>
+<ptxt>Remove the fan &amp; alternator V-belt. (see <xref label="Seep01" href="RM0000027IO005X"/>)</ptxt>
+</s2>
+<s2>
+<ptxt>Move the V-belt tensioner in both rotational directions and check that it does not catch.</ptxt>
+<atten4>
+<ptxt>If there is any abnormality above, replace the tensioner.</ptxt>
+</atten4>
+</s2>
+<s2>
+<ptxt>Install the fan &amp; alternator V-belt. (see <xref label="Seep02" href="RM0000027IM005X"/>)</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000027IL003X_01_0008" proc-id="RM0550J___000031P00000">
+<ptxt>Inspect Ignition Timing</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Warm up the engine.</ptxt>
+</s2>
+<s2>
+<ptxt>Inspection Using TaSCAN</ptxt>
+<s3>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</s3>
+<s3>
+<ptxt>Operate according to the screen display, select [Ignition Timing] and check that the ignition timing is within the standard.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>BTDC 5 - 15°CA (at idle)</ptxt>
+</specitem>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Turn all accessory switches and the A/C OFF.</ptxt>
+</item>
+<item>
+<ptxt>Perform this when the electric fan is OFF.</ptxt>
+</item>
+<item>
+<ptxt>Move the shift lever to N or P.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+<s3>
+<ptxt>Check that the ignition timing advances quickly when the engine speed is increased.</ptxt>
+</s3>
+<s3>
+<ptxt>Select [Active Test] - [TC Terminal ON], turn the TC terminal ON and measure the ignition timing.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>BTDC 8 - 12°CA (at idle)</ptxt>
+</specitem>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Turn all accessory switches and the A/C OFF.</ptxt>
+</item>
+<item>
+<ptxt>Perform this when the electric fan is OFF.</ptxt>
+</item>
+<item>
+<ptxt>Move the shift lever to N or P.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Maintain the engine speed at 1000 - 1300r/min for 5 seconds and inspect that it returns to idle speed.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Inspection by Shorting TC Terminal</ptxt>
+</s2>
+<s2>
+<ptxt>Remove engine cover assembly No.1.</ptxt>
+</s2>
+<s2>
+<ptxt>Connect a timing light.</ptxt>
+<s3>
+<ptxt>Pull out the wire harness at the position shown in the illustration and connect the timing light clip to the wire harness.</ptxt>
+<figure>
+<graphic graphicname="A127552" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Use a timing light that can detect the primary signal.</ptxt>
+</item>
+<item>
+<ptxt>After inspection, securely tape the wire harness.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+<s3>
+<ptxt>Using diagnosis check wire No. 2, connect terminals 13 (TC) and 4 (CG) of DLC3.</ptxt>
+<figure>
+<graphic graphicname="C101492J08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Never connect the wrong terminals, as this will cause a malfunction.</ptxt>
+</item>
+<item>
+<ptxt>Turn all accessory switches and the A/C OFF.</ptxt>
+</item>
+<item>
+<ptxt>Perform this when the electric fan is OFF.</ptxt>
+</item>
+<item>
+<ptxt>Move the shift lever to N or P.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+<s3>
+<ptxt>Check that the ignition timing is within the standard.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>BTDC 8 - 12° (at idle)</ptxt>
+</specitem>
+</spec>
+</s3>
+<s3>
+<ptxt>Disconnect terminals 13 (TC) and 4 (CG) of DLC3.</ptxt>
+</s3>
+<s3>
+<ptxt>Check that the ignition timing is within the standard.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>BTDC 8 - 16° (at idle)</ptxt>
+</specitem>
+</spec>
+</s3>
+<s3>
+<ptxt>Check that the ignition timing advances quickly when the engine speed is increased.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Remove the timing light.</ptxt>
+<atten4>
+<ptxt>Maintain the engine speed at 1000 - 1300r/min for 5 seconds and inspect that it returns to idle speed.</ptxt>
+</atten4>
+</s2>
+<s2>
+<ptxt>Install engine cover assembly No.1.</ptxt>
+<torque>
+<torqueitem>
+<t-value1>9.0</t-value1>
+<t-value2>92</t-value2>
+</torqueitem>
+</torque>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000027IL003X_01_0009" proc-id="RM0550J___000031Q00000">
+<ptxt>Idle Speed Inspection</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</s2>
+<s2>
+<ptxt>Operate according to the screen instructions to display the "ECU Data Monitor" screen and measure the engine speed.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>600 - 700r/min</ptxt>
+</specitem>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Turn all accessory switches and the A/C OFF.</ptxt>
+</item>
+<item>
+<ptxt>Perform this when the electric fan is OFF.</ptxt>
+</item>
+<item>
+<ptxt>Move the shift lever to N or P.</ptxt>
+</item>
+</list1>
+</atten3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000027IL003X_01_0010" proc-id="RM0550J___000031R00000">
+<ptxt>Inspect Compression</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the air cleaner cap w/ air cleaner hose.</ptxt>
+</s2>
+<s2>
+<ptxt>Disconnect the electronically controlled throttle body assembly connector.</ptxt>
+</s2>
+<s2>
+<ptxt>Remove the ignition coils (4).</ptxt>
+</s2>
+<s2>
+<ptxt>Remove the spark plugs (4).</ptxt>
+</s2>
+<s2>
+<ptxt>Forcibly open the throttle section of the electronically controlled throttle body assembly by hand and measure the compression of each cylinder.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>1.3MPa {13.3kgf/cm<sup>2</sup>}</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Limit</title>
+<specitem>
+<ptxt>1.0MPa {10.2kgf/cm<sup>2</sup>}</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Reference Value</title>
+<specitem>
+<ptxt>Difference between cylinders limit 0.1MPa {1.0kgf/cm<sup>2</sup>}</ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>Perform the compression inspection in as short a time as possible.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>Install the spark plugs (4).</ptxt>
+<torque>
+<torqueitem>
+<t-value1>19</t-value1>
+<t-value2>194</t-value2>
+</torqueitem>
+</torque>
+</s2>
+<s2>
+<ptxt>Install the ignition coils (4).</ptxt>
+<torque>
+<torqueitem>
+<t-value1>9.0</t-value1>
+<t-value2>92</t-value2>
+</torqueitem>
+</torque>
+</s2>
+<s2>
+<ptxt>Connect the electronically controlled throttle body assembly connector.</ptxt>
+</s2>
+<s2>
+<ptxt>Install the air cleaner cap w/ air cleaner hose.</ptxt>
+<atten3>
+<ptxt>After completing the work, be sure to clear the stored DTCs once and then check that the normal code is output.</ptxt>
+</atten3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000027IL003X_01_0011" proc-id="RM0550J___000031S00000">
+<ptxt>Inspect CO, HC Concentration</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Start the engine.</ptxt>
+</s2>
+<s2>
+<ptxt>Race the engine at 2500r/min for 2 minutes.</ptxt>
+</s2>
+<s2>
+<ptxt>At idle, insert the tester probe 40cm or more into the tailpipe.</ptxt>
+</s2>
+<s2>
+<ptxt>Inspect the CO and HC concentrations.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>CO concentration 1.0% or less</ptxt>
+</specitem>
+<specitem>
+<ptxt>HC concentration 300ppm or less</ptxt>
+</specitem>
+</spec>
+</s2>
+<s2>
+<ptxt>If the CO and HC are outside the standard, inspect using the procedure shown below.</ptxt>
+<s3>
+<ptxt>Inspect the oxygen sensor (see <xref label="Seep01" href="RM0000020VX00AX"/>)</ptxt>
+</s3>
+<s3>
+<ptxt>Perform troubleshooting referring to the table below.</ptxt>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="4" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.932207     in"/>
+<colspec colnum="02" colname="C02" colwidth="0.932207     in"/>
+<colspec colnum="03" colname="C03" colwidth="1.553678     in"/>
+<colspec colnum="04" colname="C04" colwidth="3.728827     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>CO</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>HC</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Problem</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>Probable Cause</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>High</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Rough idle</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>Faulty ignition</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>• Incorrect timing</ptxt>
+</item>
+</list2>
+<list2 type="nonmark">
+<item>
+<ptxt>• Incorrect plug gap</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>Incorrect valve clearance</ptxt>
+</item>
+<item>
+<ptxt>Intake and exhaust gas leakage</ptxt>
+</item>
+<item>
+<ptxt>Cylinder compression leakage</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Low</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>High</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Rough idle (HC unstable)</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>Vacuum leakage</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>• PCV hose</ptxt>
+</item>
+</list2>
+<list2 type="nonmark">
+<item>
+<ptxt>• Intake manifold</ptxt>
+</item>
+</list2>
+<list2 type="nonmark">
+<item>
+<ptxt>• Throttle body</ptxt>
+</item>
+</list2>
+<list2 type="nonmark">
+<item>
+<ptxt>• Brake booster line</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>Misfire due to lean mixture</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>High</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>High</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Rough idle (black smoke)</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>Clogged air element</ptxt>
+</item>
+<item>
+<ptxt>Clogged PCV valve</ptxt>
+</item>
+<item>
+<ptxt>Faulty EFI system</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>• Faulty pressure regulator</ptxt>
+</item>
+</list2>
+<list2 type="nonmark">
+<item>
+<ptxt>• Faulty coolant temperature sensor</ptxt>
+</item>
+</list2>
+<list2 type="nonmark">
+<item>
+<ptxt>• Faulty air flow meter</ptxt>
+</item>
+</list2>
+<list2 type="nonmark">
+<item>
+<ptxt>• Faulty ECU</ptxt>
+</item>
+</list2>
+<list2 type="nonmark">
+<item>
+<ptxt>• Faulty injector</ptxt>
+</item>
+</list2>
+<list2 type="nonmark">
+<item>
+<ptxt>• Faulty throttle position sensor</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

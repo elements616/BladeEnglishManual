@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- $Id: add_local.html,v 1.12 2003/05/21 01:03:53 miya Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Related Work</title>
+
+
+<link href="../../css/local.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function selectTitle(paraId) {
+	var objXml;
+	if ((parent.g_xmlCache).containsKey(paraId)) {
+		objXml = (parent.g_xmlCache).get(paraId);
+	} else {
+		var xmlFile = paraId.toLowerCase()+".xml";
+		objXml = parent.initXml(xmlFile);
+		(parent.g_xmlCache).put(paraId, objXml);
+	}
+	parent.contents.setContents(objXml);
+	parent.sts.setStatus(paraId, objXml);
+	parent.contents.location.hash="paratop";
+}
+</script>
+</head>
+<body class="subwindow" onLoad="parent.display(parent.g_localXml, parent.g_localXsl, disp, null); parent.hiliteTopLink(this.document);">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td class="subwindow-text">Related Work</td>
+	</tr>
+	<tr>
+		<td><div id="disp"></div></td>
+	</tr>
+</table>
+</body>
+</html>

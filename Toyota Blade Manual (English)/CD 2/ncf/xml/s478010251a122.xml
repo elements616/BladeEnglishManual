@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740181p SYSTEM "grph_ent/a4740181p.png" NDATA png>
+
+<!ENTITY T010251A122 SYSTEM "t478010251a122.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010251A122S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010251A122" UPDATE = "ORIGINAL" LDUP = "8Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Ignition Coil with Igniter</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By placing a coil independently for each cylinder, the distributor and high-tension cords are eliminated, reducing losses in the high-voltage section, ensuring reliability and reducing radio noise.</PTXT></ITEM>
+<ITEM><PTXT>A compact, lightweight igniter is built in, and a high voltage is induced in the secondary (No. 2) coil by the signal from the engine control computer.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740181p" WIDTH = "6.903in" HEIGHT = "2.833in" />
+</FIGURE>
+</PARA>
+</SECTION>

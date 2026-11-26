@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1002J_S000U" variety="S000U">
+<name>Brake Control</name>
+<ttl id="1002J_S000U_744TG_T0089" variety="T0089">
+<name>ABS with EBD &amp; TRC &amp; VSC &amp; BA System</name>
+<para id="RM00000061100WX" category="C" type-id="303RJ" name-id="442OU-00" from="200612">
+<dtccode>U0073/94</dtccode>
+<dtcname>CAN communication malfunction</dtcname>
+<dtccode>U0100/65</dtccode>
+<dtcname>Engine ECU Communication Malfunction</dtcname>
+<dtccode>U0123/62</dtccode>
+<dtcname>Yaw Rate Sensor Communication Malfunction</dtcname>
+<dtccode>U0124/95</dtccode>
+<dtcname>G Sensor Communication Malfunction</dtcname>
+<dtccode>U0126/63</dtccode>
+<dtcname>Steering Angle Sensor Communication Malfunction</dtcname>
+<subpara id="RM00000061100WX_01" type-id="33" category="03" proc-id="RM0550J___00004IV00000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>The skid control computer (built into the actuator) receives the signals of the engine control computer, steering sensor and yaw rate sensor via CAN communication.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.26in"/>
+<colspec colname="COL2" colwidth="3.23in"/>
+<colspec colname="COL3" colwidth="2.59in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Output Related Items</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0073/94</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>With IG1 terminal voltage at 10to17.4V or higher, a delay in receiving data from the deceleration sensor, yaw rate sensor or steering sensor continues for 1 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>With IG1 terminal voltage at 10to17.4V or higher, a condition in which a delay in receiving data from the deceleration sensor, yaw rate sensor or steering sensor occurs 1 times or more within 5 seconds occurs 10 times or more within 60 seconds</ptxt>
+</item>
+<item>
+<ptxt>Transmission is not completed for 5 seconds or more after output from the skid control computer is completed</ptxt>
+</item>
+<item>
+<ptxt>A condition in which a bus off state occurs 1 times or more within 100ms occurs 10 times consecutively</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Skid control computer CAN communication line</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0100/65</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With IG1 terminal voltage at 10to17.4V or higher and a vehicle speed of 15km/h or more, data cannot be sent to or received from the engine control computer for 2 seconds or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Communication Line between Skid Control Computer and Engine Control Computer</ptxt>
+<ptxt>(CAN Communication Line)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0123/62</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>With IG1 terminal voltage at 10to17.4V or higher, data cannot be received from the yaw rate sensor for 1 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>With IG1 terminal voltage at 10to17.4V or higher, a condition in which data cannot be received from the yaw rate sensor 1 times or more within 5 seconds occurs 10 times consecutively</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Communication Line between Skid Control Computer and Yaw Rate Sensor</ptxt>
+<ptxt>(CAN Communication Line)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0124/95</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>With IG1 terminal voltage at 10to17.4V or higher, data cannot be received from the deceleration sensor for 1 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>With IG1 terminal voltage at 10to17.4V or higher, a condition in which data cannot be received from the deceleration sensor 1 times or more within 5 seconds occurs 10 times consecutively</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Communication Line between Skid Control Computer and Deceleration Sensor</ptxt>
+<ptxt>(CAN Communication Line)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0126/63</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>With IG1 terminal voltage at 10to17.4V or higher, data cannot be received from the steering sensor for 1 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>With IG1 terminal voltage at 10to17.4V or higher, a condition in which data cannot be received from the steering sensor 1 times or more within 5 seconds occurs 10 times consecutively</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Communication Line between Skid Control Computer and Steering Sensor</ptxt>
+<ptxt>(CAN Communication Line)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Code Display List</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SAE DTC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ABS Light Display Code</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>VSC Light Display Code</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0073</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>94</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>43</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0100</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>65</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0123</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>62</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0124</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>95</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>43</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0126</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>63</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000061100WX_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM00000061100WX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000061100WX_04_0002" proc-id="RM0550J___00004IX00000">
+<testtitle>Read DTCs</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Record the DTCs that are output.</ptxt>
+<atten4>
+<ptxt>If a CAN communication system malfunction DTC and a corresponding sensor malfunction DTC are output at the same time, troubleshoot the sensor malfunction code after the CAN communication malfunction returns to normal.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM00000061100WX_04_0003" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000061100WX_04_0003">
+<testtitle>Go to CAN communication system troubleshooting<xref label="Seep01" href="RM000001R4W009X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY c5930050e SYSTEM "grph_ent/c5930050e.png" NDATA png>
+<!ENTITY c5930051e SYSTEM "grph_ent/c5930051e.png" NDATA png>
+<!ENTITY a4740375b SYSTEM "grph_ent/a4740375b.png" NDATA png>
+
+<!ENTITY T120025K327 SYSTEM "t478120025k327.xml">
+<!ENTITY T120025K327K137 SYSTEM "t478120025k327k137.xml">
+<!ENTITY T120025K327K384 SYSTEM "t478120025k327k384.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120025K327S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120025K327" UPDATE = "ORIGINAL" LDUP = "16Jun2006"     INFOTYPE = "SYSTEM" INDSW = "ON" SELECT = "ECU List">
+<TITLE>Meter &amp; Gauge System</TITLE>
+<LIST1><ITEM><PTXT>Some of the information on the current vehicle condition displayed by the combination meter has been changed or added.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930050e" WIDTH = "6.903in" HEIGHT = "4.931in" /><FIGCAPTION><L ja="ディマスイッチ">Dimmer Switch</L><L ja="コンビネーションメーター（メーターコンピューター内蔵）">Combination Meter (Built-in Meter Computer)</L><L ja="メインボデーECU（インストルメントパネルジャンクションブロックASSY）">Main Body ECU (Instrument Panel Junction Block Assembly)</L><L ja="アクティブトルクコントロール4WDコンピューター">Active Torque Control 4WD Computer</L><L ja="ヘッドランプレベリングECU">Headlight Leveling ECU</L><L ja="センターエアバッグセンサーASSY">Center Airbag Sensor Assembly</L><L ja="シートベルトバックルスイッチ">Seat Belt Buckle Switch</L><L ja="乗員検知センサー">Occupant Detection Sensor</L><L ja="パーキングブレーキスイッチ">Parking Brake Switch</L></FIGCAPTION>
+</FIGURE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "c5930051e" WIDTH = "6.903in" HEIGHT = "4.931in" /><FIGCAPTION><L ja="ブレーキ液レベルスイッチ">Brake Fluid Level Switch</L><L ja="照合ECU">Certification ECU</L><L ja="エンジンコントロールコンピューター">Engine Control Computer</L><L ja="スピードセンサー（2WD車）">Speed Sensor (2WD models)</L><L ja="フューエルセンダーゲージ">Fuel Sender Gauge</L><L ja="外気センサー">Outside Temperature Sensor</L><L ja="スピードセンサー">Speed Sensor</L><L ja="スキッドコントロールコンピューター（ブレーキアクチュエーターに内蔵）">Skid Control Computer (Built into Brake Actuator)</L><L ja="スピードセンサー（4WD車）">Speed Sensor (4WD models)</L></FIGCAPTION>
+</FIGURE>
+
+<MECA ID = "T120025K327K137" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>List of Combination Meter Connections</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "4" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "14%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "34%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "44%"/>
+<COLSPEC COLNUM = "4" COLNAME = "4" COLWIDTH = "7%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>Display Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Connected Part Name</PTXT></ENTRY>
+<ENTRY COLNAME = "4" CONSPIC = "0"><PTXT>Input Signal</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>Speedometer</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Skid Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>Tachometer</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" CONSPIC = "0"><PTXT>Water Temperature Gauge</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "3" CONSPIC = "0"><PTXT>Fuel Gauge</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Fuel Sender Gauge</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"
+    CONSPIC = "0"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Skid Control Computer</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Main Body ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" MOREROWS = "1"><PTXT>Odometer/Trip Meter</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Skid Control Computer</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Shift Position Indicator</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>M (Manual Shift) Mode Indicator</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>S (Sequential Shift) Mode Indicator<HINTREF     REFID = "H478120025K327K13701"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>D (Temporary S) Mode Indicator<HINTREF     REFID = "H478120025K327K13701"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "25" CONSPIC = "0"><PTXT>Operation/Warning Indicator Lights</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>High Beam</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Dimmer Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Airbag</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Center Airbag Sensor Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Driver Seat Belt Unfastened</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "2" CONSPIC = "0"><PTXT>Brake Fluid Level/</PTXT>
+<PTXT>Parking Brake Applied/</PTXT>
+<PTXT>EBD System</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Brake Fluid Level Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"
+    CONSPIC = "0"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Skid Control Computer</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "1" CONSPIC = "0"><PTXT>Charge</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Alternator (L Terminal)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Electric Power Steering</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Electric Power Steering Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Master</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" CONSPIC = "0"><PTXT>Refer to each section, as there are many connected parts</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>ABS</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Skid Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Check Engine</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Low Fuel Level</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Fuel Sender Gauge</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Headlight Auto Leveling</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Headlight Leveling ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Rear Fog Light<HINTREF     REFID = "H478120025K327K13702"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Rear Fog Light Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Slip</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Skid Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "1" CONSPIC = "0"><PTXT>Eco Drive Indicator</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"
+    CONSPIC = "0"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Skid Control Computer</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Front Fog Light</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Front Fog Light Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Tail lights</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Taillight Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Turn</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Flasher Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>4WD AUTO<HINTREF     REFID = "H478120025K327K13703"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Active Torque Control 4WD Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Front Passenger Seat Belt Unfastened</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1><ITEM><PTXT>Front Passenger Seat Belt Buckle Switch</PTXT></ITEM>
+<ITEM><PTXT>Occupant Detection Sensor</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Pre-crash Safety System</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Seat Belt Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>CRUISE Operation/Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>A/T OIL TEMP Warning<HINTREF REFID = "H478120025K327K13701"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "16"><PTXT>Single-tone Buzzer</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Reverse</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Key Reminder</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "1" CONSPIC = "0"><PTXT>Smart Entry &amp; Start System Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"
+    CONSPIC = "0"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Certification ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Warning Mode Display-linked</PTXT></ENTRY>
+<ENTRY NAMEST = "3" NAMEEND = "4" CONSPIC = "0"><PTXT>Refer to each section, as there are many connected parts</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "3" CONSPIC = "0"><PTXT>Seat Belt Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><LIST1><ITEM><PTXT>Front Passenger Seat Belt Buckle Switch</PTXT></ITEM>
+<ITEM><PTXT>Occupant Detection Sensor</PTXT></ITEM></LIST1></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"
+    CONSPIC = "0"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Engine Control Computer</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Skid Control Computer</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Sport Shift Reject</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Light Reminder</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Taillight Relay</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Radar Cruise Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Radar Cruise Low Speed Cancel</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "1" CONSPIC = "0"><PTXT>Driving with Parking Brake Not Released</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Skid Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"
+    CONSPIC = "0"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Main Body ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Electric Power Steering Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Power Steering Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "32"><PTXT>Multi-information Display</PTXT>
+<PTXT></PTXT></ENTRY>
+<ENTRY COLNAME = "2" MOREROWS = "2" CONSPIC = "0"><PTXT>Current Fuel Consumption</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"
+    CONSPIC = "0"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Engine Control Computer</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Skid Control Computer</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Cumulative Average Fuel Consumption</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"
+    CONSPIC = "0"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Skid Control Computer</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Cumulative Average Vehicle Speed</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER"
+    CONSPIC = "0"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Skid Control Computer</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Cumulative Driving Time</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "1" CONSPIC = "0"><PTXT>Cruising Range</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Fuel Sender Gauge</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "1" CONSPIC = "0"><PTXT>Outside Temperature</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Ambient Temperature Sensor</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Skid Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Brake Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Skid Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>ABS Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Skid Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>VSC Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Skid Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Airbag Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3" CONSPIC = "0"><PTXT>Center Airbag Sensor Assembly</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER" CONSPIC = "0">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Oil Pressure Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Oil Pressure Switch</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Check Engine Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Charge Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Alternator (L Terminal)</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>4WD Warning<HINTREF REFID = "H478120025K327K13703"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Active Torque Control 4WD Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "3"><PTXT>Low Fuel Level Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Fuel Sender Gauge</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Straight Line</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Skid Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "2" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Engine Control Computer</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Main Body ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Door Ajar Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Main Body ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Smart Entry &amp; Start System Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Certification ECU</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Main Body ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" MOREROWS = "1"><PTXT>Driving with Parking Brake Applied Warning</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Skid Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "3"><PTXT>Main Body ECU</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Pre-crash Safety System</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Seat Belt Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2"><PTXT>Radar Cruise Control System</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Engine Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2"><PTXT>Power Steering System</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Power Steering Control Computer</PTXT></ENTRY>
+<ENTRY COLNAME = "4" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Communication</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478120025K327K13702">w/ Rear Fog Light</PTXT></ITEM>
+<ITEM><PTXT ID = "H478120025K327K13703">4WD Models</PTXT></ITEM>
+<ITEM><PTXT ID = "H478120025K327K13701">6 Super ECT models</PTXT></ITEM>
+<ITEM><PTXT>Models w/ pre-crash safety system + radar cruise control system</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></MECA>
+
+<MECA ID = "T120025K327K384" UPDATE = "ORIGINAL" LDUP = "16Jun2006"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Meter &amp; Gauge System Operation Block Diagram</TITLE>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740375b" WIDTH = "6.903in" HEIGHT = "8.625in" /><FIGCAPTION><L ja="エアコンコントロールパネル（助手席シートベルト着用ウォーニングインジケーターランプ）">A/C Control Panel (Front Passenger Seat Belt Warning Indicator Light)</L><L ja="ディマスイッチ">Dimmer Switch</L><L ja="オイルプレッシャースイッチ">Oil Pressure Switch</L><L ja="ブレーキレベルスイッチ">Brake Level Switch</L><L ja="フューエルセンダーゲージ">Fuel Sender Gauge</L><L ja="オルタネーター（L端子）">Alternator (L Terminal)</L><L ja="フラッシャリレー">Flasher Relay</L><L ja="テールランプリレー">Tail Light Relay</L><L ja="フロントフォグランプリレー">Front Fog Light Relay</L><L ja="リヤフォグランプリレー">Rear Fog Light Relay</L><L ja="外気センサー">Outside Temperature Sensor</L><L ja="乗員検知センサー">Occupant Detection Sensor</L><L ja="助手席シートベルトバックルスイッチ">Front Passenger Seat Belt Buckle Switch</L><L ja="ヘッドランプレベリングコンピューター">Headlight Leveling Computer</L><L ja="各スピードセンサー">Each Speed Sensor</L><L ja="スキッドコントロールコンピューター">Skid Control Computer</L><L ja="シフトレバーASSY">Shift Lever Assembly</L><L ja="クランクポジションセンサー">Crankshaft Position Sensor</L><L ja="アクセルポジションセンサー">Accelerator Pedal Position Sensor</L><L ja="エンジンコントロールコンピューター">Engine Control Computer</L><L ja="ニュートラルスタートスイッチ">Neutral Start Switch</L><L ja="水温センサー">Engine Coolant Temperature Sensor</L><L ja="トランスミッションシフトスイッチ">Transmission Shift Switch</L><L ja="パーキングブレーキスイッチ">Parking Brake Switch</L><L ja="メインボデーECU（インストルメントパネルジャンクションブロックASSY）">Main Body ECU (Instrument Panel Junction Block Assembly)</L><L ja="運転席シートベルトバックルスイッチ">Driver Seat Belt Buckle Switch</L><L ja="各席ドアカーテシランプスイッチ">Courtesy Light Switch for Each Door</L><L ja="エンジンスイッチ">Engine Switch</L><L ja="センターエアバッグセンサーASSY">Center Airbag Sensor Assembly</L><L ja="電動パワーステアリングコンピューター">Electric Power Steering Computer</L><L ja="アクティブトルクコントロール4WDコンピューター">Active Torque Control 4WD Computer</L><L ja="照合ECU">Certification ECU</L><L ja="→CAN通信">→ CAN communication</L><L ja="シートベルトコントロールコンピューター">Seat Belt Control Computer</L></FIGCAPTION>
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

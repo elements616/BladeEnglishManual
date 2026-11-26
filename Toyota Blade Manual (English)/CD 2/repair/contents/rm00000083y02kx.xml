@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="10033_S0007" variety="S0007">
+<name>CAN Communication</name>
+<ttl id="10033_S0007_741KB_T000K" variety="T000K">
+<name>CAN Communication System</name>
+<para id="RM00000083Y02KX" category="U" type-id="303FP" name-id="95105-01" from="200912">
+<name>Fail-safe List</name>
+<subpara id="RM00000083Y02KX_z0" proc-id="RM0550J___0000CDG00001">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Fail-safe Function</ptxt>
+<step2>
+<ptxt>The fail-safe function is designed so that if any bus (communication line) fails due to a short circuit, etc., each system switches to its specified fail-safe processing to prevent system malfunction.</ptxt>
+</step2>
+<step2>
+<ptxt>Effects on each system when communication is impossible (refer to each system for details)</ptxt>
+<figure>
+<graphic graphicname="C219746" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="C219747" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<atten4>
+<ptxt>If the airbag ECU DTCs are normal but the airbag warning light remains on, inspect the communication interruption mode of the airbag ECU and the light drive of the meter.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

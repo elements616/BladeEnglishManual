@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740186p SYSTEM "grph_ent/a4740186p.png" NDATA png>
+
+<!ENTITY T010251A388 SYSTEM "t478010251a388.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010251A388S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010251A388" UPDATE = "ORIGINAL" LDUP = "15Dec2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>1-valve Electronically Controlled Throttle Body</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A 1-valve type electronically controlled throttle body, in which the throttle valve is driven by a motor, has been adopted, and the bore diameter has been increased and optimized to handle the high output of the engine.</PTXT></ITEM>
+<ITEM><PTXT>The accelerator position sensor is located on the accelerator pedal, making the system linkless.</PTXT></ITEM>
+<ITEM><PTXT>The driver's operation (accelerator pedal depression amount) is transmitted to the engine control computer by the accelerator position sensor located on the accelerator pedal. The engine control computer determines the throttle opening appropriate to the driving conditions and drives the electronic throttle motor. The throttle valve opening is fed back to the engine control computer by the throttle position sensor.</PTXT></ITEM>
+<ITEM><PTXT>A DC motor with good response and low power consumption is used for the throttle valve drive motor, and a non-contact type throttle sensor has been adopted, achieving a lightweight and compact construction.</PTXT></ITEM>
+<ITEM><PTXT>The insides of both the accelerator position sensor and the throttle position sensor have a 2-system (main and sub) configuration, and the system is constantly monitored for malfunctions.</PTXT></ITEM>
+<ITEM><PTXT>If a malfunction is detected, the warning light in the meter alerts the driver and current to the motor is cut. The throttle valve is returned to a predetermined opening by the throttle valve return spring. Engine output is adjusted according to the accelerator opening through fuel injection cut and ignition retard, enabling the vehicle to be driven.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740186p" WIDTH = "6.903in" HEIGHT = "3.292in" />
+</FIGURE>
+</PARA>
+</SECTION>

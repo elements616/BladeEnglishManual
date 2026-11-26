@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- $Id: cdata_status.html,v 1.11 2004/04/01 07:37:34 s-okino Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Inspection Data</title>
+
+
+<link href="../../css/status.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	paraId = parent.findParameterValue("parag" , location.search);
+	if (paraId == null) {
+		return;
+	}
+	
+	var titleName = parent.getTitleName(paraId);
+	var paraName = parent.getParagraphName(paraId);
+	disp.innerHTML = "<p class='location'>" + titleName + " ／ " + paraName + "</p>";
+	
+	var paraXml = parent.initXml(paraId+".xml",false,false);
+	if ( paraXml == null ) {
+		alert("Relevant File "+paraId+".xml does not exist.");
+		return;
+	}
+	var subparaNode = paraXml.selectSingleNode("//subpara");
+	if ( subparaNode == null ) {
+		alert("Relevant File "+paraId+".xml has no subparaNode.");
+		return;
+	}
+	var textId = subparaNode.getAttribute("id");
+	var memoId = subparaNode.getAttribute("proc-id");
+	generalMemo.innerHTML = 
+		 "<a href=\"javascript:parent.openMemo('"+textId+"','"+memoId+"');\" >"
+		+"<img src='../../img/memo.png' id='"+memoId+"'  border='0' /> "
+		+"</a>"
+		;
+	parent.loadMemoData (document,parent.REPAIR);
+}
+</script>
+</head>
+<body onLoad="init()">
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+	<tr>
+		<td><div id="disp"></div></td>
+		<td id="generalMemo" align="right" width="40"><br>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

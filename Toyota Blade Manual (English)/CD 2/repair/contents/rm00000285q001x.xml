@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001A_S0009" variety="S0009">
+<name>Lighting</name>
+<ttl id="1001A_S0009_74213_T001L" variety="T001L">
+<name>Turn Signal Flasher Assembly</name>
+<para id="RM00000285Q001X" category="G" type-id="8000T" name-id="603KA-00" from="200612">
+<name>On-vehicle Inspection</name>
+<subpara id="RM00000285Q001X_01" type-id="01" category="01">
+<s-1 id="RM00000285Q001X_01_0002" proc-id="RM0550J___00009IT00000">
+<ptxt>Inspect Turn Signal Flasher Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Input/Output Operation Inspection</ptxt>
+<figure>
+<graphic graphicname="E136704J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<s3>
+<ptxt>Disconnect the turn signal flasher assembly connector.</ptxt>
+</s3>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between each terminal of the vehicle side wire harness connector and body ground.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL2" align="center" colwidth="1.15in"/>
+<colspec colname="COL4" colwidth="1.64in"/>
+<colspec colname="COL5" colwidth="1.34in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>4 (B) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1 (IG) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG OFF → ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V → 11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the vehicle side wire harness connector and body ground.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL2" colwidth="1.15in"/>
+<colspec colname="COL4" colwidth="1.63in"/>
+<colspec colname="COL5" colwidth="1.35in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>7 (E) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+<s3>
+<ptxt>Connect the turn signal flasher assembly connector.</ptxt>
+</s3>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between each connector terminal and body ground.</ptxt>
+<figure>
+<graphic graphicname="E136703J02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL2" colwidth="1.14in"/>
+<colspec colname="COL4" colwidth="1.64in"/>
+<colspec colname="COL5" colwidth="1.35in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6 (ER) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn signal switch (right) OFF → ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V → Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5 (EL) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn signal switch (left) OFF → ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V → Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>8 (HAZ) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Hazard switch OFF → ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14V → Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 (LR) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn signal switch (right) OFF → ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V → Alternates between below 1 V and 11 to 14V at 60 - 120 times/min</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3 (LL) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn signal switch (left) OFF → ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V → Alternates between below 1 V and 11 to 14V at 60 - 120 times/min</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 (LR) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Hazard switch OFF → ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V → Alternates between below 1 V and 11 to 14V at 60 - 120 times/min</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3 (LL) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Hazard switch OFF → ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V → Alternates between below 1 V and 11 to 14V at 60 - 120 times/min</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

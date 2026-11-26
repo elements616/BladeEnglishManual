@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="03">
+<name>Transmission/Transaxle</name>
+<section id="1002B_S001H" variety="S001H">
+<name>Automatic Transaxle</name>
+<ttl id="1002B_S001H_74Y0X_T00H8" variety="T00H8">
+<name>Electronically Controlled Automatic Transaxle [ECT] (U660E)</name>
+<para id="RM000000OLY013X" category="D" type-id="8003K" name-id="261HV-00" from="200708">
+<name>Work Support</name>
+<subpara id="RM000000OLY013X_z0" proc-id="RM0550J___0000FTY00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>TaSCAN A/T Learned Value Initialization</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When any of the transaxle assembly, valve body assembly, transmission control computer, transmission wire or engine assembly has been replaced, perform [A/T Learned Value Initialization].</ptxt>
+</item>
+<item>
+<ptxt>When either the engine control computer or yaw rate sensor has been replaced, perform [A/T Learned Value Initialization].</ptxt>
+</item>
+<item>
+<ptxt>Perform A/T learned value initialization 1 minutes or more after connecting the battery terminal.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Learned values are not initialized (cleared) by simply disconnecting the battery negative terminal.</ptxt>
+</item>
+<item>
+<ptxt>If the engine control computer has been replaced with a new one, [A/T Learned Value Initialization] is not necessary.</ptxt>
+</item>
+<item>
+<ptxt>This work is A/T learned value memorization; if the yaw rate sensor has been replaced, the VSC system 0 point acquisition work must also be performed. (see <xref label="Seep01" href="RM000001A8300PX"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>Stop the vehicle on a level road surface.</ptxt>
+</step2>
+<step2>
+<ptxt>Confirm that the shift position is in P, connect SST (TaSCAN) to DLC3, and turn the IG ON and the SST power ON.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<atten3>
+<ptxt>The engine will not start.</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>Perform A/T Learned Value Initialization</ptxt>
+<step3>
+<ptxt>Following the SST (TaSCAN) screen display, select and execute main menu [Work Support] → work support category [Transmission] → [A/T/CVT Learned Value Initialization] to initialize the A/T learned values.</ptxt>
+<atten4>
+<ptxt>Initialization takes approximately 1 minutes to complete.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>After learned value initialization, turn SST (TaSCAN) power OFF and IG OFF, and remove the SST.</ptxt>
+</step3>
+<step3>
+<ptxt>Start the engine and drive so that the total driving time at vehicle speed 40km/h or more reaches 60 seconds or more before stopping the engine.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>A/T Unit Compensation</ptxt>
+<atten4>
+<ptxt>When the transaxle assembly, transmission control computer, valve body or clutch control solenoid (SL1, SL2, SL3, SL4) has been replaced, perform A/T unit compensation.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Replacement Parts</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Compensation Work</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Transaxle Assembly</ptxt>
+<ptxt>(Both when replacing integrated ECU and when replacing transaxle only)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>A/T Unit Compensation (Manual A/T Code Input)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Transmission Control Computer</ptxt>
+<ptxt>(When vehicle computer A/T code can be read)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>A/T Unit Compensation (A/T Code Read/Save)</ptxt>
+</item>
+<item>
+<ptxt>A/T Unit Compensation (Automatic A/T Code Input)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Transmission Control Computer</ptxt>
+<ptxt>(When vehicle computer A/T code cannot be read)</ptxt>
+</item>
+<item>
+<ptxt>Valve Body Assembly</ptxt>
+</item>
+<item>
+<ptxt>Clutch control solenoid No.1 (SL3)</ptxt>
+</item>
+<item>
+<ptxt>Clutch control solenoid No.2 (SL4)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>A/T Unit Compensation (Initialization)</ptxt>
+</item>
+<item>
+<ptxt>Driving Learning</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Clutch control solenoid No.1 (SL1)</ptxt>
+</item>
+<item>
+<ptxt>Clutch control solenoid No.2 (SL2)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Driving Learning</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+<step2>
+<ptxt>A/T Unit Compensation (Manual A/T Code Input)</ptxt>
+<atten4>
+<ptxt>When replacing the transaxle assembly (including both ECU-integrated and transaxle-only replacement), perform A/T unit compensation (manual A/T code registration) after replacing the axle.</ptxt>
+</atten4>
+<step3>
+<ptxt>Record the A/T code (5 digits × 12 blocks) printed on the TM label of the supply part.</ptxt>
+<figure>
+<graphic graphicname="C139050J04" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Complete the transaxle assembly replacement work. (see <xref label="Seep02" href="RM0000016DU00JX"/>)</ptxt>
+</step3>
+<step3>
+<ptxt>With the IG OFF, connect SST (TaSCAN) to the DLC3 connector.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step3>
+<step3>
+<ptxt>With the shift lever in P, press the IG switch 2 times without depressing the brake pedal to turn the IG ON.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The engine will not start.</ptxt>
+</item>
+<item>
+<ptxt>Do not operate the shift lever or IG switch until the compensation work is completed.</ptxt>
+</item>
+</list1>
+</atten3>
+</step3>
+<step3>
+<ptxt>Turn SST (TaSCAN) power ON and select "Work Support" → "Support Category/Transmission" → "A/T Unit Compensation (Manual A/T Code Registration)".</ptxt>
+</step3>
+<step3>
+<ptxt>While checking the screen display, press "Next" to proceed to the input screen (step 4/6).</ptxt>
+<figure>
+<graphic graphicname="C139043" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Operate the buttons on the screen to input the A/T code on the TM label in the same positions as on the label, and press "Complete" after input.</ptxt>
+</step3>
+<step3>
+<ptxt>Confirm that the input A/T code is the same as the TM label, and press "Start".</ptxt>
+<figure>
+<graphic graphicname="C139044" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Confirm work completion on the screen.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>A/T Unit Compensation (A/T Code Read/Save) and A/T Unit Compensation (Automatic A/T Code Input)</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When replacing only the transmission control computer, perform A/T unit compensation (A/T code read/save) before replacement, and perform A/T unit compensation (automatic A/T code registration) after replacing the computer.</ptxt>
+</item>
+<item>
+<ptxt>If the A/T code cannot be read due to a transmission control computer malfunction, perform driving learning after A/T unit compensation (A/T code initialization).</ptxt>
+</item>
+<item>
+<ptxt>Do not perform manual input from the A/T code label affixed to the vehicle transaxle.</ptxt>
+</item>
+</list1>
+</atten4>
+<step3>
+<ptxt>With the IG OFF, connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step3>
+<step3>
+<ptxt>With the shift lever in P, press the IG switch 2 times without depressing the brake pedal to turn the IG ON.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The engine will not start.</ptxt>
+</item>
+<item>
+<ptxt>Do not operate the shift lever or IG switch until the work is completed.</ptxt>
+</item>
+</list1>
+</atten3>
+</step3>
+<step3>
+<ptxt>Turn SST (TaSCAN) power ON and select "Work Support" → "Support Category/Transmission" → "A/T Unit Compensation (A/T Code Read/Save)".</ptxt>
+</step3>
+<step3>
+<ptxt>Press "Start" to read the A/T code stored in the transmission control computer.</ptxt>
+</step3>
+<step3>
+<ptxt>After reading of the A/T code (5 digits × 12 blocks) is completed, press "Save" to store the A/T code in SST (TaSCAN).</ptxt>
+<figure>
+<graphic graphicname="C139045" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<atten4>
+<ptxt>If the A/T code cannot be read, perform driving learning after A/T unit compensation (A/T code initialization).</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Record the &lt;Save Date/Time&gt; and press "Complete".</ptxt>
+<figure>
+<graphic graphicname="C139046" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Turn the IG OFF and replace the transmission control computer.</ptxt>
+</step3>
+<step3>
+<ptxt>After completing the replacement work, set SST (TaSCAN) in the same way as for reading.</ptxt>
+</step3>
+<step3>
+<ptxt>From the SST (TaSCAN) screen, select "Work Support" → "Support Category/Transmission" → "A/T Unit Compensation (Automatic A/T Code Registration)".</ptxt>
+</step3>
+<step3>
+<ptxt>Press "Next" to proceed to the confirmation screen (step 2/3), check the save date/time and press "Start".</ptxt>
+<figure>
+<graphic graphicname="C139047" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Confirm work completion on the screen.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>A/T Unit Compensation (Initialization)</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When replacing the valve body or either of the clutch control solenoids (SL3) (SL4), perform driving learning after A/T unit compensation (initialization) upon completion of replacement.</ptxt>
+</item>
+<item>
+<ptxt>When replacing clutch control solenoid (SL1) or (SL2), perform driving learning only.</ptxt>
+</item>
+</list1>
+</atten4>
+<step3>
+<ptxt>Complete the replacement work.</ptxt>
+</step3>
+<step3>
+<ptxt>With the IG OFF, connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step3>
+<step3>
+<ptxt>With the shift lever in P, press the engine switch 2 times without depressing the brake pedal to turn the IG ON.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The engine will not start.</ptxt>
+</item>
+<item>
+<ptxt>Do not operate the shift lever or IG switch until the work is completed.</ptxt>
+</item>
+</list1>
+</atten3>
+</step3>
+<step3>
+<ptxt>Turn SST (TaSCAN) power ON and select "Work Support" → "Support Category/Transmission" → "A/T Unit Compensation (A/T Code Initialization)".</ptxt>
+</step3>
+<step3>
+<ptxt>Start initialization following the screen display and confirm that initialization is completed.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Driving Learning</ptxt>
+<atten2>
+<ptxt>Exercise sufficient caution when performing the driving work.</ptxt>
+</atten2>
+<step3>
+<ptxt>With the IG OFF, connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+</step3>
+<step3>
+<ptxt>Depress the brake pedal, turn the IG ON and start the engine.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn SST (TaSCAN) power ON, select monitor item "Accelerator Opening" under "Diagnosis" → "System Diagnosis/Chassis" → "System Name/ECT" → "Diagnosis Function/ECU Data" and execute.</ptxt>
+</step3>
+<step3>
+<ptxt>With the vehicle stopped, check the pedal depression amount that gives an accelerator opening of 15%.</ptxt>
+</step3>
+<step3>
+<ptxt>From a vehicle speed of 0km/h, depress the accelerator pedal at an accelerator opening of 15% or less and accelerate to the highest possible vehicle speed while keeping the accelerator constant.</ptxt>
+</step3>
+<step3>
+<ptxt>If the shift shock is large, repeat until there is no shift shock.</ptxt>
+</step3>
+<step3>
+<ptxt>With the vehicle stopped, check the pedal depression amount that gives an accelerator opening of 25 to 35%.</ptxt>
+</step3>
+<step3>
+<ptxt>From a vehicle speed of 0km/h, depress the accelerator to an opening of 25 to 35% and accelerate to the highest possible vehicle speed while keeping the accelerator constant.</ptxt>
+</step3>
+<step3>
+<ptxt>If the shift shock is large, repeat until there is no shift shock.</ptxt>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

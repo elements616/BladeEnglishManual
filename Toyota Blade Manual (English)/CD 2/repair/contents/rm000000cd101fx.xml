@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="RM000000CD101FX" category="D" type-id="303I1" name-id="0659K-00" from="200612">
+<name>Inspection for Intermittent Problems</name>
+<subpara id="RM000000CD101FX_z0" proc-id="RM0550J___00002UM00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Inspection for Intermittent Problems (Can Only Be Performed Using TaSCAN)</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<atten4>
+<ptxt>By changing the mode according to the following procedure, open circuit detection sensitivity is improved and intermittent malfunctions can be detected more reliably.</ptxt>
+</atten4>
+<step2>
+<ptxt>Clearing DTCs</ptxt>
+</step2>
+<step2>
+<ptxt>Setting check mode</ptxt>
+</step2>
+<step2>
+<ptxt>Performing simulation test</ptxt>
+</step2>
+<step2>
+<ptxt>Visually inspect the connectors and each terminal, and check the connection condition</ptxt>
+</step2>
+<step2>
+<ptxt>Check that no excessive force is applied to the wire harness and connectors</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Connector and Wire Harness Momentary Interruption Check</ptxt>
+<atten4>
+<ptxt>If the malfunctioning system is identified by the DTC output in the diagnosis (check mode) inspection, narrow down the malfunctioning area using the following method.</ptxt>
+</atten4>
+<step2>
+<ptxt>After reading the DTCs in check mode, clear the DTC memory.</ptxt>
+</step2>
+<step2>
+<ptxt>Select check mode and start the engine.</ptxt>
+</step2>
+<step2>
+<ptxt>With the engine idling, wiggle the connectors and wire harness of the malfunctioning system output in the diagnosis (check mode) inspection.</ptxt>
+</step2>
+<step2>
+<ptxt>If the check engine warning light illuminates when the connector or wire harness is wiggled, there may be a poor connection in the connector or wire harness at that location.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

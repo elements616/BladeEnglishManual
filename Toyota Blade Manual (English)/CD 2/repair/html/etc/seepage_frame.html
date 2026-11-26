@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- $Id: seepage_frame.html,v 1.18 2003/10/16 01:07:09 takeo Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Reference</title>
+
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/memo.js"></script>
+<script language="javascript">
+var args = window.dialogArguments;
+var g_objXml = args.get("xml");
+var g_objXsl = args.get("xsl");
+var g_sub = args.get("sub");
+var g_s1 = args.get("s1");
+var g_path = args.get("path");
+var g_category = g_objXml.selectSingleNode("//para/@category").nodeTypedValue;
+if(g_path != null  && g_path.search("trb_toc")>0 && g_category=="R"){
+	document.title = "[Electronic Technical Manual] - Parts Location";
+}
+setSeePageMargin(args.get("margin")+30);
+var g_paraId = g_objXml.selectSingleNode("//para").getAttribute("id");
+//「準備品」クリック時
+function switchPreparation(){
+	if( g_paraId == null )  return; 
+	var args = new Array(g_paraId);
+	parent.setDisplayArgs(args );
+	//準備品を画面で表示する
+	parent.openDialog("ppr", "ppr_frame.html");
+}
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="seepage_global.html" scrolling="no" noresize frameborder="no">
+		<frame name="contents" src="seepage_contents.html" frameborder="no">
+	</frameset>
+<noframes>
+	<body>Please use a browser that supports frames</body>
+</noframes>
+</html>

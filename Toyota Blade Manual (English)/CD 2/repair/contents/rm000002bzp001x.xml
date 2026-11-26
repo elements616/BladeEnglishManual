@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001C_S000C" variety="S000C">
+<name>Audio &amp; Visual</name>
+<ttl id="1001C_S000C_742AE_T002P" variety="T002P">
+<name>Speaker Assembly Front NO.2</name>
+<para id="RM000002BZP001X" category="G" type-id="3001K" name-id="641JW-00" from="200612">
+<name>Component Inspection</name>
+<subpara id="RM000002BZP001X_01" type-id="01" category="01">
+<s-1 id="RM000002BZP001X_01_0001" proc-id="RM0550J___000018N00000">
+<ptxt>Inspect Speaker Assembly Front NO.2</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check that the speaker installation is not loose or rattling.</ptxt>
+</s2>
+<s2>
+<ptxt>Check that there is no foreign matter inside the speaker and that the speaker cone paper is not torn.</ptxt>
+</s2>
+<s2>
+<ptxt>Resistance Measurement (RH)</ptxt>
+<figure>
+<graphic graphicname="E141932J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Disconnect the speaker assembly front NO.2 connector.</ptxt>
+</s3>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<table>
+<title>Resistance:</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>4(+) - 3(TWR+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2(-) - 1(TWR-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+</s2>
+<s2>
+<ptxt>Resistance Measurement (LH)</ptxt>
+<figure>
+<graphic graphicname="E141932J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Disconnect the speaker assembly front NO.2 connector.</ptxt>
+</s3>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<table>
+<title>Resistance:</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.39in"/>
+<colspec colname="COL3" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>4(+) - 3(TWL+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2(-) - 1(TWL-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+</s2>
+<s2>
+<ptxt>Swap Inspection</ptxt>
+<s3>
+<ptxt>Swap with a normal speaker assembly front NO.2 and operate again.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Return to Normal</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If a malfunction of either the left or right speaker assembly front NO.2 is suspected, swap the left and right speakers and inspect.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

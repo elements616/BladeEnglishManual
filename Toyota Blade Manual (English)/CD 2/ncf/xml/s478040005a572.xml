@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740006c SYSTEM "grph_ent/a4740006c.png" NDATA png>
+
+<!ENTITY T040005A572 SYSTEM "t478040005a572.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T040005A572S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T040005A572" UPDATE = "ORIGINAL" LDUP = "6May2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>4WD Auto Mode Switch</TITLE>
+<LIST1><ITEM><PTXT>It is located to the right of the parking lever.</PTXT></ITEM>
+<ITEM><PTXT>With the switch ON, the vehicle is in 4WD auto mode; with it OFF, the vehicle is fixed in front-wheel drive.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740006c" WIDTH = "6.903in" HEIGHT = "3.583in" />
+</FIGURE>
+</PARA>
+</SECTION>

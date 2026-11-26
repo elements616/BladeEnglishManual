@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001A_S0009" variety="S0009">
+<name>Lighting</name>
+<ttl id="1001A_S0009_746VG_T00DF" variety="T00DF">
+<name>Rear Light Assembly LH</name>
+<para id="RM0000031B3000X" category="G" type-id="8000T" name-id="603JK-00" from="200612">
+<name>On-vehicle Inspection</name>
+<subpara id="RM0000031B3000X_01" type-id="01" category="01">
+<s-1 id="RM0000031B3000X_01_0001" proc-id="RM0550J___0000BGJ00000">
+<ptxt>Inspect Rear Light Assembly LH</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>LED Light Inspection</ptxt>
+<s3>
+<ptxt>Disconnect the connector.</ptxt>
+</s3>
+<s3>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminal of the vehicle side wire harness connector and body ground.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="E147171J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Headlight dimmer switch OFF→TAIL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1V or less → 11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

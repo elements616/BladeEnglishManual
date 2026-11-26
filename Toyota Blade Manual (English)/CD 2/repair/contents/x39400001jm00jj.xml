@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="08">
+<name>Heater &amp; Air Conditioner/Ventilation</name>
+<section id="1002K_S000B" variety="S000B">
+<name>Air Conditioner</name>
+<ttl id="1002K_S000B_7421V_T0025" variety="T0025">
+<name>Heater &amp; Air Conditioner System</name>
+<para id="X39400001JM00JJ" category="J" type-id="300XK" name-id="522Q7-00" from="200708">
+<dtccode/>
+<dtcname>Magnetic clutch relay circuit</dtcname>
+<subpara id="X39400001JM00JJ_10" type-id="31" category="03" proc-id="RM0550J___0000EQ200000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The air conditioner amplifier assembly operates the magnetic clutch relay to turn the magnetic clutch ON.</ptxt>
+</content5>
+</subpara>
+<subpara id="X39400001JM00JJ_11" type-id="32" category="03" proc-id="RM0550J___0000EQ300000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E155264J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="X39400001JM00JJ_12" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="X39400001JM00JJ_13" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="X39400001JM00JJ_13_0019" proc-id="RM0550J___0000EQ900000">
+<testtitle>Inspect Fuse (Instrument Panel Junction Block (HTR-IG))</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance of HTR-IG.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>HTR-IG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400001JM00JJ_13_0009" fin="false">OK</down>
+<right ref="X39400001JM00JJ_13_0020" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400001JM00JJ_13_0009" proc-id="RM0550J___0000EQ800000">
+<testtitle>Inspect Magnetic Clutch Relay</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Remove the magnetic clutch relay from the engine room relay block.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the connector.</ptxt>
+<figure>
+<graphic graphicname="B016200" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>167Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 -5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Apply battery voltage between terminals 1 and 2 of the connector</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="X39400001JM00JJ_13_0005" fin="false">OK</down>
+<right ref="X39400001JM00JJ_13_0017" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400001JM00JJ_13_0005" proc-id="RM0550J___0000EQ500000">
+<testtitle>Inspect Cooler Compressor w/ Magnetic Clutch Assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector B of the cooler compressor w/ magnetic clutch assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the magnetic clutch assembly connector.</ptxt>
+</test1>
+<figure>
+<graphic graphicname="E155265J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each connector terminal and between the terminals and body ground.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B3(MG+) - C1(MG+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B3 (MG+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400001JM00JJ_13_0022" fin="false">OK</down>
+<right ref="X39400001JM00JJ_13_0013" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400001JM00JJ_13_0022" proc-id="RM0550J___0000EQA00000">
+<testtitle>Inspect Magnetic Clutch Assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminal and the ground wire.</ptxt>
+<figure>
+<graphic graphicname="E113611J02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 (MG+) - Ground wire</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Inspect the magnetic clutch operation when the battery positive is connected to the connector terminal and the battery negative to the ground wire.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>An operating sound is heard and the magnetic clutch hub and rotor lock.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400001JM00JJ_13_0006" fin="false">OK</down>
+<right ref="X39400001JM00JJ_13_0023" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400001JM00JJ_13_0006" proc-id="RM0550J___0000EQ600000">
+<testtitle>Inspect Wire Harness or Connector (Power Source System - Magnetic Clutch Relay)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between each terminal of the engine room relay block and body ground.</ptxt>
+<figure>
+<graphic graphicname="E155340J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 (+S) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>5 (B) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400001JM00JJ_13_0007" fin="false">OK</down>
+<right ref="X39400001JM00JJ_13_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400001JM00JJ_13_0007" proc-id="RM0550J___0000EQ700000">
+<testtitle>Inspect Wire Harness or Connector (Magnetic Clutch Relay - Air Conditioner Amplifier Assembly)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D702RX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the air conditioner amplifier assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals of the vehicle wire harness and between the terminals and body ground.</ptxt>
+<figure>
+<graphic graphicname="E155341J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2(-S) - A20(MGC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2 (-S) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400001JM00JJ_13_0021" fin="true">OK</down>
+<right ref="X39400001JM00JJ_13_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400001JM00JJ_13_0021">
+<testtitle>Replace Air Conditioner Amplifier Assembly<xref label="Seep01" href="RM000002140002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400001JM00JJ_13_0020">
+<testtitle>Replace Fuse</testtitle>
+</testgrp>
+<testgrp id="X39400001JM00JJ_13_0017">
+<testtitle>Replace Magnetic Clutch Relay</testtitle>
+</testgrp>
+<testgrp id="X39400001JM00JJ_13_0013">
+<testtitle>Replace Cooler Compressor w/ Magnetic Clutch Assembly<xref label="Seep01" href="RM00000298H006X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400001JM00JJ_13_0023">
+<testtitle>Replace Magnetic Clutch Assembly<xref label="Seep01" href="RM00000298I006X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400001JM00JJ_13_0011">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

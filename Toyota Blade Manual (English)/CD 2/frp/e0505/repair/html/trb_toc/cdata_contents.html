@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- $Id: cdata_contents.html,v 1.9 2004/04/01 07:37:34 s-okino Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Inspection Data</title>
+
+
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	paraId = parent.findParameterValue("parag" , location.search);
+	if (paraId == null) {
+		return;
+	}
+	var paraXml = parent.initXml(paraId.toLowerCase() +".xml",false,false);
+	if ( paraXml == null ) {
+		alert("Relevant File "+paraId+".xml does not exist.");
+		return;
+	}
+	parent.display(paraXml,parent.g_contentsXsl, disp, null);
+}
+</script>
+</head>
+<body onLoad="init();">
+<div id="disp"></div>
+</body>
+</html>

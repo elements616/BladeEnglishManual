@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="08">
+<name>Heater &amp; Air Conditioner/Ventilation</name>
+<section id="1002K_S000B" variety="S000B">
+<name>Air Conditioner</name>
+<ttl id="1002K_S000B_7421V_T0025" variety="T0025">
+<name>Heater &amp; Air Conditioner System</name>
+<para id="RM0000005LH02BX" category="D" type-id="303F3" name-id="52232-01" from="200912">
+<name>Diagnosis System</name>
+<subpara id="RM0000005LH02BX_z0" proc-id="RM0550J___00000Y900001">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Inspection Using Panel Diagnosis (Indicator Check)</ptxt>
+<step2>
+<ptxt>Turn IG OFF.</ptxt>
+</step2>
+<step2>
+<ptxt>While pressing the AUTO and recirculation switches simultaneously, turn the IG from OFF to ON, and keep pressing both switches until the panel diagnosis mode is entered.</ptxt>
+<figure>
+<graphic graphicname="E144447J02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Check that all indicators and the setting display illuminate and go off 4 times at 1-second intervals.</ptxt>
+<atten4>
+<ptxt>After the indicator check is completed, the sensor check is performed automatically.</ptxt>
+<figure>
+<graphic graphicname="E033999" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</atten4>
+<figure>
+<graphic graphicname="E206529J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>To end panel diagnosis, press the "OFF" switch.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Inspection Using Panel Diagnosis (Sensor Check)</ptxt>
+<step2>
+<ptxt>Perform the indicator check.</ptxt>
+<atten4>
+<ptxt>After the indicator check is completed, the sensor check is performed automatically.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Press the "Recirculation" switch to perform the actuator check.</ptxt>
+<atten3>
+<ptxt>The sensor check performed automatically after the indicator check cannot fully diagnose current malfunctions, so always perform the actuator check, then perform the sensor check again and check the results.</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>After the actuator check is completed, press the "AUTO" switch.</ptxt>
+</step2>
+<step2>
+<ptxt>Check the sensor check results shown on the set temperature display.</ptxt>
+<figure>
+<graphic graphicname="E207511J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<table>
+<title>Result</title>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Check Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Code Display</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Current malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Blinking</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Past malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Blinking</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The illustration shows the case where code "21" is output.</ptxt>
+</item>
+<item>
+<ptxt>If there are 2 or more malfunction codes, they are displayed in ascending order of code number.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>If there are 2 or more malfunction codes and they are difficult to read, press the "DEF" switch to fix the code display (step operation) and read them.</ptxt>
+<atten4>
+<ptxt>Each time the "DEF" switch is pressed, the items are displayed one step at a time.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>If a sensor check code is output, read the code from the Diagnostic Trouble Code Chart. (see <xref label="Seep01" href="RM0000005KU01NX"/>)</ptxt>
+</step2>
+<step2>
+<ptxt>To end panel diagnosis, press the "OFF" switch.</ptxt>
+<atten4>
+<ptxt>To proceed to the actuator check, press the "Recirculation" switch.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Inspection Using Panel Diagnosis (Clearing Sensor Check Code Memory)</ptxt>
+<step2>
+<ptxt>Inspect, repair or replace the malfunctioning area.</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the following operation to clear the stored diagnostic trouble codes.</ptxt>
+<step3>
+<ptxt>During the sensor check, press the "RrDEF" switch (B) while pressing the "DEF" switch (A).</ptxt>
+<atten4>
+<ptxt>The stored codes can also be cleared by removing the "A/C" fuse of the instrument panel junction block assembly (LH) within 1 hours after turning the IG OFF.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>After clearing the memory, perform the sensor check and confirm that the normal code (00) is output.</ptxt>
+<figure>
+<graphic graphicname="E143614J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>Inspection Using Panel Diagnosis (Actuator Check)</ptxt>
+<figure>
+<graphic graphicname="E033999" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Start the engine and warm it up sufficiently.</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the indicator check.</ptxt>
+</step2>
+<step2>
+<ptxt>After moving from the indicator check to the sensor check, press the "Recirculation" switch to perform the actuator check.</ptxt>
+<atten4>
+<ptxt>Always perform the actuator check with the engine running.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>The actuator check (continuous) repeats in the order of step 0 → 9 at 1-second intervals, so inspect the temperature and airflow visually and by hand.</ptxt>
+<atten4>
+<ptxt>The step No. is shown on the driver side set temperature display.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>If inspection is difficult because the steps change, press the "DEF" switch to fix the step (step operation) and perform the inspection. The step changes each time the "DEF" switch is pressed.</ptxt>
+<figure>
+<graphic graphicname="E206530J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The step No. blinks at 1-second intervals even during fixed display (step operation).</ptxt>
+</item>
+<item>
+<ptxt>The illustration shows the case where step No.5 is being output.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>To end panel diagnosis, press the "OFF" switch.</ptxt>
+<atten4>
+<ptxt>Pressing the "AUTO" switch enters the sensor check mode.</ptxt>
+<table pgwide="1">
+<title>Actuator Check Table</title>
+<tgroup cols="6" align="center">
+<colspec colname="COL1" colwidth="1.18in"/>
+<colspec colname="COL2" colwidth="1.18in"/>
+<colspec colname="COL3" colwidth="1.18in"/>
+<colspec colname="COL4" colwidth="1.18in"/>
+<colspec colname="COL5" colwidth="1.18in"/>
+<colspec colname="COL7" colwidth="1.18in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Step No.</ptxt>
+<ptxt>(Driver Side Temperature Display)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Blower Level</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air Mix Opening Angle</ptxt>
+<ptxt>[Driver Side]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air Outlet</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air Inlet</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Compressor</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>0</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0%</ptxt>
+<ptxt>(MAX COLD)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FACE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FRS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0%</ptxt>
+<ptxt>(MAX COLD)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FACE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FRS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0%</ptxt>
+<ptxt>(MAX COLD)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FACE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>REC/FRS</ptxt>
+<ptxt>(Semi-recirculation Mode)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0%</ptxt>
+<ptxt>(MAX COLD)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FACE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>REC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>50%</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BI-LEVEL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>REC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>50%</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BI-LEVEL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>REC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>50%</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FOOT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FRS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>7</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>100%</ptxt>
+<ptxt>(MAX HOT)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FOOT-0</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FRS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>8</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>100%</ptxt>
+<ptxt>(MAX HOT)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FOOT/DEF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FRS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>31</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>100%</ptxt>
+<ptxt>(MAX HOT)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DEF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FRS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

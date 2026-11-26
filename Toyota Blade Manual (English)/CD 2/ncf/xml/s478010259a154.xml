@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a3810063p SYSTEM "grph_ent/a3810063p.png" NDATA png>
+<!ENTITY k4480136p SYSTEM "grph_ent/k4480136p.png" NDATA png>
+<!ENTITY k4480137p SYSTEM "grph_ent/k4480137p.png" NDATA png>
+
+<!ENTITY T010259A154 SYSTEM "t478010259a154.xml">
+<!ENTITY T010259A154A217 SYSTEM "t478010259a154a217.xml">
+<!ENTITY T010259A154A218 SYSTEM "t478010259a154a218.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T010259A154S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T010259A154" UPDATE = "ORIGINAL" LDUP = "20Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Starter</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>A compact, lightweight, high-output, high-efficiency PS (Planetary reduction-Segment conductor motor) starter has been adopted.</PTXT></ITEM>
+<ITEM><PTXT>A rectangular conductor armature coil has been adopted to reduce size and weight.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a3810063p" WIDTH = "6.917in" HEIGHT = "4.292in" />
+</FIGURE>
+<SPEC ID = "T010259A154X01" INDSW = "OFF">
+<TITLE>Starter Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_01">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "49%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "49%"/>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Type</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>PS Starter</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Rated Voltage [V]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>12</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1"><PTXT>Rated Output [kW]</PTXT></ENTRY>
+<ENTRY COLNAME = "2" ALIGN = "CENTER"><PTXT>1.7</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+
+<MECA ID = "T010259A154A217" UPDATE = "ORIGINAL" LDUP = "29Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Armature Coil</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By using bare rectangular wire for the armature coil, the space factor has been improved, increasing starter torque.</PTXT></ITEM>
+<ITEM><PTXT>The cylindrical commutator has been eliminated, shortening the armature shaft length.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4480136p" WIDTH = "7.083in" HEIGHT = "3.778in" />
+</FIGURE>
+</MECA>
+
+<MECA ID = "T010259A154A218" UPDATE = "ORIGINAL" LDUP = "29Sep2003"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Field Coil</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>Interpolar magnets have been adopted between the field coils. This improves the magnetic circuit and increases the magnetic flux. As a result, the same magnetic flux as the conventional type can be achieved with a smaller size, so the yoke axial length has been shortened.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4480137p" WIDTH = "7.083in" HEIGHT = "3.333in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

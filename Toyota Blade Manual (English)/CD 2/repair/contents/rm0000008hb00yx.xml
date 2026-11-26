@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002S_S000E" variety="S000E">
+<name>Vehicle Surroundings Monitor</name>
+<ttl id="1002S_S000E_742B9_T003J" variety="T003J">
+<name>Intelligent Parking Assist System</name>
+<para id="RM0000008HB00YX" category="L" type-id="3001A" name-id="672DP-00" from="200612" to="200912">
+<name>Precautions</name>
+<subpara id="RM0000008HB00YX_z0" proc-id="RM0550J___00006W100000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Precautions during Vehicle Servicing</ptxt>
+<step2>
+<ptxt>When the battery terminal is disconnected, perform steering angle sensor neutral point memorization (see <xref label="Seep01" href="RM000000P3T006X"/>) and the initialization required when disconnecting/reconnecting the battery terminal (see <xref label="Seep02" href="RM000001LYW00PX"/>).</ptxt>
+</step2>
+<step2>
+<ptxt>When the steering sensor is removed and installed or the steering sensor connector is disconnected, perform steering sensor neutral point memorization. (see <xref label="Seep03" href="RM000000P3T006X"/>)</ptxt>
+</step2>
+<step2>
+<ptxt>Depending on the parts replaced or the work performed during vehicle inspection and maintenance, registration and setting operations for other systems as well as the intelligent parking assist system may be necessary. (see <xref label="Seep04" href="RM00000304S000X"/>)</ptxt>
+</step2>
+<step2>
+<ptxt>If the lens of the television camera assembly is dirty, a clear image cannot be obtained, so rinse it with water and wipe it with a soft cloth. If it is very dirty, wash it off with a neutral detergent.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for Television Camera Assembly</ptxt>
+<step2>
+<ptxt>Handling Precautions</ptxt>
+<step3>
+<ptxt>If the camera section of the television camera assembly is subjected to a strong impact, such as being hit hard or struck by an object, the intelligent parking assist system may not operate properly.</ptxt>
+</step3>
+<step3>
+<ptxt>Rubbing the cover (resin) of the television camera assembly hard may scratch it and adversely affect the image. Also, organic solvents, wax, oil film removers, glass coating agents, etc. may cause the resin to crack, so if any of these adhere, wipe them off immediately and rinse with water.</ptxt>
+</step3>
+<step3>
+<ptxt>If the television camera assembly is subjected to a sudden temperature change (such as pouring hot water on it in cold weather), the intelligent parking assist system may not operate properly.</ptxt>
+</step3>
+<step3>
+<ptxt>If the lens of the television camera assembly is dirty with water droplets, snow, mud, etc., a clear image cannot be obtained, so rinse it with water and wipe it with a soft cloth. If it is very dirty, wash it off with a neutral detergent.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>When the image is difficult to see even when the system is normal</ptxt>
+<step3>
+<ptxt>When the screen is cold. (Immediately after IG ON, the image may leave trails or be darker than normal)</ptxt>
+</step3>
+<step3>
+<ptxt>When strong light such as sunlight or headlights shines on the camera.</ptxt>
+</step3>
+<step3>
+<ptxt>When the area around the camera is dark. (At night, etc.)</ptxt>
+</step3>
+<step3>
+<ptxt>When the temperature near the camera is high or low.</ptxt>
+</step3>
+<step3>
+<ptxt>When the vehicle or road is inclined.</ptxt>
+</step3>
+<step3>
+<ptxt>Depending on the surrounding brightness.</ptxt>
+<atten4>
+<ptxt>When a high-brightness spot (such as sunlight reflected off the vehicle body) is captured by the camera, the smear phenomenon peculiar to CCD cameras (vertical trailing of the image) may occur.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Precautions for Ultrasonic Sensor NO.1 (Parking Space Detection Sensor)</ptxt>
+<step2>
+<ptxt>The detection function may not operate properly in the following cases.</ptxt>
+<step3>
+<ptxt>When the sensor or front bumper installation is misaligned.</ptxt>
+</step3>
+<step3>
+<ptxt>When mud, ice, snow, etc. adheres to the sensor. (The function returns to normal when it is removed)</ptxt>
+</step3>
+<step3>
+<ptxt>When the sensor is frozen. (The function returns to normal when it thaws)</ptxt>
+</step3>
+<step3>
+<ptxt>When the sensor is covered by a hand.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Especially at low temperatures, parking spaces may not be detected properly due to freezing, etc.</ptxt>
+</item>
+<item>
+<ptxt>If the sensor malfunctions, a DTC of the intelligent parking assist system is output. (see <xref label="Seep05" href="RM000000OCQ007X"/>)</ptxt>
+</item>
+<item>
+<ptxt>If the sensor malfunctions, first check the condition of the sensor. If a DTC is output even though there is no mud, ice, snow, etc. adhering and no freezing, a sensor malfunction is suspected.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>The parking space detection range may change in the following cases.</ptxt>
+<step3>
+<ptxt>When the sensor or front bumper installation is misaligned.</ptxt>
+</step3>
+<step3>
+<ptxt>When foreign matter such as mud, ice or snow adheres to the sensor.</ptxt>
+</step3>
+<step3>
+<ptxt>In hot sun or cold weather.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Parking spaces may be incorrectly detected in the following cases.</ptxt>
+<step3>
+<ptxt>When the sensor or front bumper installation is misaligned.</ptxt>
+</step3>
+<step3>
+<ptxt>When driving on bumpy roads, gravel roads or grass.</ptxt>
+</step3>
+<step3>
+<ptxt>When something that generates ultrasonic waves approaches, such as other vehicles' horns, motorcycle engine sounds, air brake sounds of large vehicles or vehicles with sonar.</ptxt>
+</step3>
+<step3>
+<ptxt>When exposed to heavy rain or water splashes.</ptxt>
+</step3>
+<step3>
+<ptxt>When the vehicle is greatly tilted.</ptxt>
+</step3>
+<step3>
+<ptxt>When an aftermarket fender pole or radio antenna is installed.</ptxt>
+</step3>
+<step3>
+<ptxt>When mud, ice, snow, etc. adheres to the sensor.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Some objects may not be detected depending on their shape. Examples are shown below.</ptxt>
+<step3>
+<ptxt>Thin objects such as wire, fences and rope.</ptxt>
+</step3>
+<step3>
+<ptxt>Objects that easily absorb sound waves, such as snow.</ptxt>
+</step3>
+<step3>
+<ptxt>Objects with sharp edges.</ptxt>
+</step3>
+<step3>
+<ptxt>Low objects.</ptxt>
+</step3>
+<step3>
+<ptxt>Tall objects with overhanging upper parts.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Others.</ptxt>
+<step3>
+<ptxt>The area directly below the bumper is not detected. (Objects lower than the sensor or thin posts, etc. may suddenly stop being detected when approached, even if detected once)</ptxt>
+</step3>
+<step3>
+<ptxt>If an obstacle comes too close to the sensor, it may not be detected.</ptxt>
+</step3>
+<step3>
+<ptxt>If the sensor is subjected to a strong impact, such as being hit hard or struck by an object, it may not detect properly.</ptxt>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

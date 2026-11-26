@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002S_S000E" variety="S000E">
+<name>Vehicle Surroundings Monitor</name>
+<ttl id="1002S_S000E_742B9_T003J" variety="T003J">
+<name>Intelligent Parking Assist System</name>
+<para id="RM0000021O1008X" category="C" type-id="8039F" name-id="672FK-00" from="200612" to="200912">
+<dtccode>C1646</dtccode>
+<dtcname>EPS System Invalid</dtcname>
+<subpara id="RM0000021O1008X_04" type-id="33" category="03" proc-id="RM0550J___0000A7500000">
+<name>Function Description</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when the television camera controller self-diagnosis judges that the electric power steering system connected via CAN communication is invalid.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.00in"/>
+<colspec colname="COL3" colwidth="3.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1646</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>EPS System Invalid Condition</ptxt>
+</item>
+<item>
+<ptxt>IPA → EPS Communication Malfunction</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>CAN Communication System</ptxt>
+</item>
+<item>
+<ptxt>Electric Power Steering System</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000021O1008X_05" type-id="51" category="05" proc-id="RM0550J___0000A7600000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>This DTC is always output if the inspection is performed with the ignition switch ON. Therefore, always perform the inspection with the engine running.</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM0000021O1008X_06" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000021O1008X_06_0006" proc-id="RM0550J___0000A7700000">
+<testtitle>Recheck DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Check DTC</ptxt>
+<test2>
+<ptxt>Using SST (TaSCAN), read the DTCs by following the screen display. (see <xref label="Seep01" href="RM000000OCQ007X"/>)</ptxt>
+</test2>
+<test2>
+<ptxt>Select "Clear" on the screen to clear the data. </ptxt>
+</test2>
+<test2>
+<ptxt>Turn IG OFF.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Recheck DTC</ptxt>
+<test2>
+<ptxt> Check the DTCs again and proceed to the corresponding destination below.</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>"C1646" is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No DTC Output (Normal)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000021O1008X_06_0007" fin="false">A</down>
+<right ref="RM0000021O1008X_06_0009" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000021O1008X_06_0007" proc-id="RM0550J___0000A7800000">
+<testtitle>TaSCAN ECU Data Monitor Inspection (IPA → EPS ECU Communication Status)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>ECU Data Monitor Inspection</ptxt>
+<test2>
+<ptxt>Start the engine and, using SST (TaSCAN), display the "ECU Data Monitor" screen following the screen display.</ptxt>
+<table pgwide="1">
+<title>[Diagnosis Menu Screen: Chassis → IPA → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.33in"/>
+<colspec colname="COL3" colwidth="2.49in"/>
+<colspec colname="COL4" colwidth="0.84in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IPA → EPS ECU Communication Status</ptxt>
+<ptxt>[IECE]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>"Communication status with power steering computer is normal or possibly abnormal" displayed as "Normal" or "Abnormal"</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal: Communication status normal</ptxt>
+<ptxt>Abnormal: Communication status abnormal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+<test2>
+<ptxt>Check "IPA → EPS ECU Communication Status" in the ECU data monitor.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>OK</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000021O1008X_06_0008" fin="true">OK</down>
+<right ref="RM0000021O1008X_06_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000021O1008X_06_0008">
+<testtitle>Go to Electric Power Steering System<xref label="Seep01" href="RM000000URL00GX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000021O1008X_06_0009">
+<testtitle>Perform Problem Reproduction Test<xref label="Seep01" href="RM000000ABY03DX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000021O1008X_06_0010">
+<testtitle>Go to CAN Communication System<xref label="Seep01" href="RM000001R4W009X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

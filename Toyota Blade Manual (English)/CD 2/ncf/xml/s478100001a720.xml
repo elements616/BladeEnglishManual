@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY s5420102b SYSTEM "grph_ent/s5420102b.png" NDATA png>
+
+<!ENTITY T100001A720 SYSTEM "t478100001a720.xml">
+<!ENTITY T100001A720K803 SYSTEM "t478100001a720k803.xml">
+<!ENTITY T100001A720K081 SYSTEM "t478100001a720k081.xml">
+<!ENTITY T100001A720K158 SYSTEM "t478100001a720k158.xml">
+<!ENTITY T100001A720K268 SYSTEM "t478100001a720k268.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T100001A720S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T100001A720" UPDATE = "ORIGINAL" LDUP = "24Dec2004"     INFOTYPE = "PARTS" INDSW = "ON"     SELECT = "Vehicle Outline: Comfort and Usability">
+<TITLE>Electronic Key</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The design of the electronic key has been changed.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "s5420102b" WIDTH = "6.903in" HEIGHT = "3.181in" />
+</FIGURE>
+
+<MECA ID = "T100001A720K803" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Key Set Specifications</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The standard key set includes 2 electronic keys.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T100001A720K081" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Auto Power OFF</TITLE>
+<LIST1><ITEM><PTXT>Even if a button on the electronic key is held down, transmission of the weak radio waves stops after approximately 20 seconds.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T100001A720K158" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Identification Code Registration Function</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>By registering the transponder ID code, electronic key ID code and transmitter identification code in the verification ECU, the system can accommodate the use of multiple electronic keys, etc. (For the methods of adding, rewriting, checking and prohibiting identification codes, refer to the Repair Manual.)</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T100001A720K268" UPDATE = "ORIGINAL" LDUP = "18Mar2004" INDSW = "OFF" MECATYPE = "GENERAL">
+<TITLE>Transmitter Operation Indicator Light</TITLE>
+<LIST1><ITEM><PTXT>The operation indicator light (LED) illuminates not only during button operation but also during communication (transmission) for ID verification, allowing the operating condition and battery depletion to be checked.</PTXT></ITEM></LIST1></MECA>
+</PARA>
+</SECTION>

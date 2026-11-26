@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T120007K675K905R05" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF" UNPRINT = "ON">
+<TITLE>Toll Charging</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The toll is charged when the vehicle passes through an exit gate or an entrance gate with a flat-rate toll. At the same time, the voice guidance "Bong, the toll is XX yen<HINTREF     REFID = "H334120007K675K905R0501"/>" is given.</PTXT></ITEM>
+<ITEM><PTXT>If the toll cannot be charged by the ETC system for some reason, as with an error when passing the entrance gate, the orange light of the ETC unit blinks and at the same time the voice guidance "Beep, ETC cannot be used, error **<HINTREF     REFID = "H334120007K675K905R0502"/>" is given, indicating that the ETC system cannot be used.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H334120007K675K905R0501">If the toll exceeds 10 × 10,000 yen, the guidance "10 × 10,000 yen or more" is given.</PTXT></ITEM>
+<ITEM><PTXT ID = "H334120007K675K905R0502">** is a unified error code; one of error 01, error 06 or error 07 is announced.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k4670075e" WIDTH = "6.903in" HEIGHT = "2.375in" />
+</FIGURE>
+</MECA>

@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="X387000015Q00MC" category="C" type-id="303QY" name-id="0659T-00" from="200612">
+<dtccode>P0037/27</dtccode>
+<dtcname>O2 Sensor Heater Performance DeteriorationB1S2</dtcname>
+<dtccode>P0038/27</dtccode>
+<dtcname>O2 Sensor Heater OvercurrentB1S2</dtcname>
+<subpara id="X387000015Q00MC_15" type-id="31" category="03" proc-id="RM0550J___00007F900000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>A three-way catalytic converter is used to efficiently purify the CO, HC and NOx in the exhaust gas. This three-way catalytic converter functions most efficiently near the stoichiometric air-fuel ratio. For this reason, CO, HC and NOx cannot be efficiently purified unless the engine is accurately controlled near the stoichiometric air-fuel ratio. The oxygen sensor is installed for the purpose of this control. Using the characteristic that its output voltage changes suddenly when it detects the oxygen concentration in the exhaust gas emitted when normal combustion takes place near the stoichiometric air-fuel ratio, the sensor sends signals to the engine control computer so that air-fuel ratio control can be performed accurately. When the air-fuel ratio becomes lean, the oxygen concentration in the exhaust gas increases, and the oxygen sensor informs the engine control computer that the air-fuel ratio is lean. (Low electromotive force: &lt;0.45V) When the air-fuel ratio becomes rich, the oxygen concentration in the exhaust gas decreases, and the oxygen sensor informs the engine control computer that the air-fuel ratio is rich. (High electromotive force: &gt;0.45V) The engine control computer determines whether the air-fuel ratio is rich or lean from the oxygen sensor electromotive force signal, and controls the injection volume accordingly. A zirconium element is used for the sensor element. The zirconium element is made of platinum-plated zirconia and includes an integrated heating element. The inside of the zirconia element is exposed to outside air and the outside to exhaust gas, and it generates a slight voltage when there is a large difference between the oxygen concentrations of the exhaust gas and the outside air. When heated, the sensor becomes very efficient. When the exhaust temperature is low, the sensor does not generate a useful voltage signal without supplemental heating. For this reason, the oxygen sensor has a heater to warm the zirconium element, and the engine control computer regulates the supplemental heating using a duty cycle approach to adjust the average current in the zirconium element.</ptxt>
+<figure>
+<graphic graphicname="A131740J03" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.9685897     in"/>
+<colspec colnum="02" colname="C02" colwidth="3.231049     in"/>
+<colspec colnum="03" colname="C03" colwidth="2.947281     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0037/27</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>Oxygen sensor heater operating</ptxt>
+</item>
+<item>
+<ptxt>Oxygen sensor 0.3A or less</ptxt>
+</item>
+<item>
+<ptxt>0.5 seconds</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Oxygen Sensor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>EFI NO.2 fuse</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0038/27</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>Oxygen sensor heater operating</ptxt>
+</item>
+<item>
+<ptxt>Oxygen sensor 3.5A or more</ptxt>
+</item>
+<item>
+<ptxt>0.2 seconds</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Oxygen Sensor</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+<item>
+<ptxt>EFI NO.2 fuse</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="X387000015Q00MC_16" type-id="32" category="03" proc-id="RM0550J___00007FA00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A160909J02" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="X387000015Q00MC_17" type-id="51" category="05" proc-id="RM0550J___00007FB00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Using SST (TaSCAN), read the freeze frame data. Freeze frame data records part of the engine operating condition when a malfunction occurs, and this information is useful when troubleshooting.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="X387000015Q00MC_18" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="X387000015Q00MC_18_0019" proc-id="RM0550J___00007FC00000">
+<testtitle>Inspect Oxygen Sensor</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the oxygen sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<figure>
+<graphic graphicname="A162177J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.78in"/>
+<colspec colname="COL2" colwidth="0.96in"/>
+<colspec colname="COL3" colwidth="1.39in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(HT1B) - 2(+B)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 16Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1(HT1B) - 4(E2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X387000015Q00MC_18_0020" fin="false">OK</down>
+<right ref="X387000015Q00MC_18_0028" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X387000015Q00MC_18_0020" proc-id="RM0550J___00007FD00000">
+<testtitle>Inspect Wire Harness and Connector (Power Source Circuit)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage of the oxygen sensor vehicle side connector terminals.</ptxt>
+<figure>
+<graphic graphicname="A162178J01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.78in"/>
+<colspec colname="COL2" colwidth="0.95in"/>
+<colspec colname="COL3" colwidth="1.40in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 (+B) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X387000015Q00MC_18_0021" fin="false">OK</down>
+<right ref="X387000015Q00MC_18_0022" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="X387000015Q00MC_18_0021" proc-id="RM0550J___00007FE00000">
+<testtitle>Inspect Wire Harness and Connector (Engine Control Computer - Oxygen Sensor)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between each terminal of the engine control computer and the oxygen sensor vehicle side connector. (see <xref label="Seep02" href="X39400000QV016D"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="A162179J01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<colspec colname="COL3" colwidth="0.82in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A47(HT1B) - 1(HT1B)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A47 (HT1B) and 1 (HT1B) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X387000015Q00MC_18_0030" fin="true">OK</down>
+<right ref="X387000015Q00MC_18_0029" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X387000015Q00MC_18_0022" proc-id="RM0550J___00007FF00000">
+<testtitle>Inspect Fuse (EFI NO.2)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Remove the EFI NO.2 fuse from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A158103J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>EFI NO.2 fuse</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X387000015Q00MC_18_0023" fin="false">OK</down>
+<right ref="X387000015Q00MC_18_0032" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X387000015Q00MC_18_0023" proc-id="RM0550J___00007FG00000">
+<testtitle>Inspect Wire Harness and Connector (Oxygen Sensor - Fuse (EFI NO. 2))</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the oxygen sensor vehicle side connector and the EFI NO.2 fuse holder.</ptxt>
+<figure>
+<graphic graphicname="A162180J01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<colspec colname="COL3" colwidth="0.82in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2(+B) - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 (+B) and 2 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X387000015Q00MC_18_0024" fin="false">OK</down>
+<right ref="X387000015Q00MC_18_0029" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X387000015Q00MC_18_0024" proc-id="RM0550J___00007FH00000">
+<testtitle>Inspect Wire Harness and Connector (Fuse (EFI NO. 2) - Integration Relay (EFI MAIN Relay))</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/>.</ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Remove the integration relay from the engine room R/B.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the integration relay vehicle side connector and the EFI NO.2 fuse holder.</ptxt>
+<figure>
+<graphic graphicname="A161673J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B4 - 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B4 and 1 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X387000015Q00MC_18_0031" fin="true">OK</down>
+<right ref="X387000015Q00MC_18_0029" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X387000015Q00MC_18_0028">
+<testtitle>Replace Oxygen Sensor<xref label="Seep01" href="RM0000020VZ00AX"/>
+</testtitle>
+</testgrp>
+<testgrp id="X387000015Q00MC_18_0029">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="X387000015Q00MC_18_0030">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X387000015Q00MC_18_0031">
+<testtitle>Inspect Power Supply Circuit</testtitle>
+</testgrp>
+<testgrp id="X387000015Q00MC_18_0032">
+<testtitle>Replace fuse (EFI NO.2)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

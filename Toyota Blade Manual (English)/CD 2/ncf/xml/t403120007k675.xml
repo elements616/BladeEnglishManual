@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARA INFOID = "T120007K675" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     INFOTYPE = "PARTS" INDSW = "ON" SELECT = "ECU List">
+<TITLE>ETC On-board Unit</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The ETC on-board unit consists of the ETC unit, integrated antenna (with built-in ETC antenna function), etc. In addition, to use the ETC system, a setup card<HINTREF     REFID = "H403120007K67501"/> and an ETC card<HINTREF REFID = "H403120007K67502"/> must be prepared.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403120007K67501">The setup card must be applied for at a registered setup store and created separately.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403120007K67502">The ETC card is issued upon application to an ETC card issuer such as a credit card company.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740034e" WIDTH = "6.903in" HEIGHT = "1.583in" />
+</FIGURE>
+<INDICATE ID = "T120007K675I01" INDSW = "OFF">
+<TITLE>List of ETC On-board Unit Components</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "26%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "73%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Components</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Main Functions</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>ETC Unit</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Sounds the buzzer when a malfunction occurs and provides voice guidance when the ETC unit is operated.</PTXT></ITEM>
+<ITEM><PTXT>Contains a card holder and processes the inserted ETC card.</PTXT></ITEM>
+<ITEM><PTXT>Indicates the system operating status with indicator lights. (System operating: green light ON, system malfunction: orange light blinking, not set up: orange light ON)</PTXT></ITEM>
+<ITEM><PTXT>Performs processing related to toll collection.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Integrated Antenna</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Transmits and receives ETC system radio waves.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>ETC Card</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>An IC is built into the card; when the ETC unit recognizes the ETC card, the system enters the ETC card authentication completed state.</PTXT></ITEM>
+<ITEM><PTXT>Information required for toll collection, toll history information, registration information, etc. are stored in the IC in the card.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Setup Card</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Performs registration processing of the ETC system and puts the system in the set-up state (information registered).</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>HDD Navigation System</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Displays toll-related information on screen and provides voice guidance through the front door speakers.</PTXT></ITEM>
+<ITEM><PTXT>If there is guidance information when passing an advance notice antenna<HINTREF REFID = "H403120007K67503"/>, the guidance information is displayed on screen.</PTXT></ITEM>
+<ITEM><PTXT>If an ETC card is not inserted when passing an ETC card non-insertion notification antenna<HINTREF REFID = "H403120007K67504"/>, guidance is given via on-screen display.</PTXT></ITEM>
+<ITEM><PTXT>Displays history information, ETC settings and registration information.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H403120007K67503">An advance notice antenna may be installed before a tollgate, and provides guidance information through wireless communication with the ETC on-board unit.</PTXT></ITEM>
+<ITEM><PTXT ID = "H403120007K67504">An ETC card not inserted notification antenna may be installed before a tollgate, and notifies the driver that the ETC card has not been inserted or is not inserted properly.</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+&T120007K675K902;
+&T120007K675K456;
+&T120007K675K903;
+&T120007K675K904;
+&T120007K675K905;
+&T120007K675K906;
+&T120007K675K907;
+&T120007K675K908;
+&T120007K675K909;
+&T120007K675K910;
+&T120007K675K911;
+&T120007K675K097;
+&T120007K675K075;
+</PARA>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T130011K255K176" UPDATE = "ORIGINAL" LDUP = "29Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Power Window Initialization Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>In this system, a pulse sensor electrically reads the door glass position from the rotation of the motor, and various functions are controlled based on this information.</PTXT></ITEM>
+<ITEM><PTXT>When the power window motor assembly, window regulator assembly, etc. has been replaced, the current door glass position information stored by the system is lost, so an initialization operation must be performed to have the system "learn" the door glass position.</PTXT></ITEM>
+<ITEM><PTXT>Note that if the system has not "learned" the current door glass position, some functions such as the jam protection function will not operate.</PTXT></ITEM></LIST1>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1"><TITLE>Initialization Operation</TITLE>
+<TGROUP COLS = "1" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Frame">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "99%"/>
+<TBODY>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><LIST1 TYPE = "UNORDERED"><ITEM>
+<PTXT>Turn the IG ON and move the door glass to any position. Next, hold the door glass switch in the auto up position, and when the switch continues to be held in the auto up position for approximately 1 seconds after the door glass has fully closed, the system stores the fully closed position of the door glass as the reference position (origin0)<HINTREF     REFID = "H478130011K255K17601"/>.</PTXT></ITEM>
+<ITEM><PTXT>After the initialization operation, always perform a function check of the power window system. For details of the initialization operation and function check, refer to the Repair Manual.</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE>
+<HINT>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT ID = "H478130011K255K17601">The reference position (origin 0) of the door glass is updated each time the fully closed state is detected.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740036b" WIDTH = "6.903in" HEIGHT = "2.806in" />
+</FIGURE>
+</MECA>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- $Id: ppr_contents.html,v 1.8 2004/04/01 07:37:35 s-okino Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Preparation</title>
+
+
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/dom.js"></script>
+<script language="javascript">
+//
+//  初期化
+//
+function init() {
+	var args = window.dialogArguments;
+	if (args == null || args.length == null || args.length == 0 ) {
+		alert("There is no applicable preparation.");
+		//window.close();
+		return;
+	}
+	var paraItems = args;
+	//var paraItems = new Array("X32100001000087","X32100001000088");;
+	var dispPage  = "";
+	var pprXsl    = initXsl("../../xsl/utl/preparation.xsl");
+	var objTemp   = new ActiveXObject("Msxml2.XSLTemplate");
+	objTemp.stylesheet = pprXsl;
+	var objProc   = objTemp.createProcessor();
+	
+	var tocXml = initXml("toc_rpr.xml");
+
+	//全部品の表示ページを組み合わせる
+	for (var i=0; i<paraItems.length; i++) {
+		paraId = paraItems[i];
+		var pprXml = initXml("ppr_" + paraId.toLowerCase() + ".xml",false,false);
+		if ( pprXml == null ) {
+			alert("There is no applicable preparation. [Preparation ID:"+paraId +"]");
+			continue;
+		}
+		var paraParentParameter = getParaParentParameter(tocXml , paraId );
+		var paraName    = findParameterValue("paraname" , paraParentParameter);
+		var titleName   = findParameterValue("ttlname" , paraParentParameter);
+		var sectionName = findParameterValue("sectionname" , paraParentParameter);
+		var dispStt ="<p class='location'>"+sectionName+"／"+titleName+"／"+paraName+"</p>";
+
+		
+		objProc.input = pprXml ;
+		objProc.transform();
+		//表示画面ソースを作成する
+		dispPage += dispStt; 
+		dispPage += objProc.output; 
+		dispPage += "<br/><br/>"; 
+		//alert("dispPage ="+dispPage );
+	}
+
+	//組み合わせる全部品ページを新しい画面で表示する
+	disp.innerHTML = dispPage ;
+}
+</script>
+</head>
+<body onLoad="init();">
+<div id="disp"></div>
+</body>
+</html>

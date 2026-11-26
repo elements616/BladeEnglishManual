@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T120007K675K903" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Setting the ETC Card</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>To use the ETC system, the ETC card must be set (authenticated).</PTXT></ITEM>
+<ITEM><PTXT>With the power source mode ON (IG) (after initial processing is completed), insert the "ETC card" into the ETC unit. When the ETC card is inserted, the green light of the ETC unit blinks together with the guidance sound "Beep", and the ETC card is authenticated. When ETC card authentication is completed, the green light illuminates together with the voice guidance "Bong, ETC card inserted".</PTXT></ITEM>
+<ITEM><PTXT>If authentication cannot be performed due to improper card insertion, etc., the green light does not come on and the orange light blinks along with the voice guidance "Beep beep, cannot read card, error **<HINTREF     REFID = "H403120007K675K90301"/>". (In this case, remove the ETC card, check the insertion direction of the ETC card, and then insert the ETC card into the ETC unit again.)</PTXT></ITEM>
+<ITEM><PTXT>If the ETC unit has not been initialized (setup processing), the green light does not illuminate and the orange light blinks together with the voice guidance "Beep beep, not set up". (In this case, remove the ETC card, perform registration processing of the ETC unit, and then insert the ETC card into the ETC unit again.)</PTXT></ITEM>
+<ITEM><PTXT>When using the ETC system, leave the ETC card inserted in the ETC unit.</PTXT></ITEM>
+<ITEM><PTXT>When the ETC menu is displayed on the HDD navigation system display, "Authenticating" → "ETC Card Authentication Completed" is displayed in the ETC card message display area.</PTXT></ITEM></LIST1>
+<HINT>
+<LIST1><ITEM><PTXT ID = "H403120007K675K90301">One of error 02, error 03 or error 05 is announced as a unified error code.</PTXT></ITEM></LIST1></HINT>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740112e" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+</MECA>

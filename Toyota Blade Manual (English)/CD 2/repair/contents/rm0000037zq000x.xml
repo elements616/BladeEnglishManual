@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="06">
+<name>Brake</name>
+<section id="1000N_S0010" variety="S0010">
+<name>Brake</name>
+<ttl id="1000N_S0010_744Y5_T009Q" variety="T009Q">
+<name>Front Brake</name>
+<para id="RM0000037ZQ000X" category="A" type-id="8000D" name-id="4516P-00" from="200708">
+<name>Inspection</name>
+<subpara id="RM0000037ZQ000X_01" type-id="01" category="01">
+<s-1 id="RM0000037ZQ000X_01_0001" proc-id="RM0550J___0000CHK00000">
+<ptxt>Inspect Disc Brake Piston and Cylinder</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check that the side surface of the disc brake piston and the inner surface of the cylinder are not damaged.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000037ZQ000X_01_0002" proc-id="RM0550J___0000CHL00000">
+<ptxt>Inspect Disc Brake Pad Thickness</ptxt>
+<content1 releasenbr="1">
+<spec>
+<title>Limit</title>
+<specitem>
+<ptxt>1.0mm</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Reference Value</title>
+<specitem>
+<ptxt>12.0mm (new)</ptxt>
+</specitem>
+</spec>
+</content1>
+</s-1>
+<s-1 id="RM0000037ZQ000X_01_0003" proc-id="RM0550J___0000CHM00000">
+<ptxt>Inspect Front Disc Brake Pad Support Plate No.1</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Clean the pad contact surfaces and mounting contact surfaces of front disc brake pad support plate No.1 with brake cleaner, and check for deformation, cracks, rust and foreign matter that is difficult to remove.</ptxt>
+</s2>
+<s2>
+<ptxt>When installing front disc brake pad support plate No.1 to the cylinder mounting, clean the pad support plate contact surfaces of the cylinder mounting with brake cleaner, and with the plate installed to the cylinder mounting, check for looseness and deformation.</ptxt>
+</s2>
+<s2>
+<ptxt>When installing the pads, check that the support has sufficient spring force and the pads do not easily come off after installation.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000037ZQ000X_01_0004" proc-id="RM0550J___0000CHN00000">
+<ptxt>Inspect Front Disc Brake Pad Support Plate No.2</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>Inspect using the same procedure as for front disc brake pad support plate No.1.</ptxt>
+</atten4>
+</content1>
+</s-1>
+<s-1 id="RM0000037ZQ000X_01_0005" proc-id="RM0550J___0000CHO00000">
+<ptxt>Inspect Disc Thickness</ptxt>
+<content1 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Model</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Limit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Reference value (when new)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>AZE156H system</ptxt>
+<ptxt>AZE154H system</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>22.0mm</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>25.0mm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GRE156H system</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>25.0mm</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>28.0mm</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content1>
+</s-1>
+<s-1 id="RM0000037ZQ000X_01_0006" proc-id="RM0550J___0000CHP00000">
+<ptxt>Inspect Disc Runout</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Before inspecting the disc runout, inspect the front axle hub bearing looseness and the front axle hub runout. (see <xref label="Seep01" href="RM000000UL100CX_04_0066"/>)</ptxt>
+</s2>
+<s2>
+<ptxt>Align the matchmarks on the disc and axle hub, and secure the disc with the hub nuts.</ptxt>
+<figure>
+<graphic graphicname="C150099J01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<torque>
+<torqueitem>
+<t-value1>103</t-value1>
+<t-value2>1050</t-value2>
+</torqueitem>
+</torque>
+</s2>
+<s2>
+<ptxt>Using a dial indicator, measure the disc runout at 10mm inside the outer edge of the disc.</ptxt>
+<figure>
+<graphic graphicname="C150103" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Limit</title>
+<specitem>
+<ptxt>0.05mm</ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>If the runout exceeds the limit, change the installation position of the disc relative to the axle hub so that the runout is minimized. If the runout still exceeds the limit after changing the position of the disc relative to the axle hub, machine the disc. If the thickness after machining is less than the disc thickness limit, replace the disc with a new one.</ptxt>
+</atten3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

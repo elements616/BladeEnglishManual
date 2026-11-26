@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="11">
+<name>Control System</name>
+<section id="1001O_S001F" variety="S001F">
+<name>Cruise Control</name>
+<ttl id="1001O_S001F_74QXK_T00FJ" variety="T00FJ">
+<name>Spiral Cable Sub-assembly</name>
+<para id="RM000000XOQ00JX" category="G" type-id="3001K" name-id="59146-00" from="200708">
+<name>Component Inspection</name>
+<subpara id="RM000000XOQ00JX_01" type-id="01" category="01">
+<s-1 id="RM000000XOQ00JX_01_0002" proc-id="RM0550J___0000CCU00000">
+<ptxt>Inspect Spiral Cable Sub-assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Set the spiral cable to the center position. (see <xref label="Seep01" href="RM000000QFE009X_02_0046"/>)</ptxt>
+</s2>
+<s2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the spiral cable under the following conditions.</ptxt>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<figure>
+<graphic graphicname="E137642J04" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<s3>
+<ptxt>After centering the spiral cable, perform the inspection at the position turned 2.5 turns clockwise and at the position turned 2.5 turns counterclockwise.</ptxt>
+</s3>
+<s3>
+<ptxt>Set the spiral cable to the position rotated 2.5 turns clockwise from the center position, and measure while rotating it 5.0 turns counterclockwise.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A4 - C11</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A6 - C2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1 - C7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B3 - C1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B4 - C2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>Do not rotate the spiral cable more than the specified number of turns, as it may break.</ptxt>
+</atten3>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

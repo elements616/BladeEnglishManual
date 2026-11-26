@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T120028K304K368" UPDATE = "ORIGINAL" LDUP = "28Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
+<TITLE>Front Wiper Operation</TITLE>
+<LIST1 TYPE = "UNORDERED"><TITLE>Time Adjustable Intermittent Operation</TITLE>
+<ITEM><PTXT>When the wiper control switch is moved to the INT position, current flows from the fully charged capacitor C1 through wiper control switch terminal INT1 → wiper control switch terminal INT2 → Tr1, and Tr1 turns ON.</PTXT></ITEM>
+<ITEM><PTXT>When Tr1 turns ON, current flows through wiper control switch terminal +S → wiper control switch terminal +1 → wiper motor → ground, and the motor rotates.</PTXT></ITEM>
+<ITEM><PTXT>At the same time as the motor rotates, capacitor C1 discharges through wiper control switch terminal INT1 → wiper control switch terminal INT2; when discharge is complete, Tr1 turns OFF, so the relay contact turns OFF and the wiper motor stops.</PTXT></ITEM>
+<ITEM><PTXT>When the relay contact turns OFF, capacitor C1 starts charging again, and Tr1 stays OFF until charging is complete; this is the intermittent stop time.</PTXT></ITEM>
+<ITEM><PTXT>When charging of capacitor C1 is complete, Tr1 turns ON and the relay contact turns ON, so the wiper motor rotates again.</PTXT></ITEM>
+<ITEM><PTXT>The repetition of the above discharging and charging is the intermittent operation.</PTXT></ITEM>
+<ITEM><PTXT>In time adjustable intermittent operation, adjusting the knob (variable resistor) changes the amount of current flowing from +IG to capacitor C1, changing the charging time of capacitor C1 from a minimum of approximately 1.6 seconds to a maximum of approximately 10.7 seconds. This changes the relay contact OFF time (intermittent operation time) during intermittent operation.</PTXT></ITEM></LIST1>
+<LIST1 TYPE = "UNORDERED"><TITLE>Washer-linked operation</TITLE>
+<ITEM><PTXT>When the washer switch is turned ON, current flows through the +B power supply → washer motor → washer switch terminal W → washer switch terminal EW → ground, so the washer fluid sprays.</PTXT></ITEM>
+<ITEM><PTXT>At the same time as the washer fluid sprays, current flows to Tr2, so Tr2 turns ON. When Tr2 turns ON, Tr1 also turns ON, current flows through the relay coil and the relay contact turns ON.</PTXT></ITEM>
+<ITEM><PTXT>When the relay contact turns ON, current flows through wiper control switch terminal +S → wiper control switch terminal +1 → wiper motor → ground, and the wiper motor rotates.</PTXT></ITEM>
+<ITEM><PTXT>When the motor rotates, capacitor C2 has completed charging, so capacitor C2 discharges for approximately 2.2 seconds even after the washer switch is turned OFF.</PTXT></ITEM>
+<ITEM><PTXT>Since the capacitor discharges for approximately 2.2 seconds, Tr1 also stays ON for approximately 2.2 seconds, so the wiper motor continues to rotate; when capacitor C2 completes discharging, the wiper motor stops.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "k3960085e" WIDTH = "6.903in" HEIGHT = "4.528in" />
+</FIGURE>
+</MECA>

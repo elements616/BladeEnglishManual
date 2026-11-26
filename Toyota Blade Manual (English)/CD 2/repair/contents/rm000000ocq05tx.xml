@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002Q_S000F" variety="S000F">
+<name>Navigation</name>
+<ttl id="1002Q_S000F_746OU_T00CJ" variety="T00CJ">
+<name>HDD Navigation System</name>
+<para id="RM000000OCQ05TX" category="D" type-id="303F4" name-id="NS5ER-02" from="200912">
+<name>DTC Check/Clear</name>
+<subpara id="RM000000OCQ05TX_z0" proc-id="RM0550J___0000IGE00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Read DTC (Read Using TaSCAN)</ptxt>
+<step2>
+<ptxt>Turn IG OFF.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Start the engine, select "Diagnosis" → "Vehicle Diagnosis/All DTCs" or "Body" → "System Name/Navigation System" → "DTC" on the SST (TaSCAN) screen to display the DTC check screen.</ptxt>
+</step2>
+<step2>
+<ptxt>Check the diagnostic trouble codes.</ptxt>
+<atten3>
+<ptxt>Always check DTCs with the engine running.</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If a malfunction code is displayed, refer to the DTC Chart (<xref label="Seep01" href="RM0000002RS05SX"/>).</ptxt>
+</item>
+<item>
+<ptxt>The navigation receiver assembly outputs DTCs for the following systems. If a DTC not listed in the HDD navigation system - Diagnostic Trouble Code Chart is output, refer to the other system.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>System Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Back Guide Monitor System</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep05" href="RM0000002O403WX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ETC System</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep08" href="RM000001US9017X"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+<item>
+<ptxt>After repair, check the DTCs again and confirm that no malfunction code is output.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>Clear DTC Memory (Clear Using TaSCAN)</ptxt>
+<step2>
+<ptxt>Turn IG OFF.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70201</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Start the engine, select "Diagnosis" → "Vehicle Diagnosis/All DTCs" or "Body" → "System Name/Navigation System" → "DTC" on the SST (TaSCAN) screen to display the DTC check screen.</ptxt>
+</step2>
+<step2>
+<ptxt>Select "Clear" and clear the DTCs following the screen instructions.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Read DTC (Read Using MM System Diagnosis)</ptxt>
+<atten4>
+<ptxt>For starting diagnosis and screen transitions, refer to <xref label="Seep02" href="RM0000002RV04DX"/>.</ptxt>
+</atten4>
+<step2>
+<ptxt>Start diagnosis and display the service inspection menu screen.</ptxt>
+</step2>
+<step2>
+<ptxt>Select "Diagnosis/Diagnostic Information Collection" on the service inspection menu screen to display the diagnosis/diagnostic information collection screen.</ptxt>
+</step2>
+<step2>
+<ptxt>Select "MM System Diagnosis" on the Diagnosis/Diagnostic Information Collection screen to display the MM System Diagnosis screen.</ptxt>
+<figure>
+<graphic graphicname="E195386J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<title>Service Inspection Screen Display Contents</title>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.50in"/>
+<colspec colname="COL2" colwidth="2.63in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Meaning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Device Name</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Displays names, including retrofitted parts (displays the physical address if the name is unknown)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Inspection Result</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Displays the inspection result</ptxt>
+<ptxt>(AVC-LAN/USB Connected Devices)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<step3>
+<ptxt>Confirm that each of the following connected devices is displayed.</ptxt>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="0.99in"/>
+<colspec colname="COL2" colwidth="2.07in"/>
+<colspec colname="COL3" colwidth="1.07in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Device Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Part Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connection Method</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AVN</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Navigation Receiver Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>USB BOX</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Multimedia Interface ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>AVC-LAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ETC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Toll Collection (ETC) Computer Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>AVC-LAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Telephone Microphone Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Direct input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AUX</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stereo Jack Adapter Assembly NO.1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Direct input</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The inspection is performed when diagnosis is started and the MM System Diagnosis screen is displayed.</ptxt>
+</item>
+<item>
+<ptxt>MM System Diagnosis displays the inspection results on the screen based on information such as each device's response to the "System Check Instruction" and "Diag Memory Display Request" and "Normal Diag Notification".</ptxt>
+</item>
+<item>
+<ptxt>The screen is an example; depending on the connected devices, such as dealer-installed options, the device names displayed may differ from the actual screen.</ptxt>
+</item>
+<item>
+<ptxt>If "MIC" is not displayed, it can be determined that the vehicle wire harness or connector between the navigation receiver assembly and the telephone microphone assembly is defective. (For the procedure, refer to <xref label="Seep11" href="RM0000016A303FX"/>)</ptxt>
+</item>
+<item>
+<ptxt>If "AUX" is not displayed, it can be determined that the vehicle wire harness or connector between the navigation receiver assembly and the stereo jack adapter assembly NO.1 is defective. (see <xref label="Seep12" href="RM000004BQM000X"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+<step3>
+<ptxt>Read Inspection Results (AVC-LAN Connected Devices)</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.00in"/>
+<colspec colname="COL2" colwidth="5.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Inspection Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Meaning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No DTC input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Replace</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A DTC indicating that replacement is required has been input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Check</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A DTC indicating that diagnosis is required has been input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Not Connected</ptxt>
+<ptxt>(*1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Previously registered in the system, but there is no response when diagnosis is started or no response at registration</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No Response</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>There is a response when diagnosis is started, but no diagnosis information is returned</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Connected to AVC-LAN, but neither the device name nor the inspection result is displayed</ptxt>
+<ptxt>(*1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>There is no history of registration in the system, and there is no response when diagnosis is started</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>*1: If all AVC-LAN connected devices are displayed as "Not Connected" or no AVC-LAN connected devices are displayed, refer to Troubleshooting Flowchart [AVC-LAN Malfunction] (<xref label="Seep13" href="RM0000007EM049X"/>).</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Individual Diagnosis</ptxt>
+<figure>
+<graphic graphicname="E150512J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>When the inspection result is "Replace" or "Check", select this display to move to the individual diagnosis screen.</ptxt>
+</step3>
+<step3>
+<ptxt>Check and record the content of the output DTCs.</ptxt>
+<table>
+<title>Individual Diagnosis Screen Display Contents  </title>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.50in"/>
+<colspec colname="COL2" colwidth="2.63in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Meaning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Device Name</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Name of target device</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Diagnostic Trouble Code (DTC)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Diagnostic Trouble Code (DTC)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Current Code</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Displays DTCs input during system inspection (up to 6 items)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>History Code</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Displays diagnosis memory collection results and normal diagnosis notification contents (up to 6 items)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Clear Diagnosis</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Clears the diagnosis information of the target device and clears the display (press and hold for 3 seconds)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>The navigation receiver assembly stores up to 6 codes. If output of 6 or more codes is expected, check the DTCs using SST (TaSCAN).</ptxt>
+</atten3>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Clear DTC (Clear Using MM System Diagnosis)</ptxt>
+<step2>
+<ptxt>Clearing DTCs</ptxt>
+<figure>
+<graphic graphicname="E150512J01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Select "Clear Diag" (press and hold for 3 seconds or more) on the individual diagnosis screen to clear the DTCs.</ptxt>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

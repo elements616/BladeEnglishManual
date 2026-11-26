@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="X39400000RP01BC" category="C" type-id="302EW" name-id="065AJ-00" from="200612">
+<dtccode>P2120/19</dtccode>
+<dtcname>Accelerator Sensor Open Circuit</dtcname>
+<dtccode>P2121/19</dtccode>
+<dtcname>Accelerator Sensor Out of Range</dtcname>
+<dtccode>P2122/19</dtccode>
+<dtcname>Accelerator Sensor No.1 Open Circuit (Low)</dtcname>
+<dtccode>P2123/19</dtccode>
+<dtcname>Accelerator Sensor No.1 Open Circuit (High)</dtcname>
+<dtccode>P2125/19</dtccode>
+<dtcname>Accelerator Sensor No.2 Open Circuit</dtcname>
+<dtccode>P2127/19</dtccode>
+<dtcname>Accelerator Sensor No.2 Open Circuit (Low)</dtcname>
+<dtccode>P2128/19</dtccode>
+<dtcname>Accelerator Sensor No.2 Open Circuit (High)</dtcname>
+<dtccode>P2138/19</dtccode>
+<dtcname>Accelerator Sensor Open Circuit</dtcname>
+<subpara id="X39400000RP01BC_15" type-id="31" category="03" proc-id="RM0550J___00002S800000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>The accelerator pedal sensor assembly has a 2-system internal structure with different output characteristics, and converts the accelerator opening angle (accelerator pedal depression amount) into a linear voltage signal of approximately 0 to 5V, which it outputs to the engine control computer.</ptxt>
+<figure>
+<graphic graphicname="A152915J02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.9583643     in"/>
+<colspec colnum="02" colname="C02" colwidth="3.182302     in"/>
+<colspec colnum="03" colname="C03" colwidth="3.006254     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTCNo.</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P2120/19</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>VPA voltage 4.8V or more, or VPA voltage 0.4V or less and VPA2 opening angle 0.97° or more (VPA circuit malfunction)</ptxt>
+</item>
+<item>
+<ptxt>0.5 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Accelerator Pedal Sensor Assembly</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P2121/19</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Characteristic malfunction of VPA and VPA2 sensors</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Accelerator Pedal Sensor Assembly</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P2122/19</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>VPA voltage 0.4V or less and VPA2 opening angle 0.97° or more (open in VPA circuit)</ptxt>
+</item>
+<item>
+<ptxt>0.5 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Accelerator Pedal Sensor Assembly</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P2123/19</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>VPA voltage 4.8V or more (short in VPA circuit)</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Accelerator Pedal Sensor Assembly</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P2125/19</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>VPA2 voltage 1.2V or less and VPA opening angle 0.97° or more, or VPA2 voltage 4.8V or more with VPA voltage 0.4V or more and 3.45V or less (VPA2 circuit malfunction)</ptxt>
+</item>
+<item>
+<ptxt>0.5 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Accelerator Pedal Sensor Assembly</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P2127/19</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>VPA2 voltage 1.2V or less and VPA opening angle 0.97° or more (open in VPA2 circuit)</ptxt>
+</item>
+<item>
+<ptxt>0.5 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Accelerator Pedal Sensor Assembly</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P2128/19</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>VPA2 voltage 4.8V or more and VPA voltage 0.4V-3.45V or less (short in VPA2 circuit)</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Accelerator Pedal Sensor Assembly</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P2138/19</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>IG ON</ptxt>
+</item>
+<item>
+<ptxt>Difference between VPA and VPA2 voltages 0.02V or less, or VPA voltage 0.4V or less and VPA2 voltage 1.2V or less (open or short in VPA and VPA2 circuits)</ptxt>
+</item>
+<item>
+<ptxt>2 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Accelerator Pedal Sensor Assembly</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>After checking the DTC output, check the accelerator pedal opening angle and accelerator closed position using SST (TaSCAN).</ptxt>
+</atten4>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="5" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.429384     in"/>
+<colspec colnum="02" colname="C02" colwidth="1.429384     in"/>
+<colspec colnum="03" colname="C03" colwidth="1.429384     in"/>
+<colspec colnum="04" colname="C04" colwidth="1.429384     in"/>
+<colspec colnum="05" colname="C05" colwidth="1.429384     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Accelerator sensor No.1 voltage</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Accelerator sensor No.1 voltage</ptxt>
+<ptxt>Accelerator pedal fully open</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Accelerator sensor No.2 voltage</ptxt>
+<ptxt>Accelerator pedal fully closed</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>Accelerator No.2 Sensor Voltage</ptxt>
+<ptxt>Accelerator pedal fully open</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>0.5 to 1.1V</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>2.6 to 4.5V</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>1.2 to 2.0V</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>3.4 to 5.0V</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="center">
+<ptxt>System Normal</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>0V</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>0V</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>0V</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>0V</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="center">
+<ptxt>VCPA or VCP2 circuit open</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>4.8V or more</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>4.8V or more</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>4.8V or more</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>4.8V or more</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="center">
+<ptxt>EPA or EPA2 circuit open</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>0V or 5.5V</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>0V or 5.5V</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>1.2 to 2.0V</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>3.4 to 5.0V</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="center">
+<ptxt>VPA circuit open or short</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>0.5 to 1.1V</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>2.6 to 4.5V</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>0V or 5.5V</ptxt>
+</entry>
+<entry colname="C04" valign="middle" align="center">
+<ptxt>0V or 5.5V</ptxt>
+</entry>
+<entry colname="C05" valign="middle" align="center">
+<ptxt>VPA2 circuit open or short</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="X39400000RP01BC_16" type-id="32" category="03" proc-id="RM0550J___00002S900000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A095536J12" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="X39400000RP01BC_17" type-id="51" category="05" proc-id="RM0550J___00002SA00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Using SST (TaSCAN), read the freeze data. Freeze data records part of the engine operating condition when a malfunction occurs, and this information is useful when troubleshooting.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="X39400000RP01BC_18" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="X39400000RP01BC_18_0027" proc-id="RM0550J___00002SB00000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Accelerator Sensor No.1 Voltage / Accelerator Sensor No.2 Voltage)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+<figure>
+<graphic graphicname="FI07052J05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (TaSCAN), operate according to the screen display and select [ECU Data Monitor].</ptxt>
+</test1>
+<test1>
+<ptxt>Read [Accelerator Sensor No.1 Voltage] and [Accelerator Sensor No.2 Voltage] displayed on SST (TaSCAN).</ptxt>
+<spec>
+<title>Voltage</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="1.118528     in"/>
+<colspec colnum="02" colname="C02" colwidth="1.533638     in"/>
+<colspec colnum="03" colname="C03" colwidth="1.533638     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Pedal Condition</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Accelerator sensor No.1 voltage</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Accelerator sensor No.2 voltage</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Fully closed</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>0.5 to 1.1V</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>1.2 to 2.0V</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Fully open</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>2.6 to 4.5V</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>3.4 to 5.0V</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Fully closed → fully open → fully closed</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Voltage changes without interruption</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Voltage changes without interruption</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RP01BC_18_0032" fin="true">OK</down>
+<right ref="X39400000RP01BC_18_0030" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RP01BC_18_0030" proc-id="RM0550J___00002SC00000">
+<testtitle>Inspect Wire Harness and Connector (Engine Control Computer - Accelerator Pedal Sensor Assembly)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect engine control computer connector B and the accelerator pedal sensor assembly connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the engine control computer and the accelerator pedal sensor assembly vehicle side connector terminals. (see <xref label="Seep02" href="X39400000QV016D"/> for Terminals of ECU)</ptxt>
+<figure>
+<graphic graphicname="A115665J08" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C01" colwidth="1.52in"/>
+<colspec colnum="2" colname="COLSPEC0" colwidth="1.31in"/>
+<colspec colnum="3" colname="C02" colwidth="1.3in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B58(VCP2) - 1(VCP2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B60(EPA2) - 2(EPA2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B56(VPA2) - 3(VPA2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B57(VCPA) - 4(VCPA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B59(EPA) - 5(EPA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B55(VPA) - 6(VPA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>B58 (VCP2) and 1 (VCP2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>B60 (EPA2) and 2 (EPA2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>B56 (VPA2) and 3 (VPA2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>B57 (VCPA) and 4 (VCPA) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>B59 (EPA) and 5 (EPA) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>B55 (VPA) and 6 (VPA) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RP01BC_18_0035" fin="false">OK</down>
+<right ref="X39400000RP01BC_18_0034" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RP01BC_18_0035" proc-id="RM0550J___00002SD00000">
+<testtitle>Inspect Wire Harness and Connector (Accelerator Pedal Sensor Power Source System)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect connector B of the engine control computer.</ptxt>
+<figure>
+<graphic graphicname="A115666J06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn IG ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage of the accelerator pedal sensor assembly vehicle side connector terminals.</ptxt>
+<spec>
+<title>Voltage</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.75in"/>
+<colspec colname="COLSPEC1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4 (VCPA) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.5V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (VCP2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.5V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance of the accelerator pedal sensor assembly vehicle side connector terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.74in"/>
+<colspec colname="COLSPEC2" colwidth="1.23in"/>
+<colspec colname="COL2" colwidth="1.16in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5 (EPA) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 (EPA2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RP01BC_18_0031" fin="false">OK</down>
+<right ref="X39400000RP01BC_18_0033" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RP01BC_18_0031" proc-id="RM0550J___00008IC00000">
+<testtitle>Replace Accelerator Pedal Sensor Assembly</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the accelerator pedal sensor assembly replacement procedure, refer to <xref label="Seep01" href="RM0000030GP000X"/></ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="X39400000RP01BC_18_0036" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="X39400000RP01BC_18_0036" proc-id="RM0550J___00002SE00000">
+<scantool type="2"/>
+<testtitle>Clear DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and clear the DTCs following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RP01BC_18_0037" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="X39400000RP01BC_18_0037" proc-id="RM0550J___00002SF00000">
+<scantool type="1"/>
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="2">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Perform a road test.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the IG ON and check the DTCs following the SST (TaSCAN) screen display. (see <xref label="Seep01" href="RM000000CCX015X"/>)</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt/>
+</specitem>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.15in"/>
+<colspec colname="COL2" colwidth="0.98in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTCs are displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No DTCs are displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>The DTC judgment can be confirmed using the [Diagnosis Judgment Result Check] function of SST (TaSCAN). (see <xref label="Seep02" href="RM000000CCX015X"/>)</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="X39400000RP01BC_18_0033" fin="true">A</down>
+<right ref="X39400000RP01BC_18_0038" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="X39400000RP01BC_18_0032">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000CD101FX"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000RP01BC_18_0034">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="X39400000RP01BC_18_0033">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="X39400000RP01BC_18_0038">
+<testtitle>System Normal</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

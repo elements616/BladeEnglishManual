@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001A_S0009" variety="S0009">
+<name>Lighting</name>
+<ttl id="1001A_S0009_7420N_T0015" variety="T0015">
+<name>Lighting System</name>
+<para id="RM0000005KJ00MX" category="U" type-id="303FJ" name-id="603KQ-00" from="200612">
+<name>ECU Data Monitor/Active Test</name>
+<subpara id="RM0000005KJ00MX_z0" proc-id="RM0550J___00000RP00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Inspection Using TaSCAN (ECU Data Monitor)</ptxt>
+<step2>
+<ptxt>Using SST (TaSCAN), follow the prompts on the screen to display the "ECU Data Monitor" screen and check the computer data.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[System selection screen: Body → Main Body → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.33in"/>
+<colspec colname="COL3" colwidth="2.49in"/>
+<colspec colname="COL4" colwidth="0.84in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name (Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side Lock Position SW</ptxt>
+<ptxt>(LSWD)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side door lock status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Driver side door locked</ptxt>
+<ptxt>ON: Driver side door unlocked</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side Courtesy SW</ptxt>
+<ptxt>(DCTY)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front door courtesy light switch (RH) status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Driver side door closed</ptxt>
+<ptxt>ON: Driver side door open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front Passenger Side Courtesy SW</ptxt>
+<ptxt>(PCTY)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front door courtesy light switch (LH) status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Front passenger side door closed</ptxt>
+<ptxt>ON: Front passenger side door open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear RH Courtesy SW</ptxt>
+<ptxt>(RCTY)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear door courtesy light switch (RH) status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Rear RH door closed</ptxt>
+<ptxt>ON: Rear RH door open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear LH Courtesy SW</ptxt>
+<ptxt>(LCTY)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear door courtesy light switch (LH) status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Rear LH door closed</ptxt>
+<ptxt>ON: Rear LH door open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Back Door Courtesy SW</ptxt>
+<ptxt>(BCTY)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Back door courtesy light switch status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Back door closed</ptxt>
+<ptxt>ON: Back door open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Luggage Courtesy SW</ptxt>
+<ptxt>(LGCY)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage courtesy light switch status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Back door closed</ptxt>
+<ptxt>ON: Back door open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IG SW</ptxt>
+<ptxt>(IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG signal status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF:IG OFF</ptxt>
+<ptxt>ON:IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ACC SW</ptxt>
+<ptxt>(ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACC signal status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF:IG OFF</ptxt>
+<ptxt>ON:ACC ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Dimmer Hi SW</ptxt>
+<ptxt>(HI)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Headlight dimmer switch (HI) status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Headlight dimmer switch OFF</ptxt>
+<ptxt>ON: Headlight dimmer switch HI</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Passing SW</ptxt>
+<ptxt>(PASS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Headlight dimmer switch (flash) status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Headlight dimmer switch (flash) OFF</ptxt>
+<ptxt>ON: Headlight dimmer switch (flash) ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front Fog SW</ptxt>
+<ptxt>(FFOG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front fog light switch status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Front fog light switch OFF</ptxt>
+<ptxt>ON: Front fog light switch ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Auto SW</ptxt>
+<ptxt>(AUSW)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch (AUTO) status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Light control switch OFF</ptxt>
+<ptxt>ON: Light control switch AUTO</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Headlight SW</ptxt>
+<ptxt>(HEAD)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch (HEAD) status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Light control switch OFF</ptxt>
+<ptxt>ON: Light control switch HEAD</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tail Light SW</ptxt>
+<ptxt>(TAIL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch (TAIL) status</ptxt>
+<ptxt>Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Light control switch OFF</ptxt>
+<ptxt>ON: Light control switch TAIL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Light Sensor Illuminance Information</ptxt>
+<ptxt>(LSEN)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Automatic light control sensor status</ptxt>
+<ptxt>Display Range: 0 to 235600</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Outputs a value according to brightness (unit: lx)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Displays 0 when there is no light</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>[System selection screen: Body → Auto Leveling → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.32in"/>
+<colspec colname="COL3" colwidth="2.48in"/>
+<colspec colname="COL4" colwidth="0.86in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name (Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Low Beam Status</ptxt>
+<ptxt>(LOBM)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Headlight low beam illumination status</ptxt>
+<ptxt>Display range: Off - On</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Off: Light control switch OFF</ptxt>
+<ptxt>On: Light control switch HEAD</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Height Sensor Voltage</ptxt>
+<ptxt>(SBR)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source voltage to height sensor</ptxt>
+<ptxt>Display range: 0 to 5 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays height sensor power source voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rr Height Sensor</ptxt>
+<ptxt>(SHR)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voltage value from rear height sensor</ptxt>
+<ptxt>Display range: 0 to 5 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approximately 2.5V at standard vehicle height</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Speed</ptxt>
+<ptxt>(SPD)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle Speed Status</ptxt>
+<ptxt>Display Range: 0 to 327.67km/h</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays vehicle speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IG Voltage</ptxt>
+<ptxt>(VB)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG voltage status of headlight leveling computer assembly</ptxt>
+<ptxt>Display Range: 0 to 19.75V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON:11 to 14 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear Vehicle Height Correction Judgment Result</ptxt>
+<ptxt>(RSHK)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Status of rear height control sensor value at initialization</ptxt>
+<ptxt>Display range: Invalid - Valid</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Invalid: Rear vehicle height correction not completed</ptxt>
+<ptxt>Valid: Rear vehicle height correction completed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Number of Initializations</ptxt>
+<ptxt>(SYKS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of initializations status</ptxt>
+<ptxt>Display Range: 0 to 255 times</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays number of initializations</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Number of DTCs</ptxt>
+<ptxt>(DIAG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of DTCs status</ptxt>
+<ptxt>Display range: 0 to 255 pieces</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays number of DTCs</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step2>
+</step1>
+<step1>
+<ptxt>Inspection Using TaSCAN (Active Test)</ptxt>
+<step2>
+<ptxt>Using SST (TaSCAN), display the "Active Test" screen by following the screen instructions, and inspect the computer data.</ptxt>
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[System selection screen: Body → Main Body → Active Test]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="1.89in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Illuminated Entry</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illuminates room light assembly NO.1(*1), interior illumination lightASSYNO.1(map light/dome light)(*2) and engine switch (character illumination)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF - ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ceiling Light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Interior Illumination LightASSYNO.1(Indirect Illumination)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF - ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Taillight Relay</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operates tail light relay</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF - ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Headlight Lo Relay</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illuminates headlight Lo beam</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF - ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Headlight Hi Relay</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illuminate headlight Hi beam</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF - ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Front Fog Relay (*3)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illuminates front fog lights</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF - ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>[System selection screen: Body → Auto Leveling → Active Test]</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="1.89in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Leveling Motor Up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Leveling motor operates upward</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF - ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Leveling Motor Down</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Leveling motor operates downward</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF - ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>*1: w/o Interior Illumination Light</ptxt>
+</item>
+<item>
+<ptxt>*2: w/ Interior Illumination Light</ptxt>
+</item>
+<item>
+<ptxt>*3: Perform with the light control switch in TAIL.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

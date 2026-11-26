@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1001I_S000I" variety="S000I">
+<name>Door Lock</name>
+<ttl id="1001I_S000I_744CM_T004I" variety="T004I">
+<name>Back Door Lock Assembly</name>
+<para id="RM000002AAK002X" category="G" type-id="3001K" name-id="622FU-00" from="200612">
+<name>Component Inspection</name>
+<subpara id="RM000002AAK002X_01" type-id="01" category="01">
+<s-1 id="RM000002AAK002X_01_0001" proc-id="RM0550J___00002BP00000">
+<ptxt>Inspect Back Door Lock Assembly</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Push the latch of the back door lock assembly with a flat-tipped screwdriver or equivalent to put it in the locked (full latch) state.</ptxt>
+<figure>
+<graphic graphicname="B154882J01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Inspect the door lock operation when battery voltage is applied to each terminal of the connector.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt/>
+</specitem>
+</spec>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colnum="1" colname="C01" colwidth="2.73in"/>
+<colspec colnum="2" colname="C02" colwidth="1.4in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Battery connection</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Door Lock Operation</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>Battery positive → 2 (ACT+)</ptxt>
+<ptxt>Battery negative → 1 (ACT-)</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>Locked (full latch) → Unlatched</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

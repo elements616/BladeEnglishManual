@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740122b SYSTEM "grph_ent/a4740122b.png" NDATA png>
+
+<!ENTITY T130002K872 SYSTEM "t478130002k872.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T130002K872S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T130002K872" UPDATE = "ORIGINAL" LDUP = "18Jul2006"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Fuel Economy Improvement Structure for A/C Operation</TITLE>
+<LIST1><ITEM><PTXT>By providing a hot air recirculation prevention shutter in the cowl top ventilator louver and introducing outside air directly, the temperature of the air introduced into the A/C unit is lowered, improving fuel economy when the A/C is operating in traffic congestion, etc.</PTXT></ITEM>
+<ITEM><PTXT>A hot air recirculation prevention shutter has been provided between the front bumper and condenser (around the radiator support) so that heat in the engine room does not flow around from the sides of the vehicle to the front of the condenser. This suppresses the inflow of hot air to the condenser and reduces the compressor power consumption.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740122b" WIDTH = "6.917in" HEIGHT = "7.889in" />
+</FIGURE>
+</PARA>
+</SECTION>

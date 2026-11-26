@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740005e SYSTEM "grph_ent/a4740005e.png" NDATA png>
+<!ENTITY a4740114e SYSTEM "grph_ent/a4740114e.png" NDATA png>
+
+<!ENTITY T120027K309 SYSTEM "t334120027k309.xml">
+<!ENTITY T120027K309A045 SYSTEM "t334120027k309a045.xml">
+<!ENTITY T120027K309K035 SYSTEM "t334120027k309k035.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T120027K309S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T120027K309" UPDATE = "ORIGINAL" LDUP = "5Sep2005"     INFOTYPE = "PARTS" INDSW = "ON" UNPRINT = "ON">
+<TITLE>Headlamp (Discharge Type)</TITLE>
+<LIST1><ITEM><PTXT>Projector-type discharge headlights have been adopted for the low beam headlights.</PTXT></ITEM>
+<ITEM><PTXT>Except for the low beam headlights, the construction is basically the same as the halogen headlights.</PTXT></ITEM>
+<ITEM><PTXT>A headlight leveling actuator for the automatic leveling function is installed at the rear of the low beam headlight in the headlight. Also, a light control computer that controls the lighting of the discharge headlight is built into the lower part of the headlight.</PTXT></ITEM>
+<ITEM><PTXT>The extension has been aluminum vapor-deposited. Also, smoke coating has been applied to some parts to create a sharp look.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740005e" WIDTH = "6.903in" HEIGHT = "3.944in" />
+</FIGURE>
+<SPEC ID = "T120027K309X01" INDSW = "OFF">
+<TITLE>Headlight (Discharge) Specifications</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "57%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "42%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Light Name</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>Bulb Specifications</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Low Beam Headlight</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 35W:D4S</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>High Beam Headlight</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 60W:HB3</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Clearance lights</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 5W</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" CONSPIC = "0"><PTXT>Front Turn Signal Light</PTXT></ENTRY>
+<ENTRY COLNAME = "2" CONSPIC = "0"><PTXT>12V 21W: Amber</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></SPEC>
+
+<MECA ID = "T120027K309A045" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF" UNPRINT = "ON">
+<TITLE>Discharge Headlight Features</TITLE>
+<LIST1><ITEM><PTXT>The discharge headlight is a headlight that uses an HID bulb (high intensity discharge lamp) as its light source.</PTXT></ITEM>
+<ITEM><PTXT>The light emitted from the HID bulb is a natural daylight color close to sunlight and illuminates a wider and more distant area ahead, helping to improve driver visibility; in addition, its low power consumption reduces the load on the battery and the bulb has a long service life.</PTXT></ITEM>
+<ITEM><PTXT>The discharge headlight achieves instant lighting of the HID bulb and a stable power supply, and has a compact, lightweight light control computer; it is also combined with an automatic leveling function that keeps the vertical beam axis constant as a device to prevent dazzling oncoming vehicles.</PTXT></ITEM></LIST1></MECA>
+
+<MECA ID = "T120027K309K035" UPDATE = "ORIGINAL" LDUP = "12Apr2004"     MECATYPE = "GENERAL" INDSW = "OFF" UNPRINT = "ON">
+<TITLE>HID Bulb Construction</TITLE>
+<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>The arc tube of the HID bulb is filled with a rare gas (xenon gas) and metal iodides (zinc, sodium and scandium), and arc discharge occurs in the arc tube due to the voltage applied to the base side and lead wire side.</PTXT></ITEM>
+<ITEM><PTXT>UV-cut glass that absorbs ultraviolet rays is used for the outer tube of the arc tube, keeping ultraviolet radiation to a level equivalent to that of halogen bulbs.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740114e" WIDTH = "6.903in" HEIGHT = "2.764in" />
+</FIGURE>
+</MECA>
+</PARA>
+</SECTION>

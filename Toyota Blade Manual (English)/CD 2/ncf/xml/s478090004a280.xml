@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECTION SYSTEM "../xsl/toyota_ncf.dtd"[
+
+<!-- Begin Document Specific Declarations -->
+
+<!NOTATION epsi SYSTEM "">
+<!NOTATION png SYSTEM "">
+<!NOTATION swf SYSTEM "">
+<!NOTATION pdf SYSTEM "">
+
+<!ENTITY a4740042c SYSTEM "grph_ent/a4740042c.png" NDATA png>
+
+<!ENTITY T090004A280 SYSTEM "t478090004a280.xml">
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<?xml-stylesheet type="text/xsl" href="../xsl/toyota_ncf.xsl"?>
+<SECTION SCID = "T090004A280S"><script xmlns="http://www.w3.org/1999/xhtml" src="/_runtime/xslt-polyfill.min.js"></script><SCTITLE/>
+
+<PARA INFOID = "T090004A280" UPDATE = "ORIGINAL" LDUP = "12Sep2003"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Side Airbag Sensor</TITLE>
+<LIST1><ITEM><PTXT>The side airbag sensors are mounted at the bottom of the B pillars.</PTXT></ITEM>
+<ITEM><PTXT>The side airbag sensor at the bottom of the B pillar consists of a semiconductor type G sensor, a communication circuit, etc.; it detects an impact from the side and sends an ignition signal to the center airbag sensor (computer), which determines operation of the SRS side airbag.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740042c" WIDTH = "6.903in" HEIGHT = "4.347in" />
+</FIGURE>
+</PARA>
+</SECTION>

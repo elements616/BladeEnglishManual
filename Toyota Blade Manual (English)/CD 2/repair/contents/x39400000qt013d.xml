@@ -1,0 +1,1458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="X39400000QT013D" category="S" type-id="3001E" name-id="0659E-00" from="200612" to="200912">
+<name>Diagnostic Trouble Code Chart</name>
+<subpara id="X39400000QT013D_z0" proc-id="RM0550J___00002O600000">
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title/>
+<tgroup cols="5" colsep="1" rowsep="1">
+<colspec colnum="1" colname="1" colwidth="1.42in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="1.42in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.42in" colsep="0"/>
+<colspec colnum="4" colname="4" colwidth="1.42in" colsep="0"/>
+<colspec colnum="5" colname="5" colwidth="1.4in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle" align="center">
+<ptxt>Diagnostic Trouble Code (DTC)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="center">
+<ptxt>Diagnosis Item</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>Light Illuminated</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>Code Memory</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>Reference Page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0010/39</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>VVT OCV Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000QX016C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0011/59</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>VVT Control (Advance Malfunction)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000QY01GC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0012/59</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>VVT Control (Retard Malfunction)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000QY01GC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0016/18</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>VVT Sensor (Out of Range)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000QZ019C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0031/21</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>O2 (A/F) Sensor Heater Performance DeteriorationB1S1</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000160F00NX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0032/21</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>O2 (A/F) Sensor Heater OvercurrentB1S1</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000160F00NX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0037/27</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>O2 Sensor Heater Performance DeteriorationB1S2</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X387000015Q00MC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0038/27</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>O2 Sensor Heater OvercurrentB1S2</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X387000015Q00MC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0100/31</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Air Flow Meter Open Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000R1018C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0102/31</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Air Flow Meter Open Circuit (Low)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000R1018C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0103/31</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Air Flow Meter Open Circuit (High)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000R1018C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0110/24</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Intake Air Temperature Sensor Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM0000008Y300XX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0112/24</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Intake Air Temperature Sensor Circuit (Low)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM0000008Y300XX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0113/24</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Intake Air Temperature Sensor Circuit (High)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM0000008Y300XX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0115/22</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Coolant Temperature Sensor Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM0000008Y400WX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0117/22</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Coolant Temperature Sensor Open Circuit (Low)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM0000008Y400WX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0118/22</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Coolant Temperature Sensor Open Circuit (High)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM0000008Y400WX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0120/41</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Sensor Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000R4015C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0121/41</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Sensor Out of Range</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000R4015C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0122/41</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Sensor Open Circuit (Low)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000R4015C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0123/41</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Sensor Open Circuit (High)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000R4015C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0136/27</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>O2 Sensor CircuitB1S2</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM0000014C700DX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0171/25</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Lean Malfunction (Bank1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000R701MC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0172/26</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Rich Malfunction (Bank1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000R701MC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0220/41</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Sensor No.2 Open Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000R4015C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0222/41</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Sensor No.2 Open Circuit (Low)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000R4015C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0223/41</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Sensor No.2 Open Circuit (High)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000R4015C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0327/52</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Knock Sensor Circuit1 (Low)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM0000012U100SX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0328/52</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Knock Sensor Circuit1 (High)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM0000012U100SX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0335/13</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Crankshaft Position Sensor Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000211100FX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0339/13</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Crankshaft Position Sensor Ne Momentary Interruption</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000211100FX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0340/12</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position Sensor Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RB01AC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0351/14</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Igniter System1</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RC016C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0352/15</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Igniter System2</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RC016C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0353/14</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Igniter System3</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RC016C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0354/15</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Igniter System4</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RC016C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0500/42</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Vehicle Speed Sensor System</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM0000008Y100OX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0504/51</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>STP Light SW Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RE01AC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0516/A7</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Battery Temperature Sensor (Low)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000211V00FX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0517/A7</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Battery Temperature Sensor (High)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000211V00FX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0560/96</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Battery Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000001EES00VX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0604/89</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>RAM malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RG01DC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0606/89</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>ECU Internal Malfunction 1</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RG01DC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0607/89</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>ECU Internal Malfunction 2</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RG01DC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0617/43</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Starter Circuit (High)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000001X0Q00GX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0657/89</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Actuator Power Supply Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RG01DC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0724/95</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>STP Light SW ON Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000000WPE00ZX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P1550/A7</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Battery Current Sensor Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM0000022AQ00FX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P1551/A7</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Battery Current Sensor Circuit (Low)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM0000022AQ00FX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P1552/A7</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Battery Current Sensor Circuit (High)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM0000022AQ00FX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P1603</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Engine Stall Detected</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000211400GX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P1602/A7</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Battery Deterioration</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000211300IX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P1604</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Poor Starting</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000211500GX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P1605</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Unstable Idling</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>×</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM00000211600GX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2102/41</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Motor Open Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X387000016300PC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2103/41</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Motor Short</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X387000016300PC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2111/41</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Body Stuck Open</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RM01BC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2112/41</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Body Stuck Closed</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RM01BC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2118/89</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Electronic Throttle Actuator Power Supply Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RN016C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2119/89</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Electronic Throttle System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RO016C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2120/19</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Accelerator Sensor Open Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RP01BC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2121/19</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Accelerator Sensor Out of Range</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RP01BC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2122/19</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Accelerator Sensor No.1 Open Circuit (Low)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RP01BC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2123/19</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Accelerator Sensor No.1 Open Circuit (High)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RP01BC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2125/19</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Accelerator Sensor No.2 Open Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RP01BC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2127/19</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Accelerator Sensor No.2 Open Circuit (Low)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RP01BC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2128/19</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Accelerator Sensor No.2 Open Circuit (High)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RP01BC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2135/41</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Sensor Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000R4015C" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2138/19</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Accelerator Sensor Open Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="X39400000RP01BC" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2237/21</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>A/F Sensor B1S1 Open</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000002CVW008X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2238/21</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>A/F Sensor B1S1 Open Circuit (Low)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000002CVW008X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2239/21</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>A/F Sensor B1S1 Open Circuit (High)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000002CVW008X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2252/21</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>A/F Sensor B1S1 - Voltage (Low)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000002CVW008X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2253/21</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>A/F Sensor B1S1 - Voltage (High)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle" align="center">
+<ptxt>
+<xref href="RM000002CVW008X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

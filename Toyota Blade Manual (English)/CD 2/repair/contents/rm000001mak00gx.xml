@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1002M_S001G" variety="S001G">
+<name>Pre-crash Safety</name>
+<ttl id="1002M_S001G_74WT7_T00FP" variety="T00FP">
+<name>Pre-crash Safety System</name>
+<para id="RM000001MAK00GX" category="C" type-id="801HU" name-id="540JH-00" from="200708">
+<dtccode>B2057/31</dtccode>
+<dtcname>Yaw Rate Sensor Malfunction</dtcname>
+<subpara id="RM000001MAK00GX_01" type-id="31" category="03" proc-id="RM0550J___0000CVB00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="unordered">
+<item>
+<ptxt>This DTC is output when a yaw rate sensor malfunction occurs while driving at a vehicle speed of 5km/h or more.</ptxt>
+</item>
+<item>
+<ptxt>This circuit consists of the yaw rate sensor, distance control computer and seat belt control computer.</ptxt>
+</item>
+</list1>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="0.99in"/>
+<colspec colname="COLSPEC0" colwidth="2.97in"/>
+<colspec colname="COL2" colwidth="3.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2057/31</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When a yaw rate sensor malfunction is detected at a vehicle speed of 5km/h or more</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>TRC &amp; VSC &amp; BA System with EBD</ptxt>
+</item>
+<item>
+<ptxt>Distance Control Computer Assembly</ptxt>
+</item>
+<item>
+<ptxt>Seat Belt Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001MAK00GX_02" type-id="32" category="03" proc-id="RM0550J___0000CVC00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E143519J01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001MAK00GX_03" type-id="51" category="05" proc-id="RM0550J___0000CVD00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When the distance control computer assembly is replaced with a new one, be sure to perform initialization. (see <xref label="Seep01" href="RM000002GO2003X_01_0001"/>)</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000001MAK00GX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM000001MAK00GX_04_0006" proc-id="RM0550J___0000CVF00000">
+<testtitle>Check DTC (Brake System)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), follow the prompts on the screen to display the "System Diagnosis Menu/ABS/VSC" screen, and select "DTC".</ptxt>
+</test1>
+<test1>
+<ptxt>Check for DTCs.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC C1234 is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC C1234 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001MAK00GX_04_0007" fin="false">A</down>
+<right ref="RM000001MAK00GX_04_0002" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001MAK00GX_04_0007" proc-id="RM0550J___0000CVG00000">
+<testtitle>Replace Seat Belt Control Computer</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the seat belt control computer with a new one.</ptxt>
+<ptxt>(see <xref label="Seep01" href="RM000002SZU002X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001MAK00GX_04_0001" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001MAK00GX_04_0001" proc-id="RM0550J___0000CVE00000">
+<testtitle>Check DTC</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), follow the prompts on the screen to display the "System Diagnosis Menu/Pre-crash" screen, and select "DTC".</ptxt>
+</test1>
+<test1>
+<ptxt>Select "Clear" on the screen to clear the data.</ptxt>
+</test1>
+<test1>
+<ptxt>Follow the prompts on the SST (TaSCAN) screen to display the "System Diagnosis Menu/Pre-crash" screen, and select "DTC".</ptxt>
+</test1>
+<test1>
+<ptxt>Check for DTCs again.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC B2057 is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC B2057 is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the DTC is not output, the seat belt control computer before replacement was defective.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000001MAK00GX_04_0005" fin="true">A</down>
+<right ref="RM000001MAK00GX_04_0003" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001MAK00GX_04_0003">
+<testtitle>Replace Distance Control Computer Assembly<xref label="Seep01" href="RM0000028Z2003X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001MAK00GX_04_0002">
+<testtitle>Go to Relevant DTC<xref label="Seep01" href="RM0000005ZT00PX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001MAK00GX_04_0005">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

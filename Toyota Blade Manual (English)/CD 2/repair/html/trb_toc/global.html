@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- $Id: global.html,v 1.44 2004/04/19 02:18:56 s-okino Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Troubleshooting Contents</title>
+
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+
+<script language="javascript">
+var trbXml = null;
+function srhDiagcode(code) {
+	code = code.toUpperCase();
+	if ((code == null || code.length==0)) {
+		alert("Please enter a DTC. ");
+		f1.icode.focus();
+		return false;
+	}
+	if (!(code.length==5 || code.length==2)) {
+		alert("Please enter a 2-digit or 5-digit code. ");
+		f1.icode.focus();
+		return false;
+	}
+	trbXml = parent.initXml("troubleshoot.xml");
+	trbXml.setProperty("SelectionLanguage", "XPath");
+	var pat = (code.length==5)
+		? "//dtccode[starts-with(., '"+code+"')]"
+		: "//dtccode[substring(., 7, 2)='"+code+"'] | //dtccode[.='"+code+"']";
+	var dtcList = trbXml.selectNodes(pat);
+	switch (dtcList.length) {
+		case 0:
+			//alert("コード「" + code + "」に対応するパラグラフが見つかりません。");
+			alert("There is no applicable DTC.");
+			break;
+		case 1:
+			var paraId=dtcList.item(0).parentNode.getAttribute("id");
+			parent.selectTypedLocation(paraId, "C");
+			break;
+		default:
+			var src = new Array(trbXml, code, parent.getParameterValue("term", parent.location));
+			parent.setDisplaySource(src);
+			parent.openDialog("diag", "lst_frame.html");
+			break;
+	}
+	return false;
+}
+
+//
+// 印刷リンク, 準備品リンク他クリック時の処理
+//
+function setPopupArguments(type, url) {
+	if( parent.g_paraXml == null ) return;
+	parent.setDisplaySource(parent.g_paraXml);
+	if(type == "attention" || type == "checkdata" || type == "precheck"){
+		parent.setDisplayArgs(parent.g_tocXml);
+		parent.openDialog(type, url);
+	} else if(type == "seepage"){
+		var paraId   = parent.findParameterValue("parag" , parent.sts.location.search, parent.location.search);
+		if (paraId != null) {
+			var paraNode = parent.g_tocXml.selectSingleNode("//para[@id='"+paraId+"']");
+			if (paraNode != null) {
+				var tgt = paraNode.parentNode.selectSingleNode("para[@category='R']");
+				if (tgt != null) {
+					parent.seePage(tgt.getAttribute("id"));
+					return;
+				}
+			}
+		}
+		alert("There is no related parts location diagram.");
+	}
+}
+
+function init() {
+	paraId = parent.findParameterValue("parag" , location.search , parent.location.search);
+	if (paraId == null) {
+		return;
+	}
+	if (parent.g_tocXml!=null && parent.g_paraXml!=null)
+		parent.setGlobalNaviLinks(paraId);
+}
+</script>
+</head>
+<body onLoad="init()" onMouseOver="f1.icode.focus()">
+<form name="f1"  onSubmit="return srhDiagcode(this.icode.value);">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td class="top"></td>
+	</tr>
+	<tr>
+		<td height="2"></td>
+	</tr>
+	<tr>
+		<td>
+			<table cellpadding="1" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td width="5"><br></td>
+					<td>
+						<span class="text-white">DTC:</span>
+						<input type="input" class="tinput" size="8" maxlength="8" id="icode">
+						<input type="button" class="binput" value="Search" onClick="srhDiagcode(icode.value)">
+					</td>
+					<td align="right"> 
+						<table cellpadding="2" cellspacing="0" border="0">
+							<tr>
+								<td>
+									<a id="caution" style="visibility:hidden" class="button" href="#" onclick="setPopupArguments('attention', 'atten_frame.html');">Precautions</a>
+									<a id="precheck" style="visibility:hidden" class="button" href="#" onclick="setPopupArguments('precheck','pchk_frame.html');">Pre-check</a>
+									<a id="illust" style="visibility:hidden" class="button" href="#" onclick="setPopupArguments('seepage','seepage_frame.html');">Parts Location</a>
+									<a id="ispdata" style="visibility:hidden" class="button" href="#" onclick="setPopupArguments('checkdata','cdata_frame.html');">Inspection Data</a>
+									<a id="lprint" style="visibility:hidden" class="button" href="#" onClick="parent.printFrame(parent.sts.disp.innerHTML,parent.contents.disp.innerHTML,'Print Troubleshooting Contents');">Print</a>
+								</td>
+								<td width="30"><br></td>
+								<td>
+									<a class="button" href="javascript:parent.openNewWindow('../index.html')">Show in Separate Window</a>
+									<a class="button" href="javascript:parent.setTermValue('../index.html', parent.getParameterValue('term', parent.location))" target="_top">To Function Selection</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td width="5"><br/></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

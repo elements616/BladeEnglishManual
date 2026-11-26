@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="10">
+<name>Body &amp; Electrical</name>
+<section id="1002U_S0003" variety="S0003">
+<name>Glass &amp; Window</name>
+<ttl id="1002U_S0003_744CF_T004B" variety="T004B">
+<name>Power Window System</name>
+<para id="RM0000005EB00SX" category="J" type-id="30129" name-id="752B6-00" from="200612">
+<dtccode/>
+<dtcname>Remote Operation of Other Windows by Master Switch Is Not Possible (Operation by Each Door Switch Is Possible)</dtcname>
+<subpara id="RM0000005EB00SX_01" type-id="31" category="03" proc-id="RM0550J___000024400000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>When the IG is ON, the power window regulator master switch assembly sends the remote switch signals for the other seats on the power window regulator master switch assembly to the power window regulator motor assembly of each seat. The power window regulator motor assembly that receives the signal operates based on the signal.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000005EB00SX_02" type-id="32" category="03" proc-id="RM0550J___000024500000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B144901J02" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000005EB00SX_03" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM0000005EB00SX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000005EB00SX_04_0009" proc-id="RM0550J___000024700000">
+<testtitle>Read TaSCAN Data (Main Body)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), inspect the large-scale body multiplex communication (LIN) connection status of the power window regulator motor assemblies (other than driver side).</ptxt>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → Main Body → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<colspec colname="COL3" colwidth="1.06in"/>
+<colspec colname="COL4" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Power Window SW Connection Status</ptxt>
+<ptxt>[PWSC]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connection status between power window regulator master switch assembly and body ECU/Display range: Not connected - Connected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connected: Connection detected</ptxt>
+<ptxt>Not connected: Connection not detected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front Passenger Side Motor ECU Connection Status</ptxt>
+<ptxt>[PMRC]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connection status between power window regulator motor assembly LH (front passenger side) and body ECU/Display range: Not connected - Connected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connected: Connection detected</ptxt>
+<ptxt>Not connected: Connection not detected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear RH Motor ECU Connection Status</ptxt>
+<ptxt>[RRMC]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connection status between power window regulator motor assembly RH (rear right) and body ECU/Display range: Not connected - Connected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connected: Connection detected</ptxt>
+<ptxt>Not connected: Connection not detected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear LH Motor ECU Connection Status</ptxt>
+<ptxt>[RLMC]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connection status between power window regulator motor assembly LH (rear left) and body ECU/Display range: Not connected - Connected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connected: Connection detected</ptxt>
+<ptxt>Not connected: Connection not detected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005EB00SX_04_0010" fin="false">OK</down>
+<right ref="RM0000005EB00SX_04_0002" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005EB00SX_04_0010" proc-id="RM0550J___000024800000">
+<testtitle>Read TaSCAN Data (Power Window SW)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), read the data on the status when the power window regulator master switch assembly is operated.</ptxt>
+</test1>
+<spec>
+<title>Specified Condition</title>
+<table pgwide="1">
+<title>[Diagnosis menu screen: Body → Power Window SW → ECU Data Monitor]</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<colspec colname="COL3" colwidth="1.06in"/>
+<colspec colname="COL4" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item Name</ptxt>
+<ptxt>[Symbol]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item Description/Display Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Remarks</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Driver Side P/W AUTO SW</ptxt>
+<ptxt>[DPAS]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side AUTO switch operation signal/display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: AUTO switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front Passenger Side P/W Remote AUTO</ptxt>
+<ptxt>[DPRA]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front passenger side switch AUTO operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: AUTO switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear RH P/W Remote AUTO</ptxt>
+<ptxt>[RRRA]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear right switch AUTO operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: AUTO switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear LH P/W Remote AUTO</ptxt>
+<ptxt>[RLRA]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear left switch AUTO operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: AUTO switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front Passenger Side P/W Remote UP</ptxt>
+<ptxt>[RPRU]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front passenger side switch UP operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: UP switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear RH P/W Remote UP</ptxt>
+<ptxt>[RRRU]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear right switch UP operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: UP switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear LH P/W Remote UP</ptxt>
+<ptxt>[RLRU]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear left switch UP operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: UP switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front Passenger Side P/W Remote DOWN</ptxt>
+<ptxt>[RPRD]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front passenger side switch DOWN operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: DOWN switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear RH P/W Remote DOWN</ptxt>
+<ptxt>[RRRD]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear right switch DOWN operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: DOWN switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rear LH P/W Remote DOWN</ptxt>
+<ptxt>[RLRD]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear left switch DOWN operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: DOWN switch operating</ptxt>
+<ptxt>OFF: Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Window Lock SW</ptxt>
+<ptxt>[WRCK]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Window lock switch lock operation signal/Display range: OFF - ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: Lock switch operating</ptxt>
+<ptxt>OFF: Lock switch not operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> - </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000005EB00SX_04_0002" fin="false">OK</down>
+<right ref="RM0000005EB00SX_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005EB00SX_04_0002" proc-id="RM0550J___000024600000">
+<testtitle>Inspect LIN Communication Circuit (Applicable Location)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the power window regulator master switch assembly connector and the power window regulator motor assembly (relevant seat) connector.</ptxt>
+<figure>
+<graphic graphicname="B129593J04" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the vehicle side wire harness connectors.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<title>Power Window Regulator Motor Assembly LH (Front Passenger Side)</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.68in"/>
+<colspec colname="COL2" colwidth="1.20in"/>
+<colspec colname="COL3" colwidth="1.25in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>17(LIN1) - 9(LIN)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table>
+<title>Power Window Regulator Motor Assembly RH (Rear Right)</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.23in"/>
+<colspec colname="COL3" colwidth="1.25in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>17(LIN1) - 9(LIN)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Resistance</title>
+<table>
+<title>Power Window Regulator Motor Assembly LH (Rear Left)</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.63in"/>
+<colspec colname="COL2" colwidth="1.19in"/>
+<colspec colname="COL3" colwidth="1.31in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>17(LIN1) - 9(LIN)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000005EB00SX_04_0011" fin="true">OK</down>
+<right ref="RM0000005EB00SX_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000005EB00SX_04_0011">
+<testtitle>Replace Power Window Regulator Motor Assembly (Relevant Location)</testtitle>
+</testgrp>
+<testgrp id="RM0000005EB00SX_04_0008">
+<testtitle>Replace Power Window Regulator Master Switch Assembly<xref label="Seep01" href="RM000001F77008X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000005EB00SX_04_0005">
+<testtitle>Repair or Replace Wire Harness or Connector (Relevant Seat)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARA INFOID = "T100001K633" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     INFOTYPE = "PARTS" INDSW = "ON">
+<TITLE>Engine Switch</TITLE>
+<LIST1><ITEM><PTXT>The switch has a built-in indicator light, and the current power mode can be checked by its illumination state and color.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740013b" WIDTH = "6.917in" HEIGHT = "2.181in" />
+</FIGURE>
+<INDICATE ID = "T100001K633I01" INDSW = "OFF">
+<TITLE>Indicator Light Status List</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "3" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "13%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "18%"/>
+<COLSPEC COLNUM = "3" COLNAME = "3" COLWIDTH = "67%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2"><PTXT>Indicator Light</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Status</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY NAMEST = "1" NAMEEND = "2" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Off</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><PTXT>Any of the following conditions is met</PTXT>
+<LIST1><ITEM><PTXT>Engine start completed</PTXT></ITEM>
+<ITEM><PTXT>Power (ACC and IG) OFF<HINTREF REFID = "H478100001K63301"/></PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Green</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Engine start standby<HINTREF     REFID = "H478100001K63302"/></PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Blinking (1-second interval)<HINTREF     REFID = "H478100001K63303"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Steering Lock Not Released</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" MOREROWS = "1" VALIGN = "MIDDLE" ALIGN = "CENTER">
+<PTXT>Amber</PTXT></ENTRY>
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Illuminated</PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>Power (ACC or IG) ON<HINTREF     REFID = "H478100001K63301"/></PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "2" VALIGN = "MIDDLE" ALIGN = "CENTER"><PTXT>Blinking (2-second interval)<HINTREF     REFID = "H478100001K63304"/></PTXT></ENTRY>
+<ENTRY COLNAME = "3"><LIST1><ITEM><PTXT>System Malfunction</PTXT></ITEM></LIST1></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP>
+<LEGEND><HINT>
+<LIST1><ITEM><PTXT ID = "H478100001K63301">Brake OFF (stop light switch OFF)</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K63302">Shift position "P" or "N", key verification OK and brake ON (stop light switch ON)</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K63303">Blinking ends when 15 seconds have elapsed since blinking started, or when the power (ACC or IG) ON or engine start operation is performed again</PTXT></ITEM>
+<ITEM><PTXT ID = "H478100001K63304">Blinking ends when the system recovers from the malfunction</PTXT></ITEM></LIST1></HINT></LEGEND></TABLE></INDICATE>
+</PARA>

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="01">
+<name>Engine</name>
+<section id="10006_S000J" variety="S000J">
+<name>Engine Control</name>
+<ttl id="10006_S000J_744E7_T004T" variety="T004T">
+<name>EFI System (2AZ-FE)</name>
+<para id="RM0000012U100SX" category="C" type-id="303BZ" name-id="065A0-00" from="200612">
+<dtccode>P0327/52</dtccode>
+<dtcname>Knock Sensor Circuit1 (Low)</dtcname>
+<dtccode>P0328/52</dtccode>
+<dtcname>Knock Sensor Circuit1 (High)</dtcname>
+<subpara id="RM0000012U100SX_01" type-id="31" category="03" proc-id="RM0550J___00002UB00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>The knock control sensor is installed on the cylinder block and detects engine knocking. The knock control sensor contains a sensor that generates voltage when the cylinder block vibrates and deforms due to knocking. When knocking occurs, the engine control computer retards the ignition timing to suppress knocking.</ptxt>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="3" colsep="1" rowsep="1">
+<colspec colnum="01" colname="C01" colwidth="0.9685897     in"/>
+<colspec colnum="02" colname="C02" colwidth="3.231049     in"/>
+<colspec colnum="03" colname="C03" colwidth="2.947281     in"/>
+<thead>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+<ptxt>SAE/TCCS</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+<ptxt>1. Detection condition 2. Malfunction status 3. Malfunction duration 4. Other</ptxt>
+</entry>
+<entry colname="C03" valign="middle" align="center">
+<ptxt>Inspection Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0327/52</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>5 seconds or more have elapsed after engine start</ptxt>
+</item>
+<item>
+<ptxt>Short in knock control sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>1 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Knock control sensor</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry colname="C01" valign="middle" align="center">
+<ptxt>P0328/52</ptxt>
+</entry>
+<entry colname="C02" valign="middle" align="left">
+<list1 type="ordered">
+<item>
+<ptxt>5 seconds or more have elapsed after engine start</ptxt>
+</item>
+<item>
+<ptxt>Open in knock control sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>1 seconds or more</ptxt>
+</item>
+<item>
+<ptxt>1 trip</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname="C03" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Knock control sensor</ptxt>
+</item>
+<item>
+<ptxt>Wire Harness or Connector</ptxt>
+</item>
+<item>
+<ptxt>Engine Control Computer</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000012U100SX_02" type-id="32" category="03" proc-id="RM0550J___00002UC00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="G100104J09" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000012U100SX_03" type-id="51" category="05" proc-id="RM0550J___00002UD00000">
+<name>Inspection Procedure</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Using SST (TaSCAN), read the Freeze Frame Data. Freeze frame data records part of the engine operating condition when a malfunction occurs, and this information is useful when troubleshooting.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000012U100SX_04" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM0000012U100SX_04_0001" proc-id="RM0550J___00002UE00000">
+<scantool type="4"/>
+<testtitle>Read TaSCAN Data (Knock Control Value)</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Apply the parking brake and chock the wheels.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect SST (TaSCAN) to DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine and warm it up.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the data monitor item [Knock Control Value] from [Diagnosis Function Menu] → [ECU Data Monitor].</ptxt>
+</test1>
+<test1>
+<ptxt>Check the change in the data monitor [Knock Control Value] when the engine operating condition is changed.</ptxt>
+<spec>
+<title>Measurement Result</title>
+<specitem>
+<ptxt>The monitor display value changes.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Create driving conditions that change the advance correction control. (Perform a stall test, race the engine, apply the A/C or other electrical loads, etc.)</ptxt>
+</atten4>
+<atten2>
+<list1 type="unordered">
+<item>
+<ptxt>When performing a stall test, always take measures to prevent the vehicle from moving suddenly, and confirm that there is no one nearby before performing it.</ptxt>
+</item>
+<item>
+<ptxt>Do not continue the stall test for 5 seconds or more.</ptxt>
+</item>
+</list1>
+</atten2>
+<table pgwide="1">
+<title>Reference Values </title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Monitor Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Malfunction (DTC detected)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Knock Control Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-3.0 to 2.0°CA</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Does not change</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="unordered">
+<item>
+<ptxt>The above table shows reference values, so the same values may not necessarily be displayed.</ptxt>
+</item>
+</list1>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012U100SX_04_0010" fin="true">OK</down>
+<right ref="RM0000012U100SX_04_0002" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012U100SX_04_0002" proc-id="RM0550J___00002UF00000">
+<testtitle>Inspect Wire Harness and Connector (KNK1 Terminal Voltage)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect the knock control sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A145894J03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage of the knock control sensor terminal.</ptxt>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.54in"/>
+<colspec colname="COLSPEC0" colwidth="1.21in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 (KNK1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance of the knock control sensor terminal.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.53in"/>
+<colspec colname="COLSPEC1" colwidth="1.22in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (EKNK) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012U100SX_04_0004" fin="false">OK</down>
+<right ref="RM0000012U100SX_04_0005" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012U100SX_04_0004" proc-id="RM0550J___00002UG00000">
+<testtitle>Inspect Knock Control Sensor</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Resistance Inspection</ptxt>
+<figure>
+<graphic graphicname="A065174J05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test2>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the connector terminals.</ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>120 to 280kΩ</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012U100SX_04_0007" fin="true">OK</down>
+<right ref="RM0000012U100SX_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012U100SX_04_0005" proc-id="RM0550J___00002UH00000">
+<testtitle>Inspect Wire Harness and Connector (Knock Control Sensor - Engine Control Computer)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For the wire harness and connector inspection procedure and precautions, see <xref label="Seep01" href="RM0000005D701ZX"/></ptxt>
+</atten4>
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Disconnect connector A of the engine control computer and the knock control sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A106388J16" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the resistance between the terminals of the engine control computer and the knock control sensor vehicle side connector. (see <xref label="Seep02" href="X39400000QV016D"/> for Terminals of ECU)  </ptxt>
+<spec>
+<title>Resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.51in"/>
+<colspec colname="COLSPEC2" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Terminal Name)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A110(KNK1) - 2(KNK1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A111(EKNK) - 1(EKNK)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A110 (KNK1) and 2 (KNK1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A111 (EKNK) and 1 (EKNK) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10k Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012U100SX_04_0006" fin="true">OK</down>
+<right ref="RM0000012U100SX_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012U100SX_04_0006">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000012U100SX_04_0007">
+<testtitle>Replace Engine Control Computer<xref label="Seep01" href="RM0000020V0005X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000012U100SX_04_0008">
+<testtitle>Replace knock control sensor<xref label="Seep01" href="RM000002ADF003X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000012U100SX_04_0009">
+<testtitle>Repair or Replace Wire Harness or Connector</testtitle>
+</testgrp>
+<testgrp id="RM0000012U100SX_04_0010">
+<testtitle>Inspection for Intermittent Problems<xref label="Seep01" href="RM000000CD101FX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

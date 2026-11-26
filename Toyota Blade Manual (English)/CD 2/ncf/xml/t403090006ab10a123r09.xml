@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MECA ID = "T090006Ab10A123R09" UPDATE = "ORIGINAL" LDUP = "18Apr2007"     MECATYPE = "GENERAL" INDSW = "OFF">
+<TITLE>Operation of Diagnosis Circuit</TITLE>
+<LIST1><ITEM><PTXT>The seat belt control computer detects system malfunctions in 2 ways: a primary check and a constant check.</PTXT></ITEM>
+<ITEM><PTXT>When a malfunction is detected in the system, a warning is displayed in the combination meter.</PTXT></ITEM></LIST1>
+<FIGURE>
+<GRAPHIC GRAPHICNAME = "a4740227c" WIDTH = "6.903in" HEIGHT = "1.986in" />
+</FIGURE>
+<INDICATE ID = "T090006Ab10A123R09I01" INDSW = "OFF">
+<TITLE>Check Details</TITLE>
+<TABLE FRAME = "ALL" COLSEP = "1" ROWSEP = "1">
+<TGROUP COLS = "2" COLSEP = "1" ROWSEP = "1" TGROUPSTYLE = "Table_10">
+<COLSPEC COLNUM = "1" COLNAME = "1" COLWIDTH = "25%"/>
+<COLSPEC COLNUM = "2" COLNAME = "2" COLWIDTH = "74%"/>
+<THEAD>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1"><PTXT>Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Outline</PTXT></ENTRY>
+</ROW>
+</THEAD>
+<TBODY>
+<ROW ROWSEP = "1">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Primary Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>Performed for 3 seconds when the power is turned ON (IG ON). During the check, the PCS indicator light in the combination meter illuminates. If there is no malfunction, the light turns off and the pre-crash seat belt becomes ready to operate.</PTXT></ENTRY>
+</ROW>
+<ROW ROWSEP = "0">
+<ENTRY COLNAME = "1" VALIGN = "MIDDLE"><PTXT>Constant Check</PTXT></ENTRY>
+<ENTRY COLNAME = "2"><PTXT>After the primary check is completed, the diagnosis circuit in the seat belt control computer constantly checks the system for malfunctions.</PTXT></ENTRY>
+</ROW>
+</TBODY>
+</TGROUP></TABLE></INDICATE></MECA>

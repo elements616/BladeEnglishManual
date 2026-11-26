@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- $Id: frame.html,v 1.18 2003/10/06 08:23:52 takeo Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../../../_runtime/legacy.css">
+<script src="../../../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Symptom</title>
+
+<script src="../../js/util.js"></script>
+<script src="../../js/xml.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/style.js"></script>
+<script src="../../js/memo.js"></script>
+<script language="javascript">
+var g_listId   = getParameterValue("parag");
+var g_refId    = getParameterValue("ref");
+var g_tblId    = getParameterValue("tblId");
+var g_rowPos   = g_refId.split("_")[0];
+var g_listXml  = initXml(g_listId.toLowerCase()+".xml", false, false);
+var g_localXsl = initXsl("../../xsl/trb_sym/local.xsl");
+var g_cttXsl   = initXsl("../../xsl/trb_sym/through.xsl");
+g_listXml.setProperty("SelectionLanguage", "XPath");
+var g_bp     = getParameterValue("bp");
+var g_bd     = getParameterValue("bd");
+
+var g_startPos = 0;
+var g_endPos   = 0;
+for (var i=g_rowPos; i>0; i--) {
+	var entryList = g_listXml.selectNodes("//table["+g_tblId+"]//tbody/row["+i+"]/entry");
+	if (entryList.length==3) {
+		g_startPos = i;
+		var morerows = entryList.item(0).getAttribute("morerows");
+		if (morerows==null || morerows.length==0) morerows=0;
+		g_endPos = eval(g_startPos) + eval(morerows);
+		break;
+	}
+}
+var g_areaIdList      = new Array(); // 参照先ID
+var g_areaParaXmlList = new Array(); // 参照先XML
+for (var i=g_startPos; i<=g_endPos; i++) {
+	var areaIdNode = g_listXml.selectSingleNode("//table["+g_tblId+"]//tbody/row["+i+"]//entry[position()=last()]/ptxt/xref/@href");
+	if (areaIdNode==null) continue;
+	var areaId = areaIdNode.nodeTypedValue;
+	var areaParaId = areaId.split("_")[0];
+	if (g_areaIdList.length==0) {
+		g_areaIdList.push(areaId);
+		g_areaParaXmlList.push(initXml(areaParaId.toLowerCase()+".xml"));
+	}
+	// merge
+	for (var j=0; j<g_areaIdList.length; j++) {
+		if (g_areaIdList[j]==areaId) break;
+		if (j==g_areaIdList.length-1) {
+			g_areaIdList.push(areaId);
+			g_areaParaXmlList.push(initXml(areaParaId.toLowerCase()+".xml"));
+		}
+	}
+}
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="global.html" scrolling="no" noresize frameborder="no">
+	<frameset cols="250, *" frameborder="yes" border="1" framespacing="1" bordercolor="#cccccc">
+		<frame name="local" src="local.html" frameborder="no" >
+		<frameset rows="30, *" frameborder="no" border="0" framespaceing="0">
+			<frame name="sts" src="status.html" frameborder="no" scrolling="auto">
+			<frame name="contents" src="contents.html" frameborder="no">
+		</frameset>
+	</frameset>
+</frameset>
+<noframes>
+	<body>Please use a browser that supports frames</body>
+</noframes>
+</html>

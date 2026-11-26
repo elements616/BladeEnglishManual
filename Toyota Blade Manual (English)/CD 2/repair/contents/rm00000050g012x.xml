@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0550J">
+<servcat id="09">
+<name>SRS Airbag &amp; Seat Belt</name>
+<section id="1000Y_S0012" variety="S0012">
+<name>SRS Airbag</name>
+<ttl id="1000Y_S0012_745Q2_T00B8" variety="T00B8">
+<name>SRS Airbag System</name>
+<para id="RM00000050G012X" category="J" type-id="300EQ" name-id="554HV-00" from="200612">
+<dtccode/>
+<dtcname>Low power source voltage</dtcname>
+<subpara id="RM00000050G012X_02" type-id="31" category="03" proc-id="RM0550J___00006JI00000">
+<name>Circuit Description</name>
+<content5 releasenbr="1">
+<ptxt>The airbag computer assembly has a function that normalizes the voltage using its built-in step-up circuit (DC-DC converter) when the power source voltage drops.</ptxt>
+<ptxt>When the power source voltage drops, the airbag computer assembly turns on the airbag warning light to indicate the low power source voltage, even if no DTC is output.</ptxt>
+<ptxt>Unlike other circuits, a malfunction in this circuit is not recorded in the airbag computer assembly, and the airbag warning light goes off automatically when the power source voltage returns to normal.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Item</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>None</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Low power source voltage</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000050G012X_03" type-id="32" category="03" proc-id="RM0550J___00006JJ00000">
+<name>Wiring Diagram</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C147989J01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM00000050G012X_04" type-id="51" category="05">
+<name>Inspection Procedure</name>
+</subpara>
+<subpara id="RM00000050G012X_05" type-id="01" category="01">
+<name>Procedure</name>
+<testgrp id="RM00000050G012X_05_0001" proc-id="RM0550J___00006JK00000">
+<testtitle>Preparation for Inspection (Airbag Sensor Related)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the battery negative terminal and wait for 90 seconds.</ptxt>
+<atten4>
+<ptxt>Make sure the ignition switch is OFF before disconnecting the cable from the negative (-) battery terminal.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Disconnect the connectors from the airbag computer assembly. (see <xref label="Seep01" href="RM000002RR0002X"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the connectors from the front airbag sensors RH and LH. (see <xref label="Seep02" href="RM0000007U200RX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the connectors from the side airbag sensor assemblies RH and LH. (see <xref label="Seep03" href="RM000000QG100DX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the connectors from the airbag sensors rear right and left. (see <xref label="Seep05" href="RM000000QG4007X"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000050G012X_05_0008" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000050G012X_05_0008" proc-id="RM0550J___00006JO00000">
+<testtitle>Preparation for Inspection (Inflator Related)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connector from the horn button assembly. (see <xref label="Seep01" href="RM000000QFD00MX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the connector from the instrument panel passenger airbag assembly. (see <xref label="Seep02" href="RM000000QFM007X"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the connector from instrument panel lower airbag No.1. (see <xref label="Seep06" href="RM000000QFV007X"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the connectors from the front seat outer belt assemblies RH and LH (pretensioners). (see <xref label="Seep03" href="RM000001ESF005X"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the connector from the front seat assembly RH. (see <xref label="Seep04" href="RM000000AR9001X"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the connectors from the curtain shield airbags RH and LH. (see <xref label="Seep05" href="RM000000QFQ00AX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000050G012X_05_0002" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000050G012X_05_0002" proc-id="RM0550J___00006JL00000">
+<testtitle>Inspect Power Source Voltage</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09082-00030</s-number>
+</sstitem>
+<sstitem>
+<s-number>09083-00170</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Connect the cable to the negative (-) battery terminal and turn the ignition switch ON.</ptxt>
+<figure>
+<graphic graphicname="G028004J06" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using SST (Toyota electrical tester), measure the voltage between the terminals of the airbag computer assembly connector.</ptxt>
+<spec>
+<title>Voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Standard</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1-21(IG2) - 1-25(E1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1-21(IG2) - 1-26(E2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 14V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000050G012X_05_0003" fin="false">OK</down>
+<right ref="RM00000050G012X_05_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000050G012X_05_0003" proc-id="RM0550J___00006JM00000">
+<testtitle>Airbag Warning Light Inspection</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn IG OFF.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the battery negative terminal and wait for 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the connector to the horn button assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the connector to the instrument panel passenger airbag assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the connector to instrument panel lower airbag No.1.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the connectors to the front seat outer belt assemblies RH and LH (pretensioners).</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the connectors to the front seat airbag assemblies RH and LH.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the connectors to the curtain shield airbags RH and LH.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the connector to the airbag computer assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the connectors to the front airbag sensors RH and LH.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the connectors to the side airbag sensor assemblies RH and LH.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the connectors to the airbag sensors rear right and left.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the battery negative terminal, turn IG ON and wait for 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Operate the electrical systems (defogger, wipers, headlights, heater blower, etc.) and check the airbag warning light.</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>Airbag warning light does not come on </ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000050G012X_05_0004" fin="false">OK</down>
+<right ref="RM00000050G012X_05_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000050G012X_05_0004" proc-id="RM0550J___00006JN00000">
+<testtitle>Inspect Airbag Computer Assembly</testtitle>
+<content6 releasenbr="1">
+<sst>
+<sstitem>
+<s-number>09991-70200</s-number>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Using SST (TaSCAN), check the DTCs. (see <xref label="Seep01" href="RM00000050J01GX"/>)</ptxt>
+<spec>
+<title>Specified Condition</title>
+<specitem>
+<ptxt>No DTC is output </ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000050G012X_05_0005" fin="true">OK</down>
+<right ref="RM00000050G012X_05_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000050G012X_05_0005">
+<testtitle>Perform Simulation Method<xref label="Seep01" href="RM000000ABY03DX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000050G012X_05_0006">
+<testtitle>Repair or replace battery or charging system</testtitle>
+</testgrp>
+<testgrp id="RM00000050G012X_05_0007">
+<testtitle>Replace Airbag Computer Assembly<xref label="Seep01" href="RM000002RR0002X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

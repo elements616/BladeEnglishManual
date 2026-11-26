@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- $Id: global.html,v 1.38 2004/04/01 07:37:33 s-okino Exp $ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../_runtime/legacy.css">
+<script src="../../../../_runtime/compat.js"></script>
+
+<title>[Electronic Technical Manual] - Inspection Procedure</title>
+
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+<!--
+function goToRmv(){
+	if(parent.g_nowTtlId == null) parent.g_nowTtlId = parent.g_firstTid;
+	var sectionId = parent.g_hashStIv.get(parent.g_nowTtlId+"_secId");
+	if (sectionId==null) {
+		;
+	}
+	var sectionVa = parent.g_hashStIv.get(parent.g_nowTtlId+"_secVa");
+	var titleVa = parent.g_hashStIv.get(parent.g_nowTtlId+"_ttlVa");
+	var term = parent.getParameterValue("term",parent.location);
+	//var term=000000;
+	parent.openNewWindow("../rmv_ctt/frame.html?term="+term+"&section="+sectionId+"&sectionvar="+sectionVa+"&ttl="+parent.g_nowTtlId+"&ttlvar="+titleVa,"rmvWindow");
+}
+
+//「準備品」クリック時
+function switchPreparation(){
+	var ttlId  = parent.g_nowTtlId;
+	//alert("ttlId  ="+parent.g_nowTtlId+"  "+parent.g_firstTid );
+	var paraItems = parent.g_tocXml.selectNodes("//ttl[@id='"+ ttlId +"']/para[@category='G' ]");
+	//alert("ttlId  ="+parent.g_nowTtlId+"  paraItems.length ="+paraItems.length  );
+	if( paraItems  == null ){
+		alert("There is no applicable preparation. [Title ID:"+ttlId +"]");
+		return ;
+	}
+	var args = new Array();
+	for (var i=0; i<paraItems.length; i++) {
+		args.push(paraItems.item(i).getAttribute("id"));
+	}
+	parent.setDisplayArgs(args );
+	//準備品を画面で表示する
+	parent.openDialog("ppr", "ppr_frame.html");
+}
+
+
+//「部品配置図」クリック時
+function switchComponent(){
+	var args = getComponentArgs();
+	if( args == null )  return; 
+	parent.setDisplayArgs(args );
+	//部品配置図を画面で表示する
+	parent.openDialog("component", "cmp_frame.html");
+}
+
+//「部品配置図」のイラストIDを取得する
+function getComponentArgs(){
+	var illustId = parent.findParameterValue("illust" ,location.search, parent.location.search);
+	var secId    = parent.findParameterValue("section" , parent.location.search);
+	var secvarId = parent.findParameterValue("sectionvar" , parent.location.search);
+	var ttlId    = parent.g_nowTtlId;
+	var paraId   = parent.g_paraId;
+	if( secId  == null || secvarId ==null ) {
+		var  str = parent.getParaParentParameter(parent.g_tocXml , paraId );
+		secId    = parent.findParameterValue("section" ,  str );
+		secvarId = parent.findParameterValue("sectionvar" ,  str );
+	}
+
+	//タイトルから部品IDを取得する
+	if (parent.g_psrhObjXml==null) {
+		alert("Relevant File"+"psearch_"+parent.g_servcatId+".xml does not exist.");
+	}
+	var ttlpartNode = parent.g_psrhObjXml.selectSingleNode("//ttl[@id='"+ ttlId +"']/parts");
+	if( ttlpartNode == null){
+		alert("There is no applicable part. [Title ID:"+ttlId +"]");
+		return null;
+	}
+	var partId = ttlpartNode.getAttribute("id");
+
+	//もし絵目次から場合は　イラストIDに部品IDを含む
+	if( illustId != null){
+		return new Array(partId, illustId, parent.sts.disp.innerHTML);
+	}
+
+	//同一タイトル内で　部品IDを含むイラストIDを探す
+	illustPartNode = parent.g_compoXml.selectSingleNode("//ttl[@id='"+ ttlId +"']/para[@category='R' ]/subpara/illust/parts[@id='"+ partId +"']");
+	if( illustPartNode != null){
+		return new Array(partId , illustPartNode.parentNode.getAttribute("id"), parent.sts.disp.innerHTML);
+	}
+
+	//同一セクション内で　部品IDを含むイラストIDを探す
+	illustPartNode = parent.g_compoXml.selectSingleNode("//section[@id='"+ secId +"']/ttl/para[@category='R' ]/subpara/illust/parts[@id='"+ partId +"']");
+	if( illustPartNode != null){
+		return new Array(partId , illustPartNode.parentNode.getAttribute("id"), parent.sts.disp.innerHTML);
+	}
+
+	//同一サービスカテゴリ内で　部品IDを含むイラストIDを探す
+	illustPartNode = parent.g_compoXml.selectSingleNode("//servcat[@id='"+ parent.g_servcatId +"']/section/ttl/para[@category='R' ]/subpara/illust/parts[@id='"+ partId +"']");
+	if( illustPartNode != null){
+		return new Array(partId , illustPartNode.parentNode.getAttribute("id"), parent.sts.disp.innerHTML);
+	}
+	alert("There is no applicable parts location diagram. [Title ID:"+ttlId +"]");
+	return null;
+}
+
+function enabledPreparation() {
+	var ttlId = parent.g_nowTtlId;
+	var paraItems = parent.g_tocXml.selectNodes("//ttl[@id='"+ ttlId +"']/para[@category='G' ]/@id");
+	if (paraItems==null) {
+		ppr.style.visibility="hidden";
+		return;
+	}
+	for (var i=0; i<paraItems.length; i++) {
+		var paraId = paraItems.item(i).nodeTypedValue;
+		paraId = paraId.toLowerCase();
+		var pprXml = parent.initXml("ppr_"+paraId+".xml", false, false);
+		if (pprXml!=null) {
+			ppr.style.visibility="visible";
+			return;
+		}
+	}
+	ppr.style.visibility="hidden";
+	return;
+}
+
+//
+// 印刷リンククリック時の処理
+//
+//function setPopupArguments(type, url) {
+//	parent.setDisplaySource(parent.contents.disp.innerHTML);
+//	parent.setDisplayArgs(parent.sts.disp.innerHTML);
+//	parent.openDialog(type, url);
+//}
+-->
+</script>
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td colspan="2" class="top"></td></tr>
+	<tr><td colspan="2" height="4"></td></tr>
+	<tr>
+		<td>
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr align="left"> 
+					<td width="5"><br></td>
+					<td id="remove" style="visibility:hidden">
+						<a class="button" href="javascript:goToRmv()">Go to Removal/Installation Procedure</a>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td align="right">
+			<table cellpadding="2" cellspacing="0" border="0">
+				<tr>
+					<td>
+						<a class="button" href="#" onClick="switchComponent()">Parts Location</a>
+						<a id="ppr" class="button" href="#" onClick="switchPreparation()" style="visibility=hidden">Preparation</a>
+						<a class="button" href="#" onClick="parent.printFrame(parent.sts.disp.innerHTML,parent.contents.disp.innerHTML,'Print Inspection Procedure');">Print</a>
+					</td>
+					<td width="30"><br></td>
+					<td>
+						<a class="button" href="#" onClick="parent.backTocPage(parent.g_bp, parent.g_bd)">Go to Contents Screen</a>
+						<a class="button" href="javascript:parent.openNewWindow('../index.html')">Show in Separate Window</a>
+						<a class="button" href="javascript:parent.setTermValue('../index.html', parent.getParameterValue('term', parent.location))" target="_top">To Function Selection</a>
+					</td>
+					<td width="5"><br></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
