@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<MECA ID = "T150003K912Ka68" UPDATE = "ORIGINAL" LDUP = "30Mar2005"     MECATYPE = "GENERAL" INDSW = "OFF">
-<TITLE>LIN Communication Protocol</TITLE>
-<LIST1><ITEM><PTXT>The LIN communication system is a time-division multiplex bidirectional communication system in which all ECUs making up the network use 1 communication line, sending data by staggering the timing at which each ECU uses the communication line while also being able to receive. For this reason, each ECU communicates according to a common communication protocol (communication rules) so that communication is performed smoothly and reliably.</PTXT></ITEM>
-<ITEM><PTXT>Data used in the LIN communication system consists of digital signals containing information such as the identification ID of each ECU (node ID) and the communication data contents.</PTXT></ITEM>
-<ITEM><PTXT>As the communication rule for sending onto the communication line, so that all ECUs can share 1 communication line based on a defined transmission schedule, a single-master method is adopted in which the main body ECU controls the communication timing, sleep (low current mode), wake-up (standby mode), etc. of the ECUs it communicates with.</PTXT></ITEM></LIST1></MECA>

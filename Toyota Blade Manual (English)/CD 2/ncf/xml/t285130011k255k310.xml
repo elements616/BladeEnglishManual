@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<MECA ID = "T130011K255K310" UPDATE = "ORIGINAL" LDUP = "29Mar2004"     MECATYPE = "GENERAL" INDSW = "OFF">
-<TITLE>Power Window Key-off Operation</TITLE>
-<LIST1><ITEM><PTXT>When the IG is turned from ON to OFF, the main body ECU detects this, starts counting approximately 45 seconds of key-off operation, and sends a "power window operation permission signal" to each seat power window ECU via LIN communication. This permits power window operation at all doors.</PTXT></ITEM>
-<ITEM><PTXT>When approximately 45 seconds have elapsed, or when the main body ECU receives driver door courtesy light switch 0N → OFF, the "power window operation permission signal" is turned OFF. However, if the "power window operation permission signal" turns OFF during auto operation or jam protection control, each operation is carried out to completion, and jam protection control is performed during auto operation as well.</PTXT></ITEM></LIST1></MECA>

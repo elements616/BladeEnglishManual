@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<MECA ID = "T080005K503K623" UPDATE = "ORIGINAL" LDUP = "14Apr2004"     MECATYPE = "ACTUATE" INDSW = "OFF" UNPRINT = "ON">
-<TITLE>Warm-up Control</TITLE>
-<LIST1 TYPE = "UNORDERED"><ITEM><PTXT>When the outlet mode is FOOT, BI-LEVEL or FOOT/DEF and the engine is cold, the blower motor is turned OFF and remains stopped until the engine coolant temperature (the temperature detected by the water temperature sensor) reaches a certain level or higher. When the coolant temperature reaches T2°C, the blower motor rotates at LO, and at T1°C or less the blower motor is turned OFF. When the coolant temperature is between T2°C and T3°C, the airflow calculated from the water temperature sensor is compared with the target airflow calculated by the neural network, and the airflow is automatically controlled at whichever is lower. When the coolant temperature reaches T3°C or higher, the blower motor rotates at HI, and is then controlled according to the target airflow calculated by the neural network.</PTXT></ITEM></LIST1>
-<FIGURE>
-<GRAPHIC GRAPHICNAME = "a4740058e" WIDTH = "6.903in" HEIGHT = "2.375in" />
-</FIGURE>
-</MECA>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<MECA ID = "T100001K376K782" UPDATE = "ORIGINAL" LDUP = "18Mar2004"     MECATYPE = "ACTUATE" INDSW = "OFF">
-<TITLE>Wireless Door Lock (Unlock) Operation</TITLE>
-<LIST1><ITEM><PTXT>When the lock button 〈unlock button〉 is pressed, the vehicle identification code and function code are transmitted by weak radio waves. When the door control receiver receives these, it sends them to the Certification ECU.</PTXT></ITEM>
-<ITEM><PTXT>The Certification ECU verifies the identification code and determines the function code; when it recognizes that the identification code matches that of its own vehicle and that the function code is door lock/〈unlock〉, it outputs this as code data to the Main Body ECU.</PTXT></ITEM>
-<ITEM><PTXT>When the Main Body ECU receives the lock 〈unlock〉 signal, it turns ON the lock relay 〈unlock relay〉 and locks 〈unlocks〉 all doors, in the same way as manual lock 〈unlock〉 operation of the power door lock system.<HINTREF     REFID = "H403100001K376K78201"/></PTXT></ITEM></LIST1>
-<HINT>
-<LIST1><ITEM><PTXT ID = "H403100001K376K78201">When the Main Body ECU receives the door lock position switch OFF 〈ON〉 state signal from each door lock assembly and confirms lock 〈unlock〉, it performs answer-back output. For door unlock operation, if no door is opened (door courtesy light switch ON) for approximately 30 seconds, all doors are locked (auto lock control starts).</PTXT></ITEM></LIST1></HINT></MECA>
